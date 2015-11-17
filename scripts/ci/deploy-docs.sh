@@ -13,7 +13,7 @@ then
   mkdir publish
   cd publish
   git clone git@github.com:opengisch/QField-docs.git --branch gh-pages
-  cd docs
+  cd QField-docs
   git rm . -r
   cp ../../build/html/* . -r
   touch .nojekyll
