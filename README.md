@@ -26,7 +26,7 @@ Translation is done via transifex.
 QField is a community driven open source project. As such we are very happy to
 get your help and feedback.
 
-Therefore we will be very happy if you can help us by
+Therefore we appreciate if you can help us by
 
  * Documenting features (in English)
  * Improving the documentation (in English)
