@@ -4,12 +4,12 @@ This is the QField documentation
 QField is an alternative and simplified user interface for QGIS. It is built
 with focus on mobile, touch driven devices.
 
-.. This document can also be downloaded as a single PDF document: `QGEP.pdf <./QGEP.pdf>`__ |image|.
+.. This document can also be downloaded as a single PDF document: `QField.pdf <./QField.pdf>`__ |image|.
   .. |image| image:: ../_static/pdf.png
    :height: 15
    :width: 15
    :alt: PDF icon
-   :target: QGEP.pdf
+   :target: QField.pdf
 
 Contents
 ========

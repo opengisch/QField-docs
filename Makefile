@@ -232,11 +232,11 @@ all-pdf: latex
 	do \
 	  make -C $(BUILDDIR)/latex/$$lang all-pdf ; \
 		if [ -d $(BUILDDIR)/html/$$lang ]; then \
-			cp -f $(BUILDDIR)/latex/$$lang/QGEP.pdf $(BUILDDIR)/html/$$lang ; \
+			cp -f $(BUILDDIR)/latex/$$lang/QField.pdf $(BUILDDIR)/html/$$lang ; \
 		fi \
 	done; \
 	if [ -d $(BUILDDIR)/html/$$lang ]; then \
-		cp -f $(BUILDDIR)/latex/en/QGEP.pdf $(BUILDDIR)/html; \
+		cp -f $(BUILDDIR)/latex/en/QField.pdf $(BUILDDIR)/html; \
 	fi; \
 
 all-ps: latex
