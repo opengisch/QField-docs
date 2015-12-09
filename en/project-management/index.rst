@@ -2,7 +2,7 @@ QField Project Management
 =========================
 
 You will need a portable version of your QGIS project file (.qgs). Portable
-means that all paths are relative and datasets are reachable from the device.
+means that all paths are relative and datasets are reachable from the device. We suggest having a look at the QConsolidate plugin and the Offline Editing plugin.
 
 Data sources
 ............
