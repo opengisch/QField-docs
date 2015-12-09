@@ -36,7 +36,7 @@ Therefore we appreciate if you can help us by
 
 *Note: You will need a [github account](https://github.com/) for this.*
 
-Navigate to https://github.com/opengisch/QField-docs/g and click the `Fork` link on the top
+Navigate to https://github.com/opengisch/QField-docs/ and click the `Fork` link on the top
 right. You now have your own copy of the documentation on which you can work
 and cannot do any damage, feel free to experiment.
 If you want more information about forking you can find it
