@@ -18,6 +18,7 @@ Contents
    :maxdepth: 2
 
    installation-guide/index
+   concepts/index
    project-management/index
    user-guide/index
 
