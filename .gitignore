@@ -4,3 +4,4 @@ init
 *~
 *.mo
 i18n/pot
+*.orig
