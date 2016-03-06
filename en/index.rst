@@ -1,5 +1,5 @@
 This is the QField documentation
-===============================
+================================
 
 QField is an alternative and simplified user interface for QGIS. It is built
 with focus on mobile, touch driven devices.
