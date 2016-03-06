@@ -1,0 +1,48 @@
+[main]
+host = https://www.transifex.com
+
+[qfield-documentation.index]
+source_file = i18n/pot/index.pot
+source_lang = en
+trans.de = i18n/de/index.po
+trans.fr = i18n/fr/index.po
+trans.it = i18n/it/index.po
+trans.ro = i18n/ro/index.po
+type = PO
+
+[qfield-documentation.user-guide]
+source_file = i18n/pot/user-guide.pot
+source_lang = en
+trans.de = i18n/de/user-guide.po
+trans.fr = i18n/fr/user-guide.po
+trans.it = i18n/it/user-guide.po
+trans.ro = i18n/ro/user-guide.po
+type = PO
+
+[qfield-documentation.installation-guide]
+source_file = i18n/pot/installation-guide.pot
+source_lang = en
+trans.de = i18n/de/installation-guide.po
+trans.fr = i18n/fr/installation-guide.po
+trans.it = i18n/it/installation-guide.po
+trans.ro = i18n/ro/installation-guide.po
+type = PO
+
+[qfield-documentation.project-management]
+source_file = i18n/pot/project-management.pot
+source_lang = en
+trans.de = i18n/de/project-management.po
+trans.fr = i18n/fr/project-management.po
+trans.it = i18n/it/project-management.po
+trans.ro = i18n/ro/project-management.po
+type = PO
+
+[qfield-documentation.concepts]
+source_file = i18n/pot/concepts.pot
+source_lang = en
+trans.de = i18n/de/concepts.po
+trans.fr = i18n/fr/concepts.po
+trans.it = i18n/it/concepts.po
+trans.ro = i18n/ro/concepts.po
+type = PO
+

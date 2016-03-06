@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-06 22:40+0100\n"
+"POT-Creation-Date: 2016-03-06 23:12+0100\n"
 "PO-Revision-Date: 2016-03-06 22:12+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch-1/qfield-documentation/language/ro/)\n"
@@ -17,34 +17,24 @@ msgstr ""
 "Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
-# 01fac322593445fba254a3f57d092d36
-#: ../../en/index.rst:2
-msgid "This is the QField documentation"
+# 5adbc244f0dd41f997c5eb810d46f7f1
+#: ../../en/installation-guide/index.rst:2
+msgid "QField Installation Guide"
 msgstr ""
 
-# 49d2ced0244c4004bc61d488e693da78
-#: ../../en/index.rst:4
+# 7e90aedc62314d29ae568ab515425ac3
+#: ../../en/installation-guide/index.rst:4
+msgid "You can download the app directly from GooglePlay."
+msgstr ""
+
+# d57b1b46596b42549fcde1a17aee44db
+#: ../../en/installation-guide/index.rst:6
+msgid "|GooglePlayLink|_"
+msgstr ""
+
+# f4872aff49004d89be32c5fd85a57ad9
+#: ../../en/installation-guide/index.rst:11
 msgid ""
-"QField is an alternative and simplified user interface for QGIS. It is built"
-" with focus on mobile, touch driven devices."
-msgstr ""
-
-# 9924603c8a704dcb84c784681123a760
-#: ../../en/index.rst:15
-msgid "Contents"
-msgstr ""
-
-# ae1138c7a5e74828a8c935fd63b17964
-#: ../../en/index.rst:25
-msgid "Indices and tables"
-msgstr ""
-
-# a26938ea2e254c608dcf0e88fc3c398d
-#: ../../en/index.rst:27
-msgid ":ref:`genindex`"
-msgstr ""
-
-# 529ef9a5373c46849836757cb15f089a
-#: ../../en/index.rst:28
-msgid ":ref:`search`"
+"We also offer a pre-built apk for you to download if you are not able or do "
+"not want to use Google Playstore. Download the qfield.apk_."
 msgstr ""
