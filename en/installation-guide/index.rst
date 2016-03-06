@@ -13,7 +13,7 @@ You can download the app directly from GooglePlay.
 
 |GooglePlayLink|_
 
-.. |GooglePlayLink| image:: images/Get_it_on_Google_play.svg
+.. |GooglePlayLink| image:: images/Get_it_on_Google_play.png
 .. _GooglePlayLink: https://play.google.com/store/apps/details?id=ch.opengis.qfield
 
 Get a pre-built apk
