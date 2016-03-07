@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
+# OPENGIS.ch <info@opengis.ch>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-06 23:12+0100\n"
-"PO-Revision-Date: 2016-03-06 22:12+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-03-07 10:22+0100\n"
+"PO-Revision-Date: 2016-03-07 09:22+0000\n"
+"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch-1/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,37 +21,62 @@ msgstr ""
 # 614fcbfffd7848139c77b9526668eec0
 #: ../../en/user-guide/index.rst:2
 msgid "QField User Guide"
-msgstr ""
+msgstr "QField Benutzerhandbuch"
 
 # 46eed0e346274f7ca05868a0922f9b5c
 #: ../../en/user-guide/index.rst:5
 msgid "Opening a project"
-msgstr ""
+msgstr "Ein Projekt öffnen"
 
 # d5c8eed74c4b4af9909216698237d356
 #: ../../en/user-guide/index.rst:9
 msgid "Identifying features"
+msgstr "Objekte identifizieren"
+
+# fd152879dd7047fb92f2e4a54a7ea73c
+#: ../../en/user-guide/index.rst:11
+msgid ""
+"A long press on a feature will identify it. Pressing the back button will "
+"close the identify window."
+msgstr ""
+
+# 3cd6509109b54bfc9c3c96b9b3033136
+#: ../../en/user-guide/index.rst:15
+msgid "GPS"
 msgstr ""
 
 # 0d596fa46a72402c929c43d1ef2620d7
-#: ../../en/user-guide/index.rst:11
-msgid "A long press on a feature will identify it."
+#: ../../en/user-guide/index.rst:17
+msgid "A long press on the GPS button will show the GPS menu."
+msgstr ""
+
+# e2188c342e19427e85e3a834e0111975
+#: ../../en/user-guide/index.rst:21
+msgid "Custom SVG symbols and settings"
+msgstr ""
+
+# 41c129b713fd4ac2a0e1b7d7dc49efa2
+#: ../../en/user-guide/index.rst:23
+msgid ""
+"In the about dialog you can see where the shared folders are in your device."
+" If you need to use custom symbols you need to put them there using a file "
+"manager."
 msgstr ""
 
 # dbdf52c8b9994e2a86340dd1d54ae25c
-#: ../../en/user-guide/index.rst:14
+#: ../../en/user-guide/index.rst:27
 msgid "Digitzing"
-msgstr ""
+msgstr "Digitalisieren"
 
 # 460a32b0bf61420f89c69479d67e8f96
-#: ../../en/user-guide/index.rst:16
+#: ../../en/user-guide/index.rst:29
 msgid ""
 "To start digitizing new features, click on the menu button and choose *mode*"
 " > *digitize*."
 msgstr ""
 
 # e906874face24cc0932f35585959893a
-#: ../../en/user-guide/index.rst:19
+#: ../../en/user-guide/index.rst:32
 msgid ""
 "A new combobox will appear next to the menu button which lists the layers "
 "available for digitizing. At the moment (QField 0.5), QField only supports "
@@ -58,7 +84,7 @@ msgid ""
 msgstr ""
 
 # f6c0e52fcb6e4fe6b022330cc8e21b63
-#: ../../en/user-guide/index.rst:23
+#: ../../en/user-guide/index.rst:36
 msgid ""
 "navigate the crosshair in the center of the screen to the desired location "
 "and click the check at the lower right of the screen to confirm the creation"
