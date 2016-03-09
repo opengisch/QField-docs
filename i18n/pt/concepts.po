@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, The QField Project/OPENGIS.ch
+# This file is distributed under the same license as the QField package.
+# 
+# Translators:
+# João Filipe Rodrigues Gaspar <joao.f.r.gaspar@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: QField Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-09 12:28+0100\n"
+"PO-Revision-Date: 2016-03-08 16:37+0000\n"
+"Last-Translator: João Filipe Rodrigues Gaspar <joao.f.r.gaspar@gmail.com>\n"
+"Language-Team: Portuguese (http://www.transifex.com/opengisch-1/qfield-documentation/language/pt/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 91d31213c84f4b689e39c891486afa41
+#: ../../en/concepts/index.rst:2
+msgid "Concepts"
+msgstr "Conceitos"
+
+# 7aa7c0eca2a84ff58b15b358d8d59564
+#: ../../en/concepts/index.rst:4
+msgid "QField was designed with a few key concepts in mind."
+msgstr ""
+
+# b7abcda3c0dc46ca9bdc13c305f559b2
+#: ../../en/concepts/index.rst:7
+msgid "Keep it simple"
+msgstr ""
+
+# ecbd0edaa07c4e4691a0af066b849a74
+#: ../../en/concepts/index.rst:9
+msgid ""
+"The requirements on the field are not the same as on a desktop. The screen "
+"is smaller, the input devices are different and the tasks are different."
+msgstr ""
+
+# 3ae87f806cd949338045458168ac12da
+#: ../../en/concepts/index.rst:12
+msgid ""
+"QField aims to help the user to perform the tasks he needs to do without "
+"cluttering the user interface. This means, that only tasks which need to be "
+"done on the field are availble from the interface. Everything else is not."
+msgstr ""
+
+# 01c8fefc550c410cbc43ff8b85881435
+#: ../../en/concepts/index.rst:16
+msgid ""
+"This means that everything like layer styling, form definitions and other "
+"project setup steps should be done on a computer with QGIS installed first."
+msgstr ""
+
+# 9dba0d0819a14925b3278a650e1e3408
+#: ../../en/concepts/index.rst:20
+msgid "Be compatible with QGIS"
+msgstr ""
+
+# 6e6b81d6e5314ae38d256b23f5df6b18
+#: ../../en/concepts/index.rst:22
+msgid ""
+"QField is based on QGIS. It is not a rebuild of QGIS it really *does* use "
+"QGIS libraries. The rendering engine is exactly the same as in QGIS for "
+"desktop and your project will therefore look exactly the same on your mobile"
+" device as it does on your computer."
+msgstr ""
+
+# 0e414331efdb491d9ee9d6a15e210dcb
+#: ../../en/concepts/index.rst:27
+msgid ""
+"If something is already available as a configuration option in a QGIS "
+"project, it should not be re-invented. QField therefore uses the same edit "
+"widgets as QGIS desktop does. If a project is already configured for the "
+"desktop, it should just run on mobile as well."
+msgstr ""
+
+# 34f3a712b3644f05afb045d7b2c74394
+#: ../../en/concepts/index.rst:32
+msgid ""
+"Remember, this is just the *concept*. This is what we have in mind when we "
+"develop QField. It does not mean that it is already completely there yet."
+msgstr ""
+
+# e4a5bc86cb6841348c688a10355406f4
+#: ../../en/concepts/index.rst:36
+msgid "Mode based"
+msgstr ""
+
+# 204a9a740b6a481eb43061231054d5f9
+#: ../../en/concepts/index.rst:38
+msgid ""
+"QField is built around *modes*. Modes are similar to a *map tool* in QGIS "
+"desktop. A mode defines the task which a user is currently doing. Either a "
+"user is *browsing* through the data or he is *digitizing* something new."
+msgstr ""
