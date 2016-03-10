@@ -1,15 +1,26 @@
+#################
 QField User Guide
-=================
+#################
+
+**************
+Basic workflow
+**************
 
 Opening a project
-.................
+=================
 
 
 Identifying features
-....................
+====================
 
 A long press on a feature will identify it. Pressing the back button will close the identify window.
 
+Exceptions to identified layers
+-------------------------------
+
+Often it is not required to be able to query every layer. Some layers are only present as basemap and their attributes are not of interest.
+
+You can manage this layerlist in QGIS desktop in :menuselection:`Project --> Project Properties --> Identify Layers` and uncheck the base layers.
 
 GPS
 ...
