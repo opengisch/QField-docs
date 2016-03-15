@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
+# Daniel Gnerre <daniel.gnerre@vevey.ch>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-06 22:40+0100\n"
-"PO-Revision-Date: 2016-03-06 22:12+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-03-15 10:43+0100\n"
+"PO-Revision-Date: 2016-03-15 09:20+0000\n"
+"Last-Translator: Daniel Gnerre <daniel.gnerre@vevey.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch-1/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,31 +21,31 @@ msgstr ""
 # 01fac322593445fba254a3f57d092d36
 #: ../../en/index.rst:2
 msgid "This is the QField documentation"
-msgstr ""
+msgstr "Ceci est la documentation de QField"
 
 # 49d2ced0244c4004bc61d488e693da78
 #: ../../en/index.rst:4
 msgid ""
 "QField is an alternative and simplified user interface for QGIS. It is built"
 " with focus on mobile, touch driven devices."
-msgstr ""
+msgstr "QField est une interface simplifiée de QGIS, conçue pour les appareils mobiles. "
 
 # 9924603c8a704dcb84c784681123a760
 #: ../../en/index.rst:15
 msgid "Contents"
-msgstr ""
+msgstr "Contenu"
 
 # ae1138c7a5e74828a8c935fd63b17964
-#: ../../en/index.rst:25
+#: ../../en/index.rst:26
 msgid "Indices and tables"
-msgstr ""
+msgstr "Table et index"
 
 # a26938ea2e254c608dcf0e88fc3c398d
-#: ../../en/index.rst:27
+#: ../../en/index.rst:28
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 # 529ef9a5373c46849836757cb15f089a
-#: ../../en/index.rst:28
+#: ../../en/index.rst:29
 msgid ":ref:`search`"
-msgstr ""
+msgstr ":ref:`search`"

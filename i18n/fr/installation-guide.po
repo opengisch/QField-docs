@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
+# Daniel Gnerre <daniel.gnerre@vevey.ch>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 10:22+0100\n"
-"PO-Revision-Date: 2016-03-07 09:22+0000\n"
-"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
+"POT-Creation-Date: 2016-03-15 10:43+0100\n"
+"PO-Revision-Date: 2016-03-15 08:39+0000\n"
+"Last-Translator: Daniel Gnerre <daniel.gnerre@vevey.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch-1/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,49 +21,49 @@ msgstr ""
 # 5adbc244f0dd41f997c5eb810d46f7f1
 #: ../../en/installation-guide/index.rst:2
 msgid "QField Installation Guide"
-msgstr ""
+msgstr "Guide d'installation QField"
 
 # 0f06bf32b2b9409ea0cafcce664c247c
 #: ../../en/installation-guide/index.rst:5
 msgid "Android Version"
-msgstr ""
+msgstr "Version Android"
 
 # 7c0bbc8035e14e268a949a63cab6b807
 #: ../../en/installation-guide/index.rst:7
 msgid "QField can safely be used with any version later than android 4.3."
-msgstr ""
+msgstr "QField peut être utilisé à partir de la version 4.3 d'Android."
 
 # 794d3fdbc8b34dcdb1ce37bcc7a36dfe
 #: ../../en/installation-guide/index.rst:10
 msgid "Get it on GooglePlay"
-msgstr ""
+msgstr "Télécharger à partir de GooglePlay"
 
 # 7e90aedc62314d29ae568ab515425ac3
 #: ../../en/installation-guide/index.rst:12
 msgid "You can download the app directly from GooglePlay."
-msgstr ""
+msgstr "Vous pouvez télécharger l'application directement depuis GooglePlay"
 
 # d57b1b46596b42549fcde1a17aee44db
 #: ../../en/installation-guide/index.rst:14
 msgid "|GooglePlayLink|_"
-msgstr ""
+msgstr "|GooglePlayLink|_"
 
 # 23b56184f6424cfc9d6557519a4967c3
 #: ../../en/installation-guide/index.rst:20
 msgid "Get a pre-built apk"
-msgstr ""
+msgstr "Obtenir un apk pré-buildé"
 
 # f4872aff49004d89be32c5fd85a57ad9
 #: ../../en/installation-guide/index.rst:22
 msgid ""
 "We also offer a pre-built apk for you to download if you are not able or do "
 "not want to use Google Playstore. Download the qfield.apk_."
-msgstr ""
+msgstr "Il est possible de télécharger un apk pré-buildé pour ceux qui ne peuvent pas ou ne souhaitent pas utiliser Google Playstore. Télécharger qfield.apk_."
 
 # 99aa7736414e465fb119001e36f71e0e
 #: ../../en/installation-guide/index.rst:28
 msgid "Karma edition"
-msgstr ""
+msgstr "Edition Karma"
 
 # 9a4b03b4d1054552a3a08a5453ae8ebd
 #: ../../en/installation-guide/index.rst:30
@@ -71,4 +72,4 @@ msgid ""
 "<https://play.google.com/store/apps/details?id=ch.opengis.qfieldkarmaedition>`_,"
 " we thank you a lot for your support. To get QField you will also need to "
 "install it as explained above."
-msgstr ""
+msgstr "Si vous avez acheté la version de l'application `QField Karma edition<https://play.google.com/store/apps/details?id=ch.opengis.qfieldkarmaedition>`_, nous vous remercions pour votre participation. Pour obtenir QField, il faudra l'installer selon les instruction ci-dessus. "

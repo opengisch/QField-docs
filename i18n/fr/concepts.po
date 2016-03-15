@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
+# Daniel Gnerre <daniel.gnerre@vevey.ch>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-06 23:12+0100\n"
-"PO-Revision-Date: 2016-03-06 22:12+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-03-15 10:43+0100\n"
+"PO-Revision-Date: 2016-03-15 08:28+0000\n"
+"Last-Translator: Daniel Gnerre <daniel.gnerre@vevey.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch-1/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,24 +21,24 @@ msgstr ""
 # 91d31213c84f4b689e39c891486afa41
 #: ../../en/concepts/index.rst:2
 msgid "Concepts"
-msgstr ""
+msgstr "Concepts"
 
 # 7aa7c0eca2a84ff58b15b358d8d59564
 #: ../../en/concepts/index.rst:4
 msgid "QField was designed with a few key concepts in mind."
-msgstr ""
+msgstr "QField a été conçu selon quelques principes."
 
 # b7abcda3c0dc46ca9bdc13c305f559b2
 #: ../../en/concepts/index.rst:7
 msgid "Keep it simple"
-msgstr ""
+msgstr "Rester simple"
 
 # ecbd0edaa07c4e4691a0af066b849a74
 #: ../../en/concepts/index.rst:9
 msgid ""
 "The requirements on the field are not the same as on a desktop. The screen "
 "is smaller, the input devices are different and the tasks are different."
-msgstr ""
+msgstr "Les besoins de saisie dans le terrain ne sont pas les mêmes qu'au bureau. L'écran est plus petit, les appareils sont différents et les tâches sont différentes. "
 
 # 3ae87f806cd949338045458168ac12da
 #: ../../en/concepts/index.rst:12
@@ -45,19 +46,19 @@ msgid ""
 "QField aims to help the user to perform the tasks he needs to do without "
 "cluttering the user interface. This means, that only tasks which need to be "
 "done on the field are availble from the interface. Everything else is not."
-msgstr ""
+msgstr "Le but de QField est d'aider l'utilisateur à effectuer ses tâche sans une encombrante interface. Seules les fonctionnalités utiles dans le terrain sont disponibles dans l'interface. Tout le reste ne l'est pas. "
 
 # 01c8fefc550c410cbc43ff8b85881435
 #: ../../en/concepts/index.rst:16
 msgid ""
 "This means that everything like layer styling, form definitions and other "
 "project setup steps should be done on a computer with QGIS installed first."
-msgstr ""
+msgstr "Cela signifie que tout ce qui concerne la symbologie des couches, la définition des formulaires ou la configuration du projet devra être effectué au préalable sur un poste avec QGIS. "
 
 # 9dba0d0819a14925b3278a650e1e3408
 #: ../../en/concepts/index.rst:20
 msgid "Be compatible with QGIS"
-msgstr ""
+msgstr "Etre compatible avec QGIS"
 
 # 6e6b81d6e5314ae38d256b23f5df6b18
 #: ../../en/concepts/index.rst:22
@@ -66,7 +67,7 @@ msgid ""
 "QGIS libraries. The rendering engine is exactly the same as in QGIS for "
 "desktop and your project will therefore look exactly the same on your mobile"
 " device as it does on your computer."
-msgstr ""
+msgstr "QField est basé sur QGIS. Ce n'est pas une réécriture de QGIS, mais cela utilise les librairies de QGIS. Le moteur de rendu est le même que QGIS et le contenu de la carte sera par conséquent identique entre un appareil mobile et un ordinateur de bureau. "
 
 # 0e414331efdb491d9ee9d6a15e210dcb
 #: ../../en/concepts/index.rst:27
@@ -75,19 +76,19 @@ msgid ""
 "project, it should not be re-invented. QField therefore uses the same edit "
 "widgets as QGIS desktop does. If a project is already configured for the "
 "desktop, it should just run on mobile as well."
-msgstr ""
+msgstr "Si une option de configuration est disponible dans le projet QGIS, il ne sera pas nécessaire de la réécrire. QField utilise les mêmes widgets d'édition que QGIS. Si un projet est configuré avec QGIS desktop, il fonctionnera sur un appareil mobile. "
 
 # 34f3a712b3644f05afb045d7b2c74394
 #: ../../en/concepts/index.rst:32
 msgid ""
 "Remember, this is just the *concept*. This is what we have in mind when we "
 "develop QField. It does not mean that it is already completely there yet."
-msgstr ""
+msgstr "Ces concepts guident le développement de QField, mais n'ont pas encore tous été implémentés. "
 
 # e4a5bc86cb6841348c688a10355406f4
 #: ../../en/concepts/index.rst:36
 msgid "Mode based"
-msgstr ""
+msgstr "Basé sur le \"mode\""
 
 # 204a9a740b6a481eb43061231054d5f9
 #: ../../en/concepts/index.rst:38
@@ -95,4 +96,4 @@ msgid ""
 "QField is built around *modes*. Modes are similar to a *map tool* in QGIS "
 "desktop. A mode defines the task which a user is currently doing. Either a "
 "user is *browsing* through the data or he is *digitizing* something new."
-msgstr ""
+msgstr "QField est construit sur des \"modes\". Ces modes sont similaires au outils de carte dans QGIS desktop. Un mode définit une tâche qu'un utilisateur est en train de réaliser. Soit l'utilisateur navigue au travers des données, soit il numérise de nouvelles données. "
