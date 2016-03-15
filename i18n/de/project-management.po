@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 10:22+0100\n"
-"PO-Revision-Date: 2016-03-07 09:22+0000\n"
+"POT-Creation-Date: 2016-03-15 10:43+0100\n"
+"PO-Revision-Date: 2016-03-15 09:43+0000\n"
 "Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch-1/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -28,17 +28,44 @@ msgstr "QField Projektverwaltung"
 msgid ""
 "You will need a portable version of your QGIS project file (.qgs). Portable "
 "means that all paths are relative and datasets are reachable from the "
-"device. We suggest having a look at the QConsolidate plugin and the Offline "
-"Editing plugin."
+"device."
+msgstr ""
+
+# 86d107761bfd4307b7540c28da4f68d6
+#: ../../en/project-management/index.rst:7
+msgid ""
+"Check that :menuselection:`Project --> Project Properties --> General --> "
+"Save paths` is set to \"Relative\" and that all required data files are in "
+"the same folder like the .qgs file or a subfolder of it."
+msgstr ""
+
+# e63b99ba252f40ad9a07c8f0c38022aa
+#: ../../en/project-management/index.rst:9
+msgid ""
+"For increased productivity, we suggest having a look at the following "
+"plugins:"
+msgstr ""
+
+# 4a4c6f2a9aa04933bd0d5c413ec8e43b
+#: ../../en/project-management/index.rst:11
+msgid ""
+"`QConsolidate plugin <https://plugins.qgis.org/plugins/qconsolidate/>`_"
+msgstr ""
+
+# 9689cb9f3b0f4c5ba5803f710d471b47
+#: ../../en/project-management/index.rst:12
+msgid ""
+"`Offline Editing plugin "
+"<https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_offline_editing.html>`_"
 msgstr ""
 
 # 82f72ca98ec74bf88ccbe5a0852a4529
-#: ../../en/project-management/index.rst:8
+#: ../../en/project-management/index.rst:15
 msgid "Data sources"
 msgstr "Datenquellen"
 
 # 17b176e06a944f9baf52f1c1363e3d89
-#: ../../en/project-management/index.rst:10
+#: ../../en/project-management/index.rst:17
 msgid ""
 "While many data providers are supported, there are still some stability "
 "issues with the OGR provider (E.g. Shapefile). For best stability you should"
