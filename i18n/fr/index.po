@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-15 10:43+0100\n"
-"PO-Revision-Date: 2016-03-15 09:20+0000\n"
+"POT-Creation-Date: 2016-04-03 11:17+0200\n"
+"PO-Revision-Date: 2016-03-15 12:10+0000\n"
 "Last-Translator: Daniel Gnerre <daniel.gnerre@vevey.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch-1/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 # 01fac322593445fba254a3f57d092d36
 #: ../../en/index.rst:2
 msgid "This is the QField documentation"
-msgstr "Ceci est la documentation de QField"
+msgstr "Documentation de QField"
 
 # 49d2ced0244c4004bc61d488e693da78
 #: ../../en/index.rst:4

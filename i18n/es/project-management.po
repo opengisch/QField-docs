@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-15 10:43+0100\n"
-"PO-Revision-Date: 2016-03-15 09:43+0000\n"
+"POT-Creation-Date: 2016-04-03 11:17+0200\n"
+"PO-Revision-Date: 2016-04-03 09:18+0000\n"
 "Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: Spanish (http://www.transifex.com/opengisch-1/qfield-documentation/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -69,4 +69,136 @@ msgid ""
 "While many data providers are supported, there are still some stability "
 "issues with the OGR provider (E.g. Shapefile). For best stability you should"
 " use spatialite files or a postgis database."
+msgstr ""
+
+# 86b83d0227274858b3d5a8a552786e88
+#: ../../en/project-management/index.rst:22
+msgid "Vector Layer Settings"
+msgstr ""
+
+# be35643fe163494298f55e961e006e2c
+#: ../../en/project-management/index.rst:24
+msgid ""
+"Most of the settings which QGIS offers are directly supported by QField "
+"without any extra effort."
+msgstr ""
+
+# f2d24305610a454dac436d976e3a388f
+#: ../../en/project-management/index.rst:27
+msgid "Style"
+msgstr ""
+
+# 83383b7d5ac04ce5b94f9008b12e9868
+#: ../../en/project-management/index.rst:29
+msgid ""
+"All style settings from QGIS are directly supported by QField. This includes"
+" all renderer types like graduated, categorized, rule based, 2.5D as well as"
+" data defined symbology."
+msgstr ""
+
+# 8d27f99cb79649709dfa54505d2ef375
+#: ../../en/project-management/index.rst:32
+msgid "Forms and Fields"
+msgstr ""
+
+# 57001479ac9d4bda92843e442bcdae05
+#: ../../en/project-management/index.rst:34
+msgid "QField creates forms similar to, but not equal to QGIS."
+msgstr ""
+
+# b56219eec2ea4a6180f231b2949d2c6b
+#: ../../en/project-management/index.rst:37
+msgid "Suppress Feature Form"
+msgstr ""
+
+# 9e66f90ec4e14ecb8705efc86190aff6
+#: ../../en/project-management/index.rst:37
+msgid ""
+"The setting suppress feature form is directly applied to the QField form."
+msgstr ""
+
+# 7631c80f6fdd48ae869ae970b9dd8fe4
+#: ../../en/project-management/index.rst:40
+msgid "Remember last values"
+msgstr ""
+
+# 9117897aad994cef8b728d0689f03316
+#: ../../en/project-management/index.rst:40
+msgid ""
+"QField offers a much more fine-grained control over the last used values and"
+" ignores the QGIS setting."
+msgstr ""
+
+# 18d8b93b94994e0d945409f9f14c180c
+#: ../../en/project-management/index.rst:54
+msgid "Field settings"
+msgstr ""
+
+# 89fd45e6162244aaa9664aafb9a56fd2
+#: ../../en/project-management/index.rst:43
+msgid ""
+"The field settings from QGIS are supported on a beste effort basis and is "
+"constantly being improved."
+msgstr ""
+
+# a79ea98bf09f432288192cd4bf2aef24
+#: ../../en/project-management/index.rst:46
+msgid "Field type"
+msgstr ""
+
+# 43231bda577a457fb028ee03672bbb3c
+#: ../../en/project-management/index.rst:46
+msgid "Support"
+msgstr ""
+
+# 4e4ee600b10e434d9e80db33f770511f
+#: ../../en/project-management/index.rst:46
+msgid "Notes"
+msgstr ""
+
+# 30b4e1b440ac4b539eeaa25767cad4cf
+#: ../../en/project-management/index.rst:48
+msgid "Text Edit"
+msgstr ""
+
+# 2f70dc65dc0246008472c59ba5481885
+# d32add14faa34741b88fc6047aaab2cf
+# a3c360da7ff34716a656387514f6e058
+#: ../../en/project-management/index.rst:48
+#: ../../en/project-management/index.rst:51
+#: ../../en/project-management/index.rst:53
+msgid "✓"
+msgstr ""
+
+# 2ffd84127448498a8af6fcbe3d486b81
+#: ../../en/project-management/index.rst:48
+msgid "Multiline is always allowed"
+msgstr ""
+
+# d87b8906048a4af0abe2249f83fe9fb1
+#: ../../en/project-management/index.rst:49
+msgid "HTML is not supported"
+msgstr ""
+
+# e2c87d7da4404a29ba605053ae50ed89
+#: ../../en/project-management/index.rst:51
+msgid "Check Box"
+msgstr ""
+
+# c18746814a2f4f84a6504f646971fa52
+#: ../../en/project-management/index.rst:53
+msgid "Value Map"
+msgstr ""
+
+# 9dda6dacb5df4238a763c0f6fc3504ad
+#: ../../en/project-management/index.rst:57
+msgid "Custom SVG symbols and settings"
+msgstr ""
+
+# 925633001e5a46509fb1bc2be00c4ea0
+#: ../../en/project-management/index.rst:59
+msgid ""
+"In the about dialog you can see where the shared folders are in your device."
+" If you need to use custom symbols you need to put them there using a file "
+"manager."
 msgstr ""

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-15 10:43+0100\n"
-"PO-Revision-Date: 2016-03-15 08:39+0000\n"
+"POT-Creation-Date: 2016-04-03 11:17+0200\n"
+"PO-Revision-Date: 2016-03-15 12:22+0000\n"
 "Last-Translator: Daniel Gnerre <daniel.gnerre@vevey.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch-1/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -65,8 +65,14 @@ msgstr "Il est possible de télécharger un apk pré-buildé pour ceux qui ne pe
 msgid "Karma edition"
 msgstr "Edition Karma"
 
+# 2cbfe23fc98a457ca333d1f0304d06ac
+#: ../../en/installation-guide/index.rst:31
+msgid ""
+"This is not the QField app. This is a way to support the QField development."
+msgstr "Il ne s'agit pas de l'app QField. C'est un moyen de participer financièrement au développement de QField. "
+
 # 9a4b03b4d1054552a3a08a5453ae8ebd
-#: ../../en/installation-guide/index.rst:30
+#: ../../en/installation-guide/index.rst:33
 msgid ""
 "If you bought the `QField Karma edition app "
 "<https://play.google.com/store/apps/details?id=ch.opengis.qfieldkarmaedition>`_,"
