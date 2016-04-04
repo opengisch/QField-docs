@@ -20,6 +20,7 @@ Contents
    installation-guide/index
    concepts/index
    project-management/index
+   project-management/dataformat
    user-guide/index
 
 Indices and tables

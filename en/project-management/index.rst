@@ -35,23 +35,27 @@ QField creates forms similar to, but not equal to QGIS.
 
 Suppress Feature Form
   The setting suppress feature form is directly applied to the QField form.
-  
+
 Remember last values
   QField offers a much more fine-grained control over the last used values and ignores the QGIS setting.
-  
+
 Field settings
   The field settings from QGIS are supported on a beste effort basis and is constantly being improved.
-  
-  +--------------+----------+------------------------------------------+
-  | Field type   | Support  | Notes                                    |
-  +==============+==========+==========================================+
-  | Text Edit    |	✓   | - Multiline is always allowed            |
-  |              |	    | - HTML is not supported                  |
-  +--------------+----------+------------------------------------------+
-  | Check Box    |	✓   |                                          |
-  +--------------+----------+------------------------------------------+
-  | Value Map    |	✓   |                                          |
-  +--------------+----------+------------------------------------------+ 
+
+  .. role:: yay
+  .. role:: nay
+  .. role:: moreorless
+
+  +--------------+----------+-------------------------------------------------+
+  | Field type   | Support  | Notes                                           |
+  +==============+==========+=================================================+
+  | Text Edit    | :yay:`✔` | - Multiline is always allowed                   |
+  |              |          | - HTML is not supported                         |
+  +--------------+----------+-------------------------------------------------+
+  | Check Box    | :yay:`✔` |                                                 |
+  +--------------+----------+-------------------------------------------------+
+  | Value Map    | :yay:`✔` |                                                 |
+  +--------------+----------+-------------------------------------------------+
 
 Custom SVG symbols and settings
 ===============================
