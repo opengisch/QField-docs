@@ -18,7 +18,7 @@ import os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('_ext'))
 
 # -- General configuration ------------------------------------------------
 
@@ -28,10 +28,10 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['edit_on_github']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['templates']
+templates_path = ['_templates']
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -272,5 +272,12 @@ texinfo_documents = [
 # Path for sphinx to find *.mo files for translation
 locale_dirs = ['../i18n']
 
+# mkuhn: Configure edit_on_github extension, source:
+# https://gist.github.com/MantasVaitkunas/7c16de233812adcb7028
+
+edit_on_github_project = 'opengisch/QField-docs'
+edit_on_github_branch = 'master'
+
+# mkuhn: Add custom css
 def setup(app):
     app.add_stylesheet('style.css')
