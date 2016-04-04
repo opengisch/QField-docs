@@ -35,7 +35,7 @@ A long press on the GPS button will show the GPS menu.
 Digitize
 ========
 
-To start digitizing new features `Switch modes``_ to digitizing.
+To start digitizing new features `Switch modes`_ to digitizing.
 
 A new combobox will appear next to the menu button which lists the layers
 available for digitizing. At the moment (QField 0.5), QField only supports point
