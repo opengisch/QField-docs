@@ -30,5 +30,5 @@ Table
 
 If you don't find your favorite data format on this table, please check if it
 works and adapt the list above to share your findings. If it does not work,
-please [open an issue](https://github.com/opengisch/OSGeo4A/issues). We will be
+please `open an issue <https://github.com/opengisch/OSGeo4A/issues>`_. We will be
 happy to help you with the implementation.
