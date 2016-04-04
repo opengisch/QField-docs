@@ -273,4 +273,4 @@ texinfo_documents = [
 locale_dirs = ['../i18n']
 
 def setup(app):
-    app.add_stylesheet('_static/style.css')
+    app.add_stylesheet('style.css')
