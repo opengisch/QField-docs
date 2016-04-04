@@ -15,8 +15,8 @@ Opening a project
 =================
 
 
-Identifying features
-====================
+Identify features
+=================
 
 A long press on a feature will identify it. Pressing the back button will close the identify window.
 
@@ -32,8 +32,8 @@ GPS
 
 A long press on the GPS button will show the GPS menu.
 
-Digitizing
-==========
+Digitize
+========
 
 To start digitizing new features `Switch modes``_ to digitizing.
 
@@ -53,3 +53,8 @@ Attribute form
 The form which appears allows entering attribute values for the new feature. The checkboxes
 at the right of every attribute allow for remembering each attribu. The checkboxes
 at the right of every attribute allow for remembering each attribute individually.
+
+Delete Features
+===============
+
+To delete a feature, identify it first and tap the trash icon.
