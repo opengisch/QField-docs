@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-03 11:17+0200\n"
-"PO-Revision-Date: 2016-04-03 09:18+0000\n"
+"POT-Creation-Date: 2016-04-04 14:00+0200\n"
+"PO-Revision-Date: 2016-04-04 12:00+0000\n"
 "Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch-1/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 # d5c8eed74c4b4af9909216698237d356
 #: ../../en/user-guide/index.rst:19
-msgid "Identifying features"
+msgid "Identify features"
 msgstr ""
 
 # fd152879dd7047fb92f2e4a54a7ea73c
@@ -85,12 +85,12 @@ msgstr ""
 
 # dbdf52c8b9994e2a86340dd1d54ae25c
 #: ../../en/user-guide/index.rst:36
-msgid "Digitizing"
+msgid "Digitize"
 msgstr ""
 
 # 460a32b0bf61420f89c69479d67e8f96
 #: ../../en/user-guide/index.rst:38
-msgid "To start digitizing new features `Switch modes``_ to digitizing."
+msgid "To start digitizing new features `Switch modes`_ to digitizing."
 msgstr ""
 
 # e906874face24cc0932f35585959893a
@@ -123,4 +123,14 @@ msgid ""
 " The checkboxes at the right of every attribute allow for remembering each "
 "attribu. The checkboxes at the right of every attribute allow for "
 "remembering each attribute individually."
+msgstr ""
+
+# d5c8eed74c4b4af9909216698237d356
+#: ../../en/user-guide/index.rst:58
+msgid "Delete Features"
+msgstr ""
+
+# 5cb1195ca4024f468635c8aa257da512
+#: ../../en/user-guide/index.rst:60
+msgid "To delete a feature, identify it first and tap the trash icon."
 msgstr ""
