@@ -5,3 +5,5 @@ init
 *.mo
 i18n/pot
 *.orig
+opengisch_rsa
+opengisch_rsa.pub
