@@ -27,6 +27,8 @@ Table
   +-----------------+-----------------+---------------------------------------+
   | ECW             | :nay:`✘`        | License restricts usage.              |
   +-----------------+-----------------+---------------------------------------+
+  | MrSID           | :nay:`✘`        | License restricts usage.              |
+  +-----------------+-----------------+---------------------------------------+
 
 If you don't find your favorite data format on this table, please check if it
 works and adapt the list above to share your findings. If it does not work,
