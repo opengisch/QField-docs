@@ -20,6 +20,8 @@ Table
   +-----------------+-----------------+---------------------------------------+
   | Postgis         | :yay:`✔`        |                                       |
   +-----------------+-----------------+---------------------------------------+
+  | MBTiles         | :yay:`✔`        |                                       |
+  +-----------------+-----------------+---------------------------------------+
   | Shapefile       | :moreorless:`~` | May occasionally produce crashes      |
   +-----------------+-----------------+---------------------------------------+
   | Tiff            | :moreorless:`~` | JPEG compression not yet supported    |
@@ -34,3 +36,4 @@ If you don't find your favorite data format on this table, please check if it
 works and adapt the list above to share your findings. If it does not work,
 please `open an issue <https://github.com/opengisch/OSGeo4A/issues>`_. We will be
 happy to help you with the implementation.
+
