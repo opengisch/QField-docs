@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 14:00+0200\n"
-"PO-Revision-Date: 2016-04-04 12:00+0000\n"
-"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
+"POT-Creation-Date: 2016-05-30 10:34+0200\n"
+"PO-Revision-Date: 2016-04-12 05:44+0000\n"
+"Last-Translator: Daniel Gnerre <daniel.gnerre@vevey.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch-1/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,12 +31,12 @@ msgstr "Workflow basic"
 # a89f6021b65f4dc5ad2c74824f46f6db
 #: ../../en/user-guide/index.rst:10
 msgid "Switch modes"
-msgstr ""
+msgstr "Changement du mode"
 
 # 3241274722004196a8f768589ade2baa
 #: ../../en/user-guide/index.rst:12
 msgid "Modes are switched via :menuselection:`Menu button --> mode`"
-msgstr ""
+msgstr "Le mode peut être changé via :menuselection:`Menu button --> mode`"
 
 # 46eed0e346274f7ca05868a0922f9b5c
 #: ../../en/user-guide/index.rst:15
@@ -46,7 +46,7 @@ msgstr "Ouvrir un projet"
 # d5c8eed74c4b4af9909216698237d356
 #: ../../en/user-guide/index.rst:19
 msgid "Identify features"
-msgstr ""
+msgstr "Interroger des objets"
 
 # fd152879dd7047fb92f2e4a54a7ea73c
 #: ../../en/user-guide/index.rst:21
@@ -87,12 +87,12 @@ msgstr "Effectuer un \"long press\" sur le bouton GPS pour afficher le menu GPS.
 # dbdf52c8b9994e2a86340dd1d54ae25c
 #: ../../en/user-guide/index.rst:36
 msgid "Digitize"
-msgstr ""
+msgstr "Digitaliser"
 
 # 460a32b0bf61420f89c69479d67e8f96
 #: ../../en/user-guide/index.rst:38
 msgid "To start digitizing new features `Switch modes`_ to digitizing."
-msgstr ""
+msgstr "Pour commencer à digitaliser de nouveaux objets `Switch modes`_ to digitizing."
 
 # e906874face24cc0932f35585959893a
 #: ../../en/user-guide/index.rst:40
@@ -115,7 +115,7 @@ msgstr "Déplacer le réticule situé au centre de la carte sur la position dés
 # a7ebd7c6357e4d02bfe86754d6828d6d
 #: ../../en/user-guide/index.rst:51
 msgid "Attribute form"
-msgstr ""
+msgstr "Formulaire d'attributs"
 
 # 8886a261b14a411eb309c93e23f453e1
 #: ../../en/user-guide/index.rst:53
@@ -124,14 +124,14 @@ msgid ""
 " The checkboxes at the right of every attribute allow for remembering each "
 "attribu. The checkboxes at the right of every attribute allow for "
 "remembering each attribute individually."
-msgstr ""
+msgstr "Le formulaire qui apparaît permet d'entrer les valeurs d'attributs pour le nouveau objet. "
 
 # d5c8eed74c4b4af9909216698237d356
 #: ../../en/user-guide/index.rst:58
 msgid "Delete Features"
-msgstr ""
+msgstr "Supprimer des objets"
 
 # 5cb1195ca4024f468635c8aa257da512
 #: ../../en/user-guide/index.rst:60
 msgid "To delete a feature, identify it first and tap the trash icon."
-msgstr ""
+msgstr "Pour supprimer un objet, l'interroger puis appuyer sur l'icône poubelle."

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 14:06+0200\n"
-"PO-Revision-Date: 2016-04-04 12:06+0000\n"
+"POT-Creation-Date: 2016-05-30 10:34+0200\n"
+"PO-Revision-Date: 2016-05-30 08:34+0000\n"
 "Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch-1/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -62,12 +62,14 @@ msgstr ""
 # b1c9fcaecb4f459785b96affe8c72bd8
 # 296b632ec43346268a335ab7e16742a0
 # aac241f5f6ab46f0a45db7ded582b9cd
+# 2f79b66ea7ac45adbdfaf491255c1ae5
 # 47c86965c6724c71a29476e228d35377
 # d3d8bc6f66b64577b52cdc46095ec7b4
 # 2c3fa21383c2408fa61eb87130789c0c
 #: ../../en/project-management/dataformat.rst:17
 #: ../../en/project-management/dataformat.rst:19
 #: ../../en/project-management/dataformat.rst:21
+#: ../../en/project-management/dataformat.rst:23
 #: ../../en/project-management/index.rst:52
 #: ../../en/project-management/index.rst:55
 #: ../../en/project-management/index.rst:57
@@ -84,50 +86,64 @@ msgstr ""
 msgid "Postgis"
 msgstr ""
 
-# 5beccc61a3574085a4094552c8a63dab
+# 9f865319e2be46cf90854259a297dcc3
 #: ../../en/project-management/dataformat.rst:23
+msgid "MBTiles"
+msgstr ""
+
+# 5beccc61a3574085a4094552c8a63dab
+#: ../../en/project-management/dataformat.rst:25
 msgid "Shapefile"
 msgstr ""
 
 # 404e51c08535465b979634a193bf5e24
-# 292d5240023f4664bb2a6428fee07b95
-#: ../../en/project-management/dataformat.rst:23
+# 404e51c08535465b979634a193bf5e24
 #: ../../en/project-management/dataformat.rst:25
+#: ../../en/project-management/dataformat.rst:27
 msgid ":moreorless:`~`"
 msgstr ""
 
 # 95db2bc506944ec2b6909537aa260f19
-#: ../../en/project-management/dataformat.rst:23
+#: ../../en/project-management/dataformat.rst:25
 msgid "May occasionally produce crashes"
 msgstr ""
 
 # 5d71a08fbe1c46699861921e2f5cd121
-#: ../../en/project-management/dataformat.rst:25
+#: ../../en/project-management/dataformat.rst:27
 msgid "Tiff"
 msgstr ""
 
 # 3ba7562972894dcabd6a0ea562f7e994
-#: ../../en/project-management/dataformat.rst:25
+#: ../../en/project-management/dataformat.rst:27
 msgid "JPEG compression not yet supported Sponsoring welcome."
 msgstr ""
 
 # 654c676402074ae6934473a17e9a9ad0
-#: ../../en/project-management/dataformat.rst:28
+#: ../../en/project-management/dataformat.rst:30
 msgid "ECW"
 msgstr ""
 
 # 8668f950ac5b4f3e86165aac376f42c7
-#: ../../en/project-management/dataformat.rst:28
+# 8668f950ac5b4f3e86165aac376f42c7
+#: ../../en/project-management/dataformat.rst:30
+#: ../../en/project-management/dataformat.rst:32
 msgid ":nay:`✘`"
 msgstr ""
 
 # 4c93a2695d8e4e05939c29646fb8384d
-#: ../../en/project-management/dataformat.rst:28
+# 4c93a2695d8e4e05939c29646fb8384d
+#: ../../en/project-management/dataformat.rst:30
+#: ../../en/project-management/dataformat.rst:32
 msgid "License restricts usage."
 msgstr ""
 
+# 5793c12c47e94f019ad1869a976e9b5d
+#: ../../en/project-management/dataformat.rst:32
+msgid "MrSID"
+msgstr ""
+
 # 6f272d6597664278b630d8d5c15d1f1a
-#: ../../en/project-management/dataformat.rst:31
+#: ../../en/project-management/dataformat.rst:35
 msgid ""
 "If you don't find your favorite data format on this table, please check if "
 "it works and adapt the list above to share your findings. If it does not "

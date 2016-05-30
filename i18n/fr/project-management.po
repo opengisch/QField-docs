@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 14:06+0200\n"
-"PO-Revision-Date: 2016-04-04 12:06+0000\n"
+"POT-Creation-Date: 2016-05-30 10:34+0200\n"
+"PO-Revision-Date: 2016-05-30 08:34+0000\n"
 "Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch-1/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -21,119 +21,135 @@ msgstr ""
 # e169bb8df2c34bd8a07ec6cf8b094c42
 #: ../../en/project-management/dataformat.rst:2
 msgid "Supported data formats"
-msgstr ""
+msgstr "Formats de données supportés"
 
 # f578dbc7eac84925b188168ee3f7e6e3
 #: ../../en/project-management/dataformat.rst:4
 msgid ""
 "QField supports a wide variety of formats via QGIS data providers and GDAL. "
 "This page offers a non-exhaustive list of supported data formats."
-msgstr ""
+msgstr "QField supporte une grande quantité de formats via le provider QGIS et GDAL. Cette page offre une liste non exhaustive des formats supportés. "
 
 # 3d0422061724456c8ae7452e9cf9f09c
 #: ../../en/project-management/dataformat.rst:8
 msgid "Table"
-msgstr ""
+msgstr "Table"
 
 # 38831460f9154631b1bd8030164c2219
 #: ../../en/project-management/dataformat.rst:15
 msgid "Data Format"
-msgstr ""
+msgstr "Format de donnée"
 
 # 4c85eb55194e4d8db42db265fe696f1b
 # 43231bda577a457fb028ee03672bbb3c
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:50
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 # aadc51c6c6a0472fb62933219ba42ffd
 # 4e4ee600b10e434d9e80db33f770511f
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:50
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 # 9b1105281b954dfdad0364cbf226016e
 #: ../../en/project-management/dataformat.rst:17
 msgid "Spatialite"
-msgstr ""
+msgstr "Spatialite"
 
 # b1c9fcaecb4f459785b96affe8c72bd8
 # 296b632ec43346268a335ab7e16742a0
 # aac241f5f6ab46f0a45db7ded582b9cd
+# 2f79b66ea7ac45adbdfaf491255c1ae5
 # 47c86965c6724c71a29476e228d35377
 # d3d8bc6f66b64577b52cdc46095ec7b4
 # 2c3fa21383c2408fa61eb87130789c0c
 #: ../../en/project-management/dataformat.rst:17
 #: ../../en/project-management/dataformat.rst:19
 #: ../../en/project-management/dataformat.rst:21
+#: ../../en/project-management/dataformat.rst:23
 #: ../../en/project-management/index.rst:52
 #: ../../en/project-management/index.rst:55
 #: ../../en/project-management/index.rst:57
 msgid ":yay:`✔`"
-msgstr ""
+msgstr ":yay:`✔`"
 
 # 63bf53c0cc4c4a58bb1e3960d92a340d
 #: ../../en/project-management/dataformat.rst:19
 msgid "WMS"
-msgstr ""
+msgstr "WMS"
 
 # 80612aa69bb84e2fa0836df793167d20
 #: ../../en/project-management/dataformat.rst:21
 msgid "Postgis"
+msgstr "Postgis"
+
+# 9f865319e2be46cf90854259a297dcc3
+#: ../../en/project-management/dataformat.rst:23
+msgid "MBTiles"
 msgstr ""
 
 # 5beccc61a3574085a4094552c8a63dab
-#: ../../en/project-management/dataformat.rst:23
+#: ../../en/project-management/dataformat.rst:25
 msgid "Shapefile"
-msgstr ""
+msgstr "Shapefile"
 
 # 404e51c08535465b979634a193bf5e24
-# 292d5240023f4664bb2a6428fee07b95
-#: ../../en/project-management/dataformat.rst:23
+# 404e51c08535465b979634a193bf5e24
 #: ../../en/project-management/dataformat.rst:25
+#: ../../en/project-management/dataformat.rst:27
 msgid ":moreorless:`~`"
-msgstr ""
+msgstr ":moreorless:`~`"
 
 # 95db2bc506944ec2b6909537aa260f19
-#: ../../en/project-management/dataformat.rst:23
+#: ../../en/project-management/dataformat.rst:25
 msgid "May occasionally produce crashes"
-msgstr ""
+msgstr "Peut produire occasionnellement un crash"
 
 # 5d71a08fbe1c46699861921e2f5cd121
-#: ../../en/project-management/dataformat.rst:25
+#: ../../en/project-management/dataformat.rst:27
 msgid "Tiff"
-msgstr ""
+msgstr "Tiff"
 
 # 3ba7562972894dcabd6a0ea562f7e994
-#: ../../en/project-management/dataformat.rst:25
+#: ../../en/project-management/dataformat.rst:27
 msgid "JPEG compression not yet supported Sponsoring welcome."
-msgstr ""
+msgstr "La compression JPEG n'est actuellement pas supportée, sponsoring bienvenu."
 
 # 654c676402074ae6934473a17e9a9ad0
-#: ../../en/project-management/dataformat.rst:28
+#: ../../en/project-management/dataformat.rst:30
 msgid "ECW"
-msgstr ""
+msgstr "ECW"
 
 # 8668f950ac5b4f3e86165aac376f42c7
-#: ../../en/project-management/dataformat.rst:28
+# 8668f950ac5b4f3e86165aac376f42c7
+#: ../../en/project-management/dataformat.rst:30
+#: ../../en/project-management/dataformat.rst:32
 msgid ":nay:`✘`"
-msgstr ""
+msgstr ":nay:`✘`"
 
 # 4c93a2695d8e4e05939c29646fb8384d
-#: ../../en/project-management/dataformat.rst:28
+# 4c93a2695d8e4e05939c29646fb8384d
+#: ../../en/project-management/dataformat.rst:30
+#: ../../en/project-management/dataformat.rst:32
 msgid "License restricts usage."
+msgstr "Restrictions d'utilisation liées à la licence. "
+
+# 5793c12c47e94f019ad1869a976e9b5d
+#: ../../en/project-management/dataformat.rst:32
+msgid "MrSID"
 msgstr ""
 
 # 6f272d6597664278b630d8d5c15d1f1a
-#: ../../en/project-management/dataformat.rst:31
+#: ../../en/project-management/dataformat.rst:35
 msgid ""
 "If you don't find your favorite data format on this table, please check if "
 "it works and adapt the list above to share your findings. If it does not "
 "work, please `open an issue <https://github.com/opengisch/OSGeo4A/issues>`_."
 " We will be happy to help you with the implementation."
-msgstr ""
+msgstr "Si vous ne trouvez pas votre format favori dans cette table, merci de tester s'il fonctionne et d'adapter la liste pour partager votre expérience. Si cela ne fonctionne pas, merci d'`ouvir une issue <https://github.com/opengisch/OSGeo4A/issues>`_. Nous serons heureux de vous aider dans cette implémentation. "
 
 # de0336aee621472dad14bb8237298931
 #: ../../en/project-management/index.rst:2
@@ -192,19 +208,19 @@ msgstr "Bien que de nombreux formats soient supportés, certains problèmes de s
 # 86b83d0227274858b3d5a8a552786e88
 #: ../../en/project-management/index.rst:22
 msgid "Vector Layer Settings"
-msgstr ""
+msgstr "Configuration des couches vecteur"
 
 # be35643fe163494298f55e961e006e2c
 #: ../../en/project-management/index.rst:24
 msgid ""
 "Most of the settings which QGIS offers are directly supported by QField "
 "without any extra effort."
-msgstr ""
+msgstr "La majeur partie des configuration offertes par QGIS sont directement supportées par QField sans développement supplémentaire. "
 
 # f2d24305610a454dac436d976e3a388f
 #: ../../en/project-management/index.rst:27
 msgid "Style"
-msgstr ""
+msgstr "Style"
 
 # 83383b7d5ac04ce5b94f9008b12e9868
 #: ../../en/project-management/index.rst:29
@@ -212,87 +228,87 @@ msgid ""
 "All style settings from QGIS are directly supported by QField. This includes"
 " all renderer types like graduated, categorized, rule based, 2.5D as well as"
 " data defined symbology."
-msgstr ""
+msgstr "Toutes les configurations de style de QGIS sont directement supportées dans QField. Cela inclut tous les types de rendu comme les dégradés, la thématisation, les règles, le 2.5D ainsi que la symbologie définie par les données. "
 
 # 8d27f99cb79649709dfa54505d2ef375
 #: ../../en/project-management/index.rst:32
 msgid "Forms and Fields"
-msgstr ""
+msgstr "Formulaires et attributs"
 
 # 57001479ac9d4bda92843e442bcdae05
 #: ../../en/project-management/index.rst:34
 msgid "QField creates forms similar to, but not equal to QGIS."
-msgstr ""
+msgstr "Les formulaires QField sont similaires à ceux de QGIS, mais pas identiques. "
 
 # b56219eec2ea4a6180f231b2949d2c6b
 #: ../../en/project-management/index.rst:37
 msgid "Suppress Feature Form"
-msgstr ""
+msgstr "Formulaire de suppression d'objet"
 
 # 9e66f90ec4e14ecb8705efc86190aff6
 #: ../../en/project-management/index.rst:37
 msgid ""
 "The setting suppress feature form is directly applied to the QField form."
-msgstr ""
+msgstr "La configuration du formulaire de suppression d'objet est directement appliquée au formulaire QField. "
 
 # 7631c80f6fdd48ae869ae970b9dd8fe4
 #: ../../en/project-management/index.rst:40
 msgid "Remember last values"
-msgstr ""
+msgstr "Se souvenir des dernières valeurs"
 
 # 9117897aad994cef8b728d0689f03316
 #: ../../en/project-management/index.rst:40
 msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
-msgstr ""
+msgstr "QField offre un contrôle fin des dernières valeurs utilisées et ignore la configuration de QGIS."
 
 # 18d8b93b94994e0d945409f9f14c180c
 #: ../../en/project-management/index.rst:58
 msgid "Field settings"
-msgstr ""
+msgstr "Configuration des attributs"
 
 # 89fd45e6162244aaa9664aafb9a56fd2
 #: ../../en/project-management/index.rst:43
 msgid ""
 "The field settings from QGIS are supported on a beste effort basis and is "
 "constantly being improved."
-msgstr ""
+msgstr "La configuration des attributs de QGIS est reprise au mieux et améliorée constamment.  "
 
 # a79ea98bf09f432288192cd4bf2aef24
 #: ../../en/project-management/index.rst:50
 msgid "Field type"
-msgstr ""
+msgstr "Type d'attribut"
 
 # 30b4e1b440ac4b539eeaa25767cad4cf
 #: ../../en/project-management/index.rst:52
 msgid "Text Edit"
-msgstr ""
+msgstr "Edition de texte"
 
 # 2ffd84127448498a8af6fcbe3d486b81
 #: ../../en/project-management/index.rst:52
 msgid "Multiline is always allowed"
-msgstr ""
+msgstr "Le multiligne est toujours possible"
 
 # d87b8906048a4af0abe2249f83fe9fb1
 #: ../../en/project-management/index.rst:53
 msgid "HTML is not supported"
-msgstr ""
+msgstr "HTML n'est pas supporté"
 
 # e2c87d7da4404a29ba605053ae50ed89
 #: ../../en/project-management/index.rst:55
 msgid "Check Box"
-msgstr ""
+msgstr "Case à cocher"
 
 # c18746814a2f4f84a6504f646971fa52
 #: ../../en/project-management/index.rst:57
 msgid "Value Map"
-msgstr ""
+msgstr "Value Map"
 
 # 9dda6dacb5df4238a763c0f6fc3504ad
 #: ../../en/project-management/index.rst:61
 msgid "Custom SVG symbols and settings"
-msgstr ""
+msgstr "Symboles SVG personnalisés et configuration"
 
 # 925633001e5a46509fb1bc2be00c4ea0
 #: ../../en/project-management/index.rst:63
@@ -300,4 +316,4 @@ msgid ""
 "In the about dialog you can see where the shared folders are in your device."
 " If you need to use custom symbols you need to put them there using a file "
 "manager."
-msgstr ""
+msgstr "Dans le boîte de dialogue \"A propos\", le chemin d'accès aux fichiers partagés est inscrit. En cas de besoin, les symboles personnalisés doivent être copiés à cet endroit. "
