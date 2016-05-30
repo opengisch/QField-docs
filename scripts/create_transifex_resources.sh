@@ -12,7 +12,7 @@
 #
 
 #LOCALES=`ls i18n`
-LOCALES='de fr it ro es pl hu pt'
+LOCALES='de fr it ro es pl hu pt gl'
 
 # Exit on error
 set -e
