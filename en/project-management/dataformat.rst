@@ -18,11 +18,11 @@ Table
   +-----------------+-----------------+---------------------------------------+
   | WMS             | :yay:`✔`        |                                       |
   +-----------------+-----------------+---------------------------------------+
-  | Postgis         | :yay:`✔`        |                                       |
+  | Postgis         | :yay:`✔`        | Ssl support not yet implemented.      |
   +-----------------+-----------------+---------------------------------------+
   | MBTiles         | :yay:`✔`        |                                       |
   +-----------------+-----------------+---------------------------------------+
-  | Shapefile       | :moreorless:`~` | May occasionally produce crashes      |
+  | Shapefile       | :moreorless:`~` | May occasionally produce crashes.     |
   +-----------------+-----------------+---------------------------------------+
   | Tiff            | :moreorless:`~` | JPEG compression not yet supported    |
   |                 |                 | Sponsoring welcome.                   |
