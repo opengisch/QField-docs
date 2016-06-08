@@ -4,12 +4,13 @@
 # 
 # Translators:
 # xanvieiro <gallaecia6@gmail.com>, 2016
+# xanvieiro <gallaecia6@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-30 10:41+0200\n"
-"PO-Revision-Date: 2016-05-28 15:07+0000\n"
+"POT-Creation-Date: 2016-06-09 00:23+0200\n"
+"PO-Revision-Date: 2016-06-08 21:13+0000\n"
 "Last-Translator: xanvieiro <gallaecia6@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch-1/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +39,7 @@ msgstr "Non complicalo"
 msgid ""
 "The requirements on the field are not the same as on a desktop. The screen "
 "is smaller, the input devices are different and the tasks are different."
-msgstr "Os requerimentos no campo non son os mesmos que nun escritorio. A pantalla é máis pequena, os dispositivos de introdución son diferentes e as tarefas tamén son diferentes."
+msgstr "Os requisitos no campo non son os mesmos que nun escritorio. A pantalla é máis pequena, os dispositivos de introdución son diferentes e as tarefas tamén son diferentes."
 
 # 3ae87f806cd949338045458168ac12da
 #: ../../en/concepts/index.rst:12
@@ -46,7 +47,7 @@ msgid ""
 "QField aims to help the user to perform the tasks he needs to do without "
 "cluttering the user interface. This means, that only tasks which need to be "
 "done on the field are availble from the interface. Everything else is not."
-msgstr ""
+msgstr "QField ten o obxectivo de axudar ó usuario a realizar as tarefas que necesite facer sen saturar a interface de usuario. Isto significa que só estean dispoñibles na interface as ferramentas que se precisen no traballo de campo. Calquera cousa a maiores non estará."
 
 # 01c8fefc550c410cbc43ff8b85881435
 #: ../../en/concepts/index.rst:16
@@ -67,7 +68,7 @@ msgid ""
 "QGIS libraries. The rendering engine is exactly the same as in QGIS for "
 "desktop and your project will therefore look exactly the same on your mobile"
 " device as it does on your computer."
-msgstr "QField baséase en QGIS. Non é unha reconstrución de QGIS porque realmente *fai uso* das librerías de QGIS. O motor de renderización é exactamente o mesmo que no QGIS de escritorio e polo tanto o seu proxecto parecerá o mesmo no dispositvo móbil tal e como o fai no seu ordenador."
+msgstr "QField baséase en QGIS. Non é unha reconstrución de QGIS porque realmente *fai uso* das librerías de QGIS. O motor de renderización é exactamente o mesmo que no QGIS de escritorio e polo tanto o seu proxecto parecerá o mesmo no dispositivo móbil tal e como o fai no seu ordenador."
 
 # 0e414331efdb491d9ee9d6a15e210dcb
 #: ../../en/concepts/index.rst:27
@@ -76,7 +77,7 @@ msgid ""
 "project, it should not be re-invented. QField therefore uses the same edit "
 "widgets as QGIS desktop does. If a project is already configured for the "
 "desktop, it should just run on mobile as well."
-msgstr "Se algo xa está dispoñible como unha opción de configuración nun proxecto de QGIS, non debe entón reinventarse. QField polo tanto usa os mesmos widgets que usa o QGIS de escritorio. Se un proxecto xa está configurado para o escritorio, debe funcionar tamén no disposivo móbil."
+msgstr "Se algo xa está dispoñible como unha opción de configuración nun proxecto de QGIS, non debe entón reinventarse. QField polo tanto usa os mesmos widgets que usa o QGIS de escritorio. Se un proxecto xa está configurado para o escritorio, debe funcionar tamén no dispositivo móbil."
 
 # 34f3a712b3644f05afb045d7b2c74394
 #: ../../en/concepts/index.rst:32

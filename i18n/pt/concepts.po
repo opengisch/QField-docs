@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
-# João Filipe Rodrigues Gaspar <joao.f.r.gaspar@gmail.com>, 2016
+# João Gaspar <joao.f.r.gaspar@gmail.com>, 2016
+# Maria Manuela Silva, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-09 12:28+0100\n"
-"PO-Revision-Date: 2016-03-08 16:37+0000\n"
-"Last-Translator: João Filipe Rodrigues Gaspar <joao.f.r.gaspar@gmail.com>\n"
+"POT-Creation-Date: 2016-06-09 00:23+0200\n"
+"PO-Revision-Date: 2016-05-30 09:42+0000\n"
+"Last-Translator: Maria Manuela Silva\n"
 "Language-Team: Portuguese (http://www.transifex.com/opengisch-1/qfield-documentation/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +32,7 @@ msgstr ""
 # b7abcda3c0dc46ca9bdc13c305f559b2
 #: ../../en/concepts/index.rst:7
 msgid "Keep it simple"
-msgstr ""
+msgstr "Manter simples"
 
 # ecbd0edaa07c4e4691a0af066b849a74
 #: ../../en/concepts/index.rst:9
@@ -58,7 +59,7 @@ msgstr ""
 # 9dba0d0819a14925b3278a650e1e3408
 #: ../../en/concepts/index.rst:20
 msgid "Be compatible with QGIS"
-msgstr ""
+msgstr "Ser compatível com o QGIS"
 
 # 6e6b81d6e5314ae38d256b23f5df6b18
 #: ../../en/concepts/index.rst:22
@@ -88,7 +89,7 @@ msgstr ""
 # e4a5bc86cb6841348c688a10355406f4
 #: ../../en/concepts/index.rst:36
 msgid "Mode based"
-msgstr ""
+msgstr "Baseado em modo"
 
 # 204a9a740b6a481eb43061231054d5f9
 #: ../../en/concepts/index.rst:38

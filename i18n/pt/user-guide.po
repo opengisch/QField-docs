@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
+# Maria Manuela Silva, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 14:00+0200\n"
-"PO-Revision-Date: 2016-04-04 12:00+0000\n"
-"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
+"POT-Creation-Date: 2016-06-09 00:23+0200\n"
+"PO-Revision-Date: 2016-05-30 09:40+0000\n"
+"Last-Translator: Maria Manuela Silva\n"
 "Language-Team: Portuguese (http://www.transifex.com/opengisch-1/qfield-documentation/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 # 614fcbfffd7848139c77b9526668eec0
 #: ../../en/user-guide/index.rst:3
 msgid "QField User Guide"
-msgstr ""
+msgstr "Guia do Utilizador do QField"
 
 # 99edb972461c41339f464081e23ede09
 #: ../../en/user-guide/index.rst:7
@@ -30,7 +31,7 @@ msgstr ""
 # a89f6021b65f4dc5ad2c74824f46f6db
 #: ../../en/user-guide/index.rst:10
 msgid "Switch modes"
-msgstr ""
+msgstr "Modos de mudança"
 
 # 3241274722004196a8f768589ade2baa
 #: ../../en/user-guide/index.rst:12
@@ -40,12 +41,12 @@ msgstr ""
 # 46eed0e346274f7ca05868a0922f9b5c
 #: ../../en/user-guide/index.rst:15
 msgid "Opening a project"
-msgstr ""
+msgstr "Abrir um Projeto"
 
 # d5c8eed74c4b4af9909216698237d356
 #: ../../en/user-guide/index.rst:19
 msgid "Identify features"
-msgstr ""
+msgstr "Funcionalidades de identificação"
 
 # fd152879dd7047fb92f2e4a54a7ea73c
 #: ../../en/user-guide/index.rst:21
@@ -76,7 +77,7 @@ msgstr ""
 # 3cd6509109b54bfc9c3c96b9b3033136
 #: ../../en/user-guide/index.rst:31
 msgid "GPS"
-msgstr ""
+msgstr "GPS"
 
 # 0d596fa46a72402c929c43d1ef2620d7
 #: ../../en/user-guide/index.rst:33
@@ -86,7 +87,7 @@ msgstr ""
 # dbdf52c8b9994e2a86340dd1d54ae25c
 #: ../../en/user-guide/index.rst:36
 msgid "Digitize"
-msgstr ""
+msgstr "Digitalizar"
 
 # 460a32b0bf61420f89c69479d67e8f96
 #: ../../en/user-guide/index.rst:38
@@ -128,9 +129,9 @@ msgstr ""
 # d5c8eed74c4b4af9909216698237d356
 #: ../../en/user-guide/index.rst:58
 msgid "Delete Features"
-msgstr ""
+msgstr "Eliminar Funcionalidades"
 
 # 5cb1195ca4024f468635c8aa257da512
 #: ../../en/user-guide/index.rst:60
 msgid "To delete a feature, identify it first and tap the trash icon."
-msgstr ""
+msgstr "Para eliminar uma função, identifique-a primeiro e toque no ícone do lixo."

@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
+# Maria Manuela Silva, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-30 10:34+0200\n"
-"PO-Revision-Date: 2016-05-30 08:34+0000\n"
-"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
+"POT-Creation-Date: 2016-06-09 00:23+0200\n"
+"PO-Revision-Date: 2016-05-30 09:38+0000\n"
+"Last-Translator: Maria Manuela Silva\n"
 "Language-Team: Portuguese (http://www.transifex.com/opengisch-1/qfield-documentation/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 # e169bb8df2c34bd8a07ec6cf8b094c42
 #: ../../en/project-management/dataformat.rst:2
 msgid "Supported data formats"
-msgstr ""
+msgstr "Formatos de dados suportados"
 
 # f578dbc7eac84925b188168ee3f7e6e3
 #: ../../en/project-management/dataformat.rst:4
@@ -32,26 +33,26 @@ msgstr ""
 # 3d0422061724456c8ae7452e9cf9f09c
 #: ../../en/project-management/dataformat.rst:8
 msgid "Table"
-msgstr ""
+msgstr "Tabela"
 
 # 38831460f9154631b1bd8030164c2219
 #: ../../en/project-management/dataformat.rst:15
 msgid "Data Format"
-msgstr ""
+msgstr "Formato de Data"
 
 # 4c85eb55194e4d8db42db265fe696f1b
 # 43231bda577a457fb028ee03672bbb3c
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:50
 msgid "Support"
-msgstr ""
+msgstr "Suporte"
 
 # aadc51c6c6a0472fb62933219ba42ffd
 # 4e4ee600b10e434d9e80db33f770511f
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:50
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 # 9b1105281b954dfdad0364cbf226016e
 #: ../../en/project-management/dataformat.rst:17
@@ -78,12 +79,12 @@ msgstr ""
 # 63bf53c0cc4c4a58bb1e3960d92a340d
 #: ../../en/project-management/dataformat.rst:19
 msgid "WMS"
-msgstr ""
+msgstr "WMS"
 
 # 80612aa69bb84e2fa0836df793167d20
 #: ../../en/project-management/dataformat.rst:21
 msgid "Postgis"
-msgstr ""
+msgstr "Postgis"
 
 # 9f865319e2be46cf90854259a297dcc3
 #: ../../en/project-management/dataformat.rst:23
@@ -110,7 +111,7 @@ msgstr ""
 # 5d71a08fbe1c46699861921e2f5cd121
 #: ../../en/project-management/dataformat.rst:27
 msgid "Tiff"
-msgstr ""
+msgstr "Tiff"
 
 # 3ba7562972894dcabd6a0ea562f7e994
 #: ../../en/project-management/dataformat.rst:27
@@ -120,7 +121,7 @@ msgstr ""
 # 654c676402074ae6934473a17e9a9ad0
 #: ../../en/project-management/dataformat.rst:30
 msgid "ECW"
-msgstr ""
+msgstr "ECW"
 
 # 8668f950ac5b4f3e86165aac376f42c7
 # 8668f950ac5b4f3e86165aac376f42c7
@@ -153,7 +154,7 @@ msgstr ""
 # de0336aee621472dad14bb8237298931
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
-msgstr ""
+msgstr "Gestão do Projeto do QField"
 
 # b9ce19b5d51c44a19d436de4664e93ff
 #: ../../en/project-management/index.rst:4
@@ -194,7 +195,7 @@ msgstr ""
 # 82f72ca98ec74bf88ccbe5a0852a4529
 #: ../../en/project-management/index.rst:15
 msgid "Data sources"
-msgstr ""
+msgstr "Fontes de Dados"
 
 # 17b176e06a944f9baf52f1c1363e3d89
 #: ../../en/project-management/index.rst:17
@@ -207,7 +208,7 @@ msgstr ""
 # 86b83d0227274858b3d5a8a552786e88
 #: ../../en/project-management/index.rst:22
 msgid "Vector Layer Settings"
-msgstr ""
+msgstr "Definições da Camada de Vetor"
 
 # be35643fe163494298f55e961e006e2c
 #: ../../en/project-management/index.rst:24
@@ -219,7 +220,7 @@ msgstr ""
 # f2d24305610a454dac436d976e3a388f
 #: ../../en/project-management/index.rst:27
 msgid "Style"
-msgstr ""
+msgstr "Estilo"
 
 # 83383b7d5ac04ce5b94f9008b12e9868
 #: ../../en/project-management/index.rst:29
@@ -265,7 +266,7 @@ msgstr ""
 # 18d8b93b94994e0d945409f9f14c180c
 #: ../../en/project-management/index.rst:58
 msgid "Field settings"
-msgstr ""
+msgstr "Definições de Campo"
 
 # 89fd45e6162244aaa9664aafb9a56fd2
 #: ../../en/project-management/index.rst:43
@@ -277,27 +278,27 @@ msgstr ""
 # a79ea98bf09f432288192cd4bf2aef24
 #: ../../en/project-management/index.rst:50
 msgid "Field type"
-msgstr ""
+msgstr "Tipo de Campo"
 
 # 30b4e1b440ac4b539eeaa25767cad4cf
 #: ../../en/project-management/index.rst:52
 msgid "Text Edit"
-msgstr ""
+msgstr "Editar Texto"
 
 # 2ffd84127448498a8af6fcbe3d486b81
 #: ../../en/project-management/index.rst:52
 msgid "Multiline is always allowed"
-msgstr ""
+msgstr "É permitido sempre múlyplas linhas"
 
 # d87b8906048a4af0abe2249f83fe9fb1
 #: ../../en/project-management/index.rst:53
 msgid "HTML is not supported"
-msgstr ""
+msgstr "HTML não é suportado"
 
 # e2c87d7da4404a29ba605053ae50ed89
 #: ../../en/project-management/index.rst:55
 msgid "Check Box"
-msgstr ""
+msgstr "Caixa de Seleção"
 
 # c18746814a2f4f84a6504f646971fa52
 #: ../../en/project-management/index.rst:57
