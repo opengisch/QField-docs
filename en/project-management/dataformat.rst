@@ -45,7 +45,7 @@ Raster data
 Raster data can become quite big quickly, when working with uncompressed tiff files it's often several Gb of data. Especially on mobile devices, this is inefficient.
 
 Use GeoPackage
---------------
+..............
 
 We recommend to us the geopackage format to deal with raster data. The following commands will convert a file called :code:`raster.tif` to a file :code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 LV03) to your desired CRS.
 
