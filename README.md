@@ -57,8 +57,6 @@ request](https://help.github.com/articles/using-pull-requests/).
 
 ### Translation process
 
-**NOTE: Translation is not yet activated**
-
 *Note: You will need to have a [transifex account](https://transifex.com/) for this.*
 
 Navigate to our [transifex
