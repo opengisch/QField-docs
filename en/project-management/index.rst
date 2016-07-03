@@ -46,19 +46,27 @@ Field settings
   .. role:: nay
   .. role:: moreorless
 
-  +--------------+----------+-------------------------------------------------+
-  | Field type   | Support  | Notes                                           |
-  +==============+==========+=================================================+
-  | Text Edit    | :yay:`✔` | - Multiline is always allowed                   |
-  |              |          | - HTML is not supported                         |
-  +--------------+----------+-------------------------------------------------+
-  | Check Box    | :yay:`✔` |                                                 |
-  +--------------+----------+-------------------------------------------------+
-  | Value Map    | :yay:`✔` |                                                 |
-  +--------------+----------+-------------------------------------------------+
+  +-------------------+----------+-------------------------------------------------+
+  | Field type        | Support  | Notes                                           |
+  +===================+==========+=================================================+
+  | Text Edit         | :yay:`✔` | - Multiline is always allowed                   |
+  |                   |          | - HTML is not supported                         |
+  +-------------------+----------+-------------------------------------------------+
+  | Check Box         | :yay:`✔` |                                                 |
+  +-------------------+----------+-------------------------------------------------+
+  | Value Map         | :yay:`✔` |                                                 |
+  +-------------------+----------+-------------------------------------------------+
+  | External Resource | :nay:`✔` |  Will be combined with shooting photos.         |
+  |                   |          |  Contact us for development.                    |
+  +-------------------+----------+-------------------------------------------------+
+  | Date Time         | :nay:`✔` |  Contact us for development.                    |
+  +-------------------+----------+-------------------------------------------------+
+  | Others            | :nay:`✔` |  Contact us for development.                    |
+  +--------------+----------+------------------------------------------------------+
 
 Custom SVG symbols and settings
 ===============================
 
-In the about dialog you can see where the shared folders are in your device.
-If you need to use custom symbols you need to put them there using a file manager.
+In the about dialog you can see where the shared folders are on your device.
+
+If you want to use custom symbols you need to put them there using a file manager.
