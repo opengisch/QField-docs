@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
+# Matthias Kuhn <matthias@opengis.ch>, 2016
 # OPENGIS.ch <info@opengis.ch>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-03 14:26+0200\n"
-"PO-Revision-Date: 2016-07-03 12:27+0000\n"
+"POT-Creation-Date: 2016-07-03 15:52+0200\n"
+"PO-Revision-Date: 2016-07-03 13:51+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -20,35 +21,35 @@ msgstr ""
 
 #: ../../en/project-management/dataformat.rst:2
 msgid "Supported data formats"
-msgstr ""
+msgstr "Unterstützte Datenformate"
 
 #: ../../en/project-management/dataformat.rst:4
 msgid ""
 "QField supports a wide variety of formats via QGIS data providers and GDAL. "
 "This page offers a non-exhaustive list of supported data formats."
-msgstr ""
+msgstr "QField unterstützt eine breite Palette an Formaten via QGIS Datenprovider und GDAL. Diese Seite enthält eine nicht abschliessende Liste von unterstützten Datenformaten."
 
 #: ../../en/project-management/dataformat.rst:8
 msgid "Table"
-msgstr ""
+msgstr "Tabelle"
 
 #: ../../en/project-management/dataformat.rst:15
 msgid "Data Format"
-msgstr ""
+msgstr "Datenformat"
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:50
 msgid "Support"
-msgstr ""
+msgstr "Unterstützung"
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:50
 msgid "Notes"
-msgstr ""
+msgstr "Notiz"
 
 #: ../../en/project-management/dataformat.rst:17
 msgid "Spatialite"
-msgstr ""
+msgstr "Spatialite"
 
 #: ../../en/project-management/dataformat.rst:17
 #: ../../en/project-management/dataformat.rst:19
@@ -60,61 +61,61 @@ msgstr ""
 #: ../../en/project-management/index.rst:55
 #: ../../en/project-management/index.rst:57
 msgid ":yay:`✔`"
-msgstr ""
+msgstr ":yay:`✔`"
 
 #: ../../en/project-management/dataformat.rst:19
 msgid "Geopackage"
-msgstr ""
+msgstr "Geopackage"
 
 #: ../../en/project-management/dataformat.rst:21
 msgid "WMS"
-msgstr ""
+msgstr "WMS"
 
 #: ../../en/project-management/dataformat.rst:23
 msgid "Postgis"
-msgstr ""
+msgstr "Postgis"
 
 #: ../../en/project-management/dataformat.rst:23
 msgid "Ssl support not yet implemented."
-msgstr ""
+msgstr "Ssl support not yet implemented."
 
 #: ../../en/project-management/dataformat.rst:25
 msgid "MBTiles"
-msgstr ""
+msgstr "MBTiles"
 
 #: ../../en/project-management/dataformat.rst:27
 msgid "Shapefile"
-msgstr ""
+msgstr "Shapefile"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "Tiff"
-msgstr ""
+msgstr "Tiff"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid ":moreorless:`~`"
-msgstr ""
+msgstr ":moreorless:`~`"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "JPEG compression not yet supported Sponsoring welcome."
-msgstr ""
+msgstr "JPEG Kompression noch nicht unterstützt. Sponsoring willkommen!"
 
 #: ../../en/project-management/dataformat.rst:32
 msgid "ECW"
-msgstr ""
+msgstr "ECW"
 
 #: ../../en/project-management/dataformat.rst:32
 #: ../../en/project-management/dataformat.rst:34
 msgid ":nay:`✘`"
-msgstr ""
+msgstr ":nay:`✘`"
 
 #: ../../en/project-management/dataformat.rst:32
 #: ../../en/project-management/dataformat.rst:34
 msgid "License restricts usage."
-msgstr ""
+msgstr "Lizenz erschwert Nutzung"
 
 #: ../../en/project-management/dataformat.rst:34
 msgid "MrSID"
-msgstr ""
+msgstr "MrSID"
 
 #: ../../en/project-management/dataformat.rst:37
 msgid ""
@@ -124,22 +125,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr ""
+msgstr "Falls dein bevorzugtes Datenformat noch nicht in dieser Tabelle gelistet ist, bitte überprüfe ob es funktioniert und `verbessere die obenstehende Tabelle <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_ um deine Erkenntnisse zu teilen. Falls es noch nicht funktioniert, bitte `öffne einen Issue <https://github.com/opengisch/OSGeo4A/issues>`_. Wir sind glücklich, bei der Umsetzung zu helfen."
 
 #: ../../en/project-management/dataformat.rst:43
 msgid "Raster data"
-msgstr ""
+msgstr "Raster Daten"
 
 #: ../../en/project-management/dataformat.rst:45
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr ""
+msgstr "Raster Daten können schnell ziemlich gross werden. Unkomprimierte tiff Dateien sind bald mehrere Gb gross. Dies ist auf mobilen Geräten um so mehr unpraktikabel."
 
 #: ../../en/project-management/dataformat.rst:48
 msgid "Use GeoPackage"
-msgstr ""
+msgstr "Benutze GeoPackage"
 
 #: ../../en/project-management/dataformat.rst:50
 msgid ""
@@ -147,7 +148,7 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr ""
+msgstr "Wir empfehlen, das GeoPackage Format zu benutzen um mit Raster Daten zu arbeiten. Die folgenden Kommandos konvertieren eine Datei mit dem Namen :code:`raster.tif` in eine Datei :code:`raster.gpkg` mit Pyramiden. Vergiss nicht, EPST:21781 (CH1903 LV03) in das den Daten entsprechende Koordinatenreferenzsystem zu ändern."
 
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
@@ -158,31 +159,31 @@ msgid ""
 "You will need a portable version of your QGIS project file (.qgs). Portable "
 "means that all paths are relative and datasets are reachable from the "
 "device."
-msgstr ""
+msgstr "Es wird eine portable Version der QGIS Projektdatei (.qgs) benötigt. Portabel heisst, dass alle Pfade relativ sind und Datensätze für das Gerät erreichbar sind."
 
 #: ../../en/project-management/index.rst:7
 msgid ""
 "Check that :menuselection:`Project --> Project Properties --> General --> "
 "Save paths` is set to \"Relative\" and that all required data files are in "
 "the same folder like the .qgs file or a subfolder of it."
-msgstr ""
+msgstr ":menuselection:`Projekt --> Projekteigenschaften --> Allgemein --> Pfade speichern` muss auf \"Relativ\" gestellt sein und alle benötigten Dateien müssen im selben Ordner wie die Projektdatei sein oder einem Unterordner davon."
 
 #: ../../en/project-management/index.rst:9
 msgid ""
 "For increased productivity, we suggest having a look at the following "
 "plugins:"
-msgstr ""
+msgstr "Um die Arbeit zu erleichtern empfehlen wir, die folgenden Plugins zu probieren:"
 
 #: ../../en/project-management/index.rst:11
 msgid ""
 "`QConsolidate plugin <https://plugins.qgis.org/plugins/qconsolidate/>`_"
-msgstr ""
+msgstr "`QConsolidate Plugin <https://plugins.qgis.org/plugins/qconsolidate/>`_"
 
 #: ../../en/project-management/index.rst:12
 msgid ""
 "`Offline Editing plugin "
 "<https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_offline_editing.html>`_"
-msgstr ""
+msgstr "`Offline Editing Plugin <https://docs.qgis.org/2.14/en/docs/user_manual/plugins/plugins_offline_editing.html>`_"
 
 #: ../../en/project-management/index.rst:15
 msgid "Data sources"
@@ -197,124 +198,124 @@ msgstr "Es wird ein breites Spektrum an Datenformaten unterstützt. Aufgrund von
 
 #: ../../en/project-management/index.rst:22
 msgid "Vector Layer Settings"
-msgstr ""
+msgstr "Vektorebeneneinstellungen"
 
 #: ../../en/project-management/index.rst:24
 msgid ""
 "Most of the settings which QGIS offers are directly supported by QField "
 "without any extra effort."
-msgstr ""
+msgstr "Die meisten Einstellungen, welche QGIS anbietet werden direkt von QField unterstützt, ohne zusätzlichen Aufwand."
 
 #: ../../en/project-management/index.rst:27
 msgid "Style"
-msgstr ""
+msgstr "Stil"
 
 #: ../../en/project-management/index.rst:29
 msgid ""
 "All style settings from QGIS are directly supported by QField. This includes"
 " all renderer types like graduated, categorized, rule based, 2.5D as well as"
 " data defined symbology."
-msgstr ""
+msgstr "Alle Stileinstellungen von QGIS werden direkt von QField unterstützt. Die beinhalteet alle Renderertypen wie Graduiert, Kategorisiert, Regelbasiert und 2.5D ebenso wie datendefinierte Symbologie."
 
 #: ../../en/project-management/index.rst:32
 msgid "Forms and Fields"
-msgstr ""
+msgstr "Formulare und Felder"
 
 #: ../../en/project-management/index.rst:34
 msgid "QField creates forms similar to, but not equal to QGIS."
-msgstr ""
+msgstr "QField erzeugt Formulare ähnlich wie, aber nicht komplett gleich wie QGIS"
 
 #: ../../en/project-management/index.rst:37
 msgid "Suppress Feature Form"
-msgstr ""
+msgstr "Formulare unterdrücken"
 
 #: ../../en/project-management/index.rst:37
 msgid ""
 "The setting suppress feature form is directly applied to the QField form."
-msgstr ""
+msgstr "Diese Option wird direkt unterstützt. Wenn Sie gesetzt ist wird das Formular in QField beim Erzeugen eines Objektes nicht angezeigt."
 
 #: ../../en/project-management/index.rst:40
 msgid "Remember last values"
-msgstr ""
+msgstr "Letzte Werte erinnern"
 
 #: ../../en/project-management/index.rst:40
 msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
-msgstr ""
+msgstr "QField bietet eine viel finkörnigere Kontrolle über das Erinnern von Attributen als QGIS und ignoriert die entsprechende QGIS Einstellung."
 
 #: ../../en/project-management/index.rst:65
 msgid "Field settings"
-msgstr ""
+msgstr "Feldeinstellungen"
 
 #: ../../en/project-management/index.rst:43
 msgid ""
 "The field settings from QGIS are supported on a beste effort basis and is "
 "constantly being improved."
-msgstr ""
+msgstr "Die Feldeinstellungen von QGIS sind so gut wie möglich unterstützt und werden kontinuierlich verbessert."
 
 #: ../../en/project-management/index.rst:50
 msgid "Field type"
-msgstr ""
+msgstr "Feldtyp"
 
 #: ../../en/project-management/index.rst:52
 msgid "Text Edit"
-msgstr ""
+msgstr "Text Edit"
 
 #: ../../en/project-management/index.rst:52
 msgid "Multiline is always allowed"
-msgstr ""
+msgstr "Mehrzeilige eingaben sind immer erlaubt."
 
 #: ../../en/project-management/index.rst:53
 msgid "HTML is not supported"
-msgstr ""
+msgstr "HTML wird nicht unterstützt"
 
 #: ../../en/project-management/index.rst:55
 msgid "Check Box"
-msgstr ""
+msgstr "Kontrollkästchen"
 
 #: ../../en/project-management/index.rst:57
 msgid "Value Map"
-msgstr ""
+msgstr "Werteabbildung"
 
 #: ../../en/project-management/index.rst:59
 msgid "External Resource"
-msgstr ""
+msgstr "Externe Resource"
 
 #: ../../en/project-management/index.rst:59
 #: ../../en/project-management/index.rst:62
 #: ../../en/project-management/index.rst:64
 msgid ":nay:`✔`"
-msgstr ""
+msgstr ":nay:`✔`"
 
 #: ../../en/project-management/index.rst:59
 msgid "Will be combined with shooting photos. Contact us for development."
-msgstr ""
+msgstr "Wird mit Photo schiessen kombiniert werden. Kontaktiere und für die Entwicklung."
 
 #: ../../en/project-management/index.rst:62
 msgid "Date Time"
-msgstr ""
+msgstr "Datum/Zei"
 
 #: ../../en/project-management/index.rst:62
 #: ../../en/project-management/index.rst:64
 msgid "Contact us for development."
-msgstr ""
+msgstr "Kontaktiere uns für die Entwicklung."
 
 #: ../../en/project-management/index.rst:64
 msgid "Others"
-msgstr ""
+msgstr "Andere"
 
 #: ../../en/project-management/index.rst:68
 msgid "Custom SVG symbols and settings"
-msgstr ""
+msgstr "Eigene SVG Symbole und Einstellungen"
 
 #: ../../en/project-management/index.rst:70
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
-msgstr ""
+msgstr "Im \"Über\" Dialog sind die Ordner sichtbar, die auf dem Gerät dafür verwendet werden."
 
 #: ../../en/project-management/index.rst:72
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr ""
+msgstr "Falls eigene SVG Symbole verwendet werden sollen, müssen diese manuell mit einem Dateimanager in den entsprechenden Ordner kopiert werden."
