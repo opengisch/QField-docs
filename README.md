@@ -11,7 +11,9 @@ The final product can be found here:
  * [English](https://opengisch.github.io/QField-docs)
  * [Deutsch](https://opengisch.github.io/QField-docs/de)
  * [Français](https://opengisch.github.io/QField-docs/fr)
- * [Română](https://opengisch.github.io/QField-docs/ro)
+ * [Galician](https://opengisch.github.io/QField-docs/gl)
+ * [Portuguese](https://opengisch.github.io/QField-docs/pt)
+ * [Catalan](https://opengisch.github.io/QField-docs/ca)
 
 ## Process
 
