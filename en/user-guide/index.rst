@@ -38,20 +38,29 @@ Digitize
 To start digitizing new features `Switch modes`_ to digitizing.
 
 A new combobox will appear next to the menu button which lists the layers
-available for digitizing. At the moment (QField 0.5), QField only supports point
-layers.
+available for digitizing.
+At the moment (QField 0.6), QField supports point and line layers.
 
-navigate the crosshair in the center of the screen to the desired location and
-click the check at the lower right of the screen to confirm the creation of a
-new point feature. If the feature form is not suppressed (in the QGIS project
-vector layer properties), the user will be asked to enter the attributes for
-the new feature.
+Points
+......
+
+Navigate the crosshair in the center of the screen to the desired location and
+click the pencil at the lower right of the screen to confirm the creation of a
+new point feature.
+
+Lines
+.....
+
+Navigate the crosshair in the center of the screen to the desired start of the line
+and click the pencil at the lower right of the screen.
+Proceed with adding points or removing points until the line is finished and then click save.
 
 Attribute form
 --------------
 
+After digitizing a geometry, the attribute form will be displaied if it is not suppressed
+and the user will be asked to enter the attributes for the new feature.
 The form which appears allows entering attribute values for the new feature. The checkboxes
-at the right of every attribute allow for remembering each attribu. The checkboxes
 at the right of every attribute allow for remembering each attribute individually.
 
 Delete Features

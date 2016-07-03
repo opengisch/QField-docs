@@ -1,5 +1,5 @@
-This is the QField documentation
-================================
+QField documentation
+====================
 
 QField is an alternative and simplified user interface for QGIS. It is built
 with focus on mobile, touch driven devices.
@@ -15,7 +15,7 @@ Contents
 ========
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    installation-guide/index
    concepts/index
