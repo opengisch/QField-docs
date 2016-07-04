@@ -71,3 +71,17 @@ trans.pt = i18n/pt/concepts.po
 trans.ro = i18n/ro/concepts.po
 type = PO
 
+[qfield-documentation.development]
+source_file = i18n/pot/development.pot
+source_lang = en
+trans.de = i18n/de/development.po
+trans.es = i18n/es/development.po
+trans.fr = i18n/fr/development.po
+trans.gl = i18n/gl/development.po
+trans.hu = i18n/hu/development.po
+trans.it = i18n/it/development.po
+trans.pl = i18n/pl/development.po
+trans.pt = i18n/pt/development.po
+trans.ro = i18n/ro/development.po
+type = PO
+
