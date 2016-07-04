@@ -22,6 +22,7 @@ Contents
    project-management/index
    project-management/dataformat
    user-guide/index
+   development/index
 
 Indices and tables
 ==================

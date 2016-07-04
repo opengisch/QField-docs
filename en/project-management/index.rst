@@ -56,12 +56,11 @@ Field settings
   +-------------------+----------+-------------------------------------------------+
   | Value Map         | :yay:`✔` |                                                 |
   +-------------------+----------+-------------------------------------------------+
-  | External Resource | :nay:`✔` |  Will be combined with shooting photos.         |
-  |                   |          |  Contact us for development.                    |
+  | External Resource | :nay:`✘` |  Will be combined with shooting photos.         |
   +-------------------+----------+-------------------------------------------------+
-  | Date Time         | :nay:`✔` |  Contact us for development.                    |
+  | Date Time         | :nay:`✘` | :ref:`make_it_grow`                             |
   +-------------------+----------+-------------------------------------------------+
-  | Others            | :nay:`✔` |  Contact us for development.                    |
+  | Others            | :nay:`✘` | :ref:`make_it_grow`                             |
   +-------------------+----------+-------------------------------------------------+
 
 Custom SVG symbols and settings
