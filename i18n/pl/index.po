@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-03 15:01+0200\n"
-"PO-Revision-Date: 2016-07-03 13:01+0000\n"
+"POT-Creation-Date: 2016-07-07 10:11+0200\n"
+"PO-Revision-Date: 2016-07-07 08:11+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Polish (http://www.transifex.com/opengisch/qfield-documentation/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -31,14 +31,52 @@ msgstr ""
 msgid "Contents"
 msgstr ""
 
-#: ../../en/index.rst:27
-msgid "Indices and tables"
-msgstr ""
-
-#: ../../en/index.rst:29
-msgid ":ref:`genindex`"
+#: ../../en/index.rst:28
+msgid "Translations"
 msgstr ""
 
 #: ../../en/index.rst:30
+msgid "The documentation is available in several languages"
+msgstr ""
+
+#: ../../en/index.rst:32
+msgid "`English </QField-docs/en>`_"
+msgstr ""
+
+#: ../../en/index.rst:34
+msgid "`Deutsch </QField-docs/de>`_"
+msgstr ""
+
+#: ../../en/index.rst:36
+msgid "`Français </QField-docs/fr>`_"
+msgstr ""
+
+#: ../../en/index.rst:38
+msgid "`Galician </QField-docs/gl>`_"
+msgstr ""
+
+#: ../../en/index.rst:40
+msgid "`Portuguese </QField-docs/pt>`_"
+msgstr ""
+
+#: ../../en/index.rst:42
+msgid "`Catalan </QField-docs/ca>`_"
+msgstr ""
+
+#: ../../en/index.rst:44
+msgid ""
+"If there is an error with a translation, please `help to improve it "
+"<https://www.transifex.com/opengisch/qfield-documentation/>`_."
+msgstr ""
+
+#: ../../en/index.rst:48
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../en/index.rst:50
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../en/index.rst:51
 msgid ":ref:`search`"
 msgstr ""

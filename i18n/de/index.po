@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
+# Matthias Kuhn <matthias@opengis.ch>, 2016
 # OPENGIS.ch <info@opengis.ch>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-03 15:01+0200\n"
-"PO-Revision-Date: 2016-07-03 13:01+0000\n"
+"POT-Creation-Date: 2016-07-07 10:16+0200\n"
+"PO-Revision-Date: 2016-07-07 08:13+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +21,7 @@ msgstr ""
 
 #: ../../en/index.rst:2
 msgid "QField documentation"
-msgstr ""
+msgstr "QField Dokumentation"
 
 #: ../../en/index.rst:4
 msgid ""
@@ -32,14 +33,52 @@ msgstr "QField ist eine alternative, vereinfachte Benutzerschnittstelle für QGI
 msgid "Contents"
 msgstr "Inhalt"
 
-#: ../../en/index.rst:27
+#: ../../en/index.rst:28
+msgid "Translations"
+msgstr "Sprachen"
+
+#: ../../en/index.rst:30
+msgid "The documentation is available in several languages"
+msgstr "Diese Dokumentation existiert in verschiedenen Sprachen"
+
+#: ../../en/index.rst:32
+msgid "`English </QField-docs/en>`_"
+msgstr "`English </QField-docs/en>`_"
+
+#: ../../en/index.rst:34
+msgid "`Deutsch </QField-docs/de>`_"
+msgstr "`Deutsch </QField-docs/de>`_"
+
+#: ../../en/index.rst:36
+msgid "`Français </QField-docs/fr>`_"
+msgstr "`Français </QField-docs/fr>`_"
+
+#: ../../en/index.rst:38
+msgid "`Galician </QField-docs/gl>`_"
+msgstr "`Galician </QField-docs/gl>`_"
+
+#: ../../en/index.rst:40
+msgid "`Portuguese </QField-docs/pt>`_"
+msgstr "`Portuguese </QField-docs/pt>`_"
+
+#: ../../en/index.rst:42
+msgid "`Catalan </QField-docs/ca>`_"
+msgstr "`Catalan </QField-docs/ca>`_"
+
+#: ../../en/index.rst:44
+msgid ""
+"If there is an error with a translation, please `help to improve it "
+"<https://www.transifex.com/opengisch/qfield-documentation/>`_."
+msgstr "Falls die Übersetzung Fehlerhaft ist, `hilf mit und korrigiere ihn <https://www.transifex.com/opengisch/qfield-documentation/>`_."
+
+#: ../../en/index.rst:48
 msgid "Indices and tables"
 msgstr "Verzeichnisse und Tabellen"
 
-#: ../../en/index.rst:29
+#: ../../en/index.rst:50
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
 
-#: ../../en/index.rst:30
+#: ../../en/index.rst:51
 msgid ":ref:`search`"
 msgstr ":ref:`search`"

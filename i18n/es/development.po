@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-07 10:10+0200\n"
+"POT-Creation-Date: 2016-07-07 10:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: Spanish (https://www.transifex.com/opengisch/teams/38926/es/)\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../en/development/index.rst:15
 msgid ""
-"You can find the sourceode `on github "
+"You can find the sourcecode `on github "
 "<https://github.com/opengisch/QField>`_"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgid "Connection based on-/offline synchronization"
 msgstr ""
 
 #: ../../en/development/index.rst:44
-msgid "Photo (probably taken care of)"
+msgid "Photo (in development)"
 msgstr ""
 
 #: ../../en/development/index.rst:45
@@ -113,13 +113,17 @@ msgid "Attach external measurement devices"
 msgstr ""
 
 #: ../../en/development/index.rst:49
+msgid "Legend"
+msgstr ""
+
+#: ../../en/development/index.rst:50
 msgid "[Your favorite feature]"
 msgstr ""
 
-#: ../../en/development/index.rst:52
+#: ../../en/development/index.rst:53
 msgid "API stability"
 msgstr ""
 
-#: ../../en/development/index.rst:54
+#: ../../en/development/index.rst:55
 msgid "QField is currently not considered API stable."
 msgstr ""
