@@ -24,6 +24,21 @@ Contents
    user-guide/index
    development/index
 
+Translations
+============
+
+The documentation is available in several languages
+
+`English </QField-docs/en>`_
+`Deutsch </QField-docs/de>`_
+`Français </QField-docs/fr>`_
+`Galician </QField-docs/gl>`_
+`Portuguese </QField-docs/pt>`_
+`Catalan </QField-docs/ca>`_
+
+If there is an error with a translation, please `help to improve it <https://www.transifex.com/opengisch/qfield-documentation/>`_.
+
+
 Indices and tables
 ==================
 
