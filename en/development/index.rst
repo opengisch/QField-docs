@@ -25,10 +25,10 @@ training for open source software including QField and QGIS.
 Funding
 -------
 
- * `SIGE <http://www.sige.ch/>`_
- * `Schweizerische Vogelwarte Sempach <http://www.vogelwarte.ch/de/home/>`_
-   (Point digitizing)
- * Communities in the Lake Geneva region (Line digitizing)
+* `SIGE <http://www.sige.ch/>`_
+* `Schweizerische Vogelwarte Sempach <http://www.vogelwarte.ch/de/home/>`_
+  (Point digitizing)
+* Communities in the Lake Geneva region (Line digitizing)
 
 .. _make_it_grow:
 
@@ -38,16 +38,16 @@ Make it grow, make it yours
 This is a list of features which we think are very useful for a nice user experience
 and an effective workflow.
 
- * Polygon digitizing
- * Edit widgets
- * Connection based on-/offline synchronization
- * Photo (in development)
- * Improved coordinate precision
- * Editing geometries (can be split into several pieces)
- * Saving GPS status information into attributes when digitizing (precision, rtk status...)
- * Attach external measurement devices
- * Legend
- * [Your favorite feature]
+* Polygon digitizing
+* Edit widgets
+* Connection based on-/offline synchronization
+* Photo (in development)
+* Improved coordinate precision
+* Editing geometries (can be split into several pieces)
+* Saving GPS status information into attributes when digitizing (precision, rtk status...)
+* Attach external measurement devices
+* Legend
+* [Your favorite feature]
 
 API stability
 =============
