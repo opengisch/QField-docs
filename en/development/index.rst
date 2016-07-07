@@ -12,7 +12,7 @@ the source code and guarantees that you will always have access to a QGIS
 based field data collection app that is free of cost and can be freely 
 modified.
 
-You can find the sourceode `on github <https://github.com/opengisch/QField>`_
+You can find the sourcecode `on github <https://github.com/opengisch/QField>`_
 
 Credits
 =======
