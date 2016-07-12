@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-04 16:39+0200\n"
-"PO-Revision-Date: 2016-07-04 14:39+0000\n"
+"POT-Creation-Date: 2016-07-12 20:08+0200\n"
+"PO-Revision-Date: 2016-07-12 18:08+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -58,6 +58,7 @@ msgstr ""
 #: ../../en/project-management/index.rst:52
 #: ../../en/project-management/index.rst:55
 #: ../../en/project-management/index.rst:57
+#: ../../en/project-management/index.rst:59
 msgid ":yay:`✔`"
 msgstr ""
 
@@ -90,6 +91,7 @@ msgid "Tiff"
 msgstr ""
 
 #: ../../en/project-management/dataformat.rst:29
+#: ../../en/project-management/index.rst:61
 msgid ":moreorless:`~`"
 msgstr ""
 
@@ -103,9 +105,8 @@ msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
-#: ../../en/project-management/index.rst:59
-#: ../../en/project-management/index.rst:61
-#: ../../en/project-management/index.rst:63
+#: ../../en/project-management/index.rst:65
+#: ../../en/project-management/index.rst:67
 msgid ":nay:`✘`"
 msgstr ""
 
@@ -245,7 +246,7 @@ msgid ""
 " ignores the QGIS setting."
 msgstr ""
 
-#: ../../en/project-management/index.rst:64
+#: ../../en/project-management/index.rst:68
 msgid "Field settings"
 msgstr ""
 
@@ -280,36 +281,43 @@ msgid "Value Map"
 msgstr ""
 
 #: ../../en/project-management/index.rst:59
-msgid "External Resource"
+msgid "Hidden"
 msgstr ""
 
 #: ../../en/project-management/index.rst:59
-msgid "Will be combined with shooting photos."
-msgstr ""
-
-#: ../../en/project-management/index.rst:61
-msgid "Date Time"
-msgstr ""
-
-#: ../../en/project-management/index.rst:61
-#: ../../en/project-management/index.rst:63
+#: ../../en/project-management/index.rst:65
+#: ../../en/project-management/index.rst:67
 msgid ":ref:`make_it_grow`"
 msgstr ""
 
-#: ../../en/project-management/index.rst:63
-msgid "Others"
+#: ../../en/project-management/index.rst:61
+msgid "External Resource"
+msgstr ""
+
+#: ../../en/project-management/index.rst:61
+msgid ""
+"This field is combined with camera integration. Only images can be viewed so"
+" far. :ref:`make_it_grow`"
+msgstr ""
+
+#: ../../en/project-management/index.rst:65
+msgid "Date Time"
 msgstr ""
 
 #: ../../en/project-management/index.rst:67
+msgid "Others"
+msgstr ""
+
+#: ../../en/project-management/index.rst:71
 msgid "Custom SVG symbols and settings"
 msgstr ""
 
-#: ../../en/project-management/index.rst:69
+#: ../../en/project-management/index.rst:73
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
 msgstr ""
 
-#: ../../en/project-management/index.rst:71
+#: ../../en/project-management/index.rst:75
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."

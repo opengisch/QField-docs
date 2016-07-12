@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-04 16:39+0200\n"
-"PO-Revision-Date: 2016-07-04 14:39+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-07-12 20:08+0200\n"
+"PO-Revision-Date: 2016-07-11 22:30+0000\n"
+"Last-Translator: xanvieiro <gallaecia6@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +65,7 @@ msgstr ":yay:`✔`"
 
 #: ../../en/project-management/dataformat.rst:19
 msgid "Geopackage"
-msgstr ""
+msgstr "Geopackage"
 
 #: ../../en/project-management/dataformat.rst:21
 msgid "WMS"
@@ -97,7 +97,7 @@ msgstr ":moreorless:`~`"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "JPEG compression not yet supported."
-msgstr ""
+msgstr "A compresión JPEG aínda non está admitida."
 
 #: ../../en/project-management/dataformat.rst:31
 msgid "ECW"
@@ -128,22 +128,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr ""
+msgstr "Se non atopas o teu formato de datos favorito nesta táboa, comproba se funciona e adapta a lista de enriba <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_  para compartir os teus descubrimentos. Se non funciona, `abre unha incidencia <https://github.com/opengisch/OSGeo4A/issues>`_. Estaremos encantados de axudarche coa implantación."
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr ""
+msgstr "Datos ráster"
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr ""
+msgstr "Os datos ráster poden chegar a ser bastante grandes rapidamente, cando se traballa con ficheiros tiff descomprimidos estes son de varios Gb de datos. En dispositivos móbiles especialmente, isto é ineficiente."
 
 #: ../../en/project-management/dataformat.rst:47
 msgid "Use GeoPackage"
-msgstr ""
+msgstr "Utilizar Geopackage"
 
 #: ../../en/project-management/dataformat.rst:49
 msgid ""
@@ -151,7 +151,7 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr ""
+msgstr "Recomendamos utilizar o formato geopackage para tratar datos ráster. Os seguintes comandos converterán un ficheiro denominado :code:`raster.tif` a un ficheiro :code:`raster.gpkg` con pirámides. Asegúrate de axustar o EPSG:21781 (CH1903 LV03) ó SRC desexado."
 
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
@@ -283,24 +283,24 @@ msgstr "Mapa de valores"
 
 #: ../../en/project-management/index.rst:59
 msgid "External Resource"
-msgstr ""
+msgstr "Recurso externo"
 
 #: ../../en/project-management/index.rst:59
 msgid "Will be combined with shooting photos."
-msgstr ""
+msgstr "Combinarase coas fotos disparadas."
 
 #: ../../en/project-management/index.rst:61
 msgid "Date Time"
-msgstr ""
+msgstr "Data Hora"
 
 #: ../../en/project-management/index.rst:61
 #: ../../en/project-management/index.rst:63
 msgid ":ref:`make_it_grow`"
-msgstr ""
+msgstr ":ref:`make_it_grow`"
 
 #: ../../en/project-management/index.rst:63
 msgid "Others"
-msgstr ""
+msgstr "Outros"
 
 #: ../../en/project-management/index.rst:67
 msgid "Custom SVG symbols and settings"
@@ -309,10 +309,10 @@ msgstr "Configuración e símbolos SVG personalizados"
 #: ../../en/project-management/index.rst:69
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
-msgstr ""
+msgstr "No diálogo 'acerca de' podes ver onde están os cartafoles compartidos no dispositivo."
 
 #: ../../en/project-management/index.rst:71
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr ""
+msgstr "Se queres utilizar símbolos personalizados tes que poñelos alí empregando un xestor de ficheiros."
