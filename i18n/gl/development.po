@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-12 20:08+0200\n"
+"POT-Creation-Date: 2016-07-15 09:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xanvieiro <gallaecia6@gmail.com>, 2016\n"
 "Language-Team: Galician (https://www.transifex.com/opengisch/teams/38926/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: ../../en/development/index.rst:3
 msgid "Development and support"
-msgstr ""
+msgstr "Desenvolvemento e asistencia"
 
 #: ../../en/development/index.rst:7
 msgid "License"
-msgstr ""
+msgstr "Licenza"
 
 #: ../../en/development/index.rst:9
 msgid ""
@@ -33,97 +34,113 @@ msgid ""
 "based field data collection app that is free of cost and can be freely "
 "modified."
 msgstr ""
+"QField entrégase baixo a Licenza Pública GNU (GPL) Versión 2 ou superior. "
+"Desenvolver QField baixo esta licenza significa que podes inspeccionar e "
+"modificar o código fonte e garante que teñas sempre acceso a unha aplicación"
+" de recollida de datos de campo baseada en QGIS que é libre de custos e que "
+"se pode modificar libremente."
 
 #: ../../en/development/index.rst:15
 msgid ""
 "You can find the sourcecode `on github "
 "<https://github.com/opengisch/QField>`_"
 msgstr ""
+"Podes atopar o código fonte `en github "
+"<https://github.com/opengisch/QField>`_"
 
 #: ../../en/development/index.rst:18
 msgid "Credits"
-msgstr ""
+msgstr "Créditos"
 
 #: ../../en/development/index.rst:20
 msgid ""
 "QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
 "and training for open source software including QField and QGIS."
 msgstr ""
+"QField é desenvolvido por OPENGIS.ch. OPENGIS.ch ofrece consultoría, "
+"desenvolvemento e formación en software de código aberto incluídos QField e "
+"QGIS."
 
 #: ../../en/development/index.rst:26
 msgid "Funding"
-msgstr ""
+msgstr "Patrocinio"
 
 #: ../../en/development/index.rst:28
 msgid "`SIGE <http://www.sige.ch/>`_"
-msgstr ""
+msgstr "`SIGE <http://www.sige.ch/>`_"
 
 #: ../../en/development/index.rst:29
 msgid ""
 "`Schweizerische Vogelwarte Sempach <http://www.vogelwarte.ch/de/home/>`_ "
 "(Point digitizing)"
 msgstr ""
+"`Schweizerische Vogelwarte Sempach <http://www.vogelwarte.ch/de/home/>`_ "
+"(Dixitalización de puntos)"
 
 #: ../../en/development/index.rst:31
 msgid "Communities in the Lake Geneva region (Line digitizing)"
-msgstr ""
+msgstr "Comunidades na rexión do Lago Xenebra (Dixitalización de liñas)"
 
 #: ../../en/development/index.rst:36
 msgid "Make it grow, make it yours"
-msgstr ""
+msgstr "Faino medrar, faino teu"
 
 #: ../../en/development/index.rst:38
 msgid ""
 "This is a list of features which we think are very useful for a nice user "
 "experience and an effective workflow."
 msgstr ""
+"Esta é unha lista de funcionalidades que cremos que son moi útiles para unha"
+" boa experiencia de usuario  e un fluxo de traballo efectivo."
 
 #: ../../en/development/index.rst:41
 msgid "Polygon digitizing"
-msgstr ""
+msgstr "Dixitalización de polígonos"
 
 #: ../../en/development/index.rst:42
 msgid "Edit widgets"
-msgstr ""
+msgstr "Widgets de edición"
 
 #: ../../en/development/index.rst:43
 msgid "Connection based on-/offline synchronization"
-msgstr ""
+msgstr "Conexión baseada na sincronización en liña/desconectado"
 
 #: ../../en/development/index.rst:44
 msgid "Photo (in development)"
-msgstr ""
+msgstr "Foto (en desenvolvemento)"
 
 #: ../../en/development/index.rst:45
 msgid "Improved coordinate precision"
-msgstr ""
+msgstr "Precisión de coordenada mellorada"
 
 #: ../../en/development/index.rst:46
 msgid "Editing geometries (can be split into several pieces)"
-msgstr ""
+msgstr "Editar xeometrías (pode dividir en múltiples anacos)"
 
 #: ../../en/development/index.rst:47
 msgid ""
 "Saving GPS status information into attributes when digitizing (precision, "
 "rtk status...)"
 msgstr ""
+"Gardar información do estado do GPS nos atributos durante a dixitalización "
+"(precisión, estado do rtk...)"
 
 #: ../../en/development/index.rst:48
 msgid "Attach external measurement devices"
-msgstr ""
+msgstr "Engadir dispositivos de medida externos"
 
 #: ../../en/development/index.rst:49
 msgid "Legend"
-msgstr ""
+msgstr "Lenda"
 
 #: ../../en/development/index.rst:50
 msgid "[Your favorite feature]"
-msgstr ""
+msgstr "[A túa funcionalidade favorita]"
 
 #: ../../en/development/index.rst:53
 msgid "API stability"
-msgstr ""
+msgstr "Estabilidade da API"
 
 #: ../../en/development/index.rst:55
 msgid "QField is currently not considered API stable."
-msgstr ""
+msgstr "QField non se considera actualmente API estable."
