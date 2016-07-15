@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-15 09:14+0200\n"
+"POT-Creation-Date: 2016-07-15 09:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>, 2016\n"
 "Language-Team: German (https://www.transifex.com/opengisch/teams/38926/de/)\n"
@@ -82,7 +82,7 @@ msgstr "Gemeinden in der Genferseeregion (Digitalisieren von Linien)"
 
 #: ../../en/development/index.rst:36
 msgid "Make it grow, make it yours"
-msgstr ""
+msgstr "Lass es wachsen, mach es Deins"
 
 #: ../../en/development/index.rst:38
 msgid ""
