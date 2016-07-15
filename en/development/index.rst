@@ -41,10 +41,10 @@ and an effective workflow.
 * Polygon digitizing
 * Edit widgets
 * Connection based on-/offline synchronization
-* Photo (in development)
 * Improved coordinate precision
 * Editing geometries (can be split into several pieces)
 * Saving GPS status information into attributes when digitizing (precision, rtk status...)
+* Search functionality
 * Attach external measurement devices
 * Legend
 * [Your favorite feature]
