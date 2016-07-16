@@ -27,8 +27,8 @@ Funding
 
 * `SIGE <http://www.sige.ch/>`_
 * `Schweizerische Vogelwarte Sempach <http://www.vogelwarte.ch/de/home/>`_
-  (Point digitizing)
-* `Ville de Vevey <http://www.vevey.ch/>`_, `Ville de Morges <http://www.vevey.ch/>`_, `SIGE <http://www.sige.ch/>`_ (Line digitizing)
+* `Ville de Vevey <http://www.vevey.ch/>`_
+* `Ville de Morges <http://www.vevey.ch/>`_
 
 .. _make_it_grow:
 
