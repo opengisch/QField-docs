@@ -20,15 +20,40 @@ Credits
 QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development and
 training for open source software including QField and QGIS.
 
-.. image:: http://www.opengis.ch/wp-content/uploads/2013/08/openGis-websiteLogo.png
+.. image:: /images/openGis-websiteLogo.png
+   :alt: OPENGIS.ch
+   :target: http://www.opengis.ch
+
 
 Funding
 -------
 
-* `SIGE <http://www.sige.ch/>`_
-* `Schweizerische Vogelwarte Sempach <http://www.vogelwarte.ch/de/home/>`_
-* `Ville de Vevey <http://www.vevey.ch/>`_
-* `Ville de Morges <http://www.vevey.ch/>`_
+The following oranizations have contributed to make QField what it currently is.
+We would like to warmly say: Thanks a lot!
+
+.. container:: clearer
+
+    .. image:: /images/logo_sige.jpg
+       :width: 200px
+       :alt: SIGE
+       :target: http://www.sige.ch
+    
+    .. image:: /images/logo_vogelwarte.gif
+       :width: 200px
+       :alt: Schweizerische Vogelwarte
+       :target: http://www.vogelwarte.ch
+
+.. container:: clearer
+
+    .. image:: /images/logo_vevey.png
+       :width: 100px
+       :alt: Ville de Vevey
+       :target: http://www.vevey.ch
+    
+    .. image:: /images/logo_morges.png
+       :width: 100px
+       :alt: Ville de Morges
+       :target: http://www.morges.ch
 
 .. _make_it_grow:
 
