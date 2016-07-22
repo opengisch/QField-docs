@@ -11,12 +11,19 @@ For increased productivity, we suggest having a look at the following plugins:
 * `QConsolidate plugin <https://plugins.qgis.org/plugins/qconsolidate/>`_
 * `Offline Editing plugin <https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_offline_editing.html>`_
 
-Data sources
-------------
+Coordinate Reference Systems
+----------------------------
 
-While many data providers are supported, there are still some stability issues
-with the OGR provider (E.g. Shapefile). For best stability you should use
-spatialite files or a postgis database.
+QField uses the Coordinate Reference System (CRS) information found in the project file.
+
+* Project CRS
+* On the fly reprojection (OTF) is used for visualization
+* Layer CRS
+
+.. note::
+    QField does not respect OTF when digitizing new features.
+    Make sure that all the layers on which you digitize are in the same CRS like the project.
+    If you fail to do so it will look as if new features are not saved because they end up in far far away.
 
 Vector Layer Settings
 ---------------------
