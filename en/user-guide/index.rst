@@ -30,7 +30,14 @@ You can manage this layerlist in QGIS desktop in :menuselection:`Project --> Pro
 GPS
 ===
 
-A long press on the GPS button will show the GPS menu.
+A short press on the GPS button will turn on the GPS and center to the current location once positioning information is available.
+
+A long press on the GPS button will show the positioning menu.
+
+Inside the positioning menu you can turn on the positioning display which will show the current coordinates which are reprojected into the project CRS along with precision information.
+
+.. note::
+    If you see WGS 84 lat/lon information instead of information in your project CRS, you probably have no signal yet.
 
 Digitize
 ========
@@ -39,7 +46,7 @@ To start digitizing new features `Switch modes`_ to digitizing.
 
 A new combobox will appear next to the menu button which lists the layers
 available for digitizing.
-At the moment (QField 0.6), QField supports point and line layers.
+At the moment (QField 0.7), QField supports point and line layers.
 
 Points
 ......
