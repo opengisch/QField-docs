@@ -49,14 +49,14 @@ available for digitizing.
 At the moment (QField 0.7), QField supports point and line layers.
 
 Points
-......
+------
 
 Navigate the crosshair in the center of the screen to the desired location and
 click the pencil at the lower right of the screen to confirm the creation of a
 new point feature.
 
 Lines
-.....
+-----
 
 Navigate the crosshair in the center of the screen to the desired start of the line
 and click the pencil at the lower right of the screen.
