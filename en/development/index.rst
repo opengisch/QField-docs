@@ -47,7 +47,12 @@ We would like to warmly say: Thanks a lot!
        :width: 200px
        :alt: Géoconseils SA
        :target: http://www.geoconseils.ch
-   
+    
+    .. image:: http://www.hydro-safety.com/images/logo_hydro_safety2.png
+       :width: 200px
+       :alt: hydro safety srls
+       :target: http://www.hydro-safety.com/
+
 
 .. container:: clearer
 
