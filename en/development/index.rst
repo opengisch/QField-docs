@@ -43,12 +43,15 @@ We would like to warmly say: Thanks a lot!
        :alt: Schweizerische Vogelwarte
        :target: http://www.vogelwarte.ch
     
-    .. image:: http://geoconseils.ch/templates/geoconseils/images/geoconseils-logo.png
+
+.. container:: clearer
+
+    .. image:: /images/logo_geoconseils.png
        :width: 200px
        :alt: Géoconseils SA
        :target: http://www.geoconseils.ch
     
-    .. image:: http://www.hydro-safety.com/images/logo_hydro_safety2.png
+    .. image:: /images/logo_hydrosafety.png
        :width: 200px
        :alt: hydro safety srls
        :target: http://www.hydro-safety.com/

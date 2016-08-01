@@ -86,6 +86,7 @@ External SD card
 
 In order to have write access to projects which are on an external SD card, you will have to put it into the following folder:
 
-.. code-block::
+.. code-block:: none
+
     /Android/data/ch.opengis.qfield/files
 
