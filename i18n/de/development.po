@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015, The QField Project/OPENGIS.ch
+# Copyright (C) 2016, The QField Project/OPENGIS.ch
 # This file is distributed under the same license as the QField package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: QField 0.5\n"
+"Project-Id-Version: QField 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-15 09:21+0200\n"
+"POT-Creation-Date: 2016-08-01 08:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>, 2016\n"
 "Language-Team: German (https://www.transifex.com/opengisch/teams/38926/de/)\n"
@@ -60,31 +60,21 @@ msgstr ""
 "Entwicklung und Schulungen für Open Source Software inklusive QField und "
 "QGIS an."
 
-#: ../../en/development/index.rst:26
+#: ../../en/development/index.rst:29
 msgid "Funding"
 msgstr "Finanzierung"
 
-#: ../../en/development/index.rst:28
-msgid "`SIGE <http://www.sige.ch/>`_"
-msgstr "`SIGE <http://www.sige.ch/>`_"
-
-#: ../../en/development/index.rst:29
-msgid ""
-"`Schweizerische Vogelwarte Sempach <http://www.vogelwarte.ch/de/home/>`_ "
-"(Point digitizing)"
-msgstr ""
-"`Schweizerische Vogelwarte Sempach <http://www.vogelwarte.ch/de/home/>`_ "
-"(Digitalisieren von Punkten)"
-
 #: ../../en/development/index.rst:31
-msgid "Communities in the Lake Geneva region (Line digitizing)"
-msgstr "Gemeinden in der Genferseeregion (Digitalisieren von Linien)"
+msgid ""
+"The following oranizations have contributed to make QField what it currently"
+" is. We would like to warmly say: Thanks a lot!"
+msgstr ""
 
-#: ../../en/development/index.rst:36
+#: ../../en/development/index.rst:75
 msgid "Make it grow, make it yours"
 msgstr "Lass es wachsen, mach es Deins"
 
-#: ../../en/development/index.rst:38
+#: ../../en/development/index.rst:77
 msgid ""
 "This is a list of features which we think are very useful for a nice user "
 "experience and an effective workflow."
@@ -92,31 +82,27 @@ msgstr ""
 "Dies ist eine Liste mit Features, die unserer Meinung nach wichtig und "
 "nützlich sind für einen effizienten Arbeitsablauf."
 
-#: ../../en/development/index.rst:41
+#: ../../en/development/index.rst:80
 msgid "Polygon digitizing"
 msgstr "Polygone digitalisieren"
 
-#: ../../en/development/index.rst:42
+#: ../../en/development/index.rst:81
 msgid "Edit widgets"
 msgstr "Zusätzliche Editier-Widgets"
 
-#: ../../en/development/index.rst:43
+#: ../../en/development/index.rst:82
 msgid "Connection based on-/offline synchronization"
 msgstr "Automatische Synchronisation basierend auf der Netzwerkverbindung"
 
-#: ../../en/development/index.rst:44
-msgid "Photo (in development)"
-msgstr "Fotos (in Entwicklung)"
-
-#: ../../en/development/index.rst:45
+#: ../../en/development/index.rst:83
 msgid "Improved coordinate precision"
 msgstr "Verbesserte Koordinatenpräzision"
 
-#: ../../en/development/index.rst:46
+#: ../../en/development/index.rst:84
 msgid "Editing geometries (can be split into several pieces)"
 msgstr "Geometrien editieren (Kann in mehreren Schritten entwickelt werden)"
 
-#: ../../en/development/index.rst:47
+#: ../../en/development/index.rst:85
 msgid ""
 "Saving GPS status information into attributes when digitizing (precision, "
 "rtk status...)"
@@ -124,22 +110,26 @@ msgstr ""
 "GPS Status Informationen in Attribute speichern während dem Digitalisieren "
 "(Präzision, RTK Status ...)"
 
-#: ../../en/development/index.rst:48
+#: ../../en/development/index.rst:86
+msgid "Search functionality"
+msgstr ""
+
+#: ../../en/development/index.rst:87
 msgid "Attach external measurement devices"
 msgstr "Anschliessen von externen Messgeräten"
 
-#: ../../en/development/index.rst:49
+#: ../../en/development/index.rst:88
 msgid "Legend"
 msgstr "Legende"
 
-#: ../../en/development/index.rst:50
+#: ../../en/development/index.rst:89
 msgid "[Your favorite feature]"
 msgstr "[Deine Ideen!]"
 
-#: ../../en/development/index.rst:53
+#: ../../en/development/index.rst:92
 msgid "API stability"
 msgstr "API Stabilität"
 
-#: ../../en/development/index.rst:55
+#: ../../en/development/index.rst:94
 msgid "QField is currently not considered API stable."
 msgstr "QField bietet im Moment keine stabile API"

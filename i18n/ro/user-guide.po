@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015, The QField Project/OPENGIS.ch
+# Copyright (C) 2016, The QField Project/OPENGIS.ch
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-03 15:43+0200\n"
-"PO-Revision-Date: 2016-07-03 13:43+0000\n"
+"POT-Creation-Date: 2016-08-01 08:26+0200\n"
+"PO-Revision-Date: 2016-08-01 06:26+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
@@ -68,32 +68,59 @@ msgid "GPS"
 msgstr ""
 
 #: ../../en/user-guide/index.rst:33
-msgid "A long press on the GPS button will show the GPS menu."
+msgid ""
+"A short press on the GPS button will turn on the GPS and center to the "
+"current location once positioning information is available."
 msgstr ""
 
-#: ../../en/user-guide/index.rst:36
-msgid "Digitize"
+#: ../../en/user-guide/index.rst:35
+msgid "A long press on the GPS button will show the positioning menu."
 msgstr ""
 
-#: ../../en/user-guide/index.rst:38
-msgid "To start digitizing new features `Switch modes`_ to digitizing."
+#: ../../en/user-guide/index.rst:37
+msgid ""
+"Inside the positioning menu you can turn on the positioning display which "
+"will show the current coordinates which are reprojected into the project CRS"
+" along with precision information."
 msgstr ""
 
 #: ../../en/user-guide/index.rst:40
 msgid ""
-"A new combobox will appear next to the menu button which lists the layers "
-"available for digitizing. At the moment (QField 0.6), QField supports point "
-"and line layers."
+"If you see WGS 84 lat/lon information instead of information in your project"
+" CRS, you probably have no signal yet."
+msgstr ""
+
+#: ../../en/user-guide/index.rst:43
+msgid "Digitize"
+msgstr ""
+
+#: ../../en/user-guide/index.rst:45
+msgid "To start digitizing new features `Switch modes`_ to digitizing."
 msgstr ""
 
 #: ../../en/user-guide/index.rst:47
+msgid ""
+"A new combobox will appear next to the menu button which lists the layers "
+"available for digitizing. At the moment (QField 0.7), QField supports point "
+"and line layers."
+msgstr ""
+
+#: ../../en/user-guide/index.rst:52
+msgid "Points"
+msgstr ""
+
+#: ../../en/user-guide/index.rst:54
 msgid ""
 "Navigate the crosshair in the center of the screen to the desired location "
 "and click the pencil at the lower right of the screen to confirm the "
 "creation of a new point feature."
 msgstr ""
 
-#: ../../en/user-guide/index.rst:54
+#: ../../en/user-guide/index.rst:59
+msgid "Lines"
+msgstr ""
+
+#: ../../en/user-guide/index.rst:61
 msgid ""
 "Navigate the crosshair in the center of the screen to the desired start of "
 "the line and click the pencil at the lower right of the screen. Proceed with"
@@ -101,11 +128,11 @@ msgid ""
 "save."
 msgstr ""
 
-#: ../../en/user-guide/index.rst:59
+#: ../../en/user-guide/index.rst:66
 msgid "Attribute form"
 msgstr ""
 
-#: ../../en/user-guide/index.rst:61
+#: ../../en/user-guide/index.rst:68
 msgid ""
 "After digitizing a geometry, the attribute form will be displaied if it is "
 "not suppressed and the user will be asked to enter the attributes for the "
@@ -114,10 +141,10 @@ msgid ""
 "remembering each attribute individually."
 msgstr ""
 
-#: ../../en/user-guide/index.rst:67
+#: ../../en/user-guide/index.rst:74
 msgid "Delete Features"
 msgstr ""
 
-#: ../../en/user-guide/index.rst:69
+#: ../../en/user-guide/index.rst:76
 msgid "To delete a feature, identify it first and tap the trash icon."
 msgstr ""

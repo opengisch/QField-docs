@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015, The QField Project/OPENGIS.ch
+# Copyright (C) 2016, The QField Project/OPENGIS.ch
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-12 20:08+0200\n"
-"PO-Revision-Date: 2016-07-12 18:08+0000\n"
+"POT-Creation-Date: 2016-08-01 08:26+0200\n"
+"PO-Revision-Date: 2016-08-01 06:26+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -36,12 +36,12 @@ msgid "Data Format"
 msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:50
+#: ../../en/project-management/index.rst:57
 msgid "Support"
 msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:50
+#: ../../en/project-management/index.rst:57
 msgid "Notes"
 msgstr ""
 
@@ -55,10 +55,10 @@ msgstr ""
 #: ../../en/project-management/dataformat.rst:23
 #: ../../en/project-management/dataformat.rst:25
 #: ../../en/project-management/dataformat.rst:27
-#: ../../en/project-management/index.rst:52
-#: ../../en/project-management/index.rst:55
-#: ../../en/project-management/index.rst:57
 #: ../../en/project-management/index.rst:59
+#: ../../en/project-management/index.rst:62
+#: ../../en/project-management/index.rst:64
+#: ../../en/project-management/index.rst:66
 msgid ":yay:`✔`"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgid "Tiff"
 msgstr ""
 
 #: ../../en/project-management/dataformat.rst:29
-#: ../../en/project-management/index.rst:61
+#: ../../en/project-management/index.rst:68
 msgid ":moreorless:`~`"
 msgstr ""
 
@@ -105,8 +105,8 @@ msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
-#: ../../en/project-management/index.rst:65
-#: ../../en/project-management/index.rst:67
+#: ../../en/project-management/index.rst:72
+#: ../../en/project-management/index.rst:74
 msgid ":nay:`✘`"
 msgstr ""
 
@@ -188,137 +188,166 @@ msgid ""
 msgstr ""
 
 #: ../../en/project-management/index.rst:15
-msgid "Data sources"
+msgid "Coordinate Reference Systems"
 msgstr ""
 
 #: ../../en/project-management/index.rst:17
 msgid ""
-"While many data providers are supported, there are still some stability "
-"issues with the OGR provider (E.g. Shapefile). For best stability you should"
-" use spatialite files or a postgis database."
+"QField uses the Coordinate Reference System (CRS) information found in the "
+"project file."
 msgstr ""
 
-#: ../../en/project-management/index.rst:22
-msgid "Vector Layer Settings"
+#: ../../en/project-management/index.rst:19
+msgid "Project CRS"
+msgstr ""
+
+#: ../../en/project-management/index.rst:20
+msgid "On the fly reprojection (OTF) is used for visualization"
+msgstr ""
+
+#: ../../en/project-management/index.rst:21
+msgid "Layer CRS"
 msgstr ""
 
 #: ../../en/project-management/index.rst:24
+msgid ""
+"QField does not respect OTF when digitizing new features. Make sure that all"
+" the layers on which you digitize are in the same CRS like the project. If "
+"you fail to do so it will look as if new features are not saved because they"
+" end up in far far away."
+msgstr ""
+
+#: ../../en/project-management/index.rst:29
+msgid "Vector Layer Settings"
+msgstr ""
+
+#: ../../en/project-management/index.rst:31
 msgid ""
 "Most of the settings which QGIS offers are directly supported by QField "
 "without any extra effort."
 msgstr ""
 
-#: ../../en/project-management/index.rst:27
+#: ../../en/project-management/index.rst:34
 msgid "Style"
 msgstr ""
 
-#: ../../en/project-management/index.rst:29
+#: ../../en/project-management/index.rst:36
 msgid ""
 "All style settings from QGIS are directly supported by QField. This includes"
 " all renderer types like graduated, categorized, rule based, 2.5D as well as"
 " data defined symbology."
 msgstr ""
 
-#: ../../en/project-management/index.rst:32
+#: ../../en/project-management/index.rst:39
 msgid "Forms and Fields"
 msgstr ""
 
-#: ../../en/project-management/index.rst:34
+#: ../../en/project-management/index.rst:41
 msgid "QField creates forms similar to, but not equal to QGIS."
 msgstr ""
 
-#: ../../en/project-management/index.rst:37
+#: ../../en/project-management/index.rst:44
 msgid "Suppress Feature Form"
 msgstr ""
 
-#: ../../en/project-management/index.rst:37
+#: ../../en/project-management/index.rst:44
 msgid ""
 "The setting suppress feature form is directly applied to the QField form."
 msgstr ""
 
-#: ../../en/project-management/index.rst:40
+#: ../../en/project-management/index.rst:47
 msgid "Remember last values"
 msgstr ""
 
-#: ../../en/project-management/index.rst:40
+#: ../../en/project-management/index.rst:47
 msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
 msgstr ""
 
-#: ../../en/project-management/index.rst:68
+#: ../../en/project-management/index.rst:75
 msgid "Field settings"
 msgstr ""
 
-#: ../../en/project-management/index.rst:43
+#: ../../en/project-management/index.rst:50
 msgid ""
 "The field settings from QGIS are supported on a beste effort basis and is "
 "constantly being improved."
 msgstr ""
 
-#: ../../en/project-management/index.rst:50
+#: ../../en/project-management/index.rst:57
 msgid "Field type"
 msgstr ""
 
-#: ../../en/project-management/index.rst:52
+#: ../../en/project-management/index.rst:59
 msgid "Text Edit"
 msgstr ""
 
-#: ../../en/project-management/index.rst:52
+#: ../../en/project-management/index.rst:59
 msgid "Multiline is always allowed"
 msgstr ""
 
-#: ../../en/project-management/index.rst:53
+#: ../../en/project-management/index.rst:60
 msgid "HTML is not supported"
 msgstr ""
 
-#: ../../en/project-management/index.rst:55
+#: ../../en/project-management/index.rst:62
 msgid "Check Box"
 msgstr ""
 
-#: ../../en/project-management/index.rst:57
+#: ../../en/project-management/index.rst:64
 msgid "Value Map"
 msgstr ""
 
-#: ../../en/project-management/index.rst:59
+#: ../../en/project-management/index.rst:66
 msgid "Hidden"
 msgstr ""
 
-#: ../../en/project-management/index.rst:59
-#: ../../en/project-management/index.rst:65
-#: ../../en/project-management/index.rst:67
+#: ../../en/project-management/index.rst:66
+#: ../../en/project-management/index.rst:72
+#: ../../en/project-management/index.rst:74
 msgid ":ref:`make_it_grow`"
 msgstr ""
 
-#: ../../en/project-management/index.rst:61
+#: ../../en/project-management/index.rst:68
 msgid "External Resource"
 msgstr ""
 
-#: ../../en/project-management/index.rst:61
+#: ../../en/project-management/index.rst:68
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
 msgstr ""
 
-#: ../../en/project-management/index.rst:65
+#: ../../en/project-management/index.rst:72
 msgid "Date Time"
 msgstr ""
 
-#: ../../en/project-management/index.rst:67
+#: ../../en/project-management/index.rst:74
 msgid "Others"
 msgstr ""
 
-#: ../../en/project-management/index.rst:71
+#: ../../en/project-management/index.rst:78
 msgid "Custom SVG symbols and settings"
 msgstr ""
 
-#: ../../en/project-management/index.rst:73
+#: ../../en/project-management/index.rst:80
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
 msgstr ""
 
-#: ../../en/project-management/index.rst:75
+#: ../../en/project-management/index.rst:82
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
+msgstr ""
+
+#: ../../en/project-management/index.rst:85
+msgid "External SD card"
+msgstr ""
+
+#: ../../en/project-management/index.rst:87
+msgid ""
+"In order to have write access to projects which are on an external SD card, "
+"you will have to put it into the following folder:"
 msgstr ""
