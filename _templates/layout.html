@@ -1,0 +1,8 @@
+{# Import the theme's layout. #}
+{% extends "!layout.html" %}
+
+{# Custom CSS overrides #}
+{% set bootswatch_css_custom = ['_static/qfield.css'] %}
+
+{# Custom JS overrides #}
+{% set script_files = script_files + ["_static/qfield.js"] %}

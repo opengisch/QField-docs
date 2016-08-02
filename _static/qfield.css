@@ -1,0 +1,35 @@
+body {
+  padding-top: 120px;
+}
+
+div.navbar{
+  background-color:#80CC28;
+   // Animation
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+  height: 100px !important;
+}
+
+
+div.navbar.shrink {
+  background-color:#CCC;
+  height: 35px !important;
+}
+
+.navbar-nav>li {
+  height: 100%;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  background-color: #444;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  background-color: #444;
+}
+
+span.menuselection {
+    background-color: #ddd;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
