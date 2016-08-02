@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 08:26+0200\n"
+"POT-Creation-Date: 2016-08-02 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>, 2016\n"
 "Language-Team: German (https://www.transifex.com/opengisch/teams/38926/de/)\n"
@@ -69,6 +69,8 @@ msgid ""
 "The following oranizations have contributed to make QField what it currently"
 " is. We would like to warmly say: Thanks a lot!"
 msgstr ""
+"Die folgenden Organisationen haben dazu beigetragen, QField dazu zu machen "
+"was es im Moment ist. Wir möchten uns herzlich dafür bedanken!"
 
 #: ../../en/development/index.rst:75
 msgid "Make it grow, make it yours"
@@ -112,7 +114,7 @@ msgstr ""
 
 #: ../../en/development/index.rst:86
 msgid "Search functionality"
-msgstr ""
+msgstr "Suche"
 
 #: ../../en/development/index.rst:87
 msgid "Attach external measurement devices"

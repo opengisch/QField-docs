@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015, The QField Project/OPENGIS.ch
+# Copyright (C) 2016, The QField Project/OPENGIS.ch
 # This file is distributed under the same license as the QField package.
 # 
 # Translators:
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-03 15:43+0200\n"
-"PO-Revision-Date: 2016-07-03 13:32+0000\n"
+"POT-Creation-Date: 2016-08-02 14:02+0200\n"
+"PO-Revision-Date: 2016-08-02 11:52+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -43,29 +43,29 @@ msgstr "Die App kann direkt von GooglePlay heruntergeladen und installiert werde
 msgid "|GooglePlayLink|_"
 msgstr "|GooglePlayLink|_"
 
-#: ../../en/installation-guide/index.rst:20
+#: ../../en/installation-guide/index.rst:21
 msgid "Get a pre-built apk"
 msgstr "Eine apk herunterladen"
 
-#: ../../en/installation-guide/index.rst:22
+#: ../../en/installation-guide/index.rst:23
 msgid ""
 "We also offer a pre-built apk for you to download if you are not able or do "
-"not want to use Google Playstore. Download the qfield.apk_."
+"not want to use GooglePlay. You can get the qfield.apk_ from the release "
+"page."
 msgstr "Es existieren auch fertige apk Pakete, die heruntergeladen und installiert werden können. Dies ermöglicht die Benutzung der App auch ohne GooglePlay. qfield.apk_ jetzt herunterladen."
 
-#: ../../en/installation-guide/index.rst:28
+#: ../../en/installation-guide/index.rst:29
 msgid "Karma edition"
 msgstr "Karma Version"
 
 #: ../../en/installation-guide/index.rst:31
 msgid ""
-"This is not the QField app. This is a way to support the QField development."
-msgstr "Dies ist nicht die QField App. Dies ist ein Weg um die Entwicklung von QField zu unterstützen."
-
-#: ../../en/installation-guide/index.rst:33
-msgid ""
-"If you bought the `QField Karma edition app "
-"<https://play.google.com/store/apps/details?id=ch.opengis.qfieldkarmaedition>`_,"
-" we thank you a lot for your support. To get QField you will also need to "
-"install it as explained above."
-msgstr "Wir bedanken uns herzlich für die Unterstützung, wenn du die `QField Karma Version App <https://play.google.com/store/apps/details?id=ch.opengis.qfieldkarmaedition>`_ gekauft hast. Um QField zu erhalten ist es immer noch nötig, dieses wie oben beschrieben zu installieren."
+"There are several ways to support the QField project, one of them is to buy "
+"the `QField Karma edition app "
+"<https://play.google.com/store/apps/details?id=ch.opengis.qfieldkarmaedition>`_"
+" in GooglePlay. This app will give help you to get a good karma and help us "
+"to continue to develop the QField app. Please note that the QField Karma "
+"edition does not offer any additional features. In fact, you will still need"
+" to install the normal QField app. Please also note that there are other "
+"preferred ways to support the development of QField."
+msgstr "Es gibt verschiedene Wege, das QField Projekt zu unterstützen. Einer davon ist, die `QField Karma Edition App <https://play.google.com/store/apps/details?id=ch.opengis.qfieldkarmaedition>`_ im GooglePlay zu kaufen. Diese App verleiht dem Käufer ein gutes Karma und hilft uns, mit der Entwicklung von QField fortzufahren. Die QField Karma Edition offeriert keine zusätzlichen Features. Es ist immer noch nötig, die normale QField App zu installieren. Es gibt auch weitere Wege, die Entwicklung von QField zu unterstützen."
