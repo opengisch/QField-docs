@@ -3,6 +3,8 @@ QField documentation
 
 QField is an app to access a GIS outdoors. It is a simple user interface for Android devices optimized for touch interaction but with the full power of `QGIS <https://qgis.org>`_ under the hood.
 
+.. vimeo:: 173774749
+
 .. This document can also be downloaded as a single PDF document: `QField.pdf <./QField.pdf>`__ |image|.
   .. |image| image:: ../_static/pdf.png
    :height: 15
