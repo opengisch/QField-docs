@@ -44,7 +44,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'QField'
+project = u'QField Documentation'
 copyright = u'2016, The QField Project/OPENGIS.ch'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -114,7 +114,6 @@ html_theme_options = {
   # Location of link to source.
   # Options are "nav" (default), "footer" or anything else to exclude.
   'source_link_position': "none",
-
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

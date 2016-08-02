@@ -8,8 +8,8 @@ div.navbar{
    -webkit-transition: all 0.4s ease;
    transition: all 0.4s ease;
   height: 100px !important;
+  overflow: hidden;
 }
-
 
 div.navbar.shrink {
   background-color:#CCC;
@@ -32,4 +32,9 @@ span.menuselection {
     background-color: #ddd;
     border-radius: 3px;
     padding: 2px 4px;
+}
+
+span.shadow-background {
+  position: fixed;
+  top: 12px;
 }
