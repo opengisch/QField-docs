@@ -4,9 +4,9 @@ body {
 
 div.navbar{
   background-color:#80CC28;
-   // Animation
-   -webkit-transition: all 0.4s ease;
-   transition: all 0.4s ease;
+  // Animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   height: 100px !important;
   overflow: hidden;
 }
@@ -37,4 +37,12 @@ span.menuselection {
 span.shadow-background {
   position: fixed;
   top: 12px;
+}
+
+img.unobtrusive {
+  // Animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  filter: brightness(1.5) saturate(0.2);
+  -webkit-filter: brightness(1.5) saturate(0.2);
 }
