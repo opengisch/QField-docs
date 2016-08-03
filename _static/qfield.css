@@ -68,3 +68,15 @@ span.shadow-background.unobtrusive {
   height: 100%;
   width: 100%;
 }
+
+.navbar-brand>span.unobtrusive>img {
+  content: url('qfield-logo-noborder.svg');
+}
+
+path {
+  stroke-width: 4;
+}
+
+.unobtrusive path {
+  stroke-width: 1;
+}
