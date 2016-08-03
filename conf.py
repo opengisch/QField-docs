@@ -113,9 +113,15 @@ html_theme_options = {
 
   # Location of link to source.
   # Options are "nav" (default), "footer" or anything else to exclude.
-  'source_link_position': "none",
+  'source_link_position': "footer",
+
 }
 
+html_context = {
+  'source_link_github_project': "opengisch/QField-docs",
+
+  'source_link_github_branch': "master"
+}
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
