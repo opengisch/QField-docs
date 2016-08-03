@@ -8,7 +8,6 @@ div.navbar{
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   height: 100px !important;
-  overflow: hidden;
 }
 
 div.navbar.shrink {
@@ -39,10 +38,33 @@ span.shadow-background {
   top: 12px;
 }
 
-img.unobtrusive {
+.navbar-brand {
+  height: 100%;
+  overflow: hidden;
+}
+
+.navbar-brand>span,
+span.shadow-background {
   // Animation
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  filter: brightness(1.5) saturate(0.2);
-  -webkit-filter: brightness(1.5) saturate(0.2);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+
+  display: block;
+  height: 128px;
+  width: 128px;
+}
+
+.navbar-brand>span.unobtrusive,
+span.shadow-background.unobtrusive {
+  // Animation
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+
+  height: 24px;
+  width: 24px;
+}
+
+.navbar-brand>span>img {
+  height: 100%;
+  width: 100%;
 }

@@ -31,7 +31,7 @@ Funding
 The following oranizations have contributed to make QField what it currently is.
 We would like to warmly say: Thanks a lot!
 
-.. container:: clearer
+.. container:: clearer text-center
 
     .. image:: /images/logo_sige.jpg
        :width: 200px
@@ -43,21 +43,17 @@ We would like to warmly say: Thanks a lot!
        :alt: Schweizerische Vogelwarte
        :target: http://www.vogelwarte.ch
     
-
-.. container:: clearer
-
     .. image:: /images/logo_geoconseils.png
        :width: 200px
        :alt: Géoconseils SA
        :target: http://www.geoconseils.ch
     
+.. container:: clearer text-center
+
     .. image:: /images/logo_hydrosafety.png
        :width: 200px
        :alt: hydro safety srls
        :target: http://www.hydro-safety.com/
-
-
-.. container:: clearer
 
     .. image:: /images/logo_vevey.png
        :width: 100px
