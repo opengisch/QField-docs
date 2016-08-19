@@ -12,10 +12,11 @@ then
   pushd ${DIR}
   mkdir publish
   cd publish
-  git clone git@github.com:opengisch/QField-docs.git --branch gh-pages
-  cd QField-docs
+  git clone git@github.com:opengisch/QField.git --branch gh-pages
+  cd QField
   git rm . -r
   cp ../../build/html/* . -r
+  echo "www.qfield.org" > CNAME
   touch .nojekyll
   git add -A
   git commit -m "Automatic update from https://github.com/opengisch/QField-docs/commit/${TRAVIS_COMMIT}"
