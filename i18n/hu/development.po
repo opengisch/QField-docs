@@ -1,15 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, The QField Project/OPENGIS.ch
-# This file is distributed under the same license as the QField package.
+# This file is distributed under the same license as the QField Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: QField 0.7\n"
+"Project-Id-Version: QField Documentation 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 14:02+0200\n"
+"POT-Creation-Date: 2016-08-19 12:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Mr. Szabi <sum.szabolcs@gmail.com>, 2016\n"
 "Language-Team: Hungarian (https://www.transifex.com/opengisch/teams/38926/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: ../../en/development/index.rst:3
 msgid "Development and support"
-msgstr ""
+msgstr "Fejlesztés és támogatás"
 
 #: ../../en/development/index.rst:7
 msgid "License"
-msgstr ""
+msgstr "Licenc"
 
 #: ../../en/development/index.rst:9
 msgid ""
@@ -33,89 +34,109 @@ msgid ""
 "based field data collection app that is free of cost and can be freely "
 "modified."
 msgstr ""
+"A QField a GNU Általános Nyilvános Licenc (GPL) V2 vagy afölötti verziója "
+"alatt került kiadásra, mely licenc a QField fejlesztése tekintetében "
+"lehetőséget nyújt arra, hogy Ön megvizsgálhassa és átalakíthassa a "
+"forráskódot, illetőleg garantálja, hogy Ön mindig hozzáférhessen egy QGIS "
+"alapú terepi adatbázis alkalmazáshoz, amely ingyenes és szabadon "
+"módosítható."
 
 #: ../../en/development/index.rst:15
 msgid ""
 "You can find the sourcecode `on github "
 "<https://github.com/opengisch/QField>`_"
 msgstr ""
+"A forráskód a Githubon érhető el <https://github.com/opengisch/QField>`_"
 
 #: ../../en/development/index.rst:18
 msgid "Credits"
-msgstr ""
+msgstr "Köszönetnyilvánítás"
 
 #: ../../en/development/index.rst:20
 msgid ""
 "QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
 "and training for open source software including QField and QGIS."
 msgstr ""
+"A QField fejlesztője az OPENGIS.ch. Az OPENGIS.ch. tanácsadói, fejlesztői és"
+" képzési szolgáltatás nyújt nyílt forráskódú szoftverekhez, ideértve a "
+"QField-et és a QGIS-t."
 
 #: ../../en/development/index.rst:29
 msgid "Funding"
-msgstr ""
+msgstr "Finanszírozás"
 
 #: ../../en/development/index.rst:31
 msgid ""
 "The following oranizations have contributed to make QField what it currently"
 " is. We would like to warmly say: Thanks a lot!"
 msgstr ""
+"Az alábbi szervezetek járultak hozzá ahhoz, hogy a QField a jelenlegi "
+"formájában létrejöhessen. Szeretnénk ezért hálás köszönetünket kifejezni!"
 
-#: ../../en/development/index.rst:75
+#: ../../en/development/index.rst:71
 msgid "Make it grow, make it yours"
-msgstr ""
+msgstr "Segítsd a fejlődését, kezeld a sajátodként"
 
-#: ../../en/development/index.rst:77
+#: ../../en/development/index.rst:73
 msgid ""
 "This is a list of features which we think are very useful for a nice user "
 "experience and an effective workflow."
 msgstr ""
+"Ez a lista olyan funkciókat tartalmaz, melyek hitünk szerint jelentősen "
+"hozzájárulnak egy nagyszerű felhasználó élmény létrejöttéhez és egy hatékony"
+" munkafolyamat kialakításához."
+
+#: ../../en/development/index.rst:76
+msgid "Polygon digitizing"
+msgstr "Poligon-digitalizálás"
+
+#: ../../en/development/index.rst:77
+msgid "Edit widgets"
+msgstr "Widgetek szerkesztése"
+
+#: ../../en/development/index.rst:78
+msgid "Connection based on-/offline synchronization"
+msgstr "Csatlakozás-alapú online/offline szinkronizálás"
+
+#: ../../en/development/index.rst:79
+msgid "Improved coordinate precision"
+msgstr "Továbbfejlesztett koordináta-pontosság"
 
 #: ../../en/development/index.rst:80
-msgid "Polygon digitizing"
-msgstr ""
-
-#: ../../en/development/index.rst:81
-msgid "Edit widgets"
-msgstr ""
-
-#: ../../en/development/index.rst:82
-msgid "Connection based on-/offline synchronization"
-msgstr ""
-
-#: ../../en/development/index.rst:83
-msgid "Improved coordinate precision"
-msgstr ""
-
-#: ../../en/development/index.rst:84
 msgid "Editing geometries (can be split into several pieces)"
 msgstr ""
+"Geometriai állományok szerkesztése (melyek számos részelemre bonthatók)"
 
-#: ../../en/development/index.rst:85
+#: ../../en/development/index.rst:81
 msgid ""
 "Saving GPS status information into attributes when digitizing (precision, "
 "rtk status...)"
 msgstr ""
+"A GPS adatok attribútumokba történő mentése digitalizálás során (pontosság, "
+"RTK státusz stb.)"
 
-#: ../../en/development/index.rst:86
+#: ../../en/development/index.rst:82
 msgid "Search functionality"
-msgstr ""
+msgstr "Keresési funkciók"
 
-#: ../../en/development/index.rst:87
+#: ../../en/development/index.rst:83
 msgid "Attach external measurement devices"
-msgstr ""
+msgstr "Külső mérőeszközök csatlakoztatása"
+
+#: ../../en/development/index.rst:84
+msgid "Legend"
+msgstr "Jelmagyarázat"
+
+#: ../../en/development/index.rst:85
+msgid "[Your favorite feature]"
+msgstr "[Az Ön kedvenc funkciója]"
 
 #: ../../en/development/index.rst:88
-msgid "Legend"
-msgstr ""
-
-#: ../../en/development/index.rst:89
-msgid "[Your favorite feature]"
-msgstr ""
-
-#: ../../en/development/index.rst:92
 msgid "API stability"
-msgstr ""
+msgstr "API stabilitás"
 
-#: ../../en/development/index.rst:94
+#: ../../en/development/index.rst:90
 msgid "QField is currently not considered API stable."
 msgstr ""
+"A QField alkalmazásprogramozási felülete (API) jelenleg nem tekinthető "
+"stabilnak."

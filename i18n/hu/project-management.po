@@ -1,15 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, The QField Project/OPENGIS.ch
-# This file is distributed under the same license as the QField package.
+# This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
+# Mr. Szabi <sum.szabolcs@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:45+0200\n"
-"PO-Revision-Date: 2016-08-02 11:45+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-08-19 12:05+0200\n"
+"PO-Revision-Date: 2016-08-12 09:45+0000\n"
+"Last-Translator: Mr. Szabi <sum.szabolcs@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,35 +20,35 @@ msgstr ""
 
 #: ../../en/project-management/dataformat.rst:2
 msgid "Supported data formats"
-msgstr ""
+msgstr "Támogatott adatformátumok"
 
 #: ../../en/project-management/dataformat.rst:4
 msgid ""
 "QField supports a wide variety of formats via QGIS data providers and GDAL. "
 "This page offers a non-exhaustive list of supported data formats."
-msgstr ""
+msgstr "A QField a legkülönbözőbb formátumokat támogatja a QGIS adatállományokon és a GDAL-on keresztül. Ez az oldal a teljesség igénye nélkül nyújt tájékoztatást a támogatott adatformátumokról."
 
 #: ../../en/project-management/dataformat.rst:8
 msgid "Table"
-msgstr ""
+msgstr "Táblázat"
 
 #: ../../en/project-management/dataformat.rst:15
 msgid "Data Format"
-msgstr ""
+msgstr "Adatformátum"
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:61
 msgid "Support"
-msgstr ""
+msgstr "Támogatás"
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:61
 msgid "Notes"
-msgstr ""
+msgstr "Megjegyzés"
 
 #: ../../en/project-management/dataformat.rst:17
 msgid "Spatialite"
-msgstr ""
+msgstr "SpatiaLite"
 
 #: ../../en/project-management/dataformat.rst:17
 #: ../../en/project-management/dataformat.rst:19
@@ -60,64 +61,64 @@ msgstr ""
 #: ../../en/project-management/index.rst:68
 #: ../../en/project-management/index.rst:70
 msgid ":yay:`✔`"
-msgstr ""
+msgstr ":Igen!:`✔`"
 
 #: ../../en/project-management/dataformat.rst:19
 msgid "Geopackage"
-msgstr ""
+msgstr "GeoPackage"
 
 #: ../../en/project-management/dataformat.rst:21
 msgid "WMS"
-msgstr ""
+msgstr "WMS"
 
 #: ../../en/project-management/dataformat.rst:23
 msgid "Postgis"
-msgstr ""
+msgstr "PostGIS"
 
 #: ../../en/project-management/dataformat.rst:23
 msgid "Ssl support not yet implemented."
-msgstr ""
+msgstr "Jelenleg még nem áll rendelkezésre SSL támogatás."
 
 #: ../../en/project-management/dataformat.rst:25
 msgid "MBTiles"
-msgstr ""
+msgstr "MBTiles"
 
 #: ../../en/project-management/dataformat.rst:27
 msgid "Shapefile"
-msgstr ""
+msgstr "Shape fájl"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "Tiff"
-msgstr ""
+msgstr "TIF"
 
 #: ../../en/project-management/dataformat.rst:29
 #: ../../en/project-management/index.rst:72
 msgid ":moreorless:`~`"
-msgstr ""
+msgstr ":többé-kevésbé:`~`"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "JPEG compression not yet supported."
-msgstr ""
+msgstr "Jelenleg még nem áll rendelkezésre JPEG tömörítés."
 
 #: ../../en/project-management/dataformat.rst:31
 msgid "ECW"
-msgstr ""
+msgstr "ECW"
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
 #: ../../en/project-management/index.rst:76
 #: ../../en/project-management/index.rst:78
 msgid ":nay:`✘`"
-msgstr ""
+msgstr ":Nem:`✘`"
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
 msgid "License restricts usage."
-msgstr ""
+msgstr "A licenc korlátozza a felhasználást."
 
 #: ../../en/project-management/dataformat.rst:33
 msgid "MrSID"
-msgstr ""
+msgstr "MrSID"
 
 #: ../../en/project-management/dataformat.rst:36
 msgid ""
@@ -127,22 +128,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr ""
+msgstr "Amennyiben nem találja kedvenc adatformátumát a táblázatban, úgy kérjük, ellenőrizze, működik-e. Ha működik, akkor szíveskedjen azt a fenti listához illeszteni <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_  eredményeinek közzététele érdekében, ha pedig nem működik, úgy kérjük, egy új téma megnyitásával jelezze ezt számunkra <https://github.com/opengisch/OSGeo4A/issues>_. Örömünkre fog szolgálni, ha segíthetünk Önnek a megoldásban!"
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr ""
+msgstr "Raszter adat"
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr ""
+msgstr "A raszteradatok gyorsan válhatnak igen nagy méretűvé, tömörítetlen TIFF fájlokkal végzett műveletek során mindez gyakorta több GB adatmennyiséget jelent. Az ilyen típusú feladat-végrehajtás - különösen mobil eszközök esetén - kevéssé hatékony."
 
 #: ../../en/project-management/dataformat.rst:47
 msgid "Use GeoPackage"
-msgstr ""
+msgstr "Használja a GeoPackage-et"
 
 #: ../../en/project-management/dataformat.rst:49
 msgid ""
@@ -150,68 +151,68 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr ""
+msgstr "Javasoljuk, hogy a raszteradatok kezeléséhez használja a GeoPackage formátumot. Az alábbi parancsok a :code:`raster.tif` fájlokat :code:`raster.gpkg` fájlokká alakítják át a kapcsolódó piramisokkal. Győződjön meg arról, hogy az alkalmazni kívánt CRS (koordináta referencia-rendszer) EPSG:21781 (CH1903 LV03) értékre legyen állítva."
 
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
-msgstr ""
+msgstr "QField Projektmenedzsment"
 
 #: ../../en/project-management/index.rst:5
 msgid "Portable Project"
-msgstr ""
+msgstr "Hordozható Projekt"
 
 #: ../../en/project-management/index.rst:7
 msgid ""
 "You will need a portable version of your QGIS project file (.qgs). Portable "
 "means that all paths are relative and datasets are reachable from the "
 "device."
-msgstr ""
+msgstr "Szüksége lesz a QGIS projekt fájl (.qgs) egy hordozható verziójára. A \"hordozható\" azt jelenti, hogy valamennyi elérési útvonal relatív és az adatállományok elérhetők a készülékről. "
 
 #: ../../en/project-management/index.rst:10
 msgid ""
 "Check that :menuselection:`Project --> Project Properties --> General --> "
 "Save paths` is set to \"Relative\" and that all required data files are in "
 "the same folder like the .qgs file or a subfolder of it."
-msgstr ""
+msgstr "Ellenőrizze, hogy a :menuselection:`Project --> Project Properties --> General --> Save paths beállítás értéke \"relatív\"-ra legyen állítva, valamint az összes szükséges adatfájl ugyanabba a mappába (vagy annak valamely almappájába) kerüljön, ahol a .qgs projektfájl is található."
 
 #: ../../en/project-management/index.rst:13
 msgid ""
 "For increased productivity, we suggest having a look at the following "
 "plugins:"
-msgstr ""
+msgstr "A hatékonyság növelése érdekében javasoljuk, hogy tekintsék meg az alábbi bővítményeket:"
 
 #: ../../en/project-management/index.rst:15
 msgid ""
 "`QConsolidate plugin <https://plugins.qgis.org/plugins/qconsolidate/>`_"
-msgstr ""
+msgstr "`QConsolidate plugin <https://plugins.qgis.org/plugins/qconsolidate/>`_"
 
 #: ../../en/project-management/index.rst:16
 msgid ""
 "`Offline Editing plugin "
 "<https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_offline_editing.html>`_"
-msgstr ""
+msgstr "`Offline Editing plugin <https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_offline_editing.html>`_"
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
-msgstr ""
+msgstr "Koordináta Referencia-rendszerek"
 
 #: ../../en/project-management/index.rst:21
 msgid ""
 "QField uses the Coordinate Reference System (CRS) information found in the "
 "project file."
-msgstr ""
+msgstr "A QField a projekt fájlban rögzített koordináta referencia-rendszer (coordinate reference system - CRS) információit használja."
 
 #: ../../en/project-management/index.rst:23
 msgid "Project CRS"
-msgstr ""
+msgstr "Projekt CRS"
 
 #: ../../en/project-management/index.rst:24
 msgid "On the fly reprojection (OTF) is used for visualization"
-msgstr ""
+msgstr "A megjelenítéshez az ún. \"röptében\" történő vetületi transzformáció (on the fly reprojection - OTF) kerül alkalmazásra."
 
 #: ../../en/project-management/index.rst:25
 msgid "Layer CRS"
-msgstr ""
+msgstr "Réteg CRS"
 
 #: ../../en/project-management/index.rst:28
 msgid ""
@@ -219,32 +220,32 @@ msgid ""
 " the layers on which you digitize are in the same CRS like the project. If "
 "you fail to do so it will look as if new features are not saved because they"
 " end up in far far away."
-msgstr ""
+msgstr "A QField az új funkciók digitalizálása során nem veszi figyelembe az OTF-et. Győződjön meg arról, hogy az Ön által használni kívánt rétegek CRS-beállítása megegyezik a projektével. Ennek hiányában úgy fog tűnni, mintha az állományok nem kerültek volna mentésre, hiszen így a szükséges pozíciótól nagyon távolra kerülnek."
 
 #: ../../en/project-management/index.rst:33
 msgid "Vector Layer Settings"
-msgstr ""
+msgstr "Vektor Réteg Beállítások"
 
 #: ../../en/project-management/index.rst:35
 msgid ""
 "Most of the settings which QGIS offers are directly supported by QField "
 "without any extra effort."
-msgstr ""
+msgstr "A QField külön teendők elvégzésének szükségessége nélkül, közvetlenül támogatja a QGIS-ben alkalmazott beállítások többségét."
 
 #: ../../en/project-management/index.rst:38
 msgid "Style"
-msgstr ""
+msgstr "Stílus"
 
 #: ../../en/project-management/index.rst:40
 msgid ""
 "All style settings from QGIS are directly supported by QField. This includes"
 " all renderer types like graduated, categorized, rule based, 2.5D as well as"
 " data defined symbology."
-msgstr ""
+msgstr "A QField közvetlenül támogatja a QGIS-ben rendelkezésre álló összes stílusbeállítást. Mindez magában foglalja valamennyi számítási (ábrázolási) metódust, mint amilyen a \"graduált\", a \"kategorizált\", a \"szabály alapú\", a \"2.5D\" vagy az \"adat alapú\"."
 
 #: ../../en/project-management/index.rst:43
 msgid "Forms and Fields"
-msgstr ""
+msgstr "Formák és Mezők"
 
 #: ../../en/project-management/index.rst:45
 msgid "QField creates forms similar to, but not equal to QGIS."
@@ -285,19 +286,19 @@ msgstr ""
 
 #: ../../en/project-management/index.rst:63
 msgid "Text Edit"
-msgstr ""
+msgstr "Szövegszerkesztés"
 
 #: ../../en/project-management/index.rst:63
 msgid "Multiline is always allowed"
-msgstr ""
+msgstr "A többsoros szövegbevitel mindig engedélyezett."
 
 #: ../../en/project-management/index.rst:64
 msgid "HTML is not supported"
-msgstr ""
+msgstr "A HTML nem támogatott"
 
 #: ../../en/project-management/index.rst:66
 msgid "Check Box"
-msgstr ""
+msgstr "Jelölőnégyzet"
 
 #: ../../en/project-management/index.rst:68
 msgid "Value Map"
@@ -305,17 +306,17 @@ msgstr ""
 
 #: ../../en/project-management/index.rst:70
 msgid "Hidden"
-msgstr ""
+msgstr "Rejtett"
 
 #: ../../en/project-management/index.rst:70
 #: ../../en/project-management/index.rst:76
 #: ../../en/project-management/index.rst:78
 msgid ":ref:`make_it_grow`"
-msgstr ""
+msgstr ":ref:`make_it_grow`"
 
 #: ../../en/project-management/index.rst:72
 msgid "External Resource"
-msgstr ""
+msgstr "Külső Forrás"
 
 #: ../../en/project-management/index.rst:72
 msgid ""
@@ -329,29 +330,29 @@ msgstr ""
 
 #: ../../en/project-management/index.rst:78
 msgid "Others"
-msgstr ""
+msgstr "Egyebek"
 
 #: ../../en/project-management/index.rst:82
 msgid "Custom SVG symbols and settings"
-msgstr ""
+msgstr "Szokásos SVG jelképek és beállítások"
 
 #: ../../en/project-management/index.rst:84
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
-msgstr ""
+msgstr "Az \"About\" menüpontban megtekintheti, hogy az Ön eszközén hol találhatók a megosztott mappák."
 
 #: ../../en/project-management/index.rst:86
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr ""
+msgstr "Ha a szokásos jelképeket kívánja használni, úgy helyezze el azokat a szükséges helyre egy fájlkezelő program segítségével."
 
 #: ../../en/project-management/index.rst:89
 msgid "External SD card"
-msgstr ""
+msgstr "Külső SD kártya"
 
 #: ../../en/project-management/index.rst:91
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"
-msgstr ""
+msgstr "Annak érdekében, hogy lehetővé tegye olyan projekt módosítását, amely külső SD kártyán található, helyezze azt a következő mappába:"

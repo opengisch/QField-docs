@@ -1,98 +1,87 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015, The QField Project/OPENGIS.ch
-# This file is distributed under the same license as the QField package.
+# Copyright (C) 2016, The QField Project/OPENGIS.ch
+# This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
+# Mr. Szabi <sum.szabolcs@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-09 12:28+0100\n"
-"PO-Revision-Date: 2016-03-06 22:12+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Hungarian (http://www.transifex.com/opengisch-1/qfield-documentation/language/hu/)\n"
+"POT-Creation-Date: 2016-08-19 12:05+0200\n"
+"PO-Revision-Date: 2016-08-10 17:27+0000\n"
+"Last-Translator: Mr. Szabi <sum.szabolcs@gmail.com>\n"
+"Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 91d31213c84f4b689e39c891486afa41
 #: ../../en/concepts/index.rst:2
 msgid "Concepts"
-msgstr ""
+msgstr "Vezérelvek"
 
-# 7aa7c0eca2a84ff58b15b358d8d59564
 #: ../../en/concepts/index.rst:4
 msgid "QField was designed with a few key concepts in mind."
-msgstr ""
+msgstr "A QField-et néhány különösen lényeges alapelv szem előtt tartása mellett fejlesztettük."
 
-# b7abcda3c0dc46ca9bdc13c305f559b2
 #: ../../en/concepts/index.rst:7
 msgid "Keep it simple"
-msgstr ""
+msgstr "Maradjon egyszerű"
 
-# ecbd0edaa07c4e4691a0af066b849a74
 #: ../../en/concepts/index.rst:9
 msgid ""
 "The requirements on the field are not the same as on a desktop. The screen "
 "is smaller, the input devices are different and the tasks are different."
-msgstr ""
+msgstr "A terepi munkához kapcsolódó feltételek eltérnek azoktól, melyek az asztali számítógépek használatát jellemzik. Kisebb a kijelző, továbbá különböznek a beviteli eszközök és a feladatok jellege is.   "
 
-# 3ae87f806cd949338045458168ac12da
 #: ../../en/concepts/index.rst:12
 msgid ""
 "QField aims to help the user to perform the tasks he needs to do without "
 "cluttering the user interface. This means, that only tasks which need to be "
 "done on the field are availble from the interface. Everything else is not."
-msgstr ""
+msgstr "A QField az alkalmazói felület túlzsúfolása nélkül kívánja segíteni a felhasználók tevékenységét. Ennek megfelelően tehát kizárólag azon műveleteket foglalja magában, melyeket a terepi munka során szükséges elvégezni, mást azonban nem."
 
-# 01c8fefc550c410cbc43ff8b85881435
 #: ../../en/concepts/index.rst:16
 msgid ""
 "This means that everything like layer styling, form definitions and other "
 "project setup steps should be done on a computer with QGIS installed first."
-msgstr ""
+msgstr "Mindez azt jelenti, hogy a QGIS telepítése útján először egy számítógépen szükséges elvégezni az olyan feladatokat, mint például a rétegstílusok kialakítása, formázása vagy projektek felépítése."
 
-# 9dba0d0819a14925b3278a650e1e3408
 #: ../../en/concepts/index.rst:20
 msgid "Be compatible with QGIS"
-msgstr ""
+msgstr "Legyen kompatibilis a QGIS-szel"
 
-# 6e6b81d6e5314ae38d256b23f5df6b18
 #: ../../en/concepts/index.rst:22
 msgid ""
 "QField is based on QGIS. It is not a rebuild of QGIS it really *does* use "
 "QGIS libraries. The rendering engine is exactly the same as in QGIS for "
 "desktop and your project will therefore look exactly the same on your mobile"
 " device as it does on your computer."
-msgstr ""
+msgstr "A QField alapját a QGIS képezi, ugyanakkor nem egyszerűen a QGIS módosított változata, hiszen ténylegesen a QGIS könyvtárstruktúrájára épül. Mivel ugyanakkor a QField renderelő motorja megegyezik azzal, amely a QGIS-t is működteti, ezért a projektek ugyanolyan formában jelennek meg a mobil eszközökön, mint ahogyan a számítógépen láthatók."
 
-# 0e414331efdb491d9ee9d6a15e210dcb
 #: ../../en/concepts/index.rst:27
 msgid ""
 "If something is already available as a configuration option in a QGIS "
 "project, it should not be re-invented. QField therefore uses the same edit "
 "widgets as QGIS desktop does. If a project is already configured for the "
 "desktop, it should just run on mobile as well."
-msgstr ""
+msgstr "Ha már egyszer rendelkezésre állnak mindazok a konfigurációs lehetőségek, melyek egy QGIS projekt elkészítéséhez szükségesek, akkor nem kell ezeket \"újra feltalálni\". Éppen ezért a QField ugyanazokat a szerkesztési megoldásokat alkalmazza, mint a QGIS. Amennyiben tehát felépítünk egy projektet a számítógépen, úgy annak mobil eszközökön is működnie kell."
 
-# 34f3a712b3644f05afb045d7b2c74394
 #: ../../en/concepts/index.rst:32
 msgid ""
 "Remember, this is just the *concept*. This is what we have in mind when we "
 "develop QField. It does not mean that it is already completely there yet."
-msgstr ""
+msgstr "Ne feledje, hogy mindez csak a \"koncepciónk\". A fentebb vázolt elképzelések vezetnek bennünket a QField fejlesztése során, ám még nem jelenthetjük ki, hogy termékünk minden tekintetben készen volna."
 
-# e4a5bc86cb6841348c688a10355406f4
 #: ../../en/concepts/index.rst:36
 msgid "Mode based"
-msgstr ""
+msgstr "Üzemmód alapú rendszer"
 
-# 204a9a740b6a481eb43061231054d5f9
 #: ../../en/concepts/index.rst:38
 msgid ""
 "QField is built around *modes*. Modes are similar to a *map tool* in QGIS "
 "desktop. A mode defines the task which a user is currently doing. Either a "
 "user is *browsing* through the data or he is *digitizing* something new."
-msgstr ""
+msgstr "A QField működése \"üzemmódokra\" épül, melyek hasonlóak a QGIS-ben alkalmazott \"térkép eszköz\" funkciókhoz. A megfelelő üzemmód kiválasztása teszi lehetővé a felhasználó által célzott műveletek elvégzését, legyen szó az adatállományok közötti \"böngészésről\" vagy új adatok \"digitalizálásáról\"."
