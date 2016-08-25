@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, The QField Project/OPENGIS.ch
-# This file is distributed under the same license as the QField package.
+# This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
 # Daniel Gnerre <daniel.gnerre@vevey.ch>, 2016
@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:45+0200\n"
-"PO-Revision-Date: 2016-08-02 11:45+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-08-25 17:00+0200\n"
+"PO-Revision-Date: 2016-08-25 15:00+0000\n"
+"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +65,7 @@ msgstr ":yay:`✔`"
 
 #: ../../en/project-management/dataformat.rst:19
 msgid "Geopackage"
-msgstr "Geopackage"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:21
 msgid "WMS"
@@ -128,22 +128,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr "Si vous ne trouvez pas le format désiré dans cette table, merci de tester s'il fonctionne et d'`adapter la liste ci-dessous <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_ pour partager votre expérience. Si ça ne fonctionne pas, merci d'`ouvrir une issue <https://github.com/opengisch/OSGeo4A/issues>`_. Nous serons heureux de vous aider dans l'implémentation."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr "Données raster"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr "Les données raster peuvent rapidement devenir volumineuses si elles ne sont pas compressées, jusqu'à plusieurs Gb. Sur des appareils mobiles, ce n'est pas efficient. "
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:47
 msgid "Use GeoPackage"
-msgstr "Utiliser le format GeoPackage"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:49
 msgid ""
@@ -151,7 +151,7 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr "Nous recommandons l'utilisation du format GeoPackage pour les données raster. Les commandes suivantes permettent de convertir un fichier nommé :code:`raster.tif` vers un fichier :code:`raster.gpkg` avec pyramides. Pensez à ajuter la projection EPSG:21781 (CH1903 LV03) avec la projection désirée. "
+msgstr ""
 
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
@@ -316,7 +316,7 @@ msgstr ""
 
 #: ../../en/project-management/index.rst:72
 msgid "External Resource"
-msgstr "Ressource externe"
+msgstr ""
 
 #: ../../en/project-management/index.rst:72
 msgid ""
@@ -326,11 +326,11 @@ msgstr ""
 
 #: ../../en/project-management/index.rst:76
 msgid "Date Time"
-msgstr "Date heure"
+msgstr ""
 
 #: ../../en/project-management/index.rst:78
 msgid "Others"
-msgstr "Autres"
+msgstr ""
 
 #: ../../en/project-management/index.rst:82
 msgid "Custom SVG symbols and settings"
@@ -339,13 +339,13 @@ msgstr "Symboles SVG personnalisés et configuration"
 #: ../../en/project-management/index.rst:84
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
-msgstr "Les dossiers partagés peuvent être consultés dans la boîte de dialogue \"A propos\"."
+msgstr ""
 
 #: ../../en/project-management/index.rst:86
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr "Les symboles personnalisés doivent être copiés ici avec le gestionnaire de fichiers. "
+msgstr ""
 
 #: ../../en/project-management/index.rst:89
 msgid "External SD card"

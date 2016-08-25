@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 12:05+0200\n"
-"PO-Revision-Date: 2016-08-11 07:21+0000\n"
-"Last-Translator: Mr. Szabi <sum.szabolcs@gmail.com>\n"
+"POT-Creation-Date: 2016-08-25 17:00+0200\n"
+"PO-Revision-Date: 2016-08-25 15:00+0000\n"
+"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,65 +20,71 @@ msgstr ""
 
 #: ../../en/index.rst:2
 msgid "QField documentation"
-msgstr "QField dokumentáció"
+msgstr ""
 
-#: ../../en/index.rst:4
+#: ../../en/index.rst:6
+msgid ""
+":download:`Slides from FOSS4G 2016 <files/slides_foss4g16.pdf>` are "
+"available."
+msgstr ""
+
+#: ../../en/index.rst:8
 msgid ""
 "QField is an app to access a GIS outdoors. It is a simple user interface for"
 " Android devices optimized for touch interaction but with the full power of "
 "`QGIS <https://qgis.org>`_ under the hood."
-msgstr "A QField egy terepen használható térinformatikai program. Android eszközökre fejlesztett, egyszerű kezelőfelülete érintőképernyős használatra optimalizált, mégpedig a `QGIS <https://qgis.org>` által nyújtott előnyök lehető legteljesebb kiaknázása mellett."
+msgstr ""
 
-#: ../../en/index.rst:18
+#: ../../en/index.rst:22
 msgid "Contents"
 msgstr "Tartalom"
 
-#: ../../en/index.rst:31
-msgid "Translations"
-msgstr "Fordítások"
-
-#: ../../en/index.rst:33
-msgid "The documentation is available in several languages"
-msgstr "A dokumentáció számos nyelven rendelkezésre áll"
-
 #: ../../en/index.rst:35
-msgid "`English </QField-docs/en>`_"
-msgstr "Angol"
+msgid "Translations"
+msgstr ""
 
 #: ../../en/index.rst:37
-msgid "`Deutsch </QField-docs/de>`_"
-msgstr "Német"
+msgid "The documentation is available in several languages"
+msgstr ""
 
 #: ../../en/index.rst:39
-msgid "`Français </QField-docs/fr>`_"
-msgstr "Francia"
+msgid "`English </QField-docs/en>`_"
+msgstr ""
 
 #: ../../en/index.rst:41
-msgid "`Galician </QField-docs/gl>`_"
-msgstr "Galíciai"
+msgid "`Deutsch </QField-docs/de>`_"
+msgstr ""
 
 #: ../../en/index.rst:43
-msgid "`Portuguese </QField-docs/pt>`_"
-msgstr "Portugál"
+msgid "`Français </QField-docs/fr>`_"
+msgstr ""
 
 #: ../../en/index.rst:45
-msgid "`Catalan </QField-docs/ca>`_"
-msgstr "Katalán"
+msgid "`Galician </QField-docs/gl>`_"
+msgstr ""
 
 #: ../../en/index.rst:47
+msgid "`Portuguese </QField-docs/pt>`_"
+msgstr ""
+
+#: ../../en/index.rst:49
+msgid "`Catalan </QField-docs/ca>`_"
+msgstr ""
+
+#: ../../en/index.rst:51
 msgid ""
 "If there is an error with a translation, please `help to improve it "
 "<https://www.transifex.com/opengisch/qfield-documentation/>`_."
-msgstr "Ha a fordításban hibát észlel, kérjük, segítsen azt kijavítani <https://www.transifex.com/opengisch/qfield-documentation/>`_."
+msgstr ""
 
-#: ../../en/index.rst:51
+#: ../../en/index.rst:55
 msgid "Indices and tables"
 msgstr "Index és táblázatok"
 
-#: ../../en/index.rst:53
+#: ../../en/index.rst:57
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
 
-#: ../../en/index.rst:54
+#: ../../en/index.rst:58
 msgid ":ref:`search`"
 msgstr ":ref:`search`"

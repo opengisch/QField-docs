@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, The QField Project/OPENGIS.ch
-# This file is distributed under the same license as the QField package.
+# This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
 # Matthias Kuhn <matthias@opengis.ch>, 2016
@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 14:02+0200\n"
-"PO-Revision-Date: 2016-08-02 11:57+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-08-25 17:00+0200\n"
+"PO-Revision-Date: 2016-08-25 15:00+0000\n"
+"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,7 +66,7 @@ msgstr ":yay:`✔`"
 
 #: ../../en/project-management/dataformat.rst:19
 msgid "Geopackage"
-msgstr "Geopackage"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:21
 msgid "WMS"
@@ -99,7 +99,7 @@ msgstr ":moreorless:`~`"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "JPEG compression not yet supported."
-msgstr "JPEG Kompression noch nicht unterstützt"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 msgid "ECW"
@@ -129,22 +129,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr "Falls dein bevorzugtes Datenformat noch nicht in dieser Tabelle gelistet ist, bitte überprüfe ob es funktioniert und `verbessere die obenstehende Tabelle <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_ um deine Erkenntnisse zu teilen. Falls es noch nicht funktioniert, bitte `öffne einen Issue <https://github.com/opengisch/OSGeo4A/issues>`_. Wir sind glücklich, bei der Umsetzung zu helfen."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr "Raster Daten"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr "Raster Daten können schnell ziemlich gross werden. Unkomprimierte tiff Dateien sind bald mehrere Gb gross. Dies ist auf mobilen Geräten um so mehr unpraktikabel."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:47
 msgid "Use GeoPackage"
-msgstr "Benutze GeoPackage"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:49
 msgid ""
@@ -152,7 +152,7 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr "Wir empfehlen, das GeoPackage Format zu benutzen um mit Raster Daten zu arbeiten. Die folgenden Kommandos konvertieren eine Datei mit dem Namen :code:`raster.tif` in eine Datei :code:`raster.gpkg` mit Pyramiden. Vergiss nicht, EPST:21781 (CH1903 LV03) in das den Daten entsprechende Koordinatenreferenzsystem zu ändern."
+msgstr ""
 
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
@@ -160,7 +160,7 @@ msgstr "QField Projektverwaltung"
 
 #: ../../en/project-management/index.rst:5
 msgid "Portable Project"
-msgstr "Ein portables Projekt"
+msgstr ""
 
 #: ../../en/project-management/index.rst:7
 msgid ""
@@ -195,25 +195,25 @@ msgstr "`Offline Editing Plugin <https://docs.qgis.org/2.14/en/docs/user_manual/
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
-msgstr "Koordinatenbezugssysteme"
+msgstr ""
 
 #: ../../en/project-management/index.rst:21
 msgid ""
 "QField uses the Coordinate Reference System (CRS) information found in the "
 "project file."
-msgstr "QField benutzt die in der Projektdatei vorhandenen Informationen zum Koordinatenbezugssystem (KBS)"
+msgstr ""
 
 #: ../../en/project-management/index.rst:23
 msgid "Project CRS"
-msgstr "Projekt KBS"
+msgstr ""
 
 #: ../../en/project-management/index.rst:24
 msgid "On the fly reprojection (OTF) is used for visualization"
-msgstr "Spontantransformation wird für die Visualisierung benutzt"
+msgstr ""
 
 #: ../../en/project-management/index.rst:25
 msgid "Layer CRS"
-msgstr "KBS der Layer"
+msgstr ""
 
 #: ../../en/project-management/index.rst:28
 msgid ""
@@ -221,7 +221,7 @@ msgid ""
 " the layers on which you digitize are in the same CRS like the project. If "
 "you fail to do so it will look as if new features are not saved because they"
 " end up in far far away."
-msgstr "QField berücksichtigt die Spontantransformation nicht, wenn neue Objekte digitalisiert werden. Es muss sichergestellt werden, dass sämtliche Layer, auf denen digitalilsiert werden soll das selbe KBS wie das Projekt benutzen. Falls dies nicht der Fall ist scheint es so, dass Objekte nicht gespeichert werden, weil sie irgendwo in weit-weit-weg erzeugt werden."
+msgstr ""
 
 #: ../../en/project-management/index.rst:33
 msgid "Vector Layer Settings"
@@ -307,31 +307,31 @@ msgstr "Werteabbildung"
 
 #: ../../en/project-management/index.rst:70
 msgid "Hidden"
-msgstr "Versteckt"
+msgstr ""
 
 #: ../../en/project-management/index.rst:70
 #: ../../en/project-management/index.rst:76
 #: ../../en/project-management/index.rst:78
 msgid ":ref:`make_it_grow`"
-msgstr ":ref:`make_it_grow`"
+msgstr ""
 
 #: ../../en/project-management/index.rst:72
 msgid "External Resource"
-msgstr "Externe Resource"
+msgstr ""
 
 #: ../../en/project-management/index.rst:72
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
-msgstr "Dieser Typ ist kombiniert mit der Kameraintegration. Bis jetzt können nur Bilder angeschaut werden. :ref:`make_it_grow`"
+msgstr ""
 
 #: ../../en/project-management/index.rst:76
 msgid "Date Time"
-msgstr "Datum/Zei"
+msgstr ""
 
 #: ../../en/project-management/index.rst:78
 msgid "Others"
-msgstr "Andere"
+msgstr ""
 
 #: ../../en/project-management/index.rst:82
 msgid "Custom SVG symbols and settings"
@@ -340,20 +340,20 @@ msgstr "Eigene SVG Symbole und Einstellungen"
 #: ../../en/project-management/index.rst:84
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
-msgstr "Im \"Über\" Dialog sind die Ordner sichtbar, die auf dem Gerät dafür verwendet werden."
+msgstr ""
 
 #: ../../en/project-management/index.rst:86
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr "Falls eigene SVG Symbole verwendet werden sollen, müssen diese manuell mit einem Dateimanager in den entsprechenden Ordner kopiert werden."
+msgstr ""
 
 #: ../../en/project-management/index.rst:89
 msgid "External SD card"
-msgstr "Externe SD-Karte"
+msgstr ""
 
 #: ../../en/project-management/index.rst:91
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"
-msgstr "Um Schreibzugriff auf Projekte zu haben, welche sich auf der externen SD Karte befinden, müssen diese in den folgenden Ordner gelegt werden:"
+msgstr ""

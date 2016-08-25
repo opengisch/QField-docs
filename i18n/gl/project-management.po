@@ -1,17 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, The QField Project/OPENGIS.ch
-# This file is distributed under the same license as the QField package.
+# This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
 # , 2016
+# xanvieiro <gallaecia6@gmail.com>, 2016
 # xanvieiro <gallaecia6@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:45+0200\n"
-"PO-Revision-Date: 2016-08-02 11:45+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-08-25 17:00+0200\n"
+"PO-Revision-Date: 2016-08-25 15:00+0000\n"
+"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,7 +67,7 @@ msgstr ":yay:`✔`"
 
 #: ../../en/project-management/dataformat.rst:19
 msgid "Geopackage"
-msgstr "Geopackage"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:21
 msgid "WMS"
@@ -99,7 +100,7 @@ msgstr ":moreorless:`~`"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "JPEG compression not yet supported."
-msgstr "A compresión JPEG aínda non está admitida."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 msgid "ECW"
@@ -129,22 +130,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr "Se non atopas o teu formato de datos favorito nesta táboa, comproba se funciona e adapta a lista de enriba <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_  para compartir os teus descubrimentos. Se non funciona, `abre unha incidencia <https://github.com/opengisch/OSGeo4A/issues>`_. Estaremos encantados de axudarche coa implantación."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr "Datos ráster"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr "Os datos ráster poden chegar a ser bastante grandes rapidamente, cando se traballa con ficheiros tiff descomprimidos estes son de varios Gb de datos. En dispositivos móbiles especialmente, isto é ineficiente."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:47
 msgid "Use GeoPackage"
-msgstr "Utilizar Geopackage"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:49
 msgid ""
@@ -152,7 +153,7 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr "Recomendamos utilizar o formato geopackage para tratar datos ráster. Os seguintes comandos converterán un ficheiro denominado :code:`raster.tif` a un ficheiro :code:`raster.gpkg` con pirámides. Asegúrate de axustar o EPSG:21781 (CH1903 LV03) ó SRC desexado."
+msgstr ""
 
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
@@ -307,31 +308,31 @@ msgstr "Mapa de valores"
 
 #: ../../en/project-management/index.rst:70
 msgid "Hidden"
-msgstr "Oculto"
+msgstr ""
 
 #: ../../en/project-management/index.rst:70
 #: ../../en/project-management/index.rst:76
 #: ../../en/project-management/index.rst:78
 msgid ":ref:`make_it_grow`"
-msgstr ":ref:`make_it_grow`"
+msgstr ""
 
 #: ../../en/project-management/index.rst:72
 msgid "External Resource"
-msgstr "Recurso externo"
+msgstr ""
 
 #: ../../en/project-management/index.rst:72
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
-msgstr "Este campo combínase coa integración da cámara. Ata o de agora só poden verse imaxes. :ref:`make_it_grow`"
+msgstr ""
 
 #: ../../en/project-management/index.rst:76
 msgid "Date Time"
-msgstr "Data Hora"
+msgstr ""
 
 #: ../../en/project-management/index.rst:78
 msgid "Others"
-msgstr "Outros"
+msgstr ""
 
 #: ../../en/project-management/index.rst:82
 msgid "Custom SVG symbols and settings"
@@ -340,13 +341,13 @@ msgstr "Configuración e símbolos SVG personalizados"
 #: ../../en/project-management/index.rst:84
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
-msgstr "No diálogo 'acerca de' podes ver onde están os cartafoles compartidos no dispositivo."
+msgstr ""
 
 #: ../../en/project-management/index.rst:86
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr "Se queres utilizar símbolos personalizados tes que poñelos alí empregando un xestor de ficheiros."
+msgstr ""
 
 #: ../../en/project-management/index.rst:89
 msgid "External SD card"

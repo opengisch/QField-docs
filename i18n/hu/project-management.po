@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 12:05+0200\n"
-"PO-Revision-Date: 2016-08-12 09:45+0000\n"
-"Last-Translator: Mr. Szabi <sum.szabolcs@gmail.com>\n"
+"POT-Creation-Date: 2016-08-25 17:00+0200\n"
+"PO-Revision-Date: 2016-08-25 15:00+0000\n"
+"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +65,7 @@ msgstr ":Igen!:`✔`"
 
 #: ../../en/project-management/dataformat.rst:19
 msgid "Geopackage"
-msgstr "GeoPackage"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:21
 msgid "WMS"
@@ -98,7 +98,7 @@ msgstr ":többé-kevésbé:`~`"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "JPEG compression not yet supported."
-msgstr "Jelenleg még nem áll rendelkezésre JPEG tömörítés."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 msgid "ECW"
@@ -128,22 +128,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr "Amennyiben nem találja kedvenc adatformátumát a táblázatban, úgy kérjük, ellenőrizze, működik-e. Ha működik, akkor szíveskedjen azt a fenti listához illeszteni <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_  eredményeinek közzététele érdekében, ha pedig nem működik, úgy kérjük, egy új téma megnyitásával jelezze ezt számunkra <https://github.com/opengisch/OSGeo4A/issues>_. Örömünkre fog szolgálni, ha segíthetünk Önnek a megoldásban!"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr "Raszter adat"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr "A raszteradatok gyorsan válhatnak igen nagy méretűvé, tömörítetlen TIFF fájlokkal végzett műveletek során mindez gyakorta több GB adatmennyiséget jelent. Az ilyen típusú feladat-végrehajtás - különösen mobil eszközök esetén - kevéssé hatékony."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:47
 msgid "Use GeoPackage"
-msgstr "Használja a GeoPackage-et"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:49
 msgid ""
@@ -151,7 +151,7 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr "Javasoljuk, hogy a raszteradatok kezeléséhez használja a GeoPackage formátumot. Az alábbi parancsok a :code:`raster.tif` fájlokat :code:`raster.gpkg` fájlokká alakítják át a kapcsolódó piramisokkal. Győződjön meg arról, hogy az alkalmazni kívánt CRS (koordináta referencia-rendszer) EPSG:21781 (CH1903 LV03) értékre legyen állítva."
+msgstr ""
 
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
@@ -159,7 +159,7 @@ msgstr "QField Projektmenedzsment"
 
 #: ../../en/project-management/index.rst:5
 msgid "Portable Project"
-msgstr "Hordozható Projekt"
+msgstr ""
 
 #: ../../en/project-management/index.rst:7
 msgid ""
@@ -194,25 +194,25 @@ msgstr "`Offline Editing plugin <https://docs.qgis.org/2.8/en/docs/user_manual/p
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
-msgstr "Koordináta Referencia-rendszerek"
+msgstr ""
 
 #: ../../en/project-management/index.rst:21
 msgid ""
 "QField uses the Coordinate Reference System (CRS) information found in the "
 "project file."
-msgstr "A QField a projekt fájlban rögzített koordináta referencia-rendszer (coordinate reference system - CRS) információit használja."
+msgstr ""
 
 #: ../../en/project-management/index.rst:23
 msgid "Project CRS"
-msgstr "Projekt CRS"
+msgstr ""
 
 #: ../../en/project-management/index.rst:24
 msgid "On the fly reprojection (OTF) is used for visualization"
-msgstr "A megjelenítéshez az ún. \"röptében\" történő vetületi transzformáció (on the fly reprojection - OTF) kerül alkalmazásra."
+msgstr ""
 
 #: ../../en/project-management/index.rst:25
 msgid "Layer CRS"
-msgstr "Réteg CRS"
+msgstr ""
 
 #: ../../en/project-management/index.rst:28
 msgid ""
@@ -220,7 +220,7 @@ msgid ""
 " the layers on which you digitize are in the same CRS like the project. If "
 "you fail to do so it will look as if new features are not saved because they"
 " end up in far far away."
-msgstr "A QField az új funkciók digitalizálása során nem veszi figyelembe az OTF-et. Győződjön meg arról, hogy az Ön által használni kívánt rétegek CRS-beállítása megegyezik a projektével. Ennek hiányában úgy fog tűnni, mintha az állományok nem kerültek volna mentésre, hiszen így a szükséges pozíciótól nagyon távolra kerülnek."
+msgstr ""
 
 #: ../../en/project-management/index.rst:33
 msgid "Vector Layer Settings"
@@ -306,17 +306,17 @@ msgstr ""
 
 #: ../../en/project-management/index.rst:70
 msgid "Hidden"
-msgstr "Rejtett"
+msgstr ""
 
 #: ../../en/project-management/index.rst:70
 #: ../../en/project-management/index.rst:76
 #: ../../en/project-management/index.rst:78
 msgid ":ref:`make_it_grow`"
-msgstr ":ref:`make_it_grow`"
+msgstr ""
 
 #: ../../en/project-management/index.rst:72
 msgid "External Resource"
-msgstr "Külső Forrás"
+msgstr ""
 
 #: ../../en/project-management/index.rst:72
 msgid ""
@@ -330,7 +330,7 @@ msgstr ""
 
 #: ../../en/project-management/index.rst:78
 msgid "Others"
-msgstr "Egyebek"
+msgstr ""
 
 #: ../../en/project-management/index.rst:82
 msgid "Custom SVG symbols and settings"
@@ -339,20 +339,20 @@ msgstr "Szokásos SVG jelképek és beállítások"
 #: ../../en/project-management/index.rst:84
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
-msgstr "Az \"About\" menüpontban megtekintheti, hogy az Ön eszközén hol találhatók a megosztott mappák."
+msgstr ""
 
 #: ../../en/project-management/index.rst:86
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr "Ha a szokásos jelképeket kívánja használni, úgy helyezze el azokat a szükséges helyre egy fájlkezelő program segítségével."
+msgstr ""
 
 #: ../../en/project-management/index.rst:89
 msgid "External SD card"
-msgstr "Külső SD kártya"
+msgstr ""
 
 #: ../../en/project-management/index.rst:91
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"
-msgstr "Annak érdekében, hogy lehetővé tegye olyan projekt módosítását, amely külső SD kártyán található, helyezze azt a következő mappába:"
+msgstr ""

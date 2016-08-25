@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, The QField Project/OPENGIS.ch
-# This file is distributed under the same license as the QField package.
+# This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
 # Matthias Kuhn <matthias@opengis.ch>, 2016
@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 14:02+0200\n"
-"PO-Revision-Date: 2016-08-02 11:52+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-08-25 17:00+0200\n"
+"PO-Revision-Date: 2016-08-25 15:00+0000\n"
+"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +52,7 @@ msgid ""
 "We also offer a pre-built apk for you to download if you are not able or do "
 "not want to use GooglePlay. You can get the qfield.apk_ from the release "
 "page."
-msgstr "Es existieren auch fertige apk Pakete, die heruntergeladen und installiert werden können. Dies ermöglicht die Benutzung der App auch ohne GooglePlay. qfield.apk_ jetzt herunterladen."
+msgstr ""
 
 #: ../../en/installation-guide/index.rst:29
 msgid "Karma edition"
@@ -68,4 +68,4 @@ msgid ""
 "edition does not offer any additional features. In fact, you will still need"
 " to install the normal QField app. Please also note that there are other "
 "preferred ways to support the development of QField."
-msgstr "Es gibt verschiedene Wege, das QField Projekt zu unterstützen. Einer davon ist, die `QField Karma Edition App <https://play.google.com/store/apps/details?id=ch.opengis.qfieldkarmaedition>`_ im GooglePlay zu kaufen. Diese App verleiht dem Käufer ein gutes Karma und hilft uns, mit der Entwicklung von QField fortzufahren. Die QField Karma Edition offeriert keine zusätzlichen Features. Es ist immer noch nötig, die normale QField App zu installieren. Es gibt auch weitere Wege, die Entwicklung von QField zu unterstützen."
+msgstr ""
