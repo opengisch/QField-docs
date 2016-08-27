@@ -8,12 +8,12 @@ Status](https://travis-ci.org/opengisch/QField-docs.svg)](https://travis-ci.org/
 
 The final product can be found here:
 
- * [English](https://opengisch.github.io/QField-docs)
- * [Deutsch](https://opengisch.github.io/QField-docs/de)
- * [Français](https://opengisch.github.io/QField-docs/fr)
- * [Galician](https://opengisch.github.io/QField-docs/gl)
- * [Portuguese](https://opengisch.github.io/QField-docs/pt)
- * [Catalan](https://opengisch.github.io/QField-docs/ca)
+ * [English](https://qfield.org/docs)
+ * [Deutsch](https://qfield.org/docs/de)
+ * [Français](https://qfield.org/docs/fr)
+ * [Galician](https://qfield.org/docs/gl)
+ * [Portuguese](https://qfield.org/docs/pt)
+ * [Catalan](https://qfield.org/docs/ca)
 
 ## Process
 
