@@ -15,7 +15,7 @@ then
   git clone git@github.com:opengisch/QField.git --branch gh-pages
   mkdir -p QField/doc
   cd QField/doc
-  git rm . -r
+  git rm . -r || true
   cp ../../../build/html/* . -r
   git add -A
   git commit -m "Automatic doc update\n\nhttps://github.com/opengisch/QField-docs/commit/${TRAVIS_COMMIT}"
