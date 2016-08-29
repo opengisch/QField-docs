@@ -13,6 +13,7 @@ then
   mkdir publish
   cd publish
   git clone git@github.com:opengisch/QField.git --branch gh-pages
+  mkdir -p QField/doc
   cd QField/doc
   git rm . -r
   cp ../../../build/html/* . -r
