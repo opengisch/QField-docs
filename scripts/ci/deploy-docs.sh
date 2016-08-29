@@ -13,13 +13,11 @@ then
   mkdir publish
   cd publish
   git clone git@github.com:opengisch/QField.git --branch gh-pages
-  cd QField
+  cd QField/doc
   git rm . -r
-  cp ../../build/html/* . -r
-  echo "www.qfield.org" > CNAME
-  touch .nojekyll
+  cp ../../../build/html/* . -r
   git add -A
-  git commit -m "Automatic update from https://github.com/opengisch/QField-docs/commit/${TRAVIS_COMMIT}"
+  git commit -m "Automatic doc update\n\nhttps://github.com/opengisch/QField-docs/commit/${TRAVIS_COMMIT}"
   git push
   popd
 else
