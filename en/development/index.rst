@@ -14,6 +14,16 @@ modified.
 
 You can find the sourcecode `on github <https://github.com/opengisch/QField>`_
 
+*******
+Support
+*******
+
+You can ask your questions on `gis.stackexchange <http://gis.stackexchange.com/tags/qfield/info>`_
+
+You can use the `user mailing list <http://lists.qfield.org/listinfo.cgi/users-qfield.org>`_
+
+We also provide commercial support, `contact us <http://www.opengis.ch/contact/>`_
+
 Credits
 =======
 
