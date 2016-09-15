@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
+# jmmanzano <manzano.jm@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 08:06+0200\n"
-"PO-Revision-Date: 2016-08-29 06:06+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-09-15 11:14+0200\n"
+"PO-Revision-Date: 2016-09-08 18:10+0000\n"
+"Last-Translator: jmmanzano <manzano.jm@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/opengisch/qfield-documentation/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,142 +20,142 @@ msgstr ""
 
 #: ../../en/index.rst:2
 msgid "QField - your mobile [Q]GIS solution"
-msgstr ""
+msgstr "QField - tu solución móvil de [Q]GIS"
 
 #: ../../en/index.rst:3
 msgid "QField allows you to efficiently work on your GIS data outdoor."
-msgstr ""
+msgstr "QField te permite trabajar eficientemente con datos GIS en el campo."
 
 #: ../../en/index.rst:5
 msgid ""
 "QField's optimized user interface for Android devices hides the full power "
 "of `QGIS <https://qgis.org>`_ under the hood."
-msgstr ""
+msgstr "La interfaz de QField optimizada para dispositivos Android esconde todo el poder de  `QGIS <https://qgis.org>`_ bajo el capó."
 
 #: ../../en/index.rst:15
 msgid ""
 ":download:`Slides from FOSS4G 2016 <files/slides_foss4g16.pdf>` are "
 "available."
-msgstr ""
+msgstr ":download:`Diapositivas del FOSS4G 2016 <files/slides_foss4g16.pdf>` están disponibles."
 
 #: ../../en/index.rst:19
 msgid "Prepare once - Deploy everywhere"
-msgstr ""
+msgstr "Prepáralo una vez - Despliégalo en cualquier lugar"
 
 #: ../../en/index.rst:20
 msgid "Uses QGIS projects (including symbology and edit widgets)"
-msgstr ""
+msgstr "Usa los proyectos de QGIS (incluyendo simbología y widgets de edición)"
 
 #: ../../en/index.rst:21
 msgid "Supports most QGIS supported formats (ideal with PostGIS)"
-msgstr ""
+msgstr "Soporta la mayoría de formatos soportados en QGIS (ideal con PostGIS)"
 
 #: ../../en/index.rst:22
 msgid "Automatic syncronization capabilities (Cable, WiFi, Cloud)"
-msgstr ""
+msgstr "Capacidades de sincronización automática (Cable, WIFI, Nube)"
 
 #: ../../en/index.rst:23
 msgid "Extends seamlessly your GDI"
-msgstr ""
+msgstr "Extiende sin problemas su GDI"
 
 #: ../../en/index.rst:26
 msgid "Made for touch - Field-work friendly"
-msgstr ""
+msgstr "Hecho para tocar - Adecuado para el trabajo de campo"
 
 #: ../../en/index.rst:27
 msgid "Lean UI with few and large buttons"
-msgstr ""
+msgstr "Interfaz de Usuario simplificada con pocos botones y grandes botones."
 
 #: ../../en/index.rst:28
 msgid "GPS centric"
-msgstr ""
+msgstr "Centrada en el GPS"
 
 #: ../../en/index.rst:29
 msgid "Fully working offline and online using live and cached* DB connections"
-msgstr ""
+msgstr "Totalmente funcional tanto conectado como desconectado usando conexiones con Bases de Datos en vivo y en caché*"
 
 #: ../../en/index.rst:30
 msgid "Switchable working modes (display, inspection, digitizing, measuring)*"
-msgstr ""
+msgstr "Modos de trabajo conmutables (observación, inspección, digitalización, medida)*"
 
 #: ../../en/index.rst:31
 msgid ""
 "Cross mode tools (Pan, zoom, identify, GPS coordinates, scalebar, central "
 "crosshair with snapping)"
-msgstr ""
+msgstr "Herramientas transversales a los modos (Desplazamiento, zoom, identificación, coordenadas GPS, barra de escala, punto de mira con autoajuste)"
 
 #: ../../en/index.rst:34
 msgid "Make it grow - Make it yours"
-msgstr ""
+msgstr "Hazla crecer - Hazla tuya"
 
 #: ../../en/index.rst:35
 msgid "Paid feature development"
-msgstr ""
+msgstr "Pago por desarrollo de funciones"
 
 #: ../../en/index.rst:36
 msgid "Customizable to your needs"
-msgstr ""
+msgstr "Adaptable a tus necesidades"
 
 #: ../../en/index.rst:37
 msgid "Donations and sponsoring (qfield.opengis.ch/donate)"
-msgstr ""
+msgstr "Donaciones y esponsorización (qfield.opengis.ch/donate)"
 
 #: ../../en/index.rst:38
 msgid ""
 "Hire us for development, consulting and training for QField, C++, Python, "
 "Web, QGIS, Android, ..."
-msgstr ""
+msgstr "Contrátanos para el desarrollo, consultoría y formación de QField, C++, Python, Web, QGIS, Android, ..."
 
 #: ../../en/index.rst:49
 msgid "Contents"
-msgstr ""
+msgstr "Contenidos"
 
 #: ../../en/index.rst:62
 msgid "Translations"
-msgstr ""
+msgstr "Traducciones"
 
 #: ../../en/index.rst:64
 msgid "The documentation is available in several languages"
-msgstr ""
+msgstr "La documentación está disponible en varios idiomas"
 
 #: ../../en/index.rst:66
 msgid "`English </en>`_"
-msgstr ""
+msgstr "`Inglés </en>`_"
 
 #: ../../en/index.rst:68
 msgid "`Deutsch </de>`_"
-msgstr ""
+msgstr "`Alemán </de>`_"
 
 #: ../../en/index.rst:70
 msgid "`Français </fr>`_"
-msgstr ""
+msgstr "`Francés </fr>`_"
 
 #: ../../en/index.rst:72
 msgid "`Galician </gl>`_"
-msgstr ""
+msgstr "`Gallego </gl>`_"
 
 #: ../../en/index.rst:74
 msgid "`Portuguese </pt>`_"
-msgstr ""
+msgstr "`Portugués </pt>`_"
 
 #: ../../en/index.rst:76
 msgid "`Catalan </ca>`_"
-msgstr ""
+msgstr "`Catalán </ca>`_"
 
 #: ../../en/index.rst:78
 msgid ""
 "If there is an error with a translation, please `help to improve it "
 "<https://www.transifex.com/opengisch/qfield-documentation/>`_."
-msgstr ""
+msgstr "Si hay algún error en la traducción, por favor, `ayuda a mejorarla <https://www.transifex.com/opengisch/qfield-documentation/>`_."
 
 #: ../../en/index.rst:82
 msgid "Indices and tables"
-msgstr ""
+msgstr "Índices y tablas"
 
 #: ../../en/index.rst:84
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 #: ../../en/index.rst:85
 msgid ":ref:`search`"
-msgstr ""
+msgstr ":ref:`search`"

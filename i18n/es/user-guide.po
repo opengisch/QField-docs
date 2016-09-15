@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
+# jmmanzano <manzano.jm@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-25 17:00+0200\n"
-"PO-Revision-Date: 2016-08-25 15:00+0000\n"
-"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
+"POT-Creation-Date: 2016-09-15 11:14+0200\n"
+"PO-Revision-Date: 2016-09-08 18:08+0000\n"
+"Last-Translator: jmmanzano <manzano.jm@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/opengisch/qfield-documentation/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,106 +20,106 @@ msgstr ""
 
 #: ../../en/user-guide/index.rst:3
 msgid "QField User Guide"
-msgstr ""
+msgstr "Guía de Usuario de QField"
 
 #: ../../en/user-guide/index.rst:7
 msgid "Basic workflow"
-msgstr ""
+msgstr "Flujo de trabajo básico"
 
 #: ../../en/user-guide/index.rst:10
 msgid "Switch modes"
-msgstr ""
+msgstr "Cambio de modos"
 
 #: ../../en/user-guide/index.rst:12
 msgid "Modes are switched via :menuselection:`Menu button --> mode`"
-msgstr ""
+msgstr "Los modos pueden cambiarse a través de :menuselection:`botón de Menú --> modo`"
 
 #: ../../en/user-guide/index.rst:15
 msgid "Opening a project"
-msgstr ""
+msgstr "Abriendo un proyecto"
 
 #: ../../en/user-guide/index.rst:19
 msgid "Identify features"
-msgstr ""
+msgstr "Identifica las características"
 
 #: ../../en/user-guide/index.rst:21
 msgid ""
 "A long press on a feature will identify it. Pressing the back button will "
 "close the identify window."
-msgstr ""
+msgstr "Una pulsación larga sobre un objeto lo identificará. Presionando el botón \"atrás\" cerrará la ventana de identificación."
 
 #: ../../en/user-guide/index.rst:24
 msgid "Exceptions to identified layers"
-msgstr ""
+msgstr "Excepciones a la identificación de capas"
 
 #: ../../en/user-guide/index.rst:26
 msgid ""
 "Often it is not required to be able to query every layer. Some layers are "
 "only present as basemap and their attributes are not of interest."
-msgstr ""
+msgstr "A veces no es necesario que todas las capas puedan consultarse. Algunas capas solo se presentan como base y sus atributos no nos son de interés."
 
 #: ../../en/user-guide/index.rst:28
 msgid ""
 "You can manage this layerlist in QGIS desktop in :menuselection:`Project -->"
 " Project Properties --> Identify Layers` and uncheck the base layers."
-msgstr ""
+msgstr "Puedes gestionar estas capas in QGIS desktop en in :menuselection:`Proyecto --> Propiedades del Proyecto --> Identificación de capas` y desmarca las capas base en la columna Identificable."
 
 #: ../../en/user-guide/index.rst:31
 msgid "GPS"
-msgstr ""
+msgstr "GPS"
 
 #: ../../en/user-guide/index.rst:33
 msgid ""
 "A short press on the GPS button will turn on the GPS and center to the "
 "current location once positioning information is available."
-msgstr ""
+msgstr "Una presión corta sobre el botón GPS encenderá el GPS y centrará la posición actual una vez que esté disponible la información de posicionamiento."
 
 #: ../../en/user-guide/index.rst:35
 msgid "A long press on the GPS button will show the positioning menu."
-msgstr ""
+msgstr "Una presión larga sobre el botón GPS mostrará el menú de posicionamiento."
 
 #: ../../en/user-guide/index.rst:37
 msgid ""
 "Inside the positioning menu you can turn on the positioning display which "
 "will show the current coordinates which are reprojected into the project CRS"
 " along with precision information."
-msgstr ""
+msgstr "Dentro del menú de posicionamiento puedes activar la pantalla de posicionamiento que mostrará las coordenadas actuales que se proyectan en el SRC de proyecto junto con información de la precisión."
 
 #: ../../en/user-guide/index.rst:40
 msgid ""
 "If you see WGS 84 lat/lon information instead of information in your project"
 " CRS, you probably have no signal yet."
-msgstr ""
+msgstr "Si ves información de WGS 84 lat/lon en lugar de información en tu SRC, probablemente aún no tengas señal."
 
 #: ../../en/user-guide/index.rst:43
 msgid "Digitize"
-msgstr ""
+msgstr "Digitalizar"
 
 #: ../../en/user-guide/index.rst:45
 msgid "To start digitizing new features `Switch modes`_ to digitizing."
-msgstr ""
+msgstr "Para empezar a digitalizar nuevos elementos `Switch modes`_ para digitalizar."
 
 #: ../../en/user-guide/index.rst:47
 msgid ""
 "A new combobox will appear next to the menu button which lists the layers "
 "available for digitizing. At the moment (QField 0.7), QField supports point "
 "and line layers."
-msgstr ""
+msgstr "Un nuevo combobox aparecerá junto al botón de menú que listará las capas disponibles para digitalizar. Por el momento (QField 0.7) QField soporta capas de puntos y líneas."
 
 #: ../../en/user-guide/index.rst:52
 msgid "Points"
-msgstr ""
+msgstr "Puntos"
 
 #: ../../en/user-guide/index.rst:54
 msgid ""
 "Navigate the crosshair in the center of the screen to the desired location "
 "and click the pencil at the lower right of the screen to confirm the "
 "creation of a new point feature."
-msgstr ""
+msgstr "Ajusta la localización deseada con el punto de mira del centro de la pantalla y haz click en el lápiz de la esquina inferior derecha para confirmar la creación de un nuevo punto."
 
 #: ../../en/user-guide/index.rst:59
 msgid "Lines"
-msgstr ""
+msgstr "Lineas"
 
 #: ../../en/user-guide/index.rst:61
 msgid ""
@@ -126,11 +127,11 @@ msgid ""
 "the line and click the pencil at the lower right of the screen. Proceed with"
 " adding points or removing points until the line is finished and then click "
 "save."
-msgstr ""
+msgstr "Ajusta la localización deseada para el inicio de la línea con el punto de mira del centro de la pantalla y haz click en el lápiz de la esquina inferior derecha. Continúa añadiendo o eliminando puntos hasta que finalices la línea, entonces haz click en guardar."
 
 #: ../../en/user-guide/index.rst:66
 msgid "Attribute form"
-msgstr ""
+msgstr "Formulario de atributos"
 
 #: ../../en/user-guide/index.rst:68
 msgid ""
@@ -139,12 +140,12 @@ msgid ""
 "new feature. The form which appears allows entering attribute values for the"
 " new feature. The checkboxes at the right of every attribute allow for "
 "remembering each attribute individually."
-msgstr ""
+msgstr "Después de digitalizar una geometría, aparecerá un formulario de atributos si no se suprime y pedirá al usuario que introduzca los atributos para el nuevo elemento.   El formulario que aparece permite la introducción de valores de atributos para el nuevo elemento.  Las casillas de verificación a la derecha de todos los atributos permiten recordar cada atributo individual."
 
 #: ../../en/user-guide/index.rst:74
 msgid "Delete Features"
-msgstr ""
+msgstr "Borrado de elementos"
 
 #: ../../en/user-guide/index.rst:76
 msgid "To delete a feature, identify it first and tap the trash icon."
-msgstr ""
+msgstr "Para borrar un elemento, identifícalo primero y pulsa sobre el icono de la papelera."

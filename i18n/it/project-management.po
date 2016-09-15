@@ -3,52 +3,51 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
-# jmmanzano <manzano.jm@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-15 11:14+0200\n"
-"PO-Revision-Date: 2016-09-06 18:01+0000\n"
-"Last-Translator: jmmanzano <manzano.jm@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/opengisch/qfield-documentation/language/es/)\n"
+"PO-Revision-Date: 2016-08-29 12:43+0000\n"
+"Last-Translator: Bernasocchi <marco@opengis.ch>\n"
+"Language-Team: Italian (http://www.transifex.com/opengisch/qfield-documentation/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../en/project-management/dataformat.rst:2
 msgid "Supported data formats"
-msgstr "Formatos soportados"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:4
 msgid ""
 "QField supports a wide variety of formats via QGIS data providers and GDAL. "
 "This page offers a non-exhaustive list of supported data formats."
-msgstr "QField soporta una amplia variedad de formatos a través de los proveedores de datos de QGIS y GDAL. Esta página ofrece una lista no exhaustiva de formatos de datos soportados."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:8
 msgid "Table"
-msgstr "Tabla"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
 msgid "Data Format"
-msgstr "Formato de datos"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:61
 msgid "Support"
-msgstr "Soporte"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/index.rst:61
 msgid "Notes"
-msgstr "Notas"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:17
 msgid "Spatialite"
-msgstr "Spatialite"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:17
 #: ../../en/project-management/dataformat.rst:19
@@ -61,64 +60,64 @@ msgstr "Spatialite"
 #: ../../en/project-management/index.rst:68
 #: ../../en/project-management/index.rst:70
 msgid ":yay:`✔`"
-msgstr ":yay:`✔`"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:19
 msgid "Geopackage"
-msgstr "Geopackage"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:21
 msgid "WMS"
-msgstr "WMS"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:23
 msgid "Postgis"
-msgstr "Postgis"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:23
 msgid "Ssl support not yet implemented."
-msgstr "Soporte para ssl aún no implementado"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:25
 msgid "MBTiles"
-msgstr "MBTiles"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:27
 msgid "Shapefile"
-msgstr "Shapefile"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "Tiff"
-msgstr "Tiff"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:29
 #: ../../en/project-management/index.rst:72
 msgid ":moreorless:`~`"
-msgstr ":moreorless:`~`"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "JPEG compression not yet supported."
-msgstr "JPEG compresión no soportada aún"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 msgid "ECW"
-msgstr "ECW"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
 #: ../../en/project-management/index.rst:76
 #: ../../en/project-management/index.rst:78
 msgid ":nay:`✘`"
-msgstr ":nay:`✘`"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
 msgid "License restricts usage."
-msgstr "Licencia restringe su uso."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:33
 msgid "MrSID"
-msgstr "MrSID"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:36
 msgid ""
@@ -128,22 +127,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr "Si no encuentras tu formato de datos favorito en esta tabla, por favor comprueba si funciona y `adapta la lista de encima <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_ para compartir tus hallazgos. Si no funciona por favor, `abre un tema en  <https://github.com/opengisch/OSGeo4A/issues>`_. Estaremos encantados de ayudarte con la implementación"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr "Datos Raster"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr "Los datos Raster pueden crecer bastante rápido, cuando se trabaja con ficheros tiff no comprimidos pueden ser varios Gb de información. Es muy ineficiente en dispositivos móviles."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:47
 msgid "Use GeoPackage"
-msgstr "Usa GeoPackages"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:49
 msgid ""
@@ -151,68 +150,68 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr "Nosotros recomentados el uso del formato geopackage para trabajar con datos raster. El siguiente comando puede convertir un fichero :code:`raster.tif` a :code:`raster.gpkg` con pirámides. Asegúrate de ajustar EPSG:21781 (CH1903 LV03) a tu Sistema de Referencia de Coordenadas (SRC)."
+msgstr ""
 
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
-msgstr "Gestión de Proyectos de QField"
+msgstr ""
 
 #: ../../en/project-management/index.rst:5
 msgid "Portable Project"
-msgstr "Proyecto Portable"
+msgstr ""
 
 #: ../../en/project-management/index.rst:7
 msgid ""
 "You will need a portable version of your QGIS project file (.qgs). Portable "
 "means that all paths are relative and datasets are reachable from the "
 "device."
-msgstr "Necesitas una versión portable de tu proyecto QGIS (.qgs). Portable significa que todas las rutas son relativas y los datos son accesibles desde el dispositivo."
+msgstr ""
 
 #: ../../en/project-management/index.rst:10
 msgid ""
 "Check that :menuselection:`Project --> Project Properties --> General --> "
 "Save paths` is set to \"Relative\" and that all required data files are in "
 "the same folder like the .qgs file or a subfolder of it."
-msgstr "Comprueba que :menuselection:`Proyecto --> Propiedades del Proyecto --> General --> Guardar rutas`  tiene seleccionado \"Relativo\" y que todos los datos están en la misma carpeta que el .qgs o en una subcarpeta."
+msgstr ""
 
 #: ../../en/project-management/index.rst:13
 msgid ""
 "For increased productivity, we suggest having a look at the following "
 "plugins:"
-msgstr "Para incrementar la productividad, te sugerimos que mires los siguientes plugins:"
+msgstr ""
 
 #: ../../en/project-management/index.rst:15
 msgid ""
 "`QConsolidate plugin <https://plugins.qgis.org/plugins/qconsolidate/>`_"
-msgstr "`QConsolidate <https://plugins.qgis.org/plugins/qconsolidate/>`_"
+msgstr ""
 
 #: ../../en/project-management/index.rst:16
 msgid ""
 "`Offline Editing plugin "
 "<https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_offline_editing.html>`_"
-msgstr "`Offline Editing <https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_offline_editing.html>`_"
+msgstr ""
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
-msgstr "Sistema de Referencia de Coordenadas"
+msgstr ""
 
 #: ../../en/project-management/index.rst:21
 msgid ""
 "QField uses the Coordinate Reference System (CRS) information found in the "
 "project file."
-msgstr "QField utiliza el Sistema de Referencia de Coordenadas (SRC) que se encuentra en el fichero del proyecto."
+msgstr ""
 
 #: ../../en/project-management/index.rst:23
 msgid "Project CRS"
-msgstr "SRC del Proyecto"
+msgstr ""
 
 #: ../../en/project-management/index.rst:24
 msgid "On the fly reprojection (OTF) is used for visualization"
-msgstr "Reproyección al vuelo (OTF) usado para visualización"
+msgstr ""
 
 #: ../../en/project-management/index.rst:25
 msgid "Layer CRS"
-msgstr "SRC de capa"
+msgstr ""
 
 #: ../../en/project-management/index.rst:28
 msgid ""
@@ -330,7 +329,7 @@ msgstr ""
 
 #: ../../en/project-management/index.rst:78
 msgid "Others"
-msgstr "Otros"
+msgstr ""
 
 #: ../../en/project-management/index.rst:82
 msgid "Custom SVG symbols and settings"
@@ -349,7 +348,7 @@ msgstr ""
 
 #: ../../en/project-management/index.rst:89
 msgid "External SD card"
-msgstr "Tarjeta SD externa"
+msgstr ""
 
 #: ../../en/project-management/index.rst:91
 msgid ""
