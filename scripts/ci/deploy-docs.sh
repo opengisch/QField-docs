@@ -14,9 +14,10 @@ then
   cd publish
   git clone git@github.com:opengisch/QField.git --branch gh-pages
   mkdir -p QField/docs
-  cd QField/docs
-  git rm . -r || true
-  cp ../../../build/html/* . -r
+  cd QField
+  git rm docs -r || true
+  mkdir docs
+  cp ../../../build/html/* docs/ -r
   git add -A
   git commit -m "Automatic doc update\n\nhttps://github.com/opengisch/QField-docs/commit/${TRAVIS_COMMIT}"
   git push
