@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-15 11:14+0200\n"
-"PO-Revision-Date: 2016-09-06 12:39+0000\n"
-"Last-Translator: Daniel Gnerre <daniel.gnerre@vevey.ch>\n"
+"POT-Creation-Date: 2016-09-21 17:34+0200\n"
+"PO-Revision-Date: 2016-09-21 15:34+0000\n"
+"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,12 +37,12 @@ msgid "Data Format"
 msgstr "Format de donnée"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:61
+#: ../../en/project-management/index.rst:58
 msgid "Support"
 msgstr "Support"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:61
+#: ../../en/project-management/index.rst:58
 msgid "Notes"
 msgstr "Notes"
 
@@ -56,10 +56,10 @@ msgstr "Spatialite"
 #: ../../en/project-management/dataformat.rst:23
 #: ../../en/project-management/dataformat.rst:25
 #: ../../en/project-management/dataformat.rst:27
+#: ../../en/project-management/index.rst:60
 #: ../../en/project-management/index.rst:63
-#: ../../en/project-management/index.rst:66
-#: ../../en/project-management/index.rst:68
-#: ../../en/project-management/index.rst:70
+#: ../../en/project-management/index.rst:65
+#: ../../en/project-management/index.rst:67
 msgid ":yay:`✔`"
 msgstr ":yay:`✔`"
 
@@ -92,7 +92,7 @@ msgid "Tiff"
 msgstr "Tiff"
 
 #: ../../en/project-management/dataformat.rst:29
-#: ../../en/project-management/index.rst:72
+#: ../../en/project-management/index.rst:69
 msgid ":moreorless:`~`"
 msgstr ":moreorless:`~`"
 
@@ -106,8 +106,8 @@ msgstr "ECW"
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
-#: ../../en/project-management/index.rst:76
-#: ../../en/project-management/index.rst:78
+#: ../../en/project-management/index.rst:73
+#: ../../en/project-management/index.rst:75
 msgid ":nay:`✘`"
 msgstr ":nay:`✘`"
 
@@ -177,44 +177,33 @@ msgstr "Pour contrôler cela :menuselection:`Projet --> Propriétés du projet -
 
 #: ../../en/project-management/index.rst:13
 msgid ""
-"For increased productivity, we suggest having a look at the following "
-"plugins:"
-msgstr "Pour une productivité optimale, il est suggérer de travailler avec les plugins suivants : "
-
-#: ../../en/project-management/index.rst:15
-msgid ""
-"`QConsolidate plugin <https://plugins.qgis.org/plugins/qconsolidate/>`_"
-msgstr "`Plugin QConsolidate  <https://plugins.qgis.org/plugins/qconsolidate/>`_"
+"For increased productivity, we suggest having a look at the `QFieldSync "
+"plugin <https://plugins.qgis.org/plugins/qfieldsync>`_."
+msgstr ""
 
 #: ../../en/project-management/index.rst:16
-msgid ""
-"`Offline Editing plugin "
-"<https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_offline_editing.html>`_"
-msgstr "`Plugin Offline Editing plugin <https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_offline_editing.html>`_"
-
-#: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
 msgstr "Système de coordonnées de référence"
 
-#: ../../en/project-management/index.rst:21
+#: ../../en/project-management/index.rst:18
 msgid ""
 "QField uses the Coordinate Reference System (CRS) information found in the "
 "project file."
 msgstr "QField utilise le système de coordonnées de référence (SCR) du fichier de projet. "
 
-#: ../../en/project-management/index.rst:23
+#: ../../en/project-management/index.rst:20
 msgid "Project CRS"
 msgstr "SCR du projet"
 
-#: ../../en/project-management/index.rst:24
+#: ../../en/project-management/index.rst:21
 msgid "On the fly reprojection (OTF) is used for visualization"
 msgstr "Le reprojection à la volée (OTF) est utilisée pour la visualisation. "
 
-#: ../../en/project-management/index.rst:25
+#: ../../en/project-management/index.rst:22
 msgid "Layer CRS"
 msgstr "SCR de la couche"
 
-#: ../../en/project-management/index.rst:28
+#: ../../en/project-management/index.rst:25
 msgid ""
 "QField does not respect OTF when digitizing new features. Make sure that all"
 " the layers on which you digitize are in the same CRS like the project. If "
@@ -222,136 +211,149 @@ msgid ""
 " end up in far far away."
 msgstr "QField ne respecte pas OTF pendant la numérisation de nouveaux objets. Vérifier que toutes les couches numérisables sont dans le même SCR que le projet. Si cela n'est pas le cas, il semblera que les nouveaux objets ne sont pas enregistrés car ils se trouveront fortement décalés. "
 
-#: ../../en/project-management/index.rst:33
+#: ../../en/project-management/index.rst:30
 msgid "Vector Layer Settings"
 msgstr "Configuration des couches vecteur"
 
-#: ../../en/project-management/index.rst:35
+#: ../../en/project-management/index.rst:32
 msgid ""
 "Most of the settings which QGIS offers are directly supported by QField "
 "without any extra effort."
 msgstr "La majeur partie des configuration offertes par QGIS sont directement supportées par QField sans développement supplémentaire. "
 
-#: ../../en/project-management/index.rst:38
+#: ../../en/project-management/index.rst:35
 msgid "Style"
 msgstr "Style"
 
-#: ../../en/project-management/index.rst:40
+#: ../../en/project-management/index.rst:37
 msgid ""
 "All style settings from QGIS are directly supported by QField. This includes"
 " all renderer types like graduated, categorized, rule based, 2.5D as well as"
 " data defined symbology."
 msgstr "Toutes les configurations de style de QGIS sont directement supportées dans QField. Cela inclut tous les types de rendu comme les dégradés, la thématisation, les règles, le 2.5D ainsi que la symbologie définie par les données. "
 
-#: ../../en/project-management/index.rst:43
+#: ../../en/project-management/index.rst:40
 msgid "Forms and Fields"
 msgstr "Formulaires et attributs"
 
-#: ../../en/project-management/index.rst:45
+#: ../../en/project-management/index.rst:42
 msgid "QField creates forms similar to, but not equal to QGIS."
 msgstr "Les formulaires QField sont similaires à ceux de QGIS, mais pas identiques. "
 
-#: ../../en/project-management/index.rst:48
+#: ../../en/project-management/index.rst:45
 msgid "Suppress Feature Form"
 msgstr "Formulaire de suppression d'objet"
 
-#: ../../en/project-management/index.rst:48
+#: ../../en/project-management/index.rst:45
 msgid ""
 "The setting suppress feature form is directly applied to the QField form."
 msgstr "La configuration du formulaire de suppression d'objet est directement appliquée au formulaire QField. "
 
-#: ../../en/project-management/index.rst:51
+#: ../../en/project-management/index.rst:48
 msgid "Remember last values"
 msgstr "Se souvenir des dernières valeurs"
 
-#: ../../en/project-management/index.rst:51
+#: ../../en/project-management/index.rst:48
 msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
 msgstr "QField offre un contrôle fin des dernières valeurs utilisées et ignore la configuration de QGIS."
 
-#: ../../en/project-management/index.rst:79
+#: ../../en/project-management/index.rst:77
 msgid "Field settings"
 msgstr "Configuration des attributs"
 
-#: ../../en/project-management/index.rst:54
+#: ../../en/project-management/index.rst:51
 msgid ""
 "The field settings from QGIS are supported on a beste effort basis and is "
 "constantly being improved."
 msgstr "La configuration des attributs de QGIS est reprise au mieux et améliorée constamment.  "
 
-#: ../../en/project-management/index.rst:61
+#: ../../en/project-management/index.rst:58
 msgid "Field type"
 msgstr "Type d'attribut"
 
-#: ../../en/project-management/index.rst:63
+#: ../../en/project-management/index.rst:60
 msgid "Text Edit"
 msgstr "Edition de texte"
 
-#: ../../en/project-management/index.rst:63
+#: ../../en/project-management/index.rst:60
 msgid "Multiline is always allowed"
 msgstr "Le multiligne est toujours possible"
 
-#: ../../en/project-management/index.rst:64
+#: ../../en/project-management/index.rst:61
 msgid "HTML is not supported"
 msgstr "HTML n'est pas supporté"
 
-#: ../../en/project-management/index.rst:66
+#: ../../en/project-management/index.rst:63
 msgid "Check Box"
 msgstr "Case à cocher"
 
-#: ../../en/project-management/index.rst:68
+#: ../../en/project-management/index.rst:65
 msgid "Value Map"
 msgstr "Value Map"
 
-#: ../../en/project-management/index.rst:70
+#: ../../en/project-management/index.rst:67
 msgid "Hidden"
 msgstr "Caché"
 
-#: ../../en/project-management/index.rst:70
-#: ../../en/project-management/index.rst:76
-#: ../../en/project-management/index.rst:78
+#: ../../en/project-management/index.rst:67
+#: ../../en/project-management/index.rst:73
+#: ../../en/project-management/index.rst:75
 msgid ":ref:`make_it_grow`"
 msgstr ":ref:`make_it_grow`"
 
-#: ../../en/project-management/index.rst:72
+#: ../../en/project-management/index.rst:69
 msgid "External Resource"
 msgstr "Ressource externe"
 
-#: ../../en/project-management/index.rst:72
+#: ../../en/project-management/index.rst:69
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
 msgstr "Cet attribut est combiné avec un appareil photo. Seulement des images peuvent être vues jusqu'à présent. :ref:`make_it_grow` "
 
-#: ../../en/project-management/index.rst:76
+#: ../../en/project-management/index.rst:73
 msgid "Date Time"
 msgstr "Date Heure"
 
-#: ../../en/project-management/index.rst:78
+#: ../../en/project-management/index.rst:75
 msgid "Others"
 msgstr "Autres"
 
+#: ../../en/project-management/index.rst:80
+msgid "Display Expression"
+msgstr ""
+
 #: ../../en/project-management/index.rst:82
+msgid ""
+"In QField, objects are identified with a name. The expression to generate "
+"this name can be defined by opening the attribute table in QGIS and "
+"switching to the form view. Choose the appropriate field or an expression in"
+" the list there. Starting from QGIS 3, this can be done directly from the "
+":menuselection:`Vector Layer Properties --> Display` page."
+msgstr ""
+
+#: ../../en/project-management/index.rst:94
 msgid "Custom SVG symbols and settings"
 msgstr "Symboles SVG personnalisés et configuration"
 
-#: ../../en/project-management/index.rst:84
+#: ../../en/project-management/index.rst:96
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
 msgstr "Le chemin aux dossiers partagés de l'appareil peuvent être consulté dans la boîte de dialogue \"A propos\"."
 
-#: ../../en/project-management/index.rst:86
+#: ../../en/project-management/index.rst:98
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
 msgstr "Les symboles personnalisés doivent être copié à l'aide d'un gestionnaire de fichiers. "
 
-#: ../../en/project-management/index.rst:89
+#: ../../en/project-management/index.rst:101
 msgid "External SD card"
 msgstr "Carte SD externe"
 
-#: ../../en/project-management/index.rst:91
+#: ../../en/project-management/index.rst:103
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"

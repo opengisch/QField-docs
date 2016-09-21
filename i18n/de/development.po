@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 08:06+0200\n"
+"POT-Creation-Date: 2016-09-21 17:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>, 2016\n"
 "Language-Team: German (https://www.transifex.com/opengisch/teams/38926/de/)\n"
@@ -47,11 +47,33 @@ msgid ""
 msgstr ""
 "Der Quellcode liegt `auf github <https://github.com/opengisch/QField>`_"
 
-#: ../../en/development/index.rst:18
+#: ../../en/development/index.rst:19
+msgid "Support"
+msgstr ""
+
+#: ../../en/development/index.rst:21
+msgid ""
+"You can ask your questions on `gis.stackexchange "
+"<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_"
+msgstr ""
+
+#: ../../en/development/index.rst:23
+msgid ""
+"You can use the `user mailing list <http://lists.qfield.org/listinfo.cgi"
+"/users-qfield.org>`_"
+msgstr ""
+
+#: ../../en/development/index.rst:25
+msgid ""
+"We also provide commercial support, `contact us "
+"<http://www.opengis.ch/contact/>`_"
+msgstr ""
+
+#: ../../en/development/index.rst:29
 msgid "Credits"
 msgstr "Nennungen"
 
-#: ../../en/development/index.rst:20
+#: ../../en/development/index.rst:31
 msgid ""
 "QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
 "and training for open source software including QField and QGIS."
@@ -60,11 +82,11 @@ msgstr ""
 "Entwicklung und Schulungen für Open Source Software inklusive QField und "
 "QGIS an."
 
-#: ../../en/development/index.rst:29
+#: ../../en/development/index.rst:40
 msgid "Funding"
 msgstr "Finanzierung"
 
-#: ../../en/development/index.rst:31
+#: ../../en/development/index.rst:42
 msgid ""
 "The following oranizations have contributed to make QField what it currently"
 " is. We would like to warmly say: Thanks a lot!"
@@ -72,11 +94,11 @@ msgstr ""
 "Die folgenden Organisationen haben dazu beigetragen, QField dazu zu machen "
 "was es im Moment ist. Wir möchten uns herzlich dafür bedanken!"
 
-#: ../../en/development/index.rst:71
+#: ../../en/development/index.rst:82
 msgid "Make it grow, make it yours"
 msgstr "Lass es wachsen, mach es Deins"
 
-#: ../../en/development/index.rst:73
+#: ../../en/development/index.rst:84
 msgid ""
 "This is a list of features which we think are very useful for a nice user "
 "experience and an effective workflow."
@@ -84,27 +106,27 @@ msgstr ""
 "Dies ist eine Liste mit Features, die unserer Meinung nach wichtig und "
 "nützlich sind für einen effizienten Arbeitsablauf."
 
-#: ../../en/development/index.rst:76
+#: ../../en/development/index.rst:87
 msgid "Polygon digitizing"
 msgstr "Polygone digitalisieren"
 
-#: ../../en/development/index.rst:77
+#: ../../en/development/index.rst:88
 msgid "Edit widgets"
 msgstr "Zusätzliche Editier-Widgets"
 
-#: ../../en/development/index.rst:78
+#: ../../en/development/index.rst:89
 msgid "Connection based on-/offline synchronization"
 msgstr "Automatische Synchronisation basierend auf der Netzwerkverbindung"
 
-#: ../../en/development/index.rst:79
+#: ../../en/development/index.rst:90
 msgid "Improved coordinate precision"
 msgstr "Verbesserte Koordinatenpräzision"
 
-#: ../../en/development/index.rst:80
+#: ../../en/development/index.rst:91
 msgid "Editing geometries (can be split into several pieces)"
 msgstr "Geometrien editieren (Kann in mehreren Schritten entwickelt werden)"
 
-#: ../../en/development/index.rst:81
+#: ../../en/development/index.rst:92
 msgid ""
 "Saving GPS status information into attributes when digitizing (precision, "
 "rtk status...)"
@@ -112,26 +134,26 @@ msgstr ""
 "GPS Status Informationen in Attribute speichern während dem Digitalisieren "
 "(Präzision, RTK Status ...)"
 
-#: ../../en/development/index.rst:82
+#: ../../en/development/index.rst:93
 msgid "Search functionality"
 msgstr "Suche"
 
-#: ../../en/development/index.rst:83
+#: ../../en/development/index.rst:94
 msgid "Attach external measurement devices"
 msgstr "Anschliessen von externen Messgeräten"
 
-#: ../../en/development/index.rst:84
+#: ../../en/development/index.rst:95
 msgid "Legend"
 msgstr "Legende"
 
-#: ../../en/development/index.rst:85
+#: ../../en/development/index.rst:96
 msgid "[Your favorite feature]"
 msgstr "[Deine Ideen!]"
 
-#: ../../en/development/index.rst:88
+#: ../../en/development/index.rst:100
 msgid "API stability"
 msgstr "API Stabilität"
 
-#: ../../en/development/index.rst:90
+#: ../../en/development/index.rst:102
 msgid "QField is currently not considered API stable."
 msgstr "QField bietet im Moment keine stabile API"

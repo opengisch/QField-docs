@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 08:06+0200\n"
+"POT-Creation-Date: 2016-09-21 17:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: jmmanzano <manzano.jm@gmail.com>, 2016\n"
 "Language-Team: Spanish (https://www.transifex.com/opengisch/teams/38926/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: ../../en/development/index.rst:3
 msgid "Development and support"
-msgstr ""
+msgstr "Desarrollo y soporte"
 
 #: ../../en/development/index.rst:7
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #: ../../en/development/index.rst:9
 msgid ""
@@ -33,89 +34,133 @@ msgid ""
 "based field data collection app that is free of cost and can be freely "
 "modified."
 msgstr ""
+"QField se distribuye bajo la Licencia Pública GNU (GPL) versión 2 o "
+"superior. El desarrollo de QField bajo esta licencia significa que puedes "
+"inspeccionar y modificar el código fuente y garantiza que siempre tendrás "
+"acceso a una aplicación de recolección de datos de campo basado QGIS "
+"gratuita y puede ser modificada libremente."
 
 #: ../../en/development/index.rst:15
 msgid ""
 "You can find the sourcecode `on github "
 "<https://github.com/opengisch/QField>`_"
 msgstr ""
+"Puedes encontrar el código fuente  `en github "
+"<https://github.com/opengisch/QField>`_"
 
-#: ../../en/development/index.rst:18
-msgid "Credits"
+#: ../../en/development/index.rst:19
+msgid "Support"
+msgstr "Soporte"
+
+#: ../../en/development/index.rst:21
+msgid ""
+"You can ask your questions on `gis.stackexchange "
+"<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_"
 msgstr ""
+"Puedes hacer tus preguntas en `gis.stackexchange "
+"<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_"
 
-#: ../../en/development/index.rst:20
+#: ../../en/development/index.rst:23
+msgid ""
+"You can use the `user mailing list <http://lists.qfield.org/listinfo.cgi"
+"/users-qfield.org>`_"
+msgstr ""
+"Puedes utilizar la `lista de correo de usuarios "
+"<http://lists.qfield.org/listinfo.cgi/users-qfield.org>`_"
+
+#: ../../en/development/index.rst:25
+msgid ""
+"We also provide commercial support, `contact us "
+"<http://www.opengis.ch/contact/>`_"
+msgstr ""
+"También proporcionamos soporte comercial, `contáctanos "
+"<http://www.opengis.ch/contact/>`_"
+
+#: ../../en/development/index.rst:29
+msgid "Credits"
+msgstr "Créditos"
+
+#: ../../en/development/index.rst:31
 msgid ""
 "QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
 "and training for open source software including QField and QGIS."
 msgstr ""
+"QField es desarrollada por OPENGIS.ch. OPENGIS.ch hace consultoría, "
+"desarrollo y formación en software de código abierto, incluyendodo QField "
+"and QGIS."
 
-#: ../../en/development/index.rst:29
+#: ../../en/development/index.rst:40
 msgid "Funding"
-msgstr ""
+msgstr "Financiación"
 
-#: ../../en/development/index.rst:31
+#: ../../en/development/index.rst:42
 msgid ""
 "The following oranizations have contributed to make QField what it currently"
 " is. We would like to warmly say: Thanks a lot!"
 msgstr ""
+"Las siguientes organizaciones han contribuido a hacer QField lo que "
+"actualmente es. Nos gustaría decir con gusto: ¡Muchas gracias!"
 
-#: ../../en/development/index.rst:71
+#: ../../en/development/index.rst:82
 msgid "Make it grow, make it yours"
-msgstr ""
+msgstr "Hazlo crecer, hazlo tuyo"
 
-#: ../../en/development/index.rst:73
+#: ../../en/development/index.rst:84
 msgid ""
 "This is a list of features which we think are very useful for a nice user "
 "experience and an effective workflow."
 msgstr ""
+"Esta es una lista de características que creemos que son muy útiles para una"
+" experiencia de usuario agradable y un flujo de trabajo eficaz."
 
-#: ../../en/development/index.rst:76
+#: ../../en/development/index.rst:87
 msgid "Polygon digitizing"
-msgstr ""
+msgstr "Digitalización de polígonos"
 
-#: ../../en/development/index.rst:77
+#: ../../en/development/index.rst:88
 msgid "Edit widgets"
-msgstr ""
+msgstr "Widgets de edición"
 
-#: ../../en/development/index.rst:78
+#: ../../en/development/index.rst:89
 msgid "Connection based on-/offline synchronization"
-msgstr ""
+msgstr "Conexión basada en sincronización on-/offline"
 
-#: ../../en/development/index.rst:79
+#: ../../en/development/index.rst:90
 msgid "Improved coordinate precision"
-msgstr ""
+msgstr "Mejora de la precisión de las coordenadas"
 
-#: ../../en/development/index.rst:80
+#: ../../en/development/index.rst:91
 msgid "Editing geometries (can be split into several pieces)"
-msgstr ""
+msgstr "Edición de geometrías (pueden dividirse en varias piezas)"
 
-#: ../../en/development/index.rst:81
+#: ../../en/development/index.rst:92
 msgid ""
 "Saving GPS status information into attributes when digitizing (precision, "
 "rtk status...)"
 msgstr ""
+"Almacenado de información del estado del GPS en atributos cuando se "
+"digitaliza (precisión, estado de rtk, ...)"
 
-#: ../../en/development/index.rst:82
+#: ../../en/development/index.rst:93
 msgid "Search functionality"
-msgstr ""
+msgstr "Función de busqueda"
 
-#: ../../en/development/index.rst:83
+#: ../../en/development/index.rst:94
 msgid "Attach external measurement devices"
-msgstr ""
+msgstr "Conectar dispositivos externos de medición"
 
-#: ../../en/development/index.rst:84
+#: ../../en/development/index.rst:95
 msgid "Legend"
-msgstr ""
+msgstr "Leyenda"
 
-#: ../../en/development/index.rst:85
+#: ../../en/development/index.rst:96
 msgid "[Your favorite feature]"
-msgstr ""
+msgstr "[Tu característica favorita]"
 
-#: ../../en/development/index.rst:88
+#: ../../en/development/index.rst:100
 msgid "API stability"
-msgstr ""
+msgstr "Estabilidad de la API"
 
-#: ../../en/development/index.rst:90
+#: ../../en/development/index.rst:102
 msgid "QField is currently not considered API stable."
-msgstr ""
+msgstr "QField no considera actualmente su API estable"
