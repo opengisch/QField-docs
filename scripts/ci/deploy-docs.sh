@@ -17,7 +17,7 @@ then
   cd QField
   git rm docs -r || true
   mkdir docs
-  cp ../../../build/html/* docs/ -r
+  cp ../../build/html/* docs/ -r
   git add -A
   git commit -m "Automatic doc update\n\nhttps://github.com/opengisch/QField-docs/commit/${TRAVIS_COMMIT}"
   git push
