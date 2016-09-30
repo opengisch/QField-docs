@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-30 07:18+0200\n"
-"PO-Revision-Date: 2016-09-30 05:18+0000\n"
+"POT-Creation-Date: 2016-09-30 08:34+0200\n"
+"PO-Revision-Date: 2016-09-30 06:34+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Polish (http://www.transifex.com/opengisch/qfield-documentation/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -36,12 +36,12 @@ msgid "Data Format"
 msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:67
+#: ../../en/project-management/index.rst:69
 msgid "Support"
 msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:67
+#: ../../en/project-management/index.rst:69
 msgid "Notes"
 msgstr ""
 
@@ -55,10 +55,10 @@ msgstr ""
 #: ../../en/project-management/dataformat.rst:23
 #: ../../en/project-management/dataformat.rst:25
 #: ../../en/project-management/dataformat.rst:27
-#: ../../en/project-management/index.rst:69
-#: ../../en/project-management/index.rst:74
+#: ../../en/project-management/index.rst:71
 #: ../../en/project-management/index.rst:76
 #: ../../en/project-management/index.rst:78
+#: ../../en/project-management/index.rst:80
 msgid ":yay:`✔`"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgid "Tiff"
 msgstr ""
 
 #: ../../en/project-management/dataformat.rst:29
-#: ../../en/project-management/index.rst:80
+#: ../../en/project-management/index.rst:82
 msgid ":moreorless:`~`"
 msgstr ""
 
@@ -105,8 +105,8 @@ msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
-#: ../../en/project-management/index.rst:84
 #: ../../en/project-management/index.rst:86
+#: ../../en/project-management/index.rst:88
 msgid ":nay:`✘`"
 msgstr ""
 
@@ -236,6 +236,10 @@ msgid ""
 ":menuselection:`Vector Layer Properties --> Display` page."
 msgstr ""
 
+#: ../../en/project-management/index.rst:49
+msgid "Forms and Fields"
+msgstr ""
+
 #: ../../en/project-management/index.rst:51
 msgid "QField creates forms similar to, but not equal to QGIS."
 msgstr ""
@@ -259,85 +263,85 @@ msgid ""
 " ignores the QGIS setting."
 msgstr ""
 
-#: ../../en/project-management/index.rst:88
+#: ../../en/project-management/index.rst:90
 msgid "Field settings"
 msgstr ""
 
-#: ../../en/project-management/index.rst:60
+#: ../../en/project-management/index.rst:62
 msgid ""
 "The field settings from QGIS are supported on a beste effort basis and is "
 "constantly being improved."
 msgstr ""
 
-#: ../../en/project-management/index.rst:67
+#: ../../en/project-management/index.rst:69
 msgid "Field type"
 msgstr ""
 
-#: ../../en/project-management/index.rst:69
+#: ../../en/project-management/index.rst:71
 msgid "Text Edit"
 msgstr ""
 
-#: ../../en/project-management/index.rst:69
+#: ../../en/project-management/index.rst:71
 msgid "Multiline is always allowed"
 msgstr ""
 
-#: ../../en/project-management/index.rst:70
+#: ../../en/project-management/index.rst:72
 msgid "HTML is not supported"
 msgstr ""
 
-#: ../../en/project-management/index.rst:71
+#: ../../en/project-management/index.rst:73
 msgid "Numerical input is enforced based on the type."
 msgstr ""
 
-#: ../../en/project-management/index.rst:74
+#: ../../en/project-management/index.rst:76
 msgid "Check Box"
 msgstr ""
 
-#: ../../en/project-management/index.rst:76
+#: ../../en/project-management/index.rst:78
 msgid "Value Map"
 msgstr ""
 
-#: ../../en/project-management/index.rst:78
+#: ../../en/project-management/index.rst:80
 msgid "Hidden"
 msgstr ""
 
-#: ../../en/project-management/index.rst:78
-#: ../../en/project-management/index.rst:84
+#: ../../en/project-management/index.rst:80
 #: ../../en/project-management/index.rst:86
+#: ../../en/project-management/index.rst:88
 msgid ":ref:`make_it_grow`"
 msgstr ""
 
-#: ../../en/project-management/index.rst:80
+#: ../../en/project-management/index.rst:82
 msgid "External Resource"
 msgstr ""
 
-#: ../../en/project-management/index.rst:80
+#: ../../en/project-management/index.rst:82
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
 msgstr ""
 
-#: ../../en/project-management/index.rst:84
+#: ../../en/project-management/index.rst:86
 msgid "Date Time"
 msgstr ""
 
-#: ../../en/project-management/index.rst:86
+#: ../../en/project-management/index.rst:88
 msgid "Others"
 msgstr ""
 
-#: ../../en/project-management/index.rst:91
+#: ../../en/project-management/index.rst:93
 msgid "Drag and drop designer forms"
 msgstr ""
 
-#: ../../en/project-management/index.rst:91
+#: ../../en/project-management/index.rst:93
 msgid "Groups and Tabs from Drag and Drop designer forms are supported."
 msgstr ""
 
-#: ../../en/project-management/index.rst:99
+#: ../../en/project-management/index.rst:101
 msgid "Conditional visibility"
 msgstr ""
 
-#: ../../en/project-management/index.rst:94
+#: ../../en/project-management/index.rst:96
 msgid ""
 "Groups can be hidden based on an expression. This is useful when certain "
 "attributes are only required under certain conditions. As an example imagine"
@@ -348,11 +352,11 @@ msgid ""
 "diseases will be available to the user."
 msgstr ""
 
-#: ../../en/project-management/index.rst:110
+#: ../../en/project-management/index.rst:112
 msgid "Constraints"
 msgstr ""
 
-#: ../../en/project-management/index.rst:102
+#: ../../en/project-management/index.rst:104
 msgid ""
 "Attribute fields can have constraints attached. Constraints are expressions "
 "that needs to evaluate to :code:`True` (or :code:`1`) in order to be able to"
@@ -361,28 +365,28 @@ msgid ""
 "not satisfied."
 msgstr ""
 
-#: ../../en/project-management/index.rst:107
-#: ../../en/project-management/index.rst:118
+#: ../../en/project-management/index.rst:109
+#: ../../en/project-management/index.rst:120
 msgid "Common use cases are:"
 msgstr ""
 
-#: ../../en/project-management/index.rst:109
+#: ../../en/project-management/index.rst:111
 msgid ""
 ":code:`\"elevation\" < 5000`: `You cannot enter an elevation value higher "
 "than the highest mountain in this country.`"
 msgstr ""
 
-#: ../../en/project-management/index.rst:110
+#: ../../en/project-management/index.rst:112
 msgid ""
 ":code:`\"identifier\" IS NOT NULL`: `It is required to fill in an "
 "identifier.`"
 msgstr ""
 
-#: ../../en/project-management/index.rst:122
+#: ../../en/project-management/index.rst:124
 msgid "Default values"
 msgstr ""
 
-#: ../../en/project-management/index.rst:113
+#: ../../en/project-management/index.rst:115
 msgid ""
 "Fields can have default values configured. Default values are inserted into "
 "the attribute form when digitizing a new feature. They are visible to the "
@@ -390,48 +394,48 @@ msgid ""
 " on the geometry or expression variables."
 msgstr ""
 
-#: ../../en/project-management/index.rst:120
+#: ../../en/project-management/index.rst:122
 msgid ":code:`now()`: Insert the current date and time"
 msgstr ""
 
-#: ../../en/project-management/index.rst:121
+#: ../../en/project-management/index.rst:123
 msgid ":code:`length($geometry)`: Insert the length of the digitized line"
 msgstr ""
 
-#: ../../en/project-management/index.rst:122
+#: ../../en/project-management/index.rst:124
 msgid ""
-":code:`@operator_name``: Configure :ref:`global variables` on the device and"
-" insert them."
+":code:`@operator_name`: Configure global variables on the device and insert "
+"them."
 msgstr ""
 
-#: ../../en/project-management/index.rst:125
+#: ../../en/project-management/index.rst:127
 msgid "Editable"
 msgstr ""
 
-#: ../../en/project-management/index.rst:125
+#: ../../en/project-management/index.rst:127
 msgid "The editable flag of fields is respected."
 msgstr ""
 
-#: ../../en/project-management/index.rst:128
+#: ../../en/project-management/index.rst:130
 msgid "Custom SVG symbols and settings"
 msgstr ""
 
-#: ../../en/project-management/index.rst:130
+#: ../../en/project-management/index.rst:132
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
 msgstr ""
 
-#: ../../en/project-management/index.rst:132
+#: ../../en/project-management/index.rst:134
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
 msgstr ""
 
-#: ../../en/project-management/index.rst:135
+#: ../../en/project-management/index.rst:137
 msgid "External SD card"
 msgstr ""
 
-#: ../../en/project-management/index.rst:137
+#: ../../en/project-management/index.rst:139
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"

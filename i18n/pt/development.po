@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-30 07:18+0200\n"
+"POT-Creation-Date: 2016-09-30 08:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: Portuguese (https://www.transifex.com/opengisch/teams/38926/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -92,52 +92,192 @@ msgid ""
 "experience and an effective workflow."
 msgstr ""
 
-#: ../../en/development/index.rst:87
-msgid "Polygon digitizing"
-msgstr ""
-
 #: ../../en/development/index.rst:88
 msgid "Edit widgets"
 msgstr ""
 
-#: ../../en/development/index.rst:89
-msgid "Connection based on-/offline synchronization"
-msgstr ""
-
 #: ../../en/development/index.rst:90
-msgid "Improved coordinate precision"
-msgstr ""
-
-#: ../../en/development/index.rst:91
-msgid "Editing geometries (can be split into several pieces)"
-msgstr ""
-
-#: ../../en/development/index.rst:92
 msgid ""
-"Saving GPS status information into attributes when digitizing (precision, "
-"rtk status...)"
-msgstr ""
-
-#: ../../en/development/index.rst:93
-msgid "Search functionality"
+"Edit widgets are a core part of efficient field work. Entering attributes on"
+" a touch device is one of the jobs that takes the most time and keeping this"
+" task as easy as possible is key for pleasuring work."
 msgstr ""
 
 #: ../../en/development/index.rst:94
-msgid "Attach external measurement devices"
+msgid ""
+"Some important :ref:`edit field widgets are already "
+"available<edit_field_widgets>` but much more is possible `for example in "
+"QGIS <http://gis.stackexchange.com/a/30051/9839>`_."
 msgstr ""
 
-#: ../../en/development/index.rst:95
+#: ../../en/development/index.rst:99
 msgid "Legend"
 msgstr ""
 
-#: ../../en/development/index.rst:96
+#: ../../en/development/index.rst:101
+msgid ""
+"To properly interpret the contents of a map, a legend is a very useful tool."
+" It gives a user the required context to understand the semantic meaning of "
+"colors, shapes, strokes and other visual coding."
+msgstr ""
+
+#: ../../en/development/index.rst:105
+msgid ""
+"It can also be used to access additional meta data of individual layers or "
+"chose which layer to work on."
+msgstr ""
+
+#: ../../en/development/index.rst:109
+msgid "Connection based on-/offline synchronization"
+msgstr ""
+
+#: ../../en/development/index.rst:111
+msgid ""
+"Data collection is one of the domains where QField can help a lot. The final"
+" destination of data is normally not on the device itself but somewhere on a"
+" database. Currently it is possible to directly work on the database but "
+"since network access is often unreliable when in the field, it boils down to"
+" manual synchronization on a desktop computer."
+msgstr ""
+
+#: ../../en/development/index.rst:117
+msgid ""
+"It would be great to have a synchronization process running on the devices "
+"where data will be synchronized automatically with a server when the network"
+" is available and cache data locally whenever no network connection is "
+"available."
+msgstr ""
+
+#: ../../en/development/index.rst:121
+msgid ""
+"This may be combined with `GeoGIG <http://geogig.org/>`_ or other server "
+"components like a database."
+msgstr ""
+
+#: ../../en/development/index.rst:125
+msgid "Improved coordinate precision"
+msgstr ""
+
+#: ../../en/development/index.rst:127
+msgid ""
+"Computers work mostly with two different datatypes for storing decimals "
+"(floating point numbers) internally. `Single <https://en.wikipedia.org/wiki"
+"/Single-precision_floating-point_format>`_ and `double "
+"<https://en.wikipedia.org/wiki/Double-precision_floating-point_format>`_ "
+"precision. With single precision only the first 6 digits of a number are "
+"significant and can be trusted, with double precision the first 15 digits "
+"can be trusted. This takes all digits (before and after the decimal point) "
+"into account."
+msgstr ""
+
+#: ../../en/development/index.rst:135
+msgid ""
+"When working with coordinates this is very important when a high accurracy "
+"is required. Only having 6 significant digits often means having a maximum "
+"accurracy around one meter but depends on the CRS and location on the earth "
+"surface."
+msgstr ""
+
+#: ../../en/development/index.rst:140
+msgid ""
+"Some parts of QField currently treat coordinates with single point "
+"precision. It would be a very good improvement to be able to use the full "
+"precision of accurate positioning devices by fixing this shortcoming."
+msgstr ""
+
+#: ../../en/development/index.rst:145
+msgid "Saving GPS status information into attributes"
+msgstr ""
+
+#: ../../en/development/index.rst:147
+msgid ""
+"Positioning devices offer more information than just latitude and longitude."
+" They are also able to estimate the precision which they are currently able "
+"to provide. This information can be a radius calculated from variables like "
+"the number of satellites but also additional flags for parameters like the "
+"RTK status."
+msgstr ""
+
+#: ../../en/development/index.rst:154
+msgid "Editing geometries"
+msgstr ""
+
+#: ../../en/development/index.rst:156
+msgid ""
+"QField offers to digitize new geometries, edit existing attributes or delete"
+" features. What it lacks is the feature to edit existing geometries."
+msgstr ""
+
+#: ../../en/development/index.rst:159
+msgid ""
+"This can be split into different pieces like moving points, moving other "
+"features, editing verices, moving edges..."
+msgstr ""
+
+#: ../../en/development/index.rst:163
+msgid "Search functionality"
+msgstr ""
+
+#: ../../en/development/index.rst:165
+msgid ""
+"Locating features with the help of a search field is something that can "
+"really help to work more efficient. In general this can be split into two "
+"categories:"
+msgstr ""
+
+#: ../../en/development/index.rst:173
+msgid "Attribute based search"
+msgstr ""
+
+#: ../../en/development/index.rst:169
+msgid ""
+"Search results are provided based on the attributes of features on layers "
+"within the project. Either a local database for searching is available. The "
+"data inside is based on the customized data you work with or the layers are "
+"queried directly for features with attributes in question."
+msgstr ""
+
+#: ../../en/development/index.rst:179
+msgid "Geocoding"
+msgstr ""
+
+#: ../../en/development/index.rst:176
+msgid ""
+"Search results are provided based on real world addresses. Services like "
+"`Nominatim <http://nominatim.openstreetmap.org/>`_ can be accessed via a web"
+" interface and convert real-world addresses to locations on a map. Just try "
+"the link."
+msgstr ""
+
+#: ../../en/development/index.rst:182
+msgid "External measurement devices"
+msgstr ""
+
+#: ../../en/development/index.rst:184
+msgid ""
+"Are you working with external devices with sensors? Air pressure, "
+"temperature, slope, carbon monoxide concentration, you name it... Wouldn't "
+"it be great to not having to read the information from your external device "
+"and manually typing it again? We would love to make life easier for you by "
+"adding support for directly connecting your external measurement device to "
+"QField."
+msgstr ""
+
+#: ../../en/development/index.rst:191
 msgid "[Your favorite feature]"
 msgstr ""
 
-#: ../../en/development/index.rst:100
+#: ../../en/development/index.rst:193
+msgid ""
+"You probably have plenty of ideas for other nice features. Please contact us"
+" and we can discuss the best approach to integrate this idea into QField or "
+"a derived app."
+msgstr ""
+
+#: ../../en/development/index.rst:199
 msgid "API stability"
 msgstr ""
 
-#: ../../en/development/index.rst:102
+#: ../../en/development/index.rst:201
 msgid "QField is currently not considered API stable."
 msgstr ""
