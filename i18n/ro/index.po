@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
+# Sorin Călinică <scalinica@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 08:06+0200\n"
-"PO-Revision-Date: 2016-08-29 06:06+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-09-30 07:18+0200\n"
+"PO-Revision-Date: 2016-09-24 10:16+0000\n"
+"Last-Translator: Sorin Călinică <scalinica@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,142 +20,142 @@ msgstr ""
 
 #: ../../en/index.rst:2
 msgid "QField - your mobile [Q]GIS solution"
-msgstr ""
+msgstr "QField - soluția dvs [Q]GIS mobilă"
 
 #: ../../en/index.rst:3
 msgid "QField allows you to efficiently work on your GIS data outdoor."
-msgstr ""
+msgstr "QField vă permite să lucrați eficient în exterior cu datele dvs. GIS."
 
 #: ../../en/index.rst:5
 msgid ""
 "QField's optimized user interface for Android devices hides the full power "
 "of `QGIS <https://qgis.org>`_ under the hood."
-msgstr ""
+msgstr "Interfața cu utilizatorul a QField, optimizată pentru dispozitive Android, ascunde în interior puterea completă a`QGIS <https://qgis.org>`_ ."
 
 #: ../../en/index.rst:15
 msgid ""
 ":download:`Slides from FOSS4G 2016 <files/slides_foss4g16.pdf>` are "
 "available."
-msgstr ""
+msgstr "Sunt disponibile :download:`prezentările de la FOSS4G 2016 <files/slides_foss4g16.pdf>`."
 
 #: ../../en/index.rst:19
 msgid "Prepare once - Deploy everywhere"
-msgstr ""
+msgstr "O dată pregătit - Se implementează oriunde"
 
 #: ../../en/index.rst:20
 msgid "Uses QGIS projects (including symbology and edit widgets)"
-msgstr ""
+msgstr "Utilizează proiectele QGIS (inclusiv simbologia și controalele grafice de editare)"
 
 #: ../../en/index.rst:21
 msgid "Supports most QGIS supported formats (ideal with PostGIS)"
-msgstr ""
+msgstr "Suportă majoritatea formatelor acceptate de QGIS (ideal cu PostGIS)"
 
 #: ../../en/index.rst:22
 msgid "Automatic syncronization capabilities (Cable, WiFi, Cloud)"
-msgstr ""
+msgstr "Capabilități automate de sincronizare (Cablu, WiFi, Cloud)"
 
 #: ../../en/index.rst:23
 msgid "Extends seamlessly your GDI"
-msgstr ""
+msgstr "Extinde perfect GDI-ul"
 
 #: ../../en/index.rst:26
 msgid "Made for touch - Field-work friendly"
-msgstr ""
+msgstr "Creat pentru dispoizitive mobil - Adecvat utilizării în teren"
 
 #: ../../en/index.rst:27
 msgid "Lean UI with few and large buttons"
-msgstr ""
+msgstr "Interfață grafică dotată cu butoane puține și mari"
 
 #: ../../en/index.rst:28
 msgid "GPS centric"
-msgstr ""
+msgstr "Centrat pe GPS"
 
 #: ../../en/index.rst:29
 msgid "Fully working offline and online using live and cached* DB connections"
-msgstr ""
+msgstr "Complet utilizabil, atât în mod conectat cât și deconectat, folosind conexiuni BD directe și stocate în memorie"
 
 #: ../../en/index.rst:30
 msgid "Switchable working modes (display, inspection, digitizing, measuring)*"
-msgstr ""
+msgstr "Modurile de lucru interschimbabile (afișare, inspecție, digitizare, măsurare)*"
 
 #: ../../en/index.rst:31
 msgid ""
 "Cross mode tools (Pan, zoom, identify, GPS coordinates, scalebar, central "
 "crosshair with snapping)"
-msgstr ""
+msgstr "Instrumente pentru modul (Deplasare, transfocare, identificare, coordonate GPS, scară grafică, reticul central cu acroșare)"
 
 #: ../../en/index.rst:34
 msgid "Make it grow - Make it yours"
-msgstr ""
+msgstr "Dezvoltați-l - Intrați în posesia lui"
 
 #: ../../en/index.rst:35
 msgid "Paid feature development"
-msgstr ""
+msgstr "Dezvoltarea cu plată a funcțiunilor"
 
 #: ../../en/index.rst:36
 msgid "Customizable to your needs"
-msgstr ""
+msgstr "Personalizabil după cerințele proprii"
 
 #: ../../en/index.rst:37
 msgid "Donations and sponsoring (qfield.opengis.ch/donate)"
-msgstr ""
+msgstr "Donații și sponsorizări (qfield.opengis.ch/donate)"
 
 #: ../../en/index.rst:38
 msgid ""
 "Hire us for development, consulting and training for QField, C++, Python, "
 "Web, QGIS, Android, ..."
-msgstr ""
+msgstr "Angajați-ne pentru dezvoltare, consultanță și instruire în QField, C, Python, Web, QGIS, Android, ..."
 
 #: ../../en/index.rst:49
 msgid "Contents"
-msgstr ""
+msgstr "Cuprins"
 
 #: ../../en/index.rst:62
 msgid "Translations"
-msgstr ""
+msgstr "Traduceri"
 
 #: ../../en/index.rst:64
 msgid "The documentation is available in several languages"
-msgstr ""
+msgstr "Documentația este disponibilă în mai multe limbi"
 
 #: ../../en/index.rst:66
 msgid "`English </en>`_"
-msgstr ""
+msgstr "`English </en>`_"
 
 #: ../../en/index.rst:68
 msgid "`Deutsch </de>`_"
-msgstr ""
+msgstr "`Deutsch </de>`_"
 
 #: ../../en/index.rst:70
 msgid "`Français </fr>`_"
-msgstr ""
+msgstr "`Français </fr>`_"
 
 #: ../../en/index.rst:72
 msgid "`Galician </gl>`_"
-msgstr ""
+msgstr "`Galician </gl>`_"
 
 #: ../../en/index.rst:74
 msgid "`Portuguese </pt>`_"
-msgstr ""
+msgstr "`Portuguese </pt>`_"
 
 #: ../../en/index.rst:76
 msgid "`Catalan </ca>`_"
-msgstr ""
+msgstr "`Catalan </ca>`_"
 
 #: ../../en/index.rst:78
 msgid ""
 "If there is an error with a translation, please `help to improve it "
 "<https://www.transifex.com/opengisch/qfield-documentation/>`_."
-msgstr ""
+msgstr "Dacă există o eroare de traducere, vă rugăm să `ajutați la îmbunătățirea ei <https://www.transifex.com/opengisch/qfield-documentation/>`_."
 
 #: ../../en/index.rst:82
 msgid "Indices and tables"
-msgstr ""
+msgstr "Indecși și tabele"
 
 #: ../../en/index.rst:84
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 #: ../../en/index.rst:85
 msgid ":ref:`search`"
-msgstr ""
+msgstr ":ref:`search`"

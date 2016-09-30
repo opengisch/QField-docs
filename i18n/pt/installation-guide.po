@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
+# João Gaspar <joao.f.r.gaspar@gmail.com>, 2016
 # Maria Manuela Silva <manuela.silva@sky.com>, 2016
 # Maria Manuela Silva <manuela.silva@sky.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-25 17:00+0200\n"
-"PO-Revision-Date: 2016-08-25 15:00+0000\n"
-"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
+"POT-Creation-Date: 2016-09-30 07:18+0200\n"
+"PO-Revision-Date: 2016-09-29 12:36+0000\n"
+"Last-Translator: João Gaspar <joao.f.r.gaspar@gmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/opengisch/qfield-documentation/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +53,7 @@ msgid ""
 "We also offer a pre-built apk for you to download if you are not able or do "
 "not want to use GooglePlay. You can get the qfield.apk_ from the release "
 "page."
-msgstr ""
+msgstr "Nós também oferecemos um apk pré-compilado para transferir se não puder ou não quiser usar Google Playstore. qfield.apk_. Pode obter o a partir da página de lançamento."
 
 #: ../../en/installation-guide/index.rst:29
 msgid "Karma edition"
@@ -68,4 +69,4 @@ msgid ""
 "edition does not offer any additional features. In fact, you will still need"
 " to install the normal QField app. Please also note that there are other "
 "preferred ways to support the development of QField."
-msgstr ""
+msgstr "Existe várias formas de apoiar o projecto QField, um deles é comprar a edição `QField Karma app <https://play.google.com/store/apps/details?id=ch.opengis.qfieldkarmaedition>`_ no GooglePlay. "

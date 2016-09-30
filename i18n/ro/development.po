@@ -6,10 +6,11 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: QField Documentation 0.7\n"
+"Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-21 17:34+0200\n"
+"POT-Creation-Date: 2016-09-30 07:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Sorin Călinică <scalinica@gmail.com>, 2016\n"
 "Language-Team: Romanian (https://www.transifex.com/opengisch/teams/38926/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: ../../en/development/index.rst:3
 msgid "Development and support"
-msgstr ""
+msgstr "Dezvoltare și suport"
 
 #: ../../en/development/index.rst:7
 msgid "License"
-msgstr ""
+msgstr "Licență"
 
 #: ../../en/development/index.rst:9
 msgid ""
@@ -33,111 +34,133 @@ msgid ""
 "based field data collection app that is free of cost and can be freely "
 "modified."
 msgstr ""
+"QField este dezvoltat sub licența GNU Public (GPL), versiunea 2 sau mai "
+"nouă. Dezvoltarea aplicației QField în baza acestei licențe vă garantează că"
+" puteți inspecta și modifica codul sursă, și că veți avea întotdeauna acces "
+"la o aplicație bazată pe QGIS, dedicată colectării datelor din teren, care "
+"poate fi utilizată în mod gratuit și poate fi modificată în mod liber."
 
 #: ../../en/development/index.rst:15
 msgid ""
 "You can find the sourcecode `on github "
 "<https://github.com/opengisch/QField>`_"
 msgstr ""
+"Puteți găsi codul sursă `pe github <https://github.com/opengisch/QField>`_"
 
 #: ../../en/development/index.rst:19
 msgid "Support"
-msgstr ""
+msgstr "Suport tehnic"
 
 #: ../../en/development/index.rst:21
 msgid ""
 "You can ask your questions on `gis.stackexchange "
 "<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_"
 msgstr ""
+"Puteți pune întrebări pe `gis.stackexchange "
+"<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_"
 
 #: ../../en/development/index.rst:23
 msgid ""
 "You can use the `user mailing list <http://lists.qfield.org/listinfo.cgi"
 "/users-qfield.org>`_"
 msgstr ""
+"Puteți utiliza `lista de discuții a utilizatorilor "
+"<http://lists.qfield.org/listinfo.cgi/users-qfield.org>`_"
 
 #: ../../en/development/index.rst:25
 msgid ""
 "We also provide commercial support, `contact us "
 "<http://www.opengis.ch/contact/>`_"
 msgstr ""
+"De asemenea, oferim suport comercial, deci `contactați-ne "
+"<http://www.opengis.ch/contact/>`_"
 
 #: ../../en/development/index.rst:29
 msgid "Credits"
-msgstr ""
+msgstr "Drepturi de autor"
 
 #: ../../en/development/index.rst:31
 msgid ""
 "QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
 "and training for open source software including QField and QGIS."
 msgstr ""
+"QField este dezvoltat de OpenGIS.ch. OpenGIS.ch oferă consultanță, "
+"dezvoltare și instruire pentru aplicațiile open source, inclusiv pentru "
+"QField și QGIS."
 
 #: ../../en/development/index.rst:40
 msgid "Funding"
-msgstr ""
+msgstr "Finanțare"
 
 #: ../../en/development/index.rst:42
 msgid ""
 "The following oranizations have contributed to make QField what it currently"
 " is. We would like to warmly say: Thanks a lot!"
 msgstr ""
+"Următoarele oranizații au contribuit la ceea ce este în prezent QField. "
+"Dorim să le spunem cu căldură: Vă mulțumim mult!"
 
 #: ../../en/development/index.rst:82
 msgid "Make it grow, make it yours"
-msgstr ""
+msgstr "Dezvoltați-l și intrați în posesia lui"
 
 #: ../../en/development/index.rst:84
 msgid ""
 "This is a list of features which we think are very useful for a nice user "
 "experience and an effective workflow."
 msgstr ""
+"Aceasta este o listă a caracteristicilor pe care le considerăm foarte utile,"
+" oferind o experiență plăcută pentru utilizator și un flux de lucru "
+"eficient."
 
 #: ../../en/development/index.rst:87
 msgid "Polygon digitizing"
-msgstr ""
+msgstr "Digitizarea poligoanelor"
 
 #: ../../en/development/index.rst:88
 msgid "Edit widgets"
-msgstr ""
+msgstr "Editarea controalelor grafice"
 
 #: ../../en/development/index.rst:89
 msgid "Connection based on-/offline synchronization"
-msgstr ""
+msgstr "Sincronizare pe baza conexiunilor conectate/deconectate"
 
 #: ../../en/development/index.rst:90
 msgid "Improved coordinate precision"
-msgstr ""
+msgstr "Precizie îmbunătățită a coordonatelor"
 
 #: ../../en/development/index.rst:91
 msgid "Editing geometries (can be split into several pieces)"
-msgstr ""
+msgstr "Editarea geometriilor (pot fi divizate în mai multe părți)"
 
 #: ../../en/development/index.rst:92
 msgid ""
 "Saving GPS status information into attributes when digitizing (precision, "
 "rtk status...)"
 msgstr ""
+"Salvarea în atribute a informațiilor privind starea GPS-ului, atunci când "
+"are loc digitizarea (precizia, starea RTK...)"
 
 #: ../../en/development/index.rst:93
 msgid "Search functionality"
-msgstr ""
+msgstr "Funcție de căutare"
 
 #: ../../en/development/index.rst:94
 msgid "Attach external measurement devices"
-msgstr ""
+msgstr "Atașarea dispozitivelor externe de măsurare"
 
 #: ../../en/development/index.rst:95
 msgid "Legend"
-msgstr ""
+msgstr "Legenda"
 
 #: ../../en/development/index.rst:96
 msgid "[Your favorite feature]"
-msgstr ""
+msgstr "[Caracteristica dvs. favorită]"
 
 #: ../../en/development/index.rst:100
 msgid "API stability"
-msgstr ""
+msgstr "Stabilitatea API"
 
 #: ../../en/development/index.rst:102
 msgid "QField is currently not considered API stable."
-msgstr ""
+msgstr "În prezent QField are la bază un API care nu este considerat stabil."

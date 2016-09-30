@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-21 17:34+0200\n"
-"PO-Revision-Date: 2016-09-21 15:34+0000\n"
+"POT-Creation-Date: 2016-09-30 07:18+0200\n"
+"PO-Revision-Date: 2016-09-30 05:18+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -39,12 +39,12 @@ msgid "Data Format"
 msgstr "Formato dos Datos"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:58
+#: ../../en/project-management/index.rst:67
 msgid "Support"
 msgstr "Asistencia"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:58
+#: ../../en/project-management/index.rst:67
 msgid "Notes"
 msgstr "Notas"
 
@@ -58,10 +58,10 @@ msgstr "SpatiaLite"
 #: ../../en/project-management/dataformat.rst:23
 #: ../../en/project-management/dataformat.rst:25
 #: ../../en/project-management/dataformat.rst:27
-#: ../../en/project-management/index.rst:60
-#: ../../en/project-management/index.rst:63
-#: ../../en/project-management/index.rst:65
-#: ../../en/project-management/index.rst:67
+#: ../../en/project-management/index.rst:69
+#: ../../en/project-management/index.rst:74
+#: ../../en/project-management/index.rst:76
+#: ../../en/project-management/index.rst:78
 msgid ":yay:`✔`"
 msgstr ":yay:`✔`"
 
@@ -94,7 +94,7 @@ msgid "Tiff"
 msgstr "Tiff"
 
 #: ../../en/project-management/dataformat.rst:29
-#: ../../en/project-management/index.rst:69
+#: ../../en/project-management/index.rst:80
 msgid ":moreorless:`~`"
 msgstr ":moreorless:`~`"
 
@@ -108,8 +108,8 @@ msgstr "ECW"
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
-#: ../../en/project-management/index.rst:73
-#: ../../en/project-management/index.rst:75
+#: ../../en/project-management/index.rst:84
+#: ../../en/project-management/index.rst:86
 msgid ":nay:`✘`"
 msgstr ":nay:`✘`"
 
@@ -206,128 +206,31 @@ msgid "Layer CRS"
 msgstr "SRC da capa"
 
 #: ../../en/project-management/index.rst:25
-msgid ""
-"QField does not respect OTF when digitizing new features. Make sure that all"
-" the layers on which you digitize are in the same CRS like the project. If "
-"you fail to do so it will look as if new features are not saved because they"
-" end up in far far away."
-msgstr "QField non respecta a reproxección sobre a marcha cando dixitaliza novas entidades. Asegúrese de que tódalas capas nas cales dixitalice estean no mesmo SRC que o proxecto. Se deixa de facelo parecerá que as novas entidades non están gardadas porque ficarán moi moi lonxe."
-
-#: ../../en/project-management/index.rst:30
 msgid "Vector Layer Settings"
 msgstr "Configuración de Capa Vectorial"
 
-#: ../../en/project-management/index.rst:32
+#: ../../en/project-management/index.rst:27
 msgid ""
 "Most of the settings which QGIS offers are directly supported by QField "
 "without any extra effort."
 msgstr "A maioría dos axustes que ofrece QGIS son admitidos directamente por QField sen ningún esforzo extra."
 
-#: ../../en/project-management/index.rst:35
+#: ../../en/project-management/index.rst:30
 msgid "Style"
 msgstr "Estilo"
 
-#: ../../en/project-management/index.rst:37
+#: ../../en/project-management/index.rst:32
 msgid ""
 "All style settings from QGIS are directly supported by QField. This includes"
 " all renderer types like graduated, categorized, rule based, 2.5D as well as"
 " data defined symbology."
 msgstr "Toda a configuración de estilo de QGIS admítese directamente por QField. Isto inclúe tódolos tipos de renderización como graduado, por categorías, baseado en normas, 2.5D así como a simboloxía definida polos datos."
 
-#: ../../en/project-management/index.rst:40
-msgid "Forms and Fields"
-msgstr "Formularios e Campos"
-
-#: ../../en/project-management/index.rst:42
-msgid "QField creates forms similar to, but not equal to QGIS."
-msgstr "QField crea formularios de forma similar, pero non igual a QGIS."
-
-#: ../../en/project-management/index.rst:45
-msgid "Suppress Feature Form"
-msgstr "Eliminar Formulario de Entidade"
-
-#: ../../en/project-management/index.rst:45
-msgid ""
-"The setting suppress feature form is directly applied to the QField form."
-msgstr "A configuración suprimir formulario de entidade aplícase directamente ó formulario de QField."
-
-#: ../../en/project-management/index.rst:48
-msgid "Remember last values"
-msgstr "Lembrar os últimos valores"
-
-#: ../../en/project-management/index.rst:48
-msgid ""
-"QField offers a much more fine-grained control over the last used values and"
-" ignores the QGIS setting."
-msgstr "QField ofrece un control máis refinado sobre os últimos valores usados e ignora a configuración de QGIS."
-
-#: ../../en/project-management/index.rst:77
-msgid "Field settings"
-msgstr "Configuración do campo"
-
-#: ../../en/project-management/index.rst:51
-msgid ""
-"The field settings from QGIS are supported on a beste effort basis and is "
-"constantly being improved."
-msgstr "A configuración de campo de QGIS está dispoñible en base ó mellor esforzo e constantemente está sendo mellorado."
-
-#: ../../en/project-management/index.rst:58
-msgid "Field type"
-msgstr "Tipo de campo"
-
-#: ../../en/project-management/index.rst:60
-msgid "Text Edit"
-msgstr "Edición de texto"
-
-#: ../../en/project-management/index.rst:60
-msgid "Multiline is always allowed"
-msgstr "A multiliña é sempre permitida"
-
-#: ../../en/project-management/index.rst:61
-msgid "HTML is not supported"
-msgstr "O HTML non está admitido"
-
-#: ../../en/project-management/index.rst:63
-msgid "Check Box"
-msgstr "Caixa de selección"
-
-#: ../../en/project-management/index.rst:65
-msgid "Value Map"
-msgstr "Mapa de valores"
-
-#: ../../en/project-management/index.rst:67
-msgid "Hidden"
-msgstr "Oculto"
-
-#: ../../en/project-management/index.rst:67
-#: ../../en/project-management/index.rst:73
-#: ../../en/project-management/index.rst:75
-msgid ":ref:`make_it_grow`"
-msgstr ":ref:`faino_medrar`"
-
-#: ../../en/project-management/index.rst:69
-msgid "External Resource"
-msgstr "Recurso externo"
-
-#: ../../en/project-management/index.rst:69
-msgid ""
-"This field is combined with camera integration. Only images can be viewed so"
-" far. :ref:`make_it_grow`"
-msgstr "Este campo combínase coa integración da cámara. Ata o de agora só poden verse imaxes. :ref:`faino_medrar`"
-
-#: ../../en/project-management/index.rst:73
-msgid "Date Time"
-msgstr "Data Hora"
-
-#: ../../en/project-management/index.rst:75
-msgid "Others"
-msgstr "Outros"
-
-#: ../../en/project-management/index.rst:80
+#: ../../en/project-management/index.rst:35
 msgid "Display Expression"
 msgstr ""
 
-#: ../../en/project-management/index.rst:82
+#: ../../en/project-management/index.rst:37
 msgid ""
 "In QField, objects are identified with a name. The expression to generate "
 "this name can be defined by opening the attribute table in QGIS and "
@@ -336,26 +239,202 @@ msgid ""
 ":menuselection:`Vector Layer Properties --> Display` page."
 msgstr ""
 
+#: ../../en/project-management/index.rst:51
+msgid "QField creates forms similar to, but not equal to QGIS."
+msgstr "QField crea formularios de forma similar, pero non igual a QGIS."
+
+#: ../../en/project-management/index.rst:54
+msgid "Suppress Feature Form"
+msgstr "Eliminar Formulario de Entidade"
+
+#: ../../en/project-management/index.rst:54
+msgid ""
+"The setting suppress feature form is directly applied to the QField form."
+msgstr "A configuración suprimir formulario de entidade aplícase directamente ó formulario de QField."
+
+#: ../../en/project-management/index.rst:57
+msgid "Remember last values"
+msgstr "Lembrar os últimos valores"
+
+#: ../../en/project-management/index.rst:57
+msgid ""
+"QField offers a much more fine-grained control over the last used values and"
+" ignores the QGIS setting."
+msgstr "QField ofrece un control máis refinado sobre os últimos valores usados e ignora a configuración de QGIS."
+
+#: ../../en/project-management/index.rst:88
+msgid "Field settings"
+msgstr "Configuración do campo"
+
+#: ../../en/project-management/index.rst:60
+msgid ""
+"The field settings from QGIS are supported on a beste effort basis and is "
+"constantly being improved."
+msgstr "A configuración de campo de QGIS está dispoñible en base ó mellor esforzo e constantemente está sendo mellorado."
+
+#: ../../en/project-management/index.rst:67
+msgid "Field type"
+msgstr "Tipo de campo"
+
+#: ../../en/project-management/index.rst:69
+msgid "Text Edit"
+msgstr "Edición de texto"
+
+#: ../../en/project-management/index.rst:69
+msgid "Multiline is always allowed"
+msgstr "A multiliña é sempre permitida"
+
+#: ../../en/project-management/index.rst:70
+msgid "HTML is not supported"
+msgstr "O HTML non está admitido"
+
+#: ../../en/project-management/index.rst:71
+msgid "Numerical input is enforced based on the type."
+msgstr ""
+
+#: ../../en/project-management/index.rst:74
+msgid "Check Box"
+msgstr "Caixa de selección"
+
+#: ../../en/project-management/index.rst:76
+msgid "Value Map"
+msgstr "Mapa de valores"
+
+#: ../../en/project-management/index.rst:78
+msgid "Hidden"
+msgstr "Oculto"
+
+#: ../../en/project-management/index.rst:78
+#: ../../en/project-management/index.rst:84
+#: ../../en/project-management/index.rst:86
+msgid ":ref:`make_it_grow`"
+msgstr ":ref:`faino_medrar`"
+
+#: ../../en/project-management/index.rst:80
+msgid "External Resource"
+msgstr "Recurso externo"
+
+#: ../../en/project-management/index.rst:80
+msgid ""
+"This field is combined with camera integration. Only images can be viewed so"
+" far. :ref:`make_it_grow`"
+msgstr "Este campo combínase coa integración da cámara. Ata o de agora só poden verse imaxes. :ref:`faino_medrar`"
+
+#: ../../en/project-management/index.rst:84
+msgid "Date Time"
+msgstr "Data Hora"
+
+#: ../../en/project-management/index.rst:86
+msgid "Others"
+msgstr "Outros"
+
+#: ../../en/project-management/index.rst:91
+msgid "Drag and drop designer forms"
+msgstr ""
+
+#: ../../en/project-management/index.rst:91
+msgid "Groups and Tabs from Drag and Drop designer forms are supported."
+msgstr ""
+
+#: ../../en/project-management/index.rst:99
+msgid "Conditional visibility"
+msgstr ""
+
 #: ../../en/project-management/index.rst:94
+msgid ""
+"Groups can be hidden based on an expression. This is useful when certain "
+"attributes are only required under certain conditions. As an example imagine"
+" mapping trees. Some of them might have a disease and you have a list of "
+"possible deseases. To not clutter the form with many fields, make a group "
+"and configure a visibility expression for a group \"diseases\". Add a field "
+"\"desease\" with a checkbox. Only when the checkbox is checked, the list of "
+"diseases will be available to the user."
+msgstr ""
+
+#: ../../en/project-management/index.rst:110
+msgid "Constraints"
+msgstr ""
+
+#: ../../en/project-management/index.rst:102
+msgid ""
+"Attribute fields can have constraints attached. Constraints are expressions "
+"that needs to evaluate to :code:`True` (or :code:`1`) in order to be able to"
+" save the form. Constraints are configured on a per-field basis and a "
+"description can be added that will be shown to the user if a constraint is "
+"not satisfied."
+msgstr ""
+
+#: ../../en/project-management/index.rst:107
+#: ../../en/project-management/index.rst:118
+msgid "Common use cases are:"
+msgstr ""
+
+#: ../../en/project-management/index.rst:109
+msgid ""
+":code:`\"elevation\" < 5000`: `You cannot enter an elevation value higher "
+"than the highest mountain in this country.`"
+msgstr ""
+
+#: ../../en/project-management/index.rst:110
+msgid ""
+":code:`\"identifier\" IS NOT NULL`: `It is required to fill in an "
+"identifier.`"
+msgstr ""
+
+#: ../../en/project-management/index.rst:122
+msgid "Default values"
+msgstr ""
+
+#: ../../en/project-management/index.rst:113
+msgid ""
+"Fields can have default values configured. Default values are inserted into "
+"the attribute form when digitizing a new feature. They are visible to the "
+"user and can be modified as long as the field is editable. They can be based"
+" on the geometry or expression variables."
+msgstr ""
+
+#: ../../en/project-management/index.rst:120
+msgid ":code:`now()`: Insert the current date and time"
+msgstr ""
+
+#: ../../en/project-management/index.rst:121
+msgid ":code:`length($geometry)`: Insert the length of the digitized line"
+msgstr ""
+
+#: ../../en/project-management/index.rst:122
+msgid ""
+":code:`@operator_name``: Configure :ref:`global variables` on the device and"
+" insert them."
+msgstr ""
+
+#: ../../en/project-management/index.rst:125
+msgid "Editable"
+msgstr ""
+
+#: ../../en/project-management/index.rst:125
+msgid "The editable flag of fields is respected."
+msgstr ""
+
+#: ../../en/project-management/index.rst:128
 msgid "Custom SVG symbols and settings"
 msgstr "Configuración e símbolos SVG personalizados"
 
-#: ../../en/project-management/index.rst:96
+#: ../../en/project-management/index.rst:130
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
 msgstr "No diálogo 'acerca de' podes ver onde están os cartafoles compartidos no dispositivo."
 
-#: ../../en/project-management/index.rst:98
+#: ../../en/project-management/index.rst:132
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
 msgstr "Se queres utilizar símbolos personalizados tes que poñelos alí empregando un xestor de ficheiros."
 
-#: ../../en/project-management/index.rst:101
+#: ../../en/project-management/index.rst:135
 msgid "External SD card"
 msgstr "Tarxeta SD externa"
 
-#: ../../en/project-management/index.rst:103
+#: ../../en/project-management/index.rst:137
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"

@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-15 11:14+0200\n"
-"PO-Revision-Date: 2016-09-08 18:08+0000\n"
-"Last-Translator: jmmanzano <manzano.jm@gmail.com>\n"
+"POT-Creation-Date: 2016-09-30 07:18+0200\n"
+"PO-Revision-Date: 2016-09-30 05:18+0000\n"
+"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Spanish (http://www.transifex.com/opengisch/qfield-documentation/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -147,5 +147,9 @@ msgid "Delete Features"
 msgstr "Borrado de elementos"
 
 #: ../../en/user-guide/index.rst:76
+msgid "Deleting features is only possible in digitize mode."
+msgstr ""
+
+#: ../../en/user-guide/index.rst:78
 msgid "To delete a feature, identify it first and tap the trash icon."
 msgstr "Para borrar un elemento, identifícalo primero y pulsa sobre el icono de la papelera."

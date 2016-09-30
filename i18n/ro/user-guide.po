@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
+# Sorin Călinică <scalinica@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-25 17:00+0200\n"
-"PO-Revision-Date: 2016-08-25 15:00+0000\n"
-"Last-Translator: OPENGIS.ch <info@opengis.ch>\n"
+"POT-Creation-Date: 2016-09-30 07:18+0200\n"
+"PO-Revision-Date: 2016-09-30 05:18+0000\n"
+"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,106 +20,106 @@ msgstr ""
 
 #: ../../en/user-guide/index.rst:3
 msgid "QField User Guide"
-msgstr ""
+msgstr "Ghidul de Utilizare a QField"
 
 #: ../../en/user-guide/index.rst:7
 msgid "Basic workflow"
-msgstr ""
+msgstr "Fluxul de lucru de bază"
 
 #: ../../en/user-guide/index.rst:10
 msgid "Switch modes"
-msgstr ""
+msgstr "Schimbarea modurilor"
 
 #: ../../en/user-guide/index.rst:12
 msgid "Modes are switched via :menuselection:`Menu button --> mode`"
-msgstr ""
+msgstr "Modurile sunt schimbate prin intermediul :menuselection:`Butonului Meniului --> mod`"
 
 #: ../../en/user-guide/index.rst:15
 msgid "Opening a project"
-msgstr ""
+msgstr "Deschiderea unui proiect"
 
 #: ../../en/user-guide/index.rst:19
 msgid "Identify features"
-msgstr ""
+msgstr "Identificarea entităților"
 
 #: ../../en/user-guide/index.rst:21
 msgid ""
 "A long press on a feature will identify it. Pressing the back button will "
 "close the identify window."
-msgstr ""
+msgstr "O apăsare lungă pe o entitate va conduce la identificarea ei. Prin apăsarea butonului din spate, fereastra de identificare se va închide."
 
 #: ../../en/user-guide/index.rst:24
 msgid "Exceptions to identified layers"
-msgstr ""
+msgstr "Straturi exceptate de la identificare"
 
 #: ../../en/user-guide/index.rst:26
 msgid ""
 "Often it is not required to be able to query every layer. Some layers are "
 "only present as basemap and their attributes are not of interest."
-msgstr ""
+msgstr "De multe ori nu este necesară interogarea oricărui strat. Anumite straturi sunt afișate doar ca fundal pentru hartă, iar atributele lor de bază nu sunt de interes."
 
 #: ../../en/user-guide/index.rst:28
 msgid ""
 "You can manage this layerlist in QGIS desktop in :menuselection:`Project -->"
 " Project Properties --> Identify Layers` and uncheck the base layers."
-msgstr ""
+msgstr "Puteți gestiona lista acestor straturi în QGIS desktop, accesând :menuselection:`Proiect --> Proprietățile Proiectului --> Identificare Straturi` și debifând straturile de bază."
 
 #: ../../en/user-guide/index.rst:31
 msgid "GPS"
-msgstr ""
+msgstr "GPS"
 
 #: ../../en/user-guide/index.rst:33
 msgid ""
 "A short press on the GPS button will turn on the GPS and center to the "
 "current location once positioning information is available."
-msgstr ""
+msgstr "O scurtă apăsare pe butonul GPS va porni GPS-ul, acesta centrându-se pe locația curentă, o dată ce informațiile de poziționare sunt disponibile."
 
 #: ../../en/user-guide/index.rst:35
 msgid "A long press on the GPS button will show the positioning menu."
-msgstr ""
+msgstr "O apăsare lungă pe butonul GPS va conduce la afișarea meniului de poziționare."
 
 #: ../../en/user-guide/index.rst:37
 msgid ""
 "Inside the positioning menu you can turn on the positioning display which "
 "will show the current coordinates which are reprojected into the project CRS"
 " along with precision information."
-msgstr ""
+msgstr "În interiorul meniului de poziționare puteți activa afișajul de poziționare, care va prezenta coordonatele curente, reproiectate în CRS-ul proiectului, alături de precizia informațiilor."
 
 #: ../../en/user-guide/index.rst:40
 msgid ""
 "If you see WGS 84 lat/lon information instead of information in your project"
 " CRS, you probably have no signal yet."
-msgstr ""
+msgstr "Dacă, în locul informațiilor despre CRS-ul proiectului dumneavoastră, sunt afișate informațiile  lat / lon WGS 84, probabil că încă nu ați recepționat vreun semnal."
 
 #: ../../en/user-guide/index.rst:43
 msgid "Digitize"
-msgstr ""
+msgstr "Digitizarea"
 
 #: ../../en/user-guide/index.rst:45
 msgid "To start digitizing new features `Switch modes`_ to digitizing."
-msgstr ""
+msgstr "Pentru a porni digitizarea noilor entități `Comutați modul`_ pe digitizare."
 
 #: ../../en/user-guide/index.rst:47
 msgid ""
 "A new combobox will appear next to the menu button which lists the layers "
 "available for digitizing. At the moment (QField 0.7), QField supports point "
 "and line layers."
-msgstr ""
+msgstr "Un nou ComboBox va apărea lângă butonul meniului, care listează straturile disponibile pentru digitizare. În acest moment (QField 0.7), QField acceptă straturile de tip punct și linie."
 
 #: ../../en/user-guide/index.rst:52
 msgid "Points"
-msgstr ""
+msgstr "Punctele"
 
 #: ../../en/user-guide/index.rst:54
 msgid ""
 "Navigate the crosshair in the center of the screen to the desired location "
 "and click the pencil at the lower right of the screen to confirm the "
 "creation of a new point feature."
-msgstr ""
+msgstr "Poziționați reticulul din centrul ecranului la locația dorită, și faceți clic cu creionul în partea din dreapta jos a ecranului, pentru a confirma crearea unei noi entități de tip punct."
 
 #: ../../en/user-guide/index.rst:59
 msgid "Lines"
-msgstr ""
+msgstr "Liniile"
 
 #: ../../en/user-guide/index.rst:61
 msgid ""
@@ -126,11 +127,11 @@ msgid ""
 "the line and click the pencil at the lower right of the screen. Proceed with"
 " adding points or removing points until the line is finished and then click "
 "save."
-msgstr ""
+msgstr "Poziționați reticulul din centrul ecranului la punctul de start al liniei, apoi faceți clic cu creionul în partea din dreapta jos a ecranului. Continuați cu adăugarea sau eliminarea punctelor până când linia este terminată, când veți face clic pe Salvare."
 
 #: ../../en/user-guide/index.rst:66
 msgid "Attribute form"
-msgstr ""
+msgstr "Formularul de atribute"
 
 #: ../../en/user-guide/index.rst:68
 msgid ""
@@ -139,12 +140,16 @@ msgid ""
 "new feature. The form which appears allows entering attribute values for the"
 " new feature. The checkboxes at the right of every attribute allow for "
 "remembering each attribute individually."
-msgstr ""
+msgstr "După digitizarea unei geometrii, formularul atributelor va fi afișat, în cazul în care nu este suprimat, iar utilizatorul vă va cere să introduceți atributele pentru noua entitate. Formularul care apare permite introducerea valorilor atributelor. Casetele de selectare din dreptul fiecărui atribut permite reținerea individuală a atributelor."
 
 #: ../../en/user-guide/index.rst:74
 msgid "Delete Features"
-msgstr ""
+msgstr "Ștergerea entităților"
 
 #: ../../en/user-guide/index.rst:76
-msgid "To delete a feature, identify it first and tap the trash icon."
+msgid "Deleting features is only possible in digitize mode."
 msgstr ""
+
+#: ../../en/user-guide/index.rst:78
+msgid "To delete a feature, identify it first and tap the trash icon."
+msgstr "Pentru a șterge o entitate, identificați mai întâi și atingeți pictograma coșului de gunoi."
