@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-30 08:34+0200\n"
+"POT-Creation-Date: 2016-10-05 09:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: xanvieiro <gallaecia6@gmail.com>, 2016\n"
 "Language-Team: Galician (https://www.transifex.com/opengisch/teams/38926/gl/)\n"
@@ -76,36 +76,11 @@ msgstr ""
 "Tamén proporcionamos asistencia comercial, `contacta connosco "
 "<http://www.opengis.ch/contact/>`_"
 
-#: ../../en/development/index.rst:29
-msgid "Credits"
-msgstr "Créditos"
-
-#: ../../en/development/index.rst:31
-msgid ""
-"QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
-"and training for open source software including QField and QGIS."
-msgstr ""
-"QField é desenvolvido por OPENGIS.ch. OPENGIS.ch ofrece consultoría, "
-"desenvolvemento e formación en software de código aberto incluídos QField e "
-"QGIS."
-
-#: ../../en/development/index.rst:40
-msgid "Funding"
-msgstr "Patrocinio"
-
-#: ../../en/development/index.rst:42
-msgid ""
-"The following oranizations have contributed to make QField what it currently"
-" is. We would like to warmly say: Thanks a lot!"
-msgstr ""
-"As seguintes organizacións contribuíron a facer de QField o que actualmente "
-"é. Con moito gusto queremos dicir: Moitas Grazas!"
-
-#: ../../en/development/index.rst:82
+#: ../../en/development/index.rst:30
 msgid "Make it grow, make it yours"
 msgstr "Faino medrar, faino teu"
 
-#: ../../en/development/index.rst:84
+#: ../../en/development/index.rst:32
 msgid ""
 "This is a list of features which we think are very useful for a nice user "
 "experience and an effective workflow."
@@ -113,46 +88,46 @@ msgstr ""
 "Esta é unha lista de funcionalidades que cremos que son moi útiles para unha"
 " boa experiencia de usuario  e un fluxo de traballo efectivo."
 
-#: ../../en/development/index.rst:88
+#: ../../en/development/index.rst:36
 msgid "Edit widgets"
 msgstr "Widgets de edición"
 
-#: ../../en/development/index.rst:90
+#: ../../en/development/index.rst:38
 msgid ""
 "Edit widgets are a core part of efficient field work. Entering attributes on"
 " a touch device is one of the jobs that takes the most time and keeping this"
 " task as easy as possible is key for pleasuring work."
 msgstr ""
 
-#: ../../en/development/index.rst:94
+#: ../../en/development/index.rst:42
 msgid ""
 "Some important :ref:`edit field widgets are already "
 "available<edit_field_widgets>` but much more is possible `for example in "
 "QGIS <http://gis.stackexchange.com/a/30051/9839>`_."
 msgstr ""
 
-#: ../../en/development/index.rst:99
+#: ../../en/development/index.rst:47
 msgid "Legend"
 msgstr "Lenda"
 
-#: ../../en/development/index.rst:101
+#: ../../en/development/index.rst:49
 msgid ""
 "To properly interpret the contents of a map, a legend is a very useful tool."
 " It gives a user the required context to understand the semantic meaning of "
 "colors, shapes, strokes and other visual coding."
 msgstr ""
 
-#: ../../en/development/index.rst:105
+#: ../../en/development/index.rst:53
 msgid ""
 "It can also be used to access additional meta data of individual layers or "
 "chose which layer to work on."
 msgstr ""
 
-#: ../../en/development/index.rst:109
+#: ../../en/development/index.rst:57
 msgid "Connection based on-/offline synchronization"
 msgstr "Conexión baseada na sincronización en liña/desconectado"
 
-#: ../../en/development/index.rst:111
+#: ../../en/development/index.rst:59
 msgid ""
 "Data collection is one of the domains where QField can help a lot. The final"
 " destination of data is normally not on the device itself but somewhere on a"
@@ -161,7 +136,7 @@ msgid ""
 " manual synchronization on a desktop computer."
 msgstr ""
 
-#: ../../en/development/index.rst:117
+#: ../../en/development/index.rst:65
 msgid ""
 "It would be great to have a synchronization process running on the devices "
 "where data will be synchronized automatically with a server when the network"
@@ -169,17 +144,17 @@ msgid ""
 "available."
 msgstr ""
 
-#: ../../en/development/index.rst:121
+#: ../../en/development/index.rst:69
 msgid ""
 "This may be combined with `GeoGIG <http://geogig.org/>`_ or other server "
 "components like a database."
 msgstr ""
 
-#: ../../en/development/index.rst:125
+#: ../../en/development/index.rst:73
 msgid "Improved coordinate precision"
 msgstr "Precisión de coordenada mellorada"
 
-#: ../../en/development/index.rst:127
+#: ../../en/development/index.rst:75
 msgid ""
 "Computers work mostly with two different datatypes for storing decimals "
 "(floating point numbers) internally. `Single <https://en.wikipedia.org/wiki"
@@ -191,7 +166,7 @@ msgid ""
 "into account."
 msgstr ""
 
-#: ../../en/development/index.rst:135
+#: ../../en/development/index.rst:83
 msgid ""
 "When working with coordinates this is very important when a high accurracy "
 "is required. Only having 6 significant digits often means having a maximum "
@@ -199,18 +174,18 @@ msgid ""
 "surface."
 msgstr ""
 
-#: ../../en/development/index.rst:140
+#: ../../en/development/index.rst:88
 msgid ""
 "Some parts of QField currently treat coordinates with single point "
 "precision. It would be a very good improvement to be able to use the full "
 "precision of accurate positioning devices by fixing this shortcoming."
 msgstr ""
 
-#: ../../en/development/index.rst:145
+#: ../../en/development/index.rst:93
 msgid "Saving GPS status information into attributes"
 msgstr ""
 
-#: ../../en/development/index.rst:147
+#: ../../en/development/index.rst:95
 msgid ""
 "Positioning devices offer more information than just latitude and longitude."
 " They are also able to estimate the precision which they are currently able "
@@ -219,38 +194,38 @@ msgid ""
 "RTK status."
 msgstr ""
 
-#: ../../en/development/index.rst:154
+#: ../../en/development/index.rst:102
 msgid "Editing geometries"
 msgstr ""
 
-#: ../../en/development/index.rst:156
+#: ../../en/development/index.rst:104
 msgid ""
 "QField offers to digitize new geometries, edit existing attributes or delete"
 " features. What it lacks is the feature to edit existing geometries."
 msgstr ""
 
-#: ../../en/development/index.rst:159
+#: ../../en/development/index.rst:107
 msgid ""
 "This can be split into different pieces like moving points, moving other "
 "features, editing verices, moving edges..."
 msgstr ""
 
-#: ../../en/development/index.rst:163
+#: ../../en/development/index.rst:111
 msgid "Search functionality"
 msgstr "Función de busca"
 
-#: ../../en/development/index.rst:165
+#: ../../en/development/index.rst:113
 msgid ""
 "Locating features with the help of a search field is something that can "
 "really help to work more efficient. In general this can be split into two "
 "categories:"
 msgstr ""
 
-#: ../../en/development/index.rst:173
+#: ../../en/development/index.rst:121
 msgid "Attribute based search"
 msgstr ""
 
-#: ../../en/development/index.rst:169
+#: ../../en/development/index.rst:117
 msgid ""
 "Search results are provided based on the attributes of features on layers "
 "within the project. Either a local database for searching is available. The "
@@ -258,11 +233,11 @@ msgid ""
 "queried directly for features with attributes in question."
 msgstr ""
 
-#: ../../en/development/index.rst:179
+#: ../../en/development/index.rst:127
 msgid "Geocoding"
 msgstr ""
 
-#: ../../en/development/index.rst:176
+#: ../../en/development/index.rst:124
 msgid ""
 "Search results are provided based on real world addresses. Services like "
 "`Nominatim <http://nominatim.openstreetmap.org/>`_ can be accessed via a web"
@@ -270,11 +245,11 @@ msgid ""
 "the link."
 msgstr ""
 
-#: ../../en/development/index.rst:182
+#: ../../en/development/index.rst:130
 msgid "External measurement devices"
 msgstr ""
 
-#: ../../en/development/index.rst:184
+#: ../../en/development/index.rst:132
 msgid ""
 "Are you working with external devices with sensors? Air pressure, "
 "temperature, slope, carbon monoxide concentration, you name it... Wouldn't "
@@ -284,16 +259,41 @@ msgid ""
 "QField."
 msgstr ""
 
-#: ../../en/development/index.rst:191
+#: ../../en/development/index.rst:139
 msgid "[Your favorite feature]"
 msgstr "[A túa funcionalidade favorita]"
 
-#: ../../en/development/index.rst:193
+#: ../../en/development/index.rst:141
 msgid ""
 "You probably have plenty of ideas for other nice features. Please contact us"
 " and we can discuss the best approach to integrate this idea into QField or "
 "a derived app."
 msgstr ""
+
+#: ../../en/development/index.rst:147
+msgid "Funding"
+msgstr "Patrocinio"
+
+#: ../../en/development/index.rst:149
+msgid ""
+"The following oranizations have contributed to make QField what it currently"
+" is. We would like to warmly say: Thanks a lot!"
+msgstr ""
+"As seguintes organizacións contribuíron a facer de QField o que actualmente "
+"é. Con moito gusto queremos dicir: Moitas Grazas!"
+
+#: ../../en/development/index.rst:188
+msgid "Credits"
+msgstr "Créditos"
+
+#: ../../en/development/index.rst:190
+msgid ""
+"QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
+"and training for open source software including QField and QGIS."
+msgstr ""
+"QField é desenvolvido por OPENGIS.ch. OPENGIS.ch ofrece consultoría, "
+"desenvolvemento e formación en software de código aberto incluídos QField e "
+"QGIS."
 
 #: ../../en/development/index.rst:199
 msgid "API stability"

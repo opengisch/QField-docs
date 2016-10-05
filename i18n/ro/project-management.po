@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-30 08:34+0200\n"
-"PO-Revision-Date: 2016-09-30 06:34+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-10-05 09:54+0200\n"
+"PO-Revision-Date: 2016-10-02 17:12+0000\n"
+"Last-Translator: Sorin Călinică <scalinica@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -239,7 +239,7 @@ msgstr "În QField, obiectele sunt identificate după nume. Expresia care va gen
 
 #: ../../en/project-management/index.rst:49
 msgid "Forms and Fields"
-msgstr ""
+msgstr "Formulare și Câmpuri"
 
 #: ../../en/project-management/index.rst:51
 msgid "QField creates forms similar to, but not equal to QGIS."
@@ -292,7 +292,7 @@ msgstr "Codul HTML nu este acceptat"
 
 #: ../../en/project-management/index.rst:73
 msgid "Numerical input is enforced based on the type."
-msgstr ""
+msgstr "Introducerea valorilor numerice are loc în funcție de tip."
 
 #: ../../en/project-management/index.rst:76
 msgid "Check Box"
@@ -305,12 +305,6 @@ msgstr "Harta de Valori"
 #: ../../en/project-management/index.rst:80
 msgid "Hidden"
 msgstr "Ascunsă"
-
-#: ../../en/project-management/index.rst:80
-#: ../../en/project-management/index.rst:86
-#: ../../en/project-management/index.rst:88
-msgid ":ref:`make_it_grow`"
-msgstr ":ref:`make_it_grow`"
 
 #: ../../en/project-management/index.rst:82
 msgid "External Resource"
@@ -326,21 +320,26 @@ msgstr "Acest câmp este combinat cu camera integrată. Numai imaginile pot fi v
 msgid "Date Time"
 msgstr "Data și Ora"
 
+#: ../../en/project-management/index.rst:86
+#: ../../en/project-management/index.rst:88
+msgid ":ref:`make_it_grow`"
+msgstr ":ref:`make_it_grow`"
+
 #: ../../en/project-management/index.rst:88
 msgid "Others"
 msgstr "Altele"
 
 #: ../../en/project-management/index.rst:93
 msgid "Drag and drop designer forms"
-msgstr ""
+msgstr "Proiectare de tip drag and drop pentru formulare"
 
 #: ../../en/project-management/index.rst:93
 msgid "Groups and Tabs from Drag and Drop designer forms are supported."
-msgstr ""
+msgstr "Designerul Drag and Drop al formularelor permite crearea de Grupuri și File."
 
 #: ../../en/project-management/index.rst:101
 msgid "Conditional visibility"
-msgstr ""
+msgstr "Vizibilitate condiționată"
 
 #: ../../en/project-management/index.rst:96
 msgid ""
@@ -351,11 +350,11 @@ msgid ""
 "and configure a visibility expression for a group \"diseases\". Add a field "
 "\"desease\" with a checkbox. Only when the checkbox is checked, the list of "
 "diseases will be available to the user."
-msgstr ""
+msgstr "Grupurile pot fi ascunse în baza unei expresii. Acest lucru este util atunci când unele atribute sunt cerute doar în anumite condiții. Un astfel de exemplu o reprezintă cartografierea copacilor. Unii dintre ei s-ar putea să fie atacați de o anumită boală, iar dvs. aveți o listă cu posibile afecțiuni. Pentru a nu aglomera cu multe câmpuri formularul, creați un grup și stabiliți o expresie de vizibilitate pentru grupul \"boli\". Adăugați câmpul \"boli\" și o casetă de bifare. Numai atunci când este bifată caseta de selectare, lista bolilor va fi disponibilă utilizatorului."
 
 #: ../../en/project-management/index.rst:112
 msgid "Constraints"
-msgstr ""
+msgstr "Constrângeri"
 
 #: ../../en/project-management/index.rst:104
 msgid ""
@@ -364,12 +363,12 @@ msgid ""
 " save the form. Constraints are configured on a per-field basis and a "
 "description can be added that will be shown to the user if a constraint is "
 "not satisfied."
-msgstr ""
+msgstr "Câmpurilor atributelor li se pot atașa constrângeri. Constrângerile reprezintă expresii care, pentru a se putea salva formularul, trebuie evaluate la :code:`True` (sau :code:`1`). Constrângerile sunt configurate per câmp, putându-se adăuga o descriere, care va indica utilizatorului cazul în care o constrângere nu este îndeplinită."
 
 #: ../../en/project-management/index.rst:109
 #: ../../en/project-management/index.rst:120
 msgid "Common use cases are:"
-msgstr ""
+msgstr "Cazurile frecvente de utilizare sunt:"
 
 #: ../../en/project-management/index.rst:111
 msgid ""

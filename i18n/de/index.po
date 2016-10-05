@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 08:06+0200\n"
-"PO-Revision-Date: 2016-08-29 06:06+0000\n"
+"POT-Creation-Date: 2016-10-05 09:54+0200\n"
+"PO-Revision-Date: 2016-10-04 10:59+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -21,31 +21,31 @@ msgstr ""
 
 #: ../../en/index.rst:2
 msgid "QField - your mobile [Q]GIS solution"
-msgstr ""
+msgstr "QField - die mobile [Q]GIS Lösung"
 
 #: ../../en/index.rst:3
 msgid "QField allows you to efficiently work on your GIS data outdoor."
-msgstr ""
+msgstr "QField hilft mit, GIS Daten im Gelände effizient zu bearbeiten."
 
 #: ../../en/index.rst:5
 msgid ""
 "QField's optimized user interface for Android devices hides the full power "
 "of `QGIS <https://qgis.org>`_ under the hood."
-msgstr ""
+msgstr "Das optimierte Nutzerinterface von QField versteckt die gesamte Leistung von `QGIS <https://qgis.org>`_ unter der Oberfläche."
 
 #: ../../en/index.rst:15
 msgid ""
 ":download:`Slides from FOSS4G 2016 <files/slides_foss4g16.pdf>` are "
 "available."
-msgstr ""
+msgstr ":download:`Slides von der FOSS4G 2016 <files/slides_foss4g16.pdf>` sind verfügbar."
 
 #: ../../en/index.rst:19
 msgid "Prepare once - Deploy everywhere"
-msgstr ""
+msgstr "Einmal vorbereiten - Überall einsetzen"
 
 #: ../../en/index.rst:20
 msgid "Uses QGIS projects (including symbology and edit widgets)"
-msgstr ""
+msgstr "Verwendet QGIS Projekte - (inklusive Symbologie und Editierformulare)"
 
 #: ../../en/index.rst:21
 msgid "Supports most QGIS supported formats (ideal with PostGIS)"
