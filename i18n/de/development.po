@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-05 09:54+0200\n"
+"POT-Creation-Date: 2016-10-05 10:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>, 2016\n"
 "Language-Team: German (https://www.transifex.com/opengisch/teams/38926/de/)\n"
@@ -49,25 +49,32 @@ msgstr ""
 
 #: ../../en/development/index.rst:19
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 #: ../../en/development/index.rst:21
 msgid ""
 "You can ask your questions on `gis.stackexchange "
 "<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_"
 msgstr ""
+"Fragen können auf `gis.stackexchange "
+"<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_ "
+"gestellt werden"
 
 #: ../../en/development/index.rst:23
 msgid ""
 "You can use the `user mailing list <http://lists.qfield.org/listinfo.cgi"
 "/users-qfield.org>`_"
 msgstr ""
+"Es gibt eine `Mailing List <http://lists.qfield.org/listinfo.cgi/users-"
+"qfield.org>`_"
 
 #: ../../en/development/index.rst:25
 msgid ""
 "We also provide commercial support, `contact us "
 "<http://www.opengis.ch/contact/>`_"
 msgstr ""
+"Wir bieten auch kommerziellen Support an, `kontaktiere uns "
+"<http://www.opengis.ch/contact/>`_"
 
 #: ../../en/development/index.rst:30
 msgid "Make it grow, make it yours"
@@ -176,7 +183,7 @@ msgstr ""
 
 #: ../../en/development/index.rst:93
 msgid "Saving GPS status information into attributes"
-msgstr ""
+msgstr "GPS Status Informationen in Attribute speichern"
 
 #: ../../en/development/index.rst:95
 msgid ""
@@ -189,7 +196,7 @@ msgstr ""
 
 #: ../../en/development/index.rst:102
 msgid "Editing geometries"
-msgstr ""
+msgstr "Geometrien bearbeiten"
 
 #: ../../en/development/index.rst:104
 msgid ""
@@ -228,7 +235,7 @@ msgstr ""
 
 #: ../../en/development/index.rst:127
 msgid "Geocoding"
-msgstr ""
+msgstr "Geokodierung"
 
 #: ../../en/development/index.rst:124
 msgid ""
@@ -240,7 +247,7 @@ msgstr ""
 
 #: ../../en/development/index.rst:130
 msgid "External measurement devices"
-msgstr ""
+msgstr "Externe Messgeräte anschliessen"
 
 #: ../../en/development/index.rst:132
 msgid ""
