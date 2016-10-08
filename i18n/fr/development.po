@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-05 10:53+0200\n"
+"POT-Creation-Date: 2016-10-08 10:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Daniel Gnerre <daniel.gnerre@vevey.ch>, 2016\n"
+"Last-Translator: Guen LE MERRER <guen69@gmail.com>, 2016\n"
 "Language-Team: French (https://www.transifex.com/opengisch/teams/38926/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,25 +49,31 @@ msgstr ""
 
 #: ../../en/development/index.rst:19
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 #: ../../en/development/index.rst:21
 msgid ""
 "You can ask your questions on `gis.stackexchange "
 "<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_"
 msgstr ""
+"Vous pouvez poser vos questions sur `gis.stackexchange "
+"<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_"
 
 #: ../../en/development/index.rst:23
 msgid ""
 "You can use the `user mailing list <http://lists.qfield.org/listinfo.cgi"
 "/users-qfield.org>`_"
 msgstr ""
+"Vous pouvez utiliser la liste de diffusion "
+"<http://lists.qfield.org/listinfo.cgi/users-qfield.org>`_"
 
 #: ../../en/development/index.rst:25
 msgid ""
 "We also provide commercial support, `contact us "
 "<http://www.opengis.ch/contact/>`_"
 msgstr ""
+"Nous proposons également un support commercial, `contactez-nous "
+"<http://www.opengis.ch/contact/>`_"
 
 #: ../../en/development/index.rst:30
 msgid "Make it grow, make it yours"
@@ -109,6 +115,9 @@ msgid ""
 " It gives a user the required context to understand the semantic meaning of "
 "colors, shapes, strokes and other visual coding."
 msgstr ""
+"Une légende est très utile pour interpréter correctement une carte. Elle "
+"donne à l'utilisateur les clés pour comprendre le sens des couleurs, formes,"
+" traits et autres codages visuels."
 
 #: ../../en/development/index.rst:53
 msgid ""
