@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-08 10:35+0200\n"
-"PO-Revision-Date: 2016-10-08 08:35+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-10-17 15:45+0200\n"
+"PO-Revision-Date: 2016-10-10 09:04+0000\n"
+"Last-Translator: Daniel Gnerre <daniel.gnerre@vevey.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -162,7 +162,7 @@ msgid ""
 "QField does not have a built-in project management. You need to set up and "
 "configure your project first inside QGIS and then copy the project file "
 "(.qgs) and any additional files to your device and open it with QField."
-msgstr ""
+msgstr "QField n'a pas une gestion de projet intégrée. Il est nécessaire de d'abord configurer le projet dans QGIS et de le copier ensuite (.qgs) sur l'appareil avec les fichiers additionnels puis de l'ouvrir avec QField. "
 
 #: ../../en/project-management/index.rst:7
 msgid "Portable Project"
@@ -186,7 +186,7 @@ msgstr "Pour contrôler cela :menuselection:`Projet --> Propriétés du projet -
 msgid ""
 "For increased productivity, we suggest having a look at the `QFieldSync "
 "plugin <https://plugins.qgis.org/plugins/qfieldsync>`_."
-msgstr ""
+msgstr "Pour augmenter la productivité, il est suggéré de jeter un oeil au `plugin QFieldSync <https://plugins.qgis.org/plugins/qfieldsync>`_."
 
 #: ../../en/project-management/index.rst:18
 msgid "Coordinate Reference Systems"
@@ -233,7 +233,7 @@ msgstr "Toutes les configurations de style de QGIS sont directement supportées 
 
 #: ../../en/project-management/index.rst:37
 msgid "Display Expression"
-msgstr ""
+msgstr "Expression d'affichage"
 
 #: ../../en/project-management/index.rst:39
 msgid ""
@@ -242,11 +242,11 @@ msgid ""
 "switching to the form view. Choose the appropriate field or an expression in"
 " the list there. Starting from QGIS 3, this can be done directly from the "
 ":menuselection:`Vector Layer Properties --> Display` page."
-msgstr ""
+msgstr "Dans QField, les objets sont identifiés par un nom. L'expression pour générer ce nom peut être définie en ouvrant la table d'attributs dans QGIS et en switchant sur la vue formulaire. Choisir le champ approprié ou une expression dans la liste. A partie de QGIS 3, cela pourra être fait directement dans :menuselection:`Vector Layer Properties --> Display`."
 
 #: ../../en/project-management/index.rst:51
 msgid "Forms and Fields"
-msgstr ""
+msgstr "Formulaires et champs"
 
 #: ../../en/project-management/index.rst:53
 msgid "QField creates forms similar to, but not equal to QGIS."
@@ -299,7 +299,7 @@ msgstr "HTML n'est pas supporté"
 
 #: ../../en/project-management/index.rst:75
 msgid "Numerical input is enforced based on the type."
-msgstr ""
+msgstr "La saisie numérique est obligatoire en fonction du type. "
 
 #: ../../en/project-management/index.rst:78
 msgid "Check Box"

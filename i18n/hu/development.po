@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-08 10:35+0200\n"
+"POT-Creation-Date: 2016-10-17 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Mr. Szabi <sum.szabolcs@gmail.com>, 2016\n"
+"Last-Translator: Zoltan Siki <siki@agt.bme.hu>, 2016\n"
 "Language-Team: Hungarian (https://www.transifex.com/opengisch/teams/38926/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,25 +50,32 @@ msgstr ""
 
 #: ../../en/development/index.rst:19
 msgid "Support"
-msgstr ""
+msgstr "Támogatás"
 
 #: ../../en/development/index.rst:21
 msgid ""
 "You can ask your questions on `gis.stackexchange "
 "<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_"
 msgstr ""
+"Kérdéseit felteheti a `gis.stackexchange "
+"<http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_ "
+"oldalon."
 
 #: ../../en/development/index.rst:23
 msgid ""
 "You can use the `user mailing list <http://lists.qfield.org/listinfo.cgi"
 "/users-qfield.org>`_"
 msgstr ""
+"Használhatja a `felhasználók levelező listáját "
+"<http://lists.qfield.org/listinfo.cgi/users-qfield.org>`_"
 
 #: ../../en/development/index.rst:25
 msgid ""
 "We also provide commercial support, `contact us "
 "<http://www.opengis.ch/contact/>`_"
 msgstr ""
+"Kereskedelmi támogatást is kínálunk `vegye fel a kapcsolatot velünk "
+"<http://www.opengis.ch/contact/>`_"
 
 #: ../../en/development/index.rst:30
 msgid "Make it grow, make it yours"
@@ -85,7 +92,7 @@ msgstr ""
 
 #: ../../en/development/index.rst:36
 msgid "Edit widgets"
-msgstr "Widgetek szerkesztése"
+msgstr "Vezérlők szerkesztése"
 
 #: ../../en/development/index.rst:38
 msgid ""
@@ -93,6 +100,10 @@ msgid ""
 " a touch device is one of the jobs that takes the most time and keeping this"
 " task as easy as possible is key for pleasuring work."
 msgstr ""
+"A vezérlők szerkesztése alapvető része a hatékony terepmunkának. Az "
+"attribútumok bevitele az érintő képernyőn egy olyan munka, mely a legtöbb "
+"időt viszi el, ennek a feladatnak a lehető legegyszerűbb szinten tartása "
+"kulcsfontosságú a kellemes munkához."
 
 #: ../../en/development/index.rst:42
 msgid ""
@@ -100,6 +111,9 @@ msgid ""
 "available<edit_field_widgets>` but much more is possible `for example in "
 "QGIS <http://gis.stackexchange.com/a/30051/9839>`_."
 msgstr ""
+"Néhány fontos :ref:`mező szerkesztő vezérlő már "
+"elérhető<edit_field_widgets>`, de sokkal több lehetséges `például a QGIS-ben"
+" <http://gis.stackexchange.com/a/30051/9839>`_."
 
 #: ../../en/development/index.rst:47
 msgid "Legend"
@@ -111,12 +125,17 @@ msgid ""
 " It gives a user the required context to understand the semantic meaning of "
 "colors, shapes, strokes and other visual coding."
 msgstr ""
+"A jelmagyarázat nagyon fontos eszköz térképi tartalom helyes értelmezéséhez."
+" Ez adja meg a felhasználónak a szükséges összefüggéseket a színek, jelek, "
+"vonalvastagságok és egyéb vizuális kódok megértéséhez."
 
 #: ../../en/development/index.rst:53
 msgid ""
 "It can also be used to access additional meta data of individual layers or "
 "chose which layer to work on."
 msgstr ""
+"Arra is használhatjuk, hogy további metaadatokat kapjunk az egyes rétegekre "
+"vagy kiválasszuk melyik rétegen dolgozunk."
 
 #: ../../en/development/index.rst:57
 msgid "Connection based on-/offline synchronization"
@@ -144,6 +163,8 @@ msgid ""
 "This may be combined with `GeoGIG <http://geogig.org/>`_ or other server "
 "components like a database."
 msgstr ""
+"Ez kombinálható a `GeoGIG-gel <http://geogig.org/>`_  vagy más szerver "
+"komponenssel mint például adatbázis."
 
 #: ../../en/development/index.rst:73
 msgid "Improved coordinate precision"
@@ -160,6 +181,14 @@ msgid ""
 "can be trusted. This takes all digits (before and after the decimal point) "
 "into account."
 msgstr ""
+"A tizedeseket tartalmazó számok (lebegőpontos számok) tárolására a "
+"számítógépek belül többnyire két eltérő adattípussal dolgoznak. `Szimpla  "
+"<https://en.wikipedia.org/wiki/Single-precision_floating-point_format>`_ és "
+"`dupla <https://en.wikipedia.org/wiki/Double-precision_floating-"
+"point_format>`_ pontossal. A szimpla pontos csak a szám első 6 számjegyét "
+"képes tárolni és csak ennyi megbízható, a dupla pontos esetén az első 15 "
+"számjegy megbízható. Itt minden számjegyet (a tizedespont előtt és után) "
+"figyelembe kell venni."
 
 #: ../../en/development/index.rst:83
 msgid ""
@@ -168,6 +197,10 @@ msgid ""
 "accurracy around one meter but depends on the CRS and location on the earth "
 "surface."
 msgstr ""
+"Amikor koordinátákkal dolgozunk és nagy pontosság szükséges, akkor ez nagyon"
+" fontos. A csak 6 értékes jegy gyakran azt jelenti, hogy a maximális élesség"
+" egy méter körül van, de ez függ a koordinátarendszertől és a földfelszíni "
+"pozíciótól."
 
 #: ../../en/development/index.rst:88
 msgid ""
@@ -175,10 +208,13 @@ msgid ""
 "precision. It would be a very good improvement to be able to use the full "
 "precision of accurate positioning devices by fixing this shortcoming."
 msgstr ""
+"A QField néhány része most szimpla pontosként kezeli a koordinátákat. Nagyon"
+" jó tökéletesítés lenne, ha a pontos pozicionáló eszközök teljes pontosságát"
+" tudnánk használni ennek a hiányosságnak a kiküszöbölésével."
 
 #: ../../en/development/index.rst:93
 msgid "Saving GPS status information into attributes"
-msgstr ""
+msgstr "GPS státusz információ mentése attribútumokba"
 
 #: ../../en/development/index.rst:95
 msgid ""
@@ -188,22 +224,32 @@ msgid ""
 "the number of satellites but also additional flags for parameters like the "
 "RTK status."
 msgstr ""
+"A pozicionáló eszközök több információt szolgáltatnak mint csak a szélesség "
+"és hosszúság.  Képesek megbecsülni a pontosságot, melyet aktuálisan "
+"szolgáltatni tudnak. Ez az adat lehet egy sugár, melyet például a műholdak "
+"számából vezetnek le, de további paraméter állapotok is lehetnek, mint "
+"például az RTK státusz."
 
 #: ../../en/development/index.rst:102
 msgid "Editing geometries"
-msgstr ""
+msgstr "Geometria szerkesztése"
 
 #: ../../en/development/index.rst:104
 msgid ""
 "QField offers to digitize new geometries, edit existing attributes or delete"
 " features. What it lacks is the feature to edit existing geometries."
 msgstr ""
+"A QField biztosítja új geometria digitalizálását, meglévő attribútumok "
+"szerkesztését vagy elemek törlését. Ami hiányzik az a meglévő geometria "
+"szerkesztése."
 
 #: ../../en/development/index.rst:107
 msgid ""
 "This can be split into different pieces like moving points, moving other "
 "features, editing verices, moving edges..."
 msgstr ""
+"Ez különböző részekre bontható mint a pontok mozgatása, az elemek mozgatása,"
+" a töréspontok szerkesztése, élek mozgatása..."
 
 #: ../../en/development/index.rst:111
 msgid "Search functionality"
@@ -215,10 +261,12 @@ msgid ""
 "really help to work more efficient. In general this can be split into two "
 "categories:"
 msgstr ""
+"Elemek megtalálása egy kereső mező segítségével az ami valóban segíthet, "
+"hogy hatékonyabban dolgozzunk. Általánosságban ez két kategóriára bontható:"
 
 #: ../../en/development/index.rst:121
 msgid "Attribute based search"
-msgstr ""
+msgstr "Keresés attribútum érték alapján"
 
 #: ../../en/development/index.rst:117
 msgid ""
@@ -230,7 +278,7 @@ msgstr ""
 
 #: ../../en/development/index.rst:127
 msgid "Geocoding"
-msgstr ""
+msgstr "Geokódolás"
 
 #: ../../en/development/index.rst:124
 msgid ""
@@ -239,10 +287,14 @@ msgid ""
 " interface and convert real-world addresses to locations on a map. Just try "
 "the link."
 msgstr ""
+"A keresés eredményeit a postai címek alapján szolgáltatja. Szolgáltatások "
+"mint a `Nominatim <http://nominatim.openstreetmap.org/>`_ érhető el egy "
+"webes felületen keresztül és a postai címeket térképi pozíciókká "
+"konvertálja. Próbálja csak ki a linkek."
 
 #: ../../en/development/index.rst:130
 msgid "External measurement devices"
-msgstr ""
+msgstr "Külső mérőeszközök"
 
 #: ../../en/development/index.rst:132
 msgid ""
@@ -253,6 +305,11 @@ msgid ""
 "adding support for directly connecting your external measurement device to "
 "QField."
 msgstr ""
+"Külső eszközökkel, szenzorokkal dolgozik? Lényomás, hőmérséklet, szénmonoxid"
+" koncentráció, vagy amije van... Nem lenne nagyszerű, ha nem kellene "
+"leolvasni az adatot a külső eszközről és begépelni azt? Könnyebbé szeretnénk"
+" tenni az életét azzal, hogy közvetlenül a QField-hez kapcsolhatja a külső "
+"mérőeszközeit."
 
 #: ../../en/development/index.rst:139
 msgid "[Your favorite feature]"
@@ -264,6 +321,9 @@ msgid ""
 " and we can discuss the best approach to integrate this idea into QField or "
 "a derived app."
 msgstr ""
+"Valószínűleg rengeteg elképzelése van további funkciókra. Kérjük vegye fel a"
+" kapcsolatot velünk és megbeszélhetjük a legjobb megoldást elképzelésének "
+"QField-be vagy egy származtatott alkalmazásba integrálására ."
 
 #: ../../en/development/index.rst:147
 msgid "Funding"

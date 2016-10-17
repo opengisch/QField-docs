@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Mr. Szabi <sum.szabolcs@gmail.com>, 2016
+# Zoltan Siki <siki@agt.bme.hu>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-29 08:06+0200\n"
-"PO-Revision-Date: 2016-08-29 06:06+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-10-17 15:45+0200\n"
+"PO-Revision-Date: 2016-10-15 20:27+0000\n"
+"Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,69 +21,69 @@ msgstr ""
 
 #: ../../en/index.rst:2
 msgid "QField - your mobile [Q]GIS solution"
-msgstr ""
+msgstr "QField - az ön [Q]GIS megoldása"
 
 #: ../../en/index.rst:3
 msgid "QField allows you to efficiently work on your GIS data outdoor."
-msgstr ""
+msgstr "A QField hatékony munkát tesz lehetővé a GIS adatain a terepen."
 
 #: ../../en/index.rst:5
 msgid ""
 "QField's optimized user interface for Android devices hides the full power "
 "of `QGIS <https://qgis.org>`_ under the hood."
-msgstr ""
+msgstr "A QField Android eszközökre optimalizált felhasználói felülete a motorház tető alá rejti a `QGIS <https://qgis.org>`_ teljes funkcionalitását."
 
 #: ../../en/index.rst:15
 msgid ""
 ":download:`Slides from FOSS4G 2016 <files/slides_foss4g16.pdf>` are "
 "available."
-msgstr ""
+msgstr ":download:`Diák a FOSS4G 2016-ról <files/slides_foss4g16.pdf>` elérhetők."
 
 #: ../../en/index.rst:19
 msgid "Prepare once - Deploy everywhere"
-msgstr ""
+msgstr "Készítse el egyszer - telepítse mindenhová"
 
 #: ../../en/index.rst:20
 msgid "Uses QGIS projects (including symbology and edit widgets)"
-msgstr ""
+msgstr "QGIS projekteket használ (beleértve a szimbolikát és a szerkesztés vezérlőket) "
 
 #: ../../en/index.rst:21
 msgid "Supports most QGIS supported formats (ideal with PostGIS)"
-msgstr ""
+msgstr "Támogatja a QGIS által kezelt formátumok többségét (ideális PostGIS-sel)"
 
 #: ../../en/index.rst:22
 msgid "Automatic syncronization capabilities (Cable, WiFi, Cloud)"
-msgstr ""
+msgstr "Automatikus szinkronizálási képesség (kábel, WiFi, felhő)"
 
 #: ../../en/index.rst:23
 msgid "Extends seamlessly your GDI"
-msgstr ""
+msgstr "Zökkenőmentesen bővíti ki a térinformatikai infrastruktúráját"
 
 #: ../../en/index.rst:26
 msgid "Made for touch - Field-work friendly"
-msgstr ""
+msgstr "Érintéshez készült - terepmunka barát megoldás"
 
 #: ../../en/index.rst:27
 msgid "Lean UI with few and large buttons"
-msgstr ""
+msgstr "Minimális felhasználói interfész és nagy gombok"
 
 #: ../../en/index.rst:28
 msgid "GPS centric"
-msgstr ""
+msgstr "GPS központú"
 
 #: ../../en/index.rst:29
 msgid "Fully working offline and online using live and cached* DB connections"
-msgstr ""
+msgstr "Offline és online munkára képes elő és tárolt* adatbázis kapcsolatokkal"
 
 #: ../../en/index.rst:30
 msgid "Switchable working modes (display, inspection, digitizing, measuring)*"
-msgstr ""
+msgstr "Átváltható munka módok (megjelenítés, ellenőrzés, digitalizálás, mérés)*"
 
 #: ../../en/index.rst:31
 msgid ""
 "Cross mode tools (Pan, zoom, identify, GPS coordinates, scalebar, central "
 "crosshair with snapping)"
-msgstr ""
+msgstr "Üzemmódtól független eszközök (eltolás, nagyítás, azonosítás, GPS koordináták, lépték vonalzó, szálkereszt tárgyraszterrel)"
 
 #: ../../en/index.rst:34
 msgid "Make it grow - Make it yours"
@@ -90,21 +91,21 @@ msgstr ""
 
 #: ../../en/index.rst:35
 msgid "Paid feature development"
-msgstr ""
+msgstr "Fizetett funkció fejlesztés"
 
 #: ../../en/index.rst:36
 msgid "Customizable to your needs"
-msgstr ""
+msgstr "Igényeinek megfelelően testreszabható"
 
 #: ../../en/index.rst:37
 msgid "Donations and sponsoring (qfield.opengis.ch/donate)"
-msgstr ""
+msgstr "Adományok és szponzorálás (qfield.opengis.ch/donate)"
 
 #: ../../en/index.rst:38
 msgid ""
 "Hire us for development, consulting and training for QField, C++, Python, "
 "Web, QGIS, Android, ..."
-msgstr ""
+msgstr "Alkalmazzon minket QField, C++, Python, Web, QGIS, Android, stb. fejlesztésre, konzultációra és oktatásra."
 
 #: ../../en/index.rst:49
 msgid "Contents"
@@ -112,41 +113,41 @@ msgstr "Tartalom"
 
 #: ../../en/index.rst:62
 msgid "Translations"
-msgstr ""
+msgstr "Fordítások"
 
 #: ../../en/index.rst:64
 msgid "The documentation is available in several languages"
-msgstr ""
+msgstr "A dokumentáció számos nyelven elérhető"
 
 #: ../../en/index.rst:66
 msgid "`English </en>`_"
-msgstr ""
+msgstr "`Angol </en>`_"
 
 #: ../../en/index.rst:68
 msgid "`Deutsch </de>`_"
-msgstr ""
+msgstr "`Német </de>`_"
 
 #: ../../en/index.rst:70
 msgid "`Français </fr>`_"
-msgstr ""
+msgstr "`Francia </fr>`_"
 
 #: ../../en/index.rst:72
 msgid "`Galician </gl>`_"
-msgstr ""
+msgstr "`Galiciai </gl>`_"
 
 #: ../../en/index.rst:74
 msgid "`Portuguese </pt>`_"
-msgstr ""
+msgstr "`Portugál </pt>`_"
 
 #: ../../en/index.rst:76
 msgid "`Catalan </ca>`_"
-msgstr ""
+msgstr "`Katalán </ca>`_"
 
 #: ../../en/index.rst:78
 msgid ""
 "If there is an error with a translation, please `help to improve it "
 "<https://www.transifex.com/opengisch/qfield-documentation/>`_."
-msgstr ""
+msgstr "Ha hiba van a fordításban, kérjük `segítse a javítást<https://www.transifex.com/opengisch/qfield-documentation/>`_."
 
 #: ../../en/index.rst:82
 msgid "Indices and tables"
