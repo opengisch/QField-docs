@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-17 15:45+0200\n"
-"PO-Revision-Date: 2016-10-17 13:39+0000\n"
+"POT-Creation-Date: 2016-10-20 17:24+0200\n"
+"PO-Revision-Date: 2016-10-20 14:52+0000\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -234,7 +234,7 @@ msgstr "A QField közvetlenül támogatja a QGIS-ben rendelkezésre álló össz
 
 #: ../../en/project-management/index.rst:37
 msgid "Display Expression"
-msgstr ""
+msgstr "Kifejezés megjelenítés"
 
 #: ../../en/project-management/index.rst:39
 msgid ""
@@ -260,7 +260,7 @@ msgstr "Elem űrlap tiltása"
 #: ../../en/project-management/index.rst:56
 msgid ""
 "The setting suppress feature form is directly applied to the QField form."
-msgstr ""
+msgstr "Az elem űrlap kikapcsolása beállítást közvetlenül alkalmazzuk a QFiled űrlapra."
 
 #: ../../en/project-management/index.rst:59
 msgid "Remember last values"
@@ -280,7 +280,7 @@ msgstr "Mező beállítások"
 msgid ""
 "The field settings from QGIS are supported on a beste effort basis and is "
 "constantly being improved."
-msgstr ""
+msgstr "A QGIS-ből származó mező beállításokat támogatjuk az optimális befektetett munka alapján és folyamatosan fejlesztjük."
 
 #: ../../en/project-management/index.rst:71
 msgid "Field type"
@@ -339,11 +339,11 @@ msgstr "Továbbiak"
 
 #: ../../en/project-management/index.rst:95
 msgid "Drag and drop designer forms"
-msgstr ""
+msgstr "Húzd és ejtsd tervező űrlapok"
 
 #: ../../en/project-management/index.rst:95
 msgid "Groups and Tabs from Drag and Drop designer forms are supported."
-msgstr ""
+msgstr "A csoportokat és a füleket támogatjuk a Húzd és ejtsd tervező űrlapokról."
 
 #: ../../en/project-management/index.rst:103
 msgid "Conditional visibility"
@@ -358,7 +358,7 @@ msgid ""
 "and configure a visibility expression for a group \"diseases\". Add a field "
 "\"desease\" with a checkbox. Only when the checkbox is checked, the list of "
 "diseases will be available to the user."
-msgstr ""
+msgstr "Egy kifejezés alapján a csoportok elrejthetők. Ez akkor hasznos, ha bizonyos körülmények között csak bizonyos attribútumokra van szükség. Példaként képzeljük el, hogy fákat térképezünk. Néhány közülük beteg lehet és van egy lehetséges betegségek listánk. Hogy ne zsúfoljuk tele mezőkkel az űrlapot, készítsünk egy csoportot és állítsuk be a láthatósági kifejezést a \"betegségekre\". Adjon hozzá egy betegség jelölőnégyzetet. A betegségek listája csak akkor jelenik meg a felhasználónak, ha a jelölőnégyzetet kiválasztotta."
 
 #: ../../en/project-management/index.rst:114
 msgid "Constraints"
@@ -371,7 +371,7 @@ msgid ""
 " save the form. Constraints are configured on a per-field basis and a "
 "description can be added that will be shown to the user if a constraint is "
 "not satisfied."
-msgstr ""
+msgstr "Az attribútum mezőkhöz korlatozásokat rendelhetünk. A korlátozások kifejezések melyeknek :code:`True` (vagy :code:`1`) értéket kell adniuk, hogy az űrlapot el tudjuk menteni. A korlátozásokat mezőnként állíthatjuk be és egy leírást adhatunk meg mellé, melyet a felhasználó akkor lát, ha a korlátozó feltétel nem teljesül."
 
 #: ../../en/project-management/index.rst:111
 #: ../../en/project-management/index.rst:122
@@ -414,7 +414,7 @@ msgstr ":code:`length($geometry)`: A digitalizált vonal hosszát szúrja be"
 msgid ""
 ":code:`@operator_name`: Configure global variables on the device and insert "
 "them."
-msgstr ""
+msgstr ":code:`@operator_name`: Konfigurálja a globális változókat az eszközön és szúrja be őket."
 
 #: ../../en/project-management/index.rst:129
 msgid "Editable"
@@ -447,4 +447,4 @@ msgstr "Külső SD kártya"
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"
-msgstr ""
+msgstr "A külső SD kártyán található projektekhez írási jogunk akkor lesz,ha a következő mappák egyékébe tesszük:"

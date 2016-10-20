@@ -29,6 +29,7 @@ install:
   - tlmgr install babel-german
   - tlmgr install babel-romanian
   - tlmgr install babel-italian
+  - tlmgr install babel-spanish
 
 before_script:
   - ./scripts/ci/setup_git.sh
