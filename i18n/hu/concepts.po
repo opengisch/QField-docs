@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Mr. Szabi <sum.szabolcs@gmail.com>, 2016
+# Zoltan Siki <siki@agt.bme.hu>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 12:05+0200\n"
-"PO-Revision-Date: 2016-08-10 17:27+0000\n"
-"Last-Translator: Mr. Szabi <sum.szabolcs@gmail.com>\n"
+"POT-Creation-Date: 2016-10-21 16:03+0200\n"
+"PO-Revision-Date: 2016-10-20 19:20+0000\n"
+"Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +60,7 @@ msgid ""
 "QGIS libraries. The rendering engine is exactly the same as in QGIS for "
 "desktop and your project will therefore look exactly the same on your mobile"
 " device as it does on your computer."
-msgstr "A QField alapját a QGIS képezi, ugyanakkor nem egyszerűen a QGIS módosított változata, hiszen ténylegesen a QGIS könyvtárstruktúrájára épül. Mivel ugyanakkor a QField renderelő motorja megegyezik azzal, amely a QGIS-t is működteti, ezért a projektek ugyanolyan formában jelennek meg a mobil eszközökön, mint ahogyan a számítógépen láthatók."
+msgstr "A QField alapját a QGIS képezi, ugyanakkor nem egyszerűen a QGIS egy újrafordított változata, valójában a QGIS program könyvtárait használja. Mivel ugyanakkor a QField megjelenítő motorja megegyezik a QGIS-ben levővel, ezért a projektek pontosan ugyanúgy jelennek meg a mobil eszközökön, mint ahogyan a számítógépén láthatja."
 
 #: ../../en/concepts/index.rst:27
 msgid ""

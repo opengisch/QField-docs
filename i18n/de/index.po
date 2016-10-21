@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-05 09:54+0200\n"
-"PO-Revision-Date: 2016-10-04 10:59+0000\n"
+"POT-Creation-Date: 2016-10-21 16:03+0200\n"
+"PO-Revision-Date: 2016-10-21 13:49+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -49,63 +49,63 @@ msgstr "Verwendet QGIS Projekte - (inklusive Symbologie und Editierformulare)"
 
 #: ../../en/index.rst:21
 msgid "Supports most QGIS supported formats (ideal with PostGIS)"
-msgstr ""
+msgstr "Unterstützt die meisten von QGIS unterstützten Formate (Ideal mit PostGIS)"
 
 #: ../../en/index.rst:22
 msgid "Automatic syncronization capabilities (Cable, WiFi, Cloud)"
-msgstr ""
+msgstr "Möglichkeit einer automatischen Synchronisation (Kabel, WiFi, Cloud)"
 
 #: ../../en/index.rst:23
 msgid "Extends seamlessly your GDI"
-msgstr ""
+msgstr "Fügt sich nahtlos in die GDI ein"
 
 #: ../../en/index.rst:26
 msgid "Made for touch - Field-work friendly"
-msgstr ""
+msgstr "Gemacht für Touch-Bedienung - Optimiert für Feldarbeit"
 
 #: ../../en/index.rst:27
 msgid "Lean UI with few and large buttons"
-msgstr ""
+msgstr "Reduzierte Benutzerschnittstelle mit wenigen, grosse Knöpfen"
 
 #: ../../en/index.rst:28
 msgid "GPS centric"
-msgstr ""
+msgstr "GPS Zentriert"
 
 #: ../../en/index.rst:29
 msgid "Fully working offline and online using live and cached* DB connections"
-msgstr ""
+msgstr "Arbeitet online oder offline. Mit Live-Daten oder Gecacheten DB Verbindungen*"
 
 #: ../../en/index.rst:30
 msgid "Switchable working modes (display, inspection, digitizing, measuring)*"
-msgstr ""
+msgstr "Arbeitsmodi (Navigieren, Inspizieren, Digitalisieren, Messen)*"
 
 #: ../../en/index.rst:31
 msgid ""
 "Cross mode tools (Pan, zoom, identify, GPS coordinates, scalebar, central "
 "crosshair with snapping)"
-msgstr ""
+msgstr "Modusunabhängige Werkzeuge (Verschieben, Zoomen, Identifizieren, GPS Koordinaten, Massstab, Fadenkreuz mit Snapping)"
 
 #: ../../en/index.rst:34
 msgid "Make it grow - Make it yours"
-msgstr ""
+msgstr "Lass es wachsen, mach es Deins"
 
 #: ../../en/index.rst:35
 msgid "Paid feature development"
-msgstr ""
+msgstr "Bezahlte Entwicklung von Funktionen"
 
 #: ../../en/index.rst:36
 msgid "Customizable to your needs"
-msgstr ""
+msgstr "Konfigurierbar gemäss Deinen Bedürfnissen"
 
 #: ../../en/index.rst:37
 msgid "Donations and sponsoring (qfield.opengis.ch/donate)"
-msgstr ""
+msgstr "Spenden und Sponsoring (qfield.opengis.ch/donate)"
 
 #: ../../en/index.rst:38
 msgid ""
 "Hire us for development, consulting and training for QField, C++, Python, "
 "Web, QGIS, Android, ..."
-msgstr ""
+msgstr "Man kann uns engagieren: Entwicklung, Beratung und Schulung für QField, QGIS, C++, Python, Android, ..."
 
 #: ../../en/index.rst:49
 msgid "Contents"
@@ -113,41 +113,41 @@ msgstr "Inhalt"
 
 #: ../../en/index.rst:62
 msgid "Translations"
-msgstr ""
+msgstr "Übersetzung"
 
 #: ../../en/index.rst:64
 msgid "The documentation is available in several languages"
-msgstr ""
+msgstr "Die Dokumentation ist in verschiedenen Sprachen verfügbar"
 
 #: ../../en/index.rst:66
 msgid "`English </en>`_"
-msgstr ""
+msgstr "`English </en>`_"
 
 #: ../../en/index.rst:68
 msgid "`Deutsch </de>`_"
-msgstr ""
+msgstr "`Deutsch </de>`_"
 
 #: ../../en/index.rst:70
 msgid "`Français </fr>`_"
-msgstr ""
+msgstr "`Français </fr>`_"
 
 #: ../../en/index.rst:72
 msgid "`Galician </gl>`_"
-msgstr ""
+msgstr "`Galician </gl>`_"
 
 #: ../../en/index.rst:74
 msgid "`Portuguese </pt>`_"
-msgstr ""
+msgstr "`Portuguese </pt>`_"
 
 #: ../../en/index.rst:76
 msgid "`Catalan </ca>`_"
-msgstr ""
+msgstr "`Catalan </ca>`_"
 
 #: ../../en/index.rst:78
 msgid ""
 "If there is an error with a translation, please `help to improve it "
 "<https://www.transifex.com/opengisch/qfield-documentation/>`_."
-msgstr ""
+msgstr "Bei fehlerhafter Übersetzung `hilf mit, diese zu verbessern <https://www.transifex.com/opengisch/qfield-documentation/>`_."
 
 #: ../../en/index.rst:82
 msgid "Indices and tables"

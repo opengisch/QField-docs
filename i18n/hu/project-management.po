@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-20 17:24+0200\n"
-"PO-Revision-Date: 2016-10-20 14:52+0000\n"
+"POT-Creation-Date: 2016-10-21 16:03+0200\n"
+"PO-Revision-Date: 2016-10-20 20:07+0000\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -133,7 +133,7 @@ msgstr "Ha nem találja a kedvenc adatformátumát a táblázatban, kérjük ell
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr "Raszter adat"
+msgstr "Raszter adatok"
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
@@ -152,7 +152,7 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr "A geopackage formátumot tanácsoljuk önnek, ha raszter adatokkal dolgozik. A következő parancs a :code:`raster.tif` nevű fájl konvertálja a :code:`raster.gpkg fájlba piramisokkal. Győződjön meg róla, hogy módosította az EPSG:21781 (CH1903 LV03) beállítást az ön számára kívánatos CRS-re."
+msgstr "A geopackage formátumot tanácsoljuk önnek, ha raszter adatokkal dolgozik. A következő parancs a :code:`raster.tif` nevű fájl konvertálja a :code:`raster.gpkg` fájlba piramisokkal. Győződjön meg róla, hogy módosította az EPSG:21781 (CH1903 LV03) beállítást az ön számára kívánatos CRS-re."
 
 #: ../../en/project-management/index.rst:2
 msgid "QField Project Management"
@@ -426,7 +426,7 @@ msgstr "A mezők szerkeszthetőségének beállítását figyelembe vesszük."
 
 #: ../../en/project-management/index.rst:132
 msgid "Custom SVG symbols and settings"
-msgstr "Szokásos SVG jelképek és beállítások"
+msgstr "Egyéni SVG szimbólumok és beállítások"
 
 #: ../../en/project-management/index.rst:134
 msgid ""
@@ -447,4 +447,4 @@ msgstr "Külső SD kártya"
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"
-msgstr "A külső SD kártyán található projektekhez írási jogunk akkor lesz,ha a következő mappák egyékébe tesszük:"
+msgstr "A külső SD kártyán található projektekhez írási jogunk akkor lesz, ha a következő mappák egyikébe tesszük:"

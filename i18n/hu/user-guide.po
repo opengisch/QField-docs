@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-17 15:45+0200\n"
-"PO-Revision-Date: 2016-10-14 20:02+0000\n"
+"POT-Creation-Date: 2016-10-21 16:03+0200\n"
+"PO-Revision-Date: 2016-10-20 19:09+0000\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../en/user-guide/index.rst:3
 msgid "QField User Guide"
-msgstr "QField Használati Útmutató"
+msgstr "QField Felhasználói Útmutató"
 
 #: ../../en/user-guide/index.rst:7
 msgid "Basic workflow"
@@ -57,7 +57,7 @@ msgstr "Kivételek az azonosított rétegekre"
 msgid ""
 "Often it is not required to be able to query every layer. Some layers are "
 "only present as basemap and their attributes are not of interest."
-msgstr "Gyakran nem szükséges, hogy minden réteget lekérdezhessünk. Néhány réteg mint háttértérképként jelenik meg és az attribútumaik nem érdekesek."
+msgstr "Gyakran nem szükséges, hogy minden réteget lekérdezhessünk. Néhány réteg  háttértérképként jelenik meg és az attribútumaik nem érdekesek."
 
 #: ../../en/user-guide/index.rst:28
 msgid ""
