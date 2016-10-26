@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-20 17:24+0200\n"
-"PO-Revision-Date: 2016-10-18 20:07+0000\n"
+"POT-Creation-Date: 2016-10-26 15:07+0200\n"
+"PO-Revision-Date: 2016-10-25 16:47+0000\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +45,7 @@ msgstr "Készítse el egyszer - telepítse mindenhová"
 
 #: ../../en/index.rst:20
 msgid "Uses QGIS projects (including symbology and edit widgets)"
-msgstr "QGIS projekteket használ (beleértve a szimbolikát és a szerkesztés vezérlőket) "
+msgstr "QGIS projekteket használ (beleértve a tematikus megjelenítést és a szerkesztés vezérlőket) "
 
 #: ../../en/index.rst:21
 msgid "Supports most QGIS supported formats (ideal with PostGIS)"
@@ -73,11 +73,11 @@ msgstr "GPS központú"
 
 #: ../../en/index.rst:29
 msgid "Fully working offline and online using live and cached* DB connections"
-msgstr "Offline és online munkára képes elő és tárolt* adatbázis kapcsolatokkal"
+msgstr "Offline és online munkára képes élő és tárolt* adatbázis kapcsolatokkal"
 
 #: ../../en/index.rst:30
 msgid "Switchable working modes (display, inspection, digitizing, measuring)*"
-msgstr "Átváltható munka módok (megjelenítés, ellenőrzés, digitalizálás, mérés)*"
+msgstr "Kiválasztható munka módok (megjelenítés, ellenőrzés, digitalizálás, mérés)*"
 
 #: ../../en/index.rst:31
 msgid ""

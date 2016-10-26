@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-21 16:03+0200\n"
-"PO-Revision-Date: 2016-10-20 19:20+0000\n"
+"POT-Creation-Date: 2016-10-26 15:07+0200\n"
+"PO-Revision-Date: 2016-10-25 17:25+0000\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -48,11 +48,11 @@ msgstr "A QField az alkalmazói felület túlzsúfolása nélkül kívánja seg�
 msgid ""
 "This means that everything like layer styling, form definitions and other "
 "project setup steps should be done on a computer with QGIS installed first."
-msgstr "Mindez azt jelenti, hogy a QGIS telepítése útján először egy számítógépen szükséges elvégezni az olyan feladatokat, mint például a rétegstílusok kialakítása, formázása vagy projektek felépítése."
+msgstr "Mindez azt jelenti, hogy mindent, mint például a rétegstílusok kialakítását, űrlap definíciókat és más projekt beállításokat egy olyan számítógépen állíthatunk be, melyre előzőleg a QGIS-t telepítették."
 
 #: ../../en/concepts/index.rst:20
 msgid "Be compatible with QGIS"
-msgstr "Legyen kompatibilis a QGIS-szel"
+msgstr "QGIS kompatibilitás"
 
 #: ../../en/concepts/index.rst:22
 msgid ""
@@ -68,7 +68,7 @@ msgid ""
 "project, it should not be re-invented. QField therefore uses the same edit "
 "widgets as QGIS desktop does. If a project is already configured for the "
 "desktop, it should just run on mobile as well."
-msgstr "Ha már egyszer rendelkezésre állnak mindazok a konfigurációs lehetőségek, melyek egy QGIS projekt elkészítéséhez szükségesek, akkor nem kell ezeket \"újra feltalálni\". Éppen ezért a QField ugyanazokat a szerkesztési megoldásokat alkalmazza, mint a QGIS. Amennyiben tehát felépítünk egy projektet a számítógépen, úgy annak mobil eszközökön is működnie kell."
+msgstr "Ha már egyszer a QGIS-ben rendelkezésre áll egy konfigurációs beállítás, akkor nem kell ezeket \"újra feltalálni\". Éppen ezért a QField ugyanazokat a szerkesztési vezérlőket alkalmazza, mint a QGIS. Amennyiben egy projektet összeállítunk az asztali számítógépen, akkor annak mobil eszközökön is működnie kell."
 
 #: ../../en/concepts/index.rst:32
 msgid ""
