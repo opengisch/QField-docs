@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 15:09+0200\n"
-"PO-Revision-Date: 2016-10-26 13:09+0000\n"
+"POT-Creation-Date: 2016-10-26 15:37+0200\n"
+"PO-Revision-Date: 2016-10-26 13:37+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -104,7 +104,7 @@ msgstr "Um neue Objekte zu digitalisieren starte dies via `Modi wechseln`_."
 msgid ""
 "A new combobox will appear next to the menu button which lists the layers "
 "available for digitizing."
-msgstr ""
+msgstr "Eine neue Auswahlliste erscheint neben dem Menüknopf. Diese zeigt die für die Digitalisierung verfügbaren Ebenen."
 
 #: ../../en/user-guide/index.rst:51
 msgid "Points"
@@ -119,7 +119,7 @@ msgstr "Navigiere das Fadenkreuz in der Bildschirmmitte an die gewünschte Stell
 
 #: ../../en/user-guide/index.rst:58
 msgid "Lines and polygons"
-msgstr ""
+msgstr "Linien und Polygone"
 
 #: ../../en/user-guide/index.rst:60
 msgid ""
@@ -127,7 +127,7 @@ msgid ""
 "the line and click the pencil at the lower right of the screen. Proceed with"
 " adding points or removing points until the line or polygon is finished and "
 "then click save."
-msgstr ""
+msgstr "Platziere das Fadenkreuz in der Bildschirmmitte an der gewünschten Stelle für den Start der neuen Linie und klicke den Stift in der rechten unteren Ecke des Bildschirmes. Weitere Punkte können nun hinzugefügt und wieder gelöscht werden bis die Linie oder das Polygon komplett ist. Beim letzten Punkt  muss der Speichern Knopf gedrückt werden."
 
 #: ../../en/user-guide/index.rst:66
 msgid "Attribute form"
