@@ -13,6 +13,7 @@ trans.it = i18n/it/index.po
 trans.pl = i18n/pl/index.po
 trans.pt = i18n/pt/index.po
 trans.ro = i18n/ro/index.po
+trans.uk = i18n/uk/index.po
 type = PO
 
 [qfield-documentation.user-guide]
@@ -27,6 +28,7 @@ trans.it = i18n/it/user-guide.po
 trans.pl = i18n/pl/user-guide.po
 trans.pt = i18n/pt/user-guide.po
 trans.ro = i18n/ro/user-guide.po
+trans.uk = i18n/uk/user-guide.po
 type = PO
 
 [qfield-documentation.installation-guide]
@@ -41,6 +43,7 @@ trans.it = i18n/it/installation-guide.po
 trans.pl = i18n/pl/installation-guide.po
 trans.pt = i18n/pt/installation-guide.po
 trans.ro = i18n/ro/installation-guide.po
+trans.uk = i18n/uk/installation-guide.po
 type = PO
 
 [qfield-documentation.project-management]
@@ -55,6 +58,7 @@ trans.it = i18n/it/project-management.po
 trans.pl = i18n/pl/project-management.po
 trans.pt = i18n/pt/project-management.po
 trans.ro = i18n/ro/project-management.po
+trans.uk = i18n/uk/project-management.po
 type = PO
 
 [qfield-documentation.concepts]
@@ -69,6 +73,7 @@ trans.it = i18n/it/concepts.po
 trans.pl = i18n/pl/concepts.po
 trans.pt = i18n/pt/concepts.po
 trans.ro = i18n/ro/concepts.po
+trans.uk = i18n/uk/concepts.po
 type = PO
 
 [qfield-documentation.development]
@@ -83,5 +88,6 @@ trans.it = i18n/it/development.po
 trans.pl = i18n/pl/development.po
 trans.pt = i18n/pt/development.po
 trans.ro = i18n/ro/development.po
+trans.uk = i18n/uk/development.po
 type = PO
 

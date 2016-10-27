@@ -1,0 +1,448 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, The QField Project/OPENGIS.ch
+# This file is distributed under the same license as the QField Documentation package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: QField Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-27 18:10+0200\n"
+"PO-Revision-Date: 2016-10-27 11:17+0000\n"
+"Last-Translator: alexbruy <alexander.bruy@gmail.com>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/opengisch/qfield-documentation/language/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../../en/project-management/dataformat.rst:2
+msgid "Supported data formats"
+msgstr "Підтримувані формати даних"
+
+#: ../../en/project-management/dataformat.rst:4
+msgid ""
+"QField supports a wide variety of formats via QGIS data providers and GDAL. "
+"This page offers a non-exhaustive list of supported data formats."
+msgstr "QField підтримує велику кількість фоматів даних завдяки постачальникам даних QGIS та GDAL. На цій сторінці знаходиться неповний список підтримуваних форматів даних."
+
+#: ../../en/project-management/dataformat.rst:8
+msgid "Table"
+msgstr "Таблиці"
+
+#: ../../en/project-management/dataformat.rst:15
+msgid "Data Format"
+msgstr "Формат даних"
+
+#: ../../en/project-management/dataformat.rst:15
+#: ../../en/project-management/index.rst:71
+msgid "Support"
+msgstr "Підтримка"
+
+#: ../../en/project-management/dataformat.rst:15
+#: ../../en/project-management/index.rst:71
+msgid "Notes"
+msgstr "Примітки"
+
+#: ../../en/project-management/dataformat.rst:17
+msgid "Spatialite"
+msgstr "Spatialite"
+
+#: ../../en/project-management/dataformat.rst:17
+#: ../../en/project-management/dataformat.rst:19
+#: ../../en/project-management/dataformat.rst:21
+#: ../../en/project-management/dataformat.rst:23
+#: ../../en/project-management/dataformat.rst:25
+#: ../../en/project-management/dataformat.rst:27
+#: ../../en/project-management/index.rst:73
+#: ../../en/project-management/index.rst:78
+#: ../../en/project-management/index.rst:80
+#: ../../en/project-management/index.rst:82
+msgid ":yay:`✔`"
+msgstr ":yay:`✔`"
+
+#: ../../en/project-management/dataformat.rst:19
+msgid "Geopackage"
+msgstr "Geopackage"
+
+#: ../../en/project-management/dataformat.rst:21
+msgid "WMS"
+msgstr "WMS"
+
+#: ../../en/project-management/dataformat.rst:23
+msgid "Postgis"
+msgstr "Postgis"
+
+#: ../../en/project-management/dataformat.rst:23
+msgid "Ssl support not yet implemented."
+msgstr "Підтримка SSL ще не реалізована."
+
+#: ../../en/project-management/dataformat.rst:25
+msgid "MBTiles"
+msgstr "MBTiles"
+
+#: ../../en/project-management/dataformat.rst:27
+msgid "Shapefile"
+msgstr "Shapefile"
+
+#: ../../en/project-management/dataformat.rst:29
+msgid "Tiff"
+msgstr "Tiff"
+
+#: ../../en/project-management/dataformat.rst:29
+#: ../../en/project-management/index.rst:84
+msgid ":moreorless:`~`"
+msgstr ":moreorless:`~`"
+
+#: ../../en/project-management/dataformat.rst:29
+msgid "JPEG compression not yet supported."
+msgstr "Стиснення JPEG ще не підтримується."
+
+#: ../../en/project-management/dataformat.rst:31
+msgid "ECW"
+msgstr "ECW"
+
+#: ../../en/project-management/dataformat.rst:31
+#: ../../en/project-management/dataformat.rst:33
+#: ../../en/project-management/index.rst:88
+#: ../../en/project-management/index.rst:90
+msgid ":nay:`✘`"
+msgstr ":nay:`✘`"
+
+#: ../../en/project-management/dataformat.rst:31
+#: ../../en/project-management/dataformat.rst:33
+msgid "License restricts usage."
+msgstr "Використання обмежене ліцензією."
+
+#: ../../en/project-management/dataformat.rst:33
+msgid "MrSID"
+msgstr "MrSID"
+
+#: ../../en/project-management/dataformat.rst:36
+msgid ""
+"If you don't find your favorite data format on this table, please check if "
+"it works and `adapt the list above <https://github.com/opengisch/QField-"
+"docs/edit/master/en/project-management/dataformat.rst>`_ to share your "
+"findings. If it does not work, please `open an issue "
+"<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
+"you with the implementation."
+msgstr "Якщо ви не знайшли свій улюблений формат даних у цій таблиці, будь-ласка, перевірте чи він працює та відповідним чином `відредагуйте вищенаведений список <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_. Якщо підтримка формату відсутня, будь ласка `повідомте нам <https://github.com/opengisch/OSGeo4A/issues>`_. Ми з задоволенням допоможемо вам з реалізацією."
+
+#: ../../en/project-management/dataformat.rst:42
+msgid "Raster data"
+msgstr "Растрові дані"
+
+#: ../../en/project-management/dataformat.rst:44
+msgid ""
+"Raster data can become quite big quickly, when working with uncompressed "
+"tiff files it's often several Gb of data. Especially on mobile devices, this"
+" is inefficient."
+msgstr "Растрові дані дуже швидко збільшуються в об'ємі, це гігабайти даних, якщо працювати з нестисненими файлами TIFF. Це не ефективно, особливо на мобільних пристроях."
+
+#: ../../en/project-management/dataformat.rst:47
+msgid "Use GeoPackage"
+msgstr "Використання GeoPackage"
+
+#: ../../en/project-management/dataformat.rst:49
+msgid ""
+"We recommend to us the geopackage format to deal with raster data. The "
+"following commands will convert a file called :code:`raster.tif` to a file "
+":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
+"LV03) to your desired CRS."
+msgstr "Для роботи з растровими даними ми рекомендуємо використовувати формат GeoPackage. Наступні команди зконвертують файл code:`raster.tif` у файл :code:`raster.gpkg` та створять пірамідальні шари. Не забудьте замінити EPSG:21781 (CH1903 LV03) на вашу систему координат."
+
+#: ../../en/project-management/index.rst:2
+msgid "QField Project Management"
+msgstr "Управління проектами QField"
+
+#: ../../en/project-management/index.rst:4
+msgid ""
+"QField does not have a built-in project management. You need to set up and "
+"configure your project first inside QGIS and then copy the project file "
+"(.qgs) and any additional files to your device and open it with QField."
+msgstr "QField не має вбудованої підтримки проектів. Ви повинні налаштувати свій проект в QGIS та скопіювати файл проекту (.qgs) та будь-які додаткові файли на ваш пристрій і відкрити його в QField."
+
+#: ../../en/project-management/index.rst:7
+msgid "Portable Project"
+msgstr "Portable проект"
+
+#: ../../en/project-management/index.rst:9
+msgid ""
+"You will need a portable version of your QGIS project file (.qgs). Portable "
+"means that all paths are relative and datasets are reachable from the "
+"device."
+msgstr "Вам знадобиться portable версія вашого проекта QGIS (файла :code:`.qgs`). Portable означає, що всі шляхи є відносними та всі дані доступні з пристрою."
+
+#: ../../en/project-management/index.rst:12
+msgid ""
+"Check that :menuselection:`Project --> Project Properties --> General --> "
+"Save paths` is set to \"Relative\" and that all required data files are in "
+"the same folder like the .qgs file or a subfolder of it."
+msgstr "Переконайтеся, що :menuselection:`Project --> Project Properties --> General --> Save paths`встановлено у \"Relative\" та всі файли даних знаходяться у тому ж каталозі що й файл :code:`.qgs` або у його вкладеному каталозі."
+
+#: ../../en/project-management/index.rst:15
+msgid ""
+"For increased productivity, we suggest having a look at the `QFieldSync "
+"plugin <https://plugins.qgis.org/plugins/qfieldsync>`_."
+msgstr "Для більш продуктивної роботи ми радимо встановити `плаґін QFieldSync <https://plugins.qgis.org/plugins/qfieldsync>`_."
+
+#: ../../en/project-management/index.rst:18
+msgid "Coordinate Reference Systems"
+msgstr "Системи координат"
+
+#: ../../en/project-management/index.rst:20
+msgid ""
+"QField uses the Coordinate Reference System (CRS) information found in the "
+"project file."
+msgstr "QField використовує інформацію про систему координат (Coordinate Reference System, CRS) з файлу проекта."
+
+#: ../../en/project-management/index.rst:22
+msgid "Project CRS"
+msgstr "Система координат проекта"
+
+#: ../../en/project-management/index.rst:23
+msgid "On the fly reprojection (OTF) is used for visualization"
+msgstr "Під час відобрадення використовується перепроектування на льоту (on the fly reprojection, OTF)"
+
+#: ../../en/project-management/index.rst:24
+msgid "Layer CRS"
+msgstr "Система координат шару"
+
+#: ../../en/project-management/index.rst:27
+msgid "Vector Layer Settings"
+msgstr "Налаштування векторних шарів"
+
+#: ../../en/project-management/index.rst:29
+msgid ""
+"Most of the settings which QGIS offers are directly supported by QField "
+"without any extra effort."
+msgstr "Більшість настройок, доступних в QGIS, підтримуються QField без додаткових зусиль."
+
+#: ../../en/project-management/index.rst:32
+msgid "Style"
+msgstr "Стилі"
+
+#: ../../en/project-management/index.rst:34
+msgid ""
+"All style settings from QGIS are directly supported by QField. This includes"
+" all renderer types like graduated, categorized, rule based, 2.5D as well as"
+" data defined symbology."
+msgstr "Всі налаштування стилів з QGIS напряму підтримуються QField. Включаючи всі типи відображдення на кшалт градуйованого, категорій, правил, 2.5D та стилів, які залежать від даних."
+
+#: ../../en/project-management/index.rst:37
+msgid "Display Expression"
+msgstr "Вираз для відображення"
+
+#: ../../en/project-management/index.rst:39
+msgid ""
+"In QField, objects are identified with a name. The expression to generate "
+"this name can be defined by opening the attribute table in QGIS and "
+"switching to the form view. Choose the appropriate field or an expression in"
+" the list there. Starting from QGIS 3, this can be done directly from the "
+":menuselection:`Vector Layer Properties --> Display` page."
+msgstr "В QField об'єкти ідентифікуються за іменем. Вираз, що генерує це ім'я можна налаштувати. Для цього відкрийте таблицю атрибутів в QGIS та перейдіть у режим форми. Виберіть відповідне поле або вираз зі списку. Починаючи з QGIS 3, це можна зробити напряму на сторінці :menuselection:`Vector Layer Properties --> Display`."
+
+#: ../../en/project-management/index.rst:51
+msgid "Forms and Fields"
+msgstr "Форми та поля"
+
+#: ../../en/project-management/index.rst:53
+msgid "QField creates forms similar to, but not equal to QGIS."
+msgstr "QField створює форми, схожі на форми QGIS, але не однакові з ними."
+
+#: ../../en/project-management/index.rst:56
+msgid "Suppress Feature Form"
+msgstr "Не показувати форму"
+
+#: ../../en/project-management/index.rst:56
+msgid ""
+"The setting suppress feature form is directly applied to the QField form."
+msgstr "Ця настройка застосовується до форм QField напряму."
+
+#: ../../en/project-management/index.rst:59
+msgid "Remember last values"
+msgstr "Запам'ятовувати останні значення"
+
+#: ../../en/project-management/index.rst:59
+msgid ""
+"QField offers a much more fine-grained control over the last used values and"
+" ignores the QGIS setting."
+msgstr "QField пропонує більш гнучке налаштування використання останніх внесених значень та ігнорує настройку QGIS."
+
+#: ../../en/project-management/index.rst:92
+msgid "Field settings"
+msgstr "Налаштування полів"
+
+#: ../../en/project-management/index.rst:64
+msgid ""
+"The field settings from QGIS are supported on a beste effort basis and is "
+"constantly being improved."
+msgstr "Налаштування полів QGIS підтримуються так добре, як це можливо і ця підтримка постійно вдосконалюється."
+
+#: ../../en/project-management/index.rst:71
+msgid "Field type"
+msgstr "Тип поля"
+
+#: ../../en/project-management/index.rst:73
+msgid "Text Edit"
+msgstr "Текстове поле"
+
+#: ../../en/project-management/index.rst:73
+msgid "Multiline is always allowed"
+msgstr "Підтримка багаторядковості завжди включена"
+
+#: ../../en/project-management/index.rst:74
+msgid "HTML is not supported"
+msgstr "HTML не підтримується"
+
+#: ../../en/project-management/index.rst:75
+msgid "Numerical input is enforced based on the type."
+msgstr "Введення чисел забезпечується на основі типу даних."
+
+#: ../../en/project-management/index.rst:78
+msgid "Check Box"
+msgstr "Перемикач"
+
+#: ../../en/project-management/index.rst:80
+msgid "Value Map"
+msgstr "Карта значень"
+
+#: ../../en/project-management/index.rst:82
+msgid "Hidden"
+msgstr "Приховане"
+
+#: ../../en/project-management/index.rst:84
+msgid "External Resource"
+msgstr "Зовнішній ресурс"
+
+#: ../../en/project-management/index.rst:84
+msgid ""
+"This field is combined with camera integration. Only images can be viewed so"
+" far. :ref:`make_it_grow`"
+msgstr "Це поле інтегрується з камерою. Станом на сьогодні переглядати можна лише зображення. :ref:`make_it_grow`"
+
+#: ../../en/project-management/index.rst:88
+msgid "Date Time"
+msgstr "Дата і час"
+
+#: ../../en/project-management/index.rst:88
+#: ../../en/project-management/index.rst:90
+msgid ":ref:`make_it_grow`"
+msgstr ":ref:`make_it_grow`"
+
+#: ../../en/project-management/index.rst:90
+msgid "Others"
+msgstr "Інші"
+
+#: ../../en/project-management/index.rst:95
+msgid "Drag and drop designer forms"
+msgstr "Інтерактивний редактор форм"
+
+#: ../../en/project-management/index.rst:95
+msgid "Groups and Tabs from Drag and Drop designer forms are supported."
+msgstr "Повна підтримка груп та вкладок інтерактивного редактора форм QGIS."
+
+#: ../../en/project-management/index.rst:103
+msgid "Conditional visibility"
+msgstr "Умовна видимість"
+
+#: ../../en/project-management/index.rst:98
+msgid ""
+"Groups can be hidden based on an expression. This is useful when certain "
+"attributes are only required under certain conditions. As an example imagine"
+" mapping trees. Some of them might have a disease and you have a list of "
+"possible deseases. To not clutter the form with many fields, make a group "
+"and configure a visibility expression for a group \"diseases\". Add a field "
+"\"desease\" with a checkbox. Only when the checkbox is checked, the list of "
+"diseases will be available to the user."
+msgstr "Групи можуть бути приховані в залежності від результатів виразу. Це може бути корисним, коли певні атрибути необхідні лише в певних умовах. Наприклад, під час картографування дерев. Деякі з них можуть мати захворювання і у вас є список можливих захворювань. Щоб не перевантажувати форму багатьма полями, зробіть групу та налаштуйте вираз видимості для групи \"diseases\". Додайте поле-перемикач \"desease\". Список захворювань буде видимий лише коли перемикач активний."
+
+#: ../../en/project-management/index.rst:114
+msgid "Constraints"
+msgstr "Обмеження"
+
+#: ../../en/project-management/index.rst:106
+msgid ""
+"Attribute fields can have constraints attached. Constraints are expressions "
+"that needs to evaluate to :code:`True` (or :code:`1`) in order to be able to"
+" save the form. Constraints are configured on a per-field basis and a "
+"description can be added that will be shown to the user if a constraint is "
+"not satisfied."
+msgstr "На атрибути можна накладати обмеження. Обмеження --- це вирази, які повинні повертати :code:`True` (або :code:`1`) щоб вміст форми можна було зберегти. Обмеження налаштовуються дл кожного поля окремо, також можна вказати текст, який буде показаний користувачу, якщо обмеження не виконується."
+
+#: ../../en/project-management/index.rst:111
+#: ../../en/project-management/index.rst:122
+msgid "Common use cases are:"
+msgstr "Приклади:"
+
+#: ../../en/project-management/index.rst:113
+msgid ""
+":code:`\"elevation\" < 5000`: `You cannot enter an elevation value higher "
+"than the highest mountain in this country.`"
+msgstr ":code:`\"elevation\" < 5000`: `Ви не можете вказати висоту більшу ніж найвища гора у країні.`"
+
+#: ../../en/project-management/index.rst:114
+msgid ""
+":code:`\"identifier\" IS NOT NULL`: `It is required to fill in an "
+"identifier.`"
+msgstr ":code:`\"identifier\" IS NOT NULL`: `Необхідно вказати ідентифікатор.`"
+
+#: ../../en/project-management/index.rst:126
+msgid "Default values"
+msgstr "Типові значення"
+
+#: ../../en/project-management/index.rst:117
+msgid ""
+"Fields can have default values configured. Default values are inserted into "
+"the attribute form when digitizing a new feature. They are visible to the "
+"user and can be modified as long as the field is editable. They can be based"
+" on the geometry or expression variables."
+msgstr "Поля можуть мати типові значення. Типові значення вставляються у форму атрибутів під час оцифровки об'єкта. Користувач їх бачить та може змінити, якщо поле може редагуватися. Типові значення можуть базуватися на значеннях геометрії чи виразів."
+
+#: ../../en/project-management/index.rst:124
+msgid ":code:`now()`: Insert the current date and time"
+msgstr ":code:`now()`: Вставити поточну дату та час"
+
+#: ../../en/project-management/index.rst:125
+msgid ":code:`length($geometry)`: Insert the length of the digitized line"
+msgstr ":code:`length($geometry)`: Вставити довжину оцифрованої лінії"
+
+#: ../../en/project-management/index.rst:126
+msgid ""
+":code:`@operator_name`: Configure global variables on the device and insert "
+"them."
+msgstr ":code:`@operator_name`: Створити глобальну змінну на пристрої та вставити її значення."
+
+#: ../../en/project-management/index.rst:129
+msgid "Editable"
+msgstr "Редагування"
+
+#: ../../en/project-management/index.rst:129
+msgid "The editable flag of fields is respected."
+msgstr "Атрибут редагування поля має значення."
+
+#: ../../en/project-management/index.rst:132
+msgid "Custom SVG symbols and settings"
+msgstr "Нестандарні символи SVG та налаштування"
+
+#: ../../en/project-management/index.rst:134
+msgid ""
+"In the about dialog you can see where the shared folders are on your device."
+msgstr "У діалозі \"Про програму\" ви можете побачити де знаходяться каталоги даних на вашому пристрої."
+
+#: ../../en/project-management/index.rst:136
+msgid ""
+"If you want to use custom symbols you need to put them there using a file "
+"manager."
+msgstr "Якщо ви хочете використовувати нестандартні символи, їх слід розмістити у цьому каталозі за допомогою файлового менеджера."
+
+#: ../../en/project-management/index.rst:139
+msgid "External SD card"
+msgstr "Зовнішня SD карта"
+
+#: ../../en/project-management/index.rst:141
+msgid ""
+"In order to have write access to projects which are on an external SD card, "
+"you will have to put it into the following folder:"
+msgstr "Щоб мати можливість редагувати проекти, які знаходяться на зовнішній SD картці, їх слід розмістити у каталозі:"
