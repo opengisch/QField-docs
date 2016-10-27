@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 15:09+0200\n"
-"PO-Revision-Date: 2016-10-26 13:09+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-10-27 18:03+0200\n"
+"PO-Revision-Date: 2016-10-26 17:35+0000\n"
+"Last-Translator: Sorin Călinică <scalinica@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -103,7 +103,7 @@ msgstr "Pentru a porni digitizarea noilor entități `Comutați modul`_ pe digit
 msgid ""
 "A new combobox will appear next to the menu button which lists the layers "
 "available for digitizing."
-msgstr ""
+msgstr "O nouă casetă combinată va apărea lângă butonul meniului, care listează straturile disponibile pentru digitizare."
 
 #: ../../en/user-guide/index.rst:51
 msgid "Points"
@@ -118,7 +118,7 @@ msgstr "Poziționați reticulul din centrul ecranului la locația dorită, și f
 
 #: ../../en/user-guide/index.rst:58
 msgid "Lines and polygons"
-msgstr ""
+msgstr "Linii și poligoane"
 
 #: ../../en/user-guide/index.rst:60
 msgid ""
@@ -126,7 +126,7 @@ msgid ""
 "the line and click the pencil at the lower right of the screen. Proceed with"
 " adding points or removing points until the line or polygon is finished and "
 "then click save."
-msgstr ""
+msgstr "Poziționați reticulul din centrul ecranului la punctul de start al liniei, apoi faceți clic cu creionul în partea din dreapta jos a ecranului. Continuați cu adăugarea sau eliminarea punctelor până când linia sau poligonul sunt terminate, când veți face clic pe Salvare."
 
 #: ../../en/user-guide/index.rst:66
 msgid "Attribute form"
