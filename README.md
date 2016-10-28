@@ -14,6 +14,7 @@ The final product can be found here:
  * [Galician](http://qfield.org/docs/gl)
  * [Portuguese](http://qfield.org/docs/pt)
  * [Catalan](http://qfield.org/docs/ca)
+ * [Ukranian](http://qfield.org/docs/uk)
 
 ## Process
 
