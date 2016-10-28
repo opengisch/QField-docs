@@ -75,6 +75,8 @@ The documentation is available in several languages
 
 `Catalan </ca>`_
 
+`Hungarian </hu>`_
+
 If there is an error with a translation, please `help to improve it <https://www.transifex.com/opengisch/qfield-documentation/>`_.
 
 
