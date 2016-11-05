@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 15:07+0200\n"
-"PO-Revision-Date: 2016-10-25 16:47+0000\n"
-"Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
+"POT-Creation-Date: 2016-11-05 11:33+0100\n"
+"PO-Revision-Date: 2016-11-05 10:33+0000\n"
+"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -120,43 +120,55 @@ msgid "The documentation is available in several languages"
 msgstr "A dokumentáció számos nyelven elérhető"
 
 #: ../../en/index.rst:66
-msgid "`English </en>`_"
-msgstr "`Angol </en>`_"
+msgid "`Catalan </ca>`_"
+msgstr "`Katalán </ca>`_"
 
 #: ../../en/index.rst:68
 msgid "`Deutsch </de>`_"
 msgstr "`Német </de>`_"
 
 #: ../../en/index.rst:70
+msgid "`English </en>`_"
+msgstr "`Angol </en>`_"
+
+#: ../../en/index.rst:72
 msgid "`Français </fr>`_"
 msgstr "`Francia </fr>`_"
 
-#: ../../en/index.rst:72
+#: ../../en/index.rst:74
 msgid "`Galician </gl>`_"
 msgstr "`Galiciai </gl>`_"
 
-#: ../../en/index.rst:74
+#: ../../en/index.rst:76
 msgid "`Portuguese </pt>`_"
 msgstr "`Portugál </pt>`_"
 
-#: ../../en/index.rst:76
-msgid "`Catalan </ca>`_"
-msgstr "`Katalán </ca>`_"
-
 #: ../../en/index.rst:78
+msgid "`Romanian </ro>`_"
+msgstr ""
+
+#: ../../en/index.rst:80
+msgid "`Ukranian </uk>`_"
+msgstr ""
+
+#: ../../en/index.rst:83
+msgid "`Hungarian </hu>`_"
+msgstr ""
+
+#: ../../en/index.rst:85
 msgid ""
 "If there is an error with a translation, please `help to improve it "
 "<https://www.transifex.com/opengisch/qfield-documentation/>`_."
 msgstr "Ha hiba van a fordításban, kérjük `segítse a javítást<https://www.transifex.com/opengisch/qfield-documentation/>`_."
 
-#: ../../en/index.rst:82
+#: ../../en/index.rst:89
 msgid "Indices and tables"
 msgstr "Index és táblázatok"
 
-#: ../../en/index.rst:84
+#: ../../en/index.rst:91
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
 
-#: ../../en/index.rst:85
+#: ../../en/index.rst:92
 msgid ":ref:`search`"
 msgstr ":ref:`search`"

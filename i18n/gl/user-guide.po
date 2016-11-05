@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 15:09+0200\n"
-"PO-Revision-Date: 2016-10-26 13:09+0000\n"
+"POT-Creation-Date: 2016-11-05 11:33+0100\n"
+"PO-Revision-Date: 2016-11-05 10:33+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -46,9 +46,9 @@ msgstr "Identificar entidades"
 
 #: ../../en/user-guide/index.rst:21
 msgid ""
-"A long press on a feature will identify it. Pressing the back button will "
-"close the identify window."
-msgstr "Unha pulsación longa nunha entidade identificaraa. Premer o botón de retroceso pechará a xanela de identificación."
+"A tap on a feature will identify it. Pressing the back button will close the"
+" identify window."
+msgstr ""
 
 #: ../../en/user-guide/index.rst:24
 msgid "Exceptions to identified layers"
@@ -105,7 +105,7 @@ msgstr "Para comezar a dixitalizar novas entidades premer `Alternar modos`_."
 msgid ""
 "A new combobox will appear next to the menu button which lists the layers "
 "available for digitizing."
-msgstr ""
+msgstr "Aparecerá un novo cadro combinado próximo ó botón do menú que lista as capas dispoñibles para a dixitalización."
 
 #: ../../en/user-guide/index.rst:51
 msgid "Points"
@@ -120,7 +120,7 @@ msgstr "Move o punto de mira no centro da pantalla ata a localización desexada 
 
 #: ../../en/user-guide/index.rst:58
 msgid "Lines and polygons"
-msgstr ""
+msgstr "Liñas e polígonos"
 
 #: ../../en/user-guide/index.rst:60
 msgid ""
@@ -128,7 +128,7 @@ msgid ""
 "the line and click the pencil at the lower right of the screen. Proceed with"
 " adding points or removing points until the line or polygon is finished and "
 "then click save."
-msgstr ""
+msgstr "Move o punto de mira no centro da pantalla para o inicio desexado da liña e preme o lapis na dereita abaixo da pantalla. Procede a engadir puntos ou eliminar puntos ata que a liña ou polígono estea acabado e entón preme gardar"
 
 #: ../../en/user-guide/index.rst:66
 msgid "Attribute form"

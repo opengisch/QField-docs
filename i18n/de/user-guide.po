@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 15:37+0200\n"
-"PO-Revision-Date: 2016-10-26 13:37+0000\n"
+"POT-Creation-Date: 2016-11-05 11:33+0100\n"
+"PO-Revision-Date: 2016-11-05 10:33+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -45,9 +45,9 @@ msgstr "Objekte identifizieren"
 
 #: ../../en/user-guide/index.rst:21
 msgid ""
-"A long press on a feature will identify it. Pressing the back button will "
-"close the identify window."
-msgstr "Ein langer Druck auf ein Objekt identifiziert dieses und öffnet das Attributformular. Der zurück Knopf schliesst das Fenster wieder."
+"A tap on a feature will identify it. Pressing the back button will close the"
+" identify window."
+msgstr ""
 
 #: ../../en/user-guide/index.rst:24
 msgid "Exceptions to identified layers"

@@ -8,15 +8,44 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-17 15:45+0200\n"
-"PO-Revision-Date: 2016-10-09 06:49+0000\n"
-"Last-Translator: Sorin Călinică <scalinica@gmail.com>\n"
+"POT-Creation-Date: 2016-11-05 11:33+0100\n"
+"PO-Revision-Date: 2016-11-05 10:33+0000\n"
+"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../en/project-management/android-data-structure.rst:2
+msgid "Android: Special File Access Notes"
+msgstr ""
+
+#: ../../en/project-management/android-data-structure.rst:5
+msgid "Custom SVG symbols and settings"
+msgstr "Simboluri și setări SVG personalizate"
+
+#: ../../en/project-management/android-data-structure.rst:7
+msgid ""
+"In the about dialog you can see where the shared folders are on your device."
+msgstr "În dialogul \"About\" puteți vedea unde se află pe dispozitiv folderele partajate."
+
+#: ../../en/project-management/android-data-structure.rst:9
+msgid ""
+"If you want to use custom symbols you need to put them there using a file "
+"manager."
+msgstr "În cazul în care doriți să utilizați simboluri personalizate, trebuie să le stocați acolo cu ajutorul unui manager de fișiere."
+
+#: ../../en/project-management/android-data-structure.rst:12
+msgid "External SD card"
+msgstr "Card SD extern"
+
+#: ../../en/project-management/android-data-structure.rst:14
+msgid ""
+"In order to have write access to projects which are on an external SD card, "
+"you will have to put it into the following folder:"
+msgstr "Pentru a putea avea acces de scriere la proiectele de pe un card SD extern, va trebui să-l puneți în următorul folder:"
 
 #: ../../en/project-management/dataformat.rst:2
 msgid "Supported data formats"
@@ -37,12 +66,12 @@ msgid "Data Format"
 msgstr "Formatul Datelor"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:71
+#: ../../en/project-management/vector-layers.rst:50
 msgid "Support"
 msgstr "Acceptat"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/index.rst:71
+#: ../../en/project-management/vector-layers.rst:50
 msgid "Notes"
 msgstr "Observații"
 
@@ -56,10 +85,11 @@ msgstr "Spatialite"
 #: ../../en/project-management/dataformat.rst:23
 #: ../../en/project-management/dataformat.rst:25
 #: ../../en/project-management/dataformat.rst:27
-#: ../../en/project-management/index.rst:73
-#: ../../en/project-management/index.rst:78
-#: ../../en/project-management/index.rst:80
-#: ../../en/project-management/index.rst:82
+#: ../../en/project-management/vector-layers.rst:52
+#: ../../en/project-management/vector-layers.rst:56
+#: ../../en/project-management/vector-layers.rst:58
+#: ../../en/project-management/vector-layers.rst:60
+#: ../../en/project-management/vector-layers.rst:66
 msgid ":yay:`✔`"
 msgstr ":yay:`✔`"
 
@@ -92,7 +122,7 @@ msgid "Tiff"
 msgstr "Tiff"
 
 #: ../../en/project-management/dataformat.rst:29
-#: ../../en/project-management/index.rst:84
+#: ../../en/project-management/vector-layers.rst:62
 msgid ":moreorless:`~`"
 msgstr ":moreorless:`~`"
 
@@ -106,8 +136,7 @@ msgstr "ECW"
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
-#: ../../en/project-management/index.rst:88
-#: ../../en/project-management/index.rst:90
+#: ../../en/project-management/vector-layers.rst:68
 msgid ":nay:`✘`"
 msgstr ":nay:`✘`"
 
@@ -153,89 +182,126 @@ msgid ""
 "LV03) to your desired CRS."
 msgstr "Vă recomandăm formatul geopackage pentru a lucra cu datele raster. Urmatoarele comenzi vor converti un fișier denumit :code:`raster.tif` în fișierul cu piramide :code:`raster.gpkg`. Asigurați-vă că ați schimbat EPSG:21781 (CH1903 LV03) în CRS-ul dorit."
 
-#: ../../en/project-management/index.rst:2
+#: ../../en/project-management/index.rst:3
 msgid "QField Project Management"
 msgstr "Managementul Proiectelor în QField "
 
-#: ../../en/project-management/index.rst:4
+#: ../../en/project-management/index.rst:5
 msgid ""
 "QField does not have a built-in project management. You need to set up and "
 "configure your project first inside QGIS and then copy the project file "
 "(.qgs) and any additional files to your device and open it with QField."
 msgstr "QField nu dispune de un management integrat al proiectului. Trebuie să creați și să configurați proiectul mai întâi în interiorul QGIS, să copiați fișierul proiectului (.qgs), împreună cu orice alte fișiere pe dispozitiv, aopi să-l deschideți cu QField."
 
-#: ../../en/project-management/index.rst:7
+#: ../../en/project-management/index.rst:8
+msgid "Contents"
+msgstr ""
+
+#: ../../en/project-management/index.rst:19
+msgid "Coordinate Reference Systems"
+msgstr "Sisteme de Coordonate de Referință"
+
+#: ../../en/project-management/index.rst:21
+msgid ""
+"QField uses the Coordinate Reference System (CRS) information found in the "
+"project file."
+msgstr "QField folosește informațiile Sistemului de Coordonate de Referință (CRS) din fișierul proiectului."
+
+#: ../../en/project-management/index.rst:23
+msgid "Project CRS"
+msgstr "CRS-ul proiectului"
+
+#: ../../en/project-management/index.rst:24
+msgid "On the fly reprojection (OTF) is used for visualization"
+msgstr "Pentru vizualizare este utilizată reproiectarea din-zbor (OTF)"
+
+#: ../../en/project-management/index.rst:25
+msgid "Layer CRS"
+msgstr "CRS-ul stratului"
+
+#: ../../en/project-management/map-themes.rst:2
+msgid "Map Themes"
+msgstr ""
+
+#: ../../en/project-management/map-themes.rst:4
+msgid ""
+"The beautiful thing about GIS is that maps are dynamic. Layers can "
+"individually be shown and hidden and information can be presented more or "
+"less prominently based on the task at hand."
+msgstr ""
+
+#: ../../en/project-management/map-themes.rst:8
+msgid ""
+"This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
+"are for."
+msgstr ""
+
+#: ../../en/project-management/map-themes.rst:12
+msgid "Creating a Map Theme"
+msgstr ""
+
+#: ../../en/project-management/map-themes.rst:14
+msgid "Creating a Map Theme in QGIS is a very simple task."
+msgstr ""
+
+#: ../../en/project-management/map-themes.rst:16
+msgid "Style the map and layers to your requirements"
+msgstr ""
+
+#: ../../en/project-management/map-themes.rst:17
+msgid "Save it as a named Map Theme"
+msgstr ""
+
+#: ../../en/project-management/portable-project.rst:2
 msgid "Portable Project"
 msgstr "Proiect Portabil"
 
-#: ../../en/project-management/index.rst:9
+#: ../../en/project-management/portable-project.rst:4
 msgid ""
 "You will need a portable version of your QGIS project file (.qgs). Portable "
 "means that all paths are relative and datasets are reachable from the "
 "device."
 msgstr "Veți avea nevoie de o versiune portabilă a fișierului proiect QGIS (.qgs). Portabilitatea se referă la faptul că toate căile portabile sunt relative, iar seturile de date sunt accesibile din aparat."
 
-#: ../../en/project-management/index.rst:12
+#: ../../en/project-management/portable-project.rst:7
 msgid ""
 "Check that :menuselection:`Project --> Project Properties --> General --> "
 "Save paths` is set to \"Relative\" and that all required data files are in "
 "the same folder like the .qgs file or a subfolder of it."
 msgstr "Asigurați-vă că :menuselection:`Proiect --> Proprietățile Proiectului --> General --> Salvarea căilor` este setată pe 'relativă' și că toate fișierele de date necesare se află, de asemenea, în același folder cu fișierul .qgs sau într-un subfolder al acestuia."
 
-#: ../../en/project-management/index.rst:15
+#: ../../en/project-management/portable-project.rst:10
 msgid ""
 "For increased productivity, we suggest having a look at the `QFieldSync "
 "plugin <https://plugins.qgis.org/plugins/qfieldsync>`_."
 msgstr "Pentru creșterea productivității, vă sugerăm să aruncați o privire la `Plugin-ul QFieldSync <https://plugins.qgis.org/plugins/qfieldsync>`_."
 
-#: ../../en/project-management/index.rst:18
-msgid "Coordinate Reference Systems"
-msgstr "Sisteme de Coordonate de Referință"
-
-#: ../../en/project-management/index.rst:20
-msgid ""
-"QField uses the Coordinate Reference System (CRS) information found in the "
-"project file."
-msgstr "QField folosește informațiile Sistemului de Coordonate de Referință (CRS) din fișierul proiectului."
-
-#: ../../en/project-management/index.rst:22
-msgid "Project CRS"
-msgstr "CRS-ul proiectului"
-
-#: ../../en/project-management/index.rst:23
-msgid "On the fly reprojection (OTF) is used for visualization"
-msgstr "Pentru vizualizare este utilizată reproiectarea din-zbor (OTF)"
-
-#: ../../en/project-management/index.rst:24
-msgid "Layer CRS"
-msgstr "CRS-ul stratului"
-
-#: ../../en/project-management/index.rst:27
+#: ../../en/project-management/vector-layers.rst:3
 msgid "Vector Layer Settings"
 msgstr "Setările Straturilor Vectoriale"
 
-#: ../../en/project-management/index.rst:29
+#: ../../en/project-management/vector-layers.rst:5
 msgid ""
 "Most of the settings which QGIS offers are directly supported by QField "
 "without any extra effort."
 msgstr "Cele mai multe dintre setările pe care le oferă QGIS sunt acceptate direct de către QField, fără nici un efort suplimentar."
 
-#: ../../en/project-management/index.rst:32
+#: ../../en/project-management/vector-layers.rst:8
 msgid "Style"
 msgstr "Stilul"
 
-#: ../../en/project-management/index.rst:34
+#: ../../en/project-management/vector-layers.rst:10
 msgid ""
 "All style settings from QGIS are directly supported by QField. This includes"
 " all renderer types like graduated, categorized, rule based, 2.5D as well as"
 " data defined symbology."
 msgstr "Toate setările de stil din QGIS sunt suportate direct de QField. Acesta include toate tipurile de render, cum ar fi cele clasificate pe grade sau pe categorii, simbologia 2.5D sau cea definită cu ajutorul datelor."
 
-#: ../../en/project-management/index.rst:37
+#: ../../en/project-management/vector-layers.rst:15
 msgid "Display Expression"
 msgstr "Afișarea Expresiei"
 
-#: ../../en/project-management/index.rst:39
+#: ../../en/project-management/vector-layers.rst:17
 msgid ""
 "In QField, objects are identified with a name. The expression to generate "
 "this name can be defined by opening the attribute table in QGIS and "
@@ -244,111 +310,94 @@ msgid ""
 ":menuselection:`Vector Layer Properties --> Display` page."
 msgstr "În QField, obiectele sunt identificate după nume. Expresia care va genera acest nume poate fi definită prin deschiderea tabelului de atribute din QGIS și trecerea la vizualizarea formularului. Alegeți câmpul corespunzător sau o expresie din acea listă. Începând de la QGIS 3, acest lucru se poate face direct din pagina :menuselection:`Proprietățile Stratului Vectorial --> Afișare`."
 
-#: ../../en/project-management/index.rst:51
+#: ../../en/project-management/vector-layers.rst:29
 msgid "Forms and Fields"
 msgstr "Formulare și Câmpuri"
 
-#: ../../en/project-management/index.rst:53
+#: ../../en/project-management/vector-layers.rst:31
 msgid "QField creates forms similar to, but not equal to QGIS."
 msgstr "QField creează formulare similare, dar nu identice cu cele din QGIS."
 
-#: ../../en/project-management/index.rst:56
+#: ../../en/project-management/vector-layers.rst:34
 msgid "Suppress Feature Form"
 msgstr "Suprimarea Formularului Entității"
 
-#: ../../en/project-management/index.rst:56
+#: ../../en/project-management/vector-layers.rst:36
 msgid ""
 "The setting suppress feature form is directly applied to the QField form."
 msgstr "Setarea de suprimare a formularului entității se aplică direct formularului QField."
 
-#: ../../en/project-management/index.rst:59
-msgid "Remember last values"
-msgstr "Memorarea ultimelor valori"
+#: ../../en/project-management/vector-layers.rst:41
+msgid "Field widget"
+msgstr ""
 
-#: ../../en/project-management/index.rst:59
-msgid ""
-"QField offers a much more fine-grained control over the last used values and"
-" ignores the QGIS setting."
-msgstr "QField oferă un control mult mai fin asupra ultimei valori utilizate, ignorând setarea din QGIS."
+#: ../../en/project-management/vector-layers.rst:43
+msgid "The field widgets from QGIS are supported on a best effort basis."
+msgstr ""
 
-#: ../../en/project-management/index.rst:92
-msgid "Field settings"
-msgstr "Setarea câmpurilor"
-
-#: ../../en/project-management/index.rst:64
-msgid ""
-"The field settings from QGIS are supported on a beste effort basis and is "
-"constantly being improved."
-msgstr "S-au depus cele mai mari eforturi pentru a susține setarea câmpurilor prin intermediul QGIS, lucru în permanență îmbunătățit."
-
-#: ../../en/project-management/index.rst:71
+#: ../../en/project-management/vector-layers.rst:50
 msgid "Field type"
 msgstr "Tipul câmpului"
 
-#: ../../en/project-management/index.rst:73
+#: ../../en/project-management/vector-layers.rst:52
 msgid "Text Edit"
 msgstr "Editare Text"
 
-#: ../../en/project-management/index.rst:73
-msgid "Multiline is always allowed"
-msgstr "Multiliniile sunt întotdeauna permise"
-
-#: ../../en/project-management/index.rst:74
+#: ../../en/project-management/vector-layers.rst:52
 msgid "HTML is not supported"
 msgstr "Codul HTML nu este acceptat"
 
-#: ../../en/project-management/index.rst:75
+#: ../../en/project-management/vector-layers.rst:53
 msgid "Numerical input is enforced based on the type."
 msgstr "Introducerea valorilor numerice are loc în funcție de tip."
 
-#: ../../en/project-management/index.rst:78
+#: ../../en/project-management/vector-layers.rst:56
 msgid "Check Box"
 msgstr "Caseta de bifare"
 
-#: ../../en/project-management/index.rst:80
+#: ../../en/project-management/vector-layers.rst:58
 msgid "Value Map"
 msgstr "Harta de Valori"
 
-#: ../../en/project-management/index.rst:82
+#: ../../en/project-management/vector-layers.rst:60
 msgid "Hidden"
 msgstr "Ascunsă"
 
-#: ../../en/project-management/index.rst:84
+#: ../../en/project-management/vector-layers.rst:62
 msgid "External Resource"
 msgstr "Resursă Externă"
 
-#: ../../en/project-management/index.rst:84
+#: ../../en/project-management/vector-layers.rst:62
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
 msgstr "Acest câmp este combinat cu camera integrată. Numai imaginile pot fi vizualizate până în prezent. :ref:`make_it_grow`"
 
-#: ../../en/project-management/index.rst:88
+#: ../../en/project-management/vector-layers.rst:66
 msgid "Date Time"
 msgstr "Data și Ora"
 
-#: ../../en/project-management/index.rst:88
-#: ../../en/project-management/index.rst:90
-msgid ":ref:`make_it_grow`"
-msgstr ":ref:`make_it_grow`"
-
-#: ../../en/project-management/index.rst:90
+#: ../../en/project-management/vector-layers.rst:68
 msgid "Others"
 msgstr "Altele"
 
-#: ../../en/project-management/index.rst:95
+#: ../../en/project-management/vector-layers.rst:68
+msgid ":ref:`make_it_grow`"
+msgstr ":ref:`make_it_grow`"
+
+#: ../../en/project-management/vector-layers.rst:73
 msgid "Drag and drop designer forms"
 msgstr "Proiectare de tip drag and drop pentru formulare"
 
-#: ../../en/project-management/index.rst:95
+#: ../../en/project-management/vector-layers.rst:75
 msgid "Groups and Tabs from Drag and Drop designer forms are supported."
 msgstr "Designerul Drag and Drop al formularelor permite crearea de Grupuri și File."
 
-#: ../../en/project-management/index.rst:103
+#: ../../en/project-management/vector-layers.rst:78
 msgid "Conditional visibility"
 msgstr "Vizibilitate condiționată"
 
-#: ../../en/project-management/index.rst:98
+#: ../../en/project-management/vector-layers.rst:80
 msgid ""
 "Groups can be hidden based on an expression. This is useful when certain "
 "attributes are only required under certain conditions. As an example imagine"
@@ -359,11 +408,11 @@ msgid ""
 "diseases will be available to the user."
 msgstr "Grupurile pot fi ascunse în baza unei expresii. Acest lucru este util atunci când unele atribute sunt cerute doar în anumite condiții. Un astfel de exemplu o reprezintă cartografierea copacilor. Unii dintre ei s-ar putea să fie atacați de o anumită boală, iar dvs. aveți o listă cu posibile afecțiuni. Pentru a nu aglomera cu multe câmpuri formularul, creați un grup și stabiliți o expresie de vizibilitate pentru grupul \"boli\". Adăugați câmpul \"boli\" și o casetă de bifare. Numai atunci când este bifată caseta de selectare, lista bolilor va fi disponibilă utilizatorului."
 
-#: ../../en/project-management/index.rst:114
+#: ../../en/project-management/vector-layers.rst:88
 msgid "Constraints"
 msgstr "Constrângeri"
 
-#: ../../en/project-management/index.rst:106
+#: ../../en/project-management/vector-layers.rst:90
 msgid ""
 "Attribute fields can have constraints attached. Constraints are expressions "
 "that needs to evaluate to :code:`True` (or :code:`1`) in order to be able to"
@@ -372,28 +421,26 @@ msgid ""
 "not satisfied."
 msgstr "Câmpurilor atributelor li se pot atașa constrângeri. Constrângerile reprezintă expresii care, pentru a se putea salva formularul, trebuie evaluate la :code:`True` (sau :code:`1`). Constrângerile sunt configurate per câmp, putându-se adăuga o descriere, care va indica utilizatorului cazul în care o constrângere nu este îndeplinită."
 
-#: ../../en/project-management/index.rst:111
-#: ../../en/project-management/index.rst:122
-msgid "Common use cases are:"
-msgstr "Cazurile frecvente de utilizare sunt:"
+#: ../../en/project-management/vector-layers.rst:96
+#: ../../en/project-management/vector-layers.rst:119
+msgid "Common use cases"
+msgstr ""
 
-#: ../../en/project-management/index.rst:113
+#: ../../en/project-management/vector-layers.rst:98
 msgid ""
-":code:`\"elevation\" < 5000`: `You cannot enter an elevation value higher "
-"than the highest mountain in this country.`"
-msgstr ":code:`\"elevation\" < 5000`: `Nu puteți introduce pentru altitudine o valoare mai mare decât cea a celui mai înalt munte din această țară.`"
+"You cannot enter an elevation value higher than the highest mountain in this"
+" country."
+msgstr ""
 
-#: ../../en/project-management/index.rst:114
-msgid ""
-":code:`\"identifier\" IS NOT NULL`: `It is required to fill in an "
-"identifier.`"
-msgstr ":code:`\"identifier\" IS NOT NULL`: `Este necesară introducerea unui identificator.`"
+#: ../../en/project-management/vector-layers.rst:104
+msgid "It is required to fill in an identifier."
+msgstr ""
 
-#: ../../en/project-management/index.rst:126
+#: ../../en/project-management/vector-layers.rst:111
 msgid "Default values"
 msgstr "Valori implicite"
 
-#: ../../en/project-management/index.rst:117
+#: ../../en/project-management/vector-layers.rst:113
 msgid ""
 "Fields can have default values configured. Default values are inserted into "
 "the attribute form when digitizing a new feature. They are visible to the "
@@ -401,49 +448,38 @@ msgid ""
 " on the geometry or expression variables."
 msgstr "Pentru câmpuri se pot configura valori implicite. Acestea vor fi automat inserate în formularul cu atribute la digitizarea unei noi entități. Ele sunt vizibile pentru utilizator și pot fi modificate atât timp cât este posibilă editarea în câmpul respectiv. De asemenea, pot fi construite pe baza unor variabile sau expresii geometrice."
 
-#: ../../en/project-management/index.rst:124
-msgid ":code:`now()`: Insert the current date and time"
-msgstr ":code:`now()`: Inserează data și ora curentă"
+#: ../../en/project-management/vector-layers.rst:121
+msgid "Insert the current date and time:"
+msgstr ""
 
-#: ../../en/project-management/index.rst:125
-msgid ":code:`length($geometry)`: Insert the length of the digitized line"
-msgstr ":code:`length($geometry)`: Inserează lungimea liniei digitizate"
+#: ../../en/project-management/vector-layers.rst:127
+msgid "Insert the length of the digitized line:"
+msgstr ""
 
-#: ../../en/project-management/index.rst:126
+#: ../../en/project-management/vector-layers.rst:133
+msgid "Configure global variables on the device and insert them."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:139
 msgid ""
-":code:`@operator_name`: Configure global variables on the device and insert "
-"them."
-msgstr ":code:`@operator_name`: Configurați și introduceți în dispozitiv variabilele globale."
+"If you want to assign a region code based on the location where a new "
+"feature is inserted, you can do so by using an aggregate expression:"
+msgstr ""
 
-#: ../../en/project-management/index.rst:129
+#: ../../en/project-management/vector-layers.rst:147
 msgid "Editable"
 msgstr "Editabile"
 
-#: ../../en/project-management/index.rst:129
+#: ../../en/project-management/vector-layers.rst:149
 msgid "The editable flag of fields is respected."
 msgstr "Se respectă fanionul editabil al câmpurilor."
 
-#: ../../en/project-management/index.rst:132
-msgid "Custom SVG symbols and settings"
-msgstr "Simboluri și setări SVG personalizate"
+#: ../../en/project-management/vector-layers.rst:152
+msgid "Remember last values"
+msgstr "Memorarea ultimelor valori"
 
-#: ../../en/project-management/index.rst:134
+#: ../../en/project-management/vector-layers.rst:154
 msgid ""
-"In the about dialog you can see where the shared folders are on your device."
-msgstr "În dialogul \"About\" puteți vedea unde se află pe dispozitiv folderele partajate."
-
-#: ../../en/project-management/index.rst:136
-msgid ""
-"If you want to use custom symbols you need to put them there using a file "
-"manager."
-msgstr "În cazul în care doriți să utilizați simboluri personalizate, trebuie să le stocați acolo cu ajutorul unui manager de fișiere."
-
-#: ../../en/project-management/index.rst:139
-msgid "External SD card"
-msgstr "Card SD extern"
-
-#: ../../en/project-management/index.rst:141
-msgid ""
-"In order to have write access to projects which are on an external SD card, "
-"you will have to put it into the following folder:"
-msgstr "Pentru a putea avea acces de scriere la proiectele de pe un card SD extern, va trebui să-l puneți în următorul folder:"
+"QField offers a much more fine-grained control over the last used values and"
+" ignores the QGIS setting."
+msgstr "QField oferă un control mult mai fin asupra ultimei valori utilizate, ignorând setarea din QGIS."

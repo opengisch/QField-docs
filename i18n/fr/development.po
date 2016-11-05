@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-27 18:10+0200\n"
+"POT-Creation-Date: 2016-11-05 11:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Guen LE MERRER <guen69@gmail.com>, 2016\n"
 "Language-Team: French (https://www.transifex.com/opengisch/teams/38926/fr/)\n"
@@ -291,21 +291,42 @@ msgid ""
 msgstr ""
 
 #: ../../en/development/index.rst:139
+msgid "Record Audio"
+msgstr ""
+
+#: ../../en/development/index.rst:141
+msgid ""
+"Ever wondered how you would write a lot of text when out in the field with a"
+" touch screen?"
+msgstr ""
+
+#: ../../en/development/index.rst:144
+msgid "Just don't!"
+msgstr ""
+
+#: ../../en/development/index.rst:146
+msgid ""
+"It would be amazing to have the possibility to have audio integration just "
+"like image integration. When back in the office, you could just type in the "
+"information on a regular keyboard."
+msgstr ""
+
+#: ../../en/development/index.rst:152
 msgid "[Your favorite feature]"
 msgstr "[Votre fonction préférée]"
 
-#: ../../en/development/index.rst:141
+#: ../../en/development/index.rst:154
 msgid ""
 "You probably have plenty of ideas for other nice features. Please contact us"
 " and we can discuss the best approach to integrate this idea into QField or "
 "a derived app."
 msgstr ""
 
-#: ../../en/development/index.rst:147
+#: ../../en/development/index.rst:160
 msgid "Funding"
 msgstr "Financement"
 
-#: ../../en/development/index.rst:149
+#: ../../en/development/index.rst:162
 msgid ""
 "The following oranizations have contributed to make QField what it currently"
 " is. We would like to warmly say: Thanks a lot!"
@@ -313,11 +334,11 @@ msgstr ""
 "Les organisations suivantes ont contribué à faire de QField ce qu'il est "
 "aujourd'hui. Un grand merci à elles !"
 
-#: ../../en/development/index.rst:188
+#: ../../en/development/index.rst:201
 msgid "Credits"
 msgstr "Crédits"
 
-#: ../../en/development/index.rst:190
+#: ../../en/development/index.rst:203
 msgid ""
 "QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
 "and training for open source software including QField and QGIS."
@@ -326,10 +347,10 @@ msgstr ""
 "développement et de la formation sur les logiciels libres, incluant QField "
 "et QGIS."
 
-#: ../../en/development/index.rst:199
+#: ../../en/development/index.rst:212
 msgid "API stability"
 msgstr "Stabilité de l'API"
 
-#: ../../en/development/index.rst:201
+#: ../../en/development/index.rst:214
 msgid "QField is currently not considered API stable."
 msgstr "QField n'est aujourd'hui pas considéré comme API stable"

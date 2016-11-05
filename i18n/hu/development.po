@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-27 18:10+0200\n"
+"POT-Creation-Date: 2016-11-05 11:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>, 2016\n"
 "Language-Team: Hungarian (https://www.transifex.com/opengisch/teams/38926/hu/)\n"
@@ -325,10 +325,31 @@ msgstr ""
 "mérőeszközeit."
 
 #: ../../en/development/index.rst:139
+msgid "Record Audio"
+msgstr ""
+
+#: ../../en/development/index.rst:141
+msgid ""
+"Ever wondered how you would write a lot of text when out in the field with a"
+" touch screen?"
+msgstr ""
+
+#: ../../en/development/index.rst:144
+msgid "Just don't!"
+msgstr ""
+
+#: ../../en/development/index.rst:146
+msgid ""
+"It would be amazing to have the possibility to have audio integration just "
+"like image integration. When back in the office, you could just type in the "
+"information on a regular keyboard."
+msgstr ""
+
+#: ../../en/development/index.rst:152
 msgid "[Your favorite feature]"
 msgstr "[Az Ön kedvenc funkciója]"
 
-#: ../../en/development/index.rst:141
+#: ../../en/development/index.rst:154
 msgid ""
 "You probably have plenty of ideas for other nice features. Please contact us"
 " and we can discuss the best approach to integrate this idea into QField or "
@@ -338,11 +359,11 @@ msgstr ""
 " kapcsolatot velünk és megbeszélhetjük a legjobb megoldást elképzelésének "
 "QField-be vagy egy származtatott alkalmazásba integrálására ."
 
-#: ../../en/development/index.rst:147
+#: ../../en/development/index.rst:160
 msgid "Funding"
 msgstr "Finanszírozás"
 
-#: ../../en/development/index.rst:149
+#: ../../en/development/index.rst:162
 msgid ""
 "The following oranizations have contributed to make QField what it currently"
 " is. We would like to warmly say: Thanks a lot!"
@@ -350,11 +371,11 @@ msgstr ""
 "Az alábbi szervezetek járultak hozzá ahhoz, hogy a QField a jelenlegi "
 "formájában létrejöhessen. Szeretnénk ezért hálás köszönetünket kifejezni!"
 
-#: ../../en/development/index.rst:188
+#: ../../en/development/index.rst:201
 msgid "Credits"
 msgstr "Köszönetnyilvánítás"
 
-#: ../../en/development/index.rst:190
+#: ../../en/development/index.rst:203
 msgid ""
 "QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
 "and training for open source software including QField and QGIS."
@@ -363,11 +384,11 @@ msgstr ""
 " képzési szolgáltatás nyújt nyílt forráskódú szoftverekhez, ideértve a "
 "QField-et és a QGIS-t."
 
-#: ../../en/development/index.rst:199
+#: ../../en/development/index.rst:212
 msgid "API stability"
 msgstr "API stabilitás"
 
-#: ../../en/development/index.rst:201
+#: ../../en/development/index.rst:214
 msgid "QField is currently not considered API stable."
 msgstr ""
 "A QField alkalmazásprogramozási felülete (API) jelenleg nem tekinthető "

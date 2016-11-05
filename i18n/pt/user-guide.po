@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
-# Maria Manuela Silva <manuela.silva@sky.com>, 2016
+# Manuela Silva <manuela.silva@sky.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 15:09+0200\n"
-"PO-Revision-Date: 2016-10-26 13:09+0000\n"
+"POT-Creation-Date: 2016-11-05 11:33+0100\n"
+"PO-Revision-Date: 2016-11-05 10:33+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Portuguese (http://www.transifex.com/opengisch/qfield-documentation/language/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -44,8 +44,8 @@ msgstr "Funcionalidades de identificação"
 
 #: ../../en/user-guide/index.rst:21
 msgid ""
-"A long press on a feature will identify it. Pressing the back button will "
-"close the identify window."
+"A tap on a feature will identify it. Pressing the back button will close the"
+" identify window."
 msgstr ""
 
 #: ../../en/user-guide/index.rst:24
