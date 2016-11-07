@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 11:33+0100\n"
-"PO-Revision-Date: 2016-11-05 10:33+0000\n"
+"POT-Creation-Date: 2016-11-07 09:47+0100\n"
+"PO-Revision-Date: 2016-11-06 20:44+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -145,15 +145,15 @@ msgstr "`Portuguese </pt>`_"
 
 #: ../../en/index.rst:78
 msgid "`Romanian </ro>`_"
-msgstr ""
+msgstr "`Rumänisch </ro>`_"
 
 #: ../../en/index.rst:80
 msgid "`Ukranian </uk>`_"
-msgstr ""
+msgstr "`Ukrainisch </uk>`_"
 
 #: ../../en/index.rst:83
 msgid "`Hungarian </hu>`_"
-msgstr ""
+msgstr "`Ungarisch </hu>`_"
 
 #: ../../en/index.rst:85
 msgid ""

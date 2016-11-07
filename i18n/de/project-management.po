@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 11:33+0100\n"
-"PO-Revision-Date: 2016-11-05 10:33+0000\n"
+"POT-Creation-Date: 2016-11-07 09:47+0100\n"
+"PO-Revision-Date: 2016-11-06 20:50+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:2
 msgid "Android: Special File Access Notes"
-msgstr ""
+msgstr "Android: Spezielle Anmerkungen zum Dateisystem"
 
 #: ../../en/project-management/android-data-structure.rst:5
 msgid "Custom SVG symbols and settings"
@@ -196,7 +196,7 @@ msgstr "QField hat keine Projektmanagement-Funktionen eingebaut. Das Projekt mus
 
 #: ../../en/project-management/index.rst:8
 msgid "Contents"
-msgstr ""
+msgstr "Inhalt"
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
@@ -222,36 +222,36 @@ msgstr "KBS der Ebene"
 
 #: ../../en/project-management/map-themes.rst:2
 msgid "Map Themes"
-msgstr ""
+msgstr "Kartenthemen"
 
 #: ../../en/project-management/map-themes.rst:4
 msgid ""
 "The beautiful thing about GIS is that maps are dynamic. Layers can "
 "individually be shown and hidden and information can be presented more or "
 "less prominently based on the task at hand."
-msgstr ""
+msgstr "Das Schöne an einem GIS ist, dass Karten dynamisch sind. Ebenen können individuell ein- und ausgeblendet werden und Informationen können - je nach Aufgabe - unterschiedlich dargestellt werden."
 
 #: ../../en/project-management/map-themes.rst:8
 msgid ""
 "This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
 "are for."
-msgstr ""
+msgstr "Dafür sind *Kartenthemen* (vor QGIS 3.0 *Sichtbarkeitsvoreinstellungen* genannt) da."
 
 #: ../../en/project-management/map-themes.rst:12
 msgid "Creating a Map Theme"
-msgstr ""
+msgstr "Ein Kartenthema erstellen"
 
 #: ../../en/project-management/map-themes.rst:14
 msgid "Creating a Map Theme in QGIS is a very simple task."
-msgstr ""
+msgstr "Ein Kartenthema zu erstellen ist eine sehr einfache Aufgabe."
 
-#: ../../en/project-management/map-themes.rst:16
+#: ../../en/project-management/map-themes.rst:22
 msgid "Style the map and layers to your requirements"
-msgstr ""
+msgstr "Die Karte und Ebenen den eigenen Bedürfnissen anpassen"
 
-#: ../../en/project-management/map-themes.rst:17
+#: ../../en/project-management/map-themes.rst:23
 msgid "Save it as a named Map Theme"
-msgstr ""
+msgstr "Die Ansicht als Kartenthema speichern"
 
 #: ../../en/project-management/portable-project.rst:2
 msgid "Portable Project"
@@ -330,11 +330,11 @@ msgstr "Diese Option wird direkt unterstützt. Wenn Sie gesetzt ist wird das For
 
 #: ../../en/project-management/vector-layers.rst:41
 msgid "Field widget"
-msgstr ""
+msgstr "Feldwidget"
 
 #: ../../en/project-management/vector-layers.rst:43
 msgid "The field widgets from QGIS are supported on a best effort basis."
-msgstr ""
+msgstr "Die Feldwidgets von QGIS werden nach besten Möglichkeiten unterstützt"
 
 #: ../../en/project-management/vector-layers.rst:50
 msgid "Field type"
@@ -425,17 +425,17 @@ msgstr "Attributfelder können Bedingungen haben. Bedingungen sind Ausdrücke, d
 #: ../../en/project-management/vector-layers.rst:96
 #: ../../en/project-management/vector-layers.rst:119
 msgid "Common use cases"
-msgstr ""
+msgstr "Übliche Anwendungsfälle"
 
 #: ../../en/project-management/vector-layers.rst:98
 msgid ""
 "You cannot enter an elevation value higher than the highest mountain in this"
 " country."
-msgstr ""
+msgstr "Es kann keine Höhe eingegeben werden, die höher ist als der höchste Berg in diesem Land."
 
 #: ../../en/project-management/vector-layers.rst:104
 msgid "It is required to fill in an identifier."
-msgstr ""
+msgstr "Es ist nötig, eine Bezeichnung einzugeben."
 
 #: ../../en/project-management/vector-layers.rst:111
 msgid "Default values"
@@ -451,21 +451,21 @@ msgstr "Felder können Standardwerte haben. Standardwerte werden automatisch in 
 
 #: ../../en/project-management/vector-layers.rst:121
 msgid "Insert the current date and time:"
-msgstr ""
+msgstr "Aktuelles Datum und Zeit einfüllen."
 
 #: ../../en/project-management/vector-layers.rst:127
 msgid "Insert the length of the digitized line:"
-msgstr ""
+msgstr "Die Länge der digitalisierten Linie einfügen:"
 
 #: ../../en/project-management/vector-layers.rst:133
 msgid "Configure global variables on the device and insert them."
-msgstr ""
+msgstr "Globale Variablen auf dem Gerät konfigurieren und verwenden."
 
 #: ../../en/project-management/vector-layers.rst:139
 msgid ""
 "If you want to assign a region code based on the location where a new "
 "feature is inserted, you can do so by using an aggregate expression:"
-msgstr ""
+msgstr "Falls ein neues Objekt ein Code entsprechend der Region, in der es digitalisiert wurde erhalten soll, kann dies mit einem aggregierten Ausdruck gemacht werden:"
 
 #: ../../en/project-management/vector-layers.rst:147
 msgid "Editable"

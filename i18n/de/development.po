@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 11:33+0100\n"
+"POT-Creation-Date: 2016-11-07 09:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>, 2016\n"
 "Language-Team: German (https://www.transifex.com/opengisch/teams/38926/de/)\n"
@@ -327,17 +327,19 @@ msgstr ""
 
 #: ../../en/development/index.rst:139
 msgid "Record Audio"
-msgstr ""
+msgstr "Audio-Aufnahmen"
 
 #: ../../en/development/index.rst:141
 msgid ""
 "Ever wondered how you would write a lot of text when out in the field with a"
 " touch screen?"
 msgstr ""
+"Wie soll am besten viel Text eingegeben werden mit einer Bildschirmtastatur "
+"auf einem Tablet?"
 
 #: ../../en/development/index.rst:144
 msgid "Just don't!"
-msgstr ""
+msgstr "Am Besten gar nicht!"
 
 #: ../../en/development/index.rst:146
 msgid ""
@@ -345,6 +347,9 @@ msgid ""
 "like image integration. When back in the office, you could just type in the "
 "information on a regular keyboard."
 msgstr ""
+"Das Diktaphon ist ein ausgezeichnetes Gerät um unkompliziert Notizen zu Objekten im Gelände zu machen. Jedes Tablet hat ein Mikrophon, das analog zur Kamera integriert werden könnte. \n"
+"\n"
+"Zurück im Büro können die gemachten Aufnahmen mit einer normalen Tastatur effizient eingetippt werden."
 
 #: ../../en/development/index.rst:152
 msgid "[Your favorite feature]"
