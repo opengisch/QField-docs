@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 11:33+0100\n"
-"PO-Revision-Date: 2016-11-05 10:33+0000\n"
+"POT-Creation-Date: 2016-11-08 14:31+0100\n"
+"PO-Revision-Date: 2016-11-08 13:31+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:2
 msgid "Android: Special File Access Notes"
-msgstr ""
+msgstr "Android: Observații referitoare la accesul la fișierele speciale"
 
 #: ../../en/project-management/android-data-structure.rst:5
 msgid "Custom SVG symbols and settings"
@@ -195,7 +195,7 @@ msgstr "QField nu dispune de un management integrat al proiectului. Trebuie să 
 
 #: ../../en/project-management/index.rst:8
 msgid "Contents"
-msgstr ""
+msgstr "Cuprins"
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
@@ -219,37 +219,41 @@ msgstr "Pentru vizualizare este utilizată reproiectarea din-zbor (OTF)"
 msgid "Layer CRS"
 msgstr "CRS-ul stratului"
 
-#: ../../en/project-management/map-themes.rst:2
-msgid "Map Themes"
+#: ../../en/project-management/map-themes.rst:4
+msgid "Configure Map Themes"
 msgstr ""
 
-#: ../../en/project-management/map-themes.rst:4
+#: ../../en/project-management/map-themes.rst:6
 msgid ""
 "The beautiful thing about GIS is that maps are dynamic. Layers can "
 "individually be shown and hidden and information can be presented more or "
 "less prominently based on the task at hand."
-msgstr ""
+msgstr "Marele avantaj al GIS este faptul că hărțile sunt dinamice. Straturile pot fi afișate și ascunse în mod individual, iar informațiile pot fi prezentate mai mult sau mai puțin vizibil, în funcție de sarcina de îndeplinit."
 
-#: ../../en/project-management/map-themes.rst:8
+#: ../../en/project-management/map-themes.rst:10
 msgid ""
 "This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
 "are for."
-msgstr ""
-
-#: ../../en/project-management/map-themes.rst:12
-msgid "Creating a Map Theme"
-msgstr ""
+msgstr "Iată la ce servesc *Temele Hărților* (înainte de QGIS 3.0, cunoscute sub numele de *Presetări de Vizibilitate*)."
 
 #: ../../en/project-management/map-themes.rst:14
-msgid "Creating a Map Theme in QGIS is a very simple task."
-msgstr ""
+msgid "Creating a Map Theme"
+msgstr "Crearea unei Teme de Hartă"
 
 #: ../../en/project-management/map-themes.rst:16
-msgid "Style the map and layers to your requirements"
-msgstr ""
+msgid "Creating a Map Theme in QGIS is a very simple task."
+msgstr "Crearea unei Teme de Hartă în QGIS reprezintă o activitate facilă."
 
-#: ../../en/project-management/map-themes.rst:17
+#: ../../en/project-management/map-themes.rst:24
+msgid "Style the map and layers to your requirements"
+msgstr "Stilizarea hărții și a straturilor conform cerințelor dumneavoastră"
+
+#: ../../en/project-management/map-themes.rst:25
 msgid "Save it as a named Map Theme"
+msgstr "Salvați sub un nume Tema Hărții"
+
+#: ../../en/project-management/map-themes.rst:26
+msgid "Load the project and your device and :ref:`change_map_theme`."
 msgstr ""
 
 #: ../../en/project-management/portable-project.rst:2
@@ -329,11 +333,11 @@ msgstr "Setarea de suprimare a formularului entității se aplică direct formul
 
 #: ../../en/project-management/vector-layers.rst:41
 msgid "Field widget"
-msgstr ""
+msgstr "Controalele grafice de tip câmp"
 
 #: ../../en/project-management/vector-layers.rst:43
 msgid "The field widgets from QGIS are supported on a best effort basis."
-msgstr ""
+msgstr "Controalele grafice de tip câmp din QGIS sunt permise, datorită unui efort susținut."
 
 #: ../../en/project-management/vector-layers.rst:50
 msgid "Field type"
@@ -424,17 +428,17 @@ msgstr "Câmpurilor atributelor li se pot atașa constrângeri. Constrângerile 
 #: ../../en/project-management/vector-layers.rst:96
 #: ../../en/project-management/vector-layers.rst:119
 msgid "Common use cases"
-msgstr ""
+msgstr "Cazuri obișnuite de utilizare"
 
 #: ../../en/project-management/vector-layers.rst:98
 msgid ""
 "You cannot enter an elevation value higher than the highest mountain in this"
 " country."
-msgstr ""
+msgstr "Nu puteți introduce o valoare cu o altitudine mai mare decât a celui mai înalt munte din această țară."
 
 #: ../../en/project-management/vector-layers.rst:104
 msgid "It is required to fill in an identifier."
-msgstr ""
+msgstr "Este necesar să introduceți un identificator."
 
 #: ../../en/project-management/vector-layers.rst:111
 msgid "Default values"
@@ -450,21 +454,21 @@ msgstr "Pentru câmpuri se pot configura valori implicite. Acestea vor fi automa
 
 #: ../../en/project-management/vector-layers.rst:121
 msgid "Insert the current date and time:"
-msgstr ""
+msgstr "Introduceți data și ora curente:"
 
 #: ../../en/project-management/vector-layers.rst:127
 msgid "Insert the length of the digitized line:"
-msgstr ""
+msgstr "Inserați lungimea liniei digitizate:"
 
 #: ../../en/project-management/vector-layers.rst:133
 msgid "Configure global variables on the device and insert them."
-msgstr ""
+msgstr "Configurați variabilele globale ale dispozitivului și introduceți-le."
 
 #: ../../en/project-management/vector-layers.rst:139
 msgid ""
 "If you want to assign a region code based on the location where a new "
 "feature is inserted, you can do so by using an aggregate expression:"
-msgstr ""
+msgstr "În cazul în care doriți să alocați un cod de regiune, în funcție de locația din care se introduce o entitate nouă, puteți face acest lucru prin utilizarea unei expresii de agregare:"
 
 #: ../../en/project-management/vector-layers.rst:147
 msgid "Editable"

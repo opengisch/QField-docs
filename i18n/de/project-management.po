@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-07 09:47+0100\n"
-"PO-Revision-Date: 2016-11-06 20:50+0000\n"
+"POT-Creation-Date: 2016-11-08 14:46+0100\n"
+"PO-Revision-Date: 2016-11-08 13:38+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -220,38 +220,42 @@ msgstr "Spontanreprojektion (SRP) wird für die Anzeige benutzt"
 msgid "Layer CRS"
 msgstr "KBS der Ebene"
 
-#: ../../en/project-management/map-themes.rst:2
-msgid "Map Themes"
-msgstr "Kartenthemen"
-
 #: ../../en/project-management/map-themes.rst:4
+msgid "Configure Map Themes"
+msgstr "Das Kartenthema Konfigurieren"
+
+#: ../../en/project-management/map-themes.rst:6
 msgid ""
 "The beautiful thing about GIS is that maps are dynamic. Layers can "
 "individually be shown and hidden and information can be presented more or "
 "less prominently based on the task at hand."
 msgstr "Das Schöne an einem GIS ist, dass Karten dynamisch sind. Ebenen können individuell ein- und ausgeblendet werden und Informationen können - je nach Aufgabe - unterschiedlich dargestellt werden."
 
-#: ../../en/project-management/map-themes.rst:8
+#: ../../en/project-management/map-themes.rst:10
 msgid ""
 "This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
 "are for."
 msgstr "Dafür sind *Kartenthemen* (vor QGIS 3.0 *Sichtbarkeitsvoreinstellungen* genannt) da."
 
-#: ../../en/project-management/map-themes.rst:12
+#: ../../en/project-management/map-themes.rst:14
 msgid "Creating a Map Theme"
 msgstr "Ein Kartenthema erstellen"
 
-#: ../../en/project-management/map-themes.rst:14
+#: ../../en/project-management/map-themes.rst:16
 msgid "Creating a Map Theme in QGIS is a very simple task."
 msgstr "Ein Kartenthema zu erstellen ist eine sehr einfache Aufgabe."
 
-#: ../../en/project-management/map-themes.rst:22
+#: ../../en/project-management/map-themes.rst:24
 msgid "Style the map and layers to your requirements"
 msgstr "Die Karte und Ebenen den eigenen Bedürfnissen anpassen"
 
-#: ../../en/project-management/map-themes.rst:23
+#: ../../en/project-management/map-themes.rst:25
 msgid "Save it as a named Map Theme"
 msgstr "Die Ansicht als Kartenthema speichern"
+
+#: ../../en/project-management/map-themes.rst:26
+msgid "Load the project and your device and :ref:`change_map_theme`."
+msgstr "Das Projekt auf dem Gerät laden und :ref:`change_map_theme`."
 
 #: ../../en/project-management/portable-project.rst:2
 msgid "Portable Project"

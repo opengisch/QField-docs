@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-07 09:47+0100\n"
+"POT-Creation-Date: 2016-11-08 14:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Sorin Călinică <scalinica@gmail.com>, 2016\n"
 "Language-Team: Romanian (https://www.transifex.com/opengisch/teams/38926/ro/)\n"
@@ -330,17 +330,19 @@ msgstr ""
 
 #: ../../en/development/index.rst:139
 msgid "Record Audio"
-msgstr ""
+msgstr "Înregistrare Audio"
 
 #: ../../en/development/index.rst:141
 msgid ""
 "Ever wondered how you would write a lot of text when out in the field with a"
 " touch screen?"
 msgstr ""
+"V-ați întrebat vreodată cum ar fi să introduceți o mulțime de text, cu "
+"ajutorul ecranului tactil, atunci când va aflați în teren?"
 
 #: ../../en/development/index.rst:144
 msgid "Just don't!"
-msgstr ""
+msgstr "Pur și simplu nu!"
 
 #: ../../en/development/index.rst:146
 msgid ""
@@ -348,6 +350,9 @@ msgid ""
 "like image integration. When back in the office, you could just type in the "
 "information on a regular keyboard."
 msgstr ""
+"Ar fi uimitor să existe posibilitatea de a avea integrare audio, similar "
+"integrării imaginii. La revenirea la birou, ați putea doar să tastați în "
+"informațiile, folosind o tastatură obișnuită."
 
 #: ../../en/development/index.rst:152
 msgid "[Your favorite feature]"

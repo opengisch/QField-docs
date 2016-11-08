@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 11:33+0100\n"
-"PO-Revision-Date: 2016-11-05 10:33+0000\n"
+"POT-Creation-Date: 2016-11-08 14:31+0100\n"
+"PO-Revision-Date: 2016-11-08 13:31+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,7 @@ msgstr "Identificarea entităților"
 msgid ""
 "A tap on a feature will identify it. Pressing the back button will close the"
 " identify window."
-msgstr ""
+msgstr "O apăsare scurtă pe o entitate va conduce la identificarea ei. Prin apăsarea butonului de revenire, fereastra de identificare se va închide."
 
 #: ../../en/user-guide/index.rst:24
 msgid "Exceptions to identified layers"
@@ -152,3 +152,20 @@ msgstr "Ștergerea entităților este posibilă doar în modul de digitizare."
 #: ../../en/user-guide/index.rst:78
 msgid "To delete a feature, identify it first and tap the trash icon."
 msgstr "Pentru a șterge o entitate, identificați mai întâi și atingeți pictograma coșului de gunoi."
+
+#: ../../en/user-guide/map-themes.rst:4
+msgid "Change the active Map Theme"
+msgstr ""
+
+#: ../../en/user-guide/map-themes.rst:6
+msgid "Switching Map Themes is possible from the Dashboard."
+msgstr ""
+
+#: ../../en/user-guide/map-themes.rst:8
+msgid "Use the *Map Themes* combobox to chose the active theme."
+msgstr ""
+
+#: ../../en/user-guide/map-themes.rst:19
+msgid ""
+"The combo box is only available if you did :ref:`configure_map_themes`."
+msgstr ""

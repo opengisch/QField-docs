@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 11:33+0100\n"
-"PO-Revision-Date: 2016-11-05 10:33+0000\n"
+"POT-Creation-Date: 2016-11-08 14:31+0100\n"
+"PO-Revision-Date: 2016-11-08 13:31+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -221,37 +221,41 @@ msgstr "Utilízase a reproxección 'sobre a marcha' para a visualización"
 msgid "Layer CRS"
 msgstr "SRC da capa"
 
-#: ../../en/project-management/map-themes.rst:2
-msgid "Map Themes"
+#: ../../en/project-management/map-themes.rst:4
+msgid "Configure Map Themes"
 msgstr ""
 
-#: ../../en/project-management/map-themes.rst:4
+#: ../../en/project-management/map-themes.rst:6
 msgid ""
 "The beautiful thing about GIS is that maps are dynamic. Layers can "
 "individually be shown and hidden and information can be presented more or "
 "less prominently based on the task at hand."
 msgstr ""
 
-#: ../../en/project-management/map-themes.rst:8
+#: ../../en/project-management/map-themes.rst:10
 msgid ""
 "This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
 "are for."
 msgstr ""
 
-#: ../../en/project-management/map-themes.rst:12
+#: ../../en/project-management/map-themes.rst:14
 msgid "Creating a Map Theme"
 msgstr ""
 
-#: ../../en/project-management/map-themes.rst:14
+#: ../../en/project-management/map-themes.rst:16
 msgid "Creating a Map Theme in QGIS is a very simple task."
 msgstr ""
 
-#: ../../en/project-management/map-themes.rst:16
+#: ../../en/project-management/map-themes.rst:24
 msgid "Style the map and layers to your requirements"
 msgstr ""
 
-#: ../../en/project-management/map-themes.rst:17
+#: ../../en/project-management/map-themes.rst:25
 msgid "Save it as a named Map Theme"
+msgstr ""
+
+#: ../../en/project-management/map-themes.rst:26
+msgid "Load the project and your device and :ref:`change_map_theme`."
 msgstr ""
 
 #: ../../en/project-management/portable-project.rst:2

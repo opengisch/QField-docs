@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-07 09:47+0100\n"
-"PO-Revision-Date: 2016-11-06 20:40+0000\n"
+"POT-Creation-Date: 2016-11-08 14:38+0100\n"
+"PO-Revision-Date: 2016-11-08 13:38+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -153,3 +153,20 @@ msgstr "Das Löschen von Objekten ist nur im Digitalisiermodus möglich."
 #: ../../en/user-guide/index.rst:78
 msgid "To delete a feature, identify it first and tap the trash icon."
 msgstr "Um ein Objekt zu löschen muss es zuerst identifiziert werden und dann mit einem Klick auf den Papierkorb gelöscht werden."
+
+#: ../../en/user-guide/map-themes.rst:4
+msgid "Change the active Map Theme"
+msgstr "Das aktive Kartenthema wechseln"
+
+#: ../../en/user-guide/map-themes.rst:6
+msgid "Switching Map Themes is possible from the Dashboard."
+msgstr "Das Kartenthema kann im Dashboard gewechselt werden."
+
+#: ../../en/user-guide/map-themes.rst:8
+msgid "Use the *Map Themes* combobox to chose the active theme."
+msgstr "Die Auswahlliste *Kartenthemen* wird dazu verwendet, das aktive Kartenthema zu ändern."
+
+#: ../../en/user-guide/map-themes.rst:19
+msgid ""
+"The combo box is only available if you did :ref:`configure_map_themes`."
+msgstr "Die Auswahlliste ist nur verfügbar, falls vorher das Kartenthema konfiguriert wurde (:ref:`configure_map_themes`)."

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 11:33+0100\n"
-"PO-Revision-Date: 2016-11-05 10:33+0000\n"
+"POT-Creation-Date: 2016-11-08 14:31+0100\n"
+"PO-Revision-Date: 2016-11-08 13:31+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Polish (http://www.transifex.com/opengisch/qfield-documentation/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -150,4 +150,21 @@ msgstr ""
 
 #: ../../en/user-guide/index.rst:78
 msgid "To delete a feature, identify it first and tap the trash icon."
+msgstr ""
+
+#: ../../en/user-guide/map-themes.rst:4
+msgid "Change the active Map Theme"
+msgstr ""
+
+#: ../../en/user-guide/map-themes.rst:6
+msgid "Switching Map Themes is possible from the Dashboard."
+msgstr ""
+
+#: ../../en/user-guide/map-themes.rst:8
+msgid "Use the *Map Themes* combobox to chose the active theme."
+msgstr ""
+
+#: ../../en/user-guide/map-themes.rst:19
+msgid ""
+"The combo box is only available if you did :ref:`configure_map_themes`."
 msgstr ""
