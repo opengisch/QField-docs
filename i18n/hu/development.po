@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 14:46+0100\n"
+"POT-Creation-Date: 2016-11-11 10:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>, 2016\n"
 "Language-Team: Hungarian (https://www.transifex.com/opengisch/teams/38926/hu/)\n"
@@ -333,10 +333,12 @@ msgid ""
 "Ever wondered how you would write a lot of text when out in the field with a"
 " touch screen?"
 msgstr ""
+"Elgondolkozott már azon, hogyan írna le egy csomó szöveget a terepen egy "
+"érintőképernyővel?"
 
 #: ../../en/development/index.rst:144
 msgid "Just don't!"
-msgstr ""
+msgstr "Ne csinálja!"
 
 #: ../../en/development/index.rst:146
 msgid ""
@@ -344,6 +346,9 @@ msgid ""
 "like image integration. When back in the office, you could just type in the "
 "information on a regular keyboard."
 msgstr ""
+"Csodálatos lenne a lehetőség a hangfelvétel integrálására, a képekhez "
+"hasonló módon. Amikor visszatér az irodába, akkor csak begépeli az "
+"információkat a rendes billentyűzeten."
 
 #: ../../en/development/index.rst:152
 msgid "[Your favorite feature]"

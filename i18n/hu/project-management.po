@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 14:31+0100\n"
-"PO-Revision-Date: 2016-11-08 13:31+0000\n"
+"POT-Creation-Date: 2016-11-11 10:54+0100\n"
+"PO-Revision-Date: 2016-11-11 09:54+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:2
 msgid "Android: Special File Access Notes"
-msgstr ""
+msgstr "Android: Speciális fájl hozzáférés megjegyzések"
 
 #: ../../en/project-management/android-data-structure.rst:5
 msgid "Custom SVG symbols and settings"
@@ -67,12 +67,12 @@ msgid "Data Format"
 msgstr "Adatformátum"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/vector-layers.rst:50
+#: ../../en/project-management/vector-layers.rst:52
 msgid "Support"
 msgstr "Támogatás"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/vector-layers.rst:50
+#: ../../en/project-management/vector-layers.rst:52
 msgid "Notes"
 msgstr "Megjegyzés"
 
@@ -86,11 +86,11 @@ msgstr "SpatiaLite"
 #: ../../en/project-management/dataformat.rst:23
 #: ../../en/project-management/dataformat.rst:25
 #: ../../en/project-management/dataformat.rst:27
-#: ../../en/project-management/vector-layers.rst:52
-#: ../../en/project-management/vector-layers.rst:56
+#: ../../en/project-management/vector-layers.rst:54
 #: ../../en/project-management/vector-layers.rst:58
 #: ../../en/project-management/vector-layers.rst:60
-#: ../../en/project-management/vector-layers.rst:66
+#: ../../en/project-management/vector-layers.rst:62
+#: ../../en/project-management/vector-layers.rst:68
 msgid ":yay:`✔`"
 msgstr ":yay:`✔`"
 
@@ -123,7 +123,7 @@ msgid "Tiff"
 msgstr "TIF"
 
 #: ../../en/project-management/dataformat.rst:29
-#: ../../en/project-management/vector-layers.rst:62
+#: ../../en/project-management/vector-layers.rst:64
 msgid ":moreorless:`~`"
 msgstr ":moreorless:`~`"
 
@@ -137,7 +137,7 @@ msgstr "ECW"
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
-#: ../../en/project-management/vector-layers.rst:68
+#: ../../en/project-management/vector-layers.rst:70
 msgid ":nay:`✘`"
 msgstr ":nay:`✘`"
 
@@ -196,7 +196,7 @@ msgstr "A QField nem rendelkezik beépített projekt kezelővel. A projektjét e
 
 #: ../../en/project-management/index.rst:8
 msgid "Contents"
-msgstr ""
+msgstr "Tartalom"
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
@@ -222,14 +222,14 @@ msgstr "Réteg CRS"
 
 #: ../../en/project-management/map-themes.rst:4
 msgid "Configure Map Themes"
-msgstr ""
+msgstr "Térkép témák konfigurálása"
 
 #: ../../en/project-management/map-themes.rst:6
 msgid ""
 "The beautiful thing about GIS is that maps are dynamic. Layers can "
 "individually be shown and hidden and information can be presented more or "
 "less prominently based on the task at hand."
-msgstr ""
+msgstr "Gyönyörű a GIS-ben, hogy a térképek dinamikusak. A rétegek egyenként megjeleníthetőek és elrejthetőek, az információt a feladathoz megfelelően többé-kevésbé jól bemutatni."
 
 #: ../../en/project-management/map-themes.rst:10
 msgid ""
@@ -315,94 +315,100 @@ msgid ""
 ":menuselection:`Vector Layer Properties --> Display` page."
 msgstr "A QField-ben az objektumokat névvel azonosítjuk. Ezt a nevet generáló kifejezést a QGIS-ben az attribútum tábla megnyitásával és űrlap nézetre váltással definiálhatjuk. Válassza a megfelelő mező nevet vagy egy kifejezést az ott található listából. A QGIS 3-tól ez közvetlenül megtehető a :menuselection:`Vektor réteg tulajdonságok -> Megjelenítés` oldalon."
 
-#: ../../en/project-management/vector-layers.rst:29
+#: ../../en/project-management/vector-layers.rst:28
+msgid ""
+"The display expression will be used to represent features with an "
+"identification string throughout QField."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:31
 msgid "Forms and Fields"
 msgstr "Űrlapok és Mezők"
 
-#: ../../en/project-management/vector-layers.rst:31
+#: ../../en/project-management/vector-layers.rst:33
 msgid "QField creates forms similar to, but not equal to QGIS."
 msgstr "A QField által létrehozott űrlapok hasonlóak, de nem azonosak a QGIS űrlapokkal."
 
-#: ../../en/project-management/vector-layers.rst:34
+#: ../../en/project-management/vector-layers.rst:36
 msgid "Suppress Feature Form"
 msgstr "Elem űrlap tiltása"
 
-#: ../../en/project-management/vector-layers.rst:36
+#: ../../en/project-management/vector-layers.rst:38
 msgid ""
 "The setting suppress feature form is directly applied to the QField form."
 msgstr "Az elem űrlap kikapcsolása beállítást közvetlenül alkalmazzuk a QFiled űrlapra."
 
-#: ../../en/project-management/vector-layers.rst:41
+#: ../../en/project-management/vector-layers.rst:43
 msgid "Field widget"
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:43
+#: ../../en/project-management/vector-layers.rst:45
 msgid "The field widgets from QGIS are supported on a best effort basis."
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:50
+#: ../../en/project-management/vector-layers.rst:52
 msgid "Field type"
 msgstr "Mező típus"
 
-#: ../../en/project-management/vector-layers.rst:52
+#: ../../en/project-management/vector-layers.rst:54
 msgid "Text Edit"
 msgstr "Szövegszerkesztés"
 
-#: ../../en/project-management/vector-layers.rst:52
+#: ../../en/project-management/vector-layers.rst:54
 msgid "HTML is not supported"
 msgstr "A HTML nem támogatott"
 
-#: ../../en/project-management/vector-layers.rst:53
+#: ../../en/project-management/vector-layers.rst:55
 msgid "Numerical input is enforced based on the type."
 msgstr "A numerikus adatbevitel a típusnak megfelelően ellenőrizzük."
 
-#: ../../en/project-management/vector-layers.rst:56
+#: ../../en/project-management/vector-layers.rst:58
 msgid "Check Box"
 msgstr "Jelölőnégyzet"
 
-#: ../../en/project-management/vector-layers.rst:58
+#: ../../en/project-management/vector-layers.rst:60
 msgid "Value Map"
 msgstr "Érték térkép"
 
-#: ../../en/project-management/vector-layers.rst:60
+#: ../../en/project-management/vector-layers.rst:62
 msgid "Hidden"
 msgstr "Rejtett"
 
-#: ../../en/project-management/vector-layers.rst:62
+#: ../../en/project-management/vector-layers.rst:64
 msgid "External Resource"
 msgstr "Külső forrás"
 
-#: ../../en/project-management/vector-layers.rst:62
+#: ../../en/project-management/vector-layers.rst:64
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
 msgstr "Ezt a mező a fényképezőgép integrációhoz kapcsolódik. Még csak képek jeleníthetők meg. :ref:`make_it_grow`"
 
-#: ../../en/project-management/vector-layers.rst:66
+#: ../../en/project-management/vector-layers.rst:68
 msgid "Date Time"
 msgstr "Dátum idő"
 
-#: ../../en/project-management/vector-layers.rst:68
+#: ../../en/project-management/vector-layers.rst:70
 msgid "Others"
 msgstr "Továbbiak"
 
-#: ../../en/project-management/vector-layers.rst:68
+#: ../../en/project-management/vector-layers.rst:70
 msgid ":ref:`make_it_grow`"
 msgstr ":ref:`make_it_grow`"
 
-#: ../../en/project-management/vector-layers.rst:73
+#: ../../en/project-management/vector-layers.rst:75
 msgid "Drag and drop designer forms"
 msgstr "Húzd és ejtsd tervező űrlapok"
 
-#: ../../en/project-management/vector-layers.rst:75
+#: ../../en/project-management/vector-layers.rst:77
 msgid "Groups and Tabs from Drag and Drop designer forms are supported."
 msgstr "A csoportokat és a füleket támogatjuk a Húzd és ejtsd tervező űrlapokról."
 
-#: ../../en/project-management/vector-layers.rst:78
+#: ../../en/project-management/vector-layers.rst:80
 msgid "Conditional visibility"
 msgstr "Feltételes láthatóság"
 
-#: ../../en/project-management/vector-layers.rst:80
+#: ../../en/project-management/vector-layers.rst:82
 msgid ""
 "Groups can be hidden based on an expression. This is useful when certain "
 "attributes are only required under certain conditions. As an example imagine"
@@ -413,11 +419,17 @@ msgid ""
 "diseases will be available to the user."
 msgstr "Egy kifejezés alapján a csoportok elrejthetők. Ez akkor hasznos, ha bizonyos körülmények között csak bizonyos attribútumokra van szükség. Példaként képzeljük el, hogy fákat térképezünk. Néhány közülük beteg lehet és van egy lehetséges betegségek listánk. Hogy ne zsúfoljuk tele mezőkkel az űrlapot, készítsünk egy csoportot és állítsuk be a láthatósági kifejezést a \"betegségekre\". Adjon hozzá egy betegség jelölőnégyzetet. A betegségek listája csak akkor jelenik meg a felhasználónak, ha a jelölőnégyzetet kiválasztotta."
 
-#: ../../en/project-management/vector-layers.rst:88
+#: ../../en/project-management/vector-layers.rst:95
+msgid ""
+"Configuration of a group box that will only be shown if the checkbox "
+"\"measures_taken\" is checked."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:98
 msgid "Constraints"
 msgstr "Korlátozások"
 
-#: ../../en/project-management/vector-layers.rst:90
+#: ../../en/project-management/vector-layers.rst:100
 msgid ""
 "Attribute fields can have constraints attached. Constraints are expressions "
 "that needs to evaluate to :code:`True` (or :code:`1`) in order to be able to"
@@ -426,26 +438,30 @@ msgid ""
 "not satisfied."
 msgstr "Az attribútum mezőkhöz korlatozásokat rendelhetünk. A korlátozások kifejezések melyeknek :code:`True` (vagy :code:`1`) értéket kell adniuk, hogy az űrlapot el tudjuk menteni. A korlátozásokat mezőnként állíthatjuk be és egy leírást adhatunk meg mellé, melyet a felhasználó akkor lát, ha a korlátozó feltétel nem teljesül."
 
-#: ../../en/project-management/vector-layers.rst:96
-#: ../../en/project-management/vector-layers.rst:119
-msgid "Common use cases"
+#: ../../en/project-management/vector-layers.rst:111
+msgid "Configuration of a constraint within a range"
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:98
+#: ../../en/project-management/vector-layers.rst:114
+#: ../../en/project-management/vector-layers.rst:145
+msgid "Common use cases"
+msgstr "Általános felhasználási esetek"
+
+#: ../../en/project-management/vector-layers.rst:116
 msgid ""
 "You cannot enter an elevation value higher than the highest mountain in this"
 " country."
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:104
+#: ../../en/project-management/vector-layers.rst:122
 msgid "It is required to fill in an identifier."
-msgstr ""
+msgstr "Egy azonosító kitöltése kötelező."
 
-#: ../../en/project-management/vector-layers.rst:111
+#: ../../en/project-management/vector-layers.rst:129
 msgid "Default values"
 msgstr "Alapértelmezett értékek"
 
-#: ../../en/project-management/vector-layers.rst:113
+#: ../../en/project-management/vector-layers.rst:131
 msgid ""
 "Fields can have default values configured. Default values are inserted into "
 "the attribute form when digitizing a new feature. They are visible to the "
@@ -453,37 +469,41 @@ msgid ""
 " on the geometry or expression variables."
 msgstr "A mezőkre alapértelmezett értéket állíthatunk be. Az alapértelmezett értékek az új elem digitalizálásánál jelennek meg az attribútum űrlapban. A felhasználó látja azokat és módosíthatja, ha szerkeszthető a mező. Az alapértelmezett értékek geometria vagy kifejezés változóktól függhetnek."
 
-#: ../../en/project-management/vector-layers.rst:121
+#: ../../en/project-management/vector-layers.rst:142
+msgid "Configuration of a formatted date as default value"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:147
 msgid "Insert the current date and time:"
-msgstr ""
+msgstr "Adja meg az aktuális dátumot és időt:"
 
-#: ../../en/project-management/vector-layers.rst:127
+#: ../../en/project-management/vector-layers.rst:153
 msgid "Insert the length of the digitized line:"
-msgstr ""
+msgstr "Adja meg a digitalizált vonal hosszát:"
 
-#: ../../en/project-management/vector-layers.rst:133
+#: ../../en/project-management/vector-layers.rst:159
 msgid "Configure global variables on the device and insert them."
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:139
+#: ../../en/project-management/vector-layers.rst:165
 msgid ""
 "If you want to assign a region code based on the location where a new "
 "feature is inserted, you can do so by using an aggregate expression:"
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:147
+#: ../../en/project-management/vector-layers.rst:173
 msgid "Editable"
 msgstr "Szerkeszthető"
 
-#: ../../en/project-management/vector-layers.rst:149
+#: ../../en/project-management/vector-layers.rst:175
 msgid "The editable flag of fields is respected."
 msgstr "A mezők szerkeszthetőségének beállítását figyelembe vesszük."
 
-#: ../../en/project-management/vector-layers.rst:152
+#: ../../en/project-management/vector-layers.rst:178
 msgid "Remember last values"
 msgstr "Utolsó értékek megjegyzése"
 
-#: ../../en/project-management/vector-layers.rst:154
+#: ../../en/project-management/vector-layers.rst:180
 msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."

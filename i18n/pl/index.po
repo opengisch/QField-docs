@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 11:33+0100\n"
-"PO-Revision-Date: 2016-11-05 10:33+0000\n"
+"POT-Creation-Date: 2016-11-11 10:54+0100\n"
+"PO-Revision-Date: 2016-11-11 09:54+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Polish (http://www.transifex.com/opengisch/qfield-documentation/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -118,35 +118,35 @@ msgid "The documentation is available in several languages"
 msgstr ""
 
 #: ../../en/index.rst:66
-msgid "`Catalan </ca>`_"
+msgid "`Catalan </docs/ca>`_"
 msgstr ""
 
 #: ../../en/index.rst:68
-msgid "`Deutsch </de>`_"
+msgid "`Deutsch </docs/de>`_"
 msgstr ""
 
 #: ../../en/index.rst:70
-msgid "`English </en>`_"
+msgid "`English </docs/en>`_"
 msgstr ""
 
 #: ../../en/index.rst:72
-msgid "`Français </fr>`_"
+msgid "`Français </docs/fr>`_"
 msgstr ""
 
 #: ../../en/index.rst:74
-msgid "`Galician </gl>`_"
+msgid "`Galician </docs/gl>`_"
 msgstr ""
 
 #: ../../en/index.rst:76
-msgid "`Portuguese </pt>`_"
+msgid "`Portuguese </docs/pt>`_"
 msgstr ""
 
 #: ../../en/index.rst:78
-msgid "`Romanian </ro>`_"
+msgid "`Romanian </docs/ro>`_"
 msgstr ""
 
 #: ../../en/index.rst:80
-msgid "`Ukranian </uk>`_"
+msgid "`Ukranian </docs/uk>`_"
 msgstr ""
 
 #: ../../en/index.rst:83

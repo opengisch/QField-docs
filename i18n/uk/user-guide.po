@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 14:31+0100\n"
-"PO-Revision-Date: 2016-11-08 13:31+0000\n"
+"POT-Creation-Date: 2016-11-11 10:54+0100\n"
+"PO-Revision-Date: 2016-11-11 09:54+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/opengisch/qfield-documentation/language/uk/)\n"
 "MIME-Version: 1.0\n"
@@ -167,4 +167,33 @@ msgstr ""
 #: ../../en/user-guide/map-themes.rst:19
 msgid ""
 "The combo box is only available if you did :ref:`configure_map_themes`."
+msgstr ""
+
+#: ../../en/user-guide/variables.rst:4
+msgid "Global variables"
+msgstr ""
+
+#: ../../en/user-guide/variables.rst:6
+msgid ""
+"Variables are used in QField and QGIS to dynamically set values based on the"
+" current project file, the layer or the system. They can be used for "
+"styling, setting default values for fields and much more."
+msgstr ""
+
+#: ../../en/user-guide/variables.rst:10
+msgid ""
+"To configure a device-specific variable, open the settings and click the "
+"\"Global Variables\" tab."
+msgstr ""
+
+#: ../../en/user-guide/variables.rst:19
+msgid ""
+"Configuration of two new global variables in addition to the pre-defined "
+"system variables."
+msgstr ""
+
+#: ../../en/user-guide/variables.rst:22
+msgid ""
+"On the variable page, you can see predefined variables. To add new "
+"variables, click on the empty cell at the bottom and write the content."
 msgstr ""

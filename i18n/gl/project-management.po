@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 14:31+0100\n"
-"PO-Revision-Date: 2016-11-08 13:31+0000\n"
+"POT-Creation-Date: 2016-11-11 10:54+0100\n"
+"PO-Revision-Date: 2016-11-11 09:54+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -68,12 +68,12 @@ msgid "Data Format"
 msgstr "Formato dos Datos"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/vector-layers.rst:50
+#: ../../en/project-management/vector-layers.rst:52
 msgid "Support"
 msgstr "Asistencia"
 
 #: ../../en/project-management/dataformat.rst:15
-#: ../../en/project-management/vector-layers.rst:50
+#: ../../en/project-management/vector-layers.rst:52
 msgid "Notes"
 msgstr "Notas"
 
@@ -87,11 +87,11 @@ msgstr "SpatiaLite"
 #: ../../en/project-management/dataformat.rst:23
 #: ../../en/project-management/dataformat.rst:25
 #: ../../en/project-management/dataformat.rst:27
-#: ../../en/project-management/vector-layers.rst:52
-#: ../../en/project-management/vector-layers.rst:56
+#: ../../en/project-management/vector-layers.rst:54
 #: ../../en/project-management/vector-layers.rst:58
 #: ../../en/project-management/vector-layers.rst:60
-#: ../../en/project-management/vector-layers.rst:66
+#: ../../en/project-management/vector-layers.rst:62
+#: ../../en/project-management/vector-layers.rst:68
 msgid ":yay:`✔`"
 msgstr ":yay:`✔`"
 
@@ -124,7 +124,7 @@ msgid "Tiff"
 msgstr "Tiff"
 
 #: ../../en/project-management/dataformat.rst:29
-#: ../../en/project-management/vector-layers.rst:62
+#: ../../en/project-management/vector-layers.rst:64
 msgid ":moreorless:`~`"
 msgstr ":moreorless:`~`"
 
@@ -138,7 +138,7 @@ msgstr "ECW"
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
-#: ../../en/project-management/vector-layers.rst:68
+#: ../../en/project-management/vector-layers.rst:70
 msgid ":nay:`✘`"
 msgstr ":nay:`✘`"
 
@@ -316,94 +316,100 @@ msgid ""
 ":menuselection:`Vector Layer Properties --> Display` page."
 msgstr "En QField, os obxectos identifícanse cun nome. A expresión para xerar este nome pode definirse abrindo a táboa de atributos e QGIS e alternar á vista de formulario. Escolla alí o campo apropiado ou unha expresión na lista. Comezando dende QGIS 3, isto pode facerse directamente dende a páxina :menuselection:`Propiedades de Capa Vectorial --> Visualizar`."
 
-#: ../../en/project-management/vector-layers.rst:29
+#: ../../en/project-management/vector-layers.rst:28
+msgid ""
+"The display expression will be used to represent features with an "
+"identification string throughout QField."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:31
 msgid "Forms and Fields"
 msgstr "Formularios e Campos"
 
-#: ../../en/project-management/vector-layers.rst:31
+#: ../../en/project-management/vector-layers.rst:33
 msgid "QField creates forms similar to, but not equal to QGIS."
 msgstr "QField crea formularios de forma similar, pero non igual a QGIS."
 
-#: ../../en/project-management/vector-layers.rst:34
+#: ../../en/project-management/vector-layers.rst:36
 msgid "Suppress Feature Form"
 msgstr "Eliminar Formulario de Entidade"
 
-#: ../../en/project-management/vector-layers.rst:36
+#: ../../en/project-management/vector-layers.rst:38
 msgid ""
 "The setting suppress feature form is directly applied to the QField form."
 msgstr "A configuración suprimir formulario de entidade aplícase directamente ó formulario de QField."
 
-#: ../../en/project-management/vector-layers.rst:41
+#: ../../en/project-management/vector-layers.rst:43
 msgid "Field widget"
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:43
+#: ../../en/project-management/vector-layers.rst:45
 msgid "The field widgets from QGIS are supported on a best effort basis."
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:50
+#: ../../en/project-management/vector-layers.rst:52
 msgid "Field type"
 msgstr "Tipo de campo"
 
-#: ../../en/project-management/vector-layers.rst:52
+#: ../../en/project-management/vector-layers.rst:54
 msgid "Text Edit"
 msgstr "Edición de texto"
 
-#: ../../en/project-management/vector-layers.rst:52
+#: ../../en/project-management/vector-layers.rst:54
 msgid "HTML is not supported"
 msgstr "O HTML non está admitido"
 
-#: ../../en/project-management/vector-layers.rst:53
+#: ../../en/project-management/vector-layers.rst:55
 msgid "Numerical input is enforced based on the type."
 msgstr "Aplícase a introdución numérica en función do tipo."
 
-#: ../../en/project-management/vector-layers.rst:56
+#: ../../en/project-management/vector-layers.rst:58
 msgid "Check Box"
 msgstr "Caixa de selección"
 
-#: ../../en/project-management/vector-layers.rst:58
+#: ../../en/project-management/vector-layers.rst:60
 msgid "Value Map"
 msgstr "Mapa de valores"
 
-#: ../../en/project-management/vector-layers.rst:60
+#: ../../en/project-management/vector-layers.rst:62
 msgid "Hidden"
 msgstr "Oculto"
 
-#: ../../en/project-management/vector-layers.rst:62
+#: ../../en/project-management/vector-layers.rst:64
 msgid "External Resource"
 msgstr "Recurso externo"
 
-#: ../../en/project-management/vector-layers.rst:62
+#: ../../en/project-management/vector-layers.rst:64
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
 msgstr "Este campo combínase coa integración da cámara. Ata o de agora só poden verse imaxes. :ref:`faino_medrar`"
 
-#: ../../en/project-management/vector-layers.rst:66
+#: ../../en/project-management/vector-layers.rst:68
 msgid "Date Time"
 msgstr "Data Hora"
 
-#: ../../en/project-management/vector-layers.rst:68
+#: ../../en/project-management/vector-layers.rst:70
 msgid "Others"
 msgstr "Outros"
 
-#: ../../en/project-management/vector-layers.rst:68
+#: ../../en/project-management/vector-layers.rst:70
 msgid ":ref:`make_it_grow`"
 msgstr ":ref:`faino_medrar`"
 
-#: ../../en/project-management/vector-layers.rst:73
+#: ../../en/project-management/vector-layers.rst:75
 msgid "Drag and drop designer forms"
 msgstr "Formularios do deseñador arrastrar e soltar"
 
-#: ../../en/project-management/vector-layers.rst:75
+#: ../../en/project-management/vector-layers.rst:77
 msgid "Groups and Tabs from Drag and Drop designer forms are supported."
 msgstr "Admítense os formularios de Grupos e Lapelas do deseñador Arrastrar e Soltar."
 
-#: ../../en/project-management/vector-layers.rst:78
+#: ../../en/project-management/vector-layers.rst:80
 msgid "Conditional visibility"
 msgstr "Visibilidade condicional"
 
-#: ../../en/project-management/vector-layers.rst:80
+#: ../../en/project-management/vector-layers.rst:82
 msgid ""
 "Groups can be hidden based on an expression. This is useful when certain "
 "attributes are only required under certain conditions. As an example imagine"
@@ -414,11 +420,17 @@ msgid ""
 "diseases will be available to the user."
 msgstr "Pódense ocultar os grupos en base a unha expresión. Isto é útil cando certos atributos se precisan só baixo certas condicións. Como exemplo imaxina un mapa de árbores. Algúns deles poden ter unha enfermidade e ti tes unha lista de posibles enfermidades. Para non liar o formulario con demasiados campos, crea un grupo e configura unha expresión de visibilidade para un grupo \"enfermidades\". Engade un campo \"enfermidade\" cunha caixa de verificación. Só cando a caixa de verificación estea marcada, a lista de enfermidades será visible para o usuario."
 
-#: ../../en/project-management/vector-layers.rst:88
+#: ../../en/project-management/vector-layers.rst:95
+msgid ""
+"Configuration of a group box that will only be shown if the checkbox "
+"\"measures_taken\" is checked."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:98
 msgid "Constraints"
 msgstr "Restricións"
 
-#: ../../en/project-management/vector-layers.rst:90
+#: ../../en/project-management/vector-layers.rst:100
 msgid ""
 "Attribute fields can have constraints attached. Constraints are expressions "
 "that needs to evaluate to :code:`True` (or :code:`1`) in order to be able to"
@@ -427,26 +439,30 @@ msgid ""
 "not satisfied."
 msgstr "Os campos de atributo poden ter ligadas restricións. As restricións son expresións que precisan avaliarse a :code:`Certo` (ou :code:`1`) para poder gardar o formulario. As restricións configúranse por en base a un campo e pode engadirse unha descrición que se lle amosará ó usuario se a restrición non é satisfeita."
 
-#: ../../en/project-management/vector-layers.rst:96
-#: ../../en/project-management/vector-layers.rst:119
+#: ../../en/project-management/vector-layers.rst:111
+msgid "Configuration of a constraint within a range"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:114
+#: ../../en/project-management/vector-layers.rst:145
 msgid "Common use cases"
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:98
+#: ../../en/project-management/vector-layers.rst:116
 msgid ""
 "You cannot enter an elevation value higher than the highest mountain in this"
 " country."
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:104
+#: ../../en/project-management/vector-layers.rst:122
 msgid "It is required to fill in an identifier."
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:111
+#: ../../en/project-management/vector-layers.rst:129
 msgid "Default values"
 msgstr "Valores predeterminados"
 
-#: ../../en/project-management/vector-layers.rst:113
+#: ../../en/project-management/vector-layers.rst:131
 msgid ""
 "Fields can have default values configured. Default values are inserted into "
 "the attribute form when digitizing a new feature. They are visible to the "
@@ -454,37 +470,41 @@ msgid ""
 " on the geometry or expression variables."
 msgstr "Os campos poden ter valores predeterminados configurados. Os valores predeterminados se introducen no formulario de atributos cando se dixitaliza unha nova entidade. Son visibles ó usuario e poden modificarse en tanto o campo sexa editable. Poden basearse en variables de xeometría ou expresións."
 
-#: ../../en/project-management/vector-layers.rst:121
+#: ../../en/project-management/vector-layers.rst:142
+msgid "Configuration of a formatted date as default value"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:147
 msgid "Insert the current date and time:"
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:127
+#: ../../en/project-management/vector-layers.rst:153
 msgid "Insert the length of the digitized line:"
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:133
+#: ../../en/project-management/vector-layers.rst:159
 msgid "Configure global variables on the device and insert them."
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:139
+#: ../../en/project-management/vector-layers.rst:165
 msgid ""
 "If you want to assign a region code based on the location where a new "
 "feature is inserted, you can do so by using an aggregate expression:"
 msgstr ""
 
-#: ../../en/project-management/vector-layers.rst:147
+#: ../../en/project-management/vector-layers.rst:173
 msgid "Editable"
 msgstr "Editable"
 
-#: ../../en/project-management/vector-layers.rst:149
+#: ../../en/project-management/vector-layers.rst:175
 msgid "The editable flag of fields is respected."
 msgstr "Respéctase a marca de editable dos campos."
 
-#: ../../en/project-management/vector-layers.rst:152
+#: ../../en/project-management/vector-layers.rst:178
 msgid "Remember last values"
 msgstr "Lembrar os últimos valores"
 
-#: ../../en/project-management/vector-layers.rst:154
+#: ../../en/project-management/vector-layers.rst:180
 msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
