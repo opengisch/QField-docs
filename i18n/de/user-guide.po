@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
+"POT-Creation-Date: 2016-11-11 13:57+0100\n"
+"PO-Revision-Date: 2016-11-11 12:54+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -173,29 +173,29 @@ msgstr "Die Auswahlliste ist nur verfügbar, falls vorher das Kartenthema konfig
 
 #: ../../en/user-guide/variables.rst:4
 msgid "Global variables"
-msgstr ""
+msgstr "Globale Variablen"
 
 #: ../../en/user-guide/variables.rst:6
 msgid ""
 "Variables are used in QField and QGIS to dynamically set values based on the"
 " current project file, the layer or the system. They can be used for "
 "styling, setting default values for fields and much more."
-msgstr ""
+msgstr "Variablen werden in QGIS und QField benutzt um Werte dynamisch zu sezten, basierend auf dem aktuellen Projekt file, dem Layer oder dem System. Sie können für das Styling verwendet werden, um Standardwerte zu setzen und vieles mehr."
 
 #: ../../en/user-guide/variables.rst:10
 msgid ""
 "To configure a device-specific variable, open the settings and click the "
 "\"Global Variables\" tab."
-msgstr ""
+msgstr "Eine System-Spezifische Variable kann unter Einstellungen, \"Globale Variablen\" gesetzt werden."
 
 #: ../../en/user-guide/variables.rst:19
 msgid ""
 "Configuration of two new global variables in addition to the pre-defined "
 "system variables."
-msgstr ""
+msgstr "Konfiguration von zwei neuen globalen Variablen, zusätzlich zu den vordefinierten System-Variablen."
 
 #: ../../en/user-guide/variables.rst:22
 msgid ""
 "On the variable page, you can see predefined variables. To add new "
 "variables, click on the empty cell at the bottom and write the content."
-msgstr ""
+msgstr "Auf der Seite \"Globale Variablen\" sind vordefinierte Variablen zu sehen. Um eine neue Variable hinzuzufügen, kann auf die leere Zeile zuunterst getippt und danach der Variablenname und -inhalt erfasst werden."

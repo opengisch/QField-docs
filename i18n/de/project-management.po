@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
+"POT-Creation-Date: 2016-11-11 13:57+0100\n"
+"PO-Revision-Date: 2016-11-11 12:56+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -423,7 +423,7 @@ msgstr "Gruppen können dynamisch versteckt und angezeigt werden. Dies ist oft n
 msgid ""
 "Configuration of a group box that will only be shown if the checkbox "
 "\"measures_taken\" is checked."
-msgstr ""
+msgstr "Konfiguration einer Widget-Gruppe, die nur sichtbar ist, wenn das Auswahl-Kästchen \"measure_taken\" angekreut ist."
 
 #: ../../en/project-management/vector-layers.rst:98
 msgid "Constraints"
@@ -440,7 +440,7 @@ msgstr "Attributfelder können Bedingungen haben. Bedingungen sind Ausdrücke, d
 
 #: ../../en/project-management/vector-layers.rst:111
 msgid "Configuration of a constraint within a range"
-msgstr ""
+msgstr "Konfiguration einer Bedingung innerhalb eines Bereichs."
 
 #: ../../en/project-management/vector-layers.rst:114
 #: ../../en/project-management/vector-layers.rst:145
@@ -471,7 +471,7 @@ msgstr "Felder können Standardwerte haben. Standardwerte werden automatisch in 
 
 #: ../../en/project-management/vector-layers.rst:142
 msgid "Configuration of a formatted date as default value"
-msgstr ""
+msgstr "Konfiguration eines formattierten Datums als Standardwert."
 
 #: ../../en/project-management/vector-layers.rst:147
 msgid "Insert the current date and time:"
