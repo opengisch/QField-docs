@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-11-17 08:50+0100\n"
+"PO-Revision-Date: 2016-11-12 09:01+0000\n"
+"Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -235,27 +235,27 @@ msgstr "Gyönyörű a GIS-ben, hogy a térképek dinamikusak. A rétegek egyenk�
 msgid ""
 "This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
 "are for."
-msgstr ""
+msgstr "Ez az amire a térkép témák valók (a QGIS 3.0 előtt *Visibility Presets*)."
 
 #: ../../en/project-management/map-themes.rst:14
 msgid "Creating a Map Theme"
-msgstr ""
+msgstr "Térkép téma létrehozása"
 
 #: ../../en/project-management/map-themes.rst:16
 msgid "Creating a Map Theme in QGIS is a very simple task."
-msgstr ""
+msgstr "Térkép témák létrehozása nagyon egyszerű feladat a QGIS-ben."
 
 #: ../../en/project-management/map-themes.rst:24
 msgid "Style the map and layers to your requirements"
-msgstr ""
+msgstr "Alakítsa ki a térkép és a rétegek stílusát az igényeinek megfelelően."
 
 #: ../../en/project-management/map-themes.rst:25
 msgid "Save it as a named Map Theme"
-msgstr ""
+msgstr "Mentse el mint egy névvel bíró térkép téma."
 
 #: ../../en/project-management/map-themes.rst:26
 msgid "Load the project and your device and :ref:`change_map_theme`."
-msgstr ""
+msgstr "Töltse be a projektet az eszközén és :ref:`change_map_theme`."
 
 #: ../../en/project-management/portable-project.rst:2
 msgid "Portable Project"
@@ -340,11 +340,11 @@ msgstr "Az elem űrlap kikapcsolása beállítást közvetlenül alkalmazzuk a Q
 
 #: ../../en/project-management/vector-layers.rst:43
 msgid "Field widget"
-msgstr ""
+msgstr "Mező vezérlő"
 
 #: ../../en/project-management/vector-layers.rst:45
 msgid "The field widgets from QGIS are supported on a best effort basis."
-msgstr ""
+msgstr "A QGIS mező vezérlőket a legnagyobb gondosság elve alapján támogatjuk."
 
 #: ../../en/project-management/vector-layers.rst:52
 msgid "Field type"
@@ -483,7 +483,7 @@ msgstr "Adja meg a digitalizált vonal hosszát:"
 
 #: ../../en/project-management/vector-layers.rst:159
 msgid "Configure global variables on the device and insert them."
-msgstr ""
+msgstr "Konfigurálja a globális változókat az eszközön és szúrja be őket."
 
 #: ../../en/project-management/vector-layers.rst:165
 msgid ""

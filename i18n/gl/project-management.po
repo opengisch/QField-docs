@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-11-17 08:50+0100\n"
+"PO-Revision-Date: 2016-11-16 23:16+0000\n"
+"Last-Translator: xanvieiro <gallaecia6@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:2
 msgid "Android: Special File Access Notes"
-msgstr ""
+msgstr "Android: Notas de Acceso a Ficheiros Especiais"
 
 #: ../../en/project-management/android-data-structure.rst:5
 msgid "Custom SVG symbols and settings"
@@ -197,7 +197,7 @@ msgstr "QField non ten un xestor de proxecto propio. Necesitas establecer e conf
 
 #: ../../en/project-management/index.rst:8
 msgid "Contents"
-msgstr ""
+msgstr "Contidos"
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
@@ -223,40 +223,40 @@ msgstr "SRC da capa"
 
 #: ../../en/project-management/map-themes.rst:4
 msgid "Configure Map Themes"
-msgstr ""
+msgstr "Configurar Temas de Mapa"
 
 #: ../../en/project-management/map-themes.rst:6
 msgid ""
 "The beautiful thing about GIS is that maps are dynamic. Layers can "
 "individually be shown and hidden and information can be presented more or "
 "less prominently based on the task at hand."
-msgstr ""
+msgstr "O fermoso dos SIX é que os mapas son dinámicos. As capas poden amosarse individualmente e a información pode destacarse máis ou menos en base á tarefa que teñamos en man."
 
 #: ../../en/project-management/map-themes.rst:10
 msgid ""
 "This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
 "are for."
-msgstr ""
+msgstr "Isto é para o que son os *Temas de Mapa* (previo a QGIS 3.0 coñecido como *Requisitos de Visibilidade*)."
 
 #: ../../en/project-management/map-themes.rst:14
 msgid "Creating a Map Theme"
-msgstr ""
+msgstr "Crear un Tema de Mapa"
 
 #: ../../en/project-management/map-themes.rst:16
 msgid "Creating a Map Theme in QGIS is a very simple task."
-msgstr ""
+msgstr "Crear un Tema de Mapa en QGIS é unha tarefa moi simple."
 
 #: ../../en/project-management/map-themes.rst:24
 msgid "Style the map and layers to your requirements"
-msgstr ""
+msgstr "Configura o estilo do mapa e capas segundo as túas necesidades"
 
 #: ../../en/project-management/map-themes.rst:25
 msgid "Save it as a named Map Theme"
-msgstr ""
+msgstr "Gárdaas cun nome como un Tema de Mapa"
 
 #: ../../en/project-management/map-themes.rst:26
 msgid "Load the project and your device and :ref:`change_map_theme`."
-msgstr ""
+msgstr "Carga o proxecto no dispositivo e :ref:`change_map_theme`."
 
 #: ../../en/project-management/portable-project.rst:2
 msgid "Portable Project"
@@ -320,7 +320,7 @@ msgstr "En QField, os obxectos identifícanse cun nome. A expresión para xerar 
 msgid ""
 "The display expression will be used to represent features with an "
 "identification string throughout QField."
-msgstr ""
+msgstr "A expresión visualizada utilizarase para representar entidades cunha cadea de identificación en QField."
 
 #: ../../en/project-management/vector-layers.rst:31
 msgid "Forms and Fields"
@@ -341,11 +341,11 @@ msgstr "A configuración suprimir formulario de entidade aplícase directamente 
 
 #: ../../en/project-management/vector-layers.rst:43
 msgid "Field widget"
-msgstr ""
+msgstr "Widget de campo"
 
 #: ../../en/project-management/vector-layers.rst:45
 msgid "The field widgets from QGIS are supported on a best effort basis."
-msgstr ""
+msgstr "Os widgets de campo de QGIS están dispoñibles en base ó mellor esforzo."
 
 #: ../../en/project-management/vector-layers.rst:52
 msgid "Field type"
@@ -424,7 +424,7 @@ msgstr "Pódense ocultar os grupos en base a unha expresión. Isto é útil cand
 msgid ""
 "Configuration of a group box that will only be shown if the checkbox "
 "\"measures_taken\" is checked."
-msgstr ""
+msgstr "Configuración dunha caixa de grupo que só se amosará se a caixa de verificación \"tomar_medidas\" está marcada."
 
 #: ../../en/project-management/vector-layers.rst:98
 msgid "Constraints"
@@ -441,22 +441,22 @@ msgstr "Os campos de atributo poden ter ligadas restricións. As restricións so
 
 #: ../../en/project-management/vector-layers.rst:111
 msgid "Configuration of a constraint within a range"
-msgstr ""
+msgstr "Configuración dunha restrición dentro dun rango"
 
 #: ../../en/project-management/vector-layers.rst:114
 #: ../../en/project-management/vector-layers.rst:145
 msgid "Common use cases"
-msgstr ""
+msgstr "Casos comúns de uso"
 
 #: ../../en/project-management/vector-layers.rst:116
 msgid ""
 "You cannot enter an elevation value higher than the highest mountain in this"
 " country."
-msgstr ""
+msgstr "Non pode introducir un valor de elevación maior que a montaña máis alta neste país."
 
 #: ../../en/project-management/vector-layers.rst:122
 msgid "It is required to fill in an identifier."
-msgstr ""
+msgstr "Precisa encher cun identificador."
 
 #: ../../en/project-management/vector-layers.rst:129
 msgid "Default values"
@@ -472,25 +472,25 @@ msgstr "Os campos poden ter valores predeterminados configurados. Os valores pre
 
 #: ../../en/project-management/vector-layers.rst:142
 msgid "Configuration of a formatted date as default value"
-msgstr ""
+msgstr "Configuración dunha data con formato como valor predeterminado"
 
 #: ../../en/project-management/vector-layers.rst:147
 msgid "Insert the current date and time:"
-msgstr ""
+msgstr "Introduce a data e a hora actuais:"
 
 #: ../../en/project-management/vector-layers.rst:153
 msgid "Insert the length of the digitized line:"
-msgstr ""
+msgstr "Introduce a lonxitude da liña dixitalizada:"
 
 #: ../../en/project-management/vector-layers.rst:159
 msgid "Configure global variables on the device and insert them."
-msgstr ""
+msgstr "Configure as variables globais no dispositivo e introdúzaas."
 
 #: ../../en/project-management/vector-layers.rst:165
 msgid ""
 "If you want to assign a region code based on the location where a new "
 "feature is inserted, you can do so by using an aggregate expression:"
-msgstr ""
+msgstr "Se queres asignar un código de rexión baseado na localización onde se insire unha nova entidade, podes facelo empregando unha expresión agregada:"
 
 #: ../../en/project-management/vector-layers.rst:173
 msgid "Editable"

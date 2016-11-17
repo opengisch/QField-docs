@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
+"POT-Creation-Date: 2016-11-17 08:50+0100\n"
+"PO-Revision-Date: 2016-11-17 07:51+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: French (http://www.transifex.com/opengisch/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -135,39 +135,39 @@ msgid "`Français </docs/fr>`_"
 msgstr ""
 
 #: ../../en/index.rst:74
-msgid "`Galician </docs/gl>`_"
+msgid "`Galego </docs/gl>`_"
 msgstr ""
 
 #: ../../en/index.rst:76
-msgid "`Portuguese </docs/pt>`_"
+msgid "`Português </docs/pt>`_"
 msgstr ""
 
 #: ../../en/index.rst:78
-msgid "`Romanian </docs/ro>`_"
+msgid "`Română </docs/ro>`_"
 msgstr ""
 
 #: ../../en/index.rst:80
-msgid "`Ukranian </docs/uk>`_"
+msgid "`український </docs/uk>`_"
 msgstr ""
 
-#: ../../en/index.rst:83
-msgid "`Hungarian </hu>`_"
+#: ../../en/index.rst:82
+msgid "`Magyar </docs/hu>`_"
 msgstr ""
 
-#: ../../en/index.rst:85
+#: ../../en/index.rst:84
 msgid ""
 "If there is an error with a translation, please `help to improve it "
 "<https://www.transifex.com/opengisch/qfield-documentation/>`_."
 msgstr "S'il y a une erreur avec une traduction, merci d' `aider à l'améliorer <https://www.transifex.com/opengisch/qfield-documentation/>`_."
 
-#: ../../en/index.rst:89
+#: ../../en/index.rst:88
 msgid "Indices and tables"
 msgstr "Table et index"
 
-#: ../../en/index.rst:91
+#: ../../en/index.rst:90
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
 
-#: ../../en/index.rst:92
+#: ../../en/index.rst:91
 msgid ":ref:`search`"
 msgstr ":ref:`search`"

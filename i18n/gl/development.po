@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 13:57+0100\n"
+"POT-Creation-Date: 2016-11-17 08:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: xanvieiro <gallaecia6@gmail.com>, 2016\n"
 "Language-Team: Galician (https://www.transifex.com/opengisch/teams/38926/gl/)\n"
@@ -256,7 +256,7 @@ msgid ""
 "This can be split into different pieces like moving points, moving other "
 "features, editing vertices, moving edges..."
 msgstr ""
-"Isto pode dividirse en distintas partes como mover puntos, mover outras "
+"Isto pode dividirse en distintas pezas como mover puntos, mover outras "
 "entidades, editar vértices, mover límites..."
 
 #: ../../en/development/index.rst:111
@@ -328,17 +328,19 @@ msgstr ""
 
 #: ../../en/development/index.rst:139
 msgid "Record Audio"
-msgstr ""
+msgstr "Gravar Audio"
 
 #: ../../en/development/index.rst:141
 msgid ""
 "Ever wondered how you would write a lot of text when out in the field with a"
 " touch screen?"
 msgstr ""
+"Algunha vez quixeches saber como poderías escribir un montón de texto cando "
+"estás no campo cunha pantalla táctil?"
 
 #: ../../en/development/index.rst:144
 msgid "Just don't!"
-msgstr ""
+msgstr "Simplemente non o fagas!"
 
 #: ../../en/development/index.rst:146
 msgid ""
@@ -346,6 +348,9 @@ msgid ""
 "like image integration. When back in the office, you could just type in the "
 "information on a regular keyboard."
 msgstr ""
+"Sería incrible ter a posibilidade de ter unha integración de audio xusto "
+"como a integración de imaxe. Cando volvas á oficina, poderías simplemente "
+"teclear a información nun teclado normal."
 
 #: ../../en/development/index.rst:152
 msgid "[Your favorite feature]"

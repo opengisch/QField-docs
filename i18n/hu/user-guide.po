@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-11-17 08:50+0100\n"
+"PO-Revision-Date: 2016-11-12 08:46+0000\n"
+"Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,7 +47,7 @@ msgstr "Funkciók azonosítása"
 msgid ""
 "A tap on a feature will identify it. Pressing the back button will close the"
 " identify window."
-msgstr ""
+msgstr "Egy elemre kattints azonosítja azt. A vissza gomb megnyomása lezárja az azonosítás ablakot."
 
 #: ../../en/user-guide/index.rst:24
 msgid "Exceptions to identified layers"
@@ -156,46 +156,46 @@ msgstr "Az elem törléshez először azonosítsa azt és nyomja meg a szemétl�
 
 #: ../../en/user-guide/map-themes.rst:4
 msgid "Change the active Map Theme"
-msgstr ""
+msgstr "Aktív térkép téma módosítása"
 
 #: ../../en/user-guide/map-themes.rst:6
 msgid "Switching Map Themes is possible from the Dashboard."
-msgstr ""
+msgstr "A térkép témák közötti váltás az irányítópultról érhető el."
 
 #: ../../en/user-guide/map-themes.rst:8
 msgid "Use the *Map Themes* combobox to chose the active theme."
-msgstr ""
+msgstr "Használd a \"Térkép\" témák\" legördülő listát az aktív téma kiválasztásához."
 
 #: ../../en/user-guide/map-themes.rst:19
 msgid ""
 "The combo box is only available if you did :ref:`configure_map_themes`."
-msgstr ""
+msgstr "A legördülő lista csak akkor érhető el, ha ezt megtette :ref:`configure_map_themes`."
 
 #: ../../en/user-guide/variables.rst:4
 msgid "Global variables"
-msgstr ""
+msgstr "Globális változók"
 
 #: ../../en/user-guide/variables.rst:6
 msgid ""
 "Variables are used in QField and QGIS to dynamically set values based on the"
 " current project file, the layer or the system. They can be used for "
 "styling, setting default values for fields and much more."
-msgstr ""
+msgstr "A QField-ben és a QGIS-ben a változókat az értékeke dinamikus beállítására használjuk, az aktuális projekthez, réteghez vagy a rendszerhez kapcsolódóan. Használhatjuk őket a stílusok, a mezők alapértelmezett értékeinek beállítására és még sok minden másra."
 
 #: ../../en/user-guide/variables.rst:10
 msgid ""
 "To configure a device-specific variable, open the settings and click the "
 "\"Global Variables\" tab."
-msgstr ""
+msgstr "Az eszköz specifikus változók beállításához nyissa meg a beállításokat és kattintson a \"Globális Változók\" fülre."
 
 #: ../../en/user-guide/variables.rst:19
 msgid ""
 "Configuration of two new global variables in addition to the pre-defined "
 "system variables."
-msgstr ""
+msgstr "Két új globális változó beállítása az előre beállított rendszer változók mellett."
 
 #: ../../en/user-guide/variables.rst:22
 msgid ""
 "On the variable page, you can see predefined variables. To add new "
 "variables, click on the empty cell at the bottom and write the content."
-msgstr ""
+msgstr "A változók oldalán láthatja az előre definiált változókat. Egy új változó hozzáadásához kattintson egy üres cellára a lista alján és írja be a kívánt tartalmat."

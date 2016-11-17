@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-11-17 08:50+0100\n"
+"PO-Revision-Date: 2016-11-11 22:06+0000\n"
+"Last-Translator: Sorin Călinică <scalinica@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -318,7 +318,7 @@ msgstr "În QField, obiectele sunt identificate după nume. Expresia care va gen
 msgid ""
 "The display expression will be used to represent features with an "
 "identification string throughout QField."
-msgstr ""
+msgstr "Expresia de afișare va fi utilizată pentru a reprezenta entitățile, în cadrul QField, printr-un șir de identificare."
 
 #: ../../en/project-management/vector-layers.rst:31
 msgid "Forms and Fields"
@@ -422,7 +422,7 @@ msgstr "Grupurile pot fi ascunse în baza unei expresii. Acest lucru este util a
 msgid ""
 "Configuration of a group box that will only be shown if the checkbox "
 "\"measures_taken\" is checked."
-msgstr ""
+msgstr "Configurarea unui grup de casete, care va fi afișat numai dacă este bifată opțiunea 'measures_taken'."
 
 #: ../../en/project-management/vector-layers.rst:98
 msgid "Constraints"
@@ -439,7 +439,7 @@ msgstr "Câmpurilor atributelor li se pot atașa constrângeri. Constrângerile 
 
 #: ../../en/project-management/vector-layers.rst:111
 msgid "Configuration of a constraint within a range"
-msgstr ""
+msgstr "Configurarea unei constrângeri în cadrul unui interval"
 
 #: ../../en/project-management/vector-layers.rst:114
 #: ../../en/project-management/vector-layers.rst:145
@@ -470,7 +470,7 @@ msgstr "Pentru câmpuri se pot configura valori implicite. Acestea vor fi automa
 
 #: ../../en/project-management/vector-layers.rst:142
 msgid "Configuration of a formatted date as default value"
-msgstr ""
+msgstr "Configurarea ca valoare implicită s unei date formatate"
 
 #: ../../en/project-management/vector-layers.rst:147
 msgid "Insert the current date and time:"
