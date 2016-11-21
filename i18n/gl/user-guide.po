@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-11-21 09:15+0100\n"
+"PO-Revision-Date: 2016-11-17 20:51+0000\n"
+"Last-Translator: xanvieiro <gallaecia6@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +48,7 @@ msgstr "Identificar entidades"
 msgid ""
 "A tap on a feature will identify it. Pressing the back button will close the"
 " identify window."
-msgstr ""
+msgstr "Unha pulsación nunha entidade identificaraa. Premer o botón de retroceso pechará a xanela de identificación."
 
 #: ../../en/user-guide/index.rst:24
 msgid "Exceptions to identified layers"
@@ -141,7 +141,7 @@ msgid ""
 "new feature. The form which appears allows entering attribute values for the"
 " new feature. The checkboxes at the right of every attribute allow for "
 "remembering each attribute individually."
-msgstr "Logo de dixitalizar unha xeometría, amosarase o formulario de atributo se non é cancelado e preguntaraselle ó usuario pola introdución de atributos na nova entidade. As caixas de verificación na dereita de cada atributo permiten ter en conta cada atributo individualmente."
+msgstr "Logo de dixitalizar unha xeometría, amosarase o formulario de atributo se non é cancelado e preguntaráselle ó usuario pola introdución de atributos na nova entidade. As caixas de verificación na dereita de cada atributo permiten ter en conta cada atributo individualmente."
 
 #: ../../en/user-guide/index.rst:74
 msgid "Delete Features"
@@ -157,46 +157,46 @@ msgstr "Para eliminar unha entidade, identifícaa primeiro e preme na icona da p
 
 #: ../../en/user-guide/map-themes.rst:4
 msgid "Change the active Map Theme"
-msgstr ""
+msgstr "Cambiar o Tema de Mapa activo"
 
 #: ../../en/user-guide/map-themes.rst:6
 msgid "Switching Map Themes is possible from the Dashboard."
-msgstr ""
+msgstr "Alternar os Temas de Mapa é posible dende o Panel de Control."
 
 #: ../../en/user-guide/map-themes.rst:8
 msgid "Use the *Map Themes* combobox to chose the active theme."
-msgstr ""
+msgstr "Utiliza a caixa combinada de *Temas de Mapa* para escoller o tema activo."
 
 #: ../../en/user-guide/map-themes.rst:19
 msgid ""
 "The combo box is only available if you did :ref:`configure_map_themes`."
-msgstr ""
+msgstr "A caixa combinada estará dispoñible só se previamente :ref:`configure_map_themes`."
 
 #: ../../en/user-guide/variables.rst:4
 msgid "Global variables"
-msgstr ""
+msgstr "Variables globais"
 
 #: ../../en/user-guide/variables.rst:6
 msgid ""
 "Variables are used in QField and QGIS to dynamically set values based on the"
 " current project file, the layer or the system. They can be used for "
 "styling, setting default values for fields and much more."
-msgstr ""
+msgstr "As variables utilízanse en QField e QGIS para establecer dinamicamente valores en base ó ficheiro de proxecto, a capa ou o sistema actual. Poden empregarse para dar estilo, establecer valores predeterminados para campos e moito máis."
 
 #: ../../en/user-guide/variables.rst:10
 msgid ""
 "To configure a device-specific variable, open the settings and click the "
 "\"Global Variables\" tab."
-msgstr ""
+msgstr "Para configurar unha variable específica do dispositivo, abre a configuración e preme na lapela de \"Variables Globais\"."
 
 #: ../../en/user-guide/variables.rst:19
 msgid ""
 "Configuration of two new global variables in addition to the pre-defined "
 "system variables."
-msgstr ""
+msgstr "Configuración de dúas novas variables globais ademais das variables de sistema predeterminadas."
 
 #: ../../en/user-guide/variables.rst:22
 msgid ""
 "On the variable page, you can see predefined variables. To add new "
 "variables, click on the empty cell at the bottom and write the content."
-msgstr ""
+msgstr "Na páxina de variables, podes ver as variables predeterminadas. Para engadir novas variables, preme na cela valeira do fondo e escribe o seu contido."

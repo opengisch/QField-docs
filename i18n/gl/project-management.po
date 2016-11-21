@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 08:50+0100\n"
-"PO-Revision-Date: 2016-11-16 23:16+0000\n"
+"POT-Creation-Date: 2016-11-21 09:15+0100\n"
+"PO-Revision-Date: 2016-11-17 21:05+0000\n"
 "Last-Translator: xanvieiro <gallaecia6@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/opengisch/qfield-documentation/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -509,3 +509,61 @@ msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
 msgstr "QField ofrece un control máis refinado sobre os últimos valores usados e ignora a configuración de QGIS."
+
+#: ../../en/project-management/vector-layers.rst:183
+msgid "Snapping"
+msgstr "Autoaxuste"
+
+#: ../../en/project-management/vector-layers.rst:185
+msgid ""
+"While digitizing new features, new points can be snapped to existing "
+"geometries."
+msgstr "Ó dixitalizar novas entidades, os novos puntos poden axustarse ás xeometrías existentes."
+
+#: ../../en/project-management/vector-layers.rst:188
+msgid ""
+"All configuration can be done in :menuselection:`Project --> Snapping "
+"Settings` (:menuselection:`Settings --> Snapping Settings` in QGIS 2.x)."
+msgstr "Toda a configuración pode facerse en :menuselection:`Proxecto --> Configuración de Autoaxuste` (:menuselection:`Configuración --> Configuración de Autoaxuste` en QGIS 2.x)."
+
+#: ../../en/project-management/vector-layers.rst:192
+msgid "Snapping Types"
+msgstr "Tipos de Autoaxuste"
+
+#: ../../en/project-management/vector-layers.rst:194
+msgid "It is possible to snap new points"
+msgstr "É posible autoaxustar novos puntos"
+
+#: ../../en/project-management/vector-layers.rst:196
+msgid "only to nodes of existing geomtries"
+msgstr "só a nodos de xeometrías existentes"
+
+#: ../../en/project-management/vector-layers.rst:197
+msgid "only to segments of existing geomtries"
+msgstr "só a segmentos de xeometrías existentes"
+
+#: ../../en/project-management/vector-layers.rst:198
+msgid "to nodes and segments of existing geomtries"
+msgstr "a nodos e segmentos de xeometrías existentes"
+
+#: ../../en/project-management/vector-layers.rst:201
+msgid "Snapping to layers"
+msgstr "Autoaxuste a capas"
+
+#: ../../en/project-management/vector-layers.rst:203
+msgid "It is also possible to only snap to one or a few layers."
+msgstr "É tamén posible autoaxustar só a unha ou a algunhas capas."
+
+#: ../../en/project-management/vector-layers.rst:206
+msgid "Snapping tolerance"
+msgstr "Tolerancia de autoaxuste"
+
+#: ../../en/project-management/vector-layers.rst:208
+msgid "The snapping tolerance can be specified in map units or pixels."
+msgstr "A tolerancia do autoaxuste pode especificarse en unidades do mapa ou píxeles."
+
+#: ../../en/project-management/vector-layers.rst:210
+msgid ""
+"In almost any case, the units should be set to pixels. We made good "
+"experiences with a tolerance value of 20."
+msgstr "En case calquera caso, as unidades deben establecerse a píxeles. Tivemos boas experiencias cun valor de tolerancia de 20."

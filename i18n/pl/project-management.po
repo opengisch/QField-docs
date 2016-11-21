@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
+"POT-Creation-Date: 2016-11-17 09:51+0100\n"
+"PO-Revision-Date: 2016-11-17 08:52+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: Polish (http://www.transifex.com/opengisch/qfield-documentation/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -505,4 +505,62 @@ msgstr ""
 msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:183
+msgid "Snapping"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:185
+msgid ""
+"While digitizing new features, new points can be snapped to existing "
+"geometries."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:188
+msgid ""
+"All configuration can be done in :menuselection:`Project --> Snapping "
+"Settings` (:menuselection:`Settings --> Snapping Settings` in QGIS 2.x)."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:192
+msgid "Snapping Types"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:194
+msgid "It is possible to snap new points"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:196
+msgid "only to nodes of existing geomtries"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:197
+msgid "only to segments of existing geomtries"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:198
+msgid "to nodes and segments of existing geomtries"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:201
+msgid "Snapping to layers"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:203
+msgid "It is also possible to only snap to one or a few layers."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:206
+msgid "Snapping tolerance"
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:208
+msgid "The snapping tolerance can be specified in map units or pixels."
+msgstr ""
+
+#: ../../en/project-management/vector-layers.rst:210
+msgid ""
+"In almost any case, the units should be set to pixels. We made good "
+"experiences with a tolerance value of 20."
 msgstr ""

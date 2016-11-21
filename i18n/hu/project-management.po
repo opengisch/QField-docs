@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 08:50+0100\n"
-"PO-Revision-Date: 2016-11-12 09:01+0000\n"
+"POT-Creation-Date: 2016-11-21 09:15+0100\n"
+"PO-Revision-Date: 2016-11-20 16:47+0000\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -451,7 +451,7 @@ msgstr "Általános felhasználási esetek"
 msgid ""
 "You cannot enter an elevation value higher than the highest mountain in this"
 " country."
-msgstr ""
+msgstr "Nem adhat meg az ország legmagasabb hegyénél nagyobb magasságot."
 
 #: ../../en/project-management/vector-layers.rst:122
 msgid "It is required to fill in an identifier."
@@ -508,3 +508,61 @@ msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
 msgstr "A QField sokkal részletesebb felügyeletet biztosít az utoljára használt értékek kezelésében és figyelmen kívül hagyja a QGIS beállításokat."
+
+#: ../../en/project-management/vector-layers.rst:183
+msgid "Snapping"
+msgstr "Tárgyraszter"
+
+#: ../../en/project-management/vector-layers.rst:185
+msgid ""
+"While digitizing new features, new points can be snapped to existing "
+"geometries."
+msgstr "Új elemek digitalizálása közben az új pontok illeszthetők a meglévő geometriákhoz."
+
+#: ../../en/project-management/vector-layers.rst:188
+msgid ""
+"All configuration can be done in :menuselection:`Project --> Snapping "
+"Settings` (:menuselection:`Settings --> Snapping Settings` in QGIS 2.x)."
+msgstr "Minden konfigurálás megtehető a :menuselection:`Projekt --> Tárgyraszter beállítások`-ban (:menuselection:`Beállítások --> Tárgyraszter beállítások` QGIS 2.x-ben)."
+
+#: ../../en/project-management/vector-layers.rst:192
+msgid "Snapping Types"
+msgstr "Tárgyraszter típusok"
+
+#: ../../en/project-management/vector-layers.rst:194
+msgid "It is possible to snap new points"
+msgstr "Új pontokat illeszthetünk "
+
+#: ../../en/project-management/vector-layers.rst:196
+msgid "only to nodes of existing geomtries"
+msgstr "meglévő geometriák töréspontjaihoz"
+
+#: ../../en/project-management/vector-layers.rst:197
+msgid "only to segments of existing geomtries"
+msgstr "meglévő geometriák szakaszaihoz"
+
+#: ../../en/project-management/vector-layers.rst:198
+msgid "to nodes and segments of existing geomtries"
+msgstr "meglévő geometriák töréspontjaihoz és szakaszaihoz"
+
+#: ../../en/project-management/vector-layers.rst:201
+msgid "Snapping to layers"
+msgstr "Tárgyraszter rétegekhez"
+
+#: ../../en/project-management/vector-layers.rst:203
+msgid "It is also possible to only snap to one or a few layers."
+msgstr "Az is lehetséges, hogy egy vagy csak néhány réteghez adjunk tárgyrasztert."
+
+#: ../../en/project-management/vector-layers.rst:206
+msgid "Snapping tolerance"
+msgstr "Tárgyraszter tolerancia"
+
+#: ../../en/project-management/vector-layers.rst:208
+msgid "The snapping tolerance can be specified in map units or pixels."
+msgstr "A tárgyraszter tolerancia térképi egységekben vagy pixelekben adható meg."
+
+#: ../../en/project-management/vector-layers.rst:210
+msgid ""
+"In almost any case, the units should be set to pixels. We made good "
+"experiences with a tolerance value of 20."
+msgstr "Szinte minden esetben az egységet pixelekben állítsuk be. Jó tapasztalataink vannak a 20 pixeles toleranciával."

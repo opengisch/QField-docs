@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 08:50+0100\n"
+"POT-Creation-Date: 2016-11-21 09:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>, 2016\n"
 "Language-Team: Hungarian (https://www.transifex.com/opengisch/teams/38926/hu/)\n"
@@ -376,11 +376,11 @@ msgstr ""
 "Az alábbi szervezetek járultak hozzá ahhoz, hogy a QField a jelenlegi "
 "formájában létrejöhessen. Szeretnénk ezért hálás köszönetünket kifejezni!"
 
-#: ../../en/development/index.rst:201
+#: ../../en/development/index.rst:208
 msgid "Credits"
 msgstr "Köszönetnyilvánítás"
 
-#: ../../en/development/index.rst:203
+#: ../../en/development/index.rst:210
 msgid ""
 "QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
 "and training for open source software including QField and QGIS."
@@ -389,11 +389,11 @@ msgstr ""
 " képzési szolgáltatás nyújt nyílt forráskódú szoftverekhez, ideértve a "
 "QField-et és a QGIS-t."
 
-#: ../../en/development/index.rst:212
+#: ../../en/development/index.rst:219
 msgid "API stability"
 msgstr "API stabilitás"
 
-#: ../../en/development/index.rst:214
+#: ../../en/development/index.rst:221
 msgid "QField is currently not considered API stable."
 msgstr ""
 "A QField alkalmazásprogramozási felülete (API) jelenleg nem tekinthető "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 08:50+0100\n"
+"POT-Creation-Date: 2016-11-21 09:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: alexbruy <alexander.bruy@gmail.com>, 2016\n"
 "Language-Team: Ukrainian (https://www.transifex.com/opengisch/teams/38926/uk/)\n"
@@ -364,11 +364,11 @@ msgstr ""
 "Нижченаведені організації допомогли зробити QField такою, як вона є зараз. "
 "Ми висловлюємо їм свою щиру подяку!"
 
-#: ../../en/development/index.rst:201
+#: ../../en/development/index.rst:208
 msgid "Credits"
 msgstr "Подяка"
 
-#: ../../en/development/index.rst:203
+#: ../../en/development/index.rst:210
 msgid ""
 "QField is developped by OPENGIS.ch. OPENGIS.ch does consulting, development "
 "and training for open source software including QField and QGIS."
@@ -377,10 +377,10 @@ msgstr ""
 "послуги, займається розробкою та проводить навчання з використання вільного "
 "програмного забезпечення включаючи QField та QGIS."
 
-#: ../../en/development/index.rst:212
+#: ../../en/development/index.rst:219
 msgid "API stability"
 msgstr "Стабільність API"
 
-#: ../../en/development/index.rst:214
+#: ../../en/development/index.rst:221
 msgid "QField is currently not considered API stable."
 msgstr "На сьогодні QField не має стабільного API."

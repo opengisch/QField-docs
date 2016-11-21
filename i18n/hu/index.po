@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 08:50+0100\n"
-"PO-Revision-Date: 2016-11-17 07:51+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2016-11-21 09:15+0100\n"
+"PO-Revision-Date: 2016-11-20 16:34+0000\n"
+"Last-Translator: Zoltan Siki <siki@agt.bme.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/opengisch/qfield-documentation/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -138,23 +138,23 @@ msgstr "`Francia </docs/fr>`_"
 
 #: ../../en/index.rst:74
 msgid "`Galego </docs/gl>`_"
-msgstr ""
+msgstr "`Galliciai </docs/gl>`_"
 
 #: ../../en/index.rst:76
 msgid "`Português </docs/pt>`_"
-msgstr ""
+msgstr "`Portugál </docs/pt>`_"
 
 #: ../../en/index.rst:78
 msgid "`Română </docs/ro>`_"
-msgstr ""
+msgstr "`Román </docs/ro>`_"
 
 #: ../../en/index.rst:80
 msgid "`український </docs/uk>`_"
-msgstr ""
+msgstr "`Ukrán </docs/uk>`_"
 
 #: ../../en/index.rst:82
 msgid "`Magyar </docs/hu>`_"
-msgstr ""
+msgstr "`Magyar </docs/hu>`_"
 
 #: ../../en/index.rst:84
 msgid ""

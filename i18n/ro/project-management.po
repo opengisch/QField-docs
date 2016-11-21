@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 08:50+0100\n"
-"PO-Revision-Date: 2016-11-11 22:06+0000\n"
+"POT-Creation-Date: 2016-11-21 09:15+0100\n"
+"PO-Revision-Date: 2016-11-18 05:54+0000\n"
 "Last-Translator: Sorin Călinică <scalinica@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/opengisch/qfield-documentation/language/ro/)\n"
 "MIME-Version: 1.0\n"
@@ -507,3 +507,61 @@ msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
 msgstr "QField oferă un control mult mai fin asupra ultimei valori utilizate, ignorând setarea din QGIS."
+
+#: ../../en/project-management/vector-layers.rst:183
+msgid "Snapping"
+msgstr "Acroșare"
+
+#: ../../en/project-management/vector-layers.rst:185
+msgid ""
+"While digitizing new features, new points can be snapped to existing "
+"geometries."
+msgstr "În timpul digitizării noilor entități, punctele acestora pot fi acroșate la geometriile existente."
+
+#: ../../en/project-management/vector-layers.rst:188
+msgid ""
+"All configuration can be done in :menuselection:`Project --> Snapping "
+"Settings` (:menuselection:`Settings --> Snapping Settings` in QGIS 2.x)."
+msgstr "Toate configurările se pot face în :menuselection:`Proiect --> Setări de Acroșare` (:menuselection:`Setări --> Setări de Acroșare` în QGIS 2.x)."
+
+#: ../../en/project-management/vector-layers.rst:192
+msgid "Snapping Types"
+msgstr "Tipuri de acroșare"
+
+#: ../../en/project-management/vector-layers.rst:194
+msgid "It is possible to snap new points"
+msgstr "Este posibilă acroșarea la punctele noi"
+
+#: ../../en/project-management/vector-layers.rst:196
+msgid "only to nodes of existing geomtries"
+msgstr "doar la nodurile geometriilor existente"
+
+#: ../../en/project-management/vector-layers.rst:197
+msgid "only to segments of existing geomtries"
+msgstr "doar la segmentele geometriilor existente"
+
+#: ../../en/project-management/vector-layers.rst:198
+msgid "to nodes and segments of existing geomtries"
+msgstr "la nodurile și segmentele geometriilor existente"
+
+#: ../../en/project-management/vector-layers.rst:201
+msgid "Snapping to layers"
+msgstr "Acroșarea la straturi"
+
+#: ../../en/project-management/vector-layers.rst:203
+msgid "It is also possible to only snap to one or a few layers."
+msgstr "Este posibilă acroșarea doar la unul sau mai multe straturi."
+
+#: ../../en/project-management/vector-layers.rst:206
+msgid "Snapping tolerance"
+msgstr "Toleranța acroșării"
+
+#: ../../en/project-management/vector-layers.rst:208
+msgid "The snapping tolerance can be specified in map units or pixels."
+msgstr "Toleranța acroșării poate fi specificată în unități de hartă sau pixeli."
+
+#: ../../en/project-management/vector-layers.rst:210
+msgid ""
+"In almost any case, the units should be set to pixels. We made good "
+"experiences with a tolerance value of 20."
+msgstr "În aproape toate cazurile, unitățile trebuie să fie în pixeli. Am efectuat experimente bune cu o valoare de 20 a toleranței."
