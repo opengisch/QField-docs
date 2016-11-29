@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, The QField Project/OPENGIS.ch
+# This file is distributed under the same license as the QField Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: QField Documentation 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-29 14:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: German (https://www.transifex.com/opengisch/teams/38926/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../en/qfieldsync/index.rst:3
+msgid "QFieldSync plugin"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:5
+msgid ""
+"The QFieldSync plugin helps preparing and packaging QGIS projects for "
+"QField."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:7
+msgid ""
+"QFieldSync supports your project preparation with automating the following:"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:9
+msgid "Required steps for project setup (e.g. :ref:`portable_project`)"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:10
+msgid ""
+"Creating basemaps from a single raster layer or from a style defined in a "
+"map theme."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:11
+msgid ""
+"Configuring the offline editing functionality and synchronizing changes "
+"back."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:14
+msgid "Workflow"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:16
+msgid ""
+"To get a quick overview of the process, here is a list of typical steps:"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:18
+msgid "Create a QField package. This is a working copy in a separate folder."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:19
+msgid "Copy the QField package to the target device."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:20
+msgid "Go out and collect data."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:21
+msgid "Copy the modified data back to your desktop computer."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:22
+msgid "Synchronize the modified data with your database or files."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:25
+msgid "Configuration"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:27
+msgid ""
+"The project configuration is saved in the master .qgs project file. This way"
+" it is possible to pre-configure a project once and use it repeatedly."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:31
+msgid "Layer configuration"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:33
+msgid ""
+"In the project configuration dialog, an *action* can be defined for each "
+"layer individually. Depending on the layer type, different types of actions "
+"are available."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:39
+msgid "Copy"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:38
+msgid ""
+"The layer will be copied to the package folder. This is only available for "
+"file-based layers."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:43
+msgid "No action"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:42
+msgid ""
+"The layer source will be left untouched. This is only available for non-"
+"file-based layers like WMS, WFS, Postgis..."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:50
+msgid "Offline editing"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:46
+msgid ""
+"A working copy of the layer is copied into the package folder. Every change "
+"which is done in the packaged project during work is recorded in a "
+"changelog. When synchronizing the changes back later on, this log will be "
+"replayed and all changes also be applied to the main data base. There is no "
+"conflict handling in place."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:54
+msgid "Remove"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:53
+msgid ""
+"The layer will be removed from the working copy. This is useful if a layer "
+"is used in the basemap and will not be available in the packaged project."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:57
+msgid "Base map configuration"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:59
+msgid ""
+"A base map is a raster layer which is added as the bottommost layer to the "
+"packaged project file."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:62
+msgid ""
+"If the base map option is enabled, a base map will be rendered, whenever the"
+" project is packaged. The area of interest - the extent which will be "
+"rendered - will be chosen at packaging time."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:66
+msgid "There are two possible sources for a base map:"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:71
+msgid "Layer"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:69
+msgid ""
+"A raster layer. This is useful to take an offline copy of an online layer "
+"like a WMS or to take a working copy of an unsupported format like an ECW or"
+" MrSID layer."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:77
+msgid "Map Theme"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:74
+msgid ""
+"A map theme. This is useful to create a base map based on a combination of "
+"several layers with styling. These layers can then be removed from the "
+"working package and do not need to be rendered on the device. This can save "
+"some disk space and battery on the device."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:79
+msgid ""
+"The tile size defines the spatial resolution. It determines the number of "
+"map units per pixel. If the map canvas CRS has meters as units and tile size"
+" is set to 1, each raster pixel will have a spatial extent of 1x1 m, if it "
+"is set to 1000, each raster pixel will have a spatial extent of 1 square "
+"kilometer."
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:85
+msgid "Offline editing configuration"
+msgstr ""
+
+#: ../../en/qfieldsync/index.rst:87
+msgid ""
+"If *only synchronize features in area of interest* is checked, only features"
+" which are within the extent of the map canvas as packaging time will be "
+"copied to the offline editing working copy."
+msgstr ""

@@ -91,3 +91,17 @@ trans.ro = i18n/ro/development.po
 trans.uk = i18n/uk/development.po
 type = PO
 
+[qfield-documentation.qfieldsync]
+source_file = i18n/pot/qfieldsync.pot
+source_lang = en
+trans.de = i18n/de/qfieldsync.po
+trans.es = i18n/es/qfieldsync.po
+trans.fr = i18n/fr/qfieldsync.po
+trans.gl = i18n/gl/qfieldsync.po
+trans.hu = i18n/hu/qfieldsync.po
+trans.it = i18n/it/qfieldsync.po
+trans.pl = i18n/pl/qfieldsync.po
+trans.pt = i18n/pt/qfieldsync.po
+trans.ro = i18n/ro/qfieldsync.po
+type = PO
+

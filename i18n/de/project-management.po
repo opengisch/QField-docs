@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 09:51+0100\n"
-"PO-Revision-Date: 2016-11-17 08:52+0000\n"
+"POT-Creation-Date: 2016-11-29 14:03+0100\n"
+"PO-Revision-Date: 2016-11-21 19:09+0000\n"
 "Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
 "Language-Team: German (http://www.transifex.com/opengisch/qfield-documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -257,25 +257,25 @@ msgstr "Die Ansicht als Kartenthema speichern"
 msgid "Load the project and your device and :ref:`change_map_theme`."
 msgstr "Das Projekt auf dem Gerät laden und :ref:`change_map_theme`."
 
-#: ../../en/project-management/portable-project.rst:2
+#: ../../en/project-management/portable-project.rst:4
 msgid "Portable Project"
 msgstr "Portable Projekte"
 
-#: ../../en/project-management/portable-project.rst:4
+#: ../../en/project-management/portable-project.rst:6
 msgid ""
 "You will need a portable version of your QGIS project file (.qgs). Portable "
 "means that all paths are relative and datasets are reachable from the "
 "device."
 msgstr "Es wird eine portable Version der QGIS Projektdatei (.qgs) benötigt. Portabel heisst, dass alle Pfade relativ sind und Datensätze für das Gerät erreichbar sind."
 
-#: ../../en/project-management/portable-project.rst:7
+#: ../../en/project-management/portable-project.rst:9
 msgid ""
 "Check that :menuselection:`Project --> Project Properties --> General --> "
 "Save paths` is set to \"Relative\" and that all required data files are in "
 "the same folder like the .qgs file or a subfolder of it."
 msgstr ":menuselection:`Projekt --> Projekteigenschaften --> Allgemein --> Pfade speichern` muss auf \"Relativ\" gestellt sein und alle benötigten Dateien müssen im selben Ordner wie die Projektdatei sein oder einem Unterordner davon."
 
-#: ../../en/project-management/portable-project.rst:10
+#: ../../en/project-management/portable-project.rst:12
 msgid ""
 "For increased productivity, we suggest having a look at the `QFieldSync "
 "plugin <https://plugins.qgis.org/plugins/qfieldsync>`_."
@@ -511,58 +511,58 @@ msgstr "QField bietet eine viel finkörnigere Kontrolle über das Erinnern von A
 
 #: ../../en/project-management/vector-layers.rst:183
 msgid "Snapping"
-msgstr ""
+msgstr "Objektfang"
 
 #: ../../en/project-management/vector-layers.rst:185
 msgid ""
 "While digitizing new features, new points can be snapped to existing "
 "geometries."
-msgstr ""
+msgstr "Während dem Digitalisieren von neuen Objekten können Punkte von bestehenden Geometrien gefangen werden."
 
 #: ../../en/project-management/vector-layers.rst:188
 msgid ""
 "All configuration can be done in :menuselection:`Project --> Snapping "
 "Settings` (:menuselection:`Settings --> Snapping Settings` in QGIS 2.x)."
-msgstr ""
+msgstr "Die gesamte Konfiguration kann in QGIS under :menuselection:`Projekt --> Objektfangeinstellungen` (:menuselection:`Einstellungen --> Objektfangeinstellungen` in QGIS 2.x)."
 
 #: ../../en/project-management/vector-layers.rst:192
 msgid "Snapping Types"
-msgstr ""
+msgstr "Objektfangtypen"
 
 #: ../../en/project-management/vector-layers.rst:194
 msgid "It is possible to snap new points"
-msgstr ""
+msgstr "Es ist möglich Punkte zu fangen"
 
 #: ../../en/project-management/vector-layers.rst:196
 msgid "only to nodes of existing geomtries"
-msgstr ""
+msgstr "anhand von Knoten in existierenden Geometrien"
 
 #: ../../en/project-management/vector-layers.rst:197
 msgid "only to segments of existing geomtries"
-msgstr ""
+msgstr "anhand von Segmenten von existierenden Geometrien"
 
 #: ../../en/project-management/vector-layers.rst:198
 msgid "to nodes and segments of existing geomtries"
-msgstr ""
+msgstr "anhand von beidem, Knoten und Segmenten von bestehenden Geometrien"
 
 #: ../../en/project-management/vector-layers.rst:201
 msgid "Snapping to layers"
-msgstr ""
+msgstr "Objektfang an Layern"
 
 #: ../../en/project-management/vector-layers.rst:203
 msgid "It is also possible to only snap to one or a few layers."
-msgstr ""
+msgstr "Es ist auch möglich, nur auf einen oder wenige Layer zu fangen."
 
 #: ../../en/project-management/vector-layers.rst:206
 msgid "Snapping tolerance"
-msgstr ""
+msgstr "Toleranz für Objektfang"
 
 #: ../../en/project-management/vector-layers.rst:208
 msgid "The snapping tolerance can be specified in map units or pixels."
-msgstr ""
+msgstr "Die Toleranz für den Objektfang kann in Karteneinheiten oder Pixel angegeben werden."
 
 #: ../../en/project-management/vector-layers.rst:210
 msgid ""
 "In almost any case, the units should be set to pixels. We made good "
 "experiences with a tolerance value of 20."
-msgstr ""
+msgstr "In den allermeisten Fällen sollte die Einheit in Pixel angegeben werden. Wir haben gute Erfahrungen gemacht mit Werten von 20 Pixeln."
