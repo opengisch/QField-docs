@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-29 14:03+0100\n"
+"POT-Creation-Date: 2016-12-04 16:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Mario Reyes <ernestoreyes561@gmail.com>, 2016\n"
 "Language-Team: Spanish (https://www.transifex.com/opengisch/teams/38926/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,7 +80,7 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:25
 msgid "Configuration"
-msgstr ""
+msgstr "Configuración"
 
 #: ../../en/qfieldsync/index.rst:27
 msgid ""
@@ -89,7 +90,7 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:31
 msgid "Layer configuration"
-msgstr ""
+msgstr "Configuración de capas"
 
 #: ../../en/qfieldsync/index.rst:33
 msgid ""
@@ -97,6 +98,9 @@ msgid ""
 "layer individually. Depending on the layer type, different types of actions "
 "are available."
 msgstr ""
+"En el cuadro de diálogo de configuración del proyecto, un \"acción\" puede "
+"definirse para cada capa de forma individual. Dependiendo del tipo de capa, "
+"diferentes tipos de acciones están disponibles."
 
 #: ../../en/qfieldsync/index.rst:39
 msgid "Copy"

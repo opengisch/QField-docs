@@ -3,78 +3,77 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
-# jmmanzano <manzano.jm@gmail.com>, 2016
-# Mario Reyes <ernestoreyes561@gmail.com>, 2016
+# Kari Salovaara <kari.salovaara@pp1.inet.fi>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-04 16:18+0100\n"
-"PO-Revision-Date: 2016-12-04 15:27+0000\n"
-"Last-Translator: Mario Reyes <ernestoreyes561@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/opengisch/qfield-documentation/language/es/)\n"
+"PO-Revision-Date: 2016-12-04 11:24+0000\n"
+"Last-Translator: Kari Salovaara <kari.salovaara@pp1.inet.fi>\n"
+"Language-Team: Finnish (http://www.transifex.com/opengisch/qfield-documentation/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
+"Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../en/project-management/android-data-structure.rst:2
 msgid "Android: Special File Access Notes"
-msgstr "Android: Notas de acceso de archivos especiales"
+msgstr "Android: Erityiset tiedostojen käsittelyn huomiot"
 
 #: ../../en/project-management/android-data-structure.rst:5
 msgid "Custom SVG symbols and settings"
-msgstr "Símbolos SVG personalizados y ajustes."
+msgstr "Räätälöidyt SVG symbolit ja asetukset"
 
 #: ../../en/project-management/android-data-structure.rst:7
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
-msgstr "En el cuadro de diálogo \"Acerca de\" puedes ver donde se localizan las carpetas compartidas en tu dispositivo."
+msgstr "Ylläolevasta valintaikkunasta näet missä jaetut hakemistot ovat laitteessasi."
 
 #: ../../en/project-management/android-data-structure.rst:9
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr "Si quieres usar símbolos personalizados necesitas ponerlos ahí usando un gestor de archivos."
+msgstr "Jos haluat käyttää räätälöityjä symboleja tulee Sinun sijoittaa ne sinne käyttäen tiedostojen hallintaan."
 
 #: ../../en/project-management/android-data-structure.rst:12
 msgid "External SD card"
-msgstr "Tarjeta SD externa"
+msgstr "Ulkoinen SD kortti"
 
 #: ../../en/project-management/android-data-structure.rst:14
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"
-msgstr "Para tener acceso de escritura a los proyectos que están en la tarjeta SD externa, tendrás que ponerlos en la siguiente carpeta:"
+msgstr "Halutessasi kirjoitusoikeuden projektiisi joka on ulkoisella SD kortilla, Sinun tulee laittaa se seuraavaan hakemistoon:"
 
 #: ../../en/project-management/dataformat.rst:2
 msgid "Supported data formats"
-msgstr "Formatos soportados"
+msgstr "Tuetut dataformaatit"
 
 #: ../../en/project-management/dataformat.rst:4
 msgid ""
 "QField supports a wide variety of formats via QGIS data providers and GDAL. "
 "This page offers a non-exhaustive list of supported data formats."
-msgstr "QField soporta una amplia variedad de formatos a través de los proveedores de datos de QGIS y GDAL. Esta página ofrece una lista no exhaustiva de formatos de datos soportados."
+msgstr "QField tukee monenlaisia tiedostomuotoja QGIS tietopalveluiden ja GDAL avulla. Tällä sivulla on ei-tyhjentävä luettelo tuetuista tiedostomuodoista."
 
 #: ../../en/project-management/dataformat.rst:8
 msgid "Table"
-msgstr "Tabla"
+msgstr "Taulu"
 
 #: ../../en/project-management/dataformat.rst:15
 msgid "Data Format"
-msgstr "Formato de datos"
+msgstr "Dataformaatti"
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/vector-layers.rst:52
 msgid "Support"
-msgstr "Soporte"
+msgstr "Tuki"
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/vector-layers.rst:52
 msgid "Notes"
-msgstr "Notas"
+msgstr "Huomautukset"
 
 #: ../../en/project-management/dataformat.rst:17
 msgid "Spatialite"
@@ -108,7 +107,7 @@ msgstr "Postgis"
 
 #: ../../en/project-management/dataformat.rst:23
 msgid "Ssl support not yet implemented."
-msgstr "Soporte para ssl aún no implementado"
+msgstr "SSL tukea ei ole vielä toteutettu."
 
 #: ../../en/project-management/dataformat.rst:25
 msgid "MBTiles"
@@ -129,7 +128,7 @@ msgstr ":moreorless:`~`"
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "JPEG compression not yet supported."
-msgstr "JPEG compresión no soportada aún"
+msgstr "JPEG pakkaus ei ole vielä tuettu."
 
 #: ../../en/project-management/dataformat.rst:31
 msgid "ECW"
@@ -144,7 +143,7 @@ msgstr ":nay:`✘`"
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
 msgid "License restricts usage."
-msgstr "Licencia restringe su uso."
+msgstr "Lisenssi rajoittaa käyttöä."
 
 #: ../../en/project-management/dataformat.rst:33
 msgid "MrSID"
@@ -158,22 +157,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr "Si no encuentras tu formato de datos favorito en esta tabla, por favor comprueba si funciona y `adapta la lista de encima <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_ para compartir tus hallazgos. Si no funciona por favor, `abre un tema en  <https://github.com/opengisch/OSGeo4A/issues>`_. Estaremos encantados de ayudarte con la implementación"
+msgstr "Jos et löydä suosikki dataformaattia tästä taulukosta, ole ystävällinen ja testaa toimiiko se ja muokkaa luetteloa <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_ jakaaksesi huomiosi. Jos se ei toimi, ole ystävällinen ja `avaa kysymys (issue) <https://github.com/opengisch/OSGeo4A/issues>`_. Olemme tyytyväisiä voidessamme auttaessamme sinua tämän toteutuksessa."
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr "Datos Raster"
+msgstr "Rasteridata"
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr "Los datos Raster pueden crecer bastante rápido, cuando se trabaja con ficheros tiff no comprimidos pueden ser varios Gb de información. Es muy ineficiente en dispositivos móviles."
+msgstr "Tasteridata voi tulla nopeasti varsin isoksi kun työskennellään pakkaamattomilla tiff tiedostoilla, niiden koko on usein useita Gb dataa. Erityisesti mobiililaitteilla tämä on tehotonta."
 
 #: ../../en/project-management/dataformat.rst:47
 msgid "Use GeoPackage"
-msgstr "Usa GeoPackages"
+msgstr "GeoPackage käyttö"
 
 #: ../../en/project-management/dataformat.rst:49
 msgid ""
@@ -181,130 +180,130 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr "Nosotros recomentados el uso del formato geopackage para trabajar con datos raster. El siguiente comando puede convertir un fichero :code:`raster.tif` a :code:`raster.gpkg` con pirámides. Asegúrate de ajustar EPSG:21781 (CH1903 LV03) a tu Sistema de Referencia de Coordenadas (SRC)."
+msgstr "Suosittelemme käyttämään geopackage formaattia käytettäessä rasteridataa. Seuraavat komennot muuntavat tiedoston jota kutsutaan :code:`raster.tif` nimellä tiedostoksi :code:`raster.gpkg` jossa pyramidit. Varmista että muutat EPSG:21781 (CH1903 LV03) haluamaasi koordinaattijärjestelmään."
 
 #: ../../en/project-management/index.rst:3
 msgid "QField Project Management"
-msgstr "Gestión de Proyectos de QField"
+msgstr "QField Projektihallinta"
 
 #: ../../en/project-management/index.rst:5
 msgid ""
 "QField does not have a built-in project management. You need to set up and "
 "configure your project first inside QGIS and then copy the project file "
 "(.qgs) and any additional files to your device and open it with QField."
-msgstr "QField no tiene un manejador de proyectos incorporado. Necesitas crear e incoporar tu poryecto primero dentro de QGIS y entonces copiar el archivo del proyecto (.qgs) y los archivos adicionales a tu dispositivo y abrirlos con QField."
+msgstr "QFieldissä ei ole sisäänrakennettua projektin hallintaa. Sinun tarvitsee asettaa ja konfiguroida ensin projektisi työasema QGIS sovelluksessa ja sitten kopioida projektitiedosto (.qgs) ja kaikki lisätiedostot laitteeseesi ja avata projekti QField ohjelmassa."
 
 #: ../../en/project-management/index.rst:8
 msgid "Contents"
-msgstr "Contenidos"
+msgstr "Sisältö"
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
-msgstr "Sistema de Referencia de Coordenadas"
+msgstr "Koordinaattijärjestelmä"
 
 #: ../../en/project-management/index.rst:21
 msgid ""
 "QField uses the Coordinate Reference System (CRS) information found in the "
 "project file."
-msgstr "QField utiliza el Sistema de Referencia de Coordenadas (SRC) que se encuentra en el fichero del proyecto."
+msgstr "QField käyttää koordinaattijärjestelmää joka löytyy projektitiedostosta."
 
 #: ../../en/project-management/index.rst:23
 msgid "Project CRS"
-msgstr "SRC del Proyecto"
+msgstr "Projektin koordinaattijärjestelmä"
 
 #: ../../en/project-management/index.rst:24
 msgid "On the fly reprojection (OTF) is used for visualization"
-msgstr "Reproyección al vuelo (OTF) usado para visualización"
+msgstr "Uudelleen projisointia (\"lennossa\") käytetään visualisointiin."
 
 #: ../../en/project-management/index.rst:25
 msgid "Layer CRS"
-msgstr "SRC de capa"
+msgstr "Tason koordinaattijärjestelmä"
 
 #: ../../en/project-management/map-themes.rst:4
 msgid "Configure Map Themes"
-msgstr "Configuración de temas de mapas"
+msgstr "Konfiguroi karttateemat"
 
 #: ../../en/project-management/map-themes.rst:6
 msgid ""
 "The beautiful thing about GIS is that maps are dynamic. Layers can "
 "individually be shown and hidden and information can be presented more or "
 "less prominently based on the task at hand."
-msgstr "Algo maravilloso acerca de los SIG es que los mapas son dinámicos. Las capas pueden ser mostradas y ocultadas individualmente y la información puede ser presentada más o menos prominentemente basada en la tarea actual."
+msgstr "GISin kaunis piirre on että kartat ovat dynaamisia. Tasoja voidaan yksittäin näyttää tai piilottaa sekä tietoja voidaan esittää enemmän tai vähemmän näkyvästi käsiteltävän toimenpiteen mukaisesti."
 
 #: ../../en/project-management/map-themes.rst:10
 msgid ""
 "This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
 "are for."
-msgstr "Esto es para lo que son los \"Temas de Mapas\" (antes de QGIS 3.0 conocidos como \"Ajustes Previos de Visibilidad\")"
+msgstr "Tämä on mitä *Kartta teemat* (ennen QGIS 3.0 versiota tunnetaan *Näkyvyys asetuksina*) tarkoittaa."
 
 #: ../../en/project-management/map-themes.rst:14
 msgid "Creating a Map Theme"
-msgstr "Creando un Tema de Mapa"
+msgstr "Karttateeman luonti"
 
 #: ../../en/project-management/map-themes.rst:16
 msgid "Creating a Map Theme in QGIS is a very simple task."
-msgstr "La creación de un tema de mapa en QGIS es una tarea muy simple"
+msgstr "Kartta teeman luonti on QGISissa yksinkertainen toimenpide."
 
 #: ../../en/project-management/map-themes.rst:24
 msgid "Style the map and layers to your requirements"
-msgstr "Aplica estilo al mapa y las capas a tus requerimientos."
+msgstr "Tyylitä kartta ja tasot tarpeidesi mukaisesti"
 
 #: ../../en/project-management/map-themes.rst:25
 msgid "Save it as a named Map Theme"
-msgstr "Guárdalo como un Tema de Mapa"
+msgstr "Tallenna se nimettynä Kartta teemana"
 
 #: ../../en/project-management/map-themes.rst:26
 msgid "Load the project and your device and :ref:`change_map_theme`."
-msgstr "Carga el proyecto y tu dispositivo y :ref:`change_map_theme`."
+msgstr "Lataa projekti ja laitteesi ja  :ref:`change_map_theme`."
 
 #: ../../en/project-management/portable-project.rst:4
 msgid "Portable Project"
-msgstr "Proyecto Portable"
+msgstr "Siirrettävä projekti"
 
 #: ../../en/project-management/portable-project.rst:6
 msgid ""
 "You will need a portable version of your QGIS project file (.qgs). Portable "
 "means that all paths are relative and datasets are reachable from the "
 "device."
-msgstr "Necesitas una versión portable de tu proyecto QGIS (.qgs). Portable significa que todas las rutas son relativas y los datos son accesibles desde el dispositivo."
+msgstr "Tarvitset QGIS projekti tiedostosta (.qgs) siirrettävän version. Siirrettävä tarkoitta että kaikki polut ovat relatiivisia ja tietojoukot ovat saavutettavissa laitteestasi."
 
 #: ../../en/project-management/portable-project.rst:9
 msgid ""
 "Check that :menuselection:`Project --> Project Properties --> General --> "
 "Save paths` is set to \"Relative\" and that all required data files are in "
 "the same folder like the .qgs file or a subfolder of it."
-msgstr "Comprueba que :menuselection:`Proyecto --> Propiedades del Proyecto --> General --> Guardar rutas`  tiene seleccionado \"Relativo\" y que todos los datos están en la misma carpeta que el .qgs o en una subcarpeta."
+msgstr "Tarkista että :menuselection:`Projekti --> Projektin imunaisuudet... --> Yleiset --> Polkujen tallennus` on asetettu \"suhteellinen\" ja että kaikki tarvittavat datatiedostot ovat samassa hakemistossa kuin .qgs tiedosto tai sen alahakemistossa."
 
 #: ../../en/project-management/portable-project.rst:12
 msgid ""
 "For increased productivity, we suggest having a look at the `QFieldSync "
 "plugin <https://plugins.qgis.org/plugins/qfieldsync>`_."
-msgstr "Para incrementar la productividad, sugerimos darle un vistazo el ` complemento QFieldSync  <https://plugins.qgis.org/plugins/qfieldsync>`_."
+msgstr "Parempaa tuottavuutta varten ehdotamme että tutustut `QFieldSync laajennukseen <https://plugins.qgis.org/plugins/qfieldsync>`_."
 
 #: ../../en/project-management/vector-layers.rst:3
 msgid "Vector Layer Settings"
-msgstr "Ajustes de capas vectoriales"
+msgstr "Vektoritason asetukset"
 
 #: ../../en/project-management/vector-layers.rst:5
 msgid ""
 "Most of the settings which QGIS offers are directly supported by QField "
 "without any extra effort."
-msgstr "La mayoria de los ajustes que ofrece QGIS son soportados directamente por QField sin ningún esfuerzo extra."
+msgstr "Suurin osa asetuksista joita QGIS tarjoaa ovat suoraan tuettuja QFieldissä ilman mitään lisäponnisteluja."
 
 #: ../../en/project-management/vector-layers.rst:8
 msgid "Style"
-msgstr "Estilo"
+msgstr "Tyyli"
 
 #: ../../en/project-management/vector-layers.rst:10
 msgid ""
 "All style settings from QGIS are directly supported by QField. This includes"
 " all renderer types like graduated, categorized, rule based, 2.5D as well as"
 " data defined symbology."
-msgstr "Todos los ajustes de estilo de QGIS son soportados directamente por QField. Esto incluye todos los tipos de renderizado como graduado, categorizado, basado en reglas, 2.5D así como simbología definida de datos."
+msgstr "Kaikki QGISin tyylien asetukset ovat suoraan tuettuja QFieldissä. Tämä sisältää kaikki hahmottamistyypit kuten porrastukset, luokittelun, sääntöpohjaisen, 2.5D kuin tietomääritteisen symbologian."
 
 #: ../../en/project-management/vector-layers.rst:15
 msgid "Display Expression"
-msgstr "Visualizar expresión"
+msgstr "Näyttölauseke"
 
 #: ../../en/project-management/vector-layers.rst:17
 msgid ""
@@ -313,100 +312,100 @@ msgid ""
 "switching to the form view. Choose the appropriate field or an expression in"
 " the list there. Starting from QGIS 3, this can be done directly from the "
 ":menuselection:`Vector Layer Properties --> Display` page."
-msgstr "En QField, los objetos son identificados con un nombre. La expresión para generar este nombre puede ser definido abriendo la tabla de atributos en QGIS y cambiando a la vista de forma. Elije el campo apropiado o una expresión en la lista. Comenzando con QGIS 3, esto puede ser hecho directamente desde la página :menuselection:`Propiedades de Capa Vectorial --> Visualización` ."
+msgstr "QFieldissä objektit tunnistetaan nimellä. Lauseke generoitaessa tämä nimi voidaan määritellä avaamalla attribuuttitaulu QGISissä ja vaihtamalla lomakenäyttöön. Valitse asianmukainen kenttä tai lauseke luettelossa. Alkaen QGIS 3, tämä voidaan tehdä suoraan: menuselection: `Vektoritason asetukset -> Näyttö` sivulla."
 
 #: ../../en/project-management/vector-layers.rst:28
 msgid ""
 "The display expression will be used to represent features with an "
 "identification string throughout QField."
-msgstr "La expresión de visualización será usada para representar elementos con una cadena de identificación a través de QField."
+msgstr "Näyttölauseketta käytetään esittämään ominaisuuksia tunnistemerkkijonolla koko QFieldissä."
 
 #: ../../en/project-management/vector-layers.rst:31
 msgid "Forms and Fields"
-msgstr "Formas y campos"
+msgstr "Lomakkeet ja tiedot"
 
 #: ../../en/project-management/vector-layers.rst:33
 msgid "QField creates forms similar to, but not equal to QGIS."
-msgstr "QField crea formas similares a, pero no iguales a QGIS"
+msgstr "QField luo samanlaisia lomakkeita, muttei samoja kuin QGIS."
 
 #: ../../en/project-management/vector-layers.rst:36
 msgid "Suppress Feature Form"
-msgstr ""
+msgstr "Estä ominaisuuslomake"
 
 #: ../../en/project-management/vector-layers.rst:38
 msgid ""
 "The setting suppress feature form is directly applied to the QField form."
-msgstr ""
+msgstr "Estä ominaisuuslomakeen asetus on suoraan  sovellettu QField lomakkeeseen."
 
 #: ../../en/project-management/vector-layers.rst:43
 msgid "Field widget"
-msgstr ""
+msgstr "Tietotyökalu"
 
 #: ../../en/project-management/vector-layers.rst:45
 msgid "The field widgets from QGIS are supported on a best effort basis."
-msgstr ""
+msgstr "Tietotyökaluja QGISistä tuetaan parhaiden edellytysten mukaan."
 
 #: ../../en/project-management/vector-layers.rst:52
 msgid "Field type"
-msgstr "Tipo de campo"
+msgstr "Tiedon tyyppi"
 
 #: ../../en/project-management/vector-layers.rst:54
 msgid "Text Edit"
-msgstr "Edición de Texto"
+msgstr "Tekstimuokkaus"
 
 #: ../../en/project-management/vector-layers.rst:54
 msgid "HTML is not supported"
-msgstr "HTML no es soportado"
+msgstr "HTML ei ole tuettu"
 
 #: ../../en/project-management/vector-layers.rst:55
 msgid "Numerical input is enforced based on the type."
-msgstr "La entrada numérica es forzada basada en el tipo."
+msgstr "Numerosyöttö toimeenpannaan tyypin perusteella."
 
 #: ../../en/project-management/vector-layers.rst:58
 msgid "Check Box"
-msgstr "Caja de Chequeo"
+msgstr "Valintaruutu"
 
 #: ../../en/project-management/vector-layers.rst:60
 msgid "Value Map"
-msgstr "Mapa de valores"
+msgstr "Arvokartta"
 
 #: ../../en/project-management/vector-layers.rst:62
 msgid "Hidden"
-msgstr "Oculto"
+msgstr "Piilotettu"
 
 #: ../../en/project-management/vector-layers.rst:64
 msgid "External Resource"
-msgstr "Recurso Externo"
+msgstr "Ulkopuolinen resurssi"
 
 #: ../../en/project-management/vector-layers.rst:64
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
-msgstr "Este campo es combinado con integracion de la cámara. Sólo imágenes pueden ser vistas por ahora.:ref:`make_it_grow`"
+msgstr "Tätä kenttää käytetään yhdessä kameran integroimista. Vain kuvia voidaan katsoa toistaiseksi. : ref: `make_it_grow`"
 
 #: ../../en/project-management/vector-layers.rst:68
 msgid "Date Time"
-msgstr "Fecha Hora"
+msgstr "Date Time"
 
 #: ../../en/project-management/vector-layers.rst:70
 msgid "Others"
-msgstr "Otros"
+msgstr "Muut"
 
 #: ../../en/project-management/vector-layers.rst:70
 msgid ":ref:`make_it_grow`"
-msgstr ""
+msgstr ":ref:`make_it_grow`"
 
 #: ../../en/project-management/vector-layers.rst:75
 msgid "Drag and drop designer forms"
-msgstr ""
+msgstr "Vedä ja pudota suunnittelulomake"
 
 #: ../../en/project-management/vector-layers.rst:77
 msgid "Groups and Tabs from Drag and Drop designer forms are supported."
-msgstr ""
+msgstr "Ryhmät ja välilehdet Vedä ja pudota suunnittelulomakkeessa ovat tuettuja."
 
 #: ../../en/project-management/vector-layers.rst:80
 msgid "Conditional visibility"
-msgstr "Visibilidad condicional"
+msgstr "Ehdollinen näytettävyys"
 
 #: ../../en/project-management/vector-layers.rst:82
 msgid ""
@@ -417,17 +416,17 @@ msgid ""
 "and configure a visibility expression for a group \"diseases\". Add a field "
 "\"desease\" with a checkbox. Only when the checkbox is checked, the list of "
 "diseases will be available to the user."
-msgstr "Los grupos pueden ser ocultados basados en una expresión. Esto es útil cuando ciertos atributos son sólo requeridos bajo ciertas condiciones. Como ejemplo imagina el mapeo de árboles. Algunos de ellos podrían tener una enfermedad y tú tienes una lista de posibles enfermedades. Para no sobrecargar la forma con muchos campos, haz un grupo y configura una expresión de visibilidad para el grupo \"enfermedades\". Agrega un campo \"enfermedad\" con una caja de chequeo. Sólo cuando la caja de chequeo esté seleccionada, la lista de enfermedades estará disponible para el usuario."
+msgstr "Ryhmät voivat olla piilotettuja perustuen lausekkeeseen. Tämä on hyödyllistä kun jotkut attribuutit ovat pakollisia vain tietyissä ehdoissa. Esimerkkinä kuvittele puiden kartoitus. Niistä joistakin voi olla sairaus ja sinulla on lista sairauksista. Jos et halua sotkea lomaketta useilla tiedoilla, tee ryhmä ja konfiguroi ryhmän \"sairaudet\" näkyvyyslauseke. Lisää tieto \"sairaus\" valintaruudulla. Ainoastaan kun valintaruutu on merkattu tulee käyttäjälle saataville luettelo sairauksista."
 
 #: ../../en/project-management/vector-layers.rst:95
 msgid ""
 "Configuration of a group box that will only be shown if the checkbox "
 "\"measures_taken\" is checked."
-msgstr ""
+msgstr "Ryhmälaatikon konfigurointi joka näytetään ainoastaan jos valintalaatikko \"measure_taken\" on merkattu."
 
 #: ../../en/project-management/vector-layers.rst:98
 msgid "Constraints"
-msgstr ""
+msgstr "Rajoitteet"
 
 #: ../../en/project-management/vector-layers.rst:100
 msgid ""
@@ -436,30 +435,30 @@ msgid ""
 " save the form. Constraints are configured on a per-field basis and a "
 "description can be added that will be shown to the user if a constraint is "
 "not satisfied."
-msgstr ""
+msgstr "Attribuuttitiedoilla voi olla rajoitteita. Rajoitteet ovat lausekkeista jotka tulee evaluoida :code:`Tosi` (tai :code:`1`) jotta lomake voidaan tallentaa. Rajoitteet konfiguroidaan tietopohjaisesti ja kuvaus voidaan lisätä näytettäväksi käyttäjälle jos rajoite ei ole täyttynyt."
 
 #: ../../en/project-management/vector-layers.rst:111
 msgid "Configuration of a constraint within a range"
-msgstr ""
+msgstr "Rajoitteiden, joissa rajoja, konfurointi"
 
 #: ../../en/project-management/vector-layers.rst:114
 #: ../../en/project-management/vector-layers.rst:145
 msgid "Common use cases"
-msgstr "Casos de uso comunes"
+msgstr "Yleiset käyttötapaukset"
 
 #: ../../en/project-management/vector-layers.rst:116
 msgid ""
 "You cannot enter an elevation value higher than the highest mountain in this"
 " country."
-msgstr "No puedes entrar un valor de elevación más alto que la montaña más alta en este país."
+msgstr "Et voi antaa suurempaa korkeuden arvo kuin korkein vuori kyseisessä maassa."
 
 #: ../../en/project-management/vector-layers.rst:122
 msgid "It is required to fill in an identifier."
-msgstr ""
+msgstr "Se on pakollista täyttää muuttujaan."
 
 #: ../../en/project-management/vector-layers.rst:129
 msgid "Default values"
-msgstr "Valores predeterminados"
+msgstr "Oletusarvot"
 
 #: ../../en/project-management/vector-layers.rst:131
 msgid ""
@@ -467,102 +466,102 @@ msgid ""
 "the attribute form when digitizing a new feature. They are visible to the "
 "user and can be modified as long as the field is editable. They can be based"
 " on the geometry or expression variables."
-msgstr ""
+msgstr "Tiedoille voidaan konfiguroida oletusarvo. Oletusarvot lisätään attrimuuttilomakkeella kun digitoidaan uutta ominaisuutta. Ne ovat näkyviä käyttäjälle ja niitä voidaan muokata niin kauan kuin tieto on muokattavissa. Ne perustuvat geometriaan tai lausekemuuttujiin."
 
 #: ../../en/project-management/vector-layers.rst:142
 msgid "Configuration of a formatted date as default value"
-msgstr "Configuración de una fecha con formato como valor predeterminado."
+msgstr "Oletusarvoisen muotoillun päiväyksen konfigurointi"
 
 #: ../../en/project-management/vector-layers.rst:147
 msgid "Insert the current date and time:"
-msgstr "Inserta la fecha y hora actuales."
+msgstr "Lisää tämän hetkinen päiväys ja aika:"
 
 #: ../../en/project-management/vector-layers.rst:153
 msgid "Insert the length of the digitized line:"
-msgstr "Inserta la longitud de la línea digitalizada."
+msgstr "Lisää digitoidun viivan pituus:"
 
 #: ../../en/project-management/vector-layers.rst:159
 msgid "Configure global variables on the device and insert them."
-msgstr "Configura las variables globales en el dispositivo e insértalas."
+msgstr "Konfiguroi laitteen globaalit muuttujat sekä lisää ne."
 
 #: ../../en/project-management/vector-layers.rst:165
 msgid ""
 "If you want to assign a region code based on the location where a new "
 "feature is inserted, you can do so by using an aggregate expression:"
-msgstr "Si quieres asignar un código de región basado en una localización donde un nuevo elemento es insertado, puedes hacerlo usando una expresión agregada."
+msgstr "Jos haluat määrittää aluekoodin, joka perustuu sijaintiin jossa uusi ominaisuus on lisätty, voit tehdä sen käyttämällä koottua lauseketta:"
 
 #: ../../en/project-management/vector-layers.rst:173
 msgid "Editable"
-msgstr ""
+msgstr "Muokattavissa"
 
 #: ../../en/project-management/vector-layers.rst:175
 msgid "The editable flag of fields is respected."
-msgstr ""
+msgstr "Tietojen muokkauslippua kunnioitetaan."
 
 #: ../../en/project-management/vector-layers.rst:178
 msgid "Remember last values"
-msgstr ""
+msgstr "Muista viimeiset arvot"
 
 #: ../../en/project-management/vector-layers.rst:180
 msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
-msgstr "QField ofrece un control mucho más preciso sobre los últimos valores usados e ignora los ajustes de QGIS."
+msgstr "QField tarjoaa paljon hienojakoisemman hallinnan viimeksi käytetyille arvoille ja jättää huomiotta QGIS asetukset."
 
 #: ../../en/project-management/vector-layers.rst:183
 msgid "Snapping"
-msgstr ""
+msgstr "Tarttuminen"
 
 #: ../../en/project-management/vector-layers.rst:185
 msgid ""
 "While digitizing new features, new points can be snapped to existing "
 "geometries."
-msgstr ""
+msgstr "Digitoitaessa uusia ominaisuuksia voidaan uudet pisteet saada tarttumaan olemassa oleviin geometrioihin."
 
 #: ../../en/project-management/vector-layers.rst:188
 msgid ""
 "All configuration can be done in :menuselection:`Project --> Snapping "
 "Settings` (:menuselection:`Settings --> Snapping Settings` in QGIS 2.x)."
-msgstr ""
+msgstr "Koko konfiguratio voidaan tehdä :menuselection:`Projekti --> Tarttumisen asetukset` (:menuselection:`Asetukset --> Tarttumisen asetukset` versioissa QGIS 2.x)."
 
 #: ../../en/project-management/vector-layers.rst:192
 msgid "Snapping Types"
-msgstr ""
+msgstr "Tarttumistyypit"
 
 #: ../../en/project-management/vector-layers.rst:194
 msgid "It is possible to snap new points"
-msgstr ""
+msgstr "Uudet pisteet on mahdollista saada tarttumaan"
 
 #: ../../en/project-management/vector-layers.rst:196
 msgid "only to nodes of existing geomtries"
-msgstr "sólo a nodos de geometrías existentes"
+msgstr "ainoastaan olemassa olevien geometrioiden kärkipisteisiin"
 
 #: ../../en/project-management/vector-layers.rst:197
 msgid "only to segments of existing geomtries"
-msgstr "sólo a segmentos de geometrías existentes"
+msgstr "ainoastaan olemassa olevien geometrioiden segmentteihin"
 
 #: ../../en/project-management/vector-layers.rst:198
 msgid "to nodes and segments of existing geomtries"
-msgstr ""
+msgstr "olemassa olevien geometrioiden kärkipisteisiin ja segmentteihin"
 
 #: ../../en/project-management/vector-layers.rst:201
 msgid "Snapping to layers"
-msgstr ""
+msgstr "Tasoihin tarttuminen"
 
 #: ../../en/project-management/vector-layers.rst:203
 msgid "It is also possible to only snap to one or a few layers."
-msgstr ""
+msgstr "On myös mahdollista tarttua vain yhdellä monista tasoista."
 
 #: ../../en/project-management/vector-layers.rst:206
 msgid "Snapping tolerance"
-msgstr ""
+msgstr "Tarttumisen herkkyys"
 
 #: ../../en/project-management/vector-layers.rst:208
 msgid "The snapping tolerance can be specified in map units or pixels."
-msgstr ""
+msgstr "Tarttumisen herkkyys voidaan määritellä joko karttayksiköissä tai pikseleinä."
 
 #: ../../en/project-management/vector-layers.rst:210
 msgid ""
 "In almost any case, the units should be set to pixels. We made good "
 "experiences with a tolerance value of 20."
-msgstr ""
+msgstr "Useimmissa tapauksissa yksiköt tulee asettaa pikseleinä. Olemme saaneet hyviä tuloksia herkkyyden arvolla 20."

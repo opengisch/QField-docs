@@ -3,67 +3,66 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
-# jmmanzano <manzano.jm@gmail.com>, 2016
-# Mario Reyes <ernestoreyes561@gmail.com>, 2016
+# Kari Salovaara <kari.salovaara@pp1.inet.fi>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 16:16+0100\n"
-"PO-Revision-Date: 2016-12-02 23:37+0000\n"
-"Last-Translator: Mario Reyes <ernestoreyes561@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/opengisch/qfield-documentation/language/es/)\n"
+"POT-Creation-Date: 2016-12-04 16:18+0100\n"
+"PO-Revision-Date: 2016-11-11 14:43+0000\n"
+"Last-Translator: Kari Salovaara <kari.salovaara@pp1.inet.fi>\n"
+"Language-Team: Finnish (http://www.transifex.com/opengisch/qfield-documentation/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
+"Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../en/user-guide/index.rst:3
 msgid "QField User Guide"
-msgstr "Guía de Usuario de QField"
+msgstr "QField käyttäjän opas"
 
 #: ../../en/user-guide/index.rst:7
 msgid "Basic workflow"
-msgstr "Flujo de trabajo básico"
+msgstr "Perustyöjärjestys"
 
 #: ../../en/user-guide/index.rst:10
 msgid "Switch modes"
-msgstr "Cambio de modos"
+msgstr "Vaihda tilaa"
 
 #: ../../en/user-guide/index.rst:12
 msgid "Modes are switched via :menuselection:`Menu button --> mode`"
-msgstr "Los modos pueden cambiarse a través de :menuselection:`botón de Menú --> modo`"
+msgstr "Tila vaihdetaan käyttäen :menuselection:`Valikkonäppäin --> tila`"
 
 #: ../../en/user-guide/index.rst:15
 msgid "Opening a project"
-msgstr "Abriendo un proyecto"
+msgstr "Projektin avaaminen"
 
 #: ../../en/user-guide/index.rst:19
 msgid "Identify features"
-msgstr "Identifica las características"
+msgstr "Ominaisuuksien tunnistaminen"
 
 #: ../../en/user-guide/index.rst:21
 msgid ""
 "A tap on a feature will identify it. Pressing the back button will close the"
 " identify window."
-msgstr "Un toque en un elemento lo identificará. Al presionar el botón de regreso se cerrará la ventana de identificación."
+msgstr "Näpsäytys ominaisuuteen tunnistaa sen. Painamalla takaisin näppäintä sulkee tunnistusikkunan."
 
 #: ../../en/user-guide/index.rst:24
 msgid "Exceptions to identified layers"
-msgstr "Excepciones a la identificación de capas"
+msgstr "Tunnistettujen tasojen poikkeukset"
 
 #: ../../en/user-guide/index.rst:26
 msgid ""
 "Often it is not required to be able to query every layer. Some layers are "
 "only present as basemap and their attributes are not of interest."
-msgstr "A veces no es necesario que todas las capas puedan consultarse. Algunas capas solo se presentan como base y sus atributos no nos son de interés."
+msgstr "Useinkaan ei ole tarpeen kyselllä kaikilta tasoilta. Jotkut tasot voivat sillon esittöö peruskarttaa ja niiden attribuutit eivät silloin ole kiinnostuksen kohteina."
 
 #: ../../en/user-guide/index.rst:28
 msgid ""
 "You can manage this layerlist in QGIS desktop in :menuselection:`Project -->"
 " Project Properties --> Identify Layers` and uncheck the base layers."
-msgstr "Puedes gestionar estas capas in QGIS desktop en in :menuselection:`Proyecto --> Propiedades del Proyecto --> Identificación de capas` y desmarca las capas base en la columna Identificable."
+msgstr "Voit hallita tätä tasolistaa työasema QGISissä :menuselection:`Projekti --> Projetin ominaisuudet... --> Näytä tasojen tiedot`  ja poistaa merkinnän perustasoilta."
 
 #: ../../en/user-guide/index.rst:31
 msgid "GPS"
@@ -73,53 +72,53 @@ msgstr "GPS"
 msgid ""
 "A short press on the GPS button will turn on the GPS and center to the "
 "current location once positioning information is available."
-msgstr "Una presión corta sobre el botón GPS encenderá el GPS y centrará la posición actual una vez que esté disponible la información de posicionamiento."
+msgstr "Lyhyt painallus GPS näppäimestä käynnistää GPS:n ja keskittää nykyisen sijainnin kun sijantitieto on käytettävissä."
 
 #: ../../en/user-guide/index.rst:35
 msgid "A long press on the GPS button will show the positioning menu."
-msgstr "Una presión larga sobre el botón GPS mostrará el menú de posicionamiento."
+msgstr "Pitkä painallus GPS näppäimestä näyttää GPS Vaihtoehdot valikon."
 
 #: ../../en/user-guide/index.rst:37
 msgid ""
 "Inside the positioning menu you can turn on the positioning display which "
 "will show the current coordinates which are reprojected into the project CRS"
 " along with precision information."
-msgstr "Dentro del menú de posicionamiento puedes activar la pantalla de posicionamiento que mostrará las coordenadas actuales que se proyectan en el SRC de proyecto junto con información de la precisión."
+msgstr "GPS Vaihtoehdot valikossa voit asettaa sijainnin näytön joka näyttää nykyisen sijainnin joka on vastaa projektin koordinaattijärjestelmän sijaintia sekä sijainnin tarkuustiedot."
 
 #: ../../en/user-guide/index.rst:40
 msgid ""
 "If you see WGS 84 lat/lon information instead of information in your project"
 " CRS, you probably have no signal yet."
-msgstr "Si ves información de WGS 84 lat/lon en lugar de información en tu SRC, probablemente aún no tengas señal."
+msgstr "Jos näet WGS84 lat/lon tiedot oman projektisi koordinaattitiejen sijaan, et luultavasti ole saanut vielä signaalia."
 
 #: ../../en/user-guide/index.rst:43
 msgid "Digitize"
-msgstr "Digitalizar"
+msgstr "Digitoi"
 
 #: ../../en/user-guide/index.rst:45
 msgid "To start digitizing new features `Switch modes`_ to digitizing."
-msgstr "Para empezar a digitalizar nuevos elementos `Switch modes`_ para digitalizar."
+msgstr "Aloittaaksesi uusien ominaisuuksien digitoinnin `Vaihda tila`_ digitointiin."
 
 #: ../../en/user-guide/index.rst:47
 msgid ""
 "A new combobox will appear next to the menu button which lists the layers "
 "available for digitizing."
-msgstr "Un nuevo cuadro aparecerá junto al botón de menú, el cual lista las capas disponibles para digitalizar."
+msgstr "Uusi yhdistelmälaatikko ilmestyy valikkonäppäimen viereen jossa listataan digitointiin käyvät tasot."
 
 #: ../../en/user-guide/index.rst:51
 msgid "Points"
-msgstr "Puntos"
+msgstr "Pisteet"
 
 #: ../../en/user-guide/index.rst:53
 msgid ""
 "Navigate the crosshair in the center of the screen to the desired location "
 "and click the pencil at the lower right of the screen to confirm the "
 "creation of a new point feature."
-msgstr "Ajusta la localización deseada con el punto de mira del centro de la pantalla y haz click en el lápiz de la esquina inferior derecha para confirmar la creación de un nuevo punto."
+msgstr "Siirrä hiusristikko näytön keskellä haluamaasi sijaintiin ja klikkaa kynää näytön oikeassa alakulmassa vahvistaaksesi uuden pisteominaisuuden luomisen."
 
 #: ../../en/user-guide/index.rst:58
 msgid "Lines and polygons"
-msgstr "Líneas y polígonos"
+msgstr "Viivat ja monikulmiot"
 
 #: ../../en/user-guide/index.rst:60
 msgid ""
@@ -127,11 +126,11 @@ msgid ""
 "the line and click the pencil at the lower right of the screen. Proceed with"
 " adding points or removing points until the line or polygon is finished and "
 "then click save."
-msgstr "Mueve el puntero en el centro de la pantalla a la posición de inicio deseada de la línea y da click al lápiz en la esquina inferior derecha de la pantalla. Procede añadiendo o removiendo puntos hasta que la línea o polígono esté finalizada y entonces da click en guardar."
+msgstr "Siirrä hiusristikko näytön keskellä haluamaasi sijaintiin ja klikkaa kynää näytön oikeassa alakulmassa. Jatka lisäämällä pisteitä tai poistamalla pisteitä kunnes viiva tai monikulmio on valmis ja sitten näpsäytä tallennusta."
 
 #: ../../en/user-guide/index.rst:66
 msgid "Attribute form"
-msgstr "Formulario de atributos"
+msgstr "Attribuuttilomake"
 
 #: ../../en/user-guide/index.rst:68
 msgid ""
@@ -140,62 +139,62 @@ msgid ""
 "new feature. The form which appears allows entering attribute values for the"
 " new feature. The checkboxes at the right of every attribute allow for "
 "remembering each attribute individually."
-msgstr "Después de digitalizar una geometría, aparecerá un formulario de atributos si no se suprime y pedirá al usuario que introduzca los atributos para el nuevo elemento.   El formulario que aparece permite la introducción de valores de atributos para el nuevo elemento.  Las casillas de verificación a la derecha de todos los atributos permiten recordar cada atributo individual."
+msgstr "Kun geometria on digitoitu näytetään attribuuttilomake jos sitä ei ole estetty ja käyttäjää pyydetään antamaan uuden ominaisuuden attribuuttitiedot. Ilmestyvä lomake mahdollistaa attribuuttiarvojen syöttämisen uudelle ominaisuudelle. Valintaruutu jokaisen attribuutin oikealla puolella mahdollistaa kunkin attribuutin muistamisen erikseen."
 
 #: ../../en/user-guide/index.rst:74
 msgid "Delete Features"
-msgstr "Borrado de elementos"
+msgstr "Poista ominaisuuksia"
 
 #: ../../en/user-guide/index.rst:76
 msgid "Deleting features is only possible in digitize mode."
-msgstr "La eliminación de elementos sólo es posible en el modo de digitalización."
+msgstr "Ominaisuuksien poistaminen on mahdollista vain digitointitilassa."
 
 #: ../../en/user-guide/index.rst:78
 msgid "To delete a feature, identify it first and tap the trash icon."
-msgstr "Para borrar un elemento, identifícalo primero y pulsa sobre el icono de la papelera."
+msgstr "Poistaaksesi ominaisuuden, tunnista se ensin ja sitten näpsäytä roskakori-ikonia."
 
 #: ../../en/user-guide/map-themes.rst:4
 msgid "Change the active Map Theme"
-msgstr "Cambia el Tema de Mapa activo"
+msgstr "Vaihda aktiivisen kartan teemaa."
 
 #: ../../en/user-guide/map-themes.rst:6
 msgid "Switching Map Themes is possible from the Dashboard."
-msgstr "Es posible cambiar temas de mapas desde el tablero."
+msgstr "Kartan teeman vaihtaminen on mahdollista hallintapanelista."
 
 #: ../../en/user-guide/map-themes.rst:8
 msgid "Use the *Map Themes* combobox to chose the active theme."
-msgstr "Usa el cuadro \"Temas de mapas\" para elegir el tema activo."
+msgstr "Käytä *Kartan teema* valintalaatikkoa valitaksesi aktiivisen teeman."
 
 #: ../../en/user-guide/map-themes.rst:19
 msgid ""
 "The combo box is only available if you did :ref:`configure_map_themes`."
-msgstr "La caja está disponible sólo si hiciste :ref:configurar_temas_de_mapas."
+msgstr "Valintalaatikko on käytettävissä ainoastaan jos suoritit :ref:`configure_map_themes`."
 
 #: ../../en/user-guide/variables.rst:4
 msgid "Global variables"
-msgstr "Variables globales"
+msgstr "Globaalit muuttujat"
 
 #: ../../en/user-guide/variables.rst:6
 msgid ""
 "Variables are used in QField and QGIS to dynamically set values based on the"
 " current project file, the layer or the system. They can be used for "
 "styling, setting default values for fields and much more."
-msgstr "Las variables son usadas en QField y QGIS para establecer dinámicamente valores basados en el archivo de proyecto actual, la capa o el sistema. Pueden ser usados para estilizar, establecer valores predeterminados para campos y mucho más."
+msgstr "Muuttujia käytetään Fieldissä ja QGISissä dynaamisesti asettamaan arvoja jotka perustuvat nykyiseeen projektitiedostoon, tasoon ja järjestelmään.  Niitä voidaan käyttää tyylittämiseen, tietojen oletusarvojen asettamiseen ja moneeen muuhun."
 
 #: ../../en/user-guide/variables.rst:10
 msgid ""
 "To configure a device-specific variable, open the settings and click the "
 "\"Global Variables\" tab."
-msgstr "Para configurar una variable específica de dispositivo, abre los ajustes y da click en la pestaña \"Variables Globales\"."
+msgstr "Laiteriippuvuen muuttujien asettamiseksi avaa asetukset ja klikkaa \"Globaalit muuttujat\" välilehdelle."
 
 #: ../../en/user-guide/variables.rst:19
 msgid ""
 "Configuration of two new global variables in addition to the pre-defined "
 "system variables."
-msgstr "Configuración de dos nuevas variables globales en suma a las variables de sistema predefinidas."
+msgstr "Konfiguraatio kahdelle uudelle muuttujalle edeltä määritettyjen järjestelmämuuttujien lisäksi."
 
 #: ../../en/user-guide/variables.rst:22
 msgid ""
 "On the variable page, you can see predefined variables. To add new "
 "variables, click on the empty cell at the bottom and write the content."
-msgstr "En la página de variables, puedes ver variables predefinidas. Para añadir variables nuevas, haz click en la celda vacía en el fondo y escribe el contenido."
+msgstr "Muuttujien sivulla voit nähdä edeltä asetetut muuttujat. Lisätäksesi uusia muuttujia klikkaa tyhjää solua alhaalla ja lisää sisältö."

@@ -3,82 +3,80 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
-# jmmanzano <manzano.jm@gmail.com>, 2016
-# Mario Reyes <ernestoreyes561@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-04 16:18+0100\n"
-"PO-Revision-Date: 2016-12-04 15:27+0000\n"
-"Last-Translator: Mario Reyes <ernestoreyes561@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/opengisch/qfield-documentation/language/es/)\n"
+"PO-Revision-Date: 2016-11-17 08:52+0000\n"
+"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"Language-Team: Catalan (http://www.transifex.com/opengisch/qfield-documentation/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
+"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../en/project-management/android-data-structure.rst:2
 msgid "Android: Special File Access Notes"
-msgstr "Android: Notas de acceso de archivos especiales"
+msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:5
 msgid "Custom SVG symbols and settings"
-msgstr "Símbolos SVG personalizados y ajustes."
+msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:7
 msgid ""
 "In the about dialog you can see where the shared folders are on your device."
-msgstr "En el cuadro de diálogo \"Acerca de\" puedes ver donde se localizan las carpetas compartidas en tu dispositivo."
+msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:9
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr "Si quieres usar símbolos personalizados necesitas ponerlos ahí usando un gestor de archivos."
+msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:12
 msgid "External SD card"
-msgstr "Tarjeta SD externa"
+msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:14
 msgid ""
 "In order to have write access to projects which are on an external SD card, "
 "you will have to put it into the following folder:"
-msgstr "Para tener acceso de escritura a los proyectos que están en la tarjeta SD externa, tendrás que ponerlos en la siguiente carpeta:"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:2
 msgid "Supported data formats"
-msgstr "Formatos soportados"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:4
 msgid ""
 "QField supports a wide variety of formats via QGIS data providers and GDAL. "
 "This page offers a non-exhaustive list of supported data formats."
-msgstr "QField soporta una amplia variedad de formatos a través de los proveedores de datos de QGIS y GDAL. Esta página ofrece una lista no exhaustiva de formatos de datos soportados."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:8
 msgid "Table"
-msgstr "Tabla"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
 msgid "Data Format"
-msgstr "Formato de datos"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/vector-layers.rst:52
 msgid "Support"
-msgstr "Soporte"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:15
 #: ../../en/project-management/vector-layers.rst:52
 msgid "Notes"
-msgstr "Notas"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:17
 msgid "Spatialite"
-msgstr "Spatialite"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:17
 #: ../../en/project-management/dataformat.rst:19
@@ -92,63 +90,63 @@ msgstr "Spatialite"
 #: ../../en/project-management/vector-layers.rst:62
 #: ../../en/project-management/vector-layers.rst:68
 msgid ":yay:`✔`"
-msgstr ":yay:`✔`"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:19
 msgid "Geopackage"
-msgstr "Geopackage"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:21
 msgid "WMS"
-msgstr "WMS"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:23
 msgid "Postgis"
-msgstr "Postgis"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:23
 msgid "Ssl support not yet implemented."
-msgstr "Soporte para ssl aún no implementado"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:25
 msgid "MBTiles"
-msgstr "MBTiles"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:27
 msgid "Shapefile"
-msgstr "Shapefile"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "Tiff"
-msgstr "Tiff"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:29
 #: ../../en/project-management/vector-layers.rst:64
 msgid ":moreorless:`~`"
-msgstr ":moreorless:`~`"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:29
 msgid "JPEG compression not yet supported."
-msgstr "JPEG compresión no soportada aún"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 msgid "ECW"
-msgstr "ECW"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
 #: ../../en/project-management/vector-layers.rst:70
 msgid ":nay:`✘`"
-msgstr ":nay:`✘`"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:31
 #: ../../en/project-management/dataformat.rst:33
 msgid "License restricts usage."
-msgstr "Licencia restringe su uso."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:33
 msgid "MrSID"
-msgstr "MrSID"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:36
 msgid ""
@@ -158,22 +156,22 @@ msgid ""
 "findings. If it does not work, please `open an issue "
 "<https://github.com/opengisch/OSGeo4A/issues>`_. We will be happy to help "
 "you with the implementation."
-msgstr "Si no encuentras tu formato de datos favorito en esta tabla, por favor comprueba si funciona y `adapta la lista de encima <https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst>`_ para compartir tus hallazgos. Si no funciona por favor, `abre un tema en  <https://github.com/opengisch/OSGeo4A/issues>`_. Estaremos encantados de ayudarte con la implementación"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:42
 msgid "Raster data"
-msgstr "Datos Raster"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:44
 msgid ""
 "Raster data can become quite big quickly, when working with uncompressed "
 "tiff files it's often several Gb of data. Especially on mobile devices, this"
 " is inefficient."
-msgstr "Los datos Raster pueden crecer bastante rápido, cuando se trabaja con ficheros tiff no comprimidos pueden ser varios Gb de información. Es muy ineficiente en dispositivos móviles."
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:47
 msgid "Use GeoPackage"
-msgstr "Usa GeoPackages"
+msgstr ""
 
 #: ../../en/project-management/dataformat.rst:49
 msgid ""
@@ -181,130 +179,130 @@ msgid ""
 "following commands will convert a file called :code:`raster.tif` to a file "
 ":code:`raster.gpkg` with pyramids. Make sure you adjust EPSG:21781 (CH1903 "
 "LV03) to your desired CRS."
-msgstr "Nosotros recomentados el uso del formato geopackage para trabajar con datos raster. El siguiente comando puede convertir un fichero :code:`raster.tif` a :code:`raster.gpkg` con pirámides. Asegúrate de ajustar EPSG:21781 (CH1903 LV03) a tu Sistema de Referencia de Coordenadas (SRC)."
+msgstr ""
 
 #: ../../en/project-management/index.rst:3
 msgid "QField Project Management"
-msgstr "Gestión de Proyectos de QField"
+msgstr ""
 
 #: ../../en/project-management/index.rst:5
 msgid ""
 "QField does not have a built-in project management. You need to set up and "
 "configure your project first inside QGIS and then copy the project file "
 "(.qgs) and any additional files to your device and open it with QField."
-msgstr "QField no tiene un manejador de proyectos incorporado. Necesitas crear e incoporar tu poryecto primero dentro de QGIS y entonces copiar el archivo del proyecto (.qgs) y los archivos adicionales a tu dispositivo y abrirlos con QField."
+msgstr ""
 
 #: ../../en/project-management/index.rst:8
 msgid "Contents"
-msgstr "Contenidos"
+msgstr ""
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
-msgstr "Sistema de Referencia de Coordenadas"
+msgstr ""
 
 #: ../../en/project-management/index.rst:21
 msgid ""
 "QField uses the Coordinate Reference System (CRS) information found in the "
 "project file."
-msgstr "QField utiliza el Sistema de Referencia de Coordenadas (SRC) que se encuentra en el fichero del proyecto."
+msgstr ""
 
 #: ../../en/project-management/index.rst:23
 msgid "Project CRS"
-msgstr "SRC del Proyecto"
+msgstr ""
 
 #: ../../en/project-management/index.rst:24
 msgid "On the fly reprojection (OTF) is used for visualization"
-msgstr "Reproyección al vuelo (OTF) usado para visualización"
+msgstr ""
 
 #: ../../en/project-management/index.rst:25
 msgid "Layer CRS"
-msgstr "SRC de capa"
+msgstr ""
 
 #: ../../en/project-management/map-themes.rst:4
 msgid "Configure Map Themes"
-msgstr "Configuración de temas de mapas"
+msgstr ""
 
 #: ../../en/project-management/map-themes.rst:6
 msgid ""
 "The beautiful thing about GIS is that maps are dynamic. Layers can "
 "individually be shown and hidden and information can be presented more or "
 "less prominently based on the task at hand."
-msgstr "Algo maravilloso acerca de los SIG es que los mapas son dinámicos. Las capas pueden ser mostradas y ocultadas individualmente y la información puede ser presentada más o menos prominentemente basada en la tarea actual."
+msgstr ""
 
 #: ../../en/project-management/map-themes.rst:10
 msgid ""
 "This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
 "are for."
-msgstr "Esto es para lo que son los \"Temas de Mapas\" (antes de QGIS 3.0 conocidos como \"Ajustes Previos de Visibilidad\")"
+msgstr ""
 
 #: ../../en/project-management/map-themes.rst:14
 msgid "Creating a Map Theme"
-msgstr "Creando un Tema de Mapa"
+msgstr ""
 
 #: ../../en/project-management/map-themes.rst:16
 msgid "Creating a Map Theme in QGIS is a very simple task."
-msgstr "La creación de un tema de mapa en QGIS es una tarea muy simple"
+msgstr ""
 
 #: ../../en/project-management/map-themes.rst:24
 msgid "Style the map and layers to your requirements"
-msgstr "Aplica estilo al mapa y las capas a tus requerimientos."
+msgstr ""
 
 #: ../../en/project-management/map-themes.rst:25
 msgid "Save it as a named Map Theme"
-msgstr "Guárdalo como un Tema de Mapa"
+msgstr ""
 
 #: ../../en/project-management/map-themes.rst:26
 msgid "Load the project and your device and :ref:`change_map_theme`."
-msgstr "Carga el proyecto y tu dispositivo y :ref:`change_map_theme`."
+msgstr ""
 
 #: ../../en/project-management/portable-project.rst:4
 msgid "Portable Project"
-msgstr "Proyecto Portable"
+msgstr ""
 
 #: ../../en/project-management/portable-project.rst:6
 msgid ""
 "You will need a portable version of your QGIS project file (.qgs). Portable "
 "means that all paths are relative and datasets are reachable from the "
 "device."
-msgstr "Necesitas una versión portable de tu proyecto QGIS (.qgs). Portable significa que todas las rutas son relativas y los datos son accesibles desde el dispositivo."
+msgstr ""
 
 #: ../../en/project-management/portable-project.rst:9
 msgid ""
 "Check that :menuselection:`Project --> Project Properties --> General --> "
 "Save paths` is set to \"Relative\" and that all required data files are in "
 "the same folder like the .qgs file or a subfolder of it."
-msgstr "Comprueba que :menuselection:`Proyecto --> Propiedades del Proyecto --> General --> Guardar rutas`  tiene seleccionado \"Relativo\" y que todos los datos están en la misma carpeta que el .qgs o en una subcarpeta."
+msgstr ""
 
 #: ../../en/project-management/portable-project.rst:12
 msgid ""
 "For increased productivity, we suggest having a look at the `QFieldSync "
 "plugin <https://plugins.qgis.org/plugins/qfieldsync>`_."
-msgstr "Para incrementar la productividad, sugerimos darle un vistazo el ` complemento QFieldSync  <https://plugins.qgis.org/plugins/qfieldsync>`_."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:3
 msgid "Vector Layer Settings"
-msgstr "Ajustes de capas vectoriales"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:5
 msgid ""
 "Most of the settings which QGIS offers are directly supported by QField "
 "without any extra effort."
-msgstr "La mayoria de los ajustes que ofrece QGIS son soportados directamente por QField sin ningún esfuerzo extra."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:8
 msgid "Style"
-msgstr "Estilo"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:10
 msgid ""
 "All style settings from QGIS are directly supported by QField. This includes"
 " all renderer types like graduated, categorized, rule based, 2.5D as well as"
 " data defined symbology."
-msgstr "Todos los ajustes de estilo de QGIS son soportados directamente por QField. Esto incluye todos los tipos de renderizado como graduado, categorizado, basado en reglas, 2.5D así como simbología definida de datos."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:15
 msgid "Display Expression"
-msgstr "Visualizar expresión"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:17
 msgid ""
@@ -313,21 +311,21 @@ msgid ""
 "switching to the form view. Choose the appropriate field or an expression in"
 " the list there. Starting from QGIS 3, this can be done directly from the "
 ":menuselection:`Vector Layer Properties --> Display` page."
-msgstr "En QField, los objetos son identificados con un nombre. La expresión para generar este nombre puede ser definido abriendo la tabla de atributos en QGIS y cambiando a la vista de forma. Elije el campo apropiado o una expresión en la lista. Comenzando con QGIS 3, esto puede ser hecho directamente desde la página :menuselection:`Propiedades de Capa Vectorial --> Visualización` ."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:28
 msgid ""
 "The display expression will be used to represent features with an "
 "identification string throughout QField."
-msgstr "La expresión de visualización será usada para representar elementos con una cadena de identificación a través de QField."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:31
 msgid "Forms and Fields"
-msgstr "Formas y campos"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:33
 msgid "QField creates forms similar to, but not equal to QGIS."
-msgstr "QField crea formas similares a, pero no iguales a QGIS"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:36
 msgid "Suppress Feature Form"
@@ -348,49 +346,49 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:52
 msgid "Field type"
-msgstr "Tipo de campo"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:54
 msgid "Text Edit"
-msgstr "Edición de Texto"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:54
 msgid "HTML is not supported"
-msgstr "HTML no es soportado"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:55
 msgid "Numerical input is enforced based on the type."
-msgstr "La entrada numérica es forzada basada en el tipo."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:58
 msgid "Check Box"
-msgstr "Caja de Chequeo"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:60
 msgid "Value Map"
-msgstr "Mapa de valores"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:62
 msgid "Hidden"
-msgstr "Oculto"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:64
 msgid "External Resource"
-msgstr "Recurso Externo"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:64
 msgid ""
 "This field is combined with camera integration. Only images can be viewed so"
 " far. :ref:`make_it_grow`"
-msgstr "Este campo es combinado con integracion de la cámara. Sólo imágenes pueden ser vistas por ahora.:ref:`make_it_grow`"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:68
 msgid "Date Time"
-msgstr "Fecha Hora"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:70
 msgid "Others"
-msgstr "Otros"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:70
 msgid ":ref:`make_it_grow`"
@@ -406,7 +404,7 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:80
 msgid "Conditional visibility"
-msgstr "Visibilidad condicional"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:82
 msgid ""
@@ -417,7 +415,7 @@ msgid ""
 "and configure a visibility expression for a group \"diseases\". Add a field "
 "\"desease\" with a checkbox. Only when the checkbox is checked, the list of "
 "diseases will be available to the user."
-msgstr "Los grupos pueden ser ocultados basados en una expresión. Esto es útil cuando ciertos atributos son sólo requeridos bajo ciertas condiciones. Como ejemplo imagina el mapeo de árboles. Algunos de ellos podrían tener una enfermedad y tú tienes una lista de posibles enfermedades. Para no sobrecargar la forma con muchos campos, haz un grupo y configura una expresión de visibilidad para el grupo \"enfermedades\". Agrega un campo \"enfermedad\" con una caja de chequeo. Sólo cuando la caja de chequeo esté seleccionada, la lista de enfermedades estará disponible para el usuario."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:95
 msgid ""
@@ -445,13 +443,13 @@ msgstr ""
 #: ../../en/project-management/vector-layers.rst:114
 #: ../../en/project-management/vector-layers.rst:145
 msgid "Common use cases"
-msgstr "Casos de uso comunes"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:116
 msgid ""
 "You cannot enter an elevation value higher than the highest mountain in this"
 " country."
-msgstr "No puedes entrar un valor de elevación más alto que la montaña más alta en este país."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:122
 msgid "It is required to fill in an identifier."
@@ -459,7 +457,7 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:129
 msgid "Default values"
-msgstr "Valores predeterminados"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:131
 msgid ""
@@ -471,25 +469,25 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:142
 msgid "Configuration of a formatted date as default value"
-msgstr "Configuración de una fecha con formato como valor predeterminado."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:147
 msgid "Insert the current date and time:"
-msgstr "Inserta la fecha y hora actuales."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:153
 msgid "Insert the length of the digitized line:"
-msgstr "Inserta la longitud de la línea digitalizada."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:159
 msgid "Configure global variables on the device and insert them."
-msgstr "Configura las variables globales en el dispositivo e insértalas."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:165
 msgid ""
 "If you want to assign a region code based on the location where a new "
 "feature is inserted, you can do so by using an aggregate expression:"
-msgstr "Si quieres asignar un código de región basado en una localización donde un nuevo elemento es insertado, puedes hacerlo usando una expresión agregada."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:173
 msgid "Editable"
@@ -507,7 +505,7 @@ msgstr ""
 msgid ""
 "QField offers a much more fine-grained control over the last used values and"
 " ignores the QGIS setting."
-msgstr "QField ofrece un control mucho más preciso sobre los últimos valores usados e ignora los ajustes de QGIS."
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:183
 msgid "Snapping"
@@ -535,11 +533,11 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:196
 msgid "only to nodes of existing geomtries"
-msgstr "sólo a nodos de geometrías existentes"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:197
 msgid "only to segments of existing geomtries"
-msgstr "sólo a segmentos de geometrías existentes"
+msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:198
 msgid "to nodes and segments of existing geomtries"

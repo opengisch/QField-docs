@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-29 14:03+0100\n"
+"POT-Creation-Date: 2016-12-04 16:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Zoltan Siki <siki@agt.bme.hu>, 2016\n"
 "Language-Team: Hungarian (https://www.transifex.com/opengisch/teams/38926/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,22 +20,27 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:3
 msgid "QFieldSync plugin"
-msgstr ""
+msgstr "QFieldSync modul"
 
 #: ../../en/qfieldsync/index.rst:5
 msgid ""
 "The QFieldSync plugin helps preparing and packaging QGIS projects for "
 "QField."
 msgstr ""
+"A QFieldSync modul segít a QGIS projektek előkészítésében és "
+"összecsomagolásában a QFields-hez."
 
 #: ../../en/qfieldsync/index.rst:7
 msgid ""
 "QFieldSync supports your project preparation with automating the following:"
 msgstr ""
+"A QFieldSync a következők automatizálásával segíti a projektjének "
+"előkészítését:"
 
 #: ../../en/qfieldsync/index.rst:9
 msgid "Required steps for project setup (e.g. :ref:`portable_project`)"
 msgstr ""
+"A projekt beállításhoz szükséges lépések (pl. :ref:`portable_project`)"
 
 #: ../../en/qfieldsync/index.rst:10
 msgid ""
@@ -50,28 +56,30 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:14
 msgid "Workflow"
-msgstr ""
+msgstr "Munkafolyamat"
 
 #: ../../en/qfieldsync/index.rst:16
 msgid ""
 "To get a quick overview of the process, here is a list of typical steps:"
-msgstr ""
+msgstr "Az eljárás gyors áttekintéséhez itt egy lista a tipikus lépésekkel:"
 
 #: ../../en/qfieldsync/index.rst:18
 msgid "Create a QField package. This is a working copy in a separate folder."
 msgstr ""
+"Hozzon létre egy QField csomagot. Ez egy munka másolat egy külön "
+"könyvtárban."
 
 #: ../../en/qfieldsync/index.rst:19
 msgid "Copy the QField package to the target device."
-msgstr ""
+msgstr "Másolja át a QField csomagot a cél eszközre."
 
 #: ../../en/qfieldsync/index.rst:20
 msgid "Go out and collect data."
-msgstr ""
+msgstr "Menjen ki és gyűjtse össze az adatokat."
 
 #: ../../en/qfieldsync/index.rst:21
 msgid "Copy the modified data back to your desktop computer."
-msgstr ""
+msgstr "Másolja vissza a módosított adatokat az asztali számítógépére."
 
 #: ../../en/qfieldsync/index.rst:22
 msgid "Synchronize the modified data with your database or files."
@@ -79,7 +87,7 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:25
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguráció"
 
 #: ../../en/qfieldsync/index.rst:27
 msgid ""
@@ -89,7 +97,7 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:31
 msgid "Layer configuration"
-msgstr ""
+msgstr "Réteg konfiguráció"
 
 #: ../../en/qfieldsync/index.rst:33
 msgid ""
@@ -164,7 +172,7 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:71
 msgid "Layer"
-msgstr ""
+msgstr "Réteg"
 
 #: ../../en/qfieldsync/index.rst:69
 msgid ""

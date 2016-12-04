@@ -3,167 +3,166 @@
 # This file is distributed under the same license as the QField Documentation package.
 # 
 # Translators:
-# jmmanzano <manzano.jm@gmail.com>, 2016
-# Mario Reyes <ernestoreyes561@gmail.com>, 2016
+# Carlos López Quintanilla <carlos.lopez@psig.es>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 16:16+0100\n"
-"PO-Revision-Date: 2016-11-29 18:23+0000\n"
-"Last-Translator: Mario Reyes <ernestoreyes561@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/opengisch/qfield-documentation/language/es/)\n"
+"POT-Creation-Date: 2016-12-04 16:18+0100\n"
+"PO-Revision-Date: 2016-11-17 07:51+0000\n"
+"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"Language-Team: Catalan (http://www.transifex.com/opengisch/qfield-documentation/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
+"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../en/index.rst:2
 msgid "QField - your mobile [Q]GIS solution"
-msgstr "QField - tu solución móvil de [Q]GIS"
+msgstr ""
 
 #: ../../en/index.rst:3
 msgid "QField allows you to efficiently work on your GIS data outdoor."
-msgstr "QField te permite trabajar eficientemente con datos GIS en el campo."
+msgstr ""
 
 #: ../../en/index.rst:5
 msgid ""
 "QField's optimized user interface for Android devices hides the full power "
 "of `QGIS <https://qgis.org>`_ under the hood."
-msgstr "La interfaz de QField optimizada para dispositivos Android esconde todo el poder de  `QGIS <https://qgis.org>`_ bajo el capó."
+msgstr ""
 
 #: ../../en/index.rst:15
 msgid ""
 ":download:`Slides from FOSS4G 2016 <files/slides_foss4g16.pdf>` are "
 "available."
-msgstr ":download:`Diapositivas del FOSS4G 2016 <files/slides_foss4g16.pdf>` están disponibles."
+msgstr ""
 
 #: ../../en/index.rst:19
 msgid "Prepare once - Deploy everywhere"
-msgstr "Prepáralo una vez - Despliégalo en cualquier lugar"
+msgstr ""
 
 #: ../../en/index.rst:20
 msgid "Uses QGIS projects (including symbology and edit widgets)"
-msgstr "Usa los proyectos de QGIS (incluyendo simbología y widgets de edición)"
+msgstr ""
 
 #: ../../en/index.rst:21
 msgid "Supports most QGIS supported formats (ideal with PostGIS)"
-msgstr "Soporta la mayoría de formatos soportados en QGIS (ideal con PostGIS)"
+msgstr ""
 
 #: ../../en/index.rst:22
 msgid "Automatic syncronization capabilities (Cable, WiFi, Cloud)"
-msgstr "Capacidades de sincronización automática (Cable, WIFI, Nube)"
+msgstr ""
 
 #: ../../en/index.rst:23
 msgid "Extends seamlessly your GDI"
-msgstr "Extiende sin problemas su GDI"
+msgstr ""
 
 #: ../../en/index.rst:26
 msgid "Made for touch - Field-work friendly"
-msgstr "Hecho para tocar - Adecuado para el trabajo de campo"
+msgstr ""
 
 #: ../../en/index.rst:27
 msgid "Lean UI with few and large buttons"
-msgstr "Interfaz de Usuario simplificada con pocos botones y grandes botones."
+msgstr ""
 
 #: ../../en/index.rst:28
 msgid "GPS centric"
-msgstr "Centrada en el GPS"
+msgstr ""
 
 #: ../../en/index.rst:29
 msgid "Fully working offline and online using live and cached* DB connections"
-msgstr "Totalmente funcional tanto conectado como desconectado usando conexiones con Bases de Datos en vivo y en caché*"
+msgstr ""
 
 #: ../../en/index.rst:30
 msgid "Switchable working modes (display, inspection, digitizing, measuring)*"
-msgstr "Modos de trabajo conmutables (observación, inspección, digitalización, medida)*"
+msgstr ""
 
 #: ../../en/index.rst:31
 msgid ""
 "Cross mode tools (Pan, zoom, identify, GPS coordinates, scalebar, central "
 "crosshair with snapping)"
-msgstr "Herramientas transversales a los modos (Desplazamiento, zoom, identificación, coordenadas GPS, barra de escala, punto de mira con autoajuste)"
+msgstr ""
 
 #: ../../en/index.rst:34
 msgid "Make it grow - Make it yours"
-msgstr "Hazla crecer - Hazla tuya"
+msgstr ""
 
 #: ../../en/index.rst:35
 msgid "Paid feature development"
-msgstr "Pago por desarrollo de funciones"
+msgstr ""
 
 #: ../../en/index.rst:36
 msgid "Customizable to your needs"
-msgstr "Adaptable a tus necesidades"
+msgstr ""
 
 #: ../../en/index.rst:37
 msgid "Donations and sponsoring (qfield.opengis.ch/donate)"
-msgstr "Donaciones y esponsorización (qfield.opengis.ch/donate)"
+msgstr ""
 
 #: ../../en/index.rst:38
 msgid ""
 "Hire us for development, consulting and training for QField, C++, Python, "
 "Web, QGIS, Android, ..."
-msgstr "Contrátanos para el desarrollo, consultoría y formación de QField, C++, Python, Web, QGIS, Android, ..."
+msgstr ""
 
 #: ../../en/index.rst:49
 msgid "Contents"
-msgstr "Contenidos"
+msgstr "Contingut"
 
 #: ../../en/index.rst:63
 msgid "Translations"
-msgstr "Traducciones"
+msgstr ""
 
 #: ../../en/index.rst:65
 msgid "The documentation is available in several languages"
-msgstr "La documentación está disponible en varios idiomas"
+msgstr ""
 
 #: ../../en/index.rst:67
 msgid "`Catalan </docs/ca>`_"
-msgstr "`Catalán </ca>`_"
+msgstr ""
 
 #: ../../en/index.rst:69
 msgid "`Deutsch </docs/de>`_"
-msgstr "`Alemán </de>`_"
+msgstr ""
 
 #: ../../en/index.rst:71
 msgid "`English </docs/en>`_"
-msgstr "`Inglés </en>`_"
+msgstr ""
 
 #: ../../en/index.rst:73
 msgid "`Français </docs/fr>`_"
-msgstr "`Francés </fr>`_"
+msgstr ""
 
 #: ../../en/index.rst:75
 msgid "`Galego </docs/gl>`_"
-msgstr "Gallego"
+msgstr ""
 
 #: ../../en/index.rst:77
 msgid "`Português </docs/pt>`_"
-msgstr "`Portugués </pt>`_"
+msgstr ""
 
 #: ../../en/index.rst:79
 msgid "`Română </docs/ro>`_"
-msgstr "Rumano"
+msgstr ""
 
 #: ../../en/index.rst:81
 msgid "`український </docs/uk>`_"
-msgstr "Ucraniano"
+msgstr ""
 
 #: ../../en/index.rst:83
 msgid "`Magyar </docs/hu>`_"
-msgstr "Húngaro"
+msgstr ""
 
 #: ../../en/index.rst:85
 msgid ""
 "If there is an error with a translation, please `help to improve it "
 "<https://www.transifex.com/opengisch/qfield-documentation/>`_."
-msgstr "Si hay algún error en la traducción, por favor, `ayuda a mejorarla <https://www.transifex.com/opengisch/qfield-documentation/>`_."
+msgstr ""
 
 #: ../../en/index.rst:89
 msgid "Indices and tables"
-msgstr "Índices y tablas"
+msgstr "Índex i taules"
 
 #: ../../en/index.rst:91
 msgid ":ref:`genindex`"

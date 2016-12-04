@@ -10,7 +10,7 @@ SPHINXBUILD   = sphinx-build
 PAPER         = a4
 SHELL = /bin/bash
 TRANSLATIONS_STATIC  = en
-TRANSLATIONS_I18N  = de fr it ro gl pt ca es hu uk
+TRANSLATIONS_I18N  = de fr it ro gl pt ca es hu uk fi
 LANGUAGES     = $(TRANSLATIONS_STATIC) $(TRANSLATIONS_I18N)
 BUILD_LANGUAGES = $(TRANSLATIONS_I18N) $(TRANSLATIONS_STATIC)
 
@@ -91,7 +91,7 @@ transifex_sync: gettext
 	@set -e;\
 	./scripts/create_transifex_resources.sh; \
 	tx push -s; \
-	tx pull
+	tx pull -a
 	@echo "Transifex resources synchronized"
 
 compile_messages: init i18n/*/*.po
