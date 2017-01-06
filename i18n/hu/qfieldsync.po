@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 16:18+0100\n"
+"POT-Creation-Date: 2017-01-06 17:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Zoltan Siki <siki@agt.bme.hu>, 2016\n"
 "Language-Team: Hungarian (https://www.transifex.com/opengisch/teams/38926/hu/)\n"
@@ -47,12 +47,16 @@ msgid ""
 "Creating basemaps from a single raster layer or from a style defined in a "
 "map theme."
 msgstr ""
+"Egy alaptérkép létrehozása egy raszterből vagy egy térkép témában definiált "
+"stílusból."
 
 #: ../../en/qfieldsync/index.rst:11
 msgid ""
 "Configuring the offline editing functionality and synchronizing changes "
 "back."
 msgstr ""
+"Az offline szerkesztés és a módosítások visszaszinkronizálásának "
+"konfigurálása."
 
 #: ../../en/qfieldsync/index.rst:14
 msgid "Workflow"
@@ -83,7 +87,7 @@ msgstr "Másolja vissza a módosított adatokat az asztali számítógépére."
 
 #: ../../en/qfieldsync/index.rst:22
 msgid "Synchronize the modified data with your database or files."
-msgstr ""
+msgstr "A módosított adatok szinkronizálása az adatbázisával vagy fájljaival."
 
 #: ../../en/qfieldsync/index.rst:25
 msgid "Configuration"
@@ -105,30 +109,37 @@ msgid ""
 "layer individually. Depending on the layer type, different types of actions "
 "are available."
 msgstr ""
+"A projekt konfiguráció párbeszédablakban egy \"műveletet\" definiálhatunk "
+"önállóan minden egyes réteghez. A réteg típus függvényében különböző "
+"műveletek használhatók."
 
 #: ../../en/qfieldsync/index.rst:39
 msgid "Copy"
-msgstr ""
+msgstr "Másolás"
 
 #: ../../en/qfieldsync/index.rst:38
 msgid ""
 "The layer will be copied to the package folder. This is only available for "
 "file-based layers."
 msgstr ""
+"A réteget a csomag mappába másoljuk. Ez csak a fájl alapú rétegekre "
+"alkalmazható."
 
 #: ../../en/qfieldsync/index.rst:43
 msgid "No action"
-msgstr ""
+msgstr "Nincs művelet"
 
 #: ../../en/qfieldsync/index.rst:42
 msgid ""
 "The layer source will be left untouched. This is only available for non-"
 "file-based layers like WMS, WFS, Postgis..."
 msgstr ""
+"A réteg forrását érintetlenül hagyjuk. Ez csak a nem fájl alapú rétegekre "
+"alkalmazható mint WMS, WFS, PostGIS..."
 
 #: ../../en/qfieldsync/index.rst:50
 msgid "Offline editing"
-msgstr ""
+msgstr "Offline szerkesztés"
 
 #: ../../en/qfieldsync/index.rst:46
 msgid ""
@@ -138,10 +149,13 @@ msgid ""
 "replayed and all changes also be applied to the main data base. There is no "
 "conflict handling in place."
 msgstr ""
+"A rétegről egy másolatot készítünk a csomag mappájába. Minden változást, "
+"amit munka közben az összecsomagolt projekten hajtunk végre,  a "
+"változásnaplóban rögzítünk."
 
 #: ../../en/qfieldsync/index.rst:54
 msgid "Remove"
-msgstr ""
+msgstr "Eltávolítás"
 
 #: ../../en/qfieldsync/index.rst:53
 msgid ""
@@ -151,13 +165,15 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:57
 msgid "Base map configuration"
-msgstr ""
+msgstr "Alaptérkép konfiguráció"
 
 #: ../../en/qfieldsync/index.rst:59
 msgid ""
 "A base map is a raster layer which is added as the bottommost layer to the "
 "packaged project file."
 msgstr ""
+"Az alaptérkép egy raszter, mely a legalsó réteg az összecsomagolt projekt "
+"fájlban."
 
 #: ../../en/qfieldsync/index.rst:62
 msgid ""
@@ -168,7 +184,7 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:66
 msgid "There are two possible sources for a base map:"
-msgstr ""
+msgstr "Két lehetséges forrása van az alaptérképnek:"
 
 #: ../../en/qfieldsync/index.rst:71
 msgid "Layer"
@@ -183,7 +199,7 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:77
 msgid "Map Theme"
-msgstr ""
+msgstr "Térkép téma"
 
 #: ../../en/qfieldsync/index.rst:74
 msgid ""
@@ -204,7 +220,7 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:85
 msgid "Offline editing configuration"
-msgstr ""
+msgstr "Offline szerkesztés konfigurácó"
 
 #: ../../en/qfieldsync/index.rst:87
 msgid ""

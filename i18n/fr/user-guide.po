@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Daniel Gnerre <daniel.gnerre@vevey.ch>, 2016
+# fiuzzy <fiuzzy1@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 10:54+0100\n"
-"PO-Revision-Date: 2016-11-11 09:54+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2017-01-06 17:10+0100\n"
+"PO-Revision-Date: 2016-12-19 10:33+0000\n"
+"Last-Translator: fiuzzy <fiuzzy1@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/opengisch/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +25,7 @@ msgstr "Guide d'utilisateur QField"
 
 #: ../../en/user-guide/index.rst:7
 msgid "Basic workflow"
-msgstr "Workflow basic"
+msgstr "Flux de travail de base"
 
 #: ../../en/user-guide/index.rst:10
 msgid "Switch modes"
@@ -46,11 +47,11 @@ msgstr "Interroger des objets"
 msgid ""
 "A tap on a feature will identify it. Pressing the back button will close the"
 " identify window."
-msgstr ""
+msgstr "Une pression sur un objet l'identifiera. Pour clore la fenêtre d'identification, presser le bouton \"Retour\"."
 
 #: ../../en/user-guide/index.rst:24
 msgid "Exceptions to identified layers"
-msgstr "Couche identifiables"
+msgstr ""
 
 #: ../../en/user-guide/index.rst:26
 msgid ""
@@ -72,11 +73,11 @@ msgstr "GPS"
 msgid ""
 "A short press on the GPS button will turn on the GPS and center to the "
 "current location once positioning information is available."
-msgstr "Un touché court sur le bouton du GPS l'active et centre la carte sur la localisation actuelle, dès que les données de géoloclisation sont disponibles. "
+msgstr "Une courte pression sur le bouton du GPS l'active et centre la carte sur la localisation actuelle, dès que les données de géolocalisation sont disponibles. "
 
 #: ../../en/user-guide/index.rst:35
 msgid "A long press on the GPS button will show the positioning menu."
-msgstr "Un touché long sur le bouton du GPS affiche le menu de géolocalisation. "
+msgstr "Une longue pression sur le bouton du GPS affiche le menu de géolocalisation. "
 
 #: ../../en/user-guide/index.rst:37
 msgid ""
@@ -89,21 +90,21 @@ msgstr "Dans le menu de géolocalisation, l'affichage des données de position p
 msgid ""
 "If you see WGS 84 lat/lon information instead of information in your project"
 " CRS, you probably have no signal yet."
-msgstr "Si les informations sont affichées en WGS84, c'est probablement car aucun signal n'est disponible. "
+msgstr "Si les informations sont affichées en WGS84 au lieu de votre propre SCR, c'est probablement parce qu'aucun signal n'est disponible. "
 
 #: ../../en/user-guide/index.rst:43
 msgid "Digitize"
-msgstr "Digitaliser"
+msgstr "Numériser"
 
 #: ../../en/user-guide/index.rst:45
 msgid "To start digitizing new features `Switch modes`_ to digitizing."
-msgstr "Pour commencer à digitaliser de nouveaux objets `Switch modes`_ to digitizing."
+msgstr "Pour commencer à numériser de nouveaux objets `Switch modes`_ to digitizing."
 
 #: ../../en/user-guide/index.rst:47
 msgid ""
 "A new combobox will appear next to the menu button which lists the layers "
 "available for digitizing."
-msgstr ""
+msgstr "Une nouvelle boîte de dialogue apparaîtra près du bouton Menu pour lister les couches disponibles pour numérisation."
 
 #: ../../en/user-guide/index.rst:51
 msgid "Points"
@@ -118,7 +119,7 @@ msgstr "Déplacer la carte jusqu'à ce que la croix du centre de l'écran soit s
 
 #: ../../en/user-guide/index.rst:58
 msgid "Lines and polygons"
-msgstr ""
+msgstr "Lignes et polygones"
 
 #: ../../en/user-guide/index.rst:60
 msgid ""
@@ -126,7 +127,7 @@ msgid ""
 "the line and click the pencil at the lower right of the screen. Proceed with"
 " adding points or removing points until the line or polygon is finished and "
 "then click save."
-msgstr ""
+msgstr "Positionner le viseur du centre de l'écran vers le point de démarrage souhaité de la ligne et cliquer sur le crayon en bas à droite de l'écran. Continuer en ajoutant ou supprimant des points jusqu'à ce que la ligne ou le polygone soit terminé puis cliquer sur \"Enregistrer\"."
 
 #: ../../en/user-guide/index.rst:66
 msgid "Attribute form"
@@ -139,7 +140,7 @@ msgid ""
 "new feature. The form which appears allows entering attribute values for the"
 " new feature. The checkboxes at the right of every attribute allow for "
 "remembering each attribute individually."
-msgstr "Après avoir numérisé une géométrie, le formulaire d'attributs s'ouvre et l'utilisateur doit saisir les données pour le nouvel objet. Les cases à cocher à droite de chaque attribut permettent d'enregistrer des valeurs par défaut."
+msgstr "Après avoir numérisé une géométrie, le formulaire d'attributs s'ouvre et l'utilisateur peut saisir les données pour le nouvel objet. Les cases à cocher à droite de chaque attribut permettent d'enregistrer des valeurs par défaut pour chacun d'entre eux."
 
 #: ../../en/user-guide/index.rst:74
 msgid "Delete Features"
@@ -155,46 +156,46 @@ msgstr "Pour supprimer un objet, l'interroger puis appuyer sur l'icône poubelle
 
 #: ../../en/user-guide/map-themes.rst:4
 msgid "Change the active Map Theme"
-msgstr ""
+msgstr "Changer le thème de carte actif"
 
 #: ../../en/user-guide/map-themes.rst:6
 msgid "Switching Map Themes is possible from the Dashboard."
-msgstr ""
+msgstr "Changer de thème de carte est possible à partir du tableau de bord."
 
 #: ../../en/user-guide/map-themes.rst:8
 msgid "Use the *Map Themes* combobox to chose the active theme."
-msgstr ""
+msgstr "Utiliser la boîte de dialogue *Thèmes de carte* pour choisir le thème actif."
 
 #: ../../en/user-guide/map-themes.rst:19
 msgid ""
 "The combo box is only available if you did :ref:`configure_map_themes`."
-msgstr ""
+msgstr "La boîte de dialogue est disponible seulement si vous avez fait  :ref:`configure_map_themes`."
 
 #: ../../en/user-guide/variables.rst:4
 msgid "Global variables"
-msgstr ""
+msgstr "Variables d'ensemble"
 
 #: ../../en/user-guide/variables.rst:6
 msgid ""
 "Variables are used in QField and QGIS to dynamically set values based on the"
 " current project file, the layer or the system. They can be used for "
 "styling, setting default values for fields and much more."
-msgstr ""
+msgstr "Les variables sont utilisées dans QField et QGIS pour paramétrer des valeurs dynamiquement basées sur le projet courant, la couche ou le système. Elles peuvent être utilisées pour mettre en forme, définir des valeurs par défaut pour des champs et bien plus encore."
 
 #: ../../en/user-guide/variables.rst:10
 msgid ""
 "To configure a device-specific variable, open the settings and click the "
 "\"Global Variables\" tab."
-msgstr ""
+msgstr "Pour configurer une variable spécifique à un périphérique, ouvrir les paramètres et cliquer sur l'onglet \"Variables d'ensemble\"."
 
 #: ../../en/user-guide/variables.rst:19
 msgid ""
 "Configuration of two new global variables in addition to the pre-defined "
 "system variables."
-msgstr ""
+msgstr "Configuration de deux nouvelles variables d'ensemble en plus des variables-système prédéfinies."
 
 #: ../../en/user-guide/variables.rst:22
 msgid ""
 "On the variable page, you can see predefined variables. To add new "
 "variables, click on the empty cell at the bottom and write the content."
-msgstr ""
+msgstr "Sur la page \"Variables\", vous pouvez voir les variables prédéfinies. Pour ajouter de nouvelles variables, cliquer sur une cellule vide ci-dessous et écrire la valeur souhaitée."

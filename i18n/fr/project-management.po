@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Daniel Gnerre <daniel.gnerre@vevey.ch>, 2016
+# fiuzzy <fiuzzy1@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 09:51+0100\n"
-"PO-Revision-Date: 2016-11-17 08:52+0000\n"
-"Last-Translator: Matthias Kuhn <matthias@opengis.ch>\n"
+"POT-Creation-Date: 2017-01-06 17:10+0100\n"
+"PO-Revision-Date: 2016-12-18 15:44+0000\n"
+"Last-Translator: fiuzzy <fiuzzy1@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/opengisch/qfield-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 
 #: ../../en/project-management/android-data-structure.rst:2
 msgid "Android: Special File Access Notes"
-msgstr ""
+msgstr "Android : note spécial d'accès aux fichiers"
 
 #: ../../en/project-management/android-data-structure.rst:5
 msgid "Custom SVG symbols and settings"
@@ -35,7 +36,7 @@ msgstr "Le chemin aux dossiers partagés de l'appareil peuvent être consulté d
 msgid ""
 "If you want to use custom symbols you need to put them there using a file "
 "manager."
-msgstr "Les symboles personnalisés doivent être copié à l'aide d'un gestionnaire de fichiers. "
+msgstr "Les symboles personnalisés doivent être copiés à l'aide d'un gestionnaire de fichiers. "
 
 #: ../../en/project-management/android-data-structure.rst:12
 msgid "External SD card"
@@ -195,7 +196,7 @@ msgstr "QField n'a pas une gestion de projet intégrée. Il est nécessaire de d
 
 #: ../../en/project-management/index.rst:8
 msgid "Contents"
-msgstr ""
+msgstr "Contenu"
 
 #: ../../en/project-management/index.rst:19
 msgid "Coordinate Reference Systems"
@@ -221,60 +222,60 @@ msgstr "SCR de la couche"
 
 #: ../../en/project-management/map-themes.rst:4
 msgid "Configure Map Themes"
-msgstr ""
+msgstr "Configurer les thèmes de carte"
 
 #: ../../en/project-management/map-themes.rst:6
 msgid ""
 "The beautiful thing about GIS is that maps are dynamic. Layers can "
 "individually be shown and hidden and information can be presented more or "
 "less prominently based on the task at hand."
-msgstr ""
+msgstr "Ce qui est beau avec les SIG, c'est que les cartes sont dynamiques. Les couches peuvent être montrées ou cachées et l'information présentée de manière plus ou moins évidente selon la fonction demandée."
 
 #: ../../en/project-management/map-themes.rst:10
 msgid ""
 "This is what *Map Themes* (before QGIS 3.0 known as *Visibility Presets*) "
 "are for."
-msgstr ""
+msgstr "Voilà à quoi servent les *thèmes de carte* (connus avant QGIS 3.0 sous le nom de *Réglages de visibilité*)."
 
 #: ../../en/project-management/map-themes.rst:14
 msgid "Creating a Map Theme"
-msgstr ""
+msgstr "Création d'un thème de carte"
 
 #: ../../en/project-management/map-themes.rst:16
 msgid "Creating a Map Theme in QGIS is a very simple task."
-msgstr ""
+msgstr "La création de d'une carte de thème dans QGIS est une tâche très simple."
 
 #: ../../en/project-management/map-themes.rst:24
 msgid "Style the map and layers to your requirements"
-msgstr ""
+msgstr "Mettre en forme la carte et les couches selon vos exigences"
 
 #: ../../en/project-management/map-themes.rst:25
 msgid "Save it as a named Map Theme"
-msgstr ""
+msgstr "L'enregistrer comme thème de carte avec un nom"
 
 #: ../../en/project-management/map-themes.rst:26
 msgid "Load the project and your device and :ref:`change_map_theme`."
-msgstr ""
+msgstr "Charger le projet sur votre périphérique et "
 
-#: ../../en/project-management/portable-project.rst:2
+#: ../../en/project-management/portable-project.rst:4
 msgid "Portable Project"
 msgstr "Projet portable"
 
-#: ../../en/project-management/portable-project.rst:4
+#: ../../en/project-management/portable-project.rst:6
 msgid ""
 "You will need a portable version of your QGIS project file (.qgs). Portable "
 "means that all paths are relative and datasets are reachable from the "
 "device."
 msgstr "Une version \"portable\" du projet QGIS (.qgs) est nécessaire. \"Portable\" signifie que les chemins sont définis de manière relative et que les données sont accessibles sur l'appareil mobile. "
 
-#: ../../en/project-management/portable-project.rst:7
+#: ../../en/project-management/portable-project.rst:9
 msgid ""
 "Check that :menuselection:`Project --> Project Properties --> General --> "
 "Save paths` is set to \"Relative\" and that all required data files are in "
 "the same folder like the .qgs file or a subfolder of it."
 msgstr "Pour contrôler cela :menuselection:`Projet --> Propriétés du projet --> Général --> Enregistrer les chemins` doit être \"relatif\" et toutes les données doivent être dans le même dossier que le fichier .qgs, ou dans un sous-dossier. "
 
-#: ../../en/project-management/portable-project.rst:10
+#: ../../en/project-management/portable-project.rst:12
 msgid ""
 "For increased productivity, we suggest having a look at the `QFieldSync "
 "plugin <https://plugins.qgis.org/plugins/qfieldsync>`_."
@@ -318,7 +319,7 @@ msgstr "Dans QField, les objets sont identifiés par un nom. L'expression pour g
 msgid ""
 "The display expression will be used to represent features with an "
 "identification string throughout QField."
-msgstr ""
+msgstr "L'expression affichées sera utilisée pour représenter des entités avec une chaîne de caractères d'identification dans QField."
 
 #: ../../en/project-management/vector-layers.rst:31
 msgid "Forms and Fields"
@@ -339,11 +340,11 @@ msgstr "La configuration du formulaire de suppression d'objet est directement ap
 
 #: ../../en/project-management/vector-layers.rst:43
 msgid "Field widget"
-msgstr ""
+msgstr "Outil d'édition de champ"
 
 #: ../../en/project-management/vector-layers.rst:45
 msgid "The field widgets from QGIS are supported on a best effort basis."
-msgstr ""
+msgstr "Les outils d'édition de champ de QGIS sont supportés du mieux possible."
 
 #: ../../en/project-management/vector-layers.rst:52
 msgid "Field type"
@@ -397,15 +398,15 @@ msgstr ":ref:`make_it_grow`"
 
 #: ../../en/project-management/vector-layers.rst:75
 msgid "Drag and drop designer forms"
-msgstr ""
+msgstr "Glisser-déposer les formulaires du designer"
 
 #: ../../en/project-management/vector-layers.rst:77
 msgid "Groups and Tabs from Drag and Drop designer forms are supported."
-msgstr ""
+msgstr "Les groupes et onglets venant des formulaires du designer par glisser-déposer sont supportés."
 
 #: ../../en/project-management/vector-layers.rst:80
 msgid "Conditional visibility"
-msgstr ""
+msgstr "Visibilité conditionnelle"
 
 #: ../../en/project-management/vector-layers.rst:82
 msgid ""
@@ -416,17 +417,17 @@ msgid ""
 "and configure a visibility expression for a group \"diseases\". Add a field "
 "\"desease\" with a checkbox. Only when the checkbox is checked, the list of "
 "diseases will be available to the user."
-msgstr ""
+msgstr "Les groupes peuvent être masqués à partir d'une expression. Cela est utile lorsque certains attributs ne sont requis que sous certaines conditions. Imaginons par exemple une cartographie d'arbres. Certains d'entre eux peuvent avoir une maladie et vous avez une liste des maladies possibles. Pour ne pas encombrer le formulaire avec trop de champs, faites un groupe et paramétrez la visibilité pour un groupe \"maladies\". Ajouter un champ \"maladies\" avec une case à cocher. La liste des maladies sera disponible pour l'utilisateur seulement si la case à cocher est activée. "
 
 #: ../../en/project-management/vector-layers.rst:95
 msgid ""
 "Configuration of a group box that will only be shown if the checkbox "
 "\"measures_taken\" is checked."
-msgstr ""
+msgstr "Configuration d'une boîte de groupe qui ne sera montrée que si la case à cocher  \"measures_taken\" est activée."
 
 #: ../../en/project-management/vector-layers.rst:98
 msgid "Constraints"
-msgstr ""
+msgstr "Contraintes"
 
 #: ../../en/project-management/vector-layers.rst:100
 msgid ""
@@ -435,30 +436,30 @@ msgid ""
 " save the form. Constraints are configured on a per-field basis and a "
 "description can be added that will be shown to the user if a constraint is "
 "not satisfied."
-msgstr ""
+msgstr "Les champs attributaires peuvent avoir des contraintes rattachées. Les contraintes sont des expressions qui doivent correspondre à :code:`True` (or :code:`1`) pour être en mesure d'enregistrer le formulaire. Les contraintes sont configurables champ par champ et une description peut être ajoutée pour être montrée à l'utilisateur si une contrainte n'est pas satisfaite."
 
 #: ../../en/project-management/vector-layers.rst:111
 msgid "Configuration of a constraint within a range"
-msgstr ""
+msgstr "Configuration de la plage de valeurs d'une contrainte"
 
 #: ../../en/project-management/vector-layers.rst:114
 #: ../../en/project-management/vector-layers.rst:145
 msgid "Common use cases"
-msgstr ""
+msgstr "Cas d'utilisation courante"
 
 #: ../../en/project-management/vector-layers.rst:116
 msgid ""
 "You cannot enter an elevation value higher than the highest mountain in this"
 " country."
-msgstr ""
+msgstr "Vous ne pouvez saisir une altitude supérieure au plus haut sommet de ce pays."
 
 #: ../../en/project-management/vector-layers.rst:122
 msgid "It is required to fill in an identifier."
-msgstr ""
+msgstr "Un identifiant est requis dans ce champ."
 
 #: ../../en/project-management/vector-layers.rst:129
 msgid "Default values"
-msgstr ""
+msgstr "Valeurs par défaut"
 
 #: ../../en/project-management/vector-layers.rst:131
 msgid ""
@@ -466,33 +467,33 @@ msgid ""
 "the attribute form when digitizing a new feature. They are visible to the "
 "user and can be modified as long as the field is editable. They can be based"
 " on the geometry or expression variables."
-msgstr ""
+msgstr "Les champs peuvent avoir des valeurs par défaut configurées. Les valeurs par défaut peuvent être insérées dans le formulaire lors de la numérisation d'une entité. Elles sont visibles pour l'utilisateur et peuvent être modifiées tant que le champ est en mode \"édition\". Elles peuvent être basées sur la géométrie ou des combinaison de variables."
 
 #: ../../en/project-management/vector-layers.rst:142
 msgid "Configuration of a formatted date as default value"
-msgstr ""
+msgstr "Configuration d'une date prévue comme valeur par défaut"
 
 #: ../../en/project-management/vector-layers.rst:147
 msgid "Insert the current date and time:"
-msgstr ""
+msgstr "Insérer la date et l'heure actuelle :"
 
 #: ../../en/project-management/vector-layers.rst:153
 msgid "Insert the length of the digitized line:"
-msgstr ""
+msgstr "Insérer la longueur de la ligne numérisée :"
 
 #: ../../en/project-management/vector-layers.rst:159
 msgid "Configure global variables on the device and insert them."
-msgstr ""
+msgstr "Configurer les variables générales sur l'appareil et les insérer."
 
 #: ../../en/project-management/vector-layers.rst:165
 msgid ""
 "If you want to assign a region code based on the location where a new "
 "feature is inserted, you can do so by using an aggregate expression:"
-msgstr ""
+msgstr "Si vous souhaitez assigner à une région un code basé sur le lieu quand une entité est insérée, vous pouvez le faire à l'aide d'expressions d’agrégation : "
 
 #: ../../en/project-management/vector-layers.rst:173
 msgid "Editable"
-msgstr ""
+msgstr "Modifiable"
 
 #: ../../en/project-management/vector-layers.rst:175
 msgid "The editable flag of fields is respected."
@@ -510,58 +511,58 @@ msgstr "QField offre un contrôle fin des dernières valeurs utilisées et ignor
 
 #: ../../en/project-management/vector-layers.rst:183
 msgid "Snapping"
-msgstr ""
+msgstr "Accrochage"
 
 #: ../../en/project-management/vector-layers.rst:185
 msgid ""
 "While digitizing new features, new points can be snapped to existing "
 "geometries."
-msgstr ""
+msgstr "Lors de la numérisation de nouvelles entités, les nouveaux points peuvent être accrochés aux géométries existantes."
 
 #: ../../en/project-management/vector-layers.rst:188
 msgid ""
 "All configuration can be done in :menuselection:`Project --> Snapping "
 "Settings` (:menuselection:`Settings --> Snapping Settings` in QGIS 2.x)."
-msgstr ""
+msgstr "Toutes la configuration peut être faire dans : menuselection:`Project --> Snapping Settings` (:menuselection:`Settings --> Snapping Settings` dans QGIS 2.x)."
 
 #: ../../en/project-management/vector-layers.rst:192
 msgid "Snapping Types"
-msgstr ""
+msgstr "Types d'accrochage"
 
 #: ../../en/project-management/vector-layers.rst:194
 msgid "It is possible to snap new points"
-msgstr ""
+msgstr "Il est possible d'accrocher de nouveaux points"
 
 #: ../../en/project-management/vector-layers.rst:196
 msgid "only to nodes of existing geomtries"
-msgstr ""
+msgstr "seulement aux nœuds de géométries existantes"
 
 #: ../../en/project-management/vector-layers.rst:197
 msgid "only to segments of existing geomtries"
-msgstr ""
+msgstr "seulement aux segments de géométries existantes"
 
 #: ../../en/project-management/vector-layers.rst:198
 msgid "to nodes and segments of existing geomtries"
-msgstr ""
+msgstr "aux nœuds et segments de géométries existantes"
 
 #: ../../en/project-management/vector-layers.rst:201
 msgid "Snapping to layers"
-msgstr ""
+msgstr "Accrochage à des couches"
 
 #: ../../en/project-management/vector-layers.rst:203
 msgid "It is also possible to only snap to one or a few layers."
-msgstr ""
+msgstr "Il est possible d'accrocher à une seule ou plusieurs couches"
 
 #: ../../en/project-management/vector-layers.rst:206
 msgid "Snapping tolerance"
-msgstr ""
+msgstr "Tolérance d'accrochage"
 
 #: ../../en/project-management/vector-layers.rst:208
 msgid "The snapping tolerance can be specified in map units or pixels."
-msgstr ""
+msgstr "La tolérance d'accrochage peut être spécifiée en unités de cartes ou en pixels"
 
 #: ../../en/project-management/vector-layers.rst:210
 msgid ""
 "In almost any case, the units should be set to pixels. We made good "
 "experiences with a tolerance value of 20."
-msgstr ""
+msgstr "Dans la plupart des cas, l'unité doit être le pixel. Nous avons de bons retours avec une valeur de tolérance de 20."

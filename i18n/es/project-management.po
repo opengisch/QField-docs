@@ -4,13 +4,13 @@
 # 
 # Translators:
 # jmmanzano <manzano.jm@gmail.com>, 2016
-# Mario Reyes <ernestoreyes561@gmail.com>, 2016
+# Mario Reyes <ernestoreyes561@gmail.com>, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 16:18+0100\n"
-"PO-Revision-Date: 2016-12-04 15:27+0000\n"
+"POT-Creation-Date: 2017-01-06 17:10+0100\n"
+"PO-Revision-Date: 2017-01-05 03:54+0000\n"
 "Last-Translator: Mario Reyes <ernestoreyes561@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/opengisch/qfield-documentation/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -398,11 +398,11 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:75
 msgid "Drag and drop designer forms"
-msgstr ""
+msgstr "Formas del diseñador de arrastrar y soltar"
 
 #: ../../en/project-management/vector-layers.rst:77
 msgid "Groups and Tabs from Drag and Drop designer forms are supported."
-msgstr ""
+msgstr "Los grupos y pestañas de las formas del diseñador de arrastrar y soltar son soportadas."
 
 #: ../../en/project-management/vector-layers.rst:80
 msgid "Conditional visibility"
@@ -427,7 +427,7 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:98
 msgid "Constraints"
-msgstr ""
+msgstr "Restricciones"
 
 #: ../../en/project-management/vector-layers.rst:100
 msgid ""
@@ -440,7 +440,7 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:111
 msgid "Configuration of a constraint within a range"
-msgstr ""
+msgstr "Configuración de una restricción dentro de un rango"
 
 #: ../../en/project-management/vector-layers.rst:114
 #: ../../en/project-management/vector-layers.rst:145
@@ -455,7 +455,7 @@ msgstr "No puedes entrar un valor de elevación más alto que la montaña más a
 
 #: ../../en/project-management/vector-layers.rst:122
 msgid "It is required to fill in an identifier."
-msgstr ""
+msgstr "Es requerido rellenar un identificador."
 
 #: ../../en/project-management/vector-layers.rst:129
 msgid "Default values"
@@ -467,7 +467,7 @@ msgid ""
 "the attribute form when digitizing a new feature. They are visible to the "
 "user and can be modified as long as the field is editable. They can be based"
 " on the geometry or expression variables."
-msgstr ""
+msgstr "Los campos pueden tener valores predeterminados configurados. Los valores predeterminados son insertados en la forma de atributos cuando se digitaliza un nuevo elemento. Son visibles al usuario y pueden ser modificados siempre y cuando el campo sea editable. Pueden estar basados en la geometría o en expresiones de variables."
 
 #: ../../en/project-management/vector-layers.rst:142
 msgid "Configuration of a formatted date as default value"
@@ -497,11 +497,11 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:175
 msgid "The editable flag of fields is respected."
-msgstr ""
+msgstr "La bandera de edición de los campos es respetada."
 
 #: ../../en/project-management/vector-layers.rst:178
 msgid "Remember last values"
-msgstr ""
+msgstr "Recordar últimos valores"
 
 #: ../../en/project-management/vector-layers.rst:180
 msgid ""
@@ -511,13 +511,13 @@ msgstr "QField ofrece un control mucho más preciso sobre los últimos valores u
 
 #: ../../en/project-management/vector-layers.rst:183
 msgid "Snapping"
-msgstr ""
+msgstr "Autoensamblado"
 
 #: ../../en/project-management/vector-layers.rst:185
 msgid ""
 "While digitizing new features, new points can be snapped to existing "
 "geometries."
-msgstr ""
+msgstr "Cuando se digitalizan nuevos elementos, se pueden autoensamblar puntos nuevos a geometrías existentes."
 
 #: ../../en/project-management/vector-layers.rst:188
 msgid ""
@@ -527,7 +527,7 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:192
 msgid "Snapping Types"
-msgstr ""
+msgstr "Tipos de autoensamblado"
 
 #: ../../en/project-management/vector-layers.rst:194
 msgid "It is possible to snap new points"
@@ -543,7 +543,7 @@ msgstr "sólo a segmentos de geometrías existentes"
 
 #: ../../en/project-management/vector-layers.rst:198
 msgid "to nodes and segments of existing geomtries"
-msgstr ""
+msgstr "a nodos y segmentos de geometrías existentes."
 
 #: ../../en/project-management/vector-layers.rst:201
 msgid "Snapping to layers"
@@ -555,14 +555,14 @@ msgstr ""
 
 #: ../../en/project-management/vector-layers.rst:206
 msgid "Snapping tolerance"
-msgstr ""
+msgstr "Tolerancia de autoensamblado"
 
 #: ../../en/project-management/vector-layers.rst:208
 msgid "The snapping tolerance can be specified in map units or pixels."
-msgstr ""
+msgstr "La tolerancia de autoensamblado puede ser especificada en unidades de mapa o pixeles."
 
 #: ../../en/project-management/vector-layers.rst:210
 msgid ""
 "In almost any case, the units should be set to pixels. We made good "
 "experiences with a tolerance value of 20."
-msgstr ""
+msgstr "En casi cualquier caso, las unidades deberían ser establecidas a pixeles. Hemos tenido buenas experiencias con un valor de tolerancia de 20."

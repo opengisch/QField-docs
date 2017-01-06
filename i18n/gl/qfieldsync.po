@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QField Documentation 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 16:18+0100\n"
+"POT-Creation-Date: 2017-01-06 17:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xanvieiro <gallaecia6@gmail.com>, 2016\n"
 "Language-Team: Galician (https://www.transifex.com/opengisch/teams/38926/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,77 +20,94 @@ msgstr ""
 
 #: ../../en/qfieldsync/index.rst:3
 msgid "QFieldSync plugin"
-msgstr ""
+msgstr "Plugin QFieldSync"
 
 #: ../../en/qfieldsync/index.rst:5
 msgid ""
 "The QFieldSync plugin helps preparing and packaging QGIS projects for "
 "QField."
 msgstr ""
+"O plugin QFieldSync axuda a preparar e empaquetar os proxectos de QGIS para "
+"QField."
 
 #: ../../en/qfieldsync/index.rst:7
 msgid ""
 "QFieldSync supports your project preparation with automating the following:"
 msgstr ""
+"QFieldSync colabora coa preparación do teu proxecto automatizando o "
+"seguinte:"
 
 #: ../../en/qfieldsync/index.rst:9
 msgid "Required steps for project setup (e.g. :ref:`portable_project`)"
 msgstr ""
+"Pasos necesarios para a configuración do proxecto (por exemplo "
+":ref:`portable_project`)"
 
 #: ../../en/qfieldsync/index.rst:10
 msgid ""
 "Creating basemaps from a single raster layer or from a style defined in a "
 "map theme."
 msgstr ""
+"Crear un mapa base dende unha capa ráster única ou dende un estilo definido "
+"nun tema de mapa."
 
 #: ../../en/qfieldsync/index.rst:11
 msgid ""
 "Configuring the offline editing functionality and synchronizing changes "
 "back."
 msgstr ""
+"Configurar a funcionalidade de edición sen conexión e sincronizar os "
+"cambios."
 
 #: ../../en/qfieldsync/index.rst:14
 msgid "Workflow"
-msgstr ""
+msgstr "Procedemento"
 
 #: ../../en/qfieldsync/index.rst:16
 msgid ""
 "To get a quick overview of the process, here is a list of typical steps:"
 msgstr ""
+"Para obter unha vista xeral rápida do proceso, aquí hai unha lista de pasos "
+"habituais:"
 
 #: ../../en/qfieldsync/index.rst:18
 msgid "Create a QField package. This is a working copy in a separate folder."
 msgstr ""
+"Crear un paquete QField. Esta é unha copia funcional nun directorio "
+"separado."
 
 #: ../../en/qfieldsync/index.rst:19
 msgid "Copy the QField package to the target device."
-msgstr ""
+msgstr "Copiar o paquete QField ó dispositivo de destino."
 
 #: ../../en/qfieldsync/index.rst:20
 msgid "Go out and collect data."
-msgstr ""
+msgstr "Saír e recoller datos."
 
 #: ../../en/qfieldsync/index.rst:21
 msgid "Copy the modified data back to your desktop computer."
-msgstr ""
+msgstr "Copiar os datos modificados de regreso ó teu ordenador de escritorio."
 
 #: ../../en/qfieldsync/index.rst:22
 msgid "Synchronize the modified data with your database or files."
-msgstr ""
+msgstr "Sincronizar os datos modificados coa túa base de datos ou ficheiros."
 
 #: ../../en/qfieldsync/index.rst:25
 msgid "Configuration"
-msgstr ""
+msgstr "Configuración"
 
 #: ../../en/qfieldsync/index.rst:27
 msgid ""
 "The project configuration is saved in the master .qgs project file. This way"
 " it is possible to pre-configure a project once and use it repeatedly."
 msgstr ""
+"A configuración do proxecto gárdase no ficheiro de proxecto .qgs principal. "
+"Desta forma é posible pre-configurar un proxecto unha única vez e utilizalo "
+"repetidamente."
 
 #: ../../en/qfieldsync/index.rst:31
 msgid "Layer configuration"
-msgstr ""
+msgstr "Configuración de capa"
 
 #: ../../en/qfieldsync/index.rst:33
 msgid ""
@@ -97,30 +115,37 @@ msgid ""
 "layer individually. Depending on the layer type, different types of actions "
 "are available."
 msgstr ""
+"No diálogo de configuración do proxecto, pode definirse unha *acción* para "
+"cada capa individualmente. Dependendo do tipo de capa, hai dispoñibles "
+"diferentes tipos de accións."
 
 #: ../../en/qfieldsync/index.rst:39
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: ../../en/qfieldsync/index.rst:38
 msgid ""
 "The layer will be copied to the package folder. This is only available for "
 "file-based layers."
 msgstr ""
+"Copiarase a capa ó directorio de empaquetado. Só dispoñible para capas "
+"baseadas en ficheiros."
 
 #: ../../en/qfieldsync/index.rst:43
 msgid "No action"
-msgstr ""
+msgstr "Sen acción"
 
 #: ../../en/qfieldsync/index.rst:42
 msgid ""
 "The layer source will be left untouched. This is only available for non-"
 "file-based layers like WMS, WFS, Postgis..."
 msgstr ""
+"A fonte da capa quedará intacta. Só está dispoñible para capas non baseadas "
+"en ficheiros como WMS, WFS, Postgis..."
 
 #: ../../en/qfieldsync/index.rst:50
 msgid "Offline editing"
-msgstr ""
+msgstr "Edición Sen Conexión"
 
 #: ../../en/qfieldsync/index.rst:46
 msgid ""
@@ -130,26 +155,35 @@ msgid ""
 "replayed and all changes also be applied to the main data base. There is no "
 "conflict handling in place."
 msgstr ""
+"Copiouse unha copia funcional da capa no directorio de empaquetado. "
+"Rexístrase cada cambio que se fai no proxecto empaquetado durante o traballo"
+" nun rexistro de cambios. Cando máis tarde se sincronizan os cambios, "
+"reproducirase este rexistro e aplicaranse tódolos cambios á base de datos "
+"principal. Non hai conflito ó manipular no lugar."
 
 #: ../../en/qfieldsync/index.rst:54
 msgid "Remove"
-msgstr ""
+msgstr "Eliminar"
 
 #: ../../en/qfieldsync/index.rst:53
 msgid ""
 "The layer will be removed from the working copy. This is useful if a layer "
 "is used in the basemap and will not be available in the packaged project."
 msgstr ""
+"Eliminarase a capa da copia funcional. Isto é útil se unha capa se usa na "
+"capa base e non estará dispoñible no proxecto empaquetado."
 
 #: ../../en/qfieldsync/index.rst:57
 msgid "Base map configuration"
-msgstr ""
+msgstr "Configuración do mapa base"
 
 #: ../../en/qfieldsync/index.rst:59
 msgid ""
 "A base map is a raster layer which is added as the bottommost layer to the "
 "packaged project file."
 msgstr ""
+"Un mapa base é unha capa ráster que se engade como a capa máis ó fondo do "
+"ficheiro do proxecto empaquetado."
 
 #: ../../en/qfieldsync/index.rst:62
 msgid ""
@@ -157,14 +191,17 @@ msgid ""
 " project is packaged. The area of interest - the extent which will be "
 "rendered - will be chosen at packaging time."
 msgstr ""
+"Se a opción de mapa base está activada, representarase un mapa base, sempre "
+"que o proxecto estea empaquetado. A área de interese - a extensión que será "
+"representada - escollerase no momento do empaquetado."
 
 #: ../../en/qfieldsync/index.rst:66
 msgid "There are two possible sources for a base map:"
-msgstr ""
+msgstr "Hai dúas posibles orixes para un mapa base:"
 
 #: ../../en/qfieldsync/index.rst:71
 msgid "Layer"
-msgstr ""
+msgstr "Capa"
 
 #: ../../en/qfieldsync/index.rst:69
 msgid ""
@@ -172,10 +209,13 @@ msgid ""
 "like a WMS or to take a working copy of an unsupported format like an ECW or"
 " MrSID layer."
 msgstr ""
+"Unha capa ráster. Isto é útil para tomar unha copia sen conexión dunha capa "
+"en liña como un WMS ou para tomar unha copia funcional dun formato non "
+"admitido como unha capa ECW ou MrSID."
 
 #: ../../en/qfieldsync/index.rst:77
 msgid "Map Theme"
-msgstr ""
+msgstr "Tema de Mapa"
 
 #: ../../en/qfieldsync/index.rst:74
 msgid ""
@@ -184,6 +224,10 @@ msgid ""
 "working package and do not need to be rendered on the device. This can save "
 "some disk space and battery on the device."
 msgstr ""
+"Un tema de mapa. Isto é útil para crear un mapa base baseado nunha "
+"combinación de varias capas con estilo. Estas capas poden eliminarse do "
+"paquete funcional e non precisan representarse no dispositivo. Isto pode "
+"aforrar algún espazo no disco e batería no dispositivo."
 
 #: ../../en/qfieldsync/index.rst:79
 msgid ""
@@ -193,10 +237,15 @@ msgid ""
 "is set to 1000, each raster pixel will have a spatial extent of 1 square "
 "kilometer."
 msgstr ""
+"O tamaño da tesela define a resolución espacial. Determina o número de "
+"unidades de mapa por píxel. Se o SRC da vista do mapa ten metros como "
+"unidades e o tamaño da tesela se establece a 1, cada píxel do ráster terá "
+"unha extensión espacial de 1x1 m., establecéndose a 1000, cada píxel do "
+"ráster terá unha extensión espacial de 1 quilómetro cadrado."
 
 #: ../../en/qfieldsync/index.rst:85
 msgid "Offline editing configuration"
-msgstr ""
+msgstr "Configuración da edición sen conexión"
 
 #: ../../en/qfieldsync/index.rst:87
 msgid ""
@@ -204,3 +253,6 @@ msgid ""
 " which are within the extent of the map canvas as packaging time will be "
 "copied to the offline editing working copy."
 msgstr ""
+"Se está marcado *sincronizar só entidades da área de interese*, só as "
+"entidades que estean dentro da extensión da vista do mapa no momento do "
+"empaquetado serán copiadas á copia funcional de edición sen conexión."
