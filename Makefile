@@ -90,9 +90,13 @@ init: en/*
 transifex_sync: gettext
 	@set -e;\
 	./scripts/create_transifex_resources.sh; \
-	tx push -s; \
-	tx pull -a
+	tx push -s;
 	@echo "Transifex resources synchronized"
+
+transifex_pull: 
+	@set -e;\
+	tx pull -a;
+	@echo "Transifex translations pulled"
 
 compile_messages: init i18n/*/*.po
 	@set -e; for lang in $(TRANSLATIONS_I18N) ;\

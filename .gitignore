@@ -1,6 +1,7 @@
 build
 compile_messages
 init
+i18n
 *~
 *.mo
 i18n/pot
