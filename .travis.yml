@@ -33,9 +33,15 @@ install:
 
 before_script:
   - ./scripts/ci/setup_git.sh
+  - ./scripts/ci/transifex_push.sh
 
 script:
   - ./scripts/build-docs.sh
 
 after_success:
   - ./scripts/ci/deploy-docs.sh
+
+env:
+  global:
+    # Transifex password
+    - secure: "J0sQvCsHj7JUAlXLIubIZBQJN9cXIriePrfmdLzxaVNZnNh8fcL3VJYdrsaa4Vh6aEN4N/eVuK8rVv7KDc4t6jFvfGbD0Tsien7+uXV0ihDbZrZ5c6KJ1oGbgbeiVTuObRN9qc87zr+8elYlLclgFviB74chLYJTqHBXl3pwGiP5SacyLI2AwTpqbL7d6L/Rvy5Z9u8TyYDSBXxOPEJFUwjgcgUB2tLJKYeSk41duvN6XPcqKpzR/v01mI/mcvjuZi/8/+CBsn4XugWqidZNT41FsSoi0N8CMWCJRfmwJFlLe4jUc2aop9IMpn+QDY2uLnJ+bzJcsRwZcoqcD3B5vx+900khDXhPNlOrWxWpCzzRKkHknZ4fKcopyXW/ldiCCAZuiADGN5SvjoT5vdW3VyZ/eacE/Ez/8SctBbrDkXk22k7F/DFw0ugpVLgqrg30Hjl3818lf6VWKDfmjpxe6l4266W8mYLkuwLp35+X0Yq2y2b+0Y6bzodSGlhawxeE/ohlTQX4I3Va81gDTVzed8cy6qK+MboBEUzgIVjedz4i+khEMaP/9vCyo49nV5DwJhkchlIaDNB/hr246tLhCWHeGa4S/UIL78gg9awbA/w/xvkMYmrMuF9N3xLLDfnOu2QJr3x6kDixa35eSXnpPUcR/Dv2SQHfvt0+dQyBIr4="
