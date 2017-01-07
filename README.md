@@ -21,9 +21,12 @@ The final product can be found here:
 
 The documentation is written in English and managed in this git repository.
 The latest version of the documentation is automatically built (on [Travis
-CI](https://travis-ci.org/opengisch/QField-docs)) and published on the links above.
+CI](https://travis-ci.org/opengisch/QField-docs)) and published on the links
+above.
 
-Translation is done via transifex.
+Translation is done via transifex. The latest translations are pulled and built
+on a daily basis (using [travis-ci cron job
+functionality](https://docs.travis-ci.com/user/cron-jobs/)).
 
 ## Contributing
 
