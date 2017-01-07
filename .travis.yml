@@ -44,4 +44,9 @@ after_success:
 env:
   global:
     # Transifex password
-    - secure: "zBggrd/qZMP8mPj3CLbY2bsztD92p+DruyafvyoqWzlZT0uXXibYSasirkmQX+gYGr7Q6BInu3CvACYImu+UJqiAk0z+3ZZ9BYNj46VWXfkyynKxwb2MXqm8su75FLdKFPNS09OH48QMFWQLgwvMf33PvF9bmj1l8P3WKzoXBmsWaWufnCDHKME34uqkIUABwSuH26dF0ELajfK57/+UaK8NUo+9tEcw6SGcOeWjRrUMD795we/N/6akrIpqwzhn0yqXe3e3yMEO5X/pC7Fx6t+M+ug2S60xZqwyAD2ZlMwind1v9qy60hI9x6UAQT+vxY+HmvA+0okPzvi2KaFOhgumu/YPxjjITUiXqnplvp7Pp8opqJjyaFdgI2iKuYz8JyL+phoUQg2RDqerFR3Vq4Hf3qe2ZRJHW3dE4nAPbqJ6z7Nh55rsjpAUBhhO0Xkja+orcMdMs3bJb/W2f42TqFY3HNIXrTZgsKAX9WlnXjsY3FHF8yJ/0ZkGj8Na8PxUWdBafxR/cdOsXshrFFZ9eB7Kf4otYfJISsfVYRISEz2SKcNz4fq12sIPE5E9n6xk7mOTBWJN7OgN2r7i2fepGLfiEzB3r2H3/R4VpqYi+FTqOxtZyK9cayaIswpAinKW6eUXA+J0v3YRywqGZ7ZK9ntkcc1Taoo5a3PEyy9zXIU="
+    # Use the following to create the encrypted string
+    #
+    #     travis encrypt 'TRANSIFEX_PASSWORD=My super secret password\!'
+    #
+    # Make sure special characters like !<>()& etc are properly escaped.
+    - secure: "q49a4R6E8xZ9haKoIlJoIAl6vaz34c9VEz3HofW18zX8rJnj2VOQGwGMk45Gz5lu70sc9keYntnAEp7nji7xfLAsBv8Uc+Vw2KfkeMeXY5hkaCY9Cku3byplp6T5pAhGksCIfAR3dld4XBHaqrlDLCiNDAT1BYfXjwKA7/WzBuV1XeYM/8m3WIfgVPJnufN/YYcgnwHeLPhk55CshTRFXB1ExtbSh4yNA8JZ0piZJFVDWbKBwhNETDCL4JXrHLV5/hbS4UgCWXCTEEIArXVM+eHoR5amnYNaojU6YRL/phbIRXsFw1vgUMc1wBaNu2FxQmF5zlFBR3IAA3gekUyhq6H5u54CSZiJAuxHWi9NWlQ5gUG3CeYzGmDMQLn+gj02QuF+TbUU1UT44R/xHXzxPdLgDHR4JmiuVdRDia3NqkMlBL3ma1W9jMvvOL5TmzzR7RvGyLVLLzJX6Du9sOK1oyl9q9Sg4/Y7UC2vjczHHMtBNAilFAUZpGPDuBn2/0kk4bOuAofZ/ylEdjDNlp98QCPoomAEi7A4yjmUxv7igvXlvd/aeluJcpdrZSaWnHmkCE8cmSjwtN8NfAH4kZkIimpikKV2Qp+hs8A0BnGK6ldRVtzBoLQyU7R4Y71/3s+X1aaMiG59+4Zn60hzSn/UfC5sTFtKfHBNiBWUXpDxeXY="
