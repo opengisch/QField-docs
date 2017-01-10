@@ -7,6 +7,7 @@ source_file = i18n/pot/index.pot
 source_lang = en
 trans.de = i18n/de/index.po
 trans.es = i18n/es/index.po
+trans.fi = i18n/ro/index.po
 trans.fr = i18n/fr/index.po
 trans.gl = i18n/gl/index.po
 trans.hu = i18n/hu/index.po
@@ -14,6 +15,7 @@ trans.it = i18n/it/index.po
 trans.pl = i18n/pl/index.po
 trans.pt = i18n/pt/index.po
 trans.ro = i18n/ro/index.po
+trans.uk = i18n/ro/index.po
 type = PO
 
 [qfield-documentation.user-guide]
