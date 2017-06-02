@@ -10,7 +10,8 @@ SPHINXBUILD   = sphinx-build
 PAPER         = a4
 SHELL = /bin/bash
 TRANSLATIONS_STATIC  = en
-TRANSLATIONS_I18N  = de fr it ro gl pt ca es hu uk fi
+TRANSLATIONS_I18N  = ca nl et fi fr gl de el hu it lt mn pl pt ro es uk
+
 LANGUAGES     = $(TRANSLATIONS_STATIC) $(TRANSLATIONS_I18N)
 BUILD_LANGUAGES = $(TRANSLATIONS_I18N) $(TRANSLATIONS_STATIC)
 
