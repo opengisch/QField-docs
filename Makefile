@@ -99,7 +99,7 @@ transifex_pull:
 	tx pull -a;
 	@echo "Transifex translations pulled"
 
-compile_messages: init i18n/*/*.po
+compile_messages: init $(wildcard i18n/*/*.po)
 	@set -e; for lang in $(TRANSLATIONS_I18N) ;\
 	do \
 		echo "Compiling messages for $$lang..."; \
