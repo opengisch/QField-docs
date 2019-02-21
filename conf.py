@@ -45,7 +45,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'QField Documentation'
-copyright = u'2017, The QField Project/OPENGIS.ch'
+copyright = u'2019, The QField Project/OPENGIS.ch'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
