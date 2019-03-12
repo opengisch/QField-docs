@@ -5,7 +5,7 @@ QField opens QGIS projects in the ".qgs" format. Currently it is not possible to
 
 QField uses a customized file selector to open the projects. On choosing "Open project" from the QField menu, the file selector will be opened showing the following locations:
 
-- The primary media/shared storage directory returned by Environment.getExternalStorageDirectory()
+- The primary media/shared storage directory.
 - The application-specific directories on all shared/external storage devices where the application can place persistent files it owns if they are not already included in the primary storage directory.
 
 Inside these directories, only subdirectories and files with the ".qgs" extension are shown.
