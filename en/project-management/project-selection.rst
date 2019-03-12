@@ -25,16 +25,17 @@ Warning!
 By storing data in this folder, you risk losing data.
 The application-specific directory (`/Android/data/ch.opengis.qfield/`) will be deleted by the system if you uninstall QField from your Android device. This is important if you keep the data in the External sd card.
 
-How to turn external SD card into internal storage on Android 6 and 7.
+How to turn external SD card into internal storage
 --------
-We recommend to turn external SD cards to internal storage.
+Starting from Android 6.0, you can use the SD card as internal storage for your Android phone. A feature called Adoptable Storage allows the Android OS to format an external storage media as a permanent internal storage. The data on the adopted SD card is encrypted and it can’t be mounted on another device.
 
-NOTE: Please be sure you start with a blank SD card. It needs to be blank because when the card is converted to "Internal" storage, it will be formatted (wiped) and encoded (making the cards data only readable by that device).
+**Please be sure you start with an empty SD card. It needs to be empty because when the card is converted to "Internal" storage, it will be formatted (wiped).**
 
 1. Go to device “Settings”, then select “Storage”.
 2. Select your "SD Card", then tap the “three-dot menu“ (top-right), now select “Settings” from in there.
 3. Now select “Format as internal”, and then “Erase & Format”.
 4. Your SD Card will now be formatted as internal storage.
 5. Reboot your phone.
+If you don't reboot the phone, many things may not work correctly, so make sure you do.
 
-NOTE: If you don't reboot the phone, many things may not work correctly, so make sure you do.
+It might be possible that the Adoptable Storage feature is not present on your device even if it is running Android 6.0 and above. The device manufacturer may have disabled the feature. However, command-line methods exist which allow you to force a device to adopt a storage.
