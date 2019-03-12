@@ -27,7 +27,7 @@ The application-specific directory (`/Android/data/ch.opengis.qfield/`) will be 
 
 How to turn external SD card into internal storage on Android 6 and 7.
 --------
-We recommend turn external SD card into internal storage.
+We recommend to turn external SD cards to internal storage.
 
 NOTE: Please be sure you start with a blank SD card. It needs to be blank because when the card is converted to "Internal" storage, it will be formatted (wiped) and encoded (making the cards data only readable by that device).
 
