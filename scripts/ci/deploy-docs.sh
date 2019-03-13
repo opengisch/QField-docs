@@ -5,7 +5,7 @@ set -e
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../..
 
-if test "$TRAVIS_SECURE_ENV_VARS" = "true" -a "$TRAVIS_BRANCH" = "master";
+if test "$TRAVIS_SECURE_ENV_VARS" = "true" -a "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false";
 then
   echo "Publish docs to https://qfield.github.io/docs";
 
