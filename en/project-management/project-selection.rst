@@ -12,6 +12,10 @@ Inside these directories, only subdirectories and files with the ".qgs" extensio
 
 QField requires the project file to be physically on the device, so it is not possible to use providers that work with remote files (e.g. Google Drive). On the other hand you can use apps like `syncthing <https://syncthing.net/>`_ or `nextcloud <https://nextcloud.com/>`_ (or dropbox and probably many others) that allow you tho physically sync the file to your device.
 
+Favorite directories
+____________________
+In the first screen of the file selector, there is a section showing the favorite directories. To add a directory to the favorites, long click in the file selector on the directory name. To remove an entry from the favorites, long click on the entry in the favorites list. 
+
 External SD card
 ----------------
 The file selector shows the root of the SD card labeled as "read-only" and the application-specific directory separated from the rest of the SD card, as it is the only directory for which the app has write access. The directory is the following:
