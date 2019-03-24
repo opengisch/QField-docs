@@ -14,11 +14,13 @@ QField requires the project file to be physically on the device, so it is not po
 
 External SD card
 ----------------
-The file selector only shows the application-specific directory on an external SD card, as it is the only directory for which the app has write access. The directory is the following:
+The file selector shows the root of the SD card labeled as "read-only" and the application-specific directory separated from the rest of the SD card, as it is the only directory for which the app has write access. The directory is the following:
 
 .. code-block:: none
 
     /Android/data/ch.opengis.qfield/files
+
+Technically, this is due to the fact that Android intents ACTION_OPEN_DOCUMENT and ACTION_OPEN_DOCUMENT_TREE, work and grant read-write access on the content of the returning URI, not on the real linked file. This limitation which makes sense for how Android is structured but currently it is unusable with QField as QField needs to access the real file with a real path.
 
 Warning!
 --------
