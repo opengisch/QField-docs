@@ -24,6 +24,8 @@ The file selector shows the root of the SD card labeled as "read-only" and the a
 
     /Android/data/ch.opengis.qfield/files
 
+.. note::
+
 Technically, this is due to the fact that Android intents ACTION_OPEN_DOCUMENT and ACTION_OPEN_DOCUMENT_TREE, work and grant read-write access on the content of the returning URI, not on the real linked file. This limitation which makes sense for how Android is structured but currently it is unusable with QField as QField needs to access the real file with a real path.
 
 Warning!
