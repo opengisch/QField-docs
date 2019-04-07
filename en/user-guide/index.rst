@@ -6,19 +6,32 @@ QField User Guide
 Basic workflow
 **************
 
+Opening a project
+=================
+To open a project, tap on **Menu button --> Option button --> Open Project**.
+
+Select the project you want to open by navigating to it, or use the **Recent projects** and **Favorites directories** shortcuts.
+  .. image:: ../images/user-guide_open-project.png
+     :alt: Open project
+  .. image:: ../images/user-guide_open-project-menu.png
+     :alt: Open project
+
 Switch modes
 ============
 
 Modes are switched via :menuselection:`Menu button --> mode`
 
-Opening a project
-=================
-
 
 Identify features
 =================
+Tap on a feature on the map to identify it. If several features are located on the point you tapped (either because there are multiple features really close one to another, or because several layers are overlapping), they will all be listed in the menu that opens on the right of the screen.
 
-A tap on a feature will identify it. Pressing the back button will close the identify window.
+Tap on one of the listed feature to access its attributes. 
+
+1. Tap the **arrows** to scroll through all the identified features.
+2. Tap the **centre button** to center the map on the selected feature.
+3. Tap  the **edit button** to edit the attributes of the selected feature.
+4. Scrool through the **sub-menus** to access all the attributes.
 
 Exceptions to identified layers
 -------------------------------
