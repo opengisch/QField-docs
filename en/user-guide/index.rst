@@ -2,29 +2,25 @@
 QField User Guide
 #################
 
-**************
-Basic workflow
-**************
 
 Opening a project
 =================
 To open a project, tap on **Menu button --> Option button --> Open Project**.
 
 Select the project you want to open by navigating to it, or use the **Recent projects** and **Favorites directories** shortcuts.
+
   .. image:: ../images/user-guide_open-project.png
      :alt: Open project
   .. image:: ../images/user-guide_open-project-menu.png
      :alt: Open project
 
-Switch modes
-============
-
-Modes are switched via :menuselection:`Menu button --> mode`
-
 
 Identify features
 =================
 Tap on a feature on the map to identify it. If several features are located on the point you tapped (either because there are multiple features really close one to another, or because several layers are overlapping), they will all be listed in the menu that opens on the right of the screen.
+
+.. image:: ../images/user-guide_identify-feature.png
+     :alt: Open project
 
 Tap on one of the listed feature to access its attributes. 
 
@@ -33,12 +29,26 @@ Tap on one of the listed feature to access its attributes.
 3. Tap  the **edit button** to edit the attributes of the selected feature.
 4. Scrool through the **sub-menus** to access all the attributes.
 
+.. image:: ../images/user-guide_identify-feature-attributes.png
+     :alt: Open project
+
 Exceptions to identified layers
 -------------------------------
 
 Often it is not required to be able to query every layer. Some layers are only present as basemap and their attributes are not of interest.
 
 You can manage this layerlist in QGIS desktop in :menuselection:`Project --> Project Properties --> Identify Layers` and uncheck the base layers.
+
+
+Searching
+=================
+Tap on the **Search button** on the top-right corner to search in the layers. 
+
+1. Tap on the **name** in the result to pan the map on the feature (the feature will be highlighted in yellow).
+2. Tap on the **attributes button** to open its attributes.
+
+.. image:: ../images/user-guide_search.png
+     :alt: Open project
 
 GPS
 ===
