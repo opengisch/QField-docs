@@ -9,9 +9,17 @@ To open a project, tap on **Menu button --> Option button --> Open Project**.
 
 Select the project you want to open by navigating to it, or use the **Recent projects** and **Favorites directories** shortcuts.
 
-  .. image:: ../images/user-guide_open-project.png
+ .. image:: ../images/user-guide_open-project.png
      :alt: Open project
-  .. image:: ../images/user-guide_open-project-menu.png
+     
+ .. image:: ../images/user-guide_open-project-menu.png
+     :alt: Open project
+
+Map legend
+=================
+Open the **Main menu** and expend the layers list to display the legend of the map.
+
+.. image:: ../images/user-guide_legend.png
      :alt: Open project
 
 
@@ -48,6 +56,13 @@ Tap on the **Search button** on the top-right corner to search in the layers.
 2. Tap on the **attributes button** to open its attributes.
 
 .. image:: ../images/user-guide_search.png
+     :alt: Open project
+
+Switching Map Theme
+=================
+If you defined map themes for your project in QGIS, you can switch between them using the first drop-down in the **Main menu**. 
+
+.. image:: ../images/user-guide_maptheme.png
      :alt: Open project
 
 GPS
