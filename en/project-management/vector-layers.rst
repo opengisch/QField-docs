@@ -95,9 +95,21 @@ The field widgets from QGIS are supported on a best effort basis.
 +-------------------+-----------------+-------------------------------------------------+
 | Relation Reference| :yay:`✔`        |                                                 |
 +-------------------+-----------------+-------------------------------------------------+
+| Relation Widget   | :yay:`✔`        |                                                 |
++-------------------+-----------------+-------------------------------------------------+
 | Others            | :nay:`✘`        | :ref:`make_it_grow`                             |
 +-------------------+-----------------+-------------------------------------------------+
 
+Relation Widget
+................
+The relation widget shows all the referencing child features in a list. On many-to-many relationships, regarding the cardinality setting in the QGIS Vector Layer Properties on clicking/deleting an entry in the list effects directly the child feature (on direct cardinality) or the linking table entry (on many-to-one cardinality). The second case is usually used when there are additional relation information (e.g. percentage) in the linking table. 
+
+.. container:: clearer text-center
+
+  .. figure:: /images/relation_widget_cardinality.png
+     :width: 500px
+
+To visually identify the list entries, the child layer needs a Display Expression.
 
 Drag and drop designer forms
 ----------------------------
