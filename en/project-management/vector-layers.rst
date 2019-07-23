@@ -87,7 +87,9 @@ The field widgets from QGIS are supported on a best effort basis.
 +-------------------+-----------------+-------------------------------------------------+
 | Hidden            | :yay:`✔`        |                                                 |
 +-------------------+-----------------+-------------------------------------------------+
-| External Resource | :yay:`✔`        | This field is combined with camera integration. |
+| External Resource | :moreorless:`~` | This field is combined with camera integration. |
+|                   |                 | Only images can be viewed so far.               |
+|                   |                 | :ref:`make_it_grow`                             |
 +-------------------+-----------------+-------------------------------------------------+
 | Date Time         | :yay:`✔`        |                                                 |
 +-------------------+-----------------+-------------------------------------------------+
