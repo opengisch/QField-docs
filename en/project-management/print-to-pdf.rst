@@ -30,4 +30,4 @@ Done.
      :alt: PDF document
 
 
-.. note::  The devices documents directory is :code:`USER>/<APPNAME>/Documents` :code:`QField` means in the end something like :code:`////storage/emulated/0/Documents/QField`
+.. note::  The devices documents directory is :code:`USER>/<APPNAME>/Documents`. For :code:`QField` this is usually a path like :code:`////storage/emulated/0/Documents/QField`
