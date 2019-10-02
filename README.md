@@ -8,14 +8,22 @@ Status](https://travis-ci.org/opengisch/QField-docs.svg)](https://travis-ci.org/
 
 The final product can be found here:
 
- * [Catalan](http://qfield.org/docs/ca)
- * [Deutsch](http://qfield.org/docs/de)
- * [English](http://qfield.org/docs)
- * [Français](http://qfield.org/docs/fr)
- * [Galician](http://qfield.org/docs/gl)
- * [Portuguese](http://qfield.org/docs/pt)
- * [Romanian](http://qfield.org/docs/ro)
- * [Ukranian](http://qfield.org/docs/uk)
+ * [Catalan](https://qfield.org/docs/ca)
+ * [Deutsch](https://qfield.org/docs/de)
+ * [English](https://qfield.org/docs)
+ * [Français](https://qfield.org/docs/fr)
+ * [Galician](https://qfield.org/docs/gl)
+ * [Portuguese](https://qfield.org/docs/pt)
+ * [Romanian](https://qfield.org/docs/ro)
+ * [Chinese](https://qfield.org/docs/zh)
+ * [Finnish](https://qfield.org/docs/fi)
+ * [Hungarian](https://qfield.org/docs/hu)
+ * [Italian](https://qfield.org/docs/it)
+ * [Japanese](https://qfield.org/docs/ja)
+ * [Hebrew](https://qfield.org/docs/he)
+ * [Romanian](https://qfield.org/docs/ro)
+ * [Español](https://qfield.org/docs/es)
+ * [Ukranian](https://qfield.org/docs/uk)
 
 ## Process
 
