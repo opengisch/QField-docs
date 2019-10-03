@@ -25,7 +25,7 @@ Installation
 ========
 In QGIS, open the plugin library and search for **qfield sync**. Select the plugin in the list and click on **Install**.
 
-IMG
+.. image:: ../images/qfield-sync_install.png
 
 Configuration
 =============
@@ -33,10 +33,12 @@ Configuration
 The project configuration is saved in the master .qgs project file.
 This way it is possible to pre-configure a project once and use it repeatedly.
 
-IMG
+.. image:: ../images/qfield-sync_configmenu.png
 
 Layer configuration
 -------------------
+
+.. image:: ../images/qfield-sync_config.png
 
 In the project configuration dialog, an *action* can be defined for each layer
 individually. Depending on the layer type, different types of actions are
@@ -60,8 +62,6 @@ Offline editing
 Remove
   The layer will be removed from the working copy. This is useful if a layer is
   used in the basemap and will not be available in the packaged project.
-  
-IMG
 
 Base map configuration
 ----------------------
@@ -103,7 +103,7 @@ Package for Qfield
 
 Once the project is configured, package it in a folder. This folder will contain the .qgs and the data used in it. 
 
-IMG
+.. image:: ../images/qfield-sync_package.png
 
 Copy the folder on your device. Open Qfield, open the project and start collecting data.
 
@@ -117,7 +117,7 @@ When you want to synchronize what you have collected, re-open the project in QGI
 
 Copy the project folder from your device to your computer and use the **Synchronize from Qfield** menu to synchronize your changes from the protable project to the main project.
 
-IMG
+.. image:: ../images/qfield-sync_sync.png
 
 
 
