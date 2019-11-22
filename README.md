@@ -24,6 +24,7 @@ The final product can be found here:
  * [Romanian](https://qfield.org/docs/ro)
  * [Español](https://qfield.org/docs/es)
  * [Ukranian](https://qfield.org/docs/uk)
+ * [Japanese](https://qfield.org/docs/ja)
 
 ## Process
 
