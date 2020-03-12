@@ -7,18 +7,18 @@ You can add one or more pictures to a feature. Below you find an exemple how to 
 Creating tow tables
 --------------------
 
-**hive (Sprengungen in the screenshots)**
+**Apiary**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * id (UUID)
 * geometry
 * ...
 
-**hive_picture (sprengung_bild in the screenshots)**
+**Apiary_pictures**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * id
-* hive_id (UUID)
+* apiary_id (UUID)
 * path (TEXT)
 * ...
 
@@ -27,10 +27,10 @@ Relations
 
 create a relation with:
 
-* ``hive`` Referenced layer
+* ``apiary`` Referenced layer
 * ``id`` Referenced field
-* ``hive_picture`` Referencing layer
-* ``hive_id`` Referencing field
+* ``apiary_picture`` Referencing layer
+* ``apiary_id`` Referencing field
 
 .. container:: clearer text-center
 
@@ -41,17 +41,17 @@ create a relation with:
 Widgets
 --------
 
-hive
+apiary
 ~~~~~
 
-set default value of id to ``uuid()``. No need to show it in the form.
+Set default value of id to ``uuid()``. No need to show it in the form.
 
 .. container:: clearer text-center
 
     .. image:: /images/add-1-n-pictures-widgets.png
        :width: 600px
        :alt: widgets
-set the relation widget to ``Many to one relation``
+Set the relation widget to ``Many to one relation``
 
 .. container:: clearer text-center
 
@@ -62,7 +62,7 @@ set the relation widget to ``Many to one relation``
 picture
 ~~~~~~~
 
-set widget type of path to ``attachment``
+Set widget type of path to ``attachment``
 
 .. container:: clearer text-center
 
