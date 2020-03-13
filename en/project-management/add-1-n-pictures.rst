@@ -62,7 +62,7 @@ Set the relation widget to ``Many to one relation``
 picture
 ~~~~~~~
 
-Set widget type of path to ``attachment``
+Set the widget type of path to ``attachment``
 
 .. container:: clearer text-center
 
