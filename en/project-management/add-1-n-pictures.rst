@@ -44,7 +44,7 @@ Widgets
 apiary
 ~~~~~
 
-Set default value of id to ``uuid()``. No need to show it in the form.
+Set the default value of id to ``uuid()``. No need to show it in the form.
 
 .. container:: clearer text-center
 
