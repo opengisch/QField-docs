@@ -25,7 +25,7 @@ Creating two tables
 Relations
 ----------
 
-create a relation with:
+Create a relation with:
 
 * ``apiary`` Referenced layer
 * ``id`` Referenced field
