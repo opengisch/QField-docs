@@ -4,7 +4,7 @@ Add 1:n pictures
 
 You can add one or more pictures to a feature. Below you find an exemple how to proceed.
 
-Creating tow tables
+Creating two tables
 --------------------
 
 **Apiary**
@@ -69,4 +69,3 @@ Set widget type of path to ``attachment``
     .. image:: /images/add-1-n-pictures-widget_picture.png
        :width: 600px
        :alt: widget picture
-
