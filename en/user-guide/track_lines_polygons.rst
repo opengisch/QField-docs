@@ -48,4 +48,4 @@ While the tracking session is active the layer is still editable, but the tracke
        :alt: stop_tracking_delete
 
 
-If the layer geometry supports m value, the time is stored in the m value from the start of the tracking.
+If the layer geometry supports m value, the time is stored in the m value, that passed since the first vertex of this tracking has been recorded.
