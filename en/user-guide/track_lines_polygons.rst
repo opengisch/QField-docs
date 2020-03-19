@@ -15,7 +15,7 @@ Tracking can be started over the legend - long press on the layer.
        :alt: track_lines_started
 
 
-The time interval and the minimum distance can be entered individually to define when the vertex need to be set.
+The time interval and the minimum distance can be entered individually to define when a vertex needs to be set.
 
 .. container:: clearer text-center
 
