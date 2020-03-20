@@ -1,6 +1,6 @@
 .. _track_linges_polygons:
 
-Tracking session of lines and polygons
+Tracking of lines and polygons
 ==============================
 
 You have the possibility to do tracking session on lines and polygons.
