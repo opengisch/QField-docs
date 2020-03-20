@@ -6,7 +6,7 @@ Tracking of lines and polygons
 You have the possibility to do tracking on lines and polygons.
 
 It's available when GPS is enabled. 
-Tracking session can be started over the legend - long press on the layer.
+A tracking session can be started over the legend - long press on the layer.
 
 .. container:: clearer text-center
 
