@@ -65,6 +65,11 @@ information about it in the [reStructuredText
 Primer](http://sphinx-doc.org/rest.html) or by looking at what is already in
 the documentation and make your changes according to it.
 
+#### Testing your changes
+To quickly test locally the changes you made you can run `make devhtml`from the top-level directory. This will quickly generate the english only version of your new documentation. The HTML will be generated in `build/html/en`. From there you can open `index.html` and explore your local copy of the documentation.
+
+#### Contribute changes
+
 Once you have made changes which you would like to contribute back to the main
 documentation, please make a [pull
 request](https://help.github.com/articles/using-pull-requests/).
