@@ -30,6 +30,7 @@ I18NSPHINXOPTS   = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) -c . -A language=en -D lan
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html      to make standalone HTML files"
+	@echo "  devhtml   to quickly make standalone english-only HTML files. good for development"
 	@echo "  init      to preprocess translation directories"
 	@echo "  compile_messages    to compile po to mo files"
 	@echo "  generate_po_from_tmpl    to duplicate pot to po files for a language, e.g from i18n\pot directory to i18n\lang"
@@ -113,6 +114,12 @@ compile_messages: init $(wildcard i18n/*/*.po)
 	done
 	@echo "Messages compiled. Now you can build updated version for html and pdf.";\
 	touch compile_messages
+
+devhtml: compile_messages
+	@set -e; \
+	mkdir -p $(BUILDDIR)/html
+	$(SPHINXBUILD) -b html -d build/doctrees/en -c . -A language=en -D language=en -A languages=en en/ $(BUILDDIR)/html/en;
+
 
 html: compile_messages
 	@set -e; \
