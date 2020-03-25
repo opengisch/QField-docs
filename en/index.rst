@@ -61,8 +61,8 @@ Contents
    installation-guide/index
    project-management/index
    user-guide/index
+   synchronisation/index
    development/index
-   qfieldsync/index
    case-studies/index
 
 Translations

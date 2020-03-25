@@ -1,3 +1,4 @@
+.. _qfieldsync:
 #################
 QFieldSync plugin
 #################
