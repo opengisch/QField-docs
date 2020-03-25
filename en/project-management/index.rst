@@ -1,8 +1,9 @@
-#########################
-QField Project Management
-#########################
+################
+Prepare for work
+################
 
-QField does not have a built-in project management. You need to set up and configure your project first inside QGIS and then copy the project file (.qgs) and any additional files to your device and open it with QField.
+QField leverages the power of QGIS to comfortably configure your projects.
+After setting up everything, you can the :ref:`synchronise <synchronise>` your project and any additional files to your device and immediately get down to work.
 
 Contents
 ========
