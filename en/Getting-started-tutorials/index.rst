@@ -2,11 +2,9 @@
 Getting started tutorials
 ##########################
 
+John Duncan docs
+----------------
+
 To be completed
 
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   *
