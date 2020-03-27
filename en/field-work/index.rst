@@ -1,6 +1,16 @@
-#########
-Field use
-#########
+.. _field-work:
+##########
+Field work
+##########
+
+To do add
+---------
+Digitise (add/edit/delete)
+Tracking
+navigating identified features 
+navigate forms
+turning on and off layers
+Using GPS
 
 
 Opening a project

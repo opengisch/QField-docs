@@ -1,3 +1,4 @@
+.. _prepare-for-work:
 #################
 Prepare for work
 #################

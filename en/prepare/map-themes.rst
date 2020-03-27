@@ -1,4 +1,4 @@
-.. _configure_map_themes:
+
 
 Configure Map Themes
 ====================
@@ -23,4 +23,19 @@ Creating a Map Theme in QGIS is a very simple task.
 
 1. Style the map and layers to your requirements
 2. Save it as a named Map Theme
-3. Load the project and your device and :ref:`change_map_theme`.
+3. Load the project and your device and change the active Map Theme
+
+
+Change the active Map Theme
+===========================
+
+Switching Map Themes is possible from the Dashboard.
+
+Use the *Map Themes* combobox to chose the active theme.
+
+.. container:: clearer text-center
+
+    .. image:: /images/mapthemes.gif
+       :width: 640px
+       :alt: Change Map Theme
+

@@ -51,19 +51,21 @@ desktop. A mode defines the task which a user is currently doing. Either a user
 is *browsing* through the data or he is *digitizing* something new.
 
 
-Contents
---------
+
+Contents2
+---------
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
    installation-guide/index
-   project-management/index
-   user-guide/index
-   synchronisation/index
-   development/index
+   getting-started/index
+   prepare/index
+   field-work/index
+   synchronise/index
+   data-formats/index
    case-studies/index
+   development/index
 
 Translations
 ============
