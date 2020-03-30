@@ -52,7 +52,7 @@ is *browsing* through the data or he is *digitizing* something new.
 
 
 
-Contents2
+Contents
 ---------
 
 .. toctree::
