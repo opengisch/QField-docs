@@ -6,19 +6,15 @@ Synchronisation
 
 The QFieldSync plugin helps preparing and packaging QGIS projects for QField.
 
-QFieldCloud
-===========
-Seamlessly integrate your team's field work, QFieldCloud's unique technology allows your team to focus on what's important, making sure you efficiently get the best field data possible.
+Contents
+========
 
-Thanks to the tight integration with QField, your team will be able to start surveying and digitising data in no time.
+.. toctree::
+   :maxdepth: 1
+   :glob:
 
-Subscribe now at: https://qfield.cloud
---------------------------------------
+   *
 
-QFieldSync plugin
-=================
-
-The QFieldSync plugin helps preparing and packaging QGIS projects for QField, find out more :ref:`here <qfieldsync>`
 
 
 
