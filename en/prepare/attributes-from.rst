@@ -1,8 +1,6 @@
 *****************************
 Attributes From configuration
 *****************************
-Forms and Fields
-================
 
 QField creates forms similar to, but not equal to QGIS.
 
@@ -49,7 +47,7 @@ The field widgets from QGIS are supported on a best effort basis.
 +-------------------+-----------------+-------------------------------------------------+
 
 Relation Widget
-................
+---------------
 
 For more information refer to the relations chapter of the official `QGIS Documentation <https://docs.qgis.org/3.4/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations>`_.
 

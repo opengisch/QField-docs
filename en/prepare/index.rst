@@ -15,11 +15,4 @@ Contents
 
    *
 
-Coordinate Reference Systems
-============================
 
-QField uses the Coordinate Reference System (CRS) information found in the project file.
-
-* Project CRS
-* On the fly reprojection (OTF) is used for visualization
-* Layer CRS

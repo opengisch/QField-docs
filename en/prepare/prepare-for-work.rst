@@ -85,6 +85,14 @@ There are several options for this, one of them is `Android NTRIP Client
 To use this you have to `enable mock locations on your Android device 
 <https://www.youtube.com/watch?v=v1eRHmMiRJQ>`_.
 
+Coordinate Reference Systems
+============================
+
+QField uses the Coordinate Reference System (CRS) information found in the project file.
+
+* Project CRS
+* On the fly reprojection (OTF) is used for visualization
+* Layer CRS
 
 Digitizing
 ==========
