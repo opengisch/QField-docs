@@ -24,7 +24,7 @@ install:
 # Latex requirements
   - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
   - tlmgr option repository ctan
-  - tlmgr update --self
+  - tlmgr update --verify-repo=none --self
   - tlmgr install combelow
   - tlmgr install babel-french
   - tlmgr install babel-german
