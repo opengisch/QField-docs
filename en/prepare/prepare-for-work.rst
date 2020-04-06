@@ -148,4 +148,28 @@ To delete a feature, identify it first and tap the trash icon.
 Edit the geometry of an existing feature
 ========================================
 
-To complete.
+To edit, tap on **Menu button -> pencil.**
+
+You can edit an existing feature by moving, adding or deleting the vertex and also spliting. 
+
+Vertex tool
+-----------
+
+Below, you see how the vertex tool works.
+
+.. container:: clearer text-left
+
+  .. figure:: ../images/edit_geom_feature.gif 
+     :width: 300px
+     :alt: edit_geom_feature
+
+Split tool
+----------
+
+Below, you see how the split tool works.
+
+.. container:: clearer text-left 
+
+  .. figure:: ../images/split_geom_feature.gif 
+     :width: 300px
+     :alt: split_geom_feature
