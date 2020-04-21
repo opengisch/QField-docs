@@ -1,11 +1,11 @@
 
-BaseMaps and Imagery
+Base maps and Imagery
 ====================
 
 
-QField is able to load a Base Map from a web service.
+QField is able to load a base map from a web service.
 
-In QGIS with the plugin QFieldSync, set the Base Map to the "Project Configuration"
+In QGIS with the plugin QFieldSync, set the base map to the "Project Configuration"
 
 .. container:: clearer text-center
 
@@ -13,7 +13,7 @@ In QGIS with the plugin QFieldSync, set the Base Map to the "Project Configurati
        :width: 400px
        :alt: sync_basemap
 
-|
+
 Then make the package of the project to load it on your device.
 
 .. container:: clearer text-center
@@ -21,20 +21,22 @@ Then make the package of the project to load it on your device.
     .. image:: /images/qfield-sync_package1.png
        :width: 400px
        :alt: sync_package1
-|
-|
+
+
 .. container:: clearer text-center
 
     .. image:: /images/qfield-sync_package2.png
        :width: 400px
        :alt: sync_package2
 
-|
-Below the result on QField.
 
+Below the result on QField.
 
 .. container:: clearer text-center
 
-    .. image:: /images/qfield_basemap.jpg
-       :width: 300px
-       :alt: qfield basemap
+ .. image:: ../images/qfield_basemap1.jpg
+    :width: 200px
+    
+     
+ .. image:: ../images/qfield_basemap2.jpg
+    :width: 200px
