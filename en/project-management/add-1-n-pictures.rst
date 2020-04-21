@@ -34,6 +34,8 @@ Create a relation with:
 * ``id`` Referenced field
 * ``apiary_picture`` Referencing layer
 * ``apiary_id`` Referencing field
+* ``strength`` Composition
+
 
 .. container:: clearer text-center
 
@@ -54,7 +56,7 @@ Set the default value of the field id to ``uuid()``. No need to show it in the f
     .. image:: /images/add-1-n-pictures-widgets_hive.png
        :width: 600px
        :alt: widgets
-Set the relation widget to ``Many to one relation``
+Set the relation widget to ``Many to one relation`` and add the relation to the form
 
 .. container:: clearer text-center
 
@@ -65,7 +67,7 @@ Set the relation widget to ``Many to one relation``
 picture
 ~~~~~~~
 
-Set the widget type of the field path to ``attachment``
+Set the widget type of the field path to ``attachment`` and add it to the form
 
 .. container:: clearer text-center
 
