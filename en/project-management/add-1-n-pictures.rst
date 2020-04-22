@@ -1,25 +1,28 @@
 
-Add 1:n pictures
-====================
+Add a series of pictures to a feature
+=====================================
 
-You can add one or more pictures to a feature. Below you find an exemple how to proceed.
+You can add one or more pictures to a feature. Below you find an example how to proceed.
 
 Creating two tables
 --------------------
 
-**Apiary**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We will need two tables. One table where the features are stored
+and one with a list of pictures.
 
-* id (UUID)
-* geometry
+**Apiary**
+~~~~~~~~~~
+
+* ``id`` (UUID)
+* ``geometry``
 * ...
 
 **Apiary_pictures**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
-* id
-* apiary_id (UUID)
-* path (TEXT)
+* ``id
+* ``apiary_id`` (UUID)
+* ``path`` (TEXT)
 * ...
 
 Relations
@@ -41,12 +44,12 @@ Create a relation with:
        :alt: Relations
 
 Widgets
---------
+-------
 
 apiary
-~~~~~
+~~~~~~
 
-Set the default value of id to ``uuid()``. No need to show it in the form.
+Set the default value of the field id to ``uuid()``. No need to show it in the form.
 
 .. container:: clearer text-center
 
@@ -64,7 +67,7 @@ Set the relation widget to ``Many to one relation`` and add the relation to the 
 picture
 ~~~~~~~
 
-Set the widget type of path to ``attachment`` and add it to the form
+Set the widget type of the field path to ``attachment`` and add it to the form
 
 .. container:: clearer text-center
 
