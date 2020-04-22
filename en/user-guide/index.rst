@@ -1,1 +1,23 @@
-This page has been moved to :ref:`field work <field-work>`
+.. _field-work:
+##########
+Field work
+##########
+
+To complete
+-----------
+Digitise (add/edit/delete)
+Tracking
+navigating identified features 
+navigate forms
+turning on and off layers
+Using GPS
+
+Contents
+========
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   *
+

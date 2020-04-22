@@ -60,8 +60,8 @@ Contents
 
    installation-guide/index
    getting-started/index
-   prepare/index
-   field-work/index
+   project-management/index
+   user-guide/index
    synchronise/index
    data-formats/index
    case-studies/index
