@@ -66,6 +66,7 @@ Contents
    data-formats/index
    case-studies/index
    development/index
+   old-doc/index
 
 Translations
 ============
