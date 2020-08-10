@@ -59,10 +59,10 @@ Contents
    :maxdepth: 1
 
    installation-guide/index
-   getting-started/index
    project-management/index
    user-guide/index
    synchronise/index
+   getting-started/index
    data-formats/index
    case-studies/index
    development/index

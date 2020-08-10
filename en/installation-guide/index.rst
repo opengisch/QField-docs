@@ -25,3 +25,7 @@ want to use GooglePlay. You can get the qfield.apk_ from the release page.
 Windows
 -------
 A beta version of QField for windows can be found at https://download.opengis.ch/qfield/ci-builds/win/
+
+iOS
+-------
+An iOS version is in the making.
