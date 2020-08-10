@@ -3,6 +3,6 @@ Getting started tutorials
 ##########################
 
 
-`QField tutorials <https://github.com/livelihoods-and-landscapes/qgis_qfield_tutorials>`_
+`QField tutorials <https://livelihoods-and-landscapes.github.io/qgis_qfield_tutorials/training_overview.html>`_
 
 
