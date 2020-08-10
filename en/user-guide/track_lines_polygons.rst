@@ -1,7 +1,7 @@
 .. _track_linges_polygons:
 
-Tracking of lines and polygons
-==============================
+Track lines and polygons
+========================
 
 You have the possibility to do tracking on lines and polygons.
 

@@ -1,5 +1,5 @@
-Searching
-=========
+Search
+======
 Tap on the **Search button** on the top-right corner to search in the layers. 
 
 1. Tap on the **name** in the result to pan the map on the feature (the feature will be highlighted in yellow).

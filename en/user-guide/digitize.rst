@@ -1,5 +1,5 @@
-Collecting features
-===================
+Collect features
+================
 
 To start digitizing new features, enable the **Edit mode** in the main menu (*pencil button*) and select the layer on which you want to add a new feature (the layer will be highlighted in grey).
 
@@ -42,15 +42,15 @@ The next time you will add a feature on the same layer, these attributes will be
 
 .. image:: ../images/user-guide_digit4.png
 
-Deleting features
-=================
+Delete features
+===============
 
 Deleting features is only possible in digitize mode.
 
 To delete a feature, identify it first and tap the trash icon.
 
-Editing features
-=========================
+Edit features
+=============
 
 To edit, tap on **Menu button -> pencil.**
 

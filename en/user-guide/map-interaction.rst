@@ -1,5 +1,5 @@
-Interacting with the map
-########################
+Interact with the map
+#####################
 
 Map legend
 ==========
