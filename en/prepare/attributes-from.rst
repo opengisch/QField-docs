@@ -7,7 +7,7 @@ QField creates forms similar to, but not equal to QGIS.
 Suppress Attribute Form
 ---------------------
 
-The setting suppress feature form is directly applied to the QField form.
+The setting "suppress attribute form" is directly applied to the QField form.
 
 .. _edit_field_widgets:
 
