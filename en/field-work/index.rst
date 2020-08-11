@@ -15,12 +15,3 @@ Contents
    :glob:
 
    *
-
-To complete
------------
-Digitise (add/edit/delete),
-Tracking,
-navigating identified features,
-navigate forms,
-turning on and off layers,
-Using GPS
