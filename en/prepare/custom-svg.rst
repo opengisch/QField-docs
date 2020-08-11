@@ -1,7 +1,7 @@
 Custom SVG symbols
 ==================
 
-From QGIS 3.6 Noosa it is possible to embed SVG symbols within QGIS projects.
+It is possible to embed SVG symbols directly within a QGIS projects.
 
 1. Choose the layer which will support SVG symbology and open its properties dialog.
 2. Open the section Symbology in  :menuselection: `Properties --> Symbology`.
@@ -38,4 +38,3 @@ From QGIS 3.6 Noosa it is possible to embed SVG symbols within QGIS projects.
   .. figure:: ../images/custom_svg_symbols.gif
      :width: 500px
      :alt: Identify and readonly configuration
-
