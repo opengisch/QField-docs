@@ -47,7 +47,9 @@ Delete features
 
 Deleting features is only possible in digitize mode.
 
-To delete a feature, identify it first and tap the trash icon.
+To delete a feature, identify it first by a short tap on it. Then select it with a long press
+in the identification list, select further features to delete if you want and click the
+trash button to confirm the deletion.
 
 Edit features
 =============
