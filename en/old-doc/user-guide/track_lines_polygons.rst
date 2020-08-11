@@ -1,4 +1,4 @@
-.. _track_linges_polygons:
+.. _old_track_linges_polygons:
 
 Tracking of lines and polygons
 ==============================

@@ -5,7 +5,7 @@ Add a series of pictures to a feature
 You can add one or more pictures to a feature. Below you find an example how to proceed.
 
 Creating two tables
---------------------
+-------------------
 
 We will need two tables. One table where the features are stored
 and one with a list of pictures.
@@ -20,13 +20,13 @@ and one with a list of pictures.
 **Apiary_pictures**
 ~~~~~~~~~~~~~~~~~~~
 
-* ``id
+* ``id``
 * ``apiary_id`` (UUID)
 * ``path`` (TEXT)
 * ...
 
 Relations
-----------
+---------
 
 Create a relation with:
 
@@ -56,6 +56,7 @@ Set the default value of the field id to ``uuid()``. No need to show it in the f
     .. image:: /images/add-1-n-pictures-widgets_hive.png
        :width: 600px
        :alt: widgets
+
 Set the relation widget to ``Many to one relation`` and add the relation to the form
 
 .. container:: clearer text-center

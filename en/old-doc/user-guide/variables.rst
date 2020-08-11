@@ -1,4 +1,4 @@
-.. _global_variables:
+.. _old_global_variables:
 
 Global variables
 ================

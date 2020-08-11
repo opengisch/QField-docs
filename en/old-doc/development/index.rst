@@ -24,7 +24,7 @@ You can use the `user mailing list <http://lists.qfield.org/listinfo.cgi/users-q
 
 We also provide commercial support, `contact us <http://www.opengis.ch/contact/>`_
 
-.. _make_it_grow:
+.. _old_make_it_grow:
 
 Make it grow, make it yours
 ===========================
@@ -40,7 +40,7 @@ on a touch device is one of the jobs that takes the most time and
 keeping this task as easy as possible is key for pleasuring work.
 
 Some important :ref:`edit field widgets are already
-available<edit_field_widgets>` but much more is possible `for example in QGIS
+available<old_edit_field_widgets>` but much more is possible `for example in QGIS
 <http://gis.stackexchange.com/a/30051/9839>`_.
 
 Legend

@@ -1,4 +1,4 @@
-.. _change_map_theme:
+.. _old_change_map_theme:
 
 Change the active Map Theme
 ===========================

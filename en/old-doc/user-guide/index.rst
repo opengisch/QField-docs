@@ -59,7 +59,7 @@ Tap on the **Search button** on the top-right corner to search in the layers.
     
 
 Switching Map Theme
-=================
+===================
 If you defined map themes for your project in QGIS, you can switch between them using the first drop-down in the **Main menu**. 
 
 .. image:: ../images/user-guide_maptheme.png

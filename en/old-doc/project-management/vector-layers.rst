@@ -63,7 +63,7 @@ Suppress Feature Form
 
 The setting suppress feature form is directly applied to the QField form.
 
-.. _edit_field_widgets:
+.. _old_edit_field_widgets:
 
 Field widget
 ------------
@@ -89,7 +89,7 @@ The field widgets from QGIS are supported on a best effort basis.
 +-------------------+-----------------+-------------------------------------------------+
 | External Resource | :moreorless:`~` | This field is combined with camera integration. |
 |                   |                 | Only images can be viewed so far.               |
-|                   |                 | :ref:`make_it_grow`                             |
+|                   |                 | :ref:`old_make_it_grow`                         |
 +-------------------+-----------------+-------------------------------------------------+
 | Date Time         | :yay:`✔`        |                                                 |
 +-------------------+-----------------+-------------------------------------------------+
@@ -97,11 +97,11 @@ The field widgets from QGIS are supported on a best effort basis.
 +-------------------+-----------------+-------------------------------------------------+
 | Relation Widget   | :yay:`✔`        |                                                 |
 +-------------------+-----------------+-------------------------------------------------+
-| Others            | :nay:`✘`        | :ref:`make_it_grow`                             |
+| Others            | :nay:`✘`        | :ref:`old_make_it_grow`                         |
 +-------------------+-----------------+-------------------------------------------------+
 
 Relation Widget
-................
+...............
 
 For more information refer to the relations chapter of the official `QGIS Documentation <https://docs.qgis.org/3.4/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations>`_.
 
@@ -134,7 +134,7 @@ The second case is usually used when there are additional relation information (
 In case of the many-to-one cardinality on many-to-many relations the Display Expression needs to be set on the linking table.
 
 External Resource (photo settings)
-.................................
+..................................
 
 The widget type "Attachement" is used to store the path to collected photos.
 
