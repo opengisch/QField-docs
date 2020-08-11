@@ -64,7 +64,7 @@ The visual identification of the list entries are done a Display Expression on t
 
 Since the parents primary keys are used as foreign keys on the referencing child features, these primary keys must be save to use even after the synchronization back to the original data. Therefore we recommend to use stable values such as UUIDs for primary keys. 
 
-Child features can be added before the parent is finaly saved - means while adding a parent. But it's blocked if there is no valid primary key on the parent or the constraints are violated. In case the adding of the parent feature is canceled after there have been some childs added already, the childs are deleted by cascade.
+It is possible to already add children from a parent that is about to be added. This possibility will be blocked if there is no valid primary key on the parent or the constraints are violated. In case the adding of the parent feature is canceled after some children have been added already, the children are deleted as well.
 
 **Many-To-Many relations**
 
