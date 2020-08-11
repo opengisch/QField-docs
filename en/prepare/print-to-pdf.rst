@@ -3,7 +3,7 @@ Print to PDF
 
 It's possible to export the maps and other items to a PDF document.
 
-If the project has at least one print layout defined, they are available over the menu.
+If the project has at least one print layout defined, printing is available over the menu.
 
 .. container:: clearer text-center
 
