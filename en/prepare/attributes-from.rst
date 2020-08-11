@@ -90,7 +90,7 @@ The widget type "Attachement" is used to store the path to collected photos.
      :width: 600px
      :alt: Attachement field settings
 
-The path should be set to relative. Means the pictures are stored then in a sub-directory of the project, where the link stored in the textfield is pointing to.
+The path should be set to relative. The pictures are stored then in a sub-directory of the project, where the link stored in the textfield is pointing to.
 
 In QField the picture is displayed. By clicking the camera symbol the camera is started to update the picture with a new photo.
 
