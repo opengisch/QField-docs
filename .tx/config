@@ -1,55 +1,55 @@
 [main]
 host = https://www.transifex.com
 
-[qfield-documentation-test.index]
+[qfield-documentation.index]
 file_filter = i18n/<lang>/index.po
 source_file = i18n/pot/index.pot
 source_lang = en
 type = PO
 
-[qfield-documentation-test.user-guide]
+[qfield-documentation.user-guide]
 file_filter = i18n/<lang>/user-guide.po
 source_file = i18n/pot/user-guide.pot
 source_lang = en
 type = PO
 
-[qfield-documentation-test.installation-guide]
+[qfield-documentation.installation-guide]
 file_filter = i18n/<lang>/installation-guide.po
 source_file = i18n/pot/installation-guide.pot
 source_lang = en
 type = PO
 
-[qfield-documentation-test.project-management]
+[qfield-documentation.project-management]
 file_filter = i18n/<lang>/project-management.po
 source_file = i18n/pot/project-management.pot
 source_lang = en
 type = PO
 
-[qfield-documentation-test.data-formats]
+[qfield-documentation.data-formats]
 file_filter = i18n/<lang>/data-formats.po
 source_file = i18n/pot/data-formats.pot
 source_lang = en
 type = PO
 
-[qfield-documentation-test.development]
+[qfield-documentation.development]
 file_filter = i18n/<lang>/development.po
 source_file = i18n/pot/development.pot
 source_lang = en
 type = PO
 
-[qfield-documentation-test.synchronise]
+[qfield-documentation.synchronise]
 file_filter = i18n/<lang>/synchronise.po
 source_file = i18n/pot/synchronise.pot
 source_lang = en
 type = PO
 
-[qfield-documentation-test.getting-started]
+[qfield-documentation.getting-started]
 file_filter = i18n/<lang>/getting-started.po
 source_file = i18n/pot/getting-started.pot
 source_lang = en
 type = PO
 
-[qfield-documentation-test.case-studies]
+[qfield-documentation.case-studies]
 file_filter = i18n/<lang>/case-studies.po
 source_file = i18n/pot/case-studies.pot
 source_lang = en
