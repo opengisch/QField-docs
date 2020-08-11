@@ -58,7 +58,7 @@ For more information refer to the relations chapter of the official `QGIS Docume
 
 The relation widget shows all the referencing child features in a list. It's possible to add, delete and open them.
 
-The visual identification of the list entries are done a Display Expression on the child layer.
+The visual identification of the list entries are done via the "Display Expression" of the child layer.
 
 **Key handling**
 
