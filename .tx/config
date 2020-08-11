@@ -25,9 +25,9 @@ source_file = i18n/pot/project-management.pot
 source_lang = en
 type = PO
 
-[qfield-documentation.concepts]
-file_filter = i18n/<lang>/concepts.po
-source_file = i18n/pot/concepts.pot
+[qfield-documentation.data-formats]
+file_filter = i18n/<lang>/data-formats.po
+source_file = i18n/pot/data-formats.pot
 source_lang = en
 type = PO
 
@@ -37,9 +37,20 @@ source_file = i18n/pot/development.pot
 source_lang = en
 type = PO
 
-[qfield-documentation.qfieldsync]
-file_filter = i18n/<lang>/qfieldsync.po
-source_file = i18n/pot/qfieldsync.pot
+[qfield-documentation.synchronise]
+file_filter = i18n/<lang>/synchronise.po
+source_file = i18n/pot/synchronise.pot
 source_lang = en
 type = PO
 
+[qfield-documentation.getting-started]
+file_filter = i18n/<lang>/getting-started.po
+source_file = i18n/pot/getting-started.pot
+source_lang = en
+type = PO
+
+[qfield-documentation.case-studies]
+file_filter = i18n/<lang>/case-studies.po
+source_file = i18n/pot/case-studies.pot
+source_lang = en
+type = PO
