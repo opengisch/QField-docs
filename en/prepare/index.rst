@@ -1,5 +1,5 @@
 ################
-Prepare for work
+Prepare for Work
 ################
 
 QField leverages the power of QGIS to comfortably configure your projects.

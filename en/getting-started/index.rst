@@ -1,5 +1,5 @@
 ##########################
-Getting started tutorials
+Getting Started Tutorials
 ##########################
 
 Here you can find some great tutorials created by our community:

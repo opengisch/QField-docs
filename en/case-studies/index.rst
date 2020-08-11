@@ -1,5 +1,5 @@
 ############
-Case-studies
+Case Studies
 ############
 The QField project is always looking for people to publish QField case studies (user stories) on the QField website.
 Therefore we kindly ask institutions, universities, authorities, and companies to write down their experience in using

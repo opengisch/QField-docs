@@ -1,7 +1,7 @@
 .. _field-work:
 
 ##########
-Field work
+Field Work
 ##########
 
 To complete

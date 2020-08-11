@@ -1,5 +1,5 @@
 ######################
-Supported data formats
+Supported Data Formats
 ######################
 
 QField supports a wide variety of formats via QGIS data providers and GDAL.
