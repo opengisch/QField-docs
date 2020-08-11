@@ -24,7 +24,7 @@ QField uses a customized file selector to open the projects. On choosing "Open p
 - The primary media/shared storage directory.
 - The application-specific directories on all shared/external storage devices where the application can place persistent files it owns if they are not already included in the primary storage directory.
 
-Inside these directories, only subdirectories and files with the ".qgs" extension are shown.
+Inside these directories, only subdirectories and files with the ".qgs" or ".qgz" extension are shown.
 
 QField requires the project file to be physically on the device, so it is not possible to use providers that work with remote files (e.g. Google Drive). On the other hand you can use apps like `syncthing <https://syncthing.net/>`_ or `nextcloud <https://nextcloud.com/>`_ (or dropbox and probably many others) that allow you tho physically sync the file to your device.
 
