@@ -58,14 +58,14 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   installation-guide/index
-   project-management/index
-   user-guide/index
+   install/index
+   prepare/index
+   field-work/index
    synchronise/index
    getting-started/index
    data-formats/index
    case-studies/index
-   development/index
+   support/index
    old-doc/index
 
 Translations
