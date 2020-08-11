@@ -61,7 +61,7 @@ You can edit an existing feature by moving, adding or deleting the vertex and al
 Vertex tool
 -----------
 
-Below, you see how the vertex tool works.
+It is possible to move and delete vertices of geometries and add new ones.
 
 .. container:: clearer text-left
 
