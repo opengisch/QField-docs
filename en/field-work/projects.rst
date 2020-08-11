@@ -17,7 +17,7 @@ In the first screen of the file selector, there is a section showing the favorit
 Advanced project selection
 ==========================
 
-QField opens QGIS projects in the ".qgs" format. Currently it is not possible to open ".qgz" files.
+QField opens QGIS projects in the ".qgs" or ".qgz" format.
 
 QField uses a customized file selector to open the projects. On choosing "Open project" from the QField menu, the file selector will be opened showing the following locations:
 
