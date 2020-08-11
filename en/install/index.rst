@@ -5,7 +5,7 @@ Installation
 Android
 -------
 
-QField can be used with any version newer than android 5.
+QField can be used with any version newer than android 5, if you are looking to get a new device, we sugest going for at least android 7.
 
 |GooglePlayLink|_
 
@@ -17,9 +17,9 @@ Get a pre-built apk
 ...................
 
 We also offer a pre-built apk for you to download if you are not able or do not
-want to use GooglePlay. You can get the qfield.apk_ from the release page.
+want to use GooglePlay. You can get the qfield apk from the release_ page.
 
-.. _qfield.apk: https://github.com/opengisch/QField/releases/
+.. _release: https://github.com/opengisch/QField/releases/
 
 
 Windows

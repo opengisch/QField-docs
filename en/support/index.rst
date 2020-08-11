@@ -2,23 +2,29 @@
 Support and Development
 #######################
 
-*******
-Support
-*******
+******************
+Commercial Support
+******************
+
+As developer of QField, `OPENGIS.ch <https://www.opengis.ch/#features>`_ provides `training packages <https://www.opengis.ch/qfield-training/>`_ and custom commercial `support contracts <https://www.opengis.ch/qgis-support/>`_ with SLA
+
+
+Development and Custom Apps
+===========================
+
+You probably have plenty of ideas for nice features that are not implemented yet.
+Please `contact us <https://www.opengis.ch/#contact>`_ to discuss the best approach to integrate this idea into QField or to create your own custom app.
+
+*****************
+Community Support
+*****************
 
 You can ask your questions on `gis.stackexchange <http://gis.stackexchange.com/questions/tagged/qfield?sort=newest>`_
 
 You can use the `user mailing list <http://lists.qfield.org/listinfo.cgi/users-qfield.org>`_
 
-We also provide commercial support, `contact us <http://www.opengis.ch/contact/>`_
-
 .. _make_it_grow:
 
-development and custom apps
-===========================
-
-You probably have plenty of ideas for other nice features that are not implemented yet. 
-Please contact us to discuss the best approach to integrate this idea into QField or your own custom app a derived.
 
 *******
 Funding
