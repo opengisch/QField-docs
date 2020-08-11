@@ -1,6 +1,6 @@
 
 Base maps and Imagery
-====================
+=====================
 
 
 QField is able to load a base map from a web service.

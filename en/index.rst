@@ -2,7 +2,7 @@ QField - your mobile [Q]GIS solution
 ====================================
 QField allows you to efficiently work on your GIS data outdoor.
 
-QField's optimized user interface for Android devices hides the full power of `QGIS <https://qgis.org>`_ under the hood.
+QField's optimized user interface for hides the full power of `QGIS <https://qgis.org>`_ under the hood.
 
 
 .. container::
@@ -28,7 +28,7 @@ This means that everything like layer styling, form definitions and other
 project setup steps should be done on a computer with QGIS installed first.
 
 Be compatible with QGIS
-.......................
+........................
 
 QField is based on QGIS. It is not a rebuild of QGIS it really *does* use QGIS
 libraries. The rendering engine is exactly the same as in QGIS for desktop and

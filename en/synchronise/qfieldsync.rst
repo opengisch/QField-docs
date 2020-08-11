@@ -24,7 +24,7 @@ To get a quick overview of the process, here is a list of typical steps:
 5. Synchronize the modified data with your database or files.
 
 Installation
-========
+============
 In QGIS, open the plugin library and search for **qfield sync**. Select the plugin in the list and click on **Install**.
 
 .. image:: ../images/qfield-sync_install.png
@@ -101,7 +101,7 @@ which are within the extent of the map canvas as packaging time will be copied
 to the offline editing working copy.
 
 Package for Qfield
-=============
+==================
 
 Once the project is configured, package it in a folder. This folder will contain the .qgs and the data used in it. 
 
@@ -113,7 +113,7 @@ Make also sure to save the QGIS project using the regular Save As of QGIS as you
 
 
 Synchronize from Qfield
-=============
+=======================
 
 When you want to synchronize what you have collected, re-open the project in QGIS (the one you saved with a regular Save As).
 

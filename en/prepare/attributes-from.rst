@@ -80,7 +80,7 @@ The second case is usually used when there are additional relation information (
 In case of the many-to-one cardinality on many-to-many relations the Display Expression needs to be set on the linking table.
 
 External Resource (photo settings)
-.................................
+..................................
 
 The widget type "Attachement" is used to store the path to collected photos.
 
