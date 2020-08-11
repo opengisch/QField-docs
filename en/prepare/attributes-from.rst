@@ -1,5 +1,5 @@
 *****************************
-Attributes From configuration
+Attribute Form Configuration
 *****************************
 
 QField creates forms similar to, but not equal to QGIS.
