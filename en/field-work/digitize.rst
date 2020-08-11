@@ -72,7 +72,7 @@ Below, you see how the vertex tool works.
 Split tool
 ----------
 
-Below, you see how the split tool works.
+It is possible to split an existing geometry by drawing a line where it should be split.
 
 .. container:: clearer text-left 
 
