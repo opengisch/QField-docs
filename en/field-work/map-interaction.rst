@@ -21,7 +21,7 @@ Tap on one of the listed feature to access its attributes.
 1. Tap the **arrows** to scroll through all the identified features.
 2. Tap the **centre button** to center the map on the selected feature.
 3. Tap  the **edit button** to edit the attributes of the selected feature.
-4. Scrool through the **sub-menus** to access all the attributes.
+4. Scroll through the **sub-menus** to access all the attributes.
 
 .. image:: ../images/user-guide_identify-feature-attributes.png
    
