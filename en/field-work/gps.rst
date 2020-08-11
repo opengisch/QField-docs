@@ -16,7 +16,7 @@ Inside the positioning menu you can turn on the positioning display which will s
 Using external GNSS-Reciever
 ----------------------------
 
-It is possible to provide a mock location a separate android app to qfield.
+It is possible to provide a mock location via a separate android app to QField.
 There are several options for this, one of them is `Android NTRIP Client
 <https://play.google.com/store/apps/details?id=com.lefebure.ntripclient>`_.
 
