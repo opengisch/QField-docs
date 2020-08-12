@@ -61,7 +61,7 @@ Contents
    install/index
    prepare/index
    synchronise/index
-   field-work/index
+   fieldwork/index
    getting-started/index
    data-formats/index
    case-studies/index

@@ -7,9 +7,9 @@ source_file = i18n/pot/index.pot
 source_lang = en
 type = PO
 
-[qfield-documentation.user-guide]
-file_filter = i18n/<lang>/user-guide.po
-source_file = i18n/pot/user-guide.pot
+[qfield-documentation.fieldwork]
+file_filter = i18n/<lang>/fieldwork.po
+source_file = i18n/pot/fieldwork.pot
 source_lang = en
 type = PO
 
