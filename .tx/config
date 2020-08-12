@@ -7,39 +7,50 @@ source_file = i18n/pot/index.pot
 source_lang = en
 type = PO
 
-[qfield-documentation.user-guide]
-file_filter = i18n/<lang>/user-guide.po
-source_file = i18n/pot/user-guide.pot
+[qfield-documentation.fieldwork]
+file_filter = i18n/<lang>/fieldwork.po
+source_file = i18n/pot/fieldwork.pot
 source_lang = en
 type = PO
 
-[qfield-documentation.installation-guide]
-file_filter = i18n/<lang>/installation-guide.po
-source_file = i18n/pot/installation-guide.pot
+[qfield-documentation.install]
+file_filter = i18n/<lang>/install.po
+source_file = i18n/pot/install.pot
 source_lang = en
 type = PO
 
-[qfield-documentation.project-management]
-file_filter = i18n/<lang>/project-management.po
-source_file = i18n/pot/project-management.pot
+[qfield-documentation.prepare]
+file_filter = i18n/<lang>/prepare.po
+source_file = i18n/pot/prepare.pot
 source_lang = en
 type = PO
 
-[qfield-documentation.concepts]
-file_filter = i18n/<lang>/concepts.po
-source_file = i18n/pot/concepts.pot
+[qfield-documentation.data-formats]
+file_filter = i18n/<lang>/data-formats.po
+source_file = i18n/pot/data-formats.pot
 source_lang = en
 type = PO
 
-[qfield-documentation.development]
-file_filter = i18n/<lang>/development.po
-source_file = i18n/pot/development.pot
+[qfield-documentation.support]
+file_filter = i18n/<lang>/support.po
+source_file = i18n/pot/support.pot
 source_lang = en
 type = PO
 
-[qfield-documentation.qfieldsync]
-file_filter = i18n/<lang>/qfieldsync.po
-source_file = i18n/pot/qfieldsync.pot
+[qfield-documentation.synchronise]
+file_filter = i18n/<lang>/synchronise.po
+source_file = i18n/pot/synchronise.pot
 source_lang = en
 type = PO
 
+[qfield-documentation.getting-started]
+file_filter = i18n/<lang>/getting-started.po
+source_file = i18n/pot/getting-started.pot
+source_lang = en
+type = PO
+
+[qfield-documentation.case-studies]
+file_filter = i18n/<lang>/case-studies.po
+source_file = i18n/pot/case-studies.pot
+source_lang = en
+type = PO
