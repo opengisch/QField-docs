@@ -116,7 +116,9 @@ html_theme_options = {
   'source_link_position': "footer",
 
 }
-
+html_css_files = [
+    'qfield-new.css',
+]
 html_context = {
   'source_link_github_project': "opengisch/QField-docs",
 
