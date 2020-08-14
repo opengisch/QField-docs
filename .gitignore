@@ -10,3 +10,4 @@ opengisch_rsa
 opengisch_rsa.pub
 *.pyc
 *.DS_Store
+.idea
