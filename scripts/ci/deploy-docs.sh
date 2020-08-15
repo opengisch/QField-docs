@@ -7,7 +7,7 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../..
 
 if test "$TRAVIS_SECURE_ENV_VARS" = "true" -a "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false";
 then
-  echo "Publish docs to https://qfield.github.io/docs";
+  echo "Publish docs to https://opengisch.github.io/QField";
 
   pushd ${DIR}
   mkdir publish
@@ -19,7 +19,7 @@ then
   mkdir docs
   cp ../../build/html/* docs/ -r
   git add -A
-  git commit -m "Automatic doc update\n\nhttps://github.com/opengisch/QField-docs/commit/${TRAVIS_COMMIT}"
+  git commit -m "Automatic doc update" -m"https://github.com/opengisch/QField-docs/commit/${TRAVIS_COMMIT}"
   git push
   popd
 else
