@@ -105,7 +105,7 @@ html_theme = 'bootstrap'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-  'bootswatch_theme': "yeti",
+  'bootswatch_theme': "flatly",
 
   # Fix navigation bar to top of page?
   # Values: "true" (default) or "false"
@@ -116,7 +116,9 @@ html_theme_options = {
   'source_link_position': "footer",
 
 }
-
+html_css_files = [
+    'qfield-new.css',
+]
 html_context = {
   'source_link_github_project': "opengisch/QField-docs",
 
