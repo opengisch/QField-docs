@@ -117,7 +117,7 @@ html_theme_options = {
 
 }
 html_css_files = [
-    'qfield-new.css',
+    'qfield.css',
 ]
 html_context = {
   'source_link_github_project': "opengisch/QField-docs",
