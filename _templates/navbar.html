@@ -10,7 +10,7 @@
         <a class="navbar-brand" href="https://qfield.org">
           {%- block sidebarlogo %}
             {%- if logo %}
-              <img src="_static/qfield-logo.svg">
+              <img src="{{ pathto('_static/' + logo, 1) }}">
             {%- endif %}
           {%- endblock %}
         </a>
