@@ -102,6 +102,12 @@ In QField the picture is displayed. By clicking the camera symbol the camera is 
 
 On synchronization the sub-directory with the pictures has to be copied as well.
 
+**Warning**
+
+The option "hyperlink" on the attachment widget will disable the camera functionality and enable a hyperlink to open a document (pdf, doc, ...).
+
+ .. figure:: /images/hyperlink_option.PNG
+
 Drag and drop designer forms
 ----------------------------
 
