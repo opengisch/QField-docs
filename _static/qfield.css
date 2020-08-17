@@ -52,5 +52,5 @@ a, a:hover {
 }
 
 .navbar-version {
-    display: none;
+    visibility: hidden;
 }
