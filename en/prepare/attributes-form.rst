@@ -33,9 +33,10 @@ The field widgets from QGIS are supported on a best effort basis.
 +-------------------+-----------------+-------------------------------------------------+
 | Hidden            | :yay:`✔`        |                                                 |
 +-------------------+-----------------+-------------------------------------------------+
-| Attachment        | :moreorless:`~` | This field is combined with camera integration. |
-|                   |                 | Only images can be viewed so far.               |
-|                   |                 | :ref:`make_it_grow`                             |
+| Attachment        | :yay:`✔`        | This field is combined with camera integration. |
+|                   |                 | It is also able to open other files like pdf    |
+|                   |                 | and doc (if the user has an appropriate viewer) |
+|                   |                 | :ref:`attachment`                               |
 +-------------------+-----------------+-------------------------------------------------+
 | Date Time         | :yay:`✔`        |                                                 |
 +-------------------+-----------------+-------------------------------------------------+
@@ -79,10 +80,12 @@ The second case is usually used when there are additional relation information (
 
 In case of the many-to-one cardinality on many-to-many relations the Display Expression needs to be set on the linking table.
 
-Attachment (photo settings)
-..................................
+.. _attachment:
 
-The widget type "Attachement" is used to store the path to collected photos.
+Attachment (photo settings)
+...........................
+
+The widget type "Attachement" is used to store the path to collected photos, pdf and docs.
 
 .. container:: clearer text-center
 
@@ -90,7 +93,7 @@ The widget type "Attachement" is used to store the path to collected photos.
      :width: 600px
      :alt: Attachement field settings
 
-The path should be set to relative. The pictures are stored then in a sub-directory of the project, where the link stored in the textfield is pointing to.
+The path should be set to relative. The pictures, pdf and docs are stored then in a sub-directory of the project, where the link stored in the textfield is pointing to.
 
 In QField the picture is displayed. By clicking the camera symbol the camera is started to update the picture with a new photo.
 
@@ -100,9 +103,7 @@ In QField the picture is displayed. By clicking the camera symbol the camera is 
      :width: 600px
      :alt: Picture in QField
 
-On synchronization the sub-directory with the pictures has to be copied as well.
-
-**Warning**
+On synchronization the sub-directory with the pictures, pdf and docs has to be copied as well.
 
 The option "hyperlink" on the attachment widget will disable the camera functionality and enable a hyperlink to open a document (pdf, doc, ...).
 
