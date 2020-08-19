@@ -33,7 +33,7 @@ The field widgets from QGIS are supported on a best effort basis.
 +-------------------+-----------------+-------------------------------------------------+
 | Hidden            | :yay:`✔`        |                                                 |
 +-------------------+-----------------+-------------------------------------------------+
-| External Resource | :moreorless:`~` | This field is combined with camera integration. |
+| Attachment | :moreorless:`~` | This field is combined with camera integration. |
 |                   |                 | Only images can be viewed so far.               |
 |                   |                 | :ref:`make_it_grow`                             |
 +-------------------+-----------------+-------------------------------------------------+
@@ -79,7 +79,7 @@ The second case is usually used when there are additional relation information (
 
 In case of the many-to-one cardinality on many-to-many relations the Display Expression needs to be set on the linking table.
 
-External Resource (photo settings)
+Attachment (photo settings)
 ..................................
 
 The widget type "Attachement" is used to store the path to collected photos.
@@ -106,7 +106,7 @@ On synchronization the sub-directory with the pictures has to be copied as well.
 
 The option "hyperlink" on the attachment widget will disable the camera functionality and enable a hyperlink to open a document (pdf, doc, ...).
 
- .. figure:: /images/hyperlink_option.PNG
+ .. figure:: /images/hyperlink_option.png
 
 Drag and drop designer forms
 ----------------------------
