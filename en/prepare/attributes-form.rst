@@ -33,7 +33,7 @@ The field widgets from QGIS are supported on a best effort basis.
 +-------------------+-----------------+-------------------------------------------------+
 | Hidden            | :yay:`✔`        |                                                 |
 +-------------------+-----------------+-------------------------------------------------+
-| Attachment | :moreorless:`~` | This field is combined with camera integration. |
+| Attachment        | :moreorless:`~` | This field is combined with camera integration. |
 |                   |                 | Only images can be viewed so far.               |
 |                   |                 | :ref:`make_it_grow`                             |
 +-------------------+-----------------+-------------------------------------------------+
