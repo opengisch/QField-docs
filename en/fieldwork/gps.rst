@@ -1,9 +1,9 @@
-GPS
-===
+GNSS
+====
 
-A short press on the GPS button will turn on the GPS and center to the current location once positioning information is available.
+A short press on the GNSS button will turn on the GNSS and center to the current location once positioning information is available.
 
-A long press on the GPS button will show the positioning menu.
+A long press on the GNSS button will show the positioning menu.
 
 Inside the positioning menu you can turn on the positioning display which will show the current coordinates which are reprojected into the project CRS along with precision information.
 
