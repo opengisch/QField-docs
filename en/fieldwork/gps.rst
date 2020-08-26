@@ -3,11 +3,24 @@ GNSS
 
 A short press on the GNSS button will turn on the GNSS and center to the current location once positioning information is available.
 
+Activate edit mode and press on the target button, the cross in the center means it is using GNSS positioning.
+
+.. container:: clearer text-left
+
+  .. figure:: ../images/gnss_use.webp
+     :width: 300px
+     :alt: gnss_use  
+
 A long press on the GNSS button will show the positioning menu.
 
 Inside the positioning menu you can turn on the positioning display which will show the current coordinates which are reprojected into the project CRS along with precision information.
 
-.. image:: ../images/user-guide_gps.png
+
+.. container:: clearer text-left
+
+  .. figure:: ../images/user-guide_gps.jpg
+     :width: 600px
+     :alt: user-guide_gps  
 
 
 .. note::
