@@ -7,7 +7,7 @@ To start digitizing new features, enable the **Edit mode** in the main menu (*pe
 
   .. figure:: ../images/collect_features.webp
      :width: 300px
-     :alt: edit_geom_feature
+     :alt: collect_features
 
 Points
 ------
@@ -50,7 +50,7 @@ Deleting features is only possible in digitize mode.
 
   .. figure:: ../images/delete_features.webp
      :width: 300px
-     :alt: edit_geom_feature
+     :alt: delete_features
 
 
 To delete a feature, identify it first by a short tap on it. Then select it with a long press
