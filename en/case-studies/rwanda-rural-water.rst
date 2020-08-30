@@ -60,14 +60,6 @@ Once they completed updating, they sent the geopackage to central office again, 
       :width: 600px
       :alt: data distribution and updating procedure
 
-Why didn't we use ``QFieldSync`` plugin for this purpose? 
-
-Although QField has a nice QFieldSync plugin for linking between PostGIS and Geopackage, 
-we didn't select QFieldSync. Because QFieldSync plugin only can create a Geopackage only, 
-so size of data will become so large, it makes QField's performance slow. 
-After separating PostGIS data into 27 geopackages by ``postgis2qfield``, 
-the performance of QField is better now.
-
 Data sharing via vectortiles
 ----------------------------
 First of all, you can see our collected data from `here <https://rural.water-gis.com>`__.
