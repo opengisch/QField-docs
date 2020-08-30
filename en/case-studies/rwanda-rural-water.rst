@@ -52,7 +52,7 @@ we developed a python script `postgis2qfield <https://github.com/WASAC/postgis2q
 This ``postgis2qfield`` tool can extract the data from PostGIS and create Geopackages for each district in Rwanda. 
 We upload these 27 geopackage together with QGIS project template to Google Drive storage. 
 After that, those engineers in districts download their geopakage to Android device to continue adding and updating the data. 
-Once they completed updating, send geopackage to central office again, MIS specialist update PostGIS database and regenerate geopackages for QField.
+Once they completed updating, they sent the geopackage to central office again, MIS specialist update PostGIS database and regenerate geopackages for QField.
 
 .. container:: clearer text-center
 
