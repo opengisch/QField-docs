@@ -44,7 +44,7 @@ We have seen many organization in Africa, which failed to keep data up to date.
 Several years later, their data will normally become too old, 
 and most of them need to put efforts on data collection again. 
 
-However, WASAC is continuously updating all of the data until now. 
+WASAC decided to continuously update all of the data and keeps doing this until now. 
 We think QField works very well for this purpose.
 
 In order to distribute and updating the data, 
