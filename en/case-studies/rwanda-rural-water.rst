@@ -26,7 +26,7 @@ Data collection
 Once we prepared Geopackage and QGIS project template, 
 we conducted training of QGIS/QField in July 2018 and 
 launched our data collection work in 27 districts in the whole country of Rwanda. 
-27 engineers sent their Geopackage to central office in Kigali, 
+27 engineers sent their Geopackage to the central office in Kigali.
 the MIS specialist validated and entered their data from Geopackage to PostGIS database. 
 We completed our initial data collection works until April 2019.
 
