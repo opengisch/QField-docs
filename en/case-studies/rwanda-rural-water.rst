@@ -15,7 +15,7 @@ Project preparation
 
 Before starting our data collection, we conducted the following things.
  - Develop our own PostGIS database
- - Develop QGIS project template with Geopackage. The Geopackage table design should be equal to PostGIS. So we can just copy and paste to PostGIS.
+ - Develop QGIS project template with Geopackage. The Geopackage table design is equal to PostGIS to be able to copy and paste to PostGIS.
 
 Apart from preparing Android devices, if possible, you may purchase GPS devices. In WASAC, we bought Garmin GPSMAP 64S. 
 Sometimes, GPS of smartphone and tablet is not very accurate, so we normally capture the same location by using Garmin GPS, then correct the location of QField's data after data collection work.
