@@ -45,7 +45,7 @@ Several years later, their data will normally become too old,
 and most of them need to put efforts on data collection again. 
 
 WASAC decided to continuously update all of the data and keeps doing this until now. 
-We think QField works very well for this purpose.
+QField has proven to be very well suited for this purpose.
 
 In order to distribute and updating the data, 
 we developed a python script `postgis2qfield <https://github.com/WASAC/postgis2qfield>`__. 
