@@ -40,7 +40,7 @@ Data distribution and updating
 ------------------------------
 
 The most significant thing after data collection is ``updating``. 
-We have seen many organization in Africa, they normally failed to keep updating. 
+We have seen many organization in Africa, which failed to keep data up to date.
 Several years later, their data will normally become too old, 
 and most of them need to put efforts on data collection again. 
 
