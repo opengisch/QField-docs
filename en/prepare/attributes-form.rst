@@ -90,7 +90,7 @@ The widget type "Attachment" is used with fields that store the path to files.
 It can be used to:
 
 - show and take photos
-- or to show links to external files like pdfs or documents
+- show links to external files like pdfs or documents
 
 .. container:: clearer text-center
 
