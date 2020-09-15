@@ -72,6 +72,6 @@ Research (ACIAR; ASEM/2016/101).
     .. figure:: /images/use_study_fiji4.jpg
        :width: 400px
        :alt: The Fiji Forestry/USP field team is about to collect ground truth data with QField.
-
+ 
        The Fiji Forestry/USP field team is about to collect ground truth data with QField.
 
