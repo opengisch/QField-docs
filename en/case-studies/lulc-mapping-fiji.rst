@@ -56,9 +56,9 @@ collaborative fieldwork.
 
     .. figure:: /images/use_study_fiji3.png
        :width: 400px
-       :alt: Figure 3: Prelimincover map for the Ba region, Viti Levu, Fijiary land 
+       :alt: Figure 3: Preliminary land cover map for the Ba region, Viti Levu, Fiji
 
-       Figure 3: Prelimincover map for the Ba region, Viti Levu, Fijiary land 
+       Figure 3: Preliminary land cover map for the Ba region, Viti Levu, Fiji 
 
 Acknowledgement
 ---------------
