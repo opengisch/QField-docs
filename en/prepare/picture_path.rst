@@ -6,7 +6,7 @@ QFieldSync gives the possibility to configure the path of picture attachments.
 
 1. Go to QFieldSync plugin --> Project configuration
 2. Select the table "Photo Naming"
-3. Choose the layer, the field and introduce the expression 
+3. Choose the layer, the field and configure the expression 
 
 Use expressions to configure the path of the attachments. Usually DCIM is used as the main folder and it's the default.
 
