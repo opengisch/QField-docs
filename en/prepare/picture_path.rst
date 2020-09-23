@@ -2,7 +2,7 @@
 Configurable picture path
 =========================
 
-QFieldSync gives the possibility to configure the path of the attachments.
+QFieldSync gives the possibility to configure the path of picture attachments.
 
 1. Go to QFieldSync plugin --> Project configuration
 2. Select the table "Photo Naming"
