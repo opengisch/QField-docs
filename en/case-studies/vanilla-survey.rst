@@ -53,14 +53,14 @@ The project was funded by the Australian Centre for International Agricultural R
     :alt: use_study_vanilla3
 
     Extension Officers, Tangaki Aloua and Selimoti Fetokai, looking for the exact location of the vanilla
-plantation before the plot survey.
+    plantation before the plot survey.
 
 .. figure:: /images/use_study_vanilla4.jpg
     :width: 600px
     :alt: use_study_vanilla4
  
     Entering attribute data into QField such as number of vanilla plants and block sheet and lot number 
-which identify land parcels.
+    which identify land parcels.
 
 .. figure:: /images/use_study_vanilla5.jpg
     :width: 400px
