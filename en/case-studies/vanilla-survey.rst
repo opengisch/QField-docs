@@ -42,7 +42,7 @@ The project was funded by the Australian Centre for International Agricultural R
 
 
     .. figure:: /images/use_study_vanilla1.jpg
-          :width: 400px
+    :width: 400px
           :alt: MAFF Officer, Selimoti Fetokai, doing the vanilla survey using QField
 
     .. figure:: /images/use_study_vanilla2.png
@@ -66,5 +66,4 @@ which identify land parcels.
     .. figure:: /images/use_study_vanilla5.jpg
        :width: 400px
        :alt: use_study_vanilla5
-
 
