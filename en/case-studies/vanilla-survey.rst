@@ -1,14 +1,11 @@
-.. |br| raw:: html
-
-  <br/>
 
 Vanilla Surveys using QField
 ============================
 
-By Ahi Saipaia (1), Leody Vainikolo (1), and John Duncan (2 and 3) |br|
-1 Ministry of Agriculture, Forestry, Food, and Fisheries, Government of Tonga |br|
-2 UWA School of Agriculture and Environment, The University of Western Australia |br|
-3 Geography and Planning, The University of Western Australia |br|
+| By Ahi Saipaia (1), Leody Vainikolo (1), and John Duncan (2 and 3)
+| 1 Ministry of Agriculture, Forestry, Food, and Fisheries, Government of Tonga
+| 2 UWA School of Agriculture and Environment, The University of Western Australia
+| 3 Geography and Planning, The University of Western Australia
 
 A field survey of vanilla plantations on Vava’u, an outer island in the Kingdom of Tonga, using QField
 was conducted in May and June 2020 by the Ministry of Agriculture, Forestry, Food, and Fisheries (MAFF).
@@ -44,15 +41,15 @@ The project was funded by the Australian Centre for International Agricultural R
 
 
 
-  .. figure:: /images/use_study_vanilla1.jpg
+    .. figure:: /images/use_study_vanilla1.jpg
           :width: 400px
           :alt: MAFF Officer, Selimoti Fetokai, doing the vanilla survey using QField
 
-  .. figure:: /images/use_study_vanilla2.png
+    .. figure:: /images/use_study_vanilla2.png
           :width: 600px
           :alt: vanilla field
 
-  .. figure:: /images/use_study_vanilla3.jpg
+    .. figure:: /images/use_study_vanilla3.jpg
           :width: 600px
           :alt: use_study_vanilla3
 
