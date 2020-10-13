@@ -11,8 +11,8 @@ You have the possibility to do tracking on lines and polygons.
        :width: 300px
        :alt: tracking
 
-It's available when GPS is enabled. 
-A tracking session can be started over the legend - long press on the layer.
+It's available when GNSS is enabled. 
+A tracking session can be started in the legend by long-pressing on the layer.
 The time interval and the minimum distance can be entered individually to define when a vertex needs to be set.
 
 There can be several trackings session active on several layers. 
