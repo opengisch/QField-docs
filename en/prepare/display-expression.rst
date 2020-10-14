@@ -2,7 +2,7 @@
 Display expression
 ==================
 
-| You can make appear any text you want for the description of the feature when you click on.
+| You have any text you want appear as description of a clicked feature.
 | In the example below, you can see we used the beekeeper and the bee species.
 
 .. container:: clearer text-center
