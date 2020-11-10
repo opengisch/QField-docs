@@ -1,0 +1,64 @@
+name: Continuous integration
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  release:
+    runs-on: ubuntu-20.04
+    env:
+      GITHUB_REF: ${{ github.ref }}
+      GITHUB_COMMIT: ${{ github.sha }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      TX_TOKEN: ${{ secrets.TX_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Install requirements
+        run: |
+          sudo apt update && sudo apt install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended gettext
+          mkdir -p $HOME/texlive && curl -L https://github.com/urdh/texlive-blob/releases/download/20200421/texlive.tar.xz | tar -JxC $HOME/texlive
+          sudo pip install -r requirements.txt
+          PATH=$HOME/texlive/bin/x86_64-linux:$PATH
+          tlmgr option repository ctan
+          tlmgr update --verify-repo=none --self
+          tlmgr install combelow
+          tlmgr install babel-french
+          tlmgr install babel-german
+          tlmgr install babel-romanian
+          tlmgr install babel-italian
+          tlmgr install babel-spanish
+
+      - name: Push translations
+        if: ${{ github.ref == 'refs/heads/master' }}
+        run: |
+          make gettext
+          tx push -s
+
+      - name: Build docs
+        run: |
+          set -e
+
+          make clean
+          make transifex_pull
+          make html
+
+      - name: Commit to the QField repository
+        uses: drud/action-cross-commit@master
+        if: ${{ github.ref == 'refs/heads/master' && github.event_name == 'push' }}
+        with:
+          source-folder: build/html
+          destination-repository: https://<user>:${{ secrets.QFIELD_FAIRY_TOKEN }}@github.com/opengisch/QField.git
+          destination-folder: docs
+          destination-branch: gh-pages
+          git-user: "opengisch"
+          git-user-email: info@opengis.ch
+          git-commit-message: "Automatic doc update https://github.com/opengisch/QField-docs/commit/${GITHUB_COMMIT}"
+
+
