@@ -58,6 +58,6 @@ jobs:
           destination-branch: gh-pages
           git-user: "opengisch"
           git-user-email: info@opengis.ch
-          git-commit-message: "Automatic doc update https://github.com/opengisch/QField-docs/commit/${ github.sha }"
+          git-commit-message: "Automatic doc update https://github.com/opengisch/QField-docs/commit/${{ github.sha }}"
 
 
