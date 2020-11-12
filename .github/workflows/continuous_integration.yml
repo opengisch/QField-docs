@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       GITHUB_REF: ${{ github.ref }}
-      GITHUB_COMMIT: ${{ github.sha }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       TX_TOKEN: ${{ secrets.TX_TOKEN }}
     steps:
@@ -59,6 +58,6 @@ jobs:
           destination-branch: gh-pages
           git-user: "opengisch"
           git-user-email: info@opengis.ch
-          git-commit-message: "Automatic doc update https://github.com/opengisch/QField-docs/commit/${GITHUB_COMMIT}"
+          git-commit-message: "Automatic doc update https://github.com/opengisch/QField-docs/commit/${ github.sha }"
 
 
