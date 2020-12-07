@@ -36,6 +36,7 @@ jobs:
           tlmgr install babel-romanian
           tlmgr install babel-italian
           tlmgr install babel-spanish
+          sudo pip install git+https://github.com/sphinx-contrib/video.git
 
       - name: Push translations
         if: ${{ github.ref == 'refs/heads/master' }}
