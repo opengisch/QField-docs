@@ -64,24 +64,25 @@ To edit, tap on **Menu button -> pencil.**
 
 You can edit an existing feature by moving, adding or deleting the vertex and also spliting. 
 
-Vertex tool
------------
-
-It is possible to move and delete vertices of geometries and add new ones.
-
-.. container:: clearer text-left
-
-  .. figure:: ../images/edit_geom_feature.gif 
-     :width: 300px
-     :alt: edit_geom_feature
-
 Split tool
 ----------
 
 It is possible to split an existing geometry by drawing a line where it should be split.
 
+Vertex tool
+-----------
+
+It is possible to move and delete vertices of geometries and add new ones.
+
+demonstration
+-------------
+
+A video demonstration of some edition possibilities:
+
 .. container:: clearer text-left 
 
-  .. figure:: ../images/split_geom_feature.webp
-     :width: 300px
-     :alt: split_geom_feature
+  .. figure:: ../images/edit_geom.webp
+     :width: 600px
+     :alt: edit geom
+
+
