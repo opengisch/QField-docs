@@ -29,7 +29,7 @@ Done.
      :width: 500px
      :alt: PDF document
 
-Here is there a little video showing how it works:
+A video demonstration of how the complete workflow looks:
 
 .. container:: clearer text-left
 
