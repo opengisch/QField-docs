@@ -29,5 +29,13 @@ Done.
      :width: 500px
      :alt: PDF document
 
+A video demonstration of how the complete workflow looks:
+
+.. container:: clearer text-left
+
+  .. video:: ../_images/print_pdf.webp
+     :width: 700
+
+
 
 .. note::  The devices documents directory is :code:`USER>/<APPNAME>/Documents`. For :code:`QField` this is usually a path like :code:`////storage/emulated/0/Documents/QField`
