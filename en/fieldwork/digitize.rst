@@ -74,8 +74,8 @@ Vertex tool
 
 It is possible to move and delete vertices of geometries and add new ones.
 
-demonstration
--------------
+demonstration of geometries edition
+-----------------------------------
 
 A video demonstration of some edition possibilities:
 
@@ -85,4 +85,17 @@ A video demonstration of some edition possibilities:
      :width: 600px
      :alt: edit geom
 
+Freehand digitizing
+-------------------
 
+Freehand digitizing mode allowing users to 'draw' lines and polygons using their stylus/pen or mouse.
+The mode is available for line/polygon feature additions as well as the geometry editor's rings tool.
+
+The freehand digitizing mode is activated through a new toolbar button which appears when QField is set
+to editing mode and a line or polygon vector is selected.
+
+.. container:: clearer text-left 
+
+  .. figure:: ../images/freehand_drawing.webp
+     :width: 600px
+     :alt: freehand drawing
