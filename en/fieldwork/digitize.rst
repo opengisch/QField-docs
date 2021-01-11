@@ -99,3 +99,15 @@ to editing mode and a line or polygon vector is selected.
   .. figure:: ../images/freehand_drawing.webp
      :width: 600px
      :alt: freehand drawing
+
+Topology
+--------
+
+If the topology is activated on the project QGIS before exporting for QField, shared nodes are treated
+as such when moving / deleting vertices, and additional vertices are added on nodes overlapping segments.
+
+.. container:: clearer text-left 
+
+  .. figure:: ../images/edit_topo.webp
+     :width: 600px
+     :alt: edit topology
