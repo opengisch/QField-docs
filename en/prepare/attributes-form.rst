@@ -240,6 +240,9 @@ external device connected via NMEA connection.
    - `@position_vertical_accuracy`
      - The vertical accuracy of the coordinate (in meters).
      - IE
+   - `@position_3d_accuracy`
+     - The 3 dimensional accuracy of the coordinate (in meters), 3D-RMS.
+     - IE
    - `@position_vertical_speed`
      - The vertical speed (in m/s)
      - IE 
