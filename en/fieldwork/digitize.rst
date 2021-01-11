@@ -74,10 +74,10 @@ Vertex tool
 
 It is possible to move and delete vertices of geometries and add new ones.
 
-Demonstration of geometries edition
+Demonstration of geometries editing
 -----------------------------------
 
-A video demonstration of some edition possibilities:
+A video demonstration of some editing possibilities:
 
 .. container:: clearer text-left 
 
