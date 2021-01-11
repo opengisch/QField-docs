@@ -74,7 +74,7 @@ Vertex tool
 
 It is possible to move and delete vertices of geometries and add new ones.
 
-demonstration of geometries edition
+Demonstration of geometries edition
 -----------------------------------
 
 A video demonstration of some edition possibilities:
