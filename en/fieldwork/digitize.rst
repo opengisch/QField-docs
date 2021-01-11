@@ -88,7 +88,7 @@ A video demonstration of some edition possibilities:
 Freehand digitizing
 -------------------
 
-Freehand digitizing mode allowing users to 'draw' lines and polygons using their stylus/pen or mouse.
+The freehand digitizing mode allows users to 'draw' lines and polygons using their stylus/pen or mouse.
 The mode is available for line/polygon feature additions as well as the geometry editor's rings tool.
 
 The freehand digitizing mode is activated through a new toolbar button which appears when QField is set
