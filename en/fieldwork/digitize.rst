@@ -79,11 +79,9 @@ Demonstration of geometries editing
 
 A video demonstration of some editing possibilities:
 
-.. container:: clearer text-left 
+.. container::
 
-  .. figure:: ../images/edit_geom.webp
-     :width: 600px
-     :alt: edit geom
+  .. vimeo:: 499564854
 
 Freehand digitizing
 -------------------
@@ -106,8 +104,16 @@ Topology
 If the topology is activated on the project QGIS before exporting for QField, shared nodes are treated
 as such when moving / deleting vertices, and additional vertices are added on nodes overlapping segments.
 
-.. container:: clearer text-left 
+.. container::
 
-  .. figure:: ../images/edit_topo.webp
-     :width: 600px
-     :alt: edit topology
+  .. vimeo:: 499565314
+
+
+multi editing
+----------------
+
+You can make a multi-selection and edit all the features at the same time. In some cases, it can be very efficient.
+
+.. container::
+
+  .. vimeo:: 499565955
