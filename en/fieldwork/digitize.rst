@@ -102,7 +102,7 @@ Topology
 --------
 
 If the topology is activated on the project QGIS before exporting for QField, shared nodes are treated
-as such when moving / deleting vertices, and additional vertices are added on nodes overlapping segments.
+as such when moving / deleting vertices, and additional vertices are added on nodes placed on segments.
 
 .. container::
 
