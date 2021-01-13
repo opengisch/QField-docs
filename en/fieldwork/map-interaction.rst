@@ -51,7 +51,7 @@ You can manage this layerlist in QGIS desktop in :menuselection:`Project --> Pro
 
 Measure tool
 ============
-Open the **Main menu** --> press on the parameters button --> Measure Tool
+Open the **Main menu** --> tap the settings button --> Measure Tool
 
 .. container::
 
