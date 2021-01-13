@@ -53,9 +53,7 @@ Measure tool
 ============
 Open the **Main menu** --> press on the parameters button --> Measure Tool
 
-.. container:: clearer text-left
+.. container::
 
-  .. figure:: ../images/measuring.webp
-     :width: 600px
-     :alt: measuring
+  .. vimeo:: 499565725
 
