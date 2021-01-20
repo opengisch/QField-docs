@@ -276,6 +276,18 @@ external device connected via NMEA connection.
    - E
 
 
+All @sensor_xxx variables have a corresponding @position_xxx variable. They have the same value unless the point is manually set in which case the value is `NULL`.
+For example:
+ - `@position_horizontal_accuracy`
+   - The horizontal accuracy of the coordinate (in meters) as reported by the sensor. If the point is manually set the value is `NULL`.
+   - IE
+ - `@position_vertical_accuracy`
+   - The vertical accuracy of the coordinate (in meters) as reported by the sensor. If the point is manually set the value is `NULL`.
+   - IE
+
+When a point is manually set, `@position_source_name`, like `@sensor_source_name`, is set to `manual`.
+
+
 I: Internal position source
 E: External (NMEA) position source
 
