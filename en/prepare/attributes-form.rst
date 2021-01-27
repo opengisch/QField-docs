@@ -275,7 +275,7 @@ external device connected via NMEA connection.
    - E
 
 
-All @position_* variables have a corresponding @gnss_* variable. The sensor variables always report the gnss sensor values.
+All @position_* variables have a corresponding @gnss_* variable. The gnss variables always report the gnss sensor values, even when the crosshair is not snapped.
 
 
 Examples:
