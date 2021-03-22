@@ -39,7 +39,7 @@ After digitizing a geometry, the attribute form will be displayed if it is not s
 and the user will be asked to enter the attributes for the new feature.
 The form which appears allows entering attribute values for the new feature. 
 
-Remember and pre-fill attribute values
+Remember attribute values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 For quick collection of rather homogeneus datasets, it is crucial to not having to enter the same attribute values over an over.
 The checkboxes at the right of every attribute allow remembering each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled.
