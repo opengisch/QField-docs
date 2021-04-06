@@ -31,7 +31,7 @@ Using an external GNSS-Receiver
 
 QField supports connecting external GNSS antennas via bluetooth.
 
-In settings -> positioning, connected bluetooth devices will show up and can be chosen as position source.
+In settings -> positioning, paired bluetooth devices can be scanned and chosen as position source.
 
 Make sure no other app like mock location providers are using the bluetooth antenna.
 
