@@ -4,3 +4,4 @@ sphinx_bootstrap_theme
 transifex-client
 pbr
 git+https://github.com/sphinx-contrib/video.git
+PyStemmer
