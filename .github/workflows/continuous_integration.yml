@@ -21,21 +21,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Install requirements
         run: |
-          sudo apt update && sudo apt install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended gettext
-          mkdir -p $HOME/texlive && curl -L https://github.com/urdh/texlive-blob/releases/download/20200421/texlive.tar.xz | tar -JxC $HOME/texlive
-          sudo pip install -r requirements.txt
-          PATH=$HOME/texlive/bin/x86_64-linux:$PATH
-          tlmgr option repository ctan
-          tlmgr update --verify-repo=none --self
-          tlmgr install combelow
-          tlmgr install babel-french
-          tlmgr install babel-german
-          tlmgr install babel-romanian
-          tlmgr install babel-italian
-          tlmgr install babel-spanish
+          sudo apt-get update && sudo apt-get install -y transifex-client gettext
 
       - name: Push translations
         if: ${{ github.ref == 'refs/heads/master' }}
@@ -60,13 +49,12 @@ jobs:
             make transifex_pull
           fi
 
-
-
       - name: Build docs
         run: |
           set -e
+          docker build -t builder . -f .docker/Dockerfile
+          docker run -v $(pwd):/io/data builder /io/data/.docker/docker-build.sh
 
-          make html
 
       - name: Commit to the QField repository
         uses: drud/action-cross-commit@master
