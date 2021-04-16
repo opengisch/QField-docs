@@ -92,11 +92,9 @@ The mode is available for line/polygon feature additions as well as the geometry
 The freehand digitizing mode is activated through a new toolbar button which appears when QField is set
 to editing mode and a line or polygon vector is selected.
 
-.. container:: clearer text-left 
+.. container::
 
-  .. figure:: ../images/freehand_drawing.webp
-     :width: 600px
-     :alt: freehand drawing
+  .. vimeo:: 537673220
 
 Topology
 --------
