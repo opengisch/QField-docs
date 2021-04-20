@@ -107,8 +107,8 @@ as such when moving / deleting vertices, and additional vertices are added on no
   .. vimeo:: 499565314
 
 
-multi editing
-----------------
+Multi editing
+-------------
 
 You can make a multi-selection and edit all the features at the same time. In some cases, it can be very efficient.
 
