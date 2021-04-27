@@ -2,7 +2,8 @@
 This is the documentation for the QField project
 
 This work is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa], feel free to use it accordingly and to contribute back your updates via a [pull request](https://github.com/opengisch/QField-docs/pulls).
+
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
@@ -13,25 +14,9 @@ Status](https://travis-ci.org/opengisch/QField-docs.svg)](https://travis-ci.org/
 
 ## Resources
 
-The final product can be found here:
+The final product can be found at https://qfield.org/docs/. 
 
- * [Catalan](https://qfield.org/docs/ca)
- * [Deutsch](https://qfield.org/docs/de)
- * [English](https://qfield.org/docs)
- * [Français](https://qfield.org/docs/fr)
- * [Galician](https://qfield.org/docs/gl)
- * [Portuguese](https://qfield.org/docs/pt)
- * [Romanian](https://qfield.org/docs/ro)
- * [Chinese](https://qfield.org/docs/zh)
- * [Finnish](https://qfield.org/docs/fi)
- * [Hungarian](https://qfield.org/docs/hu)
- * [Italian](https://qfield.org/docs/it)
- * [Japanese](https://qfield.org/docs/ja)
- * [Hebrew](https://qfield.org/docs/he)
- * [Romanian](https://qfield.org/docs/ro)
- * [Español](https://qfield.org/docs/es)
- * [Ukranian](https://qfield.org/docs/uk)
- * [Japanese](https://qfield.org/docs/ja)
+The documantation is separated between a documentation for QGIS users (likely a GIS manager) [preparing the project](https://qfield.org/docs/prepare) for field use and a [field worker documentation](https://qfield.org/docs/fieldwork). While the former can go into technical details, we want to keep the field worker documentation very straightforward, easy to use and foremost visual.
 
 ## Process
 
@@ -41,8 +26,7 @@ CI](https://travis-ci.org/opengisch/QField-docs)) and published on the links
 above.
 
 Translation is done via transifex. The latest translations are pulled and built
-on a daily basis (using [travis-ci cron job
-functionality](https://docs.travis-ci.com/user/cron-jobs/)).
+on a daily basis (using GitHub actions).
 
 ## Contributing
 
@@ -66,7 +50,7 @@ If you want more information about forking you can find it
 [here](https://help.github.com/articles/fork-a-repo/).
 
 You most likely want to make changes to the files in the folder `en`. That's
-where all the real documentation text is located. The documentation is written
+where all the real documentation text is located. The documentation is writtenh
 in reStructuredText, a simple syntax to structure the text. You can find
 information about it in the [reStructuredText
 Primer](http://sphinx-doc.org/rest.html) or by looking at what is already in
