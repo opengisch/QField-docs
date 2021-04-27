@@ -1,5 +1,5 @@
 # QField-Documentation
-This is the documentation for the QField project
+This is the documentation for the [QField project](https://qfield.org)
 
 This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa], feel free to use it accordingly and to contribute back your updates via a [pull request](https://github.com/opengisch/QField-docs/pulls).
