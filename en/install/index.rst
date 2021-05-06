@@ -25,7 +25,7 @@ want to use GooglePlay. You can get the qfield apk from the release_ page.
 Windows
 -------
 Windows support is currently in beta status.
-`Download the latest development builds <https://nightly.link/opengisch/QField/actions/artifacts/57744340.zip>`_ and leave us a note how it works.
+`Download the latest development builds <https://nightly.link/opengisch/QField/workflows/windows/master/QField-dev-Release.zip>`_ and leave us a note how it works.
 
 iOS
 -------
