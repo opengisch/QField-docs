@@ -8,6 +8,8 @@ QField can also connect to external antennas through bluetooth and directly inte
 Quality indication
 ==================
 
+.. _gnss_variables:
+
 Additional variables
 ....................
 
