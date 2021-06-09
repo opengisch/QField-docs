@@ -17,9 +17,18 @@ These will only be available when positioning is enabled.
 These variables are commonly used as default values for fields to keep track of the quality of
 individual measured points.
 
+- `@position_source_name`
+  - The name of the device that gave location information as reported by the sensor. To differenciate between internal and external sensor. If the position is manually set, and the position is not snapped to the cursor, the source name is "manual". **In case the cursor is not snapped to the position, all other variables will be null, if you need this, use the ``gnss_`` variables instead**.
+- `@position_quality_description`
+  - A human readable and translated string for the quality as reported by the sensor. E.g. "Fixed RTK". It is only available when the crosshair is snapped to the sensor.
+  - E
+  - IE
 - `@position_coordinate`
   - A point with the coordinate in WGS84. Lon, Lat, Altitude as delivered by the sensor. It is only available when the crosshair is snapped to the sensor.
   - `x(@position_coordinate)`
+  - IE
+- `@position_horizontal_accuracy`
+  - The horizontal accuracy of the coordinate (in meters) as reported by the sensor. It is only available when the crosshair is snapped to the sensor.
   - IE
 - `@position_timestamp`
   - The timestamp of the position in UTC as reported by the sensor. It is only available when the crosshair is snapped to the sensor.
@@ -33,9 +42,6 @@ individual measured points.
 - `@position_magnetic_variation`
   - The angle between the horizontal component of the magnetic field and true north, in degrees as reported by the sensor. Also known as magnetic declination. A positive value indicates a clockwise direction from true north and a negative value indicates a counter-clockwise direction. It is only available when the crosshair is snapped to the sensor.
   - IE
-- `@position_horizontal_accuracy`
-  - The horizontal accuracy of the coordinate (in meters) as reported by the sensor. It is only available when the crosshair is snapped to the sensor.
-  - IE
 - `@position_vertical_accuracy`
   - The vertical accuracy of the coordinate (in meters) as reported by the sensor. It is only available when the crosshair is snapped to the sensor.
   - IE
@@ -45,9 +51,6 @@ individual measured points.
 - `@position_vertical_speed`
   - The vertical speed (in m/s) as reported by the sensor. It is only available when the crosshair is snapped to the sensor.
   - IE 
-- `@position_source_name`
-  - The name of the device that gave location information as reported by the sensor. If the position is manually set, the source name is "manual".
-  - IE
 - `@position_pdop`
   - Position dilution of precision as reported by the sensor. It is only available when the crosshair is snapped to the sensor.
   - E
@@ -63,9 +66,6 @@ individual measured points.
 - `@position_used_satellites`
   - A list of satellites in use (pri) as reported by the sensor. It is only available when the crosshair is snapped to the sensor.
   - `array_count(@position_used_satellites)`
-  - E
-- `@position_quality_description`
-  - A human readable and translated string for the quality as reported by the sensor. E.g. "Fixed RTK". It is only available when the crosshair is snapped to the sensor.
   - E
 - `@position_fix_status_description`
   - The GPS Fix Status "NoData", "NoFix", "Fix2D" or "Fix3D" as reported by the sensor. It is only available when the crosshair is snapped to the sensor.
