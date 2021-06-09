@@ -341,8 +341,8 @@ The following code extracts the value of the attribute `id` of the snapping matc
     array_first( @snapping_results ),
     attribute(
       get_feature_by_id(
-        map_get( @first_snapped_point, 'layer' ),
-        map_get( @first_snapped_point, 'feature_id' )
+        @first_snapped_point['layer'],
+        @first_snapped_point['feature_id']
       ),
       'id'
     )
