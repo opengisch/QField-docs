@@ -93,6 +93,21 @@ Examples:
 I: Internal position source
 E: External (NMEA) position source
 
+Vertex log
+..........
+
+The user assigns the role "digitizing logger" on a point layer.
+
+Go to QFieldSync --> project Properties
+
+.. container:: clearer text-left
+
+  .. figure:: ../images/vertex_log.png
+     :width: 600px
+     :alt: set up vertex log
+
+The layer fields must have default value with GNSS variables. 
+
 Accuracy requirement
 ....................
 
