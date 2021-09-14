@@ -1,7 +1,7 @@
-Using a project as base map 
+Using a project as Base Map 
 ===========================
 
-
+To use an existing project as Base Map, do a long press on the project and check "Base Map Project".
 
 .. container::
 
@@ -10,7 +10,7 @@ Using a project as base map
 Openging individual data
 ========================
 
-
+QField is able to use vector data and raster data without a QGIS project.
 
 Opening individual vector
 .........................
