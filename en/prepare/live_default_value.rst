@@ -1,3 +1,5 @@
+.. _default_value_QGIS:
+
 **************************************************
 'Live' default value updates when editing features
 **************************************************
@@ -14,7 +16,7 @@ For an image:
 
     .. image:: /images/live_default1.png
        :width: 400px
-       :alt: widgets
+       :alt: live default value image
 
 For a value relation:
 
@@ -22,4 +24,4 @@ For a value relation:
 
     .. image:: /images/live_default2.png
        :width: 400px
-       :alt: widgets
+       :alt: live default value relation
