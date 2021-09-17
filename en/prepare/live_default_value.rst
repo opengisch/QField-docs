@@ -1,0 +1,25 @@
+**************************************************
+'Live' default value updates when editing features
+**************************************************
+
+QField is supporting the 'live' updating of default attribute value when editing features.
+
+To make it works, the attributes has to be set up with another attribute dependency.
+
+Below an examples of attributes dependency settings
+
+For an image:
+
+.. container:: clearer text-center
+
+    .. image:: /images/live_default1.png
+       :width: 400px
+       :alt: widgets
+
+For a value relation:
+
+.. container:: clearer text-center
+
+    .. image:: /images/live_default2.png
+       :width: 400px
+       :alt: widgets
