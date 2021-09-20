@@ -1,7 +1,9 @@
 'Live' default value updates when editing features
 ==================================================
 
-In the video Below there is an example of 'live' default value updates when editing features on QField.
+'Live' default value is live updating of default attribute values when editing features.
+
+In the video below there is an example of 'live' default value updates when editing features on QField.
 
 .. container::
 
