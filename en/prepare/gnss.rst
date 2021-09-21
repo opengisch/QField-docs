@@ -96,13 +96,22 @@ E: External (NMEA) position source
 Vertex log
 ..........
 
-The user assigns the role "digitizing logger" on a point layer.
+First usting GNSS variables in the point fields.
+
+.. container:: clearer text-left
+
+  .. figure:: ../images/vertex_log1.png
+     :width: 600px
+     :alt: set up attributes with variables
+
+
+Then the user assigns the role "digitizing logger" on a point layer.
 
 Go to QFieldSync --> project Properties
 
 .. container:: clearer text-left
 
-  .. figure:: ../images/vertex_log.png
+  .. figure:: ../images/vertex_log2.png
      :width: 600px
      :alt: set up vertex log
 
