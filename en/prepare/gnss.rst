@@ -96,7 +96,9 @@ E: External (NMEA) position source
 Vertex log
 ..........
 
-First usting GNSS variables in the point fields.
+It is possible to setup a log layer of the collected vertices.
+This allows to keep track of meta data for each vertex like GNSS quality attributes and more.
+To set this up, a point layer can be added to the project and attributes configured to store this information.
 
 .. container:: clearer text-left
 
