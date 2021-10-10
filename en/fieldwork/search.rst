@@ -20,11 +20,15 @@ It is always possible to search WGS84 coordinates (*longitude, latitude*) or cur
 Search in value list
 ======================
 
+.. _search_value_list:
+
 It is possible to search value in a value list using the magnifying glass next to the field.
 
 .. container::
 
   .. vimeo:: 604661919
+
+To be able to use the "completer" the widget has to be set up :ref:`Autocomplet form set up<autocomplete_value>`.
 
 Search in layers
 ================
