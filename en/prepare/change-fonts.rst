@@ -9,4 +9,5 @@ There are two different possibilities to register additional fontst:
 
 1. By adding fonts (.ttf or .otf) on the device in the folder `<device root>/QField/fonts`; those will be made accessible to all projects and individual datasets.
 
-2. By adding the fonts (.ttf or .otf) in the same folder as the QGIS project (.qgs or .qgz).
+2. By adding fonts (.ttf or .otf) in the same folder as a given project file (.qgs or .qgz); those will be accessible only when viewing that project file.
+
