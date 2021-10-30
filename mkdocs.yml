@@ -1,0 +1,102 @@
+# Project information
+site_name: QField Ecosystem Documentation
+site_url: https://qfield.org/
+site_author: OPENGIS.ch
+site_description: >-
+  This site contains documentation of products that belong to the QField ecosystem. QField itself, the app for having QGIS at your fingertips, QFieldCloud which allows online synchronization of data, and QFieldSync which allows QGIS to communicate with QFieldCloud.
+
+# Repository
+repo_name: opengisch/qfield
+repo_url: https://github.com/opengisch/qfield
+edit_uri: https://github.com/opengisch/qfield-docs/tree/master/docs/
+
+# Copyright
+copyright: Copyright &copy; 2021 OPENGIS.ch
+
+# Configuration
+theme:
+  name: material
+  custom_dir: theme_overrides/
+  features:
+    - navigation.tabs
+    - search.suggest
+  logo: assets/images/qfield_logo.svg
+  favicon: assets/images/favicon.ico
+  palette:
+    - scheme: default
+      primary: green
+      toggle:
+        icon: octicons/moon-24
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: octicons/sun-24
+        name: Switch to light modeh
+
+# Page tree
+nav:
+  - Home: index.md
+  - Get started:
+      - tutorial.md
+  - How-to guides:
+      - how-to.md
+      - how-to/qfield-installation.md
+  - Technical reference:
+      - reference.md
+      - QField:
+          - ddd.md
+      - QFieldCloud:
+          - eee.md
+      - QFieldSync:
+          - fff.md
+  - Background information:
+      - background.md          
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - def_list
+  - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tabbed
+  - fancyboxmd
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+
+# Css
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/jquery.fancybox.min.css
+
+# Extra javascript
+extra_javascript:
+  - javascript/jquery.min.js
+  - javascript/jquery.fancybox.min.js
+
+extra:
+  # Remove "Made with Material for MkDocs" from footer
+  generator: false
+  # Languages. Don't add translated content into this repo It will be
+  # added by github ci based on transifex translations.
+  alternate:
+    - name: English
+      link: https://opengisch.github.io/mkdocs_test/en/
+      lang: en
+    - name: Italiano
+      link: https://opengisch.github.io/mkdocs_test/it/
+      lang: it
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/opengisch
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/opengisch
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/opengisch/
