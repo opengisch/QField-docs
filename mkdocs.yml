@@ -32,7 +32,7 @@ theme:
       primary: blue
       toggle:
         icon: octicons/sun-24
-        name: Switch to light modeh
+        name: Switch to light mode
 
 # Page tree
 nav:
@@ -44,12 +44,13 @@ nav:
       - how-to/qfield-installation.md
   - Technical reference:
       - reference.md
-      - QField:
-          - ddd.md
-      - QFieldCloud:
-          - eee.md
-      - QFieldSync:
-          - fff.md
+      # - QField:
+      #     - ddd.md
+      # - QFieldCloud:
+      #     - eee.md
+      # - QFieldSync:
+      #     - fff.md
+      # TODO: comment explaining build will add here
   - Background information:
       - background.md          
 
@@ -65,9 +66,9 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.tabbed
   - fancyboxmd
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: "!!python/name:materialx.emoji.twemoji"
+  #     emoji_generator: "!!python/name:materialx.emoji.to_svg"
   - toc:
       permalink: true
 
