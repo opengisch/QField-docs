@@ -1,4 +1,5 @@
 sphinx==1.8.5
+docutils==0.17.1
 Pygments>=2.0.1
 sphinx_bootstrap_theme
 pbr
