@@ -41,7 +41,37 @@ nav:
       - tutorial.md
   - How-to guides:
       - how-to.md
+      - how-to/add-1-n-pictures.md
+      - how-to/advanced.md
+      - how-to/allow-hiding-legend-nodes.md
+      - how-to/attributes-form.md
+      - how-to/authentication.md
+      - how-to/change-fonts.md
+      - how-to/custom-svg.md
+      - how-to/display-expression.md
+      - how-to/gnss.md
+      - how-to/live_default_value.md
+      - how-to/map-styling-configuration.md
+      - how-to/map-themes.md
+      - how-to/outside-layers.md
+      - how-to/picture_path.md
       - how-to/qfield-installation.md
+      - how-to/live_default_value-field.md
+      - how-to/gps.md
+      - how-to/digitize.md
+      - how-to/map-themes-field.md
+      - how-to/map-interaction.md
+      - how-to/opening_individual_data.md
+      - how-to/print-to-pdf.md
+      - how-to/track_lines_polygons.md
+      - how-to/search.md
+      - how-to/projects.md
+      - how-to/variables.md
+      - how-to/movable-project.md
+      - how-to/basemaps.md
+      - how-to/qfieldcloud.md
+      - how-to/qfieldsync.md
+      - how-to/data-format.md
   - Technical reference:
       - reference.md
       # - QField:
@@ -66,9 +96,9 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.tabbed
   - fancyboxmd
-  # - pymdownx.emoji:
-  #     emoji_index: "!!python/name:materialx.emoji.twemoji"
-  #     emoji_generator: "!!python/name:materialx.emoji.to_svg"
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       permalink: true
 
@@ -101,3 +131,6 @@ extra:
       link: https://twitter.com/opengisch
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/opengisch/
+
+plugins:
+  - mkdocs-video
