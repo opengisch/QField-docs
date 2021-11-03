@@ -12,6 +12,52 @@ feel free to use it accordingly and to contribute back your updates via a
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
+## Structure
+
+(Inspired by https://documentation.divio.com/)
+
+The documentation is structured in four separated topics:
+
+  * Get Started
+  * How-to guides
+  * Technical references
+  * Background information
+
+### Get Started
+
+Contains lessons that take the reader by the hand through a series of
+steps to complete a project of some kind. They are what your project
+needs in order to show a beginner that they can achieve something with
+it.
+
+They are wholly learning-oriented, and specifically, they are oriented
+towards learning how rather than learning that.
+
+### How-to guides
+
+How-to guides take the reader through the steps required to solve a
+real-world problem.
+
+They are recipes, directions to achieve a specific end - for example:
+how to create a web form; how to plot a three-dimensional data-set;
+how to enable LDAP authentication.
+
+### Technical references
+
+Reference guides are technical descriptions of the machinery and how
+to operate it.
+
+Reference guides have one job only: to describe. They are
+code-determined, because ultimately that’s what they describe: key
+classes, functions, APIs, and so they should list things like
+functions, fields, attributes and methods, and set out how to use
+them.
+
+### Background information
+
+Explanation to clarify and illuminate a particular topic. They broaden
+the documentation’s coverage of a topic.
+
 ## Process
 
 The documentation is written in English and managed in this git
