@@ -2,3 +2,10 @@ mkdocs-material==7.3.6
 fancyboxmd==1.0.1
 PyGithub==1.55
 python-dotenv==0.19.1
+sphinx==1.8.5
+docutils==0.17.1
+Pygments>=2.0.1
+sphinx_bootstrap_theme
+pbr
+git+https://github.com/sphinx-contrib/video.git
+PyStemmer
