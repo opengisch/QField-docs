@@ -1,12 +1,16 @@
-# Collect features
+---
+title: Digitize
+---
+
+## Collect features
 
 To start digitizing new features, enable the **Edit mode** in the main
 menu (*pencil button*) and select the layer on which you want to add a
 new feature (the layer will be highlighted in green).
 
-![](../assets/images/collect_features.webp){width="300px"}
+!![](../assets/images/collect_features.webp)
 
-## Points
+### Points
 
 Navigate the crosshair in the center of the screen to the desired
 location and click the **+ button** at the lower right of the screen to
@@ -15,7 +19,7 @@ confirm the creation of a new point feature.
 You can use the **keep centered** button to force the crosshair to
 center on your location if you have enabled the GPS.
 
-## Lines and polygons
+### Lines and polygons
 
 Navigate the crosshair in the center of the screen to the desired start
 of the line or polygon and click the **Plus (+) button** at the lower
@@ -32,14 +36,14 @@ completely.
 When you have added a least 2 nodes for a line or 3 nodes for a polygon,
 a **Save button** will appear. Click on it to finish your sketch.
 
-## Attribute form
+### Attribute form
 
 After digitizing a geometry, the attribute form will be displayed if it
 is not suppressed and the user will be asked to enter the attributes for
 the new feature. The form which appears allows entering attribute values
 for the new feature.
 
-### Remember attribute values
+#### Remember attribute values
 
 For quick collection of rather homogeneus datasets, it is crucial to not
 having to enter the same attribute values over an over. The checkboxes
@@ -47,51 +51,43 @@ at the right of every attribute allow remembering each attribute
 individually so that the next time you will add a feature on the same
 layer, these attributes will be automatically pre-filled.
 
-::: container
-::: vimeo
-526919606
-:::
-:::
+![type:video](https://player.vimeo.com/video/526919606)
 
-# Delete features
+## Delete features
 
 Deleting features is only possible in digitize mode.
 
-![](../assets/images/delete_features.webp){width="300px"}
+!![](../assets/images/delete_features.webp){width="300px"}
 
 To delete a feature, identify it first by a short tap on it. Then select
 it with a long press in the identification list, select further features
 to delete if you want and click the trash button to confirm the
 deletion.
 
-# Edit features
+## Edit features
 
-To edit, tap on **Menu button -\> pencil.**
+To edit, tap on **Menu button -> pencil.**
 
 You can edit an existing feature by moving, adding or deleting the
 vertex and also spliting.
 
-## Split tool
+### Split tool
 
 It is possible to split an existing geometry by drawing a line where it
 should be split.
 
-## Vertex tool
+### Vertex tool
 
 It is possible to move and delete vertices of geometries and add new
 ones.
 
-## Demonstration of geometries editing
+### Demonstration of geometries editing
 
 A video demonstration of some editing possibilities:
 
-::: container
-::: vimeo
-499564854
-:::
-:::
+![type:video](https://player.vimeo.com/video/499564854)
 
-## Freehand digitizing
+### Freehand digitizing
 
 The freehand digitizing mode allows users to \'draw\' lines and polygons
 using their stylus/pen or mouse. The mode is available for line/polygon
@@ -101,13 +97,9 @@ The freehand digitizing mode is activated through a new toolbar button
 which appears when QField is set to editing mode and a line or polygon
 vector is selected.
 
-::: container
-::: vimeo
-537673220
-:::
-:::
+![type:video](https://player.vimeo.com/video/537673220)
 
-## Topological Editing
+### Topological Editing
 
 If topological editing is activated on the project QGIS before exporting
 for QField, shared nodes of neighbouring geometries are modified
@@ -115,19 +107,11 @@ together when moving / deleting vertices and additional vertices are
 added to segments when a new node is added from neightbouring
 geometries.
 
-::: container
-::: vimeo
-499565314
-:::
-:::
+![type:video](https://player.vimeo.com/video/499565314)
 
-## Multi editing
+### Multi editing
 
 You can make a multi-selection and edit all the features at the same
 time. In some cases, it can be very efficient.
 
-::: container
-::: vimeo
-499565955
-:::
-:::
+![type:video](https://player.vimeo.com/video/499565955)

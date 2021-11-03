@@ -8,10 +8,10 @@ folder, like a basemap.
 It is useful if a basemap is used in all your project, no need to copy
 it everytime in the project folder.
 
-In QGIS, open \"Options\" \--\> \"Data Sources\" \--\> \"Localized Data
-Paths\" There add the path to the folder where are the external data.
+In QGIS, open  "Options" --> "Data Sources" --> "Localized Data
+Paths" There add the path to the folder where are the external data.
 
-![image](../assets/images/external_path.png)
+!![image](../assets/images/external_path.png)
 
-To make it works in the device, add the layers in the folder [\<device
-root>/QField/basemaps]{.title-ref}
+To make it works in the device, add the layers in the folder `[device
+root]/QField/basemaps`.

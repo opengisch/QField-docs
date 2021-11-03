@@ -127,7 +127,8 @@ checkbox is checked, the list of diseases will be available to the user.
 
 Let's see what we got on the field:
 
-![type:video](https://vimeo.com/499565113)
+![type:video](https://player.vimeo.com/video/499565113)
+
 
 ## Constraints
 

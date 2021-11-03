@@ -8,13 +8,8 @@ editing features.
 In the video below there is an example of 'live' default value updates
 when editing features on QField.
 
-::: container
-::: vimeo
-607220411
-:::
-:::
+![type:video](https://player.vimeo.com/video/607220411)
 
 For more information how to setup default value updates when editing
 features, see the corresponding
-`default value QGIS documentation<default_value_QGIS>`{.interpreted-text
-role="ref"}.
+`default value QGIS documentation<default_value_QGIS>`.

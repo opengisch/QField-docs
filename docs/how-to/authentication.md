@@ -10,40 +10,30 @@ authentication.
 To successfully load OAuth2-protected layer(s) in QField, the QGIS
 project must be setup to use OAuth2.
 
-# Prepare the authentication in QGIS
+## Prepare the authentication in QGIS
 
 To setup a WFS with OAuth2 in QGIS follow these steps in the QGIS
 project configuration.
 
 In the WFS layer configuration:
 
-![widgets](../assets/images/oauth2_setup_wfs.png){width="600px"}
+!![widgets](../assets/images/oauth2_setup_wfs.png)
 
 Add a new authentication configuration. Parameters need to be adjusted
 to the oauth2 server setup:
 
-![widgets](../assets/images/oauth2_setup_auth.png){width="600px"}
+!![widgets](../assets/images/oauth2_setup_auth.png)
 
-# Export the authentication from QGIS
+## Export the authentication from QGIS
 
-::: note
-::: title
-Note
-:::
+!!! note
+    Exporting an auth configuration requires at least QGIS 3.20. It is
+    possible to only use QGIS 3.20 to prepare the auth config and configure
+    the QGIS project itself with an earlier version of QGIS.
 
-Exporting an auth configuration requires at least QGIS 3.20. It is
-possible to only use QGIS 3.20 to prepare the auth config and configure
-the QGIS project itself with an earlier version of QGIS.
-:::
-
-::: note
-::: title
-Note
-:::
-
-It is important that the Configuration ID of the exported configuration
-and the configuration stored in the QGIS project match.
-:::
+!!! note
+    It is important that the Configuration ID of the exported configuration
+    and the configuration stored in the QGIS project match.
 
 At this point, verify that you are able to properly connect to the
 service from QGIS. This authentication configuration must first be
@@ -56,7 +46,7 @@ configurations table widget. Then, the user uses the lower-right
 utilities button to select the 'export selected authentication
 configurations to file' action.
 
-![widgets](../assets/images/oauth2_export_config.png){width="600px"}
+!![widgets](../assets/images/oauth2_export_config.png)
 
 When prompted for a password, leave it blank. The user will be warned
 that he/she might be leaking sensitive information. In the case of
@@ -64,8 +54,8 @@ OAuth2 configurations, it is safe to do so.
 
 Once the user has exported the authentication configuration to an XML
 file, he/she copies that file onto the device(s) running QField. The
-file has to be copied to the device's \<main storage>/QField/auth/
-directory. The [/QField/auth/]{.title-ref} path is created when first
+file has to be copied to the device's `\[main storage]/QField/auth/`
+directory. The `/QField/auth/` path is created when first
 launching QField, look for it if you are not sure which storage
 (external or internal) is the right one.
 

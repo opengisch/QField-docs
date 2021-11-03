@@ -2,21 +2,20 @@
 title: Interact with the map
 ---
 
-# Map legend
+## Map legend
 
 Open the **Main menu** and expend the layers list to display the legend
 of the map.
 
-![](../assets/images/user-guide_legend.png){width="300px"}
+!![](../assets/images/user-guide_legend.png)
 
-# Turning on and off layers
+## Turning on and off layers
 
-`Main menu --> long press on the layer --> check or uncheck show on map canvas`{.interpreted-text
-role="menuselection"}
+`Main menu --> long press on the layer --> check or uncheck show on map canvas`
 
-![](../assets/images/turning_on_off.webp){width="300px"}
+!![](../assets/images/turning_on_off.webp)
 
-# Identify features
+## Identify features
 
 Tap on a feature on the map to identify it. If several features are
 located where you tapped (either because there are multiple features
@@ -24,7 +23,7 @@ really close one to another, or because several layers are overlapping),
 they will all be listed in the menu that opens on the right of the
 screen.
 
-![](../assets/images/identify_features.webp){width="300px"}
+!![](../assets/images/identify_features.webp)
 
 Tap on one of the listed feature to access its attributes.
 
@@ -34,21 +33,16 @@ Tap on one of the listed feature to access its attributes.
     feature.
 4.  Scroll through the **sub-menus** to access all the attributes.
 
-## Exceptions to identified layers
+### Exceptions to identified layers
 
 Often it is not required to be able to query every layer. Some layers
 are only present as basemap and their attributes are not of interest.
 
 You can manage this layerlist in QGIS desktop in
-`Project --> Project Properties --> Identify Layers`{.interpreted-text
-role="menuselection"} and uncheck the base layers.
+`Project --> Project Properties --> Identify Layers` and uncheck the base layers.
 
-# Measure tool
+## Measure tool
 
-Open the **Main menu** \--\> tap the settings button \--\> Measure Tool
+Open the **Main menu** --> tap the settings button --> Measure Tool
 
-::: container
-::: vimeo
-499565725
-:::
-:::
+![type:video](https://player.vimeo.com/video/499565725)
