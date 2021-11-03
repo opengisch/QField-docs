@@ -1,4 +1,6 @@
-# Search
+---
+title: Search
+---
 
 Tap on the **Search button** on the top-right corner of the screen to
 search for features in the current project.
@@ -15,41 +17,28 @@ Tap on the **coordinates** in the result to go to the coordinates. It is
 always possible to search WGS84 coordinates (*longitude, latitude*) or
 current map CRS (*x,y*).
 
-::: container
-::: vimeo
-499566922
-:::
-:::
+![type:video](https://player.vimeo.com/video/499566922)
 
-# Search in value list
+## Search in value list
 
-::: {#search_value_list}
 It is possible to search value in a value list using the magnifying
 glass next to the field.
-:::
 
-::: container
-::: vimeo
-604661919
-:::
-:::
+![type:video](https://player.vimeo.com/video/604661919)
 
 To be able to use the \"completer\" the widget has to be set up
-`Autocomplet form set up<autocomplete_value>`{.interpreted-text
-role="ref"}.
+`Autocomplet form set up<autocomplete_value>`.
 
-# Search in layers
+## Search in layers
 
 You can search for features in vector layers. The search is currently
 performing the same as the *all layers locator filter* in QGIS
 (accessible in QGIS locator bar using *af* prefix).
 
-## Configure search in QGIS
+### Configure search in QGIS
 
 1.  Choose the layers which are searchable in
-    `Project --> Project Properties --> Identify Layers`{.interpreted-text
-    role="menuselection"}
+    `Project --> Project Properties --> Identify Layers`
 2.  Define the *display expression* for the concerned layers, this will
     be used for searching for features. This is configured under
-    `Vector Layer Properties --> Display`{.interpreted-text
-    role="menuselection"} page
+    `Vector Layer Properties --> Display`
