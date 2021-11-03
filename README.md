@@ -95,7 +95,8 @@ where all the real documentation text is located.
 
 ```sh
 pipenv install -r requirements.txt
-```pipenv run mkdocs serve
+pipenv run mkdocs serve
+```
 
 The local doc will be available at http://localhost:8000
 
