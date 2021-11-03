@@ -2,6 +2,8 @@
 title: Allow hiding legend nodes
 ---
 
+# Allow hiding legend nodes
+
 First, you should verify if the plugin `Invisible layers and
 groups` is installed. If you don't have itinstalled, you can do it going
 to `Plugins > Manage and install plugins > find Invisible layers and

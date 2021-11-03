@@ -1,6 +1,7 @@
 ---
 title: Ground Truth Data Collection
 ---
+
 # Ground Truth Data Collection Using QField for LULC Mapping in Fiji
 
 By Kevin Davies, School of Geosciences, The University of Sydney

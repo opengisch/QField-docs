@@ -2,6 +2,8 @@
 title: Custom SVG symbols
 ---
 
+# Custom SVG symbols
+
 It is possible to embed SVG symbols directly within a QGIS projects.
 
 1.  Choose the layer which will support SVG symbology and open its

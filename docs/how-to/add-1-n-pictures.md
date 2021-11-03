@@ -2,6 +2,8 @@
 title: Add a series of pictures to a feature
 ---
 
+# Add a series of pictures to a feature
+
 You can add one or more pictures to a feature. Below you find an example
 how to proceed.
 

@@ -2,6 +2,8 @@
 title: Configure Map Themes
 ---
 
+# Configure Map Themes
+
 The beautiful thing about GIS is that maps are dynamic. Layers can
 individually be shown and hidden and information can be presented more
 or less prominently based on the task at hand.

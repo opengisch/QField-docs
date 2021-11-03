@@ -2,6 +2,8 @@
 title: GNSS and precision measurement
 ---
 
+# GNSS and precision measurement
+
 QField can make use of the internal GNSS (Global Navigation Satellite
 System, like GPS, GLONASS, Galileo or Beidou). QField can also connect
 to external antennas through bluetooth and directly integrate their NMEA

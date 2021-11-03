@@ -2,6 +2,8 @@
 title: Configurable picture path
 ---
 
+# Configurable picture path
+
 QFieldSync gives the possibility to configure the path of picture
 attachments.
 

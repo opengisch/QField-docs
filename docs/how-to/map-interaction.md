@@ -2,6 +2,8 @@
 title: Interact with the map
 ---
 
+# Interact with the map
+
 ## Map legend
 
 Open the **Main menu** and expend the layers list to display the legend

@@ -2,13 +2,15 @@
 title: GNSS
 ---
 
+# GNSS
+
 A short press on the GNSS button will turn on the GNSS and center to the
 current location once positioning information is available.
 
 Activate edit mode and press on the target button, the cross in the
 center means it is using GNSS positioning.
 
-!![](../images/gnss_use.webp)
+!![](../assets/images/gnss_use.webp)
 
 A long press on the GNSS button will show the positioning menu.
 
@@ -26,7 +28,7 @@ project CRS along with precision information.
 
 QField supports connecting external GNSS antennas via bluetooth.
 
-In settings -\> positioning, paired bluetooth devices can be scanned and
+In settings -> positioning, paired bluetooth devices can be scanned and
 chosen as position source.
 
 Make sure no other app like mock location providers are using the

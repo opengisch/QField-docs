@@ -2,6 +2,8 @@
 title: Display expression
 ---
 
+# Display expression
+
 You have any text you want to appear as description of a clicked feature?
 In the example below, you can see we used the beekeeper and the bee species.
 

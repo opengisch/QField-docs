@@ -2,6 +2,8 @@
 title: Search
 ---
 
+# Search
+
 Tap on the **Search button** on the top-right corner of the screen to
 search for features in the current project.
 

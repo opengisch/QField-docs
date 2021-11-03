@@ -2,6 +2,8 @@
 title: Authentication
 ---
 
+# Authentication
+
 QField supports connecting to OAuth2 protected web services. By using
 OAuth2, it is possible to protect layers and services with a wide
 variety of authentiaction schemes like for example two factor

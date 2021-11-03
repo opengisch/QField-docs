@@ -2,6 +2,8 @@
 title: Attribute Form Configuration
 ---
 
+# Attribute Form Configuration
+
 QField creates forms similar to, but not equal to QGIS.
 
 ## Suppress Attribute Form
@@ -25,7 +27,7 @@ The field widgets from QGIS are supported on a best effort basis.
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
 | Relation Widget    | :material-check: |                                                                                                                                                                                                        |
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
-| Others             | :material-close: | [Funding](../../../support/#funding)                                                                                                                                                                   |
+| Others             | :material-close: | [Funding](../../get-started/support/#development-and-custom-apps)                                                                                                                                                                   |
 
 ## Relation Widget
 

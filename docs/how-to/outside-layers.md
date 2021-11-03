@@ -2,6 +2,8 @@
 title: Add a layer outside of exported project folder
 ---
 
+# Add a layer outside of exported project folder
+
 In a QField project it is possible to use a layer outside the project
 folder, like a basemap.
 

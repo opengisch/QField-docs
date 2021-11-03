@@ -2,6 +2,8 @@
 title: Print to PDF
 ---
 
+# Print to PDF
+
 It's possible to export the maps and other items to a PDF document.
 
 If the project has at least one print layout defined, printing is

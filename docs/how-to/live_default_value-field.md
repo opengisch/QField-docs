@@ -2,6 +2,8 @@
 title: Live default value updates when editing features
 ---
 
+# Live default value updates when editing features
+
 'Live' default value is live updating of default attribute values when
 editing features.
 

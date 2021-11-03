@@ -2,6 +2,8 @@
 title: Using a project as Base Map
 ---
 
+# Using a project as Base Map
+
 To use an existing project as Base Map, do a long press on the project
 and check "Base Map Project".
 

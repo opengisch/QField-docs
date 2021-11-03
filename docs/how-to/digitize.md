@@ -2,6 +2,8 @@
 title: Digitize
 ---
 
+# Digitize
+
 ## Collect features
 
 To start digitizing new features, enable the **Edit mode** in the main

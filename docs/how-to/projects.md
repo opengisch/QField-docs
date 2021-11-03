@@ -2,6 +2,8 @@
 title: Open a project
 ---
 
+# Open a project
+
 To open a project, tap on **Menu button --> Option button --> Open
 Project**.
 

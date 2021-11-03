@@ -2,6 +2,8 @@
 title: Base maps and Imagery
 ---
 
+# Base maps and Imagery
+
 QField is able to load a base map from a web service.
 
 In QGIS with the plugin QFieldSync, set the base map to the "Project

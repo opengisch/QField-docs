@@ -2,6 +2,8 @@
 title: Global variables
 ---
 
+# Global variables
+
 Variables are used in QField and QGIS to dynamically set values based on
 the current project file, the layer or the system. They can be used for
 styling, setting default values for fields and much more.

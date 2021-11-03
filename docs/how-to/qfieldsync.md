@@ -2,6 +2,8 @@
 title: QFieldSync plugin
 ---
 
+# QFieldSync plugin
+
 The QFieldSync plugin helps preparing and packaging QGIS projects for
 QField.
 

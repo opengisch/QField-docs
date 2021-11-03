@@ -1,7 +1,8 @@
 ---
-subtitle: Itinerary
-title: Advanced
+title: Advanced itinerary
 ---
+
+# Advanced itinerary
 
 This feature is used to inspect a list of objects that match a certain
 criteria. You may then navigate through these features with arrows and

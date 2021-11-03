@@ -2,6 +2,8 @@
 title: Using additional fonts
 ---
 
+# Using additional fonts
+
 In QField, you are able to use all the fonts you want.
 
 There are two different possibilities to register additional fonts:

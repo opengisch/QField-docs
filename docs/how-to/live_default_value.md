@@ -2,6 +2,8 @@
 title: Live default value updates when editing features
 ---
 
+# Live default value updates when editing features
+
 QField is supporting the 'live' updating of default attribute value
 when editing features.
 

@@ -2,6 +2,8 @@
 title: Map styling and configuration
 ---
 
+# Map styling and configuration
+
 Most of the settings which QGIS offers are directly supported by QField
 without any extra effort.
 

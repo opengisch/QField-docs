@@ -2,6 +2,8 @@
 title: Movable project
 ---
 
+# Movable project
+
 To manually synchronise your QGIS project, you will need a portable
 version of your .qgs file. Portable means that all paths are relative
 and datasets are reachable from the device.

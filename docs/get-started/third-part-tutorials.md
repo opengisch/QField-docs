@@ -2,6 +2,8 @@
 title: Third part tutorials
 ---
 
+# Third part tutorials
+
 Here you can find some great tutorials created by our community:
 
 - [QField tutorials](https://livelihoods-and-landscapes.github.io/qgis_qfield_tutorials/training_overview.html) from Climate-Smart Landscapes for Promoting Sustainability of Pacific Island Agricultural Systems
