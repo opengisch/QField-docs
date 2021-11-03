@@ -20,6 +20,7 @@ theme:
   features:
     - navigation.tabs
     - search.suggest
+    - search.highlight
   logo: assets/images/qfield_logo.svg
   favicon: assets/images/favicon.ico
   palette:
@@ -134,3 +135,4 @@ extra:
 
 plugins:
   - mkdocs-video
+  - search
