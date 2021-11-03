@@ -9,13 +9,13 @@ QFieldSync supports your project preparation with automating the
 following:
 
 -   Required steps for project setup (e.g.
-    `portable_project`{.interpreted-text role="ref"})
+    `portable_project`)
 -   Creating basemaps from a single raster layer or from a style defined
     in a map theme.
 -   Configuring the offline editing functionality and synchronizing
     changes back.
 
-# Workflow
+## Workflow
 
 To get a quick overview of the process, here is a list of typical steps:
 
@@ -26,24 +26,24 @@ To get a quick overview of the process, here is a list of typical steps:
 4.  Copy the modified data back to your desktop computer.
 5.  Synchronize the modified data with your database or files.
 
-# Installation
+## Installation
 
 In QGIS, open the plugin library and search for **qfield sync**. Select
 the plugin in the list and click on **Install**.
 
-![image](../assets/images/qfield-sync_install.png)
+!![image](../assets/images/qfield-sync_install.png)
 
-# Configuration
+## Configuration
 
 The project configuration is saved in the master .qgs project file. This
 way it is possible to pre-configure a project once and use it
 repeatedly.
 
-![image](../assets/images/qfield-sync_configmenu.png)
+!![image](../assets/images/qfield-sync_configmenu.png)
 
-## Layer configuration
+### Layer configuration
 
-![image](../assets/images/qfield-sync_config.png)
+!![image](../assets/images/qfield-sync_config.png)
 
 In the project configuration dialog, an *action* can be defined for each
 layer individually. Depending on the layer type, different types of
@@ -73,7 +73,7 @@ Remove
     layer is used in the basemap and will not be available in the
     packaged project.
 
-## Base map configuration
+### Base map configuration
 
 A base map is a raster layer which is added as the bottommost layer to
 the packaged project file.
@@ -103,27 +103,27 @@ tile size is set to 1, each raster pixel will have a spatial extent of
 1x1 m, if it is set to 1000, each raster pixel will have a spatial
 extent of 1 square kilometer.
 
-## Offline editing configuration
+### Offline editing configuration
 
 If *only synchronize features in area of interest* is checked, only
 features which are within the extent of the map canvas as packaging time
 will be copied to the offline editing working copy.
 
-# Package for Qfield
+## Package for Qfield
 
 Once the project is configured, package it in a folder. This folder will
 contain the .qgs and the data used in it.
 
-![image](../assets/images/qfield-sync_package.png)
+!![image](../assets/images/qfield-sync_package.png)
 
 Copy the folder on your device. Open Qfield, open the project and start
 collecting data.
 
 Make also sure to save the QGIS project using the regular Save As of
-QGIS as you\'ll have to re-open it later when you want to synchronize
+QGIS as you'll have to re-open it later when you want to synchronize
 the changes.
 
-# Synchronize from Qfield
+## Synchronize from Qfield
 
 When you want to synchronize what you have collected, re-open the
 project in QGIS (the one you saved with a regular Save As).
@@ -132,7 +132,7 @@ Copy the project folder from your device to your computer and use the
 **Synchronize from Qfield** menu to synchronize your changes from the
 protable project to the main project.
 
-![image](../assets/images/qfield-sync_sync.png)
+!![image](../assets/images/qfield-sync_sync.png)
 
 Make sure that you synchronize your data back only once. That means, if
 you go out again to collect more data, you should create a new QField
