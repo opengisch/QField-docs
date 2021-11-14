@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mkdocs-material = "==7.3.6"
+fancyboxmd = "==1.0.1"
+pygithub = "==1.55"
+python-dotenv = "==0.19.1"
+sphinx = "==1.8.5"
+docutils = "==0.17.1"
+pygments = ">=2.0.1"
+sphinx-bootstrap-theme = "*"
+pbr = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

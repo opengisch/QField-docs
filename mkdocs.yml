@@ -99,6 +99,7 @@ nav:
           - background/case-studies/river-state-survey.md
           - background/case-studies/rwanda-rural-water.md
           - background/case-studies/vanilla-survey.md
+          - background/case-studies/heritage-impact-assessment.md
 # Extensions
 markdown_extensions:
   - admonition
