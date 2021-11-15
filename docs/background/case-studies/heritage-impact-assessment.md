@@ -4,58 +4,58 @@ title: Heritage Impact Assessment
 
 # Heritage Impact Assessment using QField
 
-## From Qgis to Qfield and Vice Versa: How the New Android Application Is Facilitating the Work of the Archaeologist in the Field
+## From QGIS to QField and Vice Versa: How the New Android Application Is Facilitating the Work of the Archaeologist in the Field
 
 **Roberto Montagnetti 1,* and Giuseppe Guarino 2**
 
-<sub><sup>1 adArte s.r.l. Archeologia, Restauro, ICT, 47921 Rimini, Italy</sup></sub>
+<small>1 adArte s.r.l. Archeologia, Restauro, ICT, 47921 Rimini, Italy</small>
 
-<sub><sup>2 Department of History and Cultures—DISCI, University of Bologna, 40124 Bologna, Italy;
-guarino.archeo@gmail.com</sup></sub>
+<small>2 Department of History and Cultures—DISCI, University of Bologna, 40124 Bologna, Italy;
+guarino.archeo@gmail.com</small>
 
-<sub><sup>* Correspondence: robertomontagnetti@gmail.com</sup></sub>
+<small>* Correspondence: robertomontagnetti@gmail.com</small>
 
-<sub><sup>† Presented at the ArcheoFOSS XIII Workshop—Open Software, Hardware, Processes, Data and Formats in
-Archaeological Research, Padova, Italy, 20–22 February 2019.</sup></sub>
+<small>† Presented at the ArcheoFOSS XIII Workshop—Open Software, Hardware, Processes, Data and Formats in
+Archaeological Research, Padova, Italy, 20–22 February 2019.</small>
 
-<sub><sup>**Abstract:** The aim of this paper is to highlight the main benefits of using the Qfield app in archae-
-ological jobs. In particular this article provides examples to use Qfield in open area excavation,
-Archaeological survey and impact assessment (HIA) projects.</sup></sub>
+<small>**Abstract:** The aim of this paper is to highlight the main benefits of using the QField app in archae-
+ological jobs. In particular this article provides examples to use QField in open area excavation,
+Archaeological survey and impact assessment (HIA) projects.</small>
 
-<sub><sup>**Keywords:** Qfield; archeology; VIARCH; HIA; Qgis</sup></sub>
+<small>**Keywords:** QField; archeology; VIARCH; HIA; QGIS</small>
 
 ----------------------------------------------------------------------------------------------------------------------
 
 ### 1. Introduction
 
-The aim of this paper is to highlight the main benefits of using the Qfield app. An
+The aim of this paper is to highlight the main benefits of using the QField app. An
 App that can be installed on an Android device for all archaeologists working in the field.
 
 The main feature of this new application will allow the archaeologist to upload to
-his/her smartphone or tablet the .qgis project of the excavation based on the general
+his/her smartphone or tablet the .qgs project of the excavation based on the general
 information concerning the site that is already available to you. At this point, it is possible
 to implement the collection of data directly on site, maintaining constant updates to your
 system, thus allowing you to review the project throughout the excavation process.
 
-The “pocket-GIS” with Qfield is finally a reality!
+The “pocket-GIS” with QField is finally a reality!
 
-Working with Qfield in the field allows us to significantly reduce registration and
+Working with QField in the field allows us to significantly reduce registration and
 computerisation time of inputting data into the database system, eliminating the digiti-
 sation of field registers and all related paperwork. The advantage of entrusting all of the
 information to the main GIS platform of the project (master), which is stored inside the
 PC, means this leaves only the task of checking the collected data, along with the bonus of
 in-depth topographical and geospatial analysis.
 
-In this article, we will show a practical example of integrated use of Qgis and Qfield,
+In this article, we will show a practical example of integrated use of QGIS and QField,
 which relates to an open area excavation.
 
 The intervention methodology proposed in this article was constructed by the per-
 sonal experience of the authors; this specifically refers to open area excavation works in
 commercial archaeology projects.
 
-### 2. Main Features of Qfield
+### 2. Main Features of QField
 
-Qfield is an Android app that can be downloaded from Google Play.
+QField is an Android app that can be downloaded from Google Play.
 This application, although it presents itself with a very simple interface, is rich in
 functions such as:
 
@@ -66,24 +66,24 @@ functions such as:
 5. Integration of smartphone/tablet’s camera;
 6. Many other functions.
 
-Qfield can be considered a “mobile” extension for Qgis. In fact, it allows us to view and
-manage a GIS project created with Qgis on an Android smartphone or tablet. Permitting
+QField can be considered a “mobile” extension for QGIS. In fact, it allows us to view and
+manage a GIS project created with QGIS on an Android smartphone or tablet. Permitting
 the user to keep all set themes, labels and styles that are in the original project (Figure 1).
 
-!![Figure 1 - An example of the same Survey GIS platform project in Qgis (below) and in Qfield (above). Image by Giuseppe
+!![Figure 1 - An example of the same Survey GIS platform project in QGIS (below) and in QField (above). Image by Giuseppe
 Guarino 2019.](../../assets/images/heritage_impact_figure1.png)
 
-Furthermore, similar to Qgis, we can query each layer within Qfield by obtaining
+Furthermore, similar to QGIS, we can query each layer within QField by obtaining
 the respective information contained in its attribute table (however, there are also other
 GIS applications for mobile such as ArcGis, LiPAD, Bentley Map Mobile, GVSig Mobile,
 Geopaparazzi and others).
 
-In order to work with a Qgis project within Qfield, the first step is to configure the
-properties of that project created in Qgis as “save relative paths”.
+In order to work with a QGIS project within QField, the first step is to configure the
+properties of that project created in QGIS as “save relative paths”.
 
 You will need to create a folder “folder_name” on your desktop and save in this path
 the .qgs file that you want to transfer to the smartphone or tablet; similarly, in the same
-folder, you have to enter all the data (vectors, raster and database) that make up this .qgis
+folder, you have to enter all the data (vectors, raster and database) that make up this .QGIS
 project.
 
 These data can also be divided into further subfolders.
@@ -91,17 +91,17 @@ These data can also be divided into further subfolders.
 Finally, you need to copy the entire folder ‘folder_name’ to the tablet, following two
 possible paths:
 
-1. In the internal memory: Android > data > ch.opengis.qfield > files > share;
-2. In the external SD: Android > data > ch.opengis.qfield > files.
+1. In the internal memory: Android > data > ch.opengis.QField > files > share;
+2. In the external SD: Android > data > ch.opengis.QField > files.
 
-### 3. Working with Qfield in an Archaeological Survey and Archaeological Risk Assessment Projects
+### 3. Working with QField in an Archaeological Survey and Archaeological Risk Assessment Projects
 
 Until recently, paper maps were the only way of recording archaeological features and
 the fields’ visibility in an archaeological survey work. Such data were digitised into a CAD
 or GIS software creating the individual site sheets separately on a simple digital document
 afterwards.
 
-Today, Qfield, thanks to its compatibility with Qgis, allows you to skip the transition
+Today, QField, thanks to its compatibility with QGIS, allows you to skip the transition
 from paper to digital or from different software, reducing time and costs.
 
 The archaeological survey (for a comprehensive account of methods of the Archaeological
@@ -135,35 +135,35 @@ one “Feature Number”.
 The GIS platform must also have base maps such as Google Satellite, Open Street Map,
 Orthophotos and so on. In this case, we used the following maps: Carta Tecnica Regionale
 (1:10.000), Open Street Map e Google Satellite. To make these maps lighter, we created first
-overviews (pyramids) in Qgis.
+overviews (pyramids) in QGIS.
 
 The positioning of the archaeological features identified can be recorded through the
-GPS internal device. However, for a greater accuracy, Qfield can be connected to a GNSS
+GPS internal device. However, for a greater accuracy, QField can be connected to a GNSS
 antenna.
 
 In archaeological consultancy and archaeological risk assessment jobs, it is recommended
 to upload into the GIS project an infrastructure layer containing the infrastructure’s
 geometric information, measurements and others, besides a buffer of itself.
 
-After setting the basics of our project on Qgis, we need to export the project through
-the use of the Qfield Sync plugin within Qfield. Alternatively, we can carry this out by
-simply copying the folder containing the project file with the * .qgis extension, the database
+After setting the basics of our project on QGIS, we need to export the project through
+the use of the QField Sync plugin within QField. Alternatively, we can carry this out by
+simply copying the folder containing the project file with the * .QGIS extension, the database
 and the rasters (or the geopackage containing our rasters: IGM, Basemap and so on) into
 our smartphone or tablet.
 
-By default, Qfield creates a folder where you can save projects (Android/data/
-ch.opengis.qfield/files), but it is always better to store them on an external SSD, since 
-if you were to uninstall Qfield from your device, all the folders and files contained in them
+By default, QField creates a folder where you can save projects (Android/data/
+ch.opengis.QField/files), but it is always better to store them on an external SSD, since 
+if you were to uninstall QField from your device, all the folders and files contained in them
 will be removed running the risk of deleting the data.
 
-After we set up the bases of the GIS project in Qgis, we need to export it into Qfield
-through a suitable plug-in called Qfield-Sync.
+After we set up the bases of the GIS project in QGIS, we need to export it into QField
+through a suitable plug-in called QField-Sync.
 
 However, we can perform that task even by simply transferring (copy and paste) the
-Qgis project and the related dataset to our Android device. The Qgis project must be saved
-as .qgis.
+QGIS project and the related dataset to our Android device. The QGIS project must be saved
+as .QGIS.
 
-### 4. Benefits and Drawbacks of Using Qfield in an Archaeological Survey and Archaeological Risk Assessment Jobs
+### 4. Benefits and Drawbacks of Using QField in an Archaeological Survey and Archaeological Risk Assessment Jobs
 
 QField, similar to all the cutting-edge tools, has some limits related the the use of the 
 devices; the main one of these might be caused by the poor bandwidth or lack of internet. In
@@ -172,20 +172,20 @@ by using the GNSS. At the same time, we would not to be able to upload WMS servi
 such as Google Satellite, Open Street Map and others. Another disadvantage is related to
 the battery life: keeping the screen, data connection and GPS always active will drastically
 reduce the battery life of our device, even if we might bring with us portable powerbanks.
-On the other hand, the benefits of using Qfield are a lot; in fact, it allows us to reduce many
+On the other hand, the benefits of using QField are a lot; in fact, it allows us to reduce many
 procedures we were to carry out had we registered the archaeological features identified
 during the survey on a paper map or had we filled up their related information manually
-on paper sheets. Furthermore, another benefit constitutes the possibility of using Qfield
+on paper sheets. Furthermore, another benefit constitutes the possibility of using QField
 for integrating the device camera or a GNSS antenna. All of this makes the collection of
 data easier and increases their accuracy while at the same time reducing time, costs and
 workforce.
 
 G.G.
 
-### 5. Working with Qfield in an Open Area Excavation
+### 5. Working with QField in an Open Area Excavation
 
 In  an  open  area  excavation  scenario,  the  advantages  and  convenience  of  using  an  
-App  such  as  Qfield  are  innumerable.  This  is  true  especially  in  commercial  archaeology  
+App  such  as  QField  are  innumerable.  This  is  true  especially  in  commercial  archaeology  
 sites, where very often the deadlines to carry out the work and the budgets available for 
 the archaeological investigation are very tight. This forces you to work with the maximum 
 optimisation of the timing and assets, despite the fact that the weather and visibility conditions
@@ -194,7 +194,7 @@ in the field are often poor (Figure 2).
 !![Figure 2 - An example of when the weather and visibility conditions in the field are poor. Image by Roberto Montagnetti
 2019.](../../assets/images/heritage_impact_figure2.png)
 
-Now, let us see why the use of Qfield facilitates the reduction of working times and,
+Now, let us see why the use of QField facilitates the reduction of working times and,
 at the same time, guarantees the saving of resources to be invested in the archaeological
 investigation, providing a practical example of using the GIS App for Android.
 
@@ -215,7 +215,7 @@ stratigraphic relationship between the archaeological features identified.
 This phase of the work is called “Pre-Ex”.
 
 The Pre-Ex survey will be the topographical base for the creation of the GIS platform
-of the project in Qgis, together with the base map of the area, the TBM’s and any aerial
+of the project in QGIS, together with the base map of the area, the TBM’s and any aerial
 orthophotos of the site. Within the same platform, we will also upload a geodatabase
 containing the layers necessary for the digitisation of the following:
 
@@ -239,7 +239,7 @@ paperwork that are commonly used on construction sites for excavation documentat
 This database (what comes next is just an example of database structure. Tables and
 geometries can be different according to the characteristics of the sites and the topology of
 investigations that must be carried out. In any case, tables and vectors must be related to
-each other in order to interact. Qfield recognises the project relations set in Qgis.) is made
+each other in order to interact. QField recognises the project relations set in QGIS.) is made
 of:
 
 1. Sites (Vector): Contains the list and description of all the sites on which the company
@@ -266,16 +266,16 @@ the excavation.
 14. Context_Sheets (No geometry): This layer is the digital version of the context sheets
 register and contains all the information related to each context investigated.
 
-At this point, we need to simply transfer the master project created in Qgis with all
+At this point, we need to simply transfer the master project created in QGIS with all
 the “project relation” and “widgets” to the tablet or the smartphone and manage it directly
-on site with Qfield to immediately appreciate its advantages and convenience (Figure 3).
+on site with QField to immediately appreciate its advantages and convenience (Figure 3).
 
-!![Figure 3 - An example of the same open area excavation GIS platform project in Qgis (above) and in Qfield (below). Image
+!![Figure 3 - An example of the same open area excavation GIS platform project in QGIS (above) and in QField (below). Image
 by Roberto Montagnetti 2019.](../../assets/images/heritage_impact_figure3.png)
 
 In fact, primarily, by using this system, archaeologists who are working in the field
 will be able to directly register the context numbers identified during the excavation within
-Qfield, in the appropriate “context register” table in the Qfield database.
+QField, in the appropriate “context register” table in the QField database.
 
 This aspect already speeds up on-site operations by saving the time generally taken to
 go back and forth from the site to the compound or from the site to the car/van and vice
@@ -303,7 +303,7 @@ the field, it is impossible to have a constant overview of the investigation are
 archaeological features identified, which often causes confusion and making mistakes
 during the registration of the context numbers.
 
-Therefore, from this point of view, Qfield represents a real breakthrough by giving the
+Therefore, from this point of view, QField represents a real breakthrough by giving the
 following possibilities to the people working on site, at any time:
 
 i. To have a general overview of the excavation area;
@@ -313,7 +313,7 @@ ii. To query the surveyed archaeological features;
 iii. To check the shape and the orientation of the archaeological features identified in
 the Pre-Ex phase, which must be dug even when the site conditions are poor.
 
-Qfield aids with various challenges encountered in the field: time wasted due to
+QField aids with various challenges encountered in the field: time wasted due to
 inclement, wet weather and perpetually sodden and muddy soil churned up by people and
 vehicles continually accessing the site. These cause the identified archaeological features to
 become unrecognisable after several days of the site being stripped (Figure 2).
@@ -331,7 +331,7 @@ becomes increasingly difficult to see their entire length with the naked eye.
 
 Typically, in order to remedy this type of problem, archaeologists use printed maps in
 the excavation area; however, although this can certainly be a help, in practice, they are in
-no way comparable to the convenience of digital maps and consequently to Qfield for a
+no way comparable to the convenience of digital maps and consequently to QField for a
 number of reasons:
 
 1. Printed maps deteriorate very quickly due to wind, humidity and especially when
@@ -344,14 +344,14 @@ difficult to use.
 which need to be investigated with the slots when the visibility conditions on the site
 are poor.
 
-Notably, the use of Qfield on site simplifies the workload of managers and supervisors
+Notably, the use of QField on site simplifies the workload of managers and supervisors
 in the planning of the excavation interventions, allowing them to easily instruct field
 archaeologists directly in the excavation area. By doing so, they will be able to train the
 field team efficiently with accurate information regarding the features that they will have to
 dig, supporting their explanation with the graphic aid of the tablet and with details related
 to what has already been investigated and uploaded into the database of the project.
 
-Apart from the fieldwork, Qfield makes the job easier for archaeologists even in the
+Apart from the fieldwork, QField makes the job easier for archaeologists even in the
 recording phase, simplifying their work in the production of the paperwork. As we already
 mentioned, they can continuously query the tablet to obtain the necessary information
 that needs to be included in their paper documentation sheets, such as the section or plan
@@ -362,7 +362,7 @@ Furthermore, it will be much easier for them to draw the location plans that are
 generally required in the context sheets, as they will have much more pieces of information
 available to provide an interpretation of what they have dug.
 
-Another very important aspect to take into consideration when working with Qfield
+Another very important aspect to take into consideration when working with QField
 is that there is a possibility of completely removing the manual registration process of the
 slot numbers, context numbers, drawing numbers, sample numbers, photo numbers and
 so on. Simultaneously, by using this system, we can also avoid issues such as:
@@ -398,7 +398,7 @@ The main benefit of the GIS tools is that they enable us to query the features b
 us the possibility to cross-check data, which speeds up the checking process.
 
 To give a practical example, if you need to adjust the number of a context, or a drawing
-or anything else within a digital register by a number, with the Qgis “field calculator”, it
+or anything else within a digital register by a number, with the QGIS “field calculator”, it
 becomes an easy task taking only a few seconds.
 
 Just think how long it would take to perform the same task using registers and paperonly
@@ -420,7 +420,7 @@ however, if you were working on the paper documentation by hand, it could take n
 hours of hard work.
 
 One final significantly important aspect to take into consideration is the saving of
-paper and consequently the amount of money involved. The use of Qfield and digital
+paper and consequently the amount of money involved. The use of QField and digital
 documentation allows us to efficiently manage the excavation data. By working in this
 way, it is no longer necessary to print out the survey plans, the registers and the paperwork
 sheets.
@@ -431,7 +431,7 @@ print out everything at the end of the project, only once all of the amendments 
 made. This helps to avoid unnecessary waste of paper, along with all the other problems
 that were previously mentioned.
 
-Even in this case, the Qgis “print composer” allows us to develop customised layouts
+Even in this case, the QGIS “print composer” allows us to develop customised layouts
 that can be saved and used at any time.
 
 ### 6. Conclusions
@@ -454,7 +454,7 @@ any regards to the costs that are involved when scanning in thousands of sheets.
 
 Archaeological excavations are constantly driven by strict and increasingly shorter
 deadlines. The use of GIS for the management of excavation data can no longer be ignored.
-Currently, the possibility of an “Open Source” and a “pocket” GIS platform, such as Qfield,
+Currently, the possibility of an “Open Source” and a “pocket” GIS platform, such as QField,
 truly represents a unique opportunity to make the work of archaeologists on site easier,
 faster and more accurate.
 
