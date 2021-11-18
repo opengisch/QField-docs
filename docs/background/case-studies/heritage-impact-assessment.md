@@ -6,14 +6,9 @@ title: Heritage Impact Assessment
 
 ## From QGIS to QField and Vice Versa: How the New Android Application Is Facilitating the Work of the Archaeologist in the Field
 
-**Roberto Montagnetti 1,* and Giuseppe Guarino 2**
-
-<small>1 adArte s.r.l. Archeologia, Restauro, ICT, 47921 Rimini, Italy</small>
-
-<small>2 Department of History and Cultures—DISCI, University of Bologna, 40124 Bologna, Italy;
-guarino.archeo@gmail.com</small>
-
-<small>* Correspondence: robertomontagnetti@gmail.com</small>
+**Roberto Montagnetti[^1] and Giuseppe Guarino[^2]**
+[^1]: adArte s.r.l. Archeologia, Restauro, ICT, 47921 Rimini, Italy; Correspondence: robertomontagnetti@gmail.com
+[^2]: Department of History and Cultures—DISCI, University of Bologna 40124 Bologna, Italy; guarino.archeo@gmail.com
 
 <small>† Presented at the ArcheoFOSS XIII Workshop—Open Software, Hardware, Processes, Data and Formats in
 Archaeological Research, Padova, Italy, 20–22 February 2019.</small>
