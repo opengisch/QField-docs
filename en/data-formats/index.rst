@@ -15,9 +15,9 @@ Table
 +-----------------+-----------------+---------------------------------------+
 | Data Format     | Support         | Notes                                 |
 +=================+=================+=======================================+
-| Spatialite      | :yay:`✔`        |                                       |
+| SpatiaLite      | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
-| Geopackage      | :yay:`✔`        |                                       |
+| GeoPackage      | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
 | WMS             | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
@@ -25,17 +25,17 @@ Table
 +-----------------+-----------------+---------------------------------------+
 | WFS-T           | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
-| Postgis         | :yay:`✔`        |                                       |
+| PostGIS         | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
 | MBTiles         | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
 | Shapefile       | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
-| Tiff            | :yay:`✔`        |                                       |
+| GeoTIFF         | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
 | JPEG2000        | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
-| WEBP            | :yay:`✔`        |                                       |
+| WebP            | :yay:`✔`        |                                       |
 +-----------------+-----------------+---------------------------------------+
 | ECW             | :nay:`✘`        | License restricts usage.              |
 +-----------------+-----------------+---------------------------------------+
@@ -50,14 +50,21 @@ happy to help you with the implementation.
 Raster data
 ===========
 
-Raster data can become quite big quickly, when working with uncompressed tiff files it's often several Gb of data. Especially on mobile devices, this is inefficient.
-
-Use GeoPackage
-..............
-
-We recommend to us the geopackage format to deal with raster data. The following commands will convert a file called :code:`raster.tif` to a file :code:`raster.gpkg` with pyramids. Make sure you adjust ``EPSG:21781`` to your desired CRS.
+Raster data can quickly become quite big, especially when working with uncompressed file formats. Storage space being often more limited on mobile devices,
+using this kind of file is inefficient. We recommend using the GeoPackage format to deal with raster data. The following commands will convert a file
+called :code:`uncompressed.tif` to a file :code:`compressed.gpkg` with pyramids using WebP compression algorithm. Make sure you adjust ``EPSG:21781`` to your desired CRS.
 
 .. code:: bash
 
-  gdal_translate --config OGR_SQLITE_SYNCHRONOUS OFF -co  APPEND_SUBDATASET=YES -co TILE_FORMAT=WEBP -a_srs EPSG:21781 -of GPKG raster.tif raster.gpkg
-  gdaladdo --config OGR_SQLITE_SYNCHRONOUS OFF -r AVERAGE raster.gpkg 2 4 8 16 32 64 128 256
+  gdal_translate --config OGR_SQLITE_SYNCHRONOUS OFF -co APPEND_SUBDATASET=YES -co TILE_FORMAT=WEBP -a_srs EPSG:21781 -of GPKG uncompressed.tif compressed.gpkg
+  gdaladdo --config OGR_SQLITE_SYNCHRONOUS OFF -r AVERAGE compressed.gpkg 2 4 8 16 32 64 128 256
+
+It must be noted that if your data has negative or floating-point values, those will be rounded to the nearest positive integer if you convert
+to GeoPackage. This is due to the fact that internally, raster data can only be stored using PNG, JPEG or WebP compression algorithms which all support
+only positive integer values. An alternative is to store raster data as tiled GeoTIFF with pyramids using DEFLATE compression algorithm. The following commands will
+produce such file.
+
+.. code:: bash
+
+  gdal_translate -co TILED=YES -co COMPRESS=DEFLATE -a_srs EPSG:21781 -of GTiff uncompressed.tif compressed.tif
+  gdaladdo -r AVERAGE compressed.tif 2 4 8 16 32 64 128 256
