@@ -50,6 +50,17 @@ nav:
       - get-started/support.md
       - get-started/license.md
       - get-started/third-part-tutorials.md
+      - Case studies:
+          - get-started/case-studies/index.md
+          - get-started/case-studies/ecological-surveying.md
+          - get-started/case-studies/geologic-mapping.md
+          - get-started/case-studies/lulc-mapping-fiji.md
+          - get-started/case-studies/mapping-breeding-birds-in-the-Wadden-Sea.md
+          - get-started/case-studies/mosquito-malario-ground-truth-data-collection.md
+          - get-started/case-studies/river-state-survey.md
+          - get-started/case-studies/rwanda-rural-water.md
+          - get-started/case-studies/vanilla-survey.md
+          - get-started/case-studies/heritage-impact-assessment.md
   - How-to guides:
       - how-to/index.md
       - how-to/add-1-n-pictures.md
@@ -89,17 +100,6 @@ nav:
       # based on the QField, QFieldCloud and QFieldSync repos
   - Background information:
       - background/index.md
-      - Case studies:
-          - background/case-studies/index.md
-          - background/case-studies/ecological-surveying.md
-          - background/case-studies/geologic-mapping.md
-          - background/case-studies/lulc-mapping-fiji.md
-          - background/case-studies/mapping-breeding-birds-in-the-Wadden-Sea.md
-          - background/case-studies/mosquito-malario-ground-truth-data-collection.md
-          - background/case-studies/river-state-survey.md
-          - background/case-studies/rwanda-rural-water.md
-          - background/case-studies/vanilla-survey.md
-          - background/case-studies/heritage-impact-assessment.md
 # Extensions
 markdown_extensions:
   - admonition
