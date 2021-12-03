@@ -12,3 +12,5 @@ opengisch_rsa.pub
 *.DS_Store
 .idea
 .env
+Pipfile
+Pipfile.lock
