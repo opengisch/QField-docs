@@ -31,7 +31,7 @@ needs in order to show a beginner that they can achieve something with
 it.
 
 They are wholly learning-oriented, and specifically, they are oriented
-towards learning how rather than learning that.
+towards learning _how_ rather than learning _that_.
 
 ### How-to guides
 
