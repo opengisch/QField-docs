@@ -19,8 +19,7 @@ theme:
   custom_dir: theme_overrides/
   features:
     - navigation.tabs
-    - navigation.instant
-    # - navigation.sections
+    # - navigation.instant # Not compatible with i18n plugin
     - navigation.expand
     - navigation.indexes
     - navigation.top
@@ -132,15 +131,6 @@ extra_javascript:
 extra:
   # Remove "Made with Material for MkDocs" from footer
   generator: false
-  # Languages. Don't add translated content into this repo It will be
-  # added by github ci based on transifex translations.
-  alternate:
-    - name: English
-      link: https://opengisch.github.io/mkdocs_test/en/
-      lang: en
-    - name: Italiano
-      link: https://opengisch.github.io/mkdocs_test/it/
-      lang: it
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/opengisch
@@ -153,3 +143,8 @@ extra:
 plugins:
   - mkdocs-video
   - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        it: Italiano
