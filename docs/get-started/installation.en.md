@@ -22,7 +22,7 @@ do not want to use GooglePlay. You can get the qfield apk from the
 
 Windows support is currently in beta status. [Download the latest
 development
-builds](https://nightly.link/opengisch/QField/workflows/vcpkg/master/QField-dev-x64-windows-Release.zip)
+builds](https://nightly.link/opengisch/QField/workflows/desktop/master/QField-dev-x64-windows-Release.zip)
 and leave us a note how it works.
 
 ## iOS
@@ -30,3 +30,10 @@ and leave us a note how it works.
 An iOS version is in the making. You can [sign up for beta testing in
 testflight](https://testflight.apple.com/join/TbG1kJVI) to get access
 earlier than everyone else.
+
+## MacOS
+
+MacOS support is currently in beta status. [Download the latest
+development
+builds](https://nightly.link/opengisch/QField/workflows/desktop/master/QField-dev-x64-osx-Release.zip)
+and leave us a note how it works.
