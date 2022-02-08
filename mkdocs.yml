@@ -147,4 +147,35 @@ plugins:
       default_language: en
       languages:
         en: English
-        it: Italiano
+        de: German
+        fr: French
+        it: Italian
+        rm: Romansh
+        ja: Japanese
+        gl: Galician
+        pt: Portuguese
+        es: Spanish
+        hu: Hungarian
+        zh: Chinese
+        fi: Finnish
+        ro: Romanian
+        tr: Turkish
+        uk: Ukranian
+        nl: Dutch
+        bg: Bulgarian
+        cs: Czech
+        fa: Persian
+        pt_BR: Protuguese (Brazil)
+        et: Estonian
+        pl: Polish
+        he: Hebrew
+        sl: Slovenian
+        lt: Lithuanian
+        ar: Arabic
+        ca: Catalan
+        hr: Croatian
+        id: Indonesian
+        rw: Kinyarwanda
+        ru: Russian
+        ru_UA: Russian (Ukraine)
+        vi: Vietnamese

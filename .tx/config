@@ -19,7 +19,7 @@ file_filter = docs/get-started/installation.<lang>.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qfield-documentation.support]
+[qfield-documentation.support-new]
 source_file = docs/get-started/support.en.md
 file_filter = docs/get-started/support.<lang>.md
 source_lang = en
