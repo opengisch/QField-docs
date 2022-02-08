@@ -7,13 +7,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      TX_TOKEN: ${{ secrets.TX_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install -r requirements.txt
-      - run: tx pull --all
-      - run: mkdocs gh-deploy --force
+      - name: Install requirements
+        run: pip install -r requirements.txt
+      - name: Download translations
+        run: tx pull --all
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+      - name: Deploy documentation
+        run: mkdocs gh-deploy --force
