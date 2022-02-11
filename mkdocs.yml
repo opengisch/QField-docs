@@ -89,8 +89,6 @@ nav:
       - how-to/variables.md
       - how-to/movable-project.md
       - how-to/basemaps.md
-      - how-to/qfieldcloud.md
-      - how-to/qfieldsync.md
       - how-to/data-format.md
   - Technical reference:
       - reference/index.md
