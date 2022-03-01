@@ -49,6 +49,7 @@ nav:
       - get-started/support.md
       - get-started/license.md
       - get-started/third-part-tutorials.md
+      - get-started/get-started-qfieldcloud.md
       - Case studies:
           - get-started/case-studies/index.md
           - get-started/case-studies/ecological-surveying.md
@@ -143,7 +144,7 @@ plugins:
   - search
   - i18n:
       default_language: en
-      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
+      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, true]
       languages:
         en: English
         de: German
