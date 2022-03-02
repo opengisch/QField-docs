@@ -1,8 +1,11 @@
-# QField-Documentation
-This is the documentation for the [QField project](https://qfield.org)
+# QField Documentation
+This is the documentation for the QField Ecosystem composed by QField, QFieldCloud and QFieldSync.
+The documentation is deployed [here](https://docs.qfield.org).
 
 This work is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa], feel free to use it accordingly and to contribute back your updates via a [pull request](https://github.com/opengisch/QField-docs/pulls).
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa],
+feel free to use it accordingly and to contribute back your updates via a
+[pull request](https://github.com/opengisch/QField-docs/pulls).
 
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
@@ -10,11 +13,51 @@ This work is licensed under a
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-## Resources
+## Structure
 
-The final product can be found at https://qfield.org/docs/. 
+(Inspired by https://documentation.divio.com/)
 
-The documantation is separated between a documentation for QGIS users (likely a GIS manager) [preparing the project](https://qfield.org/docs/prepare) for field use and a [field worker documentation](https://qfield.org/docs/fieldwork). While the former can go into technical details, we want to keep the field worker documentation very straightforward, easy to use and foremost visual.
+The documentation is structured in four separated topics:
+
+  * Get Started
+  * How-to guides
+  * Technical references
+  * Background information
+
+### Get Started
+
+Contains lessons that take the reader by the hand through a series of
+steps to complete a project of some kind. They are what your project
+needs in order to show a beginner that they can achieve something with
+it.
+
+They are wholly learning-oriented, and specifically, they are oriented
+towards learning _how_ rather than learning _that_.
+
+### How-to guides
+
+How-to guides take the reader through the steps required to solve a
+real-world problem.
+
+They are recipes, directions to achieve a specific end - for example:
+how to create a web form; how to plot a three-dimensional data-set;
+how to enable LDAP authentication.
+
+### Technical references
+
+Reference guides are technical descriptions of the machinery and how
+to operate it.
+
+Reference guides have one job only: to describe. They are
+code-determined, because ultimately that’s what they describe: key
+classes, functions, APIs, and so they should list things like
+functions, fields, attributes and methods, and set out how to use
+them.
+
+### Background information
+
+Explanation to clarify and illuminate a particular topic. They broaden
+the documentation’s coverage of a topic.
 
 ## Process
 
@@ -47,14 +90,16 @@ If you want more information about forking you can find it
 [here](https://help.github.com/articles/fork-a-repo/).
 
 You most likely want to make changes to the files in the folder `en`. That's
-where all the real documentation text is located. The documentation is writtenh
-in reStructuredText, a simple syntax to structure the text. You can find
-information about it in the [reStructuredText
-Primer](http://sphinx-doc.org/rest.html) or by looking at what is already in
-the documentation and make your changes according to it.
+where all the real documentation text is located.
 
 #### Testing your changes
-To quickly test locally the changes you made you can run `make devhtml`from the top-level directory. This will quickly generate the english only version of your new documentation. The HTML will be generated in `build/html/en`. From there you can open `index.html` and explore your local copy of the documentation.
+
+```sh
+pipenv install -r requirements.txt
+pipenv run mkdocs serve
+```
+
+The local doc will be available at http://localhost:8000
 
 #### Contribute changes
 
@@ -77,5 +122,5 @@ documentation chapter to translate. There is a `Translate` button after
 choosing a chapter.
 
 If your language is not yet available, we will happily add it for you. Just
-[open an issue](https://github.com/opengisch/QField-docs/g/issues/new) and tell us which
+[open an issue](https://github.com/opengisch/QField-docs/issues/new) and tell us which
 language you would like to translate it to.
