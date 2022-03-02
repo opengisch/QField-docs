@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          path: repo  # because of a bug in transifex-client the repo dir name cannot contain the doc dir name (e.g. qfield-docs and docs)
+          path: main  # because of a bug in transifex-client the repo dir name cannot contain the doc dir name (e.g. qfield-docs and docs)
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9  # transifex-client has compatibility problem with 3.10
