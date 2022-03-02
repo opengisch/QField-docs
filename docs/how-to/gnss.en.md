@@ -139,6 +139,9 @@ Vertical grid shift files have to be made available to QField by putting
 them into the QField base folder (`[external
 storage]/QField/proj`).
 
+Once the grid shift file is placed there it is available in QField in
+the `Positioning settings` under `Vertical grid shift in use`.
+
 If you are using altitude correction and an external bluetooth connected
 antenna consider turning `Use orthometric altitude from
 device` off.
