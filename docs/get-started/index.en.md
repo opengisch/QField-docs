@@ -23,7 +23,7 @@ The requirements on the field are not the same as on a desktop. The
 screen is smaller, the input devices are different and the tasks are
 different.
 
-QField aims to help the user to perform the tasks he needs to do without
+QField aims to help users to perform the tasks they need to do without
 cluttering the user interface. This means, that only tasks which need to
 be done on the field are availble from the interface. Everything else is
 not.
@@ -52,7 +52,7 @@ yet.
 
 QField is built around *modes*. Modes are similar to a *map tool* in
 QGIS desktop. A mode defines the task which a user is currently doing.
-Either a user is *browsing* through the data or he is *digitizing*
+Either a user is *browsing* through the data or she is *digitizing*
 something new.
 
 ## QFieldCloud
