@@ -1,8 +1,8 @@
 ---
-title: Third part tutorials
+title: Third-party tutorials
 ---
 
-# Third part tutorials
+# Third-party tutorials
 
 Here you can find some great tutorials created by our community:
 
