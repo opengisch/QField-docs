@@ -1,5 +1,6 @@
 # QField Documentation
-This is the documentation for the QField Ecosystem composed by QField, QFieldCloud and QFieldSync
+This is the documentation for the QField Ecosystem composed by QField, QFieldCloud and QFieldSync.
+The documentation is deployed [here](https://docs.qfield.org).
 
 This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa],
