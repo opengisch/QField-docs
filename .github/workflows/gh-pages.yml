@@ -19,7 +19,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Configure transifex
         run: |
-          tx config mapping-bulk -p qfield-documentation --source-language en --type MD -f '.md' --source-file-dir docs --expression 'docs/{filepath}/{filename}.<lang>.{extension}' --execute
+          tx config mapping-bulk -p qfield-documentation --source-language en --type GITHUBMARKDOWN -f '.md' --source-file-dir docs --expression 'docs/{filepath}/{filename}.<lang>{extension}' --execute
+           cat .tx/config
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
   #     - name: Push translations
