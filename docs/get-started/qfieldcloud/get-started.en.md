@@ -1,5 +1,5 @@
 ---
-title: Get started with QField Cloud
+title: Get started
 ---
 
 # Getting started guide
@@ -16,27 +16,27 @@ Fill in the registration form and choose a password.
 ### Install QFieldSync
 Enable experimental plugins in QGIS by going to the `Plugins -> Manage and install Plugins…` menu. Then click the `Settings` with the yellow icon on the left. Mark the second checkbox `Show also experimental plugins` as checked.
 
-!![Show also experimental plugins](../assets/images/getting_started_plugin_settings.png)
+!![Show also experimental plugins](../../assets/images/getting_started_plugin_settings.png)
 Find QFieldSync in the list of plugins and install the latest experimental version by clicking the `Upgrade Experimental Plugin` button.
 
 > NOTE: since QFieldSync is still in beta phase, there are regular updates and fixes at least once a week. Please upgrade your experimental QFieldSync at least once a week. In case of an issue, please try upgrading to the latest experimental release before reporting.
 
-![Successful installation](../assets/images//getting_started_plugin_installed.png)
+![Successful installation](../../assets/images//getting_started_plugin_installed.png)
 
 After successful installation, a new toolbar appears:
 
-![Toolbar](../assets/images/getting_started_toolbar.png)
+![Toolbar](../../assets/images/getting_started_toolbar.png)
 
 ### Login to QFieldCloud
 
 Click the cloud icon in the QFieldSync toolbar.
 A new login screen will appear:
 
-![Login screen](../assets/images/getting_started_qfc_login.png)
+![Login screen](../../assets/images/getting_started_qfc_login.png)
 
 Explore the projects overview screen: your current user underlined and blue, a logout button down-left, a cloud button to create a new project and, on the right, a refresh button to grab the freshest project list. Newly registered users will see an empty table and as soon as they create new projects, the list will grow. The projects overview screen looks like this:
 
-![Projects overview](../assets/images/getting_started_projects_overview.png)
+![Projects overview](../../assets/images/getting_started_projects_overview.png)
 
 ### Create and configure your project
 
@@ -50,7 +50,7 @@ To convert a current project, a completely empty directory is mandatory.
 * "Create a new empty QFieldCloud project".
 A new blank QFieldCloud project will be created. You will be responsible to move all the project-related files within the selected local directory, with the project file at its root. Project files will only be uploaded when you click the synchronize button. Make sure the selected contains no more than one QGIS project file.
 
-![Project details](../assets/images/getting_started_how_create_project.png)
+![Project details](../../assets/images/getting_started_how_create_project.png)
 
 A form will ask you for project name, description and local directory. In the local directory you can get different situations:
 
@@ -63,20 +63,20 @@ A form will ask you for project name, description and local directory. In the lo
 * Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
 
 
-![Project details](../assets/images/getting_started_project_details.png)
+![Project details](../../assets/images/getting_started_project_details.png)
 
-Configure the project layers by clicking the fifth icon in the QFieldSync toolbar. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer.![Layers configuration](../assets/images/getting_started_toolbar_config_layers.png)
+Configure the project layers by clicking the fifth icon in the QFieldSync toolbar. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer.![Layers configuration](../../assets/images/getting_started_toolbar_config_layers.png)
 
-It is recommended to use GeoPackage layers for collaborative editing. See the [advanced setup guide](advanced_setup.md) for more information about vector formats support.
+It is recommended to use GeoPackage layers for collaborative editing. See the [advanced setup guide](advanced-setup.md) for more information about vector formats support.
 
 Any QField supported raster and vector layer formats may be used as read-only data.
 
-![Project properties](../assets/images/getting_started_project_properties.png)
+![Project properties](../../assets/images/getting_started_project_properties.png)
 
 ### Upload a project
 Once configured, you can press the cloud button to open the synchronization dialog. Here you have to decide what do you prefer: the local file or the file on the cloud.
 
-![Synchronize](../assets/images/getting_started_synchronize.png)
+![Synchronize](../../assets/images/getting_started_synchronize.png)
 
 Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
 
@@ -90,25 +90,25 @@ Do not use this version in production!
 
 ### Start working on your project
 
-![Screenshot : Splash scren](../assets/images/getting_started_splashscreen.png)
+![Screenshot : Splash scren](../../assets/images/getting_started_splashscreen.png)
 
 Login with your username and password
 
-![Screenshot : Login](../assets/images/getting_started_login.png)
+![Screenshot : Login](../../assets/images/getting_started_login.png)
 
 Select a project to download on your device:
 
-![Screenshot : Download](../assets/images/getting_started_download_project.png)
+![Screenshot : Download](../../assets/images/getting_started_download_project.png)
 
 
 ### Synchronise your changes
 Make a change to your project. Either create a new feature, delete a feature, or modify the geometry or attributes.
 Open the blue cloud button on the top left of the screen:
 
-![Screenshot : Blue button](../assets/images/getting_started_blue_button.png)
+![Screenshot : Blue button](../../assets/images/getting_started_blue_button.png)
 
 Choose an action with the change you made to your project. Each of the actions have an explanation what you should expect to happen:
 
-![Screenshot : Actions](../assets/images/getting_started_actions.png)
+![Screenshot : Actions](../../assets/images/getting_started_actions.png)
 
 Your changes are now available to everyone who has access to your project.
