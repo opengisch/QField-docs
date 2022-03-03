@@ -50,7 +50,9 @@ nav:
       - get-started/support.md
       - get-started/license.md
       - get-started/third-part-tutorials.md
-      - get-started/get-started-qfieldcloud.md
+      - QFieldCloud:
+          - get-started/qfieldcloud/get-started.md
+          - get-started/qfieldcloud/advanced-setup.md
       - Case studies:
           - get-started/case-studies/index.md
           - get-started/case-studies/ecological-surveying.md
