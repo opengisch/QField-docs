@@ -27,29 +27,29 @@ jobs:
             --source-file-dir documentation \
             --expression 'documentation/{filepath}/{filename}.<lang>{extension}' \
             --execute
-            cat .tx/config
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
-      # - name: Push translations
-      #   run: |
-      #     tx push -s --parallel
-      #   env:
-      #     TX_TOKEN: ${{ secrets.TX_TOKEN }}
+      - name: Push translations
+        run: |
+          tx push -s --parallel
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
-  # deploy:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - uses: actions/setup-python@v2
-  #       with:
-  #         python-version: 3.9  # transifex-client has compatibility problem with 3.10
-  #     - name: Install requirements
-  #       run: pip install -r requirements.txt
-  #     - name: Pull translations
-  #       run: |
-  #         tx pull --all --parallel
-  #       env:
-  #         TX_TOKEN: ${{ secrets.TX_TOKEN }}
-  #     - name: Deploy documentation
-  # TODO: translations variable!
-  #       run: mkdocs gh-deploy --force
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9  # transifex-client has compatibility problem with 3.10
+      - name: Install requirements
+        run: pip install -r requirements.txt
+      - name: Pull translations
+        run: |
+          tx pull --all --parallel
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+      - name: Deploy documentation
+        run: mkdocs gh-deploy --force
+        env:
+          DEFAULT_LANGUAGE_ONLY: false
