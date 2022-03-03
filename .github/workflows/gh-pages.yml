@@ -18,7 +18,10 @@ jobs:
         with:
           python-version: 3.9  # transifex-client has compatibility problem with 3.10
       - name: Install requirements
-        run: pip install -r requirements.txt
+        run: |
+          pwd
+          ls -lah
+          pip install -r requirements.txt
       - name: Configure transifex
         run: |
           tx config mapping-bulk -p qfield-documentation --source-language en --type GITHUBMARKDOWN -f '.md' --source-file-dir docs --expression 'docs/{filepath}/{filename}.<lang>{extension}' --execute
@@ -46,4 +49,5 @@ jobs:
   #       env:
   #         TX_TOKEN: ${{ secrets.TX_TOKEN }}
   #     - name: Deploy documentation
+  # TODO: translations variable!
   #       run: mkdocs gh-deploy --force
