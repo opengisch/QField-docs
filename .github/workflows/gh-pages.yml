@@ -33,16 +33,6 @@ jobs:
           tx push -s --parallel
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
-
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.9  # transifex-client has compatibility problem with 3.10
-      - name: Install requirements
-        run: pip install -r requirements.txt
       - name: Pull translations
         run: |
           tx pull --all --parallel
