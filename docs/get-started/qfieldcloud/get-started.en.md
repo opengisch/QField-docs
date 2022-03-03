@@ -1,5 +1,5 @@
 ---
-title: Get started with QFieldCloud
+title: Get started
 ---
 
 # Getting started guide
