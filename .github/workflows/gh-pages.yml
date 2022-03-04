@@ -41,7 +41,6 @@ jobs:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
       - name: Deploy documentation
         run: mkdocs gh-deploy --force
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_LANGUAGE_ONLY: false
