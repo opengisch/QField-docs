@@ -3,6 +3,7 @@ on:
   push:
     branches: 
       - master
+      - token
   schedule:
     - cron: '30 1 * * *'
 
@@ -40,5 +41,7 @@ jobs:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
       - name: Deploy documentation
         run: mkdocs gh-deploy --force
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         env:
           DEFAULT_LANGUAGE_ONLY: false
