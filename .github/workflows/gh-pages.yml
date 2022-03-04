@@ -3,7 +3,6 @@ on:
   push:
     branches: 
       - master
-      - token
   schedule:
     - cron: '30 1 * * *'
 
