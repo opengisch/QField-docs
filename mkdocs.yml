@@ -9,7 +9,7 @@ docs_dir: documentation  # because of a bug in transifex-client the repo dir nam
 # Repository
 repo_name: opengisch/qfield
 repo_url: https://github.com/opengisch/qfield
-edit_uri: https://github.com/opengisch/qfield-docs/tree/master/docs/
+edit_uri: https://github.com/opengisch/qfield-docs/tree/master/documentation/
 
 # Copyright
 copyright: Copyright &copy; 2021 <a href="https://OPENGIS.ch">OPENGIS.ch</a>
