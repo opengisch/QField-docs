@@ -5,7 +5,7 @@ title: Sponsor
 # Sponsor QField
 
 ## Recurring sponsoring
-https://github.com/sponsors/opengisch
+The best way to financially support QField is by subscribing to one of the monthly sponsorships via the [GitHub sponsoring program](https://github.com/sponsors/opengisch)
 
 ## Crowdfundings
 Currently no crowdfundings are active
