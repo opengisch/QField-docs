@@ -5,9 +5,9 @@ title: Development
 # Development
 
 if you want to get involved in QField development, please refer to the following doumentations:
-- [QField repository](https://github.com/opengisch/QField/blob/master/doc/dev.md)
-- [QFieldCloud repository](https://github.com/opengisch/qfieldcloud)
-- [QFieldSync repository](https://github.com/opengisch/QFieldSync)
+  - [QField repository](https://github.com/opengisch/QField/blob/master/doc/dev.md)
+  - [QFieldCloud repository](https://github.com/opengisch/qfieldcloud)
+  - [QFieldSync repository](https://github.com/opengisch/QFieldSync)
 
 ## Credits
 
