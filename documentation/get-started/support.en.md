@@ -22,7 +22,7 @@ create your own custom app.
 You can ask your questions on
 [gis.stackexchange](http://gis.stackexchange.com/questions/tagged/qfield?sort=newest)
 
-You can use the [user mailing list](http://lists.qfield.org/listinfo.cgi/users-qfield.org)
+You can use the [user discussions platform](https://github.com/opengisch/qfield/discussions)
 
 ## Funding
 
