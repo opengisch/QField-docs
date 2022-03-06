@@ -46,10 +46,10 @@ nav:
   - Get started:
       - get-started/index.md
       - get-started/installation.md
-      - get-started/development.md
       - get-started/support.md
       - get-started/sponsor.md
       - get-started/license.md
+      - get-started/development.md
       - get-started/third-part-tutorials.md
       - QFieldCloud:
           - get-started/qfieldcloud/get-started.md
