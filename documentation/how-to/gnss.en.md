@@ -1,15 +1,69 @@
 ---
-title: GNSS and precision measurement
+title: GNSS
 ---
 
-# GNSS and precision measurement
+# GNSS
 
 QField can make use of the internal GNSS (Global Navigation Satellite
 System, like GPS, GLONASS, Galileo or Beidou). QField can also connect
 to external antennas through bluetooth and directly integrate their NMEA
 stream.
 
-## Quality indication
+GNSS devices are also capable of measuring the altitude next to the current 2D
+position on the earth surface.
+
+## Configuration
+:material-desktop-mac:{ .device-icon } Desktop preparation
+
+### Vertex log
+
+It is possible to setup a log layer of the collected vertices. This
+allows to keep track of meta data for each vertex like GNSS quality
+attributes and more. To set this up, a point layer can be added to the
+project and attributes configured to store this information.
+
+![](../assets/images/vertex_log1.png){width="600px"}
+
+Then the user assigns the role "digitizing logger" on a point layer.
+
+Go to QFieldSync --> project Properties
+
+![](../assets/images/vertex_log2.png){width="600px"}
+
+The layer fields must have default value with GNSS variables.
+
+### Accuracy requirement
+
+A minimum desired accuracy for measurements can be defined. The quality
+will be reported in three classes, bad (red), ok (yellow) and excellent
+(green). These colors will show up as a dot on top of the GNSS button.
+
+The thresholds can be defined in the positioning settings.
+
+If the `Enable accuracy requirement` setting is activated, a
+user will not be able to collect new measurements with the cursor
+snapped to the position with an accuracy value which is bad (red).
+
+### Antenna height compensation
+
+The height of the antenna pole in use can be defined in the settings.
+Any measured altitude will be corrected by this value.
+
+### Altitude correction / vertical grid shift
+
+Altitude values can be corrected with vertical grid shift files to
+calculate orthometric height
+
+Vertical grid shift files have to be made available to QField by putting
+them into the QField base folder (`[external
+storage]/QField/proj`).
+
+Once the grid shift file is placed there it is available in QField in
+the `Positioning settings` under `Vertical grid shift in use`.
+
+If you are using altitude correction and an external bluetooth connected
+antenna consider turning `Use orthometric altitude from
+device` off.
 
 ### Additional variables
 
@@ -75,6 +129,9 @@ track of the quality of individual measured points.
         'A' = Automatic, 3D/2D) as reported by the sensor. It is only
         available when the crosshair is snapped to the sensor. - E
 
+!!! info
+    I: Internal position source E: External (NMEA) position source
+
 All `@position_*` variables have a corresponding `@gnss_*` variable.
 The gnss variables always report the gnss sensor values, even when the
 crosshair is not snapped.
@@ -92,56 +149,47 @@ Examples:
             is `NULL`. - `@position_source_name` --> The value is
             `manual`.
 
-I: Internal position source E: External (NMEA) position source
 
-### Vertex log
+## Usage
+:material-tablet-android:{ .device-icon } Fieldwork
 
-It is possible to setup a log layer of the collected vertices. This
-allows to keep track of meta data for each vertex like GNSS quality
-attributes and more. To set this up, a point layer can be added to the
-project and attributes configured to store this information.
+A short press on the GNSS button will turn on the GNSS and center to the
+current location once positioning information is available.
 
-![](../assets/images/vertex_log1.png){width="600px"}
+Activate edit mode and press on the target button, the cross in the
+center means it is using GNSS positioning.
 
-Then the user assigns the role "digitizing logger" on a point layer.
+!![](../assets/images/gnss_use.webp)
 
-Go to QFieldSync --> project Properties
+A long press on the GNSS button will show the positioning menu.
 
-![](../assets/images/vertex_log2.png){width="600px"}
+Inside the positioning menu you can turn on the positioning display
+which will show the current coordinates which are reprojected into the
+project CRS along with precision information.
 
-The layer fields must have default value with GNSS variables.
+!![](../assets/images/user-guide_gps.jpg)
 
-### Accuracy requirement
+!!! note
+    If you see WGS 84 lat/lon information instead of information in your
+    project CRS, you probably have no signal yet.
 
-A minimum desired accuracy for measurements can be defined. The quality
-will be reported in three classes, bad (red), ok (yellow) and excellent
-(green). These colors will show up as a dot on top of the GNSS button.
+## Using an external GNSS-Receiver
+:material-tablet-android:{ .device-icon } Fieldwork
 
-The thresholds can be defined in the positioning settings.
+QField supports connecting external GNSS antennas via bluetooth.
 
-If the `Enable accuracy requirement` setting is activated, a
-user will not be able to collect new measurements with the cursor
-snapped to the position with an accuracy value which is bad (red).
+In settings -> positioning, paired bluetooth devices can be scanned and
+chosen as position source.
 
-## Altitude
+Make sure no other app like mock location providers are using the
+bluetooth antenna.
 
-### Antenna height compensation
+![type:video](https://player.vimeo.com/video/604667820)
 
-The height of the antenna pole in use can be defined in the settings.
-Any measured altitude will be corrected by this value.
+## Mock location
+:material-tablet-android:{ .device-icon } Fieldwork
 
-### Altitude correction / vertical grid shift
+It is possible to provide a mock location via a separate android app to
+QField. There are several options for this, one of them is [Android NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).
 
-Altitude values can be corrected with vertical grid shift files to
-calculate orthometric height
-
-Vertical grid shift files have to be made available to QField by putting
-them into the QField base folder (`[external
-storage]/QField/proj`).
-
-Once the grid shift file is placed there it is available in QField in
-the `Positioning settings` under `Vertical grid shift in use`.
-
-If you are using altitude correction and an external bluetooth connected
-antenna consider turning `Use orthometric altitude from
-device` off.
+To use this you have to [enable mock locations on your Android device](https://www.youtube.com/watch?v=v1eRHmMiRJQ).

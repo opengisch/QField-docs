@@ -4,7 +4,8 @@ title: Advanced Setup
 
 # Advanced setup guide
 
-> **Need Help?** We have a [community discussion platform](https://github.com/opengisch/qfieldcloud/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
+!!! help
+    We have a [community discussion platform](https://github.com/opengisch/qfieldcloud/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
 
 
 ## Supported vector providers
@@ -30,7 +31,8 @@ If you would like to set up relations, it is recommended to add a UUID field on 
 3. Download results on QGIS desktop:
     1. In QFieldSync, download the updated files (the GeoPackage file should have changed).
 
-> IMPORTANT NOTE : this workflow does not support changing the GeoPackage on the desktop, as being file base, the whole GeoPackage will be replaced. This means that data can only be digitized using QFieldCloud.
+!!! attention
+    This workflow does not support changing the GeoPackage on the desktop, as being file base, the whole GeoPackage will be replaced. This means that data can only be digitized using QFieldCloud.
 
 
 ## PostGIS
@@ -53,6 +55,8 @@ It requires your database to be publicly accessible and credentials must be save
 3. See results on QGIS desktop:
     1. All changes should be directly visible on the PostGIS database.
 
-> NOTE : when using `direct database access`, QFieldCloud will directly edit data on the PostGIS database. This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).
+!!! note
+    When using `direct database access`, QFieldCloud will directly edit data on the PostGIS database. This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).
 
-> NOTE : when using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database. This is the best choice if the connection in the field is not reliable. Changes will only be visible to users once they sync to QFieldCloud. As a local copy is created, advanced PostGIS features will not be available on QField. Just like for regular GeoPackages, if you define relationships, it is recommended to use UUIDs instead of integer primary keys to avoid conflicts if multiple users create data at the same time.
+!!! note
+    When using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database. This is the best choice if the connection in the field is not reliable. Changes will only be visible to users once they sync to QFieldCloud. As a local copy is created, advanced PostGIS features will not be available on QField. Just like for regular GeoPackages, if you define relationships, it is recommended to use UUIDs instead of integer primary keys to avoid conflicts if multiple users create data at the same time.

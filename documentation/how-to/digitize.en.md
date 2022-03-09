@@ -4,7 +4,10 @@ title: Digitize
 
 # Digitize
 
+QField allows to digitize, edit and delete Points, Lines and Polygons on the field. It also supports snapping.
+
 ## Collect features
+:material-tablet-android:{ .device-icon } Fieldwork
 
 To start digitizing new features, enable the **Edit mode** in the main
 menu (*pencil button*) and select the layer on which you want to add a
@@ -55,18 +58,8 @@ layer, these attributes will be automatically pre-filled.
 
 ![type:video](https://player.vimeo.com/video/526919606)
 
-## Delete features
-
-Deleting features is only possible in digitize mode.
-
-!![](../assets/images/delete_features.webp){width="300px"}
-
-To delete a feature, identify it first by a short tap on it. Then select
-it with a long press in the identification list, select further features
-to delete if you want and click the trash button to confirm the
-deletion.
-
 ## Edit features
+:material-tablet-android:{ .device-icon } Fieldwork
 
 To edit, tap on **Menu button -> pencil.**
 
@@ -117,3 +110,44 @@ You can make a multi-selection and edit all the features at the same
 time. In some cases, it can be very efficient.
 
 ![type:video](https://player.vimeo.com/video/499565955)
+
+## Delete features
+:material-tablet-android:{ .device-icon } Fieldwork
+
+Deleting features is only possible in digitize mode.
+
+!![](../assets/images/delete_features.webp){width="300px"}
+
+To delete a feature, identify it first by a short tap on it. Then select
+it with a long press in the identification list, select further features
+to delete if you want and click the trash button to confirm the
+deletion.
+
+## Snapping
+:material-desktop-mac:{ .device-icon } Desktop preparation
+
+While digitizing new features, new points can be snapped to existing
+geometries.
+
+All configuration can be done in
+`Project --> Snapping Settings`
+(`Settings --> Snapping Settings` in QGIS 2.x).
+
+### Snapping Types
+
+It is possible to snap new points
+
+-   only to nodes of existing geomtries
+-   only to segments of existing geomtries
+-   to nodes and segments of existing geomtries
+
+### Snapping to layers
+
+It is also possible to only snap to one or a few layers.
+
+### Snapping tolerance
+
+The snapping tolerance can be specified in map units or pixels.
+
+In almost any case, the units should be set to pixels. We made good
+experiences with a tolerance value of 20.

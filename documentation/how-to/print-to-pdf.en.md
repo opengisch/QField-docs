@@ -6,6 +6,9 @@ title: Print to PDF
 
 It's possible to export the maps and other items to a PDF document.
 
+## Usage
+:material-tablet-android:{ .device-icon } Fieldwork
+
 If the project has at least one print layout defined, printing is
 available over the menu.
 

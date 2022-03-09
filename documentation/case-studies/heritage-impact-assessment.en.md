@@ -3,8 +3,7 @@ title: Heritage Impact Assessment
 ---
 
 # Heritage Impact Assessment using QField
-
-## From QGIS to QField and Vice Versa: How the New Android Application Is Facilitating the Work of the Archaeologist in the Field
+From QGIS to QField and Vice Versa: How the New Android Application Is Facilitating the Work of the Archaeologist in the Field
 
 **Roberto Montagnetti[^1] and Giuseppe Guarino[^2]**
 [^1]: adArte s.r.l. Archeologia, Restauro, ICT, 47921 Rimini, Italy; Correspondence: robertomontagnetti@gmail.com

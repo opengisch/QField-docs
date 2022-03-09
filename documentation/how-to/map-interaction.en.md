@@ -4,7 +4,10 @@ title: Interact with the map
 
 # Interact with the map
 
+Here are described some of the possible interaction with the map possible in QField.
+
 ## Map legend
+:material-tablet-android:{ .device-icon } Fieldwork
 
 Open the **Main menu** and expend the layers list to display the legend
 of the map.
@@ -12,12 +15,14 @@ of the map.
 !![](../assets/images/user-guide_legend.png)
 
 ## Turning on and off layers
+:material-tablet-android:{ .device-icon } Fieldwork
 
 `Main menu --> long press on the layer --> check or uncheck show on map canvas`
 
 !![](../assets/images/turning_on_off.webp)
 
 ## Identify features
+:material-tablet-android:{ .device-icon } Fieldwork
 
 Tap on a feature on the map to identify it. If several features are
 located where you tapped (either because there are multiple features
@@ -44,6 +49,7 @@ You can manage this layerlist in QGIS desktop in
 `Project --> Project Properties --> Identify Layers` and uncheck the base layers.
 
 ## Measure tool
+:material-tablet-android:{ .device-icon } Fieldwork
 
 Open the **Main menu** --> tap the settings button --> Measure Tool
 

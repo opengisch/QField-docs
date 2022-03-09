@@ -4,7 +4,8 @@ title: Get started
 
 # Getting started guide
 
-> **Need Help?** We have a [community discussion platform](https://github.com/opengisch/qfieldcloud/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
+!!! help
+    We have a [community discussion platform](https://github.com/opengisch/qfieldcloud/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
 
 
 ## Get a QFieldCloud account
@@ -19,7 +20,8 @@ Enable experimental plugins in QGIS by going to the `Plugins -> Manage and insta
 !![Show also experimental plugins](../../assets/images/getting_started_plugin_settings.png)
 Find QFieldSync in the list of plugins and install the latest experimental version by clicking the `Upgrade Experimental Plugin` button.
 
-> NOTE: since QFieldSync is still in beta phase, there are regular updates and fixes at least once a week. Please upgrade your experimental QFieldSync at least once a week. In case of an issue, please try upgrading to the latest experimental release before reporting.
+!!! note
+    Since QFieldSync is still in beta phase, there are regular updates and fixes at least once a week. Please upgrade your experimental QFieldSync at least once a week. In case of an issue, please try upgrading to the latest experimental release before reporting.
 
 ![Successful installation](../../assets/images//getting_started_plugin_installed.png)
 
@@ -86,7 +88,8 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
 Download and install the latest version of [QField from the play store](https://play.google.com/store/apps/details?id=ch.opengis.qfield_dev). Scroll to the bottom and enable beta testing.
 Do not use this version in production!
 
-> NOTE: since QField 2.0 is still in beta phase, there are regular updates and fixes at least on a weekly basis. Please upgrade your experimental QField at least once a week. In case of an issue, please try to reproduce on the latest release before reporting.
+!!! note
+    Since QField 2.0 is still in beta phase, there are regular updates and fixes at least on a weekly basis. Please upgrade your experimental QField at least once a week. In case of an issue, please try to reproduce on the latest release before reporting.
 
 ### Start working on your project
 

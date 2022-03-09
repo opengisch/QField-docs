@@ -196,3 +196,7 @@
     background-color:var(--md-primary-bg-color);
     border-color:var(--md-primary-bg-color)
 }
+
+.device-icon {
+  color: #ff4143;
+}
