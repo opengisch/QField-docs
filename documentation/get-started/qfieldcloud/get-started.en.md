@@ -5,7 +5,7 @@ title: Get started
 # Getting started guide
 
 !!! help
-    We have a [community discussion platform](https://github.com/opengisch/qfieldcloud/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
+    We have a [community discussion platform](https://github.com/opengisch/qfield/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
 
 
 ## Get a QFieldCloud account
