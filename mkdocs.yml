@@ -81,6 +81,7 @@ nav:
       - QFieldCloud:
           - reference/qfieldcloud/permissions.md
           - reference/qfieldcloud/swagger.md
+          - reference/qfieldcloud/system.md
   - Case studies:
       - case-studies/index.md
       - case-studies/ecological-surveying.md
