@@ -200,3 +200,7 @@
 .device-icon {
   color: #ff4143;
 }
+
+div.special_table + div > div > table th{
+    min-width: 1px !important;
+}

@@ -78,7 +78,9 @@ nav:
   - Technical reference:
       - reference/index.md
       - reference/data-format.md
-      - reference/qfieldcloud/swagger.md
+      - QFieldCloud:
+          - reference/qfieldcloud/permissions.md
+          - reference/qfieldcloud/swagger.md
   - Case studies:
       - case-studies/index.md
       - case-studies/ecological-surveying.md

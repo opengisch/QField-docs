@@ -1,5 +1,5 @@
 ---
-title: QFieldCloud REST API
+title: REST API
 ---
 # 
 
