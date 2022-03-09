@@ -1,6 +1,6 @@
 # Project information
 site_name: QField Ecosystem Documentation
-site_url: https://qfield.org/
+site_url: https://docs.qfield.org/
 site_author: OPENGIS.ch
 site_description: >-
   This site contains documentation of products that belong to the QField ecosystem: QField itself, the app for having QGIS at your fingertips, QFieldCloud which allows online synchronization of data, and QFieldSync which allows QGIS to communicate with QFieldCloud.
