@@ -1,19 +1,15 @@
 ---
-title: Map styling and configuration
+title: Map styling
 ---
 
-# Map styling and configuration
-
-Most of the settings which QGIS offers are directly supported by QField
-without any extra effort.
-
-## Style
+# Map styling
 
 All style settings from QGIS are directly supported by QField. This
 includes all renderer types like graduated, categorized, rule based,
 2.5D as well as data defined symbology.
 
 ## Display Expression
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 In QField, objects are identified with a name. The expression to
 generate this name can be defined by opening the attribute table in QGIS
@@ -29,6 +25,7 @@ The display expression is also used to search in layers.
 identification string throughout QField.](../assets/images/define_display_expression.png)
 
 ## Read only, non-identifiable and searchable layers
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 Some layers in a project are just there for pure visual purpose. Such
 layers should not show up when a user taps somewhere to identify
@@ -48,35 +45,37 @@ desired behavior.
 !![Configuration of layers that will not be identifiable, not modifiable
 and/or not searchable.](../assets/images/project_configuration_readonly.png)
 
-## Snapping
+## Using additional fonts
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
-While digitizing new features, new points can be snapped to existing
-geometries.
+In QField, you are able to use all the fonts you want.
 
-All configuration can be done in
-`Project --> Snapping Settings`
-(`Settings --> Snapping Settings` in QGIS 2.x).
+There are two different possibilities to register additional fonts:
 
-### Snapping Types
+1.  By adding fonts (.ttf or .otf) on the device in the folder `/[device
+    root]/QField/fonts`; those will be made accessible to
+    all projects and individual datasets.
+2.  By adding fonts (.ttf or .otf) in the same folder as a given project
+    file (.qgs or .qgz); those will be accessible only when viewing that
+    project file.
 
-It is possible to snap new points
+## Custom SVG symbols
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
--   only to nodes of existing geomtries
--   only to segments of existing geomtries
--   to nodes and segments of existing geomtries
+It is possible to embed SVG symbols directly within a QGIS projects.
 
-### Snapping to layers
-
-It is also possible to only snap to one or a few layers.
-
-### Snapping tolerance
-
-The snapping tolerance can be specified in map units or pixels.
-
-In almost any case, the units should be set to pixels. We made good
-experiences with a tolerance value of 20.
-
-## 3D Coordinates
-
-GPS devices are capable of measuring the altitude next to the current 2D
-position on the earth surface. This information can be saved
+1.  Choose the layer which will support SVG symbology and open its
+    properties dialog.
+2.  Open the section Symbology in `Properties --> Symbology`
+3.  In the `Symbol Layer Panel` choose Simple marker.
+!![](../assets/images/symbol_layer_panel.png)
+4.  Change the Symbol layer type in `Symbol layer type --> SVG marker`.
+!![](../assets/images/symbol_layer_type.png)
+5.  Scroll down the bottom panel.
+6.  Click on the right side of the file selection button to open the
+    drop down menu.
+!![](../assets/images/drop_down_svg_menu.png)
+7.  Select Embed File and choose the SVG file in the file selection
+    dialog.
+8.  Apply the changes and click OK.
+!![](../assets/images/custom_svg_symbols.gif)

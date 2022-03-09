@@ -56,33 +56,25 @@ nav:
           - get-started/qfieldcloud/advanced-setup.md
   - How-to guides:
       - how-to/index.md
-      - how-to/add-1-n-pictures.md
-      - how-to/advanced.md
-      - how-to/allow-hiding-legend-nodes.md
+      - how-to/projects.md
+      - how-to/pictures.md
+      - how-to/gnss.md
+      - how-to/digitize.md
+      - how-to/print-to-pdf.md
+      - how-to/search.md
+      - how-to/tracking.md
+      - how-to/variables.md
+      - how-to/map-interaction.md
+      - how-to/basemaps.md
+      - how-to/map-styling.md
+      - how-to/map-themes.md
       - how-to/attributes-form.md
       - how-to/authentication.md
-      - how-to/change-fonts.md
-      - how-to/custom-svg.md
-      - how-to/display-expression.md
-      - how-to/gnss.md
+      - how-to/itinerary.md
+      - how-to/hiding-legend-nodes.md
       - how-to/live_default_value.md
-      - how-to/map-styling-configuration.md
-      - how-to/map-themes.md
       - how-to/outside-layers.md
-      - how-to/picture_path.md
-      - how-to/live_default_value-field.md
-      - how-to/gps.md
-      - how-to/digitize.md
-      - how-to/map-themes-field.md
-      - how-to/map-interaction.md
-      - how-to/opening_individual_data.md
-      - how-to/print-to-pdf.md
-      - how-to/track_lines_polygons.md
-      - how-to/search.md
-      - how-to/projects.md
-      - how-to/variables.md
       - how-to/movable-project.md
-      - how-to/basemaps.md
   - Technical reference:
       - reference/index.md
       - reference/data-format.md

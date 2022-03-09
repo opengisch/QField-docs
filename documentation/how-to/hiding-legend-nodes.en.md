@@ -1,8 +1,13 @@
 ---
-title: Allow hiding legend nodes
+title: Hiding Legend Nodes
 ---
 
-# Allow hiding legend nodes
+# Hiding Legend Nodes
+
+It is possible to configure your QGIS projet to allow hiding legend nodes
+
+## Configure Hidden Nodes
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 First, you should verify if the plugin `Invisible layers and
 groups` is installed. If you don't have itinstalled, you can do it going
@@ -17,16 +22,13 @@ interface this buttons:
 ![](../assets/images/plugin_invisible_layers.png)
 
 Once the installation process is finished, it is possible to start
-hiding the nodes of the legend our project.
+hiding the nodes of the legend of our project.
 
 1.  Choose the layers or groups that you want to hide.
 2.  When you finish the layer/group selection, **click Make selected
     layers and groups invisible**. You will notice the selected layers
     and groups have disappear from the layers panel. They are still
     available in the project for visualization and joins, though.
-
-![](../assets/images/plugin_invisible_layers_hide.png)
-
 3.  Save your project, you can use the section QFieldSync plugin to save
     your project, or save your geopackage and project in the same
     folder.
@@ -36,8 +38,8 @@ hiding the nodes of the legend our project.
 
 !![](../assets/images/process_hide_and_show_layers.gif)
 
-Note: If you want to see the hidden layers/groups again, click on show
-invisible layers and groups.
-
-![](../assets/images/plugin_invisible_layers_show.png)
+!!! note
+    If you want to see the hidden layers/groups again, click on show
+    invisible layers and groups.
+    ![](../assets/images/plugin_invisible_layers_show.png)
 

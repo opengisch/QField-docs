@@ -1,18 +1,10 @@
 ---
-title: Attribute Form Configuration
+title: Attribute Form
 ---
 
-# Attribute Form Configuration
+# Attribute Form
 
 QField creates forms similar to, but not equal to QGIS.
-
-## Suppress Attribute Form
-
-The setting "suppress attribute form" is directly applied to the
-QField form.
-
-## Field widget
-
 The field widgets from QGIS are supported on a best effort basis.
 
 
@@ -27,9 +19,28 @@ The field widgets from QGIS are supported on a best effort basis.
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
 | Relation Widget    | :material-check: |                                                                                                                                                                                                        |
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
-| Others             | :material-close: | [Funding](../../get-started/support/#development-and-custom-apps)                                                                                                                                                                   |
+| Others             | :material-close: | [Funding](../../get-started/support/#development-and-custom-apps)                                                                                                                                      |
 
-## Relation Widget
+### Editable
+
+The editable flag of fields is respected.
+
+### Remember last values
+
+QField offers a much more fine-grained control over the last used values
+and ignores the QGIS setting.
+
+### Suppress Attribute Form
+
+The setting "suppress attribute form" is directly applied to the
+QField form.
+
+### Drag and drop designer forms
+
+Groups and Tabs from Drag and Drop designer forms are supported.
+
+## Configure a Relation Widget
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 For more information refer to the relations chapter of the official
 [QGIS Documentation](https://docs.qgis.org/3.4/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations).
@@ -71,7 +82,8 @@ information (e.g. percentage) in the linking table.
 In case of the many-to-one cardinality on many-to-many relations the
 Display Expression needs to be set on the linking table.
 
-### Attachment (photo settings)
+## Configure Attachment/Pictures Widget
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 The widget type "Attachment" is used with fields that store the path
 to files.
@@ -101,7 +113,8 @@ doc, \...).
 
 ![](../assets/images/hyperlink_option.png)
 
-## Value Relation
+## Configure a Value Relation Widget
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 The widget "Value Relation" offers values from a related table in a
 combobox. You can select layer, key column and value column. Several
@@ -111,11 +124,9 @@ display a drop-down or multiple-select list of the referenced features.
 
 !![](../assets/images/value_relation_widget.gif)
 
-## Drag and drop designer forms
 
-Groups and Tabs from Drag and Drop designer forms are supported.
-
-## Conditional visibility
+## Configure Conditional Visibility
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 Groups can be hidden based on an expression. This is useful when certain
 attributes are only required under certain conditions. As an example
@@ -132,7 +143,8 @@ Let's see what we got on the field:
 ![type:video](https://player.vimeo.com/video/499565113)
 
 
-## Constraints
+## Define Constraints
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 Attribute fields can have constraints attached. Constraints are
 expressions that needs to evaluate to `True` (or `1`) in order to be
@@ -157,7 +169,8 @@ It is required to fill in an identifier.
 "identifier" IS NOT NULL
 ```
 
-## Default values
+## Define Default Values
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 Fields can have default values configured. Default values are inserted
 into the attribute form when digitizing a new feature. They are visible
@@ -235,16 +248,8 @@ with_variable(
 
 )
 
-## Editable
-
-The editable flag of fields is respected.
-
-## Remember last values
-
-QField offers a much more fine-grained control over the last used values
-and ignores the QGIS setting.
-
-## Auto-complete value
+## Configure Auto-complete Value
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
 The "Use completer" checkbox must be checked to be able to use the
 auto-complete in the value relation.
@@ -252,4 +257,5 @@ auto-complete in the value relation.
 !![image](../assets/images/autocomplet_form.png)
 
 Here a video showing how it works on QField
-`Search in value list<search_value_list>`{.interpreted-text role="ref"}.
+
+![type:video](https://player.vimeo.com/video/604661919)

@@ -4,6 +4,20 @@ title: Search
 
 # Search
 
+QField allows to search in layers, into a value list and to go to coordinates with the search tool.
+
+## Configure search in QGIS
+:material-desktop-mac:{ .device-icon } Desktop preparation
+
+1.  Choose the layers which are searchable in
+    `Project --> Project Properties --> Identify Layers`
+2.  Define the *display expression* for the concerned layers, this will
+    be used for searching for features. This is configured under
+    `Vector Layer Properties --> Display`
+
+## Usage
+:material-tablet-android:{ .device-icon } Fieldwork
+
 Tap on the **Search button** on the top-right corner of the screen to
 search for features in the current project.
 
@@ -11,7 +25,7 @@ search for features in the current project.
     feature will be highlighted in yellow).
 2.  Tap on the **attributes button** to open its attributes.
 
-## GoTo Coordinate
+### GoTo Coordinate
 
 It is possible to go to coordinates with the search tool.
 
@@ -21,26 +35,17 @@ current map CRS (*x,y*).
 
 ![type:video](https://player.vimeo.com/video/499566922)
 
-## Search in value list
+### Search in value list
 
 It is possible to search value in a value list using the magnifying
 glass next to the field.
 
 ![type:video](https://player.vimeo.com/video/604661919)
 
-To be able to use the \"completer\" the widget has to be set up
-`Autocomplet form set up<autocomplete_value>`.
+To be able to use the \"completer\" the widget has to be configured to Auto-complete Values.
 
-## Search in layers
+### Search in layers
 
 You can search for features in vector layers. The search is currently
 performing the same as the *all layers locator filter* in QGIS
 (accessible in QGIS locator bar using *af* prefix).
-
-### Configure search in QGIS
-
-1.  Choose the layers which are searchable in
-    `Project --> Project Properties --> Identify Layers`
-2.  Define the *display expression* for the concerned layers, this will
-    be used for searching for features. This is configured under
-    `Vector Layer Properties --> Display`

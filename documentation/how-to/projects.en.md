@@ -1,8 +1,13 @@
 ---
-title: Open a project
+title: Project Selection
 ---
 
-# Open a project
+# Project Selection
+
+QField has a file selector that allows to open a project from different sources.
+
+## Open a project
+:material-tablet-android:{ .device-icon } Fieldwork
 
 To open a project, tap on **Menu button --> Option button --> Open
 Project**.
@@ -14,14 +19,14 @@ Select the project you want to open by navigating to it, or use the
 
 !![image](../assets/images/user-guide_open-project-menu.png)
 
-## Favorite directories
+### Favorite directories
 
 In the first screen of the file selector, there is a section showing the
 favorite directories. To add a directory to the favorites, long click in
 the file selector on the directory name. To remove an entry from the
 favorites, long click on the entry in the favorites list.
 
-## Advanced project selection
+### Advanced project selection
 
 QField opens QGIS projects in the ".qgs" or ".qgz" format.
 
@@ -44,7 +49,8 @@ Google Drive). On the other hand you can use apps like
 [nextcloud](https://nextcloud.com/) (or dropbox and probably many
 others) that allow you tho physically sync the file to your device.
 
-## External SD card
+## Use An External SD Card
+:material-tablet-android:{ .device-icon } Fieldwork
 
 The file selector shows the root of the SD card labeled as \"read-only\"
 and the application-specific directory separated from the rest of the SD
