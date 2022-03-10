@@ -45,16 +45,16 @@ nav:
   - Home: index.md
   - Get started:
       - get-started/index.md
-      - get-started/installation.md
+      - get-started/concepts.md
+      - Tutorials:
+          - get-started/tutorials/get-started-qfc.md
+          - get-started/tutorials/advanced-setup-qfc.md
       - get-started/faq.md
       - get-started/support.md
       - get-started/sponsor.md
       - get-started/license.md
       - get-started/development.md
       - get-started/third-part-tutorials.md
-      - QFieldCloud:
-          - get-started/qfieldcloud/get-started.md
-          - get-started/qfieldcloud/advanced-setup.md
   - How-to guides:
       - how-to/index.md
       - how-to/projects.md
@@ -105,7 +105,8 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.keys
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - fancyboxmd
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
