@@ -46,6 +46,7 @@ nav:
   - Get started:
       - get-started/index.md
       - get-started/installation.md
+      - get-started/faq.md
       - get-started/support.md
       - get-started/sponsor.md
       - get-started/license.md
