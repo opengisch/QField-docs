@@ -82,6 +82,7 @@ nav:
       - QFieldCloud:
           - reference/qfieldcloud/concepts.md
           - reference/qfieldcloud/permissions.md
+          - reference/qfieldcloud/troubleshooting.md
           - reference/qfieldcloud/swagger.md
           - reference/qfieldcloud/system.md
   - Case studies:
