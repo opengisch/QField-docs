@@ -16,3 +16,5 @@ jobs:
         run: pip install -r requirements.txt
       - name: Install requirements insider
         run: pip install -r requirements-insider.txt
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
