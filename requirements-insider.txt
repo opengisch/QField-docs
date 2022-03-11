@@ -1,0 +1,1 @@
+git+https://${GH_TOKEN}@github.com/opengisch/mkdocs-material-insiders#egg=mkdocs-material
