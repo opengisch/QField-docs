@@ -80,6 +80,7 @@ nav:
       - reference/index.md
       - reference/data-format.md
       - QFieldCloud:
+          - reference/qfieldcloud/concepts.md
           - reference/qfieldcloud/permissions.md
           - reference/qfieldcloud/swagger.md
           - reference/qfieldcloud/system.md
