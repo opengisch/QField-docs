@@ -14,3 +14,5 @@ jobs:
           python-version: 3.9  # transifex-client has compatibility problem with 3.10
       - name: Install requirements
         run: pip install -r requirements.txt
+      - name: Install requirements insider
+        run: pip install -r requirements-insider.txt
