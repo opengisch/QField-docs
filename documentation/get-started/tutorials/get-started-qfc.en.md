@@ -9,32 +9,34 @@ title: Get Started
 
 
 ## Get a QFieldCloud account
-You should have received an invitation to join QFieldCloud on your email.
-Fill in the registration form and choose a password.
+Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
+!![Registration form](../../assets/images/qfieldcloud_registration.png)
 ## Desktop
 
 ### Install QFieldSync
-Enable experimental plugins in QGIS by going to the `Plugins -> Manage and install Plugins…` menu. Then click the `Settings` with the yellow icon on the left. Mark the second checkbox `Show also experimental plugins` as checked.
+Open the QGIS plugin manager by going to the `Plugins -> Manage and install Plugins…` menu. 
 
-!![Show also experimental plugins](../../assets/images/getting_started_plugin_settings.png)
-Find QFieldSync in the list of plugins and install the latest experimental version by clicking the `Upgrade Experimental Plugin` button.
+Find QField Sync in the list of plugins and install the latest version by clicking the `Install Plugin` button.
 
 !!! note
-    Since QFieldSync is still in beta phase, there are regular updates and fixes at least once a week. Please upgrade your experimental QFieldSync at least once a week. In case of an issue, please try upgrading to the latest experimental release before reporting.
+    Since QFieldCloud is still in beta phase, there are frequent updates and fixes. Please upgrade your QFieldSync plugin often. In case of an issue, please try upgrading to the latest release before reporting.
 
-![Successful installation](../../assets/images//getting_started_plugin_installed.png)
+!![Successful installation](../../assets/images/install_qfieldsync.png)
 
 After successful installation, a new toolbar appears:
 
-![Toolbar](../../assets/images/getting_started_toolbar.png)
+![Toolbar](../../assets/images/qfieldsync_toolbar.png)
 
 ### Login to QFieldCloud
 
 Click the cloud icon in the QFieldSync toolbar.
 A new login screen will appear:
 
-![Login screen](../../assets/images/getting_started_qfc_login.png)
+!![Login screen](../../assets/images/qfieldsync_login_dialog.png)
+
+Enter your credentials previously created during account registration.
+
 
 Explore the projects overview screen: your current user underlined and blue, a logout button down-left, a cloud button to create a new project and, on the right, a refresh button to grab the freshest project list. Newly registered users will see an empty table and as soon as they create new projects, the list will grow. The projects overview screen looks like this:
 
