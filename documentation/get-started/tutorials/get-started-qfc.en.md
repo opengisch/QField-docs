@@ -11,8 +11,28 @@ title: Get Started
 ## Get a QFieldCloud account
 Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
+Go to the [registration page](https://app.qfield.cloud/accounts/signup/). Fill in the registration form and choose a password. 
+
 !![Registration form](../../assets/images/qfieldcloud_registration.png)
-## Desktop
+
+
+### Edit Profile 
+
+Change your personal settings. Add a profile picture or get an overview about your ownerships and memberships in organizations. 
+ 
+
+### Organizations 
+
+Your organizations are listed here. Find out more about teams, members and their roles in [concepts of the QField Ecosystem](https://docs.qfield.org/reference/qfieldcloud/concepts/)
+
+### Projects 
+
+Search and choose a project from the list or start to create a new project.
+
+
+## Connection to QField Cloud - Desktop work
+
+In order to connect to QField Cloud, you need the Plugin “QFieldSync” in QGIS. The next steps show you how you can install and synchronize your data to the QField Cloud.  
 
 ### Install QFieldSync
 Open the QGIS plugin manager by going to the `Plugins -> Manage and install Plugins…` menu. 
