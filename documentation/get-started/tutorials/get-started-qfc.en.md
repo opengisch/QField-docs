@@ -9,8 +9,7 @@ title: Get Started
 
 
 ## Get a QFieldCloud account
-You should have received an invitation to join QFieldCloud on your email.
-Fill in the registration form and choose a password.
+
 
 ## Desktop
 
