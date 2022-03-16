@@ -11,7 +11,6 @@ title: Get Started
 ## Get a QFieldCloud account
 Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
-Go to the [registration page](https://app.qfield.cloud/accounts/signup/). Fill in the registration form and choose a password. 
 
 !![Registration form](../../assets/images/qfieldcloud_registration.png)
 
