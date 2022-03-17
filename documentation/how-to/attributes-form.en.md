@@ -45,7 +45,7 @@ Groups and Tabs from Drag and Drop designer forms are supported.
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
 For more information refer to the relations chapter of the official
-[QGIS Documentation](https://docs.qgis.org/3.4/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations).
+[QGIS Documentation](https://docs.qgis.org/3.22/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations).
 
 !![](../assets/images/relation_editor_widget_list.png)
 
