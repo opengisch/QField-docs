@@ -15,7 +15,7 @@ available over the menu.
 !![](../assets/images/print_menu.jpg)
 
 After selecting the print layout, the PDF document is created and stored
-in the devices documents directory.
+in the project's directory.
 
 By choosing the PDF reader app, the document can be opened directly.
 
@@ -32,8 +32,3 @@ A video demonstration of how the complete workflow looks:
 You can also print an atlas by selecting features:
 
 ![type:video](https://player.vimeo.com/video/604740848)
-
-!!! note
-    The devices documents directory is `USER>/<APPNAME>/Documents`. For
-   `QField` this is usually a path like `////storage/emulated/0/Documents/QField`
-

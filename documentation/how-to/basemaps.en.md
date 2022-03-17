@@ -11,8 +11,7 @@ project.
 ## Configure a web service as base map
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
-In QGIS with the plugin QFieldSync, set the base map to the "Project
-Configuration"
+In QGIS with the plugin QFieldSync, set the base map to the *"*Project Configuration*.
 
 !![basemap configuration](../assets/images/qfield-sync_basemap.png)
 
@@ -27,8 +26,7 @@ Below the result on QField.
 ## Using a project as Base Map
 :material-tablet-android:{ .device-icon } Fieldwork
 
-To use an existing project as Base Map, do a long press on the project
-and check "Base Map Project".
+To use an existing project as Base Map, do a long press on the project and check *Base Map Project*.
 
 ![type:video](https://player.vimeo.com/video/604849182)
 

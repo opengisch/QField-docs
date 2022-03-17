@@ -10,26 +10,26 @@ QField allows to search in layers, into a value list and to go to coordinates wi
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
 1.  Choose the layers which are searchable in
-    `Project --> Project Properties --> Identify Layers`
+    *Project > Project Properties > Identify Layers*
 2.  Define the *display expression* for the concerned layers, this will
     be used for searching for features. This is configured under
-    `Vector Layer Properties --> Display`
+    *Vector Layer Properties > Display*
 
 ## Usage
 :material-tablet-android:{ .device-icon } Fieldwork
 
-Tap on the **Search button** on the top-right corner of the screen to
+Tap on the *Search button* on the top-right corner of the screen to
 search for features in the current project.
 
-1.  Tap on the **name** in the result to pan the map on the feature (the
+1.  Tap on the *name* in the result to pan the map on the feature (the
     feature will be highlighted in yellow).
-2.  Tap on the **attributes button** to open its attributes.
+2.  Tap on the *attributes button* to open its attributes.
 
 ### GoTo Coordinate
 
 It is possible to go to coordinates with the search tool.
 
-Tap on the **coordinates** in the result to go to the coordinates. It is
+Tap on the *coordinates* in the result to go to the coordinates. It is
 always possible to search WGS84 coordinates (*longitude, latitude*) or
 current map CRS (*x,y*).
 
@@ -42,10 +42,10 @@ glass next to the field.
 
 ![type:video](https://player.vimeo.com/video/604661919)
 
-To be able to use the \"completer\" the widget has to be configured to Auto-complete Values.
+To be able to use the "completer" the widget has to be configured to Auto-complete Values.
 
 ### Search in layers
 
 You can search for features in vector layers. The search is currently
 performing the same as the *all layers locator filter* in QGIS
-(accessible in QGIS locator bar using *af* prefix).
+(accessible in QGIS locator bar using `af` prefix).

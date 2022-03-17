@@ -5,7 +5,7 @@ title: Attribute Form
 # Attribute Form
 
 QField creates forms similar to, but not equal to QGIS.
-The field widgets from QGIS are supported on a best effort basis.
+The field widgets from QGIS are supported on a best effort basis and optimized for the mobile use.
 
 
 | Widget type        | Support          | Notes                                                                                                                                                                                                  |
@@ -19,11 +19,13 @@ The field widgets from QGIS are supported on a best effort basis.
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
 | Relation Widget    | :material-check: |                                                                                                                                                                                                        |
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
+| UUID Generator     | :material-check: |                                                                                                                                                                                                        |
+| QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
 | Others             | :material-close: | [Funding](../../get-started/support/#development-and-custom-apps)                                                                                                                                      |
 
 ### Editable
 
-The editable flag of fields is respected.
+The *editable* flag of fields is respected.
 
 ### Remember last values
 
@@ -32,7 +34,7 @@ and ignores the QGIS setting.
 
 ### Suppress Attribute Form
 
-The setting "suppress attribute form" is directly applied to the
+The setting *suppress attribute form* is directly applied to the
 QField form.
 
 ### Drag and drop designer forms
@@ -51,8 +53,7 @@ For more information refer to the relations chapter of the official
 The relation widget shows all the referencing child features in a list.
 It is possible to add, delete and open them.
 
-The visual identification of the list entries are done via the `Display
-Expression` of the child layer.
+The visual identification of the list entries are done via the *Display Expression* of the child layer.
 
 ### Key handling
 
@@ -70,7 +71,7 @@ the children are deleted as well.
 ### Many-To-Many relations
 
 On many-to-many relationships, according to the cardinality setting in
-the QGIS Vector Layer Properties, on adding, deleting or opening an
+the *QGIS Vector Layer Properties*, on adding, deleting or opening an
 entry in the list effects directly the child layer (on direct
 cardinality) or the linking table (on many-to-one cardinality).
 
@@ -80,12 +81,12 @@ information (e.g. percentage) in the linking table.
 !![](../assets/images/relation_widget_cardinality.png)
 
 In case of the many-to-one cardinality on many-to-many relations the
-Display Expression needs to be set on the linking table.
+*Display Expression* needs to be set on the linking table.
 
 ## Configure Attachment/Pictures Widget
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
-The widget type "Attachment" is used with fields that store the path
+The widget type *Attachment* is used with fields that store the path
 to files.
 
 It can be used to:
@@ -107,7 +108,7 @@ camera is started to update the picture with a new photo.
 On synchronization the sub-directory with the pictures, pdf and docs has
 to be copied as well.
 
-The option "hyperlink" on the attachment widget will disable the
+The option *hyperlink* on the attachment widget will disable the
 camera functionality and enable a hyperlink to open a document (pdf,
 doc, \...).
 
@@ -116,10 +117,9 @@ doc, \...).
 ## Configure a Value Relation Widget
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
-The widget "Value Relation" offers values from a related table in a
-combobox. You can select layer, key column and value column. Several
-options are available to change the standard behaviors: allow null
-value, order by value and allow multiple selections. The widget will
+The widget *Value Relation* offers values from a related table in a
+combobox. You can select *layer*, *key column* and *value column*. Several
+options are available to change the standard behaviors: *allow null value*, *order by value* and *allow multiple selections*. The widget will
 display a drop-down or multiple-select list of the referenced features.
 
 !![](../assets/images/value_relation_widget.gif)

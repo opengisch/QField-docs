@@ -7,8 +7,7 @@ The beautiful thing about GIS is that maps are dynamic. Layers can
 individually be shown and hidden and information can be presented more
 or less prominently based on the task at hand.
 
-This is what *Map Themes* (before QGIS 3.0 known as *Visibility
-Presets*) are for.
+This is what *Map Themes* are for.
 
 ## Creating a Map Theme
 :material-desktop-mac:{ .device-icon } Desktop preparation

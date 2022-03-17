@@ -13,8 +13,8 @@ and datasets are reachable from the device.
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
 Check that
-`Project --> Project Properties --> General --> Save paths`
-is set to "Relative" and that all required data
+*Project > Project Properties > General > Save paths*
+is set to *Relative* and that all required data
 files are in the same folder like the .qgs file or in a subfolder.
 
 For increased productivity, we suggest having a look at

@@ -9,8 +9,8 @@ QField has a file selector that allows to open a project from different sources.
 ## Open a project
 :material-tablet-android:{ .device-icon } Fieldwork
 
-To open a project, tap on **Menu button --> Option button --> Open
-Project**.
+To open a project, tap on *Menu button > Option button > Open
+Project*.
 
 Select the project you want to open by navigating to it, or use the
 **Recent projects** and **Favorites directories** shortcuts.

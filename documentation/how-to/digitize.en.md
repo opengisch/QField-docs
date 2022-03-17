@@ -9,7 +9,7 @@ QField allows to digitize, edit and delete Points, Lines and Polygons on the fie
 ## Collect features
 :material-tablet-android:{ .device-icon } Fieldwork
 
-To start digitizing new features, enable the **Edit mode** in the main
+To start digitizing new features, enable the *Edit mode* in the main
 menu (*pencil button*) and select the layer on which you want to add a
 new feature (the layer will be highlighted in green).
 
@@ -18,28 +18,28 @@ new feature (the layer will be highlighted in green).
 ### Points
 
 Navigate the crosshair in the center of the screen to the desired
-location and click the **+ button** at the lower right of the screen to
+location and click the *Plus (+) button* at the lower right of the screen to
 confirm the creation of a new point feature.
 
-You can use the **keep centered** button to force the crosshair to
+You can use the *keep centered* button to force the crosshair to
 center on your location if you have enabled the GPS.
 
 ### Lines and polygons
 
 Navigate the crosshair in the center of the screen to the desired start
-of the line or polygon and click the **Plus (+) button** at the lower
+of the line or polygon and click the *Plus (+) button* at the lower
 right of the screen to add the first node.
 
 Proceed with adding points to form you line or polygon by clicking the
-**Plus (+) button** each time you want to add a new node.
+*Plus (+) button* each time you want to add a new node.
 
-Click the **Minus (-) button** to remove the last added node.
+Click the *Minus (-) button* to remove the last added node.
 
-Click the **Close (X) button** to cancel the feature creation
+Click the *Close (x) button* to cancel the feature creation
 completely.
 
 When you have added a least 2 nodes for a line or 3 nodes for a polygon,
-a **Save button** will appear. Click on it to finish your sketch.
+a *Save button* will appear. Click on it to finish your sketch.
 
 ### Attribute form
 
@@ -61,7 +61,7 @@ layer, these attributes will be automatically pre-filled.
 ## Edit features
 :material-tablet-android:{ .device-icon } Fieldwork
 
-To edit, tap on **Menu button -> pencil.**
+To edit, tap on *Menu button > pencil.*
 
 You can edit an existing feature by moving, adding or deleting the
 vertex and also spliting.
@@ -76,6 +76,9 @@ should be split.
 It is possible to move and delete vertices of geometries and add new
 ones.
 
+### Merge tool
+
+Choose two features on the map, select them in the list and merge them: *Menu (⁝) Button > Merge Selected Feature(s)*
 ### Demonstration of geometries editing
 
 A video demonstration of some editing possibilities:
@@ -84,9 +87,9 @@ A video demonstration of some editing possibilities:
 
 ### Freehand digitizing
 
-The freehand digitizing mode allows users to \'draw\' lines and polygons
-using their stylus/pen or mouse. The mode is available for line/polygon
-feature additions as well as the geometry editor\'s rings tool.
+The freehand digitizing mode allows users to "draw" lines and polygons
+using their styluspen or mouse. The mode is available for line / polygon
+feature additions as well as the geometry editor's rings tool.
 
 The freehand digitizing mode is activated through a new toolbar button
 which appears when QField is set to editing mode and a line or polygon
@@ -129,10 +132,7 @@ deletion.
 While digitizing new features, new points can be snapped to existing
 geometries.
 
-All configuration can be done in
-`Project --> Snapping Settings`
-(`Settings --> Snapping Settings` in QGIS 2.x).
-
+All configuration can be done in *Project > Snapping Settings*
 ### Snapping Types
 
 It is possible to snap new points
