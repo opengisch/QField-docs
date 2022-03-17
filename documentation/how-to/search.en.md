@@ -35,14 +35,15 @@ current map CRS (*x,y*).
 
 ![type:video](https://player.vimeo.com/video/499566922)
 
-### Search in value list
+### Search in value relation and relation reference widget
 
-It is possible to search value in a value list using the magnifying
+It is possible to search value in a *value relation* or *relation reference* widget using the magnifying
 glass next to the field.
 
 ![type:video](https://player.vimeo.com/video/604661919)
 
-To be able to use the "completer" the widget has to be configured to Auto-complete Values.
+#### Autocompleter
+In the *value relation* widget you even can use the "completer" functionality. You have to activate it in the widget settings.
 
 ### Search in layers
 
