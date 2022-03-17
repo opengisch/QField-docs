@@ -33,7 +33,7 @@ To get a quick overview of the process, here is a list of typical steps:
 In QGIS, open the plugin library and search for **qfield sync**. Select
 the plugin in the list and click on **Install**.
 
-!![image](../../assets/images/qfield-sync_install.png)
+!![QField Sync in QGIS plugin repository](../../assets/images/qfield-sync_install.png)
 
 ## Configuration
 
@@ -41,11 +41,11 @@ The project configuration is saved in the master .qgs project file. This
 way it is possible to pre-configure a project once and use it
 repeatedly.
 
-!![image](../../assets/images/qfield-sync_configmenu.png)
+!![Configure project](../../assets/images/qfield-sync_configmenu.png)
 
 ### Layer configuration
 
-!![image](../../assets/images/qfield-sync_config.png)
+!![Configure the project layers](../../assets/images/qfield-sync_config.png)
 
 In the project configuration dialog, an *action* can be defined for each
 layer individually. Depending on the layer type, different types of
@@ -111,30 +111,30 @@ If *only synchronize features in area of interest* is checked, only
 features which are within the extent of the map canvas as packaging time
 will be copied to the offline editing working copy.
 
-## Package for Qfield
+## Package for QField
 
 Once the project is configured, package it in a folder. This folder will
 contain the .qgs and the data used in it.
 
-!![image](../../assets/images/qfield-sync_package.png)
+!![Package the project for QField](../../assets/images/qfield-sync_package1.png)
 
-Copy the folder on your device. Open Qfield, open the project and start
+Copy the folder on your device. Open QField, open the project and start
 collecting data.
 
 Make also sure to save the QGIS project using the regular Save As of
 QGIS as you'll have to re-open it later when you want to synchronize
 the changes.
 
-## Synchronize from Qfield
+## Synchronize from QField
 
 When you want to synchronize what you have collected, re-open the
 project in QGIS (the one you saved with a regular Save As).
 
 Copy the project folder from your device to your computer and use the
-**Synchronize from Qfield** menu to synchronize your changes from the
+**Synchronize from QField** menu to synchronize your changes from the
 protable project to the main project.
 
-!![image](../../assets/images/qfield-sync_sync.png)
+!![Synchronize from QField](../../assets/images/qfield-sync_sync.png)
 
 Make sure that you synchronize your data back only once. That means, if
 you go out again to collect more data, you should create a new QField

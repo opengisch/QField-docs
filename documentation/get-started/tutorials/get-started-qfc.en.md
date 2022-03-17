@@ -9,6 +9,8 @@ title: Get Started
 
 
 ## Get a QFieldCloud account
+:material-desktop-mac:{ .device-icon } Desktop preparation
+
 Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
 
@@ -22,22 +24,24 @@ Change your personal settings. Add a profile picture or get an overview about yo
 
 ### Organizations 
 
-Your organizations are listed here. Find out more about teams, members and their roles in [concepts of the QField Ecosystem](https://docs.qfield.org/reference/qfieldcloud/concepts/)
+Your organizations are listed here. Find out more about teams, members and their roles in [concepts of the QField Ecosystem](https://docs.qfield.org/reference/qfieldcloud/concepts/).
 
 ### Projects 
 
 Search and choose a project from the list or start to create a new project.
 
-!![QField Cloud projects overview](../../assets/images/overview_projects_qfcloud.png)
+!![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png)
 
-## Connection to QField Cloud on QGIS Desktop 
+## Connection to QFieldCloud on QGIS Desktop 
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
-In order to connect to QField Cloud, you need the Plugin “QFieldSync” in QGIS. The next steps show you how you can install and synchronize your data to and from QField Cloud.  
+
+In order to connect to QFieldCloud, you need the Plugin “QFieldSync” in QGIS. The next steps show you how you can install and synchronize your data to and from QFieldCloud.  
 
 ### Install QFieldSync
 Open the QGIS plugin manager by going to the `Plugins -> Manage and install Plugins…` menu. 
 
-Find QField Sync in the list of plugins and install the latest version by clicking the `Install Plugin` button.
+Find QFieldSync in the list of plugins and install the latest version by clicking the `Install Plugin` button.
 
 !!! note
     Since QFieldCloud is still in beta phase, there are frequent updates and fixes. Please upgrade your QFieldSync plugin often. In case of an issue, please try upgrading to the latest release before reporting.
@@ -50,7 +54,7 @@ After successful installation, a new toolbar appears:
 
 ### Login to QFieldCloud
 
-Click the cloud icon in the QFieldSync toolbar.
+Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar.
 A new login screen will appear:
 
 !![Login screen](../../assets/images/qfieldsync_login_dialog.png)
@@ -74,25 +78,27 @@ Local status:
 
 Cloud status:
 
-Red: status failed —> could not synchronize with cloud.  
-Brown: status busy —> currently synchronizing with cloud.  
-Green: status ok —> project is synchronized.
+Red: status failed —> the project is invalid and is not understood by the cloud. The user needs to fix/upload their .qgs/.qgz project.  
+Brown: status busy —> we are working on your project, please be patient. You cannot do much with the project in the meanwhile.  
+Green: status ok —> the project is successfully undestood by the cloud. You can try to download on QField, but the success is not guaranteed.
 
-The status of each project is explained in a tooltip.
+The status of each project is shown with a tooltip.
 
+By double-clicking on a project in the list, you can see and edit the specific project properties.
 
+![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
 
 
 ### Create and configure your Cloud project
 
 Create a new project by clicking the cloud button, down-left. First, you will need to choose how to create the new project between
 
-* "Convert currently open project to cloud project"
+* "Convert currently open project to cloud project"  
 A new QFieldCloud-compatible project is created from the currently opened QGIS project. In order to do so, datasets will be copied into an export directory that will act as your local mirror. Vector datasets will be converted to geopackage format to facilitate data synchronization from multiple devices while other dataset types will be copied to the new project lotation.
 
 To convert a current project, a completely empty directory is mandatory.
 
-* "Create a new empty QFieldCloud project".
+* "Create a new empty QFieldCloud project"  
 A new blank QFieldCloud project will be created. You will be responsible to move all the project-related files within the selected local directory, with the project file at its root. Project files will only be uploaded when you click the synchronize button. Make sure the selected contains no more than one QGIS project file.
 
 ![Project details](../../assets/images/create_project.png)
@@ -110,7 +116,9 @@ A form will ask you for project name, description and local directory. In the lo
 
 ![Project details](../../assets/images/getting_started_project_details.png)
 
-Configure the project layers by clicking the fifth icon in the QFieldSync toolbar. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer.![Layers configuration](../../assets/images/getting_started_toolbar_config_layers.png)
+### Configure your project layers for QField
+
+Configure the project layers by clicking the fifth icon in the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"}. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer. Get more information about how to configure your layers in the [Get Started guide for QFieldSync](get-started-qfs.md).
 
 It is recommended to use GeoPackage layers for collaborative editing. See the [advanced setup guide](advanced-setup.md) for more information about vector formats support.
 
@@ -126,6 +134,8 @@ Once configured, you can press the cloud button to open the synchronization dial
 Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
 
 ## Field device
+:material-tablet-android:{ .device-icon } Fieldwork
+
 
 ### Install QField
 Download and install the latest version of [QField from the play store](https://play.google.com/store/apps/details?id=ch.opengis.qfield_dev). Scroll to the bottom and enable beta testing.
