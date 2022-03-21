@@ -50,6 +50,8 @@ nav:
           - QFieldCloud:
               - get-started/tutorials/get-started-qfc.md
               - get-started/tutorials/advanced-setup-qfc.md
+          - QFieldSync:
+              - get-started/tutorials/get-started-qfs.md
       - get-started/faq.md
       - get-started/support.md
       - get-started/sponsor.md
