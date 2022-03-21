@@ -13,7 +13,7 @@ verify their status or adjust attributes as required.
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
 To define an itinerary to review you will need to use the python console
-for the moment. You can use any QgsExpression to define the review list.
+for the moment. You can use any `QgsExpression` to define the review list.
 Select the desired layer in the legend and use the following python code
 to add the itinerary to the QGIS project.
 

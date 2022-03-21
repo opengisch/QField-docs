@@ -4,101 +4,51 @@ title: Project Selection
 
 # Project Selection
 
-QField has a file selector that allows to open a project from different sources.
+QField has a file selector that allows to open a project from the device locally. To open files from the cloud see [QFieldCloud ](../../get-started/tutorials/get-started-qfc/).
 
-## Open a project
+!!! note
+    Starting with Android 11, apps are denied full access to main and external storage content. For QField 2, this means direct access to projects and datasets transferred and/or downloaded into storage folders is not possible anymore. 
+    
+You have to import project folders or individual datasets into the app-dedicated storage location `<drive>:/Android/data/ch.opengis.qfield/files/QField` where it has unrestricted read/write access. With that behavior importing from external SD cards or providers that work with remote files (e.g. Google Drive) are supported as well.
+
+!!! warning
+    Be aware that on uninstalling QField the app folder gets deleted as well. On update it stays.
+## Import and open local project
 :material-tablet-android:{ .device-icon } Fieldwork
 
-To open a project, tap on **Menu button --> Option button --> Open
-Project**.
+When going to *Open local files* (via *Menu button > Open*) you will see a set of new folders named "QField files directory", "Imported datasets", and "Imported projects" as well as a drop-down menu accessible via a top-right three-dot button.
 
-Select the project you want to open by navigating to it, or use the
-**Recent projects** and **Favorites directories** shortcuts.
+!![QField File Selector](../assets/images/howto_filebrowser.png)
 
-!![image](../assets/images/user-guide_open-project.png)
+The drop-down menu lists the means to import projects and datasets: *import project from folder*, *import project from ZIP (archive)*, and *import (individual) dataset(s)*.
 
-!![image](../assets/images/user-guide_open-project-menu.png)
+### Import project from folder or ZIP archive
+When importing a project from a folder or a ZIP archive, users will be asked to grant permission for QField to read the content of a given folder on the device’s storage via a system folder picker. When the folder or the archive is selected, QField copies the content (including its sub-folders) into the app’s ‘Imported projects’ location. Users can then open the project from there.
 
-### Favorite directories
+Re-importing a given folder through the drop-down menu action will overwrite preexisting projects given an identical folder name. That allows users to be able to update projects.
+
+!!! warning
+    Note that feature editing, addition, and deletion will be saved into the imported project’s datasets, not in the original folder selected during the import process.
+### Import datasets
+You can also import individual datasets. You will be asked to select one or more files via a system file picker, which will be copied into the "Imported datasets" folder. You have to ensure that all sidecar files are selected when importing (e.g. a shapefile dataset would require users to select the .shp, .shx, .dbf, .prj, and .cpg files).
+
+## Favorite directories
 
 In the first screen of the file selector, there is a section showing the
 favorite directories. To add a directory to the favorites, long click in
 the file selector on the directory name. To remove an entry from the
 favorites, long click on the entry in the favorites list.
 
-### Advanced project selection
+## Retrieve modified projects and datasets
+:material-desktop-mac:{ .device-icon } Desktop preparation
 
-QField opens QGIS projects in the ".qgs" or ".qgz" format.
+Imported projects and datasets can be accessed directly using a USB cable. The location on storage is displayed in the top navigation bar when opening a local file.
 
-QField uses a customized file selector to open the projects. On choosing
-"Open project" from the QField menu, the file selector will be opened
-showing the following locations:
+On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/` where you will find both the "Imported Datasets" and "Imported Projects" folders within which your edited content will be located.
 
--   The primary media/shared storage directory.
--   The application-specific directories on all shared/external storage
-    devices where the application can place persistent files it owns if
-    they are not already included in the primary storage directory.
-
-Inside these directories, only subdirectories and files with the
-".qgs" or ".qgz" extension are shown.
-
-QField requires the project file to be physically on the device, so it
-is not possible to use providers that work with remote files (e.g.
-Google Drive). On the other hand you can use apps like
-[syncthing](https://syncthing.net/) or
-[nextcloud](https://nextcloud.com/) (or dropbox and probably many
-others) that allow you tho physically sync the file to your device.
-
-## Use An External SD Card
+### Send to
 :material-tablet-android:{ .device-icon } Fieldwork
 
-The file selector shows the root of the SD card labeled as \"read-only\"
-and the application-specific directory separated from the rest of the SD
-card, as it is the only directory for which the app has write access.
-The directory is the following:
+You can share and send the datasets straght from QField using Android APIs. This allows for the sending of edited datasets directly to third party apps (Gmail, Drive, Dropbox, Nextcloud, your favourite messenger app, etc.).
 
-``` bash
-/Android/data/ch.opengis.qfield/files
-```
-
-!!! note
-    Technically, this is due to the fact that Android intents
-    ACTION_OPEN_DOCUMENT and ACTION_OPEN_DOCUMENT_TREE, work and grant
-    read-write access on the content of the returning URI, not on the real
-    linked file. This limitation which makes sense for how Android is
-    structured but currently it is unusable with QField as QField needs to
-    access the real file with a real path.
-
-!!! warning
-    By storing data in this folder, you risk losing data. The
-    application-specific directory
-    `/Android/data/ch.opengis.qfield/` will be deleted by the
-    system if you uninstall QField from your Android device. This is
-    important if you keep the data in the External sd card.
-
-### How to turn external SD card into internal storage
-
-Starting from Android 6.0, you can use the SD card as internal storage
-for your Android phone. A feature called Adoptable Storage allows the
-Android OS to format an external storage media as a permanent internal
-storage. The data on the adopted SD card is encrypted and it can't be
-mounted on another device.
-
-**Please be sure you start with an empty SD card. It needs to be empty
-because when the card is converted to "Internal" storage, it will be
-formatted (wiped).**
-
-1.  Go to device "Settings", then select "Storage".
-2.  Select your "SD Card", then tap the "three-dot menu" (top-right),
-    now select "Settings" from in there.
-3.  Now select "Format as internal", and then "Erase & Format".
-4.  Your SD Card will now be formatted as internal storage.
-5.  Reboot your phone.
-
-If you don't reboot the phone, many things may not work correctly, so
-make sure you do.
-
-It might be possible that the Adoptable Storage feature is not present
-on your device even if it is running Android 6.0 and above. The device
-manufacturer may have disabled the feature. However, command-line
-methods exist which allow you to force a device to adopt a storage.
+!![Send to...](../assets/images/howto_sendto.png)

@@ -24,9 +24,9 @@ project and attributes configured to store this information.
 
 ![](../assets/images/vertex_log1.png){width="600px"}
 
-Then the user assigns the role "digitizing logger" on a point layer.
+Then the user assigns the role *digitizing logger* on a point layer.
 
-Go to QFieldSync --> project Properties
+Go to *QFieldSync > Project Properties*
 
 ![](../assets/images/vertex_log2.png){width="600px"}
 
@@ -40,7 +40,7 @@ will be reported in three classes, bad (red), ok (yellow) and excellent
 
 The thresholds can be defined in the positioning settings.
 
-If the `Enable accuracy requirement` setting is activated, a
+If the *Enable accuracy requirement* setting is activated, a
 user will not be able to collect new measurements with the cursor
 snapped to the position with an accuracy value which is bad (red).
 
@@ -55,15 +55,16 @@ Altitude values can be corrected with vertical grid shift files to
 calculate orthometric height
 
 Vertical grid shift files have to be made available to QField by putting
-them into the QField base folder (`[external
-storage]/QField/proj`).
+them into the QField app folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj`.
+
+!!! note
+    Since QField 2 the proj files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj` instead of the devices main directory `<drive>:/QField/proj`.
 
 Once the grid shift file is placed there it is available in QField in
-the `Positioning settings` under `Vertical grid shift in use`.
+the *Positioning settings* under *Vertical grid shift in use*.
 
 If you are using altitude correction and an external bluetooth connected
-antenna consider turning `Use orthometric altitude from
-device` off.
+antenna consider turning *Use orthometric altitude from device* off.
 
 ### Additional variables
 
@@ -78,12 +79,11 @@ track of the quality of individual measured points.
     reported by the sensor. To differenciate between internal and
     external sensor. If the position is manually set, and the
     position is not snapped to the cursor, the source name is
-    "manual". **In case the cursor is not snapped to the position,
-    all other variables will be null, if you need this, use the
+    "manual". **In case the cursor is not snapped to the position, all other variables will be null, if you need this, use the
     `gnss_` variables instead**.
   - `@position_quality_description` - A human readable and translated string for the quality as
         reported by the sensor. E.g. "Fixed RTK". It is only available
-        when the crosshair is snapped to the sensor. - E - IE
+        when the crosshair is snapped to the sensor. - IE
   - `@position_coordinate` - A point with the coordinate in WGS84. Lon, Lat, Altitude as
         delivered by the sensor. It is only available when the crosshair
         is snapped to the sensor. - `x(\@position_coordinate)` - IE
@@ -122,11 +122,11 @@ track of the quality of individual measured points.
         available when the crosshair is snapped to the sensor. - E
   - `@position_used_satellites` - A list of satellites in use (pri) as reported by the sensor. It
         is only available when the crosshair is snapped to the sensor. - `array_count(@position_used_satellites)` - E
-  - `@position_fix_status_description` - The GPS Fix Status \"NoData\", \"NoFix\", \"Fix2D\" or \"Fix3D\"
+  - `@position_fix_status_description` - The GPS Fix Status "NoData", "NoFix", "Fix2D" or "Fix3D"
         as reported by the sensor. It is only available when the
         crosshair is snapped to the sensor. - E
-  - `@position_fix_mode` - Fix mode (where 'M' = Manual, forced to operate in 2D or 3D or
-        'A' = Automatic, 3D/2D) as reported by the sensor. It is only
+  - `@position_fix_mode` - Fix mode (where "M" = Manual, forced to operate in 2D or 3D or
+        "A" = Automatic, 3D/2D) as reported by the sensor. It is only
         available when the crosshair is snapped to the sensor. - E
 
 !!! info
@@ -138,32 +138,32 @@ crosshair is not snapped.
 
 Examples:
 
-:   -   when the crosshair is snapped to the sensor - `@gnss_horizontal_accuracy` --> The
+:   -   when the crosshair is snapped to the sensor - `@gnss_horizontal_accuracy` > The
             horizontal accuracy of the coordinate (in meters) as
-            reported by the sensor. - `@position_horizontal_accuracy` --> The
+            reported by the sensor. - `@position_horizontal_accuracy` > The
             horizontal accuracy of the coordinate (in meters) as 
             reported by the sensor. - `@position_source_name` --> sensor name.
-    -   when the crosshair is manually moved - `@gnss_horizontal_accuracy` --> The
+    -   when the crosshair is manually moved - `@gnss_horizontal_accuracy` > The
             horizontal accuracy of the coordinate (in meters) as 
-            reported by the sensor. - `@position_horizontal_accuracy` --> The value
-            is `NULL`. - `@position_source_name` --> The value is
+            reported by the sensor. - `@position_horizontal_accuracy` > The value
+            is `NULL`. - `@position_source_name` > The value is
             `manual`.
 
 
 ## Usage
 :material-tablet-android:{ .device-icon } Fieldwork
 
-A short press on the GNSS button will turn on the GNSS and center to the
-current location once positioning information is available.
+A short press on the *GNSS button* will turn on the GNSS and center to the
+current location once *positioning information* is available.
 
-Activate edit mode and press on the target button, the cross in the
+Activate *edit mode* and press on the target button, the cross in the
 center means it is using GNSS positioning.
 
 !![](../assets/images/gnss_use.webp)
 
-A long press on the GNSS button will show the positioning menu.
+A long press on the *GNSS button* will show the *positioning menu*.
 
-Inside the positioning menu you can turn on the positioning display
+Inside the *positioning menu* you can turn on the *positioning display*
 which will show the current coordinates which are reprojected into the
 project CRS along with precision information.
 
@@ -178,7 +178,7 @@ project CRS along with precision information.
 
 QField supports connecting external GNSS antennas via bluetooth.
 
-In settings -> positioning, paired bluetooth devices can be scanned and
+In *Settings > Positioning*, paired bluetooth devices can be scanned and
 chosen as position source.
 
 Make sure no other app like mock location providers are using the

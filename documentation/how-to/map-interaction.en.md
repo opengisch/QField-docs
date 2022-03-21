@@ -9,17 +9,19 @@ Here are described some of the possible interaction with the map possible in QFi
 ## Map legend
 :material-tablet-android:{ .device-icon } Fieldwork
 
-Open the **Main menu** and expend the layers list to display the legend
+Open the *Main menu* and expend the layers list to display the legend
 of the map.
 
-!![](../assets/images/user-guide_legend.png)
+On double-tap or long-press on a layer you get offered the following possibilities.
 
-## Turning on and off layers
-:material-tablet-android:{ .device-icon } Fieldwork
+!![](../assets/images/howto_legendoptions.jpg)
 
-`Main menu --> long press on the layer --> check or uncheck show on map canvas`
-
-!![](../assets/images/turning_on_off.webp)
+- *Show on map* to control visibility.
+- *Show labels* to control the visibility of the labels.
+- *Expand legend item* to show/hide the layer's sub-items.
+- *Zoom to layer* to have all the layer items on the map.
+- *Reload data* to get the current data of a layer with remote sources.
+- *Show feature list* to show all the layer's features in the identification list.
 
 ## Identify features
 :material-tablet-android:{ .device-icon } Fieldwork
@@ -30,15 +32,28 @@ really close one to another, or because several layers are overlapping),
 they will all be listed in the menu that opens on the right of the
 screen.
 
-!![](../assets/images/identify_features.webp)
+!![](../assets/images/howto_identification.jpg)
 
 Tap on one of the listed feature to access its attributes.
 
-1.  Tap the **arrows** to scroll through all the identified features.
-2.  Tap the **centre button** to center the map on the selected feature.
-3.  Tap the **edit button** to edit the attributes of the selected
+1.  Tap the *arrows* to scroll through all the identified features.
+2.  Tap the *centre button* to center the map on the selected feature.
+3.  Tap the *edit button* to edit the attributes of the selected
     feature.
-4.  Scroll through the **sub-menus** to access all the attributes.
+4.  Scroll through the *sub-menus* to access all the attributes.
+
+!![](../assets/images/howto_featureform.jpg)
+
+### Select identified features
+
+With long-press you can toggle the feature selection.
+
+!![](../assets/images/howto_selection.jpg)
+
+When features then are selected, you can perform the actions provided in the three-dot-menu on the top right.
+
+!![](../assets/images/howto_identification_options.jpg)
+
 
 ### Exceptions to identified layers
 
@@ -46,11 +61,11 @@ Often it is not required to be able to query every layer. Some layers
 are only present as basemap and their attributes are not of interest.
 
 You can manage this layerlist in QGIS desktop in
-`Project --> Project Properties --> Identify Layers` and uncheck the base layers.
+*Project > Project Properties > Identify Layers* and uncheck the base layers.
 
 ## Measure tool
 :material-tablet-android:{ .device-icon } Fieldwork
 
-Open the **Main menu** --> tap the settings button --> Measure Tool
+Open the *Main menu > Measure Tool*
 
 ![type:video](https://player.vimeo.com/video/499565725)
