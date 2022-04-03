@@ -30,7 +30,7 @@ theme:
   favicon: assets/images/favicon.ico
   palette:
     - scheme: default
-      primary: green
+      primary: light green
       toggle:
         icon: octicons/moon-24
         name: Switch to dark mode
