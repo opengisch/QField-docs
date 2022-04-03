@@ -14,7 +14,8 @@ title: Get Started
 Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
 
-!![Registration form](../../assets/images/qfieldcloud_registration.png)
+![Registration form](../../assets/images/qfieldcloud_registration.png){Width="280px"}
+
 
 
 ### Edit Profile 
@@ -30,7 +31,7 @@ Your organizations are listed here. Find out more about teams, members and their
 
 Search and choose a project from the list or start to create a new project.
 
-!![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png)
+![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png)
 
 ## Connection to QFieldCloud on QGIS Desktop 
 :material-desktop-mac:{ .device-icon } Desktop preparation
@@ -46,7 +47,7 @@ Find QFieldSync in the list of plugins and install the latest version by clickin
 !!! note
     Since QFieldCloud is still in beta phase, there are frequent updates and fixes. Please upgrade your QFieldSync plugin often. In case of an issue, please try upgrading to the latest release before reporting.
 
-!![Successful installation](../../assets/images/install_qfieldsync.png)
+![Successful installation](../../assets/images/install_qfieldsync.png)
 
 After successful installation, a new toolbar appears:
 
@@ -57,7 +58,8 @@ After successful installation, a new toolbar appears:
 Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar.
 A new login screen will appear:
 
-!![Login screen](../../assets/images/qfieldsync_login_dialog.png)
+![Login screen](../../assets/images/qfieldsync_login_dialog.png){Width="280px"}
+
 
 Enter your credentials previously created during account registration.
 
@@ -67,7 +69,7 @@ Enter your credentials previously created during account registration.
 
 Explore the projects overview screen: your current user underlined and blue, a logout button down-left, a cloud button to create a new project and, on the right, a refresh button to grab the freshest project list. Newly registered users will see an empty table and as soon as they create new projects, the list will grow. The projects overview screen looks like this:
 
-!![Projects overview in QFieldSync](../../assets/images/project_overview_all_colors_tooltip.png)
+![Projects overview in QFieldSync](../../assets/images/project_overview_all_colors_tooltip.png)
 
 The icons indicate the cloud and local status of the different projects. 
 
@@ -113,9 +115,6 @@ A form will ask you for project name, description and local directory. In the lo
 * The entered path is not an existing directory. It will be created after you submit this form.
 * Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
 
-
-![Project details](../../assets/images/getting_started_project_details.png)
-
 ### Configure your project layers for QField
 
 Configure the project layers by clicking the fifth icon in the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"}. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer. Get more information about how to configure your layers in the [Get Started guide for QFieldSync](get-started-qfs.md).
@@ -146,25 +145,25 @@ Do not use this version in production!
 
 ### Start working on your project
 
-![Screenshot : Splash scren](../../assets/images/getting_started_splashscreen.png)
+![Screenshot : Splash scren](../../assets/images/getting_started_splashscreen.png){Width="280px"}
 
 Login with your username and password
 
-![Screenshot : Login](../../assets/images/getting_started_login.png)
+![Screenshot : Login](../../assets/images/getting_started_login.png){Width="280px"}
 
 Select a project to download on your device:
 
-![Screenshot : Download](../../assets/images/getting_started_download_project.png)
+![Screenshot : Download](../../assets/images/getting_started_download_project.png){Width="280px"}
 
 
 ### Synchronise your changes
 Make a change to your project. Either create a new feature, delete a feature, or modify the geometry or attributes.
 Open the blue cloud button on the top left of the screen:
 
-![Screenshot : Blue button](../../assets/images/getting_started_blue_button.png)
+![Screenshot : Blue button](../../assets/images/getting_started_blue_button.png){Width="280px"}
 
 Choose an action with the change you made to your project. Each of the actions have an explanation what you should expect to happen:
 
-![Screenshot : Actions](../../assets/images/getting_started_actions.png)
+![Screenshot : Actions](../../assets/images/getting_started_actions.png){Width="280px"}
 
 Your changes are now available to everyone who has access to your project on the cloud.
