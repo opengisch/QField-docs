@@ -46,6 +46,7 @@ nav:
   - Get started:
       - get-started/index.md
       - get-started/concepts.md
+      - get-started/storage.md
       - Tutorials:
           - QFieldCloud:
               - get-started/tutorials/get-started-qfc.md
