@@ -76,7 +76,7 @@ the content can be sent from and exported out of its system-protected files stor
 - by sending an individual dataset to a {cloud, email, messenger, etc.} app; and
 - by accessing imported content directly through USB cable.
 
-!![QField import actions](../assets/images/storage-export-actions.png)
+!![QField export actions](../assets/images/storage-export-actions.png)
 
 These actions are available via the dropdown action menu attached to project folders and
 individual datasets list in the project/dataset picker, which can be accessed by clicking
