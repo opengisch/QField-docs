@@ -20,9 +20,10 @@ individual datasets in QField.
 ### Opening projects and datasets
 
 QField can open projects and datasets in three ways:
-- by importing a project folder;
-- by importing a compressed project file; and
-- by importing individual dataset(s).
+
+* by importing a project folder;
+* by importing a compressed project file; and
+* by importing individual dataset(s).
 
 !![QField import actions](../assets/images/storage-import-actions.png)
 
@@ -71,10 +72,11 @@ system file picker. Upon selecting the datasets, QField will copy those into the
 
 Once users modify imported projects and datasets, QField offer various means through which
 the content can be sent from and exported out of its system-protected files storage:
-- by exporting a project folder or an individual dataset;
-- by sending a compressed project folder to a {cloud, email, messenger, etc.} app;
-- by sending an individual dataset to a {cloud, email, messenger, etc.} app; and
-- by accessing imported content directly through USB cable.
+
+* by exporting a project folder or an individual dataset;
+* by sending a compressed project folder to a {cloud, email, messenger, etc.} app;
+* by sending an individual dataset to a {cloud, email, messenger, etc.} app; and
+* by accessing imported content directly through USB cable.
 
 !![QField export actions](../assets/images/storage-export-actions.png)
 
