@@ -2,7 +2,7 @@
 title: Projects
 ---
 
-Projects are the main data container within QFieldCloud. Each user can create one or more QFieldCloud projects. Each project contains a single `.qgs`/`.qgz` QGIS project file, the geospatial files - GeoPackages, Shapefiles, TIFs, and additional data such as photos, PDFs etc. All the project data must be within a single QFieldCloud project.
+Projects are the main data container within QFieldCloud. Each user can create one or more QFieldCloud projects. Each project contains a single `.qgs`/`.qgz` QGIS project file, the geospatial files - GeoPackages, Shapefiles, TIFs, and additional data such as photos, PDFs etc. All project data files must be within a single QFieldCloud project.
 
 Each QFieldCloud project has a name and an owner. The owner of a project is a QFieldCloud user or an organization. The owner name and project name must be a unique combination within QFieldCloud, which means a user cannot have two projects with the same name.
 
@@ -38,7 +38,7 @@ project
 
 ## Collaborators
 
-A project collaborator is another QFieldCloud user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role **owner** or **admin** can add more users as collaborators. If the project is owned by an organization, you can also add **teams** as collaborators. Read more about collaborator roles [here](permissions.md).
+A project collaborator is another QFieldCloud user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role **owner** or **admin** can add more users as collaborators. If the project is owned by an organization, you can also add **teams** as collaborators. [Read more about collaborator roles](permissions.md).
 
 ## Changes
 
