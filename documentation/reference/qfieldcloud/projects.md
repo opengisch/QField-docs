@@ -38,11 +38,11 @@ project
 
 ## Collaborators
 
-A project collaborator is another QFieldCloud user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role **owner** or **admin** can add more users as collaborators. If the project is owned by an organization, you can also add **teams** as collaborators. [Read more about collaborator roles](permissions.md).
+A project collaborator is another QFieldCloud user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role **owner** or **admin** can add more users as collaborators. If the project is owned by an organization, you can also add **teams** as collaborators. Read more about [collaborator roles](permissions.md).
 
 ## Changes
 
-Changes made on vector layers and pushed to QFIeldCloud from a QField device will appear here. Each change stores the changed attributes and geometries.
+Changes made on vector layers and pushed to QFieldCloud from a QField device will appear here. Each change stores the changed attributes and geometries.
 
 Changes have one of the three methods:
 
@@ -60,7 +60,7 @@ Features that have been created and later deleted without being pushed to QField
 
 ## Jobs
 
-Read more about project jobs [here](jobs.md).
+Read more about [project jobs](jobs.md).
 
 ## Secrets
 

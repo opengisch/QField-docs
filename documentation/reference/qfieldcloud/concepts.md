@@ -12,7 +12,7 @@ Projects are the main data container within QFieldCloud. Each user can create on
 
 ### Project collaborators
 
-A project collaborator is another QFieldCloud user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role **owner** or **admin** can add more users as collaborators. If the project is owned by an organization, you can also add **teams** as collaborators. Read more about collaborator roles [here](permissions.md).
+A project collaborator is another QFieldCloud user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role **owner** or **admin** can add more users as collaborators. If the project is owned by an organization, you can also add **teams** as collaborators. Read more about [collaborator roles](permissions.md).
 
 ## Organizations
 

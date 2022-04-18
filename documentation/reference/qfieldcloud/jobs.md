@@ -37,7 +37,7 @@ This job is triggered every time a file is uploaded to QFieldCloud, unless at le
 
 #### Troubleshoot
 
-A `process_projectfile` job might result in `FAILED` status. Check the non-exhaustive list of causes bellow:
+A `process_projectfile` job might result in `FAILED` status. Check the non-exhaustive list of causes below:
 
 - The uploaded QGIS project file (`.qgs`/`.qgz`) is unreadable, incomplete, broken or wrong. Try to reupload the QGIS project file.
 - QGIS is crashing after opening the project file. Try to identify the layer that is causing the crash by removing one layer at time from the project and reuploading the QGIS project file.
@@ -53,15 +53,14 @@ The `package` job convert a QGIS project to a QField project, the same way it is
 
 This job is triggered every time the **Download** or **Synchronize** buttons are pressed on QField. Unless at least one of the following condition are valid:
 
-- The project never run a `process_projectfile` job that resulted in `SUCCESS` status.
+- The project has never run a `process_projectfile` job that resulted in `SUCCESS` status.
 - There is already a `package` job in `PENDING` status.
-- The project contains does not contain online vector layers (PostGIS, WFS etc), the latest `package` job result was `SUCCESS` and there were not file uploads, nor change uploads.
-
+- The project does not contain online vector layers (PostGIS, WFS etc), the latest `package` job result was `SUCCESS` and there were no file uploads, nor change uploads.
 #### Troubleshoot
 
-A `package` job might result in `FAILED` status. Check the non-exhaustive list of causes bellow:
+A `package` job might result in `FAILED` status. Check the non-exhaustive list of causes below:
 
-- The project never run a `process_projectfile` job that resulted in `SUCCESS` status.
+- The project has never run a `process_projectfile` job that resulted in `SUCCESS` status.
 - Some of the project layers are inaccessible from QFieldCloud. Make sure all files are uploaded and all credentials to online layers (PostGIS, WFS etc) are stored within the QGIS project file.
 
 ### Delta apply (`delta_apply`) job
@@ -70,14 +69,14 @@ Delta apply jobs is responsible to make all pushed QField changes permanent.
 
 #### Triggers
 
-This job is triggered every time a **Synchronize** or **Push changes** buttons are pressed on QField, or **Apply pending changes** button is pressed on the **Changes** project page. If any of the following condition are valid:
+This job is triggered every time a **Synchronize** or **Push changes** button is pressed on QField, or **Apply pending changes** button is pressed on the **Changes** project page. If any of the following condition are valid:
 
 - The project never run a `process_projectfile` job that resulted in `SUCCESS` status.
 - There is already a `delta_apply` job in `PENDING` status.
 
 #### Troubleshoot
 
-A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive list of causes bellow:
+A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive list of causes below:
 
 - At least one of the online databases (PostGIS/WFS) used in the QGIS project reset the connection.
 - The project is too big and the job has failed to run.
@@ -86,7 +85,7 @@ A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive li
 
 ## Troubleshoot job logs
 
-When running a job, usually you can find a step called "Check project layers" that prints a table with all the project layers and status next to them.
+When running a job, usually you can find a step in the logs called "Check project layers" that prints a table with all the project layers and status next to them.
 
 The possible statuses are:
 
