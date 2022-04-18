@@ -1,5 +1,5 @@
 ---
-title: Concepts
+title: Basic concepts
 ---
 
 ## Users
@@ -8,19 +8,19 @@ To interact with QFieldCloud you need a registered user. Each user can create, m
 
 ## Projects
 
-Projects are the main data container within QFieldCloud. Each user can create one or more QFieldCloud projects. Each project contains a single `.qgs`/`.qgz` QGIS project file, the geospatial files - geopackages, shapefiles, tiffs, and additional data such as photos, PDFs etc. Note all the project data should be within a single QFieldCloud project.
+Projects are the main data container within QFieldCloud. Each user can create one or more QFieldCloud projects. Each project contains a single `.qgs`/`.qgz` QGIS project file, the geospatial files - GeoPackages, Shapefiles, TIFs, and additional data such as photos, PDFs etc. All the project data must be within a single QFieldCloud project.
 
 ### Project collaborators
 
-A project collaborator is a user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role **owner** or **admin** can add more users as collaborators. If the project is owned by an organization, you can also add **teams** as collaborators.
+A project collaborator is another QFieldCloud user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role **owner** or **admin** can add more users as collaborators. If the project is owned by an organization, you can also add **teams** as collaborators. Read more about collaborator roles [here](permissions.md).
 
 ## Organizations
 
-Organizations are special type of users that allow easy collaboration of multiple users. Organizations can be created by any user and they can add **organization memebrs** to it. Each organization can own projects.
+Organizations are shared accounts multiple QFieldCloud users can collaborate across many projects at once. Owners and administrators can manage member access to the organization's projects and projects with sophisticated security and administrative features. Any QFieldCloud user can own or participate in one or more organizations. Each organization owns one or more projects.
 
 ### Organization members
 
-Organization membership allows automatic access to all projects within an organization. Members with **owner** or **admin** role can add other members.
+Organization membership allows access to projects within an organization. Members with **owner** or **admin** role can add other members.
 
 ### Organization teams
 
