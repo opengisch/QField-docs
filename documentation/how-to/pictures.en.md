@@ -16,7 +16,7 @@ To configure the Widget, please refer to the [Attributes Form Documentation](../
 You can add one or more pictures to a feature. Here is an example on how to proceed.
 
 ### Tables
-We will need two tables. One table where the features are stored and one with a list of pictures.
+You will need two tables. One table where the features are stored and one with a list of pictures.
 
 #### Apiary
 | Field      | Type       |

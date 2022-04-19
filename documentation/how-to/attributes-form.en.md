@@ -14,7 +14,7 @@ The field widgets from QGIS are supported on a best effort basis and optimized f
 | Check Box          | :material-check: |                                                                                                                                                                                                        |
 | Value Map          | :material-check: |                                                                                                                                                                                                        |
 | Hidden             | :material-check: |                                                                                                                                                                                                        |
-| Attachment         | :material-check: | This field is combined with camera integration. It is also able to open other files like pdf and doc (if the user has an appropriate viewer) [Attachment (photo settings)](#attachment-photo-settings) |
+| Attachment         | :material-check: | This field is combined with camera integration. It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#attachment-photo-settings) |
 | Date Time          | :material-check: |                                                                                                                                                                                                        |
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
 | Relation Widget    | :material-check: |                                                                                                                                                                                                        |
@@ -134,7 +134,7 @@ imagine mapping trees. Some of them might have a disease and you have a
 list of possible deseases. To not clutter the form with many fields,
 make a group and configure a visibility expression for a group
 "diseases". Add a field "desease" with a checkbox. Only when the
-checkbox is checked, the list of diseases will be available to the user.
+checkbox is checked, the list of diseases will be available to you.
 
 !![Configuration of a group box that will only be shown if the checkbox "measures_taken" is checked.](../assets/images/conditional_visibility_configuration.png)
 
@@ -149,7 +149,7 @@ Let's see what we got on the field:
 Attribute fields can have constraints attached. Constraints are
 expressions that needs to evaluate to `True` (or `1`) in order to be
 able to save the form. Constraints are configured on a per-field basis
-and a description can be added that will be shown to the user if a
+and a description can be added that will be shown if a
 constraint is not satisfied.
 
 !![Configuration of a constraint within a range](../assets/images/constraint_configuration.png)
@@ -173,8 +173,7 @@ It is required to fill in an identifier.
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
 Fields can have default values configured. Default values are inserted
-into the attribute form when digitizing a new feature. They are visible
-to the user and can be modified as long as the field is editable. They
+into the attribute form when digitizing a new feature. They are visible and can be modified as long as the field is editable. They
 can be based on the geometry or expression variables.
 
 !![Configuration of a formatted date as default value](../assets/images/default_value_configuration.png)

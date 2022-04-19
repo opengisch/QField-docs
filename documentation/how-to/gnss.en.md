@@ -24,7 +24,7 @@ project and attributes configured to store this information.
 
 ![](../assets/images/vertex_log1.png){width="600px"}
 
-Then the user assigns the role *digitizing logger* on a point layer.
+Then you should assigns the role *digitizing logger* on a point layer.
 
 Go to *QFieldSync > Project Properties*
 
@@ -40,8 +40,7 @@ will be reported in three classes, bad (red), ok (yellow) and excellent
 
 The thresholds can be defined in the positioning settings.
 
-If the *Enable accuracy requirement* setting is activated, a
-user will not be able to collect new measurements with the cursor
+If the *Enable accuracy requirement* setting is activated, you will not be able to collect new measurements with the cursor
 snapped to the position with an accuracy value which is bad (red).
 
 ### Antenna height compensation
@@ -60,7 +59,7 @@ them into the QField app folder `<drive>:/Android/data/ch.opengis.qfield/files/Q
 !!! note
     Since QField 2 the proj files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj` instead of the devices main directory `<drive>:/QField/proj`.
 
-Once the grid shift file is placed there it is available in QField in
+Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
 
 If you are using altitude correction and an external bluetooth connected

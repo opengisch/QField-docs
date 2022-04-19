@@ -44,7 +44,7 @@ a *Save button* will appear. Click on it to finish your sketch.
 ### Attribute form
 
 After digitizing a geometry, the attribute form will be displayed if it
-is not suppressed and the user will be asked to enter the attributes for
+is not suppressed and you will be asked to enter the attributes for
 the new feature. The form which appears allows entering attribute values
 for the new feature.
 
@@ -87,7 +87,7 @@ A video demonstration of some editing possibilities:
 
 ### Freehand digitizing
 
-The freehand digitizing mode allows users to "draw" lines and polygons
+The freehand digitizing mode allows you to "draw" lines and polygons
 using their styluspen or mouse. The mode is available for line / polygon
 feature additions as well as the geometry editor's rings tool.
 
@@ -119,7 +119,7 @@ time. In some cases, it can be very efficient.
 
 Deleting features is only possible in digitize mode.
 
-!![](../assets/images/delete_features.webp){width="300px"}
+!![](../assets/images/delete_features.webp)
 
 To delete a feature, identify it first by a short tap on it. Then select
 it with a long press in the identification list, select further features
