@@ -77,7 +77,7 @@ nav:
       - how-to/authentication.md
       - how-to/itinerary.md
       - how-to/hiding-legend-nodes.md
-      - how-to/live_default_value.md
+      - how-to/live-default-value.md
       - how-to/outside-layers.md
       - how-to/movable-project.md
   - Technical reference:
