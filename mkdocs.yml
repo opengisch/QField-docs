@@ -88,6 +88,7 @@ nav:
           - reference/qfieldcloud/projects.md
           - reference/qfieldcloud/permissions.md
           - reference/qfieldcloud/jobs.md
+          - reference/qfieldcloud/specs.md
           - reference/qfieldcloud/swagger.md
           - reference/qfieldcloud/system.md
   - Case studies:
