@@ -21,7 +21,7 @@ Then make the package of the project to load it on your device.
 
 Below the result on QField.
 
-!![basemap](../assets/images/qfield_basemap2.jpg)
+!![basemap](../assets/images/qfield_basemap2.png,250px)
 
 ## Using a project as Base Map
 :material-tablet-android:{ .device-icon } Fieldwork

@@ -14,7 +14,7 @@ of the map.
 
 On double-tap or long-press on a layer you get offered the following possibilities.
 
-!![](../assets/images/howto_legendoptions.jpg)
+!![](../assets/images/howto_legendoptions.png)
 
 - *Show on map* to control visibility.
 - *Show labels* to control the visibility of the labels.
@@ -32,7 +32,7 @@ really close one to another, or because several layers are overlapping),
 they will all be listed in the menu that opens on the right of the
 screen.
 
-!![](../assets/images/howto_identification.jpg)
+!![](../assets/images/howto_identification.png)
 
 Tap on one of the listed feature to access its attributes.
 
@@ -42,17 +42,17 @@ Tap on one of the listed feature to access its attributes.
     feature.
 4.  Scroll through the *sub-menus* to access all the attributes.
 
-!![](../assets/images/howto_featureform.jpg)
+!![](../assets/images/howto_featureform.png)
 
 ### Select identified features
 
 With long-press you can toggle the feature selection.
 
-!![](../assets/images/howto_selection.jpg)
+!![](../assets/images/howto_selection.png)
 
 When features then are selected, you can perform the actions provided in the three-dot-menu on the top right.
 
-!![](../assets/images/howto_identification_options.jpg)
+!![](../assets/images/howto_identification_options.png)
 
 
 ### Exceptions to identified layers

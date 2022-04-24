@@ -14,7 +14,7 @@ title: Get Started
 Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
 
-!![Registration](../../assets/images/qfieldcloud_registration.png)
+!![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
 
 ### Edit Profile 
@@ -57,7 +57,7 @@ After successful installation, a new toolbar appears:
 Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar.
 A new login screen will appear:
 
-!![Login screen](../../assets/images/qfieldsync_login_dialog.png){Width="280px"}
+!![Login screen](../../assets/images/qfieldsync_login_dialog.png,250px)
 
 
 Enter your credentials previously created during account registration.
@@ -144,25 +144,25 @@ Do not use this version in production!
 
 ### Start working on your project
 
-!![Welcome](../../assets/images/getting_started_splashscreen.png)
+!![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
 
 Login with your username and password
 
-!![Login](../../assets/images/getting_started_login.png)
+!![Login](../../assets/images/getting_started_login.png,250px)
 
 Select a project to download on your device:
 
-!![Download](../../assets/images/getting_started_download_project.png)
+!![Download](../../assets/images/getting_started_download_project.png,250px)
 
 
 ### Synchronise your changes
 Make a change to your project. Either create a new feature, delete a feature, or modify the geometry or attributes.
 Open the blue cloud button on the top left of the screen:
 
-!![Cloud button](../../assets/images/getting_started_blue_button.png)
+!![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
 
 Choose an action with the change you made to your project. Each of the actions have an explanation what you should expect to happen:
 
-!![Actions](../../assets/images/getting_started_actions.png)
+!![Actions](../../assets/images/getting_started_actions.png,250px)
 
 Your changes are now available to everyone who has access to your project on the cloud.
