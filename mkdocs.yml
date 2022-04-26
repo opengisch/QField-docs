@@ -85,8 +85,10 @@ nav:
       - reference/data-format.md
       - QFieldCloud:
           - reference/qfieldcloud/concepts.md
+          - reference/qfieldcloud/projects.md
           - reference/qfieldcloud/permissions.md
-          - reference/qfieldcloud/troubleshooting.md
+          - reference/qfieldcloud/jobs.md
+          - reference/qfieldcloud/specs.md
           - reference/qfieldcloud/swagger.md
           - reference/qfieldcloud/system.md
   - Case studies:
