@@ -8,7 +8,7 @@ QField offers navigation functionalities to help orient yourself in the field an
 
 ## Activating navigation 
 
-Navigation is enabled when a destination point has been set and positioning is active. When turned on, a set of navigation overlays - a destination marker, a navigation panel, and a navigation control button - appears over the map.
+Navigation is enabled when [a destination point has been set](#setting-a-destination-point) and positioning is active. When turned on, a set of navigation overlays - a destination marker, a navigation panel, and a navigation control button - appear over the map.
 
 !![](../assets/images/navigation.png)
 
@@ -37,10 +37,10 @@ Finally, you can also set a navigation destination point by opening the feature 
 ## Auto tracking of current location and destination
 :material-tablet-android:{ .device-icon } Fieldwork
 
-QField allows for its map to automatically keep track of the currant device location and destination and re-center the map extent around those two points.
+QField allows for its map to automatically keep track of the current device location and destination and re-center the map extent around those two points.
 
 To activate this auto tracking feature, you can simply tap on the positioning button and the navigation control button. Both buttons should show their auto tracking mode active by having their background color turn to blue and purple.
 
 !![](../assets/images/navigation-auto-tracking.png)
 
-This can be desribed as a simple *staking mode* functionality.
+This can be described as a simple *staking mode* functionality.
