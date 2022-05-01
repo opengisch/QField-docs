@@ -43,4 +43,4 @@ It is also possible to add a bookmark at the current device's location when posi
 
 ## Project Bookmarks
 
-QField can display and search for project-embedded bookmarks. The addition and manage of such bookmarks is done [in QGIS itself](https://docs.qgis.org/latest/en/docs/user_manual/introduction/general_tools.html#spatial-bookmarks).
+QField can display and search for project-embedded bookmarks. The addition and management of such bookmarks is done [in QGIS itself](https://docs.qgis.org/latest/en/docs/user_manual/introduction/general_tools.html#spatial-bookmarks).
