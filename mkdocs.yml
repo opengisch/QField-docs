@@ -26,7 +26,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-  logo: assets/images/qfield_logo.svg
+  logo: assets/images/qfield_logo_white.svg
   favicon: assets/images/favicon.ico
   palette:
     - scheme: default
