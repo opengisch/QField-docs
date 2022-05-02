@@ -13,7 +13,7 @@ To start digitizing new features, enable the *Edit mode* in the main
 menu (*pencil button*) and select the layer on which you want to add a
 new feature (the layer will be highlighted in green).
 
-!![](../assets/images/collect_features.webp)
+!![](../assets/images/collect_features.webp,250px)
 
 ### Points
 
@@ -119,7 +119,7 @@ time. In some cases, it can be very efficient.
 
 Deleting features is only possible in digitize mode.
 
-!![](../assets/images/delete_features.webp)
+!![](../assets/images/delete_features.webp,250px)
 
 To delete a feature, identify it first by a short tap on it. Then select
 it with a long press in the identification list, select further features

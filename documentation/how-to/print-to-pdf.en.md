@@ -12,7 +12,7 @@ It's possible to export the maps and other items to a PDF document using the QGI
 If the project has at least one print layout defined, printing is
 available over the menu.
 
-!![](../assets/images/print_menu.jpg)
+!![](../assets/images/print_menu.png)
 
 After selecting the print layout, the PDF document is created and stored
 in the project's directory.

@@ -26,11 +26,11 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-  logo: assets/images/qfield_logo.svg
+  logo: assets/images/qfield_logo_white.svg
   favicon: assets/images/favicon.ico
   palette:
     - scheme: default
-      primary: green
+      primary: light green
       toggle:
         icon: octicons/moon-24
         name: Switch to dark mode
@@ -46,6 +46,7 @@ nav:
   - Get started:
       - get-started/index.md
       - get-started/concepts.md
+      - get-started/storage.md
       - Tutorials:
           - QFieldCloud:
               - get-started/tutorials/get-started-qfc.md
@@ -64,8 +65,10 @@ nav:
       - how-to/pictures.md
       - how-to/gnss.md
       - how-to/digitize.md
+      - how-to/bookmarks.md
       - how-to/print-to-pdf.md
       - how-to/search.md
+      - how-to/navigation.md
       - how-to/tracking.md
       - how-to/variables.md
       - how-to/map-interaction.md
@@ -76,7 +79,7 @@ nav:
       - how-to/authentication.md
       - how-to/itinerary.md
       - how-to/hiding-legend-nodes.md
-      - how-to/live_default_value.md
+      - how-to/live-default-value.md
       - how-to/outside-layers.md
       - how-to/movable-project.md
   - Technical reference:
@@ -84,8 +87,10 @@ nav:
       - reference/data-format.md
       - QFieldCloud:
           - reference/qfieldcloud/concepts.md
+          - reference/qfieldcloud/projects.md
           - reference/qfieldcloud/permissions.md
-          - reference/qfieldcloud/troubleshooting.md
+          - reference/qfieldcloud/jobs.md
+          - reference/qfieldcloud/specs.md
           - reference/qfieldcloud/swagger.md
           - reference/qfieldcloud/system.md
   - Case studies:

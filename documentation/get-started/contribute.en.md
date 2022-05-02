@@ -11,7 +11,7 @@ QField is an open source project. It is free to share, use and modify and it wil
   - Write about your experience ([please let us know!](mailto:info@opengis.ch));
   - [Help with the documentation](https://github.com/opengisch/QField-docs#documentation-process);
   - [Translate the documentation](https://github.com/opengisch/QField-docs#translation-process) or [the app](https://www.transifex.com/opengisch/qfield-for-qgis/);
-  - [Sponsor a feature](http://qfield.org/docs/development/index.html#make-it-grow-make-it-yours); or
+  - [Sponsor a feature](https://docs.qfield.org/get-started/sponsor/); or
   - Just drop by to say thank you or have a beer with us next time you meet OPENGIS.ch at a conference.
 
 # Development

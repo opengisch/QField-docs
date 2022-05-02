@@ -103,7 +103,7 @@ the textfield is pointing to.
 In QField the picture is displayed. By clicking the camera symbol the
 camera is started to update the picture with a new photo.
 
-!![](../assets/images/qfield_picture.png)
+!![pictures](../assets/images/qfield_picture.png)
 
 On synchronization the sub-directory with the pictures, pdf and docs has
 to be copied as well.
