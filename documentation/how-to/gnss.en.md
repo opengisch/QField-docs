@@ -24,7 +24,7 @@ project and attributes configured to store this information.
 
 ![](../assets/images/vertex_log1.png){width="600px"}
 
-Then you should assigns the role *digitizing logger* on a point layer.
+Then you should assign the role *digitizing logger* on a point layer.
 
 Go to *QFieldSync > Project Properties*
 
