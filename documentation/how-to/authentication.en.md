@@ -43,20 +43,20 @@ At this point, verify that you are able to properly connect to the
 service from QGIS. This authentication configuration must first be
 exported from QGIS itself.
 
-To do so, users open the QGIS options dialog and focus on the
-authentication panel. There, the user selects the *OAuth2 configuration*
+To do so, open the QGIS options dialog and focus on the
+authentication panel. There, you can select the *OAuth2 configuration*
 used by the project layer(s) by clicking on the appropriate row in the
-configurations table widget. Then, the user uses the lower-right
+configurations table widget. Then, use the lower-right
 utilities button to select the *export selected authentication
 configurations to file* action.
 
 !![widgets](../assets/images/oauth2_export_config.png)
 
-When prompted for a password, leave it blank. The user will be warned
+When prompted for a password, leave it blank. You will be warned
 that she might be leaking sensitive information. In the case of
 OAuth2 configurations, it is safe to do so.
 
-Once the user has exported the authentication configuration to an XML
+Once you have exported the authentication configuration to an XML
 file, she copies that file onto the device(s) running QField. The
 file has to be copied to the devices `<drive>:/Android/data/ch.opengis.qfield/files/QField/auth/` QField directory. The `/QField/auth/` path is created when first
 launching QField.
@@ -64,9 +64,9 @@ launching QField.
 !!! note
     Since QField 2 the auth files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/auth` instead of the devices main directory `<drive>:/QField/auth`.
 
-Once the authentication configuration XML file is copied, users can copy
+Once the authentication configuration XML file is copied, you can copy
 the project file containing OAuth2-protected layer(s) onto the device(s)
-and open the project in QField. The user will be prompted for his/her
+and open the project in QField. You will be prompted for the
 user, password, and 2-step-verification authentication code within a
 browser panel that will pop up in QField itself.
 
