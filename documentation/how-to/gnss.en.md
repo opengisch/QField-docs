@@ -159,7 +159,7 @@ current location once *positioning information* is available.
 Activate *edit mode* and press on the target button, the cross in the
 center means it is using GNSS positioning.
 
-!![](../assets/images/gnss_use.webp)
+!![](../assets/images/gnss_use.webp,250px)
 
 A long press on the *GNSS button* will show the *positioning menu*.
 

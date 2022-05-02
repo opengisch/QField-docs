@@ -14,7 +14,7 @@ title: Get Started
 Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
 
-!![Registration form](../../assets/images/qfieldcloud_registration.png)
+!![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
 
 ### Edit Profile 
@@ -57,7 +57,8 @@ After successful installation, a new toolbar appears:
 Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar.
 A new login screen will appear:
 
-!![Login screen](../../assets/images/qfieldsync_login_dialog.png)
+!![Login screen](../../assets/images/qfieldsync_login_dialog.png,250px)
+
 
 Enter your credentials previously created during account registration.
 
@@ -86,7 +87,7 @@ The status of each project is shown with a tooltip.
 
 By double-clicking on a project in the list, you can see and edit the specific project properties.
 
-![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
+!![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
 
 
 ### Create and configure your Cloud project
@@ -101,7 +102,7 @@ To convert a current project, a completely empty directory is mandatory.
 * "Create a new empty QFieldCloud project"  
 A new blank QFieldCloud project will be created. You will be responsible to move all the project-related files within the selected local directory, with the project file at its root. Project files will only be uploaded when you click the synchronize button. Make sure the selected contains no more than one QGIS project file.
 
-![Project details](../../assets/images/create_project.png)
+!![Project details](../../assets/images/create_project.png)
 
 A form will ask you for project name, description and local directory. In the local directory you can get different situations:
 
@@ -113,9 +114,6 @@ A form will ask you for project name, description and local directory. In the lo
 * The entered path is not an existing directory. It will be created after you submit this form.
 * Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
 
-
-![Project details](../../assets/images/getting_started_project_details.png)
-
 ### Configure your project layers for QField
 
 Configure the project layers by clicking the fifth icon in the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"}. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer. Get more information about how to configure your layers in the [Get Started guide for QFieldSync](get-started-qfs.md).
@@ -124,12 +122,12 @@ It is recommended to use GeoPackage layers for collaborative editing. See the [a
 
 Any QField supported raster and vector layer formats may be used as read-only data.
 
-![Project properties](../../assets/images/getting_started_project_properties.png)
+!![Project properties](../../assets/images/getting_started_project_properties.png)
 
 ### Upload a project
 Once configured, you can press the cloud button to open the synchronization dialog. Here you have to decide what do you prefer: the local file or the file on the cloud.
 
-![Synchronize](../../assets/images/getting_started_synchronize.png)
+!![Synchronize](../../assets/images/getting_started_synchronize.png)
 
 Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
 
@@ -146,25 +144,25 @@ Do not use this version in production!
 
 ### Start working on your project
 
-![Screenshot : Splash scren](../../assets/images/getting_started_splashscreen.png)
+!![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
 
 Login with your username and password
 
-![Screenshot : Login](../../assets/images/getting_started_login.png)
+!![Login](../../assets/images/getting_started_login.png,250px)
 
 Select a project to download on your device:
 
-![Screenshot : Download](../../assets/images/getting_started_download_project.png)
+!![Download](../../assets/images/getting_started_download_project.png,250px)
 
 
 ### Synchronise your changes
 Make a change to your project. Either create a new feature, delete a feature, or modify the geometry or attributes.
 Open the blue cloud button on the top left of the screen:
 
-![Screenshot : Blue button](../../assets/images/getting_started_blue_button.png)
+!![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
 
 Choose an action with the change you made to your project. Each of the actions have an explanation what you should expect to happen:
 
-![Screenshot : Actions](../../assets/images/getting_started_actions.png)
+!![Actions](../../assets/images/getting_started_actions.png,250px)
 
 Your changes are now available to everyone who has access to your project on the cloud.
