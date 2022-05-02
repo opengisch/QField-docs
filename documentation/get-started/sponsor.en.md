@@ -24,24 +24,3 @@ QField, QFieldCloud and QFieldSync are developped by [OPENGIS.ch](https://www.op
 QGIS.
 
 [![OPENGIS.ch](../assets/images/opengisch_main_transparent.png){width="200px"}](http://www.opengis.ch)
-
-## Previous funders
-
-The following oranizations have contributed to make QField what it
-currently is. We would like to warmly say: Thanks a lot!
-
-[![SIGE](../assets/images/logo_sige.jpg){width="200px"}](http://www.sige.ch)
-
-[![Schweizerische Vogelwarte](../assets/images/logo_vogelwarte.gif){width="200px"}](http://www.vogelwarte.ch)
-
-[![Géoconseils SA](../assets/images/logo_geoconseils.png){width="200px"}](http://www.geoconseils.ch)
-
-[![hydro safety srls](../assets/images/logo_hydrosafety.png){width="200px"}](http://www.hydro-safety.com/)
-
-[![Ville de Vevey](../assets/images/logo_vevey.png){width="100px"}](http://www.vevey.ch)
-
-[![Ville de Morges](../assets/images/logo_morges.png){width="100px"}](http://www.morges.ch)
-
-[![ibW Höhere Fachschule Südostschweiz](../assets/images/logo_ibw.png){width="200px"}](http://www.ibw.ch)
-
-[![Biotope](../assets/images/logo_biotope.png){width="200px"}](http://www.biotope.fr)
