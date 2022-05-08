@@ -19,7 +19,7 @@ To disable navigation, clear the destination point by tap and holding on the nav
 ## Setting a destination point
 :material-tablet-android:{ .device-icon } Fieldwork
 
-QField offers several methods to set a navigation destination point. A quick way is to simply tap and hold on any part of the map and select the *Set Coordinates as Destination* action within the popped up menu.
+QField offers several methods to set a navigation destination point. A quick way is to simply tap and hold on any part of the map and select the *Set as Destination* action within the popped up menu.
 
 !![](../assets/images/navigation-add-from-touch.png)
 

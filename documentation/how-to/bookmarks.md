@@ -26,7 +26,7 @@ QField also offers a setting to toggle off the displaying of bookmarks, which ca
 ## Adding Bookmarks
 :material-tablet-android:{ .device-icon } Fieldwork
 
-To add a new bookmark, simply tap and hold any part of the map and select the *Add Bookmark at Coordinates* action within the popped up menu.
+To add a new bookmark, simply tap and hold any part of the map and select the *Add Bookmark* action within the popped up menu.
 
 !![](../assets/images/bookmarks-add-from-touch.png)
 
@@ -34,7 +34,7 @@ After selecting this action, a panel will appear offering you the possibility to
 
 !![](../assets/images/bookmarks-properties.png)
 
-It is also possible to add a bookmark at the current device's location when positioning is enabled. To do so, simply tap and hold on the positioning button at the lower right corner and select the *Add Bookmark at Current Location* action.
+It is also possible to add a bookmark at the current device's location when positioning is enabled. To do so, simply tap and hold on the positioning button at the lower right corner and select the *Add Bookmark at Location* action.
 
 !![](../assets/images/bookmarks-add-from-location.png)
 
