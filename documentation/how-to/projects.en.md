@@ -1,8 +1,8 @@
 ---
-title: Project Selection
+title: Project selection
 ---
 
-# Project Selection
+# Project selection
 
 QField has a file selector that allows to open a project from the device locally. To open files from the cloud see [QFieldCloud ](../../get-started/tutorials/get-started-qfc/).
 

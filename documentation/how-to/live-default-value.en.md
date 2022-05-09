@@ -1,8 +1,8 @@
 ---
-title: Live Default Value
+title: Live default value
 ---
 
-# Live Default Value
+# Live default value
 
 QField is supporting the "live" updating of default attribute value
 when editing features.

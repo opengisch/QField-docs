@@ -1,12 +1,12 @@
 ---
-title: Hiding Legend Nodes
+title: Hiding legend nodes
 ---
 
-# Hiding Legend Nodes
+# Hiding legend nodes
 
 It is possible to configure your QGIS projet to allow hiding legend nodes
 
-## Configure Hidden Nodes
+## Configure hidden nodes
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
 First, you should verify if the plugin *Invisible layers and

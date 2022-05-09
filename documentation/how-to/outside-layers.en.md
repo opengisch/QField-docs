@@ -1,8 +1,9 @@
 ---
-title: Outside Layer
+title: Shared local datasets
 ---
 
-# Outside Layer
+# Shared local datasets
+
 In a QField project it is possible to use a layer outside the project
 folder, like a basemap.
 
