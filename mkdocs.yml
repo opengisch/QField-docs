@@ -62,22 +62,22 @@ nav:
   - How-to guides:
       - how-to/index.md
       - how-to/projects.md
-      - how-to/pictures.md
-      - how-to/gnss.md
-      - how-to/digitize.md
-      - how-to/bookmarks.md
-      - how-to/print-to-pdf.md
-      - how-to/search.md
-      - how-to/navigation.md
-      - how-to/tracking.md
-      - how-to/variables.md
       - how-to/map-interaction.md
+      - how-to/digitize.md
+      - how-to/attributes-form.md
+      - how-to/pictures.md
+      - how-to/search.md
       - how-to/basemaps.md
       - how-to/map-styling.md
       - how-to/map-themes.md
-      - how-to/attributes-form.md
+      - how-to/gnss.md
+      - how-to/navigation.md
+      - how-to/tracking.md
+      - how-to/bookmarks.md
+      - how-to/print-to-pdf.md
       - how-to/authentication.md
       - how-to/itinerary.md
+      - how-to/variables.md
       - how-to/hiding-legend-nodes.md
       - how-to/live-default-value.md
       - how-to/outside-layers.md
