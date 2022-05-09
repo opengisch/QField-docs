@@ -39,7 +39,7 @@ Please read the [storage access documentation](/get-started/storage/) to learn m
 
 :material-tablet-android:{ .device-icon } Fieldwork
 
-By default, the datasets will be overlying an OpenStreetMap XYZ layer. It is however possible to customize that by selecting a project stored onto the device QField is running that will act as a base map.
+By default, the datasets will be overlaying an OpenStreetMap XYZ layer. It is however possible to customize that by selecting a project stored onto the device QField is running that will act as a base map.
 
 To use an existing project as base map, do a long press on a project in the recent projects list and check *Base Map Project*.
 
