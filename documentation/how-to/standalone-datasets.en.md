@@ -23,7 +23,7 @@ The supported raster formats are:
 - GeoTIFF (.tif, .tiff);
 - Georeferenced PDF / GeoPDF (.pdf);
 - JPEG2000 (.jp2);
-- JPEG (.jpg);
+- JPEG (.jpg, .jpeg);
 - PNG (.png); and
 - WebP (.webp)
 
