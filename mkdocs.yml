@@ -67,7 +67,7 @@ nav:
       - how-to/attributes-form.md
       - how-to/pictures.md
       - how-to/search.md
-      - how-to/basemaps.md
+      - how-to/standalone-datasets.md
       - how-to/map-styling.md
       - how-to/map-themes.md
       - how-to/gnss.md
