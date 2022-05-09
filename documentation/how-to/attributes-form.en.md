@@ -1,8 +1,8 @@
 ---
-title: Attribute Form
+title: Attribute form
 ---
 
-# Attribute Form
+# Attribute form
 
 QField creates forms similar to, but not equal to QGIS.
 The field widgets from QGIS are supported on a best effort basis and optimized for the mobile use.
@@ -33,7 +33,7 @@ The *editable* flag of fields is respected.
 QField offers a much more fine-grained control over the last used values
 and ignores the QGIS setting.
 
-### Suppress Attribute Form
+### Suppress attribute form
 
 The setting *suppress attribute form* is directly applied to the
 QField form.

@@ -1,5 +1,5 @@
 ---
-title: Map Themes
+title: Map themes
 ---
 
 # Map themes
@@ -7,7 +7,7 @@ The beautiful thing about GIS is that maps are dynamic. Layers can
 individually be shown and hidden and information can be presented more
 or less prominently based on the task at hand.
 
-This is what *Map Themes* are for.
+This is what *Map themes* are for.
 
 ## Creating a Map Theme
 :material-desktop-mac:{ .device-icon } Desktop preparation
@@ -24,7 +24,7 @@ Creating a Map Theme in QGIS is a very simple task.
 :material-tablet-android:{ .device-icon } Fieldwork
 
 If you defined map themes for your project in QGIS, you can switch
-between them from the Dashboard. Use the *Map Themes* combobox to chose
+between them from the Dashboard. Use the *Map themes* combobox to chose
 the active theme.
 
 !![Change Map Theme](../assets/images/theme.webp)

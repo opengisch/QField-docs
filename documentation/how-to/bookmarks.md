@@ -6,7 +6,7 @@ title: Bookmarks
 
 QField allows you to save and display bookmarks that will be remembered across sessions and projects.
 
-## Viewing Bookmarks
+## Viewing bookmarks
 :material-tablet-android:{ .device-icon } Fieldwork
 
 By default, QField will display bookmarks as marker overlays over the map. User-added bookmarks are displayed across all projects and datasets.
@@ -23,7 +23,7 @@ QField also offers a setting to toggle off the displaying of bookmarks, which ca
 
 !![](../assets/images/bookmarks-toggle.png)
 
-## Adding Bookmarks
+## Adding bookmarks
 :material-tablet-android:{ .device-icon } Fieldwork
 
 To add a new bookmark, simply tap and hold any part of the map and select the *Add Bookmark* action within the popped up menu.
@@ -41,6 +41,6 @@ It is also possible to add a bookmark at the current device's location when posi
 !!! note
     When adding a bookmark, the current map scale is taken into consideration to save an extent centered around the tapped coordination or current location. This allows you to determine the extent that will be used when double-tapping on a bookmark marker or selecting a bookmark item in the search bar.
 
-## Project Bookmarks
+## Project bookmarks
 
 QField can display and search for project-embedded bookmarks. The addition and management of such bookmarks is done [in QGIS itself](https://docs.qgis.org/latest/en/docs/user_manual/introduction/general_tools.html#spatial-bookmarks).

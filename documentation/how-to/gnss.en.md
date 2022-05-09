@@ -1,8 +1,8 @@
 ---
-title: GNSS
+title: Positioning (GNSS)
 ---
 
-# GNSS
+# Positioning (GNSS)
 
 QField can make use of the internal GNSS (Global Navigation Satellite
 System, like GPS, GLONASS, Galileo or Beidou). QField can also connect
