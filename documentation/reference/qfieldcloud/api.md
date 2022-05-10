@@ -20,3 +20,4 @@ window.onload = function() {
   window.ui = ui
 }
 </script>
+diff --git a/documentation/reference/qfieldcloud/swagger.md b/documentation/reference/qfieldcloud/swagger.md
