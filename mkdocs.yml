@@ -91,7 +91,7 @@ nav:
           - reference/qfieldcloud/permissions.md
           - reference/qfieldcloud/jobs.md
           - reference/qfieldcloud/specs.md
-          - reference/qfieldcloud/swagger.md
+          - reference/qfieldcloud/api.md
           - reference/qfieldcloud/system.md
   - Case studies:
       - case-studies/index.md
