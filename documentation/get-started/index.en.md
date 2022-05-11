@@ -36,6 +36,13 @@ title: Get started
     builds](https://nightly.link/opengisch/QField/workflows/desktop/master/QField-dev-x64-osx-Release.zip)
     and leave us a note how it works.
 
+=== ":fontawesome-brands-linux: Linux"
+
+    Linux support is currently in beta status. [Download the latest
+    development
+    builds](https://github.com/opengisch/QField/releases/download/v2.0.14/qfield-v2.0.14-linux-x64.AppImage)
+    and leave us a note how it works.
+
 
 QField allows you to efficiently work on your GIS data outdoor.
 
