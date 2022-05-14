@@ -82,6 +82,7 @@ nav:
       - how-to/live-default-value.md
       - how-to/outside-layers.md
       - how-to/movable-project.md
+      - how-to/pg-service.md
   - Technical reference:
       - reference/index.md
       - reference/data-format.md
@@ -90,6 +91,7 @@ nav:
           - reference/qfieldcloud/projects.md
           - reference/qfieldcloud/permissions.md
           - reference/qfieldcloud/jobs.md
+          - reference/qfieldcloud/secrets.md
           - reference/qfieldcloud/specs.md
           - reference/qfieldcloud/api.md
           - reference/qfieldcloud/system.md

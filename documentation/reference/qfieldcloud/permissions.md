@@ -57,6 +57,7 @@ QFieldCloud provides a fine grained access control over projects with the concep
 | Update user's informations                                                    | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
 | Delete user                                                                   | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
 | Get API status                                                                | ✅ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
+| Add and remove secrets                                                        | ‒  | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ‒  | ‒  | ‒  |   |
 
 ## Roles
 
