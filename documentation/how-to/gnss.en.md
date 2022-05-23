@@ -166,7 +166,7 @@ Inside the *positioning menu* you can turn on the *positioning display*
 which will show the current coordinates which are reprojected into the
 project CRS along with precision information.
 
-!![](../assets/images/user-guide_gps.jpg)
+!![](../assets/images/user-guide_gps.png)
 
 !!! note
     If you see WGS 84 lat/lon information instead of information in your
