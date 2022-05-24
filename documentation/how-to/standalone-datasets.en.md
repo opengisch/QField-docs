@@ -9,6 +9,7 @@ QField is able to directly open vector data and raster datasets without the need
 ## Supported standalone dataset formats
 
 The supported vector formats are:
+
 - Geopackage datasets (.gpkg);
 - GeoJSON (.geojson, .json);
 - KML (.kml, .kmz);
@@ -20,6 +21,7 @@ The supported vector formats are:
 - FlatGeoBuf (.fgb)
 
 The supported raster formats are:
+
 - GeoTIFF (.tif, .tiff);
 - Georeferenced PDF / GeoPDF (.pdf);
 - JPEG2000 (.jp2);
@@ -27,7 +29,8 @@ The supported raster formats are:
 - PNG (.png); and
 - WebP (.webp)
 
-!!! QField can handle several standalone datasets compressed into one ZIP archive; in this scenario, each dataset will be added as individual layers in QField.
+!!! note
+    QField can handle several standalone datasets compressed into one ZIP archive; in this scenario, each dataset will be added as individual layers in QField.
 
 ## Opening an vector or raster dataset
 
