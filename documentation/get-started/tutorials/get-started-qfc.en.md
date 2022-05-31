@@ -118,7 +118,7 @@ A form will ask you for project name, description and local directory. In the lo
 
 Configure the project layers by clicking the fifth icon in the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"}. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer. Get more information about how to configure your layers in the [Get Started guide for QFieldSync](get-started-qfs.md).
 
-It is recommended to use GeoPackage layers for collaborative editing. See the [advanced setup guide](advanced-setup.md) for more information about vector formats support.
+It is recommended to use GeoPackage layers for collaborative editing. See the [advanced setup guide](advanced-setup-qfc.md) for more information about vector formats support.
 
 Any QField supported raster and vector layer formats may be used as read-only data.
 
