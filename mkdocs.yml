@@ -95,6 +95,7 @@ nav:
           - reference/qfieldcloud/specs.md
           - reference/qfieldcloud/api.md
           - reference/qfieldcloud/system.md
+          - reference/qfieldcloud/sdk.md
   - Case studies:
       - case-studies/index.md
       - case-studies/ecological-surveying.md
