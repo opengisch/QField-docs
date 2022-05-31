@@ -65,7 +65,7 @@ manage a GIS project created with QGIS on an Android smartphone or tablet. Permi
 the user to keep all set themes, labels and styles that are in the original project (Figure 1).
 
 !![Figure 1 - An example of the same Survey GIS platform project in QGIS (below) and in QField (above). Image by Giuseppe
-Guarino 2019.](../../assets/images/heritage_impact_figure1.png)
+Guarino 2019.](../assets/images/heritage_impact_figure1.png)
 
 Furthermore, similar to QGIS, we can query each layer within QField by obtaining
 the respective information contained in its attribute table (however, there are also other
@@ -186,7 +186,7 @@ optimisation of the timing and assets, despite the fact that the weather and vis
 in the field are often poor (Figure 2).
 
 !![Figure 2 - An example of when the weather and visibility conditions in the field are poor. Image by Roberto Montagnetti
-2019.](../../assets/images/heritage_impact_figure2.png)
+2019.](../assets/images/heritage_impact_figure2.png)
 
 Now, let us see why the use of QField facilitates the reduction of working times and,
 at the same time, guarantees the saving of resources to be invested in the archaeological
@@ -265,7 +265,7 @@ the “project relation” and “widgets” to the tablet or the smartphone and
 on site with QField to immediately appreciate its advantages and convenience (Figure 3).
 
 !![Figure 3 - An example of the same open area excavation GIS platform project in QGIS (above) and in QField (below). Image
-by Roberto Montagnetti 2019.](../../assets/images/heritage_impact_figure3.png)
+by Roberto Montagnetti 2019.](../assets/images/heritage_impact_figure3.png)
 
 In fact, primarily, by using this system, archaeologists who are working in the field
 will be able to directly register the context numbers identified during the excavation within

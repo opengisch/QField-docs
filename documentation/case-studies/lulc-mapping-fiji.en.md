@@ -39,9 +39,9 @@ validation of the LULC map.
 7.  The final ground truth collection will be imported into Google Earth
     Engine to produce the LULC map and calculate the map accuracy.
 
-!![Figure 1: Predefined Ground Truth Plots](../../assets/images/use_study_fiji1.png)
+!![Figure 1: Predefined Ground Truth Plots](../assets/images/use_study_fiji1.png)
 
-!![Figure 2: Capturing land cover class](../../assets/images/use_study_fiji2.png)
+!![Figure 2: Capturing land cover class](../assets/images/use_study_fiji2.png)
 
 ## Preliminary Results and Future Work
 
@@ -55,7 +55,7 @@ training materials, field and classroom training workshops, and
 collaborative fieldwork.
 
 !![Figure 3: Preliminary land cover map for the Ba region, Viti Levu,
-Fiji](../../assets/images/use_study_fiji3.png)
+Fiji](../assets/images/use_study_fiji3.png)
 
 ## Acknowledgement
 
@@ -65,4 +65,4 @@ by the Australian Centre for International Agricultural Research (ACIAR;
 ASEM/2016/101).
 
 !![The Fiji Forestry/USP field team is about to collect ground truth data
-with QField.](../../assets/images/use_study_fiji4.jpg)
+with QField.](../assets/images/use_study_fiji4.jpg)

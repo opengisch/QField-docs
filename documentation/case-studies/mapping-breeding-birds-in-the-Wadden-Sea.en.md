@@ -18,7 +18,7 @@ more than 100 monitoring areas in Schleswig-Holstein / Germany. For a
 number of species we monitor a significant share of the entire German
 breeding population.
 
-!![Sketch of the project and the monitoring areas of Schutzstation Wattenmeer (yellow).](../../assets/images/Wattenmeer1.jpg)
+!![Sketch of the project and the monitoring areas of Schutzstation Wattenmeer (yellow).](../assets/images/Wattenmeer1.jpg)
 
 Most fieldwork is carried out by annually changing volunteers which
 usually do not have much experience. Good supervision during the
@@ -42,7 +42,7 @@ computational power of R. Most tasks are now fully automatized in R. Via
 the cloud data from all areas can be accessed and evaluated with daily
 topicality.
 
-!![Sketch of the data transmission system. Field observations are logged in QField on a tablet and uploaded into a cloud storage. Data from all areas are accessed and automatically treated by an R script.](../../assets/images/Wattenmeer2.jpg)
+!![Sketch of the data transmission system. Field observations are logged in QField on a tablet and uploaded into a cloud storage. Data from all areas are accessed and automatically treated by an R script.](../assets/images/Wattenmeer2.jpg)
 
 In spring 2019 we tested our system with seven tablet devices spread
 over seven of in total 12 different monitoring stations.
@@ -56,18 +56,18 @@ with predefined dropdown columns and entry restrictions. Additionally,
 we added predefined walking paths to guide the volunteers and to further
 standardise our monitoring.
 
-!![Sketch of the QField Interface. For data entry we used a geopackage file with custom dropdown list and entry restrictions.](../../assets/images/Wattenmeer3.jpg)
+!![Sketch of the QField Interface. For data entry we used a geopackage file with custom dropdown list and entry restrictions.](../assets/images/Wattenmeer3.jpg)
 
-!![Logged observations are clearly laid out in QField.](../../assets/images/Wattenmeer4.jpg)
+!![Logged observations are clearly laid out in QField.](../assets/images/Wattenmeer4.jpg)
 
 We used an additional synchronisation App that automatically uploaded
 the field data from the tablet to a Google Drive cloud after fieldwork.
 For data download, automatized backup, data review and export we wrote a
 R script.
 
-!![After data was automatically synchronized with the cloud the results from all the different areas can be reviewed via a custom R script.](../../assets/images/Wattenmeer5.jpg)
+!![After data was automatically synchronized with the cloud the results from all the different areas can be reviewed via a custom R script.](../assets/images/Wattenmeer5.jpg)
 
-!![Also visual review of the collected data is possible via R.](../../assets/images/Wattenmeer6.jpg)
+!![Also visual review of the collected data is possible via R.](../assets/images/Wattenmeer6.jpg)
 
 The general concept of QField as a simplified field application of QGIS
 turned out to be very useful for our work with volunteers. While we can
@@ -83,9 +83,9 @@ was pretty fast thanks to the possibility to automatically reuse the
 last entered value. Logging observations on the tablet only took a
 little bit extra time in comparison to paper maps.
 
-!![The field kit.](../../assets/images/Wattenmeer7.jpg)
+!![The field kit.](../assets/images/Wattenmeer7.jpg)
 
-!![The field kit.](../../assets/images/Wattenmeer8.jpg)
+!![The field kit.](../assets/images/Wattenmeer8.jpg)
 
 ## Evaluation and future
 

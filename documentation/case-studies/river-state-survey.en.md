@@ -32,11 +32,11 @@ Point table
 :   To take punctual photography of the water courses and of its
     elements and where necessary add remarks.
 
-!![River State Survey 1](../../assets/images/river-state-survey1.png)
+!![River State Survey 1](../assets/images/river-state-survey1.png)
 
-!![River State Survey 2](../../assets/images/river-state-survey2.png)
+!![River State Survey 2](../assets/images/river-state-survey2.png)
 
-!![River State Survey 3](../../assets/images/river-state-survey3.jpg)
+!![River State Survey 3](../assets/images/river-state-survey3.jpg)
 
 ## Result
 
@@ -48,7 +48,7 @@ treat the data and get the final result.
 -   Accelerated the data treatment
 
 
-[![Géoconseils SA](../../assets/images/logo_geoconseils.png){width="200px"}](http://www.geoconseils.ch)
+[![Géoconseils SA](../assets/images/logo_geoconseils.png){width="200px"}](http://www.geoconseils.ch)
 
-[![Milvignes](../../assets/images/logo_milvignes.png){width="200px"}](http://http://www.milvignes.ch/)
+[![Milvignes](../assets/images/logo_milvignes.png){width="200px"}](http://http://www.milvignes.ch/)
 
