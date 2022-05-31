@@ -111,6 +111,9 @@ track of the quality of individual measured points.
         crosshair is snapped to the sensor. - IE
   - `@position_vertical_speed` - The vertical speed (in m/s) as reported by the sensor. It is
         only available when the crosshair is snapped to the sensor. - IE
+  - `@position_averaged_count` - This variable holds the number of collected positions from
+        which an averaged position was calculated when digitizing in this mode. For non-averaged
+        positions, the value will be set to `0` (zero). - IE
   - `@position_pdop` - Position dilution of precision as reported by the sensor. It is
         only available when the crosshair is snapped to the sensor. - E
   - `@position_hdop` - Horizontal dilution of precision as reported by the sensor. It
