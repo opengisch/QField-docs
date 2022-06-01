@@ -42,7 +42,7 @@ Tap on one of the listed feature to access its attributes.
     feature.
 4.  Scroll through the *sub-menus* to access all the attributes.
 
-!![](../assets/images/howto_featureform.png)
+!![](../assets/images/howto_featureinfo.png)
 
 ### Select identified features
 

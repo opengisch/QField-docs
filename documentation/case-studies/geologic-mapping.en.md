@@ -42,7 +42,7 @@ Integers with range set from 0-360 and 0-90, respectively
 
 Default value current date and time when feature created
 
-!![Figure 1: Structure list](../../assets../../assets/images/geologic_structure_list.png)
+!![Figure 1: Structure list](../assets/images/geologic_structure_list.png)
 
 Symbology and labels are customized for each layer, including embedded
 SVG symbols for structural features that are rotated with the azimuth
@@ -70,9 +70,9 @@ Field data are synchronized in QGIS followed by a short data clean up
 and verification process. The QGIS project is then exported back to
 QField for additional data collection.
 
-!![Figure 2: Field work](../../assets/images/geologic_field.png)
+!![Figure 2: Field work](../assets/images/geologic_field.png)
 
-!![Figure 3: QField form](../../assets/images/geologic_station_qf.jpg)
+!![Figure 3: QField form](../assets/images/geologic_station_qf.jpg)
 
 Structural data collection may be upgraded with future development of a
 geologic compass feature.
@@ -95,4 +95,4 @@ database compatibility. Field data quality assurance can be built in
 during project design, ensuring attributes are consistent between users
 and reducing human error with constraints and default values.
 
-!![Figure 4: Map result](../../assets/images/geologic_map.jpg)
+!![Figure 4: Map result](../assets/images/geologic_map.jpg)
