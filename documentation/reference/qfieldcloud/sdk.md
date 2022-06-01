@@ -2,7 +2,7 @@
 title: The official QFieldCloud SDK and CLI
 ---
 
-`qfieldcloud-sdk` is the official client to connect to QFieldCloud API either as a python module, or directly from the command line.
+`qfieldcloud-sdk` is the official client to connect to [QFieldCloud API](api.md) either as a python module, or directly from the command line.
 
 !!! note
     `qfieldcloud-sdk` requires Python >=3.6
