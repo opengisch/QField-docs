@@ -85,7 +85,7 @@ track of the quality of individual measured points.
         when the crosshair is snapped to the sensor. - IE
   - `@position_coordinate` - A point with the coordinate in WGS84. Lon, Lat, Altitude as
         delivered by the sensor. It is only available when the crosshair
-        is snapped to the sensor. - `x(\@position_coordinate)` - IE
+        is snapped to the sensor. - `x(@position_coordinate)` - IE
   - `@position_horizontal_accuracy` - The horizontal accuracy of the coordinate (in meters) as
         reported by the sensor. It is only available when the crosshair
         is snapped to the sensor. - IE
