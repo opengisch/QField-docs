@@ -56,7 +56,7 @@ qfieldcloud-cli --json list-projects
 
 ### Filters
 
-Some commands allow you to define a filter on the results based on the filename with the `--filter` option (e.g. the ` download-files`
+Some commands allow you to define a filter on the results based on the filename with the `--filter` option (e.g. the `download-files`
 command).
 
 The filters support Unix shell-style wildcards. The special characters used in shell-style wildcards are:
