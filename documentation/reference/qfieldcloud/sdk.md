@@ -14,18 +14,18 @@ title: The official QFieldCloud SDK and CLI
 ## Module usage
 
 ```python
-import qfieldcloud_sdk
 import requests
+from qfieldcloud_sdk import sdk
 
-client = qfieldcloud_sdk.Client(
+client = sdk.Client(
     url="https://app.qfield.cloud/api/v1/",
     username="user1",
     password="pass1",
 )
 
 try:
-    projects = client.projects()
-except requests.HttpRequest:
+    projects = client.list_projects()
+except requests.exceptions.RequestException:
     print("Oops!")
 ```
 
@@ -53,6 +53,24 @@ export QFIELDCLOUD_URL=https://localhost/api/v1/
 export QFIELDCLOUD_TOKEN=017478ee2464440cb8d3e98080df5e5a
 qfieldcloud-cli --json list-projects
 ```
+
+### Filters
+
+Some commands allow you to define a filter on the results based on the filename with the `--filter` option (e.g. the ` download-files`
+command).
+
+The filters support Unix shell-style wildcards. The special characters used in shell-style wildcards are:
+
+
+| Pattern | Meaning                          |
+|---------|----------------------------------|
+| *       | matches everything               |
+| ?       | matches any single character     |
+| [seq]   | matches any character in seq     |
+| [!seq]  | matches any character not in seq |
+
+For a literal match, wrap the meta-characters in brackets. For example, `'[?]'` matches the character `'?'`.
+
 
 ### Global options overview
 
