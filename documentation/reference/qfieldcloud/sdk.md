@@ -70,7 +70,10 @@ The filters support Unix shell-style wildcards. The special characters used in s
 | [!seq]  | matches any character not in seq |
 
 For a literal match, wrap the meta-characters in brackets. For example, `'[?]'` matches the character `'?'`.
+#### Examples
 
+- `qfieldcloud-cli --filter 'DCIM/*.jpg'`
+- `qfieldcloud-cli --filter 'attachments/documentation-??.pdf'`
 
 ### Global options overview
 
