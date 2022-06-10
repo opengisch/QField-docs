@@ -202,6 +202,9 @@ Options:
   --throw-on-error / --no-throw-on-error
                                   If any project file downloads fails stop
                                   downloading the rest. Default: False
+  --force-download/--no-force-download
+  ￼                               Download file even if it already exists locally.
+                                  Default: False
 ```
 
 #### delete-files
@@ -269,4 +272,7 @@ Options:
   --throw-on-error / --no-throw-on-error
                                   If any packaged file downloads fails stop
                                   downloading the rest. Default: False
+  --force-download/--no-force-download
+  ￼                               Download file even if it already exists locally.
+                                  Default: False
 ```
