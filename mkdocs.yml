@@ -77,6 +77,7 @@ nav:
       - how-to/bookmarks.md
       - how-to/print-to-pdf.md
       - how-to/authentication.md
+      - how-to/temporal-filtering.md
       - how-to/itinerary.md
       - how-to/variables.md
       - how-to/hiding-legend-nodes.md
