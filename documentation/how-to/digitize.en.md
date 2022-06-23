@@ -45,7 +45,7 @@ While digitizing, you can click the *(x) button* to cancel the current feature c
 
 !!! note
     QField insures that digitized geometries will not have duplicate vertices and respects
-the geometry precision settings from the currently selected layer.
+    the geometry precision settings from the currently selected layer.
 
 ### Attribute form
 
@@ -53,8 +53,8 @@ After digitizing a geometry, the attribute form will appear allowing you
 to edit attribute values for the newly-added feature. 
 
 !!! note
-    you can supress the attribute form upon feature addition via a configuration option
-for a given layer via its properties dialog in QGIS
+    You can supress the attribute form upon feature addition via a configuration option
+    for a given layer via its properties dialog in QGIS
 
 #### Remember attribute values
 
@@ -149,14 +149,19 @@ the *Edit feature* button in the list's title bar.
 ## Delete features
 :material-tablet-android:{ .device-icon } Fieldwork
 
-Deleting features is only possible in digitize mode.
+Deleting a feature is done by selecting the *Delete feature* action in the
+feature form's *3-dot menu*.
 
-!![](../assets/images/delete_features.webp,250px)
+!![](../assets/images/delete-single-feature.png)
 
-To delete a feature, identify it first by a short tap on it. Then select
-it with a long press in the identification list, select further features
-to delete if you want and click the trash button to confirm the
-deletion.
+QField also allows you to delete multiple features at a time. To do so, first
+identify the features by short tapping on the relevant parts of the map. Then activate
+the multi-selection mode by long pressing on one of the features you want to delete.
+When checkbox appears next to the feature names, select further features
+to delete (you can tap on the map to add more features too). Once done, select the *Delete Selected Feature(s)*
+action in the features list *3-dot menu*.
+
+!![](../assets/images/delete-multiple-features.png)
 
 ## Snapping
 :material-desktop-mac:{ .device-icon } Desktop preparation
