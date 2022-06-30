@@ -195,3 +195,22 @@ It is possible to provide a mock location via a separate android app to
 QField. There are several options for this, one of them is [Android NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).
 
 To use this you have to [enable mock locations on your Android device](https://www.youtube.com/watch?v=v1eRHmMiRJQ).
+
+## Averaged positioning functionality
+
+Note: users must have locked the coordinate cursor to their position.
+
+There is a function that allows you to digitize using averaged positions.
+
+The survey will start by pressing the add vertex button,
+which will start collecting positions.
+
+While collecting, an indicator will appear on top of the cursor
+showing a text reflecting the current number of collected positions and, as well, a progress bar.
+
+!![](../assets/images/positioning_averaged.webp)
+
+The progress bar reflects the advance towards meeting a user-defined minimum
+collected position count. This requirement can be toggled in the settings *positioning* tab:
+
+!![](../assets/images/positioning_averaged_set.jpg)
