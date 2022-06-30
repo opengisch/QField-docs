@@ -200,7 +200,7 @@ To use this you have to [enable mock locations on your Android device](https://w
 :material-tablet-android:{ .device-icon } Fieldwork
 
 !!! note
-    You must have locked the coordinate cursor to their position.
+    You must have locked the coordinate cursor to their position. [Lock to position button](../digitize/#adding-point-features)
 
 There is a function that allows you to digitize using averaged positions.
 
