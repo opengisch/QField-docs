@@ -197,8 +197,10 @@ QField. There are several options for this, one of them is [Android NTRIP Client
 To use this you have to [enable mock locations on your Android device](https://www.youtube.com/watch?v=v1eRHmMiRJQ).
 
 ## Averaged positioning functionality
+:material-tablet-android:{ .device-icon } Fieldwork
 
-Note: users must have locked the coordinate cursor to their position.
+!!! note
+    You must have locked the coordinate cursor to their position.
 
 There is a function that allows you to digitize using averaged positions.
 
