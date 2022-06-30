@@ -208,7 +208,7 @@ The survey will start by pressing the add vertex button,
 which will start collecting positions.
 
 While collecting, an indicator will appear on top of the coordinate cursor
-showing a text reflecting the current number of collected positions and, as well, a progress bar.
+showing a text reflecting the current number of collected positions. If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.
 
 !![](../assets/images/positioning_averaged.webp)
 
