@@ -207,7 +207,7 @@ There is a function that allows you to digitize using averaged positions.
 The survey will start by pressing the add vertex button,
 which will start collecting positions.
 
-While collecting, an indicator will appear on top of the cursor
+While collecting, an indicator will appear on top of the coordinate cursor
 showing a text reflecting the current number of collected positions and, as well, a progress bar.
 
 !![](../assets/images/positioning_averaged.webp)
