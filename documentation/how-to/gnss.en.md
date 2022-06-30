@@ -213,6 +213,6 @@ showing a text reflecting the current number of collected positions. If an avera
 !![](../assets/images/positioning_averaged.webp)
 
 To setting to activate an average position minimum count threshold can be found in QField settings's positioning panel.
-collected position count. This requirement can be toggled in the settings *positioning* tab:
+When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
 
 !![](../assets/images/positioning_averaged_set.jpg)
