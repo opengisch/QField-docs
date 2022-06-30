@@ -212,7 +212,7 @@ showing a text reflecting the current number of collected positions. If an avera
 
 !![](../assets/images/positioning_averaged.webp)
 
-The progress bar reflects the advance towards meeting a user-defined minimum
+To setting to activate an average position minimum count threshold can be found in QField settings's positioning panel.
 collected position count. This requirement can be toggled in the settings *positioning* tab:
 
 !![](../assets/images/positioning_averaged_set.jpg)
