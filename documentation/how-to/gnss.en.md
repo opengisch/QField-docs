@@ -204,7 +204,7 @@ To use this you have to [enable mock locations on your Android device](https://w
 
 There is a function that allows you to digitize using averaged positions.
 
-The survey will start by pressing the add vertex button,
+The survey will start by pressing and holding the add vertex button,
 which will start collecting positions.
 
 While collecting, an indicator will appear on top of the coordinate cursor
