@@ -215,3 +215,5 @@ To setting to activate an average position minimum count threshold can be found 
 When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
 
 !![](../assets/images/positioning_averaged_set.jpg)
+
+In this case, when using [`@gnss_*` variables](../gnss/#additional-variables) it will give the mean of all collected points.
