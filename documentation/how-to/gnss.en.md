@@ -209,7 +209,7 @@ The survey will start by pressing and holding the add vertex button, which will 
 While collecting, an indicator will appear on top of the coordinate cursor showing a text reflecting the current number of collected positions.
 If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.
 
-!![](../assets/images/positioning_averaged.webp)
+!![](../assets/images/positioning-averaged.webp)
 
 To setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
 When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
