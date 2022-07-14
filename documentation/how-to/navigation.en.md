@@ -48,9 +48,9 @@ To activate this auto tracking feature, you can simply tap on the positioning bu
 
 This can be described as a simple *staking mode* functionality.
 
-## Positioning precise view
+## Stakeout positioning view
 :material-tablet-android:{ .device-icon } Fieldwork
 
-Precise view (aka stakeout) panel which appears when a navigation to destination is active. appears when a navigation to destination is active.
+Precise view (aka stakeout) panel which appears when a navigation to destination is active.
 
 !![](../assets/images/navigation-precise-view.webp)
