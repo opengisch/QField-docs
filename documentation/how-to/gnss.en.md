@@ -216,4 +216,4 @@ When active, holding the add vertex button is not required, a short tap on the b
 
 !![](../assets/images/positioning_averaged_set.jpg)
 
-In this case, when using [`@gnss_*` variables or `@position_`](../gnss/#additional-variables) it will give the mean of all collected points.
+When using [`@gnss_*` or `@position_` variables](../gnss/#additional-variables) on averaged positions, the variable will also represent the average over all collected samples.
