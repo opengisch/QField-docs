@@ -51,7 +51,7 @@ This can be described as a simple *staking mode* functionality.
 ## "Stakeout" precise view
 :material-tablet-android:{ .device-icon } Fieldwork
 
-QField's "stakeout" precise view panel appears when the current location to destination is less than a pre-defined threshold (by default 5 meters) and the positioning device has an accuracy that is less than half of that threshold. The precise view visiblity threshold value can be modified by long-pressing on the bottom-right navigation button and selecting the *Precise View Settings* menu item.
+QField's "stakeout" precise view panel appears when the distance between the current location and the destination is less than a pre-defined threshold (by default 5 meters) and the positioning device has an accuracy that is less than half of that threshold. The precise view visibility threshold value can be modified by long-pressing on the bottom-right navigation button and selecting the *Precise View Settings* menu item.
 
 !![](../assets/images/navigation-precise-view.webp)
 
