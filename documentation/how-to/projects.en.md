@@ -16,7 +16,7 @@ You have to import project folders or individual datasets into the app-dedicated
 ## Import and open local project
 :material-tablet-android:{ .device-icon } Fieldwork
 
-When going to *Open local files* (via *Menu button > Open*) you will see a set of new folders named "QField files directory", "Imported datasets", and "Imported projects" as well as a drop-down menu accessible via a top-right three-dot button.
+When going to *Open local files* (via *Menu button > Open*) you will see a set of new folders named "QField files directory", "Imported datasets", and "Imported projects" as well as a drop-down menu accessible via a bottom-right plus button.
 
 !![QField File Selector](../assets/images/howto_filebrowser.png)
 
