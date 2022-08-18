@@ -98,17 +98,17 @@ nav:
           - reference/qfieldcloud/api.md
           - reference/qfieldcloud/system.md
           - reference/qfieldcloud/sdk.md
-  - Case studies:
-      - case-studies/index.md
-      - case-studies/ecological-surveying.md
-      - case-studies/geologic-mapping.md
-      - case-studies/lulc-mapping-fiji.md
-      - case-studies/mapping-breeding-birds-in-the-Wadden-Sea.md
-      - case-studies/mosquito-malario-ground-truth-data-collection.md
-      - case-studies/river-state-survey.md
-      - case-studies/rwanda-rural-water.md
-      - case-studies/vanilla-survey.md
-      - case-studies/heritage-impact-assessment.md
+  - Success stories:
+      - success-stories/index.md
+      - success-stories/ecological-surveying.md
+      - success-stories/geologic-mapping.md
+      - success-stories/lulc-mapping-fiji.md
+      - success-stories/mapping-breeding-birds-in-the-Wadden-Sea.md
+      - success-stories/mosquito-malario-ground-truth-data-collection.md
+      - success-stories/river-state-survey.md
+      - success-stories/rwanda-rural-water.md
+      - success-stories/vanilla-survey.md
+      - success-stories/heritage-impact-assessment.md
 # Extensions
 markdown_extensions:
   - admonition
