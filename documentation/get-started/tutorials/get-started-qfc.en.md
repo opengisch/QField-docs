@@ -120,6 +120,9 @@ Configure the project layers by clicking the fifth icon in the QFieldSync toolba
 
 It is recommended to use GeoPackage layers for collaborative editing. See the [advanced setup guide](advanced-setup-qfc.md) for more information about vector formats support.
 
+!!! note
+    If you use experimental data sources without a primary key field (e.g. Shapefiles, GeoJSON etc), you must have a lowercase `fid` field that will be used as a primary key that uniquely identifies each feature.
+
 Any QField supported raster and vector layer formats may be used as read-only data.
 
 !![Project properties](../../assets/images/getting_started_project_properties.png)
