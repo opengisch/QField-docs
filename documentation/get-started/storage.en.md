@@ -28,7 +28,7 @@ QField can open projects and datasets in three ways:
 !![QField import actions](../assets/images/storage-import-actions.png)
 
 These actions are available via the dropdown action menu in the project/dataset picker‘s
-title bar, which can be accessed by clicking on the ‘Open local files’ button located in
+plus button, which can be accessed by clicking on the ‘Open local files’ button located in
 QField‘s welcome screen.
 
 #### Importing a project folder
