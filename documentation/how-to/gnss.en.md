@@ -12,7 +12,7 @@ stream.
 GNSS devices are also capable of measuring the altitude next to the current 2D
 position on the earth surface.
 
-## Visualisation
+## Visualization
 
 When positioning is activated, your position will be shown in blue on the map.
 Your location is visible either as a blue dot if you are not moving or as an arrow
@@ -20,6 +20,9 @@ if you are moving.
 
 The blue beam indicates the current orientation of your device if the device has
 a builtin magnetic compass.
+
+A circle around your current position indicates the precision as reported by the
+positioning device.
 
 
 ## Configuration
