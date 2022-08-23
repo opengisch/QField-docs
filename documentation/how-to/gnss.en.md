@@ -15,7 +15,7 @@ position on the earth surface.
 ## Visualization
 
 When positioning is activated, your position will be shown in blue on the map.
-Your location is visible either as a blue dot if you are not moving or as an arrow
+Your location is visible either as a blue dot if you are still or as an arrow indicating your movement direction
 if you are moving.
 
 The blue beam indicates the current orientation of your device if the device has
