@@ -20,13 +20,13 @@ the tracking session.
 !![](../assets/images/tracking-layer-properties.png)
 
 Two constraints are available to limit the number of vertices recorded
-during tracing:
-- A minimum time interval; and
-- A minimum distance.
+during tracking:
+- A minimum time interval
+- A minimum distance
 
 !![](../assets/images/tracking-settings.png)
 
-Once you have finished configuring your tracing session, hit the *Start tracking*
+Once you have finished configuring your tracking session, hit the *Start tracking*
 button to begin recording. At this stage, a feature form will appear, which allows
 you to define the attributes of the feature(s) that will be created while QField
 tracks your position.
@@ -37,7 +37,7 @@ layers, a feature will be created for each recorded position, with attribute
 values entered in the form remembered across features.
 
 !!! note
-    QField will skip the feature form step if the layer is configured to hide all attributes. This can streamline the process of starting tracking sessions.
+    QField will skip the feature form step if the layer is configured to hide all attributes or if form has been set to hide on feature addition in the attribute form settings. This can streamline the process of starting tracking sessions.
 
 ## Tracking underway
 
@@ -46,7 +46,7 @@ legend next to the layer(s) against which tracking is being recorded.
 
 !![](../assets/images/tracking-badge.png)
 
-The feature(s) created by the tracking session is/are saved on every vertex recorded.
+The features created by the tracking session are saved on every vertex recorded.
 A rubberband line overlayed onto the map is attached to each tracking session,
 allowing you to glance at what has been recorded.
 
