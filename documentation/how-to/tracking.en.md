@@ -4,32 +4,65 @@ title: Tracking
 
 # Tracking
 
-You have the possibility to do tracking on lines and polygons in QField.
+QField allows you to create points, lines, and polygons from tracking your position.
 
-## Usage
+## Activate tracking
+
 :material-tablet-android:{ .device-icon } Fieldwork
 
 ![type:video](https://player.vimeo.com/video/499958163)
 
-It's available when GNSS is enabled. A tracking session can be started
-in the legend by long-pressing on the layer. The time interval and the
-minimum distance can be entered individually to define when a vertex
-needs to be set.
+To activate tracking, you must first make sure the positioning is active. Then,
+open the side dashboard, long-press on a legend layer within which you want to
+save your tracks to, and select the *Setup tracking* button to configure
+the tracking session.
 
-There can be several trackings session active on several layers. But
-only one tracking session per layer can be active at the time.
+!![](../assets/images/tracking-layer-properties.png)
 
-!![tracking layers](../assets/images/track_lines_tracking_layers1.png)
+Two constraints are available to limit the number of vertices recorded
+during tracing:
+- A minimum time interval; and
+- A minimum distance.
 
-!![tracking layers](../assets/images/track_lines_tracking_layers2.png)
+!![](../assets/images/tracking-settings.png)
 
-The tracked feature is saved on every vertex. While the tracking session
-is active the layer is still editable, but the tracked feature can't be
-edited or deleted until the tracking session is stopped over the legend
-again.
+Once you have finished configuring your tracing session, hit the *Start tracking*
+button to begin recording. At this stage, a feature form will appear, which allows
+you to define the attributes of the feature(s) that will be created while QField
+tracks your position.
 
-!![stop tracking](../assets/images/track_lines_stop_tracking_delete.png)
+For line and polygon layers, a single feature - its geometry formed of vertices
+from the recorded positions - will be create per tracking session.  For point
+layers, a feature will be created for each recorded position, with attribute
+values entered in the form remembered across features.
 
-If the layer geometry supports m value, the time is stored in the m
-value, that passed since the first vertex of this tracking session has
-been recorded.
+!!! note
+    QField will skip the feature form step if the layer is configured to hide all attributes. This can streamline the process of starting tracking sessions.
+
+## Tracking underway
+
+Once a tracking session has been setup, a badge will appear in the side dashboard
+legend next to the layer(s) against which tracking is being recorded.
+
+!![](../assets/images/tracking-badge.png)
+
+The feature(s) created by the tracking session is/are saved on every vertex recorded.
+A rubberband line overlayed onto the map is attached to each tracking session,
+allowing you to glance at what has been recorded.
+
+If the layer linked to a tracking session supports the M dimension, QField will store
+the time passed since the first vertex recorded in each vertex's M value.
+
+!!! note
+    You can simultanously record multiple trackings sessions across several layers.
+
+!!! note
+    While the tracking session is active the layer is still editable, but the tracked feature can't be edited or deleted until the tracking session is stopped over the legend again.
+
+## Terminate tracking
+
+To terminate tracking, simply open the side dashboard. From there, long-press
+on a legend layer linked to an active tracking session and select the
+*Stop tracking* button.
+
+!![](../assets/images/tracking-stop.png)
