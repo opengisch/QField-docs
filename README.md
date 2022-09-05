@@ -95,6 +95,7 @@ where all the real documentation text is located.
 #### Testing your changes
 
 ```sh
+pipenv run pip install transifex-client
 pipenv install -r requirements.txt
 pipenv run mkdocs serve
 ```

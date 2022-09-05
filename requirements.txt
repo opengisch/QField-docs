@@ -4,4 +4,3 @@ mkdocs-static-i18n==0.45
 fancyboxmd==1.1.0
 PyGithub==1.55
 python-dotenv==0.19.2
-transifex-client==0.14.4
