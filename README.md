@@ -105,10 +105,12 @@ pipenv run mkdocs serve
 
 The local doc will be available at http://localhost:8000.
 
-To test your work against your pre-commit hook:
+#### Contribute
+Before commiting, install [pre-commit](https://pre-commit.com/) to auto-format your contributions. You can install pre-commit for the current user with
 
-    pipenv install pre-commit
-    pre-commit run --all-files
+    pip install --user pre-commit
+    pre-commit install
+
 
 #### Testing your changes (on your local machine via Docker)
 
