@@ -22,24 +22,19 @@ jobs:
           MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
       - name: Configure transifex
         run: |
-          tx config mapping-bulk \
-            -p qfield-documentation \
-            --source-language en \
-            --type GITHUBMARKDOWN \
-            -f '.md' \
-            --source-file-dir documentation \
-            --expression 'documentation/{filepath}/{filename}.<lang>{extension}' \
-            --execute
+          tx add remote \
+            --file-filter 'translations/<project_slug>.<resource_slug>/<lang>.<ext>' \
+            https://www.transifex.com/opengisch/qfield-documentation/dashboard/
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
       - name: Push translations
         run: |
-          tx push -s --parallel
+          tx push -s
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
       - name: Pull translations
         run: |
-          tx pull --all --parallel
+          tx pull --all
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
       - name: Deploy documentation
