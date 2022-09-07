@@ -22,7 +22,7 @@ FATAL: no pg_hba.conf entry for host "185.203.114.168", user "qfc", database "my
 WARNING:QGIS_MSGLOG:1 unavailable layer(s) found:
 ```
 
-To do so, you need to edit the `pg_hba.conf` file where your PostgreSQL server is hosted. For more information, check other people experience from [StackOverflow questions](https://stackoverflow.com/search?q=FATAL+no+pg_hba.conf+entry+for+host).
+To do so, you need to edit the `pg_hba.conf` file where your PostgreSQL server is hosted. For more information, refer to recommendations on [StackOverflow questions](https://stackoverflow.com/search?q=FATAL+no+pg_hba.conf+entry+for+host).
 
 !!! warning
     The information provided on this page might get outdated or changed at any moment without notice during the BETA phase of the QFieldCloud project!
