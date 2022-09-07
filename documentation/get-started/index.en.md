@@ -19,7 +19,7 @@ title: Get started
 === ":material-microsoft-windows: Windows"
 
     Windows support is currently in beta status. [Download the latest
-    builds](https://github.com/opengisch/QField/releases/download/v2.0.14/qfield-v2.0.14-windows-x64.exe)
+    builds](https://github.com/opengisch/QField/releases/download/v2.3.2/qfield-v2.3.2-windows-x64.exe)
     and leave us a note how it works.
 
 === ":material-apple: iOS"
