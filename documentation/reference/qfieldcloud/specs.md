@@ -18,7 +18,7 @@ If your project contains PostgreSQL (PostGIS) layers, you need to configure your
 Otherwise, you will get an error like this:
 
 ```
-FATAL: no pg_hba.conf entry for host "185.203.114.168", user "root", database "mydb_test", SSL off
+FATAL: no pg_hba.conf entry for host "185.203.114.168", user "qfc", database "mydb_test", SSL off
 WARNING:QGIS_MSGLOG:1 unavailable layer(s) found:
 ```
 
