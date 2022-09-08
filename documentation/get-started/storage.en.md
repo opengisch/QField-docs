@@ -95,7 +95,7 @@ the device that can be accessed by third-party synchronization apps such as Sync
 directly copy content into cloud accounts of providers that support Android‘s Scoped Storage directory
 provider (at the time of writing, only NextCloud app has such support).
 
-!!! note 
+!!! note
     Exporting onto a folder will overwrite preexisting content.
 
 #### Sending a compressed project folder

@@ -6,7 +6,7 @@ title: Navigation
 
 QField offers navigation functionalities to help orient yourself in the field and accurately reach a given destination.
 
-## Activating navigation 
+## Activating navigation
 
 Navigation is enabled when [a destination point has been set](#setting-a-destination-point) and positioning is active. When turned on, a set of navigation overlays - a destination marker, a navigation panel, and a navigation control button - appear over the map.
 

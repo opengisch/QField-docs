@@ -51,4 +51,3 @@ treat the data and get the final result.
 [![Géoconseils SA](../assets/images/logo_geoconseils.png){width="200px"}](http://www.geoconseils.ch)
 
 [![Milvignes](../assets/images/logo_milvignes.png){width="200px"}](http://http://www.milvignes.ch/)
-

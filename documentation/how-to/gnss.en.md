@@ -156,10 +156,10 @@ Examples:
 :   -   when the crosshair is snapped to the sensor - `@gnss_horizontal_accuracy` > The
             horizontal accuracy of the coordinate (in meters) as
             reported by the sensor. - `@position_horizontal_accuracy` > The
-            horizontal accuracy of the coordinate (in meters) as 
+            horizontal accuracy of the coordinate (in meters) as
             reported by the sensor. - `@position_source_name` --> sensor name.
     -   when the crosshair is manually moved - `@gnss_horizontal_accuracy` > The
-            horizontal accuracy of the coordinate (in meters) as 
+            horizontal accuracy of the coordinate (in meters) as
             reported by the sensor. - `@position_horizontal_accuracy` > The value
             is `NULL`. - `@position_source_name` > The value is
             `manual`.

@@ -13,4 +13,3 @@ If a project contains online layers (PostGIS, WMS, WFS, etc), QFieldCloud will t
 
 !!! warning
     The information provided on this page might get outdated or changed at any moment without notice during the BETA phase of the QFieldCloud project!
-

@@ -1,7 +1,7 @@
 ---
 title: REST API
 ---
-# 
+#
 You can also visit the API documentation at https://app.qfield.cloud/docs/ .
 
 <div id="swagger-ui" style="background-color:white;"></div>

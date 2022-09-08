@@ -63,4 +63,3 @@ significantly improved the ecological surveying workflow by:
 -   Improving the accuracy and quality of data
 
 [![Delta Simons](../assets/images/delta-simons.png){width="400px"}](https://www.deltasimons.com/)
-

@@ -4,7 +4,7 @@ title: Standalone datasets
 
 # Standalone datasets
 
-QField is able to directly open vector data and raster datasets without the need for a QGIS project. 
+QField is able to directly open vector data and raster datasets without the need for a QGIS project.
 
 ## Supported standalone dataset formats
 

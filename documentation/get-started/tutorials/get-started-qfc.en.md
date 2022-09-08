@@ -17,29 +17,29 @@ Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter 
 !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
 
-### Edit Profile 
+### Edit Profile
 
-Change your personal settings. Add a profile picture or get an overview about your ownerships and memberships in organizations. 
- 
+Change your personal settings. Add a profile picture or get an overview about your ownerships and memberships in organizations.
 
-### Organizations 
+
+### Organizations
 
 Your organizations are listed here. Find out more about teams, members and their roles in [concepts of the QField Ecosystem](https://docs.qfield.org/reference/qfieldcloud/concepts/).
 
-### Projects 
+### Projects
 
 Search and choose a project from the list or start to create a new project.
 
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png)
 
-## Connection to QFieldCloud on QGIS Desktop 
+## Connection to QFieldCloud on QGIS Desktop
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
 
-In order to connect to QFieldCloud, you need the Plugin “QFieldSync” in QGIS. The next steps show you how you can install and synchronize your data to and from QFieldCloud.  
+In order to connect to QFieldCloud, you need the Plugin “QFieldSync” in QGIS. The next steps show you how you can install and synchronize your data to and from QFieldCloud.
 
 ### Install QFieldSync
-Open the QGIS plugin manager by going to the `Plugins -> Manage and install Plugins…` menu. 
+Open the QGIS plugin manager by going to the `Plugins -> Manage and install Plugins…` menu.
 
 Find QFieldSync in the list of plugins and install the latest version by clicking the `Install Plugin` button.
 
@@ -70,17 +70,17 @@ Explore the projects overview screen: your current user underlined and blue, a l
 
 !![Projects overview in QFieldSync](../../assets/images/project_overview_all_colors_tooltip.png)
 
-The icons indicate the cloud and local status of the different projects. 
+The icons indicate the cloud and local status of the different projects.
 
 Local status:
 
-![Status](../../assets/images/cloud_project_remote.svg){Width="20px"} indicates that there is only a remote cloud project existing.  
+![Status](../../assets/images/cloud_project_remote.svg){Width="20px"} indicates that there is only a remote cloud project existing.
 ![Status](../../assets/images/cloud_project.svg){Width="20px"} indicates that the cloud project is also locally stored.
 
 Cloud status:
 
-Red: status failed —> the project is invalid and is not understood by the cloud. The user needs to fix/upload their .qgs/.qgz project.  
-Brown: status busy —> we are working on your project, please be patient. You cannot do much with the project in the meanwhile.  
+Red: status failed —> the project is invalid and is not understood by the cloud. The user needs to fix/upload their .qgs/.qgz project.
+Brown: status busy —> we are working on your project, please be patient. You cannot do much with the project in the meanwhile.
 Green: status ok —> the project is successfully undestood by the cloud. You can try to download on QField, but the success is not guaranteed.
 
 The status of each project is shown with a tooltip.
@@ -94,12 +94,12 @@ By double-clicking on a project in the list, you can see and edit the specific p
 
 Create a new project by clicking the cloud button, down-left. First, you will need to choose how to create the new project between
 
-* "Convert currently open project to cloud project"  
+* "Convert currently open project to cloud project"
 A new QFieldCloud-compatible project is created from the currently opened QGIS project. In order to do so, datasets will be copied into an export directory that will act as your local mirror. Vector datasets will be converted to geopackage format to facilitate data synchronization from multiple devices while other dataset types will be copied to the new project lotation.
 
 To convert a current project, a completely empty directory is mandatory.
 
-* "Create a new empty QFieldCloud project"  
+* "Create a new empty QFieldCloud project"
 A new blank QFieldCloud project will be created. You will be responsible to move all the project-related files within the selected local directory, with the project file at its root. Project files will only be uploaded when you click the synchronize button. Make sure the selected contains no more than one QGIS project file.
 
 !![Project details](../../assets/images/create_project.png)

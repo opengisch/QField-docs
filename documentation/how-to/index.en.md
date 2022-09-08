@@ -21,4 +21,3 @@ interaction possibilities.
 
 Here you'll find plenty of resources on how to configure and interact
 with QField.
-

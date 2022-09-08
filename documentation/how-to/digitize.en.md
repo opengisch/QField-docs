@@ -9,7 +9,7 @@ QField allows to digitize, edit and delete point, line and polygon features whil
 ## Collect features
 :material-tablet-android:{ .device-icon } Fieldwork
 
-To start digitizing new features, enable the *Edit mode* by clicking on the *pencil icon* 
+To start digitizing new features, enable the *Edit mode* by clicking on the *pencil icon*
 in the side dashboard and selecting the layer within which you want to add new features.
 
 !![](../assets/images/activate-edit-mode.png)
@@ -50,7 +50,7 @@ While digitizing, you can click the *(x) button* to cancel the current feature c
 ### Attribute form
 
 After digitizing a geometry, the attribute form will appear allowing you
-to edit attribute values for the newly-added feature. 
+to edit attribute values for the newly-added feature.
 
 !!! note
     You can supress the attribute form upon feature addition via a configuration option
@@ -69,7 +69,7 @@ layer, these attributes will be automatically pre-filled.
 ## Geometry editing
 :material-tablet-android:{ .device-icon } Fieldwork
 
-To edit the geometry of pre-existing features, enable the *Edit mode* by tapping on 
+To edit the geometry of pre-existing features, enable the *Edit mode* by tapping on
 the *pencil icon* in QField's side dashboard.
 
 Once in edit mode, a new *Edit geometry* button will appear in the title bar of an identified

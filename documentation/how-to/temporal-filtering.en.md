@@ -10,7 +10,7 @@ When QField consumes projects containing one or more layers with active temporal
 
 ## Adjusting temporal filtering
 
-When clicking on the side dashboard's temporal filtering indicator, a temporal properties panel pops up. From there, you can enable the temporal filter and set the temporal range's beginning and end time. 
+When clicking on the side dashboard's temporal filtering indicator, a temporal properties panel pops up. From there, you can enable the temporal filter and set the temporal range's beginning and end time.
 
 !![](../assets/images/temporal-filtering-indicator.png)
 
