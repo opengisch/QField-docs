@@ -125,9 +125,7 @@ For inspecting the built documentation before serving you can instead run the co
 
     docker run -it -p 8000:8000 --rm localhost/qfield-docs bash
     source .venv/bin/activate
-    pre-commit run --all-files (optional: test your work against our pre-commit hook)
-    mkdocs build    
-
+    mkdocs build
 
 #### Contribute changes
 
