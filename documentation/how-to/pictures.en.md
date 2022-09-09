@@ -76,6 +76,14 @@ To enable geotagging perform the following steps:
 4.  Within you mobile device settings, set the default camera app to Open Camera
 5.  Completed! Open Camera will now be utilized while taking pictures with QField
 
+## Maximum picture size
+
+The maximum height and width can be configured in *QFieldSync plugin > Project configuration*
+
+![image](https://user-images.githubusercontent.com/4992805/189456560-3e251c44-c85c-40bd-a3cc-039c49090e03.png)
+
+The advanced settings allow to rescale the photos to a maximum width/height.
+
 ## Configurable picture path
 :material-desktop-mac:{ .device-icon } Desktop preparation
 
