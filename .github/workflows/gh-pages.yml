@@ -23,6 +23,7 @@ jobs:
       - name: Configure transifex
         run: |
           tx add remote \
+            --project qfield-documentation
             --file-filter 'translations/<project_slug>.<resource_slug>/<lang>.<ext>' \
             https://www.transifex.com/opengisch/qfield-documentation/dashboard/
         env:
