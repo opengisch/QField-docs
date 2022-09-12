@@ -1,5 +1,5 @@
 #   Setup a Python virtual environment
-FROM python:3.9.13-slim-bullseye as python-builder
+FROM python:3.9.13-slim-bullseye AS python-builder
 RUN apt-get update && apt upgrade -y && pip install pipenv --upgrade pip
 WORKDIR /opt/app
 COPY ./requirements.txt .
