@@ -22,7 +22,7 @@ jobs:
         run: |
           docker build . --build-arg tx_token=$TX_TOKEN -t qfield-docs
           mkdir site
-          docker run -it -v ./site:/opt/app/site --rm localhost/qfield-docs
+          docker run -v ./site:/opt/app/site --rm localhost/qfield-docs
 
       - uses: actions/setup-python@v2
         with:
