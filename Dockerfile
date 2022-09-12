@@ -28,8 +28,8 @@ ENV TX_TOKEN $tx_token
 ENV DEFAULT_LANGUAGE_ONLY false
 
 #   Set up and fetch translations the docs
-RUN tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/ && \
-    tx pull --all
+RUN tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/ \
+    && tx pull --all
 
 #   Build the docs
 CMD . .venv/bin/activate && mkdocs build
