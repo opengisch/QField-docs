@@ -183,7 +183,7 @@ can be based on the geometry or expression variables.
 
 For more information regarding storing information related to your
 position in object attributes, refer to the deticated
-`GNSS documentation<gnss_variables>`{.interpreted-text role="ref"}.
+[GNSS documentation](./gnss/).
 
 ### Common use cases
 
