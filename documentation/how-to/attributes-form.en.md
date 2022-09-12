@@ -185,6 +185,10 @@ For more information regarding storing information related to your
 position in object attributes, refer to the deticated
 [GNSS documentation](./gnss/).
 
+For QFieldCloud users, two variables can be used with default values:
+- `@cloud_username` which returns the  name of the currently logged in QFieldCloud user.
+- `@cloud_useremail` which returns the email address of the currently logged in QFieldCloud user.
+
 ### Common use cases
 
 Insert positioning information as variable:
