@@ -22,4 +22,3 @@ Usually the path on Android devices looks something like this: `/Android/data/ch
 QFieldCloud support `pg_service.conf` configurations too. You need to configure your PostgreSQL layers with "Offline editing" cloud action and store your service settings on QFieldCloud Project's Secrets page.
 
 Read more [how to configure PostgreSQL service](../reference/qfieldcloud/secrets.md) in the QFieldCloud documentation.
-

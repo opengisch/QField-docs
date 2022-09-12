@@ -70,4 +70,3 @@ which traditionally took days of work.
 !![Digitalizing a new parcel and filling the attribute table](../assets/images/mosquito_3.jpg)
 
 !![On the field work using Qfield](../assets/images/mosquito-4.jpg)
-

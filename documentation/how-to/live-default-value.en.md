@@ -33,4 +33,3 @@ In the video below there is an example of "live" default value updates
 when editing features on QField.
 
 ![type:video](https://player.vimeo.com/video/607220411)
-

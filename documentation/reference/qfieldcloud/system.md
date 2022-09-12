@@ -43,7 +43,7 @@ layer actions:
 
  This is the behavior of QFieldCloud (`libqfieldsync`) with the
  layers:
- 
+
 | Action        | File based layer                                                                                                | Not file based                                                                                 |
 |---------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | OFFLINE       | Create consolidated copy of the data on pull, apply delta file on push to original data source                  | Create consolidated copy of the data on pull, apply delta file on push to original data source |
@@ -53,7 +53,7 @@ layer actions:
 | KEEP_EXISTING | Make source path relative and create copy of the data on pull, apply delta file on push to original data source | N/A                                                                                            |
 
 This is the behavior of QField with the layers:
- 
+
 | Action        | File based layer                   | Not file based layer                       |
 |---------------|------------------------------------|--------------------------------------------|
 | OFFLINE       | Create and push deltafile          | N/A (it's always file based at this point) |

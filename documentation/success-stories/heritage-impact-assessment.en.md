@@ -146,7 +146,7 @@ and the rasters (or the geopackage containing our rasters: IGM, Basemap and so o
 our smartphone or tablet.
 
 By default, QField creates a folder where you can save projects (Android/data/
-ch.opengis.QField/files), but it is always better to store them on an external SSD, since 
+ch.opengis.QField/files), but it is always better to store them on an external SSD, since
 if you were to uninstall QField from your device, all the folders and files contained in them
 will be removed running the risk of deleting the data.
 
@@ -159,7 +159,7 @@ as .QGIS.
 
 ### 4. Benefits and Drawbacks of Using QField in an Archaeological Survey and Archaeological Risk Assessment Jobs
 
-QField, similar to all the cutting-edge tools, has some limits related the the use of the 
+QField, similar to all the cutting-edge tools, has some limits related the the use of the
 devices; the main one of these might be caused by the poor bandwidth or lack of internet. In
 this case, we cannot have a good accuracy in the registration of our archaeological features
 by using the GNSS. At the same time, we would not to be able to upload WMS services
@@ -178,10 +178,10 @@ G.G.
 
 ### 5. Working with QField in an Open Area Excavation
 
-In  an  open  area  excavation  scenario,  the  advantages  and  convenience  of  using  an  
-App  such  as  QField  are  innumerable.  This  is  true  especially  in  commercial  archaeology  
-sites, where very often the deadlines to carry out the work and the budgets available for 
-the archaeological investigation are very tight. This forces you to work with the maximum 
+In  an  open  area  excavation  scenario,  the  advantages  and  convenience  of  using  an
+App  such  as  QField  are  innumerable.  This  is  true  especially  in  commercial  archaeology
+sites, where very often the deadlines to carry out the work and the budgets available for
+the archaeological investigation are very tight. This forces you to work with the maximum
 optimisation of the timing and assets, despite the fact that the weather and visibility conditions
 in the field are often poor (Figure 2).
 

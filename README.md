@@ -1,3 +1,5 @@
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
 # QField Documentation
 This is the documentation for the QField Ecosystem composed by QField, QFieldCloud and QFieldSync.
 The documentation is deployed [here](https://docs.qfield.org).
@@ -79,6 +81,8 @@ Therefore we appreciate if you can help us by
  * Improving the documentation (in English)
  * Translate it to your language
 
+NB: We're using a pre-commit hook to enforce formatting. It will trigger whenever you commit to this repository. Read further to learn how to run your work against it.
+
 ### Documentation process
 
 *Note: You will need a [github account](https://github.com/) for this.*
@@ -92,14 +96,36 @@ If you want more information about forking you can find it
 You most likely want to make changes to the files in the folder `en`. That's
 where all the real documentation text is located.
 
-#### Testing your changes
+#### Testing your changes (on your local machine)
 
 ```sh
 pipenv install -r requirements.txt
 pipenv run mkdocs serve
 ```
 
-The local doc will be available at http://localhost:8000
+The local doc will be available at http://localhost:8000.
+
+#### Contribute
+Before commiting, install [pre-commit](https://pre-commit.com/) to auto-format your contributions. You can install pre-commit for the current user with
+
+    pip install --user pre-commit
+    pre-commit install
+
+
+#### Testing your changes (on your local machine via Docker)
+
+Ensure [Docker](https://docs.docker.com/get-docker/) or [Podman](https://podman.io/getting-started/installation) is installed and set up as appropriate. If using Podman substitute `podman` for `docker` in the following steps.
+
+1. Clone this repository: git clone https://github.com/opengisch/QField-docs
+2. Build the container: `docker build . -t qfield-docs`
+3. Run it: `docker run -it -p 8000:8000 --rm localhost/qfield-docs`
+4. Point your browser to the serving endpoint at http://localhost:8000.
+
+For inspecting the built documentation before serving you can instead run the container with:
+
+    docker run -it -p 8000:8000 --rm localhost/qfield-docs bash
+    source .venv/bin/activate
+    mkdocs build
 
 #### Contribute changes
 

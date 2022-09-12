@@ -61,4 +61,3 @@ For other service settings you can use the **Add extra pgservice field** button 
 The advanced configuration allows you to directly edit the settings as plain text. This is convenient in cases you want to copy and paste your settings directly from a `pg_service.conf` file.
 
 !![Adding a PostgreSQL service - Advanced editor.](../../assets/images/secrets-pgservice-advanced.png)
-

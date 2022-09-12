@@ -41,4 +41,3 @@ hiding the nodes of the legend of our project.
     If you want to see the hidden layers/groups again, click on show
     invisible layers and groups.
     ![](../assets/images/plugin_invisible_layers_show.png)
-

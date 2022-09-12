@@ -13,6 +13,3 @@ The links below will download an archive with each project.
 [QField Users :material-map-marker:](../assets/projects/qfield-users-survey.zip){ .md-button }
 
 You can also explore the sample projects directly in the [QField GitHub repository](https://github.com/opengisch/QField/tree/master/resources/sample_projects).
-
-
-
