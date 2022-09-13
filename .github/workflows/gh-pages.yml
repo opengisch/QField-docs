@@ -23,6 +23,7 @@ jobs:
           docker build . --build-arg tx_token=$TX_TOKEN -t qfield-docs
           mkdir site
           docker run -v "${PWD}/site:/opt/app/site" qfield-docs
+          sudo chown -R "${USER}:${USER}" site
 
       - uses: actions/setup-python@v2
         with:
