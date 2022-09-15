@@ -7,7 +7,7 @@ ENV PIPENV_VENV_IN_PROJECT=1
 RUN pipenv install --three
 
 #   Build the transifex-cli go static binary
-FROM golang:1-bullseye as go-builder
+FROM golang:1-bullseye AS go-builder
 WORKDIR /opt/app
 RUN git clone https://github.com/transifex/cli .
 
@@ -28,13 +28,8 @@ ENV TX_TOKEN $tx_token
 ENV DEFAULT_LANGUAGE_ONLY false
 
 #   Set up and fetch translations the docs
-RUN tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/ \
-    && tx pull --all
+RUN tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/ && \
+    tx pull --minimum-perc 10
 
-#   Build the docs
-CMD . .venv/bin/activate && mkdocs build
-
-# To extract the build, run with a bindmount, for example:
-#   mkdir site && docker run -it -v ./site:/opt/app/site --rm localhost/qfield-docs
-# Then you can serve locally with your favorite web server, for example:
-#   python3 -m http.server -d ./site
+#   Serve locally
+CMD . /opt/app/.venv/bin/activate && mkdocs serve -a 0.0.0.0:8000
