@@ -16,16 +16,6 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
-      - name: Make and install Go binary
-        uses: setup-go
-        with:
-          go-version: '1.17'
-          check-latest: true
-          cache: true
-      - run: |
-          git fetch --tags && latestTag=$(git describe --tags `git rev-list --tags --max-count=1`) && git checkout $latestTag
-          make build
-
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9  # transifex-client has compatibility problem with 3.10
@@ -37,6 +27,9 @@ jobs:
         run: pip install -r requirements-insiders.txt
         env:
           MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
+
+      - name: Install Go binary
+        run: curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
 
       - name: Deploy documentation
         run: |
