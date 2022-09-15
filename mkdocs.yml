@@ -160,37 +160,39 @@ plugins:
   - i18n:
       default_language: en
       default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, true]
+      # FIX ME: Add autodetection to translation rates so that only languages
+      # with >30% translations are built. See https://www.transifex.com/opengisch/qfield-documentation/dashboard/
       languages:
         en: English
         de: German
         fr: French
         it: Italian
-        rm: Romansh
-        ja: Japanese
-        gl: Galician
-        pt: Portuguese
+        # rm: Romansh
+        # ja: Japanese
+        # gl: Galician
+        # pt: Portuguese
         es: Spanish
-        hu: Hungarian
-        zh: Chinese
-        fi: Finnish
-        ro: Romanian
-        tr: Turkish
-        uk: Ukranian
-        nl: Dutch
-        bg: Bulgarian
-        cs: Czech
-        fa: Persian
-        pt_BR: Protuguese (Brazil)
-        et: Estonian
-        pl: Polish
-        he: Hebrew
-        sl: Slovenian
-        lt: Lithuanian
-        ar: Arabic
-        ca: Catalan
-        hr: Croatian
-        id: Indonesian
-        rw: Kinyarwanda
-        ru: Russian
-        ru_UA: Russian (Ukraine)
-        vi: Vietnamese
+        # hu: Hungarian
+        # zh: Chinese
+        # fi: Finnish
+        # ro: Romanian
+        # tr: Turkish
+        # uk: Ukranian
+        # nl: Dutch
+        # bg: Bulgarian
+        # cs: Czech
+        # fa: Persian
+        # pt_BR: Protuguese (Brazil)
+        # et: Estonian
+        # pl: Polish
+        # he: Hebrew
+        # sl: Slovenian
+        # lt: Lithuanian
+        # ar: Arabic
+        # ca: Catalan
+        # hr: Croatian
+        # id: Indonesian
+        # rw: Kinyarwanda
+        # ru: Russian
+        # ru_UA: Russian (Ukraine)
+        # vi: Vietnamese

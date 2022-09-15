@@ -1,4 +1,5 @@
 name: gh-pages
+
 on:
   push:
     branches:
@@ -6,6 +7,9 @@ on:
   schedule:
     - cron: '30 1 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   translations:
@@ -16,29 +20,33 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
-      - name: Build the container and the docs inside of it
-        env:
-          TX_TOKEN: ${{ secrets.TX_TOKEN }}
-        run: |
-          docker build . --build-arg tx_token=$TX_TOKEN -t qfield-docs
-          mkdir site
-          docker run -v "${PWD}/site:/opt/app/site" qfield-docs
-          sudo chown -R "${USER}:${USER}" site
-
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9  # transifex-client has compatibility problem with 3.10
 
-      - name: Install requirements
+      - name: Install Python requirements
         run: pip install -r requirements.txt
 
-      - name: Install requirements insiders
+      - name: Install Python requirements insiders
         run: pip install -r requirements-insiders.txt
         env:
           MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
 
+      - name: Install Transifex client
+        run: curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
+
       - name: Deploy documentation
-        run: mkdocs gh-deploy -d ./site --force
+        run: |
+          ./tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/
+          ./tx pull --minimum-perc 10
+          mkdocs build
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
           DEFAULT_LANGUAGE_ONLY: false
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        with:
+            branch: gh-pages
+            clean: true
+            folder: site
