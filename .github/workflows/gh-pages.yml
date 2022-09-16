@@ -3,6 +3,7 @@ on:
   push:
     branches: 
       - master
+      - old_action
   schedule:
     - cron: '30 1 * * *'
 
