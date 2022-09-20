@@ -10,8 +10,6 @@ QField allows you to create points, lines, and polygons from tracking your posit
 
 :material-tablet-android:{ .device-icon } Fieldwork
 
-![type:video](https://player.vimeo.com/video/499958163)
-
 To activate tracking, you must first make sure the positioning is active. Then,
 open the side dashboard, long-press on a legend layer within which you want to
 save your tracks to, and select the *Setup tracking* button to configure
