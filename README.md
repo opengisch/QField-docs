@@ -118,14 +118,18 @@ Ensure [Docker](https://docs.docker.com/get-docker/) or [Podman](https://podman.
 
 1. Clone this repository: git clone https://github.com/opengisch/QField-docs
 2. Build the container: `docker build . -t qfield-docs`
-3. Run it: `docker run -it -p 8000:8000 --rm localhost/qfield-docs`
+3. Run it: `docker run -it -v ${PWD}/documentation:/opt/app/documentation -p 8000:8000 qfield-docs`
 4. Point your browser to the serving endpoint at http://localhost:8000.
+
+The server will automatically live-reload with any change made to the local `./documentation` directory.
 
 For inspecting the built documentation before serving you can instead run the container with:
 
     docker run -it -p 8000:8000 --rm localhost/qfield-docs bash
     source .venv/bin/activate
     mkdocs build
+
+The build output is available at `./site` inside of the container.
 
 #### Contribute changes
 
