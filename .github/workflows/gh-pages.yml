@@ -35,13 +35,16 @@ jobs:
       - name: Install Transifex client
         run: curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
 
-      - name: Deploy documentation
+      - name: Pull translations
         run: |
           ./tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/
           ./tx pull --minimum-perc 10
-          mkdocs build
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
+
+      - name: Build documentation
+        run: mkdocs build
+        env:
           DEFAULT_LANGUAGE_ONLY: false
 
       - name: Deploy to GitHub Pages
