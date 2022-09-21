@@ -30,18 +30,31 @@ help you with the implementation.
 
 ### Raster data
 
-Raster data can become quite big quickly, when working with uncompressed
+Raster data can become quite big quickly, when working with uncompressed 
 tiff files it's often several Gb of data. Especially on mobile devices,
 this is inefficient.
 
-## Use GeoPackage
+### Use COG (Cloud Optimized GeoTIFF)
 
-We recommend to us the geopackage format to deal with raster data. The
-following commands will convert a file called `raster.tif` to a file
-`raster.gpkg` with pyramids. Make sure you adjust `EPSG:21781` to your
-desired CRS.
+COG format will offer best user experience for offline basemap.
+Combine with JPEG compression, it will reduce the raster size.
+
+The following commands will convert a file called `raster.tif` to a COG file `raster_cog.tif` using JPEG compression. Make sure you adjust `EPSG:21781` to your desired CRS and `NUM_THREADS` (for example : 6) if you do not want to use all your computer ressources.
 
 ``` bash
-gdal_translate --config OGR_SQLITE_SYNCHRONOUS OFF -co  APPEND_SUBDATASET=YES -co TILE_FORMAT=WEBP -a_srs EPSG:21781 -of GPKG raster.tif raster.gpkg
-gdaladdo --config OGR_SQLITE_SYNCHRONOUS OFF -r AVERAGE raster.gpkg 2 4 8 16 32 64 128 256
+gdal_translate raster.tif raster_cog.tif -a_srs EPSG:21781 -of COG -co BLOCKSIZE=512 -co COMPRESS=JPEG -co QUALITY=75 -co NUM_THREADS=ALL_CPUS -co BIGTIFF=YES
 ```
+
+If you have several files to assemble, first, you need to create a VRT files with QGIS or trough following commands to index all TIF files inside a directory.
+
+``` bash
+gdalbuildvrt raster_mosaic.vrt TIF_Directory/*.tif -addalpha -hidenodata -a_srs EPSG:21781
+```
+
+Then convert VRT file to COG.
+
+``` bash
+gdal_translate raster_mosaic.vrt raster_cog.tif -of COG -co BLOCKSIZE=512 -co COMPRESS=JPEG -co QUALITY=75 -co NUM_THREADS=ALL_CPUS -co BIGTIFF=YES
+```
+
+If the raster data is too low quality, adjust the compression level and set QUALITY=85.
