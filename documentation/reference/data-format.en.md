@@ -36,7 +36,7 @@ this is inefficient.
 
 ### Use COG (Cloud Optimized GeoTIFF)
 
-The [Cloud Optimized Geotiff](https://www.cogeo.org/) format will offer best user experience for offline basemaps.
+The [Cloud Optimized Geotiff (COG)](https://www.cogeo.org/) format will offer best user experience for offline basemaps.
 Combined with JPEG compression, it will reduce the raster size.
 
 The following commands will convert a file called `raster.tif` to a COG file `raster_cog.tif` using JPEG compression.
