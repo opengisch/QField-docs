@@ -30,7 +30,7 @@ help you with the implementation.
 
 ### Raster data
 
-Raster data can become quite big quickly, when working with uncompressed 
+Raster data can become quite big quickly, when working with uncompressed
 tiff files it's often several Gb of data. Especially on mobile devices,
 this is inefficient.
 
