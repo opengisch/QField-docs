@@ -34,12 +34,12 @@ run_task(){
     return 0
 }
 
-export -f run_task output_dir
+export -f run_task
 
 # Initial check
 if [ "${#language_codes_hashmap[@]}" -eq 0 ]; then
     echo 'No language found. Aborting.'
-    exit -1
+    exit 1
 fi
 
 # Set up
