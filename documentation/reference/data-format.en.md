@@ -34,14 +34,41 @@ Raster data can become quite big quickly, when working with uncompressed
 tiff files it's often several Gb of data. Especially on mobile devices,
 this is inefficient.
 
-## Use GeoPackage
+### Use COG (Cloud Optimized GeoTIFF)
 
-We recommend to us the geopackage format to deal with raster data. The
-following commands will convert a file called `raster.tif` to a file
-`raster.gpkg` with pyramids. Make sure you adjust `EPSG:21781` to your
-desired CRS.
+The [Cloud Optimized Geotiff (COG)](https://www.cogeo.org/) format will offer best user experience for offline basemaps.
+Combined with JPEG compression, it will reduce the raster size.
+
+The following commands will convert a file called `raster.tif` to a COG file `raster_cog.tif` using JPEG compression.
 
 ``` bash
-gdal_translate --config OGR_SQLITE_SYNCHRONOUS OFF -co  APPEND_SUBDATASET=YES -co TILE_FORMAT=WEBP -a_srs EPSG:21781 -of GPKG raster.tif raster.gpkg
-gdaladdo --config OGR_SQLITE_SYNCHRONOUS OFF -r AVERAGE raster.gpkg 2 4 8 16 32 64 128 256
+gdal_translate raster.tif raster_cog.tif -of COG -co BLOCKSIZE=512 -co COMPRESS=JPEG -co QUALITY=75 -co BIGTIFF=YES
+```
+
+### Advanced examples with COG
+
+If you have several files to assemble, first, you need to create a VRT files with QGIS or trough following commands to index all TIF files inside a directory.  Make sure you adjust `EPSG:2056` to your desired CRS.
+
+``` bash
+gdalbuildvrt raster_mosaic.vrt TIF_Directory/*.tif -addalpha -hidenodata -a_srs EPSG:2056
+```
+
+Then convert VRT file to COG.
+
+``` bash
+gdal_translate raster_mosaic.vrt raster_cog.tif -of COG -co BLOCKSIZE=512 -co COMPRESS=JPEG -co QUALITY=75 -co BIGTIFF=YES
+```
+
+If the raster data is too low quality, adjust the compression level and set QUALITY=85.
+
+Some extra parameters can be set :
+
+- `a_srs` can be used also in gdal_translate command when CRS is not define in the source raster dataset.
+- `OVERVIEW_RESAMPLING`offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.
+- `NUM_THREADS` will help you to balance between use all your CPU ressources or only part. Set ALL_CPUS or define the number of thread you want to use.
+
+Combining all extra parameters, command line may look like this :
+
+``` bash
+gdal_translate raster.tif raster_cog.tif -a_srs EPSG:2056 -of COG -co BLOCKSIZE=512 -co OVERVIEW_RESAMPLING=BILINEAR -co COMPRESS=JPEG -co QUALITY=75 -co NUM_THREADS=6 -co BIGTIFF=YES
 ```
