@@ -134,9 +134,9 @@ track of the quality of individual measured points.
   - `@position_vdop` - Vertical dilution of precision as reported by the sensor. It is
         only available when the crosshair is snapped to the sensor. - E
   - `@position_number_of_used_satellites` - Number of satellites as reported by the sensor. It is only
-        available when the crosshair is snapped to the sensor. - E
+        available when the crosshair is snapped to the sensor. - IE
   - `@position_used_satellites` - A list of satellites in use (pri) as reported by the sensor. It
-        is only available when the crosshair is snapped to the sensor. - `array_count(@position_used_satellites)` - E
+        is only available when the crosshair is snapped to the sensor. - `array_length(@position_used_satellites)` - E
   - `@position_fix_status_description` - The GPS Fix Status "NoData", "NoFix", "Fix2D" or "Fix3D"
         as reported by the sensor. It is only available when the
         crosshair is snapped to the sensor. - E
