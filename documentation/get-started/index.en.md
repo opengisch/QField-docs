@@ -24,9 +24,10 @@ title: Get started
 
 === ":material-apple: iOS"
 
-    An iOS version is in the making. You can [sign up for beta testing in
-    testflight](https://testflight.apple.com/join/TbG1kJVI) to get access
-    earlier than everyone else.
+    QField can be found on the Appstore and requires iOS 12.0 or later.
+
+    [![AppstoreLink](../assets/images/app-store.png)](
+    https://apps.apple.com/app/qfield-for-qgis/id1531726814)
 
 === ":material-apple: MacOS"
 
