@@ -16,12 +16,6 @@ title: Get started
     [![GooglePlayLink](../assets/images/Get_it_on_Google_play.png)](
     https://play.google.com/store/apps/details?id=ch.opengis.qfield)
 
-=== ":material-microsoft-windows: Windows"
-
-    Windows support is currently in beta status. [Download the latest
-    builds](https://github.com/opengisch/QField/releases/download/v2.3.2/qfield-v2.3.2-windows-x64.exe)
-    and leave us a note how it works.
-
 === ":material-apple: iOS"
 
     QField can be found on the Appstore:
@@ -36,6 +30,11 @@ title: Get started
     builds](https://nightly.link/opengisch/QField/workflows/desktop/master/QField-dev-x64-osx-Release.zip)
     and leave us a note how it works.
 
+=== ":material-microsoft-windows: Windows"
+
+    Windows support is currently in beta status. [Download the latest
+    builds](https://github.com/opengisch/QField/releases/download/v2.3.2/qfield-v2.3.2-windows-x64.exe)
+    and leave us a note how it works.
 
 QField allows you to efficiently work on your GIS data outdoor.
 
