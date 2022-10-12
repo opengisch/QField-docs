@@ -24,7 +24,7 @@ title: Get started
 
 === ":material-apple: iOS"
 
-    QField can be found on the Appstore and requires iOS 12.0 or later.
+    QField can be found on the Appstore:
 
     [![AppstoreLink](../assets/images/app-store.png)](
     https://apps.apple.com/app/qfield-for-qgis/id1531726814)
