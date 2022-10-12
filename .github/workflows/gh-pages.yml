@@ -34,7 +34,9 @@ jobs:
           MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
 
       - name: Install Transifex client
-        run: curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
+        run: |
+          curl -OL https://github.com/transifex/cli/releases/download/v1.3.1/tx-linux-amd64.tar.gz
+          tar -xvzf tx-linux-amd64.tar.gz
 
       - name: Pull translations
         run: |
