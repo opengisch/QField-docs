@@ -141,7 +141,6 @@ extra_javascript:
   - javascript/jquery.fancybox.min.js
   - javascript/swagger-ui-bundle.js
   - javascript/swagger-ui-standalone-preset.js
-
 extra:
   # Remove "Made with Material for MkDocs" from footer
   generator: false
@@ -154,24 +153,50 @@ extra:
       link: https://www.linkedin.com/company/opengisch/
     - icon: fontawesome/solid/paper-plane
       link: mailto:info@opengis.ch
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
+    - name: Français
+      link: /fr/
+      lang: fr
+    - name: Español
+      link: /es/
+      lang: es
+    - name: Italiano
+      link: /it/
+      lang: it
 plugins:
   - mkdocs-video
   - search
   - i18n:
+      # To make sure the language selector is built to reference languages across builds
+      material_alternate: true
       default_language: en
-      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, true]
-      # FIX ME: Add autodetection to translation rates so that only languages
-      # with >30% translations are built. See https://www.transifex.com/opengisch/qfield-documentation/dashboard/
+      default_language_only: false
       languages:
-        en: English
-        de: German
-        fr: French
-        it: Italian
+        en:
+          name: English
+          build: !ENV [BUILD_EN, false]
+        de:
+          name: Deutsch
+          build: !ENV [BUILD_DE, false]
+        fr:
+          name: Français
+          build: !ENV [BUILD_FR, false]
+        it:
+          name: Italiano
+          build: !ENV [BUILD_IT, false]
         # rm: Romansh
         # ja: Japanese
         # gl: Galician
         # pt: Portuguese
-        es: Spanish
+        es:
+          name: Español
+          build: !ENV [BUILD_ES, false]
         # hu: Hungarian
         # zh: Chinese
         # fi: Finnish
