@@ -28,10 +28,10 @@ jobs:
       - name: Install Python requirements
         run: pip install -r requirements.txt
 
-      # - name: Install Python requirements insiders
-      #   run: pip install -r requirements-insiders.txt
-      #   env:
-      #     MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
+      - name: Install Python requirements insiders
+        run: pip install -r requirements-insiders.txt
+        env:
+          MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
 
       - name: Install Transifex client
         run: |
