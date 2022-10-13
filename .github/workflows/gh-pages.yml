@@ -43,16 +43,15 @@ jobs:
       - name: Pull translations
         run: |
           python ./utils/transifex_utils.py
-          ./tx pull -l it,de,fr,es
+          ./tx pull --all --minimum-perc 10
           ./tx status
-          cat ./documentation/get-started/tutorials/advanced-setup-qfc.it.md
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
-      # - name: Build documentation
-      #   run: mkdocs build
-      #   env:
-      #     DEFAULT_LANGUAGE_ONLY: false
+      - name: Build documentation
+        run: mkdocs build
+        env:
+          DEFAULT_LANGUAGE_ONLY: false
 
       # - name: Deploy to GitHub Pages
       #   uses: JamesIves/github-pages-deploy-action@v4.2.2

@@ -16,6 +16,7 @@ def create_transifex_config():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     config_file = os.path.join(current_dir, "..", ".tx", "config")
     root = os.path.join(current_dir, "..")
+    count = 0
 
     with open(config_file, "w") as f:
         f.write("[main]\n")
@@ -36,6 +37,8 @@ def create_transifex_config():
                 f.write(f"source_file = {relative_path}\n")
                 f.write(f"source_lang = {TX_SOURCE_LANG}\n")
                 f.write(f"type = {TX_TYPE}\n\n")
+                count += 1
 
-    print("Transifex configuration created")
+    print(f"Transifex configuration created. {count} resources added.")
+
 create_transifex_config()
