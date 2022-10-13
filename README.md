@@ -93,8 +93,19 @@ and cannot do any damage, feel free to experiment.
 If you want more information about forking you can find it
 [here](https://help.github.com/articles/fork-a-repo/).
 
-You most likely want to make changes to the files in the folder `en`. That's
-where all the real documentation text is located.
+Only English source files are to be edited manually in the repository.
+Files ending in `.en.md` are uploaded to Transifex for translation.
+
+It is necessary to create a unique `tx_slug` in the metadata of the newly created markdown files. E.g:
+
+  ```markdown
+    ---
+    title: Advanced Setup
+    tx_slug: tutorial_advanced_setup_qfc
+    ---
+  ```
+
+The `tx_slug` identifies the resource on Transifex. It should *not* be changed in existing files, otherwise unnecessary duplication is created on Transifex.
 
 #### Testing your changes (on your local machine)
 
