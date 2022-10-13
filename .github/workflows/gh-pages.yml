@@ -3,10 +3,12 @@ name: gh-pages
 on:
   push:
     branches:
+      - transifex_stuff
+      # FIXME: restore
       - master
-  schedule:
-    - cron: '30 1 * * *'
-  workflow_dispatch:
+  # schedule:
+  #   - cron: '30 1 * * *'
+  # workflow_dispatch:
 
 permissions:
   contents: write
@@ -40,19 +42,21 @@ jobs:
 
       - name: Pull translations
         run: |
-          ./tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/
-          ./tx pull --minimum-perc 10
+          python ./utils/transifex_utils.py
+          ./tx pull -l it,de,fr,es
+          ./tx status
+          cat ./documentation/get-started/tutorials/advanced-setup-qfc.it.md
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
-      - name: Build documentation
-        run: mkdocs build
-        env:
-          DEFAULT_LANGUAGE_ONLY: false
+      # - name: Build documentation
+      #   run: mkdocs build
+      #   env:
+      #     DEFAULT_LANGUAGE_ONLY: false
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.2.2
-        with:
-            branch: gh-pages
-            clean: true
-            folder: site
+      # - name: Deploy to GitHub Pages
+      #   uses: JamesIves/github-pages-deploy-action@v4.2.2
+      #   with:
+      #       branch: gh-pages
+      #       clean: true
+      #       folder: site
