@@ -40,10 +40,21 @@ jobs:
           curl -OL https://github.com/transifex/cli/releases/download/v1.3.1/tx-linux-amd64.tar.gz
           tar -xvzf tx-linux-amd64.tar.gz
 
-      - name: Pull translations
+      - name: Configure Transifex
         run: |
           python ./utils/transifex_utils.py
-          ./tx pull --all --minimum-perc 10
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+
+      - name: Push source files to Transifex
+        run: |
+          ./tx push --source --all
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+
+      - name: Pull translations from Transifex
+        run: |
+          ./tx pull --translations --all --minimum-perc 10
           ./tx status
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
