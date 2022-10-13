@@ -3,7 +3,7 @@ import glob
 import frontmatter
 
 TX_ORGANIZATION = "opengisch"
-TX_PROJECT = "qfield_documentation"
+TX_PROJECT = "qfield-documentation"
 TX_SOURCE_LANG = "en"
 TX_TYPE = "GITHUBMARKDOWN"
 
