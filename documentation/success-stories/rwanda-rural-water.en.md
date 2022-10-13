@@ -1,5 +1,6 @@
 ---
 title: Data collection of rural water supply systems
+tx_slug: documentation_success-stories_rwanda-rural-water
 ---
 
 # Data collection by QGIS/QField for O&M work of rural water supply systems in Rwanda
