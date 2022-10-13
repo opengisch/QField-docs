@@ -48,7 +48,7 @@ jobs:
 
       - name: Push source files to Transifex
         run: |
-          ./tx push --source --all
+          ./tx push
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
