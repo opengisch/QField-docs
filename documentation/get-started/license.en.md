@@ -1,5 +1,6 @@
 ---
 title: License
+tx_slug: documentation_get-started_license
 ---
 
 # License

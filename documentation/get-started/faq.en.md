@@ -1,5 +1,6 @@
 ---
 title: FAQ
+tx_slug: documentation_get-started_faq
 ---
 
 # Frequently Asked Questions

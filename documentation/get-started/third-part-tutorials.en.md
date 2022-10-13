@@ -1,5 +1,6 @@
 ---
 title: Third-party tutorials
+tx_slug: documentation_get-started_third-part-tutorials
 ---
 
 # Third-party tutorials

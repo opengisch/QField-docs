@@ -1,5 +1,6 @@
 ---
 title: Sponsor
+tx_slug: documentation_get-started_sponsor
 ---
 
 # Sponsor QField

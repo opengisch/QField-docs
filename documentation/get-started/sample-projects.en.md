@@ -1,5 +1,6 @@
 ---
 title: Sample projects
+tx_slug: documentation_get-started_sample-projects
 ---
 
 # Sample projects

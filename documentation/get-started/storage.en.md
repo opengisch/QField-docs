@@ -1,5 +1,6 @@
 ---
 title: Storage Access
+tx_slug: documentation_get-started_storage
 ---
 
 # QField Storage Access

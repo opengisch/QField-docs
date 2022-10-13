@@ -1,5 +1,6 @@
 ---
 title: Contribute
+tx_slug: documentation_get-started_contribute
 ---
 
 # Contribute
