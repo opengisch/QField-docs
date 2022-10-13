@@ -1,5 +1,6 @@
 ---
 title: Technical reference
+tx_slug: documentation_reference_index
 ---
 
 # Technical reference

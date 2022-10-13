@@ -1,5 +1,6 @@
 ---
 title: Secrets
+tx_slug: documentation_reference_qfieldcloud_secrets
 ---
 
 # Secrets

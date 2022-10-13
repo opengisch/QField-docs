@@ -1,5 +1,6 @@
 ---
 title: Jobs
+tx_slug: documentation_reference_qfieldcloud_jobs
 ---
 
 Jobs on QFieldCloud perform heavy operation with project files and layers within QGIS. Jobs are created in response to certain user actions.
