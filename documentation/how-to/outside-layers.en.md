@@ -1,5 +1,6 @@
 ---
 title: Shared local datasets
+tx_slug: documentation_how-to_outside-layers
 ---
 
 # Shared local datasets

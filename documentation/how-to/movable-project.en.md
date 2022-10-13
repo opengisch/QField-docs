@@ -1,5 +1,6 @@
 ---
 title: Portable project
+tx_slug: documentation_how-to_movable-project
 ---
 
 # Portable project

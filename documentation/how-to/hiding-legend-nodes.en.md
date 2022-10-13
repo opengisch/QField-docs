@@ -1,5 +1,6 @@
 ---
 title: Hiding legend nodes
+tx_slug: documentation_how-to_hiding-legend-nodes
 ---
 
 # Hiding legend nodes

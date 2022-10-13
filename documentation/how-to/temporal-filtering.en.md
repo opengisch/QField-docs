@@ -1,5 +1,6 @@
 ---
 title: Temporal filtering
+tx_slug: documentation_how-to_temporal-filtering
 ---
 
 # Temporal filtering

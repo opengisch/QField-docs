@@ -1,5 +1,6 @@
 ---
 title: Interact with the map
+tx_slug: documentation_how-to_map-interaction
 ---
 
 # Interact with the map

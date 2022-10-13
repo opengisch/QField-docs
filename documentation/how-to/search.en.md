@@ -1,5 +1,6 @@
 ---
 title: Search
+tx_slug: documentation_how-to_search
 ---
 
 # Search

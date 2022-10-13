@@ -1,5 +1,6 @@
 ---
 title: PostgreSQL service
+tx_slug: documentation_how-to_pg-service
 ---
 
 # PostgreSQL service

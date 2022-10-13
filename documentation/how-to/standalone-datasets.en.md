@@ -1,5 +1,6 @@
 ---
 title: Standalone datasets
+tx_slug: documentation_how-to_standalone-datasets
 ---
 
 # Standalone datasets

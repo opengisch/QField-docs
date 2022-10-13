@@ -1,5 +1,6 @@
 ---
 title: Global variables
+tx_slug: documentation_how-to_variables
 ---
 
 # Global variables

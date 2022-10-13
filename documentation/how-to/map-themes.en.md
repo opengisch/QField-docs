@@ -1,5 +1,6 @@
 ---
 title: Map themes
+tx_slug: documentation_how-to_map-themes
 ---
 
 # Map themes
