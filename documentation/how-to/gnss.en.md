@@ -27,7 +27,7 @@ positioning device.
 
 
 ## Configuration
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 ### Vertex log
 
@@ -167,7 +167,7 @@ Examples:
 
 
 ## Usage
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 A short press on the *GNSS button* will turn on the GNSS and center to the
 current location once *positioning information* is available.
@@ -190,7 +190,7 @@ project CRS along with precision information.
     project CRS, you probably have no signal yet.
 
 ## Using an external GNSS-Receiver
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 QField supports connecting external GNSS antennas via bluetooth.
 
@@ -203,7 +203,7 @@ bluetooth antenna.
 ![type:video](https://player.vimeo.com/video/604667820)
 
 ## Mock location
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 It is possible to provide a mock location via a separate android app to
 QField. There are several options for this, one of them is [Android NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).
@@ -211,7 +211,7 @@ QField. There are several options for this, one of them is [Android NTRIP Client
 To use this you have to [enable mock locations on your Android device](https://www.youtube.com/watch?v=v1eRHmMiRJQ).
 
 ## Averaged positioning functionality
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 !!! note
     The coordinate cursor must be locked to the current location via the [Lock to position button](../digitize/#adding-point-features)

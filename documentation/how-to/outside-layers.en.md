@@ -12,7 +12,7 @@ It is useful if a basemap is used in all your project, no need to copy
 it everytime in the project folder.
 
 ## Add a layer outside of exported project folder
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 In QGIS, open  *Options > Data Sources > Localized Data Paths*. There add the path to the folder where are the external data.
 

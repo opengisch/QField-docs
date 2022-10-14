@@ -15,7 +15,7 @@ You have to import project folders or individual datasets into the app-dedicated
 !!! warning
     Be aware that on uninstalling QField the app folder gets deleted as well. On update it stays.
 ## Import and open local project
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 When going to *Open local files* (via *Menu button > Open*) you will see a set of new folders named "QField files directory", "Imported datasets", and "Imported projects" as well as a drop-down menu accessible via a bottom-right plus button.
 
@@ -41,14 +41,14 @@ the file selector on the directory name. To remove an entry from the
 favorites, long click on the entry in the favorites list.
 
 ## Retrieve modified projects and datasets
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 Imported projects and datasets can be accessed directly using a USB cable. The location on storage is displayed in the top navigation bar when opening a local file.
 
 On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/` where you will find both the "Imported Datasets" and "Imported Projects" folders within which your edited content will be located.
 
 ### Send to
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 You can share and send the datasets straight from QField using Android APIs. This allows for the sending of edited datasets directly to third party apps (Gmail, Drive, Dropbox, Nextcloud, your favourite messenger app, etc.).
 

@@ -10,7 +10,7 @@ includes all renderer types like graduated, categorized, rule based,
 2.5D as well as data defined symbology.
 
 ## Display Expression
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 In QField, objects are identified with a name. The expression to
 generate this name can be defined by opening the attribute table in QGIS
@@ -26,7 +26,7 @@ The display expression is also used to search in layers.
 identification string throughout QField.](../assets/images/define_display_expression.png)
 
 ## Read only, non-identifiable and searchable layers
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 Some layers in a project are just there for pure visual purpose. Such
 layers should not show up when a user taps somewhere to identify
@@ -47,7 +47,7 @@ desired behavior.
 and/or not searchable.](../assets/images/project_configuration_readonly.png)
 
 ## Using additional fonts
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 In QField, you are able to use all the fonts you want.
 
@@ -62,7 +62,7 @@ There are two different possibilities to register additional fonts:
     Since QField 2 the font files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/fonts` instead of the devices main directory `<drive>:/QField/fonts`.
 
 ## Custom SVG symbols
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 It is possible to embed SVG symbols directly within a QGIS projects.
 

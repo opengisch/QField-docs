@@ -9,7 +9,7 @@ QField is supporting the "live" updating of default attribute value
 when editing features.
 
 ## Configuration
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 To make it work, the attribute has to be set up with another attribute
 dependency.
@@ -25,7 +25,7 @@ For a *value relation*:
 !![live default value relation](../assets/images/live_default2.png)
 
 ## Usage
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 "Live" default value is updating the default attribute values in real time when
 editing features.

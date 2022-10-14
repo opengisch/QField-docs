@@ -14,7 +14,7 @@ To successfully load OAuth2-protected layer(s) in QField, the QGIS
 project must be setup to use OAuth2.
 
 ## Prepare the authentication in QGIS
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 To setup a WFS with OAuth2 in QGIS follow these steps in the QGIS
 project configuration.
@@ -29,7 +29,7 @@ to the oauth2 server setup:
 !![widgets](../assets/images/oauth2_setup_auth.png)
 
 ## Export the authentication from QGIS
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 !!! note
     Exporting an auth configuration requires at least QGIS 3.20. It is

@@ -11,7 +11,7 @@ or less prominently based on the task at hand.
 This is what *Map themes* are for.
 
 ## Creating a Map Theme
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 Creating a Map Theme in QGIS is a very simple task.
 
@@ -22,7 +22,7 @@ Creating a Map Theme in QGIS is a very simple task.
 3.  Load the project on your device and change the active Map Theme
 
 ## Change the active Map Theme
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 If you defined map themes for your project in QGIS, you can switch
 between them from the Dashboard. Use the *Map themes* combobox to chose

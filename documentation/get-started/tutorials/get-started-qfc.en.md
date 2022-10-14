@@ -10,7 +10,7 @@ tx_slug: documentation_get-started_tutorials_get-started-qfc
 
 
 ## Get a QFieldCloud account
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
@@ -34,7 +34,7 @@ Search and choose a project from the list or start to create a new project.
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png)
 
 ## Connection to QFieldCloud on QGIS Desktop
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 
 In order to connect to QFieldCloud, you need the Plugin “QFieldSync” in QGIS. The next steps show you how you can install and synchronize your data to and from QFieldCloud.
@@ -136,7 +136,7 @@ Once configured, you can press the cloud button to open the synchronization dial
 Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
 
 ## Field device
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 
 ### Install QField
