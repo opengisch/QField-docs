@@ -34,7 +34,7 @@ tx_slug: documentation_get-started_index
 === ":material-microsoft-windows: Windows"
 
     Windows support is currently in beta status. [Download the latest
-    builds](https://github.com/opengisch/QField/releases/download/v2.3.2/qfield-v2.3.2-windows-x64.exe)
+    builds](https://github.com/opengisch/QField/releases/download/v2.4.1/qfield-v2.4.1-windows-x64.exe)
     and leave us a note how it works.
 
 QField allows you to efficiently work on your GIS data outdoor.
