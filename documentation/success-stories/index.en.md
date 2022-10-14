@@ -1,5 +1,6 @@
 ---
 title: Success Stories
+tx_slug: documentation_success-stories_index
 ---
 
 # Success Stories

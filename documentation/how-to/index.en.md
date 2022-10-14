@@ -1,5 +1,6 @@
 ---
 title: How-to guides
+tx_slug: documentation_how-to_index
 ---
 
 # How-to guides

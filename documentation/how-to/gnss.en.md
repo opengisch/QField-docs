@@ -1,5 +1,6 @@
 ---
 title: Positioning (GNSS)
+tx_slug: documentation_how-to_gnss
 ---
 
 # Positioning (GNSS)

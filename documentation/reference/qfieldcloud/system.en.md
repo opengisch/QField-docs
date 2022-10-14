@@ -1,5 +1,6 @@
 ---
 title: System Documentation
+tx_slug: documentation_reference_qfieldcloud_system
 ---
 
 # QFieldCloud System Documentation

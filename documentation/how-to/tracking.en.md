@@ -1,5 +1,6 @@
 ---
 title: Tracking
+tx_slug: documentation_how-to_tracking
 ---
 
 # Tracking

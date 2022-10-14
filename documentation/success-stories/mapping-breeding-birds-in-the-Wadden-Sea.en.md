@@ -1,5 +1,6 @@
 ---
 title: Mapping breeding birds
+tx_slug: documentation_success-stories_mapping-breeding-birds-in-the-Wadden-Sea
 ---
 
 # Use of QField for mapping breeding birds in the Wadden Sea

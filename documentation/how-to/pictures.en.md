@@ -1,5 +1,6 @@
 ---
 title: Pictures
+tx_slug: documentation_how-to_pictures
 ---
 
 # Use pictures

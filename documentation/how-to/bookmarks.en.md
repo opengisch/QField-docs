@@ -1,5 +1,6 @@
 ---
 title: Bookmarks
+tx_slug: documentation_how-to_bookmarks
 ---
 
 # Bookmarks

@@ -1,5 +1,6 @@
 ---
 title: Vanilla Surveys
+tx_slug: documentation_success-stories_vanilla-survey
 ---
 
 # Vanilla Surveys using QField

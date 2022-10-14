@@ -1,5 +1,6 @@
 ---
 title: River State Survey
+tx_slug: documentation_success-stories_river-state-survey
 ---
 
 # River State Survey Using QField

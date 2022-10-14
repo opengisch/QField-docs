@@ -1,5 +1,6 @@
 ---
 title: REST API
+tx_slug: documentation_reference_qfieldcloud_api
 ---
 #
 You can also visit the API documentation at https://app.qfield.cloud/docs/ .

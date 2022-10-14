@@ -1,5 +1,6 @@
 ---
 title: Advanced Setup
+tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 ---
 
 # Advanced setup guide

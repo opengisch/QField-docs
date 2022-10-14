@@ -38,10 +38,22 @@ jobs:
           curl -OL https://github.com/transifex/cli/releases/download/v1.3.1/tx-linux-amd64.tar.gz
           tar -xvzf tx-linux-amd64.tar.gz
 
-      - name: Pull translations
+      - name: Configure Transifex
         run: |
-          ./tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/
-          ./tx pull --minimum-perc 10
+          python ./utils/transifex_utils.py
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+
+      - name: Push source files to Transifex
+        run: |
+          ./tx push
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+
+      - name: Pull translations from Transifex
+        run: |
+          ./tx pull --translations --all --minimum-perc 10
+          ./tx status
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 

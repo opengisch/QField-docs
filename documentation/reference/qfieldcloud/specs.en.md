@@ -1,5 +1,6 @@
 ---
 title: Technical specs
+tx_slug: documentation_reference_qfieldcloud_specs
 ---
 
 ## Firewall configuration

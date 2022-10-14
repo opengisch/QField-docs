@@ -1,5 +1,6 @@
 ---
 title: Ground Truth Data Collection
+tx_slug: documentation_success-stories_lulc-mapping-fiji
 ---
 
 # Ground Truth Data Collection Using QField for LULC Mapping in Fiji

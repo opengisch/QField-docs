@@ -1,5 +1,6 @@
 ---
 title: Permissions
+tx_slug: documentation_reference_qfieldcloud_permissions
 ---
 
 # Permissions

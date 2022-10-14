@@ -1,5 +1,6 @@
 ---
 title: Digitize
+tx_slug: documentation_how-to_digitize
 ---
 
 # Digitize

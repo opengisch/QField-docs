@@ -1,5 +1,6 @@
 ---
 title: Map styling
+tx_slug: documentation_how-to_map-styling
 ---
 
 # Map styling

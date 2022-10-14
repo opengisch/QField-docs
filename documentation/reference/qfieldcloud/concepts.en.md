@@ -1,5 +1,6 @@
 ---
 title: Basic concepts
+tx_slug: documentation_reference_qfieldcloud_concepts
 ---
 
 ## Users

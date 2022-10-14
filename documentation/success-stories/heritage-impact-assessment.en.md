@@ -1,5 +1,6 @@
 ---
 title: Heritage Impact Assessment
+tx_slug: documentation_success-stories_heritage-impact-assessment
 ---
 
 # Heritage Impact Assessment using QField

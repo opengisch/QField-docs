@@ -1,5 +1,6 @@
 ---
 title: Concepts
+tx_slug: documentation_get-started_concepts
 ---
 
 # Concepts

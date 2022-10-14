@@ -1,5 +1,6 @@
 ---
 title: Geologic Mapping
+tx_slug: documentation_success-stories_geologic-mapping
 ---
 
 # Geologic Mapping with QField

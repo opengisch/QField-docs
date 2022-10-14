@@ -1,5 +1,6 @@
 ---
 title: Get Started
+tx_slug: documentation_get-started_tutorials_get-started-qfc
 ---
 
 # Getting started guide

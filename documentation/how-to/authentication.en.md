@@ -1,5 +1,6 @@
 ---
 title: Authentication
+tx_slug: documentation_how-to_authentication
 ---
 
 # Authentication

@@ -1,5 +1,6 @@
 ---
 title: Get started
+tx_slug: documentation_get-started_index
 ---
 
 # Get started with QField and QFieldCloud

@@ -1,5 +1,6 @@
 ---
 title: Navigation
+tx_slug: documentation_how-to_navigation
 ---
 
 # Navigation

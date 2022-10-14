@@ -1,5 +1,6 @@
 ---
 title: Live default value
+tx_slug: documentation_how-to_live-default-value
 ---
 
 # Live default value

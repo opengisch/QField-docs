@@ -1,5 +1,6 @@
 ---
 title: Attribute form
+tx_slug: documentation_how-to_attributes-form
 ---
 
 # Attribute form

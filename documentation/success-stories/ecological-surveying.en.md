@@ -1,5 +1,6 @@
 ---
 title: Improving Efficiencies in Ecological Surveying
+tx_slug: documentation_success-stories_ecological-surveying
 ---
 
 # Improving Efficiencies in Ecological Surveying using QField

@@ -1,5 +1,6 @@
 ---
 title: Data collection of malaria transmitting mosquitoes
+tx_slug: documentation_success-stories_mosquito-malario-ground-truth-data-collection
 ---
 
 # Use of Qfield in the context of ground-truth data collection work of malaria transmitting mosquitoes

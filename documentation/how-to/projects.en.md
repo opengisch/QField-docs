@@ -1,5 +1,6 @@
 ---
 title: Project selection
+tx_slug: documentation_how-to_projects
 ---
 
 # Project selection

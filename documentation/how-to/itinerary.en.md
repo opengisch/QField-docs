@@ -1,5 +1,6 @@
 ---
 title: Advanced itinerary
+tx_slug: documentation_how-to_itinerary
 ---
 
 # Advanced Itinerary
