@@ -29,7 +29,6 @@ def create_transifex_config():
 
             tx_slug = frontmatter.load(file).get('tx_slug', None)
 
-
             if tx_slug:
                 print(f"Found file with tx_slug defined: {relative_path}, {tx_slug}")
                 f.write(f"[o:{TX_ORGANIZATION}:p:{TX_PROJECT}:r:{tx_slug}]\n")
