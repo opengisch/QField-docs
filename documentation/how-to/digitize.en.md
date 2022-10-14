@@ -8,7 +8,7 @@ tx_slug: documentation_how-to_digitize
 QField allows to digitize, edit and delete point, line and polygon features while in the field.
 
 ## Collect features
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 To start digitizing new features, enable the *Edit mode* by clicking on the *pencil icon*
 in the side dashboard and selecting the layer within which you want to add new features.
@@ -68,7 +68,7 @@ layer, these attributes will be automatically pre-filled.
 ![type:video](https://player.vimeo.com/video/526919606)
 
 ## Geometry editing
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 To edit the geometry of pre-existing features, enable the *Edit mode* by tapping on
 the *pencil icon* in QField's side dashboard.
@@ -148,7 +148,7 @@ the *Edit feature* button in the list's title bar.
 ![type:video](https://player.vimeo.com/video/499565955)
 
 ## Delete features
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 Deleting a feature is done by selecting the *Delete feature* action in the
 feature form's *3-dot menu*.
@@ -165,7 +165,7 @@ action in the features list *3-dot menu*.
 !![](../assets/images/delete-multiple-features.png)
 
 ## Snapping
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 While digitizing new features, new points can be snapped to existing
 geometries.

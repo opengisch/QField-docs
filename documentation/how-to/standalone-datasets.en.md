@@ -35,13 +35,13 @@ The supported raster formats are:
 
 ## Opening an vector or raster dataset
 
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 Please read the [storage access documentation](/get-started/storage/) to learn more on how standalone datasets are opened on your specific device.
 
 ## Using a project as "base map" for standalone datasets
 
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 By default, the datasets will be overlaying an OpenStreetMap XYZ layer. It is however possible to customize that by selecting a project stored onto the device QField is running that will act as a base map.
 

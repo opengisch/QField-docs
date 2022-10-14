@@ -12,7 +12,7 @@ In QField a field with *Attachment* widget can be used to:
 To configure the Widget, please refer to the [Attributes Form Documentation](../attributes-form/#configure-attachmentpictures-widget)
 
 ## Add a series of pictures to a feature
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 You can add one or more pictures to a feature. Here is an example on how to proceed.
 
@@ -63,7 +63,7 @@ Set the widget type of the field path to *Attachment* and add it to the form
 
 
 ## Geotagging
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 Some mobile devices will require Open Camera to be installed in order to enable geotagging.
 
@@ -86,7 +86,7 @@ The maximum height and width can be configured in *QFieldSync plugin > Project c
 The advanced settings allow to rescale the photos to a maximum width/height.
 
 ## Configurable picture path
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 QFieldSync gives the possibility to configure the path of picture
 attachments.

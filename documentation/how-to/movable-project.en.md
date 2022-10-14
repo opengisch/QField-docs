@@ -11,7 +11,7 @@ and datasets are reachable from the device.
 
 
 ## Configure a portable project
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 Check that
 *Project > Project Properties > General > Save paths*

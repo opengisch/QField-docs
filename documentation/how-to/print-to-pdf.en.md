@@ -8,7 +8,7 @@ tx_slug: documentation_how-to_print-to-pdf
 It's possible to export the maps and other items to a PDF document using the QGIS Print Layouts.
 
 ## Usage
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 If the project has at least one print layout defined, printing is
 available over the menu.

@@ -11,7 +11,7 @@ styling, setting default values for fields and much more.
 
 
 ## Configuration
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 To configure a device-specific variable, open *Settings > Global Variables*.
 

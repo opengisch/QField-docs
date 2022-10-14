@@ -18,7 +18,7 @@ The navigation panel displays useful information such as the destination point c
 To disable navigation, clear the destination point by tap and holding on the navigation control button located at the lower right corner.
 
 ## Setting a destination point
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 QField offers several methods to set a navigation destination point. A quick way is to simply tap and hold on any part of the map and select the *Set as Destination* action within the popped up menu.
 
@@ -39,7 +39,7 @@ For multipoint or {multi,single}{line,polygon}, new navigation buttons are locat
 !![](../assets/images/navigation-polygon.webp)
 
 ## Auto tracking of current location and destination
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 QField allows for its map to automatically keep track of the current device location and destination and re-center the map extent around those two points.
 
@@ -50,7 +50,7 @@ To activate this auto tracking feature, you can simply tap on the positioning bu
 This can be described as a simple *staking mode* functionality.
 
 ## "Stakeout" precise view
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 QField's "stakeout" precise view panel appears when the distance between the current location and the destination is less than a pre-defined threshold (by default 5 meters) and the positioning device has an accuracy that is less than half of that threshold. The precise view visibility threshold value can be modified by long-pressing on the bottom-right navigation button and selecting the *Precise View Settings* menu item.
 

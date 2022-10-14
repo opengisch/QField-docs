@@ -8,7 +8,7 @@ tx_slug: documentation_how-to_search
 QField allows to search in layers, into a value list and to go to coordinates with the search tool.
 
 ## Configure search in QGIS
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 1.  Choose the layers which are searchable in
     *Project > Project Properties > Identify Layers*
@@ -17,7 +17,7 @@ QField allows to search in layers, into a value list and to go to coordinates wi
     *Vector Layer Properties > Display*
 
 ## Usage
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 Tap on the *Search button* on the top-right corner of the screen to
 search for features in the current project.

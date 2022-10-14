@@ -44,7 +44,7 @@ QField form.
 Groups and Tabs from Drag and Drop designer forms are supported.
 
 ## Configure a Relation Widget
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 For more information refer to the relations chapter of the official
 [QGIS Documentation](https://docs.qgis.org/3.22/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations).
@@ -86,7 +86,7 @@ In case of the many-to-one cardinality on many-to-many relations the
 *Display Expression* needs to be set on the linking table.
 
 ## Configure Attachment/Pictures Widget
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 The widget type *Attachment* is used with fields that store the path
 to files.
@@ -117,7 +117,7 @@ doc, \...).
 ![](../assets/images/hyperlink_option.png)
 
 ## Configure a Value Relation Widget
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 The widget *Value Relation* offers values from a related table in a
 combobox. You can select *layer*, *key column* and *value column*. Several
@@ -128,7 +128,7 @@ display a drop-down or multiple-select list of the referenced features.
 
 
 ## Configure Conditional Visibility
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 Groups can be hidden based on an expression. This is useful when certain
 attributes are only required under certain conditions. As an example
@@ -146,7 +146,7 @@ Let's see what we got on the field:
 
 
 ## Define Constraints
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 Attribute fields can have constraints attached. Constraints are
 expressions that needs to evaluate to `True` (or `1`) in order to be
@@ -172,7 +172,7 @@ It is required to fill in an identifier.
 ```
 
 ## Define Default Values
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 Fields can have default values configured. Default values are inserted
 into the attribute form when digitizing a new feature. They are visible and can be modified as long as the field is editable. They
@@ -254,7 +254,7 @@ with_variable(
 )
 
 ## Configure Auto-complete Value
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 The "Use completer" checkbox must be checked to be able to use the
 auto-complete in the value relation.

@@ -8,7 +8,7 @@ tx_slug: documentation_how-to_map-interaction
 Here are described some of the possible interaction with the map possible in QField.
 
 ## Map legend
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 Open the *Main menu* and expend the layers list to display the legend
 of the map.
@@ -25,7 +25,7 @@ On double-tap or long-press on a layer you get offered the following possibiliti
 - *Show feature list* to show all the layer's features in the identification list.
 
 ## Identify features
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 Tap on a feature on the map to identify it. If several features are
 located where you tapped (either because there are multiple features
@@ -65,7 +65,7 @@ You can manage this layerlist in QGIS desktop in
 *Project > Project Properties > Identify Layers* and uncheck the base layers.
 
 ## Measure tool
-:material-tablet-android:{ .device-icon } Fieldwork
+:material-tablet: Fieldwork
 
 Open the *Main menu > Measure Tool*
 

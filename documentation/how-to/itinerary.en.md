@@ -11,7 +11,7 @@ verify their status or adjust attributes as required.
 
 
 ## Configure An Itinerary
-:material-desktop-mac:{ .device-icon } Desktop preparation
+:material-monitor: Desktop preparation
 
 To define an itinerary to review you will need to use the python console
 for the moment. You can use any `QgsExpression` to define the review list.
