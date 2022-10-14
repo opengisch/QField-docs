@@ -168,17 +168,17 @@ plugins:
         fr: French
         it: Italian
         # rm: Romansh
-        # ja: Japanese
-        # gl: Galician
-        # pt: Portuguese
+        ja: Japanese
+        gl: Galician
+        pt: Portuguese
         es: Spanish
-        # hu: Hungarian
-        # zh: Chinese
+        hu: Hungarian
+        zh: Chinese
         # fi: Finnish
-        # ro: Romanian
+        ro: Romanian
         # tr: Turkish
         # uk: Ukranian
-        # nl: Dutch
+        nl: Dutch
         # bg: Bulgarian
         # cs: Czech
         # fa: Persian
