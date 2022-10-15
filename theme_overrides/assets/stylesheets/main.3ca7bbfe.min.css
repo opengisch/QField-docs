@@ -467,6 +467,9 @@ kbd {
 .md-typeset iframe {
     max-width:100%
 }
+.md-typeset .video-container iframe {
+    min-height: 185px !important;
+}
 .md-typeset table:not([class]) {
     display:inline-block;
     max-width:100%;
