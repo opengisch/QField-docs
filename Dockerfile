@@ -1,28 +1,26 @@
 # Setup Python dependencies
 FROM python:3.10-slim-bullseye
 RUN apt-get update && apt upgrade -y && \
-    apt install -y git curl && \
-    # Debian packages are way too old to be relied upon here
-    # hence turning to Python:
-    pip install pipenv --upgrade pip
+    apt install -y git curl
 
 # Installing Python requirements
 WORKDIR /opt/app
 COPY . .
-ENV PIPENV_VENV_IN_PROJECT=1
-RUN pipenv install --three
+RUN pip3 install -r requirements.txt --upgrade pip
 
 # Fetching and installing Transifex client
-RUN curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
+RUN curl -OL https://github.com/transifex/cli/releases/download/v1.3.1/tx-linux-amd64.tar.gz && \
+    tar -xvzf tx-linux-amd64.tar.gz
+
+# Preparing translations
+RUN python3 ./utils/transifex_utils.py
 
 # Token pass through for docker build --build-arg ...
 ARG tx_token
 ENV TX_TOKEN $tx_token
-ENV DEFAULT_LANGUAGE_ONLY false
 
 # Setting up and fetch translations the docs
-RUN ./tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/ && \
-    ./tx pull --minimum-perc 10
+RUN ./tx pull --translations --all --minimum-perc 10 && \
+    ./tx status
 
-# Serving locally
-CMD . /opt/app/.venv/bin/activate && mkdocs serve -a 0.0.0.0:8000
+CMD . /opt/app/.venv/bin/activate && python3 build-isolated.py
