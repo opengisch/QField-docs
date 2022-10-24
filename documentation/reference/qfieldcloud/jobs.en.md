@@ -17,10 +17,8 @@ Jobs have access to [project secrets](projects.md#secrets).
     All jobs can be triggered using the QFieldCloud API.
 
 !!! warning
-    Any of the triggering conditions described on this page might change without notice.
-
-!!! warning
-    All jobs must finish within 10 minutes or they will result in a timeout error and will be terminated.
+    - Any of the triggering conditions described on this page might change without notice.
+    - All jobs must finish within 10 minutes or they will result in a timeout error and will be terminated.
 
 ## Job types
 
