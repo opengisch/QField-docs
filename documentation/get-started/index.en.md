@@ -37,6 +37,12 @@ tx_slug: documentation_get-started_index
     builds](https://github.com/opengisch/QField/releases/download/v2.4.4/qfield-v2.4.4-windows-x64.exe)
     and leave us a note how it works.
 
+=== ":material-linux: Linux"
+
+    Linux support is currently in beta status. [Download the latest
+    builds](https://github.com/opengisch/QField/releases/download/v2.4.4/qfield-v2.4.4-linux-x64.AppImage)
+    and leave us a note how it works.
+
 QField allows you to efficiently work on your GIS data outdoor.
 
 QField's optimized user interface hides the full power of
