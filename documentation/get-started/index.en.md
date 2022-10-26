@@ -34,13 +34,13 @@ tx_slug: documentation_get-started_index
 === ":material-microsoft-windows: Windows"
 
     Windows support is currently in beta status. [Download the latest
-    builds](https://github.com/opengisch/QField/releases/download/v2.4.4/qfield-v2.4.4-windows-x64.exe)
+    builds](https://qfield.org/get_latest/?platform=windows)
     and leave us a note how it works.
 
 === ":material-linux: Linux"
 
     Linux support is currently in beta status. [Download the latest
-    builds](https://github.com/opengisch/QField/releases/download/v2.4.4/qfield-v2.4.4-linux-x64.AppImage)
+    builds](https://qfield.org/get_latest/?platform=linux)
     and leave us a note how it works.
 
 QField allows you to efficiently work on your GIS data outdoor.
