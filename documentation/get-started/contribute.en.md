@@ -9,6 +9,7 @@ QField is an open source project. It is free to share, use and modify and it wil
 
   - Rate the app [★★★★★](https://play.google.com/store/apps/details?id=ch.opengis.qfield&hl=en#details-reviews);
   - [Tweet about it](https://twitter.com/share?text=Looking%20for%20a%20good%20tool%20for%20field%20work%20in%20GIS?%20Check%20out%20%23QField!);
+  - [Follow us on twitter](https://twitter.com/QFieldForQGIS);
   - Write about your experience ([please let us know!](mailto:info@opengis.ch));
   - [Help with the documentation](https://github.com/opengisch/QField-docs#documentation-process);
   - [Translate the documentation](https://github.com/opengisch/QField-docs#translation-process) or [the app](https://www.transifex.com/opengisch/qfield-for-qgis/);
