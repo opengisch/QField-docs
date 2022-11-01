@@ -80,7 +80,7 @@ If you are using altitude correction and an external bluetooth connected
 antenna consider turning *Use orthometric altitude from device* off.
 
 For example:
-For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch)users can download the file nlgeo2018.gtx from NSGI https://www.nsgi.nl/rdnaptrans and put it in the directory.
+For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
 
 ### Additional variables
 
