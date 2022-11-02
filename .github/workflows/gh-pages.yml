@@ -52,7 +52,7 @@ jobs:
 
       - name: Pull translations from Transifex
         run: |
-          ./tx pull --translations --all --minimum-perc 10
+          ./tx pull -t -l en,de,fr,it,es
           ./tx status
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
