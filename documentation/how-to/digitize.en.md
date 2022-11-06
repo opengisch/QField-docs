@@ -133,7 +133,7 @@ a mouse is hovering the map canvas while a line or polygon vector is selected.
 If topological editing is activated on the project QGIS before exporting
 for QField, shared nodes of neighbouring geometries are modified
 together when moving / deleting vertices and additional vertices are
-added to segments when a new node is added from neightbouring
+added to segments when a new node is added from neighbouring
 geometries.
 
 ![type:video](https://player.vimeo.com/video/499565314)
@@ -141,7 +141,7 @@ geometries.
 ### Multi-editing of attributes
 
 QField allows you to select multiple features and edit their attributes all at once.
-In some cases, it can result in very efficient worflows. To do so, identify two (or more)
+In some cases, it can result in very efficient workflows. To do so, identify two (or more)
 features on the map, select them in the features list and merge them by selecting
 the *Edit feature* button in the list's title bar.
 
