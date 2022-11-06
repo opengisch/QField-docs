@@ -63,10 +63,3 @@ are only present as basemap and their attributes are not of interest.
 
 You can manage this layerlist in QGIS desktop in
 *Project > Project Properties > Identify Layers* and uncheck the base layers.
-
-## Measure tool
-:material-tablet: Fieldwork
-
-Open the *Main menu > Measure Tool*
-
-![type:video](https://player.vimeo.com/video/499565725)
