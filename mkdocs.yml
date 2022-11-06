@@ -197,3 +197,24 @@ plugins:
         # ru: Russian
         # ru_UA: Russian (Ukraine)
         # vi: Vietnamese
+      nav_translations:
+        de:
+          Get started: Erste Schritte
+          How-to guides: Tutorial
+          Technical reference: Technische Referenz
+          Success stories: Erfolgsgeschichten
+        fr:
+          Get started: Mise en route
+          How-to guides: Tutoriels
+          Technical reference: Référence technique
+          Success stories: Témoignages de projets
+        it:
+          Get started: Guida introduttiva
+          How-to guides: Tutorial
+          Technical reference: Riferimento tecnico
+          Success stories: Storie di successo
+        es:
+          Get started: Primeros pasos
+          How-to guides: Tutorial
+          Technical reference: Referencia técnica
+          Success stories: Historias de éxito
