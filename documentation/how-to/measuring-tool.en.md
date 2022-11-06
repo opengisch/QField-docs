@@ -13,7 +13,7 @@ Once the tool is enabled, simply use the digitizing controls located at the lowe
 vertices. By default, the measured geometry will be a line; to change to a polygon, simply connect the coordinate cursor to the first
 vertex entered.
 
-For the segment formed of the two last vetices added, details returned include segment length and its azimuth. When the measured
+For the segment formed of the two last vertices added, details returned include segment length and its azimuth. When the measured
 geometry is a line, the total line length is provided while the perimeter and area are displayed for polygons.
 
 ## Elevation profiling
