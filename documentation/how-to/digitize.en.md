@@ -95,7 +95,7 @@ become a new feature of its own.
 ### Reshape tool
 
 The reshape tool allows you to change line and polygon geometries by drawing shapes which will
-result a reshaped line following the edge of the drawn shape or a polygon with the drawn shapped
+result in a reshaped line following the edge of the drawn shape or a polygon with the drawn shaped
 used to clip or expand the geometry.
 
 ### Ring tool
@@ -176,9 +176,9 @@ All configuration can be done in *Project > Snapping Settings*
 
 It is possible to snap new points
 
--   only to nodes of existing geomtries
--   only to segments of existing geomtries
--   to nodes and segments of existing geomtries
+-   only to nodes of existing geometries
+-   only to segments of existing geometries
+-   to nodes and segments of existing geometries
 
 ### Snapping to layers
 
