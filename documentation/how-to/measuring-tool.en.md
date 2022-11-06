@@ -26,4 +26,4 @@ features along the measured geometry.
 
 For ease of use, QField defaults to using the Mapzen Global Terrain dataset to provide worldwide 30-meter resolution elevation profiles.
 It is however possible to customize terrain settings through project and individual map layer properties within QGIS when
-building projecs.
+building projects.
