@@ -264,3 +264,23 @@ auto-complete in the value relation.
 Here a video showing how it works on QField
 
 ![type:video](https://player.vimeo.com/video/604661919)
+
+## Define QML Widgets
+
+Custom QML widgets can be useful to integrate advanced actions into forms. In this example we define add a button that open a third-party map and navigation app.
+
+```qml
+import QtQuick 2.0
+import QtQuick.Controls 2.0
+
+Button {
+    width: 200
+    height: width/5
+    text: "Open in Maps"
+    onClicked: {
+        Qt.openUrlExternally(expression.evaluate("'geo:0,0?q=' || $y || ',' || $x"));
+    }
+}
+```
+
+The `geo` URI above is adapted to work with Android. For Apple Maps the URI can be changed to `'geo:' || $y || ',' || $x`.
