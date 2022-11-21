@@ -267,7 +267,9 @@ Here a video showing how it works on QField
 
 ## Define QML Widgets
 
-Custom QML widgets can be useful to integrate advanced actions into forms. In this example we define add a button that open a third-party map and navigation app.
+Custom QML widgets can be useful to integrate advanced actions into forms.
+In this example we define add a button that open a third-party map and navigation app.
+This is useful to open e.g. turn-by-turn navigations on the device-native app for the user.
 
 ```qml
 import QtQuick 2.0
@@ -284,3 +286,5 @@ Button {
 ```
 
 The `geo` URI above is adapted to work with Android. For Apple Maps the URI can be changed to `'geo:' || $y || ',' || $x`.
+
+![](../assets/images/qml_widget_button.png)
