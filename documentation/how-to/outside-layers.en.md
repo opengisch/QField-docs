@@ -7,13 +7,14 @@ tx_slug: documentation_how-to_outside-layers
 
 It is possible to use a layer which is stored outside the project folder.
 
-This is useful if a basemap is used in more than one project, for example a large
-orthophoto. In this case, you can share this dataset among different projects.
+This is useful if a basemap is used in more than one project, for example a large orthophoto.
+In this case, you can share this dataset among different projects.
 
 ## Add a layer outside of exported project folder
 :material-monitor: Desktop preparation
 
-In QGIS, open  *Options > Data Sources > Localized Data Paths*. In there, add the path to the external data.
+In QGIS, open  *Options > Data Sources > Localized Data Paths*.
+In there, add the path to the external data.
 
 !![Data Sources](../assets/images/external_path.png)
 
