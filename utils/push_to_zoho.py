@@ -50,6 +50,11 @@ def convert_md(path):
 
     header, body = md_text.split('#', 1)
     body = "{}#{}".format(docs_url_warning, body)
+
+    print(body)
+    #replace relative url with absolute
+    body = body.replace('../assets/images/', 'https://docs.qfield.org/assets/images/')
+    print(body)
     
     html = markdown.markdown(body)
     title = re.search('title: (.*)\n', header).group(1)
@@ -73,7 +78,7 @@ def publish_article(category, path):
     headers = {
         'Authorization': "Zoho-oauthtoken "+ AUTH_CODE,
     }
-
+    print(html)
     req = requests.post(url, json = payload, headers=headers)
     print('pushing: ', slug, ': ', req.status_code)
     if req.status_code == 401:
