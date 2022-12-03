@@ -75,6 +75,9 @@ def publish_article(category, path):
     }
 
     req = requests.post(url, json = payload, headers=headers)
+    print('pushing: ', slug, ': ', req.status_code)
+    if req.status_code == 401:
+        raise RuntimeError(req.text)
 
 ####################################
 #######Main#########################
