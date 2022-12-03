@@ -8,10 +8,12 @@ import materialx.emoji
 
 from collections.abc import Iterable
 
-
 AUTH_CODE = ''
 if not AUTH_CODE:
     exit("ERROR: use generate_zoho_auth.py to generate the oauth2 code")
+HEADERS = {
+        'Authorization': "Zoho-oauthtoken "+ AUTH_CODE,
+    }
 
 
 category_map = {
@@ -20,6 +22,9 @@ category_map = {
     'Technical reference': '116946000000469726',
     'Success stories': '116946000000469737',
 }
+
+article_map = {}
+
 
 
 # skip !ENV tags see https://github.com/yaml/pyyaml/issues/86
@@ -68,29 +73,60 @@ def convert_md(path):
     return(slug, title, html)
 
 
-def publish_article(category, path):
+def harmonise_permalink(permalink):
+    permalink = permalink.replace('documentation_', 'test_')
+    permalink = permalink.replace('_', '-').replace(' ', '-')
+    permalink = permalink.lower()
+
+    return permalink
+
+
+def get_current_articles():
+    url = 'https://desk.zoho.eu/api/v1/articles/count'
+    req = requests.get(url, headers=HEADERS)
+    if req.status_code == 401:
+        raise RuntimeError(req.text)
+    count = req.json()['count']
+
+    step = 50
+    for counter in range(1, count, step):
+        url = 'https://desk.zoho.eu/api/v1/articles?categoryId=116946000000449001&from={}&limit={}'.format(counter, step)
+        req = requests.get(url, headers=HEADERS)
+        articles = req.json()['data']
+        for article in articles:
+            permalink = harmonise_permalink(article['permalink'])
+            article_map[permalink] = article['id']
+
+    return article_map
+
+
+def push_article(category, path):
     slug, title, html = convert_md(path)
 
-    url = 'https://desk.zoho.eu/api/v1/articles?'
+    url = 'https://desk.zoho.eu/api/v1/articles'
 
     category_id = category_map[category]
+    permalink = harmonise_permalink(slug)
     payload = {
         "permission" : "ALL",
         "title" : title,
-        "permalink" : slug,
+        "permalink" : permalink,
         "answer" : html,
         "categoryId" : category_id,
         "status" : "Published"
         }
-    headers = {
-        'Authorization': "Zoho-oauthtoken "+ AUTH_CODE,
-    }
 
-    req = requests.post(url, json = payload, headers=headers)
-    print('pushing: ', slug, ': ', req.status_code)
+    if permalink in article_map:
+        url = '{}/{}'.format(url, article_map[permalink])
+        req = requests.patch(url, json = payload, headers=HEADERS)
+        print('updating: ', permalink, 'id: ', article_map[permalink], ': ', req.status_code)
+    else:
+        url = '{}?'.format(url)
+        req = requests.post(url, json = payload, headers=HEADERS)
+        print('creating: ', permalink, ': ', req.status_code)
+
     if req.status_code == 401:
         raise RuntimeError(req.text)
-        
 
 ####################################
 #######Main#########################
@@ -99,6 +135,8 @@ def publish_article(category, path):
 with open('mkdocs.yml', 'r') as file:
     config = yaml.full_load(file)
 articles = config['nav']
+
+get_current_articles()
 
 for category in articles: 
     for category_title, paths in category.items():
@@ -112,4 +150,4 @@ for category in articles:
             if path == "index.md":
                 continue
             path =  "documentation/{}.en.md".format(path[:-3])
-            publish_article(category_title, path)
+            push_article(category_title, path)
