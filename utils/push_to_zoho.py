@@ -15,7 +15,6 @@ HEADERS = {
         'Authorization': "Zoho-oauthtoken "+ AUTH_CODE,
     }
 
-
 category_map = {
     'Get started': '116946000000448345',
     'How-to guides': '116946000000448334',
@@ -23,8 +22,8 @@ category_map = {
     'Success stories': '116946000000469737',
 }
 
+# map between mkdocs slugs (and zoho permalinks) and zoho api article id
 article_map = {}
-
 
 
 # skip !ENV tags see https://github.com/yaml/pyyaml/issues/86
@@ -32,6 +31,7 @@ yaml.add_multi_constructor('!ENV', lambda loader, suffix, node: None)
 
 
 def extract_path(paths):
+    # extract paths from a list of dict
     flat_paths = []
     if isinstance(paths, str):
         return paths
@@ -46,6 +46,7 @@ def extract_path(paths):
 
 
 def flatten(xs):
+    # flatten list of lists
     for x in xs:
         if isinstance(x, Iterable) and not isinstance(x, (str, bytes)):
             yield from flatten(x)
@@ -54,12 +55,13 @@ def flatten(xs):
 
 
 def convert_md(path):
+    #convert md to html
     with open(path, 'r') as file:
         md_text = file.read()
 
     docs_url = "https://docs.qfield.org"
     docs_url = path.replace('documentation', docs_url)[:-6]
-    docs_url_warning = "> ***The complete documentation is at <{}>***\n\n".format(docs_url)
+    docs_url_warning = "> ***The original version of this document is located at at <{}>***\n\n".format(docs_url)
 
     header, body = md_text.split('#', 1)
     body = "{}#{}".format(docs_url_warning, body)
@@ -74,7 +76,8 @@ def convert_md(path):
 
 
 def harmonise_permalink(permalink):
-    permalink = permalink.replace('documentation_', 'test_')
+    # harmonise mkdocs slugs and zoho permalink
+    permalink = permalink.replace('documentation_', '')
     permalink = permalink.replace('_', '-').replace(' ', '-')
     permalink = permalink.lower()
 
@@ -82,13 +85,14 @@ def harmonise_permalink(permalink):
 
 
 def get_current_articles():
+    # get published articles from zoho
     url = 'https://desk.zoho.eu/api/v1/articles/count'
     req = requests.get(url, headers=HEADERS)
     if req.status_code == 401:
         raise RuntimeError(req.text)
     count = req.json()['count']
 
-    step = 50
+    step = 50  # given max by zoho api
     for counter in range(1, count, step):
         url = 'https://desk.zoho.eu/api/v1/articles?categoryId=116946000000449001&from={}&limit={}'.format(counter, step)
         req = requests.get(url, headers=HEADERS)
@@ -101,6 +105,7 @@ def get_current_articles():
 
 
 def push_article(category, path):
+    # create or update an article
     slug, title, html = convert_md(path)
 
     url = 'https://desk.zoho.eu/api/v1/articles'
@@ -132,11 +137,11 @@ def push_article(category, path):
 #######Main#########################
 ####################################
 
+get_current_articles()  # get current articles from zoho
+
 with open('mkdocs.yml', 'r') as file:
     config = yaml.full_load(file)
 articles = config['nav']
-
-get_current_articles()
 
 for category in articles: 
     for category_title, paths in category.items():
