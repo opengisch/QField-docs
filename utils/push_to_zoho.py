@@ -14,6 +14,14 @@ if not AUTH_CODE:
     exit("ERROR: use generate_zoho_auth.py to generate the oauth2 code")
 
 
+category_map = {
+    'Get started': '116946000000448345',
+    'How-to guides': '116946000000448334',
+    'Technical reference': '116946000000469726',
+    'Success stories': '116946000000469737',
+}
+
+
 # skip !ENV tags see https://github.com/yaml/pyyaml/issues/86
 yaml.add_multi_constructor('!ENV', lambda loader, suffix, node: None)
 
@@ -65,21 +73,24 @@ def publish_article(category, path):
 
     url = 'https://desk.zoho.eu/api/v1/articles?'
 
+    category_id = category_map[category]
     payload = {
         "permission" : "ALL",
         "title" : title,
         "permalink" : slug,
         "answer" : html,
-        "categoryId" : 116946000000449024,
-        "status" : "Draft"
+        "categoryId" : category_id,
+        "status" : "Published"
         }
     headers = {
         'Authorization': "Zoho-oauthtoken "+ AUTH_CODE,
     }
+
     req = requests.post(url, json = payload, headers=headers)
     print('pushing: ', slug, ': ', req.status_code)
     if req.status_code == 401:
         raise RuntimeError(req.text)
+        
 
 ####################################
 #######Main#########################
