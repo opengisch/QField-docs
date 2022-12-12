@@ -6,7 +6,7 @@ tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 # Advanced setup guide
 
 !!! help
-    We have a [community discussion platform](https://github.com/opengisch/qfieldcloud/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
+    We have a [community discussion platform](https://github.com/opengisch/qfield/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
 
 
 ## Supported vector providers
