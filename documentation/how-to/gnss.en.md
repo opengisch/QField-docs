@@ -65,7 +65,7 @@ Any measured altitude will be corrected by this value.
 ### Altitude correction / vertical grid shift
 
 Altitude values can be corrected with vertical grid shift files to
-calculate orthometric height
+calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
 them into the QField app folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj`.
@@ -78,6 +78,12 @@ the *Positioning settings* under *Vertical grid shift in use*.
 
 If you are using altitude correction and an external bluetooth connected
 antenna consider turning *Use orthometric altitude from device* off.
+
+The formats currently supported are:
+ - GeoTIFF (.tif, .tiff)
+ - NOAA Vertical Datum (.gtx)
+ - NTv2 Datum Grid Shift (.gsb)
+ - Natural Resources Canada's Geoid (.byn)
 
 For example:
 For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
