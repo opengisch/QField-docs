@@ -209,9 +209,18 @@ devices as well as a dropdown list to switch between internal and saved external
 
 !![](../assets/images/saved-gnss-devices.png)
 
-Make sure no other app like mock location providers are using the same connection.
+The breakdown of connections support by platform is as follow:
 
-![type:video](https://player.vimeo.com/video/604667820)
+|          | Bluetooth        | TCP              | UDP              |
+|----------|------------------|------------------|------------------|
+| Anroid   | :material-check: | :material-check: | :material-check: |
+| iOS      |                  | :material-check: | :material-check: |
+| Windows  |                  | :material-check: | :material-check: |
+| Linux    | :material-check: | :material-check: | :material-check: |
+| macOS    |                  | :material-check: | :material-check: |
+
+!!! note
+    Make sure no other app like mock location providers are using the same connection.
 
 ## Mock location
 :material-tablet: Fieldwork
