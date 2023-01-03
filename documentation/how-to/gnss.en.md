@@ -7,8 +7,8 @@ tx_slug: documentation_how-to_gnss
 
 QField can make use of the internal GNSS (Global Navigation Satellite
 System, like GPS, GLONASS, Galileo or Beidou). QField can also connect
-to external antennas through bluetooth and directly integrate their NMEA
-stream.
+to external antennas through NMEA streams over Bluetooth, TCP, or UDP
+connection.
 
 GNSS devices are also capable of measuring the altitude next to the current 2D
 position on the earth surface.
@@ -76,8 +76,8 @@ them into the QField app folder `<drive>:/Android/data/ch.opengis.qfield/files/Q
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
 
-If you are using altitude correction and an external bluetooth connected
-antenna consider turning *Use orthometric altitude from device* off.
+If you are using altitude correction and an external positioning device
+is used, consider turning *Use orthometric altitude from device* off.
 
 The formats currently supported are:
  - GeoTIFF (.tif, .tiff)
@@ -192,7 +192,7 @@ Inside the *positioning menu* you can turn on the *positioning display*
 which will show the current coordinates which are reprojected into the
 project CRS along with precision information.
 
-!![](../assets/images/user-guide_gps.png)
+!![](../assets/images/positioning-menu.png)
 
 !!! note
     If you see WGS 84 lat/lon information instead of information in your
@@ -201,13 +201,15 @@ project CRS along with precision information.
 ## Using an external GNSS-Receiver
 :material-tablet: Fieldwork
 
-QField supports connecting external GNSS antennas via bluetooth.
+QField supports connecting to external GNSS positioning devices via Bluetooth, TCP,
+or UDP connections.
 
-In *Settings > Positioning*, paired bluetooth devices can be scanned and
-chosen as position source.
+In *Settings > Positioning*, you can find a set of buttons to add, edit, or delete external
+devices as well as a dropdown list to switch between internal and saved external GNSS devices.
 
-Make sure no other app like mock location providers are using the
-bluetooth antenna.
+!![](../assets/images/saved-gnss-devices.png)
+
+Make sure no other app like mock location providers are using the same connection.
 
 ![type:video](https://player.vimeo.com/video/604667820)
 
