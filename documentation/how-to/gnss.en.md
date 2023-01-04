@@ -80,10 +80,11 @@ If you are using altitude correction and an external positioning device
 is used, consider turning *Use orthometric altitude from device* off.
 
 The formats currently supported are:
- - GeoTIFF (.tif, .tiff)
- - NOAA Vertical Datum (.gtx)
- - NTv2 Datum Grid Shift (.gsb)
- - Natural Resources Canada's Geoid (.byn)
+
+  - GeoTIFF (.tif, .tiff)
+  - NOAA Vertical Datum (.gtx)
+  - NTv2 Datum Grid Shift (.gsb)
+  - Natural Resources Canada's Geoid (.byn)
 
 For example:
 For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
