@@ -199,10 +199,10 @@ project CRS along with precision information.
     If you see WGS 84 lat/lon information instead of information in your
     project CRS, you probably have no signal yet.
 
-## Using an external GNSS-Receiver
+## Using an external GNSS Receiver
 :material-tablet: Fieldwork
 
-QField supports connecting to external GNSS positioning devices via Bluetooth, TCP,
+QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
 or UDP connections.
 
 In *Settings > Positioning*, you can find a set of buttons to add, edit, or delete external
@@ -212,13 +212,16 @@ devices as well as a dropdown list to switch between internal and saved external
 
 The breakdown of connections support by platform is as follow:
 
-|          | Bluetooth        | TCP              | UDP              |
-|----------|------------------|------------------|------------------|
-| Anroid   | :material-check: | :material-check: | :material-check: |
-| iOS      |                  | :material-check: | :material-check: |
-| Windows  |                  | :material-check: | :material-check: |
-| Linux    | :material-check: | :material-check: | :material-check: |
-| macOS    |                  | :material-check: | :material-check: |
+|             | :material-android: Android | :material-apple: iOS | :material-microsoft-windows: Windows | :material-linux: Linux | :material-apple: MacOS |
+| Bluetooth   | :material-check:           |                      | *                                    | :material-check:       | :material-check:       |
+| TCP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
+| UDP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
+| Serial port | :material-check:           |                      | :material-check:                     | :material-check:       | :material-check:       |
+
+(*) Bluetooth support on Windows occurs through the virtual serial port automatically
+created by the operating system when it connects to the GNSS device.
+
+The NMEA sentences currently supported are GGA, RMC, GSA, GSV, VTG, and HDT.
 
 !!! note
     Make sure no other app like mock location providers are using the same connection.
