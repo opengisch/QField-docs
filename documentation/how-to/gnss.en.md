@@ -213,13 +213,14 @@ devices as well as a dropdown list to switch between internal and saved external
 The breakdown of connections support by platform is as follow:
 
 |             | :material-android: Android | :material-apple: iOS | :material-microsoft-windows: Windows | :material-linux: Linux | :material-apple: MacOS |
+|-------------|----------------------------|----------------------|--------------------------------------|------------------------|------------------------|
 | Bluetooth   | :material-check:           |                      | *                                    | :material-check:       | :material-check:       |
 | TCP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
 | UDP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
 | Serial port | :material-check:           |                      | :material-check:                     | :material-check:       | :material-check:       |
 
-(*) Bluetooth support on Windows occurs through the virtual serial port automatically
-created by the operating system when it connects to the GNSS device.
+*(\*) Bluetooth support on Windows occurs through the virtual serial port automatically
+created by the operating system when it connects to the GNSS device.*
 
 The NMEA sentences currently supported are GGA, RMC, GSA, GSV, VTG, and HDT.
 
