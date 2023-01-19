@@ -24,22 +24,22 @@ tx_slug: documentation_get-started_index
     [![AppstoreLink](../assets/images/app-store.png)](
     https://apps.apple.com/app/qfield-for-qgis/id1531726814)
 
+=== ":material-microsoft-windows: Windows"
+
+    <a href="https://qfield.org/get_latest/?platform=windows" target="_blank">Download the latest
+    Windows version</a>.
+
+=== ":material-linux: Linux"
+
+    Linux support is currently in beta status. <a href="https://qfield.org/get_latest/?platform=linux" target="_blank">Download the latest
+    builds</a> and leave us a note how it works.
+
 === ":material-apple: MacOS"
 
     MacOS support is currently in beta status. [Download the latest
     development
     builds](https://nightly.link/opengisch/QField/workflows/desktop/master/QField-dev-x64-osx-Release.zip)
     and leave us a note how it works.
-
-=== ":material-microsoft-windows: Windows"
-
-    Windows support is currently in beta status. <a href="https://qfield.org/get_latest/?platform=windows" target="_blank">Download the latest
-    builds</a> and leave us a note how it works.
-
-=== ":material-linux: Linux"
-
-    Linux support is currently in beta status. <a href="https://qfield.org/get_latest/?platform=linux" target="_blank">Download the latest
-    builds</a> and leave us a note how it works.
 
 QField allows you to efficiently work on your GIS data outdoor.
 
