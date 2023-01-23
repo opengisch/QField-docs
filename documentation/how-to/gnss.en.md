@@ -49,10 +49,11 @@ A minimum desired accuracy for measurements can be defined. The quality
 will be reported in three classes, bad (red), ok (yellow) and excellent
 (green). These colors will show up as a dot on top of the GNSS button.
 
-The thresholds can be defined in the positioning settings.
+The thresholds can be defined in the settings' positioning tab.
 
-If the *Enable accuracy requirement* setting is activated, you will not be able to collect new measurements with the cursor
-snapped to the position with an accuracy value which is bad (red).
+If the *Enable accuracy requirement* setting is activated, you will not
+be able to collect new measurements with the coordinate cursor locked to
+the current position with an accuracy value which is bad (red).
 
 ### Antenna height compensation
 
@@ -66,9 +67,6 @@ calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
 them into the QField app folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj`.
-
-!!! note
-    Since QField 2 the proj files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj` instead of the devices main directory `<drive>:/QField/proj`.
 
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
@@ -84,7 +82,12 @@ The formats currently supported are:
   - Natural Resources Canada's Geoid (.byn)
 
 For example:
-For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
+For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
+the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
+
+!!! note
+    Since QField 2.0 the proj files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj`
+    instead of the devices main directory `<drive>:/QField/proj`.
 
 ## Usage
 :material-tablet: Fieldwork
