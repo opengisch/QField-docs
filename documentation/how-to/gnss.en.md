@@ -28,6 +28,21 @@ positioning device.
 
 ## Configuration
 
+The following settings are available in QField settings' positioning tab.
+
+### Measure (M) value
+
+When digitizing a geometry onto a vector layer that contains an M dimension,
+QField will add a measurement value to individual vertices whenever the
+coordinate cursor is locked to the current position.
+
+By default, the value will represent the captured position's timestamp (milliseconds
+sincce epoch). You can change this value using the combo box in the settings'
+positioning tab.
+
+The available values to chose from are timestamp, ground speed, bearing, horizontal
+accuracy and vertical accuracy as well as PDOP, HDOP and VDOP.
+
 ### Accuracy requirement
 
 A minimum desired accuracy for measurements can be defined. The quality
