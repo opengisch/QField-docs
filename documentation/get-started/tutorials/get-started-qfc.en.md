@@ -170,3 +170,5 @@ Choose an action with the change you made to your project. Each of the actions h
 !![Actions](../../assets/images/getting_started_actions.png,250px)
 
 Your changes are now available to everyone who has access to your project on the cloud.
+
+You can find more information on [Advanced QFieldCloud setup](./advanced-setup-qfc.md) and [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).

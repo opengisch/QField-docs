@@ -61,3 +61,5 @@ It requires your database to be publicly accessible and credentials must be save
 
 !!! note
     When using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database. This is the best choice if the connection in the field is not reliable. Changes will only be visible to users once they sync to QFieldCloud. As a local copy is created, advanced PostGIS features will not be available on QField. Just like for regular GeoPackages, if you define relationships, it is recommended to use UUIDs instead of integer primary keys to avoid conflicts if multiple users create data at the same time.
+
+You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
