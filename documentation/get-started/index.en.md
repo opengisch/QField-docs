@@ -31,15 +31,13 @@ tx_slug: documentation_get-started_index
 
 === ":material-linux: Linux"
 
-    Linux support is currently in beta status. <a href="https://qfield.org/get_latest/?platform=linux" target="_blank">Download the latest
-    builds</a> and leave us a note how it works.
+    <a href="https://qfield.org/get_latest/?platform=linux" target="_blank">Download the latest
+    Linux beta version</a> and leave us a note how it works.
 
 === ":material-apple: MacOS"
 
-    MacOS support is currently in beta status. [Download the latest
-    development
-    builds](https://nightly.link/opengisch/QField/workflows/desktop/master/QField-dev-x64-osx-Release.zip)
-    and leave us a note how it works.
+    <a href="https://qfield.org/get_latest/?platform=macos" target="_blank">Download the latest
+    MacOS beta version</a> and leave us a note how it works.
 
 QField allows you to efficiently work on your GIS data outdoor.
 
