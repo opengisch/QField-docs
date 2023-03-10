@@ -126,6 +126,15 @@ Make also sure to save the QGIS project using the regular Save As of
 QGIS as you'll have to re-open it later when you want to synchronize
 the changes.
 
+## How to sync from/to iOS device
+
+Use iTunes' File Sharing function to import into the QField root folder.
+
+1. Open the iTunes app and click on the iPhone button near the top-left of the iTunes window.
+2. Click on the *File Sharing* option in the left sidebar.
+3. Select the app QField and click on *Add File*. This will open the file browser.
+4. Select the file.
+
 ## Synchronize from QField
 
 When you want to synchronize what you have collected, re-open the
