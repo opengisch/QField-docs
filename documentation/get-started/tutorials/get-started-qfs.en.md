@@ -93,6 +93,11 @@ Layer
     layer like a WMS or to take a working copy of an unsupported format
     like an ECW or MrSID layer.
 
+!!! note
+    It is only possible with a PNG raster with a PNW world file at the moment.
+
+    JPG raster are not supported.
+
 Map Theme
 
 :   A map theme. This is useful to create a base map based on a
