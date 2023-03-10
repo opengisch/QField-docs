@@ -27,24 +27,21 @@ positioning device.
 
 
 ## Configuration
-:material-monitor: Desktop preparation
 
-### Vertex log
+The following settings are available in QField settings' positioning tab.
 
-It is possible to setup a log layer of the collected vertices. This
-allows to keep track of meta data for each vertex like GNSS quality
-attributes and more. To set this up, a point layer can be added to the
-project and attributes configured to store this information.
+### Measure (M) value
 
-![](../assets/images/vertex_log1.png){width="600px"}
+When digitizing a geometry onto a vector layer that contains an M dimension,
+QField will add a measurement value to individual vertices whenever the
+coordinate cursor is locked to the current position.
 
-Then you should assign the role *digitizing logger* on a point layer.
+By default, the value will represent the captured position's timestamp (milliseconds
+since epoch). You can change this value using the combo box in the settings'
+positioning tab.
 
-Go to *QFieldSync > Project Properties*
-
-![](../assets/images/vertex_log2.png){width="600px"}
-
-The layer fields must have default value with GNSS variables.
+The available values to chose from are timestamp, ground speed, bearing, horizontal
+accuracy and vertical accuracy as well as PDOP, HDOP and VDOP.
 
 ### Accuracy requirement
 
@@ -52,10 +49,11 @@ A minimum desired accuracy for measurements can be defined. The quality
 will be reported in three classes, bad (red), ok (yellow) and excellent
 (green). These colors will show up as a dot on top of the GNSS button.
 
-The thresholds can be defined in the positioning settings.
+The thresholds can be defined in the settings' positioning tab.
 
-If the *Enable accuracy requirement* setting is activated, you will not be able to collect new measurements with the cursor
-snapped to the position with an accuracy value which is bad (red).
+If the *Enable accuracy requirement* setting is activated, you will not
+be able to collect new measurements with the coordinate cursor locked to
+the current position with an accuracy value which is bad (red).
 
 ### Antenna height compensation
 
@@ -69,9 +67,6 @@ calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
 them into the QField app folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj`.
-
-!!! note
-    Since QField 2 the proj files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj` instead of the devices main directory `<drive>:/QField/proj`.
 
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
@@ -87,16 +82,101 @@ The formats currently supported are:
   - Natural Resources Canada's Geoid (.byn)
 
 For example:
-For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
+For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
+the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
 
-### Additional variables
+## Usage
+:material-tablet: Fieldwork
+
+A short press on the *GNSS button* will turn on the GNSS and center to the
+current location once *positioning information* is available.
+
+Activate *edit mode* and press on the target button, the cross in the
+center means it is using GNSS positioning.
+
+!![](../assets/images/gnss_use.webp,250px)
+
+A long press on the *GNSS button* will show the *positioning menu*.
+
+Inside the *positioning menu* you can turn on the *positioning display*
+which will show the current coordinates which are reprojected into the
+project CRS along with precision information.
+
+!![](../assets/images/positioning-menu.png)
+
+!!! note
+    If you see WGS 84 lat/lon information instead of information in your
+    project CRS, you probably have no signal yet.
+
+## Using an external GNSS Receiver
+:material-tablet: Fieldwork
+
+QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
+or UDP connections.
+
+In *Settings > Positioning*, you can find a set of buttons to add, edit, or delete external
+devices as well as a dropdown list to switch between internal and saved external GNSS devices.
+
+!![](../assets/images/saved-gnss-devices.png)
+
+The breakdown of connections support by platform is as follow:
+
+|             | :material-android: Android | :material-apple: iOS | :material-microsoft-windows: Windows | :material-linux: Linux | :material-apple: MacOS |
+|-------------|----------------------------|----------------------|--------------------------------------|------------------------|------------------------|
+| Bluetooth   | :material-check:           |                      | *                                    | :material-check:       | :material-check:       |
+| TCP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
+| UDP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
+| Serial port | :material-check:           |                      | :material-check:                     | :material-check:       | :material-check:       |
+
+*(\*) Bluetooth support on Windows occurs through the virtual serial port automatically
+created by the operating system when it connects to the GNSS device.*
+
+The NMEA sentences currently supported are GGA, RMC, GSA, GSV, VTG, and HDT.
+
+!!! note
+    Make sure no other app like mock location providers are using the same connection.
+
+## Mock location
+:material-tablet: Fieldwork
+
+It is possible to provide a mock location via a separate android app to
+QField. There are several options for this, one of them is [Android NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).
+
+To use this you have to [enable mock locations on your Android device](https://www.youtube.com/watch?v=v1eRHmMiRJQ).
+
+## Averaged positioning functionality
+:material-tablet: Fieldwork
+
+!!! note
+    The coordinate cursor must be locked to the current location via the [Lock to position button](../digitize/#adding-point-features)
+
+There is a function that allows you to digitize using averaged positions.
+
+The survey will start by pressing and holding the add vertex button, which will start collecting positions.
+
+While collecting, an indicator will appear on top of the coordinate cursor showing a text reflecting the current number of collected positions.
+If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.
+
+!![](../assets/images/positioning-averaged.webp)
+
+The setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
+When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
+
+!![](../assets/images/positioning_averaged_set.jpg)
+
+When using [`@gnss_*` or `@position_` variables](../gnss/#additional-variables) on averaged positions, the variable will also represent the average over all collected samples.
+
+## Project configuration
+:material-monitor: Desktop preparation
+
+### Positioning variables
 
 You can get access to positioning information through additional
-expression variables. These will only be available when positioning is
-enabled.
+expression variables accessible in the attribute form. These will
+only be available when positioning is enabled.
 
-These variables are commonly used as default values for fields to keep
-track of the quality of individual measured points.
+These variables are commonly used as part of[default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)
+for fields to keep track of the quality of individual measured points.
 
   - `@position_source_name` - The name of the device that gave location information as
     reported by the sensor. To differenciate between internal and
@@ -175,84 +255,20 @@ Examples:
             is `NULL`. - `@position_source_name` > The value is
             `manual`.
 
+### Vertex logger
 
-## Usage
-:material-tablet: Fieldwork
+It is possible to setup a log layer of the collected vertices. This
+allows to keep track of meta data for each vertex like GNSS quality
+attributes and more. To set this up, a point layer can be added to the
+project and attributes configured to store this information.
 
-A short press on the *GNSS button* will turn on the GNSS and center to the
-current location once *positioning information* is available.
+![](../assets/images/vertex_log1.png){width="600px"}
 
-Activate *edit mode* and press on the target button, the cross in the
-center means it is using GNSS positioning.
+Then you should assign the role *digitizing logger* to a point layer.
 
-!![](../assets/images/gnss_use.webp,250px)
+Go to *QFieldSync > Project Properties*
 
-A long press on the *GNSS button* will show the *positioning menu*.
+![](../assets/images/vertex_log2.png){width="600px"}
 
-Inside the *positioning menu* you can turn on the *positioning display*
-which will show the current coordinates which are reprojected into the
-project CRS along with precision information.
-
-!![](../assets/images/positioning-menu.png)
-
-!!! note
-    If you see WGS 84 lat/lon information instead of information in your
-    project CRS, you probably have no signal yet.
-
-## Using an external GNSS Receiver
-:material-tablet: Fieldwork
-
-QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
-or UDP connections.
-
-In *Settings > Positioning*, you can find a set of buttons to add, edit, or delete external
-devices as well as a dropdown list to switch between internal and saved external GNSS devices.
-
-!![](../assets/images/saved-gnss-devices.png)
-
-The breakdown of connections support by platform is as follow:
-
-|             | :material-android: Android | :material-apple: iOS | :material-microsoft-windows: Windows | :material-linux: Linux | :material-apple: MacOS |
-|-------------|----------------------------|----------------------|--------------------------------------|------------------------|------------------------|
-| Bluetooth   | :material-check:           |                      | *                                    | :material-check:       | :material-check:       |
-| TCP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
-| UDP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
-| Serial port | :material-check:           |                      | :material-check:                     | :material-check:       | :material-check:       |
-
-*(\*) Bluetooth support on Windows occurs through the virtual serial port automatically
-created by the operating system when it connects to the GNSS device.*
-
-The NMEA sentences currently supported are GGA, RMC, GSA, GSV, VTG, and HDT.
-
-!!! note
-    Make sure no other app like mock location providers are using the same connection.
-
-## Mock location
-:material-tablet: Fieldwork
-
-It is possible to provide a mock location via a separate android app to
-QField. There are several options for this, one of them is [Android NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).
-
-To use this you have to [enable mock locations on your Android device](https://www.youtube.com/watch?v=v1eRHmMiRJQ).
-
-## Averaged positioning functionality
-:material-tablet: Fieldwork
-
-!!! note
-    The coordinate cursor must be locked to the current location via the [Lock to position button](../digitize/#adding-point-features)
-
-There is a function that allows you to digitize using averaged positions.
-
-The survey will start by pressing and holding the add vertex button, which will start collecting positions.
-
-While collecting, an indicator will appear on top of the coordinate cursor showing a text reflecting the current number of collected positions.
-If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.
-
-!![](../assets/images/positioning-averaged.webp)
-
-To setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
-When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
-
-!![](../assets/images/positioning_averaged_set.jpg)
-
-When using [`@gnss_*` or `@position_` variables](../gnss/#additional-variables) on averaged positions, the variable will also represent the average over all collected samples.
+To be most effective, the layer attributes should have default values that
+relies on the positioning variables enumerated above.
