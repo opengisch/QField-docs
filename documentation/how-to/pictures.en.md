@@ -61,7 +61,6 @@ Set the widget type of the field path to *Attachment* and add it to the form
 
 !![widgets](../assets/images/add-1-n-pictures-widgets_picture.png)
 
-
 ## Geotagging
 :material-tablet: Fieldwork
 
@@ -103,3 +102,17 @@ as name.
 
 !!! note
     QGIS 3.14 or newer is required for this functionality
+
+## How to sync from/to iOS device
+
+Use iTunes' File Sharing function to import into the QField root folder.
+
+1. Open the iTunes app and click on the iPhone button near the top-left of the iTunes window.
+2. Click on the *File Sharing* option in the left sidebar.
+3. Select the app QField and click on *Add File*. This will open the file browser.
+4. Select the file.
+
+!!! note
+    It is only possible with a PNG raster with a PNW world file at the moment.
+
+    JPG raster are not supported.
