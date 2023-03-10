@@ -37,7 +37,7 @@ QField will add a measurement value to individual vertices whenever the
 coordinate cursor is locked to the current position.
 
 By default, the value will represent the captured position's timestamp (milliseconds
-sincce epoch). You can change this value using the combo box in the settings'
+since epoch). You can change this value using the combo box in the settings'
 positioning tab.
 
 The available values to chose from are timestamp, ground speed, bearing, horizontal
@@ -84,10 +84,6 @@ The formats currently supported are:
 For example:
 For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
 the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
-
-!!! note
-    Since QField 2.0 the proj files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj`
-    instead of the devices main directory `<drive>:/QField/proj`.
 
 ## Usage
 :material-tablet: Fieldwork
@@ -163,7 +159,7 @@ If an averaged position minimum count requirement is active, a progress bar will
 
 !![](../assets/images/positioning-averaged.webp)
 
-To setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
+The setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
 When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
 
 !![](../assets/images/positioning_averaged_set.jpg)
@@ -179,8 +175,8 @@ You can get access to positioning information through additional
 expression variables accessible in the attribute form. These will
 only be available when positioning is enabled.
 
-These variables are commonly used as default values for fields to keep
-track of the quality of individual measured points.
+These variables are commonly used as part of[default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)
+for fields to keep track of the quality of individual measured points.
 
   - `@position_source_name` - The name of the device that gave location information as
     reported by the sensor. To differenciate between internal and
@@ -268,11 +264,11 @@ project and attributes configured to store this information.
 
 ![](../assets/images/vertex_log1.png){width="600px"}
 
-Then you should assign the role *digitizing logger* on a point layer.
+Then you should assign the role *digitizing logger* to a point layer.
 
 Go to *QFieldSync > Project Properties*
 
 ![](../assets/images/vertex_log2.png){width="600px"}
 
-To be most effective, the layer attributes should have default value that
+To be most effective, the layer attributes should have default values that
 relies on the positioning variables enumerated above.
