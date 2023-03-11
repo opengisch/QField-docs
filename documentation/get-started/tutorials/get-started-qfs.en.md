@@ -94,7 +94,7 @@ Layer
     like an ECW or MrSID layer.
 
 !!! note
-    On iOS devices, It is only possible with a PNG raster with a PNW world file at the moment.
+    On iOS devices, it is only possible with a PNG raster with a PNW world file at the moment.
 
     JPG raster are not supported.
 
