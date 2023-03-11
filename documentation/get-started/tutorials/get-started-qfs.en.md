@@ -93,6 +93,9 @@ Layer
     layer like a WMS or to take a working copy of an unsupported format
     like an ECW or MrSID layer.
 
+!!! note
+    On iOS devices JPEG raster files are not currently supported.
+
 Map Theme
 
 :   A map theme. This is useful to create a base map based on a

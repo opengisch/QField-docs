@@ -61,7 +61,6 @@ Set the widget type of the field path to *Attachment* and add it to the form
 
 !![widgets](../assets/images/add-1-n-pictures-widgets_picture.png)
 
-
 ## Geotagging
 :material-tablet: Fieldwork
 
