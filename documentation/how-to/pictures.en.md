@@ -99,7 +99,11 @@ Use expressions to configure the path of the attachments. By default,
 pictures are saved into the "DCIM" folder with a timestamp
 as name.
 
-!![picture_path](../assets/images/picture_path.png)
+!![picture path](../assets/images/picture_path.png)
+
+It is also possible to synchronize additional directories with pictures or other attachments. Additional paths can be configured in _Attachment directories_. All paths are relative to the project directory.
+
+!![attachments directories](../assets/images/attachments_directories.png)
 
 !!! note
     QGIS 3.14 or newer is required for this functionality
