@@ -94,7 +94,8 @@ Layer
     like an ECW or MrSID layer.
 
 !!! note
-    On iOS devices JPEG raster files are not currently supported.
+    On iOS devices JPEG raster datasets (including JPEG-encoded mbtiles)
+    are not currently supported.
 
 Map Theme
 
