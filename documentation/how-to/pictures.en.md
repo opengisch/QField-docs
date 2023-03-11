@@ -101,7 +101,7 @@ as name.
 
 !![picture path](../assets/images/picture_path.png)
 
-If other directories are used, it is possible to set a list of them that needs to be copied in the package.
+It is also possible to synchronize additional directories with pictures or other attachments. Additional paths can be configured in _Attachment directories_. All paths are relative to the project directory.
 
 !![attachments directories](../assets/images/attachments_directories.png)
 
