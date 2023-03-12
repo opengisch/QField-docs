@@ -8,8 +8,6 @@ tx_slug: documentation_get-started_storage
 Below are OS-specific instructions on how to access manipulate projects as well as
 individual datasets in QField.
 
-## Android
-
 !!! note
     Note to pre-existing QField users: for security reasons, Google has since November 2021
     enforced a new set of storage access rules which prohibits most applications from directly
@@ -18,19 +16,34 @@ individual datasets in QField.
     storage location within which QField has unrestricted read/write access. Instructions below
     should guide users' migration to the new paragdim.
 
+## Android and iOS
+
 ### Opening projects and datasets
 
 QField can open projects and datasets in three ways:
 
-* by importing a project folder;
-* by importing a compressed project file; and
-* by importing individual dataset(s).
+* by importing from a URL;
+* by importing a project folder (Android-only);
+* by importing a compressed project file (Android-only); and
+* by importing individual dataset(s) (Android-only).
 
 !![QField import actions](../assets/images/storage-import-actions.png)
 
-These actions are available via the dropdown action menu in the project/dataset picker‘s
-plus button, which can be accessed by clicking on the ‘Open local files’ button located in
-QField‘s welcome screen.
+These actions are available by click on the ‘import (+) button‘ located on the
+bottom-right corner of the project/dataset picker screen, which can be accessed by
+clicking on the ‘Open local files’ button located in QField‘s welcome screen.
+
+#### Importing from a URL
+
+When importing a project or individual dataset through the "Import URL" action, users
+will be asked to provide a URL string to a file. QField will subsequently fetch the content and
+save it into the ‘Imported projects’ - provided the URL points to a project compressed into a ZIP
+archive - or ‘Imported datasets’.
+
+!![QField import URL dialog](../assets/images/storage-import-url.png)
+
+QField will consider a ZIP archive as a compressed project when one or more .qgs/.qgz
+project file is detected.
 
 #### Importing a project folder
 
