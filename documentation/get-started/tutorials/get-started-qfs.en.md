@@ -130,6 +130,11 @@ Make also sure to save the QGIS project using the regular Save As of
 QGIS as you'll have to re-open it later when you want to synchronize
 the changes.
 
+During packaging your project, it allowd to select subdirectories to be copied.
+
+
+!![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png)
+
 ## How to sync from/to iOS device without QFieldCloud
 
 Use iTunes' File Sharing function to import into the QField root folder.
