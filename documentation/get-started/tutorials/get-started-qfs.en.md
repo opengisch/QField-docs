@@ -76,6 +76,16 @@ Remove
     layer is used in the basemap and will not be available in the
     packaged project.
 
+Properties
+
+:   There are some set up possibilities in the properties.
+
+1. Lock geometries
+2. Set up the attachment default naming, please refer to the [Configurable picture path](../picture/#configurable-picture-path)
+3. Set up the number of maximum of items shown in the relation editor widget
+
+!![QFieldSync Layer Properties](../../assets/images/qfield-sync-properties.png)
+
 ### Base map configuration
 
 A base map is a raster layer which is added as the bottommost layer to
