@@ -130,7 +130,7 @@ Make also sure to save the QGIS project using the regular Save As of
 QGIS as you'll have to re-open it later when you want to synchronize
 the changes.
 
-During the packaging process, it is possible to copy subdirectories.
+During packaging your project you can select which subdirectories to be copied by checking the directories in `Advanced` -> `Directories to be copied`.
 
 !![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png)
 
