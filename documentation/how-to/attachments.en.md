@@ -74,7 +74,7 @@ Some mobile devices will require for native camera mode to be turned off to enab
 To enable geotagging in case your native OS camera does not support this functionality, follow these steps:
 
 1.  In QField, go to the *settings* and make sure *Use native Camera* is
-    activated
+    deactivated
     on your mobile device
 3.  Completed! QField's own QML-based camera will now be utilized while taking pictures
 
