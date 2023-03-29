@@ -82,7 +82,7 @@ Properties
 
 1. Lock geometries
 2. Set up the attachment default naming, please refer to the [Configurable picture path](../picture/#configurable-picture-path)
-3. Set up the number of maximum of items shown in the relation editor widget
+3. Set up the maximum number of items shown in the relation editor widget
 
 !![QFieldSync Layer Properties](../../assets/images/qfield-sync-properties.png)
 
