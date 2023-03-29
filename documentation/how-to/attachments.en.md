@@ -76,8 +76,6 @@ To enable geotagging in case your native OS camera does not support this functio
 1.  In QField, go to the *settings* and make sure *Use native Camera* is
     activated
     on your mobile device
-3.  Check that geotagging is enabled within the Open Camera settings
-4.  In the mobile device settings, change the camera app's default setting to open camera
 5.  Completed! Open Camera will now be utilized while taking pictures with QField
 
 ## Maximum picture size
