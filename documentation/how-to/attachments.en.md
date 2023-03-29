@@ -9,7 +9,7 @@ In QField, a field with *Attachment* widget can be used to:
 
 -   show and take photos
 -   show and record videos
--   listen to sound records
+-   listen and record sound clips
 -   show links to external files like PDFs or documents
 
 !![Attachments](../assets/images/attachments.png)
