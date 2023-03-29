@@ -78,7 +78,7 @@ Remove
 
 Properties
 
-:   There are some set up possibilities in the properties.
+:   There are some additional options to fine tune your QField project in the properties
 
 1. Lock geometries
 2. Set up the attachment default naming, please refer to the [Configurable picture path](../picture/#configurable-picture-path)
