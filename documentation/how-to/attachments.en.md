@@ -69,7 +69,7 @@ Set the widget type of the field path to *Attachment* and add it to the form
 ## Geotagging
 :material-tablet: Fieldwork
 
-Some mobile devices will require Open Camera to be installed to enable geotagging.
+Some mobile devices will require for native camera mode to be turned off to enable geotagging.
 
 To enable geotagging, follow these steps:
 
