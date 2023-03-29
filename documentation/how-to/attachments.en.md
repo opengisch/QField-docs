@@ -71,7 +71,7 @@ Set the widget type of the field path to *Attachment* and add it to the form
 
 Some mobile devices will require for native camera mode to be turned off to enable geotagging.
 
-To enable geotagging, follow these steps:
+To enable geotagging in case your native OS camera does not support this functionality, follow these steps:
 
 1.  In QField, go to the *settings* and make sure *Use native Camera* is
     activated
