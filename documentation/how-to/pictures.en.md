@@ -1,6 +1,6 @@
 ---
-title: Attachments
-tx_slug: documentation_how-to_attachments
+title: Pictures
+tx_slug: documentation_how-to_pictures
 ---
 
 # Use attachment
