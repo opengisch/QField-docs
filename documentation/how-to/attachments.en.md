@@ -101,7 +101,7 @@ as name.
 
 !![picture path](../assets/images/picture_path.png)
 
-Additional directories can be synchronized with pictures or other attachments. Futher paths can be configured in _Attachment directories_. All paths are relative to the project directory.
+Additional directories can be synchronized with pictures or other attachments. Extra paths can be configured in _Attachment directories_. All paths are relative to the project directory.
 
 !![attachments directories](../assets/images/attachments_directories.png)
 
