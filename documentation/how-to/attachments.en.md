@@ -8,7 +8,7 @@ tx_slug: documentation_how-to_attachments
 In QField, a field with *Attachment* widget can be used to:
 
 -   show and take photos
--   show video
+-   show and record videos
 -   listen to sound records
 -   show links to external files like PDFs or documents
 
