@@ -5,35 +5,34 @@ tx_slug: documentation_how-to_print-to-pdf
 
 # Print to PDF
 
-It's possible to export the maps and other items to a PDF document using the QGIS Print Layouts.
+It's possible to export laid out maps as PDF document through project print layouts
+configured within QGIS.
 
 ## Usage
 :material-tablet: Fieldwork
 
-If the project has at least one print layout defined, printing is
-available over the menu.
+Printing to PDF is available through QField's main menu in the side dashboard.
 
 !![](../assets/images/print_menu.png)
 
-After selecting the print layout, the PDF document is created and stored
-in the project's directory.
+If the opened project has a single print layout defined, selecting the 'Print to PDF'
+menu will immediately launch an export of the layout to PDF. If more than one print
+layout is present, a submenu will appear listing all the available layouts to choose from.
 
-By choosing the PDF reader app, the document can be opened directly.
+Once the print layout has been exported, QField will allow users to open and view the
+created PDF document.
 
-!![](../assets/images/print_open.jpg)
+!![](../assets/images/print_document.png)
 
-Done.
+## Feature-Driven Atlas Print
 
-!![](../assets/images/print_document.jpg)
+You can also print an atlas-driven layout by selecting features from vector layers acting
+as coverage layers. To do so, identify features on the map by tapping on the canvas and
+hold-press on a feature in the list to toggle the (mutli-)feature selection mode. Once the
+desired features are selected, click on the *Menu ( ⁝ )* button and select *Print Atlas
+Feature(s) to PDF*.
 
-A video demonstration of how the complete workflow looks:
+!![](../assets/images/print_atlas_menu.png)
 
-![type:video](https://player.vimeo.com/video/499566180)
-
-## Atlas Print
-
-You can also print an atlas by selecting the features. Choose features on the map, select them in the list and print them: *Menu ( ⁝ ) Button > Print Atlas Feature(s) to PDF*.
-
-![type:video](https://player.vimeo.com/video/604740848)
-
-Or you can print one single feature directly in the form with *Menu ( ⁝ ) Button > Print Atlas Feature to PDF*.
+It is possible to print a single atlas feature through the feature form by clicking on the
+*Menu ( ⁝ )* button and selecting the *Print Atlas Feature to PDF*.
