@@ -259,7 +259,7 @@ with_variable(
 The "Use completer" checkbox must be checked to be able to use the
 auto-complete in the value relation.
 
-!![image](../assets/images/autocomplet_form.png)
+!![Enable auto-complete within QGIS](../assets/images/autocomplet_form.png)
 
 Here a video showing how it works on QField
 
