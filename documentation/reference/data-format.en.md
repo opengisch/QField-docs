@@ -65,7 +65,7 @@ If the raster data is too low quality, adjust the compression level and set QUAL
 Some extra parameters can be set :
 
 - `a_srs` can be used also in gdal_translate command when CRS is not define in the source raster dataset.
-- `OVERVIEW_RESAMPLING`offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.
+- `OVERVIEW_RESAMPLING` offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.
 - `NUM_THREADS` will help you to balance between use all your CPU ressources or only part. Set ALL_CPUS or define the number of thread you want to use.
 
 Combining all extra parameters, command line may look like this :
