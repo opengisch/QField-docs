@@ -9,7 +9,9 @@ If a project contains online layers (PostGIS, WMS, WFS, etc), QFieldCloud will t
 
 | service          | IP              |
 |------------------|-----------------|
-| app.qfield.cloud | 185.203.114.168 |
+| app.qfield.cloud | 159.100.252.133 |
+| app.qfield.cloud | 194.182.188.113 |
+| app.qfield.cloud | 185.203.114.168 (deprecated) |
 
 
 ## PostgreSQL configuration
@@ -24,6 +26,3 @@ WARNING:QGIS_MSGLOG:1 unavailable layer(s) found:
 ```
 
 To do so, you need to edit the `pg_hba.conf` file where your PostgreSQL server is hosted. For more information, refer to recommendations on [StackOverflow questions](https://stackoverflow.com/search?q=FATAL+no+pg_hba.conf+entry+for+host).
-
-!!! warning
-    The information provided on this page might get outdated or changed at any moment without notice during the BETA phase of the QFieldCloud project!
