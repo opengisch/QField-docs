@@ -148,4 +148,4 @@ can do so through [‘libimobiledevice‘](https://libimobiledevice.org/).
 
 Add more storage to QFieldCloud *Settings > Billing > Subscription > Change > Update storage*
 
-!![Add storage to QFieldCloud ](../assets/images/storage-qfc.png)
+!![ Add storage to QFieldCloud ](../assets/images/storage-qfc.png)
