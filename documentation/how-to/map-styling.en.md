@@ -17,8 +17,7 @@ generate this name can be defined by opening the attribute table in QGIS
 and switching to the form view. Choose the appropriate field or an
 expression in the list there. Starting from QGIS 3, this can be done
 directly from the
-*Vector Layer Properties > Display*{.interpreted-text
-role="menuselection"} page.
+*Vector Layer Properties > Display* page.
 
 The display expression is also used to search in layers.
 
