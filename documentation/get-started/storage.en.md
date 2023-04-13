@@ -1,5 +1,5 @@
 ---
-title: Storage Access
+title: Storage
 tx_slug: documentation_get-started_storage
 ---
 
@@ -143,3 +143,9 @@ Changes done to project content and datasets are saved in the files found in thi
 Imported projects and datasets can be accessed directly using a USB cable by navigating
 to the QField application folder using iTunes on Windows and macOS. On Linux, users
 can do so through [‘libimobiledevice‘](https://libimobiledevice.org/).
+
+# QFieldCloud add storage
+
+Add more storage to QFieldCloud *Settings > Billing > Subscription > Change > Update storage*
+
+!![Add storage to QFieldCloud ](../assets/images/storage-qfc.png)
