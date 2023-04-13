@@ -39,7 +39,7 @@ attributes or adding and deleting features.
 It is also possible to configure which layers are searchable.
 
 To configure identify, readonly and searchable behavior, go to the
-*Project > Project Properties > Identify Layers*
+*Project > Properties > Data Sources*
 page and activate the checkboxes to match your
 desired behavior.
 
