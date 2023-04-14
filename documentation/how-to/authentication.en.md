@@ -24,7 +24,7 @@ In the WFS layer configuration:
 !![widgets](../assets/images/oauth2_setup_wfs.png)
 
 Add a new authentication configuration. Parameters need to be adjusted
-to the oauth2 server setup:
+to the OAuth2 server setup:
 
 !![widgets](../assets/images/oauth2_setup_auth.png)
 

@@ -13,7 +13,7 @@ styling, setting default values for fields and much more.
 ## Configuration
 :material-tablet: Fieldwork
 
-To configure a device-specific variable, open *Settings > Global Variables*.
+To configure a device-specific variable, open *Settings > Variables*.
 
 !![Configuration of two new global variables in addition to the
 pre-defined system

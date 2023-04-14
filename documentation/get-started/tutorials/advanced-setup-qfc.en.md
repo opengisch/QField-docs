@@ -25,7 +25,7 @@ If you would like to set up relations, it is recommended to add a UUID field on 
     1. Create a new project.
     2. Create a GeoPackage layers, save it in the same folder than the QGIS project.
     3. Set the GeoPackage to "Offline editing" in the QFieldSync plugin.
-    4. Upload the project to QField cloud.
+    4. Upload the project to QFieldCloud.
 2. Collect data on the device with QField:
     1. Open QFieldCloud and import the project.
     2. Collect some data and upload the changes.

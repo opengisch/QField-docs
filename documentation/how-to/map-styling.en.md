@@ -17,8 +17,7 @@ generate this name can be defined by opening the attribute table in QGIS
 and switching to the form view. Choose the appropriate field or an
 expression in the list there. Starting from QGIS 3, this can be done
 directly from the
-*Vector Layer Properties > Display*{.interpreted-text
-role="menuselection"} page.
+*Vector Layer Properties > Display* page.
 
 The display expression is also used to search in layers.
 
@@ -39,7 +38,7 @@ attributes or adding and deleting features.
 It is also possible to configure which layers are searchable.
 
 To configure identify, readonly and searchable behavior, go to the
-*Project > Project Properties > Identify Layers*
+*Project > Properties > Data Sources*
 page and activate the checkboxes to match your
 desired behavior.
 
@@ -71,7 +70,7 @@ It is possible to embed SVG symbols directly within a QGIS projects.
 2.  Open the section Symbology in *Properties > Symbology*
 3.  In the *Symbol Layer Panel* choose *Simple marker*.
 !![](../assets/images/symbol_layer_panel.png)
-4.  Change the Symbol layer type in *Symbol layer type > SVG marker*`*.
+4.  Change the Symbol layer type in *Symbol layer type > SVG marker*.
 !![](../assets/images/symbol_layer_type.png)
 5.  Scroll down the bottom panel.
 6.  Click on the right side of the file selection button to open the

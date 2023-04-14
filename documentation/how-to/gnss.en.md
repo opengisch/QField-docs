@@ -98,7 +98,7 @@ center means it is using GNSS positioning.
 
 A long press on the *GNSS button* will show the *positioning menu*.
 
-Inside the *positioning menu* you can turn on the *positioning display*
+Inside the *positioning menu* you can turn on the *Show position information*
 which will show the current coordinates which are reprojected into the
 project CRS along with precision information.
 

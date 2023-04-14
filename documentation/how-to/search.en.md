@@ -11,7 +11,7 @@ QField allows to search in layers, into a value list and to go to coordinates wi
 :material-monitor: Desktop preparation
 
 1.  Choose the layers which are searchable in
-    *Project > Project Properties > Identify Layers*
+    *Project > Project Properties > Data Sources*
 2.  Define the *display expression* for the concerned layers, this will
     be used for searching for features. This is configured under
     *Vector Layer Properties > Display*

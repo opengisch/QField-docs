@@ -8,7 +8,7 @@ tx_slug: documentation_how-to_projects
 QField has a file selector that allows to open a project from the device locally. To open files from the cloud see [QFieldCloud ](../../get-started/tutorials/get-started-qfc/).
 
 !!! note
-    Starting with Android 11 apps are denied full access to main and external storage content. For QField 2, this means direct access to projects and datasets transferred and/or downloaded into storage folders is not possible anymore.
+    Starting with Android 11 apps are denied full access to main and external storage content. For QField, this means direct access to projects and datasets transferred and/or downloaded into storage folders is not possible anymore. You can know more [on this page](../../get-started/storage-en/).
 
 You have to import project folders or individual datasets into the app-dedicated storage location `<drive>:/Android/data/ch.opengis.qfield/files/QField` where it has unrestricted read/write access. With that behavior importing from external SD cards or providers that work with remote files (e.g. Google Drive) are supported as well.
 
