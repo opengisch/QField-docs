@@ -6,12 +6,12 @@ tx_slug: documentation_how-to_search
 # Search bar
 
 QField is equipped with a nifty search bar which allows you to search for
-features within project's vector layers, to go to an entered coordinatesm and more.
+features within project's vector layers, to go to entered coordinates and more.
 
 ## Usage
 :material-tablet: Fieldwork
 
-Tap on the *Search button* on the top-right corner of the screen to
+Tap on the *Search button* in the top-right corner of the screen to
 open expand the search bar.
 
 ### Vector layers search
