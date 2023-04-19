@@ -253,6 +253,18 @@ with_variable(
 
 )
 
+## Search in value relation and relation reference widget
+
+It is possible to search value in a *value relation* or *relation reference* widget using the magnifying
+glass next to the field.
+
+![type:video](https://player.vimeo.com/video/604661919)
+
+!!! note
+    Define the *display expression* for the concerned layers, this will
+    be used for searching for features. This is configured under
+    *Vector Layer Properties > Display*
+
 ## Configure Auto-complete Value
 :material-monitor: Desktop preparation
 
