@@ -122,7 +122,7 @@ users to narrow down the compressed files to e.g. a /DCIM subfolder.
 
 ### Sending an individual dataset
 
-Users can select the ‘Send to‘ action for individuald datasets, allowing for the sending of
+Users can select the ‘Send to‘ action for individual datasets, allowing for the sending of
 edited datasets directly to third party apps such as Gmail, Drive, Dropbox, Nextcloud,
 <insert your favourite messenger app>, etc.
 
