@@ -40,7 +40,7 @@ def extract_path(paths):
             flat_paths.append(extract_path(path))
 
     elif isinstance(paths, list):
-        for path in paths: 
+        for path in paths:
             flat_paths.append(extract_path(path))
     return flat_paths
 
@@ -143,7 +143,7 @@ with open('mkdocs.yml', 'r') as file:
     config = yaml.full_load(file)
 articles = config['nav']
 
-for category in articles: 
+for category in articles:
     for category_title, paths in category.items():
         paths = extract_path(paths)
         if isinstance(paths, str):
