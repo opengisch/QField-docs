@@ -1,11 +1,11 @@
 import requests
+import os
 
-# get from https://api-console.zoho.eu/
-CONFIG_ID = ""
-CONFIG_SECRET = ""
-CONFIG_CODE = ""
-
-REFRESH_TOKEN = ""
+# get from https://api-console.zoho.eu/ or in GH secrets
+CONFIG_ID = os.environ['ZOHO_CONFIG_ID']
+CONFIG_SECRET = os.environ['ZOHO_CONFIG_SECRET']
+CONFIG_CODE = os.environ['ZOHO_CONFIG_CODE']
+REFRESH_TOKEN = os.environ['ZOHO_REFRESH_TOKEN']
 
 if not CONFIG_CODE:
     exit("Visit https://api-console.zoho.eu/ and generate a CONFIG_CODE for a self client with scope `Desk.articles.CREATE, Desk.articles.UPDATE, Desk.articles.READ`")
