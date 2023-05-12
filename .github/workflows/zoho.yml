@@ -14,6 +14,9 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
+      
+      - name: Install Python requirements
+        run: pip install -r requirements.txt
 
       - name: Generate Zoho authentication credentials and update Zoho
         env:
@@ -22,5 +25,4 @@ jobs:
           ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_CONFIG_TOKEN }}
           ZOHO_CONFIG_CODE: ${{ secrets.ZOHO_CONFIG_CODE }}
         run: |
-          sudo apt update && sudo apt install -y python3-yaml
           python ./utils/push_to_zoho.py
