@@ -1,0 +1,24 @@
+name: Update Zoho
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Generate Zoho authentication credentials and update Zoho
+        env:
+          ZOHO_CONFIG_ID: ${{ secrets.ZOHO_CONFIG_ID }}
+          ZOHO_CONFIG_SECRET: ${{ secrets.ZOHO_CONFIG_SECRET }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_CONFIG_TOKEN }}
+          ZOHO_CONFIG_CODE: ${{ secrets.ZOHO_CONFIG_CODE }}
+        run: python ./utils/push_to_zoho.py
