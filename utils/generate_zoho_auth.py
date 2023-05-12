@@ -17,7 +17,6 @@ auth  = requests.post(REFRESH_URL)
 try:
     print('access_token: ', auth.json()["access_token"])
     print('refresh_token: ', auth.json()["refresh_token"])
-    
+
 except KeyError:
     exit(auth.text)
-

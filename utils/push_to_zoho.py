@@ -68,7 +68,7 @@ def convert_md(path):
 
     #replace relative url with absolute
     body = body.replace('../assets/images/', 'https://docs.qfield.org/assets/images/')
-    
+
     html = markdown.markdown(body)
     title = re.search('title: (.*)\n', header).group(1)
     slug = re.search('tx_slug: (.*)\n', header).group(1)
@@ -150,7 +150,7 @@ for category in articles:
             paths = [paths]
         else:
             paths = list(flatten(paths))
-        
+
         for path in paths:
             if path == "index.md":
                 continue
