@@ -3,12 +3,14 @@ import markdown
 import re
 import requests
 
-import os.path
 import materialx.emoji
 
 from collections.abc import Iterable
+from generate_zoho_auth import get_fresh_token
 
-AUTH_CODE = ''
+
+AUTH_CODE = get_fresh_token()
+
 if not AUTH_CODE:
     exit("ERROR: use generate_zoho_auth.py to generate the oauth2 code")
 HEADERS = {
