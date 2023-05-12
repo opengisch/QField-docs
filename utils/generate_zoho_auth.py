@@ -52,7 +52,6 @@ def get_fresh_token() -> str | None:
         return token
 
     except KeyError:
-        print(len(REFRESH_TOKEN))
         print(auth.text)
 
 
