@@ -1,12 +1,13 @@
-from typing import Any, Generator, Iterable
-import yaml
-import markdown
 import re
-import requests
 from os import getenv
+from typing import Any, Generator, Iterable
+
+import markdown
+import materialx.emoji # needed by yaml!
+import requests
+import yaml
 
 from generate_zoho_auth import get_fresh_token
-
 
 category_map = {
     "Get started": "116946000000448345",
