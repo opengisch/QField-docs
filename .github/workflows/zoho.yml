@@ -34,7 +34,8 @@ jobs:
           IS_PR: ${{ github.event_name == 'pull_request' }}
           ZOHO_CONFIG_ID: ${{ secrets.ZOHO_CONFIG_ID }}
           ZOHO_CONFIG_SECRET: ${{ secrets.ZOHO_CONFIG_SECRET }}
-          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_CONFIG_TOKEN }}
           ZOHO_CONFIG_CODE: ${{ secrets.ZOHO_CONFIG_CODE }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+
         run: |
           python ./utils/push_to_zoho.py
