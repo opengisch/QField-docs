@@ -1,5 +1,0 @@
-{
-    "yaml.schemas": {
-        "https://json.schemastore.org/github-workflow.json": "file:///home/hades/opengis/QField-docs/.github/workflows/zoho.yml"
-    }
-}

@@ -14,12 +14,12 @@ def create_access_secrets():
     """
     Used to generate CONFIG_CODE and REFRESH_TOKEN
     requires manual interaction.
-    Before running it you need to create a valid auth on 
-    Visit https://api-console.zoho.eu/ and generate a new CONFIG_CODE 
-    for a self client with scope 
+    Before running it you need to create a valid auth on
+    Visit https://api-console.zoho.eu/ and generate a new CONFIG_CODE
+    for a self client with scope
     `Desk.articles.CREATE, Desk.articles.UPDATE, Desk.articles.READ`
     """
-    
+
     url = "{}?code={}&grant_type=authorization_code&client_id={}&client_secret={}&redirect_uri=https://www.qfield.cloud".format(BASE_URL, CONFIG_CODE, CONFIG_ID, CONFIG_SECRET)
     auth  = requests.post(url)
     try:
@@ -30,22 +30,22 @@ def create_access_secrets():
         return tokens
 
     except KeyError:
-        print(auth.text) 
+        print(auth.text)
         print("Visit https://api-console.zoho.eu/ and generate a new CONFIG_CODE for a self client with scope `Desk.articles.CREATE, Desk.articles.UPDATE, Desk.articles.READ`")
 
 
 def get_fresh_token():
     """used to get a new authentication code without manual interaction"""
-    
+
     url = "{}?refresh_token={}&client_id={}&client_secret={}&scope=Desk.articles.CREATE,Desk.articles.UPDATE,Desk.articles.READ&grant_type=refresh_token".format(BASE_URL, REFRESH_TOKEN, CONFIG_ID, CONFIG_SECRET)
     auth  = requests.post(url)
-    
+
     try:
         token = auth.json()["access_token"]
         return token
 
     except KeyError:
-        print(auth.text) 
-    
+        print(auth.text)
+
 
 # print(get_fresh_token())
