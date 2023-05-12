@@ -21,4 +21,6 @@ jobs:
           ZOHO_CONFIG_SECRET: ${{ secrets.ZOHO_CONFIG_SECRET }}
           ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_CONFIG_TOKEN }}
           ZOHO_CONFIG_CODE: ${{ secrets.ZOHO_CONFIG_CODE }}
-        run: python ./utils/push_to_zoho.py
+        run: |
+          apt update && apt install python-yaml
+          python ./utils/push_to_zoho.py
