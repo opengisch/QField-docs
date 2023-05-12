@@ -1,6 +1,7 @@
 from typing import Any, Generator, Iterable
 import yaml
 import markdown
+import materialx.emoji
 import re
 import requests
 from os import getenv
