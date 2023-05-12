@@ -13,7 +13,7 @@ if not CONFIG_CODE:
 BASE_URL = "https://accounts.zoho.eu/oauth/v2/token"
 AUTH_URL = "{}?code={}&grant_type=authorization_code&client_id={}&client_secret={}&redirect_uri=https://www.qfield.cloud".format(BASE_URL, CONFIG_CODE, CONFIG_ID, CONFIG_SECRET)
 REFRESH_URL = "{}?refresh_token={}&client_id={}&client_secret={}&scope=Desk.articles.CREATE,Desk.articles.UPDATE,Desk.articles.READ&grant_type=refresh_token".format(BASE_URL, REFRESH_TOKEN, CONFIG_ID, CONFIG_SECRET)
-auth  = requests.post(REFRESH_URL)
+auth  = requests.post(AUTH_URL)
 try:
     print('access_token: ', auth.json()["access_token"])
     print('refresh_token: ', auth.json()["refresh_token"])
