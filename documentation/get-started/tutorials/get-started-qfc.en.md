@@ -32,7 +32,7 @@ For a **Pro plan**, follow these steps :
 2. Click on "Upgrade to pro"
 3. In the "Subscription" section, click on "Upgrade"
 4. In Pro section, click on "Activate"
-5. Check the box "I agree with Terms of Service." and click on "Proceed"
+5. Carefully read the "Terms of Service" and agree to the terms of service, then "Proceed"
 6. In the "Billing Address" section, fill up the form, and then click on "Proceed to payment"
 
 For an **Organization plan**, follow these steps :
