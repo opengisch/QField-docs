@@ -43,7 +43,7 @@ For an **Organization plan**, follow these steps :
 4. Choose a name for your organization with only 150 characters or fewer, letters, digits, and @/./+/-/_
 5. Click on "Create"
 6. Choose how much storage is needed
-7. Check the box "I agree with the Terms of Service." and click on "Proceed"
+7. Carefully read the "Terms of Service"and agree to the terms of service, then "Proceed"
 8. In the "Billing Address" section, fill up the form, and then click on "Proceed to payment"
 
 If the billing information is incomplete, at any time it is possible to finish filling up the form by going to *Billing > Subscription > Finish checkout*
