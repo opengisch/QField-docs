@@ -24,7 +24,7 @@ Change your personal settings. Add a profile picture or get an overview about yo
 
 ### Billing
 
-Adding billing information to the account is needed to use QFieldCloud Pro plan or Organization plan. 
+Adding billing information to the account is needed to use QFieldCloud Pro plan or Organization plan.
 
 For a **Pro plan**, follow these steps :
 
@@ -33,7 +33,7 @@ For a **Pro plan**, follow these steps :
 3. In the "Subscription" section, click on "Upgrade"
 4. In Pro section, click on "Activate"
 5. Check the box "I agree with Terms of Service." and click on "Proceed"
-6. In the "Billing Address" section, fill up the form, and then click on "Proceed to payment" 
+6. In the "Billing Address" section, fill up the form, and then click on "Proceed to payment"
 
 For an **Organization plan**, follow these steps :
 
