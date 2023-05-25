@@ -48,6 +48,8 @@ For an **Organization plan**, follow these steps :
 
 If the billing information is incomplete, at any time it is possible to finish filling up the form by going to *Billing > Subscription > Finish checkout*
 
+All pricing information is available here <a href="https://qfield.cloud/pricing" target="_blank">Pricing.</a>
+
 ### Organizations
 
 Your organizations are listed here. Find out more about teams, members and their roles in [concepts of the QField Ecosystem](https://docs.qfield.org/reference/qfieldcloud/concepts/).
