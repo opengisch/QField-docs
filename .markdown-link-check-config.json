@@ -1,0 +1,8 @@
+{
+  "replacementPatterns": [
+    {
+      "pattern": ".en.md$",
+      "replacement": ".md"
+    }
+  ]
+}
