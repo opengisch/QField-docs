@@ -164,7 +164,7 @@ When active, holding the add vertex button is not required, a short tap on the b
 
 !![](../assets/images/positioning_averaged_set.jpg)
 
-When using [`@gnss_*` or `@position_` variables](../gnss/#additional-variables) on averaged positions, the variable will also represent the average over all collected samples.
+When using [`@gnss_*` or `@position_` variables](../gnss/#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
 
 ## Project configuration
 :material-monitor: Desktop preparation
