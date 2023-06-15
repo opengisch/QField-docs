@@ -1,8 +1,16 @@
 {
   "replacementPatterns": [
     {
-      "pattern": ".en.md$",
-      "replacement": ".md"
+      "pattern": ".md$",
+      "replacement": ".en.md"
+    },
+    {
+      "pattern": ",[0-9]+px$",
+      "replacement": ""
+    },
+    {
+      "pattern": "#.*$",
+      "replacement": ""
     }
   ]
 }

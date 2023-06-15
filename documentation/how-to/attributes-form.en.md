@@ -184,7 +184,7 @@ can be based on the geometry or expression variables.
 
 For more information regarding storing information related to your
 position in object attributes, refer to the deticated
-[GNSS documentation](./gnss/).
+[GNSS documentation](./gnss.md).
 
 For QFieldCloud users, two variables can be used in expressions including attribute form's default values:
 - `@cloud_username` which returns the  name of the currently logged in QFieldCloud user.
