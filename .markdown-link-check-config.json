@@ -5,6 +5,10 @@
       "replacement": ".en.md"
     },
     {
+      "pattern": ".md#",
+      "replacement": ".en.md#"
+    },
+    {
       "pattern": ",[0-9]+px$",
       "replacement": ""
     },
