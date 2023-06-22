@@ -30,4 +30,4 @@ tx_slug: documentation_get-started_faq
     ## I have a question about QField or QFieldCloud. Who can I ask?
     We have a [discussion platform](https://github.com/opengisch/QField/discussions) to connect with other members of our community. If you need professional support please [contact us](mailto:info@opengis.ch).
 
-You can find more plans and service related questions in the [QFieldCloud FAQ](https://qfield.cloud/faq/) page.
+You can find more plans and service related questions in the [QFieldCloud FAQ](https://qfield.cloud/faq) page.
