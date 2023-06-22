@@ -25,7 +25,7 @@ GDAL. This page offers a non-exhaustive list of supported data formats.
 | MrSID       | :material-close: | License restricts usage. |
 
 If you don't find your favorite data format on this table, please check
-if it works and [adapt the list above](https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst)
+if it works and [adapt the list above](https://github.com/opengisch/QField-docs/edit/master/documentation/reference/data-format.en.md)
 to share your findings. If it does not work, please [open an issue](https://github.com/opengisch/OSGeo4A/issues). We will be happy to
 help you with the implementation.
 

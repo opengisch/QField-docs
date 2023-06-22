@@ -23,7 +23,7 @@ The field widgets from QGIS are supported on a best effort basis and optimized f
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
 | UUID Generator     | :material-check: |                                                                                                                                                                                                        |
 | QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
-| Others             | :material-close: | [Funding](../../get-started/support/#development-and-custom-apps)                                                                                                                                      |
+| Others             | :material-close: | [Funding](../../get-started/support.md#development-and-custom-apps)                                                                                                                                      |
 
 ### Editable
 
