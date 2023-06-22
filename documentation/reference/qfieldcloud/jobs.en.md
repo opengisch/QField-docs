@@ -95,11 +95,11 @@ The possible statuses are:
 
 ### Unable to connect to service "`{SERVICE}`".
 
-QFieldCloud tries to connect to a PostgreSQL service that is not available. You should need to create a new pgservice [secrets](projects.md#secrets) so QFieldCloud can connect to the PostGIS service.
+QFieldCloud tries to connect to a PostgreSQL service that is not available. You should need to create a new pgservice [secrets](./projects.md#secrets) so QFieldCloud can connect to the PostGIS service.
 
 ### Unable to connect to host "`{HOST}`".
 
-QFieldCloud cannot establish a connection to the given `{HOST}`. Your service is not accessible from the QFieldCloud server. You might been to ask your IT department [to whitelist the QFieldCloud IP](specs.md#firewall-configuration).
+QFieldCloud cannot establish a connection to the given `{HOST}`. Your service is not accessible from the QFieldCloud server. You might been to ask your IT department [to whitelist the QFieldCloud IP](./specs.md#firewall-configuration).
 
 ### Unable to connect to host "localhost".
 
