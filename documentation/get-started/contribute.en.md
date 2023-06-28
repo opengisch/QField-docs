@@ -19,7 +19,7 @@ QField is an open source project. It is free to share, use and modify and it wil
 # Development
 
 if you want to get involved in QField development, please refer to the following doumentations:
-  - [QField repository](https://github.com/opengisch/QField/blob/master/doc/dev.md)
+  - [QField repository](https://github.com/opengisch/QField/blob/master/doc/dev.md) <!-- markdown-link-check-disable-line -->
   - [QFieldCloud repository](https://github.com/opengisch/qfieldcloud) <!-- markdown-link-check-disable-line -->
   - [QFieldSync repository](https://github.com/opengisch/QFieldSync) <!-- markdown-link-check-disable-line -->
 
