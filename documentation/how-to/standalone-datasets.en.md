@@ -37,7 +37,7 @@ The supported raster formats are:
 
 :material-tablet: Fieldwork
 
-Please read the [storage access documentation](/get-started/storage/) to learn more on how standalone datasets are opened on your specific device.
+Please read the [storage access documentation](../get-started/storage.md) to learn more on how standalone datasets are opened on your specific device.
 
 ## Using a project as "base map" for standalone datasets
 

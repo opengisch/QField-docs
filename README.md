@@ -114,7 +114,7 @@ pipenv install -r requirements.txt
 pipenv run mkdocs serve
 ```
 
-The local doc will be available at http://localhost:8000.
+The local doc will be available at http://localhost:8000.  <!-- markdown-link-check-disable-line -->
 
 #### Contribute
 Before commiting, install [pre-commit](https://pre-commit.com/) to auto-format your contributions. You can install pre-commit for the current user with
@@ -130,7 +130,7 @@ Ensure [Docker](https://docs.docker.com/get-docker/) or [Podman](https://podman.
 1. Clone this repository: git clone https://github.com/opengisch/QField-docs
 2. Build the container: `docker build . -t qfield-docs`
 3. Run it: `docker run -it -v ${PWD}/documentation:/opt/app/documentation -p 8000:8000 qfield-docs`
-4. Point your browser to the serving endpoint at http://localhost:8000.
+4. Point your browser to the serving endpoint at http://localhost:8000.  <!-- markdown-link-check-disable-line -->
 
 The server will automatically live-reload with any change made to the local `./documentation` directory.
 

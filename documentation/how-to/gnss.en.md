@@ -148,7 +148,7 @@ To use this you have to [enable mock locations on your Android device](https://w
 :material-tablet: Fieldwork
 
 !!! note
-    The coordinate cursor must be locked to the current location via the [Lock to position button](../digitize/#adding-point-features)
+    The coordinate cursor must be locked to the current location via the [Lock to position button](./digitize.md#adding-point-features)
 
 There is a function that allows you to digitize using averaged positions.
 
@@ -164,7 +164,8 @@ When active, holding the add vertex button is not required, a short tap on the b
 
 !![](../assets/images/positioning_averaged_set.jpg)
 
-When using [`@gnss_*` or `@position_` variables](../gnss/#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
+When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
+
 
 ## Project configuration
 :material-monitor: Desktop preparation

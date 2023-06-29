@@ -6,7 +6,7 @@ tx_slug: documentation_success-stories_rwanda-rural-water
 # Data collection by QGIS/QField for O&M work of rural water supply systems in Rwanda
 
 By Rural Water and Sanitation Services Department(RWSS), Water and
-Sanitation Corporation ([WASAC](https://wasac.rw)), Rwanda
+Sanitation Corporation ([WASAC](https://wasac.rw)), Rwanda  <!-- markdown-link-check-disable-line -->
 
 ## Goal
 

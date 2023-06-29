@@ -14,7 +14,7 @@ In QField, a field with *Attachment* widget can be used to:
 
 !![Attachments](../assets/images/attachments.png)
 
-To configure the Widget, please refer to the [Attributes Form Documentation](../attributes-form/#configure-attachmentpictures-widget)
+To configure the Widget, please refer to the [Attributes Form Documentation](./attributes-form.md#configure-attachmentpictures-widget)
 
 ## Add a series of pictures to a feature
 :material-monitor: Desktop preparation
