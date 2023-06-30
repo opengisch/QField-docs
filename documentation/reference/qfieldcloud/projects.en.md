@@ -2,7 +2,6 @@
 title: Projects
 tx_slug: documentation_reference_qfieldcloud_projects
 ---
-
 Projects are the main data container within QFieldCloud. Each user can create one or more QFieldCloud projects. Each project contains a single `.qgs`/`.qgz` QGIS project file, the geospatial files - GeoPackages, Shapefiles, TIFs, and additional data such as photos, PDFs etc. All project data files must be within a single QFieldCloud project.
 
 Each QFieldCloud project has a name and an owner. The owner of a project is a QFieldCloud user or an organization. The owner name and project name must be a unique combination within QFieldCloud, which means a user cannot have two projects with the same name.
@@ -36,6 +35,24 @@ project
 │   └── fields-20220405040607.jpg
 └── project.qgs
 ```
+
+## Files versions
+
+Files version is a method used by QFieldCloud to restore to a previous version of the modified files. The files versions can be found in in **Files** section of your project, the **Community plan** will allow to store 3 files versions, **Pro plan** and **Organization plan** will allow to store 10 files versions.
+
+### How to remove old versions of the files
+
+The saved versions, can be deleted. If there is a specific file or versions that like to remove, this can manually be delete from the project's **File** section. This can help free up space and ensure that only relevant versions files are retained.
+
+To delete versions of files in QFieldCloud, follow these steps:
+
+1. Go to the "Files" section of your project.![Project files](../../assets/images/files_versions_for_deleting.png)
+2. Locate the layer for which you want to delete versions.![Layer selected](../../assets/images/files_versions_for_deleting_2.png)
+3. Click on the three dots next to the layer name.![Clickable option](../../assets/images/files_versions_for_deleting_three_dots.png)
+4. You will see a list of versions for that specific layer.![List of files versions](../../assets/images/files_versions_for_deleting_files_versions.png)
+5. Identify the version you want to delete and click on the red trash bin icon next to it.![Thrash icon](../../assets/images/files_versions_for_deleting_deleting_a_version.png)
+6. Confirm the deletion when prompted, if you want to delete all versions before a specific version, you can do it activating the option "Also delete `n` version(s) older than the selected version.".![Deleting files versions](../../assets/images/files_versions_for_deleting_also_delete.png)
+7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.![List of versions after deleting 2 versions before](../../assets/images/files_versions_for_deleting_version_remain.png)
 
 ## Collaborators
 
