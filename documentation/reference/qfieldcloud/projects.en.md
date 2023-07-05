@@ -39,7 +39,7 @@ project
 
 ## File versions
 
-QFieldCloud uses file versioning that allows you to restore to a previous version of the modified files. The files and file versions can be found in in **Files** section of your project. Each subscription plan has different default number of versions stored for each file. Check the qfield.cloud [https://qfield.cloud/pricing.html](pricing page for further details).
+QFieldCloud uses file versioning that allows you to restore to a previous version of the modified files. The files and file versions can be found in in **Files** section of your project. Each subscription plan has different default number of versions stored for each file. Check the qfield.cloud [pricing page for further details](https://qfield.cloud/pricing.html).
 
 ### Deleting old file versions
 
