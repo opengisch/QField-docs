@@ -41,7 +41,7 @@ project
 
 QFieldCloud uses file versioning that allows you to restore to a previous version of the modified files. The files and file versions can be found in in **Files** section of your project. Each subscription plan has different default number of versions stored for each file. Check the qfield.cloud [https://qfield.cloud/pricing.html](pricing page for further details).
 
-### How to remove old versions of the files
+### Deleting old file versions
 
 The saved versions, can be deleted. If there is a specific file or versions that like to remove, this can manually be delete from the project's **File** section. This can help free up space and ensure that only relevant versions files are retained.
 
