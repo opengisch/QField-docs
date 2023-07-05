@@ -37,6 +37,24 @@ project
 └── project.qgs
 ```
 
+## File versions
+
+QFieldCloud uses file versioning that allows you to restore to a previous version of the modified files. The files and file versions can be found in in **Files** section of your project. Each subscription plan has different default number of versions stored for each file. Check the qfield.cloud [pricing page for further details](https://qfield.cloud/pricing.html).
+
+### Deleting old file versions
+
+To ensure only relevant file versions are retained or to reduce the amout of storage needed for your account, you can delete obsolete file versions. You can manually delete file versions from the project's **File** section.
+
+To delete versions of files in QFieldCloud, follow these steps:
+
+1. Go to the "Files" section of your project.![Project files](../../assets/images/files_versions_for_deleting.png)
+2. Locate the layer for which you want to delete versions.![Layer selected](../../assets/images/files_versions_for_deleting_2.png)
+3. Click on the three dots next to the layer name.![Clickable option](../../assets/images/files_versions_for_deleting_three_dots.png)
+4. You will see a list of versions for that specific layer.![List of files versions](../../assets/images/files_versions_for_deleting_files_versions.png)
+5. Identify the version you want to delete and click on the red trash bin icon next to it.![Thrash icon](../../assets/images/files_versions_for_deleting_deleting_a_version.png)
+6. Confirm the deletion when prompted, if you want to delete all versions before a specific version, you can do it activating the option "Also delete `n` version(s) older than the selected version.".![Deleting files versions](../../assets/images/files_versions_for_deleting_also_delete.png)
+7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.![List of versions after deleting 2 versions before](../../assets/images/files_versions_for_deleting_version_remain.png)
+
 ## Collaborators
 
 A project collaborator is another QFieldCloud user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role **owner** or **admin** can add more users as collaborators. If the project is owned by an organization, you can also add **teams** as collaborators. Read more about [collaborator roles](permissions.md).
