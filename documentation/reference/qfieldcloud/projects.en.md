@@ -37,7 +37,7 @@ project
 └── project.qgs
 ```
 
-## Files versions
+## File versions
 
 Files version is a method used by QFieldCloud to restore to a previous version of the modified files. The files versions can be found in in **Files** section of your project, the **Community plan** will allow to store 3 files versions, **Pro plan** and **Organization plan** will allow to store 10 files versions.
 
