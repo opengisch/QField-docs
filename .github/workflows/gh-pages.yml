@@ -52,7 +52,7 @@ jobs:
 
       - name: Pull translations from Transifex
         run: |
-          ./tx pull -t -l en,de,fr,it,es,zh,pt
+          ./tx pull -t -l en,de,fr,it,es,zh,pt,ja
           ./tx status
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}

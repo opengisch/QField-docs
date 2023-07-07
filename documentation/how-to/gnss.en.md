@@ -136,6 +136,17 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, VTG, and HDT.
 !!! note
     Make sure no other app like mock location providers are using the same connection.
 
+### External receiver log
+
+In *Settings > Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`. If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
+
+The logs will be placed in *Android/data/ch.opengis.qfield/files/QField/logs*.
+
+!![](../assets/images/external_receiver_log.png,250px)
+
+!!! note
+    Be aware that if the log is always turned on, it will fill up all the storage.
+
 ## Mock location
 :material-tablet: Fieldwork
 
@@ -148,7 +159,7 @@ To use this you have to [enable mock locations on your Android device](https://w
 :material-tablet: Fieldwork
 
 !!! note
-    The coordinate cursor must be locked to the current location via the [Lock to position button](../digitize/#adding-point-features)
+    The coordinate cursor must be locked to the current location via the [Lock to position button](./digitize.md#adding-point-features)
 
 There is a function that allows you to digitize using averaged positions.
 
@@ -164,7 +175,8 @@ When active, holding the add vertex button is not required, a short tap on the b
 
 !![](../assets/images/positioning_averaged_set.jpg)
 
-When using [`@gnss_*` or `@position_` variables](../gnss/#additional-variables) on averaged positions, the variable will also represent the average over all collected samples.
+When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
+
 
 ## Project configuration
 :material-monitor: Desktop preparation

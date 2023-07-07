@@ -81,7 +81,7 @@ Properties
 :   There are some additional options to fine tune your QField project in the properties
 
 1. Lock geometries: do not allow changing geometries and only allow changing attributes on this layer.
-2. Set up the attachment default naming, please refer to the [Configurable picture path](../picture/#configurable-picture-path)
+2. Set up the attachment default naming, please refer to the [Configurable picture path](../../how-to/pictures.md#configurable-attachment-path)
 3. Set up the maximum number of items shown in the relation editor widget
 
 !![QFieldSync Layer Properties](../../assets/images/qfield-sync-properties.png)

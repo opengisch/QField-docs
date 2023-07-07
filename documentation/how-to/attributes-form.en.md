@@ -23,7 +23,7 @@ The field widgets from QGIS are supported on a best effort basis and optimized f
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
 | UUID Generator     | :material-check: |                                                                                                                                                                                                        |
 | QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
-| Others             | :material-close: | [Funding](../../get-started/support/#development-and-custom-apps)                                                                                                                                      |
+| Others             | :material-close: | [Funding](../get-started/support.md#development-and-custom-apps)                                                                                                                                      |
 
 ### Editable
 
@@ -184,7 +184,7 @@ can be based on the geometry or expression variables.
 
 For more information regarding storing information related to your
 position in object attributes, refer to the deticated
-[GNSS documentation](./gnss/).
+[GNSS documentation](./gnss.md).
 
 For QFieldCloud users, two variables can be used in expressions including attribute form's default values:
 - `@cloud_username` which returns the  name of the currently logged in QFieldCloud user.
