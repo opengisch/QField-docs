@@ -136,6 +136,17 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, VTG, and HDT.
 !!! note
     Make sure no other app like mock location providers are using the same connection.
 
+### External receiver log
+
+In *Settings > Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`. If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
+
+The logs will be placed in *Android/data/ch.opengis.qfield/files/QField/logs*.
+
+!![](../assets/images/external_receiver_log.png,250px)
+
+!!! note
+    Be aware that if the log is always turned on, it will fill up all the storage.
+
 ## Mock location
 :material-tablet: Fieldwork
 
