@@ -93,7 +93,7 @@ You can modify the default QFieldCloud server QField and QFieldSync connect to:
 
 1. Open the login screen in QField or QFieldSync.
 2. Double-tap on the Nyuki icon (the blue bee QFieldCloud logo).
-3. This action will reveal a field where you can enter the preferred server information.
+3. This action will reveal a field where you can enter the preferred QFieldCloud server address.
 4. Enter the details of the desired server in the provided field.
 (Leave empty to connect to default server)
 
