@@ -91,7 +91,7 @@ QField and QFieldSync connect to the QFieldCloud service on [app.qfield.cloud](h
 
 You can modify the default QFieldCloud server QField and QFieldSync connect to:
 
-1. Open the login screen in QField or QField Sync.
+1. Open the login screen in QField or QFieldSync.
 2. Double-tap on the Nyuki icon (the blue bee QFieldCloud logo).
 3. This action will reveal a field where you can enter the preferred server information.
 4. Enter the details of the desired server in the provided field.
