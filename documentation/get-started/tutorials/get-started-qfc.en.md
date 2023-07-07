@@ -87,7 +87,7 @@ By double-clicking on a project in the list, you can see and edit the specific p
 
 ### Change the default QFieldCloud server in QField and QField Sync
 
-QField and QField Sync connect to the official [QFieldCloud](https://app.qfield.cloud/). This default server can be modified to connect to a different server if needed.
+QField and QFieldSync connect to the QFieldCloud service on [app.qfield.cloud](https://app.qfield.cloud/) by default.
 
 To modify the default server, follow these steps:
 
