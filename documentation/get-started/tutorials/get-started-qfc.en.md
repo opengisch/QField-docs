@@ -2,26 +2,22 @@
 title: Get Started
 tx_slug: documentation_get-started_tutorials_get-started-qfc
 ---
-
 # Getting started guide
 
 !!! help
     We have a [community discussion platform](https://github.com/opengisch/qfield/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
 
-
 ## Get a QFieldCloud account
+
 :material-monitor: Desktop preparation
 
 Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
-
 !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
-
 
 ### Edit Profile
 
 Change your personal settings. Add a profile picture or get an overview about your ownerships and memberships in organizations.
-
 
 ### Organizations
 
@@ -34,12 +30,13 @@ Search and choose a project from the list or start to create a new project.
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png)
 
 ## Connection to QFieldCloud on QGIS Desktop
-:material-monitor: Desktop preparation
 
+:material-monitor: Desktop preparation
 
 In order to connect to QFieldCloud, you need the Plugin “QFieldSync” in QGIS. The next steps show you how you can install and synchronize your data to and from QFieldCloud.
 
 ### Install QFieldSync
+
 Open the QGIS plugin manager by going to the `Plugins -> Manage and install Plugins…` menu.
 
 Find QFieldSync in the list of plugins and install the latest version by clicking the `Install Plugin` button.
@@ -60,12 +57,10 @@ A new login screen will appear:
 
 !![Login screen](../../assets/images/qfieldsync_login_dialog.png,250px)
 
-
 Enter your credentials previously created during account registration.
 
 !!! Note
     If you use a password in QGIS for the first time, it will ask you to set a master password that manages all the other passwords used in QGIS. More information about the master password here: [QGIS documentation](https://docs.qgis.org/3.4/en/docs/user_manual/auth_system/auth_overview.html#master-password)
-
 
 Explore the projects overview screen: your current user underlined and blue, a logout button down-left, a cloud button to create a new project and, on the right, a refresh button to grab the freshest project list. Newly registered users will see an empty table and as soon as they create new projects, the list will grow. The projects overview screen looks like this:
 
@@ -90,18 +85,33 @@ By double-clicking on a project in the list, you can see and edit the specific p
 
 !![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
 
+### Change the default QFieldCloud server in QField and QField Sync
+
+QField and QField Sync connect to the official [QFieldCloud](https://app.qfield.cloud/). This default server can be modified to connect to a different server if needed.
+
+To modify the default server, follow these steps:
+
+1. Open the login screen in QField or QField Sync.
+2. Double-tap on the Nyuki icon.
+3. This action will reveal a field where you can enter the preferred server information.
+4. Enter the details of the desired server in the provided field.
+(Leave empty to connect to default server)
+
+!![Reveling server in QField Sync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
+
+!![Reveling server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
 
 ### Create and configure your Cloud project
 
 Create a new project by clicking the cloud button, down-left. First, you will need to choose how to create the new project between
 
 * "Convert currently open project to cloud project"
-A new QFieldCloud-compatible project is created from the currently opened QGIS project. In order to do so, datasets will be copied into an export directory that will act as your local mirror. Vector datasets will be converted to geopackage format to facilitate data synchronization from multiple devices while other dataset types will be copied to the new project lotation.
+  A new QFieldCloud-compatible project is created from the currently opened QGIS project. In order to do so, datasets will be copied into an export directory that will act as your local mirror. Vector datasets will be converted to geopackage format to facilitate data synchronization from multiple devices while other dataset types will be copied to the new project lotation.
 
 To convert a current project, a completely empty directory is mandatory.
 
 * "Create a new empty QFieldCloud project"
-A new blank QFieldCloud project will be created. You will be responsible to move all the project-related files within the selected local directory, with the project file at its root. Project files will only be uploaded when you click the synchronize button. Make sure the selected contains no more than one QGIS project file.
+  A new blank QFieldCloud project will be created. You will be responsible to move all the project-related files within the selected local directory, with the project file at its root. Project files will only be uploaded when you click the synchronize button. Make sure the selected contains no more than one QGIS project file.
 
 !![Project details](../../assets/images/create_project.png)
 
@@ -129,6 +139,7 @@ Any QField supported raster and vector layer formats may be used as read-only da
 !![Project properties](../../assets/images/getting_started_project_properties.png)
 
 ### Upload a project
+
 Once configured, you can press the cloud button to open the synchronization dialog. Here you have to decide what do you prefer: the local file or the file on the cloud.
 
 !![Synchronize](../../assets/images/getting_started_synchronize.png)
@@ -136,10 +147,11 @@ Once configured, you can press the cloud button to open the synchronization dial
 Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
 
 ## Field device
+
 :material-tablet: Fieldwork
 
-
 ### Install QField
+
 Download and install the latest version of [QField from the play store](https://play.google.com/store/apps/details?id=ch.opengis.qfield_dev). Scroll to the bottom and enable beta testing.
 Do not use this version in production!
 
@@ -158,8 +170,8 @@ Select a project to download on your device:
 
 !![Download](../../assets/images/getting_started_download_project.png,250px)
 
-
 ### Synchronise your changes
+
 Make a change to your project. Either create a new feature, delete a feature, or modify the geometry or attributes.
 Open the blue cloud button on the top left of the screen:
 
