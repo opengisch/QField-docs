@@ -19,6 +19,34 @@ Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter 
 
 Change your personal settings. Add a profile picture or get an overview about your ownerships and memberships in organizations.
 
+### Billing
+
+Adding billing information to the account is needed to use QFieldCloud Pro plan or Organization plan.
+
+For a **Pro plan**, follow these steps :
+
+1. Click on the username up-right the page
+2. Click on "Upgrade to pro"
+3. In the "Subscription" section, click on "Upgrade"
+4. In Pro section, click on "Activate"
+5. Carefully read the "Terms of Service" and agree to the terms of service, then "Proceed"
+6. In the "Billing Address" section, fill up the form, and then click on "Proceed to payment"
+
+For an **Organization plan**, follow these steps :
+
+1. Click on the username up-right the page
+2. Click on "Create organization"
+3. Click on "Create"
+4. Choose a name for your organization with only 150 characters or fewer, letters, digits, and @/./+/-/_
+5. Click on "Create"
+6. Choose how much storage is needed
+7. Carefully read the "Terms of Service"and agree to the terms of service, then "Proceed"
+8. In the "Billing Address" section, fill up the form, and then click on "Proceed to payment"
+
+If the billing information is incomplete, at any time it is possible to finish filling up the form by going to *Billing > Subscription > Finish checkout*
+
+All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
+
 ### Organizations
 
 Your organizations are listed here. Find out more about teams, members and their roles in [concepts of the QField Ecosystem](https://docs.qfield.org/reference/qfieldcloud/concepts/).
