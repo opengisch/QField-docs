@@ -201,36 +201,43 @@ plugins:
         # vi: Vietnamese
       nav_translations:
         de:
+          Home: Startseite
           Get started: Erste Schritte
           How-to guides: Tutorial
           Technical reference: Technische Referenz
           Success stories: Erfolgsgeschichten
         fr:
+          Home: Accueil
           Get started: Mise en route
           How-to guides: Tutoriels
           Technical reference: Référence technique
           Success stories: Témoignages de projets
         it:
+          Home: Pagina iniziale
           Get started: Guida introduttiva
           How-to guides: Tutorial
           Technical reference: Riferimento tecnico
           Success stories: Storie di successo
         es:
+          Home: Inicio
           Get started: Primeros pasos
           How-to guides: Tutorial
           Technical reference: Referencia técnica
           Success stories: Historias de éxito
         zh:
+          Home: 首页
           Get started: 基础入门
           How-to guides: 操作指南
           Technical reference: 技术参考
           Success stories: 成功案例
         pt:
+          Home: Início
           Get started: Primeiros passos
           How-to guides: Guias de instruções
           Technical reference: Referência técnica
           Success stories: Histórias de sucesso
         ja:
+          Home: ホーム
           Get started: スタート・ガイド
           How-to guides: チュートリアル
           Technical reference: 参考資料
