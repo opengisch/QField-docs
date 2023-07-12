@@ -1,1 +1,31 @@
 {% extends "base.html" %}
+
+{% block extrahead %}
+<meta property="og:title" content="{{ page.title }} - {{ config.site_name }}">
+<meta name="twitter:title" content="{{ page.title }} - {{ config.site_name }}">
+
+{% if page and page.meta and page.meta.description %}
+<meta property="og:description" content="{{ page.meta.description }}">
+{% else %}
+<meta property="og:description" content="{{ config.site_description }}">
+{% endif %}
+
+{% if page and page.meta and page.meta.image %}
+<meta property="og:image" content="{{ page.meta.image }}">
+<meta name="twitter:image" content="{{ page.meta.image }}">
+{% else %}
+<meta property="og:image" content="assets/images/qfield_logo.svg">
+<meta name="twitter:image" content="assets/images/qfield_logo.svg">
+{% endif %}
+
+{% if page and page.meta and page.meta.type %}
+<meta property="og:type" content="{{ page.meta.type }}">
+{% else %}
+<meta property="og:type" content="article">
+{% endif %}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@QFieldForQGIS">
+<meta name="twitter:creator" content="@QFieldForQGIS">
+
+{% endblock %}
