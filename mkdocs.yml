@@ -131,7 +131,6 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       permalink: true
-  - meta
 
 # Css
 extra_css:
@@ -161,6 +160,11 @@ extra:
 plugins:
   - mkdocs-video
   - search
+  - social:
+      # See https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/
+      cards_color:
+        fill: "#72ad2e"
+        text: "#FFFFFF"
   - i18n:
       default_language: en
       default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, true]
