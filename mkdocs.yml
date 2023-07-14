@@ -188,7 +188,8 @@ plugins:
         ja:
           name: 日本語
           site_name: QFieldエコシステムドキュメント
-          site_description: # ADD ME LOCALIZED
+          site_description: >-
+            QFieldエコシステムのドキュメントへようこそ。QFieldエコシステムは、フィールドワークをシームレスかつ効率的にするために設計された製品群です。このページでは、QField のすべての製品について、包括的でわかりやすいドキュメントを提供しています。初めてお使いになる方でも、経験豊富なプロの方でも、QFieldとその関連ツールの使用に関して知っておくべきことが全て網羅されています。
         # gl: Galician
         pt:
           name: Portuguese
