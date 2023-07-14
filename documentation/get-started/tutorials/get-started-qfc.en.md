@@ -171,11 +171,11 @@ There are two ways to share a project with an organization:
 
     ![New empty project](../../assets/images/project_organization_03_new_empty_project.png)
 
-4. On QGIS in QFieldSync, you will see the new project listed.
+4. And you willl see in the overview of the new project created.
 
     ![New project created](../../assets/images/project_organization_04_new_project_created.png)
 
-5. Click on "Edit Selected Cloud Project".
+5. On QGIS in QFieldSync, you will see the new project listed, click on "Edit Selected Cloud Project".
 
     ![QFieldSync](../../assets/images/project_organization_05_qfield_sync.png)
 
@@ -201,11 +201,11 @@ There are two ways to share a project with an organization:
 
 **Option 2: Moving the project from your own account to the organizations:**
 
-1. If you already have a project in QFieldCloud (Refer to [configure your cloud project](#create-and-configure-your-cloud-project)). in the project click on "Settings" and select "Transfer ownership of this project" to choose the desired Organization for the transfer.
+1. If you already have a project in QFieldCloud (refer to [configure your cloud project](#create-and-configure-your-cloud-project)). In the project, click on "Settings" and select "Transfer ownership of this project" to choose the desired Organization for the transfer.
 
     ![Transferring to Organization](../../assets/images/project_organization_11_transfering_to_organization.png)
 
-2. A pop-up window will appear to confirm the transfer. In order to proceed, you will need to type "Here be dragons" and click "Transfer project".
+2. A pop-up window will appear to confirm the transfer. To proceed, you will need to type "Here be dragons" and click "Transfer project".
 
     ![Confirm transfer](../../assets/images/project_organization_12_confirming_transfer.png)
 
