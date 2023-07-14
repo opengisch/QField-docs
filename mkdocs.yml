@@ -209,7 +209,7 @@ plugins:
           site_description: # ADD ME LOCALIZED
         ro:
           name: Romanian
-          site_name: QField Ecosystem Documentation # TRANSLATE ME
+          site_name: Documentarea ecosistemului QField
           site_description: # ADD ME LOCALIZED
         # tr: Turkish
         # uk: Ukranian
