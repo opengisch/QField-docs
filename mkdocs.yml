@@ -186,7 +186,7 @@ plugins:
         # rm: Romansh
         ja:
           name: 日本語
-          site_name: QField Ecosystem Documentation # TRANSLATE ME
+          site_name: QFieldエコシステムドキュメント
         # gl: Galician
         pt:
           name: Portuguese
