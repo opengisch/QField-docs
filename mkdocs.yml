@@ -179,7 +179,7 @@ plugins:
           name: Français
           site_name: Documentation de l'écosystème QField
           site_description: >-
-            Bienvenue sur la documentation de l'écosystème QField - une suite logicielle pour rendre le travail de terrain simple et rapide. Vous trouverez ici une documentation complète et facile à prendre en main pour tous nos produits. Utilisateur débutant ou confirmé, vous trouverez tout ce dont vous avez besoin pour utiliser QField et les outils associés.
+            Bienvenue dans l'écosystème QField - une suite logicielle pour rendre le travail de terrain simple et rapide. Nous offrons une documentation complète et facile à prendre en main pour tous nos produits QField. Utilisateur débutant ou confirmé, vous trouverez tout ce dont vous avez besoin pour utiliser QField et les outils associés.
         it:
           name: Italiano
           site_name: Documentazione dell'ecosistema QField
