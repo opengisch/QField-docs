@@ -182,7 +182,7 @@ plugins:
           site_name: Documentation de l'écosystème QField
         it:
           name: Italiano
-          site_name: QField Ecosystem Documentation # TRANSLATE ME
+          site_name: Documentazione dell'ecosistema QField
         # rm: Romansh
         ja:
           name: 日本語
