@@ -202,8 +202,8 @@ plugins:
         # hu: Hungarian
         zh:
           name: 简体中文
-          site_name: QField Ecosystem Documentation # TRANSLATE ME
-          site_description: # ADD ME LOCALIZED
+          site_name: QField生态系统文档
+          site_description: 欢迎访问QField生态系统文档--一套旨在使野外工作无缝、高效的产品。在本网页中，我们为所有产品提供了全面且易于理解的文档。无论您是新用户还是经验丰富的专家，您都会找到使用QField及其相关工具所需的一切信息。
         fi:
           name: Finnish
           site_name: QField Ecosystem Documentation # TRANSLATE ME
