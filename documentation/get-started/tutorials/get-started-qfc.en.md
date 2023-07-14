@@ -113,6 +113,46 @@ By double-clicking on a project in the list, you can see and edit the specific p
 
 !![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
 
+### Change the default QFieldCloud server in QField and QField Sync
+
+QField and QFieldSync connect to the QFieldCloud service on [app.qfield.cloud](https://app.qfield.cloud/) by default.
+
+You can modify the default QFieldCloud server QField and QFieldSync connect to:
+
+1. Open the login screen in QField or QFieldSync.
+2. Double-tap on the Nyuki icon (the blue bee QFieldCloud logo).
+3. This action will reveal a field where you can enter the preferred QFieldCloud server address.
+4. Enter the details of the desired server in the provided field.
+(Leaving the field empty will connect to the default QFieldCloud server at app.qfield.cloud.)
+
+!![Reveling server in QField Sync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
+
+!![Reveling server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
+
+### Create and configure your Cloud project
+
+Create a new project by clicking the cloud button, down-left. First, you will need to choose how to create the new project between
+
+* "Convert currently open project to cloud project"
+  A new QFieldCloud-compatible project is created from the currently opened QGIS project. In order to do so, datasets will be copied into an export directory that will act as your local mirror. Vector datasets will be converted to geopackage format to facilitate data synchronization from multiple devices while other dataset types will be copied to the new project lotation.
+
+To convert a current project, a completely empty directory is mandatory.
+
+* "Create a new empty QFieldCloud project"
+  A new blank QFieldCloud project will be created. You will be responsible to move all the project-related files within the selected local directory, with the project file at its root. Project files will only be uploaded when you click the synchronize button. Make sure the selected contains no more than one QGIS project file.
+
+!![Project details](../../assets/images/create_project.png)
+
+A form will ask you for project name, description and local directory. In the local directory you can get different situations:
+
+* The entered path does not contain a QGIS project file yet.
+* The entered path contains one QGIS project file.
+* Please select local directory where the project to be stored.
+* The entered path is a relative path. Please enter an absolute directory path.
+* The entered path is not an directory. Please enter a valid directory path.
+* The entered path is not an existing directory. It will be created after you submit this form.
+* Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
+
 ### Create a project in an Organization
 
 There are two ways to share a project with an organization:
@@ -161,69 +201,13 @@ There are two ways to share a project with an organization:
 
 **Option 2: Moving the project from your own account to the organizations:**
 
-1. If you already have a project in QGIS, open QFieldSync and press "Create New Project".
+1. If you already have a project in QFieldCloud (Refer to [configure your cloud project](#create-and-configure-your-cloud-project)). in the project click on "Settings" and select "Transfer ownership of this project" to choose the desired Organization for the transfer.
 
-![QFieldSync new project](../../assets/images/project_organization_11_qfield_sync_new_project.png)
+![Transferring to Organization](../../assets/images/project_organization_11_transfering_to_organization.png)
 
-2. Choose "Convert currently open project to cloud project (recommended)" and click "Next".
+2. A pop-up window will appear to confirm the transfer. In order to proceed, you will need to type "Here be dragons" and click "Transfer project".
 
-![Selecting convert current project to cloud](../../assets/images/project_organization_12_selecting_convert_current_project_to_cloud.png)
-
-3. Provide a name and path for the new project, then click "Create".
-
-![QFieldSync create project](../../assets/images/project_organization_13_qfield_sync_create_project.png)
-
-4. Once the project is uploaded, you can view the changes in QFieldCloud. Enter the recently uploaded project.
-
-![Entering to new project](../../assets/images/project_organization_14_entering_to_new_project.png)
-
-5. Click on "Settings" and select "Transfer ownership of this project" to choose the desired Organization for the transfer.
-
-![Transferring to Organization](../../assets/images/project_organization_15_transfering_to_organization.png)
-
-6. A pop-up window will appear to confirm the transfer. In order to proceed, you will need to type "Here be dragons" and click "Transfer project".
-
-![Confirm transfer](../../assets/images/project_organization_16_confirming_transfer.png)
-
-### Change the default QFieldCloud server in QField and QField Sync
-
-QField and QFieldSync connect to the QFieldCloud service on [app.qfield.cloud](https://app.qfield.cloud/) by default.
-
-You can modify the default QFieldCloud server QField and QFieldSync connect to:
-
-1. Open the login screen in QField or QFieldSync.
-2. Double-tap on the Nyuki icon (the blue bee QFieldCloud logo).
-3. This action will reveal a field where you can enter the preferred QFieldCloud server address.
-4. Enter the details of the desired server in the provided field.
-(Leaving the field empty will connect to the default QFieldCloud server at app.qfield.cloud.)
-
-!![Reveling server in QField Sync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
-
-!![Reveling server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
-
-### Create and configure your Cloud project
-
-Create a new project by clicking the cloud button, down-left. First, you will need to choose how to create the new project between
-
-* "Convert currently open project to cloud project"
-  A new QFieldCloud-compatible project is created from the currently opened QGIS project. In order to do so, datasets will be copied into an export directory that will act as your local mirror. Vector datasets will be converted to geopackage format to facilitate data synchronization from multiple devices while other dataset types will be copied to the new project lotation.
-
-To convert a current project, a completely empty directory is mandatory.
-
-* "Create a new empty QFieldCloud project"
-  A new blank QFieldCloud project will be created. You will be responsible to move all the project-related files within the selected local directory, with the project file at its root. Project files will only be uploaded when you click the synchronize button. Make sure the selected contains no more than one QGIS project file.
-
-!![Project details](../../assets/images/create_project.png)
-
-A form will ask you for project name, description and local directory. In the local directory you can get different situations:
-
-* The entered path does not contain a QGIS project file yet.
-* The entered path contains one QGIS project file.
-* Please select local directory where the project to be stored.
-* The entered path is a relative path. Please enter an absolute directory path.
-* The entered path is not an directory. Please enter a valid directory path.
-* The entered path is not an existing directory. It will be created after you submit this form.
-* Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
+![Confirm transfer](../../assets/images/project_organization_12_confirming_transfer.png)
 
 ### Configure your project layers for QField
 
