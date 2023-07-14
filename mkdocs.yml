@@ -1,5 +1,4 @@
 # Project information
-site_name: QField Ecosystem Documentation
 site_url: https://docs.qfield.org/
 site_author: OPENGIS.ch
 site_description: >-
@@ -9,9 +8,10 @@ site_description: >-
 docs_dir: documentation  # because of a bug in transifex-client the repo dir name cannot contain the doc dir name (e.g. qfield-docs and docs)
 
 # Repository
-repo_name: opengisch/qfield
-repo_url: https://github.com/opengisch/qfield
-edit_uri: https://github.com/opengisch/qfield-docs/tree/master/documentation/
+repo_name: opengisch/qfield-docs
+repo_url: https://github.com/opengisch/qfield-docs
+# edit_uri: https://github.com/opengisch/qfield-docs/tree/master/documentation/
+edit_uri_template: 'blob/master/documentation/{path}'
 
 # Copyright
 copyright: Copyright &copy; 2023 <a href="https://OPENGIS.ch">OPENGIS.ch</a> -  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a>
@@ -171,19 +171,39 @@ plugins:
       # FIX ME: Add autodetection to translation rates so that only languages
       # with >30% translations are built. See https://www.transifex.com/opengisch/qfield-documentation/dashboard/
       languages:
-        en: English
-        de: Deutsch
-        fr: Français
-        it: Italiano
+        en:
+          name: English
+          site_name: QField Ecosystem Documentation
+        de:
+          name: Deutsch
+          site_name: QField Ecosystem Documentation # TRANSLATE ME
+        fr:
+          name: Français
+          site_name: Documentation de l'écosystème QField
+        it:
+          name: Italiano
+          site_name: QField Ecosystem Documentation # TRANSLATE ME
         # rm: Romansh
-        ja: 日本語
+        ja:
+          name: 日本語
+          site_name: QField Ecosystem Documentation # TRANSLATE ME
         # gl: Galician
-        pt: Portuguese
-        es: Español
+        pt:
+          name: Portuguese
+          site_name: QField Ecosystem Documentation # TRANSLATE ME
+        es:
+          name: Español
+          site_name: QField Ecosystem Documentation # TRANSLATE ME
         # hu: Hungarian
-        zh: 简体中文
-        fi: Finnish
-        ro: Romanian
+        zh:
+          name: 简体中文
+          site_name: QField Ecosystem Documentation # TRANSLATE ME
+        fi:
+          name: Finnish
+          site_name: QField Ecosystem Documentation # TRANSLATE ME
+        ro:
+          name: Romanian
+          site_name: QField Ecosystem Documentation # TRANSLATE ME
         # tr: Turkish
         # uk: Ukranian
         # nl: Dutch
