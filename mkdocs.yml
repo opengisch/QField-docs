@@ -176,7 +176,7 @@ plugins:
           site_name: QField Ecosystem Documentation
         de:
           name: Deutsch
-          site_name: QField Ecosystem Documentation # TRANSLATE ME
+          site_name: QField Ökosystem Dokumentation
         fr:
           name: Français
           site_name: Documentation de l'écosystème QField
