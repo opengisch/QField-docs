@@ -194,7 +194,10 @@ plugins:
         pt:
           name: Portuguese
           site_name: Documentação do Ecossistema QField
-          site_description: # ADD ME LOCALIZED
+          site_description: >-
+            Bem-vindo à documentação do ecossistema QField - um conjunto de produtos projetados para tornar o trabalho de campo contínuo e eficiente. Nestas páginas, fornecemos documentação abrangente e fácil de entender para todos os nossos produtos. Caso seja um novo utilizador ou um profissional experiente, encontrará tudo o que precisa de saber sobre o uso do QField e as suas respetivas ferramentas.
+
+
         es:
           name: Español
           site_name: QField Ecosystem Documentation # TRANSLATE ME
