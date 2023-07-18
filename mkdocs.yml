@@ -193,7 +193,7 @@ plugins:
         # gl: Galician
         pt:
           name: Portuguese
-          site_name: QField Ecosystem Documentation # TRANSLATE ME
+          site_name: Documentação do Ecossistema QField
           site_description: # ADD ME LOCALIZED
         es:
           name: Español
