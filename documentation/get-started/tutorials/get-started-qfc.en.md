@@ -171,7 +171,7 @@ There are two ways to share a project with an organization:
 
     ![New empty project](../../assets/images/project_organization_03_new_empty_project.png)
 
-4. And you willl see in the overview of the new project created.
+4. You can see the new project in the overview.
 
     ![New project created](../../assets/images/project_organization_04_new_project_created.png)
 
