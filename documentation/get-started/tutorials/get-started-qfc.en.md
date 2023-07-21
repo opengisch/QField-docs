@@ -153,6 +153,62 @@ A form will ask you for project name, description and local directory. In the lo
 * The entered path is not an existing directory. It will be created after you submit this form.
 * Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
 
+### Create a project in an Organization
+
+There are two ways to share a project with an organization:
+
+**Option 1: Uploading directly to the organization:**
+
+1. Select your organization.
+
+    ![Entering into Organization](../../assets/images/project_organization_01_entering_into_organization.png)
+
+2. Once you get into the organization, click on "Create a project".
+
+    ![Creating Project](../../assets/images/project_organization_02_creating_project.png)
+
+3. Select "Create a new empty project".
+
+    ![New empty project](../../assets/images/project_organization_03_new_empty_project.png)
+
+4. You can see the new project in the overview.
+
+    ![New project created](../../assets/images/project_organization_04_new_project_created.png)
+
+5. On QGIS in QFieldSync, you will see the new project listed, click on "Edit Selected Cloud Project".
+
+    ![QFieldSync](../../assets/images/project_organization_05_qfield_sync.png)
+
+6. Choose the folder where you want to save the project.
+
+    ![Selecting folder](../../assets/images/project_organization_06_selecting_folder.png)
+
+7. In the selected folder, you can either paste an already worked-on project or save a new one.
+
+    ![Copy to project folder](../../assets/images/project_organization_07_copy_project_to_folder.png)
+
+8. Once the folder contains the project, you can synchronize it.
+
+    ![QFieldSync Overview](../../assets/images/project_organization_08_qfield_sync_overview.png)
+
+9. Finally, push the changes to the cloud.
+
+    ![Pushing changes to QFieldCloud](../../assets/images/project_organization_09_pushing_changes_to_cloud.png)
+
+10. You can verify that the files are present in the Organization project.
+
+    ![Project files over view in QFieldCloud](../../assets/images/project_organization_10_files_overview_in_cloud.png)
+
+**Option 2: Moving the project from your own account to the organizations:**
+
+1. If you already have a project in QFieldCloud (refer to [configure your cloud project](#create-and-configure-your-cloud-project)). In the project, click on "Settings" and select "Transfer ownership of this project" to choose the desired Organization for the transfer.
+
+    ![Transferring to Organization](../../assets/images/project_organization_11_transfering_to_organization.png)
+
+2. A pop-up window will appear to confirm the transfer. To proceed, you will need to type "Here be dragons" and click "Transfer project".
+
+    ![Confirm transfer](../../assets/images/project_organization_12_confirming_transfer.png)
+
 ### Configure your project layers for QField
 
 Configure the project layers by clicking the fifth icon in the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"}. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer. Get more information about how to configure your layers in the [Get Started guide for QFieldSync](./get-started-qfs.md)!.
