@@ -11,7 +11,6 @@ If a project contains online layers (PostGIS, WMS, WFS, etc), QFieldCloud will t
 |------------------|-----------------|
 | app.qfield.cloud | 159.100.252.133 |
 | app.qfield.cloud | 194.182.188.113 |
-| app.qfield.cloud | 185.203.114.168 (deprecated) |
 
 
 ## PostgreSQL configuration
