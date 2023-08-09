@@ -47,6 +47,14 @@ If the billing information is incomplete, at any time it is possible to finish f
 
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
 
+### Discontinuing Services in QFieldCloud
+
+1. **For Pro Plan Accounts**, click on your username, choose "Settings." **For Organization plan**, click on the name of the Organization (you have to be the owner), click on "Edit Organization".![Enter to setting](../../assets/images/discontinuing_service_01_enter_to_setting.png)
+2. Proceed to the "Billing" section, click on "Change".![Enter to billing section](../../assets/images/discontinuing_service_02_change_subcription.png)
+3. Select "Cancel Subscription".![Cancel subscription](../../assets/images/discontinuing_service_03_cancel_subscription.png)
+4. Confirm the cancellation in the subsequent pop-up window.![Confirm Cancel subscription](../../assets/images/discontinuing_service_04_popup_cancel_subcription.png)
+5. A Nyuki message will then appear, indicating that the subscription will conclude at the end of the current billing period.![Cancellation message](../../assets/images/discontinuing_service_05_nyuki_message.png)
+
 ### Organizations
 
 Your organizations are listed here. Find out more about teams, members and their roles in [concepts of the QField Ecosystem](https://docs.qfield.org/reference/qfieldcloud/concepts/).
