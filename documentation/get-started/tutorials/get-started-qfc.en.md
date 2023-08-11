@@ -235,7 +235,7 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
 1. Access the Settings of your account.
 2. Navigate to the Notifications section. Here, you can customize the frequency of notifications you wish to receive at the email address registered with your account.![Synchronize](../../assets/images/frequency_notifications_settings.png)
 
-    The notifications event that will create a notification are:
+    The events you get notified about are:
     - User created
     - Organization created
     - Organization deleted
