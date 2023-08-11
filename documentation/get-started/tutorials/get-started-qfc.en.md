@@ -250,6 +250,8 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
     - Project membership created
     - Project membership deleted
 
+You will receive notifications for events in which you are not the actor. These notifications are specifically for events that are initiated by other members of your organization or collaborators on your projects.
+
 ## Field device
 
 :material-tablet: Fieldwork
