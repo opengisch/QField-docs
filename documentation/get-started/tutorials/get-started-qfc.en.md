@@ -233,7 +233,7 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
 ### Activate Notifications for QFieldCloud changes
 
 1. Access the Settings of your account.
-2. Navigate to the Notifications section. Here, you can customize the frequency of notifications you wish to receive at the valid email address registered with your account.![Synchronize](../../assets/images/frequency_notifications_settings.png)
+2. Navigate to the Notifications section. Here, you can customize the frequency of notifications you wish to receive at the email address registered with your account.![Synchronize](../../assets/images/frequency_notifications_settings.png)
 
     The notifications event that will create a notification are:
     - User created
