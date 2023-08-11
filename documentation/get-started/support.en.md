@@ -7,9 +7,9 @@ tx_slug: documentation_get-started_support
 
 ## Commercial Support
 
-As developer of QField, [OPENGIS.ch](https://www.opengis.ch/#features)
+As developer of QField and QFieldCloud, [OPENGIS.ch](https://www.opengis.ch/#features)
 provides [training packages](https://www.opengis.ch/qfield-training/)
-and custom commercial [support contracts](https://www.opengis.ch/qgis-support/) with SLA
+and custom commercial [support and development contracts](https://www.opengis.ch/qgis-support/) with SLA.
 
 ### Development and Custom Apps
 
