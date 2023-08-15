@@ -5,15 +5,15 @@ tx_slug: documentation_how-to_map-interaction
 
 # Interact with the map
 
-Here are described some of the possible interaction with the map possible in QField.
+Here are some of the possible interactions with the map in QField.
 
 ## Map legend
 :material-tablet: Fieldwork
 
-Open the *Main menu* and expend the layers list to display the legend
+Open the *Main menu* and expand the layers list to display the legend
 of the map.
 
-On double-tap or long-press on a layer you get offered the following possibilities.
+On double-tap or long-press on a layer, you get offered the following possibilities.
 
 !![](../assets/images/howto_legendoptions.png)
 
@@ -35,10 +35,10 @@ screen.
 
 !![](../assets/images/howto_identification.png)
 
-Tap on one of the listed feature to access its attributes.
+Tap on one of the listed features to access its attributes.
 
 1.  Tap the *arrows* to scroll through all the identified features.
-2.  Tap the *centre button* to center the map on the selected feature.
+2.  Tap the *centre button* to centre the map on the selected feature.
 3.  Tap the *edit button* to edit the attributes of the selected
     feature.
 4.  Scroll through the *sub-menus* to access all the attributes.
@@ -47,11 +47,11 @@ Tap on one of the listed feature to access its attributes.
 
 ### Select identified features
 
-With long-press you can toggle the feature selection.
+With long-press, you can toggle the feature selection.
 
 !![](../assets/images/howto_selection.png)
 
-When features then are selected, you can perform the actions provided in the three-dot-menu on the top right.
+When features are selected, you can perform the actions in the three-dot menu on the top right.
 
 !![](../assets/images/howto_identification_options.png)
 
@@ -59,7 +59,7 @@ When features then are selected, you can perform the actions provided in the thr
 ### Exceptions to identified layers
 
 Often it is not required to be able to query every layer. Some layers
-are only present as basemap and their attributes are not of interest.
+are only present as basemap, and their attributes are not of interest.
 
-You can manage this layerlist in QGIS desktop in
+You can manage this layer list in QGIS desktop in
 *Project > Project Properties > Identify Layers* and uncheck the base layers.
