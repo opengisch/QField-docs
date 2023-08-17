@@ -81,6 +81,17 @@ A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive li
 - The project is too big and the job has failed to run.
 - There are hidden files and directories within the project that are preventing the normal work of QFieldCloud. Hidden files and directories are those starting with a leading dot (`.`).
 
+### Re-apply changes in QFieldCloud
+
+To reapply the changes, in QFieldCloud go to to project in the Changes section, the changes are order in reverse order by the time of the changes, find the changes you want to re-apply and in the right side in the Action column click in the dropdown list.
+
+1. Re-apply Specific Changes: If you need to reapply specific changes, you can do so by selecting manually each change you want to re-apply and select "Re-apply".
+
+2. Re-apply Recent Changes: If you prefer to reapply  the most recent modifications made to the project, you can begin by identifying the initial change you want to restore, then select "Re-apply this and newer changes".
+
+Finally click the "Save all" button.
+
+!![Re-apply changes](../../assets/images/re-apply-changes-in-qfieldcloud.png)
 
 ## Troubleshoot job logs
 
