@@ -10,7 +10,7 @@ Here are some of the possible interactions with the map in QField.
 ## Map legend
 :material-tablet: Fieldwork
 
-Open the *Main menu* and expand the layers list to display the legend
+Open the *Main menu* and expend the layers list to display the legend
 of the map.
 
 On double-tap or long-press on a layer, you get offered the following possibilities.
