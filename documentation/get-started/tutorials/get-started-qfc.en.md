@@ -253,6 +253,28 @@ Once configured, you can press the cloud button to open the synchronization dial
 
 Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
 
+### Activate Notifications for QFieldCloud changes
+
+1. Access the Settings of your account.
+2. Navigate to the Notifications section. Here, you can customize the frequency of notifications you wish to receive at the email address registered with your account.![Synchronize](../../assets/images/frequency_notifications_settings.png)
+
+    The events you get notified about are:
+    - User created
+    - Organization created
+    - Organization deleted
+    - Organization membership created
+    - Organization membership deleted
+    - Team created
+    - Team deleted
+    - Team membership created
+    - Team membership deleted
+    - Project created
+    - Project deleted
+    - Project membership created
+    - Project membership deleted
+
+You will receive notifications for events in which you are not the actor. These notifications are specifically for events that are initiated by other members of your organization or collaborators on your projects.
+
 ## Field device
 
 :material-tablet: Fieldwork
