@@ -83,11 +83,14 @@ A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive li
 
 ### Re-apply changes in QFieldCloud
 
-To reapply the changes, in QFieldCloud go to the project in the Changes section, the changes are ordered in reverse order by the time of the changes, find the changes you want to re-apply and on the right side in the Action column click on the dropdown list.
+1. Access to the project.
+2. Go to the Changes section. (Changes are sorted in reverse order by time)
+3. Find the specific changes you want to reapply.
+4. In the Action column on the right, click the dropdown list.
+5. Choose the desired action to reapply the changes.
 
-1. Re-apply Specific Changes: If you need to reapply specific changes, you can do so by selecting manually each change you want to re-apply and select "Re-apply".
-
-2. Re-apply Recent Changes: If you prefer to reapply  the most recent modifications made to the project, you can begin by identifying the initial change you want to restore, then select "Re-apply this and newer changes".
+    - Re-apply Specific Changes: If you need to reapply specific changes, you can do so by selecting manually each change you want to re-apply and select "Re-apply".
+    - Re-apply Recent Changes: If you prefer to reapply  the most recent modifications made to the project, you can begin by identifying the initial change you want to restore, then select "Re-apply this and newer changes".
 
 Finally, click the "Save all" button.
 
