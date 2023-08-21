@@ -89,7 +89,7 @@ To reapply the changes, in QFieldCloud go to the project in the Changes section,
 
 2. Re-apply Recent Changes: If you prefer to reapply  the most recent modifications made to the project, you can begin by identifying the initial change you want to restore, then select "Re-apply this and newer changes".
 
-Finally click the "Save all" button.
+Finally, click the "Save all" button.
 
 !![Re-apply changes](../../assets/images/re-apply-changes-in-qfieldcloud.png)
 
