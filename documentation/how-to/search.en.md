@@ -18,7 +18,7 @@ open expand the search bar.
 
 The value entered in the search bar will be used to find features with
 matching attribute values. A minimum of three characters is required to
-start the search.
+start the search. Additionally, you have the option to employ the code scan functionality for this purpose.
 
 !![image](../assets/images/search-bar.png)
 
