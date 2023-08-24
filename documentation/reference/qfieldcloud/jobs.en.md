@@ -84,7 +84,7 @@ A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive li
 ### Re-apply changes in QFieldCloud
 
 1. Click on the project's name under _My projects_.
-2. Go to the Changes section. (Changes are sorted in reverse order by time)
+2. Go to the _Changes_ section. (Changes are sorted from latest to oldest)
 3. Find the specific changes you want to reapply.
 4. In the Action column on the right, click the dropdown list.
 5. Choose the desired action to reapply the changes.
