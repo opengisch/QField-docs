@@ -92,7 +92,7 @@ A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive li
     - Re-apply Specific Changes: If you need to reapply specific changes, select each change you want to re-apply and click __Re-apply__.
     - Re-apply Recent Changes: If you prefer to reapply the most recent modifications made to the project, identify the initial change you want to restore, then select __Re-apply this and newer changes__.
 
-Finally, click the "Save all" button.
+Finally, click the __Save all__ button.
 
 !![Re-apply changes](../../assets/images/re-apply-changes-in-qfieldcloud.png)
 
