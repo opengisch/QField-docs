@@ -86,7 +86,7 @@ A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive li
 1. Click on the project's name under _My projects_.
 2. Go to the _Changes_ section. (Changes are sorted from latest to oldest)
 3. Find the specific changes you want to reapply.
-4. In the Action column on the right, click the dropdown list.
+4. In the _Action_ column on the right, click on the dropdown list.
 5. Choose the desired action to reapply the changes.
 
     - Re-apply Specific Changes: If you need to reapply specific changes, you can do so by selecting manually each change you want to re-apply and select "Re-apply".
