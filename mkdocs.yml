@@ -1,17 +1,13 @@
 # Project information
-site_name: QField Ecosystem Documentation
 site_url: https://docs.qfield.org/
 site_author: OPENGIS.ch
-site_description: >-
-  Welcome to the QField ecosystem documentation - a suite of products designed to make fieldwork seamless and efficient. In this pages we provide comprehensive and easy-to-understand documentation for all of our products. Whether you're a new user or an experienced pro, you'll find everything you need to know about using QField and its related tools.
-
-
 docs_dir: documentation  # because of a bug in transifex-client the repo dir name cannot contain the doc dir name (e.g. qfield-docs and docs)
 
 # Repository
-repo_name: opengisch/qfield
-repo_url: https://github.com/opengisch/qfield
-edit_uri: https://github.com/opengisch/qfield-docs/tree/master/documentation/
+repo_name: opengisch/qfield-docs
+repo_url: https://github.com/opengisch/qfield-docs
+# edit_uri: https://github.com/opengisch/qfield-docs/tree/master/documentation/
+edit_uri_template: 'blob/master/documentation/{path}'
 
 # Copyright
 copyright: Copyright &copy; 2023 <a href="https://OPENGIS.ch">OPENGIS.ch</a> -  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a>
@@ -171,19 +167,53 @@ plugins:
       # FIX ME: Add autodetection to translation rates so that only languages
       # with >30% translations are built. See https://www.transifex.com/opengisch/qfield-documentation/dashboard/
       languages:
-        en: English
-        de: Deutsch
-        fr: Français
-        it: Italiano
+        en:
+          name: English
+          site_name: QField Ecosystem Documentation
+          site_description: >-
+            Welcome to the QField ecosystem documentation - a suite of products designed to make fieldwork seamless and efficient. In this pages we provide comprehensive and easy-to-understand documentation for all of our products. Whether you're a new user or an experienced pro, you'll find everything you need to know about using QField and its related tools.
+        de:
+          name: Deutsch
+          site_name: QField Ökosystem Dokumentation
+        fr:
+          name: Français
+          site_name: Documentation de l'écosystème QField
+          site_description: >-
+            Bienvenue dans l'écosystème QField - une suite logicielle pour rendre le travail de terrain simple et rapide. Nous offrons une documentation complète et facile à prendre en main pour tous nos produits QField. Utilisateur débutant ou confirmé, vous trouverez tout ce dont vous avez besoin pour utiliser QField et les outils associés.
+        it:
+          name: Italiano
+          site_name: Documentazione dell'ecosistema QField
+          site_description: # ADD ME LOCALIZED
         # rm: Romansh
-        ja: 日本語
+        ja:
+          name: 日本語
+          site_name: QFieldエコシステムドキュメント
+          site_description: >-
+            QFieldエコシステムのドキュメントへようこそ。QFieldエコシステムは、フィールドワークをシームレスかつ効率的にするために設計された製品群です。このページでは、QField のすべての製品について、包括的でわかりやすいドキュメントを提供しています。初めてお使いになる方でも、経験豊富なプロの方でも、QFieldとその関連ツールの使用に関して知っておくべきことが全て網羅されています。
         # gl: Galician
-        pt: Portuguese
-        es: Español
+        pt:
+          name: Portuguese
+          site_name: Documentação do Ecossistema QField
+          site_description: >-
+            Bem-vindo à documentação do ecossistema QField - um conjunto de produtos projetados para tornar o trabalho de campo contínuo e eficiente. Nestas páginas, fornecemos documentação abrangente e fácil de entender para todos os nossos produtos. Caso seja um novo utilizador ou um profissional experiente, encontrará tudo o que precisa de saber sobre o uso do QField e as suas respetivas ferramentas.
+        es:
+          name: Español
+          site_name: Documentación del ecosistema QField # TRANSLATE ME
+          site_description: >-
+            Bienvenido a la documentación del ecosistema QField: un conjunto de productos diseñados para hacer que el trabajo de campo sea fluido y eficiente. En estas páginas proporcionamos documentación completa y fácil de entender para todos nuestros productos. Ya sea un usuario nuevo o un profesional experimentado, encontrará todo lo que necesita saber sobre el uso de QField y sus herramientas relacionadas.
         # hu: Hungarian
-        zh: 简体中文
-        fi: Finnish
-        ro: Romanian
+        zh:
+          name: 简体中文
+          site_name: QField生态系统文档
+          site_description: 欢迎访问QField生态系统文档--一套旨在使野外工作无缝、高效的产品。在本网页中，我们为所有产品提供了全面且易于理解的文档。无论您是新用户还是经验丰富的专家，您都会找到使用QField及其相关工具所需的一切信息。
+        fi:
+          name: Finnish
+          site_name: QField Ecosystem Documentation # TRANSLATE ME
+          site_description: # ADD ME LOCALIZED
+        ro:
+          name: Romanian
+          site_name: Documentarea ecosistemului QField
+          site_description: # ADD ME LOCALIZED
         # tr: Turkish
         # uk: Ukranian
         # nl: Dutch
