@@ -15,10 +15,10 @@ A project can be created in two different ways: either using the QFieldCloud web
 
 ## Files
 
-Files are the skeleton on which QFieldCloud project works. To make a QFieldCloud project alive you need to upload at least a single QGIS project file in the `.qgs` or `.qgz` file formats. All geospatial files must be uploaded using the same relative paths as on your computer. If external SVG or raster symbology is used, you must to upload the corresponding files too.
+Files are the skeleton on which QFieldCloud project works. To make a QFieldCloud project alive users need to upload at least a single QGIS project file in the `.qgs` or `.qgz` file formats. All geospatial files must be uploaded using the same relative paths as on one's computer. If external SVG or raster symbology is used, users must upload the corresponding files too.
 
 !!! note
-    QFieldCloud does not support projects stored in a GeoPackage (`.gpkg`) files (but you can still use GeoPackage files to store datasets for your project).
+    QFieldCloud does not support projects stored in a GeoPackage (`.gpkg`) files (but users can still use GeoPackage files to store datasets for their projects).
 
 A typical file structure of a QGIS file might look something like this:
 ```
@@ -39,11 +39,11 @@ project
 
 ## File versions
 
-QFieldCloud uses file versioning. This allows you to restore to a previous version of any modified file. Files and file versions can be found under the **Files** section of your project. Subscriptions plans allow a different number of versions per file. See the qfield.cloud [pricing page for further details](https://qfield.cloud/pricing.html).
+QFieldCloud uses file versioning. This allows users to restore to a previous version of any modified file. Files and file versions can be found under the **Files** section of one's projects. Subscriptions plans allow a different number of versions per file. See the qfield.cloud [pricing page for further details](https://qfield.cloud/pricing.html).
 
 ### Deleting old file versions
 
-To ensure that only relevant file versions are kept, and to reduce the amount of storage needed by your account, you can delete obsolete file versions. You can manually delete file versions from the project's **File** section.
+To ensure that only relevant file versions are kept, and to reduce the amount of storage needed by accounts, users can delete obsolete file versions. One can manually delete file versions from the project's **File** section.
 
 To delete file versions in QFieldCloud, follow these steps:
 
@@ -87,7 +87,7 @@ Secrets are settings that are securely stored in encrypted way. Project jobs aut
 
 There are two types of secrets:
 
-- **Environment variables** - Environment variables will be available to QGIS while your project jobs are running.
+- **Environment variables** - Environment variables will be available to QGIS while your project's jobs are running.
 - **pgservice connection** - A PostgreSQL/PostGIS connection as defined in the <code>.pg_service.conf</code> configuration file. If you use multiple service definitions, you should add multiple secrets for each of them.
 
 ## Settings
