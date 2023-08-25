@@ -57,6 +57,22 @@ to edit attribute values for the newly-added feature.
     You can supress the attribute form upon feature addition via a configuration option
     for a given layer via its properties dialog in QGIS
 
+Moreover, you have the option to digitize the form using the scanning QR or Bar Code reader functionality available within the feature form's text edit widget.
+
+!![](../assets/images/digitizing-with-qr-code-1-attribute-form.png)
+
+Upon clicking the three-dot icon button, a menu will be presented offering three distinct actions: "Copy," "Paste," and "Scan Code".
+
+!![](../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
+
+Opting for the "Scan Code" action will trigger QField's code reader, initiating the scanning process to decode the code.
+
+!![](../assets/images/digitizing-with-qr-code-3-code-reader.png)
+
+Once the codes have been successfully scanned, users can validate their choice by clicking the checkmark (✔️) OK button. This action will populate the attribute with the decoded value, streamlining the digitization process.
+
+!![](../assets/images/digitizing-with-qr-code-4-it-worked.png)
+
 #### Remember attribute values
 
 For quick collection of rather homogeneus datasets, it is crucial to not
