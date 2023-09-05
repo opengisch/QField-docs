@@ -93,7 +93,7 @@ to files.
 
 It can be used to:
 
-- show and take photos
+- show and take photos or add pictures from the gallery
 - listen and record sound clips
 - show and record videos
 - show links to external files like PDFs or documents
