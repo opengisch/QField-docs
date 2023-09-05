@@ -85,7 +85,7 @@ information (e.g. percentage) in the linking table.
 In case of the many-to-one cardinality on many-to-many relations the
 *Display Expression* needs to be set on the linking table.
 
-## Configure Attachment/Pictures Widget
+## Configure Attachment Widget
 :material-monitor: Desktop preparation
 
 The widget type *Attachment* is used with fields that store the path
@@ -93,28 +93,46 @@ to files.
 
 It can be used to:
 
--   show and take photos
--   show links to external files like pdfs or documents
+- show and take photos or add pictures from the gallery
+- listen and record sound clips
+- show and record videos
+- show links to external files like PDFs or documents
 
-!![](../assets/images/attachement-setting.png)
+!![Form attachment picture](../assets/images/attachement-setting-picture.png)
 
-The path should be set to relative. The pictures, pdf and docs are
+!![Form attachment audio](../assets/images/attachement-setting-audio.png)
+
+!![Form attachment video](../assets/images/attachement-setting-video.png)
+
+The path should be set to relative. The pictures, audios, videos, pdf and docs are
 stored then in a sub-directory of the project, where the link stored in
 the textfield is pointing to.
 
-In QField the picture is displayed. By clicking the camera symbol the
-camera is started to update the picture with a new photo.
+!!! note
+    QGIS 3.30 or newer is required for the audio and video functionality
 
-!![pictures](../assets/images/qfield_picture.png)
+In QField the attachments are displayed. By clicking the icons symbol the camera or audio record is started to update the pictures, videos or audios with a new media.
 
-On synchronization the sub-directory with the pictures, pdf and docs has
-to be copied as well.
+!![Media](../assets/images/attachments-qfield-media.png)
+
+On synchronization the sub-directory with the pictures, videos audios, pdf and docs has to be copied as well.
 
 The option *hyperlink* on the attachment widget will disable the
 camera functionality and enable a hyperlink to open a document (pdf,
 doc, \...).
 
 ![](../assets/images/hyperlink_option.png)
+
+## Configurable attachment path
+:material-monitor: Desktop preparation
+
+QFieldSync provides the possibility to configure the path of attachments.
+
+- Go to _QFieldSync plugin > Layers Properties_
+
+Use expressions to specify the path of the attachments. By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
+
+!![Paths](../assets/images/paths-saving-media.png)
 
 ## Configure a Value Relation Widget
 :material-monitor: Desktop preparation
