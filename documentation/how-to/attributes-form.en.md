@@ -130,7 +130,7 @@ QFieldSync provides the possibility to configure the path of attachments.
 
 - Go to _QFieldSync plugin > Layers Properties_
 
-Use expressions to specify the path of the attachments. By default, pictures are saved into the "DCIM" folder, audio are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
+Use expressions to specify the path of the attachments. By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
 !![Paths](../assets/images/paths-saving-media.png)
 
