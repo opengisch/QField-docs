@@ -1,7 +1,8 @@
 mkdocs-material==8.5.4
 mkdocs-material-extensions==1.1.1
 mkdocs-video==1.3.0
-mkdocs-static-i18n
+# TODO Remove the pin below as soon as the commit makes into a proper PyPI release
+mkdocs-static-i18n @ git+https://github.com/ultrabug/mkdocs-static-i18n.git@32394c814cab9579c33528363c676e69c30df7fc
 fancyboxmd==1.1.0
 PyGithub==1.55
 python-dotenv==0.19.2
