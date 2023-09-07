@@ -178,7 +178,7 @@ A form will ask you for project name, description and local directory. In the lo
 
 ### Create a project in an Organization
 
-There are two ways to share a project with an organization:
+There are three ways to share a project with an organization:
 
 **Option 1: Uploading directly to the organization:**
 
@@ -231,6 +231,21 @@ There are two ways to share a project with an organization:
 2. A pop-up window will appear to confirm the transfer. To proceed, you will need to type "Here be dragons" and click "Transfer project".
 
     ![Confirm transfer](../../assets/images/project_organization_12_confirming_transfer.png)
+
+**Option 3: Directly convert your local project to an Organization QFieldCloud project:**
+
+1. Follow the steps [configure your cloud project](#create-and-configure-your-cloud-project), ultil you get the "Project details".
+
+2. Change the owner of the project to your Organization.
+
+    ![Project files over view in QFieldCloud](../../assets/images/converting-project-to-organization-01.png)
+
+3. Click on "Create" to start the conversion and synchronization. When finish you will see the project is in your Organization in QFieldCloud.
+
+    ![Project files over view in QFieldCloud](../../assets/images/converting-project-to-organization-02.png)
+
+!!! note
+    QField Sync 4.6 or newer is required for this functionality
 
 ### Configure your project layers for QField
 
