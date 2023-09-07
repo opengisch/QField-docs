@@ -92,7 +92,7 @@ There are two types of secrets:
 
 ## Settings
 
-Project settings are available only to project owners and collaborators with elevated permissions (FIX ME: specify). _Settings_ should be handled carefully as users can modify sensitive project settings and perform unrecoverable actions.
+Project settings are available only to project owners and collaborators with "admin" roles. _Settings_ should be handled carefully as users can modify sensitive project settings and perform unrecoverable actions.
 
 - Change the project visibility to public.
 - Change the project owner.
