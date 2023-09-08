@@ -19,7 +19,7 @@ The QField Certificate Program is designed to foster community involvement in th
 
 - Involvement in your local QField User Group
 
-- Publication of open QField course ware
+- Publication of open QField courseware
 
 To contact the certification team, please write to info@opengis.ch.
 
