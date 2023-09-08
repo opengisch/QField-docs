@@ -25,7 +25,7 @@ To contact the certification team, please write to info@opengis.ch.
 
 ## Certification Process
 
-Each of your courses requires you to provide training material. This includes exercises, lectures, and data. This material will be reviewed to ensure that it is current, accurate, and of high quality. If the material is not of adequate quality, it may be refused.
+Each of your courses requires a check of the training material. This includes exercises, lectures, and data. This material will be reviewed to ensure that it is current, accurate, and of high quality. If the material is not of adequate quality, it may be refused.
 
 The review will be handled by OPENGIS.ch.
 
