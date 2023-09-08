@@ -11,7 +11,7 @@ The QField Certificate Program is designed to foster community involvement in th
 
 - Translation of QField materials
 
-- Filing bug reports
+- Opening and interacting on QField issues and participating on community platforms
 
 - Financially supporting new feature development
 
