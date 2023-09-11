@@ -178,7 +178,7 @@ A form will ask you for project name, description and local directory. In the lo
 
 ### Create a project in an Organization
 
-There are three ways to share a project with an organization:
+How to create a project in an organization:
 
 **Option 1: Directly convert your local project to an Organization QFieldCloud project:**
 
