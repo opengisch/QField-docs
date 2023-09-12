@@ -16,7 +16,7 @@ Here is an example for navigation to features of a point layer.
 Create a new field in your data table (type text). In the attribute form settings, select "attachment" as widget type. Tick "Display a hyperlink for document path (read-only)".
 Then enter the following expression as default value:
 
-```
+```sql
 concat(
   'https://www.google.com/maps/dir/?api=1&destination=',
   y(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
