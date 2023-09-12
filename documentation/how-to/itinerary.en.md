@@ -35,4 +35,3 @@ If you simply want to show your feature location in Google Maps, you can use the
 :material-tablet: Fieldwork
 
 Click on the feature on the map where you want navigation to or that you want to open in Google Maps. In the attribute form, click on the link towards Google Maps.
-
