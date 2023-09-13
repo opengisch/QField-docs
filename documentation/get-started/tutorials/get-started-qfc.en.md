@@ -153,7 +153,7 @@ You can modify the default QFieldCloud server QField and QFieldSync connect to:
 !![Reveling server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
 
 !!! Note
-    It's important to note that QField Sync does not support the same cloud project in multiple QGIS profiles. As a recommendation use the default profile for your working projects to avoid synchronization issues.
+    It's important to note that QFieldSync does not support the same cloud project in multiple QGIS profiles. As a recommendation use single QGIS profile for your QFieldCloud projects to avoid synchronization issues.
 
 ### Create and configure your Cloud project
 
