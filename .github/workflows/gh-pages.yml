@@ -70,7 +70,7 @@ jobs:
             echo -e "social:\n  cards_layout_options:\n    font_family: Noto Sans JP" > site/jp/.meta.yml
             echo "Successfully injected meta data into Japanese translation."
           else
-            echo "Japanse translations not found among $(ls). Skipping this step."
+            echo "Japanese translations not found among $(ls). Skipping this step."
           fi
 
       - name: Deploy to GitHub Pages
