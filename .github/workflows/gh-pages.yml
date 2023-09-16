@@ -63,6 +63,18 @@ jobs:
         env:
           DEFAULT_LANGUAGE_ONLY: false
 
+      - name: Inject meta data to ensure proper font rendering for some translations
+        run: |
+          if [[ -d site/ja ]]
+          then
+            echo -e "social:\n  cards_layout_options:\n    font_family: Noto Sans JP" > site/ja/.meta.yml
+            echo "Successfully injected meta data into Japanese translation."
+          else
+            echo "*** Japanese translations not found in:"
+            echo "$(ls site)"
+            echo "*** Skipping this step."
+          fi
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
