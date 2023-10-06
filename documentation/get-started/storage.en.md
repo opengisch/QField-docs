@@ -126,6 +126,29 @@ Users can select the ‘Send to‘ action for individual datasets, allowing for 
 edited datasets directly to third party apps such as Gmail, Drive, Dropbox, Nextcloud,
 <insert your favourite messenger app>, etc.
 
+To export the layers from a synchronized QFieldCloud project, either on your device or a preferred cloud provider. To do this, within your project:
+
+1. Click on the 'Gear icon' located within your project.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png)
+
+2. Select 'Open Project Folder.'
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-2-open-folder-project.png)
+
+3. Inside this project folder, you will find your layers stored in a GeoPackage named 'data.gpkg', also you can export you media attached (DCIM (Pictures), Audios Videos, etc).
+
+4. Now, click on the three dots (⋮) located on the right side of the file or folder.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png)
+
+5. Choose between the functions 'Send to...' or 'Export to folder...' based on your preference and follow the prompts accordingly."
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png)
+
+!!! note
+    This functionality is only available on Android.
+
 ## Accessing imported content directly through USB cable
 
 ### Android
