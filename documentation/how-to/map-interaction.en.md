@@ -24,6 +24,16 @@ On double-tap or long-press on a layer, you get offered the following possibilit
 - *Reload data* to get the current data of a layer with remote sources.
 - *Show feature list* to show all the layer's features in the identification list.
 
+If you'd like to organize the feature list on the map canvas or in the 'Show feature list' in QField, you have the following options:
+
+- Simply right-click on any part of a column header and select the 'Sort' option from the menu. This allows you to enter complex sorting expressions for your features as required.
+
+!![](../assets/images/accesing-sort-feature-list-op1.png)
+
+- In form view, you can access sorting functionality by clicking on the expression button located at the top of the features list and select the 'Sort' option.
+
+!![](../assets/images/accesing-sort-feature-list-op2.png)
+
 ## Identify features
 :material-tablet: Fieldwork
 
