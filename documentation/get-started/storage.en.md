@@ -136,7 +136,7 @@ To export the layers from a synchronized QFieldCloud project, either on your dev
 
 !![](../assets/images/export-qfieldcloud-files-from-qfield-2-open-folder-project.png)
 
-3. Inside this project folder, you will find your layers stored in a GeoPackage named 'data.gpkg', also you can export you media attached (DCIM (Pictures), Audios Videos, etc).
+3. Inside this project folder, you will find your project files. Offline layers will be stored in a file named 'data.gpkg'. You can also export your attached files (Photos, Audio, Video, etc).
 
 4. Now, click on the three dots (⋮) located on the right side of the file or folder.
 
