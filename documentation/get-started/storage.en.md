@@ -132,7 +132,7 @@ To export the layers from a synchronized QFieldCloud project, either on your dev
 
 !![](../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png)
 
-2. Select 'Open Project Folder.'
+2. Select 'Open Project Folder' action.
 
 !![](../assets/images/export-qfieldcloud-files-from-qfield-2-open-folder-project.png)
 
