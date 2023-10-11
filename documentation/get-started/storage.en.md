@@ -142,7 +142,7 @@ To export the layers from a synchronized QFieldCloud project, either on your dev
 
 !![](../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png)
 
-5. Choose between the functions 'Send to...' or 'Export to folder...' based on your preference and follow the prompts accordingly."
+5. Choose between the actions 'Send to...' or 'Export to folder...' based on your preference and follow the prompts accordingly.
 
 !![](../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png)
 
