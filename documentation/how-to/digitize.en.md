@@ -48,6 +48,13 @@ While digitizing, you can click the *(x) button* to cancel the current feature c
     QField insures that digitized geometries will not have duplicate vertices and respects
     the geometry precision settings from the currently selected layer.
 
+You can use the volume keys for adding or removing vertices while in digitizing mode. This functionality can be activated in Settings in the General tab.
+
+!![](../assets/images/activate-digitize-with-volumen-keys.png)
+
+!!! note
+    This feature is available on Android only.
+
 ### Attribute form
 
 After digitizing a geometry, the attribute form will appear allowing you
