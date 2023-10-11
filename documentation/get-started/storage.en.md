@@ -147,7 +147,7 @@ To export the layers from a synchronized QFieldCloud project, either on your dev
 !![](../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png)
 
 !!! note
-    This functionality is only available on Android.
+    This functionality is available on Android only.
 
 ## Accessing imported content directly through USB cable
 
