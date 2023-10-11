@@ -53,7 +53,7 @@ You have the option to enable or disable the functionality that allows you to us
 !![](../assets/images/activate-digitize-with-volumen-keys.png)
 
 !!! note
-    This feature is available on Android.
+    This feature is available on Android only.
 
 ### Attribute form
 
