@@ -295,6 +295,8 @@ Here a video showing how it works on QField
 
 ![type:video](https://player.vimeo.com/video/604661919)
 
+!![](../assets/images/auto-completer-in-action.gif,300px)
+
 ## Define QML Widgets
 
 Custom QML widgets can be useful to integrate advanced actions into forms.
