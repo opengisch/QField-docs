@@ -10,7 +10,7 @@ You can also visit the API documentation at https://app.qfield.cloud/docs/ .
 <script>
 window.onload = function() {
   const ui = SwaggerUIBundle({
-    url: "https://app.qfield.cloud/swagger.yaml",
+    url: "https://app.qfield.cloud/swagger/",
     dom_id: '#swagger-ui',
     presets: [
       SwaggerUIBundle.presets.apis,
