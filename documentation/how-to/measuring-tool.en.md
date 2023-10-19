@@ -5,7 +5,11 @@ tx_slug: documentation_how-to_measuring-tool
 
 # Measuring tool
 
-QField offers measurement functionalities out of the box. To enable the measuring tool, open the main menu and select *Measuring Tool*.
+QField offers measurement functionalities out of the box, you have the flexibility to change the units for measuring distance and area in your projects. You can do this by navigating to the 'Project' menu, selecting 'Properties...' in the 'General' section.
+
+!![](../assets/images/custom-units-measure.png)
+
+To enable the measuring tool, open the main menu and select *Measuring Tool*.
 
 !![](../assets/images/measuring_tool.png)
 
