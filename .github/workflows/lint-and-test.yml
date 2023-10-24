@@ -1,4 +1,4 @@
-name: pre-commit
+name: lint-and-test
 
 concurrency:
   group: ${ github.ref }
@@ -10,7 +10,7 @@ on:
     branches: [master]
 
 jobs:
-  pre-commit:
+  lint-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
