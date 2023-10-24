@@ -157,11 +157,11 @@ extra:
 plugins:
   - mkdocs-video
   - search
-  - social:
-      # See https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/
-      cards_color:
-        fill: "#72ad2e"
-        text: "#FFFFFF"
+  # - social:
+  #     # See https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/
+  #     cards_color:
+  #       fill: "#72ad2e"
+  #       text: "#FFFFFF"
   - i18n:
       default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, true]
       # FIX ME: Add autodetection to translation rates so that only languages
