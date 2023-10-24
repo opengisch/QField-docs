@@ -176,6 +176,8 @@ plugins:
         - locale: de
           name: Deutsch
           site_name: QField Ökosystem Dokumentation
+          site_description: >-
+            Willkommen in der QField-Ecosystem-Dokumentation - einer Suite von Produkten, die Feldarbeit nahtlos und effizient machen soll. Auf diesen Seiten bieten wir umfassende und leicht verständliche Dokumentation für all unsere Produkte. Egal, ob Sie ein neuer Benutzer oder ein erfahrener Profi sind, hier finden Sie alles, was Sie über die Verwendung von QField und den damit verbundenen Tools wissen müssen.
         - locale: fr
           name: Français
           site_name: Documentation de l'écosystème QField
@@ -184,7 +186,8 @@ plugins:
         - locale: it
           name: Italiano
           site_name: Documentazione dell'ecosistema QField
-          site_description: # TRANSLATE ME
+          site_description: >-
+            Benvenuti nella documentazione dell'ecosistema QField, una suite di prodotti progettati per rendere il lavoro sul campo semplice ed efficiente. In queste pagine forniamo una documentazione completa e facile da comprendere per tutti i nostri prodotti. Che tu sia un nuovo utente o un professionista esperto, troverai tutto ciò che devi sapere sull'utilizzo di QField e dei suoi strumenti correlati.
         - locale: ja
           name: 日本語
           site_name: QFieldエコシステムドキュメント
