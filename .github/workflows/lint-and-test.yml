@@ -47,7 +47,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Install Python requirements insiders
-        run: pip install --upgrade git+https://${{secrets.MKDOCS_INSIDERS_TOKEN}}@github.com/squidfunk/mkdocs-material-insiders.git
+        run: pip install -r requirements-insiders.txt
+        env:
+          MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
 
       - name: Build documentation
         run: mkdocs build
