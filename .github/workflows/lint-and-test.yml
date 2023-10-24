@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v3
       - uses: pre-commit/action@v3.0.0
 
-  test-build:
+  test-simple-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -28,6 +28,26 @@ jobs:
 
       - name: Install Python requirements
         run: pip install -r requirements.txt
+
+      - name: Build documentation
+        run: mkdocs build
+        env:
+          DEFAULT_LANGUAGE_ONLY: true
+
+  test-insiders-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+          cache: "pip"
+
+      - name: Install Python requirements
+        run: pip install -r requirements.txt
+
+      - name: Install Python requirements insiders
+        run: pip install --upgrade git+https://${{secrets.MKDOCS_INSIDERS_TOKEN}}@github.com/squidfunk/mkdocs-material-insiders.git
 
       - name: Build documentation
         run: mkdocs build
