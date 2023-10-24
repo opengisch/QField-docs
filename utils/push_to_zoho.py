@@ -1,6 +1,6 @@
 import re
 import markdown
-import materialx.emoji # needed by yaml!
+import material.extensions.emoji # needed by yaml!
 import requests
 import yaml
 
