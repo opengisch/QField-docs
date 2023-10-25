@@ -1,5 +1,5 @@
 ---
-title: Storage 
+title: Storage
 tx_slug: documentation_get-started_storage_qfield
 ---
 
