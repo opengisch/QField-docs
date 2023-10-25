@@ -214,7 +214,7 @@ plugins:
         - locale: ro
           name: Romanian
           site_name: Documentarea ecosistemului QField
-          site_description: # TRANSLATE ME
+          site_description: Bun venit la documentația ecosistemului QField! QField este o suită de produse concepute pentru a face munca de teren mai ușoară și mai eficientă. Indiferent dacă ești un utilizator nou sau un profesionist experimentat, vei găsi tot ce trebuie să știi despre utilizarea QField și a instrumentelor sale conexe.
 
           # ar: Arabic
           # bg: Bulgarian
