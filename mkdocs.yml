@@ -172,7 +172,7 @@ plugins:
           name: English
           site_name: QField Ecosystem Documentation
           site_description: >-
-            Welcome to the QField ecosystem documentation - a suite of products designed to make fieldwork seamless and efficient. In this pages we provide comprehensive and easy-to-understand documentation for all of our products. Whether you're a new user or an experienced pro, you'll find everything you need to know about using QField and its related tools.
+            Welcome to the QField ecosystem documentation - a suite of products designed to make fieldwork seamless and efficient. Whether you're a new user or an experienced pro, you'll find everything you need to know about using QField and its related tools.
         - locale: de
           name: Deutsch
           site_name: QField Ökosystem Dokumentation
@@ -182,12 +182,12 @@ plugins:
           name: Français
           site_name: Documentation de l'écosystème QField
           site_description: >-
-            Bienvenue dans l'écosystème QField - une suite logicielle pour rendre le travail de terrain simple et rapide. Nous offrons une documentation complète et facile à prendre en main pour tous nos produits QField. Utilisateur débutant ou confirmé, vous trouverez tout ce dont vous avez besoin pour utiliser QField et les outils associés.
+            Bienvenue dans l'écosystème QField - une suite logicielle pour rendre le travail de terrain simple et rapide. Utilisateur débutant ou confirmé, vous trouverez tout ce dont vous avez besoin pour utiliser QField et les outils associés.
         - locale: it
           name: Italiano
           site_name: Documentazione dell'ecosistema QField
           site_description: >-
-            Benvenuti nella documentazione dell'ecosistema QField, una suite di prodotti progettati per rendere il lavoro sul campo semplice ed efficiente. In queste pagine forniamo una documentazione completa e facile da comprendere per tutti i nostri prodotti. Che tu sia un nuovo utente o un professionista esperto, troverai tutto ciò che devi sapere sull'utilizzo di QField e dei suoi strumenti correlati.
+            Benvenuti nella documentazione dell'ecosistema QField, una suite di prodotti progettati per rendere il lavoro sul campo semplice ed efficiente. Che tu sia un nuovo utente o un professionista esperto, troverai tutto ciò che devi sapere sull'utilizzo di QField e dei suoi strumenti correlati.
         - locale: ja
           name: 日本語
           site_name: QFieldエコシステムドキュメント
@@ -197,12 +197,12 @@ plugins:
           name: Portuguese
           site_name: Documentação do Ecossistema QField
           site_description: >-
-            Bem-vindo à documentação do ecossistema QField - um conjunto de produtos projetados para tornar o trabalho de campo contínuo e eficiente. Nestas páginas, fornecemos documentação abrangente e fácil de entender para todos os nossos produtos. Caso seja um novo utilizador ou um profissional experiente, encontrará tudo o que precisa de saber sobre o uso do QField e as suas respetivas ferramentas.
+            Bem-vindo à documentação do ecossistema QField - um conjunto de produtos projetados para tornar o trabalho de campo contínuo e eficiente. Caso seja um novo utilizador ou um profissional experiente, encontrará tudo o que precisa de saber sobre o uso do QField e as suas respetivas ferramentas.
         - locale: es
           name: Español
           site_name: Documentación del ecosistema QField
           site_description: >-
-            Bienvenido a la documentación del ecosistema QField: un conjunto de productos diseñados para hacer que el trabajo de campo sea fluido y eficiente. En estas páginas proporcionamos documentación completa y fácil de entender para todos nuestros productos. Ya sea un usuario nuevo o un profesional experimentado, encontrará todo lo que necesita saber sobre el uso de QField y sus herramientas relacionadas.
+            Bienvenido a la documentación del ecosistema QField: un conjunto de productos diseñados para hacer que el trabajo de campo sea fluido y eficiente. Ya sea un usuario nuevo o un profesional experimentado, encontrará todo lo que necesita saber sobre el uso de QField y sus herramientas relacionadas.
         - locale: zh
           name: 简体中文
           site_name: QField生态系统文档
