@@ -22,6 +22,8 @@ start the search.
 
 !![](../assets/images/search-bar.png)
 
+### Search with code scanner
+
 Additionally, you have the option to employ the code scan functionality for this purpose.
 
 When click on the "Scan code" will trigger QField's code reader, initiating the scanning process to decode the code.
