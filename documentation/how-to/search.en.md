@@ -41,6 +41,7 @@ actions :
     feature will be highlighted in yellow).
 2.  Tap on the *attributes button* to open its attributes.
 
+### Search with NFC
 
 In addition, the Code Reader offers the capability to read NFC text tags.
 
