@@ -73,6 +73,13 @@ Once the codes have been successfully scanned, users can validate their choice b
 
 !![](../assets/images/digitizing-with-qr-code-4-it-worked.png)
 
+In addition, the Code Reader offers the capability to read NFC text tags.
+
+!![](../assets/images/code-reader-nfc-text-tag.png)
+
+!!! note
+    While both the QR code camera and the NFC text tag detector are enabled by default when you open the Code Reader. You have the flexibility to disable either of these features to ensure that your device's battery is not used unnecessarily to activate hardware that you may not need at the moment.
+
 #### Remember attribute values
 
 For quick collection of rather homogeneus datasets, it is crucial to not
