@@ -78,7 +78,7 @@ In addition, the Code Reader offers the capability to read NFC text tags.
 !![](../assets/images/code-reader-nfc-text-tag.png)
 
 !!! note
-    While both the QR code camera and the NFC text tag detector are enabled by default when you open the Code Reader. You have the flexibility to disable either of these features to ensure that your device's battery is not used unnecessarily to activate hardware that you may not need at the moment.
+    Both the QR code camera and the NFC text tag detector are enabled by default when you open the Code Reader. You have the flexibility to disable either of these features to ensure that your device's battery is not used unnecessarily by using hardware that you may not need at the moment.
 
 #### Remember attribute values
 
