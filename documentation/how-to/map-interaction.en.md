@@ -25,6 +25,7 @@ On double-tap or long-press on a layer, you get offered the following possibilit
 - *Show feature list* to show all the layer's features in the identification list.
 
 ## Sort layer features
+:material-monitor: Desktop preparation
 
 If you'd like to configure the order of features in 'Show feature list' in QField, you have the following options to preconfigure this on QGIS:
 
