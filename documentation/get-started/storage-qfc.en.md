@@ -3,7 +3,7 @@ title: Storage
 tx_slug: documentation_get-started_storage_qfieldcloud
 ---
 
-QFieldCloud allows you to configure as much storage as you need for your project. 
+QFieldCloud allows you to configure as much storage as you need for your project.
 
 # QFieldCloud add storage
 
