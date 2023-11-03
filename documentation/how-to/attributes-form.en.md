@@ -113,7 +113,7 @@ the textfield is pointing to.
 
 In QField the attachments are displayed. By clicking the icons symbol the camera or audio record is started to update the pictures, videos or audios with a new media.
 
-!![Media](../assets/images/attachments-qfield-media.png)
+!![Media](../assets/images/attachments-qfield-media.png,300px)
 
 On synchronization the sub-directory with the pictures, videos audios, pdf and docs has to be copied as well.
 
@@ -267,9 +267,8 @@ with_variable(
     ),
     'id'
   )
-```
-
 )
+```
 
 ## Search in value relation and relation reference widget
 
