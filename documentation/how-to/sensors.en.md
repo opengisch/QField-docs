@@ -38,4 +38,6 @@ captured new data.
 
 !![](../assets/images/sensors_tracker_constraint.png)
 
+See how tracking works in real-world scenarios:
+
 !![](../assets/videos/sensors.webp,250px)
