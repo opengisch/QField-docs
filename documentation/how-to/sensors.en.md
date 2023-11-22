@@ -37,3 +37,5 @@ tracking session, a sensor constraint can be activated to ensure that added poin
 captured new data.
 
 !![](../assets/images/sensors_tracker_constraint.png)
+
+!![](../assets/videos/sensors.webp,250px)
