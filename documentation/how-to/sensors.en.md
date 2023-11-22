@@ -40,4 +40,4 @@ captured new data.
 
 See how tracking works in real-world scenarios:
 
-!![](../assets/videos/sensors.webp,250px)
+!![](../assets/images/sensors.webp,250px)
