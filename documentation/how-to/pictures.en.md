@@ -81,7 +81,7 @@ To enable geotagging in case your native OS camera does not support this functio
 ## Saving Geotags (EXIF) automatically
 :material-monitor: Desktop preparation
 
-Sometimes you might be interested in storing automatically Geotags such as the latitude, longitude, orientation, etc. This information is also known as EXIF tags.
+Sometimes you might be interested in automatically storing Geotags such as the latitude, longitude, orientation, etc. This information is also known as EXIF tags.
 
 To store the EXIF information, follow these steps:
 
