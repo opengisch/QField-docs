@@ -255,7 +255,7 @@ The gnss variables always report the gnss sensor values, even when the
 crosshair is not snapped.
 
 !!! info
-    Variables that contains `satellites` are not available on iOS
+    Variables that contain `satellites` are not available on iOS
 
 Examples:
 
