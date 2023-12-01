@@ -78,7 +78,7 @@ To enable geotagging in case your native OS camera does not support this functio
     on your mobile device
 3.  Completed! QField's own QML-based camera will now be utilized while taking pictures
    
-## Saving Geotags (EXIF) automatically
+## Fetching Geotags (EXIF) from the image file into the attribute table
 :material-monitor: Desktop preparation
 
 Sometimes you might be interested in automatically storing Geotags such as the latitude, longitude, orientation, etc. This information is also known as EXIF tags.
