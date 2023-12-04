@@ -77,7 +77,7 @@ To enable geotagging in case your native OS camera does not support this functio
     deactivated
     on your mobile device
 3.  Completed! QField's own QML-based camera will now be utilized while taking pictures
-   
+
 ## Fetching Geotags (EXIF) from the image file into the attribute table
 :material-monitor: Desktop preparation
 
