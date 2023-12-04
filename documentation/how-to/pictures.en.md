@@ -78,6 +78,23 @@ To enable geotagging in case your native OS camera does not support this functio
     on your mobile device
 3.  Completed! QField's own QML-based camera will now be utilized while taking pictures
 
+## Fetching Geotags (EXIF) from the image file into the attribute table
+:material-monitor: Desktop preparation
+
+Sometimes you might be interested in automatically storing Geotags such as the latitude, longitude, orientation, etc. This information is also known as EXIF tags.
+
+To store the EXIF information, follow these steps:
+
+1.  Add an attribute per EXIF tag in the table that contains the pictures.
+2.  In the pictures form, configure the default value of each attribute to the corresponding
+   *EXIF* expression !![See QGIS EXIF function](https://docs.qgis.org/3.28/en/docs/user_manual/expressions/functions_list.html?highlight=exif#exif),
+    and make sure *Apply on update* is activated.
+4.  The EXIF tags that QField can capture are listed in the QGIS documentation (link above).
+    However, this list might slightly varies depending on the mobile characteristics.
+5.  Capturing EXIF tags requires accessing the full physical path of the picture. Be sure to reflect this in the QGIS expression.
+   For example, the expression * exif(@project_folder + '/' + "path", 'Exif.Image.Orientation')* retrieves the orientation of the picture stored in *path*.
+7.  Completed! QField's now capture and store the EXIF tags in the pictures table while taking pictures.
+
 ## Maximum picture size
 :material-monitor: Desktop preparation
 
