@@ -12,6 +12,7 @@ In QField, you have some general settings; here you will find further details ab
 You can change what you want or not be able to search from the search bar.
 
 - **Features from active layer**
+
 Returns a list of features from the active layer with matching attributes.
 Restricting matching to a single attribute is done by identifying its name with an `@`.
 
