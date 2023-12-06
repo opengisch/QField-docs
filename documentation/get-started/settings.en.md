@@ -107,7 +107,7 @@ You can choose from the following options:
 - Normal
 - Large
 - Extra-large
-  
+
 ## User interface language
 
 QField will by default utilize the language present on your device, if a translation is available.
