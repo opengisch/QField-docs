@@ -12,25 +12,24 @@ In QField, you have some general settings; here you will find further details ab
 You can change what you want or not be able to search from the search bar.
 
 - **Features from active layer**
-
-Returns a list of features from the active layer with matching attributes. 
+Returns a list of features from the active layer with matching attributes.
 Restricting matching to a single attribute is done by identifying its name with an `@`.
 
 When disabled, this locator filter can still be used by typing the prefix **f** in the search bar.
 
-Check the box "Enable **Features from active layers** locator by default"
+Check the box "Enable **Features from active layers** locator by default".
 
 - **Features in all layers**
 
 Returns a list of features across all searchable layers with matching display name.
 
-Check the box "Enable **Go to coordinate** locator by default"
+Check the box "Enable **Go to coordinate** locator by default".
 
 - **Spatial bookmarks**
 
 Returns a list of user and currently open project bookmarks with matching names.
 
-Check the box "Enable **Spatial bookmarks** locator by default"
+Check the box "Enable **Spatial bookmarks** locator by default".
 
 - **Calculator**
 
@@ -38,13 +37,13 @@ Returns a list of locations and addresses within Finland with matching terms.
 
 When disabled, this locator filter can still be used by typing the prefix **fia** in the search bar.
 
-Check the box "Enable **Calculator** locator by default"
+Check the box "Enable **Calculator** locator by default".
 
 - **Finnish address search**
 
 Returns the value of an expression typed in the search bar.
 
-Check the box "Enable **Finnish address search** locator by default"
+Check the box "Enable **Finnish address search** locator by default".
 
 ## Show scale bar
 
