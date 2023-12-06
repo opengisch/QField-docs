@@ -55,7 +55,7 @@ By switching on "Maximized attribute form" it will maximize the attribute form.
 
 ## Fixed scale navigation
 
-When fixed scale navigation is active, focusing on a search result will pan to the feature. 
+When fixed scale navigation is active, focusing on a search result will pan to the feature.
 With fixed scale navigation disabled, it will pan and zoom to feature.
 
 ## Show digitizing information
@@ -73,7 +73,7 @@ Tip: Enable this option and install the open camera app to create geo tagged pho
 
 ## Fast editing mode
 
-If enabled, the feature is stored after having a valid geometry and the constraints are fulfilled and attributes are committed immediately. 
+If enabled, the feature is stored after having a valid geometry and the constraints are fulfilled and attributes are committed immediately.
 
 ## Use volume keys to digitize
 
@@ -110,7 +110,7 @@ You can choose from the following options:
   
 ## User interface language
 
-QField will by default utilize the language present on your device, if a translation is available. 
+QField will by default utilize the language present on your device, if a translation is available.
 You are cordially invited to enhance the translation in your native language.
 
 [Translate the app](https://www.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->
