@@ -5,7 +5,7 @@ tx_slug: documentation_get-started_settings
 
 # General settings
 
-In QField, you have some general settings; here you will find further details about them.
+The general settings page allows you to control basic appearance and behavior of the app.
 
 ## Customize search bar
 
