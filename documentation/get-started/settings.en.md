@@ -90,7 +90,7 @@ If enabled, anonymized metrics will be collected and sent to help improve QFiled
 
 ## Dim screen when idling
 
-Time of inactivity in seconds before the screen brightness get to be dimmed to preserve the battery.
+Time of inactivity in seconds before the screen brightness get to be dimmed to preserve the battery. Set to 0 to disable dim screen.
 
 ## User interface appearance
 
