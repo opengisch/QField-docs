@@ -13,7 +13,7 @@ The best way to financially support QField is by subscribing to one of the month
 
 ## Crowdfundings
 
-You can be part of an exciting opportunity to be part of something truly impactful! We believe that positive change starts with a collective effort, and we're inviting you to join us on this inspiring journey. To turn our vision into reality, we need your support through crowdfunding. Your contribution will help us reach our funding goal and play a crucial role.
+You can be part of an exciting opportunity to be part of something truly impactful! We believe that positive change starts with a collective effort, and we are inviting you to join us on this inspiring journey. To turn our vision into reality, we need your support through crowdfunding. Your contribution will help us reach our funding goal and play a crucial role.
 
 Please visit our crowdfunding page [Crowdfunding](https://www.opengis.ch/category/crowdfunding/)
 
