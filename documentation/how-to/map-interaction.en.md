@@ -24,6 +24,8 @@ On double-tap or long-press on a layer, you get offered the following possibilit
 - *Reload data* to get the current data of a layer with remote sources.
 - *Show feature list* to show all the layer's features in the identification list.
 
+Additionally, you have the option to adjust the layer opacity for each individual layer using the "Opacity" slider.
+
 ## Sort layer features
 :material-monitor: Desktop preparation
 
