@@ -54,6 +54,7 @@ All pricing information is available <a href="https://qfield.cloud/pricing" targ
 1.2. For **Organization** plan account, click on the name of your Organization, click on "Edit Organization". Note you need to be owner of that Organization.
 
     ![Enter to setting](../../assets/images/discontinuing_service_01_enter_to_setting.png)
+
 2. Proceed to the "Billing" section, click on "Change".
 
     ![Enter to billing section](../../assets/images/discontinuing_service_02_change_subcription.png)

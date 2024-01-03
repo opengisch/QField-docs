@@ -254,6 +254,9 @@ All `@position_*` variables have a corresponding `@gnss_*` variable.
 The gnss variables always report the gnss sensor values, even when the
 crosshair is not snapped.
 
+!!! info
+    Variables that contain `satellites` are not available on iOS
+
 Examples:
 
 :   -   when the crosshair is snapped to the sensor - `@gnss_horizontal_accuracy` > The

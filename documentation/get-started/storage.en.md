@@ -1,6 +1,6 @@
 ---
 title: Storage
-tx_slug: documentation_get-started_storage
+tx_slug: documentation_get-started_storage_qfield
 ---
 
 # QField Storage Access
@@ -126,6 +126,29 @@ Users can select the ‘Send to‘ action for individual datasets, allowing for 
 edited datasets directly to third party apps such as Gmail, Drive, Dropbox, Nextcloud,
 <insert your favourite messenger app>, etc.
 
+To export the layers from a synchronized QFieldCloud project, either on your device or a preferred cloud provider. To do this, within your project:
+
+1. Click on the 'Gear icon' located within your project.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png)
+
+2. Select 'Open Project Folder' action.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-2-open-folder-project.png)
+
+3. Inside this project folder, you will find your project files. Offline layers will be stored in a file named 'data.gpkg'. You can also export your attached files (Photos, Audio, Video, etc).
+
+4. Now, click on the three dots (⋮) located on the right side of the file or folder.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png)
+
+5. Choose between the actions 'Send to...' or 'Export to folder...' based on your preference and follow the prompts accordingly.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png)
+
+!!! note
+    This functionality is available on Android only.
+
 ## Accessing imported content directly through USB cable
 
 ### Android
@@ -143,13 +166,3 @@ Changes done to project content and datasets are saved in the files found in thi
 Imported projects and datasets can be accessed directly using a USB cable by navigating
 to the QField application folder using iTunes on Windows and macOS. On Linux, users
 can do so through [‘libimobiledevice‘](https://libimobiledevice.org/).
-
-# QFieldCloud add storage
-
-Add more storage to QFieldCloud *Settings > Billing > Subscription > Change > Update storage*
-
-!![ Subscription “Change” ](../assets/images/storage-qfc1.png)
-
-!![ “Update storage” ](../assets/images/storage-qfc2.png)
-
-!![ “Additional storage” ](../assets/images/storage-qfc3.png)

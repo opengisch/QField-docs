@@ -29,10 +29,10 @@ jobs:
       - name: Install Python requirements
         run: pip install -r requirements.txt
 
-      - name: Install Python requirements insiders
-        run: pip install -r requirements-insiders.txt
-        env:
-          MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
+      # - name: Install Python requirements insiders
+      #   run: pip install -r requirements-insiders.txt
+      #   env:
+      #     MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
 
       - name: Install Transifex client
         run: |
@@ -51,9 +51,15 @@ jobs:
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
+      - name: Get all languages
+        id: get_langs
+        uses: mikefarah/yq@v4.40.5
+        with:
+          cmd: yq '.plugins[] | .i18n.languages | select( . != null ) | map(.locale) | join(",")' mkdocs.yml
+
       - name: Pull translations from Transifex
         run: |
-          ./tx pull -t -l en,de,fr,it,es,zh,pt,ja
+          ./tx pull -t -l ${{ steps.get_langs.outputs.result }}
           ./tx status
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
@@ -63,21 +69,10 @@ jobs:
         env:
           DEFAULT_LANGUAGE_ONLY: false
 
-      - name: Inject meta data to ensure proper font rendering for some translations
-        run: |
-          if [[ -d site/ja ]]
-          then
-            echo -e "social:\n  cards_layout_options:\n    font_family: Noto Sans JP" > site/ja/.meta.yml
-            echo "Successfully injected meta data into Japanese translation."
-          else
-            echo "*** Japanese translations not found in:"
-            echo "$(ls site)"
-            echo "*** Skipping this step."
-          fi
-
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
             branch: gh-pages
             clean: true
             folder: site
+            ssh-key: ${{ secrets.DEPLOY_TO_GH_PAGES_PRIVATE_KEY }}

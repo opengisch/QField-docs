@@ -38,6 +38,10 @@ values entered in the form remembered across features.
 !!! note
     QField will skip the feature form step if the layer is configured to hide all attributes or if form has been set to hide on feature addition in the attribute form settings. This can streamline the process of starting tracking sessions.
 
+To prevent overlapping, you have the option to set a maximum distance tolerance between the last and next tracked point/vertices. This ensures that if the position exceeds this defined distance, it is considered as an erroneous entry.
+
+!![](../assets/images/maximum-distance-tolerance.png,550px)
+
 ## Tracking underway
 
 Once a tracking session has been setup, a badge will appear in the side dashboard

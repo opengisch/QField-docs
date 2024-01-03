@@ -24,7 +24,7 @@ jobs:
           MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
         run: |
           pip install -r requirements.txt
-          pip install -r requirements-insiders.txt
+          # pip install -r requirements-insiders.txt
 
       - name: Generate Zoho authentication credentials and update Zoho
         env:
