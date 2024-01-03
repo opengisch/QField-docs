@@ -26,6 +26,8 @@ On double-tap or long-press on a layer, you get offered the following possibilit
 
 Additionally, you have the option to adjust the layer opacity for each individual layer using the "Opacity" slider.
 
+!![](../assets/images/opacity-slider.png)
+
 ## Sort layer features
 :material-monitor: Desktop preparation
 
