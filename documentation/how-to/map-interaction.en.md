@@ -28,6 +28,19 @@ Additionally, you have the option to adjust the layer opacity for each individua
 
 !![](../assets/images/opacity-slider.png)
 
+## Sort layer features
+:material-monitor: Desktop preparation
+
+If you'd like to configure the order of features in 'Show feature list' in QField, you have the following options to preconfigure this on QGIS:
+
+- Simply right-click on any part of a column header and select the 'Sort' option from the menu. This allows you to enter complex sorting expressions for your features as required.
+
+!![](../assets/images/accesing-sort-feature-list-op1.png)
+
+- In form view, you can access sorting functionality by clicking on the expression button located at the top of the features list and select the 'Sort' option.
+
+!![](../assets/images/accesing-sort-feature-list-op2.png)
+
 ## Identify features
 :material-tablet: Fieldwork
 
