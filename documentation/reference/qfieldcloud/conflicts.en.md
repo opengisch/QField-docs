@@ -7,7 +7,7 @@ tx_slug: documentation_reference_qfieldcloud_manage_conflicts
 
 Conflicts occur when any of these conditions is met:
 
-1) distinct users set the same attribute on the same feature to different values, and the second patch of changes arrives before the first is applied to the project;
+1) distinct users set the same attribute on the same feature to different values;
 2) a primary key is employed twice.
 While highly unlikely have conflicts, preventing, mitigating and resolving conflicts is important to maintain data integrity in a healthy QGIS project. Here are some tips and tricks to do just that.
 
@@ -28,7 +28,7 @@ While highly unlikely have conflicts, preventing, mitigating and resolving confl
 - When dealing with conflicts:
    - Navigate to the "Changes" section.
    - Filter the changes with the "Not_applied" status.
-   - For each conflicted change, select it and set the status to "Re-apply" from the "Action" dropdown menu. Alternatively is all the new changes are in conflicts you can choose in the last conflicted change and select "Re-apply this and newer changes".
+   - For each conflicted change, select it and set the status to "Re-apply" from the "Action" dropdown menu, alternatively if all the new changes are in conflict you can choose in the last conflicted change and select "Re-apply this and newer changes".
    - Check the details of changes in the conflict and click "Save All" at the end of the page.
    - Refer to our official documentation [Delta apply](https://docs.qfield.org/reference/qfieldcloud/jobs/#delta-apply-delta_apply-job) for additional information.
 
