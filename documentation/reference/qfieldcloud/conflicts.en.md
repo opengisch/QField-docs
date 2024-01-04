@@ -25,9 +25,11 @@ While highly unlikely have conflicts, preventing, mitigating and resolving confl
 
 - By default, QFieldCloud overwrites conflicts using a _last wins_ policy (the latest patch of changes to the attribute(s) involved in the conflict replaces all earlier patches of changes to these attributes). Alternatively, admins can set a project's conflict resolution policy to _manual_. Doing so will require the project manager to manually resolve conflicts, picking those to be applied to the project.
 
-- When dealing with delta conflicts:
-   - Navigate to the DELTAS section.
-   - Filter the deltas with the "Not_applied" status.
-   - For each conflicted delta, select it and set the status to "Set status pending" from the "Action" dropdown menu, then press "Go."
-   - Check the details of changes in the conflict and click "APPLY DELTA" at the end of the page.
-   - Refer to our official documentation [Delta apply](https://docs.qfield.org/reference/qfieldcloud/jobs/#delta-apply-delta_apply-job) for additional guidance.
+- When dealing with conflicts:
+   - Navigate to the "Changes" section.
+   - Filter the changes with the "Not_applied" status.
+   - For each conflicted changes, select it and set the status to "Re-apply" from the "Action" dropdown menu, alternatively is all the new changes are in conflicts you can choose in the last conflicted change and select "Re-apply this and newer changes".
+   - Check the details of changes in the conflict and click "Save All" at the end of the page.
+   - Refer to our official documentation [Delta apply](https://docs.qfield.org/reference/qfieldcloud/jobs/#delta-apply-delta_apply-job) for additional information.
+
+!![](../../assets/images/resolving_conflicts.gif)
