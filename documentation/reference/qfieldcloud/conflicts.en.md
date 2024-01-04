@@ -9,7 +9,7 @@ Conflicts occur when any of these conditions is met:
 
 1) distinct users set the same attribute on the same feature to different values, and the second patch of changes arrives before the first is applied to the project;
 2) a primary key is employed twice.
-Preventing, mitigating and resolving conflicts is crucial to maintaining data integrity in a healthy QGIS project. Here are some tips and tricks to do just that.
+While highly unlikely have conflicts, preventing, mitigating and resolving conflicts is important to maintain data integrity in a healthy QGIS project. Here are some tips and tricks to do just that.
 
 ### How to Avoid Conflicts?
 
