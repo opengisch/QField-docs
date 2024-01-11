@@ -187,7 +187,7 @@ You can get access to positioning information through additional
 expression variables accessible in the attribute form. These will
 only be available when positioning is enabled.
 
-These variables are commonly used as part of[default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)
+These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)
 for fields to keep track of the quality of individual measured points.
 
 All `@position_*` variables have a corresponding `@gnss_*` variable.
