@@ -187,8 +187,11 @@ You can get access to positioning information through additional
 expression variables accessible in the attribute form. These will
 only be available when positioning is enabled.
 
-These variables are commonly used as part of[default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)
+These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)
 for fields to keep track of the quality of individual measured points.
+
+All `@position_*` variables have a corresponding `@gnss_*` variable.
+The gnss variables always report the gnss sensor values, even when the crosshair is not snapped.
 
   - `@position_source_name` - The name of the device that gave location information as
     reported by the sensor. To differenciate between internal and
@@ -248,14 +251,8 @@ for fields to keep track of the quality of individual measured points.
         available when the crosshair is snapped to the sensor. - E
 
 !!! info
-    I: Internal position source E: External (NMEA) position source
-
-All `@position_*` variables have a corresponding `@gnss_*` variable.
-The gnss variables always report the gnss sensor values, even when the
-crosshair is not snapped.
-
-!!! info
-    Variables that contain `satellites` are not available on iOS
+    - I: Internal position source E: External (NMEA) position source.
+    - Variables that contain `satellites` are not available on iOS.
 
 Examples:
 
