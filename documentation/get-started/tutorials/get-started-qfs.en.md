@@ -124,7 +124,7 @@ will be copied to the offline editing working copy.
 
 ## Package for QField
 
-To package your project, click on Plugins > QFieldSync > Package for QField. Once the project is configured, proceed to package it into a folder. This folder will contain both the .qgs file and the associated data.
+To package your project, click on Plugins > QFieldSync > Package for QField. Once the project is configured, proceed to package it into a folder. This folder will contain both the QGIS project file (`.qgs`) and the associated data.
 
 !![Package the project for QField](../../assets/images/qfield-sync_package1.png)
 
