@@ -134,17 +134,17 @@ To export the layers from a synchronized QFieldCloud project, either on your dev
 
 2. Select 'Open Project Folder' action.
 
-!![](../assets/images/export-qfieldcloud-files-from-qfield-2-open-folder-project.png)
+!![](../assets/images/export-qfieldcloud-files-from-qfield-2-open-folder-project.png,350px)
 
 3. Inside this project folder, you will find your project files. Offline layers will be stored in a file named 'data.gpkg'. You can also export your attached files (Photos, Audio, Video, etc).
 
 4. Now, click on the three dots (⋮) located on the right side of the file or folder.
 
-!![](../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png)
+!![](../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png,350px)
 
 5. Choose between the actions 'Send to...' or 'Export to folder...' based on your preference and follow the prompts accordingly.
 
-!![](../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png)
+!![](../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png,350px)
 
 !!! note
     This functionality is available on Android only.

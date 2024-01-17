@@ -124,10 +124,21 @@ will be copied to the offline editing working copy.
 
 ## Package for QField
 
-Once the project is configured, package it in a folder. This folder will
-contain the .qgs and the data used in it.
+To package your project, click on Plugins > QFieldSync > Package for QField. Once the project is configured, proceed to package it into a folder. This folder will contain both the QGIS project file (`.qgs`) and the associated data.
 
 !![Package the project for QField](../../assets/images/qfield-sync_package1.png)
+
+Even though QFieldSync doesn't display packaging options by default in the Toolbar panel, you can still access them through Plugins > QFieldSync > Preferences.
+
+!![QFieldSync Preferences button](../../assets/images/qfieldsync-preferences-button.png,250px)
+
+Simply activate the checkbox labeled "Show the packaging options in the toolbar."
+
+!![QFieldSync Preferences](../../assets/images/checkbox-show-package.png,850px)
+
+!![](../../assets/images/unchecked-show-package.png,90px)
+
+!![](../../assets/images/checked-show-package.png,150px)
 
 Copy the folder on your device. Open QField, open the project and start
 collecting data.
