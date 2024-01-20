@@ -148,7 +148,7 @@ the *Merge Selected Features* in the *Menu (⁝) Button*.
 To execute merging within QField, ensure the following conditions:
 
 1. **Editable Vector Layer:**
-   - The target layer must an editable layer.
+   - The target layer must be an editable layer.
 
 2. **Multi-Type Geometry:**
    - Ensure that the geometry type of the layer is multi-type.
