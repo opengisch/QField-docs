@@ -145,13 +145,13 @@ QField allows you to merge features and their geometries into a single feature. 
 features on the map, select them in the features list and merge them by selecting
 the *Merge Selected Features* in the *Menu (⁝) Button*.
 
-To execute polygon merging within QField, ensure the following conditions:
+To execute merging within QField, ensure the following conditions:
 
 1. **Editable Vector Layer:**
    - The target layer must an editable layer.
 
 2. **Multi-Type Geometry:**
-   - Ensure that the geometry type of the layer is multi-type (like MultiPolygon).
+   - Ensure that the geometry type of the layer is multi-type.
 
 3. **Data Provider's Abilities:**
    - Verify that the data provider associated with the layer (preferably GeoPackage) possesses the capability to:
