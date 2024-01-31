@@ -294,6 +294,42 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
 
 You will receive notifications for events in which you are not the actor. These notifications are specifically for events that are initiated by other members of your organization or collaborators on your projects.
 
+## Enhanced your projects with the Offliner packaging.
+
+The new Packaging Offliner (in "Settings" of your projects) introduces advanced capabilities, allowing the support of multiple layers using the same data source but with distinct filters. This enhancement offers greater flexibility in offline datasources management. Here's an example to illustrate this feature:
+
+### Example Configuration:
+
+- **Layer 1.1:**
+  - Data Source: `layers.gpkg`
+  - Table: `layer1`
+  - Filter: `id % 2 = 1`
+
+- **Layer 1.2:**
+  - Data Source: `layers.gpkg`
+  - Table: `layer1`
+  - Filter: `id % 2 = 0`
+
+### Result:
+
+For the new offliner:
+- A single layer is generated in the offline geopackage, combining data from `layer1` with the specified filters.
+
+For the old (QGIS) offliner:
+- Two separate layers are created, each representing the filtered datasets:
+  - Layer 1: Filtered with `id % 2 = 1`
+  - Layer 2: Filtered with `id % 2 = 0`
+
+### Advantages:
+
+1. **Efficiency:**
+   - The new offliner configuration optimizes storage by consolidating filtered layers using the same datasource, enhancing efficiency in data management, and for apply distinct  symbology to the same layer.
+
+2. **Compatibility:**
+   - The Packaging Offliner is designed to package data for offline use with QField. For new projects, it is recommended to use the "Optimized Packager" over the deprecated "QGIS Core Offline Editing." The Optimized Packager offers improved performance and enhanced features for offline data management.
+
+!![](../../assets/images/qfc_offline_packager.png,700px)
+
 ## Field device
 
 :material-tablet: Fieldwork
