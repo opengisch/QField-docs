@@ -320,14 +320,6 @@ For the old (QGIS) offliner:
   - Layer 1: Filtered with `id % 2 = 1`
   - Layer 2: Filtered with `id % 2 = 0`
 
-### Advantages:
-
-1. **Efficiency:**
-   - The new offliner configuration optimizes storage by consolidating filtered layers using the same datasource, enhancing efficiency in data management, and for apply distinct  symbology to the same layer.
-
-2. **Compatibility:**
-   - The Packaging Offliner is designed to package data for offline use with QField. For new projects, it is recommended to use the "Optimized Packager" over the deprecated "QGIS Core Offline Editing." The Optimized Packager offers improved performance and enhanced features for offline data management.
-
 !![](../../assets/images/qfc_offline_packager.png,700px)
 
 ## Field device
