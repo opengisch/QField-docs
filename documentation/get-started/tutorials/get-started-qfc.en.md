@@ -296,7 +296,7 @@ You will receive notifications for events in which you are not the actor. These 
 
 ## Enhance your project with the "Optimized Packager"
 
-The new Packaging Offliner (in "Settings" of your projects) introduces advanced capabilities, allowing the support of multiple layers using the same data source but with distinct filters. This enhancement offers greater flexibility in offline datasources management. Here's an example to illustrate this feature:
+For new projects, it is recommended to use the new "Optimized Packager" over the deprecated "QGIS Core Offline Editing". Set it under "Packaging Offliner" in the "Settings" tab of your project. The "Optimized Packager" supports consolidating filtered layers of same datasource into a single oflline layer, respecting distinct symbology. This also uses less storage. Here's an example to illustrate this feature:
 
 ### Example Configuration:
 
