@@ -294,7 +294,7 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
 
 You will receive notifications for events in which you are not the actor. These notifications are specifically for events that are initiated by other members of your organization or collaborators on your projects.
 
-## Enhanced your projects with the Offliner packaging.
+## Enhance your project with the "Optimized Packager"
 
 The new Packaging Offliner (in "Settings" of your projects) introduces advanced capabilities, allowing the support of multiple layers using the same data source but with distinct filters. This enhancement offers greater flexibility in offline datasources management. Here's an example to illustrate this feature:
 
