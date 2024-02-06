@@ -294,6 +294,36 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
 
 You will receive notifications for events in which you are not the actor. These notifications are specifically for events that are initiated by other members of your organization or collaborators on your projects.
 
+## Enhance your project with the "Optimized Packager"
+
+We recommend to use the new "Optimized Packager" over the deprecated "QGIS Core Offline Editing" for all your projects. Set the packager under "Packaging Offliner" in the "Settings" tab of your project.
+
+The "Optimized Packager" supports consolidating filtered layers of same datasource into a single oflline layer, respecting distinct symbology but also using less storage. Here is an example to illustrate this feature:
+
+### Example Configuration:
+
+- **Layer 1.1:**
+  - Data Source: `layers.gpkg`
+  - Table: `layer1`
+  - Filter: `id % 2 = 1`
+
+- **Layer 1.2:**
+  - Data Source: `layers.gpkg`
+  - Table: `layer1`
+  - Filter: `id % 2 = 0`
+
+### Result:
+
+For the new offliner:
+- A single layer is generated in the offline geopackage, combining data from `layer1` with the specified filters.
+
+For the old (QGIS) offliner:
+- Two separate layers are created, each representing the filtered datasets:
+  - Layer 1: Filtered with `id % 2 = 1`
+  - Layer 2: Filtered with `id % 2 = 0`
+
+!![](../../assets/images/qfc_offline_packager.png,700px)
+
 ## Field device
 
 :material-tablet: Fieldwork
