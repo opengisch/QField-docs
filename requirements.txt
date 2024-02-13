@@ -6,4 +6,3 @@ mkdocs-static-i18n==1.1.1
 mkdocs-video==1.5.0
 PyGithub==2.1.1
 python-dotenv==1.0.0
-python-frontmatter==1.0.0
