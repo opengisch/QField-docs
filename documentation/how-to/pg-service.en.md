@@ -26,7 +26,7 @@ Read more [how to configure PostgreSQL service](../reference/qfieldcloud/secrets
 
 ## Creating a `pg_service.conf` File for PostgreSQL Connection in QGIS and Secrets
 
-Before beginning, ensure that you have allowed connections to QFieldCloud. Refer to [Technical specs](../reference/qfieldcloud/specs.md) for instructions.
+Before beginning, ensure that your PostgreSQL database allows connections from QFieldCloud. Refer to [Technical specs](../reference/qfieldcloud/specs.md) for instructions.
 
 1. **Create a Text File**: Open your preferred text editor and create a new text file to define PostgreSQL service connection parameters. Save this file in your user's home directory, typically `~/.pg_service.conf`.
 
