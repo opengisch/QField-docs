@@ -28,16 +28,24 @@ Read more [how to configure PostgreSQL service](../reference/qfieldcloud/secrets
 
 Before beginning, ensure that your PostgreSQL database allows connections from QFieldCloud. Refer to [Technical specs](../reference/qfieldcloud/specs.md) for instructions.
 
-1. **Create a Text File**: Open your preferred text editor and create a new text file to define PostgreSQL service connection parameters. Save this file in your user's home directory, typically `~/.pg_service.conf`.
+### Setup `pg_service.conf` File
+
+We first need to setup a configuration file. There are a lot of option to organize this, [read more in the PostgreSQL documentation](https://www.postgresql.org/docs/current/libpq-pgservice.html) or follow the description below.
+
+1. **Create a Configuration File**:
+
+   - On Windows:
+     Create a file named `pg_service.conf` and store it in a convenient location.
+
+   - On Linux/MacOS/Unix:
+     Create a file named `.pg_service.conf` in your home folder (`~`).
+
+2. **Define Connection Parameters**:
+
+   Within the file, specify connection parameters for your PostgreSQL database using the following format:
 
    ```
-   ~/.pg_service.conf
-   ```
-
-2. **Add Connection Parameters**: Define the connection parameters for your PostgreSQL database within this file. Use the following structure:
-
-   ```
-   [MY_SERVICE_NAME]
+   [SERVICE_NAME]
    host=your_host_or_ip
    port=your_port
    dbname=your_database_name
@@ -45,7 +53,10 @@ Before beginning, ensure that your PostgreSQL database allows connections from Q
    password=your_password
    ```
 
-   Replace placeholders (`your_host_or_ip`, `your_port`, `your_database_name`, `your_username`, `your_password`) with actual PostgreSQL connection details. For example:
+   Replace placeholders (`your_host_or_ip`, `your_port`, `your_database_name`, `your_username`, `your_password`) with actual connection details.
+
+3. **Save the File**:
+   Save the file after adding the connection parameters.
 
    ```
    [NINJA_DB]
@@ -58,25 +69,17 @@ Before beginning, ensure that your PostgreSQL database allows connections from Q
 
 !![Parameters](../assets/images/service_config_file_001.png)
 
-3. **Save the File**: Save the file after adding connection parameters.
+### Additional Configuration Steps for Windows
 
-4. **Environment Variable**: To ensure QGIS recognizes `pg_service.conf`, set the `PGSERVICEFILE` environment variable to point to its location. Add the following line to your shell's startup file (e.g., `~/.bashrc`, `~/.bash_profile`, `~/.zshrc`, etc.):
+1. **Set Environment Variable**:
+   To ensure QGIS recognizes `pg_service.conf`, create an environment variable pointing to its location:
 
-   ```
-   export PGSERVICEFILE="~/.pg_service.conf"
-   ```
+   - Navigate to "This PC" or "My Computer" > Properties > Advanced system settings > Environment Variables.
+   - Add a new variable:
+     - Variable name: `PGSERVICEFILE`
+     - Variable value: `C:\Users\<YourUsername>\AppData\Roaming\postgresql\pg_service.conf` (or your `pg_service.conf` file path).
 
-   Save the file and either source it or restart your shell for changes to take effect.
-
-For Windows:
-
-- Set the `PGSERVICEFILE` environment variable under "Environment Variables."
-- Navigate to "This PC" or "My Computer" > Properties > Advanced system settings > Environment Variables.
-- Add a new variable:
-  - Variable name: `PGSERVICEFILE`
-  - Variable value: `C:\Users\<YourUsername>\AppData\Roaming\postgresql\pg_service.conf` (or your `pg_service.conf` file path).
-
-Alternatively, set environment variables directly in QGIS via Settings > Options > System > Environment. Refer to [QGIS System Settings](https://docs.qgis.org/3.28/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details.
+   Alternatively, you can set environment variables directly in QGIS via Settings > Options > System > Environment. Refer to [QGIS System Settings](https://docs.qgis.org/3.28/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details.
 
 !![QGIS System Environment Variables](../assets/images/service_config_file_002.png)
 
