@@ -44,7 +44,7 @@ We first need to setup a configuration file. There are a lot of option to organi
 
    Within the file, specify connection parameters for your PostgreSQL database using the following format:
 
-   ```
+   ```plaintext
    [SERVICE_NAME]
    host=your_host_or_ip
    port=your_port
