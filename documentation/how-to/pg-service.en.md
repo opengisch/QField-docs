@@ -53,19 +53,7 @@ We first need to setup a configuration file. There are a lot of option to organi
    password=your_password
    ```
 
-   Replace placeholders (`your_host_or_ip`, `your_port`, `your_database_name`, `your_username`, `your_password`) with actual connection details.
-
-3. **Save the File**:
-   Save the file after adding the connection parameters.
-
-   ```
-   [NINJA_DB]
-   host=my_db_for_ninja.ch
-   port=5432
-   dbname=my_database
-   user=my_username
-   password=my_password
-   ```
+   Replace placeholders (`your_host_or_ip`, `your_port`, `your_database_name`, `your_username`, `your_password`) with actual connection details and save the file.
 
 !![Parameters](../assets/images/service_config_file_001.png)
 
