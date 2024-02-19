@@ -36,14 +36,11 @@ def nav_config(config):
     return _nav_config
 
 
-def create_translation_source(config_path, source_path, source_language):
-    config = read_config(config_path)
-
-    tx_cfg = {"nav": nav_config(config)}
-
+def get_site_description(config, source_language):
+    site_description = None
     found = 0
     try:
-        tx_cfg["site_description"] = copy.deepcopy(config["site_description"])
+        site_description = config["site_description"]
         found += 1
     except KeyError:
         pass
@@ -53,7 +50,7 @@ def create_translation_source(config_path, source_path, source_language):
                 for lang in plugin["i18n"]["languages"]:
                     ltx = lang["locale"]
                     if ltx == source_language:
-                        tx_cfg["site_description"] = lang["site_description"]
+                        site_description = lang["site_description"]
                         found += 1
     except KeyError:
         pass
@@ -62,6 +59,17 @@ def create_translation_source(config_path, source_path, source_language):
     elif found > 1 and tx_cfg["site_description"] != config["site_description"]:
         print("ERROR: site description found twice and different")
         assert False
+
+    return site_description
+
+
+def create_translation_source(config_path, source_path, source_language):
+    config = read_config(config_path)
+
+    tx_cfg = {
+        "nav": nav_config(config),
+        "site_description": get_site_description(config, source_language)
+    }
 
     try:
         tx_cfg["theme"] = {"palette": []}
@@ -103,7 +111,7 @@ def update_config(config_path, source_path, source_language):
                     lang["nav_translations"] = tx["nav"]
 
                     try:
-                        lang["site_description"] = tx["site_description"]
+                        lang["site_description"] = tx["site_description"] or get_site_description(config, source_language)
                     except KeyError:
                         print("No site description in translation")
 

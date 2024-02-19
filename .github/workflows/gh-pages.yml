@@ -1,13 +1,12 @@
 name: gh-pages
 
 on:
-#  pull_request:
-#    branches:
-#      - master
+  pull_request:
+    branches:
+      - master
   push:
     branches:
       - master
-      - 3nids-patch-2 # TODO remove
   schedule:
     - cron: '30 1 * * *'
   workflow_dispatch:
@@ -71,7 +70,7 @@ jobs:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
       - name: Translate Mkdocs config
-        if: ${{ github.event_name != 'pull_request' || github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == 'opengisch/QField-docs' && github.actor != 'dependabot[bot]' }}
+        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == 'opengisch/QField-docs' && github.actor != 'dependabot[bot]' }}
         run: |
           ./utils/mkdocs_tx.py -s en update_config
           ./utils/mkdocs_tx_commit.sh
