@@ -85,8 +85,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: ${{ github.event_name == 'pull_request' }}
         with:
-          name: website
-          path: website/site
+          name: docs
+          path: site
           if-no-files-found: error
 
       - name: Deploy to GitHub Pages
