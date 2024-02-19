@@ -1,9 +1,13 @@
 name: gh-pages
 
 on:
+  pull_request:
+    branches:
+      - master
   push:
     branches:
       - master
+      - 3nids-patch-2 # TODO remove
   schedule:
     - cron: '30 1 * * *'
   workflow_dispatch:
@@ -27,27 +31,31 @@ jobs:
           cache: 'pip'
 
       - name: Install Python requirements
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
 
-      # - name: Install Python requirements insiders
-      #   run: pip install -r requirements-insiders.txt
-      #   env:
-      #     MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
+      - name: Install Python requirements insiders
+        run: pip install -r requirements-insiders.txt
+        env:
+          MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
 
       - name: Install Transifex client
         run: |
-          curl -OL https://github.com/transifex/cli/releases/download/v1.3.1/tx-linux-amd64.tar.gz
+          curl -OL https://github.com/transifex/cli/releases/download/v1.6.10/tx-linux-amd64.tar.gz
           tar -xvzf tx-linux-amd64.tar.gz
 
+      - name: Extract translatable content from mkdocs.yml config
+        run: ./utils/mkdocs_tx.py create_source
+
       - name: Configure Transifex
-        run: |
-          python ./utils/transifex_utils.py
+        run: ./utils/transifex_utils.py
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
       - name: Push source files to Transifex
-        run: |
-          ./tx push
+        if: ${{ github.event_name == 'push' }}
+        run: ./tx push
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
@@ -58,21 +66,33 @@ jobs:
           cmd: yq '.plugins[] | .i18n.languages | select( . != null ) | map(.locale) | join(",")' mkdocs.yml
 
       - name: Pull translations from Transifex
+        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == 'opengisch/QField-docs' && github.actor != 'dependabot[bot]' }}
         run: |
           ./tx pull -t -l ${{ steps.get_langs.outputs.result }}
           ./tx status
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
+      - name: Translate Mkdocs config
+        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == 'opengisch/QField-docs' && github.actor != 'dependabot[bot]' }}
+        run: |
+          ./utils/mkdocs_tx.py -s en update_config
+          ./utils/mkdocs_tx_commit.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build documentation
         run: mkdocs build
         env:
           DEFAULT_LANGUAGE_ONLY: false
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - uses: actions/upload-artifact@v4
+        if: ${{ github.event_name == 'pull_request' }}
         with:
-            branch: gh-pages
-            clean: true
-            folder: site
-            ssh-key: ${{ secrets.DEPLOY_TO_GH_PAGES_PRIVATE_KEY }}
+          name: website
+          path: website/site
+          if-no-files-found: error
+
+      - name: Deploy to GitHub Pages
+        if: ${{ github.event_name != 'pull_request' }}
+        run: mkdocs gh-deploy --force
