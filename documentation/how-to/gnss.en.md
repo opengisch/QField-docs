@@ -270,7 +270,7 @@ Examples:
 Info for GNSS Z value with Vertical grid shift in use:
 - *Antenna height compensation=False*
 
-| Vertical Grid Shift in use | point Z Value z(geometry) | GNSS Device z(@position_coordinate) | Qfield Display | Qfield Label                |
+| Vertical Grid Shift in use | point Z Value z(geometry) | GNSS Device z(@position_coordinate) | QField Display | QField Label                |
 |----------------------------|---------------------------|--------------------------------------|----------------|-----------------------------|
 | None                       | Z ellipsoidal device value| Z ellipsoidal device value           | Z ellipsoidal device value | Altitude: xxx.xxxx m       |
 | Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
