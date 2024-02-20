@@ -268,7 +268,7 @@ Examples:
             `manual`.
 
 Info for GNSS Z value with Vertical grid shift in use:
-![image](https://github.com/opengisch/QField-docs/assets/23143342/2f0d6c78-7b38-47ab-bfd9-2e39d048cfa3)
+!![GNSS Z values](../assets/images/info-gnss-z-values.png)
 
 
 ### Vertex logger
