@@ -270,7 +270,6 @@ Examples:
 Info for GNSS Z value with Vertical grid shift in use:
 !![GNSS Z values](../assets/images/info-gnss-z-values.png)
 
-
 ### Vertex logger
 
 It is possible to setup a log layer of the collected vertices. This
