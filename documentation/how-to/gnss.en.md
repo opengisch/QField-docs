@@ -267,7 +267,7 @@ Examples:
             is `NULL`. - `@position_source_name` > The value is
             `manual`.
 
-Info for GNSS Z value with Vertical grid shift in use:
+Information for GNSS Z value with Vertical grid shift in use:
 - *Antenna height compensation=False*
 
 | Vertical Grid Shift in use | point Z Value z(geometry) | GNSS Device z(@position_coordinate) | QField Display | QField Label                |
