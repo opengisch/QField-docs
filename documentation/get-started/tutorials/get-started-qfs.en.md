@@ -116,6 +116,10 @@ tile size is set to 1, each raster pixel will have a spatial extent of
 1x1 m, if it is set to 1000, each raster pixel will have a spatial
 extent of 1 square kilometer.
 
+!!! note
+    - **Cable Export**: The base map generated will be present in the exported project.
+    - **QFieldCloud Project**: The base map generate does not be include in the project.
+
 ### Offline editing configuration
 
 If *only synchronize features in area of interest* is checked, only
