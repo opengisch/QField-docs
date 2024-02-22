@@ -46,7 +46,7 @@ def get_site_description(config, source_language):
         pass
     try:
         for plugin in config["plugins"]:
-            if type(plugin) != str and "i18n" in plugin:
+            if not isinstance(plugin, str) and "i18n" in plugin:
                 for lang in plugin["i18n"]["languages"]:
                     ltx = lang["locale"]
                     if ltx == source_language:
