@@ -94,7 +94,7 @@ def update_config(config_path, source_path, source_language):
             found = True
             for lang_info in plugin["i18n"]["languages"]:
                 lang = lang_info["locale"]
-                print(f"language found: '{ltx}'")
+                print(f"language found: '{lang}'")
 
                 if lang == source_language:
                     print("skipping source language")
