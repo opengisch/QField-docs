@@ -18,7 +18,7 @@ def read_config(file_path: str):
         return yaml.load(f)
 
 
-def nav_config(config):
+def nav_config(config) -> dict:
     _nav_config = {}
 
     def add_nav_entry(title, content):
@@ -36,11 +36,11 @@ def nav_config(config):
     return _nav_config
 
 
-def get_site_description(config, source_language):
-    site_description = None
+def site_description(config, source_language) -> str:
+    _site_description = None
     found = 0
     try:
-        site_description = config["site_description"]
+        _site_description = config["site_description"]
         found += 1
     except KeyError:
         pass
@@ -50,17 +50,17 @@ def get_site_description(config, source_language):
                 for lang in plugin["i18n"]["languages"]:
                     ltx = lang["locale"]
                     if ltx == source_language:
-                        site_description = lang["site_description"]
+                        _site_description = lang["site_description"]
                         found += 1
     except KeyError:
         pass
     if not found:
         print("No site description found")
-    elif found > 1 and tx_cfg["site_description"] != config["site_description"]:
+    elif found > 1 and _site_description != config["site_description"]:
         print("ERROR: site description found twice and different")
         assert False
 
-    return site_description
+    return _site_description
 
 
 def create_translation_source(config_path, source_path, source_language):
@@ -68,7 +68,7 @@ def create_translation_source(config_path, source_path, source_language):
 
     tx_cfg = {
         "nav": nav_config(config),
-        "site_description": get_site_description(config, source_language)
+        "site_description": site_description(config, source_language)
     }
 
     try:
