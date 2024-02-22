@@ -62,7 +62,7 @@ jobs:
           cmd: yq '.plugins[] | .i18n.languages | select( . != null ) | map(.locale) | join(",")' mkdocs.yml
 
       - name: Pull translations from Transifex
-        if: contains(fromJSON('["push", "workflow_dispatch", "schedule"]'), github.event_name) || ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == 'opengisch/QField-docs' && github.actor != 'dependabot[bot]' }}
+        if: contains(fromJSON('["push", "workflow_dispatch", "schedule"]'), github.event_name) || ${{ github.event_name == 'pull_request' && github.repository == 'opengisch/QField-docs' }}
         run: |
           ./tx pull -t -l ${{ steps.get_langs.outputs.result }}
           ./tx status
@@ -70,7 +70,7 @@ jobs:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
       - name: Translate Mkdocs config
-        if: contains(fromJSON('["push", "workflow_dispatch", "schedule"]'), github.event_name) || ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == 'opengisch/QField-docs' && github.actor != 'dependabot[bot]' }}
+        if: contains(fromJSON('["push", "workflow_dispatch", "schedule"]'), github.event_name) || ${{ github.event_name == 'pull_request' && github.repository == 'opengisch/QField-docs' }}
         run: |
           ./utils/mkdocs_tx.py -s en update_config
           ./utils/mkdocs_tx_commit.sh
