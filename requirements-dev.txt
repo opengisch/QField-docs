@@ -1,1 +1,3 @@
-pre-commit
+ruamel.yaml==0.18.6
+pre-commit==3.6.2
+python-frontmatter==1.1.0
