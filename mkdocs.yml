@@ -336,9 +336,9 @@ plugins:
             sea un usuario nuevo o un profesional experimentado, encontrará todo lo
             que necesita saber sobre el uso de QField y sus herramientas relacionadas.
           nav_translations:
-            Home: Home
+            Home: Inicio
             Get started: Empezar
-            Tutorials: Tutorials
+            Tutorials: Tutoriales
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: Guías de uso
@@ -349,12 +349,12 @@ plugins:
               primary: light green
               toggle:
                 icon: octicons/moon-24
-                name: Switch to dark mode
+                name: Cambiar al modo oscuro
             - scheme: slate
               primary: blue
               toggle:
                 icon: octicons/sun-24
-                name: Switch to light mode
+                name: Cambiar a modo luz
 
 # Page tree
         - locale: zh
