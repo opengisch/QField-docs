@@ -117,7 +117,7 @@ tile size is set to 1, each raster pixel will have a spatial extent of
 extent of 1 square kilometer.
 
 !!! note
-    - **QFieldCloud Project**: The base map generate does not be include in the project.
+   Base map generation is disabled on QFieldCloud.
 
 ### Offline editing configuration
 
