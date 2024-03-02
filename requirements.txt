@@ -1,9 +1,6 @@
 CairoSVG==2.7.1
 cryptography==42.0.2
 fancyboxmd==1.1.0
-mkdocs-material==9.4.6
-mkdocs-static-i18n==1.1.1
+mkdocs-material===9.5.9
+mkdocs-static-i18n==1.2.0
 mkdocs-video==1.5.0
-PyGithub==2.1.1
-python-dotenv==1.0.0
-python-frontmatter==1.0.0

@@ -92,7 +92,7 @@ To store the EXIF information, follow these steps:
 4.  The EXIF tags that QField can capture are listed in the QGIS documentation (link above).
     However, this list might slightly varies depending on the mobile characteristics.
 5.  Capturing EXIF tags requires accessing the full physical path of the picture. Be sure to reflect this in the QGIS expression.
-   For example, the expression * exif(@project_folder + '/' + "path", 'Exif.Image.Orientation')* retrieves the orientation of the picture stored in *path*.
+   For example, the expression `exif(@project_folder + '/' + "path", 'Exif.Image.Orientation')` retrieves the orientation of the picture stored in *path*.
 7.  Completed! QField's now capture and store the EXIF tags in the pictures table while taking pictures.
 
 ## Maximum picture size
