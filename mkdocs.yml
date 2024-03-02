@@ -349,12 +349,12 @@ plugins:
               primary: light green
               toggle:
                 icon: octicons/moon-24
-                name: Cambiar al modo oscuro
+                name: Cambiar a modo oscuro
             - scheme: slate
               primary: blue
               toggle:
                 icon: octicons/sun-24
-                name: Cambiar a modo luz
+                name: Cambiar a modo claro
 
 # Page tree
         - locale: zh
