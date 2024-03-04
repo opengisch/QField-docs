@@ -17,14 +17,11 @@ if [[ $(git diff --exit-code mkdocs.yml) ]]; then
     git commit -m "Update mkdocs.yml translation" --no-verify
     git push
   else
-    # on push/workflow_dispatch create a pull request
+    # on push/workflow_dispatch directly push to branch
     git checkout ${GITHUB_REF_NAME}
-    BRANCH="update-mkdocs-tx-$RANDOM"
-    git checkout -b ${BRANCH}
     git add mkdocs.yml
     git commit -m "Update mkdocs.yml translation" --no-verify
-    git push -u origin $BRANCH
-    gh pr create -B ${GITHUB_REF_NAME} -H ${BRANCH} --title 'Update mkdocs translations' --body 'run from mkdocs_tx'
+    git push -u origin ${GITHUB_REF_NAME}
   fi
 else
   echo "no change mkdocs.yml"
