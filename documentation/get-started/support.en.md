@@ -21,6 +21,6 @@ create your own custom app.
 ## Community Support
 
 You can ask your questions on
-[gis.stackexchange](http://gis.stackexchange.com/questions/tagged/qfield?sort=newest)
+[gis.stackexchange](http://gis.stackexchange.com/questions/tagged/qfield?sort=newest) <!-- markdown-link-check-disable-line -->
 
 You can use the [user discussions platform](https://github.com/opengisch/qfield/discussions)
