@@ -276,7 +276,7 @@ With this functionality, users and managers of QFieldCloud projects can enforce 
 
 !![Auto push QField](../../assets/images/auto-push-pending-changes-qfield.png,400px)
 
-!!! note
+!!! Note
     #### Benefits:
 
     - **Real-Time Updates**: Ensures prompt synchronization of field data with the QFieldCloud project.
