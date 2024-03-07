@@ -266,7 +266,7 @@ Any QField supported raster and vector layer formats may be used as read-only da
 
 ### Enabling Automatic Pushing of Changes to QFielcCloud
 
-With this functionality, users or managers of QFieldCloud projects can enforce auto-push on QField devices in the field and specify the interval in minutes, optimizing field data management processes.
+With this functionality, users and managers of QFieldCloud projects can enforce automatic pushing of pending changes for QField devices in the field as well as specify the interval in between automated pushes. The functionality is activated through a project setting, allowing for the remote activation.
 
 1. **Access Project Settings**: Navigate to the settings in QFiedlSync.
 
