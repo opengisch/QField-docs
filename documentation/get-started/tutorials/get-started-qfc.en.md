@@ -280,7 +280,7 @@ With this functionality, users and managers of QFieldCloud projects can enforce 
     #### Benefits:
 
     - **Real-Time Updates**: Ensures prompt synchronization of field data with the QFieldCloud project.
-    - **Streamlined Workflow**: Minimizes manual intervention and ensures surveyors not worry in the synchronization and only on the data quality.
+    - **Streamlined Workflow**: Minimizes manual intervention and ensures surveyors do not need to worry about synchronization, helping them focus on data quality.
 
     #### Considerations:
 
