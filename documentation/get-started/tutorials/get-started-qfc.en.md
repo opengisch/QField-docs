@@ -264,7 +264,7 @@ Any QField supported raster and vector layer formats may be used as read-only da
 
 !![Project properties](../../assets/images/getting_started_project_properties.png)
 
-### Enabling Auto-Push and Setting Push Interval in QFieldCloud
+### Enabling Automatic Pushing of Changes to QFielcCloud
 
 With this functionality, users or managers of QFieldCloud projects can enforce auto-push on QField devices in the field and specify the interval in minutes, optimizing field data management processes.
 
