@@ -264,6 +264,29 @@ Any QField supported raster and vector layer formats may be used as read-only da
 
 !![Project properties](../../assets/images/getting_started_project_properties.png)
 
+### Enabling Automatic Pushing of Changes to QFieldCloud
+
+With this functionality, users and managers of QFieldCloud projects can enforce automatic pushing of pending changes to QField devices in the field, as well as specify the interval in between automated pushes. The functionality is activated through a project setting, allowing remote activation.
+
+1. **Access Project Settings**: Navigate to the QField panel in the Project Settings dialog provided by the QFieldSync plugin.
+
+2. **Enable Auto-Push**: Toggle the "Automatically push pending changes on the following interval" option and establish your preferred interval.
+
+!![Auto push QFieldSync](../../assets/images/auto-push-pending-changes-qfieldsync.png)
+
+!![Auto push QField](../../assets/images/auto-push-pending-changes-qfield.png,400px)
+
+!!! Note
+    #### Benefits:
+
+    - **Real-Time Updates**: Ensures prompt synchronization of field data with the QFieldCloud project.
+    - **Streamlined Workflow**: Minimizes manual intervention and ensures surveyors do not need to worry about synchronization, helping them focus on data quality.
+
+    #### Considerations:
+
+    - **Network Stability**: Ensure stable internet connectivity for auto-push functionality.
+    - **Battery Optimization**: Implement strategies to mitigate battery consumption on QField devices during prolonged fieldwork.
+
 ### Upload a project
 
 Once configured, you can press the cloud button to open the synchronization dialog. Here you have to decide what do you prefer: the local file or the file on the cloud.
