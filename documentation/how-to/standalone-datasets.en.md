@@ -47,4 +47,4 @@ By default, the datasets will be overlaying an OpenStreetMap XYZ layer. It is ho
 
 To use an existing project as base map, do a long press on a project in the recent projects list and check *Base Map Project*.
 
-![type:video](https://player.vimeo.com/video/604849182)
+![type:video](https://player.vimeo.com/video/604849182)<!-- markdown-link-check-disable-line -->

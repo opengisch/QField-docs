@@ -95,7 +95,7 @@ at the right of every attribute allow remembering of the last entered value for
 each attribute individually so that the next time you will add a feature on the same
 layer, these attributes will be automatically pre-filled.
 
-![type:video](https://player.vimeo.com/video/526919606)
+![type:video](https://player.vimeo.com/video/526919606)<!-- markdown-link-check-disable-line -->
 
 ## Geometry editing
 :material-tablet: Fieldwork
@@ -137,7 +137,7 @@ is created, QField will offer the possibility of filling the ring with a new fea
 
 A video demonstration of some editing possibilities:
 
-![type:video](https://player.vimeo.com/video/499564854)
+![type:video](https://player.vimeo.com/video/499564854)<!-- markdown-link-check-disable-line -->
 
 ## Merging features
 
@@ -169,7 +169,7 @@ The freehand digitizing mode is activated through a new toolbar button
 which appears when QField is set to editing mode and a stylus pen or
 a mouse is hovering the map canvas while a line or polygon vector is selected.
 
-![type:video](https://player.vimeo.com/video/537673220)
+![type:video](https://player.vimeo.com/video/537673220)<!-- markdown-link-check-disable-line -->
 
 ## Topological editing
 
@@ -179,7 +179,7 @@ together when moving / deleting vertices and additional vertices are
 added to segments when a new node is added from neighbouring
 geometries.
 
-![type:video](https://player.vimeo.com/video/499565314)
+![type:video](https://player.vimeo.com/video/499565314)<!-- markdown-link-check-disable-line -->
 
 ### Multi-editing of attributes
 
@@ -188,7 +188,7 @@ In some cases, it can result in very efficient workflows. To do so, identify two
 features on the map, select them in the features list and merge them by selecting
 the *Edit feature* button in the list's title bar.
 
-![type:video](https://player.vimeo.com/video/499565955)
+![type:video](https://player.vimeo.com/video/499565955)<!-- markdown-link-check-disable-line -->
 
 ## Delete features
 :material-tablet: Fieldwork

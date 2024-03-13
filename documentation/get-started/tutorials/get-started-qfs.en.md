@@ -81,10 +81,34 @@ Properties
 :   There are some additional options to fine tune your QField project in the properties
 
 1. Lock geometries: do not allow changing geometries and only allow changing attributes on this layer.
+
 2. Set up the attachment default naming, please refer to the [Configurable picture path](../../how-to/pictures.md#configurable-attachment-path)
+
 3. Set up the maximum number of items shown in the relation editor widget
 
 !![QFieldSync Layer Properties](../../assets/images/qfield-sync-properties.png)
+
+#### Configuring maximum items visibility for QField
+
+To adjust the maximum number of visible items in a relationship within QField, follow these steps:
+
+1. **Access Layer Properties Dialog**:
+   - Open the layer properties dialog in QGIS where the relation editor is displayed.
+
+2. **Navigate to QField Tab**:
+   - Locate the QField tab, typically located at the bottom of the layer properties dialog.
+
+3. **Modify Relationship Configuration**:
+   - In the "Relationship configuration" section, locate the section corresponding to the relationship you want to modify.
+
+4. **Adjust Visibility Limit**:
+   - Within the row for the desired relationship, find the "Maximum number of items visible" column.
+   - Delete the existing numerical value to set the visibility to "unlimited", the field will transform from a number (default 4) to "unlimited".
+   - Click "Apply" to save the changes to the layer properties.
+
+!![Maximum items visible for relation](../../assets/images/setting-maximum-items-visible-in-relation.png)
+
+!![QField Visible items](../../assets/images/maximum-items-visible-in-relation.png,300px)
 
 ### Base map configuration
 
