@@ -160,7 +160,7 @@ checkbox is checked, the list of diseases will be available to you.
 
 Let's see what we got on the field:
 
-![type:video](https://player.vimeo.com/video/499565113)
+![type:video](https://player.vimeo.com/video/499565113)<!-- markdown-link-check-disable-line -->
 
 
 ## Define Constraints
@@ -275,7 +275,7 @@ with_variable(
 It is possible to search value in a *value relation* or *relation reference* widget using the magnifying
 glass next to the field.
 
-![type:video](https://player.vimeo.com/video/604661919)
+![type:video](https://player.vimeo.com/video/604661919)<!-- markdown-link-check-disable-line -->
 
 !!! note
     Define the *display expression* for the concerned layers, this will
@@ -292,7 +292,7 @@ auto-complete in the value relation.
 
 Here a video showing how it works on QField
 
-![type:video](https://player.vimeo.com/video/604661919)
+![type:video](https://player.vimeo.com/video/604661919)<!-- markdown-link-check-disable-line -->
 
 ## Define QML Widgets
 

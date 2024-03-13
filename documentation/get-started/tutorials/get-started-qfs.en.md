@@ -108,6 +108,8 @@ To adjust the maximum number of visible items in a relationship within QField, f
 
 !![Maximum items visible for relation](../../assets/images/setting-maximum-items-visible-in-relation.png)
 
+!![QField Visible items](../../assets/images/maximum-items-visible-in-relation.png,300px)
+
 ### Base map configuration
 
 A base map is a raster layer which is added as the bottommost layer to
