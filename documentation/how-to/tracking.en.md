@@ -69,3 +69,22 @@ on a legend layer linked to an active tracking session and select the
 *Stop tracking* button.
 
 !![](../assets/images/tracking-stop.png)
+
+## Project Tracking Sessions Auto-Start Feature
+
+The feature enables tracking sessions to automatically start upon project load, with the option for users to fill out a feature form unless the 'Hide Form on Add Feature' toggle is enabled for the project's layer, but the default attribute values are used.
+
+!![Hide Form on Added Feature](../assets/images/hide-form-on-add-feature.png)
+
+### Implementation
+
+For implement it enter to the layer properties and in the QField panel activate "Tracking Session" and specify the your requirement for the tracking.
+
+!![Activating Autimatic Tracking sessions QFieldSync](../assets/images/automatic-tracking-session.png)
+
+!![Tracking activated automatically in QField](../assets/images/qfield-tracking-session.png,300px)
+
+!!! note
+    ### Benefits
+    - **Efficiency**: Automation saves time and effort in the field.
+    - **Flexibility**: Users can customize sessions and opt for automatic initiation with default values.
