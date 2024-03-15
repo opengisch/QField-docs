@@ -72,7 +72,7 @@ on a legend layer linked to an active tracking session and select the
 
 ## Predefined Project Tracking Sessions
 
-The feature enables tracking sessions to automatically start upon project load, with the option for users to fill out a feature form unless the 'Hide Form on Add Feature' toggle is enabled for the project's layer, but the default attribute values are used.
+This functionality enables one or more position tracking sessions to automatically start upon project load. Users will be presented with a feature form popup as the tracking session begins to fill in attributes. If the vector layer used to track has the 'Hide Form on Add Feature' mode selected, the feature form will be skipped. 
 
 !![Hide Form on Added Feature](../assets/images/hide-form-on-add-feature.png)
 
