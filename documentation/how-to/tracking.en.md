@@ -78,7 +78,7 @@ This functionality enables one or more position tracking sessions to automatical
 
 ### Configure a Project Tracking Session
 
-For implement it enter to the layer properties and in the QField panel activate "Tracking Session" and specify the your requirement for the tracking.
+The configuration of a project tracking session happens in the vector layer properties dialog's QField panel. There, you can activate "Tracking Session" and specify the tracking requirements. Note that the QField panel is only available when the qfieldsync plugin is installed in your QGIS profile.
 
 !![Activating Autimatic Tracking sessions QFieldSync](../assets/images/automatic-tracking-session.png)
 
