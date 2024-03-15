@@ -76,7 +76,7 @@ This functionality enables one or more position tracking sessions to automatical
 
 !![Hide Form on Added Feature](../assets/images/hide-form-on-add-feature.png)
 
-### Implementation
+### Configure a Project Tracking Session
 
 For implement it enter to the layer properties and in the QField panel activate "Tracking Session" and specify the your requirement for the tracking.
 
