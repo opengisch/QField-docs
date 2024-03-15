@@ -70,7 +70,7 @@ on a legend layer linked to an active tracking session and select the
 
 !![](../assets/images/tracking-stop.png)
 
-## Project Tracking Sessions Auto-Start Feature
+## Predefined Project Tracking Sessions
 
 The feature enables tracking sessions to automatically start upon project load, with the option for users to fill out a feature form unless the 'Hide Form on Add Feature' toggle is enabled for the project's layer, but the default attribute values are used.
 
