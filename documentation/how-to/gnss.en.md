@@ -25,7 +25,6 @@ a builtin magnetic compass.
 A circle around your current position indicates the precision as reported by the
 positioning device.
 
-
 ## Configuration
 
 The following settings are available in QField settings' positioning tab.
@@ -145,7 +144,7 @@ The logs will be placed in *Android/data/ch.opengis.qfield/files/QField/logs*.
 !![](../assets/images/external_receiver_log.png,250px)
 
 !!! note
-    Be aware that if the log is always turned on, it will fill up all the storage.
+    Be aware that if the log is always turned on, it will fill up all the storage.
 
 ## Mock location
 :material-tablet: Fieldwork
