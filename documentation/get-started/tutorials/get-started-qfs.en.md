@@ -141,7 +141,7 @@ tile size is set to 1, each raster pixel will have a spatial extent of
 extent of 1 square kilometer.
 
 !!! note
-   Base map generation is disabled on QFieldCloud. You can still manually add your basemaps by running "Generate XYZ tiles (MBTiles)" or "Convert map to raster" algorithms in the processing framework.
+    Base map generation is disabled on QFieldCloud. You can still manually add your basemaps by running "Generate XYZ tiles (MBTiles)" or "Convert map to raster" algorithms in the processing framework.
 
 ### Offline editing configuration
 
