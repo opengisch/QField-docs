@@ -30,6 +30,11 @@ The supported raster formats are:
 - PNG (.png); and
 - WebP (.webp)
 
+Supported point cloud formats:
+
+- LAS/LAZ (.las, .laz)
+- COPC (Cloud Optimized Point Cloud)
+
 !!! note
     QField can handle several standalone datasets compressed into one ZIP archive; in this scenario, each dataset will be added as individual layers in QField.
 
