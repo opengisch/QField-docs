@@ -348,7 +348,7 @@ For the old (QGIS) offliner:
 !![](../../assets/images/qfc_offline_packager.png,700px)
 
 !!! note
-    This configuration must be set in the Settings section of each project in [QFieldCloud](https://app.qfield.cloud/).
+    This configuration must be set in the Settings page of each project in [QFieldCloud](https://app.qfield.cloud/).
 
 ## Field device
 
