@@ -99,7 +99,86 @@ Hybrid editing mode with synchronization on the server
 
 !![Hybrid editing mode](../../assets/images/hybrid-schema.png)
 
+Hybrid Mode allows users to seamlessly transition between online and offline environments.
+
+1. **Project Creation in QFieldCloud**:
+   - Access [QFieldCloud](https:app.qfield.cloud/) and create a new project. Ensure that the project name follows the specified conventions: use underscores instead of spaces and avoid special characters. Provide all required information and specifications before finalizing the project creation by pressing the "Create" button.
+
+2. **Project Synchronization in QGIS**:
+   - Open QGIS and navigate to the QFieldSync plugin.
+   - Select "QFieldCloud Projects Overview" and choose the desired project.
+   - Click "Synchronize Selected Cloud Project" to initiate project synchronization.
+   - Specify the directory for project synchronization. The default location (~/QField/cloud/project_name) is recommended.
+   - Proceed by clicking "Next", then "OK".
+   - Add layers from your PostgreSQL database, ensuring you use a connection established through a .pg_service.conf file.
+   - Configure the project settings, including styles and forms as your requirements.
+
+3. **Offline Editing Configuration**:
+   - Navigate to "Project Properties" in QGIS.
+   - Under the "QField" section and the "QFieldCloud" tab, set the action for layers to "Offline editing".
+
+4. **Secret Creation in QFieldCloud**:
+   - Within QFieldCloud project, create a secret in the "Secrets" section (recommended to directly copy and paste directly from the pg_service.conf file).
+
+5. **Project Synchronization**:
+   - Return to QGIS and press "Synchronize Current Cloud Project" within QFieldSync.
+   - Choose "Prefer Local" and "Perform Actions".
+
+6. **Survey and Data Collection**:
+   - Once finished the Jobs, download and synchronize the project on devices designated for surveying.
+   - Start surveying, utilizing the project.
+   - Changes made during the survey will be stored locally on the device.
+
+7. **Data Upload to Cloud**:
+   - Once back in an area with internet connectivity:
+     - Push the changes made during the survey to the cloud by initiating synchronization.
+     - Monitor the progress of synchronization jobs to ensure successful completion.
+     - Reviewed changes will automatically update in the PostgreSQL database.
+     - Check changes directly in QGIS. Synchronization of the attachments for download may be required to view the updates.
+
 ### Offline database
 Offline editing mode with desktop synchronization
 
 !![Offline editing mode](../../assets/images/offline-schema.png)
+
+Offline Mode is designated to utilize GeoPackage to collect and consolidate the information then manually push the changes to the PostgreSQL:
+
+1. **Project Creation in QFieldCloud**:
+   - Access [QFieldCloud](https:app.qfield.cloud/) and create a new project. Ensure that the project name follows the specified conventions: use underscores instead of spaces and avoid special characters. Provide all required information and specifications before finalizing the project creation by pressing the "Create" button.
+
+2. **Project Synchronization in QGIS**:
+   - Open QGIS and navigate to the QFieldSync plugin.
+   - Select "QFieldCloud Projects Overview" and choose the desired project.
+   - Click "Synchronize Selected Cloud Project" to initiate project synchronization.
+   - Specify the directory for project synchronization. The default location (~/QField/cloud/project_name) is recommended.
+   - Proceed by clicking "Next", then "OK".
+   - Add layers from your PostgreSQL database.
+   - Configure the project settings, including styles and forms as your requirements.
+
+3. **Offline Data Conversion**:
+   - Utilize the core QGIS plugin "OfflineEditing" (make sure to have it active).
+   - Navigate to "Database > Offline Editing" and select "Convert to Offline Project...".
+   - Choose GeoPackage as the storage type for offline data.
+   - Specify the offline data location within the cloud project directory. It's essential to save it in the location accessible to QFieldCloud project.
+   - Select the layers for offline conversion and confirm by pressing "OK".
+
+4. **Offline Editing Configuration**:
+   - Configure offline editing actions in QGIS:
+     - Navigate to "Project Properties" and access the "QField" section, then the "QFieldCloud" tab.
+     - Set the action for layers to "Offline editing".
+
+5. **Project Synchronization**:
+   - Then in QGIS and press "Synchronize Current Cloud Project" within QFieldSync.
+   - Choose "Prefer Local" and "Perform Actions".
+
+6. **Survey and Data Collection**:
+   - Download and synchronize the project on devices designated for surveying.
+   - Conduct surveys in project.
+   - Changes made during the survey will be stored locally on the device.
+
+7. **Data Synchronization and Database Update**:
+   - Once back in an area with internet connectivity:
+     - Push the changes made during the survey to the cloud by initiating synchronization.
+     - Monitor the progress of synchronization jobs to ensure successful completion.
+     - Reviewed changes will automatically update in the PostgreSQL database.
+     - Check changes directly in QGIS. Synchronization and attachment downloads may be required to view the updates.
