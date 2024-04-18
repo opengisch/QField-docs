@@ -81,7 +81,7 @@ The formats currently supported are:
   - NTv2 Datum Grid Shift (.gsb)
   - Natural Resources Canada's Geoid (.byn)
 
-For examples:
+For example:
 For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
 the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
 
