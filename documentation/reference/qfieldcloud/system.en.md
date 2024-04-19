@@ -182,7 +182,7 @@ Offline Mode is designated to utilize GeoPackage to collect and consolidate the 
 - Specify the directory for project synchronization. The default location (~/QField/cloud/project_name) is recommended.
 - Proceed by clicking "Next", then "OK".
 - Add layers from your PostgreSQL database.
-- Configure the project settings, including styles and forms as your requirements.
+- Configure the project settings, including styles and forms, as per your requirements.
 
 #### Offline Data Conversion
 
