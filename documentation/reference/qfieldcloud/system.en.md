@@ -119,7 +119,7 @@ Hybrid Mode allows users to seamlessly transition between online and offline env
 - Specify the directory for project synchronization. The default location (~/QField/cloud/project_name) is recommended.
 - Proceed by clicking "Next", then "OK".
 - Add layers from your PostgreSQL database, ensuring you use a connection established through a [pg_service.conf](../../how-to/pg-service.md) file.
-- Configure the project settings, including styles and forms as your requirements.
+- Configure the project settings, including styles and forms, as per your requirements.
 
 #### Offline Editing Configuration
 
