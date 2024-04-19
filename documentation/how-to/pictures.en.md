@@ -66,6 +66,12 @@ Set the widget type of the field path to *Attachment* and add it to the form
 
 !![widgets](../assets/images/add-1-n-pictures-widgets_picture.png)
 
+## Drawing and sketching
+
+QField have an in-app drawing and sketching functionality enabling you to directly sketch over and annotate images captured while in the field as well as drawing on top of a blank canvas or over a template.
+
+![type:video](../assets/videos/drawing-sketch-feature2.webm)
+
 ## Geotagging
 :material-tablet: Fieldwork
 
