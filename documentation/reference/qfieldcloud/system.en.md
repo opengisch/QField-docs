@@ -163,7 +163,7 @@ Offline editing mode with desktop synchronization
 
 !![Offline editing mode](../../assets/images/offline-schema.png)
 
-Offline Mode is designated to utilize GeoPackage to collect and consolidate the information then manually push the changes to the PostgreSQL:
+Offline Mode is designated to utilize GeoPackage to collect and consolidate the information, then manually push the changes to PostgreSQL:
 
 #### Project Creation in QFieldCloud in Offline mode
 
