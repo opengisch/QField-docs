@@ -174,7 +174,7 @@ Offline Mode is designated to utilize GeoPackage to collect and consolidate the 
 #### Project Synchronization in QGIS in Offline mode
 
 - Open QGIS and navigate to the QFieldSync plugin.
-- Select "QFieldCloud Projects Overview" and choose the desired project, this case the new created project.
+- Select "QFieldCloud Projects Overview" and choose the desired project, in this case the newly created project.
 - Click "Synchronize Selected Cloud Project" to initiate project synchronization.
 
 !![](../../assets/images/offline_workflow_002.png)
