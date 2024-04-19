@@ -233,3 +233,30 @@ The snapping tolerance can be specified in map units or pixels.
 
 In almost any case, the units should be set to pixels. We made good
 experiences with a tolerance value of 20.
+
+## Snap to Common Angle
+
+The Snap to Common Angle feature enhances the precision and efficiency of digitizing geometries by allowing users to snap to predefined common angles. This functionality is similar to the advanced digitizing tool in QGIS and offers angles of 10°, 15°, 30°, 45°, and 90° for snapping.
+
+### Key Features
+
+- **Enhanced Precision**: Users can easily align new geometries or vertices with common angles, ensuring accuracy in digitization.
+- **Efficient Digitizing**: Snap to Common Angle streamlines the digitizing process by providing predefined angles for snapping, reducing the need for manual adjustments.
+- **Flexible Activation**: Users can activate the Snap to Common Angle feature in Editing mode by performing a long tap on the respective icon, allowing for seamless integration into the editing workflow.
+- **Adaptive Angle Memory**: QField remembers the angle relative to the last segment situation, enhancing user experience and productivity.
+
+### How to Activate
+
+1. **Enter Editing Mode**: Open the geometry editor and enter Editing mode.
+
+2. **Activate Snap to Common Angle**:
+
+    - Long tap on the Snap to Common Angle icon in the toolbar.
+    - A pop-up menu will appear, displaying the list of common angles (10°, 15°, 30°, 45°, 90°).
+3. **Select Desired Angle**: Choose the desired common angle from the pop-up menu by tapping on it.
+
+4. **Start Digitizing**: Begin digitizing your geometry or adding vertices. The Snap to Common Angle functionality will automatically align your input to the selected angle.
+
+5. **Adaptive Angle Memory**: QField will remember the angle relative to the last segment situation, providing consistent snapping behavior for subsequent edits.
+
+!![](../assets/images/snap-to-common-angles.gif)
