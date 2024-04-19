@@ -145,7 +145,7 @@ Hybrid Mode allows users to seamlessly transition between online and offline env
 - Start surveying, utilizing the project.
 - Changes made during the survey will be stored locally on the device.
 
-#### Data Upload to Cloud and Download the latest data
+#### Data Upload to the Cloud and Download the latest data
 
 - Once back in an area with internet connectivity push the changes made during the survey to the cloud by initiating synchronization.
 - Monitor the progress of synchronization jobs to ensure successful completion.
