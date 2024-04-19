@@ -141,7 +141,7 @@ Hybrid Mode allows users to seamlessly transition between online and offline env
 
 #### Survey and Data Collection
 
-- Once finished the Jobs, download and synchronize the project on devices designated for surveying.
+- Once you have finished the Jobs, download and synchronize the project on devices designated for surveying.
 - Start surveying, utilizing the project.
 - Changes made during the survey will be stored locally on the device.
 
