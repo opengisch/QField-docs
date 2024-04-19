@@ -222,7 +222,7 @@ Offline Mode is designated to utilize GeoPackage to collect and consolidate the 
 
 - Upon returning to an area with internet connectivity push the changes made during the survey to the cloud by initiating synchronization.
 - Monitor the progress of synchronization jobs to ensure successful completion.
-- In QGIS, download the latest data and attachments of the project using QFieldSync.
+- In QGIS, download the latest data and attachments for the project using QFieldSync.
 
 !![](../../assets/images/offline_workflow_007.png)
 
