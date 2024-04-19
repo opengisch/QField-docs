@@ -111,7 +111,7 @@ Hybrid Mode allows users to seamlessly transition between online and offline env
 #### Project Synchronization in QGIS
 
 - Open QGIS and navigate to the QFieldSync plugin.
-- Select "QFieldCloud Projects Overview" and choose the desired project, this case the new created project.
+- Select "QFieldCloud Projects Overview" and choose the desired project, in this case the newly created project.
 - Click "Synchronize Selected Cloud Project" to initiate project synchronization.
 
 !![](../../assets/images/hybrid_workflow_002.png)
