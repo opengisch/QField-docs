@@ -192,7 +192,7 @@ Offline Mode is designated to utilize GeoPackage to collect and consolidate the 
 !![](../../assets/images/offline_workflow_003.png)
 
 - Choose GeoPackage as the storage type for offline data.
-- Specify the offline data location within the cloud project directory. It's essential to save it in the location accessible to QFieldCloud project.
+- Specify the offline data location within the cloud project directory. It's essential to save it in a location accessible to QFieldCloud project.
 - Select the layers for offline conversion and confirm by pressing "OK".
 
 !![](../../assets/images/offline_workflow_004.png)
