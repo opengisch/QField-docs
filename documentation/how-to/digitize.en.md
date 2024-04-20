@@ -55,7 +55,7 @@ You can use the volume keys for adding or removing vertices while in digitizing 
 !!! note
     This feature is available on Android only.
 
-Additionally Finger Tap Digitizing Mode in QField, offer to users a swift method to add vertices by tapping on the canvas, balancing speed and functionality. Accessed through the settings panel, this mode caters to scenarios where rapid data input is crucial.
+Additionally, QField has a _finger tap_ digitizing mode where vertices are added by tapping on the canvas. Activated through the settings panel, this mode caters to scenarios where rapid data input is crucial.
 
 !![](../assets/images/activate_finger_tap_digitizing.png)
 
