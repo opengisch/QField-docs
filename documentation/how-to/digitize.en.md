@@ -240,10 +240,9 @@ The Snap to Common Angle feature enhances the precision and efficiency of digiti
 
 ### Key Features
 
-- **Enhanced Precision**: Users can easily align new geometries or vertices with common angles, ensuring accuracy in digitization.
-- **Efficient Digitizing**: Snap to Common Angle streamlines the digitizing process by providing predefined angles for snapping, reducing the need for manual adjustments.
-- **Flexible Activation**: Users can activate the Snap to Common Angle feature in Editing mode by performing a long tap on the respective icon, allowing for seamless integration into the editing workflow.
-- **Adaptive Angle Memory**: QField remembers the angle relative to the last segment situation, enhancing user experience and productivity.
+- **Enhanced Precision and Efficiency**: Users can easily align new geometries or vertices with common angles, allowing for both a faster workflow and increased accuracy while digitizing.
+- **Flexible Activation**: Users can toggle snapping on-the-fly using the digitizing drawer's Snap to Common Angle button and  change the angle by performing a long tap on the Snap to Common Angle icon.
+- **Adaptive Angle**: QField supports absolute angle snapping as well as angle snapping relative to the last digitized segment.
 
 ### How to Activate
 
