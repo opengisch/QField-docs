@@ -128,6 +128,14 @@ The reshape tool allows you to change line and polygon geometries by drawing sha
 result in a reshaped line following the edge of the drawn shape or a polygon with the drawn shaped
 used to clip or expand the geometry.
 
+## Reshape eraser tool
+
+The reshape eraser tool is a feature in the geometry editor, designed to facilitate the removal of parts of a line or polygon geometry. This tool enables to efficiently correct paths or polygons directly within the application interface and directly from the field conditions.
+
+Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion. You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
+
+!![](../assets/images/erasing-tool-feature.gif)
+
 ### Ring tool
 
 The ring tool allows you to digitize rings (i.e. holes) into polygon geometries. Once a ring
@@ -138,28 +146,6 @@ is created, QField will offer the possibility of filling the ring with a new fea
 A video demonstration of some editing possibilities:
 
 ![type:video](https://player.vimeo.com/video/499564854)<!-- markdown-link-check-disable-line -->
-
-## Erase Tool Functionality
-
-The erase tool is a new feature introduced in the geometry editor, designed to facilitate the removal of parts of a line or polygon geometry. This tool enables users to efficiently correct paths or polygons directly within the application interface and directly from the field.
-
-Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion. You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
-
-### How to Use
-
-1. **Select the Erase Tool**: Locate the erase tool icon in the toolbar of the geometry editor.
-
-2. **Choose Geometry to Erase**: Click on the line or polygon geometry that you want to edit using the erase tool.
-
-3. **Erase Segments or Portions**:
-
-    - For lines: Click and drag along the segment(s) you wish to erase.
-    - For polygons: Click within the area you want to erase, and drag to define the portion to be removed.
-4. **Confirm Erase Action**: Once you have selected the desired segments or portions to erase, release the mouse button to confirm the erase action.
-
-5. **Finalize Changes**: Save your changes or continue editing as needed.
-
-!![](../assets/images/erasing-tool-feature.gif)
 
 ## Merging features
 
