@@ -131,7 +131,7 @@ The breakdown of connections support by platform is as follow:
 *(\*) Bluetooth support on Windows occurs through the virtual serial port automatically
 created by the operating system when it connects to the GNSS device.*
 
-The NMEA sentences currently supported are GGA, RMC, GSA, GSV, VTG, and HDT.
+The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and HDT.
 
 !!! note
     Make sure no other app like mock location providers are using the same connection.
