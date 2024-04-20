@@ -236,7 +236,7 @@ experiences with a tolerance value of 20.
 
 ## Snap to Common Angle
 
-The Snap to Common Angle feature enhances the precision and efficiency of digitizing geometries by allowing users to snap to predefined common angles. This functionality is similar to the advanced digitizing tool in QGIS and offers angles of 10°, 15°, 30°, 45°, and 90° for snapping.
+The Snap to Common Angle feature enhances the precision and efficiency of digitizing geometries by allowing users to snap to predefined common angles: 10°, 15°, 30°, 45°, and 90°. This functionality is similar to the advanced digitizing tool in QGIS.
 
 ### Key Features
 
