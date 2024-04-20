@@ -236,26 +236,8 @@ experiences with a tolerance value of 20.
 
 ## Snap to Common Angle
 
-The Snap to Common Angle feature enhances the precision and efficiency of digitizing geometries by allowing users to snap to predefined common angles: 10°, 15°, 30°, 45°, and 90°. This functionality is similar to the advanced digitizing tool in QGIS.
+The Snap to Common Angle feature enhances the precision and efficiency of digitizing geometries by allowing to snap to predefined common angles: 10°, 15°, 30°, 45°, and 90°. This functionality is similar to the advanced digitizing tool in QGIS.
 
-### Key Features
-
-- **Enhanced Precision and Efficiency**: Users can easily align new geometries or vertices with common angles, allowing for both a faster workflow and increased accuracy while digitizing.
-- **Flexible Activation**: Users can toggle snapping on-the-fly using the digitizing drawer's Snap to Common Angle button and  change the angle by performing a long tap on the Snap to Common Angle icon.
-- **Adaptive Angle**: QField supports absolute angle snapping as well as angle snapping relative to the last digitized segment.
-
-### How to Activate
-
-1. **Enter Editing Mode**: Open the geometry editor and enter Editing mode.
-
-2. **Activate Snap to Common Angle**:
-
-    - Long tap on the Snap to Common Angle icon in the toolbar.
-    - A pop-up menu will appear, displaying the list of common angles (10°, 15°, 30°, 45°, 90°).
-3. **Select Desired Angle**: Choose the desired common angle from the pop-up menu by tapping on it.
-
-4. **Start Digitizing**: Begin digitizing your geometry or adding vertices. The Snap to Common Angle functionality will automatically align your input to the selected angle.
-
-5. **Adaptive Angle Memory**: QField will remember the angle relative to the last segment situation, providing consistent snapping behavior for subsequent edits.
+To activate Snap to Common Angle, open the geometry editor and tap on the Snap to Common Angle icon in the toolbar to bring up a menu of common angles. Choose the desired angle from the menu. Then, start digitizing your geometry or adding vertices, and the functionality will automatically align your input to the selected angle. QField will remember the angle relative to the last segment situation for consistent snapping behavior during subsequent edits.
 
 !![](../assets/images/snap-to-common-angles.gif)
