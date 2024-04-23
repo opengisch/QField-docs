@@ -134,7 +134,7 @@ The reshape eraser tool is a feature in the geometry editor, designed to facilit
 
 Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion. You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
 
-!![](../assets/images/erasing-tool-feature.gif)
+![type:video](../assets/videos/new-erase-reshape-tool.webm)
 
 ### Ring tool
 
