@@ -93,7 +93,7 @@ QField’s source code’s [utilities classes directory](https://github.com/open
 A valid zipped plugin must contain a main.qml file at the root of the zip archive, which
 will be used by QField to activate the plugin. An optional metadata.txt can also be used
 to provide basic details such as the plugin name, brief description, and author name.
-A sample typical metadata.txt content would look like this:
+A sample typical `metadata.txt` content would look like this:
 
 ```
 [general]
