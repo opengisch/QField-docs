@@ -8,7 +8,8 @@ tx_slug: documentation_how-to_outside-layers
 It is possible to use a layer which is stored outside the project folder.
 
 This is useful if a basemap is used in more than one project, for example a large orthophoto.
-In this case, you can share this dataset among different projects.
+In this case, you can share this dataset among different projects.  
+Also large vector data files that are not modified can be shared that way. The features and their attributes remain identifiable.
 
 ## Add a layer outside of exported project folder
 :material-monitor: Desktop preparation
