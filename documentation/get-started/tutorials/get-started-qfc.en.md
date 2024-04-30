@@ -373,12 +373,12 @@ Select a project to download on your device:
 
 ### Synchronise your changes
 
-Make a change to your project. Either create a new feature, delete a feature, or modify the geometry or attributes.
+Make a change to your data. Either create a new feature, delete a feature, or modify the geometry or attributes.
 Open the blue cloud button on the top left of the screen:
 
 !![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
 
-Choose an action with the change you made to your project. Each of the actions have an explanation what you should expect to happen:
+Choose an action with the change you made to your data. Each of the actions have an explanation what you should expect to happen:
 
 !![Actions](../../assets/images/getting_started_actions.png,250px)
 
