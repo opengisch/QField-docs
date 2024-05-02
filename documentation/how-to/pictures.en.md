@@ -78,6 +78,11 @@ To enable geotagging in case your native OS camera does not support this functio
     on your mobile device
 3.  Completed! QField's own QML-based camera will now be utilized while taking pictures
 
+!![](../assets/images/disable-use-native-camera.png)
+
+!!! note
+    It is recommended to disable the "Use native camera" option in QField. This will enhance the app's performance for field surveys and is especially useful for devices with limited hardware, such as RAM.
+
 ## Fetching Geotags (EXIF) from the image file into the attribute table
 :material-monitor: Desktop preparation
 
