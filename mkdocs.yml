@@ -251,23 +251,23 @@ plugins:
           nav_translations:
             Home: Home
             Get started: Inizia
-            Tutorials: Tutorials
+            Tutorials: Esercitazioni
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: Guide Passo-Passo
             Technical reference: Documentazione tecnica di riferimento
-            Success stories: Success stories
+            Success stories: Storie di successo
           palette:
             - scheme: default
               primary: light green
               toggle:
                 icon: octicons/moon-24
-                name: Switch to dark mode
+                name: Passare alla modalità scura
             - scheme: slate
               primary: blue
               toggle:
                 icon: octicons/sun-24
-                name: Switch to light mode
+                name: Passare alla modalità chiara
 
 # Page tree
         - locale: ja
