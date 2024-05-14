@@ -186,7 +186,7 @@ How to create a project in an organization:
 
 **Option 1: Directly convert your local project to an Organization QFieldCloud project:**
 
-1. Follow the steps [configure your cloud project](#create-and-configure-your-cloud-project), ultil you get the "Project details".
+1. Follow the steps [configure your cloud project](#create-and-configure-your-cloud-project), until you get the "Project details".
 
 2. Change the owner of the project to your Organization.
 
