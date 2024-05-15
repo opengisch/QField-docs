@@ -5,7 +5,9 @@ tx_slug: documentation_get-started_certifiation
 
 # Certification
 
-The QField Certificate Program is designed to foster community involvement in the QField project and provide high-quality education for the QField application. Therefore, the application process requires applicants to detail their contributions to the QField project and make their training materials available for review. Activities that contribute to the QField and QFieldCloud project include:
+The QField Certificate Program is crafted to encourage community engagement with the QField project and to offer top-notch education on the QField application.
+Therefore, the application process entails applicants providing a comprehensive account of their contributions to the QField project and making their training materials accessible for evaluation.
+Activities deemed as contributions to the QField and QFieldCloud projects include:
 
 - Contributions to the QField documentation and training materials.
 - Translation of QField documentation and training materials.
