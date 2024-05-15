@@ -20,7 +20,9 @@ To reach out to the certification team, please visit the [Certified Trainer Prog
 
 ## Certification Process
 
-For each of your courses, you are required to provide training materials. This includes exercises, lectures, and data. This material will be reviewed to ensure that it is current, accurate, and high-quality. If the material is not of adequate quality, it may be refused.
+For each of your courses, we kindly request that you furnish training materials, encompassing exercises, lectures, and data.
+These materials will undergo a review process to ascertain their currency, accuracy, and quality.
+Should there be any concerns regarding the quality of the material, we may respectfully request revisions.
 
 OPENGIS.ch will handle the review.
 
