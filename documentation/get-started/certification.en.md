@@ -7,21 +7,16 @@ tx_slug: documentation_get-started_certifiation
 
 The QField Certificate Program is designed to foster community involvement in the QField project and provide high-quality education for the QField application. Therefore, the application process requires applicants to detail their contributions to the QField project and make their training materials available for review. Activities that contribute to the QField and QFieldCloud project include:
 
-Contributions to the QField documentation and training materials
+- Contributions to the QField documentation and training materials.
+- Translation of QField documentation and training materials.
+- Filing detailed bug reports.
+- Financially supporting new feature development and sponsorship of QField.
+- Involvement in your local QField User Group.
+- Publication of open QField courseware.
+- Contributing to QField/QFieldCloud code.
 
-Translation of QField materials
+To reach out to the certification team, please visit the [Certified Trainer Program page](https://qfield.org/certified-trainer.html). 
 
-Filing bug reports
-
-Financially supporting new feature development and sponsorship of QField
-
-Involvement in your local QField User Group
-
-Publication of open QField courseware
-
-Contributing to QField/QFieldCloud code
-
- To reach out to the certification team, please visit the next page at https://qfield.org/certified-trainer.html. 
 
 ## Certification Process
 
