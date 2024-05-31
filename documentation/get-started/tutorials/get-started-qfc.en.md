@@ -321,7 +321,7 @@ You will receive notifications for events in which you are not the actor. These 
 
 We recommend to use the new "Optimized Packager" over the deprecated "QGIS Core Offline Editing" for all your projects. Set the packager under "Packaging Offliner" in the "Settings" tab of your project.
 
-The "Optimized Packager" supports consolidating filtered layers of same datasource into a single oflline layer, respecting distinct symbology but also using less storage. Here is an example to illustrate this feature:
+The "Optimized Packager" supports consolidating filtered layers of same datasource into a single offline layer, respecting distinct symbology but also using less storage. Here is an example to illustrate this feature:
 
 ### Example Configuration:
 
