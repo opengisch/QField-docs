@@ -197,7 +197,7 @@ plugins:
             QFieldSync: QFieldSync
             How-to guides: Anleitungen
             Technical reference: Technische Hinweise
-            Success stories: Success stories
+            Success stories: Erfolgsgeschichten
           palette:
             - scheme: default
               primary: light green
