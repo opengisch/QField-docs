@@ -53,8 +53,8 @@ QField enables you to use all the custom fonts you might want and need.
 There are two different possibilities to register additional fonts:
 
 1.  By adding fonts (.ttf or .otf) on the device in the folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/fonts` those will be made accessible to all projects and individual datasets.
-2.  By adding fonts (.ttf or .otf) in a `fonts` subfolder of the folder
-    containing a given project file (.qgs or .qgz); those fonts will only
+2.  By adding fonts (`.ttf` or `.otf`) in a `fonts` subfolder of the folder
+    containing a given project file (`.qgs` or `.qgz`); those fonts will only
     be accessible when viewing that project.
 
 ## Custom SVG symbols
