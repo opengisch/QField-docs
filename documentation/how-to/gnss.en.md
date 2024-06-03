@@ -85,7 +85,8 @@ For example:
 For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
 the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
 
-To obtain precise altitude data for Cadastral Surveying in Switzerland, users can access the file correction of the vertical grid shift through [Geoid OGC from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip). Following the download, users are advised to perform a conversion of the file labeled `chgeo04_htrans_lv95.arg` to `chgeo04_htrans_lv95.gtx`.
+To obtain precise altitude data for Cadastral Surveying in Switzerland, users can access the file correction of the vertical grid shift through [Geoid OGC from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip).
+Following the download, users are advised to perform a conversion of the file labeled `chgeo04_htrans_lv95.arg` to `chgeo04_htrans_lv95.gtx`.
 
 ## Usage
 :material-tablet: Fieldwork
