@@ -48,17 +48,14 @@ and/or not searchable.](../assets/images/project_configuration_readonly.png)
 ## Using additional fonts
 :material-monitor: Desktop preparation
 
-In QField, you are able to use all the fonts you want.
+QField enables you to use all the custom fonts you might want and need.
 
 There are two different possibilities to register additional fonts:
 
 1.  By adding fonts (.ttf or .otf) on the device in the folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/fonts` those will be made accessible to all projects and individual datasets.
-2.  By adding fonts (.ttf or .otf) in the same folder as a given project
-    file (.qgs or .qgz); those will be accessible only when viewing that
-    project file.
-
-!!! note
-    Since QField 2 the font files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/fonts` instead of the devices main directory `<drive>:/QField/fonts`.
+2.  By adding fonts (`.ttf` or `.otf`) in a `fonts` subfolder of the folder
+    containing a given project file (`.qgs` or `.qgz`); those fonts will only
+    be accessible when viewing that project.
 
 ## Custom SVG symbols
 :material-monitor: Desktop preparation
