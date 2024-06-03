@@ -53,9 +53,11 @@ nav:
           - QFieldCloud:
               - get-started/tutorials/get-started-qfc.md
               - get-started/tutorials/advanced-setup-qfc.md
+              - get-started/storage-qfc.en.md
           - QFieldSync:
               - get-started/tutorials/get-started-qfs.md
       - get-started/faq.md
+      - get-started/settings.en.md
       - get-started/sample-projects.md
       - get-started/support.md
       - get-started/sponsor.md
@@ -98,6 +100,7 @@ nav:
           - reference/qfieldcloud/projects.md
           - reference/qfieldcloud/permissions.md
           - reference/qfieldcloud/jobs.md
+          - reference/qfieldcloud/conflicts.en.md
           - reference/qfieldcloud/secrets.md
           - reference/qfieldcloud/specs.md
           - reference/qfieldcloud/api.md
