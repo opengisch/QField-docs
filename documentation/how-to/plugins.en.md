@@ -88,6 +88,10 @@ In addition a number of utility classes are available to plugin authors allowing
 layer fetching, vector layer editing, and more. To familiarize yourself with these, visit
 QField’s source code’s [utilities classes directory](https://github.com/opengisch/QField/tree/master/src/core/utils).
 
+A plugin providing weather forecast as an overlay to QField's map canvas is available
+in this [github repository](https://github.com/opengisch/qfield-weather-forecast) as a practical
+example to learn from.
+
 ### Creating a zipped plugin
 
 A valid zipped plugin must contain a main.qml file at the root of the zip archive, which
