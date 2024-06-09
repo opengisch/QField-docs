@@ -21,7 +21,7 @@ Please visit our [crowdfunding page](https://www.opengis.ch/category/crowdfundin
 You probably have plenty of ideas for nice features that are not implemented yet. Please [contact us](https://opengis.ch/#contact) to discuss the best approach to integrate this idea into QField or to create your own custom app.
 
 ## Contribute your time
-Your expertise and dedication can significantly impact the development and improvement of QField. Join our vibrant community and contribute your time to help us create the best fieldwork app possible. 
+Your expertise and dedication can significantly impact the development and improvement of QField. Join our vibrant community and contribute your time to help us create the best fieldwork app possible.
 Please visit our [Contribute page](/get-started/contribute/).
 
 ## Credits
