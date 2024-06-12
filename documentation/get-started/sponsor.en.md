@@ -22,7 +22,7 @@ You probably have plenty of ideas for nice features that are not implemented yet
 
 ## Contribute your time
 Your expertise and dedication can significantly impact the development and improvement of QField. Join our vibrant community and contribute your time to help us create the best fieldwork app possible.
-Please visit our [Contribute page](/get-started/contribute/).
+Please visit our [Contribute page](./contribute.md).
 
 ## Credits
 
