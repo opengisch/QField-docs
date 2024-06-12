@@ -71,7 +71,7 @@ The `iface.mainWindow()` function points at the QML ApplicationWindow instance, 
 can parent their popups and items via `iface.mainWindow().contentItem` and have access to
 functionality such as displaying toast messages using `iface.mainWindow().displayToast(text)`.
 
-The `iface.mapCanvas()` functions provides access the map canvas item and its properties,
+The `iface.mapCanvas()` function provides access to the map canvas item and its properties,
 including the crucial `iface.mapCanvas().mapSettings` object where the extent, scale, etc. can be retrieved and modified.
 It can also be used to parent items as overlays to the map canvas.
 
