@@ -6,7 +6,7 @@ tx_slug: documentation_how-to_index
 # How-to guides
 
 QField leverages the power of QGIS to comfortably configure your
-projects. After setting up everything, you can then synchronise your
+projects. After setting up everything, you can eventually synchronise your
 project and any additional files to your device and immediately get
 down to work.
 
