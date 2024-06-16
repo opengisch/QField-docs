@@ -130,7 +130,7 @@ used to clip or expand the geometry.
 
 ## Reshape eraser tool
 
-The reshape eraser tool is a feature in the geometry editor, designed to facilitate the removal of parts of a line or polygon geometry. This tool enables to efficiently correct paths or polygons directly within the application interface and directly from the field conditions.
+The reshape eraser tool is designed to ease the removal of parts of a line or polygon geometry. The tool mimics eraser tools from 2D drawing programs and works best with a stylus.
 
 Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion. You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
 
