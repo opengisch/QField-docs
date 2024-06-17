@@ -9,18 +9,11 @@ QField was designed with a few key concepts in mind.
 
 ## Keep it simple
 
-The requirements on the field are not the same as on a desktop. The
-screen is smaller, the input devices are different and the tasks are
-different.
+The requirements in the field are hardly the same as on a desktop. Firstly, using a phone or a tablet, the canvas to work on is much more limited than on a computer monitor. Secondly, devices for data collection as well as the individual tasks that need to be performed are vastly different.
 
-QField aims to help users to perform the tasks they need to do without
-cluttering the user interface. This means, that only tasks which need to
-be done on the field are availble from the interface. Everything else is
-not.
+QField aims to help users do fieldwork without the nuisance of a cluttered user interface. In other words, only the relevant parts of a task are accessible on the interface, while less important things remain out of sight.
 
-This means that everything like layer styling, form definitions and
-other project setup steps should be done on a computer with QGIS
-installed first.
+Before heading out to the field though, preliminary steps such as layer styling, tailored forms, or in general any other project configurations should first be done on the QGIS desktop version.
 
 ## Be compatible with QGIS
 
