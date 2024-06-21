@@ -7,6 +7,7 @@ tx_slug: documentation_get-started_concepts
 
 QField is designed with a few key principles in mind.
 
+
 ## Keeping it simple
 
 The requirements in the field are not the same as on a desktop.
