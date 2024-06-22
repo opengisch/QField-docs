@@ -3,7 +3,7 @@ title: Plugins
 tx_slug: documentation_how-to_plugins
 ---
 
-# Plugins
+# QField Plugins
 
 QField has a QML/Javascript plugin framework through which additional functionalities and
 features can be scripted.
