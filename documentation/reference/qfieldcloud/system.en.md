@@ -95,11 +95,142 @@ project before being able to push new changes.
 ## Use Cases
 
 ### Hybrid
+
 Hybrid editing mode with synchronization on the server
 
 !![Hybrid editing mode](../../assets/images/hybrid-schema.png)
 
+Hybrid Mode allows users to seamlessly transition between online and offline environments.
+
+#### Project Creation in QFieldCloud
+
+- Access [QFieldCloud](https:app.qfield.cloud/) and create a new project. Ensure that the project name follows the specified conventions: use underscores instead of spaces and avoid special characters. Provide all required information and specifications before finalizing the project creation by pressing the "Create" button.
+
+!![](../../assets/images/hybrid_workflow_001.png)
+
+#### Project Synchronization in QGIS
+
+- Open QGIS and navigate to the QFieldSync plugin.
+- Select "QFieldCloud Projects Overview" and choose the desired project, in this case the newly created project.
+- Click "Synchronize Selected Cloud Project" to initiate project synchronization.
+
+!![](../../assets/images/hybrid_workflow_002.png)
+
+- Specify the directory for project synchronization. The default location (~/QField/cloud/project_name) is recommended.
+- Proceed by clicking "Next", then "OK".
+- Add layers from your PostgreSQL database, ensuring you use a connection established through a [pg_service.conf](../../how-to/pg-service.md) file.
+- Configure the project settings, including styles and forms, as per your requirements.
+
+#### Offline Editing Configuration
+
+- Navigate to "Project Properties" in QGIS.
+- Under the "QField" section and the "QFieldCloud" tab, set the action for layers to "Offline editing".
+
+!![](../../assets/images/hybrid_workflow_003.png)
+
+#### Secret Creation in QFieldCloud
+
+- Within QFieldCloud project, create a [secret](../qfieldcloud/secrets.md) in the "Secrets" section (recommended to directly copy and paste directly from the pg_service.conf file).
+
+#### Project Synchronization
+
+- Return to QGIS and press "Synchronize Current Cloud Project" within QFieldSync.
+- Choose "Prefer Local" and "Perform Actions".
+
+!![](../../assets/images/hybrid_workflow_004.png)
+
+#### Survey and Data Collection
+
+- Once you have finished the Jobs, download and synchronize the project on devices designated for surveying.
+- Start surveying, utilizing the project.
+- Changes made during the survey will be stored locally on the device.
+
+#### Data Upload to the Cloud and Download the latest data
+
+- Once back in an area with internet connectivity push the changes made during the survey to the cloud by initiating synchronization.
+- Monitor the progress of synchronization jobs to ensure successful completion.
+- Reviewed changes will automatically update in the PostgreSQL database.
+
+!![](../../assets/images/hybrid_workflow_005.png)
+
+- Check changes directly in QGIS. Synchronization of the attachments for download may be required to view the updates.
+
+!![](../../assets/images/hybrid_workflow_006.png)
+
 ### Offline database
+
 Offline editing mode with desktop synchronization
 
 !![Offline editing mode](../../assets/images/offline-schema.png)
+
+Offline Mode is designated to utilize GeoPackage to collect and consolidate the information, then manually push the changes to PostgreSQL:
+
+#### Project Creation in QFieldCloud in Offline mode
+
+- Access [QFieldCloud](https:app.qfield.cloud/) and create a new project. Ensure that the project name follows the specified conventions: use underscores instead of spaces and avoid special characters. Provide all required information and specifications before finalizing the project creation by pressing the "Create" button.
+
+!![](../../assets/images/offline_workflow_001.png)
+
+#### Project Synchronization in QGIS in Offline mode
+
+- Open QGIS and navigate to the QFieldSync plugin.
+- Select "QFieldCloud Projects Overview" and choose the desired project, in this case the newly created project.
+- Click "Synchronize Selected Cloud Project" to initiate project synchronization.
+
+!![](../../assets/images/offline_workflow_002.png)
+
+- Specify the directory for project synchronization. The default location (~/QField/cloud/project_name) is recommended.
+- Proceed by clicking "Next", then "OK".
+- Add layers from your PostgreSQL database.
+- Configure the project settings, including styles and forms, as per your requirements.
+
+#### Offline Data Conversion
+
+- Utilize the core QGIS plugin "OfflineEditing" (make sure to have it active).
+- Navigate to "Database > Offline Editing" and select "Convert to Offline Project...".
+
+!![](../../assets/images/offline_workflow_003.png)
+
+- Choose GeoPackage as the storage type for offline data.
+- Specify the offline data location within the cloud project directory. It's essential to save it in a location accessible to QFieldCloud project.
+- Select the layers for offline conversion and confirm by pressing "OK".
+
+!![](../../assets/images/offline_workflow_004.png)
+
+#### Offline Editing Configuration in Offline mode
+
+- Configure offline editing actions in QGIS:
+  - Navigate to "Project Properties" and access the "QField" section, then the "QFieldCloud" tab.
+  - Set the action for layers to "Offline editing".
+
+!![](../../assets/images/offline_workflow_005.png)
+
+#### Project Synchronization in Offline mode
+
+- Then in QGIS and press "Synchronize Current Cloud Project" within QFieldSync.
+- Choose "Prefer Local" and "Perform Actions".
+
+!![](../../assets/images/offline_workflow_006.png)
+
+#### Survey and Data Collection in Offline mode
+
+- Download and synchronize the project on devices designated for surveying.
+- Conduct surveys in project.
+- Changes made during the survey will be stored locally on the device.
+
+#### Data Synchronization and Database Update
+
+- Upon returning to an area with internet connectivity push the changes made during the survey to the cloud by initiating synchronization.
+- Monitor the progress of synchronization jobs to ensure successful completion.
+- In QGIS, download the latest data and attachments for the project using QFieldSync.
+
+!![](../../assets/images/offline_workflow_007.png)
+
+- Navigate to "Database > Offline Editing" and select "Synchronize".
+
+!![](../../assets/images/offline_workflow_008.png)
+
+- This action will synchronize the locally stored changes with the PostgreSQL database.
+- Reviewed changes will be updated in the PostgreSQL database, ensuring data integrity.
+
+!![](../../assets/images/offline_workflow_009.png)
