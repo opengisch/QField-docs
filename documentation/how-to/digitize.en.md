@@ -132,6 +132,14 @@ The reshape tool allows you to change line and polygon geometries by drawing sha
 result in a reshaped line following the edge of the drawn shape or a polygon with the drawn shaped
 used to clip or expand the geometry.
 
+### Reshape eraser tool
+
+The reshape eraser tool is designed to ease the removal of parts of a line or polygon geometry. The tool mimics eraser tools from 2D drawing programs and works best with a stylus.
+
+Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion. You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
+
+![type:video](../assets/videos/new-erase-reshape-tool.webm)
+
 ### Ring tool
 
 The ring tool allows you to digitize rings (i.e. holes) into polygon geometries. Once a ring
