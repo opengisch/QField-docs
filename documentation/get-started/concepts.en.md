@@ -7,6 +7,7 @@ tx_slug: documentation_get-started_concepts
 
 QField is designed with a few key principles in mind.
 
+
 ## Keeping it simple
 
 The requirements in the field are not the same as on a desktop.
@@ -20,7 +21,7 @@ Before heading out to the field though, preliminary steps such as layer styling,
 
 ## Compatibility with QGIS
 
-Since QField relies on exxisting QGIS Libraries, it is not an extensive rebuild of QGIS. 
+Since QField relies on existing QGIS Libraries, it is not an extensive rebuild of QGIS. 
 The rendering engine in QField is the same as the one used in desktop QGIS, ensuring that projects will appear virtually identical in both environments.
 
 Configurations options prepared in QGIS beforehand don't need to be recreated, which is why QField uses the same edit widgets as QGIS desktop does. 
