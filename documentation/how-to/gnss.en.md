@@ -82,9 +82,9 @@ The formats currently supported are:
 
 For example:
 For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
-the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
+the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.<!-- markdown-link-check-disable-line -->
 
-To obtain precise altitude data for Cadastral Surveying in Switzerland, users can access the file correction of the vertical grid shift through [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip).
+To obtain precise altitude data for Cadastral Surveying in Switzerland, users can access the file correction of the vertical grid shift through [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip).<!-- markdown-link-check-disable-line -->
 Following the download, users are advised to perform a conversion of the file labeled `chgeo04_htrans_lv95.agr` to `chgeo04_htrans_lv95.gtx`.
 The QGIS processing algorithm `gdal:translate` (convert format) can be used for that.
 
@@ -191,7 +191,7 @@ You can get access to positioning information through additional
 expression variables accessible in the attribute form. These will
 only be available when positioning is enabled.
 
-These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)
+These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)<!-- markdown-link-check-disable-line -->
 for fields to keep track of the quality of individual measured points.
 
 All `@position_*` variables have a corresponding `@gnss_*` variable.
@@ -218,6 +218,8 @@ The gnss variables always report the gnss sensor values, even when the crosshair
   - `@position_direction` - The direction of movement in degrees from true north as reported
         by the sensor. It is only available when the crosshair is
         snapped to the sensor. - IE
+  - `@position_orientation` - Orientation of the device itself, regardless of its movement.
+        It changes as the device is rotated relative to true north (from 0° to 359°).
   - `@position_ground_speed` - Groundspeed (in m/s) as reported by the sensor. It is only
         available when the crosshair is snapped to the sensor. - IE
   - `@position_magnetic_variation` - The angle between the horizontal component of the magnetic field
