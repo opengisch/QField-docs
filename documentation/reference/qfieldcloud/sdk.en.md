@@ -19,13 +19,13 @@ import requests
 from qfieldcloud_sdk import sdk
 
 client = sdk.Client(
-    url="https://app.qfield.cloud/api/v1/",
-    username="user1",
-    password="pass1",
+    url="https://app.qfield.cloud/api/v1/"
 )
+client.login(username='me', password='mysecret')
 
 try:
     projects = client.list_projects()
+    print(projects)
 except requests.exceptions.RequestException:
     print("Oops!")
 ```
