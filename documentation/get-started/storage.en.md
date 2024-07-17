@@ -1,14 +1,12 @@
 ---
-title: Storage Access
-tx_slug: documentation_get-started_storage
+title: Storage
+tx_slug: documentation_get-started_storage_qfield
 ---
 
 # QField Storage Access
 
 Below are OS-specific instructions on how to access manipulate projects as well as
 individual datasets in QField.
-
-## Android
 
 !!! note
     Note to pre-existing QField users: for security reasons, Google has since November 2021
@@ -18,21 +16,34 @@ individual datasets in QField.
     storage location within which QField has unrestricted read/write access. Instructions below
     should guide users' migration to the new paragdim.
 
-### Opening projects and datasets
+## Opening projects and datasets on Android and iOS
 
 QField can open projects and datasets in three ways:
 
-* by importing a project folder;
-* by importing a compressed project file; and
-* by importing individual dataset(s).
+* by importing from a URL;
+* by importing a project folder (Android-only);
+* by importing a compressed project file (Android-only); and
+* by importing individual dataset(s) (Android-only).
 
 !![QField import actions](../assets/images/storage-import-actions.png)
 
-These actions are available via the dropdown action menu in the project/dataset picker‘s
-plus button, which can be accessed by clicking on the ‘Open local files’ button located in
-QField‘s welcome screen.
+These actions are available by click on the ‘import (+) button‘ located on the
+bottom-right corner of the project/dataset picker screen, which can be accessed by
+clicking on the ‘Open local files’ button located in QField‘s welcome screen.
 
-#### Importing a project folder
+### Importing from a URL
+
+When importing a project or individual dataset through the "Import URL" action, users
+will be asked to provide a URL string to a file. QField will subsequently fetch the content and
+save it into the ‘Imported projects’ - provided the URL points to a project compressed into a ZIP
+archive - or ‘Imported datasets’.
+
+!![QField import URL dialog](../assets/images/storage-import-url.png)
+
+QField will consider a ZIP archive as a compressed project when one or more .qgs/.qgz
+project file is detected.
+
+### Importing a project folder
 
 When importing a project through the "Import project from folder" action, users will be
 asked to grant permission for QField to read the content of a given folder on the
@@ -48,7 +59,7 @@ projects given an identical folder name. That allows users to be able to update 
     datasets, not in the original folder selected during the import process. See sections below
     on how to send/export edited projects and datasets.
 
-#### Importing a compressed project
+### Importing a compressed project
 
 Projects can be imported into QField by being provided a project compressed into a ZIP
 archive. When choosing the ‘Import project from ZIP’ action, users will be asked to select
@@ -58,7 +69,7 @@ a ZIP file on their device‘s storage. QField will then decompress the file int
 This can greatly ease remote deployment of projects by being able to send a single
 file to users.
 
-Importing individual dataset(s)
+### Importing individual dataset(s)
 
 The ‘Import dataset(s)‘ action allows users to select one or more datasets via an Android
 system file picker. Upon selecting the datasets, QField will copy those into the
@@ -69,7 +80,7 @@ system file picker. Upon selecting the datasets, QField will copy those into the
     datsets (e.g. a shapefile would require users to select the .shp, .shx, .dbf, .prj,
     and .cpg files).
 
-### Exporting modified projects and datasets
+## Exporting modified projects and datasets on Android
 
 Once users modify imported projects and datasets, QField offer various means through which
 the content can be sent from and exported out of its system-protected files storage:
@@ -85,7 +96,7 @@ These actions are available via the dropdown action menu attached to project fol
 individual datasets list in the project/dataset picker, which can be accessed by clicking
 on the ‘Open local files‘ button located in QField’s welcome screen.
 
-#### Exporting a project folder or an individual dataset
+### Exporting a project folder or an individual dataset
 
 When choosing the ‘Export to folder‘ action, users will be asked to pick a location - using
 the Android system‘s folder picker activity - within which the content of a select project folder
@@ -99,7 +110,7 @@ provider (at the time of writing, only NextCloud app has such support).
 !!! note
     Exporting onto a folder will overwrite preexisting content.
 
-#### Sending a compressed project folder
+### Sending a compressed project folder
 
 The ‘Send compressed folder to‘ action compresses the content of a selected folder into a
 ZIP archive. Users are then asked through which app on their device the resulting ZIP
@@ -109,18 +120,49 @@ Users can compress and send whole projects by selecting root folders in QField�
 projects‘ directory, as well as send selective folders within project folders. This allows for
 users to narrow down the compressed files to e.g. a /DCIM subfolder.
 
-#### Sending an individual dataset
+### Sending an individual dataset
 
-Users can select the ‘Send to‘ action for individuald datasets, allowing for the sending of
+Users can select the ‘Send to‘ action for individual datasets, allowing for the sending of
 edited datasets directly to third party apps such as Gmail, Drive, Dropbox, Nextcloud,
 <insert your favourite messenger app>, etc.
 
-#### Accessing imported content directly through USB cable
+To export the layers from a synchronized QFieldCloud project, either on your device or a preferred cloud provider. To do this, within your project:
+
+1. Click on the 'Gear icon' located within your project.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png)
+
+2. Select 'Open Project Folder' action.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-2-open-folder-project.png,350px)
+
+3. Inside this project folder, you will find your project files. Offline layers will be stored in a file named 'data.gpkg'. You can also export your attached files (Photos, Audio, Video, etc).
+
+4. Now, click on the three dots (⋮) located on the right side of the file or folder.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png,350px)
+
+5. Choose between the actions 'Send to...' or 'Export to folder...' based on your preference and follow the prompts accordingly.
+
+!![](../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png,350px)
+
+!!! note
+    This functionality is available on Android only.
+
+## Accessing imported content directly through USB cable
+
+### Android
 
 Imported projects and datasets can be accessed directly using a USB cable. The location
 is displayed in the top navigation bar of the project/dataset picker.
 
 On most devices plugged into a computer via USB cable connection, the path will be
-`<drive>:/Android/data/ch.opengis.qfield/files/`.  Users will find both the Imported Datasets and
+`<drive>:/Android/data/ch.opengis.qfield/files/`. Users will find both the Imported Datasets and
 Imported Projects folders within which the imported projects and datasets will be located.
 Changes done to project content and datasets are saved in the files found in this location.
+
+### iOS
+
+Imported projects and datasets can be accessed directly using a USB cable by navigating
+to the QField application folder using iTunes on Windows and macOS. On Linux, users
+can do so through [‘libimobiledevice‘](https://libimobiledevice.org/).

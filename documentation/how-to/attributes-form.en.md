@@ -23,7 +23,7 @@ The field widgets from QGIS are supported on a best effort basis and optimized f
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
 | UUID Generator     | :material-check: |                                                                                                                                                                                                        |
 | QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
-| Others             | :material-close: | [Funding](../../get-started/support/#development-and-custom-apps)                                                                                                                                      |
+| Others             | :material-close: | [Funding](../get-started/support.md#development-and-custom-apps)                                                                                                                                      |
 
 ### Editable
 
@@ -85,7 +85,7 @@ information (e.g. percentage) in the linking table.
 In case of the many-to-one cardinality on many-to-many relations the
 *Display Expression* needs to be set on the linking table.
 
-## Configure Attachment/Pictures Widget
+## Configure Attachment Widget
 :material-monitor: Desktop preparation
 
 The widget type *Attachment* is used with fields that store the path
@@ -93,28 +93,46 @@ to files.
 
 It can be used to:
 
--   show and take photos
--   show links to external files like pdfs or documents
+- show and take photos or add pictures from the gallery
+- listen and record sound clips
+- show and record videos
+- show links to external files like PDFs or documents
 
-!![](../assets/images/attachement-setting.png)
+!![Form attachment picture](../assets/images/attachement-setting-picture.png)
 
-The path should be set to relative. The pictures, pdf and docs are
+!![Form attachment audio](../assets/images/attachement-setting-audio.png)
+
+!![Form attachment video](../assets/images/attachement-setting-video.png)
+
+The path should be set to relative. The pictures, audios, videos, pdf and docs are
 stored then in a sub-directory of the project, where the link stored in
 the textfield is pointing to.
 
-In QField the picture is displayed. By clicking the camera symbol the
-camera is started to update the picture with a new photo.
+!!! note
+    QGIS 3.30 or newer is required for the audio and video functionality
 
-!![pictures](../assets/images/qfield_picture.png)
+In QField the attachments are displayed. By clicking the icons symbol the camera or audio record is started to update the pictures, videos or audios with a new media.
 
-On synchronization the sub-directory with the pictures, pdf and docs has
-to be copied as well.
+!![Media](../assets/images/attachments-qfield-media.png,300px)
+
+On synchronization the sub-directory with the pictures, videos audios, pdf and docs has to be copied as well.
 
 The option *hyperlink* on the attachment widget will disable the
 camera functionality and enable a hyperlink to open a document (pdf,
 doc, \...).
 
 ![](../assets/images/hyperlink_option.png)
+
+## Configurable attachment path
+:material-monitor: Desktop preparation
+
+QFieldSync provides the possibility to configure the path of attachments.
+
+- Go to _QFieldSync plugin > Layers Properties_
+
+Use expressions to specify the path of the attachments. By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
+
+!![Paths](../assets/images/paths-saving-media.png)
 
 ## Configure a Value Relation Widget
 :material-monitor: Desktop preparation
@@ -142,7 +160,7 @@ checkbox is checked, the list of diseases will be available to you.
 
 Let's see what we got on the field:
 
-![type:video](https://player.vimeo.com/video/499565113)
+![type:video](https://player.vimeo.com/video/499565113)<!-- markdown-link-check-disable-line -->
 
 
 ## Define Constraints
@@ -184,7 +202,7 @@ can be based on the geometry or expression variables.
 
 For more information regarding storing information related to your
 position in object attributes, refer to the deticated
-[GNSS documentation](./gnss/).
+[GNSS documentation](./gnss.md).
 
 For QFieldCloud users, two variables can be used in expressions including attribute form's default values:
 - `@cloud_username` which returns the  name of the currently logged in QFieldCloud user.
@@ -249,9 +267,20 @@ with_variable(
     ),
     'id'
   )
+)
 ```
 
-)
+## Search in value relation and relation reference widget
+
+It is possible to search value in a *value relation* or *relation reference* widget using the magnifying
+glass next to the field.
+
+![type:video](https://player.vimeo.com/video/604661919)<!-- markdown-link-check-disable-line -->
+
+!!! note
+    Define the *display expression* for the concerned layers, this will
+    be used for searching for features. This is configured under
+    *Vector Layer Properties > Display*
 
 ## Configure Auto-complete Value
 :material-monitor: Desktop preparation
@@ -259,11 +288,11 @@ with_variable(
 The "Use completer" checkbox must be checked to be able to use the
 auto-complete in the value relation.
 
-!![image](../assets/images/autocomplet_form.png)
+!![Enable auto-complete within QGIS](../assets/images/autocomplet_form.png)
 
 Here a video showing how it works on QField
 
-![type:video](https://player.vimeo.com/video/604661919)
+![type:video](https://player.vimeo.com/video/604661919)<!-- markdown-link-check-disable-line -->
 
 ## Define QML Widgets
 

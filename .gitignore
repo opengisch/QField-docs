@@ -13,8 +13,11 @@ opengisch_rsa.pub
 *.DS_Store
 .idea
 .env
+.venv/
 Pipfile
 # The pipfile will have the exact python version and breaks builds on other systems
 Pipfile.lock
 .transifexrc
 /.python-version
+.cache
+.vscode

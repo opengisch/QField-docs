@@ -10,7 +10,7 @@ feel free to use it accordingly and to contribute back your updates via a
 [pull request](https://github.com/opengisch/QField-docs/pulls).
 
 
-[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/ <!-- markdown-link-check-disable-line -->
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
@@ -114,7 +114,7 @@ pipenv install -r requirements.txt
 pipenv run mkdocs serve
 ```
 
-The local doc will be available at http://localhost:8000.
+The local doc will be available at http://localhost:8000.  <!-- markdown-link-check-disable-line -->
 
 #### Contribute
 Before commiting, install [pre-commit](https://pre-commit.com/) to auto-format your contributions. You can install pre-commit for the current user with
@@ -130,7 +130,7 @@ Ensure [Docker](https://docs.docker.com/get-docker/) or [Podman](https://podman.
 1. Clone this repository: git clone https://github.com/opengisch/QField-docs
 2. Build the container: `docker build . -t qfield-docs`
 3. Run it: `docker run -it -v ${PWD}/documentation:/opt/app/documentation -p 8000:8000 qfield-docs`
-4. Point your browser to the serving endpoint at http://localhost:8000.
+4. Point your browser to the serving endpoint at http://localhost:8000.  <!-- markdown-link-check-disable-line -->
 
 The server will automatically live-reload with any change made to the local `./documentation` directory.
 

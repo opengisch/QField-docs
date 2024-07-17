@@ -30,6 +30,11 @@ The supported raster formats are:
 - PNG (.png); and
 - WebP (.webp)
 
+Supported point cloud formats:
+
+- LAS/LAZ (.las, .laz)
+- COPC (Cloud Optimized Point Cloud)
+
 !!! note
     QField can handle several standalone datasets compressed into one ZIP archive; in this scenario, each dataset will be added as individual layers in QField.
 
@@ -37,7 +42,7 @@ The supported raster formats are:
 
 :material-tablet: Fieldwork
 
-Please read the [storage access documentation](/get-started/storage/) to learn more on how standalone datasets are opened on your specific device.
+Please read the [storage access documentation](../get-started/storage.md) to learn more on how standalone datasets are opened on your specific device.
 
 ## Using a project as "base map" for standalone datasets
 
@@ -47,4 +52,4 @@ By default, the datasets will be overlaying an OpenStreetMap XYZ layer. It is ho
 
 To use an existing project as base map, do a long press on a project in the recent projects list and check *Base Map Project*.
 
-![type:video](https://player.vimeo.com/video/604849182)
+![type:video](https://player.vimeo.com/video/604849182)<!-- markdown-link-check-disable-line -->

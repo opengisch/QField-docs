@@ -6,7 +6,7 @@ tx_slug: documentation_how-to_movable-project
 # Portable project
 
 To manually synchronise your QGIS project, you will need a portable
-version of your .qgs file. Portable means that all paths are relative
+version of your QGIS project file (`.qgs`, `.qgz`). Portable means that all paths are relative
 and datasets are reachable from the device.
 
 
@@ -16,7 +16,8 @@ and datasets are reachable from the device.
 Check that
 *Project > Project Properties > General > Save paths*
 is set to *Relative* and that all required data
-files are in the same folder like the .qgs file or in a subfolder.
+files are in the same folder like the QGIS project file or in a subfolder.
 
-For increased productivity, we suggest having a look at
-`qfieldcloud` and `qfieldsync`
+You can learn more how to prepare your projects for fieldwork in
+[Get Started with QFieldCloud (recommended)](../get-started/tutorials/get-started-qfc.md)
+or [Get Started with QFieldSync](../get-started/tutorials/get-started-qfs.md) tutorials.

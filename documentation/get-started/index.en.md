@@ -26,25 +26,26 @@ tx_slug: documentation_get-started_index
 
 === ":material-microsoft-windows: Windows"
 
-    <a href="https://qfield.org/get_latest/?platform=windows" target="_blank">Download the latest
-    Windows version</a>.
+    Download the latest <a href="https://qfield.org/get_latest/?platform=windows" target="_blank">Windows
+    version</a> (x64 64-bit).
 
 === ":material-linux: Linux"
 
-    <a href="https://qfield.org/get_latest/?platform=linux" target="_blank">Download the latest
-    Linux beta version</a> and leave us a note how it works.
+    Download the latest <a href="https://qfield.org/get_latest/?platform=linux" target="_blank">Linux
+    version</a> (x64 64-bit).
 
 === ":material-apple: MacOS"
 
-    <a href="https://qfield.org/get_latest/?platform=macos" target="_blank">Download the latest
-    MacOS beta version</a> and leave us a note how it works.
+    Download the latest <a href="https://qfield.org/get_latest/?platform=macos" target="_blank">MacOS
+    x64 version</a> or <a href="https://qfield.org/get_latest/?platform=macos-arm" target="_blank">MacOS
+    ARM version</a>.
 
 QField allows you to efficiently work on your GIS data outdoor.
 
 QField's optimized user interface hides the full power of
 [QGIS](https://qgis.org) under the hood.
 
-![type:video](https://player.vimeo.com/video/695452246)
+![type:video](https://player.vimeo.com/video/695452246)<!-- markdown-link-check-disable-line -->
 
 ## QFieldCloud
 

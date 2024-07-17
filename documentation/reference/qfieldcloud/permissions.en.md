@@ -10,7 +10,7 @@ QFieldCloud provides a fine grained access control over projects with the concep
 ## Actors
    1. Unregistered user.
    2. Simple registered user, neither collaborator of the concerned project nor member of the concerned organization nor the concerned user.
-   3. Project owner of the concerned project, the conerned user, but not collaborator nor organization member.
+   3. Project owner of the concerned project, the concerned user, but not collaborator nor organization member.
    4. Project collaborator role admin of the concerned project.
    5. Project collaborator role manager of the concerned project.
    6. Project collaborator role editor of the concerned project.
@@ -64,7 +64,7 @@ QFieldCloud provides a fine grained access control over projects with the concep
 
 ### ProjectCollaborator
 
-A collaborator of an normal user project can only be reporter or
+A collaborator of a normal user project can only be reporter or
 reader. Editor or manager can only be set to an organization's project.
 
 #### Roles

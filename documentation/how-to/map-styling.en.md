@@ -17,8 +17,7 @@ generate this name can be defined by opening the attribute table in QGIS
 and switching to the form view. Choose the appropriate field or an
 expression in the list there. Starting from QGIS 3, this can be done
 directly from the
-*Vector Layer Properties > Display*{.interpreted-text
-role="menuselection"} page.
+*Vector Layer Properties > Display* page.
 
 The display expression is also used to search in layers.
 
@@ -39,7 +38,7 @@ attributes or adding and deleting features.
 It is also possible to configure which layers are searchable.
 
 To configure identify, readonly and searchable behavior, go to the
-*Project > Project Properties > Identify Layers*
+*Project > Properties > Data Sources*
 page and activate the checkboxes to match your
 desired behavior.
 
@@ -49,17 +48,14 @@ and/or not searchable.](../assets/images/project_configuration_readonly.png)
 ## Using additional fonts
 :material-monitor: Desktop preparation
 
-In QField, you are able to use all the fonts you want.
+QField enables you to use all the custom fonts you might want and need.
 
 There are two different possibilities to register additional fonts:
 
 1.  By adding fonts (.ttf or .otf) on the device in the folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/fonts` those will be made accessible to all projects and individual datasets.
-2.  By adding fonts (.ttf or .otf) in the same folder as a given project
-    file (.qgs or .qgz); those will be accessible only when viewing that
-    project file.
-
-!!! note
-    Since QField 2 the font files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/fonts` instead of the devices main directory `<drive>:/QField/fonts`.
+2.  By adding fonts (`.ttf` or `.otf`) in a `fonts` subfolder of the folder
+    containing a given project file (`.qgs` or `.qgz`); those fonts will only
+    be accessible when viewing that project.
 
 ## Custom SVG symbols
 :material-monitor: Desktop preparation
@@ -71,7 +67,7 @@ It is possible to embed SVG symbols directly within a QGIS projects.
 2.  Open the section Symbology in *Properties > Symbology*
 3.  In the *Symbol Layer Panel* choose *Simple marker*.
 !![](../assets/images/symbol_layer_panel.png)
-4.  Change the Symbol layer type in *Symbol layer type > SVG marker*`*.
+4.  Change the Symbol layer type in *Symbol layer type > SVG marker*.
 !![](../assets/images/symbol_layer_type.png)
 5.  Scroll down the bottom panel.
 6.  Click on the right side of the file selection button to open the

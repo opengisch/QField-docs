@@ -25,26 +25,22 @@ a builtin magnetic compass.
 A circle around your current position indicates the precision as reported by the
 positioning device.
 
-
 ## Configuration
-:material-monitor: Desktop preparation
 
-### Vertex log
+The following settings are available in QField settings' positioning tab.
 
-It is possible to setup a log layer of the collected vertices. This
-allows to keep track of meta data for each vertex like GNSS quality
-attributes and more. To set this up, a point layer can be added to the
-project and attributes configured to store this information.
+### Measure (M) value
 
-![](../assets/images/vertex_log1.png){width="600px"}
+When digitizing a geometry onto a vector layer that contains an M dimension,
+QField will add a measurement value to individual vertices whenever the
+coordinate cursor is locked to the current position.
 
-Then you should assign the role *digitizing logger* on a point layer.
+By default, the value will represent the captured position's timestamp (milliseconds
+since epoch). You can change this value using the combo box in the settings'
+positioning tab.
 
-Go to *QFieldSync > Project Properties*
-
-![](../assets/images/vertex_log2.png){width="600px"}
-
-The layer fields must have default value with GNSS variables.
+The available values to chose from are timestamp, ground speed, bearing, horizontal
+accuracy and vertical accuracy as well as PDOP, HDOP and VDOP.
 
 ### Accuracy requirement
 
@@ -52,10 +48,11 @@ A minimum desired accuracy for measurements can be defined. The quality
 will be reported in three classes, bad (red), ok (yellow) and excellent
 (green). These colors will show up as a dot on top of the GNSS button.
 
-The thresholds can be defined in the positioning settings.
+The thresholds can be defined in the settings' positioning tab.
 
-If the *Enable accuracy requirement* setting is activated, you will not be able to collect new measurements with the cursor
-snapped to the position with an accuracy value which is bad (red).
+If the *Enable accuracy requirement* setting is activated, you will not
+be able to collect new measurements with the coordinate cursor locked to
+the current position with an accuracy value which is bad (red).
 
 ### Antenna height compensation
 
@@ -69,9 +66,6 @@ calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
 them into the QField app folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj`.
-
-!!! note
-    Since QField 2 the proj files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj` instead of the devices main directory `<drive>:/QField/proj`.
 
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
@@ -87,94 +81,12 @@ The formats currently supported are:
   - Natural Resources Canada's Geoid (.byn)
 
 For example:
-For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.
+For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
+the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.<!-- markdown-link-check-disable-line -->
 
-### Additional variables
-
-You can get access to positioning information through additional
-expression variables. These will only be available when positioning is
-enabled.
-
-These variables are commonly used as default values for fields to keep
-track of the quality of individual measured points.
-
-  - `@position_source_name` - The name of the device that gave location information as
-    reported by the sensor. To differenciate between internal and
-    external sensor. If the position is manually set, and the
-    position is not snapped to the cursor, the source name is
-    "manual". **In case the cursor is not snapped to the position, all other variables will be null, if you need this, use the
-    `gnss_` variables instead**.
-  - `@position_quality_description` - A human readable and translated string for the quality as
-        reported by the sensor. E.g. "Fixed RTK". It is only available
-        when the crosshair is snapped to the sensor. - IE
-  - `@position_coordinate` - A point with the coordinate in WGS84. Lon, Lat, Altitude as
-        delivered by the sensor. It is only available when the crosshair
-        is snapped to the sensor. - `x(@position_coordinate)` - IE
-  - `@position_horizontal_accuracy` - The horizontal accuracy of the coordinate (in meters) as
-        reported by the sensor. It is only available when the crosshair
-        is snapped to the sensor. - IE
-  - `@position_timestamp` - The timestamp of the position in UTC as reported by the sensor.
-        It is only available when the crosshair is snapped to the
-        sensor. - IE
-  - `@position_direction` - The direction of movement in degrees from true north as reported
-        by the sensor. It is only available when the crosshair is
-        snapped to the sensor. - IE
-  - `@position_ground_speed` - Groundspeed (in m/s) as reported by the sensor. It is only
-        available when the crosshair is snapped to the sensor. - IE
-  - `@position_magnetic_variation` - The angle between the horizontal component of the magnetic field
-        and true north, in degrees as reported by the sensor. Also known
-        as magnetic declination. A positive value indicates a clockwise
-        direction from true north and a negative value indicates a
-        counter-clockwise direction. It is only available when the
-        crosshair is snapped to the sensor. - IE
-  - `@position_vertical_accuracy` - The vertical accuracy of the coordinate (in meters) as reported
-        by the sensor. It is only available when the crosshair is
-        snapped to the sensor. - IE
-  - `@position_3d_accuracy` - The 3 dimensional accuracy of the coordinate (in meters), 3D-RMS
-        as reported by the sensor. It is only available when the
-        crosshair is snapped to the sensor. - IE
-  - `@position_vertical_speed` - The vertical speed (in m/s) as reported by the sensor. It is
-        only available when the crosshair is snapped to the sensor. - IE
-  - `@position_averaged_count` - This variable holds the number of collected positions from
-        which an averaged position was calculated when digitizing in this mode. For non-averaged
-        positions, the value will be set to `0` (zero). - IE
-  - `@position_pdop` - Position dilution of precision as reported by the sensor. It is
-        only available when the crosshair is snapped to the sensor. - E
-  - `@position_hdop` - Horizontal dilution of precision as reported by the sensor. It
-        is only available when the crosshair is snapped to the sensor. - E
-  - `@position_vdop` - Vertical dilution of precision as reported by the sensor. It is
-        only available when the crosshair is snapped to the sensor. - E
-  - `@position_number_of_used_satellites` - Number of satellites as reported by the sensor. It is only
-        available when the crosshair is snapped to the sensor. - IE
-  - `@position_used_satellites` - A list of satellites in use (pri) as reported by the sensor. It
-        is only available when the crosshair is snapped to the sensor. - `array_length(@position_used_satellites)` - E
-  - `@position_fix_status_description` - The GPS Fix Status "NoData", "NoFix", "Fix2D" or "Fix3D"
-        as reported by the sensor. It is only available when the
-        crosshair is snapped to the sensor. - E
-  - `@position_fix_mode` - Fix mode (where "M" = Manual, forced to operate in 2D or 3D or
-        "A" = Automatic, 3D/2D) as reported by the sensor. It is only
-        available when the crosshair is snapped to the sensor. - E
-
-!!! info
-    I: Internal position source E: External (NMEA) position source
-
-All `@position_*` variables have a corresponding `@gnss_*` variable.
-The gnss variables always report the gnss sensor values, even when the
-crosshair is not snapped.
-
-Examples:
-
-:   -   when the crosshair is snapped to the sensor - `@gnss_horizontal_accuracy` > The
-            horizontal accuracy of the coordinate (in meters) as
-            reported by the sensor. - `@position_horizontal_accuracy` > The
-            horizontal accuracy of the coordinate (in meters) as
-            reported by the sensor. - `@position_source_name` --> sensor name.
-    -   when the crosshair is manually moved - `@gnss_horizontal_accuracy` > The
-            horizontal accuracy of the coordinate (in meters) as
-            reported by the sensor. - `@position_horizontal_accuracy` > The value
-            is `NULL`. - `@position_source_name` > The value is
-            `manual`.
-
+To obtain precise altitude data for Cadastral Surveying in Switzerland, users can access the file correction of the vertical grid shift through [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip).<!-- markdown-link-check-disable-line -->
+Following the download, users are advised to perform a conversion of the file labeled `chgeo04_htrans_lv95.agr` to `chgeo04_htrans_lv95.gtx`.
+The QGIS processing algorithm `gdal:translate` (convert format) can be used for that.
 
 ## Usage
 :material-tablet: Fieldwork
@@ -189,7 +101,7 @@ center means it is using GNSS positioning.
 
 A long press on the *GNSS button* will show the *positioning menu*.
 
-Inside the *positioning menu* you can turn on the *positioning display*
+Inside the *positioning menu* you can turn on the *Show position information*
 which will show the current coordinates which are reprojected into the
 project CRS along with precision information.
 
@@ -222,10 +134,22 @@ The breakdown of connections support by platform is as follow:
 *(\*) Bluetooth support on Windows occurs through the virtual serial port automatically
 created by the operating system when it connects to the GNSS device.*
 
-The NMEA sentences currently supported are GGA, RMC, GSA, GSV, VTG, and HDT.
+The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and HDT.
 
 !!! note
     Make sure no other app like mock location providers are using the same connection.
+
+### External receiver log
+
+In *Settings > Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`. If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
+
+The logs will be placed in *Android/data/ch.opengis.qfield/files/QField/logs*.
+
+!![](../assets/images/external_receiver_log.png,250px)
+
+!!! note
+    Be aware that if the log is always turned on, it will fill up all the storage.
+
 
 ## Mock location
 :material-tablet: Fieldwork
@@ -239,7 +163,7 @@ To use this you have to [enable mock locations on your Android device](https://w
 :material-tablet: Fieldwork
 
 !!! note
-    The coordinate cursor must be locked to the current location via the [Lock to position button](../digitize/#adding-point-features)
+    The coordinate cursor must be locked to the current location via the [Lock to position button](./digitize.md#adding-point-features)
 
 There is a function that allows you to digitize using averaged positions.
 
@@ -250,9 +174,128 @@ If an averaged position minimum count requirement is active, a progress bar will
 
 !![](../assets/images/positioning-averaged.webp)
 
-To setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
+The setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
 When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
 
 !![](../assets/images/positioning_averaged_set.jpg)
 
-When using [`@gnss_*` or `@position_` variables](../gnss/#additional-variables) on averaged positions, the variable will also represent the average over all collected samples.
+When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
+
+
+## Project configuration
+:material-monitor: Desktop preparation
+
+### Positioning variables
+
+You can get access to positioning information through additional
+expression variables accessible in the attribute form. These will
+only be available when positioning is enabled.
+
+These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)<!-- markdown-link-check-disable-line -->
+for fields to keep track of the quality of individual measured points.
+
+All `@position_*` variables have a corresponding `@gnss_*` variable.
+The gnss variables always report the gnss sensor values, even when the crosshair is not snapped.
+
+  - `@position_source_name` - The name of the device that gave location information as
+    reported by the sensor. To differenciate between internal and
+    external sensor. If the position is manually set, and the
+    position is not snapped to the cursor, the source name is
+    "manual". **In case the cursor is not snapped to the position, all other variables will be null, if you need this, use the
+    `gnss_` variables instead**.
+  - `@position_quality_description` - A human readable and translated string for the quality as
+        reported by the sensor. E.g. "Fixed RTK". It is only available
+        when the crosshair is snapped to the sensor. - IE
+  - `@position_coordinate` - A point with the coordinate in WGS84. Lon, Lat, Altitude as
+        delivered by the sensor. It is only available when the crosshair
+        is snapped to the sensor. - `x(@position_coordinate)` - IE
+  - `@position_horizontal_accuracy` - The horizontal accuracy of the coordinate (in meters) as
+        reported by the sensor. It is only available when the crosshair
+        is snapped to the sensor. - IE
+  - `@position_timestamp` - The timestamp of the position in UTC as reported by the sensor.
+        It is only available when the crosshair is snapped to the
+        sensor. - IE
+  - `@position_direction` - The direction of movement in degrees from true north as reported
+        by the sensor. It is only available when the crosshair is
+        snapped to the sensor. - IE
+  - `@position_orientation` - Orientation of the device itself, regardless of its movement.
+        It changes as the device is rotated relative to true north (from 0° to 359°).
+  - `@position_ground_speed` - Groundspeed (in m/s) as reported by the sensor. It is only
+        available when the crosshair is snapped to the sensor. - IE
+  - `@position_magnetic_variation` - The angle between the horizontal component of the magnetic field
+        and true north, in degrees as reported by the sensor. Also known
+        as magnetic declination. A positive value indicates a clockwise
+        direction from true north and a negative value indicates a
+        counter-clockwise direction. It is only available when the
+        crosshair is snapped to the sensor. - IE
+  - `@position_vertical_accuracy` - The vertical accuracy of the coordinate (in meters) as reported
+        by the sensor. It is only available when the crosshair is
+        snapped to the sensor. - IE
+  - `@position_3d_accuracy` - The 3 dimensional accuracy of the coordinate (in meters), 3D-RMS
+        as reported by the sensor. It is only available when the
+        crosshair is snapped to the sensor. - IE
+  - `@position_vertical_speed` - The vertical speed (in m/s) as reported by the sensor. It is
+        only available when the crosshair is snapped to the sensor. - IE
+  - `@position_averaged_count` - This variable holds the number of collected positions from
+        which an averaged position was calculated when digitizing in this mode. For non-averaged
+        positions, the value will be set to `0` (zero). - IE
+  - `@position_pdop` - Position dilution of precision as reported by the sensor. It is
+        only available when the crosshair is snapped to the sensor. - E
+  - `@position_hdop` - Horizontal dilution of precision as reported by the sensor. It
+        is only available when the crosshair is snapped to the sensor. - E
+  - `@position_vdop` - Vertical dilution of precision as reported by the sensor. It is
+        only available when the crosshair is snapped to the sensor. - E
+  - `@position_number_of_used_satellites` - Number of satellites as reported by the sensor. It is only
+        available when the crosshair is snapped to the sensor. - IE
+  - `@position_used_satellites` - A list of satellites in use (pri) as reported by the sensor. It
+        is only available when the crosshair is snapped to the sensor. - `array_to_string(array_foreach(@position_used_satellites, @element), ', ')` - E
+  - `@position_fix_status_description` - The GPS Fix Status "NoData", "NoFix", "Fix2D" or "Fix3D"
+        as reported by the sensor. It is only available when the
+        crosshair is snapped to the sensor. - E
+  - `@position_fix_mode` - Fix mode (where "M" = Manual, forced to operate in 2D or 3D or
+        "A" = Automatic, 3D/2D) as reported by the sensor. It is only
+        available when the crosshair is snapped to the sensor. - E
+
+!!! info
+    - I: Internal position source E: External (NMEA) position source.
+    - Variables that contain `satellites` are not available on iOS.
+
+Examples:
+
+:   -   when the crosshair is snapped to the sensor - `@gnss_horizontal_accuracy` > The
+            horizontal accuracy of the coordinate (in meters) as
+            reported by the sensor. - `@position_horizontal_accuracy` > The
+            horizontal accuracy of the coordinate (in meters) as
+            reported by the sensor. - `@position_source_name` --> sensor name.
+    -   when the crosshair is manually moved - `@gnss_horizontal_accuracy` > The
+            horizontal accuracy of the coordinate (in meters) as
+            reported by the sensor. - `@position_horizontal_accuracy` > The value
+            is `NULL`. - `@position_source_name` > The value is
+            `manual`.
+
+Information for GNSS Z value with Vertical grid shift in use:
+- *Antenna height compensation=False*
+
+| Vertical Grid Shift in use | point Z Value z(geometry) | GNSS Device z(@position_coordinate) | QField Display | QField Label                |
+|----------------------------|---------------------------|--------------------------------------|----------------|-----------------------------|
+| None                       | Z ellipsoidal device value| Z ellipsoidal device value           | Z ellipsoidal device value | Altitude: xxx.xxxx m       |
+| Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
+| USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
+
+### Vertex logger
+
+It is possible to setup a log layer of the collected vertices. This
+allows to keep track of meta data for each vertex like GNSS quality
+attributes and more. To set this up, a point layer can be added to the
+project and attributes configured to store this information.
+
+![](../assets/images/vertex_log1.png){width="600px"}
+
+Then you should assign the role *digitizing logger* to a point layer.
+
+Go to *QFieldSync > Project Properties*
+
+![](../assets/images/vertex_log2.png){width="600px"}
+
+To be most effective, the layer attributes should have default values that
+relies on the positioning variables enumerated above.

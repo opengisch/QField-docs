@@ -1,18 +1,19 @@
 # Project information
-site_name: QField Ecosystem Documentation
 site_url: https://docs.qfield.org/
 site_author: OPENGIS.ch
-site_description: >-
-  This site contains documentation of products that belong to the QField ecosystem: QField itself, the app for having QGIS at your fingertips, QFieldCloud which allows online synchronization of data, and QFieldSync which allows QGIS to communicate with QFieldCloud.
+site_name: QField Ecosystem Documentation
 docs_dir: documentation  # because of a bug in transifex-client the repo dir name cannot contain the doc dir name (e.g. qfield-docs and docs)
 
 # Repository
-repo_name: opengisch/qfield
-repo_url: https://github.com/opengisch/qfield
-edit_uri: https://github.com/opengisch/qfield-docs/tree/master/documentation/
+repo_name: opengisch/qfield-docs
+repo_url: https://github.com/opengisch/qfield-docs
+# edit_uri: https://github.com/opengisch/qfield-docs/tree/master/documentation/
+edit_uri_template: 'blob/master/documentation/{path}'
 
 # Copyright
-copyright: Copyright &copy; 2022 <a href="https://OPENGIS.ch">OPENGIS.ch</a>
+copyright: Copyright &copy; 2023 <a href="https://OPENGIS.ch">OPENGIS.ch</a> -  <a
+  href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA
+  4.0</a>
 
 # Configuration
 theme:
@@ -26,6 +27,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - content.action.edit
   logo: assets/images/qfield_logo_white.svg
   favicon: assets/images/favicon.ico
   palette:
@@ -51,9 +53,11 @@ nav:
           - QFieldCloud:
               - get-started/tutorials/get-started-qfc.md
               - get-started/tutorials/advanced-setup-qfc.md
+              - get-started/storage-qfc.md
           - QFieldSync:
               - get-started/tutorials/get-started-qfs.md
       - get-started/faq.md
+      - get-started/settings.en.md
       - get-started/sample-projects.md
       - get-started/support.md
       - get-started/sponsor.md
@@ -67,6 +71,7 @@ nav:
       - how-to/measuring-tool.md
       - how-to/digitize.md
       - how-to/attributes-form.md
+      - how-to/external-routing.md
       - how-to/pictures.md
       - how-to/search.md
       - how-to/standalone-datasets.md
@@ -75,6 +80,7 @@ nav:
       - how-to/gnss.md
       - how-to/navigation.md
       - how-to/tracking.md
+      - how-to/sensors.md
       - how-to/bookmarks.md
       - how-to/print-to-pdf.md
       - how-to/authentication.md
@@ -85,6 +91,7 @@ nav:
       - how-to/outside-layers.md
       - how-to/movable-project.md
       - how-to/pg-service.md
+      - how-to/plugins.md
   - Technical reference:
       - reference/index.md
       - reference/data-format.md
@@ -93,6 +100,7 @@ nav:
           - reference/qfieldcloud/projects.md
           - reference/qfieldcloud/permissions.md
           - reference/qfieldcloud/jobs.md
+          - reference/qfieldcloud/conflicts.en.md
           - reference/qfieldcloud/secrets.md
           - reference/qfieldcloud/specs.md
           - reference/qfieldcloud/api.md
@@ -124,8 +132,8 @@ markdown_extensions:
       alternate_style: true
   - fancyboxmd
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
 
@@ -157,68 +165,315 @@ extra:
 plugins:
   - mkdocs-video
   - search
+  - social:
+      # See https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/
+      cards_layout_options:
+        background_color: "#72ad2e"
+        color: "#FFFFFF"
   - i18n:
-      default_language: en
       default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, true]
       # FIX ME: Add autodetection to translation rates so that only languages
       # with >30% translations are built. See https://www.transifex.com/opengisch/qfield-documentation/dashboard/
       languages:
-        en: English
-        de: Deutsch
-        fr: Français
-        it: Italiano
-        # rm: Romansh
-        # ja: Japanese
-        # gl: Galician
-        # pt: Portuguese
-        es: Español
-        # hu: Hungarian
-        zh: 简体中文
-        # fi: Finnish
-        # ro: Romanian
-        # tr: Turkish
-        # uk: Ukranian
-        # nl: Dutch
-        # bg: Bulgarian
-        # cs: Czech
-        # fa: Persian
-        # pt_BR: Protuguese (Brazil)
-        # et: Estonian
-        # pl: Polish
-        # he: Hebrew
-        # sl: Slovenian
-        # lt: Lithuanian
-        # ar: Arabic
-        # ca: Catalan
-        # hr: Croatian
-        # id: Indonesian
-        # rw: Kinyarwanda
-        # ru: Russian
-        # ru_UA: Russian (Ukraine)
-        # vi: Vietnamese
-      nav_translations:
-        de:
-          Get started: Erste Schritte
-          How-to guides: Tutorial
-          Technical reference: Technische Referenz
-          Success stories: Erfolgsgeschichten
-        fr:
-          Get started: Mise en route
-          How-to guides: Tutoriels
-          Technical reference: Référence technique
-          Success stories: Témoignages de projets
-        it:
-          Get started: Guida introduttiva
-          How-to guides: Tutorial
-          Technical reference: Riferimento tecnico
-          Success stories: Storie di successo
-        es:
-          Get started: Primeros pasos
-          How-to guides: Tutorial
-          Technical reference: Referencia técnica
-          Success stories: Historias de éxito
-        zh:
-          Get started: 基础入门
-          How-to guides: 操作指南
-          Technical reference: 技术参考
-          Success stories: 成功案例
+        - locale: en
+          default: true
+          name: English
+          site_name: QField Ecosystem Documentation
+          site_description: >-
+            Welcome to the QField ecosystem documentation - a suite of products designed
+            to make fieldwork seamless and efficient. Whether you're a new user or
+            an experienced pro, you'll find everything you need to know about using
+            QField and its related tools.
+        - locale: de
+          name: Deutsch
+          site_name: QField Ökosystem Dokumentation
+          site_description: >-
+            Willkommen in der Dokumentation des QField-Ökosystems, einer Suite von
+            Produkten, die Feldarbeit nahtlos und effizient gestalten. Egal, ob du
+            ein neuer Benutzer oder ein Profi bist, hier findest du alles, was du
+            über die Verwendung von QField und den damit verbundenen Tools wissen
+            musst.
+          nav_translations:
+            Home: Startseite
+            Get started: Erste Schritte
+            Tutorials: Tutorials
+            QFieldCloud: QFieldCloud
+            QFieldSync: QFieldSync
+            How-to guides: Anleitungen
+            Technical reference: Technische Hinweise
+            Success stories: Erfolgsgeschichten
+          palette:
+            - scheme: default
+              primary: light green
+              toggle:
+                icon: octicons/moon-24
+                name: Switch to dark mode
+            - scheme: slate
+              primary: blue
+              toggle:
+                icon: octicons/sun-24
+                name: Switch to light mode
+
+# Page tree
+        - locale: fr
+          name: Français
+          site_name: Documentation de l'écosystème QField
+          site_description: >-
+            Bienvenue dans l'écosystème QField - une suite logicielle pour rendre
+            le travail de terrain simple et rapide. Utilisateur débutant ou confirmé,
+            vous trouverez tout ce dont vous avez besoin pour utiliser QField et les
+            outils associés.
+          nav_translations:
+            Home: Accueil
+            Get started: Mise en route
+            Tutorials: Tutoriels
+            QFieldCloud: QFieldCloud
+            QFieldSync: QFieldSync
+            How-to guides: Tutoriels
+            Technical reference: Documentation technique
+            Success stories: Projets témoin
+          palette:
+            - scheme: default
+              primary: light green
+              toggle:
+                icon: octicons/moon-24
+                name: Switch to dark mode
+            - scheme: slate
+              primary: blue
+              toggle:
+                icon: octicons/sun-24
+                name: Switch to light mode
+
+# Page tree
+        - locale: it
+          name: Italiano
+          site_name: Documentazione dell'ecosistema QField
+          site_description: >-
+            Benvenuti nella documentazione dell'ecosistema QField, una suite di prodotti
+            progettati per rendere il lavoro sul campo semplice ed efficiente. Che
+            tu sia un nuovo utente o un professionista esperto, troverai tutto ciò
+            che devi sapere sull'utilizzo di QField e dei suoi strumenti correlati.
+          nav_translations:
+            Home: Home
+            Get started: Inizia
+            Tutorials: Esercitazioni
+            QFieldCloud: QFieldCloud
+            QFieldSync: QFieldSync
+            How-to guides: Guide Passo-Passo
+            Technical reference: Documentazione tecnica di riferimento
+            Success stories: Storie di successo
+          palette:
+            - scheme: default
+              primary: light green
+              toggle:
+                icon: octicons/moon-24
+                name: Passare alla modalità scura
+            - scheme: slate
+              primary: blue
+              toggle:
+                icon: octicons/sun-24
+                name: Passare alla modalità chiara
+
+# Page tree
+        - locale: ja
+          name: 日本語
+          site_name: QFieldエコシステムドキュメント
+          site_description: >-
+            QFieldエコシステムのドキュメントへようこそ。QFieldエコシステムは、フィールドワークをシームレスかつ効率的にするために設計された製品群です。このページでは、QField
+            のすべての製品について、包括的でわかりやすいドキュメントを提供しています。初めてお使いになる方でも、経験豊富なプロの方でも、QFieldとその関連ツールの使用に関して知っておくべきことが全て網羅されています。
+          nav_translations:
+            Home: ホーム
+            Get started: スタート・ガイド
+            Tutorials: チュートリアル
+            QFieldCloud: QFieldCloud
+            QFieldSync: QFieldSync
+            How-to guides: ハウツー・ガイド
+            Technical reference: 技術参考情報
+            Success stories: ケーススタディ
+          palette:
+            - scheme: default
+              primary: light green
+              toggle:
+                icon: octicons/moon-24
+                name: ダークモードにする
+            - scheme: slate
+              primary: blue
+              toggle:
+                icon: octicons/sun-24
+                name: ライトモードにする
+
+# Page tree
+        - locale: pt
+          name: Portuguese
+          site_name: Documentação do Ecossistema QField
+          site_description: >-
+            Bem-vindo à documentação do ecossistema QField - um conjunto de produtos
+            projetados para tornar o trabalho de campo contínuo e eficiente. Caso
+            seja um novo utilizador ou um profissional experiente, encontrará tudo
+            o que precisa de saber sobre o uso do QField e as suas respetivas ferramentas.
+          nav_translations:
+            Home: Home
+            Get started: Primeiros passos
+            Tutorials: Tutorials
+            QFieldCloud: QFieldCloud
+            QFieldSync: QFieldSync
+            How-to guides: Guias de instruções
+            Technical reference: Referência técnica
+            Success stories: Histórias de sucesso
+          palette:
+            - scheme: default
+              primary: light green
+              toggle:
+                icon: octicons/moon-24
+                name: Switch to dark mode
+            - scheme: slate
+              primary: blue
+              toggle:
+                icon: octicons/sun-24
+                name: Switch to light mode
+
+# Page tree
+        - locale: es
+          name: Español
+          site_name: Documentación del ecosistema QField
+          site_description: >-
+            Bienvenido a la documentación del ecosistema QField: un conjunto de productos
+            diseñados para hacer que el trabajo de campo sea fluido y eficiente. Ya
+            sea un usuario nuevo o un profesional experimentado, encontrará todo lo
+            que necesita saber sobre el uso de QField y sus herramientas relacionadas.
+          nav_translations:
+            Home: Inicio
+            Get started: Empezar
+            Tutorials: Tutoriales
+            QFieldCloud: QFieldCloud
+            QFieldSync: QFieldSync
+            How-to guides: Guías de uso
+            Technical reference: Referencia técnica
+            Success stories: Historias de éxito
+          palette:
+            - scheme: default
+              primary: light green
+              toggle:
+                icon: octicons/moon-24
+                name: Cambiar a modo oscuro
+            - scheme: slate
+              primary: blue
+              toggle:
+                icon: octicons/sun-24
+                name: Cambiar a modo claro
+
+# Page tree
+        - locale: zh
+          name: 简体中文
+          site_name: QField生态系统文档
+          site_description: >-
+            欢迎访问QField生态系统文档--一套旨在使野外工作无缝、高效的产品。在本网页中，我们为所有产品提供了全面且易于理解的文档。无论您是新用户还是经验丰富的专家，您都会找到使用QField及其相关工具所需的一切信息。
+          nav_translations:
+            Home: Home
+            Get started: 基础入门
+            Tutorials: Tutorials
+            QFieldCloud: QFieldCloud
+            QFieldSync: QFieldSync
+            How-to guides: 操作指南
+            Technical reference: 技术参考
+            Success stories: 成功案例
+          palette:
+            - scheme: default
+              primary: light green
+              toggle:
+                icon: octicons/moon-24
+                name: Switch to dark mode
+            - scheme: slate
+              primary: blue
+              toggle:
+                icon: octicons/sun-24
+                name: Switch to light mode
+
+# Page tree
+        - locale: fi
+          name: Finnish
+          site_name: QField Ecosystem Documentation
+          site_description: >-
+            Welcome to the QField ecosystem documentation - a suite of products designed
+            to make fieldwork seamless and efficient. Whether you're a new user or
+            an experienced pro, you'll find everything you need to know about using
+            QField and its related tools.
+           # TRANSLATE ME
+          nav_translations:
+            Home: Home
+            Get started: Aloita
+            Tutorials: Tutorials
+            QFieldCloud: QFieldCloud
+            QFieldSync: QFieldSync
+            How-to guides: Kuinka teen oppaat
+            Technical reference: Tekniset viitteet
+            Success stories: Success stories
+          palette:
+            - scheme: default
+              primary: light green
+              toggle:
+                icon: octicons/moon-24
+                name: Switch to dark mode
+            - scheme: slate
+              primary: blue
+              toggle:
+                icon: octicons/sun-24
+                name: Switch to light mode
+
+# Page tree
+        - locale: ro
+          name: Romanian
+          site_name: Documentarea ecosistemului QField
+          site_description: >-
+            Bun venit la documentația ecosistemului QField! QField este o suită de
+            produse concepute pentru a face munca de teren mai ușoară și mai eficientă.
+            Indiferent dacă ești un utilizator nou sau un profesionist experimentat,
+            vei găsi tot ce trebuie să știi despre utilizarea QField și a instrumentelor
+            sale conexe.
+
+
+          # ar: Arabic
+          # bg: Bulgarian
+          # ca: Catalan
+          # hr: Croatian
+          # cs: Czech
+          # nl: Dutch
+          # et: Estonian
+          # gl: Galician
+          # he: Hebrew
+          # hu: Hungarian
+          # id: Indonesian
+          # rw: Kinyarwanda
+          # lt: Lithuanian
+          # fa: Persian
+          # pl: Polish
+          # pt_BR: Portuguese (Brazil)
+          # rm: Romansh
+          # ru: Russian
+          # ru_UA: Russian (Ukraine)
+          # sl: Slovenian
+          # tr: Turkish
+          # uk: Ukranian
+          # vi: Vietnamese
+          nav_translations:
+            Home: Home
+            Get started: Get started
+            Tutorials: Tutorials
+            QFieldCloud: QFieldCloud
+            QFieldSync: QFieldSync
+            How-to guides: How-to guides
+            Technical reference: Referință tehnică
+            Success stories: Success stories
+          palette:
+            - scheme: default
+              primary: light green
+              toggle:
+                icon: octicons/moon-24
+                name: Switch to dark mode
+            - scheme: slate
+              primary: blue
+              toggle:
+                icon: octicons/sun-24
+                name: Switch to light mode
+
+# Page tree

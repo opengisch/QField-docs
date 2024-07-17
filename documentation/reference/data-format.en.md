@@ -25,7 +25,7 @@ GDAL. This page offers a non-exhaustive list of supported data formats.
 | MrSID       | :material-close: | License restricts usage. |
 
 If you don't find your favorite data format on this table, please check
-if it works and [adapt the list above](https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst)
+if it works and [adapt the list above](https://github.com/opengisch/QField-docs/edit/master/documentation/reference/data-format.en.md) <!-- markdown-link-check-disable-line -->
 to share your findings. If it does not work, please [open an issue](https://github.com/opengisch/OSGeo4A/issues). We will be happy to
 help you with the implementation.
 
@@ -65,8 +65,8 @@ If the raster data is too low quality, adjust the compression level and set QUAL
 Some extra parameters can be set :
 
 - `a_srs` can be used also in gdal_translate command when CRS is not define in the source raster dataset.
-- `OVERVIEW_RESAMPLING`offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.
-- `NUM_THREADS` will help you to balance between use all your CPU ressources or only part. Set ALL_CPUS or define the number of thread you want to use.
+- `OVERVIEW_RESAMPLING` offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.
+- `NUM_THREADS` will help you to balance between use all your CPU resources or only part. Set ALL_CPUS or define the number of thread you want to use.
 
 Combining all extra parameters, command line may look like this :
 

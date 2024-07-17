@@ -49,6 +49,6 @@ treat the data and get the final result.
 -   Accelerated the data treatment
 
 
-[![Géoconseils SA](../assets/images/logo_geoconseils.png){width="200px"}](http://www.geoconseils.ch)
+[![Géoconseils SA](../assets/images/logo_geoconseils.png){width="200px"}](http://www.geoconseils.ch) <!-- markdown-link-check-disable-line -->
 
-[![Milvignes](../assets/images/logo_milvignes.png){width="200px"}](http://http://www.milvignes.ch/)
+[![Milvignes](../assets/images/logo_milvignes.png){width="200px"}](http://http://www.milvignes.ch/) <!-- markdown-link-check-disable-line -->

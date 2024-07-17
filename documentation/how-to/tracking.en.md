@@ -38,6 +38,10 @@ values entered in the form remembered across features.
 !!! note
     QField will skip the feature form step if the layer is configured to hide all attributes or if form has been set to hide on feature addition in the attribute form settings. This can streamline the process of starting tracking sessions.
 
+To prevent overlapping, you have the option to set a maximum distance tolerance between the last and next tracked point/vertices. This ensures that if the position exceeds this defined distance, it is considered as an erroneous entry.
+
+!![](../assets/images/maximum-distance-tolerance.png,550px)
+
 ## Tracking underway
 
 Once a tracking session has been setup, a badge will appear in the side dashboard
@@ -65,3 +69,24 @@ on a legend layer linked to an active tracking session and select the
 *Stop tracking* button.
 
 !![](../assets/images/tracking-stop.png)
+
+## Predefined Project Tracking Sessions
+
+This functionality enables one or more position tracking sessions to automatically start upon project load. Users will be presented with a feature form popup as the tracking session begins to fill in attributes. If the vector layer used to track has the "Hide Form on Add Feature" mode selected, the feature form will be skipped.
+
+!![Hide Form on Added Feature](../assets/images/hide-form-on-add-feature.png)
+
+### Configure a Project Tracking Session
+
+:material-monitor: Desktop preparation
+
+The configuration of a project tracking session happens in the vector layer properties dialog's QField panel. There, you can activate "Tracking Session" and specify the tracking requirements. Note that the QField panel is only available when the QFieldSync plugin is installed in your QGIS profile.
+
+!![Activating automatic "Tracking Sessions" in QFieldSync](../assets/images/automatic-tracking-session.png)
+
+!![Tracking activated automatically in QField](../assets/images/qfield-tracking-session.png,300px)
+
+!!! note
+    ### Benefits
+    - **Efficiency**: Automation saves time and effort in the field.
+    - **Flexibility**: Users can customize sessions and opt for automatic initiation with default values.

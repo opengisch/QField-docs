@@ -48,6 +48,17 @@ While digitizing, you can click the *(x) button* to cancel the current feature c
     QField insures that digitized geometries will not have duplicate vertices and respects
     the geometry precision settings from the currently selected layer.
 
+You can use the volume keys for adding or removing vertices while in digitizing mode. This functionality can be activated in Settings in the General tab.
+
+!![](../assets/images/activate-digitize-with-volumen-keys.png)
+
+!!! note
+    This feature is available on Android only.
+
+Additionally, QField has a _finger tap_ digitizing mode where vertices are added by tapping on the canvas. Activated through the settings panel, this mode caters to scenarios where rapid data input is crucial.
+
+!![](../assets/images/activate_finger_tap_digitizing.png)
+
 ### Attribute form
 
 After digitizing a geometry, the attribute form will appear allowing you
@@ -57,6 +68,29 @@ to edit attribute values for the newly-added feature.
     You can supress the attribute form upon feature addition via a configuration option
     for a given layer via its properties dialog in QGIS
 
+Moreover, you have the option to digitize the form using the scanning QR or Bar Code reader functionality available within the feature form's text edit widget.
+
+!![](../assets/images/digitizing-with-qr-code-1-attribute-form.png)
+
+Upon clicking the three-dot icon button, a menu will be presented offering three distinct actions: "Copy," "Paste," and "Scan Code".
+
+!![](../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
+
+Opting for the "Scan Code" action will trigger QField's code reader, initiating the scanning process to decode the code.
+
+!![](../assets/images/digitizing-with-qr-code-3-code-reader.png)
+
+Once the codes have been successfully scanned, users can validate their choice by clicking the checkmark (✔️) OK button. This action will populate the attribute with the decoded value, streamlining the digitization process.
+
+!![](../assets/images/digitizing-with-qr-code-4-it-worked.png)
+
+In addition, the Code Reader offers the capability to read NFC text tags.
+
+!![](../assets/images/code-reader-nfc-text-tag.png)
+
+!!! note
+    Both the QR code camera and the NFC text tag detector are enabled by default when you open the Code Reader. You have the flexibility to disable either of these features to ensure that your device's battery is not used unnecessarily by using hardware that you may not need at the moment.
+
 #### Remember attribute values
 
 For quick collection of rather homogeneus datasets, it is crucial to not
@@ -65,7 +99,7 @@ at the right of every attribute allow remembering of the last entered value for
 each attribute individually so that the next time you will add a feature on the same
 layer, these attributes will be automatically pre-filled.
 
-![type:video](https://player.vimeo.com/video/526919606)
+![type:video](https://player.vimeo.com/video/526919606)<!-- markdown-link-check-disable-line -->
 
 ## Geometry editing
 :material-tablet: Fieldwork
@@ -107,13 +141,26 @@ is created, QField will offer the possibility of filling the ring with a new fea
 
 A video demonstration of some editing possibilities:
 
-![type:video](https://player.vimeo.com/video/499564854)
+![type:video](https://player.vimeo.com/video/499564854)<!-- markdown-link-check-disable-line -->
 
 ## Merging features
 
 QField allows you to merge features and their geometries into a single feature. To do so, identify two (or more)
 features on the map, select them in the features list and merge them by selecting
 the *Merge Selected Features* in the *Menu (⁝) Button*.
+
+To execute merging within QField, ensure the following conditions:
+
+1. **Editable Vector Layer:**
+   - The target layer must be an editable layer.
+
+2. **Multi-Type Geometry:**
+   - Ensure that the geometry type of the layer is multi-type.
+
+3. **Data Provider's Abilities:**
+   - Verify that the data provider associated with the layer (preferably GeoPackage) possesses the capability to:
+      - Modify geometries: The ability to make changes to existing geometrical structures.
+      - Delete features: The capability to remove individual features from the dataset.
 
 ## Freehand digitizing
 
@@ -126,7 +173,7 @@ The freehand digitizing mode is activated through a new toolbar button
 which appears when QField is set to editing mode and a stylus pen or
 a mouse is hovering the map canvas while a line or polygon vector is selected.
 
-![type:video](https://player.vimeo.com/video/537673220)
+![type:video](https://player.vimeo.com/video/537673220)<!-- markdown-link-check-disable-line -->
 
 ## Topological editing
 
@@ -136,7 +183,7 @@ together when moving / deleting vertices and additional vertices are
 added to segments when a new node is added from neighbouring
 geometries.
 
-![type:video](https://player.vimeo.com/video/499565314)
+![type:video](https://player.vimeo.com/video/499565314)<!-- markdown-link-check-disable-line -->
 
 ### Multi-editing of attributes
 
@@ -145,7 +192,7 @@ In some cases, it can result in very efficient workflows. To do so, identify two
 features on the map, select them in the features list and merge them by selecting
 the *Edit feature* button in the list's title bar.
 
-![type:video](https://player.vimeo.com/video/499565955)
+![type:video](https://player.vimeo.com/video/499565955)<!-- markdown-link-check-disable-line -->
 
 ## Delete features
 :material-tablet: Fieldwork
@@ -190,3 +237,11 @@ The snapping tolerance can be specified in map units or pixels.
 
 In almost any case, the units should be set to pixels. We made good
 experiences with a tolerance value of 20.
+
+## Snap to Common Angle
+
+The Snap to Common Angle feature enhances the precision and efficiency of digitizing geometries by allowing to snap to predefined common angles: 10°, 15°, 30°, 45°, and 90°. This functionality is similar to the advanced digitizing tool in QGIS.
+
+To activate Snap to Common Angle, open the geometry editor and tap on the Snap to Common Angle icon in the toolbar to bring up a menu of common angles. Choose the desired angle from the menu. Then, start digitizing your geometry or adding vertices, and the functionality will automatically align your input to the selected angle. QField will remember the angle relative to the last segment situation for consistent snapping behavior during subsequent edits.
+
+![type:video](../assets/videos/snap-to-common-angles.webm)
