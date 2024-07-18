@@ -30,6 +30,7 @@ There are three ways of preparing and copying a project in QGIS for use in QFiel
 * [Packaging the project as a SpatiaLite database](###packaging-the-project-as-a-spatiaLite-database)
 
 ### Storing files in a designated folder
+
 One way of compiling all necessary parts of a QGIS project is to store them in a folder.
 This folder can contain individual files such as a
 * QGIS project file (.qgs or .qgz)
@@ -38,16 +39,17 @@ This folder can contain individual files such as a
 * Auxiliary files, which includes additional files used for styling (.qml or .sld) and any other files referenced by the project
 
 ### Packaging the project as a GeoPackage
-The most efficient way to package a QGIS project and its corresponding geospatial data into one file is to use [GeoPackages](https://www.geopackage.org/). 
+
+The most efficient way to package a QGIS project and its corresponding geospatial data into one file is to use [GeoPackages](https://www.geopackage.org/).
 We recommend using the GeoPackage file format for projects in QField, since packaging in QGIS is easy and straightforward. To package a project as a GeoPackage, three steps are necessary.
 
-1.	**Package vector layers to GeoPackage:** 
+1. **Package vector layers to GeoPackage:**
 First, click on the toolbox and search for the tool “package layers”. This tool lets you package selected vector layers in the project file (and elsewhere) into a single GeoPackage containing the geospatial data.
 
-2.	**Add raster layers to GeoPackage** 
+2. **Add raster layers to GeoPackage**
 If your project contains raster layers, then these can also be stored in the GeoPackage. Click on the raster layer you want to export, then “export” -> “save as”, and select GeoPackage as the format. Add a filename and select the three dots to browse for the GeoPackage. Select the GeoPackage and change the file format at the bottom of the dialogue window from “GeoTIFF” to “All files (*.*)”. Now both vector and raster layers are saved in the GeoPackage. To make sure, browse for the GeoPackage in the browser panel and expand it.
 
-3.	**Add project file (.qgs) to GeoPackage:** 
+3. **Add project file (.qgs) to GeoPackage:**
 Next go to Project -> Save to -> GeoPackage, and select the GeoPackage file containing all the vector layers. This saves the project file, with the .qgs extension into the GeoPackage as well.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/969846267?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Package QGIS Project into GeoPackage including vector, raster and basemap layers (Copy)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -75,8 +77,8 @@ Copying the packaged project over to the corresponding folder of each device can
 #### Transfer via USB-cable
 
 If you want to use a cable connection to import the project on to your android device, simply connect both devices using a USB cable and follow the instructions on [how to transfer files between your computer and the android device.](https://support.google.com/android/answer/9064445?hl=en#zippy=%2Cwindows-computer)
-On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/`. 
-Users will find both the Imported Datasets and Imported Projects folders within which the imported projects and datasets will be located. 
+On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/`.
+Users will find both the Imported Datasets and Imported Projects folders within which the imported projects and datasets will be located.
 Changes done to project content and datasets are saved in the files found in this location.
 
 #### Send via Bluetooth
@@ -97,13 +99,14 @@ A possible workflow may look like this
 !!! note
     When working with Google Drive, it may be helpful to create a dedicated folder in the cloud containing all the projects.
     A parallel of this folder can then also be created on the target device, to which the QGIS projects can be downloaded and save in.
-    
+
 ### iOS
 
 #### Transfer via USB-cable
 
-Transfering files from MacBooks or Macs to iPhone using a cable is not straightforward, since its not possible to access individual files in the QField directory. 
+Transfering files from MacBooks or Macs to iPhone using a cable is not straightforward, since its not possible to access individual files in the QField directory.
 One workaround could be the following
+
 * copy the entire folder `Imported Projects` from your iOS target device over to your source device
 * copy the packaged QGIS project file into the copied `Imported Projects`folder
 * copy back and replace the old `Imported Folder` with the new one
@@ -114,6 +117,7 @@ An efficient way to synchronize projects is to use iCloud as a shared workspace 
 It is not possible to import projects from folders inside the iOS QField application.
 Instead, the new project files have to be saved in the `Imported Projects` folder so that QField can access them.
 One possible workflow could be the following:
+
 * On the source device, upload the packaged project to a folder on iCloud (titled e.g. "QField projects")
 * On the target device, download the packaged project and move the file to the QField folder `Imported Projects`
 * Open the project file from inside the QField app and collect data
@@ -122,7 +126,7 @@ One possible workflow could be the following:
 
 #### Share via AirDrop
 
-A quick and easy way to exchange files back and forth is using AirDrop. 
+A quick and easy way to exchange files back and forth is using AirDrop.
 The only requirement is that both source and target device have to be OS and iOS respectively.
 On the source device, right-click the file and select `Share...`, choose `AirDrop`, and then select the target device.
 On the target device, save the project directly to the QField directory `Imported Projects`.
@@ -142,15 +146,16 @@ Apart from using QFieldCloud, QField can open projects and datasets in four ways
 
 !![QField import actions](../assets/images/storage-import-actions.png)
 
-On Android all of these actions are available by click on the ‘import (+) button‘ located on the bottom-right corner of the project/dataset picker screen, which can be accessed by clicking on the ‘Open local files’ button located in QField‘s welcome screen. 
+On Android all of these actions are available by click on the ‘import (+) button‘ located on the bottom-right corner of the project/dataset picker screen, which can be accessed by clicking on the ‘Open local files’ button located in QField‘s welcome screen.
 
 <img src="../assets/images/get-started-storage-add-files.png" alt="add-files" height="500" width="250"> <img src="../assets/images/get-started-storage-local-file-2.png" alt="add-files" height="500" width="250">
 
 On iOS, the only action available through the 'import (+) button' is import from a URL.
 
-#### Importing a project folder (Android and iOS)
+### Importing a project folder (Android and iOS)
 
 #### Android
+
 When importing a project through the "Import project from folder" action, users will be asked to grant permission for QField to read the content of a given folder on the device’s storage. 
 When the folder is selected, QField copies the folder content (including its sub-folders) into its ‘Imported projects’ location. Users can then open and interact with the project from there.
 
@@ -162,6 +167,7 @@ Re-importing a given folder through the drop-down menu action will overwrite pre
     on how to send/export edited projects and datasets.
 
 #### iOS
+
 On iOS, installing QField creates a folder titled QField in the Files app. 
 Packaged projects prepared on the source device and exported on to the target device must be stored in `QField` -> `Imported Projects` folder.
 To open a local file, press on 'Open local file' on the QField home screen and navigate to `QField files directory`-> `Imported Projects`, and choose the project you want to open.
