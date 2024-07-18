@@ -53,7 +53,7 @@ nav:
           - QFieldCloud:
               - get-started/tutorials/get-started-qfc.md
               - get-started/tutorials/advanced-setup-qfc.md
-              - get-started/storage-qfc.en.md
+              - get-started/storage-qfc.md
           - QFieldSync:
               - get-started/tutorials/get-started-qfs.md
       - get-started/faq.md
@@ -282,25 +282,25 @@ plugins:
             QFieldエコシステムのドキュメントへようこそ。QFieldエコシステムは、フィールドワークをシームレスかつ効率的にするために設計された製品群です。このページでは、QField
             のすべての製品について、包括的でわかりやすいドキュメントを提供しています。初めてお使いになる方でも、経験豊富なプロの方でも、QFieldとその関連ツールの使用に関して知っておくべきことが全て網羅されています。
           nav_translations:
-            Home: Home
+            Home: ホーム
             Get started: スタート・ガイド
-            Tutorials: Tutorials
+            Tutorials: チュートリアル
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: ハウツー・ガイド
             Technical reference: 技術参考情報
-            Success stories: Success stories
+            Success stories: ケーススタディ
           palette:
             - scheme: default
               primary: light green
               toggle:
                 icon: octicons/moon-24
-                name: Switch to dark mode
+                name: ダークモードにする
             - scheme: slate
               primary: blue
               toggle:
                 icon: octicons/sun-24
-                name: Switch to light mode
+                name: ライトモードにする
 
 # Page tree
         - locale: pt

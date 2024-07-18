@@ -133,7 +133,7 @@ def push_article(
         req = requests.post(url, json=payload, headers=headers)
         print("creating: ", permalink, ": ", req.status_code)
 
-    if req.status_code == 401:
+    if req.status_code >= 400:
         raise RuntimeError(req.text)
 
 

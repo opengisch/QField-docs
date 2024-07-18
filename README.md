@@ -10,7 +10,7 @@ feel free to use it accordingly and to contribute back your updates via a
 [pull request](https://github.com/opengisch/QField-docs/pulls).
 
 
-[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/ <!-- markdown-link-check-disable-line -->
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]

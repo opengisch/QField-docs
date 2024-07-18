@@ -3,9 +3,9 @@ title: Get Started
 tx_slug: documentation_get-started_tutorials_get-started-qfs
 ---
 
-# QFieldSync plugin
+# QFieldSync
 
-The QFieldSync plugin helps preparing and packaging QGIS projects for
+The [QFieldSync plugin for QGIS](https://plugins.qgis.org/plugins/qfieldsync/) helps preparing and packaging QGIS projects for
 QField.
 
 QFieldSync supports your project preparation with automating the
