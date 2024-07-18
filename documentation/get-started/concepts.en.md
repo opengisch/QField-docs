@@ -17,7 +17,7 @@ Secondly, devices for data collection as well as the individual tasks that need 
 QField aims to help users do fieldwork without the nuisance of a cluttered user interface.
 In other words, only the relevant parts of a task are accessible on the interface, while less important things remain out of sight.
 
-Before heading out to the field though, preliminary steps such as layer styling, tailored forms, or any other project configurations should first be done on the QGIS desktop version.
+Before heading out to the field though, preliminary steps such as layer styling, tailored forms, input validation, or any other project configurations should first be done on the desktop via QGIS.
 
 ## Compatibility with QGIS
 
