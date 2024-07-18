@@ -17,12 +17,12 @@ There are various possibilities of exporting copies of project files and dataset
 
 !!! note
     Note to active QField users: Since November 2021, Google has, for security reasons, enforced a new set of storage access rules.
-    These prohibit most applications from directly accessing files in many locations on a device‘s internal and external storages. 
-    Therefore, QField has to import projects and datasets into its Google-specified storage location within which QField has unrestricted read/write access. 
+    These prohibit most applications from directly accessing files in many locations on a device‘s internal and external storages.
+    Therefore, QField has to import projects and datasets into its Google-specified storage location within which QField has unrestricted read/write access.
     Instructions below should help users' adjust to the new circumstances.
 
 ## Exporting QGIS project files for use in QField
-QFieldQField supports a [wide range of data formats](#supported-data-formats). 
+QFieldQField supports a [wide range of data formats](#supported-data-formats).
 There are three ways of preparing and copying a project in QGIS for use in QField.
 
 * [Storing files in a designated folder](###storing-files-in-a-designated-folder)
@@ -156,7 +156,7 @@ On iOS, the only action available through the 'import (+) button' is import from
 
 #### Android
 
-When importing a project through the "Import project from folder" action, users will be asked to grant permission for QField to read the content of a given folder on the device’s storage. 
+When importing a project through the "Import project from folder" action, users will be asked to grant permission for QField to read the content of a given folder on the device’s storage.
 When the folder is selected, QField copies the folder content (including its sub-folders) into its ‘Imported projects’ location. Users can then open and interact with the project from there.
 
 Re-importing a given folder through the drop-down menu action will overwrite preexisting projects given an identical folder name. That allows users to be able to update projects.
@@ -168,7 +168,7 @@ Re-importing a given folder through the drop-down menu action will overwrite pre
 
 #### iOS
 
-On iOS, installing QField creates a folder titled QField in the Files app. 
+On iOS, installing QField creates a folder titled QField in the Files app.
 Packaged projects prepared on the source device and exported on to the target device must be stored in `QField` -> `Imported Projects` folder.
 To open a local file, press on 'Open local file' on the QField home screen and navigate to `QField files directory`-> `Imported Projects`, and choose the project you want to open.
 
