@@ -96,7 +96,8 @@ This feature allows users to quickly access items in QField when there are few a
 
 2. Navigate to the **QField** tab located within the Layer Properties dialog.
 
-3. Here, you will find an option to specify the quantity of items that will trigger the transition to a toggle button interface. Enter the preferred threshold value according to your needs.
+3. Here, you will find an option to specify the quantity of items that will trigger the transition to a toggle button interface.
+Enter the preferred threshold value according to your needs.
 
 !![QFieldSync Layer Properties](../assets/images/qfieldsync-toggle-value-map-editor-widget.png)
 
