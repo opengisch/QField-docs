@@ -85,6 +85,26 @@ information (e.g. percentage) in the linking table.
 In case of the many-to-one cardinality on many-to-many relations the
 *Display Expression* needs to be set on the linking table.
 
+### Item Threshold Configuration for Value Map Editor Widgets
+
+To enhance the user experience within QField, it is possible to control the item threshold at which point the value map editor widgets switch to a toggle buttons interface.
+This feature allows users to quickly access items in QField when there are few and providing a more intuitive interface when dealing with a large number of items.
+
+#### To Activate Toggle Button Interface
+
+1. Open **Layer Properties** by right-clicking on the desired layer and selecting 'Properties' from the context menu.
+
+2. Navigate to the **QField** tab located within the Layer Properties dialog.
+
+3. Here, you will find an option to specify the quantity of items that will trigger the transition to a toggle button interface.
+Enter the preferred threshold value according to your needs.
+
+!![QFieldSync Layer Properties](../assets/images/qfieldsync-toggle-value-map-editor-widget.png)
+
+!![QField Value Map Editor as List](../assets/images/qfield-value-map-editor-list.png,300px)
+
+!![QField Value Map Editor as Buttons](../assets/images/qfield-value-map-editor-buttons.png,300px)
+
 ## Configure Attachment Widget
 :material-monitor: Desktop preparation
 
