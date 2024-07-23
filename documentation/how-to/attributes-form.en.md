@@ -87,7 +87,8 @@ In case of the many-to-one cardinality on many-to-many relations the
 
 ### Item Threshold Configuration for Value Map Editor Widgets
 
-To enhance the user experience within QField, it is possible to control the item threshold at which point the value map editor widgets switch to a toggle buttons interface. This feature allows users to quickly access items in QField when there are few and providing a more intuitive interface when dealing with a large number of items.
+To enhance the user experience within QField, it is possible to control the item threshold at which point the value map editor widgets switch to a toggle buttons interface.
+This feature allows users to quickly access items in QField when there are few and providing a more intuitive interface when dealing with a large number of items.
 
 #### To Activate Toggle Button Interface
 
