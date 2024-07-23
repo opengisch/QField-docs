@@ -52,7 +52,7 @@ If your project contains raster layers, then these can also be stored in the Geo
 3. **Add project file (.qgs) to GeoPackage:**
 Next go to Project -> Save to -> GeoPackage, and select the GeoPackage file containing all the vector layers. This saves the project file, with the .qgs extension into the GeoPackage as well.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/969846267?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Package QGIS Project into GeoPackage including vector, raster and basemap layers (Copy)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/969846267?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Package QGIS Project into GeoPackage including vector, raster and basemap layers (Copy)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>   <!-- markdown-link-check-disable-line -->
 *Package QGIS Project into GeoPackage*
 
 For more information, consult the QGIS documentation for more information [packaging layers](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/database.html#package-layers).
