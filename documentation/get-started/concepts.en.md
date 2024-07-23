@@ -17,18 +17,19 @@ Secondly, devices for data collection as well as the individual tasks that need 
 QField aims to help users do fieldwork without the nuisance of a cluttered user interface.
 In other words, only the relevant parts of a task are accessible on the interface, while less important things remain out of sight.
 
-Before heading out to the field though, preliminary steps such as layer styling, tailored forms, or any other project configurations should first be done on the QGIS desktop version.
+Before heading out to the field though, preliminary steps such as layer styling, tailored forms, input validation, or any other project configurations should first be done on the desktop via QGIS.
 
 ## Compatibility with QGIS
 
-Since QField relies on existing QGIS Libraries, it is not an extensive rebuild of QGIS.
+
+Since QField is a mobile optimized version of the QGIS desktop app, your project will appear and feel identical both in QGIS and QField.
 The rendering engine in QField is the same as the one used in desktop QGIS, ensuring that projects will appear virtually identical in both environments.
 
 Configurations options prepared in QGIS beforehand don't need to be recreated, which is why QField uses the same edit widgets as QGIS desktop does.
 As a result, projects configured on the desktop should work seamlessly on the mobile app.
 
 These principles have so far informed our development and design of QField, and will continue to do so in the future.
-Even though QField has been around for some time now, it is still a work in progress.
+In the last few years, QField proved to be the fieldworker's best friend and continues to evolve with new features handling an even broader range of needs.
 
 ## Mode based
 
