@@ -238,9 +238,8 @@ The ‘Send compressed folder to‘ action compresses the content of a selected 
 ZIP archive. Users are then asked through which app on their device the resulting ZIP
 archive should be send through.
 
-Users can compress and send whole projects by selecting root folders in QField‘s ‘Imported
-projects‘ directory, as well as send selective folders within project folders. This allows for
-users to narrow down the compressed files to e.g. a /DCIM subfolder.
+Users can compress and send whole projects by selecting root folders in QField‘s ‘Imported projects‘ directory, as well as send selective folders within project folders.
+This allows for users to narrow down the compressed files to e.g. a /DCIM subfolder.
 
 ### Sending an individual dataset
 
