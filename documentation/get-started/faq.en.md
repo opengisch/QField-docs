@@ -25,6 +25,11 @@ tx_slug: documentation_get-started_faq
     ## Is there a maximum duration that an action can take on QFieldCloud?
     QFieldCloud jobs should finish in 10 minutes, otherwise they are terminated. If you have special needs you can [contact us](mailto:info@opengis.ch) to find an ad hoc solution.
 
+??? help "What Does the `Quota error` Message Mean in QField?"
+
+    ## What does the "Quota error" message mean when attempting to push changes?
+    The "Quota error" message in QField indicates that the project attempting to push changes to the cloud cannot do so because the QFieldCloud subscription is either inactive or the storage limit has been reached with the data being pushed.
+
 ??? help "I have a question about QField or QFieldCloud. Who can I ask?"
 
     ## I have a question about QField or QFieldCloud. Who can I ask?
