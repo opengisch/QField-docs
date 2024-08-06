@@ -1,11 +1,14 @@
 ---
-title: Billing and Additional Storage
+title: Plans and Additional Storage
 tx_slug: documentation_get-started_storage_qfieldcloud
 ---
 
-# QFieldCloud Billing
+# Plans and Additional Storage
 
-Adding billing information to the account is needed to use QFieldCloud Pro plan or Organization plan.
+Adding billing information to the account is needed to use QFieldCloud Pro plan or Organization plan as well as
+adding additional storage.
+
+## Choosing a plan
 
 For a **Pro plan**, follow these steps :
 
@@ -31,7 +34,19 @@ If the billing information is incomplete, at any time it is possible to finish f
 
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
 
-## Discontinuing QFieldCloud subscription
+## Adding QFieldCloud storage
+
+QFieldCloud allows you to configure as much storage as you need for your project.
+
+To add more storage to QFieldCloud *Settings > Billing > Subscription > Change > Update storage*
+
+!![ Subscription “Change” ](../assets/images/storage-qfc1.png)
+
+!![ “Update storage” ](../assets/images/storage-qfc2.png)
+
+!![ “Additional storage” ](../assets/images/storage-qfc3.png)
+
+## Discontinuing a subscription
 
 1. If you need to cancel your subscription on QFieldCloud:
 1.1. For **Pro** plan accounts, click on your username, choose "Settings."
@@ -54,15 +69,3 @@ All pricing information is available <a href="https://qfield.cloud/pricing" targ
 5. A Nyuki message will then appear, indicating that the subscription will conclude at the end of the current billing period.
 
     ![Cancellation message](../assets/images/discontinuing_service_05_nyuki_message.png)
-
-# Add QFieldCloud storage
-
-QFieldCloud allows you to configure as much storage as you need for your project.
-
-To add more storage to QFieldCloud *Settings > Billing > Subscription > Change > Update storage*
-
-!![ Subscription “Change” ](../assets/images/storage-qfc1.png)
-
-!![ “Update storage” ](../assets/images/storage-qfc2.png)
-
-!![ “Additional storage” ](../assets/images/storage-qfc3.png)
