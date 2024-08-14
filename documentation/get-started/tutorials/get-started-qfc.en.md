@@ -118,6 +118,12 @@ Any QField supported raster and vector layer formats may be used as read-only da
 
 !![Project properties](../../assets/images/getting_started_project_properties.png)
 
+### Control Synchronization of Attachments in QField and QFieldCloud
+
+To ensure that QField and QFieldCloud only synchronize attachments from your local QField instance to the cloud, you can control the synchronization settings. By leaving the Attachment directories unspecified for different types of attachments (such as pictures, videos, audios, and documents) in QFieldSync, this configuration will prevent automatic downloads of attachments from other surveyors to other QField devices.
+
+!![Setting for only push attachments](../../assets/images/qfieldsync_property_to_allow_user_to_only_push_attachments.png)
+
 ### Upload a project
 
 Once configured, you can press the cloud button to open the synchronization dialog. Here you have to decide what do you prefer: the local file or the file on the cloud.
