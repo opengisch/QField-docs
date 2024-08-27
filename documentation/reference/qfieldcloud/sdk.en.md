@@ -116,6 +116,14 @@ Environment variables can be used instead of passing some common global options.
   job-status        Get job status.
   package-latest    Check project packaging status.
   package-download  Download packaged QFieldCloud project files.
+  collaborators-get     Get a list of project collaborators.
+  collaborators-add     Add a project collaborator.
+  collaborators-remove  Remove a project collaborator.
+  collaborators-patch   Change project collaborator role.
+  members-get           Get a list organization members.
+  members-add           Add an organization member.
+  members-remove        Remove an organization member.
+  members-patch         Change organization member role.
 ```
 
 #### login
@@ -276,4 +284,133 @@ Options:
   --force-download/--no-force-download
   ￼                               Download file even if it already exists locally.
                                   Default: False
+```
+
+#### collaborators-get¶
+
+Get a list of project collaborators for a specific project with `PROJECT_ID`.
+
+```bash
+`qfieldcloud-cli collaborators-get [OPTIONS] PROJECT_ID`
+
+Options:
+- `PROJECT_ID`
+  The ID of the project for which you want to list collaborators.
+```
+
+#### collaborators-add¶
+
+Add a collaborator with `USERNAME` and a specific `ROLE` to a project with `PROJECT_ID`.
+
+```bash
+qfieldcloud-cli collaborators-add [OPTIONS] PROJECT_ID USERNAME ROLE
+
+Options:
+- `PROJECT_ID`
+  The ID of the project to which the collaborator will be added.
+
+- `USERNAME`
+  The username of the collaborator to add.
+
+- `ROLE`
+  The role to assign to the collaborator. Possible values: `admin`, `manager`, `editor`, `reporter`, `reader`.
+```
+
+#### collaborators-remove¶
+
+Remove a collaborator with `USERNAME` from a project with `PROJECT_ID`.
+
+```bash
+qfieldcloud-cli collaborators-remove [OPTIONS] PROJECT_ID USERNAME
+
+Options:
+- `PROJECT_ID`
+  The ID of the project from which to remove the collaborator.
+
+- `USERNAME`
+  The username of the collaborator to remove.
+```
+
+#### collaborators-patch¶
+
+Change the role of a collaborator with `USERNAME` to a new `ROLE` in a project with `PROJECT_ID`.
+
+```bash
+qfieldcloud-cli collaborators-patch [OPTIONS] PROJECT_ID USERNAME ROLE
+
+Options:
+- `PROJECT_ID`
+  The ID of the project in which to change the collaborator’s role.
+
+- `USERNAME`
+  The username of the collaborator whose role is to be changed.
+
+- `ROLE`
+  The new role to assign to the collaborator. Possible values: `admin`, `manager`, `editor`, `reporter`, `reader`.
+```
+
+#### members-get¶
+
+Get a list of members of an `ORGANIZATION`.
+
+```bash
+qfieldcloud-cli members-get [OPTIONS] ORGANIZATION
+
+Options:
+- `ORGANIZATION`
+  The name of the organization for which to list members.
+```
+
+#### members-add¶
+
+Add a member with `USERNAME` and `ROLE` to an `ORGANIZATION`.
+
+```bash
+qfieldcloud-cli members-add [OPTIONS] ORGANIZATION USERNAME ROLE
+
+Options:
+- `ORGANIZATION`
+  The name of the organization to which the member will be added.
+
+- `USERNAME`
+  The username of the member to add.
+
+- `ROLE`
+  The role to assign to the member. Possible values: `admin`, `member`.
+
+- `--public / --no-public`
+  Specifies whether the membership should be public.
+```
+
+#### members-remove¶
+
+Remove a member with `USERNAME` from an `ORGANIZATION`.
+
+```bash
+qfieldcloud-cli members-remove [OPTIONS] ORGANIZATION USERNAME
+
+Options:
+- `ORGANIZATION`
+  The name of the organization from which to remove the member.
+
+- `USERNAME`
+  The username of the member to remove.
+```
+
+#### members-patch¶
+
+Change the role of a member with `USERNAME` to a new `ROLE` in an `ORGANIZATION`.
+
+```bash
+qfieldcloud-cli members-patch [OPTIONS] ORGANIZATION USERNAME ROLE
+
+Options:
+- `ORGANIZATION`
+  The name of the organization in which to change the member’s role.
+
+- `USERNAME`
+  The username of the member whose role is to be changed.
+
+- `ROLE`
+  The new role to assign to the member. Values: `admin`, `member`.
 ```
