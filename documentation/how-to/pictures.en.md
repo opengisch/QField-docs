@@ -12,7 +12,7 @@ In QField, a field with *Attachment* widget can be used to:
 -   listen and record sound clips
 -   show links to external files like PDFs or documents
 
-!![Attachments](../assets/images/attachments.png)
+!![Attachments](../assets/images/attachments.png "")
 
 To configure the Widget, please refer to the [Attributes Form Documentation](./attributes-form.md#configure-attachmentpictures-widget)
 
@@ -48,23 +48,23 @@ Create a relation with:
 -   `apiary_id` Referencing field
 -   `strength` Composition
 
-!![Relations](../assets/images/add-1-n-pictures-relations.png)
+!![Relations](../assets/images/add-1-n-pictures-relations.png "")
 
 ### Widgets
 
 #### Apiary
 Set the default value of the field id to `uuid()` or use the *UUID Generator* widget. No need to show it in the form.
 
-!![widgets](../assets/images/add-1-n-pictures-widgets_hive.png)
+!![widgets](../assets/images/add-1-n-pictures-widgets_hive.png "")
 
 Set the relation widget to *many to one relation* and add the relation to the form
 
-!![widgets](../assets/images/add-1-n-pictures-widgets_hive2.png)
+!![widgets](../assets/images/add-1-n-pictures-widgets_hive2.png "")
 
 #### Apiary picture
 Set the widget type of the field path to *Attachment* and add it to the form
 
-!![widgets](../assets/images/add-1-n-pictures-widgets_picture.png)
+!![widgets](../assets/images/add-1-n-pictures-widgets_picture.png "")
 
 ## Drawing and sketching
 
@@ -118,11 +118,11 @@ QFieldSync provides the possibility to configure the path of picture attachments
 
 Use expressions to specify the path of the attachments. By default, pictures are saved into the "DCIM" folder, audio are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
-!![picture path](../assets/images/picture_path.png)
+!![picture path](../assets/images/picture_path.png "")
 
 Additional directories can be synchronized with pictures or other attachments. Extra paths can be configured in _Attachment directories_. All paths are relative to the project directory.
 
-!![attachments directories](../assets/images/attachments_directories.png)
+!![attachments directories](../assets/images/attachments_directories.png "")
 
 !!! note
     QGIS 3.14 or newer is required for this functionality
