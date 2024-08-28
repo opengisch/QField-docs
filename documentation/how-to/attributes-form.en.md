@@ -218,6 +218,10 @@ can be based on the geometry or expression variables.
 
 !![Configuration of a formatted date as default value](../assets/images/default_value_configuration.png)
 
+When creating expressions for projects intended to be used with QField, it is recommended to use layer names rather than layer IDs. This recommendation stems from the fact that during the project conversion process via QFieldSync, the resulting layers may receive different IDs, which can lead to incorrect expression evaluations. By using layer names, you ensure that expressions are evaluated consistently and accurately across different project states.
+
+!![Using layer names in expressions](../assets/images/using_layer_name_in_expressions.png)
+
 ### Additional variables
 
 For more information regarding storing information related to your
