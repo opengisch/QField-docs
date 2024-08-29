@@ -120,7 +120,7 @@ Any QField supported raster and vector layer formats may be used as read-only da
 
 ### Unidirectional attachments upload from QField to QFieldCloud
 
-To ensure that QField and QFieldCloud only synchronize attachments from your local QField instance to the cloud, you can control the synchronization settings. By leaving the Attachment directories unspecified for different types of attachments (such as pictures, videos, audios, and documents) in QFieldSync, this configuration will prevent automatic downloads of attachments from other surveyors to other QField devices.
+When needed, it is possible to configure a cloud project to insure that attachments taken QField are uploaded to QFieldCloud and subsequently not synchronized back to other QField users. To achieve this result, insure that the Attachment directories list in the project properties dialog is empty by selecting preexisting directories and deleting them via the Del keyboard key.
 
 !![Setting for only push attachments](../../assets/images/qfieldsync_property_to_allow_user_to_only_push_attachments.png)
 
