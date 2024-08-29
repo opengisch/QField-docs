@@ -43,7 +43,7 @@ QField form.
 
 Groups and Tabs from Drag and Drop designer forms are supported.
 
-In the "Attributes Form," you can structure your forms using various containers, such as tabs and groups, and enhance interactivity by incorporating expressions with conditionals. By enabling the drag-and-drop designer, you gain the flexibility to display attribute fields, as well as other widgets that are not directly tied to specific fields (e.g., HTML/QML widgets) and "Relations" of layers.
+In the "Attributes Form," you can structure your forms using various containers, such as tabs and groups, and enhance interactivity by incorporating expression-based conditional visibility. By enabling the drag-and-drop designer, you gain the flexibility to re-order attribute fields, as well as gaining access to widgets that are not directly tied to specific fields (e.g., HTML/QML widgets).
 
 !![](../assets/images/drag-and-drop-designer-attribute-forms.png)
 
