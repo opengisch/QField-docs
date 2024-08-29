@@ -26,10 +26,7 @@ start the search.
 
 The active layer search functionality enhances search efficiency by focusing exclusively on the currently active layer and specific fields within it.
 
-- **Activation**: To enable this search functionality, use the `f` prefix.
-- **Search Scope**: Unlike the comprehensive search across all layers, this feature allows for searches using single characters due to its prefix-based approach. It matches not only feature display names but also all text and numerical fields.
-- **Results Highlighting**: When an attribute match is found, both the attribute name and its value are highlighted. Additionally, the feature's display name is displayed as a secondary line in the search results (as demonstrated in the screencast above).
-- **Field-Specific Search**: To narrow down your search to a specific field, use the syntax: `f @ATTRIBUTE_NAME search-term`. This allows for targeted searches within the chosen attribute.
+To start a search, simply type `f` followed by your search term. This helps you quickly find items by searching only the active layer. It scans feature names and all text and number fields for matches. When it finds one, both the attribute's name and value are highlighted. You'll also see the feature's name in the search results below. To narrow down your search to a specific field, type: `f @ATTRIBUTE_NAME search-term`. This targets your search to that field.
 
 ![type:video](../assets/videos/search-bar-active-layer-feature-matching-functionality.webm)
 
