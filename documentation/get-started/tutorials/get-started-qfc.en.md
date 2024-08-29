@@ -118,7 +118,7 @@ Any QField supported raster and vector layer formats may be used as read-only da
 
 !![Project properties](../../assets/images/getting_started_project_properties.png)
 
-### Control Synchronization of Attachments in QField and QFieldCloud
+### Unidirectional attachments upload from QField to QFieldCloud
 
 To ensure that QField and QFieldCloud only synchronize attachments from your local QField instance to the cloud, you can control the synchronization settings. By leaving the Attachment directories unspecified for different types of attachments (such as pictures, videos, audios, and documents) in QFieldSync, this configuration will prevent automatic downloads of attachments from other surveyors to other QField devices.
 
