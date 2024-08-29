@@ -118,12 +118,6 @@ Any QField supported raster and vector layer formats may be used as read-only da
 
 !![Project properties](../../assets/images/getting_started_project_properties.png)
 
-### Unidirectional attachments upload from QField to QFieldCloud
-
-When needed, it is possible to configure a cloud project to insure that attachments taken QField are uploaded to QFieldCloud and subsequently not synchronized back to other QField users. To achieve this result, insure that the Attachment directories list in the project properties dialog is empty by selecting preexisting directories and deleting them via the Del keyboard key.
-
-!![Setting for only push attachments](../../assets/images/qfieldsync_property_to_allow_user_to_only_push_attachments.png)
-
 ### Upload a project
 
 Once configured, you can press the cloud button to open the synchronization dialog. Here you have to decide what do you prefer: the local file or the file on the cloud.

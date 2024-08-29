@@ -154,6 +154,12 @@ Use expressions to specify the path of the attachments. By default, pictures are
 
 !![Paths](../assets/images/paths-saving-media.png)
 
+### Unidirectional attachments upload from QField to QFieldCloud
+
+When needed, it is possible to configure a cloud project to insure that attachments taken QField are uploaded to QFieldCloud and subsequently not synchronized back to other QField users. To achieve this result, insure that the Attachment directories list in the project properties dialog is empty by selecting preexisting directories and deleting them via the Del keyboard key.
+
+!![Setting for only push attachments](../assets/images/qfieldsync_property_to_allow_user_to_only_push_attachments.png)
+
 ## Configure a Value Relation Widget
 :material-monitor: Desktop preparation
 
