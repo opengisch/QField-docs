@@ -14,21 +14,21 @@ tx_slug: documentation_get-started_index
     QField can be used with any version newer than Android 6, if you are
     looking to get a new device, we suggest going for at least Android 9.
 
-    [![Google Play link](../assets/images/Get_it_on_Google_play.png)](
+    [![Get QField on Google Play](../assets/images/Get_it_on_Google_play.png)](
     https://play.google.com/store/apps/details?id=ch.opengis.qfield)
 
 === ":material-apple: iOS"
 
     QField can be found on the App Store.
 
-    [![App Store link](../assets/images/app-store.png)](
+    [![Get QField on App Store](../assets/images/app-store.png)](
     https://apps.apple.com/app/qfield-for-qgis/id1531726814)
 
 === ":material-microsoft-windows: Windows"
 
     QField can be found on Microsoft Store.
 
-    [![Microsoft Store link](../assets/images/microsoft-store.png)](
+    [![Get QField on Microsoft Store](../assets/images/microsoft-store.png)](
     https://apps.microsoft.com/detail/xp99h3bcx4bw7f)
 
 === ":material-linux: Linux"
