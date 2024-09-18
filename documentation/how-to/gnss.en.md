@@ -88,6 +88,8 @@ To obtain precise altitude data for Cadastral Surveying in Switzerland, users ca
 Following the download, users are advised to perform a conversion of the file labeled `chgeo04_htrans_lv95.agr` to `chgeo04_htrans_lv95.gtx`.
 The QGIS processing algorithm `gdal:translate` (convert format) can be used for that.
 
+!![](../assets/images/vertical_grid_selection_in_qfield_settings.png,350px)
+
 ## Usage
 :material-tablet: Fieldwork
 
