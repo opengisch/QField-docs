@@ -35,10 +35,13 @@ from the recorded positions - will be create per tracking session.  For point
 layers, a feature will be created for each recorded position, with attribute
 values entered in the form remembered across features.
 
+To prevent overlapping, you have the option to set a maximum distance tolerance between the last and next tracked point/vertices. This ensures that if the position exceeds this defined distance, it is considered as an erroneous entry.
+
 !!! note
     QField will skip the feature form step if the layer is configured to hide all attributes or if form has been set to hide on feature addition in the attribute form settings. This can streamline the process of starting tracking sessions.
 
-To prevent overlapping, you have the option to set a maximum distance tolerance between the last and next tracked point/vertices. This ensures that if the position exceeds this defined distance, it is considered as an erroneous entry.
+!!! note
+    QField offers the capability to resume tracking sessions seamlessly, even if the application has been restarted or the device has been rebooted. This ensures continuity by allowing previously started tracking sessions to be reactivated without loss progress.
 
 !![](../assets/images/maximum-distance-tolerance.png,550px)
 
