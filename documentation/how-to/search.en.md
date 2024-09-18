@@ -22,6 +22,14 @@ start the search.
 
 !![](../assets/images/search-bar.png)
 
+### Active Layer Search Feature Matching
+
+The active layer search functionality enhances search efficiency by focusing exclusively on the currently active layer and specific fields within it.
+
+To start a search, simply type `f` followed by your search term. This helps you quickly find items by searching only the active layer. It scans feature names and all text and number fields for matches. When it finds one, both the attribute's name and value are highlighted. You'll also see the feature's name in the search results below. To narrow down your search to a specific field, type: `f @ATTRIBUTE_NAME search-term`. This targets your search to that field.
+
+![type:video](../assets/videos/search-bar-active-layer-feature-matching-functionality.webm)
+
 ### Search with code scanner
 
 Additionally, you have the option to employ the code scan functionality for this purpose.
