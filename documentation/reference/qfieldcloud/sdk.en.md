@@ -5,9 +5,6 @@ tx_slug: documentation_reference_qfieldcloud_sdk
 
 `qfieldcloud-sdk` is the official client to connect to [QFieldCloud API](api.md) either as a python module, or directly from the command line.
 
-!!! note
-    `qfieldcloud-sdk` requires Python >=3.6
-
 ## Install
 
 `pip install qfieldcloud-sdk`
