@@ -77,7 +77,7 @@ QField have an in-app drawing and sketching functionality enabling you to direct
 
 Some mobile devices will require for native camera mode to be turned off to enable geotagging.
 
-To enable geotagging in case your native OS camera does not support this functionality, follow these steps:
+To enable geotagging in case your native OS camera does not support this functionality or does not make this information available to QField, follow these steps:
 
 1.  In QField, go to the *settings* and make sure *Use native Camera* is
     deactivated
