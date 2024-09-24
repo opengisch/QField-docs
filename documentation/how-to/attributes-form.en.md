@@ -43,6 +43,12 @@ QField form.
 
 Groups and Tabs from Drag and Drop designer forms are supported.
 
+In the "Attributes Form," you can structure your forms using various containers, such as tabs and groups, and enhance interactivity by incorporating expression-based conditional visibility. By enabling the [Drag and Drop Designer](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu), you gain the flexibility to re-order attribute fields, as well as gaining access to widgets that are not directly tied to specific fields (e.g., HTML/QML widgets).
+
+!![](../assets/images/drag-and-drop-designer-attribute-forms.png)
+
+!![](../assets/images/qfield-show-group-by-conditional.png)
+
 ## Configure a Relation Widget
 :material-monitor: Desktop preparation
 
