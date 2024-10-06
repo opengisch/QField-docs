@@ -26,9 +26,7 @@ When using the internal QField camera, images will be geotagged with various EXI
 | Xmp.tiff.Make                       | XMP tag for the device make, also set to QField.                      | QField                     | Similar to Exif.Image.Make, used for compatibility in XMP metadata. |
 
 ## Notes
-- QField captures and stores EXIF metadata automatically when using the internal (i.e. not the native) camera. 
+- QField captures and stores EXIF metadata automatically when using the internal (i.e. not the native) camera.
 - The coordinates (latitude and longitude) are always stored as absolute values, with the hemisphere indicated by the corresponding reference tags (e.g., `GPSLatitudeRef` for N/S).
 - Altitude is recorded as a positive or negative value depending on whether the elevation is above or below sea level, with `GPSAltitudeRef` used to indicate the direction.
 - Date and time stamps are stored in UTC format for consistency across locations.
-
-This reference should assist in understanding the metadata captured during geotagging and how to interpret or extract EXIF data from images taken in QField.
