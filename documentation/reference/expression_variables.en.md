@@ -43,8 +43,8 @@ These variables are commonly used in default values expressions to track the qua
 !!! note
     All `@position_*` variables have a corresponding `@gnss_*` variable. The `gnss_*` variables always report the GNSS sensor values, even when the crosshair is not snapped.
     - When the crosshair is snapped to the sensor:
-      - `@gnss_horizontal_accuracy` > Reports the horizontal accuracy (in meters) from the sensor.
-      - `@position_horizontal_accuracy` > Reports the same value if the crosshair is snapped to the sensor.
+      - `@gnss_horizontal_accuracy` > Reports the sensor's horizontal accuracy (in meters).
+      - `@position_horizontal_accuracy` > Reports the same value as the corresponding `gnss` value.
       - `@position_source_name` > Reports the sensor name.
     - When the crosshair is manually moved:
       - `@gnss_horizontal_accuracy` > Reports the sensor's horizontal accuracy (in meters).
