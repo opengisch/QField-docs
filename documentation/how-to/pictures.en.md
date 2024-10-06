@@ -75,14 +75,13 @@ QField have an in-app drawing and sketching functionality enabling you to direct
 ## Geotagging
 :material-tablet: Fieldwork
 
-Some mobile devices will require for native camera mode to be turned off to enable geotagging.
+QField's internal camera will automatically geotag your pictures.
 
-To enable geotagging in case your native OS camera does not support this functionality, follow these steps:
+Information about location and direction of the pictures will therefore be baked into the image file.
 
-1.  In QField, go to the *settings* and make sure *Use native Camera* is
-    deactivated
-    on your mobile device
-3.  Completed! QField's own QML-based camera will now be utilized while taking pictures
+!!! note
+    While with older Android versions it was possible to use other apps like the amazing OpenCamera app for taking pictures and preserving EXIF information from there, this is no longer with recent Android versions.
+    If you enable  *Use native Camera* in the *settings* you will not be able to preserve EXIF information.
 
 ## Fetching Geotags (EXIF) from the image file into the attribute table
 :material-monitor: Desktop preparation
