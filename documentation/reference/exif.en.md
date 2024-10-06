@@ -29,7 +29,6 @@ When using the internal QField camera, images will be geotagged with various EXI
 - QField captures and stores EXIF metadata automatically when using the internal (i.e. not the native) camera. 
 - The coordinates (latitude and longitude) are always stored as absolute values, with the hemisphere indicated by the corresponding reference tags (e.g., `GPSLatitudeRef` for N/S).
 - Altitude is recorded as a positive or negative value depending on whether the elevation is above or below sea level, with `GPSAltitudeRef` used to indicate the direction.
-- Speed and direction are recorded if the device is moving and the orientation and speed sensors are active at the time of capture.
 - Date and time stamps are stored in UTC format for consistency across locations.
 
 This reference should assist in understanding the metadata captured during geotagging and how to interpret or extract EXIF data from images taken in QField.
