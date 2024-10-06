@@ -96,6 +96,7 @@ nav:
       - reference/index.md
       - reference/data-format.md
       - reference/exif.md
+      - reference/expression_variables.md
       - QFieldCloud:
           - reference/qfieldcloud/concepts.md
           - reference/qfieldcloud/projects.md

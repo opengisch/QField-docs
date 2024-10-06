@@ -196,84 +196,9 @@ only be available when positioning is enabled.
 These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)<!-- markdown-link-check-disable-line -->
 for fields to keep track of the quality of individual measured points.
 
-All `@position_*` variables have a corresponding `@gnss_*` variable.
-The gnss variables always report the gnss sensor values, even when the crosshair is not snapped.
-
-  - `@position_source_name` - The name of the device that gave location information as
-    reported by the sensor. To differenciate between internal and
-    external sensor. If the position is manually set, and the
-    position is not snapped to the cursor, the source name is
-    "manual". **In case the cursor is not snapped to the position, all other variables will be null, if you need this, use the
-    `gnss_` variables instead**.
-  - `@position_quality_description` - A human readable and translated string for the quality as
-        reported by the sensor. E.g. "Fixed RTK". It is only available
-        when the crosshair is snapped to the sensor. - IE
-  - `@position_coordinate` - A point with the coordinate in WGS84. Lon, Lat, Altitude as
-        delivered by the sensor. It is only available when the crosshair
-        is snapped to the sensor. - `x(@position_coordinate)` - IE
-  - `@position_horizontal_accuracy` - The horizontal accuracy of the coordinate (in meters) as
-        reported by the sensor. It is only available when the crosshair
-        is snapped to the sensor. - IE
-  - `@position_timestamp` - The timestamp of the position in UTC as reported by the sensor.
-        It is only available when the crosshair is snapped to the
-        sensor. - IE
-  - `@position_direction` - The direction of movement in degrees from true north as reported
-        by the sensor. It is only available when the crosshair is
-        snapped to the sensor. - IE
-  - `@position_orientation` - Orientation of the device itself, regardless of its movement.
-        It changes as the device is rotated relative to true north (from 0° to 359°).
-  - `@position_ground_speed` - Groundspeed (in m/s) as reported by the sensor. It is only
-        available when the crosshair is snapped to the sensor. - IE
-  - `@position_magnetic_variation` - The angle between the horizontal component of the magnetic field
-        and true north, in degrees as reported by the sensor. Also known
-        as magnetic declination. A positive value indicates a clockwise
-        direction from true north and a negative value indicates a
-        counter-clockwise direction. It is only available when the
-        crosshair is snapped to the sensor. - IE
-  - `@position_vertical_accuracy` - The vertical accuracy of the coordinate (in meters) as reported
-        by the sensor. It is only available when the crosshair is
-        snapped to the sensor. - IE
-  - `@position_3d_accuracy` - The 3 dimensional accuracy of the coordinate (in meters), 3D-RMS
-        as reported by the sensor. It is only available when the
-        crosshair is snapped to the sensor. - IE
-  - `@position_vertical_speed` - The vertical speed (in m/s) as reported by the sensor. It is
-        only available when the crosshair is snapped to the sensor. - IE
-  - `@position_averaged_count` - This variable holds the number of collected positions from
-        which an averaged position was calculated when digitizing in this mode. For non-averaged
-        positions, the value will be set to `0` (zero). - IE
-  - `@position_pdop` - Position dilution of precision as reported by the sensor. It is
-        only available when the crosshair is snapped to the sensor. - E
-  - `@position_hdop` - Horizontal dilution of precision as reported by the sensor. It
-        is only available when the crosshair is snapped to the sensor. - E
-  - `@position_vdop` - Vertical dilution of precision as reported by the sensor. It is
-        only available when the crosshair is snapped to the sensor. - E
-  - `@position_number_of_used_satellites` - Number of satellites as reported by the sensor. It is only
-        available when the crosshair is snapped to the sensor. - IE
-  - `@position_used_satellites` - A list of satellites in use (pri) as reported by the sensor. It
-        is only available when the crosshair is snapped to the sensor. - `array_to_string(array_foreach(@position_used_satellites, @element), ', ')` - E
-  - `@position_fix_status_description` - The GPS Fix Status "NoData", "NoFix", "Fix2D" or "Fix3D"
-        as reported by the sensor. It is only available when the
-        crosshair is snapped to the sensor. - E
-  - `@position_fix_mode` - Fix mode (where "M" = Manual, forced to operate in 2D or 3D or
-        "A" = Automatic, 3D/2D) as reported by the sensor. It is only
-        available when the crosshair is snapped to the sensor. - E
-
-!!! info
-    - I: Internal position source E: External (NMEA) position source.
-    - Variables that contain `satellites` are not available on iOS.
-
-Examples:
-
-:   -   when the crosshair is snapped to the sensor - `@gnss_horizontal_accuracy` > The
-            horizontal accuracy of the coordinate (in meters) as
-            reported by the sensor. - `@position_horizontal_accuracy` > The
-            horizontal accuracy of the coordinate (in meters) as
-            reported by the sensor. - `@position_source_name` --> sensor name.
-    -   when the crosshair is manually moved - `@gnss_horizontal_accuracy` > The
-            horizontal accuracy of the coordinate (in meters) as
-            reported by the sensor. - `@position_horizontal_accuracy` > The value
-            is `NULL`. - `@position_source_name` > The value is
-            `manual`.
+A common use case is recording the horizontal accuracy, which can be done by using the variable `@position_horizontal_accuracy`.
+Another often used strategy is using the altitude of the current measurement which can be achieved with `z(@position_coordinate)`.
+For a complete listing of all available variables, refer to the [expression variables reference documentation](../reference/expression_variables.md).
 
 Information for GNSS Z value with Vertical grid shift in use:
 - *Antenna height compensation=False*
