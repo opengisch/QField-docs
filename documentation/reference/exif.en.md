@@ -15,7 +15,7 @@ When using the internal QField camera, images will be geotagged with various EXI
 | Exif.GPSInfo.GPSLongitudeRef        | Longitude reference (E = East, W = West).                             | E                          | Determines whether the longitude is east or west of the prime meridian. |
 | Exif.GPSInfo.GPSAltitude            | The altitude above sea level (in meters) where the image was taken.    | 490                        | Positive values indicate above sea level; negative values indicate below. |
 | Exif.GPSInfo.GPSAltitudeRef         | Altitude reference (0 = Below Sea Level, 1 = Above Sea Level).         | 1                          | Indicates whether altitude is above or below sea level. |
-| Exif.GPSInfo.GPSImgDirection        | The direction in degrees in which the camera was facing when the image was taken. | 270                        | Represents the compass direction (0 = North, 90 = East, 180 = South, 270 = West). |
+| Exif.GPSInfo.GPSImgDirection        | The direction in degrees in which the camera was facing when the image was taken. | 270                        | Represents the compass direction (0 = North, 90 = East, 180 = South, 270 = West) relative to magnetic north. |
 | Exif.GPSInfo.GPSImgDirectionRef     | Direction reference (M = Magnetic North).                             | M                          | Specifies whether the direction is relative to magnetic north. |
 | Exif.GPSInfo.GPSSpeed               | The speed of the device when the image was taken, in kilometers per hour (km/h). | 30.5                       | Captured if the device is moving at the time of image capture. |
 | Exif.GPSInfo.GPSSpeedRef            | Speed unit (K = kilometers per hour).                                 | K                          | Currently, speed is recorded in kilometers per hour in QField. |
@@ -30,3 +30,4 @@ When using the internal QField camera, images will be geotagged with various EXI
 - The coordinates (latitude and longitude) are always stored as absolute values, with the hemisphere indicated by the corresponding reference tags (e.g., `GPSLatitudeRef` for N/S).
 - Altitude is recorded as a positive or negative value depending on whether the elevation is above or below sea level, with `GPSAltitudeRef` used to indicate the direction.
 - Date and time stamps are stored in UTC format for consistency across locations.
+- See the corresponding [how to fetch geotag exif information into the attribute table section](../how-to/pictures.md#fetching-geotags-exif-from-the-image-file-into-the-attribute-table) for instructions how to make use of this
