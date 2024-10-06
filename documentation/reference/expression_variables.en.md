@@ -11,10 +11,7 @@ QField supports various expression variables that can be used in forms, expressi
 
 You can access positioning information through additional expression variables. These variables are available only when positioning is enabled.
 
-These variables are commonly used in [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values) to track the quality and details of individual measured points.
-
-!!! note
-    All `@position_*` variables have a corresponding `@gnss_*` variable. The `gnss_*` variables always report the GNSS sensor values, even when the crosshair is not snapped.
+These variables are commonly used in default values expressions to track the quality and details of individual measured points.
 
 ### List of Positioning Variables
 
@@ -43,17 +40,16 @@ These variables are commonly used in [default values expressions](https://docs.q
     - I: Internal position source, E: External (NMEA) position source.
     - Variables containing `satellites` are not available on iOS.
 
-### Examples of Usage
-
-- When the crosshair is snapped to the sensor:
-  - `@gnss_horizontal_accuracy` > Reports the horizontal accuracy (in meters) from the sensor.
-  - `@position_horizontal_accuracy` > Reports the same value if the crosshair is snapped to the sensor.
-  - `@position_source_name` > Reports the sensor name.
-  
-- When the crosshair is manually moved:
-  - `@gnss_horizontal_accuracy` > Reports the sensor's horizontal accuracy (in meters).
-  - `@position_horizontal_accuracy` > The value is `NULL`.
-  - `@position_source_name` > The value is `manual`.
+!!! note
+    All `@position_*` variables have a corresponding `@gnss_*` variable. The `gnss_*` variables always report the GNSS sensor values, even when the crosshair is not snapped.
+    - When the crosshair is snapped to the sensor:
+      - `@gnss_horizontal_accuracy` > Reports the horizontal accuracy (in meters) from the sensor.
+      - `@position_horizontal_accuracy` > Reports the same value if the crosshair is snapped to the sensor.
+      - `@position_source_name` > Reports the sensor name.
+    - When the crosshair is manually moved:
+      - `@gnss_horizontal_accuracy` > Reports the sensor's horizontal accuracy (in meters).
+      - `@position_horizontal_accuracy` > The value is `NULL`.
+      - `@position_source_name` > The value is `manual`.
 
 ## QFieldCloud
 
