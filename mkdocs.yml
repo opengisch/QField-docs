@@ -95,6 +95,7 @@ nav:
   - Technical reference:
       - reference/index.md
       - reference/data-format.md
+      - reference/exif.md
       - QFieldCloud:
           - reference/qfieldcloud/concepts.md
           - reference/qfieldcloud/projects.md
