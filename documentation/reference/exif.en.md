@@ -5,7 +5,7 @@ tx_slug: documentation_reference_exif
 
 # EXIF Data in QField
 
-When using the native QField camera, images will be geotagged with various EXIF metadata fields. Below is a reference table listing the available EXIF tags, their descriptions, examples, and comments about their usage in QField.
+When using the internal QField camera, images will be geotagged with various EXIF metadata fields. Below is a reference table listing the available EXIF tags, their descriptions, examples, and comments about their usage in QField.
 
 | EXIF Tag                            | Description                                                           | Example                   | Comments                                       |
 |-------------------------------------|-----------------------------------------------------------------------|---------------------------|------------------------------------------------|
@@ -26,7 +26,7 @@ When using the native QField camera, images will be geotagged with various EXIF 
 | Xmp.tiff.Make                       | XMP tag for the device make, also set to QField.                      | QField                     | Similar to Exif.Image.Make, used for compatibility in XMP metadata. |
 
 ## Notes
-- QField captures and stores EXIF metadata automatically when using the native camera. 
+- QField captures and stores EXIF metadata automatically when using the internal (i.e. not the native) camera. 
 - The coordinates (latitude and longitude) are always stored as absolute values, with the hemisphere indicated by the corresponding reference tags (e.g., `GPSLatitudeRef` for N/S).
 - Altitude is recorded as a positive or negative value depending on whether the elevation is above or below sea level, with `GPSAltitudeRef` used to indicate the direction.
 - Speed and direction are recorded if the device is moving and the orientation and speed sensors are active at the time of capture.
