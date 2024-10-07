@@ -47,8 +47,6 @@ QField allows you to efficiently work on your GIS data outdoor.
 QField's optimized user interface hides the full power of
 [QGIS](https://qgis.org) under the hood.
 
-![type:video](https://player.vimeo.com/video/695452246)<!-- markdown-link-check-disable-line -->
-
 ## QFieldCloud
 
 Seamlessly integrate your team's field work, QFieldCloud's unique
