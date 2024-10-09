@@ -24,7 +24,7 @@ The supported vector formats are:
 The supported raster formats are:
 
 - GeoTIFF (.tif, .tiff);
-- Georeferenced PDF / GeoPDF (.pdf);
+- Geospatial PDF (.pdf);
 - JPEG2000 (.jp2);
 - JPEG (.jpg, .jpeg);
 - PNG (.png); and
