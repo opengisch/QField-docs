@@ -171,7 +171,7 @@ plugins:
         background_color: "#72ad2e"
         color: "#FFFFFF"
   - i18n:
-      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, true]
+      build_only_locale: !ENV [BUILD_ONLY_LOCALE]
       # FIX ME: Add autodetection to translation rates so that only languages
       # with >30% translations are built. See https://www.transifex.com/opengisch/qfield-documentation/dashboard/
       languages:
