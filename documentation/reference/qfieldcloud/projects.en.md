@@ -3,19 +3,34 @@ title: Projects
 tx_slug: documentation_reference_qfieldcloud_projects
 ---
 
-Projects are the main data containers on QFieldCloud. Users can create any number of projects. Projects must contain a single `.qgs`/`.qgz` QGIS file, and may in addition contain any combination of geospatial files -- GeoPackages, Shapefiles, TIFs -- or data files such as photos, PDFs etc. Files cannot be shared between projects.
+Projects are the main data containers on QField and QFieldCloud.
+Users can create any number of projects.
+Projects must contain a single `.qgs`/`.qgz` QGIS file, and may in addition contain any combination of geospatial files -- GeoPackages, Shapefiles, TIFs -- or data files such as photos, PDFs etc.
+Files cannot be shared between projects, unless [localized layers](../../how-to/outside-layers.md) are used.
 
-QFieldCloud projects have a name and an owner. The owner of a project is a QFieldCloud user or an organization. No two projects can use the same pair <owner_name, project_name>.
+QFieldCloud projects have a name and an owner.
+The owner of a project is a QFieldCloud user or an organization.
+No two projects can use the same pair `owner_name` and `project_name`.
 
-Projects can be marked as either public or private. Private projects are accessible only to users added to a project as project collaborators. Public projects are visible to, and can be downloaded by, any QFieldCloud user.
+Projects can be marked as either public or private.
+Private projects are accessible only to users added to a project as project collaborators.
+Public projects are visible to, and can be downloaded by, any QFieldCloud user.
+
 
 ## Creating a project
 
-A project can be created in two different ways: either using the QFieldCloud web interface or using QFieldSync in QGIS.
+A project can be created in multiple ways:
+- via QFieldCloud web interface;
+- via QFieldSync in QGIS;
+- via QFieldCloud-SDK;
+
 
 ## Files
 
-Files are the skeleton on which QFieldCloud project works. To make a QFieldCloud project alive users need to upload at least a single QGIS project file in the `.qgs` or `.qgz` file formats. All geospatial files must be uploaded using the same relative paths as on one's computer. If external SVG or raster symbology is used, users must upload the corresponding files too.
+Files are the skeleton on which QFieldCloud projects work.
+To make a QFieldCloud project alive users need to upload at least a single QGIS project file in the `.qgs` or `.qgz` file formats.
+All geospatial files must be uploaded using the same relative paths as on one's computer.
+If external SVG or raster symbology is used, users must upload the corresponding files too.
 
 !!! note
     QFieldCloud does not support projects stored in a GeoPackage (`.gpkg`) files (but users can still use GeoPackage files to store datasets for their projects).
@@ -34,8 +49,20 @@ project
 │   ├── bees-20220404121212.jpg
 │   ├── bees-20220405040506.jpg
 │   └── fields-20220405040607.jpg
-└── project.qgs
+├── project.qgs
+├── project_attachments.zip
+└── project.qml
 ```
+
+
+The files in a QGIS project can be in one of the following groups by their purpose:
+
+- **QGIS project file** - a `.qgs` or `.qgz` project file.
+- **QGIS sidecar files** - the utility files to the QGIS project file, such as `*_attachments.zip` or other sidecar files.
+- **Data source files** - all your vector and raster data, such as `.gpkg`, `.tif`, `.mbtiles` or other data source files.
+- **Attachments** - all your additional project data, such as `.jpg`, `.pdf` or other files.
+- **QField plugins** - all your QField plugins, usually `.qml` files.
+
 
 ## File versions
 
