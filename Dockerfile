@@ -18,7 +18,6 @@ RUN curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh |
 # Token pass through for docker build --build-arg ...
 ARG tx_token
 ENV TX_TOKEN $tx_token
-ENV DEFAULT_LANGUAGE_ONLY false
 
 # Setting up and fetch translations the docs
 RUN ./tx add --project qfield-documentation --file-filter 'documentation/<project_slug>.<resource_slug>/<lang>.<ext>' remote https://www.transifex.com/opengisch/qfield-documentation/dashboard/ && \

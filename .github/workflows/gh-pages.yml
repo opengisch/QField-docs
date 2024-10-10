@@ -79,8 +79,6 @@ jobs:
 
       - name: Build documentation
         run: mkdocs build
-        env:
-          DEFAULT_LANGUAGE_ONLY: false
 
       - uses: actions/upload-artifact@v4
         if: ${{ github.event_name == 'pull_request' }}

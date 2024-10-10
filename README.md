@@ -110,14 +110,19 @@ The `tx_slug` identifies the resource on Transifex. It should *not* be changed i
 #### Testing your changes (on your local machine)
 
 ```sh
+cp .env.example .env
 pipenv install -r requirements.txt
 pipenv run mkdocs serve
 ```
 
 The local doc will be available at http://localhost:8000.  <!-- markdown-link-check-disable-line -->
 
+This will build the pages only in English.
+If you want to see the site in all the translations, in `.env` file set `BUILD_ONLY_LOCALE=""` to empty.
+
+
 #### Contribute
-Before commiting, install [pre-commit](https://pre-commit.com/) to auto-format your contributions. You can install pre-commit for the current user with
+Before committing, install [pre-commit](https://pre-commit.com/) to auto-format your contributions. You can install pre-commit for the current user with
 
     pip install --user pre-commit
     pre-commit install
@@ -150,14 +155,14 @@ request](https://help.github.com/articles/using-pull-requests/).
 
 ### Translation process
 
-*Note: You will need to have a [transifex account](https://transifex.com/) for this.*
+*Note: You will need to have a [Transifex account](https://transifex.com/) for this.*
 
-Navigate to our [transifex
+Navigate to our [Transifex
 project](https://www.transifex.com/organization/opengisch/dashboard/qfield-documentation)
 and click on the language you would like to translate. You will see a link
 `Join Team`. Click it and wait for approval (you will receive an email).
 
-Once you receive the email you can head back to the transifex project page,
+Once you receive the email you can head back to the Transifex project page,
 click on your language again and then will have the possibility to choose a
 documentation chapter to translate. There is a `Translate` button after
 choosing a chapter.

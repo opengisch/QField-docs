@@ -32,4 +32,4 @@ jobs:
       - name: Build documentation
         run: mkdocs build
         env:
-          DEFAULT_LANGUAGE_ONLY: true
+          BUILD_ONLY_LOCALE: "en"
