@@ -4,102 +4,107 @@ tx_slug: documentation_reference_qfieldcloud_system
 ---
 
 # QFieldCloud System Documentation
-  The aim of this document is to provide an overview of the QFieldCloud system to
-  understand the underlaying logic and technology.
+
+The aim of this document is to provide an overview of the QFieldCloud system to understand the underlaying logic and technology.
+
 
 ## Entities and Concepts
 
+
 ### QGIS Project
-A QGIS project is a *.qgs* or *.qgz* file. A Project is created on
-QGIS Desktop and uploaded to QFieldCloud using the QGIS's plugin
-QFieldSync. Before the uploading of the QGIS project, it is necessary
-for each layer of the QGIS project an "action" that determines how
-QFieldSync and QField should treat the layer. There are the two types
-of actions that can be setup - one for QFieldCloud and one for the
-traditional cable export.
 
-This information is saved within the QGS project as layer's
-*customProperty*, with the *QFieldSync/action* key.
+In QFieldCloud context a QGIS project refers to all data files that are required for properly functioning QGIS project.
+Read more about [QGIS projects](./projects.md).
 
-The available actions are:
+### Layer action
 
-| Action internal name | Name showed in the UI |
-|----------------------|-----------------------|
-| OFFLINE              | Consolidate           |
-| NO_ACTION            | Live layer            |
-| REMOVE               | Ignore layer          |
-| COPY                 | Copy                  |
-| KEEP_EXISTING        | Keep Existing         |
+Each layer in the QGIS project can be configured with an "layer action".
+The action determines how QFieldSync and QField should treat the layer.
 
-This would be the behavior of QFieldSync with the different
-layer actions:
+There are the two actions that can be configured: cloud action and cable action.
+They work are applied in the QFieldCloud and traditional cable export context respectively.
 
-| Action        | File based layer                                                 | Not file based layer                   |
-|---------------|------------------------------------------------------------------|----------------------------------------|
-| OFFLINE       | Create a consolidated copy of the data                           | Create a consolidated copy of the data |
-| NO_ACTION     | N/A                                                              | No action on the layer                 |
-| REMOVE        | Remove the layer from the project                                | Remove the layer from the project      |
-| COPY          | Make source path relative and copy the file                      | N/A                                    |
-| KEEP_EXISTING | Make source path relative and copy the file if it does not exist | N/A                                    |
+The following actions are available and will be explained in more detail below:
 
- This is the behavior of QFieldCloud (`libqfieldsync`) with the
- layers:
+| Name showed in the UI           | Work mode     | Spatial type |
+|---------------------------------|---------------|--------------|
+| Offline editing                 | cloud & cable | Vector       |
+| Directly access data source     | cloud & cable | Any          |
+| Remove from project             | cloud & cable | Any          |
+| Copy                            | cable         | Any          |
+| Keep existing (Copy if missing) | cable         | Vector       |
 
-| Action        | File based layer                                                                                                | Not file based                                                                                 |
-|---------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| OFFLINE       | Create consolidated copy of the data on pull, apply delta file on push to original data source                  | Create consolidated copy of the data on pull, apply delta file on push to original data source |
-| NO_ACTION     | N/A                                                                                                             | No action on the layer                                                                         |
-| REMOVE        | Remove the layer from the project                                                                               | Remove the layer from the project                                                              |
-| COPY          | Make source path relative and create copy of the data on pull, apply delta file on push to original data source | N/A                                                                                            |
-| KEEP_EXISTING | Make source path relative and create copy of the data on pull, apply delta file on push to original data source | N/A                                                                                            |
 
-This is the behavior of QField with the layers:
+#### Cloud action configuration
 
-| Action        | File based layer                   | Not file based layer                       |
-|---------------|------------------------------------|--------------------------------------------|
-| OFFLINE       | Create and push deltafile          | N/A (it's always file based at this point) |
-| NO_ACTION     | N/A                                | Edit the online (live) database            |
-| REMOVE        | N/A (the layer is no longer there) | N/A (the layer is no longer there)         |
-| COPY          | Create and push deltafile          | N/A                                        |
-| KEEP_EXISTING | Create and push deltafile          | N/A                                        |
+The cloud action set in QFieldSync is applied by QFieldCloud only at the moment of packaging a project for QField.
 
-In summary, for with QFieldCloud:
+This is the behavior of QFieldCloud (`libqfieldsync`) with the layers:
 
-- *NO_ACTION* is used for online layers that are located on a server
-  accessible via the Internet and that are modified directly by
-  QField.
-- *HYBRID* means that a geopackage will be generated on the
-  server (or directly on the desktop for file-based layers) and
-  downloaded by clients. The client will generate deltafiles of the changes.
-- *OFFLINE* is used for example to work with local databases not
-  visible by QFieldCloud which are consolidated before being
-  loaded from the desktop to the server and are not synchronized
-  with the original data by QFieldCloud.
-- *REMOVE* will simply remove the layer from the project.
-- *KEEP_EXISTENT* will not be used for QFieldCloud syncronizations.
+| Action                      | File based layer                                                                               | Service-based layer (e.g. WMS)    | Database layers (Postgres)                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------|
+| Offline editing             | Create consolidated copy of the data on pull, apply delta file on push to original data source | N/A                               | Create a consolidated copy of the data on pull, apply delta file on push to original data source |
+| Directly access data source | Create a read-only copy in an individual GeoPackage                                            | No action on the layer            | No action on the layer                                                                           |
+| Remove from project         | Remove the layer from the project                                                              | Remove the layer from the project | Remove the layer from the project                                                                |
 
-From QFieldSync it will be possible to update a project already
-loaded on QFieldCloud. In the event that the changes concern only
-styles, forms etc. but not the structure of the layers, the
-project on the server will simply be updated.
-If there are changes in the layers structure, the project will be
-reset on the server (delta files will be deleted) and for each
-client it will be necessary to download the updated version of the
-project before being able to push new changes.
+In summary, with QFieldCloud:
 
-### QFieldCloud Project
-    Is composed of one and only one QGIS project and the possible
-    related files (e.g. geopackages, images, ...) included the offline
-    or hybrid data package.
+- *Offline editing* means that a offline copy of the data will be generated by QFieldCloud and downloaded to QField.
+The data from *Offline editing*-layers will all be stored as multiple layers within a single `data.gpkg`.
+Whenever a modification is made on QField, a JSON structure called a *Change* (or Delta) will be generated only for the features that have been modified, only for the attributes or the geometry that have been modified.
+On push, the original data source will be updated, including the database for database layers.
+- *Directly access data source* is mainly used for service-based layers that are located on a internet accessible server.
+The data in these layers are directly modified by QField.
+Examples are WFS, WM(T)S-layers or layers coming from a database such as PostGIS layers.
+If the layer is file-based it will be in read-only mode.
+- *Remove from project* will simply remove the layer from the project (not package it for QField).
+
+From QFieldSync it will be possible to update a project already loaded on QFieldCloud.
+
+In the event that the changes concern only styles, forms etc. but not the data or the structure of the layers, the QGIS project file (`.qgs`/`.qgz`) on the server will simply be updated.
+
+If there are changes in the data or the structure of the layers, then the new data source files will be updated.
+
+Note that changing the structure (or schema) of the layers such as adding, removing or renaming attributes, changing not null constraints, etc. might have effects.
+If such changes are pushed to QFieldCloud, please make sure all QField users have pushed their changes in advance.
+Otherwise it might be impossible for QFieldCloud to apply these Changes/Deltas from older version of the QGIS project.
+
+
+#### Behaviour of QField
+
+Depending on the actions set for each layer in QFieldSync for QFieldCloud or Cable export, QField will act as follows:
+
+| Action                          | File based layer          | Service-based layer (e.g. WMS, database)   | Notes                                |
+|---------------------------------|---------------------------|--------------------------------------------|--------------------------------------|
+| Offline editing                 | Create and push a Change  | N/A                                        |                                      |
+| Directly access data source     | Layer is readonly         | Edit the online online database            |                                      |
+| Remove from project             | N/A                       | N/A                                        | the layer is not available on QField |
+| Copy                            | Create and readonly       | N/A                                        |                                      |
+| Keep existing (Copy if missing) | Create and readonly       | N/A                                        |                                      |
+
+
+### Technical names for actions
+
+The technical names for the available actions in QFieldSync are:
+
+| Name showed in the UI           | Action internal name |
+|---------------------------------|----------------------|
+| Offline editing                 | OFFLINE              |
+| Directly access data source     | NO_ACTION            |
+| Remove from project             | REMOVE               |
+| Copy                            | COPY                 |
+| Keep existing (Copy if missing) | KEEP_EXISTING        |
+
+
 
 ## Use Cases
 
-### Hybrid
+### Offline editing in the field, QFieldCloud connected to the database
 Hybrid editing mode with synchronization on the server
 
 !![Hybrid editing mode](../../assets/images/hybrid-schema.png)
 
-### Offline database
+### Offline editing in the field, QFieldCloud not connected to the database
 Offline editing mode with desktop synchronization
 
 !![Offline editing mode](../../assets/images/offline-schema.png)
