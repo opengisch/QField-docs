@@ -27,7 +27,7 @@ A project can be created in multiple ways:
 
 ## Files
 
-Files are the skeleton on which QFieldCloud project works.
+Files are the skeleton on which QFieldCloud projects work.
 To make a QFieldCloud project alive users need to upload at least a single QGIS project file in the `.qgs` or `.qgz` file formats.
 All geospatial files must be uploaded using the same relative paths as on one's computer.
 If external SVG or raster symbology is used, users must upload the corresponding files too.
@@ -55,7 +55,7 @@ project
 ```
 
 
-The file in a QGIS project can be in one of the following groups by their purpose:
+The files in a QGIS project can be in one of the following groups by their purpose:
 
 - **QGIS project file** - a `.qgs` or `.qgz` project file.
 - **QGIS sidecar files** - the utility files to the QGIS project file, such as `*_attachments.zip` or other sidecar files.

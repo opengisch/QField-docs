@@ -13,16 +13,16 @@ The aim of this document is to provide an overview of the QFieldCloud system to 
 
 ### QGIS Project
 
-In QFieldCloud context a QGIS project refers to all data files that are required for properly functioning QGIS project.
+In the QFieldCloud context, a project refers to all data files that are required for a properly functioning QGIS project.
 Read more about [QGIS projects](./projects.md).
 
 ### Layer action
 
-Each layer in the QGIS project can be configured with an "layer action".
+Each layer in the QGIS project can be configured with a "layer action".
 The action determines how QFieldSync and QField should treat the layer.
 
 There are the two actions that can be configured: cloud action and cable action.
-They work are applied in the QFieldCloud and traditional cable export context respectively.
+They work in the QFieldCloud and traditional cable export context respectively.
 
 The following actions are available and will be explained in more detail below:
 
@@ -59,7 +59,7 @@ Examples are WFS, WM(T)S-layers or layers coming from a database such as PostGIS
 If the layer is file-based it will be in read-only mode.
 - *Remove from project* will simply remove the layer from the project (not package it for QField).
 
-From QFieldSync it will be possible to update a project already loaded on QFieldCloud.
+With QFieldSync in QGIS it will be possible to update a project already loaded on QFieldCloud.
 
 In the event that the changes concern only styles, forms etc. but not the data or the structure of the layers, the QGIS project file (`.qgs`/`.qgz`) on the server will simply be updated.
 
@@ -77,7 +77,7 @@ Depending on the actions set for each layer in QFieldSync for QFieldCloud or Cab
 | Action                          | File based layer          | Service-based layer (e.g. WMS, database)   | Notes                                |
 |---------------------------------|---------------------------|--------------------------------------------|--------------------------------------|
 | Offline editing                 | Create and push a Change  | N/A                                        |                                      |
-| Directly access data source     | Layer is readonly         | Edit the online online database            |                                      |
+| Directly access data source     | Layer is readonly         | Edit the online  database                  |                                      |
 | Remove from project             | N/A                       | N/A                                        | the layer is not available on QField |
 | Copy                            | Create and readonly       | N/A                                        |                                      |
 | Keep existing (Copy if missing) | Create and readonly       | N/A                                        |                                      |
