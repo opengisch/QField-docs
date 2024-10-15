@@ -209,12 +209,12 @@ plugins:
               primary: light green
               toggle:
                 icon: octicons/moon-24
-                name: Switch to dark mode
+                name: In den Dunkel-Modus wechseln.
             - scheme: slate
               primary: blue
               toggle:
                 icon: octicons/sun-24
-                name: Switch to light mode
+                name: In den Hell-Modus wechseln.
 
 # Page tree
         - locale: fr
