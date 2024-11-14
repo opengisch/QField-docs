@@ -20,6 +20,7 @@ Public projects are visible to, and can be downloaded by, any QFieldCloud user.
 ## Creating a project
 
 A project can be created in multiple ways:
+
 - via QFieldCloud web interface;
 - via QFieldSync in QGIS;
 - via QFieldCloud-SDK;
