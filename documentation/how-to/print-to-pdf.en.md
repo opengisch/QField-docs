@@ -36,3 +36,9 @@ Feature(s) to PDF*.
 
 It is possible to print a single atlas feature through the feature form by clicking on the
 *Menu ( ⁝ )* button and selecting the *Print Atlas Feature to PDF*.
+
+## Synchronize Generated Layouts
+
+To sync layout PDFs with QFieldCloud, add the **'layouts'** folder to the list of *Attachment directories* in the *Project Properties* panel under the *QField* section. All generated layout PDFs will be stored in this folder.
+
+!![](../assets/images/attachment_directory_for_printed_layout.png)
