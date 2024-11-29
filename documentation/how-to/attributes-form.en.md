@@ -91,6 +91,16 @@ information (e.g. percentage) in the linking table.
 In case of the many-to-one cardinality on many-to-many relations the
 *Display Expression* needs to be set on the linking table.
 
+### Ordered Relation Editor
+
+First, install the plugin [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) in QGIS. Then, in the Attributes Form section, change the layout editor to Drag and Drop Designer. For the Relation widget type, select `Ordered relation editor` and configure the widget under Widget Configuration:
+
+- **Ordering Field**: Specify which field of the linked table is used for ordering.
+- **Description**: This expression provides the text displayed in the children list.
+- **Image path**: Optionally, provide a path to an image or icon to display near the Description text.
+
+!![](../assets/images/ordered_relation_widget.webp)
+
 ### Item Threshold Configuration for Value Map Editor Widgets
 
 To enhance the user experience within QField, it is possible to control the item threshold at which point the value map editor widgets switch to a toggle buttons interface.
