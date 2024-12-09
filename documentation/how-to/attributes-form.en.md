@@ -91,6 +91,32 @@ information (e.g. percentage) in the linking table.
 In case of the many-to-one cardinality on many-to-many relations the
 *Display Expression* needs to be set on the linking table.
 
+### Configuring Ordered Relations for QGIS and QField
+
+The **Ordered Relation Editor** widget allows you to reorder linked child features in a relation editor widget based on a specific ordering field.
+
+#### 1. Install the Plugin
+
+Make sure you have installed the [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) plugin from the official repository or through the "Plugin Manager" in QGIS.
+
+#### 2. Configure the Layout
+
+Navigate to the **Attributes Form** section of your layer settings and set the layout editor to **Drag and Drop Designer**.
+
+#### 3. Set Up the Relation Editor Widget
+
+In the **Relation** widget type dropdown, select **Ordered Relation Editor**. Then, configure the widget using the following settings:
+
+- **Ordering Field**: Specify the field in the child layer that will be used to determine the order of the features.
+
+- **Description**: Define an expression to display descriptive text for each child feature in the list.
+
+- **Image Path (Optional)**: Provide a path to an image or icon to visually enhance the list. This is an expression that resolves dynamically.
+
+!![Widget configuration in QGIS](../assets/images/ordered_relation_widget_configuration.png)
+
+!![QField](../assets/images/ordered_relation_widget.webp)
+
 ### Item Threshold Configuration for Value Map Editor Widgets
 
 To enhance the user experience within QField, it is possible to control the item threshold at which point the value map editor widgets switch to a toggle buttons interface.
