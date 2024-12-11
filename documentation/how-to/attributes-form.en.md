@@ -168,7 +168,7 @@ combobox. You can select *layer*, *key column* and *value column*. Several
 options are available to change the standard behaviors: *allow null value*, *order by value* and *allow multiple selections*. The widget will
 display a drop-down or multiple-select list of the referenced features.
 
-!![](../assets/images/value_relation_widget.gif)
+!![](../assets/images/value_relation_widget.webp,300px)
 
 
 ## Configure Conditional Visibility
