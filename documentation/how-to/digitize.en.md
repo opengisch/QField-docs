@@ -191,7 +191,7 @@ together when moving / deleting vertices and additional vertices are
 added to segments when a new node is added from neighbouring
 geometries.
 
-![type:video](https://player.vimeo.com/video/499565314)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/edit_topo.webp,250px)
 
 ### Multi-editing of attributes
 
