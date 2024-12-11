@@ -149,7 +149,7 @@ is created, QField will offer the possibility of filling the ring with a new fea
 
 A video demonstration of some editing possibilities:
 
-![type:video](https://player.vimeo.com/video/499564854)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/edit_geom.webp,250px)
 
 ## Merging features
 
