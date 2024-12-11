@@ -182,7 +182,7 @@ make a group and configure a visibility expression for a group
 "diseases". Add a field "desease" with a checkbox. Only when the
 checkbox is checked, the list of diseases will be available to you.
 
-!![Configuration of a group box that will only be shown if the checkbox "measures_taken" is checked.](../assets/images/conditional_visibility_configuration.png)
+!![Configuration of a group box that will only be shown if the checkbox "desease" is checked.](../assets/images/conditional_visibility_configuration.png)
 
 Let's see what we got on the field:
 
