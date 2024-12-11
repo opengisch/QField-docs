@@ -168,7 +168,7 @@ combobox. You can select *layer*, *key column* and *value column*. Several
 options are available to change the standard behaviors: *allow null value*, *order by value* and *allow multiple selections*. The widget will
 display a drop-down or multiple-select list of the referenced features.
 
-!![](../assets/images/value_relation_widget.gif)
+!![](../assets/images/value_relation_widget.webp,300px)
 
 
 ## Configure Conditional Visibility
@@ -182,11 +182,11 @@ make a group and configure a visibility expression for a group
 "diseases". Add a field "desease" with a checkbox. Only when the
 checkbox is checked, the list of diseases will be available to you.
 
-!![Configuration of a group box that will only be shown if the checkbox "measures_taken" is checked.](../assets/images/conditional_visibility_configuration.png)
+!![Configuration of a group box that will only be shown if the checkbox "desease" is checked.](../assets/images/conditional_visibility_configuration.png)
 
 Let's see what we got on the field:
 
-![type:video](https://player.vimeo.com/video/499565113)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/conditional_visibility.webp,300px)
 
 
 ## Define Constraints
@@ -305,7 +305,7 @@ with_variable(
 It is possible to search value in a *value relation* or *relation reference* widget using the magnifying
 glass next to the field.
 
-![type:video](https://player.vimeo.com/video/604661919)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/autocomplete_search_value.webp,300px)
 
 !!! note
     Define the *display expression* for the concerned layers, this will
@@ -322,7 +322,7 @@ auto-complete in the value relation.
 
 Here a video showing how it works on QField
 
-![type:video](https://player.vimeo.com/video/604661919)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/autocomplete_typing.webp,300px)
 
 ## Define QML Widgets
 
