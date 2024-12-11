@@ -99,7 +99,7 @@ at the right of every attribute allow remembering of the last entered value for
 each attribute individually so that the next time you will add a feature on the same
 layer, these attributes will be automatically pre-filled.
 
-![type:video](https://player.vimeo.com/video/526919606)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/remember_checkboxes.webp,250px)
 
 ## Geometry editing
 :material-tablet: Fieldwork
