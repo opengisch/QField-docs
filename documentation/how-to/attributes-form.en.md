@@ -322,7 +322,7 @@ auto-complete in the value relation.
 
 Here a video showing how it works on QField
 
-![type:video](https://player.vimeo.com/video/604661919)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/autocomplete_typing.webp,300px)
 
 ## Define QML Widgets
 
