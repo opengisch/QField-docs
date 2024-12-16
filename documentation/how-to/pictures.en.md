@@ -72,6 +72,17 @@ QField have an in-app drawing and sketching functionality enabling you to direct
 
 ![type:video](../assets/videos/drawing-sketch-feature2.webm)
 
+### Drawing templates
+
+On top of annotating captured images, QField supports drawing from image templates. The following two methods are available to add templates:
+
+- The first method is to create a `drawing_templates` folder located alongside a project file and populate it with images. Whenever that project is loaded, QField will register all images within that folder as drawing templates.
+- Alternatively, you can add images into the `drawing_templates` folder found inside your QField app folder. If you are not familiar with that app folder, its location is shown at the bottom of the About QField overlay.
+
+Templates shipped alongside projects as well as the QField app folder will be shown when users choose 'Draw a sketch' within attachments widget's 3-dot menu.
+
+!![picture path](../assets/images/drawing_templates.png "")
+
 ## Geotagging
 :material-tablet: Fieldwork
 
