@@ -92,6 +92,7 @@ nav:
       - how-to/movable-project.md
       - how-to/pg-service.md
       - how-to/plugins.md
+      - how-to/processing.md
   - Technical reference:
       - reference/index.md
       - reference/data-format.md
