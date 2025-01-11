@@ -55,7 +55,7 @@ Translations for the QField app are managed through the **Transifex** platform.
 
 ## 5. Review Your Translation
 
-- Confirm that the translation aligns with the guidelines provided in the ﻿[Translation process](https://github.com/opengisch/QField-docs?tab=readme-ov-file#translation-process).
+- Confirm that the translation aligns with the guidelines provided in the [Translation process](https://github.com/opengisch/QField-docs?tab=readme-ov-file#translation-process).
 
 ## 6. Synchronization and Testing
 
