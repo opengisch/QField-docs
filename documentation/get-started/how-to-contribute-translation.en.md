@@ -65,4 +65,5 @@ You'll see a "Join Team" link. Click it and wait for approval (you'll receive an
 - To see your translation reflected in the app:
     - Join the [QField Beta Program](https://play.google.com/apps/testing/ch.opengis.qfield_dev) for early access to new releases with this translations.
 
-If your language is not yet available, we will happily add it for you. Just open an issue on GitHub repository and tell us which language you would like to translate it to.
+If your language is not yet available, we will happily add it for you.
+Just open an issue on GitHub repository and tell us which language you would like to translate it to.
