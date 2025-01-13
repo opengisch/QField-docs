@@ -20,6 +20,8 @@ Translations for the QField app are managed through the **Transifex** platform.
 
 !![](../assets/images/transifex_translation_01.png,850px)
 
+You'll see a "Join Team" link. Click it and wait for approval (you'll receive an email).
+
 ## 3. Navigate to the Translation Interface
 
 1. Use the filters to streamline your work:
@@ -62,3 +64,5 @@ Translations for the QField app are managed through the **Transifex** platform.
 - Translations are typically synchronized with the QField app’s master codebase each day.
 - To see your translation reflected in the app:
     - Join the [QField Beta Program](https://play.google.com/apps/testing/ch.opengis.qfield_dev) for early access to new releases with this translations.
+
+If your language is not yet available, we will happily add it for you. Just open an issue on GitHub repository and tell us which language you would like to translate it to.
