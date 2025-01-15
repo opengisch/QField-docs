@@ -105,18 +105,19 @@ Features that have been created and later deleted without being pushed to QField
 !!! note
     Changes to vector layers done in QGIS will not appear here.
 
+
 ## Jobs
 
 Read more about [project jobs](jobs.md).
 
+
 ## Secrets
 
-Secrets are settings that are securely stored in encrypted way. Project jobs automatically have access to their secrets. Once added, a secret may be removed, but not edited.
+Secrets are Project settings that are securely stored in an encrypted way.
+Jobs will automatically have access to project's secrets.
 
-There are two types of secrets:
+Read more about [project secrets](secrets.md).
 
-- **Environment variables** - Environment variables will be available to QGIS while your project's jobs are running.
-- **pgservice connection** - A PostgreSQL/PostGIS connection as defined in the <code>.pg_service.conf</code> configuration file. If you use multiple service definitions, you should add multiple secrets for each of them.
 
 ## Settings
 
