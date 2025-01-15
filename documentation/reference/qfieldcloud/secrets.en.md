@@ -5,13 +5,14 @@ tx_slug: documentation_reference_qfieldcloud_secrets
 
 # Secrets
 
-Secrets are settings that are securely stored in an encrypted way. Project's jobs will automatically have access to their secrets. There are two types of secrets in QFieldCloud:
+Secrets are Project settings that are securely stored in an encrypted way.
+Jobs will automatically have access to project's secrets.
+
+There are two types of secrets in QFieldCloud:
 
 - **environment variables** - Environment variables will be available to QGIS while your project jobs are running.
 - **pg_service configurations** - Adding a PostgreSQL/PostGIS connection as defined in the `pg_service.conf` configuration file.
 
-!!! note
-    Once added, a secret can only be removed, but cannot be edited.
 
 !!! warning
     QFieldCloud makes sure your credentials are stored in a secured and encrypted manner. Nevertheless, we advice our users to use roles with the least privileges in shared environments to prevent potential leakage.
@@ -27,6 +28,9 @@ Adding a new secret on QFieldCloud is an easy process of only three steps.
 3. Storing the secret contents.
 
 !![Project secret page after pressing the **Add a new secret** button.](../../assets/images/secrets.png)
+
+!!! note
+    Once added, a secret can only be removed, but cannot be edited.
 
 
 ## Environment variable
