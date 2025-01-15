@@ -105,6 +105,7 @@ nav:
           - reference/qfieldcloud/jobs.md
           - reference/qfieldcloud/conflicts.en.md
           - reference/qfieldcloud/secrets.md
+          - reference/qfieldcloud/architecture.md
           - reference/qfieldcloud/specs.md
           - reference/qfieldcloud/api.md
           - reference/qfieldcloud/system.md
