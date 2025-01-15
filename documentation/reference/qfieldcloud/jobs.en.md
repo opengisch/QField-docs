@@ -20,6 +20,10 @@ Jobs have access to [project secrets](projects.md#secrets).
     - Any of the triggering conditions described on this page might change without notice.
     - All jobs must finish within 10 minutes or they will result in a timeout error and will be terminated.
 
+!!! info
+    If you are looking for technical details how Jobs work, check the [Job Queue documentation](./architecture.md#job-queue).
+
+
 ## Job types
 
 ### Process project file (`process_projectfile`) job
