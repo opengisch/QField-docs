@@ -27,9 +27,9 @@ While highly unlikely have conflicts, preventing, mitigating and resolving confl
 
 - When dealing with conflicts:
    - Navigate to the "Changes" section.
-   - Filter the changes with the "Not_applied" status.
+   - Filter the changes with the "Conflict" status.
    - For each conflicted change, select it and set the status to "Re-apply" from the "Action" dropdown menu, alternatively if all the new changes are in conflict you can choose in the last conflicted change and select "Re-apply this and newer changes".
    - Check the details of changes in the conflict and click "Save All" at the end of the page.
    - Refer to our official documentation [Delta apply](https://docs.qfield.org/reference/qfieldcloud/jobs/#delta-apply-delta_apply-job) for additional information.
 
-!![](../../assets/images/resolving_conflicts.gif)
+!![](../../assets/images/resolving_conflicts.webp)
