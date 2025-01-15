@@ -55,6 +55,7 @@ This job is triggered every time the **Download** or **Synchronize** buttons are
 - The project has never run a `process_projectfile` job that resulted in `SUCCESS` status.
 - There is already a `package` job in `PENDING` status.
 - The project does not contain online vector layers (PostGIS, WFS etc), the latest `package` job result was `SUCCESS` and there were no file uploads, nor change uploads.
+
 #### Troubleshoot
 
 A `package` job might result in `FAILED` status. Check the non-exhaustive list of causes below:
@@ -81,7 +82,37 @@ A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive li
 - The project is too big and the job has failed to run.
 - There are hidden files and directories within the project that are preventing the normal work of QFieldCloud. Hidden files and directories are those starting with a leading dot (`.`).
 
-### Re-apply changes in QFieldCloud
+##### Understanding conflicts `delta_apply` jobs
+
+Conflicts occur when any of these conditions is met:
+
+1) distinct users set the same attribute on the same feature to different values starting from the same old value;
+2) a primary key is employed twice.
+
+While highly unlikely have conflicts, preventing, mitigating and resolving conflicts is important to maintain data integrity in a healthy QGIS project. Here are some tips and tricks to do just that.
+
+Tips to avoid conflicts:
+
+- For updating existing features based on field conditions, plan and designate the features each user will update.
+- Users should not change the value of the primary key attribute.
+- Use a truly unique primary key, such as UUID (`uuid()`) or current timestamp (`epoch(now())`).
+
+
+###### How to resolve conflicts?
+
+By default, QFieldCloud overwrites conflicts using a _last wins_ policy (the latest patch of changes to the attribute(s) involved in the conflict replaces all earlier patches of changes to these attributes).
+Alternatively, admins can set a project's conflict resolution policy to _manual_.
+Doing so will require the project manager to manually resolve conflicts, picking those to be applied to the project.
+
+1. Navigate to the "Changes" section.
+2. Filter the changes with the "CONFLICT" status.
+3. For each conflicted change, select it and set the status to "Re-apply" from the "Action" dropdown menu, alternatively if all the new changes are in conflict you can choose in the last conflicted change and select "Re-apply this and newer changes".
+4. Check the details of changes in the conflict and click "Save All" at the end of the page.
+
+!![](../../assets/images/resolving_conflicts.webp)
+
+
+##### Re-apply changes in QFieldCloud
 
 1. Click on the project's name under _My projects_.
 2. Go to the _Changes_ section. (Changes are sorted from latest to oldest)
