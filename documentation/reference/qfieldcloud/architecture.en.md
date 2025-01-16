@@ -63,7 +63,7 @@ One or more containers to consume and manage Jobs from the queue.
 The **[worker_wrapper] Queue Consumer** regularly polls the **[db] App Database** for new pending Jobs.
 Once a Job in `PENDING` status is encountered, the **[worker_wrapper] Queue Consumer** sets it to `QUEUED` status and starts processing it.
 Then the container will set a bunch of metadata on the Job object in the **[db] App Database** and start a completely new temporary **[qgis] Worker** container.
-It waits the **[qgis] Worker** container to finish, gets the logs and stores them in the **[db] App Database**.
+It waits for the **[qgis] Worker** container to finish, gets the logs and stores them in the **[db] App Database**.
 
 Finally, it updates a bunch of other Job's metadata in the **[db] App Database** based on the exit code and the logs from the **[qgis] Worker**, and sets the Job's status to `FINISHED` or `FAILED`.
 

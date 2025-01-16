@@ -93,13 +93,13 @@ Conflicts occur when any of these conditions is met:
 1) distinct users set the same attribute on the same feature to different values starting from the same old value;
 2) a primary key is employed twice.
 
-While highly unlikely have conflicts, preventing, mitigating and resolving conflicts is important to maintain data integrity in a healthy QGIS project. Here are some tips and tricks to do just that.
+While highly unlikely have conflicts they may still occur.
 
 Tips to avoid conflicts:
 
 - For updating existing features based on field conditions, plan and designate the features each user will update.
 - Users should not change the value of the primary key attribute.
-- Use a truly unique primary key, such as UUID (`uuid()`) or current timestamp (`epoch(now())`).
+- Use a truly unique primary key, such as UUID (`uuid()`).
 
 
 ###### How to resolve conflicts?
