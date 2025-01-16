@@ -11,7 +11,7 @@ See an interactive version of [the drawing above](https://excalidraw.com/#json=D
   For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
 
 
-## Docker containers
+## Docker objects
 
 ### Containers
 
@@ -100,9 +100,75 @@ Contains all static assets such as fonts, CSS, JS or image files.
 
 #### `[media_volume]`
 
-Warning! Deprecated, might be removed at any time.
+!!! WARNING
+    Deprecated, might be removed at any time.
 
 The default location for User uploaded files. It should **never** be used.
+
+
+### Development services
+
+The following containers are available only for local development purposes and **should not** be used in production, as these services are not monitored, backed-up and generally designed for critical usage within the stack.
+
+
+#### [`minio`] File Storage
+
+Local Object Storage (S3-like) used for development.
+The data is stored on 4 **[`minio_data`]** volumes, as replication is enforced by `minio`.
+
+Should be replaced by a proper S3-like Object Storage SaaS provider.
+
+
+#### [`createbuckets`] Create Minio Buckets
+
+Single shot container to create the required buckets on the Object Storage under **[`minio`] File Storage**.
+
+
+#### [`db`] App PostgreSQL
+
+Local PostgreSQL database server to host the data for the **[`app`] QFieldCloud App**.
+The database schema is entirely managed by Django.
+The schema should not be modified by external services.
+
+Should be replaced by a proper PostgreSQL database with PostGIS installed SaaS provider.
+
+
+#### [`smtpdev`] Mailing Server
+
+Local mailing server to handle emails being sent, such as registration activation, reset password or notifications.
+
+Should be replaced by a proper email SaaS provider that supports SMTP protocol.
+
+
+#### [`geodb`] GeoDB PostgreSQL
+
+!!! WARNING
+    Deprecated, might be removed at any time.
+
+Stores dynamically created user PostGIS databases.
+
+
+#### [`minio_data`]
+
+Stores data for **[`geodb`] GeoDB PostgreSQL**.
+
+
+#### [`postgres_data`]
+
+Stores data for **[`db`] App PostgreSQL**.
+
+
+#### [`smtp4dev_data`]
+
+Stores data for **[`smtpdev`] Mailing Server**.
+
+
+#### [`geodb_data`]
+
+!!! WARNING
+    Deprecated, might be removed at any time.
+
+Stores data for **[`geodb`] GeoDB PostgreSQL**.
 
 
 ## Job Queue
