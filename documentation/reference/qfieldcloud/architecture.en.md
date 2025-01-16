@@ -5,7 +5,7 @@ QFieldCloud has a containerized architecture with multiple containers and volume
 
 !![QFieldCloud architecture: Rounded rectangles represent containers, ellipses represent volumes. The text in the square brackets is the service name found in the `docker-compose.yml` file, the rest of the text is the function of the container. Arrows between containers shows who initiates the communication. Arrows between a container and a volume represents whether the container reads (arrow pointing to container) or writes (arrow pointing to volume) data. Arrows and containers in gray represent deprecated services.](../../assets/images/qfc_server_architecture_light.svg)
 
-See an interactive version of [the drawing above](https://excalidraw.com/#json=Mb0cenWqFcnixbKRLv4Ft,7g6FloTTCCmGQAOeQYajjw).
+See an interactive version of [the drawing above](https://excalidraw.com/#json=D2nvh_kmi5HAFVQne4atD,D9gsC0i14V491ZsCp-FLMw).
 
 !!! NOTE
   For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
@@ -102,7 +102,7 @@ Contains all static assets such as fonts, CSS, JS or image files.
 
 Warning! Deprecated, might be removed at any time.
 
-The default location for User uploaded files. It should be never used.
+The default location for User uploaded files. It should **never** be used.
 
 
 ## Job Queue
