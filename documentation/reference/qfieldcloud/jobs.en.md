@@ -88,19 +88,18 @@ A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive li
 
 ##### Understanding conflicts `delta_apply` jobs
 
-Conflicts occur when any of these conditions is met:
+Conflicts can occur under the following conditions:
 
-1) distinct users set the same attribute on the same feature to different values starting from the same old value;
-2) a primary key is employed twice.
+1. Two or more users modify the geometry or a specific attribute of the same feature, starting from the same initial value but saving different values.
+2. A primary key is used more than once.
 
-While highly unlikely have conflicts they may still occur.
+To minimize the risk of conflicts, follow these best practices:
 
-Tips to avoid conflicts:
+- **Plan updates collaboratively** - When updating features based on specific field conditions, assign each user a distinct set of features to edit. Clear planning reduces overlap and potential conflicts.
+- **Avoid modifying primary keys** - Primary keys should be treated as immutable and configured to be read-only. This ensures consistent identification of features and prevents accidental modifications.
+- **Ensure unique primary keys** - Use a truly unique primary key, such as a UUID (`uuid()`), to prevent conflicts and ensure data integrity.
 
-- For updating existing features based on field conditions, plan and designate the features each user will update.
-- Users should not change the value of the primary key attribute.
-- Use a truly unique primary key, such as UUID (`uuid()`).
-
+By implementing these practices, you can significantly reduce the likelihood of conflicts and maintain consistent data.
 
 ###### How to resolve conflicts?
 
