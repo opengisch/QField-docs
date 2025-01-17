@@ -20,6 +20,10 @@ Jobs have access to [project secrets](projects.md#secrets).
     - Any of the triggering conditions described on this page might change without notice.
     - All jobs must finish within 10 minutes or they will result in a timeout error and will be terminated.
 
+!!! info
+    If you are looking for technical details how Jobs work, check the [Job Queue documentation](./architecture.md#job-queue).
+
+
 ## Job types
 
 ### Process project file (`process_projectfile`) job
@@ -55,6 +59,7 @@ This job is triggered every time the **Download** or **Synchronize** buttons are
 - The project has never run a `process_projectfile` job that resulted in `SUCCESS` status.
 - There is already a `package` job in `PENDING` status.
 - The project does not contain online vector layers (PostGIS, WFS etc), the latest `package` job result was `SUCCESS` and there were no file uploads, nor change uploads.
+
 #### Troubleshoot
 
 A `package` job might result in `FAILED` status. Check the non-exhaustive list of causes below:
@@ -81,7 +86,36 @@ A `delta_apply` job might result in `FAILED` status. Check the non-exhaustive li
 - The project is too big and the job has failed to run.
 - There are hidden files and directories within the project that are preventing the normal work of QFieldCloud. Hidden files and directories are those starting with a leading dot (`.`).
 
-### Re-apply changes in QFieldCloud
+##### Understanding conflicts `delta_apply` jobs
+
+Conflicts can occur under the following conditions:
+
+1. Two or more users modify the geometry or a specific attribute of the same feature, starting from the same initial value but saving different values.
+2. A primary key is used more than once.
+
+To minimize the risk of conflicts, follow these best practices:
+
+- **Plan updates collaboratively** - When updating features based on specific field conditions, assign each user a distinct set of features to edit. Clear planning reduces overlap and potential conflicts.
+- **Avoid modifying primary keys** - Primary keys should be treated as immutable and configured to be read-only. This ensures consistent identification of features and prevents accidental modifications.
+- **Ensure unique primary keys** - Use a truly unique primary key, such as a UUID (`uuid()`), to prevent conflicts and ensure data integrity.
+
+By implementing these practices, you can significantly reduce the likelihood of conflicts and maintain consistent data.
+
+###### How to resolve conflicts?
+
+By default, QFieldCloud overwrites conflicts using a _last wins_ policy (the latest patch of changes to the attribute(s) involved in the conflict replaces all earlier patches of changes to these attributes).
+Alternatively, admins can set a project's conflict resolution policy to _manual_.
+Doing so will require the project manager to manually resolve conflicts, picking those to be applied to the project.
+
+1. Navigate to the "Changes" section.
+2. Filter the changes with the "CONFLICT" status.
+3. For each conflicted change, select it and set the status to "Re-apply" from the "Action" dropdown menu, alternatively if all the new changes are in conflict you can choose in the last conflicted change and select "Re-apply this and newer changes".
+4. Check the details of changes in the conflict and click "Save All" at the end of the page.
+
+!![](../../assets/images/resolving_conflicts.webp)
+
+
+##### Re-apply changes in QFieldCloud
 
 1. Click on the project's name under _My projects_.
 2. Go to the _Changes_ section. (Changes are sorted from latest to oldest)

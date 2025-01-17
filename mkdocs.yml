@@ -98,12 +98,13 @@ nav:
       - reference/exif.md
       - reference/expression_variables.md
       - QFieldCloud:
+          - reference/qfieldcloud/workflow.md
           - reference/qfieldcloud/concepts.md
           - reference/qfieldcloud/projects.md
           - reference/qfieldcloud/permissions.md
           - reference/qfieldcloud/jobs.md
-          - reference/qfieldcloud/conflicts.en.md
           - reference/qfieldcloud/secrets.md
+          - reference/qfieldcloud/architecture.md
           - reference/qfieldcloud/specs.md
           - reference/qfieldcloud/api.md
           - reference/qfieldcloud/system.md
@@ -128,7 +129,11 @@ markdown_extensions:
   - attr_list
   - pymdownx.inlinehilite
   - pymdownx.highlight
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
