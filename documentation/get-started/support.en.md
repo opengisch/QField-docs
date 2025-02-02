@@ -5,7 +5,7 @@ tx_slug: documentation_get-started_support
 
 # Support
 
-## app.qfield.cloud Support
+## app.qfield.cloud support
 
 If you have a QFieldCloud subscription on app.qfield.cloud, please use the integrated ticketing system button or ask your questions directly on 
 https://support.qfield.cloud.
