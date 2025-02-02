@@ -5,10 +5,12 @@ tx_slug: documentation_get-started_support
 
 # Support
 
-## app.qfield.cloud support
+## app.qfield.cloud Support
 
 If you have a QFieldCloud subscription on app.qfield.cloud, please use the integrated ticketing system button or ask your questions directly on 
 https://support.qfield.cloud.
+
+![Find the help button on the bottom right of all the QFieldCloud pages.](../assets/images/support_button_qfc.png)
 
 ## Commercial Support
 
