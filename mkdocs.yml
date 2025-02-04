@@ -159,6 +159,9 @@ extra_javascript:
   - javascript/swagger-ui-standalone-preset.js
 
 extra:
+  analytics:
+    provider: google
+    property: G-68XXC2QVWH
   # Remove "Made with Material for MkDocs" from footer
   generator: false
   social:
