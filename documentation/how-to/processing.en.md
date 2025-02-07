@@ -13,7 +13,7 @@ Running algorithms against your features is done through the features list drawe
 
 !![process selected features](../assets/images/process_selected_features.png "")
 
-The processing algorithms drawer will by default filter out of the list of available algorithms to only show those flagged as favorites. Clicking on the _All algorithms_ tab will show the full list where you can add or remove favorites.
+By default, only the algorithms which are flagged as favorites will be shown. Clicking on the _All algorithms_ tab will show the full list where you can add or remove favorites.
 
 !![processing algorithms](../assets/images/processing_algorithms.png "")
 
