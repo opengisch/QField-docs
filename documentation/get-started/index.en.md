@@ -11,7 +11,6 @@ tx_slug: documentation_get-started_index
 
 === ":material-android: Android"
 
-   
     [![Get QField on Google Play](../assets/images/Get_it_on_Google_play.png)](
     https://play.google.com/store/apps/details?id=ch.opengis.qfield)
 
