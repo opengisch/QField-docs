@@ -99,7 +99,7 @@ at the right of every attribute allow remembering of the last entered value for
 each attribute individually so that the next time you will add a feature on the same
 layer, these attributes will be automatically pre-filled.
 
-![type:video](https://player.vimeo.com/video/526919606)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/remember_checkboxes.webp,250px)
 
 ## Geometry editing
 :material-tablet: Fieldwork
@@ -149,7 +149,7 @@ is created, QField will offer the possibility of filling the ring with a new fea
 
 A video demonstration of some editing possibilities:
 
-![type:video](https://player.vimeo.com/video/499564854)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/edit_geom.webp,250px)
 
 ## Merging features
 
@@ -191,7 +191,7 @@ together when moving / deleting vertices and additional vertices are
 added to segments when a new node is added from neighbouring
 geometries.
 
-![type:video](https://player.vimeo.com/video/499565314)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/edit_topo.webp,250px)
 
 ### Multi-editing of attributes
 
@@ -200,7 +200,7 @@ In some cases, it can result in very efficient workflows. To do so, identify two
 features on the map, select them in the features list and merge them by selecting
 the *Edit feature* button in the list's title bar.
 
-![type:video](https://player.vimeo.com/video/499565955)<!-- markdown-link-check-disable-line -->
+!![](../assets/images/multi_editor.webp,250px)
 
 ## Delete features
 :material-tablet: Fieldwork
