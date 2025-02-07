@@ -11,9 +11,7 @@ tx_slug: documentation_get-started_index
 
 === ":material-android: Android"
 
-    QField can be used with any version newer than Android 6, if you are
-    looking to get a new device, we suggest going for at least Android 9.
-
+   
     [![Get QField on Google Play](../assets/images/Get_it_on_Google_play.png)](
     https://play.google.com/store/apps/details?id=ch.opengis.qfield)
 
