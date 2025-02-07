@@ -7,11 +7,11 @@ tx_slug: documentation_get-started_tutorials_get-started-qfc
 !!! help
     We have a [community discussion platform](https://github.com/opengisch/qfield/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
 
-## Get a free QFieldCloud account
+## Get a free [QFieldCloud account](https://app.qfield.cloud/accounts/signup/)
 
 :material-monitor: Desktop preparation
 
-Go to the [registration page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
+Go to the [signup page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
 !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
