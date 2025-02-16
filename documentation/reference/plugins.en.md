@@ -53,7 +53,9 @@ QField ships with a number of utilities objects to manipulate features and geome
 
 To familiarize yourself with these, visit QField’s source code’s [utilities directory](https://github.com/opengisch/QField/tree/master/src/core/utils) where .h\[eader\] files will provide documentation for all invokable functions.
 
-## Search bar integration
+## Plugin code snippets
+
+### Search bar integration
 
 The plugin framework empowers you to integrate custom searches into the QField search bar through the `QFieldLocatorFilter` item which can be added into a plugin's root item:
 
@@ -119,7 +121,7 @@ Item {
 
 This [QField OpenStreetMap Nomination plugin](https://github.com/opengisch/qfield-nominatim-locator) is a good example to learn more about search bar integration.
 
-## Configuration button within the plugin manager
+### Configuration button within the plugin manager
 
 For plugins requiring user configuration, QField allows for these to add a configuration button within its plugin manager.
 
@@ -145,6 +147,30 @@ Item {
     title: "Configuration"
 
     // ...
+  }
+}
+```
+
+### Geometry highlighter canvas overlay
+
+Plugins can make use of QField's geometry highlighter item to flash created or fetched geometries through the following code:
+
+```
+import QtQuick
+import org.qfield
+
+Item {
+  // ...
+
+  property var geometryHighlighter: iface.findItemByObjectName('geometryHighlighter')
+
+  function demo() {
+    // Flash Null Island geometry
+    let geom = GeometryUtils.createGeometryFromWkt("POINT(0 0)")
+    let crs = CoordinateReferenceSystemUtils.fromDescription("EPSG:4326")
+
+    geometryHighlighter.geometryWrapper.qgsGeometry = geometry
+    geometryHighlighter.geometryWrapper.crs = crs;
   }
 }
 ```
