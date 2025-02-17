@@ -77,7 +77,7 @@ With this functionality, users and managers of QFieldCloud projects can enforce 
 
 !![Auto push QField](../../assets/images/auto-push-pending-changes-qfield.png,400px)
 
-!!! Note
+!!! note
     **Benefits:**
 
     - **Real-Time Updates**: Ensures prompt synchronization of field data with the QFieldCloud project.
@@ -230,5 +230,5 @@ You can modify the default QFieldCloud server QField and QFieldSync connect to:
 
 !![Reveling server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
 
-!!! Note
+!!! note
     It's important to note that QFieldSync does not support the same cloud project in multiple QGIS profiles. As a recommendation use a single QGIS profile for your QFieldCloud projects to avoid synchronization issues.

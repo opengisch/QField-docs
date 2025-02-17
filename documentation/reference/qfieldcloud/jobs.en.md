@@ -47,7 +47,7 @@ A `process_projectfile` job might result in `FAILED` status. Check the non-exhau
 - The uploaded QGIS project file (`.qgs`/`.qgz`) is unreadable, incomplete, broken or wrong. Try to reupload the QGIS project file.
 - QGIS is crashing after opening the project file. Try to identify the layer that is causing the crash by removing one layer at time from the project and reuploading the QGIS project file.
 
-!!! NOTE
+!!! note
     Even if a `process_projectfile` job results in a `SUCCESS` status, it does not mean the project is properly configured. The `SUCCESS` status just states the project has been successfully opened and all the needed information has been extracted.
 
 ### Package (`package`) job
