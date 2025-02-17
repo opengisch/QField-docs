@@ -68,7 +68,7 @@ def convert_md(path: str) -> tuple[str, str, str]:
     # replace fancy markdown image tags with standard
     body = body.replace("!![", "![")
     
-    html = markdown.markdown(body)
+    html = markdown.markdown(body, extensions=["tables", "admonition", "nl2br", "sane_lists", "smarty"])
     title = re.search("title: (.*)\n", header).group(1)
     slug = re.search("tx_slug: (.*)\n", header).group(1)
     return (slug, title, html)
