@@ -5,7 +5,7 @@ tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 
 # Advanced setup guide
 
-!!! help
+!!! note
     We have a [community discussion platform](https://github.com/opengisch/qfield/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
 
 
@@ -32,7 +32,7 @@ If you would like to set up relations, it is recommended to add a UUID field on 
 3. Download results on QGIS desktop:
     1. In QFieldSync, download the updated files (the GeoPackage file should have changed).
 
-!!! attention
+!!! warning
     This workflow does not support changing the GeoPackage on the desktop, as being file base, the whole GeoPackage will be replaced. This means that data can only be digitized using QFieldCloud.
 
 
