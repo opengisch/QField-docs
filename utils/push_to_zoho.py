@@ -52,6 +52,7 @@ def convert_md(path: str) -> tuple[str, str, str]:
         docs_url
     )
 
+    # Check if the markdown file has the correct header and starts with a title
     parts = md_text.split("---", 2)
     if len(parts) != 3:
         raise ValueError("Markdown file {} seems to miss an header".format(path))
@@ -61,6 +62,7 @@ def convert_md(path: str) -> tuple[str, str, str]:
     body = "{}{}".format(docs_url_warning, body)
 
     # replace relative url with absolute
+    body = body.replace("../../assets/images/", "https://docs.qfield.org/assets/images/")
     body = body.replace("../assets/images/", "https://docs.qfield.org/assets/images/")
 
     html = markdown.markdown(body)
