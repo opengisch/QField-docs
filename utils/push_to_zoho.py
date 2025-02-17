@@ -52,8 +52,11 @@ def convert_md(path: str) -> tuple[str, str, str]:
         docs_url
     )
 
-    header, body = md_text.split("#", 1)
-    body = "{}#{}".format(docs_url_warning, body)
+    parts = md_text.split("---", 2)
+    if len(parts) != 3:
+        raise ValueError("Markdown file {} seems to miss an header".format(path))
+    _, header, body = parts
+    body = "{}{}".format(docs_url_warning, body)
 
     # replace relative url with absolute
     body = body.replace("../assets/images/", "https://docs.qfield.org/assets/images/")
