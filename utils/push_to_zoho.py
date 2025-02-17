@@ -1,5 +1,5 @@
 import markdown
-import material.extensions.emoji # needed by yaml!
+import material.extensions.emoji  # needed by yaml!
 import os
 import re
 import requests
@@ -48,8 +48,10 @@ def convert_md(path: str) -> tuple[str, str, str]:
 
     docs_url = "https://docs.qfield.org"
     docs_url = path.replace("documentation", docs_url)[:-6]
-    docs_url_warning = "> ***The original version of this document is located at <{}>***\n\n".format(
-        docs_url
+    docs_url_warning = (
+        "> ***The original version of this document is located at <{}>***\n\n".format(
+            docs_url
+        )
     )
 
     # Check if the markdown file has the correct header and starts with a title
@@ -64,7 +66,7 @@ def convert_md(path: str) -> tuple[str, str, str]:
     # replace relative url with absolute
     body = body.replace("../../assets/", "https://docs.qfield.org/assets/")
     body = body.replace("../assets/", "https://docs.qfield.org/assets/")
-    
+
     # replace fancy markdown image tags with standard
     body = body.replace("!![", "![")
     body = re.sub(r"\.png,\d+px\)", ".png)", body)
@@ -90,13 +92,15 @@ def convert_md(path: str) -> tuple[str, str, str]:
         ":material-bee-flower:": "🌼",
         ":material-check:": "✅",
         ":material-close:": "❌",
-        ":material-cloud-outline:": "☁️", 
+        ":material-cloud-outline:": "☁️",
     }
-    
+
     for emoji, char in emojis.items():
         body = body.replace(emoji, char)
-    
-    html = markdown.markdown(body, extensions=["tables", "admonition", "nl2br", "sane_lists", "smarty"])
+
+    html = markdown.markdown(
+        body, extensions=["tables", "admonition", "nl2br", "sane_lists", "smarty"]
+    )
     title = re.search("title: (.*)\n", header).group(1)
     slug = re.search("tx_slug: (.*)\n", header).group(1)
     return (slug, title, html)
@@ -217,6 +221,7 @@ def main():
             for path in paths:
                 if path == "index.md":
                     continue
+
                 path = "documentation/{}.en.md".format(path[:-3])
                 if os.path.exists(path):
                     print("Processing: ", path)
