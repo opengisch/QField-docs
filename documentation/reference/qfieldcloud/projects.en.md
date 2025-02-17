@@ -3,6 +3,8 @@ title: Projects
 tx_slug: documentation_reference_qfieldcloud_projects
 ---
 
+# Projects
+
 Projects are the main data containers on QField and QFieldCloud.
 Users can create any number of projects.
 Projects must contain a single `.qgs`/`.qgz` QGIS file, and may in addition contain any combination of geospatial files -- GeoPackages, Shapefiles, TIFs -- or data files such as photos, PDFs etc.

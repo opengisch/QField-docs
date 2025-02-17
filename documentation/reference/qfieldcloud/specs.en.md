@@ -3,6 +3,8 @@ title: Technical specs
 tx_slug: documentation_reference_qfieldcloud_specs
 ---
 
+# Technical specs
+
 ## Firewall configuration
 
 If a project contains online layers (PostGIS, WMS, WFS, etc), QFieldCloud will try to establish a connection to this services. Sometimes these services are behind a firewall and the system administrators need to allowlist the QFieldCloud IP.

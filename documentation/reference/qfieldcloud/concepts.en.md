@@ -3,6 +3,8 @@ title: Basic concepts
 tx_slug: documentation_reference_qfieldcloud_concepts
 ---
 
+# Basic concepts
+
 ## Users
 
 To interact with QFieldCloud you need a registered user. Each user can create, modify and delete **projects** and **organizations**.
