@@ -6,7 +6,8 @@ import requests
 CONFIG_ID = os.environ["ZOHO_CONFIG_ID"]
 CONFIG_SECRET = os.environ["ZOHO_CONFIG_SECRET"]
 CONFIG_CODE = os.environ["ZOHO_CONFIG_CODE"]
-REFRESH_TOKEN = os.environ["ZOHO_REFRESH_TOKEN"]
+#use get to allow manual generation with create_access_secrets()
+REFRESH_TOKEN = os.environ.get("ZOHO_REFRESH_TOKEN")
 
 
 BASE_URL = "https://accounts.zoho.eu/oauth/v2/token"
@@ -20,6 +21,7 @@ def create_access_secrets() -> dict[str, str] | None:
     Visit https://api-console.zoho.eu/ and generate a new CONFIG_CODE
     for a self client with scope
     `Desk.articles.CREATE, Desk.articles.UPDATE, Desk.articles.READ`
+    Docs: https://www.zoho.com/assist/api/authorization-request.html#self-client
     """
 
     url = "{}?code={}&grant_type=authorization_code&client_id={}&client_secret={}&redirect_uri=https://www.qfield.cloud".format(
