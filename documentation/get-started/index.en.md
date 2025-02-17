@@ -36,8 +36,7 @@ tx_slug: documentation_get-started_index
 === ":material-apple: MacOS"
 
     Download the latest <a href="https://qfield.org/get_latest/?platform=macos" target="_blank">MacOS
-    x64 version</a> or <a href="https://qfield.org/get_latest/?platform=macos-arm" target="_blank">MacOS
-    ARM version</a>.
+    version</a> (Universal).
 
 QField allows you to efficiently work on your GIS data outdoor.
 
