@@ -1,10 +1,10 @@
-import re
 import markdown
 import material.extensions.emoji # needed by yaml!
+import re
 import requests
 import yaml
+import os
 
-from os import getenv
 from typing import Any, Generator, Iterable
 
 from generate_zoho_auth import get_fresh_token
@@ -168,7 +168,7 @@ def main():
             else:
                 paths = list(flatten(paths))
 
-            if getenv("IS_PR") in ("true", True):
+            if os.getenv("IS_PR") in ("true", True):
                 print(
                     "Not running in PRs, but at least it seems that all imports were resolved."
                 )
@@ -180,11 +180,15 @@ def main():
                 if path == "index.md":
                     continue
                 path = "documentation/{}.en.md".format(path[:-3])
-                push_article(category_title, path, headers, article_map)
+                if os.path.exists(path):
+                    print("Processing: ", path)
+                    push_article(category_title, path, headers, article_map)
+                else:
+                    raise FileNotFoundError("File missing: ", path)
 
 
 if __name__ == "__main__":
-    if getenv("IS_PR") in ("true", True):
+    if os.getenv("IS_PR") in ("true", True):
         print(
             "Not running in PRs, but at least it seems that all imports were resolved."
         )
