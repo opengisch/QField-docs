@@ -1,9 +1,9 @@
 import markdown
 import material.extensions.emoji # needed by yaml!
+import os
 import re
 import requests
 import yaml
-import os
 
 from typing import Any, Generator, Iterable
 
@@ -48,7 +48,7 @@ def convert_md(path: str) -> tuple[str, str, str]:
 
     docs_url = "https://docs.qfield.org"
     docs_url = path.replace("documentation", docs_url)[:-6]
-    docs_url_warning = "> ***The original version of this document is located at at <{}>***\n\n".format(
+    docs_url_warning = "> ***The original version of this document is located at <{}>***\n\n".format(
         docs_url
     )
 
