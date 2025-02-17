@@ -1,3 +1,8 @@
+---
+title: Architecture overview
+tx_slug: documentation_reference_qfieldcloud_architecture
+---
+
 # Architecture overview
 
 QFieldCloud has a containerized architecture with multiple containers and volumes.

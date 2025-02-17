@@ -1,3 +1,8 @@
+---
+title: Workflow
+tx_slug: documentation_reference_qfieldcloud_workflow
+---
+
 # Workflow
 
 Here you can find a typical setup of a Manager and Fieldworker as two main actors who interact on QGIS and QField respectively.
