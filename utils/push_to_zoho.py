@@ -152,7 +152,8 @@ def main():
     yaml.add_multi_constructor("!ENV", lambda loader, suffix, node: None)
 
     with open("mkdocs.yml", "r") as file:
-        config = yaml.full_load(file)
+        # NOTE please do not use the `full_load` or `yaml.FullLoader` as there is way too much magic in the `mkdocs.yml` file and it breaks miserably.
+        config = yaml.load(file, Loader=yaml.BaseLoader)
 
     articles = config["nav"]
     headers = get_headers()
