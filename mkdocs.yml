@@ -57,7 +57,7 @@ nav:
           - QFieldSync:
               - get-started/tutorials/get-started-qfs.md
       - get-started/faq.md
-      - get-started/settings.en.md
+      - get-started/settings.md
       - get-started/sample-projects.md
       - get-started/support.md
       - get-started/sponsor.md
