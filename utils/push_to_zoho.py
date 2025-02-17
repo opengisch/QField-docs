@@ -56,6 +56,8 @@ def convert_md(path: str) -> tuple[str, str, str]:
     if len(parts) != 3:
         raise ValueError("Markdown file {} seems to miss an header".format(path))
     _, header, body = parts
+    if not body.strip().startswith("# "):
+        raise ValueError("Markdown file {} seems to miss a # title".format(path))
     body = "{}{}".format(docs_url_warning, body)
 
     # replace relative url with absolute
