@@ -12,7 +12,7 @@ QFieldCloud has a containerized architecture with multiple containers and volume
 
 See an interactive version of [the drawing above](https://excalidraw.com/#json=D2nvh_kmi5HAFVQne4atD,D9gsC0i14V491ZsCp-FLMw).
 
-!!! NOTE
+!!! note
   For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
 
 
@@ -105,7 +105,7 @@ Contains all static assets such as fonts, CSS, JS or image files.
 
 #### `[media_volume]`
 
-!!! WARNING
+!!! warning
     Deprecated, might be removed at any time.
 
 The default location for User uploaded files. It should **never** be used.
@@ -147,7 +147,7 @@ Should be replaced by a proper email SaaS provider that supports SMTP protocol.
 
 #### [`geodb`] GeoDB PostgreSQL
 
-!!! WARNING
+!!! warning
     Deprecated, might be removed at any time.
 
 Stores dynamically created user PostGIS databases.
@@ -170,7 +170,7 @@ Stores data for **[`smtpdev`] Mailing Server**.
 
 #### [`geodb_data`]
 
-!!! WARNING
+!!! warning
     Deprecated, might be removed at any time.
 
 Stores data for **[`geodb`] GeoDB PostgreSQL**.
