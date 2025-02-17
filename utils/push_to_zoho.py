@@ -67,7 +67,35 @@ def convert_md(path: str) -> tuple[str, str, str]:
     
     # replace fancy markdown image tags with standard
     body = body.replace("!![", "![")
+
+    # replace emojis
+    emojis = {
+        ":material-monitor:": "🖥️",
+        ":material-phone:": "📱",
+        ":material-tablet:": "📱",
+        ":material-web:": "🌐",
+        ":material-usb:": "🔌",
+        ":material-sd-card:": "📦",
+        ":material-gps:": "🛰️",
+        ":material-compass:": "🧭",
+        ":material-battery:": "🔋",
+        ":material-ios:": "🍏",
+        ":material-android:": "🤖",
+        ":material-microsoft-windows:": "🪟",
+        ":material-linux:": "🐧",
+        ":material-mac:": "🍎",
+        ":material-apple:": "🍏",
+        ":material-bee:": "🐝",
+        ":material-bee-flower:": "🌼",
+        ":material-check:": "✅",
+        ":material-close:": "❌",
+        ":material-cloud-outline:": "☁️", 
+    }
     
+    for emoji, char in emojis.items():
+        body = body.replace(emoji, char)
+    
+    print(re.search(r":material-[\w-]+:", body).group(0) if re.search(r":material-[\w-]+:", body) else None)
     html = markdown.markdown(body, extensions=["tables", "admonition", "nl2br", "sane_lists", "smarty"])
     title = re.search("title: (.*)\n", header).group(1)
     slug = re.search("tx_slug: (.*)\n", header).group(1)
