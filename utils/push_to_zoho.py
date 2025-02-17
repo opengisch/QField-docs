@@ -64,7 +64,10 @@ def convert_md(path: str) -> tuple[str, str, str]:
     # replace relative url with absolute
     body = body.replace("../../assets/images/", "https://docs.qfield.org/assets/images/")
     body = body.replace("../assets/images/", "https://docs.qfield.org/assets/images/")
-
+    
+    # replace fancy markdown image tags with standard
+    body = body.replace("!![", "![")
+    
     html = markdown.markdown(body)
     title = re.search("title: (.*)\n", header).group(1)
     slug = re.search("tx_slug: (.*)\n", header).group(1)
