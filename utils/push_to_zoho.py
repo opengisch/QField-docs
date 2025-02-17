@@ -67,6 +67,7 @@ def convert_md(path: str) -> tuple[str, str, str]:
     
     # replace fancy markdown image tags with standard
     body = body.replace("!![", "![")
+    body = re.sub(r"\.png,\d+px\)", ".png)", body)
 
     # replace emojis
     emojis = {
