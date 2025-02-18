@@ -1,7 +1,7 @@
 repos:
   # Ensures EOF is properly whitespaced
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -9,7 +9,9 @@ repos:
         args:
           - "--fix=lf"
   - repo: https://github.com/tcort/markdown-link-check
-    rev: v3.11.2
+    # Do not update to v3.13.x as it no longer loads any defaults if a config file is passed with `-c`.
+    # See https://github.com/tcort/markdown-link-check/issues/369 .
+    rev: v3.12.2
     hooks:
       - id: markdown-link-check
         args: [-q, -c, .markdown-link-check-config.json]
