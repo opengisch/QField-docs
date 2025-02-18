@@ -1,5 +1,6 @@
 ---
 title: Get Started
+long_title: Get Started with QFieldCloud
 tx_slug: documentation_get-started_tutorials_get-started-qfc
 ---
 # Getting started guide

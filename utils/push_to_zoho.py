@@ -108,7 +108,6 @@ def convert_md(path: str) -> tuple[str, str, str]:
     except AttributeError:
         title = re.search("title: (.*)\n", header).group(1)
         
-    print(title)    
     slug = re.search("tx_slug: (.*)\n", header).group(1)
     return (slug, title, html)
 
