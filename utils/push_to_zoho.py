@@ -101,6 +101,8 @@ def convert_md(path: str) -> tuple[str, str, str]:
     html = markdown.markdown(
         body, extensions=["tables", "admonition", "nl2br", "sane_lists", "smarty"]
     )
+    html = html.replace('<img alt="type:video"', '<video controls loop ')
+    
     title = re.search("title: (.*)\n", header).group(1)
     slug = re.search("tx_slug: (.*)\n", header).group(1)
     return (slug, title, html)
