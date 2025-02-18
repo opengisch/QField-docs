@@ -103,7 +103,12 @@ def convert_md(path: str) -> tuple[str, str, str]:
     )
     html = html.replace('<img alt="type:video"', '<video controls loop ')
     
-    title = re.search("title: (.*)\n", header).group(1)
+    try:
+        title = re.search("long_title: (.*)\n", header).group(1)
+    except AttributeError:
+        title = re.search("title: (.*)\n", header).group(1)
+        
+    print(title)    
     slug = re.search("tx_slug: (.*)\n", header).group(1)
     return (slug, title, html)
 
