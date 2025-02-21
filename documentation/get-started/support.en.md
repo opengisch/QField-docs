@@ -7,8 +7,8 @@ tx_slug: documentation_get-started_support
 
 ## app.qfield.cloud Support
 
-If you have a QFieldCloud subscription on app.qfield.cloud, please use the   integrated ticketing system button or ask your questions directly on
-https://support.qfield.cloud.
+If you have a QFieldCloud subscription on app.qfield.cloud, please use the integrated ticketing system button or ask your questions directly on
+[support.qfield.cloud](https://support.qfield.cloud/).
 
 ![Find the help button on the bottom right of all the QFieldCloud pages.](../assets/images/support_button_qfc.png)
 
@@ -28,4 +28,4 @@ create your own custom app.
 ## Community Support
 
 You can ask your questions on
-[gis.stackexchange](http://gis.stackexchange.com/questions/tagged/qfield?sort=newest) <!-- markdown-link-check-disable-line -->
+[gis.stackexchange.com](http://gis.stackexchange.com/questions/tagged/qfield?sort=newest). <!-- markdown-link-check-disable-line -->
