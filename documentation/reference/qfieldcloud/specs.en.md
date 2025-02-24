@@ -7,7 +7,9 @@ tx_slug: documentation_reference_qfieldcloud_specs
 
 ## Firewall configuration
 
-If a project contains online layers (PostGIS, WMS, WFS, etc), QFieldCloud will try to establish a connection to this services. Sometimes these services are behind a firewall and the system administrators need to allowlist the QFieldCloud IP.
+If a project contains online layers (PostGIS, WMS, WFS, etc), QFieldCloud will try to establish a connection to these services. Sometimes these services are behind a firewall and the system administrators need to allowlist the QFieldCloud IP.
+
+The hosted version on app.qfield.cloud will connect from the following ip addresses:
 
 | service          | IP              |
 |------------------|-----------------|
