@@ -141,6 +141,13 @@ tile size is set to 1, each raster pixel will have a spatial extent of
 1x1 m, if it is set to 1000, each raster pixel will have a spatial
 extent of 1 square kilometer.
 
+You can package a raster layer into an **MBTiles** file with multiple zoom levels for offline use.
+
+- **Tiles min zoom level**: Defines the **minimum** zoom level for the raster tiles. A lower value increases coverage but may reduce detail. _(Default: 14)_
+- **Tiles max zoom level**: Defines the **maximum** zoom level for the raster tiles. A higher value increases detail but may require more storage space. _(Default: 14)_
+
+!![Base Map Configuration QFieldSync](../../assets/images/base_map_configuration.png)
+
 !!! note
     Base map generation is disabled on QFieldCloud. You can still manually add your basemaps by running "Generate XYZ tiles (MBTiles)" or "Convert map to raster" algorithms in the processing framework.
 
