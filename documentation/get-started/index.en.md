@@ -8,6 +8,10 @@ tx_slug: documentation_get-started_index
 
 ## QField
 
+### What is it?
+
+QField is an open-source application that allows painless fieldwork and synchronisation with your local QGIS projects. It can both be used in online and offline settings, link to external databases or work with simple feospatial formats. Once a QGIS project is ready for fieldwork it needs to be 'packaged' with the [QFieldSync Plugin](../get-started/tutorials/get-started-qfs.md) . There are several ways in which the project can be imported into QField. The following pages will provide the possible options in detail, which can be adopted according to the needs.
+
 ### Installation
 
 === ":material-android: Android"
