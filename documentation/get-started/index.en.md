@@ -43,7 +43,7 @@ QField is an open-source application that allows painless fieldwork and synchron
     Download the latest <a href="https://qfield.org/get_latest/?platform=macos" target="_blank">MacOS
     version</a> (Universal).
 
-QField is available for both Android and all IoS devices (the newer versions) and can also be accessed on the Desktop (Windows only) through an application that is available on Microsoft Store.
+QField is available for Android and iOS devices and can also be accessed on the Desktop (Windows, macOS and Linux).
 Use QField for optimised data collection outside in any place on earth. 
 Its optimized user interface hides the full power of [QGIS](https://qgis.org) under the hood.
 
