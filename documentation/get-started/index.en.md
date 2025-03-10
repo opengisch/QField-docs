@@ -50,7 +50,7 @@ Its optimized user interface hides the full power of [QGIS](https://qgis.org) un
 ## QFieldCloud
 
 [QFieldCloud](https://qfield.cloud) allows you to seamlessly integrate your team's field work. 
-It is a cloud-based Service and with its unique technology it will allow your team to focus on what's important, making sure you efficiently get the best field data possible.
+It is a cloud-based service and with its unique technology it will allow your team to focus on what's important, making sure you efficiently get the best field data possible.
 
 Thanks to the tight integration with QField, your team will be able to start surveying and digitising data in no time.
 
