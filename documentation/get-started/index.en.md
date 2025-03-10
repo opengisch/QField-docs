@@ -43,18 +43,15 @@ QField is an open-source application that allows painless fieldwork and synchron
     Download the latest <a href="https://qfield.org/get_latest/?platform=macos" target="_blank">MacOS
     version</a> (Universal).
 
-QField allows you to efficiently work on your GIS data outdoor.
-
-QField's optimized user interface hides the full power of
-[QGIS](https://qgis.org) under the hood.
+QField is available for both Android and all IoS devices (the newer versions) and can also be accessed on the Desktop (Windows only) through an application that is available on Microsoft Store.
+Use QField for optimised data collection outside in any place on earth. 
+Its optimized user interface hides the full power of [QGIS](https://qgis.org) under the hood.
 
 ## QFieldCloud
 
-Seamlessly integrate your team's field work, QFieldCloud's unique
-technology allows your team to focus on what's important, making sure
-you efficiently get the best field data possible.
+QFieldCloud is one and the recommended option to seamlessly integrate your team's field work. 
+It is a cloud-based Service and with its unique technology it will allow your team to focus on what's important, making sure you efficiently get the best field data possible.
 
-Thanks to the tight integration with QField, your team will be able to
-start surveying and digitising data in no time.
+Thanks to the tight integration with QField, your team will be able to start surveying and digitising data in no time.
 
 [Register Now :material-cloud-outline:](https://app.qfield.cloud/accounts/signup/){ .md-button }
