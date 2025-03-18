@@ -27,6 +27,6 @@ Finally, a checkbox allows you to prohibit the digitizing of new features when i
 
 When QField turns its geofencing alert on, a glowing read circle will appear at the bottom right corner of your device's screen. The visual queue will remain on the screen until the alert is turned off based on your selected behavior. In addition, on devices that supports vibration, a tactile alert will occur alongside a message informing users of which areas has been trespassed into.
 
-!![](../assets/images/geofencing-alert.png)
+![type:video](../assets/videos/geofencing-alert.webm)
 
 If you enabled the digitizing prevention checkbox, you will notice that QField's digitizing toolbar will disappear while in alert mode to clearly inform users of the ongoing prohibition and avoid accidental data entry.
