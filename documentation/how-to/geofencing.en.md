@@ -1,9 +1,9 @@
 ---
 title: Geofencing
-tx_slug: documentation_how-to_plugins
+tx_slug: documentation_how-to_geofencing
 ---
 
-# QField Plugins
+# Geofencing
 
 QField has a built-in geofencing functinality that can alert or inform users when the position provided by their GNSS device enters and/or leaves areas defined through polygon features. Digitizing of new features can also be prohibited when a geofencing alarm is turned on.
 
@@ -21,7 +21,7 @@ Once a layer is chosen, you can choose between three geofencing behavior:
 - alert users when outside all areas, where the polygons from the vector layer act as safe areas
 - inform users when entering and leaving areas, where polygons from the vector layer act as areas of informed or warned about
 
-Finally, a checkbox allows you to prohibit the entry of new features when in geofencing alert mode. When turned on, users will not be able to digitize new features into the currently opened project.
+Finally, a checkbox allows you to prohibit the digitizing of new features when in geofencing's alert mode is activated by the first two behaviors above. When checked, users will not be able to digitize new features into the currently opened project.
 
 ## Geofencing feedback
 
@@ -29,4 +29,4 @@ When QField turns its geofencing alert on, a glowing read circle will appear at 
 
 !![](../assets/images/geofencing-alert.png)
 
-If you enabled the digitizing prevention checkbox, you will notice that QField's digitizing toolbar will disappear while in alert mode to clearly inform users of the ongoing probhition and avoid accidental data entry.
+If you enabled the digitizing prevention checkbox, you will notice that QField's digitizing toolbar will disappear while in alert mode to clearly inform users of the ongoing prohibition and avoid accidental data entry.

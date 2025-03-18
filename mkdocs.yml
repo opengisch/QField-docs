@@ -79,6 +79,7 @@ nav:
       - how-to/map-styling.md
       - how-to/map-themes.md
       - how-to/gnss.md
+      - how-to/geofencing.md
       - how-to/navigation.md
       - how-to/tracking.md
       - how-to/sensors.md
