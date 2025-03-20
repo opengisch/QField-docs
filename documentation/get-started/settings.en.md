@@ -70,7 +70,7 @@ When switched on, user's saved and currently opened project bookmarks will be di
 ## Use native camera
 
 If disabled, QField will use a minimalist internal camera instead of the camera app on the device.
-Tip: Enable this option and install the open camera app to create geo tagged photos.
+Tip: Disable this option to have geo tagged photos and have access to the [EXIF](../reference/exif.md) variables.
 
 ## Fast editing mode
 

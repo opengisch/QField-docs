@@ -102,5 +102,5 @@ database is 1,000+.
 Also, one of our colleagues presented WASAC\'s activity in FOSS4G 2019
 Bucharest. Although some of system were little bit changed now, you can
 also see
-[video](https://media.ccc.de/v/bucharest-30-case-study-of-data-collection-data-sharing-for-rural-water-supply-management-in-rwanda)
+[video](https://media.ccc.de/v/bucharest-30-case-study-of-data-collection-data-sharing-for-rural-water-supply-management-in-rwanda)<!-- markdown-link-check-disable-line -->
 if you are interested.
