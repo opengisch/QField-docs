@@ -92,7 +92,7 @@ Information about location and direction of the pictures will therefore be baked
 
 !!! note
     While with older Android versions it was possible to use other apps like the amazing OpenCamera app for taking pictures and preserving EXIF information from there, this is no longer with recent Android versions.
-    If you enable  *Use native Camera* in the *settings* you will not be able to preserve EXIF information.
+    Is recommended to disable  *Use native Camera* in the *settings* to preserve [EXIF](../reference/exif.md) information.
 
 ## Fetching Geotags (EXIF) from the image file into the attribute table
 :material-monitor: Desktop preparation
