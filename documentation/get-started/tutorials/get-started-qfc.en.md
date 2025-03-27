@@ -147,10 +147,10 @@ Select a project to download on your device:
 
 !![Download](../../assets/images/getting_started_download_project.png,250px)
 
-### Synchronise your changes
+### Synchronize your changes
 
 Make a change to your data. Either create a new feature, delete a feature, or modify the geometry or attributes.
-Open the blue cloud button on the top left of the screen:
+Click the blue cloud button on the top left of the screen:
 
 !![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
 
