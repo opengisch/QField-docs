@@ -85,7 +85,7 @@ Properties
 
 2. Set up the attachment default naming, please refer to the [Configurable picture path](../../how-to/pictures.md#configurable-attachment-path)
 
-3. Set up the maximum number of items shown in the relation editor widget
+3. Set up the maximum number of items shown in the relation editor widget.
 
 !![QFieldSync Layer Properties](../../assets/images/qfield-sync-properties.png)
 
@@ -178,7 +178,7 @@ Simply activate the checkbox labeled "Show the packaging options in the toolbar.
 Copy the folder on your device. Open QField, open the project and start
 collecting data.
 
-Make also sure to save the QGIS project using the regular Save As of
+Also make sure to save the QGIS project using the regular Save As of
 QGIS as you'll have to re-open it later when you want to synchronize
 the changes.
 
@@ -200,7 +200,7 @@ Use iTunes' File Sharing function to import into the QField root folder.
 When you want to synchronize what you have collected, re-open the
 project in QGIS (the one you saved with a regular Save As).
 
-Copy the project folder from your device to your computer and use the
+Copy the project folder from your device to your computer, and use the
 **Synchronize from QField** menu to synchronize your changes from the
 protable project to the main project.
 

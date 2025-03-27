@@ -16,7 +16,7 @@ Translations for the QField app are managed through the **Transifex** platform.
 
 1. Select a project you want to contribute to.
 2. Select the language you want to contribute to.
-3. Look for languages requiring translation. For these languages, you'll see a "Translate" button. Click on it.
+3. Look for languages that need translation. These will have a "Translate" button next to them. Click on it.
 
 !![](../assets/images/transifex_translation_01.png,850px)
 
@@ -31,7 +31,7 @@ You'll see a "Join Team" link. Click it and wait for approval (you'll receive an
 
 !![](../assets/images/transifex_translation_02.png,850px)
 
-   - Then choose **No**.
+   - Then choose **No** to show only untranslated strings.
 
 !![](../assets/images/transifex_translation_03.png,850px)
 
@@ -61,9 +61,9 @@ You'll see a "Join Team" link. Click it and wait for approval (you'll receive an
 
 ## 6. Synchronization and Testing
 
-- Translations are typically synchronized with the QField app’s master codebase each day.
+- Translations are typically synchronized with the QField app's master codebase each day.
 - To see your translation reflected in the app:
-    - Join the [QField Beta Program](https://play.google.com/apps/testing/ch.opengis.qfield_dev)<!-- markdown-link-check-disable-line --> for early access to new releases with this translations.
+    - Join the [QField Beta Program](https://play.google.com/apps/testing/ch.opengis.qfield_dev)<!-- markdown-link-check-disable-line --> for early access to new releases with these translations.
 
 If your language is not yet available, we will happily add it for you.
-Just open an issue on GitHub repository and tell us which language you would like to translate it to.
+Just open an issue on the GitHub repository and specify which language you would like to translate to.
