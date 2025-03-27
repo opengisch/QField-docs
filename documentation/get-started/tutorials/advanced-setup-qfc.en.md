@@ -23,7 +23,7 @@ If you would like to set up relations, it is recommended to add a UUID field on 
 
 1. Setup on QGIS desktop:
     1. Create a new project.
-    2. Create a GeoPackage layers, save it in the same folder than the QGIS project.
+    2. Create GeoPackage layers, save it in the same folder than the QGIS project.
     3. Set the GeoPackage to "Offline editing" in the QFieldSync plugin.
     4. Upload the project to QFieldCloud.
 2. Collect data on the device with QField:
@@ -33,7 +33,7 @@ If you would like to set up relations, it is recommended to add a UUID field on 
     1. In QFieldSync, download the updated files (the GeoPackage file should have changed).
 
 !!! warning
-    This workflow does not support changing the GeoPackage on the desktop, as being file base, the whole GeoPackage will be replaced. This means that data can only be digitized using QFieldCloud.
+    This workflow does not support changing the GeoPackage on the desktop, as being file-based, the whole GeoPackage will be replaced. This means that data can only be digitized using QFieldCloud.
 
 
 ## PostGIS
@@ -183,7 +183,7 @@ You will receive notifications for events in which you are not the actor. These 
 
 ## Enhance your project with the "Optimized Packager"
 
-We recommend to use the new "Optimized Packager" over the deprecated "QGIS Core Offline Editing" for all your projects. Set the packager under "Packaging Offliner" in the "Settings" tab of your project.
+We recommend using the new "Optimized Packager" over the deprecated "QGIS Core Offline Editing" for all your projects. Set the packager under "Packaging Offliner" in the "Settings" tab of your project.
 
 The "Optimized Packager" supports consolidating filtered layers of same datasource into a single offline layer, respecting distinct symbology but also using less storage. Here is an example to illustrate this feature:
 
@@ -226,9 +226,9 @@ You can modify the default QFieldCloud server QField and QFieldSync connect to:
 4. Enter the details of the desired server in the provided field.
 (Leaving the field empty will connect to the default QFieldCloud server at app.qfield.cloud.)
 
-!![Reveling server in QField Sync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
+!![Revealing server in QField Sync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
 
-!![Reveling server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
+!![Revealing server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
 
 !!! note
     It's important to note that QFieldSync does not support the same cloud project in multiple QGIS profiles. As a recommendation use a single QGIS profile for your QFieldCloud projects to avoid synchronization issues.
