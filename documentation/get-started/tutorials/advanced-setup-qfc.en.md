@@ -40,7 +40,7 @@ If you would like to set up relations, it is recommended to add a UUID field on 
 
 Using PostGIS layers is a good choice if you want data from your QField users to be updated directly in your database by QFieldCloud when they sync their work without any further steps.
 
-It requires your database to be publicly accessible and credentials must be saved unencrypted in the QGIS project. Please be aware of the security implications of such requirements, and remember to have backups.
+It requires your database to be publicly accessible, and credentials must be saved unencrypted in the QGIS project. Please be aware of the security implications of such requirements, and remember to have backups.
 
 ### Example workflow (PostGIS)
 
