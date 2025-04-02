@@ -55,7 +55,7 @@ Next go to Project -> Save to -> GeoPackage, and select the GeoPackage file cont
 ![type:video](https://player.vimeo.com/video/969846267)<!-- markdown-link-check-disable-line -->
 *Package QGIS Project into GeoPackage*
 
-For more information, consult the QGIS documentation for more information [packaging layers](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/database.html#package-layers).
+For more information, consult the QGIS documentation  [packaging layers](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/database.html#package-layers).
 
 ### Packaging the project as a SpatiaLite database
 
