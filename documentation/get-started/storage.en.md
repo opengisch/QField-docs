@@ -41,7 +41,7 @@ This folder can contain individual files such as a
 
 ### Packaging the project as a GeoPackage
 
-The most efficient way to package a QGIS project and its corresponding geospatial data into one file is to use [GeoPackages](https://www.geopackage.org/).
+The simplest and most efficient way to package a QGIS project and its corresponding geospatial data into one file is to use [GeoPackages](https://www.geopackage.org/).
 We recommend using the GeoPackage file format for projects in QField, since packaging in QGIS is easy and straightforward. To package a project as a GeoPackage, three steps are necessary.
 
 1. **Package vector layers to GeoPackage:**
