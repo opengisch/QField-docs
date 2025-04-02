@@ -7,11 +7,12 @@ tx_slug: documentation_get-started_storage_qfield
 
 On the QField homescreen, users are presented with two options to open a project.
 
-* **Open local file**: The first option involves copying a working copy of the project file from a laptop or PC (the source device), on to the phone or tablet (the target device).
-On the target device, users can accesses this local copy and manipulate it using QField, and eventually copy this new version back to the desktop or to an alternative cloud storage service. How to prepare, store and access these local copies is the topic of this chapter.
-
-* **QFieldCloud projects**: The second option is to [access a project stored on QFieldCloud through QFieldSync.](#getting-started-guide)
+ **QFieldCloud projects**: The first option is to [access a project stored on QFieldCloud](../get-started/index.en.md)
 How to set up and work with QFieldCloud is explained in the next chapter.
+
+* **Open local file**: The second option involves copying a working copy of the project file from a laptop or PC (the source device), on to the phone or tablet (the target device).
+On the target device, users can access and edit this local copy using QField, and eventually copy the new version back to the desktop or to an alternative cloud storage service. How to prepare, store and access these local copies is the topic of this chapter.
+
 
 There are various possibilities of exporting copies of project files and datasets from the source device runnign QGIS and importing them on to a target device for field-data collection. Below are OS-specific instructions on how to access projects and individual datasets through QField.
 
