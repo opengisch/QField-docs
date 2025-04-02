@@ -104,7 +104,7 @@ A possible workflow may look like this
 
 #### Transfer via USB-cable
 
-Transfering files from MacBooks or Macs to iPhone using a cable is not straightforward, since its not possible to access individual files in the QField directory.
+Transfering files from MacBooks or Macs to iPhone using a cable is not straightforward, since it is not possible to access individual files in the QField directory.
 One workaround could be the following
 
 * copy the entire folder `Imported Projects` from your iOS target device over to your source device
