@@ -147,7 +147,7 @@ Apart from using QFieldCloud, QField can open projects and datasets in four ways
 
 !![QField import actions](../assets/images/storage-import-actions.png)
 
-On Android all of these actions are available by click on the ‘import (+) button‘ located on the bottom-right corner of the project/dataset picker screen, which can be accessed by clicking on the ‘Open local files’ button located in QField‘s welcome screen.
+On Android all of these actions are available by clicking on the ‘import (+) button‘ located on the bottom-right corner of the project/dataset picker screen, which can be accessed by clicking on the ‘Open local files’ button located in QField‘s welcome screen.
 
 <img src="../assets/images/get-started-storage-add-files.png" alt="add-files" height="500" width="250"> <img src="../assets/images/get-started-storage-local-file-2.png" alt="add-files" height="500" width="250">
 
