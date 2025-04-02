@@ -80,7 +80,7 @@ Copying the packaged project over to the corresponding folder of each device can
 If you want to use a cable connection to import the project on to your android device, simply connect both devices using a USB cable and follow the instructions on [how to transfer files between your computer and the android device.](https://support.google.com/android/answer/9064445?hl=en#zippy=%2Cwindows-computer)
 On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/`.
 Users will find both the Imported Datasets and Imported Projects folders within which the imported projects and datasets will be located.
-Changes done to project content and datasets are saved in the files found in this location.
+Changes done to the project content and datasets are saved in the files found in this location.
 
 #### Send via Bluetooth
 
