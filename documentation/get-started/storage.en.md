@@ -18,7 +18,7 @@ There are various possibilities of exporting copies of project files and dataset
 
 
 ## Exporting QGIS project files for use in QField
-QFieldQField supports a [wide range of data formats](../reference/data-format/).
+QFieldQField supports a [wide range of data formats](../reference/data-format).
 There are three ways of preparing and copying a project in QGIS for use in QField.
 
 * [Storing files in a designated folder](###storing-files-in-a-designated-folder)
