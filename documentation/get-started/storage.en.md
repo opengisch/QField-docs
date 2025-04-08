@@ -16,11 +16,6 @@ On the target device, users can access and edit this local copy using QField, an
 
 There are various possibilities of exporting copies of project files and datasets from the source device runnign QGIS and importing them on to a target device for field-data collection. Below are OS-specific instructions on how to access projects and individual datasets through QField.
 
-!!! note
-    Note to active QField users: Since November 2021, Google has, for security reasons, enforced a new set of storage access rules.
-    These prohibit most applications from directly accessing files in many locations on a device‘s internal and external storages.
-    Therefore, QField has to import projects and datasets into its Google-specified storage location within which QField has unrestricted read/write access.
-    Instructions below should help users' adjust to the new circumstances.
 
 ## Exporting QGIS project files for use in QField
 QFieldQField supports a [wide range of data formats](../reference/data-format.en.md).
@@ -57,10 +52,6 @@ Next go to Project -> Save to -> GeoPackage, and select the GeoPackage file cont
 *Package QGIS Project into GeoPackage*
 
 For more information, consult the QGIS documentation  [packaging layers](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/database.html#package-layers).
-
-### Packaging the project as a SpatiaLite database
-
-Another possibility is to store the project and its layers in a [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index) database.
 
 ## Copying project over to the QField target device
 
