@@ -11,10 +11,13 @@ on:
     - cron: '30 1 * * *'
   workflow_dispatch:
 
+env:
+  MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
+
 jobs:
   translations:
     runs-on: ubuntu-latest
-    if: (github.event_name == 'schedule' && github.repository == 'opengisch/QField-docs') || (github.event_name != 'schedule')
+    if: ${{ env.MKDOCS_INSIDERS_TOKEN != '' && ((github.event_name == 'schedule' && github.repository == 'opengisch/QField-docs') || (github.event_name != 'schedule')) }}
     steps:
       - uses: actions/checkout@v4
 
@@ -33,8 +36,6 @@ jobs:
 
       - name: Install Python requirements insiders
         run: pip install -r requirements-insiders.txt
-        env:
-          MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
 
       - name: Install Transifex client
         run: |
