@@ -7,7 +7,7 @@ tx_slug: documentation_get-started_storage_qfield
 
 On the QField homescreen, users are presented with two options to open a project.
 
- **QFieldCloud projects**: The first option is to [access a project stored on QFieldCloud](../get-started/index.en.md)
+ **QFieldCloud projects**: The first option is to [access a project stored on QFieldCloud](../get-started/)
 How to set up and work with QFieldCloud is explained in the next chapter.
 
 * **Open local file**: The second option involves copying a working copy of the project file from a laptop or PC (the source device), on to the phone or tablet (the target device).
@@ -18,7 +18,7 @@ There are various possibilities of exporting copies of project files and dataset
 
 
 ## Exporting QGIS project files for use in QField
-QFieldQField supports a [wide range of data formats](../reference/data-format.en.md).
+QFieldQField supports a [wide range of data formats](../reference/data-format/).
 There are three ways of preparing and copying a project in QGIS for use in QField.
 
 * [Storing files in a designated folder](###storing-files-in-a-designated-folder)
