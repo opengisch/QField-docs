@@ -5,10 +5,6 @@ tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 
 # Advanced setup guide
 
-!!! note
-    We have a [community discussion platform](https://github.com/opengisch/qfield/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
-
-
 ## Supported vector providers
 
 Currently, QFieldCloud supports GeoPackage and PostGIS layers for collaborative editing. Other formats supported by QGIS should also work but are not officially supported.
