@@ -15,6 +15,8 @@ jobs:
   translations:
     runs-on: ubuntu-latest
     if: (github.event_name == 'schedule' && github.repository == 'opengisch/QField-docs') || (github.event_name != 'schedule')
+    env:
+      MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -32,9 +34,8 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: Install Python requirements insiders
+        if: ${{ env.MKDOCS_INSIDERS_TOKEN != '' }}
         run: pip install -r requirements-insiders.txt
-        env:
-          MKDOCS_INSIDERS_TOKEN: ${{ secrets.MKDOCS_INSIDERS_TOKEN }}
 
       - name: Install Transifex client
         run: |
