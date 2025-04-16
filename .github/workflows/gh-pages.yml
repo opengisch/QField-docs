@@ -72,7 +72,7 @@ jobs:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
       - name: Translate Mkdocs config
-        if: contains(fromJSON('["push", "workflow_dispatch", "schedule"]'), github.event_name) || ${{ github.event_name == 'pull_request' && github.repository == 'opengisch/QField-docs' }}
+        if: ${{ env.MKDOCS_INSIDERS_TOKEN != '' }}
         run: |
           ./utils/mkdocs_tx.py -s en update_config
           ./utils/mkdocs_tx_commit.sh
