@@ -23,7 +23,6 @@ There are three ways of preparing and copying a project in QGIS for use in QFiel
 
 * [Storing files in a designated folder](###storing-files-in-a-designated-folder)
 * [Packaging the project as a GeoPackage](###packaging-the-project-as-a-geopackage)
-* [Packaging the project as a SpatiaLite database](###packaging-the-project-as-a-spatiaLite-database)
 
 ### Storing files in a designated folder
 
