@@ -46,6 +46,7 @@ jobs:
         run: ./utils/mkdocs_tx.py create_source
 
       - name: Configure Transifex
+        if: ${{ env.MKDOCS_INSIDERS_TOKEN != '' }}
         run: ./utils/transifex_utils.py
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
@@ -63,7 +64,7 @@ jobs:
           cmd: yq '.plugins[] | .i18n.languages | select( . != null ) | map(.locale) | join(",")' mkdocs.yml
 
       - name: Pull translations from Transifex
-        if: contains(fromJSON('["push", "workflow_dispatch", "schedule"]'), github.event_name) || ${{ github.event_name == 'pull_request' && github.repository == 'opengisch/QField-docs' }}
+        if: ${{ env.MKDOCS_INSIDERS_TOKEN != '' }}
         run: |
           ./tx pull -t -l ${{ steps.get_langs.outputs.result }}
           ./tx status
