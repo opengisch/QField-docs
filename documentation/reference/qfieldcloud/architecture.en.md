@@ -123,7 +123,7 @@ The data is stored on 4 **[`minio_data`]** volumes, as replication is enforced b
 
 Should be replaced by a proper S3-like Object Storage SaaS provider.
 
-If a `minio` is running, please make sure the host's firewall allows port `8009`, required by the `minio` service (or the port configured with the `MINIO_API_PORT` environment variable).
+If `minio` is running, please make sure the host's firewall allows port `8009`, required by the `minio` service (or the port configured with the `MINIO_API_PORT` environment variable).
 
 
 #### [`createbuckets`] Create Minio Buckets
