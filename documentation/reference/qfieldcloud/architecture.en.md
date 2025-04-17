@@ -155,7 +155,7 @@ Stores dynamically created user PostGIS databases.
 
 #### [`minio_data`]
 
-Stores data for **[`geodb`] GeoDB PostgreSQL**.
+Stores data for the **[`minio`] S3 service**.
 
 
 #### [`postgres_data`]
