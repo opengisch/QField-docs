@@ -5,9 +5,6 @@ tx_slug: documentation_get-started_tutorials_get-started-qfc
 ---
 # Getting started guide
 
-!!! note
-    We have a [community discussion platform](https://github.com/opengisch/qfield/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
-
 ## Get a free [QFieldCloud account](https://app.qfield.cloud/accounts/signup/)
 
 :material-monitor: Desktop preparation
