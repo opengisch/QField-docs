@@ -50,7 +50,7 @@ The following pages will provide the possible options in detail, which can be ad
 
 QField is available for Android and iOS devices and can also be accessed on the Desktop (Windows, macOS and Linux).
 Use QField for optimised data collection outside in any place on earth.
-Its optimized user interface exposes through a an easy-to-use front-end that gets out of the way the full power of [QGIS](https://qgis.org) under the hood.
+Its optimized user interface exposes the full power of [QGIS](https://qgis.org) through an easy-to-use front-end.
 
 ## QFieldCloud
 
