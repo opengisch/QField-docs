@@ -79,6 +79,7 @@ nav:
       - how-to/map-styling.md
       - how-to/map-themes.md
       - how-to/gnss.md
+      - how-to/geofencing.md
       - how-to/navigation.md
       - how-to/tracking.md
       - how-to/sensors.md
@@ -99,6 +100,7 @@ nav:
       - reference/data-format.md
       - reference/exif.md
       - reference/expression_variables.md
+      - reference/plugins.md
       - QFieldCloud:
           - reference/qfieldcloud/workflow.md
           - reference/qfieldcloud/concepts.md
@@ -164,6 +166,7 @@ extra:
     provider: google
     property: G-68XXC2QVWH
   # Remove "Made with Material for MkDocs" from footer
+  homepage: https://qfield.org
   generator: false
   social:
     - icon: fontawesome/brands/github

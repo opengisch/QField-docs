@@ -30,7 +30,7 @@ Before beginning, ensure that your PostgreSQL database allows connections from Q
 
 ### Setup `pg_service.conf` File
 
-We first need to set up a configuration file. There are many options to organize this, [read more in the PostgreSQL documentation](https://www.postgresql.org/docs/current/libpq-pgservice.html) or follow the description below.
+We first need to set up a configuration file. There are many options to organize this, [read more in the PostgreSQL documentation](https://www.postgresql.org/docs/current/libpq-pgservice.html)<!-- markdown-link-check-disable-line --> or follow the description below.
 
 1. **Create a Configuration File**:
 

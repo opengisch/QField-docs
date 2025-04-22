@@ -47,6 +47,7 @@ The following pages will provide the possible options in detail, which can be ad
     Download the latest <a href="https://qfield.org/get_latest/?platform=macos" target="_blank">MacOS
     version</a> (Universal).
 
+
 QField is available for Android and iOS devices and can also be accessed on the Desktop (Windows, macOS and Linux).
 Use QField for optimised data collection outside in any place on earth.
 Its optimized user interface exposes through a an easy-to-use front-end that gets out of the way the full power of [QGIS](https://qgis.org) under the hood.
@@ -55,6 +56,7 @@ Its optimized user interface exposes through a an easy-to-use front-end that get
 
 [QFieldCloud](https://qfield.cloud) allows you to seamlessly integrate your team's field work.
 It is a cloud-based service and with its unique technology it will allow your team to focus on what's important, making sure you efficiently get the best field data possible.
+
 
 Thanks to the tight integration with QField, your team will be able to start surveying and digitising data in no time.
 
