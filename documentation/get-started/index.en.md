@@ -10,7 +10,11 @@ tx_slug: documentation_get-started_index
 
 ### What is it?
 
-QField is an open-source application that allows painless fieldwork and synchronisation with your local QGIS projects. It can be used in both online and offline settings, link to external databases or work with simple geospatial formats. Once a QGIS project is ready for fieldwork it needs to be 'packaged' with the [QFieldSync Plugin](../get-started/tutorials/get-started-qfs.md). There are several ways in which the project can be imported into QField. The following pages will provide all the possible options in detail, which can be adopted according to the needs.
+QField is an open-source application that allows painless fieldwork and synchronisation with your local QGIS projects.
+It can both be used in online and offline settings, link to external databases or work with simple feospatial formats.
+Once a QGIS project is ready for fieldwork it needs to be 'packaged' with the [QFieldSync Plugin](../get-started/tutorials/get-started-qfs.md).
+There are several ways in which the project can be imported into QField.
+The following pages will provide the possible options in detail, which can be adopted according to the needs.
 
 ### Installation
 
@@ -43,18 +47,17 @@ QField is an open-source application that allows painless fieldwork and synchron
     Download the latest <a href="https://qfield.org/get_latest/?platform=macos" target="_blank">MacOS
     version</a> (Universal).
 
-QField allows you to efficiently work on your GIS data outdoors.
 
-QField's optimized user interface hides the full power of
-[QGIS](https://qgis.org) under the hood.
+QField is available for Android and iOS devices and can also be accessed on the Desktop (Windows, macOS and Linux).
+Use QField for optimised data collection outside in any place on earth.
+Its optimized user interface exposes the full power of [QGIS](https://qgis.org) through an easy-to-use front-end.
 
 ## QFieldCloud
 
-Seamlessly integrate your team's field work with QFieldCloud. Its unique
-technology allows your team to focus on what's important, making sure
-you efficiently get the best field data possible.
+[QFieldCloud](https://qfield.cloud) allows you to seamlessly integrate your team's field work.
+It is a cloud-based service and with its unique technology it will allow your team to focus on what's important, making sure you efficiently get the best field data possible.
 
-Thanks to the tight integration with QField, your team will be able to
-start surveying and digitising data in no time.
+
+Thanks to the tight integration with QField, your team will be able to start surveying and digitising data in no time.
 
 [Register Now :material-cloud-outline:](https://app.qfield.cloud/accounts/signup/){ .md-button }
