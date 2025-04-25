@@ -17,16 +17,15 @@ On double-tap or long-press on a layer, you get offered the following possibilit
 
 !![](../assets/images/howto_legendoptions.png)
 
+- *Expand legend item* to show/hide the layer's sub-items.
 - *Show on map* to control visibility.
 - *Show labels* to control the visibility of the labels.
-- *Expand legend item* to show/hide the layer's sub-items.
+- *Opacity Slider* to control the transparency of the layer.
 - *Zoom to layer* to have all the layer items on the map.
-- *Reload data* to get the current data of a layer with remote sources.
+- *Reload icon* to get the current data of a layer with remote sources.
 - *Show feature list* to show all the layer's features in the identification list.
+-  *Setup tracking* to set up tracking mode of layer.
 
-Additionally, you have the option to adjust the layer opacity for each individual layer using the "Opacity" slider.
-
-!![](../assets/images/opacity-slider.png)
 
 ## Sort layer features
 :material-monitor: Desktop preparation
@@ -37,18 +36,15 @@ If you'd like to configure the order of features in 'Show feature list' in QFiel
 
 !![](../assets/images/accesing-sort-feature-list-op1.png)
 
-- In form view, you can access sorting functionality by clicking on the expression button located at the top of the features list and select the 'Sort' option.
+  - When being in the form view, you can access the sorting functionality by clicking on the expression button located at the top of the features list and select the 'Sort' option.
 
 !![](../assets/images/accesing-sort-feature-list-op2.png)
 
 ## Identify features
 :material-tablet: Fieldwork
 
-Tap on a feature on the map to identify it. If several features are
-located where you tapped (either because there are multiple features
-really close one to another, or because several layers are overlapping),
-they will all be listed in the menu that opens on the right of the
-screen.
+Tap on a feature on the map to identify it.
+If several features are located where you tapped (either because there are multiple features really close one to another, or because several layers are overlapping), they will all be listed in the menu that opens on the right of the screen.
 
 !![](../assets/images/howto_identification.png)
 
@@ -79,4 +75,4 @@ Often it is not required to be able to query every layer. Some layers
 are only present as basemap, and their attributes are not of interest.
 
 You can manage this layer list in QGIS desktop in
-*Project > Project Properties > Identify Layers* and uncheck the base layers.
+*Project > Project Properties > Data sources > Identify Layers* and uncheck the base layers.
