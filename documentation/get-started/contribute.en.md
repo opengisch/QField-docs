@@ -18,14 +18,14 @@ QField is an open source project. It is free to share, use and modify and it wil
 
 # Development
 
-if you want to get involved in QField development, please refer to the following doumentations:
+If you want to get involved in QField development, please refer to the following documentation:
   - [QField repository](https://github.com/opengisch/QField/blob/master/doc/dev.md) <!-- markdown-link-check-disable-line -->
   - [QFieldCloud repository](https://github.com/opengisch/qfieldcloud) <!-- markdown-link-check-disable-line -->
   - [QFieldSync repository](https://github.com/opengisch/QFieldSync) <!-- markdown-link-check-disable-line -->
 
 # Credits
 
-QField, QFieldCloud and QFieldSync are developped by [OPENGIS.ch](https://www.opengis.ch/) <!-- markdown-link-check-disable-line -->. OPENGIS.ch does [consulting](https://www.opengis.ch/training-consulting/) <!-- markdown-link-check-disable-line -->,
+QField, QFieldCloud and QFieldSync are developed by [OPENGIS.ch](https://www.opengis.ch/) <!-- markdown-link-check-disable-line -->. OPENGIS.ch does [consulting](https://www.opengis.ch/training-consulting/) <!-- markdown-link-check-disable-line -->,
 [development](https://www.opengis.ch/custom-development/) <!-- markdown-link-check-disable-line -->, [training](https://www.opengis.ch/qfield-training/) <!-- markdown-link-check-disable-line --> and [support](https://www.opengis.ch/qgis-support/) <!-- markdown-link-check-disable-line --> for open source software including QField and
 QGIS.
 

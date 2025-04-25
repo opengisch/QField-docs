@@ -166,6 +166,7 @@ extra:
     provider: google
     property: G-68XXC2QVWH
   # Remove "Made with Material for MkDocs" from footer
+  homepage: https://qfield.org
   generator: false
   social:
     - icon: fontawesome/brands/github

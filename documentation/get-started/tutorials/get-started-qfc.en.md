@@ -5,9 +5,6 @@ tx_slug: documentation_get-started_tutorials_get-started-qfc
 ---
 # Getting started guide
 
-!!! note
-    We have a [community discussion platform](https://github.com/opengisch/qfield/discussions) to discuss your questions, doubts and ideas. Do not hesitate to check it out.
-
 ## Get a free [QFieldCloud account](https://app.qfield.cloud/accounts/signup/)
 
 :material-monitor: Desktop preparation
@@ -147,10 +144,10 @@ Select a project to download on your device:
 
 !![Download](../../assets/images/getting_started_download_project.png,250px)
 
-### Synchronise your changes
+### Synchronize your changes
 
 Make a change to your data. Either create a new feature, delete a feature, or modify the geometry or attributes.
-Open the blue cloud button on the top left of the screen:
+Click the blue cloud button on the top left of the screen:
 
 !![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
 
