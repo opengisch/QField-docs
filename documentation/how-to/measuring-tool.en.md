@@ -22,7 +22,7 @@ When the measured geometry is a line, the total line length is provided while th
 
 ## Elevation profiling
 
-When the measuring tool is enabled, an *Elevation Profile* tool button appears at the top-right corner of the screen.
+When the measuring tool is enabled, an *Elevation Profile* tool button appears at the top-left corner of the screen.
 Toggling this on will open the elevation profiling panel, which will show the terrain elevation as well as intersecting vector features along the measured geometry.
 
 !![](../assets/images/elevation_profiling.png)
