@@ -19,10 +19,12 @@ To configure the Widget, please refer to the [Attributes Form Documentation](./a
 ## Add a series of pictures to a feature
 :material-monitor: Desktop preparation
 
-One or more pictures can be added to the feature. Here is an example of how to proceed.
+One or more pictures can be added to the feature.
+Here is an example of how to proceed.
 
 ### Tables
-It is necessary to set up two tables. One table where the features are stored and one with a list of pictures.
+It is necessary to set up two tables.
+One table where the features are stored and one with a list of pictures.
 
 #### Apiary
 | Field      | Type       |
@@ -53,7 +55,8 @@ Create a relation with:
 ### Widgets
 
 #### Apiary
-Set the default value of the field id to `uuid()` or use the *UUID Generator* widget. No need to show it in the form.
+Set the default value of the field id to `uuid()` or use the *UUID Generator* widget.
+There is no need to show it in the form.
 
 !![widgets](../assets/images/add-1-n-pictures-widgets_hive.png "")
 
@@ -68,16 +71,19 @@ Set the widget type of the field path to *Attachment* and add it to the form
 
 ## Drawing and sketching
 
-QField have an in-app drawing and sketching functionality enabling you to directly sketch over and annotate images captured while in the field as well as drawing on top of a blank canvas or over a template.
+QField has an in-app drawing and sketching functionality enabling you to directly sketch over and annotate images captured while in the field as well as drawing on top of a blank canvas or over a template.
 
 ![type:video](../assets/videos/drawing-sketch-feature2.webm)
 
 ### Drawing templates
 
-On top of annotating captured images, QField supports drawing from image templates. The following two methods are available to add templates:
+On top of annotating captured images, QField supports drawing from image templates.
+The following two methods are available to add templates:
 
-- The first method is to create a `drawing_templates` folder located alongside a project file and populate it with images. Whenever that project is loaded, QField will register all images within that folder as drawing templates.
-- Alternatively, you can add images into the `drawing_templates` folder found inside your QField app folder. If you are not familiar with that app folder, its location is shown at the bottom of the About QField overlay.
+- The first method is to create a `drawing_templates` folder located alongside a project file and populate it with images.
+Whenever that project is loaded, QField will register all images within that folder as drawing templates.
+- Alternatively, you can add images into the `drawing_templates` folder found inside your QField app folder.
+If you are not familiar with that app folder, its location is shown at the bottom of the About QField overlay.
 
 Templates shipped alongside projects as well as the QField app folder will be shown when users choose 'Draw a sketch' within attachments widget's 3-dot menu.
 
@@ -97,7 +103,8 @@ Information about location and direction of the pictures will therefore be baked
 ## Fetching Geotags (EXIF) from the image file into the attribute table
 :material-monitor: Desktop preparation
 
-Sometimes you might be interested in automatically storing Geotags such as the latitude, longitude, orientation, etc. This information is also known as EXIF tags.
+Sometimes you might be interested in automatically storing Geotags such as the latitude, longitude, orientation, etc.
+This information is also known as EXIF tags.
 
 To store the EXIF information, follow these steps:
 
@@ -106,10 +113,12 @@ To store the EXIF information, follow these steps:
    *EXIF* expression [See QGIS EXIF function](https://docs.qgis.org/3.34/en/docs/user_manual/expressions/functions_list.html#exif),
     and make sure *Apply on update* is activated.
 4.  The EXIF tags that QField can capture are listed in the QGIS documentation (link above).
-    However, this list might slightly varies depending on the mobile characteristics.
-5.  Capturing EXIF tags requires accessing the full physical path of the picture. Be sure to reflect this in the QGIS expression.
-   For example, the expression `exif(@project_folder + '/' + "path", 'Exif.Image.Orientation')` retrieves the orientation of the picture stored in *path*. For more tags visit the [QField EXIF reference documentation](../reference/exif.md) and the [exiv library documentation](https://exiv2.org/tags.html).
-7.  Completed! QField's now capture and store the EXIF tags in the pictures table while taking pictures.
+    However, this list might slightly vary depending on the mobile characteristics.
+5.  Capturing EXIF tags requires accessing the full physical path of the picture.
+Be sure to reflect this in the QGIS expression.
+   For example, the expression `exif(@project_folder + '/' + "path", 'Exif.Image.Orientation')` retrieves the orientation of the picture stored in *path*.
+   For more tags visit the [QField EXIF reference documentation](../reference/exif.md) and the [exiv library documentation](https://exiv2.org/tags.html).
+6.  Completed! QField now captures and stores the EXIF tags in the pictures table while taking pictures.
 
 ## Maximum picture size
 :material-monitor: Desktop preparation
@@ -121,18 +130,18 @@ The advanced settings allow rescaling the photos to a maximum width/height in *Q
 ## Configurable attachment path
 :material-monitor: Desktop preparation
 
-QFieldSync provides the possibility to configure the path of picture attachments.
+QFieldSync provides the possibility to configure the path and the file names of picture attachments.
 
-1.  Go to *QFieldSync plugin > Layers Properties*
+1.  Go to *Layers Properties > QFieldSync plugin *
 2.  Choose the layer, the field and configure the expression
 
-Use expressions to specify the path of the attachments. By default, pictures are saved into the "DCIM" folder, audio are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
+Use expressions to specify the path of the attachments.
+By default, pictures are saved into the "DCIM" folder, audio are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
 !![picture path](../assets/images/picture_path.png "")
 
-Additional directories can be synchronized with pictures or other attachments. Extra paths can be configured in _Attachment directories_. All paths are relative to the project directory.
+Additional directories can be synchronized with pictures or other attachments.
+Extra paths can be configured in _Attachment directories_ in the QFieldSync settings under *project properties*.
+All paths are relative to the project directory.
 
 !![attachments directories](../assets/images/attachments_directories.png "")
-
-!!! note
-    QGIS 3.14 or newer is required for this functionality
