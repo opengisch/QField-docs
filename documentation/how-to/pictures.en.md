@@ -132,7 +132,7 @@ The advanced settings allow rescaling the photos to a maximum width/height in *Q
 
 QFieldSync provides the possibility to configure the path and the file names of picture attachments.
 
-1.  Go to *Layers Properties > QFieldSync plugin *
+1.  Go to *Layer Properties > QFieldSync plugin *
 2.  Choose the layer, the field and configure the expression
 
 Use expressions to specify the path of the attachments.
