@@ -105,6 +105,7 @@ nav:
           - reference/qfieldcloud/workflow.md
           - reference/qfieldcloud/concepts.md
           - reference/qfieldcloud/projects.md
+          - reference/qfieldcloud/auth.md
           - reference/qfieldcloud/permissions.md
           - reference/qfieldcloud/jobs.md
           - reference/qfieldcloud/secrets.md
