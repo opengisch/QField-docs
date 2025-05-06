@@ -75,8 +75,6 @@ sequenceDiagram
 
     User ->>+ QF: Click on 'Login with XYZ' provider button
 
-    Note over QF: A QgsAuthMethodConfig of type OAuth2 is created<br/>QGIS auth manager recognizes that the user is not authenticated yet<br/> QGIS auth manager then redirects to the IDP for authenticating the user
-
     QF ->> IDP: Redirect to IDP for login
     IDP -->> User: Display IDP's login form in a browser
     User ->> IDP: Log in using IDP's credentials in the browser
