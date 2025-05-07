@@ -131,6 +131,16 @@ If `minio` is running, please make sure the host's firewall allows port `8009`, 
 Single shot container to create the required buckets on the Object Storage under **[`minio`] File Storage**.
 
 
+#### [`webdav`] File Storage
+
+Local WebDAV storage used for development, using WebDAV protocol and specifications.
+
+The data is stored on the **[`webdav_data`]** volume.
+
+Can alternatively be used in place of the `minio` File Storage for storing the files. Can optionally be used for storing only attachments on it.
+
+Should be replaced by a proper WebDAV storage, e.g. NextCloud.
+
 #### [`db`] App PostgreSQL
 
 Local PostgreSQL database server to host the data for the **[`app`] QFieldCloud App**.
@@ -158,6 +168,11 @@ Stores dynamically created user PostGIS databases.
 #### [`minio_data`]
 
 Stores data for the **[`minio`] S3 service**.
+
+
+#### [`webdav_data`]
+
+Stores data for the **[`webdav`] storage service**.
 
 
 #### [`postgres_data`]
