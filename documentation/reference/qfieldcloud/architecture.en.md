@@ -10,7 +10,7 @@ QFieldCloud has a containerized architecture with multiple containers and volume
 
 !![QFieldCloud architecture: Rounded rectangles represent containers, ellipses represent volumes. The text in the square brackets is the service name found in the `docker-compose.yml` file, the rest of the text is the function of the container. Arrows between containers shows who initiates the communication. Arrows between a container and a volume represents whether the container reads (arrow pointing to container) or writes (arrow pointing to volume) data. Arrows and containers in gray represent deprecated services.](../../assets/images/qfc_server_architecture_light.svg)
 
-See an interactive version of [the drawing above](https://excalidraw.com/#json=k83sfSzfEsGfhVsffSeW0,81iIpJin4YLIOVMBbXq3aA).
+See an interactive version of [the drawing above](https://excalidraw.com/#json=2zuNXPhL4UgCkiU2j9f8W,db2BZg-k_Bjnc0lFlVxPzA).
 
 !!! note
   For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
@@ -131,7 +131,7 @@ If `minio` is running, please make sure the host's firewall allows port `8009`, 
 Single shot container to create the required buckets on the Object Storage under **[`minio`] File Storage**.
 
 
-#### [`webdav`] File Storage
+#### [`webdav`] Alternative File Storage
 
 Local WebDAV storage used for development, using WebDAV protocol and specifications.
 
@@ -139,7 +139,10 @@ The data is stored on the **[`webdav_data`]** volume.
 
 Can alternatively be used in place of the `minio` File Storage for storing the files. Can optionally be used for storing only attachments on it.
 
-Should be replaced by a proper WebDAV storage, e.g. NextCloud.
+!!! info
+    The webdav storage is optional, it is not a requirement for the system to work properly.
+
+If used, the webdav storage service should be replaced by a proper WebDAV server, e.g. NextCloud.
 
 #### [`db`] App PostgreSQL
 
@@ -173,6 +176,9 @@ Stores data for the **[`minio`] S3 service**.
 #### [`webdav_data`]
 
 Stores data for the **[`webdav`] storage service**.
+
+!!! info
+    The webdav storage is optional, it is not a requirement for the system to work properly.
 
 
 #### [`postgres_data`]
