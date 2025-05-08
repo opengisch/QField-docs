@@ -8,9 +8,9 @@ tx_slug: documentation_reference_qfieldcloud_architecture
 QFieldCloud has a containerized architecture with multiple containers and volumes.
 
 
-!![QFieldCloud architecture: Rounded rectangles represent containers, ellipses represent volumes. The text in the square brackets is the service name found in the `docker-compose.yml` file, the rest of the text is the function of the container. Arrows between containers shows who initiates the communication. Arrows between a container and a volume represents whether the container reads (arrow pointing to container) or writes (arrow pointing to volume) data. Arrows and containers in gray represent deprecated services.](../../assets/images/qfc_server_architecture_light.svg)
+!![QFieldCloud architecture: Rounded rectangles represent containers, ellipses represent volumes. The text in the square brackets is the service name found in the `docker-compose.yml` file, the rest of the text is the function of the container. Arrows between containers shows who initiates the communication. Arrows between a container and a volume represents whether the container reads (arrow pointing to container) or writes (arrow pointing to volume) data. Arrows and containers in gray represent deprecated services. Arrows and containers in dashed line represent optional services.](../../assets/images/qfc_server_architecture_light.svg)
 
-See an interactive version of [the drawing above](https://excalidraw.com/#json=2zuNXPhL4UgCkiU2j9f8W,db2BZg-k_Bjnc0lFlVxPzA).
+See an interactive version of [the drawing above](https://excalidraw.com/#json=7rUYYLuU9kkRrvR3acb8R,6l4zHy4gvz8WYcb9z5O1jQ).
 
 !!! note
   For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
@@ -175,10 +175,7 @@ Stores data for the **[`minio`] S3 service**.
 
 #### [`webdav_data`]
 
-Stores data for the **[`webdav`] storage service**.
-
-!!! info
-    The webdav storage is optional, it is not a requirement for the system to work properly.
+Stores data for the **[`webdav`] storage service** if present.
 
 
 #### [`postgres_data`]
