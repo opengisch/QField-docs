@@ -26,7 +26,7 @@ To use layers from localized data paths on your device, add the datasets to the 
 
 ## Managing Shared Datasets with QFieldCloud
 
-QFieldCloud significantly enhances the management of shared localized datasets. This allows you to upload these common datasets once and use them on multiple cloud projects:
+QFieldCloud significantly enhances the management of shared localized datasets. This allows you to upload these common datasets once and reuse them across multiple cloud projects:
 
 ### 1. Prepare Your QGIS Project with Localized Datasets
 
@@ -37,7 +37,7 @@ QFieldCloud significantly enhances the management of shared localized datasets. 
 
 ### 2. Upload Localized Datasets to QFieldCloud
 
-**Create/Configure Your Cloud Project**:
+**Create or Configure Your Cloud Project**:
 
 - In QFieldCloud, create a new project or choose an existing one. For details, see [Getting Started with QFieldCloud](../get-started/tutorials/get-started-qfc.md#create-and-configure-your-cloud-project).
 
