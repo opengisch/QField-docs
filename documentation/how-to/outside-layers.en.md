@@ -22,7 +22,7 @@ In there, add the path to the external data.
 To use layers from localized data paths on your device, add the datasets to the folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/basemaps`.
 
 !!! note
-    Since QField 2 the basemaps files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/basemaps` instead of the devices main directory `<drive>:/QField/basemaps`.
+    Since QField 2, the basemaps files needs to be stored in the app directory `<drive>:/Android/data/ch.opengis.qfield/files/QField/basemaps` instead of the devices main directory `<drive>:/QField/basemaps`.
 
 ## Managing Shared Datasets with QFieldCloud
 
