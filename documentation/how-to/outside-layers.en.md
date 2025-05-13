@@ -3,7 +3,7 @@ title: Shared local datasets
 tx_slug: documentation_how-to_outside-layers
 ---
 
-# Shared local datasets
+# Shared datasets
 
 It is possible to use layers stored in a single location—referred to as a localized data path—across multiple projects. This can help reduce storage requirements for large datasets such as orthophoto raster files, land use vector files, etc., as well as ease the management of dataset updates.
 
