@@ -5,34 +5,29 @@ tx_slug: documentation_how-to_outside-layers
 
 # Shared local datasets
 
-It is possible to use a layer which is stored outside the project folder. This is useful if a basemap (e.g., a large orthophoto) or large, unmodified vector data is used in more than one project. By sharing datasets, features and their attributes remain identifiable across projects.
+It is possible to use layers stored in a single location—referred to as a localized data path—across multiple projects. This can help reduce storage requirements for large datasets such as orthophoto raster files, land use vector files, etc., as well as ease the management of dataset updates.
 
-There are two main approaches to using shared local datasets: a manual copying method for direct use in QField, and a more integrated approach using QFieldCloud which leverages QGIS's Localized Data Paths.
+There are two main approaches to using shared local datasets: a manual copying method for into devices running QField, and a more integrated approach using QFieldCloud.
 
-## Manual Copying of Shared Datasets for QField
+## Managing Localized Data Paths in QGIS
 
-This method is suitable for users who want to manually manage shared files on their devices, often for basemaps, without using QFieldCloud for these specific files.
+When building projects for QField, make sure the datasets you want to share across multiple projects are within localized data paths in QGIS.
 
 :material-monitor: Desktop preparation
 
-In QGIS, it's good practice set where your shared datasets are located.
-1. Open QGIS.
-2. Go to *Options > Data Sources > Localized Data Paths*.
-3. Add the path(s) to your external data.
-This primarily helps QGIS itself locate these layers (e.g., if you move projects between computers or use relative paths) and is **essential for the QFieldCloud workflow described later.**
+In QGIS, go to the Options dialog's data sources panel, where you will find a localized data paths section. From there, you can add a number of paths within which datasets will be treated as shared datasets. This must be done as a preliminary step to building your projects, including those to be uploaded to QFieldCloud.
 
 !![QGIS Options Dialog showing Data Sources and Localized Data Paths setup](../assets/images/external_path.png)
 
 ### Using Manually Copied Datasets in QField
 
-To use these shared datasets manually in QField (e.g., as basemaps without using QFieldCloud for them):
+To use these shared datasets manually in QField, locate the QField app directories on your device:
 
-1.  **Locate the QField app directories on your device:**
-    - In QField, open any project.
-    - Open the Dashboard (hamburger icon), and open the main menu (three dots).
-    - Tap 'About QField'.
-    - The application directory locations will be at the bottom as 'App directories' path (paths differ by operating system).
-2.  **Copy your shared dataset files** (e.g., the orthophoto GeoTIFF or vector GeoPackage) into the `(Your App Directory)/QField/basemaps` subfolder on your device. QField automatically scans this folder for basemaps and other recognizable data.
+- In QField, open any project.
+- Reveal the side dashboard by clicking on the hamburger icon, and open the main menu by clicking on the 3-dot button.
+- Select the 'About QField' menu item.
+- The application directory locations will be at the bottom just below the 'App directories' path (paths differ by operating system).
+Once you have located the directory, copy your shared dataset files into the `[App Directory]/QField/basemaps` folder on your device. QField will automatically scan this folder for basemaps and other recognizable data.
 
 !![QField app directories](../assets/images/qfield_app_directories.png)
 
@@ -49,7 +44,7 @@ The file structure within the **`localized_datasets`** project will reflect the 
 
 ## 1. Prepare Your QGIS Project with Localized Datasets
 
-**Follow the same [Desktop Preparation (QGIS)](#manual-copying-of-shared-datasets-for-qfield)** steps outlined above.
+**Follow the same [Desktop Preparation (QGIS)](#managing-localized-data-paths-in-qgis)** steps outlined above.
 
 - Critically, make sure the Localized Data Paths in QGIS Options are correctly configured to point to the location of these shared datasets on your computer. This tells QFieldSync which files to treat as "localized" for cloud handling.
 - Ensure your localized layers are part of your QGIS project and their paths are relative to one of the configured localized data paths.
