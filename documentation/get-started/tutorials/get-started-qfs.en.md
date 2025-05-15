@@ -143,8 +143,8 @@ extent of 1 square kilometer.
 
 You can package a raster layer into an **MBTiles** file with multiple zoom levels for offline use.
 
-- **Tiles min zoom level**: Defines the **minimum** zoom level for the raster tiles. A lower value increases the spatial coverage but the spatial resolution is limited. _(Default: 14)_
-- **Tiles max zoom level**: Defines the **maximum** zoom level for the raster tiles. A higher value increases detail but may require more storage space, as well as increase the duration of the offline export. _(Default: 14)_
+- **Tiles min zoom level**: Defines the **minimum** zoom level for the raster tiles. A lower value increases the spatial coverage but the spatial resolution is limited. *(Default: 14)*
+- **Tiles max zoom level**: Defines the **maximum** zoom level for the raster tiles. A higher value increases detail but may require more storage space, as well as increase the duration of the offline export. *(Default: 14)*
 
 !![Base Map Configuration QFieldSync](../../assets/images/base_map_configuration.png)
 
