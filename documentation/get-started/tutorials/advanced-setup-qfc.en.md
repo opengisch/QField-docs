@@ -151,7 +151,7 @@ How to create a project in an organization:
 
     ![Transferring to Organization](../../assets/images/project_organization_11_transfering_to_organization.png)
 
-2. A pop-up window will appear to confirm the transfer. To proceed, you will need to type "Here be dragons" and click "Transfer project".
+2. A pop-up window will appear to confirm the transfer. To proceed, you will need to type the requested text and click "Transfer project".
 
     ![Confirm transfer](../../assets/images/project_organization_12_confirming_transfer.png)
 
