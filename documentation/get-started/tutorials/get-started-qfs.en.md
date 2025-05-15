@@ -153,9 +153,10 @@ You can package a raster layer into an **MBTiles** file with multiple zoom level
 
 ### Offline editing configuration
 
-If *only synchronize features in area of interest* is checked, only
-features which are within the extent of the map canvas as packaging time
-will be copied to the offline editing working copy.
+If *"Only synchronize features in area of interest"* is selected, only features that are within the established extent area or the current map canvas (if not set) at packaging time will be copied to the offline editing working copy.
+
+!!! note
+    This is available only for the "Cable Export" option.
 
 ## Package for QField
 
