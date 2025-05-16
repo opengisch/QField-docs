@@ -179,7 +179,7 @@ If an averaged position minimum count requirement is active, a progress bar will
 The setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
 When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
 
-!![](../assets/images/positioning_averaged_set.jpg)
+!![](../assets/images/positioning_averaged_set.png)
 
 When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
 
