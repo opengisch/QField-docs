@@ -68,7 +68,7 @@ Offline editing
 :   A working copy of the layer is copied into the package folder. Every
     change which is done in the packaged project during work is recorded
     in a changelog. When synchronizing the changes back later on, this
-    log will be replazed and all changes also be applied to the main
+    log will be replaced and all changes also be applied to the main
     data base. There is no conflict handling in place.
 
 Remove
