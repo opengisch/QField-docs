@@ -68,7 +68,7 @@ Offline editing
 :   A working copy of the layer is copied into the package folder. Every
     change which is done in the packaged project during work is recorded
     in a changelog. When synchronizing the changes back later on, this
-    log will be replayed and all changes also be applied to the main
+    log will be replaced and all changes also be applied to the main
     data base. There is no conflict handling in place.
 
 Remove
@@ -143,8 +143,8 @@ extent of 1 square kilometer.
 
 You can package a raster layer into an **MBTiles** file with multiple zoom levels for offline use.
 
-- **Tiles min zoom level**: Defines the **minimum** zoom level for the raster tiles. A lower value increases the spatial coverage but the spatial resolution is limited. _(Default: 14)_
-- **Tiles max zoom level**: Defines the **maximum** zoom level for the raster tiles. A higher value increases detail but may require more storage space, as well as increase the duration of the offline export. _(Default: 14)_
+- **Tiles min zoom level**: Defines the **minimum** zoom level for the raster tiles. A lower value increases the spatial coverage but the spatial resolution is limited. *(Default: 14)*
+- **Tiles max zoom level**: Defines the **maximum** zoom level for the raster tiles. A higher value increases detail but may require more storage space, as well as increase the duration of the offline export. *(Default: 14)*
 
 !![Base Map Configuration QFieldSync](../../assets/images/base_map_configuration.png)
 
@@ -153,9 +153,10 @@ You can package a raster layer into an **MBTiles** file with multiple zoom level
 
 ### Offline editing configuration
 
-If *only synchronize features in area of interest* is checked, only
-features which are within the extent of the map canvas as packaging time
-will be copied to the offline editing working copy.
+If *"Only synchronize features in area of interest"* is selected, only features that are within the established extent area or the current map canvas (if not set) at packaging time will be copied to the offline editing working copy.
+
+!!! note
+    This is available only for the "Cable Export" option.
 
 ## Package for QField
 
