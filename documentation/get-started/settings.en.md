@@ -86,7 +86,7 @@ If disabled, the mouse will act as a stylus pen.
 
 ## Send anonymized metrics
 
-If enabled, anonymized metrics will be collected and sent to help improve QFiled for everyone.
+If enabled, anonymized metrics will be collected and sent to help improve QField for everyone.
 
 ## Dim screen when idling
 
