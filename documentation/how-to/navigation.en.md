@@ -42,7 +42,7 @@ For multipoint or {multi,single}{line,polygon}, new navigation buttons are locat
 Those buttons allow users to cycle through vertices of the feature picked as navigation destination.
 Tapping and holding onto these buttons will cycle through vertices (comes in handy when you have a feature with a large vertex count).
 
-!![](../assets/images/navigation-polygon.webp)
+!![](../assets/images/navigation-polygon.webp,280px)
 
 ## Auto tracking of current location and destination
 :material-tablet: Fieldwork
@@ -62,7 +62,7 @@ This can be described as a simple *staking mode* functionality.
 QField's "stakeout" precise view panel appears when the distance between the current location and the destination is less than a pre-defined threshold (by default 5 meters) and the positioning device has an accuracy that is less than half of that threshold.
 The precise view visibility threshold value can be modified by pressing long on the bottom-right navigation button and selecting the *Precise View Settings* menu item.
 
-!![](../assets/images/navigation-precise-view.webp)
+!![](../assets/images/navigation-precise-view.webp,280px)
 
 The precise view will turn green when the current location is considered to have hit the target.
 This state considers both the positioning device accuracy as well as the precise view threshold value, whereas QField will consider having hit the target when the distance between the current location and the destination *minus* the positioning device's accuracy is less than 1/10th of the precise view threshold.

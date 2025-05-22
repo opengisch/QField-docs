@@ -27,4 +27,4 @@ If you defined map themes for your project in QGIS, you can switch
 between them from the Dashboard. Use the *Map themes* combobox to chose
 the active theme.
 
-!![Change Map Theme](../assets/images/theme.webp)
+!![Change Map Theme](../assets/images/theme.webp, 350px)
