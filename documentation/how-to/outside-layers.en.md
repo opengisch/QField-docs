@@ -143,10 +143,9 @@ $ export QFIELDCLOUD_TOKEN="TOKEN_HERE"
 $ qfieldcloud-cli list-projects
 Listing projects…
 Projects the current user has access to:
-| ID                                   | OWNER/NAME           | IS PUBLIC | DESCRIPTION     |
---------------------------------------------------------------------------------------------
-
-| 90e83606-dce8-4b0d-854a-388904d8a739 | USER/shared_datasets | 0         | Shared datasets |
+| ID                                   | OWNER/NAME           | IS PUBLIC |
+---------------------------------------------------------------------------
+| 90e83606-dce8-4b0d-854a-388904d8a739 | USER/shared_datasets | 0         |
 ```
 
 !!! note
