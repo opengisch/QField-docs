@@ -37,7 +37,7 @@ QFieldCloud allows users to seamlessly manage shared datasets across multiple pr
 
 The Localized Datasets feature allows cloud projects to reference single, shared datasets stored in a designated QFieldCloud project named **`shared_datasets`**. This special type of project can be created by the user in advance or automatically during file upload using QFieldSync. It does not need to contain a QGIS project file (`.qgs`/`.qgz`) for the **`shared_datasets`** project, but only the datasets to be accessed by other cloud projects.
 
-The file structure within the **`shared_datasets`** project will reflect the structure of the localized path from which the datasets originate. For example, if your QGIS Localized Data Path is `./GIS_Common/BaseData/` and you have a file `./GIS_Common/BaseData/Administrative/boundaries.gpkg`, it will appear as `Administrative/boundaries.gpkg` within the `shared_datasets` cloud project.
+The file structure within the **`shared_datasets`** project will reflect the structure of the localized path from which the datasets originate. For example, if your QGIS Localized Data Path is `./GIS_Common/BaseData/` and you have a file `./GIS_Common/BaseData/Administrative/boundaries.gpkg`, it will appear as `Administrative/boundaries.gpkg` within the **`shared_datasets`** cloud project.
 
 !!! note
     Only collaborators whose user role is “manager” or “admin” (directly assigned or as organization owners or admin) can add files to the **`shared_datasets`** project.
@@ -58,7 +58,7 @@ The file structure within the **`shared_datasets`** project will reflect the str
 ### Synchronize with QFieldSync
 
 - In QGIS, open your project and use the QFieldSync plugin to upload it to your QFieldCloud project.
-- At the beginning of the synchronization process, you will see a new **Upload missing localized dataset(s)** checkbox. Ensure this option is checked. If you hover over the checkbox, you will see the list of files that will be uploaded. This checkbox is only available for users with the permission to add files to the `shared_datasets` project.
+- At the beginning of the synchronization process, you will see a new **Upload missing localized dataset(s)** checkbox. Ensure this option is checked. If you hover over the checkbox, you will see the list of files that will be uploaded. This checkbox is only available for users with the permission to add files to the **`shared_datasets`** project.
 
 !![QFieldSync Synchronization Dialog with Localized Datasets upload option enabled](../assets/images/upload_missing_localized_datasets.png)
 
@@ -88,11 +88,11 @@ Once uploaded, these localized datasets will appear in two key places on the QFi
 
 ### Check Dataset Status
 
-For any cloud project containing localized datasets, QFieldCloud’s web interface will indicate those missing on the cloud (i.e., referenced by the project but not yet uploaded into the `shared_datasets` project) using red color.
+For any cloud project containing localized datasets, QFieldCloud’s web interface will indicate those missing on the cloud (i.e., referenced by the project but not yet uploaded into the **`shared_datasets`** project) using red color.
 
-This can be fixed by synchronizing the project again from QGIS with QFieldSync, ensuring the "Upload missing localized dataset(s)" option is checked (as described in step [Synchronize with QFieldSync](#synchronize-with-qfieldsync)). Alternatively, if you have the necessary permissions, you can manage the `shared_datasets` project directly (see section [Synchronizing directly the shared_datasets project](#5-synchronizing-directly-the-localized_datasets-project)).
+This can be fixed by synchronizing the project again from QGIS with QFieldSync, ensuring the "Upload missing localized dataset(s)" option is checked (as described in step [Synchronize with QFieldSync](#synchronize-with-qfieldsync)). Alternatively, if you have the necessary permissions, you can manage the **`shared_datasets`** project directly (see section [Synchronizing directly the shared_datasets project](#5-synchronizing-directly-the-localized_datasets-project)).
 
-Similarly, if you configure a new QGIS project to use localized files that are *already present* in your QFieldCloud `shared_datasets` project, QFieldSync is smart enough to recognize this. The "Upload missing localized dataset(s)" checkbox may not appear, or if it does, QFieldSync will not re-upload datasets that already exist and are up-to-date in the `shared_datasets` project.
+Similarly, if you configure a new QGIS project to use localized files that are *already present* in your QFieldCloud **`shared_datasets`** project, QFieldSync is smart enough to recognize this. The "Upload missing localized dataset(s)" checkbox may not appear, or if it does, QFieldSync will not re-upload datasets that already exist and are up-to-date in the **`shared_datasets`** project.
 
 ## 4. Viewing projects in QField
 
@@ -103,18 +103,18 @@ Once the cloud projects are configured and synchronized to QFieldCloud:
 
 !![QField interface showing a project with shared localized datasets from QFieldCloud](../assets/images/qfield_shared_cloud_localized_datasets.png)
 
-## 5. Synchronizing directly the `shared_datasets` project
+## 5. Synchronizing directly the **`shared_datasets`** project
 
-Instead of relying on individual project synchronizations to populate the `shared_datasets` project, users with appropriate permissions can manage its content more directly.
+Instead of relying on individual project synchronizations to populate the **`shared_datasets`** project, users with appropriate permissions can manage its content more directly.
 
 ### Using QFieldSync
 
-Users with 'manager' or 'admin' permissions for the `shared_datasets` project can manage its content directly using QFieldSync:
+Users with 'manager' or 'admin' permissions for the **`shared_datasets`** project can manage its content directly using QFieldSync:
 
 1.  In QFieldSync, check out the **`shared_datasets`** project from QFieldCloud to a local directory on your computer.
 2.  Ensure this local directory is one of the paths configured in your QGIS *Options > Data Sources > Localized Data Paths*.
 3.  You can now add, update, or remove files within this local directory.
-4.  Use QFieldSync (with the `shared_datasets` project selected) to synchronize these changes directly to the cloud.
+4.  Use QFieldSync (with the **`shared_datasets`** project selected) to synchronize these changes directly to the cloud.
 
 !![Uploading localized dataset files directly to the 'shared_datasets' cloud project using QFieldSync](../assets/images/qfieldsync_directly_uploading_localized_dataset.png)
 
@@ -151,7 +151,7 @@ Projects the current user has access to:
 !!! note
     Your project ID will be different
 
-[Upload the shared datasets](https://opengisch.github.io/qfieldcloud-sdk-python/examples/#upload-local-files-to-qfieldcloud) from your local source directory to the `localized_datasets` project:
+[Upload the shared datasets](https://opengisch.github.io/qfieldcloud-sdk-python/examples/#upload-local-files-to-qfieldcloud) from your local source directory to the **`shared_datasets`** project:
 
 ```console
 qfieldcloud-cli upload-files 'YOUR_PROJECT_ID' "./path/to/your/local/shared/data/"
