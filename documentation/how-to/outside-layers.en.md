@@ -136,6 +136,7 @@ QFieldCloud has generated a secret token to identify you. Put the token in your 
 export QFIELDCLOUD_TOKEN="TOKEN_HERE"
 $ export QFIELDCLOUD_TOKEN="TOKEN_HERE"
 ```
+
 - [List the QFieldCloud projects](https://opengisch.github.io/qfieldcloud-sdk-python/examples/#list-your-projects) and get the project ID of the **`localized_datasets`** project:
 
 ```console
