@@ -19,18 +19,6 @@ In QGIS, go to the Options dialog's data sources panel, where you will find a lo
 
 !![QGIS Options Dialog showing Data Sources and Localized Data Paths setup](../assets/images/external_path.png)
 
-### Using Manually Copied Datasets in QField
-
-To use these shared datasets manually in QField, locate the QField app directories on your device:
-
-- In QField, open any project.
-- Reveal the side dashboard by clicking on the hamburger icon, and open the main menu by clicking on the 3-dot button.
-- Select the 'About QField' menu item.
-- The application directory locations will be at the bottom just below the 'App directories' path (paths differ by operating system).
-Once you have located the directory, copy your shared dataset files into the `[App Directory]/QField/basemaps` folder on your device. QField will automatically scan this folder for basemaps and other recognizable data.
-
-!![QField app directories](../assets/images/qfield_app_directories.png)
-
 ## Managing Shared Datasets with QFieldCloud
 
 QFieldCloud allows users to seamlessly manage shared datasets across multiple projects by integrating QGIS’s localized data paths functionality. This is particularly useful for large data layers (e.g., base maps, environmental data, administrative boundaries) that are reused in many QFieldCloud projects.
@@ -120,7 +108,7 @@ Users with 'manager' or 'admin' permissions for the **`shared_datasets`** projec
 
 !![Localized files listed in the 'shared_datasets' cloud project on the web interface](../assets/images/localized_files_in_localized_dataset_project.png)
 
-### Using the CLI
+### Using the QFieldCloud-CLI
 
 Administrators can further automate the synchronization of the **`shared_datasets`** project by using QFieldCloud’s official CLI tool, `qfieldcloud-cli` (which is part of the [qfieldcloud-sdk](https://pypi.org/project/qfieldcloud-sdk/) Python package).
 
@@ -158,3 +146,15 @@ qfieldcloud-cli upload-files 'YOUR_PROJECT_ID' "./path/to/your/local/shared/data
 ```
 
 You can set up this [command as a regular cronjob that runs periodically](https://opengisch.github.io/qfieldcloud-sdk-python/examples/#schedule-and-trigger-a-package-job) (e.g., daily), or trigger it manually based on other conditions, to keep your shared datasets on QFieldCloud up-to-date.
+
+### Using Manually Copied Datasets in QField
+
+To use these shared datasets manually in QField, locate the QField app directories on your device:
+
+- In QField, open any project.
+- Reveal the side dashboard by clicking on the hamburger icon, and open the main menu by clicking on the 3-dot button.
+- Select the 'About QField' menu item.
+- The application directory locations will be at the bottom just below the 'App directories' path (paths differ by operating system).
+Once you have located the directory, copy your shared dataset files into the `[App Directory]/QField/basemaps` folder on your device. QField will automatically scan this folder for basemaps and other recognizable data.
+
+!![QField app directories](../assets/images/qfield_app_directories.png)
