@@ -60,6 +60,12 @@ It requires your database to be publicly accessible, and credentials must be sav
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
 
+## Ensuring Unique Identifiers in Collaborative Projects
+
+For collaborative projects, it is highly recommended to use the expression `epoch(now())` for primary key identifier integer fields (typically named "fid" if not otherwise specified). Please ensure that the "Apply default value on update" option is not activated. This approach helps improve synchronization, as the `epoch(now())` expression generates a unique identifier based on milliseconds, ensuring that each record has a distinct identifier.
+
+!!! note
+    This recommendation applies to both GeoPackage and PostGIS scenarios where integer fields are used as primary keys.
 
 ## Enabling automatic pushing of changes to QFieldCloud
 
