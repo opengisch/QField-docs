@@ -31,6 +31,9 @@ If you would like to set up relations, it is recommended to add a UUID field on 
 !!! warning
     This workflow does not support changing the GeoPackage on the desktop, as being file-based, the whole GeoPackage will be replaced. This means that data can only be digitized using QFieldCloud.
 
+#### Ensuring Unique Identifiers in Collaborative Projects
+
+For collaborative projects, it is highly recommended to use the expression `epoch(now())` for primary key identifier integer fields ("fid"). Ensure that the "Apply default value on update" option is not activated. This approach helps improve synchronization, as the `epoch(now())` expression generates a unique identifier based on milliseconds, ensuring that each record has a distinct identifier.
 
 ## PostGIS
 
@@ -59,13 +62,6 @@ It requires your database to be publicly accessible, and credentials must be sav
     When using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database. This is the best choice if the connection in the field is not reliable. Changes will only be visible to users once they sync to QFieldCloud. As a local copy is created, advanced PostGIS features will not be available on QField. Just like for regular GeoPackages, if you define relationships, it is recommended to use UUIDs instead of integer primary keys to avoid conflicts if multiple users create data at the same time.
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
-
-## Ensuring Unique Identifiers in Collaborative Projects
-
-For collaborative projects, it is highly recommended to use the expression `epoch(now())` for primary key identifier integer fields (typically named "fid" if not otherwise specified). Please ensure that the "Apply default value on update" option is not activated. This approach helps improve synchronization, as the `epoch(now())` expression generates a unique identifier based on milliseconds, ensuring that each record has a distinct identifier.
-
-!!! note
-    This recommendation applies to both GeoPackage and PostGIS scenarios where integer fields are used as primary keys.
 
 ## Enabling automatic pushing of changes to QFieldCloud
 
