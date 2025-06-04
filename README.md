@@ -158,7 +158,7 @@ request](https://help.github.com/articles/using-pull-requests/).
 *Note: You will need to have a [Transifex account](https://transifex.com/) for this.*
 
 Navigate to our [Transifex
-project](https://www.transifex.com/organization/opengisch/dashboard/qfield-documentation)
+project](https://explore.transifex.com/opengisch/)
 and click on the language you would like to translate. You will see a link
 `Join Team`. Click it and wait for approval (you will receive an email).
 

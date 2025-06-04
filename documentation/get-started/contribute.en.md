@@ -12,7 +12,7 @@ QField is an open source project. It is free to share, use and modify and it wil
   - [Follow us on twitter](https://twitter.com/QFieldForQGIS); <!-- markdown-link-check-disable-line -->
   - Write about your experience ([please let us know!](mailto:info@opengis.ch)); <!-- markdown-link-check-disable-line -->
   - [Help with the documentation](https://github.com/opengisch/QField-docs#documentation-process); <!-- markdown-link-check-disable-line -->
-  - [Translate the documentation](https://github.com/opengisch/QField-docs#translation-process) or [the app](https://www.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->
+  - [Translate the documentation](https://github.com/opengisch/QField-docs#translation-process) or [the app](https://explore.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->
   - [Sponsor a feature](https://docs.qfield.org/get-started/sponsor/); <!-- markdown-link-check-disable-line --> or
   - Just drop by to say thank you or have a beer with us next time you meet OPENGIS.ch at a conference.
 
