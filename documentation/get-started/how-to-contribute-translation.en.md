@@ -9,7 +9,7 @@ Translations for the QField app are managed through the **Transifex** platform.
 
 ## 1. Access the Translation Platform
 
-1. Go to the [OPENGIS Dashboard on Transifex](https://www.transifex.com/opengisch/).
+1. Go to the [OPENGIS Dashboard on Transifex](https://explore.transifex.com/opengisch/).
 2. Log in or create an account on Transifex.
 
 ## 2. Choose a Language to Contribute

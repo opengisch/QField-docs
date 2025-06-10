@@ -114,7 +114,7 @@ You can choose from the following options:
 QField will by default utilize the language present on your device, if a translation is available.
 You are cordially invited to enhance the translation in your native language.
 
-[Translate the app](https://www.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->
+[Translate the app](https://explore.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->
 
 You can also pick a different language from the drop-down menu.
 
