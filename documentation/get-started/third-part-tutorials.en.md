@@ -9,3 +9,4 @@ Here you can find some great tutorials created by our community:
 
 - [QField tutorials](https://livelihoods-and-landscapes.com/docs/tutorials.html) from Climate-Smart Landscapes for Promoting Sustainability of Pacific Island Agricultural Systems <!-- markdown-link-check-disable-line -->
 - [QField Quickstart Udemy course](https://www.udemy.com/course/qfield-quickstart/) by Michael Miller <!-- markdown-link-check-disable-line -->
+- [Qfield Einführung Onlinekurs im Selbststudium](https://csgis.de/onlinekurse/qfield-einf%C3%BChrung-onlinekurs) by CSGIS
