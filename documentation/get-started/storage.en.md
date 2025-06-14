@@ -21,8 +21,8 @@ There are various possibilities of exporting copies of project files and dataset
 QFieldQField supports a [wide range of data formats](../reference/data-format.md).
 There are three ways of preparing and copying a project in QGIS for use in QField.
 
-* [Storing files in a designated folder](###storing-files-in-a-designated-folder)
-* [Packaging the project as a GeoPackage](###packaging-the-project-as-a-geopackage)
+* [Storing files in a designated folder](#storing-files-in-a-designated-folder)
+* [Packaging the project as a GeoPackage](#packaging-the-project-as-a-geopackage)
 
 ### Storing files in a designated folder
 
