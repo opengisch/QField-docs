@@ -1,9 +1,9 @@
 ---
-title: Collect and Edit
+title: Digitize and Edit
 tx_slug: documentation_how-to_digitize
 ---
 
-# Collect and Edit
+# Digitize and Edit
 
 With QField you can digitize, edit and delete points, lines and polygons and their according attributes while being in the field.
 Similar to QGIS, QField has two modes.
@@ -14,8 +14,9 @@ The *browse mode* and the *edit mode*.
 As the name suggests, while being in browse mode, you can view and select features within all identifiable layers in the project.
 It is also possible to edit attributes of existing features, by clicking on a feature of interest and opening its attribute table.
 
+!![Browse mode identify and edit](../assets/images/browse_mode_identifyedit.png,500px)
 
-## Edit Mode
+## Digitize Mode
 :material-tablet: Fieldwork
 
 To start digitizing new features, enable the *Edit mode* by clicking on the *pencil icon*
@@ -57,22 +58,20 @@ This functionality can be activated in Settings in the General tab.
     This feature is available on Android only.
 
 Additionally, QField has a _finger tap_ digitizing mode where vertices are added by tapping on the canvas.
-Activated through the settings panel, this mode caters to scenarios where rapid data input is crucial.
-
-!![](../assets/images/activate_finger_tap_digitizing.png)
+Activated through the settings panel, this mode caters to scenarios where rapid data input is crucial (see second option above in the image).
 
 ### Attribute form
 
-After digitizing a geometry, the attribute form will appear allowing you to edit attribute values for the newly-added feature.
+After digitizing a geometry, the attribute form will appear allowing you to edit attribute values for the newly added feature.
 
 !!! note
     You can supress the attribute form upon feature addition via a configuration option for a given layer via its properties dialog in QGIS.
 
-Moreover, you have the option to digitize the form using the scanning QR or Bar Code reader functionality available within the feature form's text edit widget.
+Moreover, you have the option to digitize the form using the scanning QR and Barcode reader functionality available within the feature form's text edit widget.
 
 !![](../assets/images/digitizing-with-qr-code-1-attribute-form.png)
 
-Upon clicking the three-dot icon button, a menu will be presented offering three distinct actions: "Copy," "Paste," and "Scan Code".
+Upon clicking the icon button with the three dots, a menu will be presented offering three distinct actions: "Copy," "Paste," and "Scan Code".
 
 !![](../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
 
@@ -95,17 +94,17 @@ In addition, the Code Reader offers the capability to read NFC text tags.
 
 #### Remember attribute values
 
-For quick collection of rather homogeneus datasets, it is crucial to not having to enter the same attribute values over an over.
-The checkboxes at the right of every attribute allow remembering of the last entered value for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled.
+For quick collection of rather homogeneus datasets, it is crucial to not having to enter the same attribute values multiple times.
+The pins on the right of every attribute enable the last entered value option for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled. It needs to be noted that this last entered value only applies when collecting new feature not when editing existing ones, unless otherwise specified.
 
 !![](../assets/images/remember_checkboxes.webp,250px)
 
 ## Geometry editing
 :material-tablet: Fieldwork
 
-To edit the geometry of pre-existing features, enable the *Edit mode* by tapping on the *pencil icon* in QField's side dashboard.
+To edit the geometry of pre-existing features, enable the *Digitize mode* by tapping on the *pencil icon* underneath the legend.
 
-Once in edit mode, a new *Edit geometry* button will appear in the title bar of an identified feature form.
+Once in digitize mode, a new *Edit geometry* button will appear in the title bar of an identified feature form.
 Clicking on the button will activate the geometry editor environment which offers four tools:
 
 - A vertex editor tool;
