@@ -35,6 +35,11 @@ These variables are commonly used in default values expressions to track the qua
 - `@position_used_satellites` - A list of satellites in use (PRI), as reported by the sensor. Available only when the crosshair is snapped to the sensor.
 - `@position_fix_status_description` - The GPS fix status ("NoData", "NoFix", "Fix2D", or "Fix3D"), as reported by the sensor. Available only when the crosshair is snapped to the sensor.
 - `@position_fix_mode` - The fix mode ("M" = Manual, "A" = Automatic), as reported by the sensor. Available only when the crosshair is snapped to the sensor.
+- `@position_imu_correction` - Returns true of the position information was improved by an IMU device (added in QField 3.6).
+- `@position_imu_roll` - The roll value of an active IMU device providing positioning corrections (added in QField 3.6).
+- `@position_imu_pitch` - The pitch value of an active IMU device providing positioning corrections (added in QField 3.6).
+- `@position_imu_heading` - The heading value of an active IMU device providing positioning corrections (added in QField 3.6).
+- `@position_imu_steering` - The steering value of an active IMU device providing positioning corrections (added in QField 3.6).
 
 !!! info
     - I: Internal position source, E: External (NMEA) position source.
