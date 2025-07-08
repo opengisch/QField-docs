@@ -5,19 +5,17 @@ tx_slug: documentation_how-to_map-styling
 
 # Map styling
 
-All style settings from QGIS are directly supported by QField. This
-includes all renderer types like graduated, categorized, rule based,
+All style settings from QGIS are directly supported by QField.
+This includes all renderer types like graduated, categorized, rule based,
 2.5D as well as data defined symbology.
 
 ## Display Expression
 :material-monitor: Desktop preparation
 
-In QField, objects are identified with a name. The expression to
-generate this name can be defined by opening the attribute table in QGIS
-and switching to the form view. Choose the appropriate field or an
-expression in the list there. Starting from QGIS 3, this can be done
-directly from the
-*Vector Layer Properties > Display* page.
+In QField, objects are identified with a name.
+The expression to generate this name can be defined by opening the attribute table in QGIS and switching to the form view.
+Choose the appropriate field or an expression in the list there.
+Starting from QGIS 3, this can be done directly from the *Vector Layer Properties > Display* page.
 
 The display expression is also used to search in layers.
 
@@ -27,20 +25,18 @@ identification string throughout QField.](../assets/images/define_display_expres
 ## Read only, non-identifiable and searchable layers
 :material-monitor: Desktop preparation
 
-Some layers in a project are just there for pure visual purpose. Such
-layers should not show up when a user taps somewhere to identify
+Some layers in a project are just there for pure visual purpose.
+Such layers should not show up when a user taps somewhere to identify
 objects.
 
 Some other layers serve as source of information and shouldn't be
-modified by the user. It is possible to protect layers from editing
-attributes or adding and deleting features.
+modified by the user.
+It is possible to protect layers from editing attributes or adding and deleting features.
 
 It is also possible to configure which layers are searchable.
 
-To configure identify, readonly and searchable behavior, go to the
-*Project > Properties > Data Sources*
-page and activate the checkboxes to match your
-desired behavior.
+To configure identify, read-only and searchable behavior, go to the
+*Project > Properties > Data Sources* page and activate the checkboxes to match your desired behavior.
 
 !![Configuration of layers that will not be identifiable, not modifiable
 and/or not searchable.](../assets/images/project_configuration_readonly.png)
@@ -49,18 +45,18 @@ and/or not searchable.](../assets/images/project_configuration_readonly.png)
 :material-monitor: Desktop preparation
 
 QField enables you to use all the custom fonts you might want and need.
-
 There are two different possibilities to register additional fonts:
 
-1.  By adding fonts (.ttf or .otf) on the device in the folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/fonts` those will be made accessible to all projects and individual datasets.
+1.  By adding fonts (.ttf or .otf) on the device in the folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/fonts`.
+Those will be made accessible to all projects and individual datasets.
 2.  By adding fonts (`.ttf` or `.otf`) in a `fonts` subfolder of the folder
-    containing a given project file (`.qgs` or `.qgz`); those fonts will only
-    be accessible when viewing that project.
+    containing a given project file (`.qgs` or `.qgz`).
+    Those fonts will only be accessible when viewing that project.
 
 ## Custom SVG symbols
 :material-monitor: Desktop preparation
 
-It is possible to embed SVG symbols directly within a QGIS projects.
+It is possible to embed SVG symbols directly within a QGIS project.
 
 1.  Choose the layer which will support SVG symbology and open its
     properties dialog.

@@ -68,7 +68,7 @@ Offline editing
 :   A working copy of the layer is copied into the package folder. Every
     change which is done in the packaged project during work is recorded
     in a changelog. When synchronizing the changes back later on, this
-    log will be replayed and all changes also be applied to the main
+    log will be replaced and all changes also be applied to the main
     data base. There is no conflict handling in place.
 
 Remove
@@ -85,7 +85,7 @@ Properties
 
 2. Set up the attachment default naming, please refer to the [Configurable picture path](../../how-to/pictures.md#configurable-attachment-path)
 
-3. Set up the maximum number of items shown in the relation editor widget
+3. Set up the maximum number of items shown in the relation editor widget.
 
 !![QFieldSync Layer Properties](../../assets/images/qfield-sync-properties.png)
 
@@ -143,8 +143,8 @@ extent of 1 square kilometer.
 
 You can package a raster layer into an **MBTiles** file with multiple zoom levels for offline use.
 
-- **Tiles min zoom level**: Defines the **minimum** zoom level for the raster tiles. A lower value increases the spatial coverage but the spatial resolution is limited. _(Default: 14)_
-- **Tiles max zoom level**: Defines the **maximum** zoom level for the raster tiles. A higher value increases detail but may require more storage space, as well as increase the duration of the offline export. _(Default: 14)_
+- **Tiles min zoom level**: Defines the **minimum** zoom level for the raster tiles. A lower value increases the spatial coverage but the spatial resolution is limited. *(Default: 14)*
+- **Tiles max zoom level**: Defines the **maximum** zoom level for the raster tiles. A higher value increases detail but may require more storage space, as well as increase the duration of the offline export. *(Default: 14)*
 
 !![Base Map Configuration QFieldSync](../../assets/images/base_map_configuration.png)
 
@@ -153,9 +153,10 @@ You can package a raster layer into an **MBTiles** file with multiple zoom level
 
 ### Offline editing configuration
 
-If *only synchronize features in area of interest* is checked, only
-features which are within the extent of the map canvas as packaging time
-will be copied to the offline editing working copy.
+If *"Only synchronize features in area of interest"* is selected, only features that are within the established extent area or the current map canvas (if not set) at packaging time will be copied to the offline editing working copy.
+
+!!! note
+    This is available only for the "Cable Export" option.
 
 ## Package for QField
 
@@ -178,7 +179,7 @@ Simply activate the checkbox labeled "Show the packaging options in the toolbar.
 Copy the folder on your device. Open QField, open the project and start
 collecting data.
 
-Make also sure to save the QGIS project using the regular Save As of
+Also make sure to save the QGIS project using the regular Save As of
 QGIS as you'll have to re-open it later when you want to synchronize
 the changes.
 
@@ -200,7 +201,7 @@ Use iTunes' File Sharing function to import into the QField root folder.
 When you want to synchronize what you have collected, re-open the
 project in QGIS (the one you saved with a regular Save As).
 
-Copy the project folder from your device to your computer and use the
+Copy the project folder from your device to your computer, and use the
 **Synchronize from QField** menu to synchronize your changes from the
 protable project to the main project.
 

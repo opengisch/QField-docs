@@ -15,7 +15,7 @@ QGIS field widgets are supported on a best-effort basis and optimized for mobile
 | Check Box          | :material-check: |                                                                                                                                                                                                        |
 | Value Map          | :material-check: |                                                                                                                                                                                                        |
 | Hidden             | :material-check: |                                                                                                                                                                                                        |
-| Attachment         | :material-check: | This field is combined with camera integration. It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#attachment-photo-settings) |
+| Attachment         | :material-check: | This field is combined with camera integration. It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#configurable-attachment-path) |
 | Date Time          | :material-check: |                                                                                                                                                                                                        |
 | Range              | :material-check: |                                                                                                                                                                                                        |
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
@@ -52,11 +52,9 @@ In the "Attributes Form," you can structure your forms using various containers,
 ## Configure a Relation Widget
 :material-monitor: Desktop preparation
 
-For more information refer to the relations chapter of the official
-[QGIS Documentation](https://docs.qgis.org/3.22/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations).
+For detailed information on setting up data layer relationships in QGIS, please refer to the [Setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) QGIS documentation. To then control how many related items are shown in QField, see the instructions for Configuring [Maximum items visibility for QField](../get-started/tutorials/get-started-qfs.md#configuring-maximum-items-visibility-for-qfield).
 
 !![](../assets/images/relation_editor_widget_list.png)
-
 
 The relation widget shows all the referencing child features in a list.
 It is possible to add, delete and open them.

@@ -25,14 +25,14 @@ Before heading out to the field though, preliminary steps such as layer styling,
 Since QField is a mobile optimized version of the QGIS desktop app, your project will appear and feel identical both in QGIS and QField.
 The rendering engine in QField is the same as the one used in desktop QGIS, ensuring that projects will appear virtually identical in both environments.
 
-Configurations options prepared in QGIS beforehand don't need to be recreated, which is why QField uses the same edit widgets as QGIS desktop does.
+Configuration options prepared in QGIS beforehand don't need to be recreated, which is why QField uses the same edit widgets as QGIS desktop does.
 As a result, projects configured on the desktop should work seamlessly on the mobile app.
 
 These principles have so far informed our development and design of QField, and will continue to do so in the future.
-In the last few years, QField proved to be the fieldworker's best friend and continues to evolve with new features handling an even broader range of needs.
+In the last few years, QField has proved to be the fieldworker's best friend and continues to evolve with new features handling an even broader range of needs.
 
 ## Mode based
 
 QField is built around different *modes*, similar to the *map tools* in the QGIS desktop version.
 The mode defines the nature of the task.
-In QField, users are either *browsing* through data or *digitizing* new stuff.
+In QField, users are either *browsing* through data or *digitizing* new data.

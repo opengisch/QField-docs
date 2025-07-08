@@ -88,7 +88,7 @@ To obtain precise altitude data for Cadastral Surveying in Switzerland, users ca
 Following the download, users are advised to perform a conversion of the file labeled `chgeo04_htrans_lv95.agr` to `chgeo04_htrans_lv95.gtx`.
 The QGIS processing algorithm `gdal:translate` (convert format) can be used for that.
 
-!![](../assets/images/vertical_grid_selection_in_qfield_settings.png,350px)
+!![](../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
 
 ## Usage
 :material-tablet: Fieldwork
@@ -174,12 +174,12 @@ The survey will start by pressing and holding the add vertex button, which will 
 While collecting, an indicator will appear on top of the coordinate cursor showing a text reflecting the current number of collected positions.
 If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.
 
-!![](../assets/images/positioning-averaged.webp)
+!![](../assets/images/positioning-averaged.webp,280px)
 
 The setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
 When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
 
-!![](../assets/images/positioning_averaged_set.jpg)
+!![](../assets/images/positioning_averaged_set.png,280px)
 
 When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
 
