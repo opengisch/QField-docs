@@ -3,7 +3,7 @@ title: Collect and Edit
 tx_slug: documentation_how-to_digitize
 ---
 
-# Collect and Edit 
+# Collect and Edit
 
 With QField you can digitize, edit and delete points, lines and polygons and their according attributes while being in the field.
 Similar to QGIS, QField has two modes.
@@ -11,7 +11,7 @@ The *browse mode* and the *edit mode*.
 
 ## Browse Mode 
 
-As the name suggests, while being in browse mode, you can view and select features within all identifiable layers in the project. 
+As the name suggests, while being in browse mode, you can view and select features within all identifiable layers in the project.
 It is also possible to edit attributes of existing features, by clicking on a feature of interest and opening its attribute table.
 
 
@@ -46,8 +46,7 @@ When you have added a least 2 nodes for a line or 3 nodes for a polygon, a *Save
 While digitizing, you can click the *(x) button* to cancel the current feature creation.
 
 !!! note
-    QField insures that digitized geometries will not have duplicate vertices and respects
-    the geometry precision settings from the currently selected layer.
+    QField insures that digitized geometries will not have duplicate vertices and respects the geometry precision settings from the currently selected layer.
 
 You can use the volume keys for adding or removing vertices while in digitizing mode.
 This functionality can be activated in Settings in the General tab.
@@ -96,7 +95,7 @@ In addition, the Code Reader offers the capability to read NFC text tags.
 
 #### Remember attribute values
 
-For quick collection of rather homogeneus datasets, it is crucial to not having to enter the same attribute values over an over. 
+For quick collection of rather homogeneus datasets, it is crucial to not having to enter the same attribute values over an over.
 The checkboxes at the right of every attribute allow remembering of the last entered value for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled.
 
 !![](../assets/images/remember_checkboxes.webp,250px)
