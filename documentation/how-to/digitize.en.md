@@ -9,7 +9,7 @@ With QField you can digitize, edit and delete points, lines and polygons and the
 Similar to QGIS, QField has two modes.
 The *browse mode* and the *edit mode*.
 
-## Browse Mode 
+## Browse Mode
 
 As the name suggests, while being in browse mode, you can view and select features within all identifiable layers in the project.
 It is also possible to edit attributes of existing features, by clicking on a feature of interest and opening its attribute table.
