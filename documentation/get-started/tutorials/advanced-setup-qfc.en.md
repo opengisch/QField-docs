@@ -7,13 +7,14 @@ tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 
 ## Supported vector providers
 
-Currently, QFieldCloud supports GeoPackage and PostGIS layers for collaborative editing. Other formats supported by QGIS should also work but are not officially supported.
+Currently, QFieldCloud supports GeoPackage and PostGIS layers for collaborative editing.
+Other formats supported by QGIS should also work but are not officially supported.
 
 ## Working with GeoPackages
 
 Using GeoPackages is usually the best choice for a simple setup to centralize data collected by your QField users to one single file.
 
-If you would like to set up relations, it is recommended to add a UUID field on your tables, and to use that as a foreign key instead of geoPackage's `fid`, as they are subject to change to avoid conflicts if two users create new records at the same time.
+If you would like to set up a relation, it is recommended to add a UUID field on your table, and to use that as a foreign key instead of geoPackage's `fid`, as they are subject to change to avoid conflicts if two users create new records at the same time.
 
 ### Example workflow (GeoPackage)
 
@@ -31,9 +32,10 @@ If you would like to set up relations, it is recommended to add a UUID field on 
 !!! warning
     This workflow does not support changing the GeoPackage on the desktop, as being file-based, the whole GeoPackage will be replaced. This means that data can only be digitized using QFieldCloud.
 
-#### Ensuring Unique Identifiers in Collaborative Projects
+#### Ensuring Unique Identifiers in projects
 
-For collaborative projects, it is highly recommended to use the expression `epoch(now())` for primary key identifier integer fields ("fid"). Ensure that the "Apply default value on update" option is not activated. This approach helps improve synchronization, as the `epoch(now())` expression generates a unique identifier based on milliseconds, ensuring that each record has a distinct identifier.
+For collaborative projects, it is highly recommended to use the expression `epoch(now())` for primary key identifier integer fields ("fid").
+Ensure that the "Apply default value on update" option is not activated. This approach helps improve synchronization, as the `epoch(now())` expression generates a unique identifier based on milliseconds, ensuring that each record has a distinct identifier.
 
 ## PostGIS
 
@@ -59,7 +61,11 @@ It requires your database to be publicly accessible, and credentials must be sav
     When using `direct database access`, QFieldCloud will directly edit data on the PostGIS database. This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).
 
 !!! note
-    When using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database. This is the best choice if the connection in the field is not reliable. Changes will only be visible to users once they sync to QFieldCloud. As a local copy is created, advanced PostGIS features will not be available on QField. Just like for regular GeoPackages, if you define relationships, it is recommended to use UUIDs instead of integer primary keys to avoid conflicts if multiple users create data at the same time.
+    When using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database.
+    This is the best choice if the connection in the field is not reliable.
+    Changes will only be visible to users once they sync to QFieldCloud.
+    As a local copy is created, advanced PostGIS features will not be available on QField.
+    Just like for regular GeoPackages, if you define relationships, it is recommended to use UUIDs instead of integer primary keys to avoid conflicts if multiple users create data at the same time.
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
 
