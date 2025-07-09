@@ -5,13 +5,13 @@ tx_slug: documentation_how-to_attributes-form
 
 # Attribute form
 
-QField creates forms similar to, but not equal to QGIS.
-The field widgets from QGIS are supported on a best effort basis and optimized for the mobile use.
+QField creates forms that are similar to QGIS, but with some differences.
+QGIS field widgets are supported on a best-effort basis and optimized for mobile use.
 
 
 | Widget type        | Support          | Notes                                                                                                                                                                                                  |
 |--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text Edit          | :material-check: | - HTML is not supported <br> - Numerical input is enforced based on the type.                                                                                                                          |
+| Text Edit          | :material-check: | - HTML is not supported <br> - Numeric input is enforced based on the field type.                                                                                                                          |
 | Check Box          | :material-check: |                                                                                                                                                                                                        |
 | Value Map          | :material-check: |                                                                                                                                                                                                        |
 | Hidden             | :material-check: |                                                                                                                                                                                                        |
@@ -31,8 +31,8 @@ The *editable* flag of fields is respected.
 
 ### Remember last values
 
-QField offers a much more fine-grained control over the last used values
-and ignores the QGIS setting.
+QField offers more fine-grained control over the last used values than QGIS,
+and uses its own settings instead of the QGIS ones.
 
 ### Suppress attribute form
 
@@ -63,9 +63,9 @@ The visual identification of the list entries are done via the *Display Expressi
 
 ### Key handling
 
-Since the parents primary keys are used as foreign keys on the
-referencing child features, these primary keys must be save to use even
-after the synchronization back to the original data. Therefore we
+Since the parent's primary keys are used as foreign keys in the
+referencing child features, these primary keys must be safe to use even
+after synchronizing back to the original data. Therefore we
 recommend to use stable values such as UUIDs for primary keys.
 
 It is possible to already add children from a parent that is about to be
@@ -91,7 +91,7 @@ In case of the many-to-one cardinality on many-to-many relations the
 
 ### Configuring Ordered Relations for QGIS and QField
 
-The **Ordered Relation Editor** widget allows you to reorder linked child features in a relation editor widget based on a specific ordering field.
+The **Ordered Relation Editor** widget enables reordering of linked child features based on a specific ordering field.
 
 #### 1. Install the Plugin
 
@@ -178,7 +178,7 @@ doc, \...).
 
 QFieldSync provides the possibility to configure the path of attachments.
 
-- Go to _QFieldSync plugin > Layers Properties_
+- Go to _QFieldSync plugin > Layers Properties_
 
 Use expressions to specify the path of the attachments. By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
