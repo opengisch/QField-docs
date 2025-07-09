@@ -1,5 +1,5 @@
 ---
-title: Support QField Project
+title: Support the QField Project
 tx_slug: documentation_get-started_contribute
 ---
 
@@ -12,8 +12,11 @@ If you found it useful, we will be even happier if you could give something back
 
 ### QField Community platform
 
-In the beginning of 2025 the [QField Community's Platform](https://community.qfield.org/) <!-- markdown-link-check-disable-line --> went live.
-Signup and join the discussions, report bugs, share new ideas or ask a question.
+Signup and join the [QField Community's Platform](https://community.qfield.org/) <!-- markdown-link-check-disable-line -->.
+ Actively engage the discussions, report bugs, share new ideas or ask a question.
+ The community's platform is the platform, where you create the content yourself, where you can engage with the core developers and collaborate across the globe.
+ We want to encourage anyone to participate and join the community.
+ Only together we can create a better world.
 
 ### Become an ambassador
 
