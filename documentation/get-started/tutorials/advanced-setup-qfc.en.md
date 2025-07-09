@@ -34,8 +34,8 @@ If you would like to set up a relation, it is recommended to add a UUID field on
 
 #### Ensuring Unique Identifiers in projects
 
-For collaborative projects, it is highly recommended to use the expression `epoch(now())` for primary key identifier integer fields ("fid").
-Ensure that the "Apply default value on update" option is not activated. This approach helps improve synchronization, as the `epoch(now())` expression generates a unique identifier based on milliseconds, ensuring that each record has a distinct identifier.
+It is recommended to use the expression `epoch(now())` as primary key when using integer fields ("fid") as the unique identifier.
+For this, itis important that the "Apply default value on update" option in the attribute form is not activated. This approach helps to improve synchronization, as the `epoch(now())` expression generates a unique identifier based on milliseconds, ensuring that each record has a distinct identifier.
 
 ## PostGIS
 
