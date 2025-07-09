@@ -29,9 +29,11 @@ The current layer within which features are to be added is highlighted in green.
 
 ### Adding point features
 
-Navigate the crosshair in the center of the screen to the desired location and click the *Plus (+) button* at the lower right of the screen to confirm the creation of a new point feature.
+Navigate the crosshair in the center of the screen to the desired location and click the *Green Plus (+) button* at the lower right of the screen to confirm the creation of a new point feature.
 
 You can use the *lock to position* button to force the crosshair to center on your location if you have enabled positioning.
+
+!![](../assets/images/lock_to_position_icon.png,150px)
 
 ### Adding line or polygon features
 
