@@ -5,8 +5,9 @@ tx_slug: documentation_how-to_outside-layers
 
 # Shared datasets
 
-It is possible to use layers stored in a single location—referred to as a localized data path—across multiple projects.
-This can help reduce storage requirements for large datasets such as orthophoto raster files, land use vector files, etc., as well as ease the management of dataset updates.
+It is possible to use layers stored in a single location — referred to as a 'localized data path' — across multiple projects.
+
+This can help to reduce storage requirements for large datasets such as orthophoto raster files, land use vector files, etc., as well as ease the management of dataset updates.
 
 There are two main approaches to using shared local datasets: a manual copying method for into devices running QField, and a more integrated approach using QFieldCloud.
 
@@ -14,12 +15,12 @@ There are two main approaches to using shared local datasets: a manual copying m
 
 :material-monitor: Desktop preparation
 
-When building projects for QField, make sure the datasets you want to share across multiple projects are within localized data paths in QGIS.
+When preparing a new project for QField, make sure the datasets you want to share across multiple projects are stored within the localized data paths in QGIS.
 
-In QGIS, direct to the data sources section under the 'Options' panel.
-There you will find a localized data paths section.
+In QGIS, direct to the data sources section under the 'Settings > Options... > Data Sources' panel.
+There you will find a 'Localized Data Paths' section.
 Add the necessary paths where the datasets to be shared are located.
-Once correctly added, QField/QFieldCloud will treat them as shareable datasets.
+Once correctly added, QGIS, QField/QFieldCloud will treat them as shareable datasets.
 
 !![QGIS Options Dialog showing Data Sources and Localized Data Paths setup](../assets/images/external_path.png)
 
