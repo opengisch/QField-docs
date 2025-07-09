@@ -17,7 +17,7 @@ Signup and join the discussions, report bugs, share new ideas or ask a question.
 
 ### Become an ambassador
 
-If you are an active QField user who shares its expertise through teaching, content creation and actively engage in the community, the ambassador's program may be for you.
+If you are an active QField user who shares its expertise through teaching, content creation and actively engage in the community, the ambassador program may be for you.
 See [Ambassador program](https://qfield.org/ambassadors.html) <!-- markdown-link-check-disable-line --> for more information.
 
 ### Development
