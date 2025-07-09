@@ -7,7 +7,7 @@ tx_slug: documentation_how-to_digitize
 
 With QField you can digitize, edit and delete points, lines and polygons and their according attributes while being in the field.
 Similar to QGIS, QField has two modes.
-The *browse mode* and the *edit mode*.
+The *browse mode* and the *digitize mode*.
 
 ## Browse Mode
 
@@ -17,9 +17,10 @@ It is also possible to edit attributes of existing features, by clicking on a fe
 !![Browse mode identify and edit](../assets/images/browse_mode_identifyedit.png,500px)
 
 ## Digitize Mode
+
 :material-tablet: Fieldwork
 
-To start digitizing new features, enable the *Edit mode* by clicking on the *pencil icon*
+To start digitizing new features, enable the *Digitize mode* by clicking on the *pencil icon*
 in the side dashboard and selecting the layer within which you want to add new features.
 
 !![](../assets/images/activate-edit-mode.png)
@@ -100,12 +101,13 @@ The pins on the right of every attribute enable the last entered value option fo
 !![](../assets/images/remember_checkboxes.webp,250px)
 
 ## Geometry editing
+
 :material-tablet: Fieldwork
 
 To edit the geometry of pre-existing features, enable the *Digitize mode* by tapping on the *pencil icon* underneath the legend.
 
 Once in digitize mode, a new *Edit geometry* button will appear in the title bar of an identified feature form.
-Clicking on the button will activate the geometry editor environment which offers four tools:
+Clicking on the button will activate the geometry editing environment which offers four tools:
 
 - A vertex editor tool;
 - A geometry split tool;
@@ -188,6 +190,7 @@ To do so, identify two (or more)features on the map, select them in the features
 !![](../assets/images/multi_editor.webp,250px)
 
 ## Delete features
+
 :material-tablet: Fieldwork
 
 Deleting a feature is done by selecting the *Delete feature* action in the feature form's *3-dot menu*.
@@ -203,6 +206,7 @@ Once done, select the *Delete Selected Feature(s) *action in the features list *
 !![](../assets/images/delete-multiple-features.png)
 
 ## Snapping
+
 :material-monitor: Desktop preparation
 
 While digitizing new features, new points can be snapped to existing geometries.
@@ -213,9 +217,9 @@ All configuration can be done in *Project > Snapping Settings*
 
 It is possible to snap new points:
 
--   only to nodes of existing geometries
--   only to segments of existing geometries
--   to nodes and segments of existing geometries
+- only to nodes of existing geometries
+- only to segments of existing geometries
+- to nodes and segments of existing geometries
 
 ### Snapping to layers
 
