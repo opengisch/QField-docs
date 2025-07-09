@@ -14,7 +14,7 @@ Other formats supported by QGIS should also work but are not officially supporte
 
 Using GeoPackages is usually the best choice for a simple setup to centralize data collected by your QField users to one single file.
 
-If you would like to set up a relation, it is recommended to add a UUID field on your table, and to use that as a foreign key instead of geoPackage's `fid`, as they are subject to change to avoid conflicts if two users create new records at the same time.
+If you would like to set up a relation, it is recommended to add a UUID field on your table and to use that as primary and foreign key. Do not use GeoPackage's `fid` field as this is not unique accross multiple users.
 
 ### Example workflow (GeoPackage)
 
