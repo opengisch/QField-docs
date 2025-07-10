@@ -73,10 +73,10 @@ Please be aware of the security implications of such requirements, and remember 
 
 !!! note
     When using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database once synchronized by the user.
-    This is the best choice if the connection in the field is not reliable.
+    This is the best choice if the connection in the field is not reliable
     Changes will only be visible to users once the synchronization via QFieldCloud has been applied on the different devices.
     As a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
-    Just like for regular GeoPackages, if relationships are defined, it is recommended to use a UUID field  as the primary key to avoid conflicts if multiple users create data at the same time.
+    Just like for regular GeoPackages, if relationships are defined, it is recommended to use a UUID field instead of the fid as the primary key to avoid conflicts if multiple users create data at the same time.
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
 
