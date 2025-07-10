@@ -98,7 +98,7 @@ In addition, the Code Reader offers the capability to read NFC text tags.
 #### Remember attribute values
 
 For quick collection of rather homogeneus datasets, it is crucial to not having to enter the same attribute values multiple times.
-The pins on the right of every attribute enable the last entered value option for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled. It needs to be noted that this last entered value only applies when collecting new feature not when editing existing ones, unless otherwise specified.
+The pins on the right of every attribute enable the last entered value option for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled. It needs to be noted that this last entered value only applies when collecting new features not when editing existing ones, unless otherwise specified.
 
 !![](../assets/images/remember_checkboxes.webp,250px)
 
