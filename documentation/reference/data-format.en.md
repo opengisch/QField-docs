@@ -48,7 +48,7 @@ gdal_translate raster.tif raster_cog.tif -of COG -co BLOCKSIZE=512 -co COMPRESS=
 
 ### Advanced examples with COG
 
-If you have several files to assemble, first, you need to create a VRT files with QGIS or trough following commands to index all TIF files inside a directory.  Make sure you adjust `EPSG:2056` to your desired CRS.
+If you have several files to assemble, first, you need to create a VRT files with QGIS or through following commands to index all TIF files inside a directory.  Make sure you adjust `EPSG:2056` to your desired CRS.
 
 ``` bash
 gdalbuildvrt raster_mosaic.vrt TIF_Directory/*.tif -addalpha -hidenodata -a_srs EPSG:2056
