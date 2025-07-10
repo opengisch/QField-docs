@@ -95,6 +95,7 @@ nav:
       - how-to/pg-service.md
       - how-to/plugins.md
       - how-to/processing.md
+      - how-to/troubleshoot.en.md
   - Technical reference:
       - reference/index.md
       - reference/data-format.md
