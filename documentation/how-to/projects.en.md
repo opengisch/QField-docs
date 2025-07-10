@@ -40,6 +40,28 @@ favorite directories. To add a directory to the favorites, long click in
 the file selector on the directory name. To remove an entry from the
 favorites, long click on the entry in the favorites list.
 
+## Set Default Project
+
+This functionality allows you to set a specific project to be used as the default basemap whenever you open individual datasets.
+This is particularly useful for QField users who want to use a QFieldCloud project as their basemap, eliminating the need for file transfers via USB.
+
+### How to Set a Default Project
+
+1. In the welcome screen **Recent Projects** list.
+2. **Long press** on the project you wish to set as your default basemap.
+3. From the context menu that appears, select **Set as Default Project**.
+
+!![](../assets/images/default_project_selection.png,300px)
+
+### Basemap Loading Logic
+
+When you open an individual dataset, the application will now determine which basemap to load based on the following hierarchy:
+
+1. **Default Project**: The application will first check if a default project has been set. If so, it will be used as the basemap.
+2. **Basemap File**: If no default project is set, the application will look for a `basemap.{qgs/.qgz)` file within the `QField` directory on your device.
+If found, this project will be used.
+3. **OpenStreetMap**: If neither a default project nor a basemap file is found, a default OpenStreetMap XYZ layer will be loaded as the basemap.
+
 ## Retrieve modified projects and datasets
 :material-monitor: Desktop preparation
 
