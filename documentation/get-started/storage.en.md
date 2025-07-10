@@ -27,6 +27,7 @@ There are three ways of preparing and copying a project in QGIS for use in QFiel
 
 One way of compiling all necessary parts of a QGIS project is to store them in a folder.
 This folder can contain individual files such as a
+
 * QGIS project file (.qgs or .qgz)
 * Vector data (shapefiles, GeoJSON or Geopackage)
 * Raster data (GeoTIFFs, JPEGS and others)
