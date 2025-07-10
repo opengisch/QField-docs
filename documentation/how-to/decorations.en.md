@@ -1,29 +1,30 @@
 ---
 title: QField Map Decorations
-tx_slug: documentation_get-started_decorations
+tx_slug: documentation_how-to_decorations
 ---
 
-# QField Map Decorations
+# Map Decorations
 
-Map decorations are a powerful feature for adding essential and dynamic information directly onto your map view in QField.
-These elements, such as titles, grids, and scale bars, provide context and polish to your mobile mapping projects.
+Map decorations are a good way for adding dynamic information directly onto your map view in QField.
+Elements, such as titles, grids, and scale bars provide context and can enhance the mapping experience if correctly configured.
 
-Properly configured decorations enhance the user's experience by offering at-a-glance information like coordinates, map scale, and project branding.
 All decorations, with the exception of the Scale Bar, must first be activated and styled within your QGIS project before being deployed to QField.
 
 ## Activating Decorations in QGIS
+:material-monitor: Desktop preparation
 
-To add and configure a decoration for your QField project, you must first enable it in the [QGIS desktop](https://docs.qgis.org/3.40/en/docs/user_manual/map_views/map_view.html#decorating-the-map).
+In QGIS, you have to enable the elements you want to include in your project. To add and configure a decoration for your QField project, you must first enable it.
 
 This is done from the main menu:
-
 **View > Decorations**
 
-From this menu, you can select and configure each of the available decoration types.
+From this menu, you can select and configure available decoration types.
+
+You can find more information in the corresponding [_QGIS documentation_](https://docs.qgis.org/3.40/en/docs/user_manual/map_views/map_view.html#decorating-the-map)
 
 ### Grid
 
-A map grid overlays the map with lines or markers at defined intervals, which is useful for spatial reference and cartographic representation.
+A map grid overlays the map with lines or markers at defined intervals providing spatial reference and guidance particularly useful in remote areas.
 
 1. In QGIS, navigate to **View > Decorations > Grid…**.
 2. Check the **Enable Grid** box to activate it.
