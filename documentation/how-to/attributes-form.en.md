@@ -195,6 +195,27 @@ display a drop-down or multiple-select list of the referenced features.
 !![](../assets/images/value_relation_widget.webp,300px)
 
 
+### Group Values in the Value Relation Widget
+
+Enhance the organization and usability of your *Value Relation widgets* by grouping related items. This feature allows you to categorize the values in the dropdown list and table view based on the content of a chosen column.
+
+For example, if you have a list of cities, you can group them by their respective states. This makes it easier for users to navigate and find the values they need, especially in lists with a large number of items.
+
+#### Configuration
+
+Grouping is configured within the Value Relation widget's settings using the following options:
+
+- **Group column**: Choose the column from the related layer that will be used to organize the items. The values from this column will act as the group titles.
+- **Display group name**: Check this box to display the group titles as distinct headers within the widget. This creates a clear visual separation between the different groups, making the list easier to navigate.
+
+!![First configuration](../assets/images/grouping_value_relations_widget_qgis_setting_001.png)
+
+!![Second configuration](../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
+
+!![Third configuration](../assets/images/grouping_value_relations_widget_qgis_setting_003.png)
+
+!![Different configurations on QField](../assets/images/grouping_value_relations_widget_qfield_show_gruped.png)
+
 ## Configure Conditional Visibility
 :material-monitor: Desktop preparation
 
