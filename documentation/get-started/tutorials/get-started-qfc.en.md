@@ -124,6 +124,28 @@ Once configured, you can press the cloud button to open the synchronization dial
 
 Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
 
+!!! tip
+    **Preventing Incorrect GeoPackage Synchronization**
+
+    QFieldSync might suggest uploading a GeoPackage file even if you haven't edited it in QGIS.
+    This happens because QGIS creates temporary files (`.gpkg-shm` and `.gpkg-wal`) when you open a GeoPackage, which updates the file's modification time.
+    QFieldSync then thinks the desktop version is newer and needs to be synchronized.
+
+    *Solution*
+
+    To prevent this, you can disable the Write-Ahead Logging (WAL) mode in QGIS.
+    This ensures the GeoPackage is only marked as modified when you start an editing session.
+
+    1. Find your `QGIS3.ini` file in your active [QGIS user profile](https://docs.qgis.org/3.40/en/docs/user_manual/introduction/qgis_configuration.html#working-with-user-profiles) folder.
+    2. Add the following lines under the `[qgis]` section:
+    ```ini
+    [qgis]
+    walForSqlite3=false
+    ```
+
+    This change stops QGIS from creating the temporary files and prevents synchronization prompts from QFieldSync when there are not changes made.
+
+
 ## Field device
 
 :material-tablet: Fieldwork
