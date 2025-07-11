@@ -1,5 +1,5 @@
 ---
-title:  Variables
+title: Variables
 tx_slug: documentation_how-to_variables
 ---
 
@@ -55,6 +55,5 @@ These are the variables you are most likely to interact with for project-specifi
 2. **Editable Device-Specific Variables:** Your custom, device-specific variables appear next.
 3. **Global Variables:** Pre-defined, read-only system variables are listed at the bottom.
 
-!![Configuration of two new global variables in addition to the
-pre-defined system
-variables.](../assets/images/configure_global_variables.png, 400px)
+!![Configuration of editable variables in addition to the
+pre-defined system variables.](../assets/images/configure_global_variables.png, 400px)
