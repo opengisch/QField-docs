@@ -1,5 +1,5 @@
 ---
-title: How to contribute to translation
+title: Translation contribution
 tx_slug: documentation_get-started_how-to-contribute-translation
 ---
 
@@ -63,7 +63,7 @@ You'll see a "Join Team" link. Click it and wait for approval (you'll receive an
 
 - Translations are typically synchronized with the QField app's master codebase each day.
 - To see your translation reflected in the app:
-    - Join the [QField Beta Program](https://play.google.com/apps/testing/ch.opengis.qfield_dev)<!-- markdown-link-check-disable-line --> for early access to new releases with these translations.
+    - Download the [QField Beta Application](https://play.google.com/apps/testing/ch.opengis.qfield_dev)<!-- markdown-link-check-disable-line --> for early access to new releases with these translations.
 
 If your language is not yet available, we will happily add it for you.
 Just open an issue on the GitHub repository and specify which language you would like to translate to.
