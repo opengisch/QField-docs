@@ -3,26 +3,26 @@ title: Device-specific variables
 tx_slug: documentation_how-to_variables
 ---
 
-# Custom Variables
+# Device-specific variables
 
 With the support of variables you can dynamically add additional values at different levels, such as project, layer or model specific level.
-See [the relevant QGIS Documentation](https://docs.qgis.org/3.40/en/docs/user_manual/introduction/general_tools.html#storing-values-in-variables)for more information.
+See [the relevant QGIS Documentation](https://docs.qgis.org/3.40/en/docs/user_manual/introduction/general_tools.html#storing-values-in-variables) for more information.
 They can be used for a wide range of applications, including styling, setting default field values, controlling application behavior and more.
 
 QField supports two main types of variables:
 
 - **Project Variables:** Project variables are defined and managed in your QGIS project.
-- **Device-specific:** These are specific to a user's device and are configured directly within the QField app.
+- **Device-specific Variables:** These are specific to a user's device and are configured directly within the QField app.
 
 ## Project Variables
 
-Project variables are defined and managed in your QGIS project.
-They are used for adding additionally needed custom variables that are only relevant in the context of this specific project that is shared between several users.
+Project variables are defined and managed directly within your QGIS project.
+They allow you to add custom variables that are only relevant in the context of a specific project.
+This is especially useful working among multiple users,.
 
 ## Device-specific Variables
 
 A key feature in QField is the ability for users to customize variables on their devices without changing or adapting the original variables set in a project file.
-This is particularly useful for shared projects, allowing each user to adapt the project to their specific needs.
 
 For example, a project could have a variable named `lang` that controls the language of labels and descriptions.
 A user can change the value of this `lang` variable on their device to their preferred language.
@@ -39,7 +39,7 @@ When you access the variables list in QField (_Settings > Variables_), you will 
 
 To configure a device-specific variable, follow these steps:
 
-1. Open **Settings** in QField.
+1. Open **Settings** in QField (Legend > ... > Settings).
 2. Navigate to the **Variables** tab.
 
 Here you will see a list of all variables currently applicable to your project.
@@ -52,9 +52,9 @@ The list is sorted to ensure that the most relevant variables are easily accessi
 
 1. **Project Variables:** All variables from the current QGIS project are displayed at the top.
 These are the variables you are most likely to interact with for project-specific configurations.
-2. **Editable Global Variables:** Your custom, device-specific variables appear next.
+2. **Editable Device-specific Variables:** Your custom, device-specific variables appear next.
 3. **Read-Only Variables:** Pre-defined, read-only system variables are listed at the bottom.
 
 !![Configuration of two new global variables in addition to the
 pre-defined system
-variables.](../assets/images/configure_global_variables.png)
+variables.](../assets/images/configure_global_variables.png, 400px)
