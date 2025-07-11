@@ -1,5 +1,5 @@
 ---
-title: QField Map Decorations
+title: Map Decorations
 tx_slug: documentation_how-to_decorations
 ---
 
@@ -13,7 +13,7 @@ All decorations, with the exception of the Scale Bar, must first be activated an
 ## Activating Decorations in QGIS
 :material-monitor: Desktop preparation
 
-In QGIS, you have to enable the elements you want to include in your project. To add and configure a decoration for your QField project, you must first enable it.
+In QGIS, you have to enable the elements you want to include in your project. To add and configure a decoration element for your QField project, you must first enable it.
 
 This is done from the main menu:
 **View > Decorations**
@@ -46,7 +46,7 @@ The Title Label adds a title to your map, which, for instance, allows you to dis
 2. Check the **Enable Title Label** box.
 3. You can input static text or, for more powerful results, use a QGIS expression.
 
-With expressions your title can change dynamically.
+With expressions your title can dynamically change.
 Click the **Insert or Edit an Expression...** button to open the expression builder.
 A common use case is to display the project's title, which is set in the **Project > Properties... > General** tab.
 
@@ -57,7 +57,7 @@ A common use case is to display the project's title, which is set in the **Proje
 
 **Example of a more complex title:**
 
-You can combine static text with variables and functions to create an even more descriptive title.
+You can combine static text with variables and functions to create a more detailed title.
 
 Code snippet
 
