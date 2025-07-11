@@ -54,7 +54,7 @@ This is useful when a QFieldCloud project should be used as a basemap.
 ### How to Set a Default Project
 
 1. In the welcome screen **Recent Projects** list.
-2. **Long press** on the project you wish to set as your default basemap.
+2. **Press long** on the project you wish to set as your default basemap.
 3. From the context menu that appears, select **Set as Default Project**.
 
 !![](../assets/images/default_project_selection.png,300px)
