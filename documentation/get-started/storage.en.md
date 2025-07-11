@@ -7,7 +7,7 @@ tx_slug: documentation_get-started_storage_qfield
 
 On the QField homescreen, users are presented with two options to open a project.
 
--  **QFieldCloud projects**: The first option is to [access a project stored on QFieldCloud](../get-started/)
+- **QFieldCloud projects**: The first option is to [access a project stored on QFieldCloud](../get-started/tutorials/get-started-qfc.md)
 How to set up and work with QFieldCloud is explained in the next chapter.
 - **Open local file**: The second option involves copying a working copy of the QGIS project file from a laptop or PC (the source device) to the phone or tablet (the target device).
 On the target device, users can access and edit this local copy using QField and eventually copy the edited version back to the desktop or to an alternative cloud storage service.
@@ -58,7 +58,7 @@ This saves the project file, with the .qgs extension into the GeoPackage as well
 ![type:video](https://player.vimeo.com/video/969846267)<!-- markdown-link-check-disable-line -->
 *Package QGIS Project into GeoPackage*
 
-For more information, consult the QGIS documentation  [packaging layers](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/database.html#package-layers).
+For more information, consult the QGIS documentation  [packaging layers](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/database.html#package-layers).
 
 ## Copying project over to the QField target device
 
@@ -135,19 +135,19 @@ After accessing and manipulating the project files in QField, use AirDrop on the
 
 Apart from using QFieldCloud, QField can open projects and datasets in four ways:
 
-* [importing a project folder](#importing-a-project-folder-android-and-ios) <img src="../assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="../assets/images/apple_logo.svg.png" alt="apple" width="14" height="14">
+* [importing a project folder](#importing-a-project-folder-android-and-ios) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14"><!-- markdown-link-check-disable-line -->
 
-* [importing a compressed project](#importing-a-compressed-project-android-only) <img src="../assets/images/android_robot.svg.png" alt="android" width="16" height="16">
+* [importing a compressed project](#importing-a-compressed-project-android-only) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"><!-- markdown-link-check-disable-line -->
 
-* [importing from a URL](#importing-from-a-url-android-and-ios) <img src="../assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="../assets/images/apple_logo.svg.png" alt="apple" width="14" height="14">
+* [importing from a URL](#importing-from-a-url-android-and-ios) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14"><!-- markdown-link-check-disable-line -->
 
-* [importing individual datasets](#importing-individual-datasets-android-only) <img src="../assets/images/android_robot.svg.png" alt="android" width="16" height="16">
+* [importing individual datasets](#importing-individual-datasets-android-only) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"><!-- markdown-link-check-disable-line -->
 
 !![QField import actions](../assets/images/storage-import-actions.png)
 
 On Android all of these actions are available by clicking on the ‘import (+) button‘ located on the bottom-right corner of the project/dataset picker screen, which can be accessed by clicking on the ‘Open local files’ button located in QField‘s welcome screen.
 
-<img src="../assets/images/get-started-storage-add-files.png" alt="add-files" height="500" width="250"> <img src="../assets/images/get-started-storage-local-file-2.png" alt="add-files" height="500" width="250">
+<img src="/assets/images/get-started-storage-add-files.png" alt="add-files" height="500" width="250"> <img src="/assets/images/get-started-storage-local-file-2.png" alt="add-files" height="500" width="250"><!-- markdown-link-check-disable-line -->
 
 On iOS, the only action available through the 'import (+) button' is to import from a URL.
 
@@ -240,7 +240,7 @@ To do this, within your project:
 
 1. Direct to the folder icon with the wheel via the side-dashboard to opem the project folder.
 
-!![](../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png,200px)
+!![](../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png,400px)
 
 3. Inside this project folder, you will find your project files. Offline layers will be stored in a file named 'data.gpkg'.
 You can also export your attached files (Photos, Audio, Video, etc).
