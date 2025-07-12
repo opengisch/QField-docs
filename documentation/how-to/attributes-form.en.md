@@ -53,42 +53,39 @@ By enabling the [Drag and Drop Designer](https://docs.qgis.org/latest/en/docs/us
 ## Configure a Relation Widget
 :material-monitor: Desktop preparation
 
-For detailed information on setting up data layer relationships in QGIS, please refer to the [Setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) QGIS documentation.
-To then control how many related items are shown in QField, see the instructions for Configuring [Maximum items visibility for QField](../get-started/tutorials/get-started-qfs.md#configuring-maximum-items-visibility-for-qfield).
+For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) QGIS documentation.
+To further control the visibility and number of related items shown in QField, see the instructions for configuring [Maximum items visibility for QField](../get-started/tutorials/get-started-qfs.md#configuring-maximum-items-visibility-for-qfield).
 
 !![](../assets/images/relation_editor_widget_list.png)
 
 The relation widget shows all the referencing child features in a list.
-It is possible to add, delete and open them.
+If enabled, it is possible to add, delete and open them.
 
-The visual identification of the list entries are done via the *Display Expression* of the child layer.
+The visual identification of the list entries is done via the *Display Expression* of the child layer.
 
 ### Key handling
 
-Since the parent's primary keys are used as foreign keys in the referencing child features, these primary keys must be safe to use even after synchronizing back to the original data.
-Therefore we recommend to use stable values such as UUIDs for primary keys.
+Since the parent primary key is used as foreign key in the referencing child features, the primary key must be safe to use (it must be unique) also after syncronizing back to the desktop.
+Therefore it is recommended to use UUIDs for primary keys.
+See [Working with Geopackages](../get-started/tutorials/advanced-setup-qfc/#working-with-geopackages for further information.
 It is possible to already add children from a parent that is about to be added.
 This possibility will be blocked if there is no valid primary key on the parent or the constraints are violated.
 In case the adding of the parent feature is canceled after some children have been added already, the children are deleted as well.
 
 ### Many-To-Many relations
 
-On many-to-many relationships, according to the cardinality setting in
-the *QGIS Vector Layer Properties*, on adding, deleting or opening an
-entry in the list effects directly the child layer (on direct
-cardinality) or the linking table (on many-to-one cardinality).
+On many-to-many relationships, according to the cardinality setting in the *QGIS Vector Layer Properties*, on adding, deleting or opening an
+entry in the list effects directly the child layer (on direct cardinality) or the linking table (on many-to-one cardinality).
 
-The second case is usually used when there are additional relation
-information (e.g. percentage) in the linking table.
+The second case is usually used when there are additional relation information (e.g. percentage) in the linking table.
 
 !![](../assets/images/relation_widget_cardinality.png)
 
-In case of the many-to-one cardinality on many-to-many relations the
-*Display Expression* needs to be set on the linking table.
+In case of the many-to-one cardinality on many-to-many relations the *Display Expression* needs to be set on the linking table.
 
 ### Configuring Ordered Relations for QGIS and QField
 
-The **Ordered Relation Editor** widget enables reordering of linked child features based on a specific ordering field.
+The **Ordered Relation Editor** widget allows the reordering of linked child features based on a specific field.
 
 #### 1. Install the Plugin
 
@@ -104,22 +101,22 @@ In the **Relation** widget type dropdown, select **Ordered Relation Editor**. Th
 
 - **Ordering Field**: Specify the field in the child layer that will be used to determine the order of the features.
 
-- **Description**: Define an expression to display descriptive text for each child feature in the list.
+- **Description**: Define an expression to be displayed for each child feature in the list.
 
 - **Image Path (Optional)**: Provide a path to an image or icon to visually enhance the list. This is an expression that resolves dynamically.
 
 !![Widget configuration in QGIS](../assets/images/ordered_relation_widget_configuration.png)
 
-!![QField](../assets/images/ordered_relation_widget.webp)
+!![QField](../assets/images/ordered_relation_widget.webp,400px)
 
-### Item Threshold Configuration for Value Map Editor Widgets
+### Configuring an item threshold for Value Map Editor Widgets
 
 To enhance the user experience within QField, it is possible to control the item threshold at which point the value map editor widgets switch to a toggle buttons interface.
 This feature allows users to quickly access items in QField when there are few and providing a more intuitive interface when dealing with a large number of items.
 
-#### To Activate Toggle Button Interface
+#### To activate the Toggle Button Interface:
 
-1. Open **Layer Properties** by right-clicking on the desired layer and selecting 'Properties' from the context menu.
+1. Open **Layer Properties** by right-clicking on the desired layer and selecting 'Properties' from the menu.
 
 2. Navigate to the **QField** tab located within the Layer Properties dialog.
 
@@ -132,11 +129,10 @@ Enter the preferred threshold value according to your needs.
 
 !![QField Value Map Editor as Buttons](../assets/images/qfield-value-map-editor-buttons.png,300px)
 
-## Configure Attachment Widget
+## Configuring the Attachment Widget
 :material-monitor: Desktop preparation
 
-The widget type *Attachment* is used with fields that store the path
-to files.
+The widget type *Attachment* is used with fields that store the path to files.
 
 It can be used to:
 
@@ -151,22 +147,20 @@ It can be used to:
 
 !![Form attachment video](../assets/images/attachement-setting-video.png)
 
-The path should be set to relative. The pictures, audios, videos, pdf and docs are
-stored then in a sub-directory of the project, where the link stored in
-the textfield is pointing to.
+The path should be set to relative.
+The pictures, audios, videos, pdf's and documents are stored then in a sub-directory of the project, where the link stored in the textfield is pointing to.
 
 !!! note
     QGIS 3.30 or newer is required for the audio and video functionality
 
-In QField the attachments are displayed. By clicking the icons symbol the camera or audio record is started to update the pictures, videos or audios with a new media.
+In QField the attachments are displayed.
+By clicking the icons symbol the camera or audio record is started to update the pictures, videos or audios with a new media.
 
 !![Media](../assets/images/attachments-qfield-media.png,300px)
 
-On synchronization the sub-directory with the pictures, videos audios, pdf and docs has to be copied as well.
+On synchronization the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
 
-The option *hyperlink* on the attachment widget will disable the
-camera functionality and enable a hyperlink to open a document (pdf,
-doc, \...).
+The option *hyperlink* on the attachment widget will disable the camera functionality and enable a hyperlink to open a document (pdf, doc, \...).
 
 ![](../assets/images/hyperlink_option.png)
 
