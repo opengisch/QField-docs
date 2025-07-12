@@ -6,7 +6,8 @@ tx_slug: documentation_reference_data-format
 # Supported Data Formats
 
 QField supports a wide variety of formats via QGIS data providers and
-GDAL. This page offers a non-exhaustive list of supported data formats.
+GDAL.
+This page offers a non-exhaustive list of supported data formats.
 
 | Data Format | Support          | Notes                    |
 |-------------|------------------|--------------------------|
@@ -48,25 +49,27 @@ gdal_translate raster.tif raster_cog.tif -of COG -co BLOCKSIZE=512 -co COMPRESS=
 
 ### Advanced examples with COG
 
-If you have several files to assemble, first, you need to create a VRT files with QGIS or trough following commands to index all TIF files inside a directory.  Make sure you adjust `EPSG:2056` to your desired CRS.
+If you have several files to assemble, first, you need to create a VRT file with QGIS or through following commands to index all TIF files inside a directory.  Make sure you adjust `EPSG:2056` to your desired CRS.
 
 ``` bash
 gdalbuildvrt raster_mosaic.vrt TIF_Directory/*.tif -addalpha -hidenodata -a_srs EPSG:2056
 ```
 
-Then convert VRT file to COG.
+Then convert the VRT file to COG.
 
 ``` bash
 gdal_translate raster_mosaic.vrt raster_cog.tif -of COG -co BLOCKSIZE=512 -co COMPRESS=JPEG -co QUALITY=75 -co BIGTIFF=YES
 ```
 
-If the raster data is too low quality, adjust the compression level and set QUALITY=85.
+If the data quality of the raster data is too low, adjust the compression level and set QUALITY=85.
 
 Some extra parameters can be set :
 
-- `a_srs` can be used also in gdal_translate command when CRS is not define in the source raster dataset.
-- `OVERVIEW_RESAMPLING` offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.
-- `NUM_THREADS` will help you to balance between use all your CPU resources or only part. Set ALL_CPUS or define the number of thread you want to use.
+- `a_srs` can also be used in gdal_translate command when the CRS is not defined in the source raster dataset.
+- `OVERVIEW_RESAMPLING` offer different renderer when zooming out.
+The default value is NEAREST but you can try also BILINEAR or AVERAGE.
+- `NUM_THREADS` will help you to balance between use all your CPU resources or only part.
+Set ALL_CPUS or define the number of thread you want to use.
 
 Combining all extra parameters, command line may look like this :
 
