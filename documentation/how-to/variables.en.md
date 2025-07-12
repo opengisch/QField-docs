@@ -39,7 +39,7 @@ When you access the variables list in QField ( Settings > Variables ), you will 
 
 To configure a device-specific variable, follow these steps:
 
-1. Open **Settings** in QField (Legend > ... > Settings).
+1. Open **Settings** in QField.
 2. Navigate to the **Variables** tab.
 
 Here you will see a list of all variables currently applicable to your project.
