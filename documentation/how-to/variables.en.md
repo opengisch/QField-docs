@@ -22,7 +22,9 @@ QField users can edit those variables, with modified values remembered across se
 
 ## Global Variables
 
-Global variables can be added or modified once and will be injected into all projects opened in QField across sessions. Global variables can be used to add a unique identifier across a fleet of QField devices for example, or determine the language for a given QField user. Since they are not bound to specific projects and are defined locally, they make for a great way to customize experience for multiple users sharing the same projects.
+Global variables can be added or modified once and will be injected into all projects opened in QField across sessions.
+Global variables can be used to add a unique identifier across a fleet of QField devices for example, or determine the language for a given QField user.
+Since they are not bound to specific projects and are defined locally, they make for a great way to customize experience for multiple users sharing the same projects.
 
 ## Variable Management in QField
 
@@ -43,13 +45,6 @@ To add a new variable:
 
 1. Click on *Add a new variable* at the bottom of the variable list.
 2. Enter the name and value for your new variable.
-
-The list is sorted to ensure that the most relevant variables are easily accessible:
-
-1. **Project Variables:** All variables from the current QGIS project are displayed at the top.
-These are the variables you are most likely to interact with for project-specific configurations.
-2. **Editable Device-Specific Variables:** Your custom, device-specific variables appear next.
-3. **Global Variables:** Pre-defined, read-only system variables are listed at the bottom.
 
 !![Configuration of editable variables in addition to the
 pre-defined system variables.](../assets/images/configure_global_variables.png, 400px)
