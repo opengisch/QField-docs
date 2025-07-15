@@ -30,7 +30,7 @@ This comes with the cost of rendering precision.
 
 ### Show digitizing information
 
-When switched on, coordinate information, such as latitude and longitude, is overlayed onto the map while digitizing new features or usting measure tool.
+When switched on, coordinate information, such as latitude and longitude, is overlaid onto the map while digitizing new features or using measure tool.
 
 ### Fast editing mode
 
@@ -52,7 +52,7 @@ If disabled, the mouse will act as a stylus pen.
 
 ### Customize search bar
 
-When pressing the three dots under the general settings section, a new window will open from which you can personalise your search options.
+When pressing the three dots under the general settings section, a new window will open from which you can personalize your search options.
 
 #### Features from active layer
 
@@ -76,7 +76,7 @@ If disabled, you can still access this option by typing go at the start of your 
 
 #### Spatial bookmarks
 
-By enablig this option you automatically when using the search bar, the list of pre-configured bookmarks (if any) will be queried.
+By enabling this option you automatically when using the search bar, the list of pre-configured bookmarks (if any) will be queried.
 If disabled, you can still access this option by typing **b** at the front of your query.
 
 #### Calculator
@@ -85,6 +85,7 @@ By enabling this option, you can do simple calculations and copy the results dir
 If disabled, the calculator can still be accessed by typing **=** in the front of the query.
 
 #### QField Documentation
+
 If enabled it will return the corresponding documentation pages matching terms.
 When disabled the documentation can still be queried by putting a '?' in the beginning of the query.
 
@@ -114,6 +115,7 @@ To preserve the use, you can change the time when you want your phone to dim the
 When setting it to *0* the dimming will be disabled completely.
 
 ### Appearance
+
 Depending on your preference, you can change the QField interface to *Light* or *Dark* Mode.
 
 ### User interface font size
@@ -124,12 +126,14 @@ You can choose from the following options:
 - Normal
 - Large
 - Extra-large
+
 ### User interface language
 
 QField will by default utilize the language present on your device, if a translation is available.
 You are cordially invited to enhance the translation in your native language.
 
 [Translate the app](https://explore.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->
+
 ## Advanced
 
 ### Use native camera
@@ -140,7 +144,6 @@ QField has an own internal camera, which provides quite a few options if desirab
 - Details stamping
 - Size and ration adjustment
 - Camera selection - front and back
-
 
 !!! Background information
     If enabled, QField will use the system specific internal camera of the device.
