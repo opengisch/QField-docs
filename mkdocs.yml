@@ -95,13 +95,13 @@ nav:
       - how-to/pg-service.md
       - how-to/plugins.md
       - how-to/processing.md
-      - how-to/troubleshoot.en.md
   - Technical reference:
       - reference/index.md
       - reference/data-format.md
       - reference/exif.md
       - reference/expression_variables.md
       - reference/plugins.md
+      - reference/troubleshoot.en.md
       - QFieldCloud:
           - reference/qfieldcloud/workflow.md
           - reference/qfieldcloud/concepts.md
