@@ -98,34 +98,25 @@ To add a new plugin see the [Plugins Page](../how-to/plugins.md/#qfield-plugins)
 
 By switching on "Maximized attribute form" it will maximize the attribute form.
 
-## Fixed scale navigation
+### Fixed scale navigation
 
 When fixed scale navigation is active, focusing on a search result will pan to the feature.
-With fixed scale navigation disabled, it will pan and zoom to feature.
+With fixed scale navigation disabled, it will pan and zoom to the feature.
 
-## Use native camera
+### Automatically open form for single feature identification
 
-If disabled, QField will use a minimalist internal camera instead of the camera app on the device.
-Tip: Disable this option to have geo tagged photos and have access to the [EXIF](../reference/exif.md) variables.
+Sometimes it can be helpful to immediately open the attribute form of an individual selected feature.
+When enabling this option, when tapping on an individual feature while being in the *browse mode*, the attribute form will directly be opened.
 
-## Send anonymized metrics
+### Dim screening when idling
 
-If enabled, anonymized metrics will be collected and sent to help improve QField for everyone.
+To preserve the use, you can change the time when you want your phone to dim the screen when being inactive on QField.
+When setting it to *0* the dimming will be disabled completely.
 
-## Dim screen when idling
+### Appearance
+Depending on your preference, you can change the QField interface to *Light* or *Dark* Mode.
 
-Time of inactivity in seconds before the screen brightness get to be dimmed to preserve the battery.
-Set to 0 to disable dim screen.
-
-## User interface appearance
-
-You can choose from three options:
-
-- Follow system appearance
-- Light theme
-- Dark theme
-
-## User interface font size
+### User interface font size
 
 You can choose from the following options:
 
@@ -133,22 +124,29 @@ You can choose from the following options:
 - Normal
 - Large
 - Extra-large
-
-## User interface language
+### User interface language
 
 QField will by default utilize the language present on your device, if a translation is available.
 You are cordially invited to enhance the translation in your native language.
 
 [Translate the app](https://explore.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->
+## Advanced
 
-You can also pick a different language from the drop-down menu.
+### Use native camera
 
-## Map canvas rendering quality
+QField has an own internal camera, which provides quite a few options if desirable:
 
-You can choose from three options:
+- Geotagging and [EXIF variables](../reference/exif.md)
+- Details stamping
+- Size and ration adjustment
+- Camera selection - front and back
 
-- Best quality
-- Lower quality
-- Lowest quality
 
-A lower quality trades rendering precision in favor of lower memory usage and rendering time.
+!!! Background information
+    If enabled, QField will use the system specific internal camera of the device.
+    Unless errors occur when using the QField specific camera, it is recommended to use the one from QField.
+
+### Send anonymized metrics
+
+If enabled, anonymized metrics will be collected and sent to help improve QField for everyone.
+No personal account data will be sent to the QField development team.
