@@ -7,6 +7,8 @@ tx_slug: documentation_reference_plugins
 
 This page is a collection of QField plugin framework APIs and behaviors to guide you into writing your own plugins.
 
+To see what's possible and get inspiration from the community, you can browse a list of all available plugins on the [QField Plugin Topic on GitHub](https://github.com/topics/qfield-plugin).
+
 ## Hello QField World
 
 Scripting QField plugins require basic knowledge of QML and Javascript. Qt offers a useful [introductory tutorial](https://doc.qt.io/qt-6/qml-tutorial.html) worth reading.
