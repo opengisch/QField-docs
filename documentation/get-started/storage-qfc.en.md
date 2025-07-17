@@ -33,6 +33,20 @@ If the billing information is incomplete, at any time it is possible to finish f
 
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
 
+### **Understanding Active User Billing for Organization Plans**
+
+The total cost of your billing cycle for an Organization plan is influenced by the number of active users exceeding the initial two required for the plan subscription.
+
+An "active user" is defined as any individual who has performed a job within any project under the organization. This activity can be originated from either QGIS or the QField mobile application.
+
+To review a detailed list of your organization's active users for the current billing period, you can follow this steps:
+
+1. Navigate to your **Organization Settings**.
+2. Select the **Billing** section.
+3. Within the "Active users" area, click on the **"View user list"** link.
+
+!![](../assets/images/listing_qfieldcloud_active_users.png)
+
 ## Adding QFieldCloud storage
 
 QFieldCloud allows you to configure as much storage as you need for your project.
