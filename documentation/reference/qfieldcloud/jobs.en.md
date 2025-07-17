@@ -7,9 +7,11 @@ tx_slug: documentation_reference_qfieldcloud_jobs
 
 Jobs on QFieldCloud perform heavy operation with project files and layers within QGIS. Jobs are created in response to certain user actions.
 
-Once a job is created, it is added to the project's job queue and waits for available QFieldCloud resources to run. At any given moment only one job can run per project. The rest of the queued jobs will perform in the same order as in they entered the queue.
+Once a job is created, it is added to the project's job queue and waits for available QFieldCloud resources to run.
+At any given moment only one job can run per project. The rest of the queued jobs will perform in the same order as in they entered the queue.
 
-Each job consists of one or more steps and each step is responsible for one self contained task on the project. QFieldCloud supports three predefined job workflows: `process_projectfile`, `package` and `delta_apply`.
+Each job consists of one or more steps and each step is responsible for one self contained task on the project.
+QFieldCloud supports three predefined job workflows: `process_projectfile`, `package` and `delta_apply`.
 
 While running, jobs are writing log messages which are available on project's jobs page for jobs that have reached a final status `FINISHED` or `FAILED`.
 
