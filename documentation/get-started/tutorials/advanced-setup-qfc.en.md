@@ -238,6 +238,22 @@ For the old (QGIS) offliner:
 !!! note
     This configuration must be set in the Settings page of each project in [QFieldCloud](https://app.qfield.cloud/).
 
+## On-Demand Attachment Downloads
+
+For projects with many attachment files, you can enable on-demand downloading in QField.
+This is useful for saving storage space on field devices and reducing data transfer over limited network connections.
+
+To enable this feature:
+
+1. Navigate to your project on the QFieldCloud web platform.
+2. Open the project's **Settings** tab.
+3. Enable the **On demand attachment files download** option.
+
+!!! note
+    This feature can be activated during project creation or enabled at any time for existing projects.
+
+!![](../../assets/images/activating_on_demand_attachments_download.png)
+
 ## Connect to a custom QFieldCloud server in QField and QFieldSync
 
 QField and QFieldSync connect to the QFieldCloud service on [app.qfield.cloud](https://app.qfield.cloud/) by default.
