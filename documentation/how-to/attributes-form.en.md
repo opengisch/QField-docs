@@ -15,8 +15,7 @@ QGIS field widgets are supported on a best-effort basis and optimized for mobile
 | Check Box          | :material-check: |                                                                                                                                                                                                        |
 | Value Map          | :material-check: |                                                                                                                                                                                                        |
 | Hidden             | :material-check: |                                                                                                                                                                                                        |
-| Attachment         | :material-check: | This field is combined with camera integration.
-It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#configurable-attachment-path) |
+| Attachment         | :material-check: | This field is combined with camera integration. <br> It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#configurable-attachment-path) |
 | Date Time          | :material-check: |                                                                                                                                                                                                        |
 | Range              | :material-check: |                                                                                                                                                                                                        |
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
@@ -28,9 +27,9 @@ It is also able to open other files like pdf and doc (if you have an appropriate
 
 ## Attribute form configuration
 
-In order to customise the attribute form, it is necessary to use the drag and drop designer in QGIS or to a use pre-written UI file.
+In order to customize the attribute form, it is necessary to use the drag and drop designer in QGIS or to a use pre-written UI file.
 Like for QGIS you can make use of powerful expressions to populate the different fields.
-Additionally, to the ones available there are [QFieldCloud specific variables](../reference/expression_variables.md#qfieldcloud), which can be utilised inside the attribute form.
+Additionally, to the ones available there are [QFieldCloud specific variables](../reference/expression_variables.md#qfieldcloud), which can be utilized inside the attribute form.
 
 ### Editable
 
@@ -254,7 +253,7 @@ When creating expressions for projects intended to be used with QField, it is re
 ### Additional variables
 
 For more information regarding storing information related to your
-position in object attributes, refer to the deticated
+position in object attributes, refer to the dedicated
 [GNSS documentation](./gnss.md).
 
 For QFieldCloud users, two variables can be used in expressions including attribute form's default values:

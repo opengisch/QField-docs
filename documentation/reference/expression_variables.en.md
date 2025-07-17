@@ -24,7 +24,7 @@ These variables are commonly used in default values expressions to track the qua
 In case you are connecting to an external positioning device, it is possible to interchange the `@position_*` variable with the `@gnss_*` variable to directly connect its position instead.
 
 !!! Watch out
-  Make sure that your positioning is enabled, otherwise the fields will not be populated.
+    Make sure that your positioning is enabled, otherwise the fields will not be populated.
 
 ### List of Positioning and GNSS Variables
 
@@ -42,7 +42,8 @@ If the position is manually set and not snapped to the cursor, the source name i
 - `@position_orientation` - The orientation of the device itself, regardless of its movement, relative to true north (from 0° to 359°).
 - `@position_ground_speed` - Groundspeed (in m/s), as reported by the sensor.
 
-- `@position_magnetic_variation` - The angle between the magnetic field's horizontal component and true north (magnetic declination). A positive value indicates a clockwise direction from true north; a negative value indicates counter-clockwise.
+- `@position_magnetic_variation` - The angle between the magnetic field's horizontal component and true north (magnetic declination).
+A positive value indicates a clockwise direction from true north; a negative value indicates counter-clockwise.
 - `@position_vertical_accuracy` - The vertical accuracy of the coordinate (in meters), as reported by the sensor.
 
 - `@position_3d_accuracy` - The three-dimensional accuracy of the coordinate (in meters), as reported by the sensor.
@@ -69,12 +70,10 @@ If the position is manually set and not snapped to the cursor, the source name i
 
 ### Example
 
-While being in the field it may happen that the GNSS receiver fails and you wish to fall back to your internal positioning. You can configure your attribute field in such a way that it will exactly do that. Simply use the expression *coalesce()*
+While being in the field it may happen that the GNSS receiver fails and you wish to fall back to your internal positioning. You can configure your attribute field in such a way that it will exactly do that. Simply use the expression `coalesce()`
 
 !!! example
     `coalesce(@gnss_horizontal_accuracy, @position_horizontal_accuracy)`
-
-
 
 !!! info
     - I: Internal position source, E: External (NMEA) position source.
