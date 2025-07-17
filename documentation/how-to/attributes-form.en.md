@@ -15,7 +15,8 @@ QGIS field widgets are supported on a best-effort basis and optimized for mobile
 | Check Box          | :material-check: |                                                                                                                                                                                                        |
 | Value Map          | :material-check: |                                                                                                                                                                                                        |
 | Hidden             | :material-check: |                                                                                                                                                                                                        |
-| Attachment         | :material-check: | This field is combined with camera integration. It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#configurable-attachment-path) |
+| Attachment         | :material-check: | This field is combined with camera integration.
+It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#configurable-attachment-path) |
 | Date Time          | :material-check: |                                                                                                                                                                                                        |
 | Range              | :material-check: |                                                                                                                                                                                                        |
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
@@ -24,6 +25,12 @@ QGIS field widgets are supported on a best-effort basis and optimized for mobile
 | UUID Generator     | :material-check: |                                                                                                                                                                                                        |
 | QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
 | Others             | :material-close: | [Funding](../get-started/support.md#development-and-custom-apps)                                                                                                                                      |
+
+## Attribute form configuration
+
+In order to customise the attribute form, it is necessary to use the drag and drop designer in QGIS or to a use pre-written UI file.
+Like for QGIS you can make use of powerful expressions to populate the different fields.
+Additionally, to the ones available there are [QFieldCloud specific variables](../reference/expression_variables.md#qfieldcloud), which can be utilised inside the attribute form.
 
 ### Editable
 
@@ -63,31 +70,23 @@ The visual identification of the list entries are done via the *Display Expressi
 
 ### Key handling
 
-Since the parent's primary keys are used as foreign keys in the
-referencing child features, these primary keys must be safe to use even
-after synchronizing back to the original data. Therefore we
-recommend to use stable values such as UUIDs for primary keys.
+Since the parent's primary keys are used as foreign keys in the referencing child features, these primary keys must be safe to use even after synchronizing back to the original data.
+Therefore we recommend to use stable values such as UUIDs for primary keys.
 
-It is possible to already add children from a parent that is about to be
-added. This possibility will be blocked if there is no valid primary key
-on the parent or the constraints are violated. In case the adding of the
-parent feature is canceled after some children have been added already,
-the children are deleted as well.
+It is possible to already add children from a parent that is about to be added.
+This possibility will be blocked if there is no valid primary key on the parent or the constraints are violated.
+In case the adding of the parent feature is canceled after some children have been added already, the children are deleted as well.
 
 ### Many-To-Many relations
 
-On many-to-many relationships, according to the cardinality setting in
-the *QGIS Vector Layer Properties*, on adding, deleting or opening an
-entry in the list effects directly the child layer (on direct
-cardinality) or the linking table (on many-to-one cardinality).
+On many-to-many relationships, according to the cardinality setting in the *QGIS Vector Layer Properties*, on adding, deleting or opening an
+entry in the list effects directly the child layer (on direct cardinality) or the linking table (on many-to-one cardinality).
 
-The second case is usually used when there are additional relation
-information (e.g. percentage) in the linking table.
+The second case is usually used when there are additional relation information (e.g. percentage) in the linking table.
 
 !![](../assets/images/relation_widget_cardinality.png)
 
-In case of the many-to-one cardinality on many-to-many relations the
-*Display Expression* needs to be set on the linking table.
+In case of the many-to-one cardinality on many-to-many relations the *Display Expression* needs to be set on the linking table.
 
 ### Configuring Ordered Relations for QGIS and QField
 

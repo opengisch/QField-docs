@@ -28,8 +28,7 @@ In case you are connecting to an external positioning device, it is possible to 
 
 ### List of Positioning and GNSS Variables
 
-**Note**: in order for the positioning variable to be available is when the crosshair is snapped to the sensor.
-#### Most regular ones
+**Note**: In order for the positioning variable to be available is when the crosshair is snapped to the sensor.
 
 - `@position_source_name` - The name of the device providing the location information, as reported by the sensor.
 If the position is manually set and not snapped to the cursor, the source name is "manual".
@@ -67,6 +66,15 @@ If the position is manually set and not snapped to the cursor, the source name i
 - `@position_imu_pitch` - The pitch value of an active IMU device providing positioning corrections.
 - `@position_imu_heading` - The heading value of an active IMU device providing positioning corrections.
 - `@position_imu_steering` - The steering value of an active IMU device providing positioning corrections.
+
+### Example
+
+While being in the field it may happen that the GNSS receiver fails and you wish to fall back to your internal positioning. You can configure your attribute field in such a way that it will exactly do that. Simply use the expression *coalesce()*
+
+!!! example
+    `coalesce(@gnss_horizontal_accuracy, @position_horizontal_accuracy)`
+
+
 
 !!! info
     - I: Internal position source, E: External (NMEA) position source.
