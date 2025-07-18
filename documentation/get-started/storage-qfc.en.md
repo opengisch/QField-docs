@@ -35,7 +35,7 @@ All pricing information is available <a href="https://qfield.cloud/pricing" targ
 
 ## Adding QFieldCloud storage
 
-QFieldCloud allows you to configure as much storage as you need for your project.
+QFieldCloud allows you to configure as much storage as you need for your project. Storage is provided on 3GB packages, each costing 5€.
 
 To add more storage to QFieldCloud *Settings > Billing > Subscription > Change > Update storage*
 
