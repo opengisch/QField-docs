@@ -82,7 +82,8 @@ You can find more information on [QFieldCloud technical reference](../../referen
 
 ## Restricting Project Files Modification to Administrators
 
-For enhanced project management, QFieldCloud allows project owners to restrict modifications of critical project files to **administrators only**. This prevents accidental or unauthorized changes to the core project structure and styling by other users.
+To prevent any modification to the core QGIS project file, **the project administrators** can restrict the access to these files.
+This can be achieved under the settings section in QFieldCloud.
 
 ### Restricted Files
 
@@ -95,7 +96,9 @@ When enabled, the following files can only be modified or uploaded by a user wit
 
 ### How to Enable Restriction
 
-This feature is controlled by a setting within your project on QFieldCloud. By enabling the **`Restrict project files`**, you activate this administrative control. Once set, only administrators will be able to push changes to the files listed above. Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.
+By enabling the **`Restrict project files`**, you activate this administrative control.
+Once set, only administrators will be able to push changes to the files listed above.
+Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.
 
 !![](../../assets/images/restric_qfc_project_files.png)
 
