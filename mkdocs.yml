@@ -64,7 +64,6 @@ nav:
       - get-started/license.md
       - get-started/contribute.md
       - get-started/how-to-contribute-translation.md
-      - get-started/third-part-tutorials.md
   - How-to guides:
       - how-to/index.md
       - how-to/projects.md
@@ -78,6 +77,7 @@ nav:
       - how-to/standalone-datasets.md
       - how-to/map-styling.md
       - how-to/map-themes.md
+      - how-to/decorations.md
       - how-to/gnss.md
       - how-to/geofencing.md
       - how-to/navigation.md
@@ -101,6 +101,7 @@ nav:
       - reference/exif.md
       - reference/expression_variables.md
       - reference/plugins.md
+      - reference/troubleshoot.en.md
       - QFieldCloud:
           - reference/qfieldcloud/workflow.md
           - reference/qfieldcloud/concepts.md

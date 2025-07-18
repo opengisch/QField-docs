@@ -7,11 +7,15 @@ tx_slug: documentation_reference_plugins
 
 This page is a collection of QField plugin framework APIs and behaviors to guide you into writing your own plugins.
 
+To see what's possible and get inspiration from the community, you can browse a list of all available plugins on the [QField Plugin Topic on GitHub](https://github.com/topics/qfield-plugin).
+
 ## Hello QField World
 
-Scripting QField plugins require basic knowledge of QML and Javascript. Qt offers a useful [introductory tutorial](https://doc.qt.io/qt-6/qml-tutorial.html) worth reading.
+Scripting QField plugins require basic knowledge of QML and Javascript.
+Qt offers a useful [introductory tutorial](https://doc.qt.io/qt-6/qml-tutorial.html) worth reading.
 
-Once you’ve familiarized yourself with the QML environment, you are set to go. This is a minimal example that will display a toast message upon successfully loading a QField plugin:
+Once you’ve familiarized yourself with the QML environment, you are set to go.
+This is a minimal example that will display a toast message upon successfully loading a QField plugin:
 
 ```
 import QtQuick
@@ -26,7 +30,9 @@ Item {
 
 ## Creating a zipped plugin
 
-A valid zipped plugin must contain a main.qml file at the root of the zip archive, which will be used by QField to activate the plugin. An optional metadata.txt can also be used to provide basic details such as the plugin name, brief description, and author name. A sample typical `metadata.txt` content would look like this:
+A valid zipped plugin must contain a main.qml file at the root of the zip archive, which will be used by QField to activate the plugin.
+An optional metadata.txt can also be used to provide basic details such as the plugin name, brief description, and author name.
+A sample typical `metadata.txt` content would look like this:
 
 ```
 [general]
@@ -40,12 +46,15 @@ This [QField template plugin](https://github.com/opengisch/qfield-template-plugi
 
 ## `iface` interface
 
-Much like QGIS plugins, QField offers an `iface` object exposing a number of functionalities plugins can leverage. The current invokable functions include:
+Much like QGIS plugins, QField offers an `iface` object exposing a number of functionalities plugins can leverage.
+The current invokable functions include:
 
 - `iface.mainWindow()`: returns the QML ApplicationWindow instance, where plugins can parent their items via `iface.mainWindow().contentItem` and have access to functionality such as displaying toast messages using `iface.mainWindow().displayToast(text)`.
 - `iface.mapCanvas()`: returns the map canvas item, which exposes crucial properties including `iface.mapCanvas().mapSettings` from which the extent, scale, etc. can be retrieved and modified.
-- `iface.findItemByObjectName(string)`: returns a item living within the QField application window matching the object name `string`, such as `iface.findItemByObjectName("positionSource")` to reach the positioning item which controls the GNSS device and returns position details. Additional items' object name strings can be found by viewing the [application window QML code](https://github.com/opengisch/QField/blob/master/src/qml/qgismobileapp.qml).
-- `iface.addItemToPluginsToolbar(item)`, `iface.addItemToDashboardActionsToolbar(item)`, `iface.addItemToCanvasActionsToolbar(item)`: adds a given `item` in predefined containers within the QField application window. Using these functions insure that items added by multiple plugins will happily co-exist.
+- `iface.findItemByObjectName(string)`: returns a item living within the QField application window matching the object name `string`, such as `iface.findItemByObjectName("positionSource")` to reach the positioning item which controls the GNSS device and returns position details.
+Additional items' object name strings can be found by viewing the [application window QML code](https://github.com/opengisch/QField/blob/master/src/qml/qgismobileapp.qml).
+- `iface.addItemToPluginsToolbar(item)`, `iface.addItemToDashboardActionsToolbar(item)`, `iface.addItemToCanvasActionsToolbar(item)`: adds a given `item` in predefined containers within the QField application window.
+Using these functions insure that items added by multiple plugins will happily co-exist.
 
 ## Utilities objects
 
@@ -83,7 +92,8 @@ QFieldLocatorFilter {
 }
 ```
 
-The source property refers to a QML source file which will hold the logic to execute searches and pass on results. It will be executed off the main thread to allow for non-blocking result fetching operations.
+The source property refers to a QML source file which will hold the logic to execute searches and pass on results.
+It will be executed off the main thread to allow for non-blocking result fetching operations.
 
 Here's a simple search QML source code:
 
