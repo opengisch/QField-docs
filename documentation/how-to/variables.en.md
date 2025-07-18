@@ -22,7 +22,7 @@ QField users can edit those variables, with modified values remembered across se
 
 ## Global Variables
 
-Global variables can be added or modified once and will be injected into all projects opened in QField across sessions.
+New global variables can be added or modified once and will be injected into all projects opened in QField across sessions.
 Global variables can be used to add a unique identifier across a fleet of QField devices for example, or determine the language for a given QField user.
 Since they are not bound to specific projects and are defined locally, they make for a great way to customize experience for multiple users sharing the same projects.
 
