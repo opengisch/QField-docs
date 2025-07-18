@@ -5,7 +5,7 @@ tx_slug: documentation_get-started_sample-projects
 
 # Sample projects
 
-QField ships with sample projects by default. You can use these projects to explore some of the QField configuration details in QGIS and QFieldSync.
+QField ships sample projects by default. You can use these projects to explore some of the QField configuration details in QGIS and QFieldSync.
 
 These sample projects demonstrate various field data collection workflows and QField features:
 
