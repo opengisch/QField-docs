@@ -1,9 +1,9 @@
 ---
-title: Support
+title: Need Help?
 tx_slug: documentation_get-started_support
 ---
 
-# Support
+# Need Help
 
 ## QFieldCloud Support
 
@@ -17,13 +17,6 @@ If you have a QFieldCloud subscription on [app.qfield.cloud](https://app.qfield.
 As developer of QField and QFieldCloud, [OPENGIS.ch](https://www.opengis.ch/#features) <!-- markdown-link-check-disable-line -->
 provides [training packages](https://www.opengis.ch/qfield-training/)
 and custom commercial [support and development contracts](https://www.opengis.ch/qgis-support/) with SLA. <!-- markdown-link-check-disable-line -->
-
-### Development and Custom Apps
-
-You probably have plenty of ideas for nice features that are not
-implemented yet. Please [contact us](https://www.opengis.ch/#contact) to
-discuss the best approach to integrate this idea into QField or to
-create your own custom app.
 
 ## Community Support
 
