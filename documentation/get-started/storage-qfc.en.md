@@ -5,45 +5,41 @@ tx_slug: documentation_get-started_storage_qfieldcloud
 
 # Plans and Additional Storage
 
-Adding billing information to the account is needed to use QFieldCloud Pro plan or Organization plan as well as
-adding additional storage.
+In case you wish to upgrade to a QFieldCloud **'Pro'** or **'Organization'** plan, your billing information will be required.
+The same applies for additional data storage.
 
 ## Choosing a plan
 
-For a **Pro plan**, follow these steps :
+To upgrade to a **Pro plan**, follow these steps:
 
-1. Click on the username up-right the page
+1. Click on the username at the top-right of the page
 2. Click on "Upgrade to pro"
 3. In the "Subscription" section, click on "Upgrade"
 4. In Pro section, click on "Activate"
-5. Carefully read the "Terms of Service" and agree to the terms of service, then "Proceed"
-6. In the "Billing Address" section, fill up the form, and then click on "Proceed to payment"
+5. Read and accept the "Terms of Service", then "Proceed"
+6. In the "Billing Address" section, fill the required fields and "Proceed to payment"
 
-For an **Organization plan**, follow these steps :
+To upgrade to an **Organization plan**, follow these steps:
 
-1. Click on the username up-right the page
+1. Click on the username at the top-right of the page
 2. Click on "Create organization"
 3. Click on "Create"
-4. Choose a name for your organization with only 150 characters or fewer, letters, digits, and @/./+/-/_
+4. Choose a name for your organization with only less than 150 characters, letters, digits, and @/./+/-/_
 5. Click on "Create"
-6. Choose how much storage is needed
-7. In the "Billing Address" section, fill up the form, and then click on "Proceed to payment"
+6. Select the desired storage
+7. In the "Billing Address" section, fill the required fields and "Proceed to payment"
 
-If the billing information is incomplete, at any time it is possible to finish filling up the form by going to *Billing > Subscription > Finish checkout*
+At anypoint, the billing information can be modified by directing to *Billing > Subscription > Finish checkout*
 
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
 
-### **Understanding Active User Billing for Organization Plans**
+### **Active Users under Organization Plans**
 
-The total cost of your billing cycle for an Organization plan is influenced by the number of active users exceeding the initial two required for the plan subscription.
+An organization requires at least two users.
+The total cost per billing cycle is defined by the number of **active** users.
+An 'active user' corresponds to a member who has performed a 'job' within a project belonging to the organization.
 
-An "active user" is defined as any individual who has performed a job within any project under the organization. This activity can be originated from either QGIS or the QField mobile application.
-
-To review a detailed list of your organization's active users for the current billing period, you can follow this steps:
-
-1. Navigate to your **Organization Settings**.
-2. Select the **Billing** section.
-3. Within the "Active users" area, click on the **"View user list"** link.
+To monitor the number of active users direct to *Organization Settings > Billing > "Active users"*
 
 !![](../assets/images/listing_qfieldcloud_active_users.png)
 
@@ -51,7 +47,7 @@ To review a detailed list of your organization's active users for the current bi
 
 QFieldCloud allows you to configure as much storage as you need for your project.
 
-To add more storage to QFieldCloud *Settings > Billing > Subscription > Change > Update storage*
+To add more storage to QFieldCloud direct to *Settings > Billing > Subscription > Change > Update storage*
 
 !![ Subscription “Change” ](../assets/images/storage-qfc1.png)
 
@@ -59,15 +55,16 @@ To add more storage to QFieldCloud *Settings > Billing > Subscription > Change >
 
 !![ “Additional storage” ](../assets/images/storage-qfc3.png)
 
-## Discontinuing a subscription
+## Cancellation of a subscription
 
-1. If you need to cancel your subscription on QFieldCloud:
-1.1. For **Pro** plan accounts, click on your username, choose "Settings."
-1.2. For **Organization** plan account, click on the name of your Organization, click on "Edit Organization". Note you need to be owner of that Organization.
+1. To cancel any of your subscriptions:
+1.1. For a **Pro** plan account, click on your username and choose "Settings."
+1.2. For an **Organization** plan account, click on the name of your organization and click "Edit Organization".
+**Note**: you need to be owner of that Organization.
 
     ![Enter to setting](../assets/images/discontinuing_service_01_enter_to_setting.png)
 
-2. Proceed to the "Billing" section, click on "Change".
+2. Proceed to the "Billing" section and click on "Change".
 
     ![Enter to billing section](../assets/images/discontinuing_service_02_change_subcription.png)
 
