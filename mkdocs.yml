@@ -49,6 +49,7 @@ nav:
       - get-started/index.md
       - get-started/concepts.md
       - get-started/storage.md
+      - get-started/settings.md
       - Tutorials:
           - QFieldCloud:
               - get-started/tutorials/get-started-qfc.md
@@ -56,14 +57,12 @@ nav:
               - get-started/storage-qfc.md
           - QFieldSync:
               - get-started/tutorials/get-started-qfs.md
-      - get-started/faq.md
-      - get-started/settings.md
       - get-started/sample-projects.md
-      - get-started/support.md
-      - get-started/sponsor.md
-      - get-started/license.md
+      - get-started/help.md
       - get-started/contribute.md
       - get-started/how-to-contribute-translation.md
+      - get-started/license.md
+      - get-started/faq.md
   - How-to guides:
       - how-to/index.md
       - how-to/projects.md
