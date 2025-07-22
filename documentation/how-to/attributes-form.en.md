@@ -25,6 +25,12 @@ QGIS field widgets are supported on a best-effort basis and optimized for mobile
 | QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
 | Others             | :material-close: | [Funding](../get-started/contribute.md#feature-sponsoring)                                                                                                                                      |
 
+## Attribute form configuration
+
+In order to customize the attribute form, it is necessary to use the drag and drop designer in QGIS or to a use pre-written UI file.
+Like for QGIS you can make use of powerful expressions to populate the different fields.
+Additionally, to the ones available there are [QFieldCloud specific variables](../reference/expression_variables.md#qfieldcloud), which can be utilized inside the attribute form.
+
 ### Editable
 
 The *editable* flag of fields is respected.
@@ -64,9 +70,11 @@ The visual identification of the list entries is done via the *Display Expressio
 
 ### Key handling
 
+
 Since the parent primary key is used as foreign key in the referencing child features, the primary key must be safe to use (it must be unique) also after syncronizing back to the desktop.
 Therefore it is recommended to use UUIDs for primary keys.
 See [Working with Geopackages](../get-started/tutorials/advanced-setup-qfc/#working-with-geopackages for further information.
+
 It is possible to already add children from a parent that is about to be added.
 This possibility will be blocked if there is no valid primary key on the parent or the constraints are violated.
 In case the adding of the parent feature is canceled after some children have been added already, the children are deleted as well.
