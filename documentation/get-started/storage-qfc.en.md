@@ -29,7 +29,7 @@ To upgrade to an **Organization plan**, follow these steps:
 6. Select the desired storage
 7. In the "Billing Address" section, fill the required fields and "Proceed to payment"
 
-At anypoint, the billing information can be modified by directing to *Billing > Subscription > Finish checkout*
+At any point, the billing information can be modified by directing to *Billing > Subscription > Finish checkout*
 
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
 
