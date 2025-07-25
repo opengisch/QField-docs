@@ -39,7 +39,7 @@ When you access the variables list in QField ( *Settings > Variables* ), you wil
 
 :material-tablet: Fieldwork
 
-To configure a applicaton-specific variable, follow these steps:
+To configure a application-specific variable, follow these steps:
 
 1. Open **Settings** in QField.
 2. Navigate to the **Variables** tab.
