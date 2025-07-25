@@ -100,6 +100,42 @@ Information about location and direction of the pictures will therefore be baked
     While with older Android versions it was possible to use other apps like the amazing OpenCamera app for taking pictures and preserving EXIF information from there, this is no longer with recent Android versions.
     Is recommended to disable  *Use native Camera* in the *settings* to preserve [EXIF](../reference/exif.md) information.
 
+## Image Stamping Customization
+
+:material-monitor: Desktop preparation
+
+QField offers advanced functionality to customize image stamping.
+This is configured directly from the QFieldSync plugin in QGIS.
+This allows for detailed and formatted information to be overlaid on your field images.
+
+To configure these settings, navigate to the Project properties > QField and open the Attachments and Directories subpanel and click on "Settings" for "Customize image stamping details".
+
+!![](../assets/images/accessing_image_stamping_setting.png, 800px)
+
+Here's what you can customize:
+
+- **Stamp Details**: Craft a multiline string using QGIS expressions to define the information stamped on the image. A default template is provided to get you started, which includes common variables like date, time, and GNSS information.
+
+    **Default Template**:
+
+    ```sql
+    [% format_date(now(), 'yyyy-MM-dd @ HH:mm') %]
+    Latitude [% coalesce(format_number(y(@gnss_coordinate), 7), 'N/A') %] | Longitude [% coalesce(format_number(x(@gnss_coordinate), 7), 'N/A') %] | Altitude [% coalesce(format_number(z(@gnss_coordinate), 3) || ' m', 'N/A') %]
+    Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) || ' m/s', 'N/A') %] | Orientation [% if(@gnss_orientation != 'nan', format_number(@gnss_orientation, 1) || ' °', 'N/A') %]
+    ```
+
+- **Font and Alignment**: You have full control over the appearance of the stamped text, including the font style (color, size, drop shadow) and horizontal alignment (left, center, or right).
+
+- **Image Decoration**: Add a custom image overlay, such as a logo or a watermark, on top of the captured image.
+
+- **Force Stamping**: This option allows project managers to enforce image stamping, ensuring that all images collected for the project have the required information overlaid, regardless of the individual QField app settings.
+
+!![](../assets/images/image_stamping_setting.png, 800px)
+
+With these settings, you can achieve highly customized and informative image stamps tailored to your project's needs.
+
+!![](../assets/images/image_with_stamp_details.png)
+
 ## Fetching Geotags (EXIF) from the image file into the attribute table
 :material-monitor: Desktop preparation
 
