@@ -73,7 +73,9 @@ QFieldCloud uses file versioning. This allows users to restore to a previous ver
 
 ### Deleting old file versions
 
-To ensure that only relevant file versions are kept, and to reduce the amount of storage needed by accounts, users can delete obsolete file versions. One can manually delete file versions from the project's **File** section.
+To ensure that only relevant file versions are kept, and to reduce the amount of storage needed by accounts, users can delete obsolete file versions.
+One can manually delete file versions from the project's **File** section.
+Each file and version can be linked to a specific QFieldCloud user who uploaded it.
 
 To delete file versions in QFieldCloud, follow these steps:
 
