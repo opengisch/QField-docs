@@ -12,19 +12,32 @@ Jobs will automatically have access to the project's secrets, allowing for secur
 
 There are two types of secrets you can create in QFieldCloud:
 
-- **Environment variables:** These will be available to QGIS as environment variables while your project jobs are running. You need to provide a name (capitals only) and a value.
+- **Environment variables:** These will be available to QGIS as environment variables while your project jobs are running.
+You need to provide a name (capitals only) and a value.
 
-- **pg_service configurations:** This allows you to add a PostgreSQL/PostGIS connection as defined in a `pg_service.conf` configuration file.
+- **Secrets** This allows you to add a PostgreSQL/PostGIS connection as defined in a `pg_service.conf` configuration file.
 
 !![Project secret page after pressing the **Add a new secret** button.](../../assets/images/secrets.png)
 
 !!! warning
-    QFieldCloud makes sure your credentials are stored in a secured and encrypted manner. Nevertheless, we advice our users to use roles with the least privileges in shared environments to prevent potential leakage.
-    Also note all users with upload file permissions can potentially access the values of those credentials too.
+    QFieldCloud makes sure your credentials are stored in a secured and encrypted manner.
+    **We strongly advice to allocate users the least privileges in shared environments to prevent potential leakage.**
+    Users who have the permission to upload files may  also have access to the corresponding credentials.
 
-## Secret Levels and Precedence
+## Environment variable
 
-To provide granular control over data access, secrets in QFieldCloud can be defined at three different hierarchical levels. When a job runs, QFieldCloud will use the most specific secret available according to the following order of precedence:
+Environment variables will be available to QGIS while your project jobs are running.
+
+You need to fill in the environment variable name (capitals only) and the environment variable value as free text.
+
+!![Adding an environment variable.](../../assets/images/secrets-envvar.png)
+
+
+
+## Secrets and Precedence
+
+To provide granular control over data access, secrets in QFieldCloud can be defined at three different hierarchical levels.
+When a new job is initiated, QFieldCloud will access the secrets available and follow the following hierarchical order of precedence:
 
 1. **User-Assigned Secret (Highest Precedence):** A secret defined within a project and assigned to a specific user. This is the most specific level and overrides all others for that user.
 
@@ -34,30 +47,31 @@ To provide granular control over data access, secrets in QFieldCloud can be defi
 
 This hierarchical system allows an administrator to set a general, low-privilege database role at the organization level, while assigning more privileged roles for specific projects or trusted individual users.
 
-## Adding a Secret
+### Secret Configuration
 
-The process involves navigating to the correct context (Organization or Project), adding a new secret, and storing its contents.
+In order to add a new secret, you first need to decide what kind of secret is needed for your project.
 
-You can add secrets at the following levels:
+#### Organization Level Secret
 
-- **Organization Level:** Navigate to your organization's settings and select the **Secrets** tab. Secrets added here will be available to all projects within the organization unless overridden.
+Navigate to your organization's settings and select the **Secrets** tab.
+Secrets added here will be available to all projects within the organization unless overridden.
 
-- **Project Level:** Navigate to your project's settings and select the **Secrets** tab. Secrets added here will override any organization-level secrets with the same name.
+#### Project  Level Secret
 
-- **User-Assigned Level:** Within a project's **Secrets** tab, you can add a new secret and explicitly assign it to a specific project member.
+Navigate to your project's settings and select the **Secrets** tab. Secrets added here will override any organization-level secrets with the same name.
+
+#### User-Assigned Level
+
+Within a project's **Secrets** tab, you can add a new secret and explicitly assign it to a specific project member.
 This provides the highest level of precedence.
 
-!!! note
-    Once added, a secret can only be removed, but cannot be edited.
+#### Adding a secret
 
-## pg_service configuration
+To add a new secret to give access to your Postgres/PostGIS database, follow the same format as defined in the `pg_service.conf` configuration file.
+This can either be done manually as plain text or through  the "Advanced editor".
+The "Advanced editor" allows you to paste the `pg_service.conf` file contents directly.
 
-Adding a PostgreSQL/PostGIS connection as defined in `pg_service.conf` configuration file. The "Advanced editor" allows to paste the `pg_service.conf` file contents directly. If you use multiple service definitions, you should add multiple secrets for each of them.
-
-!!! note
-    QFieldCloud secrets are available only during project's job runs, which allows you to configure your PostgreSQL layers as "Offline editing". You **cannot** use QFieldCloud secrets to distribute `pg_service.conf` files across devices. For security reasons, you have to do this manually. You can read [how to configuring QField to use a `pg_service.conf`](../../how-to/pg-service.md) file.
-
-To add a PostgreSQL service you can use either the simple visual editor, or directly edit the service configuration as plain text.
+You can add the following information:
 
 - service name
 - database name
@@ -67,28 +81,38 @@ To add a PostgreSQL service you can use either the simple visual editor, or dire
 - database port
 - database SSL connection
 
-For other service settings you can use the **Add extra pgservice field** button to add pairs of settings and their values. Alternatively, you can edit the service configuration directly as plain text.
+For other service settings you can use the **Add extra pgservice field** button to add additional settings and their values.
+
+If you use multiple service definitions, you should add multiple secrets for each of them.
+
+!!! note
+    Once added, a secret can only be removed, but cannot be edited.
+
+!!! note
+    QFieldCloud secrets are available only during project's job runs, which allows you to configure your PostgreSQL layers as "Offline editing". You **cannot** use QFieldCloud secrets to distribute `pg_service.conf` files across devices. For security reasons, you have to do this manually. You can read [how to configuring QField to use a `pg_service.conf`](../../how-to/pg-service.md) file.
+
+
 
 !![Adding a PostgreSQL service - Simple editor.](../../assets/images/secrets-pgservice-simple.png)
 
-The advanced configuration allows you to directly edit the settings as plain text. This is convenient in cases you want to copy and paste your settings directly from a `pg_service.conf` file.
+The "Advanced editor" allows you to directly edit the settings as plain text.
+This is convenient in cases you want to copy and paste your settings directly from your `pg_service.conf` file.
 
 !![Adding a PostgreSQL service - Advanced editor.](../../assets/images/secrets-pgservice-advanced.png)
 
-## Use Case: Verifying Secret Precedence with PostgreSQL
+### Example
 
-This example demonstrates how to set up and verify the secret hierarchy. By creating features in QField, we can confirm the feature's provenance by checking which PostgreSQL user role was used for its creation, validating that the correct secret was applied at each level.
-
-!!! note
-    The following steps are a case example that can be adapted to your organization's requirements.
+The following example will go through the addition and verification process of the above explained hierarchy.
+You can add additional attributes to your table to check and confirm that only users with the according roles have the ability to add new features.
 
 ### Part 1: PostgreSQL Database Configuration
 
-First, we'll configure the database, define user roles, and set up a table with an automated trigger.
+First, the database needs to be configured and the user roles defined.
+Following an automated trigger needs to be added, to populate the allocated user column inside the database.
 
 #### 1. Database and Extension Instantiation
 
-Create a new database and enable the necessary `postgis` and `uuid-ossp` extensions.
+Start with creating a new database and enable the necessary `postgis` and `uuid-ossp` extensions.
 
 ```sql
 -- Create a new database with a specified name, owner, and encoding.
@@ -115,7 +139,8 @@ CREATE ROLE ninja_user LOGIN PASSWORD 'strong_password_for_user_001';
 
 #### 3. Schema and Table Definition
 
-Create a schema and a table for point geometries. The table will include a `pg_user` field to automatically record which role was responsible for the data insertion.
+Create a schema and a table for point geometries.
+The table will include a `pg_user` field to automatically record which role was responsible for the data insertion.
 
 ```sql
 -- Create a schema named 'ninja' if it does not already exist.
@@ -174,30 +199,30 @@ GRANT SELECT, REFERENCES, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA ninja
 
 ### Part 2: QFieldCloud and QGIS Project Configuration
 
-Now, configure your QGIS project to use the PostgreSQL service connection and set the secrets at different levels in QFieldCloud.
+Direct to QFieldCloud to set the secrets at different levels in QFieldCloud.
 
 #### Scenario 1: Organization-Level Secret Application
 
-1. **Secret Instantiation:** In the QFieldCloud web interface, navigate to your organization's settings -> **Secrets** tab. Add a new `pg_service` secret using the credentials for the **`ninja_org`** role.
+1. **Secret Addition:** Navigate to the settings page of your organization and select the **Secrets**  from there.
+Add a new `pg_service` secret using the credentials for the **`ninja_org`** role.
 
-2. **Verification:** After configuring your QGIS project to use this service, create a new feature in the `ninja_point` layer from QField. When you synchronize the data, the `pg_user` attribute for the new feature is expected to be **`ninja_org`**.
+2. **Verification:** To ensure that the secret is set at the right level, you can now create a new feature in the `ninja_point` layer inside QField.
+Once synchronized with QFieldCloud, the `pg_user` attribute for the new feature is expected to be **`ninja_org`**.
 
 #### Scenario 2: Project-Level Secret Application (Precedence over Organization)
 
-1. **Secret Instantiation:** Navigate to the project's settings in QFieldCloud and go to the **Secrets** tab. Add a new `pg_service` secret with the same service name as the organization-level one, but this time use the credentials for the **`ninja_project`** role.
+1. **Secret Addition:** Navigate to the settings page of your project and select the **Secrets**  from there.
+Add a new `pg_service` secret with the same service name as previous, but this time use the credentials for the **`ninja_project`** role.
 
-2. **Verification:** Create another feature from QField. The `pg_user` attribute for this new feature is expected to be **`ninja_project`**, demonstrating that the project-level secret correctly superseded the organization-level one.
+2. **Verification:** To ensure that the secret is set at the right level, you can create a new feature in the `ninja_point` layer inside QField.
+Once synchronized with QFieldCloud, the `pg_user` attribute for the new feature is expected to be **`ninja_project`**
+This demonstrates that the project-level secret correctly superseeds the organization-level secret.
 
 #### Scenario 3: User-Level Secret Application (Highest Precedence)
 
-1. **Secret Instantiation:** Within the project's settings -> **Secrets** tab on QFieldCloud, add a new `pg_service` secret. Use the credentials for the **`ninja_user`** role and explicitly assign this secret to your user account.
+1. **Secret Instantiation:** Navigate to the settings page of your project and select the **Secrets** tab.
+Add a new `pg_service` secret.
+Use the credentials for the **`ninja_user`** role and explicitly assign this secret to your user account.
 
-2. **Verification:** Create a final feature from QField. The `pg_user` attribute for this feature is expected to be **`ninja_user`**, confirming that a user-assigned secret holds the highest level of precedence in the hierarchy.
-
-## Environment variable
-
-Environment variables will be available to QGIS while your project jobs are running.
-
-You need to fill in the environment variable name (capitals only) and the environment variable value as free text.
-
-!![Adding an environment variable.](../../assets/images/secrets-envvar.png)
+2. **Verification:** Create a new feature in QField.
+The `pg_user` attribute for this feature is expected to be **`ninja_user`**, confirming that the user-assigned secret holds the highest level of precedence in the hierarchy.
