@@ -80,7 +80,7 @@ Please be aware of the security implications of such requirements, and remember 
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
 
-## Restricting Project Files Modification to Administrators
+## Restricting Project Files Modification to Administrators and Managers
 
 To prevent any modification to the core QGIS project file, **the project administrators** can restrict the access to these files.
 This can be achieved under the settings section in QFieldCloud.
