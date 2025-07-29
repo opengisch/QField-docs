@@ -15,7 +15,7 @@ There are two types of secrets you can create in QFieldCloud:
 - **Environment variables:** These will be available to QGIS as environment variables while your project jobs are running.
 You need to provide a name (capitals only) and a value.
 
-- **Secrets** This allows you to add a PostgreSQL/PostGIS connection as defined in a `pg_service.conf` configuration file.
+- **pg_service configurations:** This allows you to add a PostgreSQL/PostGIS connection as defined [in a `pg_service.conf` configuration file](https://www.postgresql.org/docs/current/libpq-pgservice.html).
 
 !![Project secret page after pressing the **Add a new secret** button.](../../assets/images/secrets.png)
 
@@ -31,8 +31,6 @@ Environment variables will be available to QGIS while your project jobs are runn
 You need to fill in the environment variable name (capitals only) and the environment variable value as free text.
 
 !![Adding an environment variable.](../../assets/images/secrets-envvar.png)
-
-
 
 ## Secrets and Precedence
 
@@ -90,8 +88,6 @@ If you use multiple service definitions, you should add multiple secrets for eac
 
 !!! note
     QFieldCloud secrets are available only during project's job runs, which allows you to configure your PostgreSQL layers as "Offline editing". You **cannot** use QFieldCloud secrets to distribute `pg_service.conf` files across devices. For security reasons, you have to do this manually. You can read [how to configuring QField to use a `pg_service.conf`](../../how-to/pg-service.md) file.
-
-
 
 !![Adding a PostgreSQL service - Simple editor.](../../assets/images/secrets-pgservice-simple.png)
 
@@ -172,8 +168,11 @@ END;
 $$ LANGUAGE plpgsql SET search_path FROM CURRENT;
 
 COMMIT;
+```
 
--- Assign the trigger to the ninja_point table for INSERT or UPDATE events.
+And assign the trigger to the ninja_point table for INSERT or UPDATE events.
+
+```sql
 BEGIN;
 SET LOCAL SEARCH_PATH TO ninja, public;
 
@@ -188,13 +187,40 @@ COMMIT;
 
 #### 5. Permission Granting
 
-Grant the necessary permissions to the three roles.
+To ensure security and proper data access, grant each role only the permissions required for its function.
+This approach follows the principle of least privilege.
+
+First, all roles need USAGE permission on the ninja schema to access any tables within it.
 
 ```sql
--- Grant usage and data manipulation privileges on the schema and its tables.
 GRANT USAGE ON SCHEMA ninja TO ninja_org, ninja_project, ninja_user;
-GRANT SELECT, REFERENCES, INSERT, UPDATE, DELETE ON TABLE ninja.ninja_point
-  TO ninja_org, ninja_project, ninja_user;
+```
+
+##### Role-Based Access
+
+- **`ninja_user` (Read-Only)**: This role is for general users who only need to view data.
+
+  - Grants: `SELECT`
+
+- **`ninja_project` (Read/Write)**: This role is for project members who need to view, add, and modify data.
+
+  - Grants: `SELECT`, `INSERT`, `UPDATE`
+
+- **`ninja_org` (Admin)**: This role is for organization owners who require full control over the data, including deleting records and managing foreign key relationships.
+
+  - Grants: `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `REFERENCES`
+
+```sql
+-- Grant table permissions based on role responsibilities
+
+-- Read-only access for general users
+GRANT SELECT ON TABLE ninja.ninja_point TO ninja_user;
+
+-- Read and write access for project members
+GRANT SELECT, INSERT, UPDATE ON TABLE ninja.ninja_point TO ninja_project;
+
+-- Full administrative access for organization owners
+GRANT ALL PRIVILEGES ON TABLE ninja.ninja_point TO ninja_org;
 ```
 
 ### Part 2: QFieldCloud and QGIS Project Configuration
