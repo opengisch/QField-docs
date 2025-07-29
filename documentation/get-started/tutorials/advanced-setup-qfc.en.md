@@ -97,7 +97,7 @@ When enabled, the following files can only be modified or uploaded by a user wit
 ### How to Enable Restriction
 
 By enabling the **`Restrict project files`**, you activate this administrative control.
-Once set, only administrators will be able to push changes to the files listed above.
+Once set, only administrators and managers will be able to push changes to the files listed above.
 Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.
 
 !![](../../assets/images/restric_qfc_project_files.png)
