@@ -193,7 +193,7 @@ Grant the necessary permissions to the three roles.
 ```sql
 -- Grant usage and data manipulation privileges on the schema and its tables.
 GRANT USAGE ON SCHEMA ninja TO ninja_org, ninja_project, ninja_user;
-GRANT SELECT, REFERENCES, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA ninja
+GRANT SELECT, REFERENCES, INSERT, UPDATE, DELETE ON TABLE ninja.ninja_point
   TO ninja_org, ninja_project, ninja_user;
 ```
 
