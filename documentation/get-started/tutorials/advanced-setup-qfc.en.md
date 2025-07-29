@@ -87,7 +87,7 @@ This can be achieved under the settings section in QFieldCloud.
 
 ### Restricted Files
 
-When enabled, the following files can only be modified or uploaded by a user with an "admin" role for the project:
+When enabled, the following files can only be modified or uploaded by a user with an "admin" or "manager" role for the project:
 
 - The primary **QGIS project file** (e.g., `my_project.qgz`).
 - The **attachments zip archive** associated with the project (e.g., `my_project_attachments.zip`).
