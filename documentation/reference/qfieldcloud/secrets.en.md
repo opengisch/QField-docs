@@ -246,7 +246,7 @@ This demonstrates that the project-level secret correctly superseeds the organiz
 
 #### Scenario 3: User-Level Secret Application (Highest Precedence)
 
-1. **Secret Instantiation:** Navigate to the settings page of your project and select the **Secrets** tab.
+1. **Secret Creation:** Navigate to the settings page of your project and select the **Secrets** tab.
 Add a new `pg_service` secret.
 Use the credentials for the **`ninja_user`** role and explicitly assign this secret to your user account.
 
