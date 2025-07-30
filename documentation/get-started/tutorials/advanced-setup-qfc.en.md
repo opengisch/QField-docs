@@ -80,6 +80,28 @@ Please be aware of the security implications of such requirements, and remember 
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
 
+## Restricting Project Files Modification to Administrators and Managers
+
+To prevent any modification to the core QGIS project file, **the project administrators** can restrict the access to these files.
+This can be achieved under the settings section in QFieldCloud.
+
+### Restricted Files
+
+When enabled, the following files can only be modified or uploaded by a user with an "admin" or "manager" role for the project:
+
+- The primary **QGIS project file** (e.g., `my_project.qgz`).
+- The **attachments zip archive** associated with the project (e.g., `my_project_attachments.zip`).
+- **QGIS auxiliary data files** that store information like label positions (e.g., `my_project.qgd`).
+- **QField style files** (`.qml`) that share the same name as the project file.
+
+### How to Enable Restriction
+
+By enabling the **`Restrict project files`**, you activate this administrative control.
+Once set, only administrators and managers will be able to push changes to the files listed above.
+Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.
+
+!![](../../assets/images/restric_qfc_project_files.png)
+
 ## Enabling automatic pushing of changes to QFieldCloud
 
 With this functionality, users and managers of QFieldCloud projects can enforce automatic pushing of pending changes to QField devices in the field, as well as specify the interval in between automated pushes.
