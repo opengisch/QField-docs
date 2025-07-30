@@ -8,6 +8,7 @@ tx_slug: documentation_reference_qfieldcloud_projects
 Projects are the main data containers on QField and QFieldCloud.
 Users can create any number of projects.
 Projects must contain a single `.qgs`/`.qgz` QGIS file, and may in addition contain any combination of geospatial files -- GeoPackages, Shapefiles, TIFs -- or data files such as photos, PDFs etc.
+There are no limits to the file size but in general it is good practice to limit the file size to a minimum to optimise user performance.
 Files cannot be shared between projects, unless [localized layers](../../how-to/outside-layers.md) are used.
 
 QFieldCloud projects have a name and an owner.
@@ -69,7 +70,9 @@ The files in a QGIS project can be in one of the following groups by their purpo
 
 ## File versions
 
-QFieldCloud uses file versioning. This allows users to restore to a previous version of any modified file. Files and file versions can be found under the **Files** section of one's projects. Subscriptions plans allow a different number of versions per file. See the qfield.cloud [pricing page for further details](https://qfield.cloud/pricing.html).
+QFieldCloud uses file versioning. This allows users to restore to a previous version of any modified file.
+Files and file versions can be found under the **Files** section of one's projects.
+Subscriptions plans allow a different number of versions per file. See the qfield.cloud [pricing page for further details](https://qfield.cloud/pricing.html).
 
 ### Deleting old file versions
 
@@ -89,11 +92,14 @@ To delete file versions in QFieldCloud, follow these steps:
 
 ## Collaborators
 
-A project collaborator is QFieldCloud user invited to contribute to a project. A single project may have multiple collaborators. Collaborators with roles **owner** or **admin** can add more users as collaborators. Projects owned by an organization allow adding **teams** as collaborators. Read more about [collaborator roles](permissions.md).
+A project collaborator is QFieldCloud user invited to contribute to a project.
+A single project may have multiple collaborators. Collaborators with roles **owner** or **admin** can add more users as collaborators.
+Projects owned by an organization allow adding **teams** as collaborators. Read more about [collaborator roles](permissions.md).
 
 ## Changes
 
-Changes made on vector layers and uploaded to QFieldCloud from a QField device will appear here. A _change_ stores the difference between attributes or geometries before and after the upload.
+Changes made on vector layers and uploaded to QFieldCloud from a QField device will appear here.
+A _change_ stores the difference between attributes or geometries before and after the upload.
 
 Changes register which method was used for uploading; it can be one of:
 
