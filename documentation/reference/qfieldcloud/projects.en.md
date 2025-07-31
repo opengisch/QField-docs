@@ -8,7 +8,8 @@ tx_slug: documentation_reference_qfieldcloud_projects
 Projects are the main data containers on QField and QFieldCloud.
 Users can create any number of projects.
 Projects must contain a single `.qgs`/`.qgz` QGIS file, and may in addition contain any combination of geospatial files -- GeoPackages, Shapefiles, TIFs -- or data files such as photos, PDFs etc.
-There are no limits to the file size but in general it is good practice to limit the file size to a minimum to optimise user performance.
+To ensure optimal performance, is recommend keeping file sizes under 2GB.
+Larger files than this may take significantly longer to process.
 Files cannot be shared between projects, unless [localized layers](../../how-to/outside-layers.md) are used.
 
 QFieldCloud projects have a name and an owner.
