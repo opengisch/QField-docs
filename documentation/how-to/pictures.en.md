@@ -165,7 +165,7 @@ Be sure to reflect this in the QGIS expression.
 
 The advanced settings allow rescaling the photos to a maximum width/height in *QFieldSync plugin > Project configuration*
 
-![image](https://user-images.githubusercontent.com/4992805/189456560-3e251c44-c85c-40bd-a3cc-039c49090e03.png)
+!![](../assets/images/maximum_picture_size_attachments.png)
 
 ## Configurable attachment path
 :material-monitor: Desktop preparation
