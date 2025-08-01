@@ -6,11 +6,15 @@ tx_slug: documentation_reference_qfieldcloud_projects
 # Projects
 
 Projects are the main data containers on QField and QFieldCloud.
+
 Users can create any number of projects.
+
 Projects must contain a single `.qgs`/`.qgz` QGIS file, and may in addition contain any combination of geospatial files -- GeoPackages, Shapefiles, TIFs -- or data files such as photos, PDFs etc.
+
 To ensure optimal performance, is recommend keeping file sizes under 2GB.
-Larger files than this may take significantly longer to process.
-Files cannot be shared between projects, unless [localized layers](../../how-to/outside-layers.md) are used.
+Larger files than this may take significantly longer to process and lead to [jobs](jobs.md) issues.
+
+Files cannot be shared between projects, unless [shared layers](../../how-to/outside-layers.md) are used.
 
 QFieldCloud projects have a name and an owner.
 The owner of a project is a QFieldCloud user or an organization.
@@ -26,8 +30,8 @@ Public projects are visible to, and can be downloaded by, any QFieldCloud user.
 A project can be created in multiple ways:
 
 - via QFieldCloud web interface;
-- via QFieldSync in QGIS;
-- via QFieldCloud-SDK;
+- via [QFieldSync in QGIS](../../get-started/tutorials/get-started-qfs.md);
+- via [QFieldCloud-SDK](sdk.md);
 
 
 ## Files
