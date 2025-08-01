@@ -71,7 +71,8 @@ The files in a QGIS project can be in one of the following groups by their purpo
 
 ## File versions
 
-QFieldCloud uses file versioning. This allows users to restore to a previous version of any modified file.
+QFieldCloud uses file versioning.
+This allows users to restore to a previous version of any modified file.
 Files and file versions can be found under the **Files** section of one's projects.
 Subscriptions plans allow a different number of versions per file. See the qfield.cloud [pricing page for further details](https://qfield.cloud/pricing.html).
 
@@ -94,7 +95,8 @@ To delete file versions in QFieldCloud, follow these steps:
 ## Collaborators
 
 A project collaborator is QFieldCloud user invited to contribute to a project.
-A single project may have multiple collaborators. Collaborators with roles **owner** or **admin** can add more users as collaborators.
+A single project may have multiple collaborators.
+Collaborators with roles **owner** or **admin** can add more users as collaborators.
 Projects owned by an organization allow adding **teams** as collaborators. Read more about [collaborator roles](permissions.md).
 
 ## Changes
