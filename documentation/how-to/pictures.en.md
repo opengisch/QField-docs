@@ -165,7 +165,7 @@ Be sure to reflect this in the QGIS expression.
 
 The advanced settings allow rescaling the photos to a maximum width/height in *QFieldSync plugin > Project configuration*
 
-![image](https://user-images.githubusercontent.com/4992805/189456560-3e251c44-c85c-40bd-a3cc-039c49090e03.png)
+!![](../assets/images/maximum_picture_size_attachments.png)
 
 ## Configurable attachment path
 :material-monitor: Desktop preparation
@@ -178,10 +178,10 @@ QFieldSync provides the possibility to configure the path and the file names of 
 Use expressions to specify the path of the attachments.
 By default, pictures are saved into the "DCIM" folder, audio are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
-!![picture path](../assets/images/picture_path.png "")
+!![picture path](../assets/images/picture_path.png)
 
 Additional directories can be synchronized with pictures or other attachments.
-Extra paths can be configured in _Attachment directories_ in the QFieldSync settings under *project properties*.
+Extra paths can be configured in _Attachment and Directories_ tab in the QFieldSync settings under *project properties*.
 All paths are relative to the project directory.
 
-!![attachments directories](../assets/images/attachments_directories.png "")
+!![attachments directories](../assets/images/attachments_directories.png)

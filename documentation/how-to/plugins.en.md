@@ -34,11 +34,11 @@ to learn how to import projects onto devices.
 
 ### Application plugins
 
-Application plugins are installed through a plugins popup accessed from QField’s Settings
-panel. Simply hit the ‘Install plugin from URL’ button and paste in a URL pointing to a
-zipped plugin file.
+Application plugins are installed through a plugins popup accessed from QField’s Settings panel.
+Simply hit the ‘Install plugin from URL’ button and paste in a URL pointing to a zipped plugin file,
+or download one of the "Available Plugins" already developed by the [community](../reference/plugins.md).
 
-!![](../assets/images/application-plugins.png)
+!![](../assets/images/application-plugins.png,400px)
 
 Once installed, the plugin will appear in the plugins list found in the popup, with a switch
 to toggle the activation of the plugin.

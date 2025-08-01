@@ -211,18 +211,19 @@ Information for GNSS Z value with Vertical grid shift in use:
 
 ### Vertex logger
 
-It is possible to setup a log layer of the collected vertices. This
-allows to keep track of meta data for each vertex like GNSS quality
-attributes and more. To set this up, a point layer can be added to the
+It is possible to setup a log layer of the collected vertices.
+This allows to keep track of meta data for each vertex
+like [GNSS quality attributes](../reference/expression_variables.md) and more.
+To set this up, a point layer can be added to the
 project and attributes configured to store this information.
 
-![](../assets/images/vertex_log1.png){width="600px"}
+!![](../assets/images/vertex_log1.png)
 
 Then you should assign the role *digitizing logger* to a point layer.
 
 Go to *QFieldSync > Project Properties*
 
-![](../assets/images/vertex_log2.png){width="600px"}
+!![](../assets/images/vertex_log2.png)
 
 To be most effective, the layer attributes should have default values that
 relies on the positioning variables enumerated above.
