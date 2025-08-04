@@ -209,7 +209,7 @@ Information for GNSS Z value with Vertical grid shift in use:
 | Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
 | USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
 
-### Vertex logs layer
+### Vertex log layer
 
 It is good practice to create a log layer of the collected vertices.
 It enables you to keep track of the meta data for each vertex like [GNSS quality attributes](../reference/expression_variables.md) and more.
