@@ -55,8 +55,9 @@ Create a relation with:
 ### Widgets
 
 #### Apiary
-Set the default value of the field id to `uuid()` or use the *UUID Generator* widget.
-There is no need to show it in the form.
+You can either choose the *Text Edit* or *UUID Generator* widget.
+Its default value in any case has to be *uuid('WithoutBraces')*.
+Hide it from the view as it should not be edited by the user.
 
 !![widgets](../assets/images/add-1-n-pictures-widgets_hive.png "")
 
@@ -85,7 +86,7 @@ Whenever that project is loaded, QField will register all images within that fol
 - Alternatively, you can add images into the `drawing_templates` folder found inside your QField app folder.
 If you are not familiar with that app folder, its location is shown at the bottom of the About QField overlay.
 
-Templates shipped alongside projects as well as the QField app folder will be shown when users choose 'Draw a sketch' within attachments widget's 3-dot menu.
+Templates shipped alongside projects as well as the QField app folder will be shown when users choose 'Draw a sketch' by pressing the 3-dotted menu icon of the attachment widget.
 
 !![picture path](../assets/images/drawing_templates.png "")
 
@@ -104,7 +105,7 @@ Information about location and direction of the pictures will therefore be baked
 
 QField allows you to add image stamping.
 This is configured directly from the QFieldSync plugin in QGIS.
-With this functionality you can add detailed and formatted information when taking photos in the field  .
+With this functionality you can add detailed and formatted information when taking photos in the field.
 
 ### Styling Settings
 
@@ -165,7 +166,7 @@ Be sure to reflect this in the QGIS expression.
 
 The advanced settings allow rescaling the photos to a maximum width/height in *QFieldSync plugin > Project configuration*
 
-!![](../assets/images/maximum_picture_size_attachments.png)
+!![](../assets/images/maximum_picture_size_attachments.png, 800px)
 
 ## Configurable attachment path
 :material-monitor: Desktop preparation
@@ -178,10 +179,10 @@ QFieldSync provides the possibility to configure the path and the file names of 
 Use expressions to specify the path of the attachments.
 By default, pictures are saved into the "DCIM" folder, audio are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
-!![picture path](../assets/images/picture_path.png)
+!![picture path](../assets/images/picture_path.png, 800 px)
 
 Additional directories can be synchronized with pictures or other attachments.
 Extra paths can be configured in _Attachment and Directories_ tab in the QFieldSync settings under *project properties*.
 All paths are relative to the project directory.
 
-!![attachments directories](../assets/images/attachments_directories.png)
+!![attachments directories](../assets/images/attachments_directories.png, 1000px)
