@@ -127,9 +127,9 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
 !!! tip
     **Preventing Incorrect GeoPackage Synchronization**
 
-    QFieldSync might suggest uploading a GeoPackage file even if you haven't edited it in QGIS.
+    QFieldSync might suggest uploading a GeoPackage file despite of you not making any changes in QGIS.
     This happens because QGIS creates temporary files (`.gpkg-shm` and `.gpkg-wal`) when you open a GeoPackage, which updates the file's modification time.
-    QFieldSync then thinks the desktop version is newer and needs to be synchronized.
+    QFieldSync then thinks the desktop version is newer and needs to be synchronized. Often this can lead to that edits done in the field are overwritten. 
 
     *Solution*
 
@@ -143,7 +143,7 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
     walForSqlite3=false
     ```
 
-    This change stops QGIS from creating the temporary files and prevents synchronization prompts from QFieldSync when there are not changes made.
+    This will prevent QGIS from creating the temporary files that lead to the synchronization prompts from QFieldSync although no changes were made.
 
 
 ## Field device
