@@ -54,7 +54,7 @@ Depending on the layer type, different types of actions are available.
 ***Copy***
 
 :   The layer will be copied to the package folder.
-This is only available for file-based layers.
+    This is only available for file-based layers.
 
 ***No action***
 
@@ -64,9 +64,9 @@ This is only available for file-based layers.
 ***Offline editing***
 
 :   A working copy of the layer is copied into the package folder.
-Every change which is done in the packaged project during work is recorded in a changelog.
-When synchronizing the changes back later on, this log will be replaced and all changes also be applied to the main data base.
-There is no conflict handling in place.
+    Every change which is done in the packaged project during work is recorded in a changelog.
+    When synchronizing the changes back later on, this log will be replaced and all changes also be applied to the main data base.
+    There is no conflict handling in place.
 
 ***Remove***
 
@@ -179,7 +179,7 @@ Also make sure to save the QGIS project using the regular Save As of QGIS as you
 
 During packaging your project you can select which subdirectories to be copied by checking the directories in `Advanced` -> `Directories to be copied`.
 
-!![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png)
+!![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png,400px)
 
 ## How to sync from/to iOS device without QFieldCloud
 
@@ -196,7 +196,7 @@ When you want to synchronize what you have collected, re-open the project in QGI
 
 Copy the project folder from your device to your computer, and use the **Synchronize from QField** menu to synchronize your changes from the protable project to the main project.
 
-!![Synchronize from QField](../../assets/images/qfield-sync_sync.png)
+!![Synchronize from QField](../../assets/images/qfield-sync_sync.png,400px)
 
 Make sure that you synchronize your data back only once.
 That means, if you go out again to collect more data, you should create a new QField package before to avoid sync problems later on (like e.g. duplicates).
