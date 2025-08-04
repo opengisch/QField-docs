@@ -125,26 +125,36 @@ Once configured, you can press the cloud button to open the synchronization dial
 Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
 
 !!! tip
-    **Preventing Incorrect GeoPackage Synchronization**
+    When you start editing a GeoPackage, QGIS by default creates journal files (.gpkg-wal) that instantly update the file's timestamp.
+    QFieldSync detects this new timestamp and will suggest to upload and overwrite the data with the desktop version, even if no changes were saved.
 
-    QFieldSync might suggest uploading a GeoPackage file despite of you not making any changes in QGIS.
-    This happens because QGIS creates temporary files (`.gpkg-shm` and `.gpkg-wal`) when you open a GeoPackage, which updates the file's modification time.
-    QFieldSync then thinks the desktop version is newer and needs to be synchronized. Often this can lead to that edits done in the field are overwritten. 
+    To avoid this, disable Write-Ahead Logging (WAL) in QGIS. This ensures the timestamp is only updated when you explicitly **save** an edit.
 
-    *Solution*
+    #### **How to Disable WAL**
 
-    To prevent this, you can disable the Write-Ahead Logging (WAL) mode in QGIS.
-    This ensures the GeoPackage is only marked as modified when you start an editing session.
+    **1. Use the Python Console (Recommended)**:
 
-    1. Find your `QGIS3.ini` file in your active [QGIS user profile](https://docs.qgis.org/3.40/en/docs/user_manual/introduction/qgis_configuration.html#working-with-user-profiles) folder.
-    2. Add the following lines under the `[qgis]` section:
+    Open `Plugins > Python Console` and run the following command:
+
+    ```python
+    QgsSettings().setValue("qgis/walForSqlite3", False)
+    ```
+
+    **2. Edit the QGIS INI file**:
+
+    1.  Go to `Settings > User Profiles > Open Active Profile Folder`.
+
+    2.  **Close QGIS.**
+
+    3.  Then Open the `QGIS/QGIS3.ini` file.
+
+    4.  Add this line under the `[qgis]` section:
+
     ```ini
-    [qgis]
     walForSqlite3=false
     ```
 
-    This will prevent QGIS from creating the temporary files that lead to the synchronization prompts from QFieldSync although no changes were made.
-
+    Then **restart QGIS** to apply the change.
 
 ## Field device
 
