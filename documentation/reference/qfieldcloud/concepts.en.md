@@ -55,12 +55,15 @@ classDiagram
         <<QFieldCloud User>>
         +username
     }
+
     class Organization {
         +name
     }
+
     class Team {
         +name
     }
+
     class Project {
         +name
     }
@@ -84,10 +87,12 @@ classDiagram
         <<Association>>
         +Organization_Role
     }
+
     class UserCollaborators {
         <<Association>>
         +Project_Role
     }
+
     class TeamCollaboration {
         <<Association>>
         +Project_Role
