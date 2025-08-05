@@ -7,43 +7,53 @@ tx_slug: documentation_how-to_tracking
 
 QField allows you to create points, lines, and polygons from tracking your position.
 
-## Activate tracking
+## Activate and Resume Tracking
 
 :material-tablet: Fieldwork
 
-To activate tracking, you must first make sure the positioning is active. Then,
-open the side dashboard, long-press on a legend layer within which you want to
-save your tracks to, and select the *Setup tracking* button to configure
-the tracking session.
+To begin tracking, first, ensure that positioning is active.
+Then, open the side dashboard and long-press on the layer where you want to save your tracks.
 
-!![](../assets/images/tracking-layer-properties.png)
+!![](../assets/images/tracking-layer-properties.png,350px)
 
-Two constraints are available to limit the number of vertices recorded
-during tracking:
+### Resuming a Previous Session
+
+If a tracking session was previously started but not explicitly stopped (for example, if the app was closed), QField provides the option to continue where you left off. A prompt will appear asking whether to **resume the last session** or **start a new one**.
+
+- **Resuming** a session for a line or polygon layer will continue adding vertices to the feature from the previous session.
+This allows you to seamlessly continue a single track across app restarts.
+
+- **Starting a new session** will discard the incomplete feature from the previous session and begin a new one.
+
+### Starting a New Session
+
+If no previous session exists, or if you choose to start a new one, select the **Setup tracking** button to configure the session.
+
+Two constraints are available to limit the number of vertices recorded during tracking:
+
 - A minimum time interval
+
 - A minimum distance
 
-!![](../assets/images/tracking-settings.png)
+!![](../assets/images/tracking-settings.png,350px)
 
-Once you have finished configuring your tracking session, hit the *Start tracking*
-button to begin recording. At this stage, a feature form will appear, which allows
-you to define the attributes of the feature(s) that will be created while QField
-tracks your position.
+Once you have finished configuring the session, tap the **Start tracking** button to begin recording.
+A feature form will appear, allowing you to define the attributes for the feature(s) being created.
 
-For line and polygon layers, a single feature - its geometry formed of vertices
-from the recorded positions - will be create per tracking session.  For point
-layers, a feature will be created for each recorded position, with attribute
-values entered in the form remembered across features.
+For line and polygon layers, a single feature will be created per tracking session, with its geometry formed from the recorded positions.
+For point layers, a new feature will be created for each recorded position, and the attribute values entered in the form will be remembered for subsequent points.
 
-To prevent overlapping, you have the option to set a maximum distance tolerance between the last and next tracked point/vertices. This ensures that if the position exceeds this defined distance, it is considered as an erroneous entry.
+To prevent erroneous entries, you can set a maximum distance tolerance.
+If the distance between the last and next tracked point/vertex exceeds this tolerance, the new position will be discarded.
 
 !!! note
-    QField will skip the feature form step if the layer is configured to hide all attributes or if form has been set to hide on feature addition in the attribute form settings. This can streamline the process of starting tracking sessions.
+    QField will skip the feature form if the layer is configured to hide all attributes or if the form has been set to hide on feature addition in the attribute form settings.
+    This can streamline the process of starting tracking sessions.
 
 !!! note
     QField offers the capability to resume tracking sessions seamlessly, even if the application has been restarted or the device has been rebooted. This ensures continuity by allowing previously started tracking sessions to be reactivated without loss progress.
 
-!![](../assets/images/maximum-distance-tolerance.png,550px)
+!![](../assets/images/maximum-distance-tolerance.png,350px)
 
 ## Tracking underway
 
@@ -87,7 +97,7 @@ The configuration of a project tracking session happens in the vector layer prop
 
 !![Activating automatic "Tracking Sessions" in QFieldSync](../assets/images/automatic-tracking-session.png)
 
-!![Tracking activated automatically in QField](../assets/images/qfield-tracking-session.png,300px)
+!![Tracking activated automatically in QField](../assets/images/qfield-tracking-session.png,350px)
 
 !!! note
     ### Benefits
