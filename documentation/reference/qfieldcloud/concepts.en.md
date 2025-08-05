@@ -46,3 +46,70 @@ When a team is assigned a role in a project, all the team members automatically 
 Teams can be added as collaborators only to projects owned by the same organization.
 One organization member can be part of multiple teams.
 If an organization member is a project collaborator directly or through multiple teams, that organization member has the highest possible role.
+
+``` mermaid
+classDiagram
+    direction UD
+
+    class User {
+        <<QFieldCloud User>>
+        +username
+    }
+    class Organization {
+        +name
+    }
+    class Team {
+        +name
+    }
+    class Project {
+        +name
+    }
+
+    class Organization_Role {
+        <<enumeration>>
+        Admin
+        Member
+    }
+
+    class Project_Role {
+        <<enumeration>>
+        Admin
+        Manager
+        Editor
+        Reporter
+        Reader
+    }
+
+    class Organization_Membership {
+        <<Association>>
+        +Organization_Role
+    }
+    class UserCollaborators {
+        <<Association>>
+        +Project_Role
+    }
+    class TeamCollaboration {
+        <<Association>>
+        +Project_Role
+    }
+
+    Organization *-- Project : "owns"
+    Organization *-- Team : "has"
+    Team -- User : "has member"
+
+    Organization -- User : "has member"
+    User -- Organization_Membership
+    Organization_Membership --> Organization_Role
+
+    Project -- User : "collaborator"
+    User -- UserCollaborators
+    UserCollaborators --> Project_Role
+
+    Project -- Team : "collaborator"
+    Team -- TeamCollaboration
+    TeamCollaboration --> Project_Role
+
+```
+
+!!! note
+    Collaborators must first be a Member of the Organization.
