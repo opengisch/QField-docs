@@ -260,6 +260,18 @@ For the old (QGIS) offliner:
 !!! note
     This configuration must be set in the Settings page of each project in [QFieldCloud](https://app.qfield.cloud/).
 
+## Syncing Attachment Folders to Devices
+
+To ensure an entire folder and its contents are downloaded to your QField devices, you must register it as an "Attachments and Directories".
+
+In QGIS project, navigate to `Project` > `Properties` > `QField`. There, add your folder's path to the "Attachments and Directories" list.
+The path you enter must be relative to the location of your project file.
+
+For example, if you have pictures used in the symbology and these are in a folder named `assets` located inside your project home folder,
+you would simply add `assets` to the list.
+
+!![](../../assets/images/attachments_and_directories_list.png)
+
 ## On-Demand Attachment Downloads
 
 For projects with many attachment files, you can enable on-demand downloading in QField.
