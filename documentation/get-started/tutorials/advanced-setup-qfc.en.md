@@ -80,7 +80,7 @@ Please be aware of the security implications of such requirements, and remember 
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
 
-## Restricting Project Files Modification to Administrators and Managers
+## Restriction of Project Files
 
 To prevent any modification to the core QGIS project file, **the project administrators** can restrict the access to these files.
 This can be achieved under the settings section in QFieldCloud.
@@ -102,7 +102,7 @@ Other project collaborators can still upload and modify other project files, suc
 
 !![](../../assets/images/restric_qfc_project_files.png)
 
-## Enabling automatic pushing of changes to QFieldCloud
+## Automatic push to QFieldCloud
 
 With this functionality, users and managers of QFieldCloud projects can enforce automatic pushing of pending changes to QField devices in the field, as well as specify the interval in between automated pushes.
 The functionality is activated through a project setting, allowing remote activation.
@@ -260,15 +260,17 @@ For the old (QGIS) offliner:
 !!! note
     This configuration must be set in the Settings page of each project in [QFieldCloud](https://app.qfield.cloud/).
 
-## Syncing Attachment Folders to Devices
+## Synchronisation of Attachment Folders
 
-To ensure an entire folder and its contents are downloaded to your QField devices, you must register it as an "Attachments and Directories".
+To ensure an entire folder and its contents is downloaded to your QField device, you must add it under "Attachments and Directories".
 
-In QGIS project, navigate to `Project` > `Properties` > `QField`. There, add your folder's path to the "Attachments and Directories" list.
+1. In QGIS navigate to `Project` > `Properties` > `QField`.
+2. Add your folder's path to the "Attachments and Directories" list.
 The path you enter must be relative to the location of your project file.
 
-For example, if you have pictures used in the symbology and these are in a folder named `assets` located inside your project home folder,
-you would simply add `assets` to the list.
+!!! example
+    You used pictures for a specific symbology.
+    These are stored in a folder named `assets` located inside your project home folder. Add them under the folder name to the list.
 
 !![](../../assets/images/attachments_and_directories_list.png)
 
