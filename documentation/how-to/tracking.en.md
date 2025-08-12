@@ -5,7 +5,6 @@ tx_slug: documentation_how-to_tracking
 
 # Tracking
 
-
 :material-tablet: Fieldwork
 
 QField allows you to create points, lines or polygons and track yourself in the background while working on another feature layer or while having the device in your pocket. To enable tracking, you need to ensure that your positioning is activated.
@@ -15,31 +14,25 @@ QField allows you to create points, lines or polygons and track yourself in the 
 1. Open the legend and press long on the layer which you want to use for tracking
 2. Select **Setup tracking** and a new window will appear showing the configuration settings
 
+    !![](../assets/images/tracking-layer-properties.png,350px)
 
-!![](../assets/images/tracking-layer-properties.png,350px)
+    You can choose between two options how the number of vertices will be recorded during the tracking session:
 
-You can choose between two options how the number of vertices will be recorded during the tracking session:
-
-- A minimum time interval
-- A minimum distance
-
+    - A minimum time interval
+    - A minimum distance
 
     !![](../assets/images/tracking-settings.png,350px)
 
-In the case that you wish to ensure that the next vertex is set not too far away from the most recent one (for example if you are in steep terrain and elevation is relevant), you can set a maximum tolerance distance.
+    In the case that you wish to ensure that the next vertex is set not too far away from the most recent one (for example if you are in steep terrain and elevation is relevant), you can set a maximum tolerance distance.
 
-!![](../assets/images/maximum-distance-tolerance.png,350px)
-
+    !![](../assets/images/maximum-distance-tolerance.png,350px)
 
 3. Tap the **Start tracking** button to begin the tracking.
 4. Set the attributes for the feature(s) about to be created.
 
-
-
 !!! note
     For line and polygon layers, a single feature will be created per tracking session, with its geometry formed from the recorded positions.
     For point layers, a new feature will be created for each recorded position, and the attribute values entered in the form will be remembered for subsequent points.
-
 
 !!! tip
     QField will skip the feature form if the layer is configured to hide all attributes or if the form has been set to hide on feature addition in the attribute form settings.
@@ -69,7 +62,6 @@ the time passed since the first vertex recorded in each vertex's M value.
 
 !!! tip
     You can simultanously record multiple trackings sessions across several layers.
-
 
 ## Terminate tracking
 
