@@ -12,23 +12,22 @@ QField.
 QFieldSync supports your project preparation with automating the
 following:
 
--   Required steps for project setup (e.g.
-    `portable_project`)
--   Creating basemaps from a single raster layer or from a style defined
-    in a map theme.
--   Configuring the offline editing functionality and synchronizing
-    changes back.
+- Required steps for project setup (e.g. `portable_project`)
+- Creating basemaps from a single raster layer or from a style defined
+in a map theme.
+- Configuring the offline editing functionality and synchronizing
+changes back.
 
 ## Workflow
 
 To get a quick overview of the process, here is a list of typical steps:
 
-1.  Create a QField package. This is a working copy in a separate
+1. Create a QField package. This is a working copy in a separate
     folder.
-2.  Copy the QField package to the target device.
-3.  Go out and collect data.
-4.  Copy the modified data back to your desktop computer.
-5.  Synchronize the modified data with your database or files.
+2. Copy the QField package to the target device.
+3. Go out and collect data.
+4. Copy the modified data back to your desktop computer.
+5. Synchronize the modified data with your database or files.
 
 ## Installation
 
@@ -155,7 +154,7 @@ If *"Only synchronize features in area of interest"* is selected, only features 
 
 ## Package for QField
 
-To package your project, click on Plugins > QFieldSync > Package for QField.
+To package your project, click on `Plugins` > `QFieldSync` > `Package for QField`.
 Once the project is configured, proceed to package it into a folder. This folder will contain both the QGIS project file (`.qgs`) and the associated data.
 
 !![Package the project for QField](../../assets/images/qfield-sync_package1.png)
