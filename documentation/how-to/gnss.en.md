@@ -209,20 +209,19 @@ Information for GNSS Z value with Vertical grid shift in use:
 | Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
 | USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
 
-### Vertex logger
+### Vertex log layer
 
-It is possible to setup a log layer of the collected vertices. This
-allows to keep track of meta data for each vertex like GNSS quality
-attributes and more. To set this up, a point layer can be added to the
-project and attributes configured to store this information.
+It is good practice to create a log layer of the collected vertices.
+It enables you to keep track of the meta data for each vertex like [GNSS quality attributes](../reference/expression_variables.md) and more.
 
-![](../assets/images/vertex_log1.png){width="600px"}
+#### Setup
 
-Then you should assign the role *digitizing logger* to a point layer.
+1. Add a point layer to the project and attributes configured to store this information.
+!![](../assets/images/vertex_log1.png)
 
-Go to *QFieldSync > Project Properties*
+2. Assign the role *digitizing logger* to a point layer.
 
-![](../assets/images/vertex_log2.png){width="600px"}
+3. Go to *QFieldSync > Project Properties*
+!![](../assets/images/vertex_log2.png)
 
-To be most effective, the layer attributes should have default values that
-relies on the positioning variables enumerated above.
+4. Set default values to the attributes using the positioning variables mentioned above.
