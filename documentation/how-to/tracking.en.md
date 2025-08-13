@@ -18,8 +18,10 @@ QField allows you to create points, lines or polygons and track yourself in the 
 
     You can choose between two options how the number of vertices will be recorded during the tracking session:
 
-    - A minimum time interval
-    - A minimum distance
+    - The `Time` tolerance records your position at a regular rate (e.g., every 30 seconds), which is ideal for consistent logs and saving battery.
+    - The `Distance` tolerance is more efficient, recording a point only after you move a minimum distance.
+    This keeps your track clean by ignoring movement when you are stationary.
+    To capture fine detail on steep or winding terrain, use a shorter distance, for straight routes, a longer distance is better.
 
     !![](../assets/images/tracking-settings.png,350px)
 
