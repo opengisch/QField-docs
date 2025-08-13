@@ -46,3 +46,8 @@ When a team is assigned a role in a project, all the team members automatically 
 Teams can be added as collaborators only to projects owned by the same organization.
 One organization member can be part of multiple teams.
 If an organization member is a project collaborator directly or through multiple teams, that organization member has the highest possible role.
+
+!![](../../assets/images/qfc_roles.svg)
+
+!!! note
+    Collaborators must first be a Member of the Organization.
