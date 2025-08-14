@@ -65,7 +65,7 @@ Altitude values can be corrected with vertical grid shift files to
 calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
-them into the QField app folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj`.
+them into the QField app folder `[App Directory]/QField/proj`.
 
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
@@ -81,12 +81,82 @@ The formats currently supported are:
   - Natural Resources Canada's Geoid (.byn)
 
 For example:
-For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
-the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.<!-- markdown-link-check-disable-line -->
 
-To obtain precise altitude data for Cadastral Surveying in Switzerland, users can access the file correction of the vertical grid shift through [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip).<!-- markdown-link-check-disable-line -->
-Following the download, users are advised to perform a conversion of the file labeled `chgeo04_htrans_lv95.agr` to `chgeo04_htrans_lv95.gtx`.
-The QGIS processing algorithm `gdal:translate` (convert format) can be used for that.
+### **Netherlands: ETRS89 to NAP**
+
+For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertical datum, you'll need the official grid file from NSGI.
+
+1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
+
+2. Place the downloaded `.gtx` file into the directory `[App Directory]/QField/proj`.
+
+### **Switzerland: CH1903+/LV95**
+
+To get precise altitude data for **Cadastral Surveying in Switzerland (LV95)**, you must use a geoid correction grid from Swisstopo. The official file comes in an `.agr` format and must be converted to `.gtx` before it can be used.
+
+#### **Step 1: Download the Geoid Grid**
+
+First, download the "Geoid OGD" dataset from Swisstopo.
+
+- **Download Link**: [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip)<!-- markdown-link-check-disable-line -->
+
+Once you unzip the archive, you will find the required file: `chgeo2004_htrans_LV95.agr`.
+
+#### **Step 2: Convert the `.agr` file**
+
+You can easily convert the file format using the [gdal_translate](https://gdal.org/en/stable/programs/gdal_translate.html) algorithm from the GDAL library, which is included with QGIS.
+The target format is typically `.gtx` (NTv2 Grid Shift File), but you can also convert to other raster formats like GeoTIFF (.tiff).
+
+##### **Method 1: QGIS Graphical User Interface (GUI)**
+
+1. In QGIS, open the Processing Toolbox panel.
+
+2. Navigate to **GDAL** > **Raster conversion** and double-click the **Translate (Convert format)** tool.
+
+3. Configure it with your needed requirements:
+
+    - **Input layer**: Select your `chgeo2004_htrans_LV95.agr` file.
+
+    - **Output file**: Click "Save to File..." and name your output file with a `.gtx` extension (or other format needed), for example, `chgeo2004_htrans_LV95.gtx`.
+
+4. Click **Run**. The other default settings are typically sufficient for this conversion.
+
+!![](../assets/images/qgis_core_translate_convert_format.png)
+
+##### **Method 2: Command Line (`qgis_process`)**
+
+For automation or users who prefer the command line, `qgis_process` is a great option.
+Open your terminal and run the following command, adjusting the paths to your files.
+
+```bash
+qgis_process run gdal:translate --INPUT="/path/to/your/chgeo2004_htrans_LV95.agr" --OUTPUT="/path/to/your/chgeo2004_htrans_LV95.gtx"
+```
+
+##### **Method 3: PyQGIS Script**
+
+You can also perform the conversion programmatically within the QGIS Python Console or a standalone script.
+
+```Python
+import processing
+
+input_grid = '/path/to/your/chgeo2004_htrans_LV95.agr'
+output_grid = '/path/to/your/chgeo2004_htrans_LV95.gtx'
+
+processing.run("gdal:translate", {
+    'INPUT': input_grid,
+    'OUTPUT': output_grid
+})
+
+print(f"Successfully converted grid to: {output_grid}")
+```
+
+#### **Configure the Application**
+
+After converting the `.agr` file:
+
+1. Move your new `chgeo2004_htrans_LV95.gtx` file to the directory `[App Directory]/QField/proj`.
+
+2. In your application's settings, select the file as the vertical grid shift correction file.
 
 !![](../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
 
