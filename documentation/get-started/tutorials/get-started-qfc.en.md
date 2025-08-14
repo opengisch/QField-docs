@@ -124,6 +124,38 @@ Once configured, you can press the cloud button to open the synchronization dial
 
 Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
 
+!!! tip
+    When you start editing a GeoPackage, QGIS by default creates journal files (.gpkg-wal) that instantly update the file's timestamp.
+    QFieldSync detects this new timestamp and will suggest to upload and overwrite the data with the desktop version, even if no changes were saved.
+
+    To avoid this, disable Write-Ahead Logging (WAL) in QGIS. This ensures the timestamp is only updated when you explicitly **save** an edit.
+
+    #### **How to Disable WAL**
+
+    **1. Use the Python Console (Recommended)**:
+
+    Open `Plugins > Python Console` and run the following command:
+
+    ```python
+    QgsSettings().setValue("qgis/walForSqlite3", False)
+    ```
+
+    **2. Edit the QGIS INI file**:
+
+    1.  Go to `Settings > User Profiles > Open Active Profile Folder`.
+
+    2.  **Close QGIS.**
+
+    3.  Then Open the `QGIS/QGIS3.ini` file.
+
+    4.  Add this line under the `[qgis]` section:
+
+    ```ini
+    walForSqlite3=false
+    ```
+
+    Then **restart QGIS** to apply the change.
+
 ## Field device
 
 :material-tablet: Fieldwork
