@@ -26,6 +26,9 @@ Finding the exact location of this directory on your device.
 2. Tap the main menu icon (**☰**) in the top-left corner to open the side panel.
 3. Select **About QField** from the menu.
 4. The application directory locations will be displayed at the bottom of the screen just below the *App directories* path (the paths differ depending on the operating system).
+
+!![QField app directories](../assets/images/qfield_app_directories.png)
+
 #### Typical Locations
 
 The path varies by operating system. Here are some common examples to help you find it:
