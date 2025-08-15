@@ -18,6 +18,7 @@ Below are OS-specific instructions on how to access projects and individual data
 ## QField App directory
 
 Beyond project-specific files stored in imported folders, QField utilizes a dedicated **App Directory** to manage resources and configurations that are shared across all projects on a device. This centralized location allows users to define custom fonts, basemaps, projection grids, and more, without needing to duplicate these files for every project.
+
 ### How to Locate the App Directory
 
 Finding the exact location of this directory on your device.
