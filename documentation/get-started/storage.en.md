@@ -17,7 +17,8 @@ Below are OS-specific instructions on how to access projects and individual data
 
 ## QField App directory
 
-Beyond project-specific files stored in imported folders, QField utilizes a dedicated **App Directory** to manage resources and configurations that are shared across all projects on a device. This centralized location allows users to define custom fonts, basemaps, projection grids, and more, without needing to duplicate these files for every project.
+Beyond project-specific files stored in project folders, QField utilizes a dedicated **App Directory** to manage resources and configurations that are shared across all projects on a device.
+This centralized location allows users to provide custom fonts, basemaps, projection grids, and more, without needing to duplicate these files for every project.
 
 ### How to Locate the App Directory
 
@@ -42,14 +43,14 @@ The path varies by operating system. Here are some common examples to help you f
 
 - **macOS:** `/Users/<YourUsername>/Library/Application Support/QField/QField`
 
-- **Linux:** `/home/<YourUsername>/.local/share/ch.opengis.qfield/QField`
+- **Linux:** `/home/<YourUsername>/.local/share/OPENGIS.ch/QField`
 
 #### The App Directory Structure
 
 | **Directory** | **Purpose and Contents** |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | `auth/`       | Stores authentication configurations (e.g., `OAuth.xml` certificates) required to access secured web services (WMS, WFS).                   |
-| `basemaps/`   | Contains shared basemap files, like MBTiles tile layers.                                                                                    |
+| `basemaps/`   | Contains shared basemap files, like COG or MBTiles layers.                                                                                  |
 | `fonts/`      | For custom font files (`.ttf`, `.otf`) to be used for labels or symbology across all projects.                                              |
 | `logs/`       | Contains GNSS connection logs, which are valuable for debugging and troubleshooting positioning device issues.                              |
 | `plugins/`    | For custom QML plugins that extend QField's functionality.                                                                                  |
