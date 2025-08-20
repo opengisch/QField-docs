@@ -88,6 +88,7 @@ For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertic
 1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
 
 2. Place the downloaded `.gtx` file into the directory `[App Directory]/QField/proj`.
+This is independent of whether you are using QFieldCloud or not.
 
 ### **Example: Switzerland - CH1903+/LV95**
 
