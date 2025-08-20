@@ -48,8 +48,6 @@ There are two different possibilities to register additional fonts:
 2. Copy your font file (.ttf or .otf) in the directory `[App Directory]/QField/fonts`.
 Those will be made accessible to all projects and individual datasets.
 
-!![QField app directories](../assets/images/qfield_app_directories.png)
-
 **Addition of fonts in subfolder of QGIS file**
 
 1. Create a subfolder called **fonts** inside the same folder where your given project file (`.qgs` or `.qgz`). is stored. Those fonts will **only** be accessible when viewing that project.
