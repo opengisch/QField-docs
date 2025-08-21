@@ -41,10 +41,7 @@ When prompted for a password, *leave it blank*. You will be warned that might be
 ## Import authentication configurations into QField
 :material-monitor: Desktop preparation
 
-Once you have exported the authentication configurations to an XML file, you must copy that file onto the devices running QField. The file has to be copied to into an `auth` folder found within the QField's app directory:
-
-- On Android, you can find the directory by connecting your device using a USB cable; the directory will be located at `<drive>:/Android/data/ch.opengis.qfield/files/QField/auth/`;
-- On desktop platforms, you can reach this directory by clicking on the directory path located towards the bottom of the About QField popup.
+Once you have exported the authentication configurations to an XML file, you must copy that file onto the devices running QField. The file has to be copied to into an `auth` folder found within the QField's **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/auth/**:
 
 Once the authentication configurations file is copied, project files containing web services requiring authentications will be able to reach the relevant configuration details and provide access.
 
