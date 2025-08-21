@@ -65,7 +65,7 @@ Altitude values can be corrected with vertical grid shift files to
 calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
-them into the QField app folder `<drive>:/Android/data/ch.opengis.qfield/files/QField/proj`.
+them into the QField app folder `[App Directory]/QField/proj`.
 
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
@@ -80,32 +80,90 @@ The formats currently supported are:
   - NTv2 Datum Grid Shift (.gsb)
   - Natural Resources Canada's Geoid (.byn)
 
-For example:
-For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
-the file [nlgeo2018.gtx from NSGI](https://www.nsgi.nl/rdnaptrans) and put it in the directory.<!-- markdown-link-check-disable-line -->
 
-To obtain precise altitude data for Cadastral Surveying in Switzerland, users can access the file correction of the vertical grid shift through [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip).<!-- markdown-link-check-disable-line -->
-Following the download, users are advised to perform a conversion of the file labeled `chgeo04_htrans_lv95.agr` to `chgeo04_htrans_lv95.gtx`.
-The QGIS processing algorithm `gdal:translate` (convert format) can be used for that.
+### **Example:  Netherlands - ETRS89 to NAP**
+
+For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertical datum, you'll need the official grid file from NSGI.
+
+1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
+
+2. Place the downloaded `.gtx` file into the directory `[App Directory]/QField/proj`.
+This is independent of whether you are using QFieldCloud or not.
+
+### **Example: Switzerland - CH1903+/LV95**
+
+To get precise altitude data for **Cadastral Surveying in Switzerland (LV95)**, you must use the geoid correction grid from Swisstopo.
+The official file comes in an `.agr` format and must be converted to `.gtx` (NTv2 Grid Shift File) before it can be used.
+Other raster formats like (.tiff) can also be used
+
+1. Download the "Geoid OGD" dataset from Swisstopo under the following link **Download Link**: [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip)<!-- markdown-link-check-disable-line -->.
+
+2. Unzip the archive to retrieve the file: `chgeo2004_htrans_LV95.agr`.
+
+3. Convert the file using the using the [gdal_translate](https://gdal.org/en/stable/programs/gdal_translate.html) algorithm with one of the following options:
+
+***Method 1: QGIS Graphical User Interface (GUI)***
+
+1. In QGIS, open the Processing Toolbox panel.
+
+2. Navigate to *GDAL* > *Raster conversion* > *Translate (Convert format)* tool.
+
+3. Configure it with your needed requirements:
+
+    - **Input layer**: Select your `chgeo2004_htrans_LV95.agr` file.
+
+    - **Output file**: Click "Save to File..." and name your output file with a `.gtx` extension (or other format needed), for example, `chgeo2004_htrans_LV95.gtx`.
+
+4. Click **Run**. The other default settings are typically sufficient for this conversion.
+
+!![](../assets/images/qgis_core_translate_convert_format.png)
+
+***Method 2: Command Line (`qgis_process`)***
+
+For automation or users who prefer the command line, `qgis_process` is a great option.
+
+1. Open your terminal and run the following command, adjusting the paths to your files.
+
+```bash
+qgis_process run gdal:translate --INPUT="/path/to/your/chgeo2004_htrans_LV95.agr" --OUTPUT="/path/to/your/chgeo2004_htrans_LV95.gtx"
+```
+
+***Method 3: PyQGIS Script***
+
+You can also perform the conversion programmatically within the QGIS Python Console or a standalone script.
+
+```Python
+import processing
+
+input_grid = '/path/to/your/chgeo2004_htrans_LV95.agr'
+output_grid = '/path/to/your/chgeo2004_htrans_LV95.gtx'
+
+processing.run("gdal:translate", {
+    'INPUT': input_grid,
+    'OUTPUT': output_grid
+})
+
+print(f"Successfully converted grid to: {output_grid}")
+```
+
+:material-tablet: Fieldwork
+
+1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory `[App Directory]/QField/proj` on your mobile device.
+
+2. Under the QField settings, select the file as the vertical grid shift correction file: Main menu > three dots > *Settings* > *Positioning*
 
 !![](../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
 
-## Usage
-:material-tablet: Fieldwork
+3. Enanble your GNSS device.
+it will directly center to your current location once the **positioning information** is available.
 
-A short press on the *GNSS button* will turn on the GNSS and center to the
-current location once *positioning information* is available.
-
-Activate *edit mode* and press on the target button, the cross in the
-center means it is using GNSS positioning.
+4. Change to ***edit mode*** and press on the target button - the cross in the center means it is using GNSS positioning.
 
 !![](../assets/images/gnss_use.webp,250px)
 
-A long press on the *GNSS button* will show the *positioning menu*.
+A long press on the **GNSS button** will show the **positioning menu**.
 
-Inside the *positioning menu* you can turn on the *Show position information*
-which will show the current coordinates which are reprojected into the
-project CRS along with precision information.
+Inside the menu you can turn on the **Show position information** which will show the current coordinates that are reprojected into the CRS of your project along with the precision information.
 
 !![](../assets/images/positioning-menu.png)
 
@@ -119,8 +177,7 @@ project CRS along with precision information.
 QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
 or UDP connections.
 
-In *Settings > Positioning*, you can find a set of buttons to add, edit, or delete external
-devices as well as a dropdown list to switch between internal and saved external GNSS devices.
+In *Settings > Positioning*, you are able to manage and swithch between your internal and saved external GNSS devices.
 
 !![](../assets/images/saved-gnss-devices.png)
 
@@ -143,7 +200,8 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and
 
 ### External receiver log
 
-In *Settings > Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`. If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
+In *Settings > Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
+If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
 
 The logs will be placed in *Android/data/ch.opengis.qfield/files/QField/logs*.
 
@@ -171,27 +229,21 @@ There is a function that allows you to digitize using averaged positions.
 
 The survey will start by pressing and holding the add vertex button, which will start collecting positions.
 
-While collecting, an indicator will appear on top of the coordinate cursor showing a text reflecting the current number of collected positions.
+During the collection, an indicator will appear on top of the coordinate cursor showing the number number of the collected positions.
 If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.
 
 !![](../assets/images/positioning-averaged.webp,280px)
 
-The setting to activate an average position minimum count threshold can be found in QField settings's *positioning* panel.
-When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.
-
+1. To activate direct to  *Side Dashboard panel* > *Settings* > *Positioning*
+2. Shortly tap where you want to collect points and QField will automatically add the averaged position once the minimum count is met.
 !![](../assets/images/positioning_averaged_set.png,280px)
 
-When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
+!!! note
+    When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
 
+## Positioning variables
 
-## Project configuration
-:material-monitor: Desktop preparation
-
-### Positioning variables
-
-You can get access to positioning information through additional
-expression variables accessible in the attribute form. These will
-only be available when positioning is enabled.
+You can get the positioning information both of your internal and external device by specifically configuring your attribute form.
 
 These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)<!-- markdown-link-check-disable-line -->
 for fields to keep track of the quality of individual measured points.
@@ -208,6 +260,7 @@ Information for GNSS Z value with Vertical grid shift in use:
 | None                       | Z ellipsoidal device value| Z ellipsoidal device value           | Z ellipsoidal device value | Altitude: xxx.xxxx m       |
 | Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
 | USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
+
 
 ### Vertex log layer
 
