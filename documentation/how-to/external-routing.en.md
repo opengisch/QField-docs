@@ -29,7 +29,14 @@ concat(
 And tick "Apply default value on update" in case you make changes to your geometry.
 
 If you simply want to show your feature location in Google Maps, you can use the following expression:
-*concat( 'https://maps.google.com?q=  ',y(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')), '%2C', x(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')), '&zoom=19&t=h')*
+
+```sql
+concat( 'https://maps.google.com?q=',
+  y(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
+  '%2C',
+  x(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
+  '&zoom=19&t=h')
+```
 
 ## Usage
 :material-tablet: Fieldwork
