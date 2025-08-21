@@ -15,7 +15,8 @@ On the target device, users can access and edit this local copy using QField and
 There are various possibilities to export copies of project files and datasets from the source device running QGIS and importing them on to a target device for field-data collection.
 Below are OS-specific instructions on how to access projects and individual datasets through QField.
 
-## Exporting QGIS project files for use in QField
+
+## 1. Exporting QGIS project files for use in QField
 
 QField supports a [wide range of data formats](../reference/data-format.md).
 There are two ways of preparing and copying a project in QGIS for use in QField.
@@ -60,7 +61,7 @@ This saves the project file, with the .qgs extension into the GeoPackage as well
 
 For more information, consult the QGIS documentation  [packaging layers](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/database.html#package-layers).
 
-## Copying project over to the QField target device
+## 2. Copying project over to the QField target device
 
 On both Android and iOS, installing QField creates a folder called QField, containing three folders; `Imported Datasets`, `Imported Projects` and `QField`.
 After packaging the project accordingly, the folder or file containing the project has to be copied over to the target device running QField, specifically to the folder called `Imported Projects`.
@@ -131,7 +132,7 @@ On the source device, right-click the file and select `Share...`, choose `AirDro
 On the target device, save the project directly to the QField directory `Imported Projects`.
 After accessing and manipulating the project files in QField, use AirDrop on the target device to transfer the project files back to the source device.
 
-## Importing projects and datasets
+## 3. Importing projects and datasets
 
 Apart from using QFieldCloud, QField can open projects and datasets in four ways:
 
@@ -200,7 +201,7 @@ The ‘Import dataset(s)‘ action allows users to select one or more datasets v
     Users will have to ensure that all sidecar files are selected when importing datasets (e.g. a shapefile would require users to select the .shp, .shx, .dbf, .prj,
     and .cpg files).
 
-## Exporting modified projects and datasets (Android only)
+## 4. Exporting modified projects and datasets (Android only)
 
 Once users modify imported projects and datasets, QField offer various means through which the content can be sent from and exported out of its system-protected files storage:
 
@@ -255,3 +256,43 @@ You can also export your attached files (Photos, Audio, Video, etc).
 
 !!! note
     This functionality is available on Android only.
+
+## 5. QField App directory
+
+Beyond project-specific files stored in project folders, QField utilizes a dedicated **App Directory** to manage resources and configurations that are shared across all projects on a device.
+This centralized location allows users to provide custom fonts, basemaps, projection grids, and more, without needing to duplicate these files for every project.
+
+**Identification of local App Directory**
+
+1. From the QField home screen, open any project.
+2. Tap the main menu icon (**☰**) in the top-left corner to open the side panel.
+3. Select **About QField** from the menu.
+4. The application directory locations will be displayed at the bottom of the screen just below the *App directories* path (the paths differ depending on the operating system).
+
+!![QField app directories](../assets/images/qfield_app_directories.png)
+
+***Common Locations***
+
+The path varies by operating system.
+Here are some common examples to help you find it:
+
+- **Android:** `Internal Storage/Android/data/ch.opengis.qfield/files/QField`.
+
+- **iOS:** `Files App > On My iPhone/iPad > QField`
+
+- **Windows:** `C:\Users\<YourUsername>\AppData\Roaming\ch.opengis.qfield\QField`
+
+- **macOS:** `/Users/<YourUsername>/Library/Application Support/QField/QField`
+
+- **Linux:** `/home/<YourUsername>/.local/share/OPENGIS.ch/QField`
+
+**The App Directory Structure**
+
+| **Directory** | **Purpose and Contents** |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| `auth/`       | Stores authentication configurations (e.g., `OAuth.xml` certificates) required to access secured web services (WMS, WFS).                   |
+| `basemaps/`   | Contains shared basemap files, like COG or MBTiles layers.                                                                                  |
+| `fonts/`      | For custom font files (`.ttf`, `.otf`) to be used for labels or symbology across all projects.                                              |
+| `logs/`       | Contains GNSS connection logs, which are valuable for debugging and troubleshooting positioning device issues.                              |
+| `plugins/`    | For custom QML plugins that extend QField's functionality.                                                                                  |
+| `proj/`       | Stores custom projection grids (e.g., `.tiff` files) for coordinate reference systems (CRS) that require additional transformation files.   |
