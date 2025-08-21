@@ -203,7 +203,7 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and
 In *Settings > Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
 If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
 
-The logs will be placed in *Android/data/ch.opengis.qfield/files/QField/logs*.
+The logs will be placed in **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/logs**.
 
 !![](../assets/images/external_receiver_log.png,250px)
 
