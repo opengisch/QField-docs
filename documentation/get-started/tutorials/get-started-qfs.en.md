@@ -91,18 +91,18 @@ Depending on the layer type, different types of actions are available.
 To adjust the maximum number of visible items in a relationship within QField, follow these steps:
 
 1. **Access Layer Properties Dialog**:
-   - Open the layer properties dialog in QGIS where the relation editor is displayed.
+    - Open the layer properties dialog in QGIS where the relation editor is displayed.
 
 2. **Navigate to QField Tab**:
-   - Locate the QField tab, typically located at the bottom of the layer properties dialog.
+    - Locate the QField tab, typically located at the bottom of the layer properties dialog.
 
 3. **Modify Relationship Configuration**:
-   - In the "Relationship configuration" section, locate the section corresponding to the relationship you want to modify.
+    - In the "Relationship configuration" section, locate the section corresponding to the relationship you want to modify.
 
 4. **Adjust Visibility Limit**:
-   - Within the row for the desired relationship, find the "Maximum number of items visible" column.
-   - Delete the existing numerical value to set the visibility to "unlimited", the field will transform from a number (default 4) to "unlimited".
-   - Click "Apply" to save the changes to the layer properties.
+    - Within the row for the desired relationship, find the "Maximum number of items visible" column.
+    - Delete the existing numerical value to set the visibility to "unlimited", the field will transform from a number (default 4) to "unlimited".
+    - Click "Apply" to save the changes to the layer properties.
 
 !![Maximum items visible for relation](../../assets/images/setting-maximum-items-visible-in-relation.png)
 
