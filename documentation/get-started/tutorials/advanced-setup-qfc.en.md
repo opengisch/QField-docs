@@ -109,7 +109,7 @@ The functionality is activated through a project setting, allowing remote activa
 
 :material-monitor: Desktop preparation
 
-1. **Access Project Settings**: Navigate to the QField panel in the Project Settings dialog provided by the QFieldSync plugin.
+1. **Access Project Settings**: Navigate to the "QField" tab > "QFieldCloud Packaging" in the Project Settings dialog provided by the QFieldSync plugin.
 
 2. **Enable Auto-Push**: Toggle the "Automatically push pending changes on the following interval" option and establish your preferred interval.
 
