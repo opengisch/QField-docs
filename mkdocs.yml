@@ -61,6 +61,7 @@ nav:
       - get-started/help.md
       - get-started/contribute.md
       - get-started/how-to-contribute-translation.md
+      - get-started/how-to-contribute-using-codespace.md
       - get-started/license.md
       - get-started/faq.md
   - How-to guides:
