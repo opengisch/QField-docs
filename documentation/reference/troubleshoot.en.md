@@ -3,11 +3,26 @@ title: Troubleshoot
 tx_slug: documentation_how-to_troubleshoot
 ---
 
-
-## How to troubleshoot in QField
+# How to troubleshoot
 
 When encountering issues or unexpected behavior in QField, the application provides a set of tools to help you diagnose and report problems.
 This guide will walk you through how to use these tools to troubleshoot effectively.
+
+## Checking QFieldCloud Status
+
+Before diving into detailed troubleshooting, especially for issues related to project synchronization or connectivity of QFieldCloud projects, it's a good idea to check the health of QFieldCloud.
+
+The official [QFieldCloud Status](https://status.qfield.org/) Page provides real-time information on the service's operational status. You can use it to check for:
+
+- Current System Status: See if all services are running normally.
+
+- Ongoing Incidents: Get details on any active issues the team is working to resolve.
+
+- Scheduled Maintenance: Find out about planned maintenance that might temporarily affect service availability.
+
+This page can quickly tell you if the problem you're experiencing is part of a wider issue, saving you time on further troubleshooting.
+
+## How to troubleshoot in QField
 
 ### Accessing the Troubleshooting Tools
 
