@@ -3,26 +3,38 @@ title: Troubleshoot
 tx_slug: documentation_how-to_troubleshoot
 ---
 
-
-## How to troubleshoot in QField
+# How to troubleshoot
 
 When encountering issues or unexpected behavior in QField, the application provides a set of tools to help you diagnose and report problems.
 This guide will walk you through how to use these tools to troubleshoot effectively.
 
-### Accessing the Troubleshooting Tools
+## Official QFieldCloud Status Page
+
+The official [QFieldCloud Status](https://status.qfield.org/) Page provides real-time information on the service's operational status. You can use it to check for:
+
+- Current System Status: See if all services are running normally.
+
+- Ongoing Incidents: Get details on any active issues the team is working to resolve.
+
+- Scheduled Maintenance: Find out about planned maintenance that might temporarily affect service availability.
+
+This page can quickly tell you if the problem you're experiencing is part of a wider issue.
+
+## How to troubleshoot in QField
+
 
 To access the troubleshooting and logging tools within QField:
 
 1. Open your project in QField.
-2. Tap the menu icon with the three horizontal lines on the top-left corner to reveal the side dashboard.
-3. Tap the three-dotted menu button.
+2. Tap the menu (☰) on the top-left corner to reveal the side dashboard.
+3. Tap the three-dotted menu button (⋮).
 4. Select **Message Log** from the menu.
 
 !![](../assets/images/accessing_message_log.png,300px)
 
 This will open the main screen for all troubleshooting utilities.
 
-### Understanding the Message Log
+##Understanding the Message Log
 
 The **Message Log** displays a real-time log of events, warnings, and errors that occur while QField is active.
 
@@ -33,11 +45,11 @@ This will copy the message directly to the clipboard of your device.
 
 !![](../assets/images/copy_logs_to_clipboard.png,300px)
 
-### Advanced Troubleshooting
+## Advanced Troubleshooting
 
 For more complex issues, QField provides additional tools to gather more detailed information about your device and the configuration of a specific project.
 
-#### Profiling Application Performance
+### Application Performance
 
 The **Log runtime profile** button captures a snapshot of the application's performance at that moment.
 This includes information about your current project.
@@ -46,7 +58,7 @@ This includes information about your current project.
 
 !![](../assets/images/log_runtime_profiler.png,300px)
 
-#### Submitting a Bug Report
+### Submit a Bug Report
 
 To easily receive support from the QField development team is by sending the application logs of your device.
 
@@ -61,13 +73,13 @@ This helps the developers to link your log files to the appropriate report.
 
 !![](../assets/images/send_application_log.png,300px)
 
-### Managing the Log
+### Log Management
 
 - **Clearing the Log:** The **Clear message log** button will erase all current messages in the log.
 This is helpful when you want to isolate a specific issue.
 By clearing the log before you perform an action that causes a problem, you can ensure that the subsequent log messages are relevant to that specific issue.
 
-### Contributing to QField's Improvement
+### Contribution to QField
 
 You can help to improve the stability and performance of QField by enabling the **Send anonymized metrics** option.
 
