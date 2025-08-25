@@ -29,12 +29,7 @@ Once correctly added, QGIS, QField/QFieldCloud will treat them as shareable data
 ## Manual configuration on portable device in QField
 
 To transfer the shared datasets manually in QField, the datasets have to be added into the right directory on your device:
-
-- In QField, open a project.
-- Reveal the side legend by clicking on the icon with the three lines, and open the main menu by clicking on the 3-dotted button.
-- Select the 'About QField' menu tab.
-- The application directory locations will be displayed at the bottom of the screen just below the 'App directories' path (the paths differ depending on the operating system).
-- Copy your shared dataset files into the directory `[App Directory]/QField/basemaps` on your device.
+- Your shared dataset files need to be copied into the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/basemaps** on your device.
 QField will automatically scan this folder for basemaps and other recognizable data.
 
 !![QField app directories](../assets/images/qfield_app_directories.png)

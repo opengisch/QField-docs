@@ -65,7 +65,7 @@ Altitude values can be corrected with vertical grid shift files to
 calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
-them into the QField app folder `[App Directory]/QField/proj`.
+them into the QField app folder **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/proj**.
 
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
@@ -87,7 +87,7 @@ For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertic
 
 1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
 
-2. Place the downloaded `.gtx` file into the directory `[App Directory]/QField/proj`.
+2. Place the downloaded `.gtx` file into the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/proj**.
 This is independent of whether you are using QFieldCloud or not.
 
 ### **Example: Switzerland - CH1903+/LV95**
@@ -148,7 +148,7 @@ print(f"Successfully converted grid to: {output_grid}")
 
 :material-tablet: Fieldwork
 
-1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory `[App Directory]/QField/proj` on your mobile device.
+1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/proj** on your mobile device.
 
 2. Under the QField settings, select the file as the vertical grid shift correction file: Main menu > three dots > *Settings* > *Positioning*
 
@@ -203,7 +203,7 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and
 In *Settings > Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
 If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
 
-The logs will be placed in *Android/data/ch.opengis.qfield/files/QField/logs*.
+The logs will be placed in **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/logs**.
 
 !![](../assets/images/external_receiver_log.png,250px)
 
