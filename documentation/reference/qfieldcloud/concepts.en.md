@@ -18,6 +18,10 @@ All project data files must be within a single QFieldCloud project.
 
 Read more about [QFieldCloud Projects](./projects.md).
 
+
+!![](../../assets/images/qfc_roles.svg, 800px)
+
+
 ### Project collaborators
 
 A project collaborator is another QFieldCloud user invited to contribute to a project.
@@ -46,3 +50,6 @@ When a team is assigned a role in a project, all the team members automatically 
 Teams can be added as collaborators only to projects owned by the same organization.
 One organization member can be part of multiple teams.
 If an organization member is a project collaborator directly or through multiple teams, that organization member has the highest possible role.
+
+!!! note
+    Collaborators must first be a Member of the Organization.
