@@ -294,18 +294,19 @@ To enable this feature:
 
 QField and QFieldSync connect to the QFieldCloud service on [app.qfield.cloud](https://app.qfield.cloud/) by default.
 
-You can modify the default QFieldCloud server QField and QFieldSync connect to:
+You can modify the default QFieldCloud server that QField and QFieldSync connect to:
 
 1. Open the login screen in QField or QFieldSync.
 2. Double-tap on the Nyuki icon (the blue bee QFieldCloud logo).
 3. This action will reveal a field where you can enter the preferred QFieldCloud server address.
 4. Enter the details of the desired server in the provided field.
-(Leaving the field empty will connect to the default QFieldCloud server at app.qfield.cloud.)
+(Leaving the field empty will automatically connect to the [QFieldCloud server](https://app.qfield.cloud/))
 
 !![Revealing server in QField Sync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
 
 !![Revealing server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
 
 !!! note
+    QField will remember the last entered URL for future sessions.
     It's important to note that QFieldSync does not support the same cloud project in multiple QGIS profiles.
     As a recommendation use a single QGIS profile for your QFieldCloud projects to avoid synchronization issues.
