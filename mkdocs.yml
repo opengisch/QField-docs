@@ -61,7 +61,6 @@ nav:
       - get-started/help.md
       - get-started/contribute.md
       - get-started/how-to-contribute-translation.md
-      - get-started/how-to-contribute-using-codespace.md
       - get-started/license.md
       - get-started/faq.md
   - How-to guides:
@@ -97,6 +96,7 @@ nav:
       - how-to/processing.md
   - Technical reference:
       - reference/index.md
+      - reference/how-to-contribute-using-codespace.md
       - reference/data-format.md
       - reference/exif.md
       - reference/expression_variables.md

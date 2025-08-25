@@ -1,11 +1,13 @@
 ---
-title: Contributing Using Codespaces
+title: QField Documentation Contribution
 tx_slug: documentation_get-started_how-to-contribute-using-codespaces
 ---
 
 # Contributing to the Documentation Using GitHub Codespaces
 
-You can contribute to the QField documentation by making improvements, correcting spelling and grammar, or adding new information. This guide provides a workflow that doesn't require installing anything on your local machine. All you need is a web browser and a free GitHub account.
+You can contribute to the QField documentation by making improvements, correcting spelling and grammar, or adding new information.
+This guide provides a workflow that doesn't require installing anything on your local machine.
+All you need is a web browser and a free GitHub account.
 
 We will use GitHub Codespaces, an online development environment that automatically sets up all the necessary tools for you.
 
@@ -13,15 +15,18 @@ We will use GitHub Codespaces, an online development environment that automatica
 
 ### 1. Create a New Branch
 
-First, you need to create a personal branch where you will make your changes. A branch isolates your work from the main codebase until it's ready to be merged to the master branch.
+First, you need to create a personal branch where you will make your changes.
+A branch isolates your work from the main codebase until it's ready to be merged to the master branch.
 
 1. Navigate to the official [QField Docs repository](https://github.com/opengisch/QField-docs).
 
 2. Click on the branch dropdown, which likely shows `master`.
 
-3. In the text box, type a descriptive name for your new branch. Branch names should not contain spaces; use underscores (`_`) or hyphens (`-`) instead. For example: `fix_welcome_page_typos`.
+3. In the text box, type a descriptive name for your new branch.
+Branch names should not contain spaces; use underscores (`_`) or hyphens (`-`) instead. For example: `fix_welcome_page_typos`.
 
-4. Click on **"Create branch: `<your_branch_name>` from `master`"**. GitHub will automatically create the branch and switch to it.
+4. Click on **"Create branch: `<your_branch_name>` from `master`"**.
+GitHub will automatically create the branch and switch to it.
 
 !![](../assets/images/codespaces_steps_001.png,850px)
 
@@ -37,7 +42,8 @@ Now, launch the cloud-based editor for your new branch.
 
 !![](../assets/images/codespaces_steps_002.png,850px)
 
-GitHub will now prepare your Codespace. This may take a few minutes as it installs all the required dependencies in the background.
+GitHub will now prepare your Codespace.
+This may take a few minutes as it installs all the required dependencies in the background.
 
 ### 3. (Optional) Set Up the 'Doc Writer' Profile
 
@@ -92,7 +98,8 @@ To see how your changes will look on the final documentation website, you can ru
 
 !![](../assets/images/codespaces_steps_008.png,850px)
 
-3. A notification will appear in the bottom-right corner. Click **"Open in Browser"** to view the live documentation site.
+3. A notification will appear in the bottom-right corner.
+Click **"Open in Browser"** to view the live documentation site.
 The page will automatically reload whenever you save a file.
 
 !![](../assets/images/codespaces_steps_009.png,850px)
@@ -105,7 +112,8 @@ Once you are satisfied with your changes, you need to save them to Git and push 
 
 A. Stage Your Changes
 
-Stage all modified files, preparing them for a commit. You can do this using the integrated terminal:
+Stage all modified files, preparing them for a commit.
+You can do this using the integrated terminal:
 
 ```bash
 git add .
@@ -127,14 +135,16 @@ Run it from the terminal:
 pre-commit run
 ```
 
-If the tool reports any errors, it may fix them automatically. In that case, you will need to **stage the changes again** (`git add .`).
+If the tool reports any errors, it may fix them automatically.
+In that case, you will need to **stage the changes again** (`git add .`).
 If it reports errors it cannot fix, please correct them manually and then run the command again until all checks show as **"Passed"** in green.
 
 !![](../assets/images/codespaces_steps_012.png,850px)
 
 - Is pre-commit not installed?
 
-The Codespace environment should install pre-commit automatically. If you see a "Bash command not found" error, you can install it manually by running:
+The Codespace environment should install pre-commit automatically.
+If you see a "Bash command not found" error, you can install it manually by running:
 
 ```bash
 python3 -m pip install pre-commit
@@ -142,7 +152,8 @@ python3 -m pip install pre-commit
 
 C. Commit Your Changes
 
-A commit is a snapshot of your staged changes. Each commit has a message describing the work you did.
+A commit is a snapshot of your staged changes.
+Each commit has a message describing the work you did.
 
 In the terminal, run:
 
@@ -176,7 +187,8 @@ The final step is to create a Pull Request (PR), which is a formal request to me
 
 1. Go back to the [QField Docs repository page](https://github.com/opengisch/QField-docs) on GitHub.
 
-2. You should see a yellow banner with your branch name. Click the **"Compare & pull request"** button.
+2. You should see a yellow banner with your branch name.
+Click the **"Compare & pull request"** button.
 
 3. Give your Pull Request a descriptive title and write a brief summary of the changes you made in the description box.
 
@@ -188,12 +200,14 @@ The final step is to create a Pull Request (PR), which is a formal request to me
 
 ### 8. Address Review Feedback
 
-A maintainer will review your contribution. If they request changes, you can easily make updates:
+A maintainer will review your contribution.
+If they request changes, you can easily make updates:
 
 1. Re-open your Codespace for that branch (you can find it in the "Codespaces" tab of the repository).
 
 2. Make the requested edits.
 
-3. Follow [**Step 6**](#6-save-your-work-commit-and-push) again to stage, run pre-commit, commit, and push your new changes. The Pull Request will update automatically.
+3. Follow [**Step 6**](#6-save-your-work-commit-and-push) again to stage, run pre-commit, commit, and push your new changes.
+The Pull Request will update automatically.
 
 Thank you for contributing to the QField documentation!
