@@ -1,0 +1,4150 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Bienvenido a la documentación del ecosistema QField: un conjunto de productos diseñados para hacer que el trabajo de campo sea fluido y eficiente. Ya sea un usuario nuevo o un profesional experimentado, encontrará todo lo que necesita saber sobre el uso de QField y sus herramientas relacionadas.">
+      
+      
+        <meta name="author" content="OPENGIS.ch">
+      
+      
+        <link rel="canonical" href="https://docs.qfield.org/es/get-started/storage/">
+      
+      
+        <link rel="prev" href="../concepts/">
+      
+      
+        <link rel="next" href="../settings/">
+      
+      
+        
+          <link rel="alternate" href="../../../get-started/storage/" hreflang="en">
+        
+          <link rel="alternate" href="../../../de/get-started/storage/" hreflang="de">
+        
+          <link rel="alternate" href="../../../fr/get-started/storage/" hreflang="fr">
+        
+          <link rel="alternate" href="../../../it/get-started/storage/" hreflang="it">
+        
+          <link rel="alternate" href="../../../ja/get-started/storage/" hreflang="ja">
+        
+          <link rel="alternate" href="../../../pt/get-started/storage/" hreflang="pt">
+        
+          <link rel="alternate" href="./" hreflang="es">
+        
+          <link rel="alternate" href="../../../zh/get-started/storage/" hreflang="zh">
+        
+          <link rel="alternate" href="../../../fi/get-started/storage/" hreflang="fi">
+        
+          <link rel="alternate" href="../../../ro/get-started/storage/" hreflang="ro">
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17+insiders-4.53.5">
+    
+    
+      
+        <title>Almacenamiento - Documentación del ecosistema QField</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ab3d5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/jquery.fancybox.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/swagger-ui.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-68XXC2QVWH"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-68XXC2QVWH",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-68XXC2QVWH",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Almacenamiento - Documentación del ecosistema QField" />
+<meta property="og:description" content="Bienvenido a la documentación del ecosistema QField: un conjunto de productos diseñados para hacer que el trabajo de campo sea fluido y eficiente. Ya sea un usuario nuevo o un profesional experimentado, encontrará todo lo que necesita saber sobre el uso de QField y sus herramientas relacionadas." />
+<meta property="og:image" content="https://docs.qfield.org/assets/images/social/es/get-started/storage.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://docs.qfield.org/es/get-started/storage/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Almacenamiento - Documentación del ecosistema QField" />
+<meta property="twitter:description" content="Bienvenido a la documentación del ecosistema QField: un conjunto de productos diseñados para hacer que el trabajo de campo sea fluido y eficiente. Ya sea un usuario nuevo o un profesional experimentado, encontrará todo lo que necesita saber sobre el uso de QField y sus herramientas relacionadas." />
+<meta property="twitter:image" content="https://docs.qfield.org/assets/images/social/es/get-started/storage.png" />
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gestion-de-almacenamiento-de-qfield" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="https://qfield.org" title="Documentación del ecosistema QField" class="md-header__button md-logo" aria-label="Documentación del ecosistema QField" data-md-component="logo">
+      
+  <img src="../../../assets/images/qfield_logo_white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentación del ecosistema QField
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Almacenamiento
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.768 3.96v.001l-.002-.005a9.08 9.08 0 0 0-.218-.779c-.13-.394.21-.8.602-.67.29.096.575.205.855.328l.01.005A10.002 10.002 0 0 1 12 22a10.002 10.002 0 0 1-9.162-5.985l-.004-.01a9.722 9.722 0 0 1-.329-.855c-.13-.392.277-.732.67-.602.257.084.517.157.78.218l.004.002A9 9 0 0 0 14.999 6a9.09 9.09 0 0 0-.231-2.04ZM16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1 0 16.425 4.74c.05.413.075.833.075 1.259Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 1 0 0 11Zm-5.657.157a.75.75 0 0 1 0 1.06l-1.768 1.768a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.767-1.768a.75.75 0 0 1 1.061 0ZM3.515 3.515a.75.75 0 0 1 1.06 0l1.768 1.768a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L3.515 4.575a.75.75 0 0 1 0-1.06ZM12 0a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 12 0ZM4 12a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 4 12Zm8 8a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 12 20Zm12-8a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 24 12Zm-6.343 5.657a.75.75 0 0 1 1.06 0l1.768 1.768a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-1.768-1.767a.75.75 0 0 1 0-1.061Zm2.828-14.142a.75.75 0 0 1 0 1.06l-1.768 1.768a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l1.767-1.768a.75.75 0 0 1 1.061 0Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../get-started/storage/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../de/get-started/storage/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../fr/get-started/storage/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../it/get-started/storage/" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ja/get-started/storage/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../pt/get-started/storage/" hreflang="pt" class="md-select__link">
+              Portuguese
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../zh/get-started/storage/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../fi/get-started/storage/" hreflang="fi" class="md-select__link">
+              Finnish
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ro/get-started/storage/" hreflang="ro" class="md-select__link">
+              Romanian
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/opengisch/qfield-docs" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    opengisch/qfield-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  Empezar
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../how-to/" class="md-tabs__link">
+          
+  
+    
+  
+  Guías de uso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/" class="md-tabs__link">
+          
+  
+    
+  
+  Referencia técnica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../success-stories/" class="md-tabs__link">
+          
+  
+    
+  
+  Historias de éxito
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://qfield.org" title="Documentación del ecosistema QField" class="md-nav__button md-logo" aria-label="Documentación del ecosistema QField" data-md-component="logo">
+      
+  <img src="../../../assets/images/qfield_logo_white.svg" alt="logo">
+
+    </a>
+    Documentación del ecosistema QField
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/opengisch/qfield-docs" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    opengisch/qfield-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Empezar
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Empezar
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Principios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    Almacenamiento
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Almacenamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-exportacion-de-archivos-de-proyecto-de-qgis-para-su-uso-en-qfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Exportación de archivos de proyecto de QGIS para su uso en QField
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Exportación de archivos de proyecto de QGIS para su uso en QField">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#almacenar-archivos-en-una-carpeta-designada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Almacenar archivos en una carpeta designada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empaquetar-el-proyecto-como-un-geopackage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Empaquetar el proyecto como un GeoPackage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-copiar-el-proyecto-al-dispositivo-de-destino-qfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Copiar el proyecto al dispositivo de destino QField
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Copiar el proyecto al dispositivo de destino QField">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Android
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Android">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transferencia-mediante-cable-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transferencia mediante cable USB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envio-por-bluetooth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envío por Bluetooth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-drive-y-otros-servicios-de-almacenamiento-en-la-nube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Drive (y otros servicios de almacenamiento en la nube)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iOS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="iOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transferencia-mediante-cable-usb_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transferencia mediante cable USB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icloud-y-otros-servicios-de-almacenamiento-en-la-nube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iCloud (y otros servicios de almacenamiento en la nube)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compartir-via-airdrop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compartir vía AirDrop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-importacion-de-proyectos-y-conjuntos-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Importación de proyectos y conjuntos de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Importación de proyectos y conjuntos de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importar-una-carpeta-de-proyecto-android-e-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar una carpeta de proyecto (Android e iOS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Importar una carpeta de proyecto (Android e iOS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#android_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importar-un-proyecto-comprimido-solo-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar un proyecto comprimido (solo Android)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importar-desde-una-url-android-e-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar desde una URL (Android e iOS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importacion-de-conjuntos-de-datos-individuales-solo-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importación de conjuntos de datos individuales (solo Android)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-exportacion-de-proyectos-y-conjuntos-de-datos-modificados-solo-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Exportación de proyectos y conjuntos de datos modificados (solo Android)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Exportación de proyectos y conjuntos de datos modificados (solo Android)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exportar-una-carpeta-de-proyecto-o-un-conjunto-de-datos-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exportar una carpeta de proyecto o un conjunto de datos individual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-una-carpeta-de-proyecto-comprimida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enviar una carpeta de proyecto comprimida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-un-conjunto-de-datos-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enviar un conjunto de datos individual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-directorio-de-aplicaciones-qfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Directorio de aplicaciones QField
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración general de QField
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutoriales
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutoriales
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_1" id="__nav_2_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldCloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QFieldCloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/get-started-qfc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Comenzar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/advanced-setup-qfc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración avanzada
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage-qfc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Planes y almacenamiento adicional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_2" id="__nav_2_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldSync
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QFieldSync
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/get-started-qfs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sample-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyectos de muestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Necesita ayuda?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Apoye el Proyecto QField
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-contribute-translation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribución de la traducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Licencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Preguntas frecuentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../how-to/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Guías de uso
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guías de uso
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Selección de proyectos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/map-interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Interaccionar con el mapa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/measuring-tool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramienta de medición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/digitize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Digitalizar y editar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/attributes-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Formulario de atributos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/search/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Barra de búsqueda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/hiding-legend-nodes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Source Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/map-styling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Estilo del mapa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/map-themes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Temas del mapa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/decorations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Map Decorations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/pictures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Imágenes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/standalone-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Conjuntos de datos independientes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/gnss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Posicionamiento (GNSS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/geofencing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Geocercado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Navegación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Rastreo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/external-routing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Enrutamiento externo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/sensors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/bookmarks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Marcadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/print-to-pdf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Imprimir a PDF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Autenticación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/temporal-filtering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Filtrado temporal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/live-default-value/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Valor vivo predeterminado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/outside-layers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Conjuntos de datos compartidos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/movable-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto portátil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/pg-service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL servicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Complementos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmos de procesamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencia técnica
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Referencia técnica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/data-format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Formatos de datos soportados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/exif/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Datos EXIF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/expression_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables de expresión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Complementos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/troubleshoot.en.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    None
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldCloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QFieldCloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Flujo de trabajo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Conceptos básicos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyectos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Autenticación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/permissions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Permisos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/jobs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Trabajos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/secrets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Secretos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Visión general de la Arquitectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/specs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Especificaciones técnicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación del sistema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/qfieldcloud/sdk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    El SDK y el ILCI oficiales de QFieldCloud
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../success-stories/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Historias de éxito
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Historias de éxito
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../success-stories/ecological-surveying/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Mejora de la eficiencia en la topografía ecológica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../success-stories/geologic-mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapeo Geológico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../success-stories/lulc-mapping-fiji/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Recopilación de Datos Verdaderos en Terreno
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../success-stories/mapping-breeding-birds-in-the-Wadden-Sea/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapeo de aves reproductoras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../success-stories/mosquito-malario-ground-truth-data-collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Recolección de datos de mosquitos transmisores de malaria
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../success-stories/river-state-survey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Encuesta sobre el estado del río
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../success-stories/rwanda-rural-water/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Recopilación de datos de los sistemas de abastecimiento de agua rural
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../success-stories/vanilla-survey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Encuestas sobre la vainilla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../success-stories/heritage-impact-assessment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación de impacto patrimonial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-exportacion-de-archivos-de-proyecto-de-qgis-para-su-uso-en-qfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Exportación de archivos de proyecto de QGIS para su uso en QField
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Exportación de archivos de proyecto de QGIS para su uso en QField">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#almacenar-archivos-en-una-carpeta-designada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Almacenar archivos en una carpeta designada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empaquetar-el-proyecto-como-un-geopackage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Empaquetar el proyecto como un GeoPackage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-copiar-el-proyecto-al-dispositivo-de-destino-qfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Copiar el proyecto al dispositivo de destino QField
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Copiar el proyecto al dispositivo de destino QField">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Android
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Android">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transferencia-mediante-cable-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transferencia mediante cable USB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envio-por-bluetooth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envío por Bluetooth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-drive-y-otros-servicios-de-almacenamiento-en-la-nube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Drive (y otros servicios de almacenamiento en la nube)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iOS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="iOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transferencia-mediante-cable-usb_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transferencia mediante cable USB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icloud-y-otros-servicios-de-almacenamiento-en-la-nube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iCloud (y otros servicios de almacenamiento en la nube)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compartir-via-airdrop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compartir vía AirDrop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-importacion-de-proyectos-y-conjuntos-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Importación de proyectos y conjuntos de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Importación de proyectos y conjuntos de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importar-una-carpeta-de-proyecto-android-e-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar una carpeta de proyecto (Android e iOS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Importar una carpeta de proyecto (Android e iOS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#android_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importar-un-proyecto-comprimido-solo-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar un proyecto comprimido (solo Android)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importar-desde-una-url-android-e-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar desde una URL (Android e iOS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importacion-de-conjuntos-de-datos-individuales-solo-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importación de conjuntos de datos individuales (solo Android)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-exportacion-de-proyectos-y-conjuntos-de-datos-modificados-solo-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Exportación de proyectos y conjuntos de datos modificados (solo Android)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Exportación de proyectos y conjuntos de datos modificados (solo Android)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exportar-una-carpeta-de-proyecto-o-un-conjunto-de-datos-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exportar una carpeta de proyecto o un conjunto de datos individual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-una-carpeta-de-proyecto-comprimida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enviar una carpeta de proyecto comprimida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-un-conjunto-de-datos-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enviar un conjunto de datos individual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-directorio-de-aplicaciones-qfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Directorio de aplicaciones QField
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/opengisch/qfield-docs/blob/master/documentation/get-started/storage.es.md" title="Editar esta página" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<div><h1 id="gestion-de-almacenamiento-de-qfield">Gestión de almacenamiento de QField<a class="headerlink" href="#gestion-de-almacenamiento-de-qfield" title="Permanent link">¶</a></h1>
+<p>En la pantalla de inicio de QField, a los usuarios se les presentan dos opciones para abrir un proyecto.</p>
+<ul>
+<li><strong>Proyectos de QFieldCloud</strong>: La primera opción es <a href="../tutorials/get-started-qfc/">acceder a un proyecto almacenado en QFieldCloud</a>
+En el siguiente capítulo se explica cómo configurar y trabajar con QFieldCloud.</li>
+<li><strong>Abrir archivo local</strong>: La segunda opción implica copiar una copia de trabajo del archivo del proyecto QGIS desde una computadora portátil o PC (el dispositivo de origen) al teléfono o tableta (el dispositivo de destino).
+En el dispositivo de destino, los usuarios pueden acceder y editar esta copia local mediante QField y eventualmente copiar la versión editada al escritorio o a un servicio de almacenamiento en la nube alternativo.</li>
+</ul>
+<p>Existen varias posibilidades para exportar copias de archivos de proyecto y conjuntos de datos desde el dispositivo de origen que ejecuta QGIS e importarlas a un dispositivo de destino para la recopilación de datos de campo.
+A continuación, se incluyen instrucciones específicas del sistema operativo sobre cómo acceder a proyectos y conjuntos de datos individuales a través de QField.</p>
+<h2 id="1-exportacion-de-archivos-de-proyecto-de-qgis-para-su-uso-en-qfield">1. Exportación de archivos de proyecto de QGIS para su uso en QField<a class="headerlink" href="#1-exportacion-de-archivos-de-proyecto-de-qgis-para-su-uso-en-qfield" title="Permanent link">¶</a></h2>
+<p>QField admite una <a href="../../reference/data-format/">amplia gama de formatos de datos</a>.
+Hay dos maneras de preparar y copiar un proyecto en QGIS para su uso en QField.</p>
+<ul>
+<li><a href="#storing-files-in-a-designated-folder">Almacenar archivos en una carpeta designada</a></li>
+<li><a href="#packaging-the-project-as-a-geopackage">Empaquetar el proyecto como un GeoPackage</a></li>
+</ul>
+<h3 id="almacenar-archivos-en-una-carpeta-designada">Almacenar archivos en una carpeta designada<a class="headerlink" href="#almacenar-archivos-en-una-carpeta-designada" title="Permanent link">¶</a></h3>
+<p>Una forma de compilar todas las partes necesarias de un proyecto de QGIS es almacenarlas en una carpeta.
+Esta carpeta puede contener archivos individuales, como un</p>
+<ul>
+<li>Archivo de proyecto QGIS (.qgs o .qgz)</li>
+<li>Datos vectoriales (shapefiles, GeoJSON o Geopackage)</li>
+<li>Datos ráster (GeoTIFFs, JPEGS y otros)</li>
+<li>Archivos auxiliares, que incluyen archivos adicionales utilizados para diseñar (.qml o .sld) y cualquier otro archivo al que haga referencia el proyecto</li>
+</ul>
+<h3 id="empaquetar-el-proyecto-como-un-geopackage">Empaquetar el proyecto como un GeoPackage<a class="headerlink" href="#empaquetar-el-proyecto-como-un-geopackage" title="Permanent link">¶</a></h3>
+<p>La forma más sencilla y eficiente de empaquetar un proyecto de QGIS y sus datos geoespaciales correspondientes en un solo archivo es usar <a href="https://www.geopackage.org/">GeoPackages</a>.
+Recomendamos usar el formato de archivo GeoPackage para proyectos en QField, ya que empaquetar en QGIS es fácil y directo.
+Para empaquetar un proyecto como GeoPackage, se requieren tres pasos.</p>
+<ol>
+<li>
+<p><strong>Empaquetar capas vectoriales como GeoPackage:</strong>
+Primero, haga clic en la caja de herramientas y busque la herramienta “empaquetar capas”.
+Esta herramienta le permite empaquetar capas vectoriales seleccionadas en el archivo del proyecto (y en otros lugares) en un único GeoPackage que contiene los datos geoespaciales.</p>
+</li>
+<li>
+<p><strong>Agregar capas raster a GeoPackage</strong>
+Si su proyecto contiene capas ráster, estas también se pueden almacenar en GeoPackage.
+Haga clic en la capa ráster que desea exportar, luego <em>exportar</em> &gt; <em>guardar como</em> y seleccione GeoPackage como formato.
+Agregue un nombre de archivo y seleccione los tres puntos para buscar el GeoPackage.
+Seleccione el GeoPackage y cambie el formato de archivo en la parte inferior de la ventana de diálogo de “GeoTIFF” a “Todos los archivos (<em>.</em>)”.
+Ahora las capas vectoriales y ráster se guardan en el mismo GeoPackage.
+Para asegurarse, busque el GeoPackage en el panel del navegador y expándalo.</p>
+</li>
+<li>
+<p><strong>Agregar archivo de proyecto (.qgs) a GeoPackage:</strong>
+A continuación, vaya a <em>Proyecto</em> &gt; <em>Guardar en</em> &gt; GeoPackage y seleccione el archivo GeoPackage que contiene todas las capas.
+Esto también guarda el archivo del proyecto, con la extensión .qgs en el GeoPackage.</p>
+</li>
+</ol>
+<p><div class="video-container"><iframe src="https://player.vimeo.com/video/969846267" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div><!-- markdown-link-check-disable-line -->
+<em>Empaquetar proyecto QGIS en GeoPackage</em></p>
+<p>Para obtener más información, consulte la documentación de QGIS <a href="https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/database.html#package-layers">capas de empaquetado</a>.</p>
+<h2 id="2-copiar-el-proyecto-al-dispositivo-de-destino-qfield">2. Copiar el proyecto al dispositivo de destino QField<a class="headerlink" href="#2-copiar-el-proyecto-al-dispositivo-de-destino-qfield" title="Permanent link">¶</a></h2>
+<p>Tanto en Android como en iOS, al instalar QField se crea una carpeta llamada QField, que contiene tres carpetas: <code>Conjuntos de datos importados</code>, <code>Proyectos importados</code> y <code>QField</code>.
+Tras empaquetar el proyecto correctamente, la carpeta o el archivo que lo contiene debe copiarse al dispositivo de destino que ejecuta QField, concretamente a la carpeta <code>Proyectos importados</code>.
+Esta carpeta se encuentra en las siguientes rutas:</p>
+<ul>
+<li>Ruta de Android: <code>Android/data/ch.opengis.qfield/files/Imported Projects</code></li>
+<li>Ruta de iOS: <code>En mi iPhone/QField/Imported Projects</code></li>
+</ul>
+<p>Copiar el proyecto empaquetado a la carpeta correspondiente de cada dispositivo se puede hacer de varias maneras.</p>
+<h3 id="android">Android<a class="headerlink" href="#android" title="Permanent link">¶</a></h3>
+<h4 id="transferencia-mediante-cable-usb">Transferencia mediante cable USB<a class="headerlink" href="#transferencia-mediante-cable-usb" title="Permanent link">¶</a></h4>
+<p>Si desea usar un cable para importar el proyecto a su dispositivo, simplemente conecte ambos dispositivos mediante un cable USB y siga las instrucciones sobre [cómo transferir archivos entre su computadora y el dispositivo Android]. (https://support.google.com/android/answer/9064445?hl=en#zippy=%2Cwindows-computer)
+En la mayoría de los dispositivos conectados a una computadora mediante una conexión de cable USB, la ruta será <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/</code>.
+Allí, los usuarios encontrarán las carpetas <em>Conjuntos de datos importados</em> y <em>Proyectos importados</em>, donde se deben guardar los proyectos y conjuntos de datos de QGIS.
+Los cambios realizados en el contenido del proyecto y los conjuntos de datos se guardan en los archivos que se encuentran en estas ubicaciones.</p>
+<h4 id="envio-por-bluetooth">Envío por Bluetooth<a class="headerlink" href="#envio-por-bluetooth" title="Permanent link">¶</a></h4>
+<p>La transferencia inalámbrica de archivos también es posible al compartir archivos a través de una conexión Bluetooth..](https://www.wikihow.com/Connect-Your-Android-Phone-to-a-Windows-PC-Using-Bluetooth#:~:text=Click%20the%20Windows%20Start%20menu,%22Yes%22%20on%20your%20computer.)</p>
+<h4 id="google-drive-y-otros-servicios-de-almacenamiento-en-la-nube">Google Drive (y otros servicios de almacenamiento en la nube)<a class="headerlink" href="#google-drive-y-otros-servicios-de-almacenamiento-en-la-nube" title="Permanent link">¶</a></h4>
+<p>La ventaja de usar Google Drive es que tanto el dispositivo de origen como el de destino comparten acceso a un directorio de trabajo central que contiene los archivos del proyecto actual.
+Un posible flujo de trabajo podría ser el siguiente:</p>
+<ul>
+<li>Preparar y empaquetar un proyecto QGIS en el dispositivo de origen</li>
+<li>Suba el proyecto a la nube (por ejemplo Google Drive)</li>
+<li>Descargue el proyecto en los dispositivos de destino y recopile datos</li>
+<li>Suba el proyecto modificado (o partes del proyecto) desde los dispositivos de destino a la nube y reemplace los archivos antiguos por los nuevos.</li>
+<li>Descargue el proyecto nuevamente en el dispositivo de origen</li>
+</ul>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+</div>
+<p>Al trabajar con Google Drive, puede ser útil crear una carpeta dedicada en la nube que contenga todos los proyectos.
+   También se puede crear una carpeta paralela a esta carpeta en el dispositivo de destino, donde se podrán descargar y guardar los proyectos de QGIS.</p>
+<h3 id="ios">iOS<a class="headerlink" href="#ios" title="Permanent link">¶</a></h3>
+<h4 id="transferencia-mediante-cable-usb_1">Transferencia mediante cable USB<a class="headerlink" href="#transferencia-mediante-cable-usb_1" title="Permanent link">¶</a></h4>
+<p>Transferir archivos de MacBooks o Macs a iPhone mediante un cable no es sencillo, ya que no es posible acceder a archivos individuales en el directorio QField.
+Una solución alternativa podría ser la siguiente:</p>
+<ul>
+<li>copie toda la carpeta <code>Proyectos importados</code> desde su dispositivo iOS de destino a su dispositivo de origen</li>
+<li>copie el archivo del proyecto QGIS empaquetado en la carpeta <code>Proyectos importados</code> copiada</li>
+<li>copie nuevamente y reemplace la antigua <code>Carpeta importada</code> con la nueva</li>
+</ul>
+<h4 id="icloud-y-otros-servicios-de-almacenamiento-en-la-nube">iCloud (y otros servicios de almacenamiento en la nube)<a class="headerlink" href="#icloud-y-otros-servicios-de-almacenamiento-en-la-nube" title="Permanent link">¶</a></h4>
+<p>Una forma eficiente de sincronizar proyectos es usar iCloud como espacio de trabajo compartido para <a href="https://support.apple.com/en-in/111764">descargar y subir archivos de proyecto</a>.
+No es posible importar proyectos desde carpetas dentro de la aplicación QField para iOS.
+En su lugar, los nuevos archivos de proyecto deben guardarse en la carpeta <code>Proyectos Importados</code> para que QField pueda acceder a ellos.
+Un posible flujo de trabajo podría ser el siguiente:</p>
+<ul>
+<li>En el dispositivo de origen, cargue el proyecto empaquetado en una carpeta en iCloud (titulada, por ejemplo, "Proyectos QField")</li>
+<li>En el dispositivo de destino, descargue el proyecto empaquetado y mueva el archivo a la carpeta QField <code>Proyectos importados</code></li>
+<li>Abra el archivo del proyecto desde dentro de la aplicación QField y recopile datos</li>
+<li>Vuelva a cargar el archivo del proyecto a la carpeta compartida de iCloud y reemplace el archivo del proyecto anterior</li>
+<li>En el dispositivo de origen, descargue el nuevo archivo de proyecto que contiene los datos agregados y los cambios realizados</li>
+</ul>
+<h4 id="compartir-via-airdrop">Compartir vía AirDrop<a class="headerlink" href="#compartir-via-airdrop" title="Permanent link">¶</a></h4>
+<p>Una forma rápida y sencilla de intercambiar archivos es usar AirDrop.
+El único requisito es que tanto el dispositivo de origen como el de destino tengan sistema operativo o iOS, respectivamente.
+En el dispositivo de origen, haz clic derecho en el archivo y selecciona <code>Compartir...</code>, elige <code>AirDrop</code> y, a continuación, selecciona el dispositivo de destino.
+En el dispositivo de destino, guarda el proyecto directamente en el directorio de QField <code>Proyectos Importados</code>.
+Después de acceder y manipular los archivos del proyecto en QField, usa AirDrop en el dispositivo de destino para transferirlos de vuelta al dispositivo de origen.</p>
+<h2 id="3-importacion-de-proyectos-y-conjuntos-de-datos">3. Importación de proyectos y conjuntos de datos<a class="headerlink" href="#3-importacion-de-proyectos-y-conjuntos-de-datos" title="Permanent link">¶</a></h2>
+<p>Además de utilizar QFieldCloud, QField puede abrir proyectos y conjuntos de datos de cuatro maneras:</p>
+<ul>
+<li>
+<p><a href="#importar-una-carpeta-de-proyecto-android-e-ios">importar una carpeta de proyecto</a> <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14"><!-- markdown-link-check-disable-line --></p>
+</li>
+<li>
+<p><a href="#importando-un-proyecto-comprimido-solo-android">importando un proyecto comprimido</a> <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"><!-- markdown-link-check-disable-line --></p>
+</li>
+<li>
+<p><a href="#importing-from-a-url-android-and-ios">importando desde una URL</a> <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14"><!-- markdown-link-check-disable-line --></p>
+</li>
+<li>
+<p><a href="#importing-individual-datasets-android-only">importación de conjuntos de datos individuales</a> <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"><!-- markdown-link-check-disable-line --></p>
+</li>
+</ul>
+<p>
+<figure><a data-caption="Acciones de importación de QField" data-fancybox="gallery" href="../../../assets/images/storage-import-actions.png"><img alt="Acciones de importación de QField" src="../../../assets/images/storage-import-actions.png" title="Acciones de importación de QField" width="600px"></a><figcaption>Acciones de importación de QField</figcaption>
+</figure>
+</p>
+<p>En Android, todas estas acciones están disponibles haciendo clic en el botón ‘importar (+)‘ ubicado en la esquina inferior derecha de la pantalla del selector de proyecto/conjunto de datos, al que se puede acceder haciendo clic en el botón ‘Abrir archivos locales‘ ubicado en la pantalla de bienvenida de QField.</p>
+<p><img src="/assets/images/get-started-storage-add-files.png" alt="add-files" height="500" width="250"> <img src="/assets/images/get-started-storage-local-file-2.png" alt="add-files" height="500" width="250"><!-- markdown-link-check-disable-line --></p>
+<p>En iOS, la única acción disponible a través del botón 'importar (+)' es importar desde una URL.</p>
+<h3 id="importar-una-carpeta-de-proyecto-android-e-ios">Importar una carpeta de proyecto (Android e iOS)<a class="headerlink" href="#importar-una-carpeta-de-proyecto-android-e-ios" title="Permanent link">¶</a></h3>
+<h4 id="android_1">Android<a class="headerlink" href="#android_1" title="Permanent link">¶</a></h4>
+<p>Al importar un proyecto mediante la acción "Importar proyecto desde carpeta", se solicitará a los usuarios permiso para que QField lea el contenido de una carpeta determinada en el almacenamiento del dispositivo.
+Al seleccionar la carpeta, QField copia su contenido (incluidas sus subcarpetas) en la carpeta "Proyectos importados".
+Desde allí, los usuarios podrán abrir el proyecto e interactuar con él.</p>
+<p>Al reimportar una carpeta mediante el menú desplegable, se sobrescribirán los proyectos preexistentes con el mismo nombre de carpeta. Esto permite a los usuarios actualizar sus proyectos.</p>
+<p>!!! nota:
+    La edición, adición y eliminación de características se guardará en los conjuntos de datos del proyecto
+    importado, no en la carpeta original seleccionada durante el proceso de importación.
+   Consulte las secciones a continuación para saber cómo enviar/exportar proyectos y conjuntos de datos editados.</p>
+<h4 id="ios_1">iOS<a class="headerlink" href="#ios_1" title="Permanent link">¶</a></h4>
+<p>En iOS, al instalar QField, se crea una carpeta llamada QField en la aplicación Archivos.
+Los proyectos empaquetados, preparados en el dispositivo de origen y exportados al dispositivo de destino, deben almacenarse en la carpeta <code>QField</code> &gt; <code>Proyectos importados</code>.
+Para abrir un archivo local, pulse 'Abrir archivo local QField en la pantalla de inicio de QField, vaya a <code>Directorio de archivos de QField</code> &gt; <code>Proyectos importados</code> y seleccione el proyecto que desee abrir.</p>
+<h3 id="importar-un-proyecto-comprimido-solo-android">Importar un proyecto comprimido (solo Android)<a class="headerlink" href="#importar-un-proyecto-comprimido-solo-android" title="Permanent link">¶</a></h3>
+<p>En Android, es posible importar proyectos comprimidos (zip) a QField.
+Al seleccionar la opción "Importar proyecto desde ZIP", se les pedirá a los usuarios que seleccionen un archivo ZIP en el almacenamiento de su dispositivo.
+QField descomprimirá el archivo en la carpeta "Proyectos importados", desde donde podrán abrir el proyecto e interactuar con él.</p>
+<p>Esto puede facilitar enormemente la distribución de proyectos, al poder enviar un solo archivo a los usuarios.</p>
+<h3 id="importar-desde-una-url-android-e-ios">Importar desde una URL (Android e iOS)<a class="headerlink" href="#importar-desde-una-url-android-e-ios" title="Permanent link">¶</a></h3>
+<p>Al importar un proyecto o un conjunto de datos individual mediante la acción "Importar URL", se solicitará a los usuarios que proporcionen la URL de un archivo. QField recuperará el contenido y lo guardará en ‘Proyectos importados’ (siempre que la URL apunte a un proyecto comprimido en un archivo ZIP) o en "Conjuntos de datos importados".</p>
+<p>
+<figure><a data-caption="Diálogo de importación URL de QField" data-fancybox="gallery" href="../../../assets/images/storage-import-url.png"><img alt="Diálogo de importación URL de QField" src="../../../assets/images/storage-import-url.png" title="Diálogo de importación URL de QField" width="600px"></a><figcaption>Diálogo de importación URL de QField</figcaption>
+</figure>
+</p>
+<p>QField considerará un archivo ZIP como un proyecto comprimido cuando se detecten
+uno o más archivos de proyecto .qgs/.qgz.</p>
+<h3 id="importacion-de-conjuntos-de-datos-individuales-solo-android">Importación de conjuntos de datos individuales (solo Android)<a class="headerlink" href="#importacion-de-conjuntos-de-datos-individuales-solo-android" title="Permanent link">¶</a></h3>
+<p>La acción ‘Importar conjunto(s) de datos‘ permite a los usuarios seleccionar uno o más conjuntos de datos mediante un selector de archivos del sistema Android. Al seleccionar los conjuntos de datos, QField los copia a la carpeta ‘Conjuntos de datos importados‘, donde los usuarios pueden abrir y modificar su contenido.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Los usuarios deberán asegurarse de seleccionar todos los archivos sidecar al importar conjuntos de datos (por ejemplo, un shapefile requeriría seleccionar los archivos</p>
+</div>
+<p>.shp, .shx, .dbf, .prj y .cpg).</p>
+<h2 id="4-exportacion-de-proyectos-y-conjuntos-de-datos-modificados-solo-android">4. Exportación de proyectos y conjuntos de datos modificados (solo Android)<a class="headerlink" href="#4-exportacion-de-proyectos-y-conjuntos-de-datos-modificados-solo-android" title="Permanent link">¶</a></h2>
+<p>Una vez que los usuarios modifican los proyectos y conjuntos de datos importados, QField ofrece varios medios a través de los cuales el contenido puede enviarse y exportarse desde su almacenamiento de archivos protegido por el sistema:</p>
+<ul>
+<li><a href="#exportar-una-carpeta-de-proyecto-o-un-conjunto-de-datos-individual">al exportar una carpeta de proyecto o un conjunto de datos individual;</a></li>
+<li><a href="#enviando-una-carpeta-de-proyecto-comprimida">enviando una carpeta de proyecto comprimida a una aplicación de {nube, correo electrónico, mensajería, etc.};</a></li>
+<li><a href="#enviar-un-conjunto-de-datos-individual">enviando un conjunto de datos individual a una aplicación {en la nube, correo electrónico, mensajería, etc.};</a> y</li>
+<li><a href="#accediendo-al-contenido-importado-directamente-a-traves-del-cable-usb">accediendo al contenido importado directamente a través del cable USB.</a></li>
+</ul>
+<p>
+<figure><a data-caption="Acciones de exportación de QField" data-fancybox="gallery" href="../../../assets/images/storage-export-actions.png"><img alt="Acciones de exportación de QField" src="../../../assets/images/storage-export-actions.png" title="Acciones de exportación de QField" width="600px"></a><figcaption>Acciones de exportación de QField</figcaption>
+</figure>
+</p>
+<p>Estas acciones están disponibles a través del menú de acciones desplegable adjunto a las carpetas de proyecto y a la lista de conjuntos de datos individuales en el selector de proyecto/conjunto de datos, al que se puede acceder haciendo clic en el botón ‘Abrir archivos locales‘ ubicado en la pantalla de bienvenida de QField.</p>
+<h3 id="exportar-una-carpeta-de-proyecto-o-un-conjunto-de-datos-individual">Exportar una carpeta de proyecto o un conjunto de datos individual<a class="headerlink" href="#exportar-una-carpeta-de-proyecto-o-un-conjunto-de-datos-individual" title="Permanent link">¶</a></h3>
+<p>Al elegir la acción ‘Exportar a carpeta‘, se les solicitará a los usuarios que elijan una ubicación (utilizando la actividad de selección de carpetas del sistema Android) dentro de la cual se copiará el contenido de una carpeta de proyecto seleccionada o un conjunto de datos individual.</p>
+<p>Esta acción permite copiar el contenido de proyectos o conjuntos de datos modificados a una carpeta del dispositivo accesible mediante aplicaciones de sincronización de terceros, como Syncthing.
+Los usuarios también pueden copiar contenido directamente a cuentas en la nube de proveedores compatibles con el proveedor de directorios de almacenamiento con alcance de Android (p. ej., NextCloud).</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>La exportación a una carpeta sobrescribirá el contenido preexistente.</p>
+</div>
+<h3 id="enviar-una-carpeta-de-proyecto-comprimida">Enviar una carpeta de proyecto comprimida<a class="headerlink" href="#enviar-una-carpeta-de-proyecto-comprimida" title="Permanent link">¶</a></h3>
+<p>La acción ‘Enviar carpeta comprimida a‘ comprime el contenido de la carpeta seleccionada en un archivo ZIP.
+A continuación, se pregunta a los usuarios a través de qué aplicación de su dispositivo deben enviar el archivo ZIP resultante.</p>
+<p>Los usuarios pueden comprimir y enviar proyectos completos seleccionando carpetas raíz en el directorio ‘Proyectos importados‘ de QField, así como enviar carpetas seleccionadas dentro de las carpetas de proyecto.
+Esto permite a los usuarios reducir los archivos comprimidos a, por ejemplo, una subcarpeta /DCIM.</p>
+<h3 id="enviar-un-conjunto-de-datos-individual">Enviar un conjunto de datos individual<a class="headerlink" href="#enviar-un-conjunto-de-datos-individual" title="Permanent link">¶</a></h3>
+<p>Los usuarios pueden seleccionar la acción ‘Enviar a‘ para conjuntos de datos individuales, lo que permite enviar conjuntos de datos editados directamente a aplicaciones de terceros como Gmail, Drive, Dropbox, Nextcloud, <insert your favourite messenger app>, etc.</insert></p>
+<p>Para exportar las capas desde un proyecto sincronizado de QFieldCloud, ya sea en su dispositivo o en su proveedor de nube preferido, siga estos pasos:</p>
+<ol>
+<li>Vaya directamente al icono de la carpeta con la rueda en el panel lateral para abrir la carpeta del proyecto.</li>
+</ol>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png"><img alt="" src="../../../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png" title="" width="400px"></a><figcaption></figcaption>
+</figure>
+</p>
+<ol>
+<li>
+<p>Dentro de esta carpeta de proyecto, encontrará los archivos de su proyecto. Las capas sin conexión se almacenarán en un archivo llamado "data.gpkg".
+También puede exportar sus archivos adjuntos (fotos, audio, vídeo, etc.).</p>
+</li>
+<li>
+<p>Ahora, haz clic en los tres puntos (⋮) situados a la derecha del archivo o carpeta.</p>
+</li>
+</ol>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png"><img alt="" src="../../../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png" title="" width="350px"></a><figcaption></figcaption>
+</figure>
+</p>
+<ol>
+<li>Elija entre las acciones "Enviar a..." o "Exportar a carpeta..." en función de sus preferencias y siga las instrucciones en consecuencia.</li>
+</ol>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png"><img alt="" src="../../../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png" title="" width="350px"></a><figcaption></figcaption>
+</figure>
+</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Esta funcionalidad sólo está disponible en Android.</p>
+</div>
+<h2 id="5-directorio-de-aplicaciones-qfield">5. Directorio de aplicaciones QField<a class="headerlink" href="#5-directorio-de-aplicaciones-qfield" title="Permanent link">¶</a></h2>
+<p>Además de los archivos específicos del proyecto almacenados en carpetas de proyecto, QField utiliza un <strong>Directorio de Aplicaciones</strong> dedicado para gestionar recursos y configuraciones compartidos entre todos los proyectos de un dispositivo.
+Esta ubicación centralizada permite a los usuarios proporcionar fuentes personalizadas, mapas base, cuadrículas de proyección y más, sin necesidad de duplicar estos archivos para cada proyecto.</p>
+<p><strong>Identificación del directorio de aplicaciones local</strong></p>
+<ol>
+<li>Desde la pantalla de inicio de QField, abra cualquier proyecto.</li>
+<li>Toque el ícono del menú principal (<strong>☰</strong>) en la esquina superior izquierda para abrir el panel lateral.</li>
+<li>Seleccione <strong>Acerca de QField</strong> en el menú.</li>
+<li>Las ubicaciones del directorio de la aplicación se mostrarán en la parte inferior de la pantalla, justo debajo de la ruta <em>Directorios de la aplicación</em> (las rutas difieren según el sistema operativo).</li>
+</ol>
+<p>
+<figure><a data-caption="Directorios de la aplicación QField" data-fancybox="gallery" href="../../../assets/images/qfield_app_directories.png"><img alt="Directorios de la aplicación QField" src="../../../assets/images/qfield_app_directories.png" title="Directorios de la aplicación QField" width="600px"></a><figcaption>Directorios de la aplicación QField</figcaption>
+</figure>
+</p>
+<p><strong><em>Ubicaciones comunes</em></strong></p>
+<p>La ruta varía según el sistema operativo. Aquí tienes algunos ejemplos comunes para ayudarte a encontrarla:</p>
+<ul>
+<li>
+<p><strong>Android:</strong> <code>Internal Storage/Android/data/ch.opengis.qfield/files/QField</code>.</p>
+</li>
+<li>
+<p><strong>iOS:</strong> <code>Aplicación Archivos &gt; En mi iPhone/iPad &gt; QField</code></p>
+</li>
+<li>
+<p><strong>Windows:</strong> <code>C:\Users\&lt;YourUsername&gt;\AppData\Roaming\ch.opengis.qfield\QField</code></p>
+</li>
+<li>
+<p><strong>macOS:</strong> <code>/Users/&lt;YourUsername&gt;/Library/Application Support/QField/QField</code></p>
+</li>
+<li>
+<p><strong>Linux:</strong> <code>/home/&lt;YourUsername&gt;/.local/share/OPENGIS.ch/QField</code></p>
+</li>
+</ul>
+<p><strong>La estructura del directorio de la aplicación</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Directorio</strong></th>
+<th><strong>Propósito y Contenido</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auth/</code></td>
+<td>Almacena configuraciones de autenticación (por ejemplo, certificados <code>OAuth.xml</code>) necesarias para acceder a servicios web seguros (WMS, WFS).</td>
+</tr>
+<tr>
+<td><code>basemaps/</code></td>
+<td>Contiene archivos de mapas base compartidos, como capas COG o MBTiles.</td>
+</tr>
+<tr>
+<td><code>fonts/</code></td>
+<td>Para archivos de fuentes personalizados (<code>.ttf</code>, <code>.otf</code>) que se utilizarán en etiquetas o simbología en todos los proyectos.</td>
+</tr>
+<tr>
+<td><code>logs/</code></td>
+<td>Contiene registros de conexión GNSS, que son valiosos para depurar y solucionar problemas del dispositivo de posicionamiento.</td>
+</tr>
+<tr>
+<td><code>plugins/</code></td>
+<td>Para complementos QML personalizados que amplían la funcionalidad de QField.</td>
+</tr>
+<tr>
+<td><code>proj/</code></td>
+<td>Almacena cuadrículas de proyección personalizadas (por ejemplo, archivos <code>.tiff</code>) para sistemas de referencia de coordenadas (SRC) que requieren archivos de transformación adicionales.</td>
+</tr>
+</tbody>
+</table></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 <a href="https://OPENGIS.ch">OPENGIS.ch</a> -  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a>
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/opengisch" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/opengisch" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/opengisch/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:info@opengis.ch" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.expand", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1135ae9f.min.js"></script>
+      
+        <script src="../../../javascript/jquery.min.js"></script>
+      
+        <script src="../../../javascript/jquery.fancybox.min.js"></script>
+      
+        <script src="../../../javascript/swagger-ui-bundle.js"></script>
+      
+        <script src="../../../javascript/swagger-ui-standalone-preset.js"></script>
+      
+    
+  </body>
+</html>
