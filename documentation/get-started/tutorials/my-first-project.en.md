@@ -137,6 +137,6 @@ We do not need to edit the *fid* field. QGIS creates this for every Gpkg by defa
 
     !![Value map](../../assets/images/new-project-properties-attri-valuemap.png)
 
-9. Change the widget type of the ***Attachment*** field to ***Attachmendt***.
+9. Change the widget type of the ***Attachment*** field to ***Attachment***.
 This will save the path of the where the image is stored.
 **NOTE:** Change the path to *relative path* so that it is relative to the project folder that you are working in and not the *absolute path*.
