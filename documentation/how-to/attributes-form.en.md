@@ -73,7 +73,7 @@ The visual identification of the list entries is done via the *Display Expressio
 
 Since the parent primary key is used as foreign key in the referencing child features, the primary key must be safe to use (it must be unique) also after syncronizing back to the desktop.
 Therefore it is recommended to use UUIDs for primary keys.
-See [Working with Geopackages](../get-started/tutorials/advanced-setup-qfc/#working-with-geopackages for further information.
+See [Working with Geopackages](../get-started/tutorials/advanced-setup-qfc/#working-with-geopackages) for further information.
 
 It is possible to already add children from a parent that is about to be added.
 This possibility will be blocked if there is no valid primary key on the parent or the constraints are violated.
