@@ -10,7 +10,7 @@ tx_slug: documentation_get-started_tutorials_get-started-qfc
 QFieldCloud is the cloud service that allows smoothless synchronisation of your data between your mobile device for fieldwork and your desktop working station.
 You can further manage teams, work in organisations, assign different editing permissions and much more.
 
-## Register withQFieldCloud [QFieldCloud account](https://app.qfield.cloud/accounts/signup/)
+## Register with QFieldCloud [QFieldCloud account](https://app.qfield.cloud/accounts/signup/)
 
 :material-monitor: Desktop preparation
 
