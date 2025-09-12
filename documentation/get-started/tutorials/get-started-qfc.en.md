@@ -167,7 +167,7 @@ Now you should see your project and files on your project overview page on [QFie
 When you are ready for your fieldwork it is time to setup QField on your mobile device.
 
 !!! Workflow
-    1. Download and install the latest version of QField from Google's play store, Apple's app store, or by [downloading the lastest release for Windows, Linux, or macos](https://github.com/opengisch/QField/releases).
+    1. Download and install the latest version of QField from Google's play store, Apple's app store, or by [downloading the latest release for Windows, Linux, or macos](https://github.com/opengisch/QField/releases).
 
     2. Direct to *Cloud Projects* and log in to QFieldCloud on your mobile device
 
