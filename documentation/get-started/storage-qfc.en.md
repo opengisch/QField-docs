@@ -41,9 +41,9 @@ To upgrade to an **Organization plan**, follow these steps:
 
 An organization requires at least two users.
 The total cost per billing cycle is defined by the number of **active** users.
-An "active user" corresponds to a member who has performed a "job" within a project belonging to the organization.
+An "active user" corresponds to a member who has performed at least one "job" within a project belonging to the organization during an invoice cycle.
 
-To monitor the number of active users direct to *Organization Settings* > *Billing* > *"Active users"*
+To monitor the number of active users direct to your *Organization* > Settings* > *Billing* > *"Active users"*
 
 !![](../assets/images/listing_qfieldcloud_active_users.png)
 
@@ -67,7 +67,7 @@ To add more storage to QFieldCloud direct to *Settings* > *Billing* > *Subscript
     - 1.1. For a **Pro** plan account, click on your username and choose "Settings."
     - 1.2. For an **Organization** plan account, click on the name of your organization and click "Edit Organization".
 
-    **Note**: you need to be owner of that Organization.
+    **Note**: you need to be the owner of that Organization.
 
     ![Enter to setting](../assets/images/discontinuing_service_01_enter_to_setting.png)
 
