@@ -10,31 +10,29 @@ This guide will walk you through how to use these tools to troubleshoot effectiv
 
 ## Official QFieldCloud Status Page
 
-The official [QFieldCloud Status](https://status.qfield.cloud/) Page provides real-time information on the service's operational status. You can use it to check for:
+The official [QFieldCloud Status](https://status.qfield.cloud/)<!-- markdown-link-check-disable-line -->
+Page provides real-time information on the service's operational status. You can use it to check for:
 
 - Current System Status: See if all services are running normally.
-
 - Ongoing Incidents: Get details on any active issues the team is working to resolve.
-
 - Scheduled Maintenance: Find out about planned maintenance that might temporarily affect service availability.
 
 This page can quickly tell you if the problem you're experiencing is part of a wider issue.
 
 ## How to troubleshoot in QField
 
-
 To access the troubleshooting and logging tools within QField:
 
 1. Open your project in QField.
-2. Tap the menu (☰) on the top-left corner to reveal the side dashboard.
-3. Tap the three-dotted menu button (⋮).
+2. Tap the menu (☰) on the top-left corner to reveal the side "Dashboard".
+3. Tap the three-dotted menu button *(⋮)*.
 4. Select **Message Log** from the menu.
 
 !![](../assets/images/accessing_message_log.png,300px)
 
 This will open the main screen for all troubleshooting utilities.
 
-##Understanding the Message Log
+## Understanding the Message Log
 
 The **Message Log** displays a real-time log of events, warnings, and errors that occur while QField is active.
 

@@ -9,7 +9,7 @@ A `pg_service.conf` file allows to use an named alias for a PostgreSQL server co
 Instead of storing hostname, port, database name and more into the QGIS Project file, these can be stored separately.
 It is even possible to store username and password in a `pg_service.conf` file, to avoid having this stored in clear text in the QGIS Project.
 
-Read more about PostgreSQL services in the [QGIS documentation](https://docs.qgis.org/3.22/en/docs/user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file).
+Read more about PostgreSQL services in the [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file).
 
 # QField - Direct Connection
 
@@ -51,7 +51,7 @@ There are many options to organize this, [read more in the PostgreSQL documenta
 
    Within the file, specify connection parameters for your PostgreSQL database using the following format:
 
-   ```plaintext
+   ```ini
    [SERVICE_NAME]
    host=your_host_or_ip
    port=your_port
@@ -69,13 +69,13 @@ There are many options to organize this, [read more in the PostgreSQL documenta
 1. **Set Environment Variable**:
    To ensure QGIS recognizes `pg_service.conf`, create an environment variable pointing to its location:
 
-   - Navigate to "This PC" or "My Computer" > Properties > Advanced System Settings > Environment Variables.
+   - Navigate to *This PC* or *My Computer* > *Properties* > *Advanced System Settings* > *Environment Variables*.
    - Add a new variable:
      - Variable name: `PGSERVICEFILE`
      - Variable value: `C:\Users\<YourUsername>\AppData\Roaming\postgresql\pg_service.conf` (or your `pg_service.conf` file path).
 
-   Alternatively, you can set environment variables directly in QGIS via Settings > Options > System > Environment.
-   Refer to [QGIS System Settings](https://docs.qgis.org/3.28/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details.
+   Alternatively, you can set environment variables directly in QGIS via *Settings* > *Options* > *System* > *Environment*.
+   Refer to [QGIS System Settings](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details.
 
 !![QGIS System Environment Variables](../assets/images/service_config_file_002.png)
 
@@ -83,8 +83,8 @@ There are many options to organize this, [read more in the PostgreSQL documenta
 QGIS will read configuration from `pg_service.conf` automatically.
 
    - Open QGIS.
-   - Go to "Layer" > "Add Layer" > "Add PostGIS Layers..."
-   - In "Create a New PostGIS Connection," select "Service" from the drop-down menu.
+   - Go to *Layer* > *Add Layer* > *Add PostGIS Layers...*
+   - In *Create a New PostGIS Connection*, select "Service" from the drop-down menu.
    - Enter the service name from `pg_service.conf` (e.g., `[NINJA_DB]`) in the "Service" field.
    - Click "OK" to connect to your PostgreSQL database using configurations from `pg_service.conf`.
 
