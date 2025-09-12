@@ -59,11 +59,12 @@ You'll see a "Join Team" link. Click it and wait for approval (you'll receive an
 
 - Confirm that the translation aligns with the guidelines provided in the [Translation process](https://github.com/opengisch/QField-docs?tab=readme-ov-file#translation-process).
 
-## 6. Synchronization and Testing
+## 6. Synchronisation and Testing
 
 - Translations are typically synchronized with the QField app's master codebase each day.
 - To see your translation reflected in the app:
-    - Download the [QField Beta Application](https://play.google.com/apps/testing/ch.opengis.qfield_dev)<!-- markdown-link-check-disable-line --> for early access to new releases with these translations.
+    - Download the [QField Beta Application](https://play.google.com/apps/testing/ch.opengis.qfield_dev)<!-- markdown-link-check-disable-line -->
+    for early access to new releases with these translations.
 
 If your language is not yet available, we will happily add it for you.
-Just open an issue on the GitHub repository and specify which language you would like to translate to.
+Just open an issue on the [GitHub repository](https://github.com/opengisch/QField-docs/issues) and specify which language you would like to translate to.

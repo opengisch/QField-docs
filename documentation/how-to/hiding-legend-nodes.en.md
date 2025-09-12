@@ -7,12 +7,11 @@ tx_slug: documentation_how-to_hiding-legend-nodes
 :material-monitor: Desktop preparation
 
 Frequently, you do not need to access the attributes of all the feature layers or view the value relation tables of your projects.
-You can achieve that by setting the right 'layer capabilities'.
+You can achieve that by setting the right "layer capabilities".
 
-1. In the menu toolbar > Project > Properties > [**Data Sources**](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#data-sources-properties)
+1. In the menu toolbar click on *Project* > *Properties...* > [*Data Sources*](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#data-sources-properties)
 
 !![Configuring Layers Data Sources](../assets/images/hiding-legend-nodes.png)
-
 
 - **Identifiable**: If unchecked the objects of the layer can no longer be identified in QGIS and QField
 - **Read-Only**: If checked a layer can no longer be added, edited or deleted.

@@ -75,10 +75,10 @@ is used, consider turning *Use orthometric altitude from device* off.
 
 The formats currently supported are:
 
-  - GeoTIFF (.tif, .tiff)
-  - NOAA Vertical Datum (.gtx)
-  - NTv2 Datum Grid Shift (.gsb)
-  - Natural Resources Canada's Geoid (.byn)
+- GeoTIFF (.tif, .tiff)
+- NOAA Vertical Datum (.gtx)
+- NTv2 Datum Grid Shift (.gsb)
+- Natural Resources Canada's Geoid (.byn)
 
 
 ### **Example:  Netherlands - ETRS89 to NAP**
@@ -118,7 +118,7 @@ Other raster formats like (.tiff) can also be used
 
 !![](../assets/images/qgis_core_translate_convert_format.png)
 
-***Method 2: Command Line (`qgis_process`)***
+**Method 2: Command Line (`qgis_process`)**
 
 For automation or users who prefer the command line, `qgis_process` is a great option.
 
@@ -132,7 +132,7 @@ qgis_process run gdal:translate --INPUT="/path/to/your/chgeo2004_htrans_LV95.agr
 
 You can also perform the conversion programmatically within the QGIS Python Console or a standalone script.
 
-```Python
+```python
 import processing
 
 input_grid = '/path/to/your/chgeo2004_htrans_LV95.agr'
@@ -177,7 +177,7 @@ Inside the menu you can turn on the **Show position information** which will sho
 QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
 or UDP connections.
 
-In *Settings > Positioning*, you are able to manage and swithch between your internal and saved external GNSS devices.
+In *Settings* > *Positioning*, you are able to manage and swithch between your internal and saved external GNSS devices.
 
 !![](../assets/images/saved-gnss-devices.png)
 
@@ -200,7 +200,7 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and
 
 ### External receiver log
 
-In *Settings > Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
+In *Settings* > *Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
 If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
 
 The logs will be placed in **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/logs**.
@@ -234,7 +234,7 @@ If an averaged position minimum count requirement is active, a progress bar will
 
 !![](../assets/images/positioning-averaged.webp,280px)
 
-1. To activate direct to  *Side Dashboard panel* > *Settings* > *Positioning*
+1. To activate direct to  side *"Dashboard"* > *Settings* > *Positioning*
 2. Shortly tap where you want to collect points and QField will automatically add the averaged position once the minimum count is met.
 !![](../assets/images/positioning_averaged_set.png,280px)
 
@@ -270,11 +270,13 @@ It enables you to keep track of the meta data for each vertex like [GNSS quality
 #### Setup
 
 1. Add a point layer to the project and attributes configured to store this information.
-!![](../assets/images/vertex_log1.png)
+
+    !![](../assets/images/vertex_log1.png)
 
 2. Assign the role *digitizing logger* to a point layer.
 
-3. Go to *QFieldSync > Project Properties*
-!![](../assets/images/vertex_log2.png)
+3. Go to > *Project* > *Properties...* > *QField*.
+
+    !![](../assets/images/vertex_log2.png)
 
 4. Set default values to the attributes using the positioning variables mentioned above.

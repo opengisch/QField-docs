@@ -10,8 +10,7 @@ display the collected data, and save it into newly-digitized feature attributes.
 
 ## Activating sensors
 
-In QField, registered sensors are listed within the currently opened project file in a sub-menu thatcan be
-accessed via the side dashboard's main menu.
+In QField, registered sensors are listed within the currently opened project file in a sub-menu that can be accessed via the side "Dashboard's" main menu.
 
 !![](../assets/images/main_menu_sensors.png)
 

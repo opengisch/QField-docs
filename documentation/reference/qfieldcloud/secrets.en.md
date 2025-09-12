@@ -37,11 +37,14 @@ You need to fill in the environment variable name (capitals only) and the enviro
 To provide granular control over data access, secrets in QFieldCloud can be defined at three different hierarchical levels.
 When a new job is initiated, QFieldCloud will access the secrets available and follow the following hierarchical order of precedence:
 
-1. **User-Assigned Secret (Highest Precedence):** A secret defined within a project and assigned to a specific user. This is the most specific level and overrides all others for that user.
+1. **User-Assigned Secret (Highest Precedence):** A secret defined within a project and assigned to a specific user.
+This is the most specific level and overrides all others for that user.
 
-2. **Project-Level Secret:** A general secret defined for a specific project. It applies to all project members unless a user-assigned secret is present.
+2. **Project-Level Secret:** A general secret defined for a specific project.
+It applies to all project members unless a user-assigned secret is present.
 
-3. **Organization-Level Secret (Lowest Precedence):** A secret defined at the organization level. It is used as a fallback for all projects within the organization that require it, provided no project or user-level secret has been set.
+3. **Organization-Level Secret (Lowest Precedence):** A secret defined at the organization level.
+It is used as a fallback for all projects within the organization that require it, provided no project or user-level secret has been set.
 
 This hierarchical system allows an administrator to set a general, low-privilege database role at the organization level, while assigning more privileged roles for specific projects or trusted individual users.
 
@@ -87,7 +90,9 @@ If you use multiple service definitions, you should add multiple secrets for eac
     Once added, a secret can only be removed, but cannot be edited.
 
 !!! note
-    QFieldCloud secrets are available only during project's job runs, which allows you to configure your PostgreSQL layers as "Offline editing". You **cannot** use QFieldCloud secrets to distribute `pg_service.conf` files across devices. For security reasons, you have to do this manually. You can read [how to configuring QField to use a `pg_service.conf`](../../how-to/pg-service.md) file.
+    QFieldCloud secrets are available only during project's job runs, which allows you to configure your PostgreSQL layers as "Offline editing".
+    You **cannot** use QFieldCloud secrets to distribute `pg_service.conf` files across devices.
+    For security reasons, you have to do this manually. You can read [how to configuring QField to use a `pg_service.conf`](../../how-to/pg-service.md) file.
 
 !![Adding a PostgreSQL service - Simple editor.](../../assets/images/secrets-pgservice-simple.png)
 

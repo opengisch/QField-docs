@@ -13,7 +13,9 @@ By an easy configuration of your attribute form in QGIS, you can quickly access 
 
 Here is an example for navigation to features of a point layer.
 
-Create a new field in your data table (type text). In the attribute form settings, select "attachment" as widget type. Tick "Display a hyperlink for document path (read-only)".
+Create a new field in your data table (datatype text).
+In the attribute form settings, select "attachment" as widget type.
+Tick "Display a hyperlink for document path (read-only)".
 Then enter the following expression as default value:
 
 ```sql

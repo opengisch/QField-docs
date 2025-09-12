@@ -11,11 +11,11 @@ configured within QGIS.
 ## Usage
 :material-tablet: Fieldwork
 
-Printing to PDF is available through QField's main menu in the side dashboard.
+Printing to PDF is available through QField's main menu bar in the side "Dashboard".
 
 !![](../assets/images/print_menu.png)
 
-If the opened project has a single print layout defined, selecting the 'Print to PDF'
+If the opened project has a single print layout defined, selecting the "Print to PDF"
 menu will immediately launch an export of the layout to PDF. If more than one print
 layout is present, a submenu will appear listing all the available layouts to choose from.
 
@@ -26,11 +26,9 @@ created PDF document.
 
 ## Feature-Driven Atlas Print
 
-You can also print an atlas-driven layout by selecting features from vector layers acting
-as coverage layers. To do so, identify features on the map by tapping on the canvas and
-hold-press on a feature in the list to toggle the (mutli-)feature selection mode. Once the
-desired features are selected, click on the *Menu ( ⁝ )* button and select *Print Atlas
-Feature(s) to PDF*.
+You can also print an atlas-driven layout by selecting features from vector layers acting as coverage layers.
+To do so, identify features on the map by tapping on the canvas and hold-press on a feature in the list to toggle the (multi-)feature selection mode.
+Once the desired features are selected, click on the *Menu ( ⁝ )* button and select *Print Atlas Feature(s) to PDF*.
 
 !![](../assets/images/print_atlas_menu.png)
 

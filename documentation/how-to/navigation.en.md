@@ -21,7 +21,7 @@ To disable *navigation*, clear the destination point by pressing long on the nav
 ## Setting a destination point
 :material-tablet: Fieldwork
 
-There is several options to set a navigaation destination point.
+There is several options to set a navigation destination point.
 A quick way is to simply tap and hold on any part of the map and select the *Set as Destination* action within the popped up menu.
 
 !![](../assets/images/navigation-add-from-touch.png)
