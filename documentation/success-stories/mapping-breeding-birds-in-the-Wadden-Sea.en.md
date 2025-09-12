@@ -50,14 +50,11 @@ over seven of in total 12 different monitoring stations.
 
 ## Project preparation
 
-On a desktop computer we set up a QGIS project containing a
-high-resolution aerial image as background layer for orientation in the
-field. For the monitoring data we created a custom Geopackage database
-with predefined dropdown columns and entry restrictions. Additionally,
-we added predefined walking paths to guide the volunteers and to further
-standardise our monitoring.
+On a desktop computer we set up a QGIS project containing a high-resolution aerial image as background layer for orientation in the field.
+For the monitoring data we created a custom GeoPackage database with predefined dropdown columns and entry restrictions.
+Additionally, we added predefined walking paths to guide the volunteers and to further standardise our monitoring.
 
-!![Sketch of the QField Interface. For data entry we used a geopackage file with custom dropdown list and entry restrictions.](../assets/images/Wattenmeer3.jpg)
+!![Sketch of the QField Interface. For data entry we used a GeoPackage file with custom dropdown list and entry restrictions.](../assets/images/Wattenmeer3.jpg)
 
 !![Logged observations are clearly laid out in QField.](../assets/images/Wattenmeer4.jpg)
 

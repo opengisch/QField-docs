@@ -12,10 +12,10 @@ This includes all renderer types like graduated, categorized, rule based,
 ## Display Expression
 :material-monitor: Desktop preparation
 
-In QField, objects are identified with a name, which can be customised using expressions.
+In QField, objects are identified with a name, which can be customized using expressions.
 
 1. Open the attribute table in QGIS and switch to the form view.
-2. Direct to *Vector Layer Properties > Display > Attribute*.
+2. Direct to *Vector Layer Properties* > *Display* > *Attribute*.
 
 The display expression is also used to search in layers.
 
@@ -32,7 +32,7 @@ It is possible to protect layers from editing attributes or adding and deleting 
 
 It is also possible to configure which layers are searchable.
 
-1. Direct to *Project > Properties > Data Sources* and activate the checkboxes to match your desired behavior.
+1. Direct to *Project* > *Properties...* > *Data Sources* and activate the checkboxes to match your desired behaviour.
 
 !![Configuration of layers that will not be identifiable, nor modifiable,  nor searchable.](../assets/images/project_configuration_readonly.png)
 
@@ -57,14 +57,14 @@ Those will be made accessible to all projects and individual datasets.
 It is possible to embed SVG symbols directly within a QGIS project.
 
 1. Choose the layer which will support SVG symbology and open its properties dialog.
-2. Open the section Symbology in *Properties > Symbology*
+2. Open the section Symbology in *Properties* > *Symbology*
 3. In the *Symbol Layer Panel* choose *Simple marker*.
 !![](../assets/images/symbol_layer_panel.png)
-4. Change the Symbol layer type in *Symbol layer type > SVG marker*.
+4. Change the symbol layer type in *Symbol layer type* > *SVG marker*.
 !![](../assets/images/symbol_layer_type.png)
 5. Scroll down to the bottom panel.
 6. Click on the right side of the file selection button to open the drop down menu.
 !![](../assets/images/drop_down_svg_menu.png)
-7. Select ***Embed File*** and choose the SVG file in the file selection dialog.
-8. Apply the changes and click **OK**.
+7. Select *Embed File* and choose the SVG file in the file selection dialog.
+8. Apply the changes and click *OK*.
 !![](../assets/images/custom_svg_symbols.gif)

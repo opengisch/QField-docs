@@ -31,7 +31,7 @@ In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS. The 
 
 ### Install QFieldSync
 
-Open the QGIS plugin manager by going to the `Plugins -> Manage and install Plugins…` menu.
+Open the QGIS plugin manager by going to the *Plugins* > *Manage and install Plugins…* menu.
 
 Find QFieldSync in the list of plugins and install the latest version by clicking the `Install Plugin` button.
 
@@ -54,7 +54,7 @@ A new login screen will appear:
 Enter your credentials previously created during account registration.
 
 !!! note
-    If you use a password in QGIS for the first time, it will ask you to set a master password that manages all the other passwords used in QGIS. More information about the master password here: [QGIS documentation](https://docs.qgis.org/3.4/en/docs/user_manual/auth_system/auth_overview.html#master-password)
+    If you use a password in QGIS for the first time, it will ask you to set a master password that manages all the other passwords used in QGIS. More information about the master password here: [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/auth_system/auth_overview.html#master-password)
 
 Explore the projects overview screen: your current user underlined and blue, a logout button down-left, a cloud button to create a new project and, on the right, a refresh button to grab the freshest project list. Newly registered users will see an empty table and as soon as they create new projects, the list will grow. The projects overview screen looks like this:
 
@@ -69,9 +69,9 @@ Local status:
 
 Cloud status:
 
-Red: status failed —> the project is invalid and is not understood by the cloud. The user needs to fix/upload their .qgs/.qgz project.
-Brown: status busy —> we are working on your project, please be patient. You cannot do much with the project in the meanwhile.
-Green: status ok —> the project is successfully undestood by the cloud. You can try to download on QField, but the success is not guaranteed.
+- Red: status failed —> the project is invalid and is not understood by the cloud. The user needs to fix/upload their .qgs/.qgz project.
+- Brown: status busy —> we are working on your project, please be patient. You cannot do much with the project in the meanwhile.
+- Green: status ok —> the project is successfully understood by the cloud. You can try to download on QField, but the success is not guaranteed.
 
 The status of each project is shown with a tooltip.
 
@@ -84,7 +84,9 @@ By double-clicking on a project in the list, you can see and edit the specific p
 Create a new project by clicking the cloud button, down-left. First, you will need to choose how to create the new project between
 
 * "Convert currently open project to cloud project"
-  A new QFieldCloud-compatible project is created from the currently opened QGIS project. In order to do so, datasets will be copied into an export directory that will act as your local mirror. Vector datasets will be converted to geopackage format to facilitate data synchronization from multiple devices while other dataset types will be copied to the new project lotation.
+  A new QFieldCloud-compatible project is created from the currently opened QGIS project.
+  In order to do so, datasets will be copied into an export directory that will act as your local mirror.
+  Vector datasets will be converted to GeoPackage format to facilitate data Synchronisation from multiple devices while other dataset types will be copied to the new project location.
 
 To convert a current project, a completely empty directory is mandatory.
 
@@ -107,7 +109,8 @@ A form will ask you for project name, description and local directory. In the lo
 
 Configure the project layers by clicking the fifth icon in the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"}. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer. Get more information about how to configure your layers in the [Get Started guide for QFieldSync](./get-started-qfs.md)!.
 
-It is recommended to use GeoPackage layers for collaborative editing. See the [advanced setup guide](advanced-setup-qfc.md) for more information about vector formats support.
+It is recommended to use GeoPackage layers for collaborative editing.
+See the [advanced setup guide](advanced-setup-qfc.md) for more information about vector formats support.
 
 !!! note
     If you use experimental data sources without a primary key field (e.g. Shapefiles, GeoJSON etc), you must have a lowercase `fid` field that will be used as a primary key that uniquely identifies each feature.
@@ -118,7 +121,7 @@ Any QField supported raster and vector layer formats may be used as read-only da
 
 ### Upload a project
 
-Once configured, you can press the cloud button to open the synchronization dialog. Here you have to decide what do you prefer: the local file or the file on the cloud.
+Once configured, you can press the cloud button to open the Synchronisation dialog. Here you have to decide what do you prefer: the local file or the file on the cloud.
 
 !![Synchronize](../../assets/images/getting_started_synchronize.png)
 
@@ -130,7 +133,7 @@ Now you should see your project and files on [QFieldCloud](https://app.qfield.cl
 
 ### Install QField
 
-Download and install the latest version of QField from Google's play store, Apple's app store, or by [downloading the lastest release for Windows, Linux, or macos](https://github.com/opengisch/QField/releases).
+Download and install the latest version of QField from Google's play store, Apple's app store, or by [downloading the latest release for Windows, Linux, or macos](https://github.com/opengisch/QField/releases).
 
 ### Start working on your project
 

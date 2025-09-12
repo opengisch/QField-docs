@@ -18,9 +18,7 @@ All project data files must be within a single QFieldCloud project.
 
 Read more about [QFieldCloud Projects](./projects.md).
 
-
-!![](../../assets/images/qfc_roles.svg, 800px)
-
+!![](../../assets/images/qfc_roles.svg,800px)
 
 ### Project collaborators
 
