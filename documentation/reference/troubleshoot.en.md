@@ -10,12 +10,8 @@ This guide will walk you through how to use these tools to troubleshoot effectiv
 
 ## Official QFieldCloud Status Page
 
-<<<<<<< HEAD
-The official [QFieldCloud Status](https://status.qfield.org/) Page provides real-time information on the service's operational status. You can use it to check for:<!-- markdown-link-check-disable-line -->
-=======
 The official [QFieldCloud Status](https://status.qfield.cloud/)<!-- markdown-link-check-disable-line -->
 Page provides real-time information on the service's operational status. You can use it to check for:
->>>>>>> origin/master
 
 - Current System Status: See if all services are running normally.
 - Ongoing Incidents: Get details on any active issues the team is working to resolve.
