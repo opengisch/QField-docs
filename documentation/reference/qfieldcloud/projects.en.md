@@ -45,7 +45,8 @@ If external SVG or raster symbology is used, users must upload the corresponding
     QFieldCloud does not support projects stored in a GeoPackage (`.gpkg`) files (but users can still use GeoPackage files to store datasets for their projects).
 
 A typical file structure of a QGIS file might look something like this:
-```
+
+```text
 project
 ├── data
 │   ├── basemap.tif
@@ -62,7 +63,6 @@ project
 ├── project_attachments.zip
 └── project.qml
 ```
-
 
 The files in a QGIS project can be in one of the following groups by their purpose:
 
@@ -146,4 +146,4 @@ Project settings are available only to project owners and collaborators with "ad
 - etc
 
 !!! warning
-    Actions issued from a project' settings page can lead to data loss!
+    Actions issued from a project's settings page can lead to data loss!

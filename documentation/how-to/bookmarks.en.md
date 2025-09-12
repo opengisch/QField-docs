@@ -12,7 +12,7 @@ QField allows you to save and display bookmarks that will be remembered across s
 
 By default, QField will display bookmarks as marker overlays over the map. User-added bookmarks are displayed across all projects and datasets.
 
-A single tap on a marker will display the bookmark name while a touble tap will set the map extent to re-center around the bookmark location.
+A single tap on a marker will display the bookmark name while a double tap will set the map extent to re-center around the bookmark location.
 
 !![](../assets/images/bookmarks.png)
 

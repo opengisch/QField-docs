@@ -14,10 +14,11 @@ Other formats supported by QGIS should also work but are not officially supporte
 
 Using GeoPackages is usually the best choice for a simple setup to centralize data collected by your QField users to one single file.
 
-If you would like to set up a relation, it is recommended to add a UUID field and to use that as the primary or foreign key.
+If you would like to set up a relation, add a UUID field and use that as the primary or foreign key.
 
 !!! Note
-    Do not use the default 'fid' field for relations (as primary or foreign key). It will lead to errors over time.
+    Do not use the default `fid` field for relations (as primary or foreign key).
+    It will lead to errors over time.
 
 ### Example workflow (GeoPackage)
 
@@ -54,14 +55,15 @@ Please be aware of the security implications of such requirements, and remember 
 
 1. Create a new project.
 2. Create add a PostGIS layer, making sure to store the credentials in the project.
-3. Make sure the PostGIS database connection is publicly accessible (public IP or domain name, it will not work with 127.0.0.1 or localhost).
-4. In the QFieldSync project settings, set the GeoPackage to `Offline editing` if your QField users will not have a reliable internet connection in the field or `Direct database access`.
-5. Upload the project to QField cloud.
+3. Make sure the PostGIS database connection is publicly accessible (public IP or domain name, it will not work with `127.0.0.1` or `localhost`).
+4. In the QFieldSync project settings, set the GeoPackage to "Offline editing" if your QField users will not have a reliable internet connection in the field or "Direct database access".
+5. Upload the project to QFieldCloud.
 
 :material-tablet: Fieldwork
 
-1. Signin to QFieldCloud and download the project.
-2. Collect some data (and upload the changes once back at the office if you were using `Offline editing`).
+1. Sign in to QFieldCloud and download the project.
+2. Collect some data
+3. Push or synchronize the changes once back at the office if you were using `offline editing`.
 
 :material-monitor: Desktop
 
@@ -73,10 +75,10 @@ Please be aware of the security implications of such requirements, and remember 
 
 !!! note
     When using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database once synchronized by the user.
-    This is the best choice if the connection in the field is not reliable
-    Changes will only be visible to users once the synchronization via QFieldCloud has been applied on the different devices.
-    As a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
-    Just like for regular GeoPackages, if relationships are defined, it is recommended to use a UUID field instead of the fid as the primary key to avoid conflicts if multiple users create data at the same time.
+    We recommend to use this option to avoid unnecessary data losses in case of lost data connection.
+
+    Changes will only be visible to users once the Synchronisation via QFieldCloud has been applied on the different devices.
+    When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
 
@@ -84,6 +86,14 @@ You can find more information on [QFieldCloud technical reference](../../referen
 
 To prevent any modification to the core QGIS project file, **the project administrators** can restrict the access to these files.
 This can be achieved under the settings section in QFieldCloud.
+
+1. From the QFieldCloud homepage direct to *Settings*
+2. Enable the **`Restrict project files`** button
+
+!![](../../assets/images/restric_qfc_project_files.png)
+
+Once set, only administrators and managers will be able to push changes to the files listed above.
+Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.
 
 ### Restricted Files
 
@@ -94,22 +104,15 @@ When enabled, the following files can only be modified or uploaded by a user wit
 - **QGIS auxiliary data files** that store information like label positions (e.g., `my_project.qgd`).
 - **QField style files** (`.qml`) that share the same name as the project file.
 
-### How to Enable Restriction
-
-By enabling the **`Restrict project files`**, you activate this administrative control.
-Once set, only administrators and managers will be able to push changes to the files listed above.
-Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.
-
-!![](../../assets/images/restric_qfc_project_files.png)
 
 ## Automatic push to QFieldCloud
 
-With this functionality, users and managers of QFieldCloud projects can enforce automatic pushing of pending changes to QField devices in the field, as well as specify the interval in between automated pushes.
+With this functionality, you can enforce automatic pushing of pending changes to QField devices in the field, as well as specify the interval in between automated pushes.
 The functionality is activated through a project setting, allowing remote activation.
 
 :material-monitor: Desktop preparation
 
-1. **Access Project Settings**: Navigate to the "QField" tab > "QFieldCloud Packaging" in the Project Settings dialog provided by the QFieldSync plugin.
+1. **Access Project Settings**: Direct to *Project* > *Properties...* > *QField* > *QFieldCloud Packaging*
 
 2. **Enable Auto-Push**: Toggle the "Automatically push pending changes on the following interval" option and establish your preferred interval.
 
@@ -120,19 +123,19 @@ The functionality is activated through a project setting, allowing remote activa
 !!! note
     **Benefits:**
 
-    - **Real-Time Updates**: Ensures prompt synchronization of field data with the QFieldCloud project.
-    - **Streamlined Workflow**: Minimizes manual intervention and ensures surveyors do not need to worry about synchronization, helping them focus on data quality.
+    - *Real-Time Updates*: Ensures prompt Synchronisation of field data with the QFieldCloud project.
+    - *Streamlined Workflow*: Minimizes manual intervention and ensures surveyors do not need to worry about Synchronisation, helping them focus on data quality.
 
     **Considerations:**
 
-    - **Network Stability**: Ensure stable internet connectivity for auto-push functionality.
-    - **Battery Optimization**: Implement strategies to mitigate battery consumption on QField devices during prolonged fieldwork.
+    - *Network Stability*: Ensure stable internet connectivity for auto-push functionality.
+    - *Battery Optimization*: Implement strategies to mitigate battery consumption on QField devices during prolonged fieldwork.
 
-## Create a project in an organization
+## Project creation in an organisation
 
 How to create a project in an organization:
 
-**Option 1: Directly convert your local project to an Organization QFieldCloud project:**
+### Option 1: Using QField Sync
 
 1. Follow the steps [configure your cloud project](#create-and-configure-your-cloud-project), until you get to the "Project details".
 
@@ -140,25 +143,23 @@ How to create a project in an organization:
 
     ![Project files over view in QFieldCloud](../../assets/images/converting-project-to-organization-01.png)
 
-3. Click on "Create" to start the conversion and synchronization.
-When finish you will see the project is in your Organization in QFieldCloud.
+3. Click on "Create" to start the conversion and Synchronisation.
+When finished the project will appear in the list of projects of your Organization in QFieldCloud.
 
-    ![Project files over view in QFieldCloud](../../assets/images/converting-project-to-organization-02.png)
+    ![Project files overview in QFieldCloud](../../assets/images/converting-project-to-organization-02.png)
 
-!!! note
-    QField Sync 4.6 or newer is required for this functionality
 
-**Option 2: Uploading directly to the organization:**
+### Option 2: Using QFieldCloud
 
-1. Select your organization.
+1. In the QFieldCloud landing page direct to your organization.
 
     ![Entering into Organization](../../assets/images/project_organization_01_entering_into_organization.png)
 
-2. Once you get into the organization, click on "Create a project".
+2. Click on "Create a project".
 
     ![Creating Project](../../assets/images/project_organization_02_creating_project.png)
 
-3. Select "Create a new empty project".
+3. Select "Create a new empty project"
 
     ![New empty project](../../assets/images/project_organization_03_new_empty_project.png)
 
@@ -166,7 +167,7 @@ When finish you will see the project is in your Organization in QFieldCloud.
 
     ![New project created](../../assets/images/project_organization_04_new_project_created.png)
 
-5. On QGIS in QFieldSync, you will see the new project listed, click on "Edit Selected Cloud Project".
+5. In QGIS open QFieldSync and you will see the new project listed, click on "Edit Selected Cloud Project".
 
     ![QFieldSync](../../assets/images/project_organization_05_qfield_sync.png)
 
@@ -190,37 +191,42 @@ When finish you will see the project is in your Organization in QFieldCloud.
 
     ![Project files over view in QFieldCloud](../../assets/images/project_organization_10_files_overview_in_cloud.png)
 
-**Option 3: Moving the project from your own account to the Organizations:**
+### Option 3: Changing the Ownership of a project
 
-1. If you already have a project in QFieldCloud (refer to [configure your cloud project](#create-and-configure-your-cloud-project)).
-In the project, click on "Settings" and select "Transfer ownership of this project" to choose the desired Organization for the transfer.
+1. On the QFieldCloud landing page, click on your project of concern.
+2. Direct to the *Settings* and select "Transfer ownership of this project" and choose the desired Organization for the transfer.
 
     ![Transferring to Organization](../../assets/images/project_organization_11_transfering_to_organization.png)
 
-2. A pop-up window will appear to confirm the transfer. To proceed, you will need to type the requested text and click "Transfer project".
+3. A pop-up window will appear to confirm the transfer. To proceed, you will need to type the requested text and click "Transfer project".
 
     ![Confirm transfer](../../assets/images/project_organization_12_confirming_transfer.png)
 
 ## Activate email notifications for QFieldCloud changes
 
-1. Access the Settings of your account.
-2. Navigate to the Notifications section.
-Here, you can customize the frequency of notifications you wish to receive at the email address registered with your account.![Synchronize](../../assets/images/frequency_notifications_settings.png)
+If you wish to be notified by QFieldCloud what happens to your team(s) and your projects, you can activate the email notification option.
 
-    The events you get notified about are:
-    - User created
-    - Organization created
-    - Organization deleted
-    - Organization membership created
-    - Organization membership deleted
-    - Team created
-    - Team deleted
-    - Team membership created
-    - Team membership deleted
-    - Project created
-    - Project deleted
-    - Project membership created
-    - Project membership deleted
+1. On your QFieldCloud landing page direct to *settings*.
+2. Navigate to the notifications section.
+Here, you can customize the frequency of notifications you wish to receive at the email address registered with your account.
+
+![Synchronize](../../assets/images/frequency_notifications_settings.png)
+
+The events you get notified about are:
+
+- User created
+- Organization created
+- Organization deleted
+- Organization membership created
+- Organization membership deleted
+- Team created
+- Team deleted
+- Team membership created
+- Team membership deleted
+- Project created
+- Project deleted
+- Project membership created
+- Project membership deleted
 
 You will receive notifications for events in which you are not the actor.
 These notifications are specifically for events that are initiated by other members of your organization or collaborators on your projects.
@@ -228,9 +234,11 @@ These notifications are specifically for events that are initiated by other memb
 ## Enhance your project with the "Optimized Packager"
 
 We recommend using the new "Optimized Packager" over the deprecated "QGIS Core Offline Editing" for all your projects.
-Set the packager under "Packaging Offliner" in the "Settings" tab of your project.
-
 The "Optimized Packager" supports consolidating filtered layers of same datasource into a single offline layer, respecting distinct symbology but also using less storage.
+
+1. On the QFieldCloud landing page and select the project of concern
+2. Direct to *Settings* and set the packager under "Packaging Offliner" in the "Settings" tab of your project.
+
 Here is an example to illustrate this feature:
 
 **Example Configuration:**
@@ -248,9 +256,11 @@ Here is an example to illustrate this feature:
 **Result:**
 
 For the new offliner:
-- A single layer is generated in the offline geopackage, combining data from `layer1` with the specified filters.
+
+- A single layer is generated in the offline GeoPackage, combining data from `layer1` with the specified filters.
 
 For the old (QGIS) offliner:
+
 - Two separate layers are created, each representing the filtered datasets:
   - Layer 1: Filtered with `id % 2 = 1`
   - Layer 2: Filtered with `id % 2 = 0`
@@ -260,17 +270,18 @@ For the old (QGIS) offliner:
 !!! note
     This configuration must be set in the Settings page of each project in [QFieldCloud](https://app.qfield.cloud/).
 
-## Synchronisation of Attachment Folders
+## Configuration of Attachment Folders
 
-To ensure an entire folder and its contents is downloaded to your QField device, you must add it under "Attachments and Directories".
+If your project contains photos, documents or other attachments, you have to configure your QGIS project accordingly to ensure that the data are downloaded to your QField device.
 
-1. In QGIS navigate to `Project` > `Properties` > `QField`.
+1. In QGIS navigate to *Project* > *Properties...* > *QField*.
 2. Add your folder's path to the "Attachments and Directories" list.
 The path you enter must be relative to the location of your project file.
 
 !!! example
     You used pictures for a specific symbology.
-    These are stored in a folder named `assets` located inside your project home folder. Add them under the folder name to the list.
+    These are stored in a folder named "assets" located inside your project home folder.
+    Add them under the folder name to the list.
 
 !![](../../assets/images/attachments_and_directories_list.png)
 
@@ -281,9 +292,9 @@ This is useful for saving storage space on field devices and reducing data trans
 
 To enable this feature:
 
-1. Navigate to your project on the QFieldCloud web platform.
-2. Open the project's **Settings** tab.
-3. Enable the **On demand attachment files download** option.
+1. From the QFieldCloud landing page, select your project.
+2. Direct to *Settings*.
+3. Enable the "On demand attachment files download" option.
 
 !!! note
     This feature can be activated during project creation or enabled at any time for existing projects.
@@ -292,21 +303,21 @@ To enable this feature:
 
 ## Connect to a custom QFieldCloud server in QField and QFieldSync
 
-QField and QFieldSync connect to the QFieldCloud service on [app.qfield.cloud](https://app.qfield.cloud/) by default.
+QField and QFieldSync connect to the QFieldCloud service [app.qfield.cloud](https://app.qfield.cloud/) by default.
 
-You can modify the default QFieldCloud server that QField and QFieldSync connect to:
+You can modify the default that QField and QFieldSync connect to:
 
 1. Open the login screen in QField or QFieldSync.
-2. Double-tap on the Nyuki icon (the blue bee QFieldCloud logo).
+2. Double-tap on the Nyuki icon (the QFieldCloud logo).
 3. This action will reveal a field where you can enter the preferred QFieldCloud server address.
 4. Enter the details of the desired server in the provided field.
 (Leaving the field empty will automatically connect to the [QFieldCloud server](https://app.qfield.cloud/))
 
-!![Revealing server in QField Sync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
+!![Revealing server in QFieldSync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
 
 !![Revealing server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
 
 !!! note
     QField will remember the last entered URL for future sessions.
     It's important to note that QFieldSync does not support the same cloud project in multiple QGIS profiles.
-    As a recommendation use a single QGIS profile for your QFieldCloud projects to avoid synchronization issues.
+    As a recommendation use a single QGIS profile for your QFieldCloud projects to avoid Synchronisation issues.

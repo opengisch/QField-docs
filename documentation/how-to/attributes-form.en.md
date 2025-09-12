@@ -5,9 +5,10 @@ tx_slug: documentation_how-to_attributes-form
 
 # Attribute form
 
-QField creates forms that are similar to QGIS, but with some differences.
-QGIS field widgets are supported on a best-effort basis and optimized for mobile use.
-
+Before you go into the field, you will have to configure your forms - the fields that the user will see in the fields.
+You can create forms with for QField that are similar to the ones in QGIS, but with a few differences.
+The general QGIS field widgets are supported on a best-effort basis and optimized for mobile use.
+Below is an overview what is supported.
 
 | Widget type        | Support          | Notes                                                                                                                                                                                                  |
 |--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -25,40 +26,35 @@ QGIS field widgets are supported on a best-effort basis and optimized for mobile
 | QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
 | Others             | :material-close: | [Funding](../get-started/contribute.md#feature-sponsoring)                                                                                                                                      |
 
-## Attribute form configuration
+## General Attribute Settings
 
 In order to customize the attribute form, it is necessary to use the drag and drop designer in QGIS or to a use pre-written UI file.
-Like for QGIS you can make use of powerful expressions to populate the different fields.
-Additionally, to the ones available there are [QFieldCloud specific variables](../reference/expression_variables.md#qfieldcloud), which can be utilized inside the attribute form.
+You can also make use of powerful expressions to populate the different fields.
+Additionally, to the ones available there are [QFieldCloud specific variables](../reference/expression_variables.md#qfieldcloud), which can be utilized inside the attribute form:
 
-### Editable
+Below are some other general useful settings, which you can find in the Vector Layer *Properties...* > *Attribute form* (see image below).
 
-The *editable* flag of fields is respected.
+- **Drag and drop designer**: You can structure your forms using various containers, such as tabs and groups, and enhance interactivity by incorporating conditional visibility of fields and assigning default values.
+For more information refer to: [Drag and Drop Designer QGIS Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu)
 
-### Remember last values
+- **Hide attribute form upon**: You can hide the attribute form by changing from the "Show form on Add Feature" to the setting "Suppress attribute form".
+When adding a new feature in QField, no attribute form needs to be populated.
+**Note**: In such a case, you have to configure the attribute form in such a way that all constraints/rules are met even if you do not add any attributes.
 
-QField offers more fine-grained control over the last used values than QGIS, and uses its own settings instead of the QGIS ones.
+- **Editable**: You can decide whether a field is editable or not by activating it in the widget display of the corresponding field.
+- **Remember last values**: If you don't want to add the same value again and again you can enable this option under the widget display in QGIS.
+QField, however, offers a more fine-grained control over the last used values.
+If you enable this option in QGIS, the rule will always apply.
+With QField you can change and disable this option at any point during data collection.
 
-### Suppress attribute form
 
-The setting *suppress attribute form* is directly applied to the
-QField form.
+!![General Attribute Form](../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 
-### Drag and drop designer forms
-
-Groups and Tabs from Drag and Drop designer forms are supported.
-
-In the "Attributes Form," you can structure your forms using various containers, such as tabs and groups, and enhance interactivity by incorporating expression-based conditional visibility.
-By enabling the [Drag and Drop Designer](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu), you gain the flexibility to re-order attribute fields, as well as gaining access to widgets that are not directly tied to specific fields (e.g., HTML/QML widgets).
-
-!![](../assets/images/drag-and-drop-designer-attribute-forms.png)
-
-!![](../assets/images/qfield-show-group-by-conditional.png)
-
-## Configure a Relation Widget
+## Working with Relations
 :material-monitor: Desktop preparation
 
-For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) QGIS documentation.
+For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) section in the QGIS documentation.
+
 To further control the visibility and number of related items shown in QField, see the instructions for configuring [Maximum items visibility for QField](../get-started/tutorials/get-started-qfs.md#configuring-maximum-items-visibility-for-qfield).
 
 !![](../assets/images/relation_editor_widget_list.png)
@@ -66,22 +62,21 @@ To further control the visibility and number of related items shown in QField, s
 The relation widget shows all the referencing child features in a list.
 If enabled, it is possible to add, delete and open them.
 
-The visual identification of the list entries is done via the *Display Expression* of the child layer.
+The visual identification of the list entries is done via the **Display Expression** of the child layer.
 
 ### Key handling
 
-
 Since the parent primary key is used as foreign key in the referencing child features, the primary key must be safe to use (it must be unique) also after syncronizing back to the desktop.
-Therefore it is recommended to use UUIDs for primary keys.
-See [Working with Geopackages](../get-started/tutorials/advanced-setup-qfc/#working-with-geopackages) for further information. <!-- markdown-link-check-disable-line -->
+Therefore we always recommend to use UUIDs as primary keys.
+See [Working with GeoPackages](../get-started/tutorials/advanced-setup-qfc.md#working-with-geopackages) for further information.
 
-It is possible to already add children from a parent that is about to be added.
+You can already add children from a parent that is about to be added.
 This option will be blocked if there is no valid primary key on the parent or the constraints are violated.
 In case the adding of the parent feature is canceled after some children have been added already, the children are deleted as well.
 
 ### Many-To-Many relations
 
-On many-to-many relationships, according to the cardinality setting in the *QGIS Vector Layer Properties*, on adding, deleting or opening an
+On many-to-many relationships, according to the cardinality setting in the QGIS Vector Layer *Properties...*, on adding, deleting or opening an
 entry in the list effects directly the child layer (on direct cardinality) or the linking table (on many-to-one cardinality).
 
 The second case is usually used when there are additional relation information (e.g. percentage) in the linking table.
@@ -90,63 +85,62 @@ The second case is usually used when there are additional relation information (
 
 In case of the many-to-one cardinality on many-to-many relations the *Display Expression* needs to be set on the linking table.
 
-### Configuring Ordered Relations for QGIS and QField
+### Ordered Relation
 
-The **Ordered Relation Editor** widget allows the reordering of linked child features based on a specific field.
+If required you can reorder linked child features based on a field by selecting the **Ordered Relation Editor** from the widget type options.
+To enable this functionality, however, you require a second plugin [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) <!-- markdown-link-check-disable-line -->
 
-#### 1. Install the Plugin
+!!! Workflow
 
-Make sure you have installed the [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) plugin from the official repository or through the "Plugin Manager" in QGIS.
+    1. Install the Plugin [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) plugin from the official repository or through the "Plugin Manager" in QGIS.
 
-#### 2. Configure the Layout
+    2. Open the Vector Layer *Properties...* > *Attributes Form* and set the layout editor to **Drag and Drop Designer**.
 
-Navigate to the **Attributes Form** section of your layer settings and set the layout editor to **Drag and Drop Designer**.
+    3. Click on the relationship of your available widgets.
 
-#### 3. Set Up the Relation Editor Widget
+    4. On the right under "Widget Display" scroll down to the "Widget Type option and  select **Ordered Relation Editor**.
 
-In the **Relation** widget type dropdown, select **Ordered Relation Editor**. Then, configure the widget using the following settings:
+    5. Configure the widget using the following settings:
 
-- **Ordering Field**: Specify the field in the child layer that will be used to determine the order of the features.
+    - **Ordering Field**: Specify the field in the child layer that will be used to determine the order of the features.
 
-- **Description**: Define an expression to be displayed for each child feature in the list.
+    - **Description**: Define an expression to be displayed for each child feature in the list.
 
-- **Image Path (Optional)**: Provide a path to an image or icon to visually enhance the list. This is an expression that resolves dynamically.
+    - **Image Path (Optional)**: Provide a path to an image or icon to visually enhance the list. This is an expression that resolves dynamically.
 
-!![Widget configuration in QGIS](../assets/images/ordered_relation_widget_configuration.png)
+    !![Widget configuration in QGIS](../assets/images/ordered_relation_widget_configuration.png)
 
-!![QField](../assets/images/ordered_relation_widget.webp,400px)
+    !![QField](../assets/images/ordered_relation_widget.webp,400px)
 
-### Configuring an item threshold for Value Map Editor Widgets
+## Value Map Widget Configuration
 
-To enhance the user experience within QField, it is possible to control the item threshold at which point the value map editor widgets switch to a toggle buttons interface.
-This feature allows users to quickly access items in QField when there are few and providing a more intuitive interface when dealing with a large number of items.
+When using value maps as a widget type you can control
+the automatic switch from a "buttons'" interface to a list
+!![QFieldSync Layer Properties](../assets/images/qfieldsync-toggle-value-map-editor-widget.png,800px).
 
-#### To activate the Toggle Button Interface:
+!!! Workflow
 
-1. Open **Layer Properties** by right-clicking on the desired layer and selecting 'Properties' from the menu.
+    1. Direct to the Vector Layer *Properties...* > *QField*
 
-2. Navigate to the **QField** tab located within the Layer Properties dialog.
+    2. Under the "Feature Form Settings" enable and define quantity of items that will trigger the transition to a toggle button interface.
 
-3. Here, you will find an option to specify the quantity of items that will trigger the transition to a toggle button interface.
-Enter the preferred threshold value according to your needs.
+    !![QField Value Map Editor as List](../assets/images/qfield-value-map-editor-list.png,300px)
 
-!![QFieldSync Layer Properties](../assets/images/qfieldsync-toggle-value-map-editor-widget.png)
+    !![QField Value Map Editor as Buttons](../assets/images/qfield-value-map-editor-buttons.png,300px)
 
-!![QField Value Map Editor as List](../assets/images/qfield-value-map-editor-list.png,300px)
 
-!![QField Value Map Editor as Buttons](../assets/images/qfield-value-map-editor-buttons.png,300px)
-
-## Configuring the Attachment Widget
+## Attachment Widget
 :material-monitor: Desktop preparation
 
 The widget type *Attachment* is used with fields that store the path to files.
 
 It can be used to:
 
-- show and take photos or add pictures from the gallery
-- listen and record sound clips
-- show and record videos
-- show links to external files like PDFs or documents
+- Show and take photos or add pictures from the gallery
+- Listen and record sound clips
+- Show and record videos
+- Show links to external files like PDFs or documents
+- Add sketches directly in QField
 
 !![Form attachment picture](../assets/images/attachement-setting-picture.png)
 
@@ -154,86 +148,121 @@ It can be used to:
 
 !![Form attachment video](../assets/images/attachement-setting-video.png)
 
-The path should be set to relative.
-The pictures, audios, videos, pdf's and documents are stored then in a sub-directory of the project, where the link stored in the textfield is pointing to.
-
 !!! note
-    QGIS 3.30 or newer is required for the audio and video functionality
+    The path need to be set "relative".
+    The pictures, audios, videos, pdf's and documents are stored then in a sub-directory of the project, where the link stored in the text field is pointing to.
 
-In QField the attachments are displayed.
-By clicking the icons symbol the camera or audio record is started to update the pictures, videos or audios with a new media.
+
+You can add a new item when clicking the camera, video, microphone or document option.
+Depending on what you have selected as default, one of them will be shown inside the form.
 
 !![Media](../assets/images/attachments-qfield-media.png,300px)
 
-On synchronization the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
+On Synchronisation the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
 
-The option *hyperlink* on the attachment widget will disable the camera functionality and enable a hyperlink to open a document (pdf, doc, \...).
+By default when adding attachments QField  automatically displays the file.
+The option *hyperlink* on the attachment widget will disable that functionality and show just the path to the file hyperlink.
 
-![](../assets/images/hyperlink_option.png)
+!![](../assets/images/hyperlink_option.png)
 
-## Configurable attachment path
+!!! Workflow
+    **Set attachment path**
+
+    :material-monitor: Desktop preparation
+
+    In QFieldSync you can configure the path of attachments.
+    By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
+
+    1. Go to Vector Layer *Properties...* > *QField* and "Attachments Settings".
+
+    2. Use specific expressions to set the required names of the attachments.
+
+    !![Paths](../assets/images/paths-saving-media.png)
+
+## Value Relation Widget
+
 :material-monitor: Desktop preparation
 
-QFieldSync provides the possibility to configure the path of attachments.
+The widget *Value Relation* offers values from a related table in a combobox.
+Here you have several options to choose from:
 
-- Go to _QFieldSync plugin > Layers Properties_
+- **Layer**: Set the table or layer that stores the values to be selected from.
+- **Key column**: Set the column which contains the values that are to be saved.
+- **value column**: Set the actual column which contains the values that are to be shown during collection.
 
-Use expressions to specify the path of the attachments. By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
-
-!![Paths](../assets/images/paths-saving-media.png)
-
-## Configure a Value Relation Widget
-:material-monitor: Desktop preparation
-
-The widget *Value Relation* offers values from a related table in a
-combobox. You can select *layer*, *key column* and *value column*. Several
-options are available to change the standard behaviors: *allow null value*, *order by value* and *allow multiple selections*. The widget will
-display a drop-down or multiple-select list of the referenced features.
+- **Order by Value**: Set the order of how the displayed values should be shown.
+This can either be by the "key", "value" or a specific column.
+- **Group column**: You can group your values based on another column.
+(eg. you want to collect information on tree species, you could group the values by the genus).
+- **Allow NULL value**: The field can stay blank.
+- **Use Completer**: You can use this option to auto-complete your fields.
+When selecting the magnifying glass you can search under the available values and select accordingly.
+- **Allow multiple selections**: If enabled, you can select multiple values in one feature.
 
 !![](../assets/images/value_relation_widget.webp,300px)
 
+!!! Workflow
 
-### Group Values in the Value Relation Widget
+    **Group Value Configuration**
 
-You can organize and optimize the appearance of your *Value Relation widgets* by grouping related items together.
-This feature allows you to categorize the values in a dropdown list or in a table view based on the content of a chosen column.
+    1. Choose the column that will be used to organize the items.
+    The values from this column will act as group title.
 
-For example, if you have a list of cities, you can group them by their respective states.
-This makes it easier for users to navigate and find the values they need, especially in lists with a large number of items.
+    2. (Optional) Enable **Display group name** if you want to add the title of your group as a distinct header.
+    This creates a clear separation between the different groups, making the list easier to navigate.
 
-#### Configuration
+    !![First configuration](../assets/images/grouping_value_relations_widget_qgis_setting_001.png)
 
-Grouping is configured within the Value Relation widget's settings using the following options:
+    !![Second configuration](../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
 
-- **Group column**: Choose the column from the layer that will be used to organize the items.
-The values from this column will act as group title.
-- **Display group name**: Check this box to display the group title as distinct header within the widget.
-This creates a clear separation between the different groups, making the list easier to navigate.
+    !![Third configuration](../assets/images/grouping_value_relations_widget_qgis_setting_003.png)
 
-!![First configuration](../assets/images/grouping_value_relations_widget_qgis_setting_001.png)
+    !![Different configurations on QField](../assets/images/grouping_value_relations_widget_qfield_show_gruped.png)
 
-!![Second configuration](../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
+!!! Workflow
 
-!![Third configuration](../assets/images/grouping_value_relations_widget_qgis_setting_003.png)
+    **Use Auto Complete**
 
-!![Different configurations on QField](../assets/images/grouping_value_relations_widget_qfield_show_gruped.png)
+    1. Direct to Vector Layer *Properties...* > *Attributes Form*.
 
-## Configure Conditional Visibility
+    2. Your widget type needs to be "Value Relation".
+
+    3. Enable the "Use completer" option.
+
+
+    !![Enable auto-complete within QGIS](../assets/images/autocomplet_form.png)
+
+    Here is a video showing how it works on QField
+
+    !![](../assets/images/autocomplete_typing.webp,300px)
+
+
+## Conditional Visibility
 :material-monitor: Desktop preparation
 
-Groups can be hidden based on an expression.
+You can hide whole groups based on expressions.
 This is useful when certain attributes are only required under certain conditions.
-As an example imagine mapping trees.
-Some of them might have a disease and you have a list of possible deseases.
-To not clutter the form with many fields, make a group and configure a visibility expression for a group "diseases".
-Add a field "disease" with the data type *boolean*.
-Only when the checkbox is checked, the list of diseases will be available to you.
+!!! Workflow
 
-!![Configuration of a group box that will only be shown if the checkbox "desease" is checked.](../assets/images/conditional_visibility_configuration.png)
+    **Example: Accessing the status of tree species**
 
-In QField it will look like in the video below.
+    *Some of them might have a disease and you have a list of possible diseases.*
 
-!![](../assets/images/conditional_visibility.webp,300px)
+    A typical step-by-step workflow could look like this:
+
+    1. Create a group.
+
+    2. Define a visibility expression for the group.
+    *Eg. Only if the tree is marked as "sick", the field "disease" will appear.*
+
+    3. Add the field that is to be shown only after the expression criteria is set into the group.
+    *Eg. We will add our "type of disease" field into the group.*
+
+    !![Configuration of a group box that will only be shown if the checkbox "disease" is checked.](../assets/images/conditional_visibility_configuration.png)
+
+    In QField it will look like in the video below.
+
+    !![](../assets/images/conditional_visibility.webp,300px)
 
 
 ## Define Constraints
@@ -246,20 +275,18 @@ A description can be added that is shown if a constraint is not satisfied.
 
 !![Configuration of a constraint within a range](../assets/images/constraint_configuration.png)
 
-### Common use cases
+!!! Examples
+    *You cannot enter an elevation value higher than the highest mountain in this country.*
 
-You cannot enter an elevation value higher than the highest mountain in
-this country.
+    ``` sql
+    "elevation" < 5000
+    ```
 
-``` sql
-"elevation" < 5000
-```
+    *It is required to fill in an identifier.*
 
-It is required to fill in an identifier.
-
-``` sql
-"identifier" IS NOT NULL
-```
+    ``` sql
+    "identifier" IS NOT NULL
+    ```
 
 ## Define Default Values
 :material-monitor: Desktop preparation
@@ -269,6 +296,10 @@ Default values are inserted into the attribute form when digitizing a new featur
 They are visible and can be modified as long as the field is editable.
 
 !![Configuration of a formatted date as default value](../assets/images/default_value_configuration.png)
+
+!!! Attention
+
+    The option "Apply default value on update" should be used with care and not for fields that act as primary keys.
 
 ## Working with expressions
 
@@ -280,69 +311,70 @@ By using layer names, you ensure that expressions are evaluated consistently and
 
 ### Additional variables
 
-For more information regarding storing information related to your position in object attributes, refer to the deticated [GNSS documentation](./gnss.md).
+For more information regarding storing information related to your position in object attributes, refer to the dedicated [GNSS documentation](./gnss.md).
 
 For QFieldCloud users, two variables can be used in expressions including attribute form's default values:
+
 - `@cloud_username` which returns the  name of the currently logged in QFieldCloud user.
 - `@cloud_useremail` which returns the email address of the currently logged in QFieldCloud user.
 
-### Common use cases
+!!! Examples
 
-Insert positioning information as variable:
+    Insert positioning information as variable:
 
-``` sql
-@position_horizontal_accuracy
-```
+    ``` sql
+    @position_horizontal_accuracy
+    ```
 
-Insert the current date and time:
+    Insert the current date and time:
 
-``` sql
-now()
-```
+    ``` sql
+    now()
+    ```
 
-Insert the length of the digitized line:
+    Insert the length of the digitized line:
 
-``` sql
-length($geometry)
-```
+    ``` sql
+    length($geometry)
+    ```
 
-Configure global variables on the device and insert them.
+    Configure global variables on the device and insert them.
 
-``` sql
-@operator_name
-```
+    ``` sql
+    @operator_name
+    ```
 
-If you want to assign a region code based on the location where a new feature is inserted, you can do so by using an aggregate expression:
+    If you want to assign a region code based on the location where a new feature is inserted, you can do so by using an aggregate expression:
 
-``` sql
-aggregate( layer:='regions', aggregate:='max', expression:="code", filter:=intersects( $geometry, geometry( @parent ) ) )
-```
+    ``` sql
+    aggregate( layer:='regions', aggregate:='max', expression:="code", filter:=intersects( $geometry, geometry( @parent ) ) )
+    ```
 
-To transform the coordinates received from \@position_coordinate to the coordinate system of your project:
+    To transform the coordinates received from \@position_coordinate to the coordinate system of your project:
 
-``` sql
-x(transform(@position_coordinate, 'EPSG:4326', @project_crs ))
-y(transform(@position_coordinate, 'EPSG:4326', @project_crs ))
-```
+    ``` sql
+    x(transform(@position_coordinate, 'EPSG:4326', @project_crs ))
+    y(transform(@position_coordinate, 'EPSG:4326', @project_crs ))
+    ```
 
-::: {#snapping_results}
-If you want to use the snapping results after drawing a line, you can use the [\@snapping_results]{.title-ref} variable.
-The following code extracts the value of the attribute [id]{.title-ref} of the snapping match of the first point of a line.
-:::
+    ::: {#snapping_results}
+    If you want to use the snapping results after drawing a line, you can use the [\@snapping_results]{.title-ref} variable.
+    The following code extracts the value of the attribute [id]{.title-ref} of the snapping match of the first point of a line.
+    :::
 
-``` sql
-with_variable(
-  'first_snapped_point',
-  array_first( @snapping_results ),
-  attribute(
-    get_feature_by_id(
-      @first_snapped_point['layer'],
-      @first_snapped_point['feature_id']
-    ),
-    'id'
-  )
-)
-```
+    ``` sql
+    with_variable(
+      'first_snapped_point',
+      array_first( @snapping_results ),
+      attribute(
+        get_feature_by_id(
+          @first_snapped_point['layer'],
+          @first_snapped_point['feature_id']
+        ),
+        'id'
+      )
+    )
+    ```
 
 ## Search in value relation and relation reference widget
 
@@ -352,39 +384,32 @@ It is possible to search values in a *value relation* or *relation reference* wi
 
 !!! note
     Define the *display expression* for the concerned layers, this will be used for searching for features.
-    This is configured under *Vector Layer Properties > Display*
+    This is configured under Vector Layer *Properties...* > *Display*
 
-## Configure Auto-complete Value
-:material-monitor: Desktop preparation
-
-The "Use completer" checkbox must be checked to be able to use the auto-complete in the value relation.
-
-!![Enable auto-complete within QGIS](../assets/images/autocomplet_form.png)
-
-Here is a video showing how it works on QField
-
-!![](../assets/images/autocomplete_typing.webp,300px)
 
 ## Define QML Widgets
 
 Custom QML widgets can be useful to integrate advanced actions into forms.
-In this example we define add a button that open a third-party map and navigation app.
-This is useful to open e.g. turn-by-turn navigations on the device-native app for the user.
 
-```qml
-import QtQuick 2.0
-import QtQuick.Controls 2.0
+!!! Example
 
-Button {
-    width: 200
-    height: width/5
-    text: "Open in Maps"
-    onClicked: {
-        Qt.openUrlExternally(expression.evaluate("'geo:0,0?q=' || $y || ',' || $x"));
+    *We define add a button that open a third-party map and navigation app.
+    This is useful to open e.g. turn-by-turn navigation on the device-native app for the user.*
+
+    ```qml
+    import QtQuick 2.0
+    import QtQuick.Controls 2.0
+
+    Button {
+        width: 200
+        height: width/5
+        text: "Open in Maps"
+        onClicked: {
+            Qt.openUrlExternally(expression.evaluate("'geo:0,0?q=' || $y || ',' || $x"));
+        }
     }
-}
-```
+    ```
 
-The `geo` URI above is adapted to work with Android. For Apple Maps the URI can be changed to `'geo:' || $y || ',' || $x`.
+    The `geo` URI above is adapted to work with Android. For Apple Maps the URI can be changed to `'geo:' || $y || ',' || $x`.
 
-![](../assets/images/qml_widget_button.png)
+    ![](../assets/images/qml_widget_button.png)

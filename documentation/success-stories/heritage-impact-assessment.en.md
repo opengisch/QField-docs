@@ -4,18 +4,16 @@ tx_slug: documentation_success-stories_heritage-impact-assessment
 ---
 
 # Heritage Impact Assessment using QField
-From QGIS to QField and Vice Versa: How the New Android Application Is Facilitating the Work of the Archaeologist in the Field
+From QGIS to QField and Vice Versa: How the New Android Application Is Facilitating the Work of the Archaeologist in the Field.
 
 **Roberto Montagnetti[^1] and Giuseppe Guarino[^2]**
 [^1]: adArte s.r.l. Archeologia, Restauro, ICT, 47921 Rimini, Italy; Correspondence: robertomontagnetti@gmail.com
 [^2]: Department of History and Cultures—DISCI, University of Bologna 40124 Bologna, Italy; guarino.archeo@gmail.com
 
-<small>† Presented at the ArcheoFOSS XIII Workshop—Open Software, Hardware, Processes, Data and Formats in
-Archaeological Research, Padova, Italy, 20–22 February 2019.</small>
+<small>† Presented at the ArcheoFOSS XIII Workshop—Open Software, Hardware, Processes, Data and Formats in Archaeological Research, Padova, Italy, 20–22 February 2019.</small>
 
-<small>**Abstract:** The aim of this paper is to highlight the main benefits of using the QField app in archae-
-ological jobs. In particular this article provides examples to use QField in open area excavation,
-Archaeological survey and impact assessment (HIA) projects.</small>
+<small>**Abstract:** The aim of this paper is to highlight the main benefits of using the QField app in archaeological jobs.
+In particular this article provides examples to use QField in open area excavation, Archaeological survey and impact assessment (HIA) projects.</small>
 
 <small>**Keywords:** QField; archeology; VIARCH; HIA; QGIS</small>
 
@@ -23,128 +21,95 @@ Archaeological survey and impact assessment (HIA) projects.</small>
 
 ### 1. Introduction
 
-The aim of this paper is to highlight the main benefits of using the QField app. An
-App that can be installed on an Android device for all archaeologists working in the field.
+The aim of this paper is to highlight the main benefits of using the QField app.
+An App that can be installed on an Android device for all archaeologists working in the field.
 
-The main feature of this new application will allow the archaeologist to upload to
-his/her smartphone or tablet the .qgs project of the excavation based on the general
-information concerning the site that is already available to you. At this point, it is possible
-to implement the collection of data directly on site, maintaining constant updates to your
-system, thus allowing you to review the project throughout the excavation process.
+The main feature of this new application will allow the archaeologist to upload to his/her smartphone or tablet the .qgs project of the excavation based on the general information concerning the site that is already available to you.
+At this point, it is possible to implement the collection of data directly on site, maintaining constant updates to your system, thus allowing you to review the project throughout the excavation process.
 
 The “pocket-GIS” with QField is finally a reality!
 
-Working with QField in the field allows us to significantly reduce registration and
-computerisation time of inputting data into the database system, eliminating the digiti-
-sation of field registers and all related paperwork. The advantage of entrusting all of the
-information to the main GIS platform of the project (master), which is stored inside the
-PC, means this leaves only the task of checking the collected data, along with the bonus of
-in-depth topographical and geospatial analysis.
+Working with QField in the field allows us to significantly reduce registration and computerization time of inputting data into the database system, eliminating the digitisation of field registers and all related paperwork.
+The advantage of entrusting all of the information to the main GIS platform of the project (master), which is stored inside the PC, means this leaves only the task of checking the collected data, along with the bonus of in-depth topographical and geospatial analysis.
 
-In this article, we will show a practical example of integrated use of QGIS and QField,
-which relates to an open area excavation.
+In this article, we will show a practical example of integrated use of QGIS and QField, which relates to an open area excavation.
 
-The intervention methodology proposed in this article was constructed by the per-
-sonal experience of the authors; this specifically refers to open area excavation works in
-commercial archaeology projects.
+The intervention methodology proposed in this article was constructed by the personal experience of the authors;
+this specifically refers to open area excavation works in commercial archaeology projects.
 
 ### 2. Main Features of QField
 
 QField is an Android app that can be downloaded from Google Play.
-This application, although it presents itself with a very simple interface, is rich in
-functions such as:
+This application, although it presents itself with a very simple interface, is rich in functions such as:
 
-1. Tools for digitalisation in the field;
-2. Geometry and attribute editing;
-3. GPS;
-4. Possibility to upload custom base maps;
-5. Integration of smartphone/tablet’s camera;
-6. Many other functions.
+- Tools for digitalisation in the field;
+- Geometry and attribute editing;
+- GPS;
+- Possibility to upload custom base maps;
+- Integration of smartphone/tablet’s camera;
+- Many other functions
 
-QField can be considered a “mobile” extension for QGIS. In fact, it allows us to view and
-manage a GIS project created with QGIS on an Android smartphone or tablet. Permitting
-the user to keep all set themes, labels and styles that are in the original project (Figure 1).
+QField can be considered a “mobile” extension for QGIS.
+In fact, it allows us to view and manage a GIS project created with QGIS on an Android smartphone or tablet.
+Permitting the user to keep all set themes, labels and styles that are in the original project (Figure 1).
 
 !![Figure 1 - An example of the same Survey GIS platform project in QGIS (below) and in QField (above). Image by Giuseppe
 Guarino 2019.](../assets/images/heritage_impact_figure1.png)
 
-Furthermore, similar to QGIS, we can query each layer within QField by obtaining
-the respective information contained in its attribute table (however, there are also other
-GIS applications for mobile such as ArcGis, LiPAD, Bentley Map Mobile, GVSig Mobile,
-Geopaparazzi and others).
+Furthermore, similar to QGIS, we can query each layer within QField by obtaining the respective information contained in its attribute table (however, there are also other GIS applications for mobile such as ArcGis, LiPAD, Bentley Map Mobile, GVSig Mobile, Geopaparazzi and others).
 
-In order to work with a QGIS project within QField, the first step is to configure the
-properties of that project created in QGIS as “save relative paths”.
+In order to work with a QGIS project within QField, the first step is to configure the properties of that project created in QGIS as “save relative paths”.
 
-You will need to create a folder “folder_name” on your desktop and save in this path
-the .qgs file that you want to transfer to the smartphone or tablet; similarly, in the same
-folder, you have to enter all the data (vectors, raster and database) that make up this .QGIS
-project.
+You will need to create a folder “folder_name” on your desktop and save in this path the .qgs file that you want to transfer to the smartphone or tablet;
+similarly, in the same folder, you have to enter all the data (vectors, raster and database) that make up this QGIS project.
 
 These data can also be divided into further subfolders.
 
-Finally, you need to copy the entire folder ‘folder_name’ to the tablet, following two
-possible paths:
+Finally, you need to copy the entire folder ‘folder_name’ to the tablet, following two possible paths:
 
-1. In the internal memory: Android > data > ch.opengis.QField > files > share;
-2. In the external SD: Android > data > ch.opengis.QField > files.
+- In the internal memory: Android > data > ch.opengis.QField > files > share;
+- In the external SD: Android > data > ch.opengis.QField > files.
 
 ### 3. Working with QField in an Archaeological Survey and Archaeological Risk Assessment Projects
 
-Until recently, paper maps were the only way of recording archaeological features and
-the fields’ visibility in an archaeological survey work. Such data were digitised into a CAD
-or GIS software creating the individual site sheets separately on a simple digital document
-afterwards.
+Until recently, paper maps were the only way of recording archaeological features and the fields’ visibility in an archaeological survey work.
+Such data were digitised into a CAD or GIS software creating the individual site sheets separately on a simple digital document afterwards.
 
-Today, QField, thanks to its compatibility with QGIS, allows you to skip the transition
-from paper to digital or from different software, reducing time and costs.
+Today, QField, thanks to its compatibility with QGIS, allows you to skip the transition from paper to digital or from different software, reducing time and costs.
 
-The archaeological survey (for a comprehensive account of methods of the Archaeological
-survey, see Cambi, Terrenato 1994, pp. 117–143, and Renfrew, Bahn 2016 [1,2]) must
-be preceded by the construction of a GIS platform that takes into consideration both the
-data acquired during the field survey phase and the bibliographic ones. For this reason, it
-will be necessary to work on two tables: one is spatial, which is useful in the field, and the
-other is alphanumeric. Both will be joined in a single spatial table, useful for consultation
-on the GIS desktop. This process is possible through the use of a relational geo-database
-such as SpatiaLite and PostGIS or, alternatively, through the creation of a join between the
-tables and the geometries.
+The archaeological survey (for a comprehensive account of methods of the Archaeological survey, see Cambi, Terrenato 1994, pp. 117–143, and Renfrew, Bahn 2016 [1,2]) must be preceded by the construction of a GIS platform that takes into consideration both the data acquired during the field survey phase and the bibliographic ones.
+For this reason, it will be necessary to work on two tables:
 
-However, the big advantage of using a geo-database is the ability to create queries
-capable of merging information from two or more tables into a single table (view) (for
-more in-depth information on the use of GIS and Geodatabases in archaeology, see Fronza,
-Nardini, Valenti 2009 [3]).
+- One is spatial, which is useful in the field.
+- The other is alphanumeric.
 
-This process further speeds up field work by minimising the data to be stored during
-archaeological survey.
+Both will be joined in a single spatial table, useful for consultation
+on the GIS desktop.
+This process is possible through the use of a relational geo-database such as SpatiaLite and PostGIS or, alternatively, through the creation of a join between the tables and the geometries.
 
-The data collected in the field during the survey will be recorded and digitised through
-three different layers (point, line and polygon). The attribute tables connected to the three
-layers record the following information: Project Name (String), Municipality (String),
-Location (String), Feature Number (Integer), Place Name (String), Location (String), Date
+However, the big advantage of using a geo-database is the ability to create queries capable of merging information from two or more tables into a single table (view) (for more in-depth information on the use of GIS and Geodatabases in archaeology, see Fronza, Nardini, Valenti 2009 [3]).
+
+This process further speeds up field work by minimising the data to be stored during archaeological survey.
+
+The data collected in the field during the survey will be recorded and digitised through three different layers (point, line and polygon).
+The attribute tables connected to the three layers record the following information: Project Name (String), Municipality (String), Location (String), Feature Number (Integer), Place Name (String), Location (String), Date
 (Date), Site Definition (String), Visibility (String) and Photos (String).
 
-The attribute values, “Project name” and “Feature Number”, between the two tables
-must be Unique Constraint in order to identify only one unique “Project name” and only
-one “Feature Number”.
 
-The GIS platform must also have base maps such as Google Satellite, Open Street Map,
-Orthophotos and so on. In this case, we used the following maps: Carta Tecnica Regionale
-(1:10.000), Open Street Map e Google Satellite. To make these maps lighter, we created first
-overviews (pyramids) in QGIS.
+The attribute values, “Project name” and “Feature Number”, between the two tables must be Unique Constraint in order to identify only one unique “Project name” and only one “Feature Number”.
 
-The positioning of the archaeological features identified can be recorded through the
-GPS internal device. However, for a greater accuracy, QField can be connected to a GNSS
-antenna.
+The GIS platform must also have base maps such as Google Satellite, Open Street Map, Orthophotos and so on.
+In this case, we used the following maps: Carta Tecnica Regionale (1:10.000), Open Street Map e Google Satellite.
+To make these maps lighter, we created first overviews (pyramids) in QGIS.
 
-In archaeological consultancy and archaeological risk assessment jobs, it is recommended
-to upload into the GIS project an infrastructure layer containing the infrastructure’s
-geometric information, measurements and others, besides a buffer of itself.
+The positioning of the archaeological features identified can be recorded through the GPS internal device.
+However, for a greater accuracy, QField can be connected to a GNSS antenna.
 
-After setting the basics of our project on QGIS, we need to export the project through
-the use of the QField Sync plugin within QField. Alternatively, we can carry this out by
-simply copying the folder containing the project file with the * .QGIS extension, the database
-and the rasters (or the geopackage containing our rasters: IGM, Basemap and so on) into
-our smartphone or tablet.
+In archaeological consultancy and archaeological risk assessment jobs, it is recommended to upload into the GIS project an infrastructure layer containing the infrastructure’s geometric information, measurements and others, besides a buffer of itself.
+
+After setting the basics of our project on QGIS, we need to export the  project through the use of the QFieldSync plugin within QField.
+Alternatively, we can carry this out by simply copying the folder containing the project file with the *.
+QGIS extension, the database and the rasters (or the GeoPackage containing our rasters: IGM, Basemap and so on) into our smartphone or tablet.
 
 By default, QField creates a folder where you can save projects (Android/data/
 ch.opengis.QField/files), but it is always better to store them on an external SSD, since

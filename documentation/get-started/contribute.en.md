@@ -12,11 +12,11 @@ If you found it useful, we will be even happier if you could give something back
 
 ### QField Community platform
 
-Signup and join the [QField Community's Platform](https://community.qfield.org/) <!-- markdown-link-check-disable-line -->.
- Actively engage the discussions, report bugs, share new ideas or ask a question.
- The community's platform is the platform, where you create the content yourself, where you can engage with the core developers and collaborate across the globe.
- We want to encourage anyone to participate and join the community.
- Only together we can create a better world.
+Sign up and join the [QField Community's Platform](https://community.qfield.org/) <!-- markdown-link-check-disable-line -->.
+Actively engage the discussions, report bugs, share new ideas or ask a question.
+The community's platform is the platform, where you create the content yourself, where you can engage with the core developers and collaborate across the globe.
+We want to encourage anyone to participate and join the community.
+Only together we can create a better world.
 
 ### Become an ambassador
 
