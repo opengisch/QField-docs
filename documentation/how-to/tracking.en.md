@@ -22,7 +22,7 @@ To enable tracking, you need to ensure that your positioning is activated.
     - The `Time requirement` records your position at a regular rate (e.g., every 30 seconds), which is ideal for consistent logs and saving battery.
     - The `Distance requirement` is more efficient, recording a point only after you move a minimum distance.
       This keeps your track clean by ignoring movement when you are stationary.
-    To capture fine detail on steep or winding terrain, use a shorter distance, for straight routes, a longer distance is better.
+      To capture fine detail on steep or winding terrain, use a shorter distance, for straight routes, a longer distance is better.
 
     !![](../assets/images/tracking-settings.png,350px)
     - The erroneous distance safeguard option can be turned on to insure sporadic bad GNSS readings are not tracked.
