@@ -12,7 +12,7 @@ To enable tracking, you need to ensure that your positioning is activated.
 
 ## Set-Up Tracking Session
 
-1. Open the main dashboard legend and press long on the layer which you want to use for tracking.
+1. Open the main dashboard legend and long-press on the layer which you want to use for tracking.
 2. Select **Setup tracking** and a new window will appear showing the configuration settings.
 
     !![](../assets/images/tracking-layer-properties.png,350px)
