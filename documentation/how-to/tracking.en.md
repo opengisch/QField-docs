@@ -17,7 +17,7 @@ To enable tracking, you need to ensure that your positioning is activated.
 
     !![](../assets/images/tracking-layer-properties.png,350px)
 
-    You can choose between two options how the number of vertices will be recorded during the tracking session:
+    You can choose between two options for the recording interval of vertices during the tracking session:
 
     - The `Time requirement` records your position at a regular rate (e.g., every 30 seconds), which is ideal for consistent logs and saving battery.
     - The `Distance requirement` is more efficient, recording a point only after you move a minimum distance.
