@@ -1,26 +1,32 @@
 ---
-title: Attribute form
+title: Simple attribute form configuration
 tx_slug: documentation_how-to_attributes-form
 ---
 
 # Attribute form
 
 Before you go into the field, you will have to configure your forms - the fields that the user will see in the fields.
-You can create forms with for QField that are similar to the ones in QGIS, but with a few differences.
-The general QGIS field widgets are supported on a best-effort basis and optimized for mobile use.
-Below is an overview what is supported.
+You can create the forms in your QGIS project.
+It works the same way as it does for a regular QGIS project, but with a few differences.
+
+## Attribute Form Configuration
+
+To configure a form you have to find the vector layer's *Properties* > *Attribute form*.
+
+Depending on what behaviour you want for your different attributes, you can choose different "widget types".
+The general QGIS field widgets are supported on QField.
+Below is an overview what widget types are available and supported.
 
 | Widget type        | Support          | Notes                                                                                                                                                                                                  |
 |--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text Edit          | :material-check: | - HTML is not supported <br> - Numeric input is enforced based on the field type.                                                                                                                          |
 | Check Box          | :material-check: |                                                                                                                                                                                                        |
-| Value Map          | :material-check: |                                                                                                                                                                                                        |
+| Value Map    (dropdown or radio button)      | :material-check: |                                                                                                                                                                                                        |
 | Hidden             | :material-check: |                                                                                                                                                                                                        |
 | Attachment         | :material-check: | This field is combined with camera integration. <br> It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#configurable-attachment-path) |
 | Date Time          | :material-check: |                                                                                                                                                                                                        |
 | Range              | :material-check: |                                                                                                                                                                                                        |
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
-| Relation Widget    | :material-check: |                                                                                                                                                                                                        |
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
 | UUID Generator     | :material-check: |                                                                                                                                                                                                        |
 | QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
@@ -50,77 +56,14 @@ With QField you can change and disable this option at any point during data coll
 
 !![General Attribute Form](../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 
-## Working with Relations
-:material-monitor: Desktop preparation
-
-For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) section in the QGIS documentation.
-
-To further control the visibility and number of related items shown in QField, see the instructions for configuring [Maximum items visibility for QField](../get-started/tutorials/get-started-qfs.md#configuring-maximum-items-visibility-for-qfield).
-
-!![](../assets/images/relation_editor_widget_list.png)
-
-The relation widget shows all the referencing child features in a list.
-If enabled, it is possible to add, delete and open them.
-
-The visual identification of the list entries is done via the **Display Expression** of the child layer.
-
-### Key handling
-
-Since the parent primary key is used as foreign key in the referencing child features, the primary key must be safe to use (it must be unique) also after syncronizing back to the desktop.
-Therefore we always recommend to use UUIDs as primary keys.
-See [Working with GeoPackages](../get-started/tutorials/advanced-setup-qfc.md#working-with-geopackages) for further information.
-
-You can already add children from a parent that is about to be added.
-This option will be blocked if there is no valid primary key on the parent or the constraints are violated.
-In case the adding of the parent feature is canceled after some children have been added already, the children are deleted as well.
-
-### Many-To-Many relations
-
-On many-to-many relationships, according to the cardinality setting in the QGIS Vector Layer *Properties...*, on adding, deleting or opening an
-entry in the list effects directly the child layer (on direct cardinality) or the linking table (on many-to-one cardinality).
-
-The second case is usually used when there are additional relation information (e.g. percentage) in the linking table.
-
-!![](../assets/images/relation_widget_cardinality.png)
-
-In case of the many-to-one cardinality on many-to-many relations the *Display Expression* needs to be set on the linking table.
-
-### Ordered Relation
-
-If required you can reorder linked child features based on a field by selecting the **Ordered Relation Editor** from the widget type options.
-To enable this functionality, however, you require a second plugin [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) <!-- markdown-link-check-disable-line -->
-
-!!! Workflow
-
-    1. Install the Plugin [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) plugin from the official repository or through the "Plugin Manager" in QGIS.
-
-    2. Open the Vector Layer *Properties...* > *Attributes Form* and set the layout editor to **Drag and Drop Designer**.
-
-    3. Click on the relationship of your available widgets.
-
-    4. On the right under "Widget Display" scroll down to the "Widget Type option and  select **Ordered Relation Editor**.
-
-    5. Configure the widget using the following settings:
-
-    - **Ordering Field**: Specify the field in the child layer that will be used to determine the order of the features.
-
-    - **Description**: Define an expression to be displayed for each child feature in the list.
-
-    - **Image Path (Optional)**: Provide a path to an image or icon to visually enhance the list. This is an expression that resolves dynamically.
-
-    !![Widget configuration in QGIS](../assets/images/ordered_relation_widget_configuration.png)
-
-    !![QField](../assets/images/ordered_relation_widget.webp,400px)
-
 ## Value Map Widget Configuration
 
-When using value maps as a widget type you can control
-the automatic switch from a "buttons'" interface to a list
+When using value maps as a widget type you can control the automatic switch from a "Radio buttons" interface to a list
 !![QFieldSync Layer Properties](../assets/images/qfieldsync-toggle-value-map-editor-widget.png,800px).
 
 !!! Workflow
 
-    1. Direct to the Vector Layer *Properties...* > *QField*
+    1. Direct to the Vector Layer *Properties* > *QField*
 
     2. Under the "Feature Form Settings" enable and define quantity of items that will trigger the transition to a toggle button interface.
 
@@ -149,9 +92,8 @@ It can be used to:
 !![Form attachment video](../assets/images/attachement-setting-video.png)
 
 !!! note
-    The path need to be set "relative".
+    The path needs to be set to "relative".
     The pictures, audios, videos, pdf's and documents are stored then in a sub-directory of the project, where the link stored in the text field is pointing to.
-
 
 You can add a new item when clicking the camera, video, microphone or document option.
 Depending on what you have selected as default, one of them will be shown inside the form.
@@ -160,21 +102,20 @@ Depending on what you have selected as default, one of them will be shown inside
 
 On Synchronisation the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
 
-By default when adding attachments QField  automatically displays the file.
+By default when adding attachments QField automatically displays the file.
 The option *hyperlink* on the attachment widget will disable that functionality and show just the path to the file hyperlink.
 
 !![](../assets/images/hyperlink_option.png)
 
 !!! Workflow
-    **Set attachment path**
+    **Set a specific attachment path**
 
     :material-monitor: Desktop preparation
 
     In QFieldSync you can configure the path of attachments.
     By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
-    1. Go to Vector Layer *Properties...* > *QField* and "Attachments Settings".
-
+    1. Direct to the *Properties...* > *QField* > *Attachments Settings*
     2. Use specific expressions to set the required names of the attachments.
 
     !![Paths](../assets/images/paths-saving-media.png)
@@ -264,7 +205,6 @@ This is useful when certain attributes are only required under certain condition
 
     !![](../assets/images/conditional_visibility.webp,300px)
 
-
 ## Define Constraints
 :material-monitor: Desktop preparation
 
@@ -301,6 +241,7 @@ They are visible and can be modified as long as the field is editable.
 
     The option "Apply default value on update" should be used with care and not for fields that act as primary keys.
 
+
 ## Working with expressions
 
 When creating expressions for projects intended to be used with QField, it is recommended to use layer names rather than layer IDs.
@@ -309,7 +250,7 @@ By using layer names, you ensure that expressions are evaluated consistently and
 
 !![Using layer names in expressions](../assets/images/using_layer_name_in_expressions.png)
 
-### Additional variables
+## Additional variables
 
 For more information regarding storing information related to your position in object attributes, refer to the dedicated [GNSS documentation](./gnss.md).
 
@@ -375,17 +316,6 @@ For QFieldCloud users, two variables can be used in expressions including attrib
       )
     )
     ```
-
-## Search in value relation and relation reference widget
-
-It is possible to search values in a *value relation* or *relation reference* widget using the magnifying glass next to the field.
-
-!![](../assets/images/autocomplete_search_value.webp,300px)
-
-!!! note
-    Define the *display expression* for the concerned layers, this will be used for searching for features.
-    This is configured under Vector Layer *Properties...* > *Display*
-
 
 ## Define QML Widgets
 
