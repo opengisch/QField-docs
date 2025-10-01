@@ -106,7 +106,7 @@ A higher value increases detail but may require more storage space, as well as i
 
 ### Additional Properties
 
-There are some more advanced properties options which may bw relevant to you depending on your domain:
+There are some more advanced properties options which may be relevant to you depending on your domain:
 
 - ***Permissions:*** Disable options for feature addition, feature deletion, attribute editing, or geometry editing.
 
