@@ -26,13 +26,14 @@ It will include the configuration of a simple attribute form and the styling of 
 1. Open a new QGIS Project on your desktop.
 2. Add a basemap of your choice to the project.
 
-    1. Under the browser on the top left of the QGIS window you will find the dropdown *XYZ Tiles*.
-    2. From there you can add the OpenStreetMap basemap, which is the most commonly used basemap.
+     - Under the browser on the top left of the QGIS window you will find the dropdown *XYZ Tiles*.
+     - From there you can add the OpenStreetMap basemap, which is the most commonly used basemap.
 
     !![Adding a basemap](../../assets/images/new-project-empty-window.png, 800px)
 
 3. We will now locate our area of interest.
 There exists a very useful QGIS plugin called *OSM Place Search*, which allows you to browse through the different place features available in the OpenStreetMap data.
+
     1. Under *Plugins* in the Menu toolbar direct to *Manage and Install Plugins*
     2. In the search bar type *OSM Place Search* and install the plugin
     !![OSM Place Search Plugin](../../assets/images/new-project-osmplugin.png)
@@ -65,10 +66,10 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
     We will create another layer within the Gpkg corresponding to a line layer.
     You can use it to track yourself when going into the field.
 
-    1. Add a new layer as previously
-    2. Select the same Gpkg as *file name* but give the *table* a different name.
+     1. Add a new layer as previously
+     2. Select the same Gpkg as *file name* but give the *table* a different name.
     !![Line Layer](../../assets/images/new-project-anotherlayer.png, 800px)
-    3. Add the following fields:
+     3. Add the following fields:
 
         | Attribute | Data type|
         | --- | ---|
@@ -90,17 +91,20 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
 
 ### QGIS Project - Attribute configuration
 
+#### Form Configuration of the PoI Layer
+
 Now we have all the essential data in the QGIS project that we need for the data collection.
 However, in order to have a well structured form we need to configure the attribute form, via the file properties.
 
-1. Open the project properties of the *PoI* Layer
+1. Direct to PoIs layer *Proprties* > *Attribute Form*
 !![Vector properties](../../assets/images/new-project-properties.png)
-2. Direct to *Attributes Table* and select *Drag and Drop Designer* from the dropdown.
+2. Select *Drag and Drop Designer* from the dropdown.
     From here you can control the appearance of your form.
 !![Default Attribute Form](../../assets/images/new-project-properties-attribute.png)
-We do not need to edit the *fid* field. QGIS creates this for every Gpkg by default.
+We do not need to edit the *fid* field.
+QGIS creates this for every Gpkg by default.
 
-3. Remove the *fid* field from the visible fields by pressing the *red minus* on the window.
+3. Remove the *fid* field from the visible fields by pressing the *red minus* on the window
 4. *Name*: Click on *Name* and look at the Widget Display options on the right-hand side.
 !![Widget Display](../../assets/images/new-project-properties-attri-overview.png, 800px)
     The widget display let`s you customise the appearance of your form.
@@ -139,4 +143,92 @@ We do not need to edit the *fid* field. QGIS creates this for every Gpkg by defa
 
 9. Change the widget type of the ***Attachment*** field to ***Attachment***.
 This will save the path of the where the image is stored.
+You can also set the preferred document type under the integrated file viewer.
+This will not only display the attachment directly in the form, but it will also set the default attachment type to the one you have selected.
 **NOTE:** Change the path to *relative path* so that it is relative to the project folder that you are working in and not the *absolute path*.
+
+10. For the ***Notes*** field you can just use the widget type to ***Text Edit***.
+
+#### Form Configuration and Tracking Enabling of Tracks layer
+
+*Fantastic, we have successfully configured the form of the PoI layer.
+Maya wants to track herself immediately when starting to walk rather than having to set it up manually. Luckily this can be done by setting up the tracking session in the QGIS project file*
+
+1. Direct to the **Tracks** *Properties* > *QField*
+2. Enable the Tracking session and set the required parameter.
+You can decide whether you want to add vertices based on a temporal value or based on distance.
+We will use the latter option for this purpose.
+You will configure the attribute form in such a way that it automatically populates the fattribute fields when starting a new session.
+Furthermore, you will ***hide*** the attribute form so that the tracking just runs in the background.
+
+3. Direct to the *Attribute Form*
+4. Choose the ***Drag and Drop Designer*** again from the dropdown
+5. Configure the attribute form accordingly
+     - `fid`: Remove this field
+     - `Name`: Set a default value to '@cloud_username'
+     - `Entrydate` : Set a default value to 'now()'
+6. Finally, once done from the top right of the window, change the dropdown option from ***Show form on add feature*** to ***Hide Form on Add Feature***.
+7. Click 'Ok'
+
+!![Enabling Tracking](../../assets/images/new-project-tracking-session-setup.png,800px)
+
+
+### Connecting to QFieldCloud
+
+*Maya does not want to copy the QGIS project manually to her mobile device.
+Instead she wants to make use of QFieldCloud, which allows her to simply synchronize her QGIS project into the cloud and then download it via the cloud to her smartphone.
+For this she has downloaded the QFieldSync Plugin, which she describes as the portal to QFieldCloud.
+In fact, it is a plugin that can be used to package and transform a QGIS project into a readable format that QField can read.*
+
+#### Installing QFieldSync
+
+1. Direct to *Plugins* > *Manage and Install Plugins* > *Not Installed*
+2. Search for QFieldSync and install it
+
+     ![QFieldSyncPlugin](../../assets/images/qfield-sync_install.png)
+
+3. In QGIS a new toolbar should appear ![Toolbar](../../assets/images/qfieldsync_toolbar.png)
+4. When clicking on the blue cloud a new window will open where you can login to QFieldCloud with your username and password.
+If you have no username you can directly register following the link.
+5. Once you have sucessfully logged into QFieldCloud a new window will appear showing all available projects that are stored and available to your profile.
+**Note:** If you just registered, the list will, of course, be empty.
+
+#### Creating QFieldCloud Project
+
+*Now it is time to create your first QFieldCloudProject*
+
+1. Open the QFieldCloud Window.
+2. Click on the Blue Cloud with the star on the bottom left of the window.
+3. Decide on how the new project should be created.
+     - **First Option:** *QFieldCloud will either take the current content of the opened project and create another copy under the default `QField/cloud` directory.*
+     - **Second Option:** *When using the second option, QFieldSync will take the project path as the right path and you have to make sure hat all the data you want to be uploaded are stored in this folder.*
+**Note:** *If you are working with a Postgres database you have to choose the second option to not loose the connection to the database.*
+!![Create Project](../../assets/images/create_project.png)
+For this case, use the first option.
+3. Give your project a name and a description.
+4. By default you will be set as the owner of the project.
+*In case that you were member of an organisation, you could assign a different entity with this dropdown list.*
+5. Finally, you can choose the project directory where the project path will be placed.
+By default QFieldSync chooses the default project directory.
+6. Click "Create" and QFieldSync will package your project for the cloud.
+
+!![Project Settings](../../assets/images/project_properties_settings.png)
+
+If everything is alright, a new window will appear with the message *The locally stored cloud project is already synchronized with QFieldCloud, no action is required.
+
+*Congratulations!!! you have successfully created your first project and are now ready to map with QField*
+
+#### Opening on QField
+
+1. On your mobile device open the QField Application
+2. Click on **QFieldCloud Projects** and sign in with the same credentials as before.
+ !![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
+
+3. Your project should already be available.
+4. Click on it and download the project.
+
+*Now you are good to go and can start mapping.
+It will ask you to turn on your location in case you have not done that yet.
+Remember that we have set up the tracking layer.*
+
+*Maya is very happy, she will use this project very frequently as she loves nature and wants to spend every spare minute that she has outside, like all of the OPENGIS.ch team. We hope that you find this useful and will start to use QField and make use of QFieldCloud.*
