@@ -89,7 +89,7 @@ nav:
       - how-to/temporal-filtering.md
       - how-to/variables.md
       - how-to/live-default-value.md
-      - how-to/outside-layers.md
+      - how-to/shared-datasets.md
       - how-to/movable-project.md
       - how-to/pg-service.md
       - how-to/plugins.md
