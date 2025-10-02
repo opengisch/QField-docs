@@ -14,7 +14,7 @@ Projects must contain a single `.qgs`/`.qgz` QGIS file, and may in addition cont
 To ensure optimal performance, it is recommended to keep the size of any file sizes below 2GB.
 Larger files than this may take significantly longer to process and lead to [jobs](jobs.md) issues.
 
-Files cannot be shared between projects, unless [shared layers](../../how-to/outside-layers.md) are used.
+Files cannot be shared between projects, unless [shared layers](../../how-to/shared-datasets.md) are used.
 
 QFieldCloud projects have a name and an owner.
 The owner of a project is a QFieldCloud user or an organization.
