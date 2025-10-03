@@ -21,11 +21,12 @@ Below is an overview what widget types are available and supported.
 |--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text Edit          | :material-check: | - HTML is not supported <br> - Numeric input is enforced based on the field type.                                                                                                                          |
 | Check Box          | :material-check: |                                                                                                                                                                                                        |
-| Value Map    (dropdown or radio button)      | :material-check: |                                                                                                                                                                                                        |
+| Value Map       | :material-check: | dropdown or radio button (unique to QField only)                                                                                                                                                                                                        |
 | Hidden             | :material-check: |                                                                                                                                                                                                        |
 | Attachment         | :material-check: | This field is combined with camera integration. <br> It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#configurable-attachment-path) |
 | Date Time          | :material-check: |                                                                                                                                                                                                        |
 | Range              | :material-check: |                                                                                                                                                                                                        |
+| Relation Reference | :material-check: |                                                                                                                                                                                                        |
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
 | UUID Generator     | :material-check: |                                                                                                                                                                                                        |
@@ -115,7 +116,7 @@ The option *hyperlink* on the attachment widget will disable that functionality 
     In QFieldSync you can configure the path of attachments.
     By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
-    1. Direct to the *Properties...* > *QField* > *Attachments Settings*
+    1. Direct to the *Properties* > *QField* > *Attachments Settings*
     2. Use specific expressions to set the required names of the attachments.
 
     !![Paths](../assets/images/paths-saving-media.png)
