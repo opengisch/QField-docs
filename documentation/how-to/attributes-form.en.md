@@ -11,7 +11,7 @@ It works the same way as it does for a regular QGIS project, but with a few diff
 
 ## Attribute Form Configuration
 
-To configure a form you have to find the vector layer's *Properties* > *Attribute form*.
+To configure a form you have to open the vector layer's *Properties* > *Attribute form* in QGIS.
 
 Depending on what behaviour you want for your different attributes, you can choose different "widget types".
 The general QGIS field widgets are supported on QField.
