@@ -1,80 +1,80 @@
 ---
-title: Pictures
+title: Attachment widget
 tx_slug: documentation_how-to_pictures
 ---
 
-# Use attachment
-
-In QField, a field with *Attachment* widget can be used to:
-
-- Show and take photos
-- Show and record videos
-- Listen and record sound clips
-- Show links to external files like PDFs or documents
-
-!![Attachments](../assets/images/attachments.png "")
-
-To configure the Widget, please refer to the [Attributes Form Documentation](./attributes-form.md#configure-attachmentpictures-widget)
+The general information on the attachment widget and its simple configuration is found under the [Simple Attributes Form Documentation](./attributes-form.md#configure-attachmentpictures-widget).
 
 ## Add a series of pictures to a feature
 :material-monitor: Desktop preparation
 
-One or more pictures can be added to the feature.
-Here is an example of how to proceed.
+It is also possible to add more pictures to the feature either by having several attachment field attributes or by creating a relation to a separate table where the image paths are shown.
+In this section we will show you an example how this is done.
+A relation to a second layer needs to be set in the QGIS properties so that when adding images or other formats, these are stored in the related table.
 
-### Tables
+!!! Workflow
 
-It is necessary to set up two tables.
-One table where the features are stored and one with a list of pictures.
+    1. Create two two tables following the style as shown below.
+    One table where the features are stored and one with a list of pictures.
 
-#### Apiary
+        ***Apiary:***
 
-| Field      | Type       |
-|------------|------------|
-| `id`       | Text (UUID)|
-| `geometry` | Geometry   |
-| `...`      |            |
+        | Field      | Type       |
+        |------------|------------|
+        | `id`       | Text (UUID)|
+        | `geometry` | Geometry   |
+        | `...`      |            |
 
-#### Apiary_pictures
+        ***Apiary_pictures:***
 
-| Field       | Type       |
-|-------------|------------|
-| `id`        | Text (UUID)|
-| `apiary_id` | Text (UUID)|
-| `path`      | Text       |
-| `...`       |            |
+        | Field       | Type       |
+        |-------------|------------|
+        | `id`        | Text (UUID)|
+        | `apiary_id` | Text (UUID)|
+        | `path`      | Text       |
+        | `...`       |            |
 
-### Relations
+    2. Add a new relation on *Project* > *Properties* > *Relations*
+    3. Add a new relation by clicking the green plus sign.
+    4. Use the following settings to set the relation:
+        - **id:** Add a unique id that will can be used in further configuration parameters
+        - **Name:** Add a name that will be used as the display name in the attribute form.
+        - **Relation Strength:** Composition
+        - **Referenced layer:** Select the `apiary` layer
+        - **Referenced field:** Select the field `id`
+        - **Referencing layer:** Select the 'apiary_picture' layer
+        - **Referencing field:** Select the `apiary_id`
 
-Create a relation with:
+    5. Click ok
+    !![Relations](../assets/images/add-1-n-pictures-relations.png "")
 
-- `apiary` Referenced layer
-- `id` Referenced field
-- `apiary_picture` Referencing layer
-- `apiary_id` Referencing field
-- `strength` Composition
+### Attribute Form configuration
 
-!![Relations](../assets/images/add-1-n-pictures-relations.png "")
+Once you have created the relation the relation can be properly configured in the feature layer's attribute forms.
+In the apiary layer we have to specify a default value to create a unique id.
+For the apiary_picture layer, you will have to change the widget type to *Attachment*
 
-### Widgets
+!!! Workflow
 
-#### Apiary
+    **Apiary**
 
-You can either choose the *Text Edit* or *UUID Generator* widget.
-Its default value in any case has to be `uuid('WithoutBraces')`.
-Hide it from the view as it should not be edited by the user.
+    1. Direct to *Properties* > *Attribute Form*
+    2. For the uuid field choose between the *Text Edit* or *UUID Generator* widget.
+    3. Set the default value to `uuid('WithoutBraces')`.
+    4. Hide it from the view as it should not be edited by the user.
 
-!![widgets](../assets/images/add-1-n-pictures-widgets_hive.png "")
+    !![widgets](../assets/images/add-1-n-pictures-widgets_hive.png "")
+    5. Set the relation widget to *many to one relation* and add the relation to the form
 
-Set the relation widget to *many to one relation* and add the relation to the form
+    !![widgets](../assets/images/add-1-n-pictures-widgets_hive2.png "")
 
-!![widgets](../assets/images/add-1-n-pictures-widgets_hive2.png "")
+    **Apiary_picture**
 
-#### Apiary picture
+    1. Direct to *Properties* > *Attribute Form*
+    2. Set the widget type of the field `path` to *Attachment*
+    3. Add it to the form layout.
 
-Set the widget type of the field path to *Attachment* and add it to the form
-
-!![widgets](../assets/images/add-1-n-pictures-widgets_picture.png "")
+    !![widgets](../assets/images/add-1-n-pictures-widgets_picture.png "")
 
 ## Drawing and sketching
 
@@ -99,7 +99,7 @@ Templates shipped alongside projects as well as the QField app folder will be sh
 ## Geotagging
 :material-tablet: Fieldwork
 
-QField's internal camera will automatically geotag your pictures.
+QField's internal; camera will automatically geotag your pictures.
 
 Information about location and direction of the pictures will therefore be baked into the image file.
 
