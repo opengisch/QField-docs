@@ -1,7 +1,22 @@
 ---
-title: PostgreSQL service
+title: PostGIS service
 tx_slug: documentation_how-to_pg-service
 ---
+# Working with PostGIS
+
+## PostGIS in QField
+
+Working with databases can be much easier when working in a multi-user environment or when working in a variety of projects that require more complex data structures.
+With QField you can easily work within a database but there are a few steps that need to be taken before the smoothless fieldwork can begin.
+This page goes through the different options and gives step-by-step instructions on how this can be achieved.
+
+## Connection to PostGIS in QGIS
+
+In QGIS there are two options in which you can connect to your database.
+
+1. **Direct Connection:** When connecting to a PostGIS database, you can store all information including the credentials inside the QGIS Project directly.
+2. **Using a PG Service File:** Using a service file that can be saved as a "secret" in QFieldCloud.
+We highly recommend to make use of this option due to data safety.
 
 # PostgreSQL service
 
