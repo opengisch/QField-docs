@@ -19,7 +19,7 @@ In QField, objects are identified with a name, which can be customized using exp
 
 The display expression is also used to search in layers.
 
-!![Configuration of display expression in QGIS.](../assets/images/define_display_expression.png)
+!![Configuration of display expression in QGIS.](../../assets/images/define_display_expression.png)
 
 ## Read only, non-identifiable and searchable layers
 :material-monitor: Desktop preparation
@@ -34,7 +34,7 @@ It is also possible to configure which layers are searchable.
 
 1. Direct to *Project* > *Properties...* > *Data Sources* and activate the checkboxes to match your desired behaviour.
 
-!![Configuration of layers that will not be identifiable, nor modifiable,  nor searchable.](../assets/images/project_configuration_readonly.png)
+!![Configuration of layers that will not be identifiable, nor modifiable,  nor searchable.](../../assets/images/project_configuration_readonly.png)
 
 ## Using additional fonts
 :material-monitor: Desktop preparation
@@ -44,7 +44,7 @@ There are two different possibilities to register additional fonts:
 
 **Addition of fonts through the local directory**
 
-1. Copy your font file (.ttf or .otf) in the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/fonts**.
+1. Copy your font file (.ttf or .otf) in the directory **[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/fonts**.
 Those will be made accessible to all projects and individual datasets.
 
 **Addition of fonts in subfolder of QGIS file**
@@ -59,12 +59,12 @@ It is possible to embed SVG symbols directly within a QGIS project.
 1. Choose the layer which will support SVG symbology and open its properties dialog.
 2. Open the section Symbology in *Properties* > *Symbology*
 3. In the *Symbol Layer Panel* choose *Simple marker*.
-!![](../assets/images/symbol_layer_panel.png)
+!![](../../assets/images/symbol_layer_panel.png)
 4. Change the symbol layer type in *Symbol layer type* > *SVG marker*.
-!![](../assets/images/symbol_layer_type.png)
+!![](../../assets/images/symbol_layer_type.png)
 5. Scroll down to the bottom panel.
 6. Click on the right side of the file selection button to open the drop down menu.
-!![](../assets/images/drop_down_svg_menu.png)
+!![](../../assets/images/drop_down_svg_menu.png)
 7. Select *Embed File* and choose the SVG file in the file selection dialog.
 8. Apply the changes and click *OK*.
-!![](../assets/images/custom_svg_symbols.gif)
+!![](../../assets/images/custom_svg_symbols.gif)

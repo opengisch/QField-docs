@@ -18,5 +18,5 @@ is set to *Relative* and that all required data
 files are in the same folder like the QGIS project file or in a subfolder.
 
 You can learn more how to prepare your projects for fieldwork in
-[Get Started with QFieldCloud (recommended)](../get-started/tutorials/get-started-qfc.md)
-or [Get Started with QFieldSync](../get-started/tutorials/get-started-qfs.md) tutorials.
+[Get Started with QFieldCloud (recommended)](../../get-started/tutorials/get-started-qfc.md)
+or [Get Started with QFieldSync](../../get-started/tutorials/get-started-qfs.md) tutorials.

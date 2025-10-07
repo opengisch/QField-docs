@@ -6,12 +6,12 @@ tx_slug: documentation_how-to_projects
 # Project selection
 
 QField has a file selector that allows to open a project from the device locally.
-To open files from the cloud see [QFieldCloud](../get-started/tutorials/get-started-qfc.md).
+To open files from the cloud see [QFieldCloud](../../get-started/tutorials/get-started-qfc.md).
 
 !!! note
     Starting with Android 11 apps are denied full access to main and external storage content.
     For QField, this means direct access to projects and datasets transferred and/or downloaded into storage folders is not possible anymore.
-    You can know more about [QField storage access](../get-started/storage.md).
+    You can know more about [QField storage access](../../how-to/project-setup/storage.md).
 
 You have to import project folders or individual datasets into the app-dedicated storage location `<drive>:/Android/data/ch.opengis.qfield/files/QField` where it has unrestricted read/write access.
 With that behavior importing from external SD cards or providers that work with remote files (e.g. Google Drive) are supported as well.
@@ -24,7 +24,7 @@ With that behavior importing from external SD cards or providers that work with 
 
 When going to *Open local files* (on the side *Dashboard* > *Open*) you will see a set of new folders named "QField files directory", "Imported datasets", and "Imported projects" as well as a drop-down menu accessible via a bottom-right plus button.
 
-!![QField File Selector](../assets/images/howto_filebrowser.png)
+!![QField File Selector](../../assets/images/howto_filebrowser.png)
 
 The drop-down menu lists the means to import projects and datasets: *import project from folder*, *import project from ZIP (archive)*, and *import (individual) dataset(s)*.
 
@@ -63,7 +63,7 @@ This is useful when a QFieldCloud project should be used as a basemap.
 2. **Press long** on the project you wish to set as your default basemap.
 3. From the context menu that appears, select **Set as Default Project**.
 
-!![](../assets/images/default_project_selection.png,300px)
+!![](../../assets/images/default_project_selection.png,300px)
 
 ### Basemap Loading Logic
 
@@ -89,4 +89,4 @@ On most devices plugged into a computer via USB cable connection, the path will 
 You can share and send the datasets straight from QField using Android APIs.
 This allows for the sending of edited datasets directly to third party apps (Gmail, Drive, Dropbox, Nextcloud, your favorite messenger app, etc.).
 
-!![Send to...](../assets/images/howto_sendto.png)
+!![Send to...](../../assets/images/howto_sendto.png)

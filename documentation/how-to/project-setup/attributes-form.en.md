@@ -24,13 +24,13 @@ Below is an overview what is supported.
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
 | UUID Generator     | :material-check: |                                                                                                                                                                                                        |
 | QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
-| Others             | :material-close: | [Funding](../get-started/contribute.md#feature-sponsoring)                                                                                                                                      |
+| Others             | :material-close: | [Funding](../../get-started/contribute.md#feature-sponsoring)                                                                                                                                      |
 
 ## General Attribute Settings
 
 In order to customize the attribute form, it is necessary to use the drag and drop designer in QGIS or to a use pre-written UI file.
 You can also make use of powerful expressions to populate the different fields.
-Additionally, to the ones available there are [QFieldCloud specific variables](../reference/expression_variables.md#qfieldcloud), which can be utilized inside the attribute form:
+Additionally, to the ones available there are [QFieldCloud specific variables](../../reference/expression_variables.md#qfieldcloud), which can be utilized inside the attribute form:
 
 Below are some other general useful settings, which you can find in the Vector Layer *Properties...* > *Attribute form* (see image below).
 
@@ -48,16 +48,16 @@ If you enable this option in QGIS, the rule will always apply.
 With QField you can change and disable this option at any point during data collection.
 
 
-!![General Attribute Form](../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
+!![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 
 ## Working with Relations
 :material-monitor: Desktop preparation
 
 For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) section in the QGIS documentation.
 
-To further control the visibility and number of related items shown in QField, see the instructions for configuring [Maximum items visibility for QField](../get-started/tutorials/get-started-qfs.md#configuring-maximum-items-visibility-for-qfield).
+To further control the visibility and number of related items shown in QField, see the instructions for configuring [Maximum items visibility for QField](../../get-started/tutorials/get-started-qfs.md#configuring-maximum-items-visibility-for-qfield).
 
-!![](../assets/images/relation_editor_widget_list.png)
+!![](../../assets/images/relation_editor_widget_list.png)
 
 The relation widget shows all the referencing child features in a list.
 If enabled, it is possible to add, delete and open them.
@@ -68,7 +68,7 @@ The visual identification of the list entries is done via the **Display Expressi
 
 Since the parent primary key is used as foreign key in the referencing child features, the primary key must be safe to use (it must be unique) also after syncronizing back to the desktop.
 Therefore we always recommend to use UUIDs as primary keys.
-See [Working with GeoPackages](../get-started/tutorials/advanced-setup-qfc.md#working-with-geopackages) for further information.
+See [Working with GeoPackages](../../get-started/tutorials/advanced-setup-qfc.md#working-with-geopackages) for further information.
 
 You can already add children from a parent that is about to be added.
 This option will be blocked if there is no valid primary key on the parent or the constraints are violated.
@@ -81,7 +81,7 @@ entry in the list effects directly the child layer (on direct cardinality) or th
 
 The second case is usually used when there are additional relation information (e.g. percentage) in the linking table.
 
-!![](../assets/images/relation_widget_cardinality.png)
+!![](../../assets/images/relation_widget_cardinality.png)
 
 In case of the many-to-one cardinality on many-to-many relations the *Display Expression* needs to be set on the linking table.
 
@@ -108,15 +108,15 @@ To enable this functionality, however, you require a second plugin [Ordered Rela
 
     - **Image Path (Optional)**: Provide a path to an image or icon to visually enhance the list. This is an expression that resolves dynamically.
 
-    !![Widget configuration in QGIS](../assets/images/ordered_relation_widget_configuration.png)
+    !![Widget configuration in QGIS](../../assets/images/ordered_relation_widget_configuration.png)
 
-    !![QField](../assets/images/ordered_relation_widget.webp,400px)
+    !![QField](../../assets/images/ordered_relation_widget.webp,400px)
 
 ## Value Map Widget Configuration
 
 When using value maps as a widget type you can control
 the automatic switch from a "buttons'" interface to a list
-!![QFieldSync Layer Properties](../assets/images/qfieldsync-toggle-value-map-editor-widget.png,800px).
+!![QFieldSync Layer Properties](../../assets/images/qfieldsync-toggle-value-map-editor-widget.png,800px).
 
 !!! Workflow
 
@@ -124,9 +124,9 @@ the automatic switch from a "buttons'" interface to a list
 
     2. Under the "Feature Form Settings" enable and define quantity of items that will trigger the transition to a toggle button interface.
 
-    !![QField Value Map Editor as List](../assets/images/qfield-value-map-editor-list.png,300px)
+    !![QField Value Map Editor as List](../../assets/images/qfield-value-map-editor-list.png,300px)
 
-    !![QField Value Map Editor as Buttons](../assets/images/qfield-value-map-editor-buttons.png,300px)
+    !![QField Value Map Editor as Buttons](../../assets/images/qfield-value-map-editor-buttons.png,300px)
 
 
 ## Attachment Widget
@@ -142,11 +142,11 @@ It can be used to:
 - Show links to external files like PDFs or documents
 - Add sketches directly in QField
 
-!![Form attachment picture](../assets/images/attachement-setting-picture.png)
+!![Form attachment picture](../../assets/images/attachement-setting-picture.png)
 
-!![Form attachment audio](../assets/images/attachement-setting-audio.png)
+!![Form attachment audio](../../assets/images/attachement-setting-audio.png)
 
-!![Form attachment video](../assets/images/attachement-setting-video.png)
+!![Form attachment video](../../assets/images/attachement-setting-video.png)
 
 !!! note
     The path need to be set "relative".
@@ -156,14 +156,14 @@ It can be used to:
 You can add a new item when clicking the camera, video, microphone or document option.
 Depending on what you have selected as default, one of them will be shown inside the form.
 
-!![Media](../assets/images/attachments-qfield-media.png,300px)
+!![Media](../../assets/images/attachments-qfield-media.png,300px)
 
 On Synchronisation the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
 
 By default when adding attachments QField  automatically displays the file.
 The option *hyperlink* on the attachment widget will disable that functionality and show just the path to the file hyperlink.
 
-!![](../assets/images/hyperlink_option.png)
+!![](../../assets/images/hyperlink_option.png)
 
 !!! Workflow
     **Set attachment path**
@@ -177,7 +177,7 @@ The option *hyperlink* on the attachment widget will disable that functionality 
 
     2. Use specific expressions to set the required names of the attachments.
 
-    !![Paths](../assets/images/paths-saving-media.png)
+    !![Paths](../../assets/images/paths-saving-media.png)
 
 ## Value Relation Widget
 
@@ -199,7 +199,7 @@ This can either be by the "key", "value" or a specific column.
 When selecting the magnifying glass you can search under the available values and select accordingly.
 - **Allow multiple selections**: If enabled, you can select multiple values in one feature.
 
-!![](../assets/images/value_relation_widget.webp,300px)
+!![](../../assets/images/value_relation_widget.webp,300px)
 
 !!! Workflow
 
@@ -211,13 +211,13 @@ When selecting the magnifying glass you can search under the available values an
     2. (Optional) Enable **Display group name** if you want to add the title of your group as a distinct header.
     This creates a clear separation between the different groups, making the list easier to navigate.
 
-    !![First configuration](../assets/images/grouping_value_relations_widget_qgis_setting_001.png)
+    !![First configuration](../../assets/images/grouping_value_relations_widget_qgis_setting_001.png)
 
-    !![Second configuration](../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
+    !![Second configuration](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
 
-    !![Third configuration](../assets/images/grouping_value_relations_widget_qgis_setting_003.png)
+    !![Third configuration](../../assets/images/grouping_value_relations_widget_qgis_setting_003.png)
 
-    !![Different configurations on QField](../assets/images/grouping_value_relations_widget_qfield_show_gruped.png)
+    !![Different configurations on QField](../../assets/images/grouping_value_relations_widget_qfield_show_gruped.png)
 
 !!! Workflow
 
@@ -230,11 +230,11 @@ When selecting the magnifying glass you can search under the available values an
     3. Enable the "Use completer" option.
 
 
-    !![Enable auto-complete within QGIS](../assets/images/autocomplet_form.png)
+    !![Enable auto-complete within QGIS](../../assets/images/autocomplet_form.png)
 
     Here is a video showing how it works on QField
 
-    !![](../assets/images/autocomplete_typing.webp,300px)
+    !![](../../assets/images/autocomplete_typing.webp,300px)
 
 
 ## Conditional Visibility
@@ -258,11 +258,11 @@ This is useful when certain attributes are only required under certain condition
     3. Add the field that is to be shown only after the expression criteria is set into the group.
     *Eg. We will add our "type of disease" field into the group.*
 
-    !![Configuration of a group box that will only be shown if the checkbox "disease" is checked.](../assets/images/conditional_visibility_configuration.png)
+    !![Configuration of a group box that will only be shown if the checkbox "disease" is checked.](../../assets/images/conditional_visibility_configuration.png)
 
     In QField it will look like in the video below.
 
-    !![](../assets/images/conditional_visibility.webp,300px)
+    !![](../../assets/images/conditional_visibility.webp,300px)
 
 
 ## Define Constraints
@@ -273,7 +273,7 @@ Constraints are rules in the form of expressions.
 Before a feature can be saved all constraints need to be met.
 A description can be added that is shown if a constraint is not satisfied.
 
-!![Configuration of a constraint within a range](../assets/images/constraint_configuration.png)
+!![Configuration of a constraint within a range](../../assets/images/constraint_configuration.png)
 
 !!! Examples
     *You cannot enter an elevation value higher than the highest mountain in this country.*
@@ -295,7 +295,7 @@ Fields can have default values configured.
 Default values are inserted into the attribute form when digitizing a new feature.
 They are visible and can be modified as long as the field is editable.
 
-!![Configuration of a formatted date as default value](../assets/images/default_value_configuration.png)
+!![Configuration of a formatted date as default value](../../assets/images/default_value_configuration.png)
 
 !!! Attention
 
@@ -307,11 +307,11 @@ When creating expressions for projects intended to be used with QField, it is re
 This recommendation stems from the fact that during the project conversion process via QFieldSync, the resulting layers may receive different IDs, which can lead to incorrect expression evaluations.
 By using layer names, you ensure that expressions are evaluated consistently and accurately across different project states.
 
-!![Using layer names in expressions](../assets/images/using_layer_name_in_expressions.png)
+!![Using layer names in expressions](../../assets/images/using_layer_name_in_expressions.png)
 
 ### Additional variables
 
-For more information regarding storing information related to your position in object attributes, refer to the dedicated [GNSS documentation](./gnss.md).
+For more information regarding storing information related to your position in object attributes, refer to the dedicated [GNSS documentation](../navigation-and-positioning/gnss.md).
 
 For QFieldCloud users, two variables can be used in expressions including attribute form's default values:
 
@@ -380,7 +380,7 @@ For QFieldCloud users, two variables can be used in expressions including attrib
 
 It is possible to search values in a *value relation* or *relation reference* widget using the magnifying glass next to the field.
 
-!![](../assets/images/autocomplete_search_value.webp,300px)
+!![](../../assets/images/autocomplete_search_value.webp,300px)
 
 !!! note
     Define the *display expression* for the concerned layers, this will be used for searching for features.
@@ -412,4 +412,4 @@ Custom QML widgets can be useful to integrate advanced actions into forms.
 
     The `geo` URI above is adapted to work with Android. For Apple Maps the URI can be changed to `'geo:' || $y || ',' || $x`.
 
-    ![](../assets/images/qml_widget_button.png)
+    ![](../../assets/images/qml_widget_button.png)

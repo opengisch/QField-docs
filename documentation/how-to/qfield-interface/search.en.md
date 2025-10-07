@@ -20,7 +20,7 @@ The value entered in the search bar will be used to find features with
 matching attribute values. A minimum of three characters is required to
 start the search.
 
-!![](../assets/images/search-bar.png)
+!![](../../assets/images/search-bar.png)
 
 ### Active Layer Search Feature Matching
 
@@ -34,7 +34,7 @@ You'll also see the feature's name in the search results below.
 To narrow down your search to a specific field, type: `f @ATTRIBUTE_NAME search-term`.
 This targets your search to that field.
 
-![type:video](../assets/videos/search-bar-active-layer-feature-matching-functionality.webm)
+![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.webm)
 
 ### Search with code scanner
 
@@ -42,11 +42,11 @@ Additionally, you have the option to employ the code scan functionality for this
 
 When click on the "Scan code" will trigger QField's code reader, initiating the scanning process to decode the code.
 
-!![](../assets/images/search-bar-code-reader-1-scanning.png)
+!![](../../assets/images/search-bar-code-reader-1-scanning.png)
 
 Once you are content with the scanned information, you can simply click on the checkmark (✔️) OK button to initiate a search for that specific string(In this example, the code corresponds to a user identifier that is associated with various features in a project dataset).
 
-!![](../assets/images/search-bar-code-reader-2-results.png)
+!![](../../assets/images/search-bar-code-reader-2-results.png)
 
 For distinct outcomes, is recommend encoding your feature UUIDs. This will allow us to promptly locate the relevant items.
 
@@ -60,7 +60,7 @@ actions :
 
 In addition, the Code Reader offers the capability to read NFC text tags.
 
-!![](../assets/images/code-reader-nfc-text-tag.png)
+!![](../../assets/images/code-reader-nfc-text-tag.png)
 
 !!! note
     While both the QR code camera and the NFC text tag detector are enabled by default when you open the Code Reader. You have the flexibility to disable either of these features to ensure that your device's battery is not used unnecessarily to activate hardware that you may not need at the moment.

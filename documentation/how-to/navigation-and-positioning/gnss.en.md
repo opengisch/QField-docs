@@ -65,7 +65,7 @@ Altitude values can be corrected with vertical grid shift files to
 calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
-them into the QField app folder **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/proj**.
+them into the QField app folder **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/proj**.
 
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
@@ -87,7 +87,7 @@ For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertic
 
 1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
 
-2. Place the downloaded `.gtx` file into the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/proj**.
+2. Place the downloaded `.gtx` file into the directory **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/proj**.
 This is independent of whether you are using QFieldCloud or not.
 
 ### **Example: Switzerland - CH1903+/LV95**
@@ -116,7 +116,7 @@ Other raster formats like (.tiff) can also be used
 
 4. Click **Run**. The other default settings are typically sufficient for this conversion.
 
-!![](../assets/images/qgis_core_translate_convert_format.png)
+!![](../../assets/images/qgis_core_translate_convert_format.png)
 
 **Method 2: Command Line (`qgis_process`)**
 
@@ -148,24 +148,24 @@ print(f"Successfully converted grid to: {output_grid}")
 
 :material-tablet: Fieldwork
 
-1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/proj** on your mobile device.
+1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/proj** on your mobile device.
 
 2. Under the QField settings, select the file as the vertical grid shift correction file: Main menu > three dots > *Settings* > *Positioning*
 
-!![](../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
+!![](../../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
 
 3. Enanble your GNSS device.
 it will directly center to your current location once the **positioning information** is available.
 
 4. Change to ***edit mode*** and press on the target button - the cross in the center means it is using GNSS positioning.
 
-!![](../assets/images/gnss_use.webp,250px)
+!![](../../assets/images/gnss_use.webp,250px)
 
 A long press on the **GNSS button** will show the **positioning menu**.
 
 Inside the menu you can turn on the **Show position information** which will show the current coordinates that are reprojected into the CRS of your project along with the precision information.
 
-!![](../assets/images/positioning-menu.png)
+!![](../../assets/images/positioning-menu.png)
 
 !!! note
     If you see WGS 84 lat/lon information instead of information in your
@@ -179,7 +179,7 @@ or UDP connections.
 
 In *Settings* > *Positioning*, you are able to manage and swithch between your internal and saved external GNSS devices.
 
-!![](../assets/images/saved-gnss-devices.png)
+!![](../../assets/images/saved-gnss-devices.png)
 
 The breakdown of connections support by platform is as follow:
 
@@ -203,9 +203,9 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and
 In *Settings* > *Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
 If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
 
-The logs will be placed in **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/logs**.
+The logs will be placed in **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/logs**.
 
-!![](../assets/images/external_receiver_log.png,250px)
+!![](../../assets/images/external_receiver_log.png,250px)
 
 !!! note
     Be aware that if the log is always turned on, it will fill up all the storage.
@@ -223,7 +223,7 @@ To use this you have to [enable mock locations on your Android device](https://w
 :material-tablet: Fieldwork
 
 !!! note
-    The coordinate cursor must be locked to the current location via the [Lock to position button](./digitize.md#adding-point-features)
+    The coordinate cursor must be locked to the current location via the [Lock to position button](../../how-to/data-collection/digitize.md#adding-point-features)
 
 There is a function that allows you to digitize using averaged positions.
 
@@ -232,14 +232,14 @@ The survey will start by pressing and holding the add vertex button, which will 
 During the collection, an indicator will appear on top of the coordinate cursor showing the number number of the collected positions.
 If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.
 
-!![](../assets/images/positioning-averaged.webp,280px)
+!![](../../assets/images/positioning-averaged.webp,280px)
 
 1. To activate direct to  side *"Dashboard"* > *Settings* > *Positioning*
 2. Shortly tap where you want to collect points and QField will automatically add the averaged position once the minimum count is met.
-!![](../assets/images/positioning_averaged_set.png,280px)
+!![](../../assets/images/positioning_averaged_set.png,280px)
 
 !!! note
-    When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
+    When using [`@gnss_*` or `@position_` variables](#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
 
 ## Positioning variables
 
@@ -250,7 +250,7 @@ for fields to keep track of the quality of individual measured points.
 
 A common use case is recording the horizontal accuracy, which can be done by using the variable `@position_horizontal_accuracy`.
 Another often used strategy is using the altitude of the current measurement which can be achieved with `z(@position_coordinate)`.
-For a complete listing of all available variables, refer to the [expression variables reference documentation](../reference/expression_variables.md).
+For a complete listing of all available variables, refer to the [expression variables reference documentation](../../reference/expression_variables.md).
 
 Information for GNSS Z value with Vertical grid shift in use:
 - *Antenna height compensation=False*
@@ -265,18 +265,18 @@ Information for GNSS Z value with Vertical grid shift in use:
 ### Vertex log layer
 
 It is good practice to create a log layer of the collected vertices.
-It enables you to keep track of the meta data for each vertex like [GNSS quality attributes](../reference/expression_variables.md) and more.
+It enables you to keep track of the meta data for each vertex like [GNSS quality attributes](../../reference/expression_variables.md) and more.
 
 #### Setup
 
 1. Add a point layer to the project and attributes configured to store this information.
 
-    !![](../assets/images/vertex_log1.png)
+    !![](../../assets/images/vertex_log1.png)
 
 2. Assign the role *digitizing logger* to a point layer.
 
 3. Go to > *Project* > *Properties...* > *QField*.
 
-    !![](../assets/images/vertex_log2.png)
+    !![](../../assets/images/vertex_log2.png)
 
 4. Set default values to the attributes using the positioning variables mentioned above.

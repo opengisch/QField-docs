@@ -12,7 +12,7 @@ In QField, a field with *Attachment* widget can be used to:
 - Listen and record sound clips
 - Show links to external files like PDFs or documents
 
-!![Attachments](../assets/images/attachments.png "")
+!![Attachments](../../assets/images/attachments.png "")
 
 To configure the Widget, please refer to the [Attributes Form Documentation](./attributes-form.md#configure-attachmentpictures-widget)
 
@@ -54,7 +54,7 @@ Create a relation with:
 - `apiary_id` Referencing field
 - `strength` Composition
 
-!![Relations](../assets/images/add-1-n-pictures-relations.png "")
+!![Relations](../../assets/images/add-1-n-pictures-relations.png "")
 
 ### Widgets
 
@@ -64,23 +64,23 @@ You can either choose the *Text Edit* or *UUID Generator* widget.
 Its default value in any case has to be `uuid('WithoutBraces')`.
 Hide it from the view as it should not be edited by the user.
 
-!![widgets](../assets/images/add-1-n-pictures-widgets_hive.png "")
+!![widgets](../../assets/images/add-1-n-pictures-widgets_hive.png "")
 
 Set the relation widget to *many to one relation* and add the relation to the form
 
-!![widgets](../assets/images/add-1-n-pictures-widgets_hive2.png "")
+!![widgets](../../assets/images/add-1-n-pictures-widgets_hive2.png "")
 
 #### Apiary picture
 
 Set the widget type of the field path to *Attachment* and add it to the form
 
-!![widgets](../assets/images/add-1-n-pictures-widgets_picture.png "")
+!![widgets](../../assets/images/add-1-n-pictures-widgets_picture.png "")
 
 ## Drawing and sketching
 
 QField has an in-app drawing and sketching functionality enabling you to directly sketch over and annotate images captured while in the field as well as drawing on top of a blank canvas or over a template.
 
-![type:video](../assets/videos/drawing-sketch-feature2.webm)
+![type:video](../../assets/videos/drawing-sketch-feature2.webm)
 
 ### Drawing templates
 
@@ -94,7 +94,7 @@ If you are not familiar with that app folder, its location is shown at the botto
 
 Templates shipped alongside projects as well as the QField app folder will be shown when users choose "Draw a sketch" by pressing the *(⋮)* menu icon of the attachment widget.
 
-!![picture path](../assets/images/drawing_templates.png "")
+!![picture path](../../assets/images/drawing_templates.png "")
 
 ## Geotagging
 :material-tablet: Fieldwork
@@ -105,7 +105,7 @@ Information about location and direction of the pictures will therefore be baked
 
 !!! note
     While with older Android versions it was possible to use other apps like the amazing OpenCamera app for taking pictures and preserving EXIF information from there, this is no longer with recent Android versions.
-    Is recommended to disable  *Use native Camera* in the *settings* to preserve [EXIF](../reference/exif.md) information.
+    Is recommended to disable  *Use native Camera* in the *settings* to preserve [EXIF](../../reference/exif.md) information.
 
 ## Image Stamping
 
@@ -140,11 +140,11 @@ Latitude [% coalesce(format_number(y(@gnss_coordinate), 7), 'N/A') %] | Longitud
 Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) || ' m/s', 'N/A') %] | Orientation [% if(@gnss_orientation != 'nan', format_number(@gnss_orientation, 1) || ' °', 'N/A') %]
 ```
 
-!![](../assets/images/image_stamping_setting.png, 800px)
+!![](../../assets/images/image_stamping_setting.png, 800px)
 
 *Example*
 
-!![](../assets/images/image_with_stamp_details.png)
+!![](../../assets/images/image_with_stamp_details.png)
 
 ## Fetching Geotags (EXIF) from the image file into the attribute table
 :material-monitor: Desktop preparation
@@ -163,7 +163,7 @@ However, this list might slightly vary depending on the mobile characteristics.
 4. Capturing EXIF tags requires accessing the full physical path of the picture.
 Be sure to reflect this in the QGIS expression.
 For example, the expression `exif(@project_folder + '/' + "path", 'Exif.Image.Orientation')` retrieves the orientation of the picture stored in *path*.
-For more tags visit the [QField EXIF reference documentation](../reference/exif.md) and the [exiv library documentation](https://exiv2.org/tags.html).
+For more tags visit the [QField EXIF reference documentation](../../reference/exif.md) and the [exiv library documentation](https://exiv2.org/tags.html).
 5. Completed! QField now captures and stores the EXIF tags in the pictures table while taking pictures.
 
 ## Maximum picture size
@@ -171,7 +171,7 @@ For more tags visit the [QField EXIF reference documentation](../reference/exif.
 
 The advanced settings allow rescaling the photos to a maximum width/height in *Project* > *Properties* > *Attachments and Directories*
 
-!![](../assets/images/maximum_picture_size_attachments.png, 800px)
+!![](../../assets/images/maximum_picture_size_attachments.png, 800px)
 
 ## Configurable attachment path
 :material-monitor: Desktop preparation
@@ -184,10 +184,10 @@ QFieldSync provides the possibility to configure the path and the file names of 
 Use expressions to specify the path of the attachments.
 By default, pictures are saved into the "DCIM" folder, audio are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
-!![picture path](../assets/images/picture_path.png, 800 px)
+!![picture path](../../assets/images/picture_path.png, 800 px)
 
 Additional directories can be synchronized with pictures or other attachments.
 Extra paths can be configured in _Attachment and Directories_ tab in the QFieldSync settings under *Project* > *Properties* > *QField*.
 All paths are relative to the project directory.
 
-!![attachments directories](../assets/images/attachments_directories.png,1000px)
+!![attachments directories](../../assets/images/attachments_directories.png,1000px)

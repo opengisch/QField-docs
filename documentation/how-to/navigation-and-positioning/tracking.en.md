@@ -16,7 +16,7 @@ open the side "Dashboard", long-press on a legend layer within which you want to
 save your tracks to, and select the *Setup tracking* button to configure
 the tracking session.
 
-!![](../assets/images/tracking-layer-properties.png)
+!![](../../assets/images/tracking-layer-properties.png)
 
 Two constraints are available to limit the number of vertices recorded
 during tracking:
@@ -24,7 +24,7 @@ during tracking:
 - A minimum time interval
 - A minimum distance
 
-!![](../assets/images/tracking-settings.png)
+!![](../../assets/images/tracking-settings.png)
 
 Once you have finished configuring your tracking session, hit the *Start tracking*
 button to begin recording. At this stage, a feature form will appear, which allows
@@ -47,14 +47,14 @@ This ensures that if the position exceeds this defined distance, it is considere
     QField offers the capability to resume tracking sessions seamlessly, even if the application has been restarted or the device has been rebooted.
     This ensures continuity by allowing previously started tracking sessions to be reactivated without loss progress.
 
-!![](../assets/images/maximum-distance-tolerance.png,550px)
+!![](../../assets/images/maximum-distance-tolerance.png,550px)
 
 ## Tracking underway
 
 Once a tracking session has been setup, a badge will appear in the side "Dashboard"
 legend next to the layer(s) against which tracking is being recorded.
 
-!![](../assets/images/tracking-badge.png)
+!![](../../assets/images/tracking-badge.png)
 
 The features created by the tracking session are saved on every vertex recorded.
 A rubber band line overlaid onto the map is attached to each tracking session,
@@ -75,7 +75,7 @@ To terminate tracking, simply open the side "Dashboard". From there, long-press
 on a legend layer linked to an active tracking session and select the
 *Stop tracking* button.
 
-!![](../assets/images/tracking-stop.png)
+!![](../../assets/images/tracking-stop.png)
 
 ## Predefined Project Tracking Sessions
 
@@ -83,7 +83,7 @@ This functionality enables one or more position tracking sessions to automatical
 Users will be presented with a feature form popup as the tracking session begins to fill in attributes.
 If the vector layer used to track has the "Hide Form on Add Feature" mode selected, the feature form will be skipped.
 
-!![Hide Form on Added Feature](../assets/images/hide-form-on-add-feature.png)
+!![Hide Form on Added Feature](../../assets/images/hide-form-on-add-feature.png)
 
 ### Configure a Project Tracking Session
 :material-monitor: Desktop preparation
@@ -93,9 +93,9 @@ Open and direct to *Layer Properties* > *QField*.
 There, you can activate "Tracking Session" and specify the tracking requirements.
 Note that the QField panel is only available when the QFieldSync plugin is installed in your QGIS profile.
 
-!![Activating automatic "Tracking Sessions" in QFieldSync](../assets/images/automatic-tracking-session.png)
+!![Activating automatic "Tracking Sessions" in QFieldSync](../../assets/images/automatic-tracking-session.png)
 
-!![Tracking activated automatically in QField](../assets/images/qfield-tracking-session.png,300px)
+!![Tracking activated automatically in QField](../../assets/images/qfield-tracking-session.png,300px)
 
 !!! note
     ### Benefits

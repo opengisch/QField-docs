@@ -12,17 +12,17 @@ display the collected data, and save it into newly-digitized feature attributes.
 
 In QField, registered sensors are listed within the currently opened project file in a sub-menu that can be accessed via the side "Dashboard's" main menu.
 
-!![](../assets/images/main_menu_sensors.png)
+!![](../../assets/images/main_menu_sensors.png)
 
 To toggle the passive collection of sensor data, simply click on a sensor name in the sub-menu. When active,
 a sensor icon will appear next to the sensor name, while when inactive, a dot icon will be shown.
 
-!![](../assets/images/sensors_menu.png)
+!![](../../assets/images/sensors_menu.png)
 
 All active sensors that are collecting data will be listed in a sensors information table located at the bottom
 of QField's map canvas.
 
-!![](../assets/images/sensors_information_panel.png)
+!![](../../assets/images/sensors_information_panel.png)
 
 ## Sensor-Driven Tracking
 
@@ -35,8 +35,8 @@ Once this configuration is done, you can start tracking your position against th
 tracking session, a sensor constraint can be activated to ensure that added points occur every time a sensor has
 captured new data.
 
-!![](../assets/images/sensors_tracker_constraint.png)
+!![](../../assets/images/sensors_tracker_constraint.png)
 
 See how tracking works in real-world scenarios:
 
-!![](../assets/images/sensors.webp,250px)
+!![](../../assets/images/sensors.webp,250px)

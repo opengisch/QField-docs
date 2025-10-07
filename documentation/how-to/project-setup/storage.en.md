@@ -7,7 +7,7 @@ tx_slug: documentation_get-started_storage_qfield
 
 On the QField homescreen, users are presented with two options to open a project.
 
-- **QFieldCloud projects**: The first option is to [access a project stored on QFieldCloud](../get-started/tutorials/get-started-qfc.md)
+- **QFieldCloud projects**: The first option is to [access a project stored on QFieldCloud](../../get-started/tutorials/get-started-qfc.md)
 How to set up and work with QFieldCloud is explained in the next chapter.
 - **Open local file**: The second option involves copying a working copy of the QGIS project file from a laptop or PC (the source device) to the phone or tablet (the target device).
 On the target device, users can access and edit this local copy using QField and eventually copy the edited version back to the desktop or to an alternative cloud storage service.
@@ -17,7 +17,7 @@ There are various possibilities to export copies of project files and datasets f
 
 ## 1. Exporting QGIS project files for use in QField
 
-QField supports a [wide range of data formats](../reference/data-format.md).
+QField supports a [wide range of data formats](../../reference/data-format.md).
 There are two ways of preparing and copying a project in QGIS for use in QField.
 
 * [Storing files in a designated folder](#storing-files-in-a-designated-folder)
@@ -155,7 +155,7 @@ Apart from using QFieldCloud, QField can open projects and datasets in five ways
 
 * [importing individual datasets](#importing-individual-datasets-android-only) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"><!-- markdown-link-check-disable-line -->
 
-!![QField import actions](../assets/images/storage-import-actions.png)
+!![QField import actions](../../assets/images/storage-import-actions.png)
 
 On **Android** all of these actions are available by clicking on the "import (+) button" located on the bottom-right corner of the project/dataset picker screen, which can be accessed by clicking on the "Open local files" button located in QField's welcome screen.
 
@@ -199,7 +199,7 @@ file to users.
 When importing a project or individual dataset through the "Import URL" action, you will be asked to provide a URL string to a file.
 QField will subsequently fetch the content and save it into the "Imported projects" or "Imported datasets", respectively.
 
-!![QField import URL dialog](../assets/images/storage-import-url.png)
+!![QField import URL dialog](../../assets/images/storage-import-url.png)
 
 QField will consider a ZIP archive as a compressed project when one or more `.qgs`/`.qgz` project files are detected.
 
@@ -221,7 +221,7 @@ Once you are done with your fieldwork, are four ways to sent and export the chan
 * [by sending an individual dataset to a {cloud, email, messenger, etc.} app;](#sending-an-individual-dataset) and
 * [by accessing imported content directly through USB cable.](#accessing-imported-content-directly-through-usb-cable)
 
-!![QField export actions](../assets/images/storage-export-actions.png)
+!![QField export actions](../../assets/images/storage-export-actions.png)
 
 You can access these actions via the dropdown action menu inside the project/dataset picker which you can access by clicking on the "Open local files" button located in QField's welcome screen.
 
@@ -251,7 +251,7 @@ To do this, within your project:
 
 1. Direct to the folder icon with the wheel via the side "Dashboard" to open the project folder.
 
-    !![](../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png,400px)
+    !![](../../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png,400px)
 
 2. Inside this project folder, you will find your project files.
 Offline layers will be stored in a file named "data.gpkg".
@@ -259,11 +259,11 @@ You can also export your attached files (Photos, Audio, Video, etc).
 
 3. click on the three dots *(⋮)* located on the right side of the file or folder.
 
-    !![](../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png,350px)
+    !![](../../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png,350px)
 
 4. Choose between the actions "Send to..." or "Export to folder..." based on your preference and follow the prompts accordingly.
 
-    !![](../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png,350px)
+    !![](../../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png,350px)
 
 ## 5. QField App directory
 
@@ -278,7 +278,7 @@ This centralized location allows you to provide custom fonts, basemaps, projecti
 3. Select **About QField** from the menu.
 4. The application directory locations will be displayed at the bottom of the screen just below the *App directories* path (the paths differ depending on the operating system).
 
-!![QField app directories](../assets/images/qfield_app_directories.png)
+!![QField app directories](../../assets/images/qfield_app_directories.png)
 
 ***Common Locations***
 

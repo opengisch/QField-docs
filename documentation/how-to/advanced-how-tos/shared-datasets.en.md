@@ -23,17 +23,17 @@ When preparing a new project for QField, make sure the datasets you want to shar
 - Under the "Localized Data Paths" section add the necessary path where the datasets to be shared are located.
 Once correctly added, QGIS, QField/QFieldCloud will treat them as shareable datasets.
 
-!![QGIS Options Dialog showing Data Sources and Localized Data Paths setup](../assets/images/external_path.png)
+!![QGIS Options Dialog showing Data Sources and Localized Data Paths setup](../../assets/images/external_path.png)
 
 ## Manual configuration on portable device in QField
 
 To transfer the shared datasets manually in QField, the datasets have to be added into the right directory on your device:
 
-- Your shared dataset files need to be copied into the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/basemaps** on your device.
+- Your shared dataset files need to be copied into the directory **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/basemaps** on your device.
 
 QField will automatically scan this folder for basemaps and other recognizable data.
 
-!![QField app directories](../assets/images/qfield_app_directories.png)
+!![QField app directories](../../assets/images/qfield_app_directories.png)
 
 ## Configuration of shareable datasets with QFieldCloud
 
@@ -65,7 +65,7 @@ Ensure this option is checked.
 If you hover over the checkbox, you will see the list of files that will be uploaded.
 This checkbox is only available for users with the permission to add files to the **`shared_datasets`** project.
 
-!![QFieldSync Synchronization Dialog with Localized Datasets upload option enabled](../assets/images/upload_missing_localized_datasets.png)
+!![QFieldSync Synchronization Dialog with Localized Datasets upload option enabled](../../assets/images/upload_missing_localized_datasets.png)
 
 - Click on the **Perform Actions** button to proceed.
 During the upload phase, a list of the shared and regular project datasets will appear as they are being transferred.
@@ -76,7 +76,7 @@ This instructs QFieldSync to find the actual data files referenced by your Local
 After the synchronization is complete, you can check the QFieldSync log.
 It will detail the files uploaded, including the shared datasets that were sent to QFieldCloud.
 
-!![FieldSync List of uploaded files in the log](../assets/images/list_of_uploaded_files.png)
+!![FieldSync List of uploaded files in the log](../../assets/images/list_of_uploaded_files.png)
 
 ### Localization of datasets within the QFieldCloud web interface
 
@@ -92,7 +92,7 @@ Once uploaded, these shared datasets will appear in two key places on the QField
 - You will find a section named **Shared datasets**.
 This dialogue lists all datasets that have been identified and uploaded as shared/localized resources for your projects.
 
-!![List of Shared datasets files referenced in a regular QFieldCloud project](../assets/images/list_of_localized_datasets_on_cloud.png)
+!![List of Shared datasets files referenced in a regular QFieldCloud project](../../assets/images/list_of_localized_datasets_on_cloud.png)
 
 #### Checking the dataset status
 
@@ -111,7 +111,7 @@ A key benefit is that the download of these shared localized datasets is managed
 Each shared dataset will only be downloaded **once**, even if multiple projects use it.
 This saves storage space and synchronization time.
 
-!![QField interface showing a project with shared localized datasets from QFieldCloud](../assets/images/qfield_shared_cloud_localized_datasets.png)
+!![QField interface showing a project with shared localized datasets from QFieldCloud](../../assets/images/qfield_shared_cloud_localized_datasets.png)
 
 ### Direct synchronization in the **`shared_datasets`** project
 
@@ -129,9 +129,9 @@ Users with "manager" or "admin" permissions for the **`shared_datasets`** projec
     The specific user roles must be set for the **`shared_datasets`** project as for any other project.
     A collaborator with an admin role of a project making use of a shared dataset will not automatically have the permission for the **`shared_datasets`** project.
 
-!![Uploading localized dataset files directly to the "shared_datasets" cloud project using QFieldSync](../assets/images/qfieldsync_directly_uploading_localized_dataset.png)
+!![Uploading localized dataset files directly to the "shared_datasets" cloud project using QFieldSync](../../assets/images/qfieldsync_directly_uploading_localized_dataset.png)
 
-!![Localized files listed in the "shared_datasets" cloud project on the web interface](../assets/images/localized_files_in_localized_dataset_project.png)
+!![Localized files listed in the "shared_datasets" cloud project on the web interface](../../assets/images/localized_files_in_localized_dataset_project.png)
 
 #### With the QFieldCloud-CLI
 

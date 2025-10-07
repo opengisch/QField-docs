@@ -14,30 +14,30 @@ By default, QField will display bookmarks as marker overlays over the map. User-
 
 A single tap on a marker will display the bookmark name while a double tap will set the map extent to re-center around the bookmark location.
 
-!![](../assets/images/bookmarks.png)
+!![](../../assets/images/bookmarks.png)
 
 You can also use the top search bar to find bookmarks and click on matching bookmark names to move the map extent to re-center around the bookmark location.
 
-!![](../assets/images/bookmarks-search.png)
+!![](../../assets/images/bookmarks-search.png)
 
 QField also offers a setting to toggle off the displaying of bookmarks, which can be found in the settings panel.
 
-!![](../assets/images/bookmarks-toggle.png)
+!![](../../assets/images/bookmarks-toggle.png)
 
 ## Adding bookmarks
 :material-tablet: Fieldwork
 
 To add a new bookmark, simply tap and hold any part of the map and select the *Add Bookmark* action within the popped up menu.
 
-!![](../assets/images/bookmarks-add-from-touch.png)
+!![](../../assets/images/bookmarks-add-from-touch.png)
 
 After selecting this action, a panel will appear offering you the possibility to rename the bookmark and select the color used to draw its map marker overlay.
 
-!![](../assets/images/bookmarks-properties.png)
+!![](../../assets/images/bookmarks-properties.png)
 
 It is also possible to add a bookmark at the current device's location when positioning is enabled. To do so, simply tap and hold on the positioning button at the lower right corner and select the *Add Bookmark at Location* action.
 
-!![](../assets/images/bookmarks-add-from-location.png)
+!![](../../assets/images/bookmarks-add-from-location.png)
 
 !!! note
     When adding a bookmark, the current map scale is taken into consideration to save an extent centered around the tapped coordination or current location. This allows you to determine the extent that will be used when double-tapping on a bookmark marker or selecting a bookmark item in the search bar.

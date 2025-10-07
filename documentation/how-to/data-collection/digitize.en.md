@@ -14,7 +14,7 @@ The *browse mode* and the *digitize mode*.
 As the name suggests, while being in browse mode, you can view and select features within all identifiable layers in the project.
 It is also possible to edit attributes of existing features, by clicking on a feature of interest and opening its attribute table.
 
-!![Browse mode identify and edit](../assets/images/browse_mode_identifyedit.png,500px)
+!![Browse mode identify and edit](../../assets/images/browse_mode_identifyedit.png,500px)
 
 ## Digitize Mode
 
@@ -25,7 +25,7 @@ in the side "Dashboard" and selecting the layer within which you want to add new
 The current layer within which features are to be added is highlighted in green.
 
 
-!![](../assets/images/activate-edit-mode.png)
+!![](../../assets/images/activate-edit-mode.png)
 
 
 !!! Tip
@@ -41,7 +41,7 @@ The current layer within which features are to be added is highlighted in green.
     (Optionable): You can use the *lock to position* button to force the crosshair to center on your location if you have enabled positioning.
     3. (Optionable): You can click the *(x) button* to cancel the current feature creation.
 
-    !![](../assets/images/lock_to_position_icon.png,150px)
+    !![](../../assets/images/lock_to_position_icon.png,150px)
 
 ### Adding line or polygon features
 
@@ -58,7 +58,7 @@ The current layer within which features are to be added is highlighted in green.
     6. (Optionable): You can click the *(x) button* to cancel the current feature creation.
 
 
-    !![](../assets/images/collect_features.webp,250px)
+    !![](../../assets/images/collect_features.webp,250px)
 
 ### Additional Editing Settings
 
@@ -72,7 +72,7 @@ There are other more advanced settings, which you can enable to make your data c
 
     1. To enable both options, open the side "Dashboard" Panel and direct to *Settings* > *General*
 
-    !![](../assets/images/activate-digitize-with-volumen-keys.png)
+    !![](../../assets/images/activate-digitize-with-volumen-keys.png)
 
 ### Attribute form
 
@@ -83,24 +83,24 @@ After digitizing a geometry, the attribute form will appear allowing you to edit
 
 Moreover, you have the option to digitize the form using the scanning QR and Barcode reader functionality available within the feature form's text edit widget.
 
-!![](../assets/images/digitizing-with-qr-code-1-attribute-form.png)
+!![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png)
 
 Upon clicking the icon button with the three dots, a menu will be presented offering three distinct actions: "Copy", "Paste", and "Scan Code".
 
-!![](../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
+!![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
 
 Opting for the "Scan Code" action will trigger QField's code reader, initiating the scanning process to decode the code.
 
-!![](../assets/images/digitizing-with-qr-code-3-code-reader.png)
+!![](../../assets/images/digitizing-with-qr-code-3-code-reader.png)
 
 Once the codes have been successfully scanned, users can validate their choice by clicking the checkmark (✔️) OK button.
 This action will populate the attribute with the decoded value, streamlining the digitization process.
 
-!![](../assets/images/digitizing-with-qr-code-4-it-worked.png)
+!![](../../assets/images/digitizing-with-qr-code-4-it-worked.png)
 
 In addition, the Code Reader offers the capability to read NFC text tags.
 
-!![](../assets/images/code-reader-nfc-text-tag.png)
+!![](../../assets/images/code-reader-nfc-text-tag.png)
 
 !!! note
     Both the QR code camera and the NFC text tag detector are enabled by default when you open the Code Reader.
@@ -111,7 +111,7 @@ In addition, the Code Reader offers the capability to read NFC text tags.
 For quick collection of rather homogeneous datasets, it is crucial to not having to enter the same attribute values multiple times.
 The pins on the right of every attribute enable the last entered value option for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled. It needs to be noted that this last entered value only applies when collecting new features not when editing existing ones, unless otherwise specified.
 
-!![](../assets/images/remember_checkboxes.webp,250px)
+!![](../../assets/images/remember_checkboxes.webp,250px)
 
 ## Geometry editing
 
@@ -147,7 +147,7 @@ The tool mimics eraser tools from 2D drawing programs and works best with a styl
 Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion.
 You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
 
-![type:video](../assets/videos/new-erase-reshape-tool.webm)
+![type:video](../../assets/videos/new-erase-reshape-tool.webm)
 
 ### Ring tool
 
@@ -158,7 +158,7 @@ Once a ring is created, QField will offer the possibility of filling the ring wi
 
 A video demonstration of some editing possibilities:
 
-!![](../assets/images/edit_geom.webp,250px)
+!![](../../assets/images/edit_geom.webp,250px)
 
 ## Merging features
 
@@ -192,7 +192,7 @@ The freehand digitizing mode is activated through a new toolbar button which app
 
 If topological editing is activated on the project in QGIS before exporting for QField, shared nodes of neighboring geometries are modified together when moving / deleting vertices and additional vertices are added to segments when a new node is added from neighboring geometries.
 
-!![](../assets/images/edit_topo.webp,250px)
+!![](../../assets/images/edit_topo.webp,250px)
 
 ### Multi-editing of attributes
 
@@ -200,7 +200,7 @@ QField allows you to select multiple features and edit their attributes all at o
 In some cases, it can result in very efficient workflows.
 To do so, identify two (or more)features on the map, select them in the features list and merge them by selecting the *Edit feature* button in the list's title bar.
 
-!![](../assets/images/multi_editor.webp,250px)
+!![](../../assets/images/multi_editor.webp,250px)
 
 ## Delete features
 
@@ -208,7 +208,7 @@ To do so, identify two (or more)features on the map, select them in the features
 
 Deleting a feature is done by selecting the *Delete feature* action in the feature form's *(⋮)* menu.
 
-!![](../assets/images/delete-single-feature.png)
+!![](../../assets/images/delete-single-feature.png)
 
 QField also allows you to delete multiple features at a time.
 To do so, first identify the features by short tapping on the relevant parts of the map.
@@ -216,7 +216,7 @@ Then activate the multi-selection mode by long pressing on one of the features y
 When checkbox appears next to the feature names, select further features to delete (you can tap on the map to add more features too).
 Once done, select the "Delete Selected Feature(s): action in the features list *(⋮)* menu.
 
-!![](../assets/images/delete-multiple-features.png)
+!![](../../assets/images/delete-multiple-features.png)
 
 ## Snapping
 
@@ -254,4 +254,4 @@ To activate Snap to Common Angle, open the geometry editor and tap on the Snap t
 Choose the desired angle from the menu. Then, start digitizing your geometry or adding vertices, and the functionality will automatically align your input to the selected angle.
 QField will remember the angle relative to the last segment situation for consistent snapping behaviour during subsequent edits.
 
-![type:video](../assets/videos/snap-to-common-angles.webm)
+![type:video](../../assets/videos/snap-to-common-angles.webm)

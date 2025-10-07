@@ -41,7 +41,7 @@ Supported point cloud formats:
 ## Opening an vector or raster dataset
 :material-tablet: Fieldwork
 
-Please read the [storage access documentation](../get-started/storage.md) to learn more on how standalone datasets are opened on your specific device.
+Please read the [storage access documentation](../../how-to/project-setup/storage.md) to learn more on how standalone datasets are opened on your specific device.
 
 ## Using a project as "base map" for standalone datasets
 :material-tablet: Fieldwork

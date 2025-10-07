@@ -48,8 +48,6 @@ nav:
   - Get started:
       - get-started/index.md
       - get-started/concepts.md
-      - get-started/storage.md
-      - get-started/settings.md
       - Tutorials:
           - QFieldCloud:
               - get-started/tutorials/get-started-qfc.md
@@ -65,35 +63,43 @@ nav:
       - get-started/faq.md
   - How-to guides:
       - how-to/index.md
-      - how-to/projects.md
-      - how-to/map-interaction.md
-      - how-to/measuring-tool.md
-      - how-to/digitize.md
-      - how-to/attributes-form.md
-      - how-to/search.md
-      - how-to/hiding-legend-nodes.md
-      - how-to/map-styling.md
-      - how-to/map-themes.md
-      - how-to/decorations.md
-      - how-to/pictures.md
-      - how-to/standalone-datasets.md
-      - how-to/gnss.md
-      - how-to/geofencing.md
-      - how-to/navigation.md
-      - how-to/tracking.md
-      - how-to/external-routing.md
-      - how-to/sensors.md
-      - how-to/bookmarks.md
-      - how-to/print-to-pdf.md
-      - how-to/authentication.md
-      - how-to/temporal-filtering.md
-      - how-to/variables.md
-      - how-to/live-default-value.md
-      - how-to/shared-datasets.md
-      - how-to/movable-project.md
-      - how-to/pg-service.md
-      - how-to/plugins.md
-      - how-to/processing.md
+      - General:
+          - how-to/general/settings.md
+          - how-to/general/projects.md
+      - Project Setup:
+          - how-to/project-setup/attributes-form.md
+          - how-to/project-setup/storage.md
+          - how-to/project-setup/hiding-legend-nodes.md
+          - how-to/project-setup/pg-service.md
+          - how-to/project-setup/pictures.md
+      - QField Interface:
+          - how-to/qfield-interface/map-interaction.md
+          - how-to/qfield-interface/measuring-tool.md
+          - how-to/qfield-interface/search.md
+          - how-to/qfield-interface/map-styling.md
+          - how-to/qfield-interface/map-themes.md
+          - how-to/qfield-interface/decorations.md
+          - how-to/qfield-interface/bookmarks.md
+      - Data Collection:
+          - how-to/data-collection/digitize.md
+          - how-to/data-collection/print-to-pdf.md
+          - how-to/data-collection/processing.md
+      - Navigation and Positioning:
+          - how-to/navigation-and-positioning/gnss.md
+          - how-to/navigation-and-positioning/geofencing.md
+          - how-to/navigation-and-positioning/navigation.md
+          - how-to/navigation-and-positioning/tracking.md
+          - how-to/navigation-and-positioning/external-routing.md
+      - Advanced How To's:
+          - how-to/advanced-how-tos/standalone-datasets.md
+          - how-to/advanced-how-tos/sensors.md
+          - how-to/advanced-how-tos/authentication.md
+          - how-to/advanced-how-tos/temporal-filtering.md
+          - how-to/advanced-how-tos/variables.md
+          - how-to/advanced-how-tos/live-default-value.md
+          - how-to/advanced-how-tos/shared-datasets.md
+          - how-to/advanced-how-tos/movable-project.md
+          - how-to/advanced-how-tos/plugins.md
   - Technical reference:
       - reference/index.md
       - reference/data-format.md

@@ -208,3 +208,7 @@
 div.special_table + div > div > table th{
     min-width: 1px !important;
 }
+
+.md-nav__title {
+  font-weight: bold;
+}

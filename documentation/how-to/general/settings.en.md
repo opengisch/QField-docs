@@ -93,7 +93,7 @@ When disabled the documentation can still be queried by putting a "?" in the beg
 
 By pressing the three dots the plugin a new window will open from which you can add, enable and disable customised plugins.
 
-To add a new plugin see the [Plugins Page](../how-to/plugins.md/#qfield-plugins)<!-- markdown-link-check-disable-line -->
+To add a new plugin see the [Plugins Page](../../how-to/advanced-how-tos/plugins.en.md/#qfield-plugins)<!-- markdown-link-check-disable-line -->
 
 ### Maximized attribute form
 
@@ -140,7 +140,7 @@ You are cordially invited to enhance the translation in your native language.
 
 QField has an own internal camera, which provides quite a few options if desirable:
 
-- Geotagging and [EXIF variables](../reference/exif.md)
+- Geotagging and [EXIF variables](../../reference/exif.md)
 - Details stamping
 - Size and ration adjustment
 - Camera selection - front and back

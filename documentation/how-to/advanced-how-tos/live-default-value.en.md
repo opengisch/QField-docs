@@ -18,11 +18,11 @@ An example of attribute dependency settings
 
 For an *image*:
 
-!![live default value image](../assets/images/live_default1.png)
+!![live default value image](../../assets/images/live_default1.png)
 
 For a *value relation*:
 
-!![live default value relation](../assets/images/live_default2.png)
+!![live default value relation](../../assets/images/live_default2.png)
 
 ## Usage
 :material-tablet: Fieldwork

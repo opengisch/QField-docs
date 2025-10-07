@@ -21,10 +21,10 @@ To setup a WFS with OAuth2 in QGIS follow these steps.
     3. Add a new authentication type by clicking the green cross and adjust the parameters to match your OAuth2 server setup.
     4. Once the layer's authentication configuration is set, add some layers into your project to test that they are rendering correctly.
 
-    !![WFS Service Settings](../assets/images/oauth2_setup_wfs.png)
+    !![WFS Service Settings](../../assets/images/oauth2_setup_wfs.png)
 
 
-    !![Authentication](../assets/images/oauth2_setup_auth.png)
+    !![Authentication](../../assets/images/oauth2_setup_auth.png)
 
 
 ## Export authentication configurations from QGIS
@@ -40,7 +40,7 @@ Prior to exporting authentication configurations, it is always good to verify th
     3. Click on "Utilities" and select "export selected authentication configurations to file".
     4. When prompted for a password, *leave it blank*.
 
-    !![QGIS Authentication Settings](../assets/images/oauth2_export_config.png)
+    !![QGIS Authentication Settings](../../assets/images/oauth2_export_config.png)
 
     !!! Warning
 
@@ -56,7 +56,7 @@ In order for a service that requires authentication to run in QField, after conf
 !!! Workflow
 
     1. Export the authentication configuration file from QGIS (see above)
-    2. On your device direct to *[the QField App Directory](../get-started/storage.md#5-qfield-app-directory)* > *Auth*
+    2. On your device direct to *[the QField App Directory](../../how-to/project-setup/storage.en.md#5-qfield-app-directory)* > *Auth*
     3. Once copied, the service should be rendered correctly and provide access.
     !!! Tip
 
