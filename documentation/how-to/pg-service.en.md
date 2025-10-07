@@ -1,32 +1,32 @@
 ---
-title: PostGIS service
+title: PostgreSQL Databases
 tx_slug: documentation_how-to_pg-service
 ---
-# Working with PostGIS
+# Working with PostgreSQL
 
-## PostGIS in QField
+## PostgreSQL in QField
 
 Working with databases can be much easier when working in a multi-user environment or when working in a variety of projects that require more complex data structures.
 With QField you can easily work within a database but there are a few steps that need to be taken before the smoothless fieldwork can begin.
 This page goes through the different options and gives step-by-step instructions on how this can be achieved.
 
-## Connection to PostGIS in QGIS
+## Connection to PostgreSQL in QGIS
 
 In QGIS there are two options in which you can connect to your database.
 
-1. **Direct Connection:** When connecting to a PostGIS database, you can store all information including the credentials inside the QGIS Project directly.
-2. **Using a PG Service File:** Using a service file that holds the connection parameters to all your databases as a an individual service name.
+1. **Direct Connection:** When connecting to a PostgreSQL database, you can store all information including the credentials inside the QGIS Project directly.
+2. **Using a PG Service File:** Using a service file that holds the connection parameters to all your databases as an individual service name.
 Independently on working with our without QFieldCloud, we highly recommend to make use of this option due to data safety.
 
 ### Direct Connection using Simple Authentication
 
-You can create a PostGIS connection directly inside QGIS.
+You can create a PostgreSQL connection directly inside QGIS.
 **NOTE:** We do not recommend this option due to data safety reasons.
 It is not safe to store your database credentials in the QGIS Project File.
 
 !!! Workflow
 
-    1. In your Browser right-click on the *PostGIS Elephant* > *New Connection*
+    1. In your Browser right-click on the *PostgreSQL Elephant* > *New Connection*
     2. In the window give your connection a name and add the service information in the dialogue (host, dbname, port, SSL mode)
     3. In the "Authentication section", add a new *Authentication* if you have not yet connected to your database and saved the credentials.
     4. Test the connection and when successful click ok.
@@ -37,16 +37,16 @@ It is not safe to store your database credentials in the QGIS Project File.
 
     !![Adding PostGIS connection](../assets/images/pg-service_manual_connection.png,400px)
 
-### Connection via PostgreSQL service
+### Connection via PG service
 
-It is possible to connect to PostGIS via a service using a service file.
+It is possible to connect to postgreSQL via a service using a service file.
 A service is stored inside the `pg_service.conf` file where all the required information to access your database is stored.
 Instead of storing the hostname, port, database name and more into the QGIS Project file, these can be stored separately.
 Using services is very useful, when you work with multiple database connections during your everyday work to quickly change and connect to the different instances.
 
 Read more about PostgreSQL services in the [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file).
 
-There exists a useful plugin, which supports in the easy configuration of the service file - [the PG Service Parser Plugin](https://github.com/opengisch/qgis-pg-service-parser-plugin).
+There exists a useful plugin, which supports in the easy creation and configuration of the service file - [the PG Service Parser Plugin](https://github.com/opengisch/qgis-pg-service-parser-plugin).
 We recommend using this plugin and will show you below how to use it.
 
 !!! Workflow
@@ -54,44 +54,51 @@ We recommend using this plugin and will show you below how to use it.
     :material-monitor: Desktop Preparation
 
     1. Direct to *Plugins* > *Manage and Install Plugins*
-    2. Search for "PG service parser" (icon of the Postgres Elephant) and install it.
+    2. Search for "PG service parser" (icon of the PostgresSQL Elephant) and install it.
     3. Once installed, in the QGIS toolbar, the same icon should appear.
     4. Upon clicking on the icon a new window will appear.
-    5. If you never set-up a service file before, the plugin will automatically create a new file in the proper directory.
-    **Note:** In order for QGIS to read the `pg_service.conf` file, it needs to be stored in the right directory of your computer.
+    5. If you never set-up a service file before, the plugin will automatically create a new file in a proper default directory, which ensures QGIS will be able to read it.
     !![Create config file](../assets/images/pg-service_create_config_file.png,500px)
 
     6. Click on "Create file at default location" and leave the default name.
 
-    Now you can create configure your service with your database information with a new service.
+    Now you can configure the database information which will be stored as a PG service.
 
     **Create service**
 
     1. Click on the green plus within the PG service parser plugin
     2. Add the different setting options by clicking on each required option and click "OK"
-    3. Enter the database information by double-clicking on the different sections.
-    4. Once you are done, you can close the window.
+    3. Edit the database information by double-clicking on the different sections.
+    4. Once you are done, click on the Update service button so save the configuration.
+    5. Keep the window open, as we will use it in the next section.
 
     !![Service details](../assets/images/pg-service_service_details.png)
 
     **Connection to PostGIS via service**
 
-    1. In your Browser right-click on the *PostGIS Elephant* > *New Connection*
-    2. Instead of entering all your the database information, just add your service name and "Test the connection".
-    If successful, click "Ok"
+    1. Within the dialog of the PG service parser plugin, go to the QGIS Connections tab.
+    2. If needed, select the service you'll use to connect to PostGIS.
+    3. Click on the green plus to add a new connection.
+    4. Click on "OK" to accept a default connection name or enter your preferred name for the connection, which could contain spaces.
+    5. Double click on the new entry displayed and click on the Test Connection button. If successful, click OK.
+    **Note:** You can edit connection details to "also list tables with no geometry" or "Use estimated table metadata" to customize your connection.
+    6. Once you are done, you can close the plugin dialog.
+
+    The new QGIS Connection will appear in your browser, listed under the PostgreSQL item.
 
 ## Connection to PostGIS in QField
 
-If you have connected to PostGIS using the PG Service file and not directly, it is also necessary to add the information either on your mobile device directly or within QFieldCloud as a "Secret".
+If you have connected to PostGIS using the PG Service file and, it is also necessary to add the service file either on your mobile device directly or within QFieldCloud as a "Secret".
 
 ### Configuration on Mobile Device
 
-If you copy your projects via cable to your device, you will also have to copy the information of the database to the right right directory on your device.
+If you copy your projects via cable to your device, you will also have to copy the service file to the right directory on your device.
 Generally, the QField directory for Android can be found under `/Android/data/ch.opengis.qfield/files/QField.`
 !!! Note
 
-   Due to the restrictions of Android, you will only be able to access the directory when being connected via cable to the computer.
-   The only other possible option you have is to set your device to root (not recommended)
+    **1.** Due to the restrictions of Android, you will only be able to access the directory when being connected via cable to the computer.
+    The only other possible option you have is to set your device to root (not recommended).
+    **2.** Unlike on *NIX systems where the file is named .pg_service.conf, the file on Android is named pg_service.conf without a leading dot sign (.).
 
 ### Configuration on QFieldCloud
 
@@ -108,12 +115,14 @@ There you will also find more information on configuring user-defined secrets.
     3. Click on "Add New Secret" and choose the second option "Add a pg_service.conf configuration"
     4. Now you have two options:
           - Enter your database information again (host, port, SSL mode, password, username) OR
-          - Click on advanced editor and simply copy the lines from your previously established servicefile.
-          **Note:** You can also just use the clipboard function inside the PG service parser plugin
+          - Click on advanced editor and simply copy your service configuration from the PG service parser plugin.
+
 
     !![Add the secret](../assets/images/service_config_file_004.png,350px)
 
 ### Advanced Configuration Details
+
+If you are not using the PG Service Parser Plugin some additional steps need to be taken, depending on your operating system.
 
 #### Storage Paths
 
