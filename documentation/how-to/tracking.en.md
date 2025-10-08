@@ -47,7 +47,7 @@ If the layer linked to a tracking session supports the M dimension, QField will 
     1. Open the Side Dashboard and long-press on the layer which you want to use for tracking.
     2. Tap **Setup tracking** and a new window will appear showing the configuration settings.
 
-    !![](../assets/images/tracking-layer-properties.png,350px)
+        !![](../assets/images/tracking-layer-properties.png,350px)
 
     3. Tap the **Start tracking** button to begin the tracking.
     4. Enter the attributes for the feature(s) about to be created.
@@ -69,9 +69,6 @@ This allows you to simply continue across app restarts.
 - **Starting a new session:** This option will discard the incomplete feature from the previous session and begin a new one.
 
 
-
-
-
 ## Automatic Tracking Session
 
 This functionality enables one or more position tracking sessions to automatically start upon project load.
@@ -89,10 +86,10 @@ If the tracked vector layer has the "Hide Form on Add Feature" mode selected, th
     1. In QGIS for your tracking layer direct to  *Layer Properties* > *QField*
     2. Activate "Tracking Session" and specify the tracking requirements.
 
-    !![Activating automatic "Tracking Sessions" in QFieldSync](../assets/images/automatic-tracking-session.png)
+        !![Activating automatic "Tracking Sessions" in QFieldSync](../assets/images/automatic-tracking-session.png)
 
-    !![Tracking activated automatically in QField](../assets/images/qfield-tracking-session.png,350px)
+        !![Tracking activated automatically in QField](../assets/images/qfield-tracking-session.png,350px)
 
     3. (Optional) hide your attribute form when automatically starting a session by directing to *Layer Properties* > *Attribute form* and selecting the "Hide Form on Add feature" option.
 
-    !![Hide Form on Added Feature](../assets/images/hide-form-on-add-feature.png)
+        !![Hide Form on Added Feature](../assets/images/hide-form-on-add-feature.png)
