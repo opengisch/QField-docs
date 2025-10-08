@@ -8,6 +8,7 @@ tx_slug: documentation_reference_qfieldcloud_permissions
 QFieldCloud provides a fine grained access control over projects with the concepts of project collaborators, organization members and organization teams.
 
 ## Actors
+
    1. Unregistered user.
    2. Simple registered user, neither collaborator of the concerned project nor member of the concerned organization nor the concerned user.
    3. Project owner of the concerned project, the concerned user, but not collaborator nor organization member.
@@ -22,9 +23,9 @@ QFieldCloud provides a fine grained access control over projects with the concep
 
 ## Actions
 
- - ❌ Not allowed
- - ✅ Allowed
- - *‒* Irrelevant
+- ❌ Not allowed
+- ✅ Allowed
+- *‒* Irrelevant
 
 <div class="special_table"></div>
 | Action                                                                        | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10  | 11 |   |
@@ -53,9 +54,9 @@ QFieldCloud provides a fine grained access control over projects with the concep
 | List project's files (qfield)                                                 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | Download project's files (qfield)                                             | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | List users and organizations                                                  | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
-| Get user's public informations                                                | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
-| Get user's detailed informations                                              | ❌ | ❌ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ✅ | ✅ | ❌ |   |
-| Update user's informations                                                    | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
+| Get user's public information                                                | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
+| Get user's detailed information                                              | ❌ | ❌ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ✅ | ✅ | ❌ |   |
+| Update user's information                                                    | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
 | Delete user                                                                   | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
 | Get API status                                                                | ✅ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
 | Add and remove secrets                                                        | ‒  | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ‒  | ‒  | ‒  |   |

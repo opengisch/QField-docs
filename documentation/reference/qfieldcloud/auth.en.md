@@ -116,7 +116,7 @@ sequenceDiagram
 4. **Display a button for each identity provider**
    For each enabled authentication method a login button is rendered.<br/><br/>
 
-5. **Click on 'Login with XYZ' provider button**
+5. **Click on "Login with XYZ" provider button**
    User clicks the button to log in with a particular provider.
    At this point, QField/QFieldSync will create a new `QgsAuthMethodConfig` of type OAuth2, and will use the OIDC configuration details received from QFieldCloud to configure it.<br/><br/>
 
@@ -138,7 +138,7 @@ sequenceDiagram
    QField/QFieldSync will send the authorization code to the IDP's token endpoint, and exchange it for ID token, access token and refresh token.<br/><br/>
 
 11. **Answer with access token and ID token**
-   The IDP verifies the authoritation code (with the addition of PKCE), and responds with ID token, access token and refresh token, which are short lived.<br/><br/>
+   The IDP verifies the authorization code (with the addition of PKCE), and responds with ID token, access token and refresh token, which are short lived.<br/><br/>
 
 12. **Use ID token to authenticate user**
    QField/QFieldSync will send the ID token and access token to QFieldCloud, and request the user's profile information.<br/><br/>

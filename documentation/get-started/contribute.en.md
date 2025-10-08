@@ -12,11 +12,11 @@ If you found it useful, we will be even happier if you could give something back
 
 ### QField Community platform
 
-Signup and join the [QField Community's Platform](https://community.qfield.org/) <!-- markdown-link-check-disable-line -->.
- Actively engage the discussions, report bugs, share new ideas or ask a question.
- The community's platform is the platform, where you create the content yourself, where you can engage with the core developers and collaborate across the globe.
- We want to encourage anyone to participate and join the community.
- Only together we can create a better world.
+Sign up and join the [QField Community's Platform](https://community.qfield.org/) <!-- markdown-link-check-disable-line -->.
+Actively engage the discussions, report bugs, share new ideas or ask a question.
+The community's platform is the platform, where you create the content yourself, where you can engage with the core developers and collaborate across the globe.
+We want to encourage anyone to participate and join the community.
+Only together we can create a better world.
 
 ### Become an ambassador
 
@@ -38,7 +38,7 @@ If you want to get involved in QField development, please refer to the following
 The best way to financially support QField is by subscribing to one of the monthly sponsorships.
 By doing so, you help get freshly baked QField versions straight to everyone's devices.
 
-[![](https://img.shields.io/static/v1?label=Sponsor%20Now&message=%E2%9D%A4&logo=GitHub&color=%2380CC28)](https://github.com/sponsors/opengisch)
+[![](https://img.shields.io/static/v1?label=Donate%20Now&message=%E2%9D%A4&color=%2380CC28)](https://qfield.org/donate) [![](https://img.shields.io/static/v1?label=Get%20QFieldCloud&message=%E2%9D%A4&color=%234a6fae)](https://qfield.cloud) [![](https://img.shields.io/static/v1?label=GitHub%20Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23f6f8fa)](https://github.com/sponsors/opengisch)
 
 ### Crowdfundings
 
@@ -66,7 +66,6 @@ Other things you can do:
 - Share your [success story](https://qfield.org/success-stories.html) ([Contact us!](mailto:sales@opengis.ch)); <!-- markdown-link-check-disable-line -->
 - [Help with the documentation](https://github.com/opengisch/QField-docs#documentation-process); <!-- markdown-link-check-disable-line -->
 - [Translate the documentation](https://github.com/opengisch/QField-docs#translation-process) or [the app](https://explore.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->
-- [Sponsor a feature](https://docs.qfield.org/get-started/sponsor/); <!-- markdown-link-check-disable-line --> or
 - Just drop by and/or have a drink with us next time you meet OPENGIS.ch at a conference.
 
 ## Credits

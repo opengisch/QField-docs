@@ -17,7 +17,7 @@ Qt offers a useful [introductory tutorial](https://doc.qt.io/qt-6/qml-tutorial.h
 Once you’ve familiarized yourself with the QML environment, you are set to go.
 This is a minimal example that will display a toast message upon successfully loading a QField plugin:
 
-```
+```qml
 import QtQuick
 import org.qfield
 
@@ -34,7 +34,7 @@ A valid zipped plugin must contain a main.qml file at the root of the zip archiv
 An optional metadata.txt can also be used to provide basic details such as the plugin name, brief description, and author name.
 A sample typical `metadata.txt` content would look like this:
 
-```
+```ini
 [general]
 name=Hello World Plugin
 description=This is simple and brief description.
@@ -47,7 +47,7 @@ This [QField template plugin](https://github.com/opengisch/qfield-template-plugi
 ## `iface` interface
 
 Much like QGIS plugins, QField offers an `iface` object exposing a number of functionalities plugins can leverage.
-The current invokable functions include:
+The current invocable functions include:
 
 - `iface.mainWindow()`: returns the QML ApplicationWindow instance, where plugins can parent their items via `iface.mainWindow().contentItem` and have access to functionality such as displaying toast messages using `iface.mainWindow().displayToast(text)`.
 - `iface.mapCanvas()`: returns the map canvas item, which exposes crucial properties including `iface.mapCanvas().mapSettings` from which the extent, scale, etc. can be retrieved and modified.
@@ -60,7 +60,7 @@ Using these functions insure that items added by multiple plugins will happily c
 
 QField ships with a number of utilities objects to manipulate features and geometries, access map layers, read and write project and map layer variables, and much more.
 
-To familiarize yourself with these, visit QField’s source code’s [utilities directory](https://github.com/opengisch/QField/tree/master/src/core/utils) where .h\[eader\] files will provide documentation for all invokable functions.
+To familiarize yourself with these, visit QField’s source code’s [utilities directory](https://github.com/opengisch/QField/tree/master/src/core/utils) where .h\[eader\] files will provide documentation for all invocable functions.
 
 ## Plugin code snippets
 
@@ -68,7 +68,7 @@ To familiarize yourself with these, visit QField’s source code’s [utilities 
 
 The plugin framework empowers you to integrate custom searches into the QField search bar through the `QFieldLocatorFilter` item which can be added into a plugin's root item:
 
-```
+```qml
 QFieldLocatorFilter {
   id: locatorFilter
 
@@ -97,7 +97,7 @@ It will be executed off the main thread to allow for non-blocking result fetchin
 
 Here's a simple search QML source code:
 
-```
+```qml
 import QtQuick
 import org.qfield
 
@@ -135,9 +135,9 @@ This [QField OpenStreetMap Nomination plugin](https://github.com/opengisch/qfiel
 
 For plugins requiring user configuration, QField allows for these to add a configuration button within its plugin manager.
 
-To do so, you can simply add a `function configure()` invokable function attached to the plugin's root item:
+To do so, you can simply add a `function configure()` invocable function attached to the plugin's root item:
 
-```
+```qml
 import QtQuick
 import org.qfield
 
@@ -165,7 +165,7 @@ Item {
 
 Plugins can make use of QField's geometry highlighter item to flash created or fetched geometries through the following code:
 
-```
+```qml
 import QtQuick
 import org.qfield
 

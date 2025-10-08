@@ -16,7 +16,7 @@ It will include the configuration of a simple attribute form and the styling of 
 !![Maya Mielena](../../assets/images/maya_waving.gif, 100px)
 
 *Hi, my name is Maya Mielena, I am a retired GIS Specialist and I will show you how to prepare a simple QGIS project so that you can use it inside the QField application*
-*We will create a GeoPackage (Gpkg) containing a point layer and a line layer.*
+*We will create a GeoPackage (.gpkg) containing a point layer and a line layer.*
 *This will allow you to go out into nature and record your personal points of interests and track yourself using the line layer.*
 
 *Let's get started!*
@@ -29,7 +29,7 @@ It will include the configuration of a simple attribute form and the styling of 
      - Under the browser on the top left of the QGIS window you will find the dropdown *XYZ Tiles*.
      - From there you can add the OpenStreetMap basemap, which is the most commonly used basemap.
 
-    !![Adding a basemap](../../assets/images/new-project-empty-window.png, 800px)
+    !![Adding a basemap](../../assets/images/new-project-empty-window.png,800px)
 
 3. We will now locate our area of interest.
 There exists a very useful QGIS plugin called *OSM Place Search*, which allows you to browse through the different place features available in the OpenStreetMap data.
@@ -39,14 +39,14 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
     !![OSM Place Search Plugin](../../assets/images/new-project-osmplugin.png)
     3. A new window should appear in the side panel where you can enter your place of interest
     4. Add it to your project as a feature by clicking on the middle button at the bottom of the plugin interface.
-    !![New PoI](../../assets/images/new-project-poi.png, 800px)
+    !![New PoI](../../assets/images/new-project-poi.png,800px)
     5. A new feature layer will be available as a temporary layer in your project.
 4. Adding a new layer:
     1. Click on *Layer* and  create a new *Vector Layer*
     !![New Vector layer](../../assets/images/new-project-vectorlayer.png)
-    2. Give your Gpkg a general name.
+    2. Give your GeoPackage a general name.
     Additionally give a name to the table (which we are about to create).
-    **To Note**: A Gpkg can consist of several layers, including points, lines, polygons and raster layers.
+    **To Note**: A GeoPackage can consist of several layers, including points, lines, polygons and raster layers.
     3. Select ***Point*** as your geometry type and select the *EPSG:3857 WGS84/Pseudo-Mercator* as your coordinate system.
     We will add a few fields to our layer including a name, a date, a field for a photo, a field for categorizing the point and a boolean field, which we will use to indicate whether it is worth to revisit the point or not.
     Finally, we will add another field where you can add general notes.
@@ -63,12 +63,12 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
 
 5. Adding a Line layer
 
-    We will create another layer within the Gpkg corresponding to a line layer.
+    We will create another layer within the GeoPackage corresponding to a line layer.
     You can use it to track yourself when going into the field.
 
      1. Add a new layer as previously
-     2. Select the same Gpkg as *file name* but give the *table* a different name.
-    !![Line Layer](../../assets/images/new-project-anotherlayer.png, 800px)
+     2. Select the same GeoPackage as *file name* but give the *table* a different name.
+    !![Line Layer](../../assets/images/new-project-anotherlayer.png,800px)
      3. Add the following fields:
 
         | Attribute | Data type|
@@ -77,14 +77,14 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
         |Date | *date* |
 
 
-6. Saving the temporary layer in Gpkg
+6. Saving the temporary layer in GeoPackage
 
     Remember that we have added our area of interest as a ***temporary layer*** meaning that after closing the project we will not be able to access the layer anymore.
-    Therefore, we will save the layer within the just newly created Gpkg.
-    !![Make permanent](../../assets/images/new-project-make-permanent.png, 800px)
+    Therefore, we will save the layer within the just newly created GeoPackage.
+    !![Make permanent](../../assets/images/new-project-make-permanent.png,800px)
 
     1. Right-click on the layer and select ***Make Permanent***
-    2. Find the Gpkg file that you just created and add an appropriate name to the PoI layer.
+    2. Find the GeoPackage file that you just created and add an appropriate name to the PoI layer.
     Watch out: QGIS will ask you whether you wish to ***add new*** or to ***overwrite*** the layer.
     Of course, you choose to ***add new*** the layer.
 
@@ -96,23 +96,23 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
 Now we have all the essential data in the QGIS project that we need for the data collection.
 However, in order to have a well structured form we need to configure the attribute form, via the file properties.
 
-1. Direct to PoIs layer *Proprties* > *Attribute Form*
+1. Direct to PoIs layer *Properties* > *Attribute Form*
 !![Vector properties](../../assets/images/new-project-properties.png)
 2. Select *Drag and Drop Designer* from the dropdown.
     From here you can control the appearance of your form.
 !![Default Attribute Form](../../assets/images/new-project-properties-attribute.png)
 We do not need to edit the *fid* field.
-QGIS creates this for every Gpkg by default.
+QGIS creates this for every GeoPackage by default.
 
 3. Remove the *fid* field from the visible fields by pressing the *red minus* on the window
 4. *Name*: Click on *Name* and look at the Widget Display options on the right-hand side.
-!![Widget Display](../../assets/images/new-project-properties-attri-overview.png, 800px)
+!![Widget Display](../../assets/images/new-project-properties-attri-overview.png,800px)
     The widget display let`s you customise the appearance of your form.
     You can keep it simple or set complex rules and constraints depending on your use case.
     Today, we will keep it simple.
     1. Here you can decide whether you want to display the name of your field inside the attribute form.
     2. If you have a technical fieldname with underscores or other special characters you can add an ***Alias*** to make it nicer for the data user.
-    3. There exist several types of [widgets](how-to/attributes-form.en.md). <!-- markdown-link-check-disable-line -->
+    3. There exist several types of [widgets](how-to/attributes-form.md). <!-- markdown-link-check-disable-line -->
 *Maya does not want to enter the date new every time.*
 *What a good thing one can set default values in QGIS*
 5. Open the widget display of the ***entrydate*** attribute.
@@ -158,7 +158,7 @@ Maya wants to track herself immediately when starting to walk rather than having
 2. Enable the Tracking session and set the required parameter.
 You can decide whether you want to add vertices based on a temporal value or based on distance.
 We will use the latter option for this purpose.
-You will configure the attribute form in such a way that it automatically populates the fattribute fields when starting a new session.
+You will configure the attribute form in such a way that it automatically populates the attribute fields when starting a new session.
 Furthermore, you will ***hide*** the attribute form so that the tracking just runs in the background.
 
 3. Direct to the *Attribute Form*
@@ -190,7 +190,7 @@ In fact, it is a plugin that can be used to package and transform a QGIS project
 3. In QGIS a new toolbar should appear ![Toolbar](../../assets/images/qfieldsync_toolbar.png)
 4. When clicking on the blue cloud a new window will open where you can login to QFieldCloud with your username and password.
 If you have no username you can directly register following the link.
-5. Once you have sucessfully logged into QFieldCloud a new window will appear showing all available projects that are stored and available to your profile.
+5. Once you have successfully logged into QFieldCloud a new window will appear showing all available projects that are stored and available to your profile.
 **Note:** If you just registered, the list will, of course, be empty.
 
 #### Creating QFieldCloud Project

@@ -5,47 +5,59 @@ tx_slug: documentation_how-to_authentication
 
 # Authentication
 
-QField supports connecting to services requiring access authentication. This page will go through authentication examples as well as demonstrating how to export authentication configuration from QGIS into QField
+QField supports connecting to services requiring access authentication.
+This page will go through authentication examples as well as demonstrating how to export authentication configuration from QGIS into QField
 
-## OAuth2-protected web services
-
-To successfully load OAuth2-protected layers in QField, these layers must be setup to use OAuth2 in QGIS.
-
-### Prepare the OAuth2 authentication in QGIS
+## OAuth2-protected web services in QGIS
 :material-monitor: Desktop preparation
 
-To setup a WFS with OAuth2 in QGIS follow these steps in the QGIS project configuration.
+To successfully load OAuth2-protected layers in QField, these layers must be setup to use OAuth2 in QGIS.
+To setup a WFS with OAuth2 in QGIS follow these steps.
 
-In the WFS layer configuration:
+!!! Workflow
 
-!![widgets](../assets/images/oauth2_setup_wfs.png)
+    1. Direct to *Layer* > *Add Layer* > *Add WFS / OGC API Feature Service*
+    2. Click on "New" or "edit" your existing service.
+    3. Add a new authentication type by clicking the green cross and adjust the parameters to match your OAuth2 server setup.
+    4. Once the layer's authentication configuration is set, add some layers into your project to test that they are rendering correctly.
 
-Add a new authentication configuration and adjust parameters to match your OAuth2 server setup:
+    !![WFS Service Settings](../assets/images/oauth2_setup_wfs.png)
 
-!![widgets](../assets/images/oauth2_setup_auth.png)
 
-Once the layer's authentication configuration is setup, you can add layers into your project and test that the authentication mechanism works as expected. Follow instructions below to export the configuration into QField.
+    !![Authentication](../assets/images/oauth2_setup_auth.png)
+
 
 ## Export authentication configurations from QGIS
 :material-monitor: Desktop preparation
 
-!!! note
-    Prior to exporting authentication configurations, it is always good to verify that you are able to properly connect to relevant services using QGIS.
+Prior to exporting authentication configurations, it is always good to verify that you are able to properly connect to relevant services using QGIS.
 
-To export one or more authentication configurations, open the QGIS options dialog and select the authentication panel. There, you can select multiple authentication configurations by selecting the appropriate rows in the configurations table widget. Then, use the lower-right utilities button to select the *export selected authentication configurations to file* action.
+!!! Workflow
 
-!![widgets](../assets/images/oauth2_export_config.png)
+    1. Direct to *Settings* > *Options* > *Authentication*
 
-When prompted for a password, *leave it blank*. You will be warned that might be leaking sensitive information, which is a good reminder to treat the resulting XML with caution.
+    2. Select one or more rows in the configurations table widget.
+    3. Click on "Utilities" and select "export selected authentication configurations to file".
+    4. When prompted for a password, *leave it blank*.
+
+    !![QGIS Authentication Settings](../assets/images/oauth2_export_config.png)
+
+    !!! Warning
+
+        You will be warned that you might be leaking sensitive information, which is a good reminder to treat the resulting XML with caution.
+
+
 
 ## Import authentication configurations into QField
 :material-monitor: Desktop preparation
 
-Once you have exported the authentication configurations to an XML file, you must copy that file onto the devices running QField. The file has to be copied to into an `auth` folder found within the QField's app directory:
+In order for a service that requires authentication to run in QField, after configuring the required credentials in QGIS, the information needs to be added into QField as well.
 
-- On Android, you can find the directory by connecting your device using a USB cable; the directory will be located at `<drive>:/Android/data/ch.opengis.qfield/files/QField/auth/`;
-- On desktop platforms, you can reach this directory by clicking on the directory path located towards the bottom of the About QField popup.
+!!! Workflow
 
-Once the authentication configurations file is copied, project files containing web services requiring authentications will be able to reach the relevant configuration details and provide access.
+    1. Export the authentication configuration file from QGIS (see above)
+    2. On your device direct to *[the QField App Directory](../get-started/storage.md#5-qfield-app-directory)* > *Auth*
+    3. Once copied, the service should be rendered correctly and provide access.
+    !!! Tip
 
-For authentication methods requiring user input such as OAuth2, QField will provide a browser or dialog to prompting for the required details such as user, password, or 2-step authentication code.
+        For authentication methods requiring user input such as OAuth2, QField will provide a browser or dialog to prompting for the required details such as user, password, or 2-step authentication code.

@@ -5,7 +5,7 @@ tx_slug: documentation_get-started_settings
 
 # QField General settings
 
-The general settings screen allows you to control the basic appearance and behavior of QField.
+The general settings screen allows you to control the basic appearance and behaviour of QField.
 
 ## Map Canvas
 
@@ -57,13 +57,13 @@ When pressing the three dots under the general settings section, a new window wi
 #### Features from active layer
 
 By enabling this option, you will automatically query the layer that is currently active (it is highlighted in the legend).
-You can refine your search even further by adding an **'@'** sign when starting your search to only query one attribute
+You can refine your search even further by adding an **"@"** sign when starting your search to only query one attribute
 When disabled, you can still access this locator filter typing the prefix **f** in the search bar.
 
 #### Features in all layers
 
 When enabling this option, you can search all features across all layers.
-If the 'Features from active layer' option is enabled you can still search through all layers by adding the prefix **af** in the beginning of your search.
+If the "Features from active layer" option is enabled you can still search through all layers by adding the prefix **af** in the beginning of your search.
 
 #### Go to coordinate
 
@@ -87,7 +87,7 @@ If disabled, the calculator can still be accessed by typing **=** in the front o
 #### QField Documentation
 
 If enabled it will return the corresponding documentation pages matching terms.
-When disabled the documentation can still be queried by putting a '?' in the beginning of the query.
+When disabled the documentation can still be queried by putting a "?" in the beginning of the query.
 
 ### Manage plugins
 

@@ -29,9 +29,9 @@ getting lost.
 ## Project preparation
 
 We created a QGIS project with the Spot image and a layer to collect the
-ground data. We first converted our Spot image to a Geopackage raster,
-and built pyramids so as to get quick rendering in QField. The whole
-image (50 km2 at 1.5 m spatial resolution with 3 bands) weighted
+ground data.
+We first converted our Spot image to a GeoPackage raster, and built pyramids so as to get quick rendering in QField.
+The whole image (50 km2 at 1.5 m spatial resolution with 3 bands) weighted
 approximately 800 MB, which enabled us to load it in our tablet without
 the need to add any extra memory.
 

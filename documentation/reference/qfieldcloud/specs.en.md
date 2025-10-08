@@ -7,7 +7,8 @@ tx_slug: documentation_reference_qfieldcloud_specs
 
 ## Firewall configuration
 
-If a project contains online layers (PostGIS, WMS, WFS, etc), QFieldCloud will try to establish a connection to these services. Sometimes these services are behind a firewall and the system administrators need to allowlist the QFieldCloud IP.
+If a project contains online layers (PostGIS, WMS, WFS, etc), QFieldCloud will try to establish a connection to these services.
+Sometimes these services are behind a firewall and the system administrators need to allowlist the QFieldCloud IP.
 
 The hosted version on app.qfield.cloud will connect from the following ip addresses:
 
@@ -23,7 +24,7 @@ If your project contains PostgreSQL (PostGIS) layers, you need to configure your
 
 Otherwise, you will get an error like this:
 
-```
+```bash
 FATAL: no pg_hba.conf entry for host "185.203.114.168", user "qfc", database "mydb_test", SSL off
 WARNING:QGIS_MSGLOG:1 unavailable layer(s) found:
 ```

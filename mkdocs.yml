@@ -71,26 +71,26 @@ nav:
       - how-to/measuring-tool.md
       - how-to/digitize.md
       - how-to/attributes-form.md
-      - how-to/external-routing.md
-      - how-to/pictures.md
       - how-to/search.md
-      - how-to/standalone-datasets.md
+      - how-to/hiding-legend-nodes.md
       - how-to/map-styling.md
       - how-to/map-themes.md
       - how-to/decorations.md
+      - how-to/pictures.md
+      - how-to/standalone-datasets.md
       - how-to/gnss.md
       - how-to/geofencing.md
       - how-to/navigation.md
       - how-to/tracking.md
+      - how-to/external-routing.md
       - how-to/sensors.md
       - how-to/bookmarks.md
       - how-to/print-to-pdf.md
       - how-to/authentication.md
       - how-to/temporal-filtering.md
       - how-to/variables.md
-      - how-to/hiding-legend-nodes.md
       - how-to/live-default-value.md
-      - how-to/outside-layers.md
+      - how-to/shared-datasets.md
       - how-to/movable-project.md
       - how-to/pg-service.md
       - how-to/plugins.md

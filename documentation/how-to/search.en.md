@@ -26,7 +26,13 @@ start the search.
 
 The active layer search functionality enhances search efficiency by focusing exclusively on the currently active layer and specific fields within it.
 
-To start a search, simply type `f` followed by your search term. This helps you quickly find items by searching only the active layer. It scans feature names and all text and number fields for matches. When it finds one, both the attribute's name and value are highlighted. You'll also see the feature's name in the search results below. To narrow down your search to a specific field, type: `f @ATTRIBUTE_NAME search-term`. This targets your search to that field.
+To start a search, simply type `f` followed by your search term.
+This helps you quickly find items by searching only the active layer.
+It scans feature names and all text and number fields for matches.
+When it finds one, both the attribute's name and value are highlighted.
+You'll also see the feature's name in the search results below.
+To narrow down your search to a specific field, type: `f @ATTRIBUTE_NAME search-term`.
+This targets your search to that field.
 
 ![type:video](../assets/videos/search-bar-active-layer-feature-matching-functionality.webm)
 
@@ -47,9 +53,8 @@ For distinct outcomes, is recommend encoding your feature UUIDs. This will allow
 Matching features will show in the results list offering you two possible
 actions :
 
-1.  Tap on the *name* in the result to pan the map on the feature (the
-    feature will be highlighted in yellow).
-2.  Tap on the *attributes button* to open its attributes.
+1. Tap on the "Name" in the result to pan the map on the feature (the feature will be highlighted in yellow).
+2. Tap on the "attributes button" to open its attributes.
 
 ### Search with NFC
 
@@ -94,8 +99,7 @@ can be done by typing *= aggregate('my_layer','sum', $area)*.
 ## Configure vector layers search in QGIS
 :material-monitor: Desktop preparation
 
-By default, all vector layers are searchable. When configuring your project in QGIS,
-it is possible to exclude vector layers from search results. To do so, open the
-project properties dialog and switch to the *Data Sources* panel, where you will
-be presented with a layers capabilities table widget. From there, use the *Searchable*
-checkbox to include/exclude specific layers.
+By default, all vector layers are searchable.
+When configuring your project in QGIS, it is possible to exclude vector layers from search results.
+To do so, open the *Project* > *Properties* > *Data Sources* , where you will be presented with a layers capabilities table widget.
+From there, use the *Searchable* checkbox to include/exclude specific layers.

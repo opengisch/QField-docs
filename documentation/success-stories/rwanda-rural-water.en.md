@@ -31,13 +31,11 @@ location of QField\'s data after data collection work.
 
 ## Data collection
 
-Once we prepared Geopackage and QGIS project template, we conducted
+Once we prepared GeoPackage and QGIS project template, we conducted
 training of QGIS/QField in July 2018 and launched our data collection
-work in 27 districts in the whole country of Rwanda. 27 engineers sent
-their Geopackage to the central office in Kigali. the MIS (Management
-Information System) specialist validated and entered their data from
-Geopackage to PostGIS database. We completed our initial data collection
-works until April 2019.
+work in 27 districts in the whole country of Rwanda.
+27 engineers sent their GeoPackage to the central office in Kigali. the MIS (Management Information System) specialist validated and entered their data from GeoPackage to PostGIS database.
+We completed our initial data collection works until April 2019.
 
 !![data collection procedure](../assets/images/rwanda-rural-water-1.png)
 
@@ -55,13 +53,10 @@ purpose.
 
 In order to distribute and updating the data, we developed a python
 script [postgis2qfield](https://github.com/WASAC/postgis2qfield). This
-`postgis2qfield` tool can extract the data from PostGIS and create
-Geopackages for each district in Rwanda. We upload these 27 geopackage
-together with QGIS project template to Google Drive storage. After that,
-those engineers in districts download their geopakage to Android device
-to continue adding and updating the data. Once they completed updating,
-they sent the geopackage to central office again, MIS specialist update
-PostGIS database and regenerate geopackages for QField.
+`postgis2qfield` tool can extract the data from PostGIS and create GeoPackage for each district in Rwanda.
+We upload these 27 GeoPackage together with QGIS project template to Google Drive storage.
+After that, those engineers in districts download their GeoPackage to Android device to continue adding and updating the data.
+Once they completed updating, they sent the GeoPackage to central office again, MIS specialist update PostGIS database and regenerate GeoPackage for QField.
 
 !![data distribution and updating procedure](../assets/images/rwanda-rural-water-2.png)
 

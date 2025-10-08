@@ -3,157 +3,202 @@ title: Get Started
 long_title: Get Started with QFieldCloud
 tx_slug: documentation_get-started_tutorials_get-started-qfc
 ---
-# Getting started guide
+# Get started with QFieldCloud
 
-## Get a free [QFieldCloud account](https://app.qfield.cloud/accounts/signup/)
+## What is QFieldCloud
 
+QFieldCloud is the cloud service that allows smoothless synchronisation of your data between your mobile device for fieldwork and your desktop working station.
+You can further manage teams, work in organisations, assign different editing permissions and much more.
+
+## Register with QFieldCloud [QFieldCloud account](https://app.qfield.cloud/accounts/signup/)
 :material-monitor: Desktop preparation
 
-Go to the [signup page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
+!!! Workflow
+    1. Go to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
 
-!![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
+    2. (Optionable) If you have a received a referral code, please enter it in the according field.
 
-### Edit your profile
+        !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
-Change your personal settings. Add a profile picture or get an overview about your ownerships and memberships in organizations.
+## QFieldCloud Overview
 
-### View your cloud projects
+Once registered your personal QFieldCloud landing page, will show you all the projects that you have access to in the center of the window.
+In case that you have many projects, you can search in the search bar at the top of the page.
+It is also possible to create a new empty project from this menu.
+All further configuration of that project, however needs to be done inside QGIS.
+Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
+Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
 
-Search and choose a project from the list or start to create a new project.
+!!! Tip
+    In the project overview page, the two names indicate the "Owner" of the project and the "Name" of the project.
+    In case that you are the owner or a member of an organisation, you may find that the name will be different in case that you are not the project. owner.
 
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png)
 
-## Connect to QFieldCloud on QGIS Desktop
-
+## From QFieldCloud to QGIS Desktop
 :material-monitor: Desktop preparation
 
 In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS. The next steps show you how you can install and synchronize your data to and from QFieldCloud.
 
-### Install QFieldSync
+!!! Workflow
+    1. Open the QGIS plugin manager by going to the *Plugins* > *Manage and install Plugins*.
+    2. Under "All" find QFieldSync in the list  and install the latest version by clicking the "Install Plugin" button.
 
-Open the QGIS plugin manager by going to the `Plugins -> Manage and install Plugins…` menu.
+        !![Successful installation](../../assets/images/install_qfieldsync.png)
 
-Find QFieldSync in the list of plugins and install the latest version by clicking the `Install Plugin` button.
+        After successful installation, a new toolbar appears:
 
-!!! note
-    Since QFieldCloud is still in beta phase, there are frequent updates and fixes. Please upgrade your QFieldSync plugin often. In case of an issue, please try upgrading to the latest release before reporting.
+        !![Toolbar](../../assets/images/qfieldsync_toolbar.png,200px)
 
-!![Successful installation](../../assets/images/install_qfieldsync.png)
+    3. Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar and a new login screen will appear:
 
-After successful installation, a new toolbar appears:
+        ![](../../assets/images/qfieldsync_login_dialog.png,250px)
 
-![Toolbar](../../assets/images/qfieldsync_toolbar.png)
+    4. Enter your credentials previously created during account registration.
 
-### Login to QFieldCloud
-
-Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar.
-A new login screen will appear:
-
-!![Login screen](../../assets/images/qfieldsync_login_dialog.png,250px)
-
-Enter your credentials previously created during account registration.
-
-!!! note
+!!! Warning
     If you use a password in QGIS for the first time, it will ask you to set a master password that manages all the other passwords used in QGIS. More information about the master password here: [QGIS documentation](https://docs.qgis.org/3.4/en/docs/user_manual/auth_system/auth_overview.html#master-password)
 
-Explore the projects overview screen: your current user underlined and blue, a logout button down-left, a cloud button to create a new project and, on the right, a refresh button to grab the freshest project list. Newly registered users will see an empty table and as soon as they create new projects, the list will grow. The projects overview screen looks like this:
+## Project Overview in QFieldSync
 
-!![Projects overview in QFieldSync](../../assets/images/project_overview_all_colors_tooltip.png)
+The projects overview shows the different projects that your account has access to.
+The screen is arranged the following way:
+
+- Current user underlined in blue
+- A logout button at the bottom left
+- A cloud button to create a new project
+- A refresh button on the right to refresh your project overview to the current stage.
+
+!![Projects overview example in QFieldSync](../../assets/images/project_overview_all_colors_tooltip.png)
+
+Newly registered users will see an empty table.
+By double-clicking on a project in the list, you can see and edit the specific project properties.
+
+### Project Status
 
 The icons indicate the cloud and local status of the different projects.
 
-Local status:
+- **Local status**:
 
-![Status](../../assets/images/cloud_project_remote.svg){Width="20px"} indicates that there is only a remote cloud project existing.
-![Status](../../assets/images/cloud_project.svg){Width="20px"} indicates that the cloud project is also locally stored.
+    - ![Status](../../assets/images/cloud_project_remote.svg){Width="20px"} indicates that there is only a remote cloud project existing.
 
-Cloud status:
+    - ![Status](../../assets/images/cloud_project.svg){Width="20px"} indicates that the cloud project is also locally stored.
 
-Red: status failed —> the project is invalid and is not understood by the cloud. The user needs to fix/upload their .qgs/.qgz project.
-Brown: status busy —> we are working on your project, please be patient. You cannot do much with the project in the meanwhile.
-Green: status ok —> the project is successfully undestood by the cloud. You can try to download on QField, but the success is not guaranteed.
-
+- **Cloud status**: There are three different types of status indicated by a color which show the current status of your cloud project.
 The status of each project is shown with a tooltip.
 
-By double-clicking on a project in the list, you can see and edit the specific project properties.
+    - **Red Status:** The project is invalid and is not ready-for use in the field.
+    There are multiple reasons for this and the status message on your QFieldCloud landing page is the first step to address the issue.
+    - **Brown Status:** The project is currently being updated or edited.
+    - **Green Status**: The project is ready to be used in the field.
+    You can download the project down to QField.
 
-!![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
 
-## Create and configure your cloud project
+## Project Creation and Configuration
 
-Create a new project by clicking the cloud button, down-left. First, you will need to choose how to create the new project between
+!!! Workflow
+    1. Create a new project by clicking the cloud button on the bottom-left.
+    2. Choose how to create the new project:
 
-* "Convert currently open project to cloud project"
-  A new QFieldCloud-compatible project is created from the currently opened QGIS project. In order to do so, datasets will be copied into an export directory that will act as your local mirror. Vector datasets will be converted to geopackage format to facilitate data synchronization from multiple devices while other dataset types will be copied to the new project lotation.
+        - **Convert currently open project to cloud project**: A new project is created from the currently opened QGIS project.
+            The project files will be copied to an export directory.
+            Vector datasets will be converted to one single GeoPackage to facilitate data synchronization from multiple devices.
+            Other data types will also be copied to the new project location.
+        - **Create a new empty QFieldCloud project**: Your current project location will be converted to the QFieldCloud project.
+            All files available in the project need to be stored in the same directory.
+            The location of the project file is the project root.
 
-To convert a current project, a completely empty directory is mandatory.
+    3. Project files will only be uploaded when you click the synchronize button.
+        Make sure the selected contains no more than one QGIS project file.
 
-* "Create a new empty QFieldCloud project"
-  A new blank QFieldCloud project will be created. You will be responsible to move all the project-related files within the selected local directory, with the project file at its root. Project files will only be uploaded when you click the synchronize button. Make sure the selected contains no more than one QGIS project file.
+        !![Project details](../../assets/images/create_project.png)
 
-!![Project details](../../assets/images/create_project.png)
+    4. A form will ask you for project name, description and local directory.
+        In the local directory you can get different situations:
 
-A form will ask you for project name, description and local directory. In the local directory you can get different situations:
+        * "The entered path does not contain a QGIS project file yet"
+        * The entered path contains one QGIS project file.
+        * Please select local directory where the project to be stored.
+        * The entered path is a relative path. Please enter an absolute directory path.
+        * The entered path is not an directory. Please enter a valid directory path.
+        * The entered path is not an existing directory. It will be created after you submit this form.
+        * Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
+        !![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
 
-* The entered path does not contain a QGIS project file yet.
-* The entered path contains one QGIS project file.
-* Please select local directory where the project to be stored.
-* The entered path is a relative path. Please enter an absolute directory path.
-* The entered path is not an directory. Please enter a valid directory path.
-* The entered path is not an existing directory. It will be created after you submit this form.
-* Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
+### QField Project Settings
 
-### Configure your project layers for QField
+When you have installed the QFieldSync Plugin, a new section will appear under *Project* > *Properties*.
+It is also available in the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} through the Settings icon.
+Under these settings you can configure the following:
 
-Configure the project layers by clicking the fifth icon in the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"}. Here you can configure QFieldCloud layer actions. Most of the time you need to configure a preference either to online or offline layers. For more fine grained control, in the advanced settings you can configure the action layer by layer. Get more information about how to configure your layers in the [Get Started guide for QFieldSync](./get-started-qfs.md)!.
+- How your project layers should be treated in the cloud. See [Get Started guide for QFieldSync](./get-started-qfs.md) to get more details on the different "Packaging Actions".
+- Enable ["geofencing"](../../how-to/geofencing.en.md)<!-- markdown-link-check-disable-line -->
+- Assign a digitizing log layer.
+- Specify the layer that will be active for editing after selecting a [Map Theme](../../how-to/map-themes.en.md) <!-- markdown-link-check-disable-line -->
 
-It is recommended to use GeoPackage layers for collaborative editing. See the [advanced setup guide](advanced-setup-qfc.md) for more information about vector formats support.
+We recommend to work with GeoPackages, especially when working in teams. See the [advanced setup guide](advanced-setup-qfc.md) for more information about vector formats.
 
-!!! note
+!!! Important
     If you use experimental data sources without a primary key field (e.g. Shapefiles, GeoJSON etc), you must have a lowercase `fid` field that will be used as a primary key that uniquely identifies each feature.
 
-Any QField supported raster and vector layer formats may be used as read-only data.
+### Project Upload
 
-!![Project properties](../../assets/images/getting_started_project_properties.png)
+Once configured, the project can be uploaded to QFieldCloud.
 
-### Upload a project
+!!! Workflow
+    1. Press the cloud icon with the arrows via the QFieldSync toolbar.
+    Here you have to decide what you prefer:
 
-Once configured, you can press the cloud button to open the synchronization dialog. Here you have to decide what do you prefer: the local file or the file on the cloud.
+      - **The Local file**: This will replace your cloud file with a new version of the project.
+
+          **Note**: When working with GeoPackages, the current version of the file in the cloud will be replaced with the local version.
+
+      - **The Cloud file**: This will amend your local datasets and replace your project file with the current one.
 
 !![Synchronize](../../assets/images/getting_started_synchronize.png)
 
-Now you should see your project and files on [QFieldCloud](https://app.qfield.cloud/)
+Now you should see your project and files on your project overview page on [QFieldCloud](https://app.qfield.cloud/)
 
-## Field device
+## Mobile Device
 
+### Get Started with QField
 :material-tablet: Fieldwork
 
-### Install QField
+When you are ready for your fieldwork it is time to setup QField on your mobile device.
 
-Download and install the latest version of QField from Google's play store, Apple's app store, or by [downloading the lastest release for Windows, Linux, or macos](https://github.com/opengisch/QField/releases).
+!!! Workflow
+    1. Download and install the latest version of QField from Google's play store, Apple's app store, or by [downloading the latest release for Windows, Linux, or macos](https://github.com/opengisch/QField/releases).
 
-### Start working on your project
+    2. Direct to *Cloud Projects* and log in to QFieldCloud on your mobile device
 
-!![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
+        !![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
 
-Login with your username and password
+        !![Login](../../assets/images/getting_started_login.png,250px)
 
-!![Login](../../assets/images/getting_started_login.png,250px)
+    3. Select a project to download on your device:
 
-Select a project to download on your device:
+        !![Download](../../assets/images/getting_started_download_project.png,250px)
 
-!![Download](../../assets/images/getting_started_download_project.png,250px)
+### Synchronization with QFieldCloud
 
-### Synchronize your changes
+After you are done you will have to synchronize your changes back to QFieldCloud.
+This can either be done manually or automatically if necessary.
 
-Make a change to your data. Either create a new feature, delete a feature, or modify the geometry or attributes.
-Click the blue cloud button on the top left of the screen:
+!!! Workflow
+    1. Open the *Side Dashboard*
+    2. Click on the blue cloud (there should be a number indicating how many changes you have made).
 
-!![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
+        !![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
 
-Choose an action with the change you made to your data. Each of the actions have an explanation what you should expect to happen:
+    3. Choose an action with the change you made to your data.
+        Each of the actions have an explanation what you should expect to happen:
 
-!![Actions](../../assets/images/getting_started_actions.png,250px)
+        - **Revert Changes:** All your local changes made since the last synchronization will be deleted.
+        - **Push:** Only your local changes will be pushed to QFieldCloud.
+        - **Synchronize:** All your changes will be pushed to QFieldCloud and merged with the version in the cloud.
+            A new version of the cloud project (including the new changes from other collaborators) will be downloaded to your device.
+
+        !![Actions](../../assets/images/getting_started_actions.png,250px)
 
 Your changes are now available to everyone who has access to your project on the cloud.
 
