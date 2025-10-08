@@ -11,11 +11,9 @@ tx_slug: documentation_get-started_index
 ### What is it?
 
 QField is an open-source application that allows painless fieldwork and synchronisation with your local QGIS projects.
-It can both be used in online and offline settings, link to external databases or work with simple geospatial formats.
-Once a QGIS project is ready for fieldwork it needs to be 'packaged' with the [QFieldSync Plugin](../get-started/tutorials/get-started-qfs.md).
-There are several ways in which the project can be imported into QField.
-The following pages will provide the possible options in detail, which can be adopted according to the needs.
-
+You can both use it in online and offline settings, link to external databases or work with simple geospatial formats.
+Once your QGIS project is ready for fieldwork you needs to be "packaged" with the [QFieldSync Plugin](../get-started/tutorials/get-started-qfs.md).
+There are several ways in which you can get access to the project in QField on your mobile device.
 ### Installation
 
 === ":material-android: Android"
@@ -54,10 +52,10 @@ Its optimized user interface exposes the full power of [QGIS](https://qgis.org) 
 
 ## QFieldCloud
 
-[QFieldCloud](https://qfield.cloud) allows you to seamlessly integrate your team's field work.
+[QFieldCloud](https://qfield.cloud) allows you to seamlessly integrate your team's fieldwork.
 It is a cloud-based service and with its unique technology it will allow your team to focus on what's important, making sure you efficiently get the best field data possible.
 
 
-Thanks to the tight integration with QField, your team will be able to start surveying and digitising data in no time.
+Thanks to the tight integration with QField, your team will be able to start surveying and digitizing data in no time.
 
 [Register Now :material-cloud-outline:](https://app.qfield.cloud/accounts/signup/){ .md-button }

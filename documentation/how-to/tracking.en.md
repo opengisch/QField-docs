@@ -20,7 +20,7 @@ To capture fine detail on steep or winding terrain, use a shorter distance, for 
 
 !![](../assets/images/tracking-settings.png,350px)
 
-- **Eerroneous distance:** This option can be used as a safeguard to insure sporadic that bad GNSS readings are not tracked.
+- **Erroneous distance:** This option can be used as a safeguard to insure sporadic that bad GNSS readings are not tracked.
 This functionality relies on providing a maximum tolerated distance from the last recorded position beyond which readings will be skipped.
 To prevent the next vertex from being set too far from the most recent one (e.g., in steep terrain where elevation matters), set a maximum tolerance distance.
 

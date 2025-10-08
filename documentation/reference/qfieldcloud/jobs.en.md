@@ -183,7 +183,7 @@ The file `{FILENAME}` (e.g. `/tmp/rndstr/files/data.gpkg`) is not found on the Q
 There are two things that should be checked:
 
 - Whether the file has been uploaded to the cloud.
-You can check this in **Project Settings -> Files** page on QFieldCloud or QFieldSync.
+You can check this in *Project Settings* > *Files* page on QFieldCloud or QFieldSync.
 - Making sure the file is uploaded with the same relative path as on your PC.
 Please note that **all** project files should be within the same project directory or subdirectory as the `.qgs`/`.qgz` QGIS project file.
 Please also note the directory names should be preserved too, for example if a file is stored in `data/data.gpkg`, make sure the `data` directory exists on QFieldCloud too.

@@ -5,23 +5,22 @@ tx_slug: documentation_how-to_outside-layers
 
 # Shared datasets
 
-It is possible to use layers stored in a single location — referred to as a 'localized data path' — across multiple projects.
+It is possible to use layers stored in a single location — referred to as a "localized data path" — across multiple projects.
 
 This can help to reduce storage requirements for large datasets such as orthophoto raster files, land use vector files, etc., as well as ease the management of dataset updates.
 
 There are two possibilities to share data across projects:
 
 - Manual transfer: The to be shared datasets are manually copied to the devices
-- Synchronisation through QFieldCloud: The to be shared datasets are uploaded and stored in a dedicated location on QFieldCloud accessible to the pre-configured projects.
+- Synchronization through QFieldCloud: The to be shared datasets are uploaded and stored in a dedicated location on QFieldCloud accessible to the pre-configured projects.
 
 ## Managing Localized Data Paths in QGIS
-
 :material-monitor: Desktop preparation
 
 When preparing a new project for QField, make sure the datasets you want to share across multiple projects are stored within the localized data path in QGIS.
 
-- In QGIS direct to **Settings > Options > Data Sources**
-- Under the 'Localized Data Paths' section add the necessary path where the datasets to be shared are located.
+- In QGIS direct to *Settings* > *Options* > *Data Sources*
+- Under the "Localized Data Paths" section add the necessary path where the datasets to be shared are located.
 Once correctly added, QGIS, QField/QFieldCloud will treat them as shareable datasets.
 
 !![QGIS Options Dialog showing Data Sources and Localized Data Paths setup](../assets/images/external_path.png)
@@ -30,18 +29,15 @@ Once correctly added, QGIS, QField/QFieldCloud will treat them as shareable data
 
 To transfer the shared datasets manually in QField, the datasets have to be added into the right directory on your device:
 
-- In QField, open a project.
-- Reveal the side legend by clicking on the icon with the three lines, and open the main menu by clicking on the 3-dotted button.
-- Select the 'About QField' menu tab.
-- The application directory locations will be displayed at the bottom of the screen just below the 'App directories' path (the paths differ depending on the operating system).
-- Copy your shared dataset files into the directory `[App Directory]/QField/basemaps` on your device.
+- Your shared dataset files need to be copied into the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/basemaps** on your device.
+
 QField will automatically scan this folder for basemaps and other recognizable data.
 
 !![QField app directories](../assets/images/qfield_app_directories.png)
 
 ## Configuration of shareable datasets with QFieldCloud
 
-QFieldCloud eases the management of shared datasets used in multiple projects recognising the QGIS localized data settings.
+QFieldCloud eases the management of shared datasets used in multiple projects recognizing the QGIS localized data settings.
 Uploaded cloud projects reference the shared datasets stored in a designated QFieldCloud project named **`shared_datasets`**.
 This special type of project can be created by the user in advance or is automatically created during a file upload using QFieldSync.
 
@@ -102,7 +98,7 @@ This dialogue lists all datasets that have been identified and uploaded as share
 
 For any cloud project containing shared datasets, QFieldCloud’s web interface will indicate those missing on the cloud (i.e., referenced by any project but have not yet been uploaded into the **`shared_datasets`** project) using a red color.
 
-This can be fixed by synchronizing the project again from QGIS with QFieldSync, ensuring the "Upload missing localized dataset(s)" option is checked [Synchronization with QFieldSync](#synchronization-with-qfieldsync)).
+This can be fixed by synchronizing the project again from QGIS with QFieldSync, ensuring the "Upload missing localized dataset(s)" option is checked [Synchronization with QFieldSync](#synchronization-with-qfieldsync).
 Alternatively, if you have the necessary permissions, you can manage the **`shared_datasets`** project directly (see section [Synchronizing directly the shared_datasets project](#direct-synchronization-in-the-shared_datasets-project)).
 
 Similarly, if you prepare a new QGIS project to use shared files that are *already present* in your QFieldCloud **`shared_datasets`** project, QFieldSync will recognize this.
@@ -123,19 +119,19 @@ Instead of relying on individual project synchronization to populate the **`shar
 
 #### With QFieldSync
 
-Users with 'manager' or 'admin' permissions for the **`shared_datasets`** project can manage its content directly using QFieldSync:
+Users with "manager" or "admin" permissions for the **`shared_datasets`** project can manage its content directly using QFieldSync:
 
-1.  In QFieldSync, download the **`shared_datasets`** project from QFieldCloud to a local directory on your computer.
-2.  You can now add, update, or remove files within the preconfigured file directory of the localized datasets.
-3.  Use QFieldSync (with the **`shared_datasets`** project selected) to synchronize these changes directly back to the cloud.
+1. In QFieldSync, download the **`shared_datasets`** project from QFieldCloud to a local directory on your computer.
+2. You can now add, update, or remove files within the pre-configured file directory of the localized datasets.
+3. Use QFieldSync (with the **`shared_datasets`** project selected) to synchronize these changes directly back to the cloud.
 
 !!!note
     The specific user roles must be set for the **`shared_datasets`** project as for any other project.
     A collaborator with an admin role of a project making use of a shared dataset will not automatically have the permission for the **`shared_datasets`** project.
 
-!![Uploading localized dataset files directly to the 'shared_datasets' cloud project using QFieldSync](../assets/images/qfieldsync_directly_uploading_localized_dataset.png)
+!![Uploading localized dataset files directly to the "shared_datasets" cloud project using QFieldSync](../assets/images/qfieldsync_directly_uploading_localized_dataset.png)
 
-!![Localized files listed in the 'shared_datasets' cloud project on the web interface](../assets/images/localized_files_in_localized_dataset_project.png)
+!![Localized files listed in the "shared_datasets" cloud project on the web interface](../assets/images/localized_files_in_localized_dataset_project.png)
 
 #### With the QFieldCloud-CLI
 
@@ -146,7 +142,7 @@ It automatically checks if there is a version change of the file contents.
 
 - [Login to QFieldCloud](https://opengisch.github.io/qfieldcloud-sdk-python/examples/#log-in-to-qfieldcloud) using the CLI
 
-```console
+```bash
 $ qfieldcloud-cli login USER PASSWORD
 Log in super_user…
 Welcome to QFieldCloud, USER.
@@ -157,7 +153,7 @@ $ export QFIELDCLOUD_TOKEN="TOKEN_HERE"
 
 - [List the QFieldCloud projects](https://opengisch.github.io/qfieldcloud-sdk-python/examples/#list-your-projects) and get the project ID of the **`shared_datasets`** project:
 
-```console
+```bash
 $ qfieldcloud-cli list-projects
 Listing projects…
 Projects the current user has access to:
@@ -171,7 +167,7 @@ Projects the current user has access to:
 
 [Upload the shared datasets](https://opengisch.github.io/qfieldcloud-sdk-python/examples/#upload-local-files-to-qfieldcloud) from your local source directory to the **`shared_datasets`** project:
 
-```console
+```bash
 qfieldcloud-cli upload-files 'YOUR_PROJECT_ID' "./path/to/your/local/shared/data/"
 ```
 

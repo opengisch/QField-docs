@@ -6,11 +6,11 @@ tx_slug: documentation_how-to_measuring-tool
 # Measuring tool
 
 QField offers measurement functionalities out of the box, you have the flexibility to change the units for measuring distance and area in your projects.
-You can do this by navigating to the 'Project' menu in QGIS, selecting 'Properties...' in the 'General' section.
+You can do this in QGIS by navigating to the *Project* > *Properties* > *General* section.
 
 !![](../assets/images/custom-units-measure.png)
 
-To enable the measuring tool, open the legend and select the ruler symbol in the main menu bar.
+To enable the measuring tool, open the side "Dashboard" and select the ruler symbol in the main menu bar.
 
 !![](../assets/images/measuring_tool.png)
 
@@ -27,5 +27,5 @@ Toggling this on will open the elevation profiling panel, which will show the te
 
 !![](../assets/images/elevation_profiling.png)
 
-For ease of use, QField defaults to using the Mapzen Global Terrain dataset to provide worldwide 30-meter resolution elevation profiles.
-It is however possible to customize terrain settings through project and individual map layer properties within QGIS when building projects.
+For ease of use, QField defaults to using the `Mapzen Global Terrain` dataset to provide worldwide 30-meter resolution elevation profiles.
+It is, however, possible to customize terrain settings through project and individual map layer properties within QGIS when building projects.

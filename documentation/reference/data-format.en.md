@@ -5,18 +5,17 @@ tx_slug: documentation_reference_data-format
 
 # Supported Data Formats
 
-QField supports a wide variety of formats via QGIS data providers and
-GDAL.
+QField supports a wide variety of formats via QGIS data providers and GDAL.
 This page offers a non-exhaustive list of supported data formats.
 
 | Data Format | Support          | Notes                    |
 |-------------|------------------|--------------------------|
-| Spatialite  | :material-check: |                          |
-| Geopackage  | :material-check: |                          |
+| SpatiaLite  | :material-check: |                          |
+| GeoPackage  | :material-check: |                          |
 | WMS         | :material-check: |                          |
 | WFS         | :material-check: |                          |
 | WFS-T       | :material-check: |                          |
-| Postgis     | :material-check: |                          |
+| PostGIS     | :material-check: |                          |
 | MBTiles     | :material-check: |                          |
 | Shapefile   | :material-check: |                          |
 | Tiff        | :material-check: |                          |
@@ -38,7 +37,7 @@ this is inefficient.
 
 ### Use COG (Cloud Optimized GeoTIFF)
 
-The [Cloud Optimized Geotiff (COG)](https://www.cogeo.org/) format will offer best user experience for offline basemaps.  <!-- markdown-link-check-disable-line -->
+The [Cloud Optimized GeoTIFF (COG)](https://www.cogeo.org/) format will offer best user experience for offline basemaps.  <!-- markdown-link-check-disable-line -->
 Combined with JPEG compression, it will reduce the raster size.
 
 The following commands will convert a file called `raster.tif` to a COG file `raster_cog.tif` using JPEG compression.

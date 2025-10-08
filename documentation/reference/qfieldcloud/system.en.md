@@ -100,11 +100,13 @@ The technical names for the available actions in QFieldSync are:
 ## Use Cases
 
 ### Offline editing in the field, QFieldCloud connected to the database
+
 Hybrid editing mode with synchronization on the server
 
 !![Hybrid editing mode](../../assets/images/hybrid-schema.png)
 
 ### Offline editing in the field, QFieldCloud not connected to the database
+
 Offline editing mode with desktop synchronization
 
 !![Offline editing mode](../../assets/images/offline-schema.png)

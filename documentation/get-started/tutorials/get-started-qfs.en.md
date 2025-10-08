@@ -6,207 +6,177 @@ tx_slug: documentation_get-started_tutorials_get-started-qfs
 
 # QFieldSync
 
-The [QFieldSync plugin for QGIS](https://plugins.qgis.org/plugins/qfieldsync/) helps preparing and packaging QGIS projects for
-QField.
+[QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/) <!-- markdown-link-check-disable-line --> is the QGIS plugin, which you should use to "package" your projects for QField, which means to make your project available for QField.
+It is also this plugin you need to use when connecting to [QFieldCloud](advanced-setup-qfc.md).
 
-QFieldSync supports your project preparation with automating the
-following:
+QFieldSync will do the following:
 
--   Required steps for project setup (e.g.
-    `portable_project`)
--   Creating basemaps from a single raster layer or from a style defined
-    in a map theme.
--   Configuring the offline editing functionality and synchronizing
-    changes back.
+- It packages your project into a 'QField readable' format (e.g. `portable_project`).
+- It (can) create(s) basemaps from a single raster layer or from a style defined in a map theme.
+- It automatically sets your project to "offline editing".
+- It is used to synchronize your changes made in the field to the Desktop project.
 
 ## Workflow
 
 To get a quick overview of the process, here is a list of typical steps:
 
-1.  Create a QField package. This is a working copy in a separate
+1. Create a QField package. This is a working copy in a separate
     folder.
-2.  Copy the QField package to the target device.
-3.  Go out and collect data.
-4.  Copy the modified data back to your desktop computer.
-5.  Synchronize the modified data with your database or files.
+2. Copy the QField package to the target device.
+3. Go out and collect data.
+4. Copy the modified data back to your desktop computer.
+5. Synchronize the modified data with your database or files.
 
 ## Installation
 
-In QGIS, open the plugin library and search for **qfield sync**. Select
-the plugin in the list and click on **Install**.
+1. In QGIS direct to *Plugins* > *Manage and install plugins*.
+2. Search for "QFieldSync".
+3. Select the plugin in the list and click on "Install".
 
-!![QField Sync in QGIS plugin repository](../../assets/images/qfield-sync_install.png)
+!![QFieldSync in QGIS plugin repository](../../assets/images/qfield-sync_install.png)
 
-## Configuration
+## QFieldSync Settings
 
-The project configuration is saved in the master .qgs project file. This
-way it is possible to pre-configure a project once and use it
-repeatedly.
+You will prepare your QGIS project depending on your requirements and save it as a `.qgs`.
+You can save it in a dedicated folder and use it repeatedly.
 
 !![Configure project](../../assets/images/qfield-sync_configmenu.png)
 
-### Layer configuration
+### Layer Packaging
 
 !![Configure the project layers](../../assets/images/qfield-sync_config.png)
 
-In the project configuration dialog, an *action* can be defined for each
-layer individually. Depending on the layer type, different types of
-actions are available.
+In the project configuration dialog, an "Action" you can define the behaviour of each individual layer.
+Depending on the layer type, different types of actions are available:
 
-Copy
+- ***Copy***: The layer will be copied to the package folder.
+This is only available for file-based layers.
 
-:   The layer will be copied to the package folder. This is only
-    available for file-based layers.
+- ***No action***: The layer source will be left untouched.
+This is only available for non-file-based layers like WMS, WFS or PostGIS layers
+- ***Offline editing***: A working copy of the layer is copied into the package folder.
+Every change which is done in the packaged project during work is recorded in a changelog.
+When synchronizing the changes back, this log will be replaced and all changes also be applied to the original source layer.
+There is no conflict handling in place.
 
-No action
+- ***Remove***: The layer will be removed from the working copy.
 
-:   The layer source will be left untouched. This is only available for
-    non-file-based layers like WMS, WFS, Postgis\...
 
-Offline editing
+### Area of Interest and Basemap
 
-:   A working copy of the layer is copied into the package folder. Every
-    change which is done in the packaged project during work is recorded
-    in a changelog. When synchronizing the changes back later on, this
-    log will be replaced and all changes also be applied to the main
-    data base. There is no conflict handling in place.
+When working offline, you have to add a raster layer or set a map theme to have a basemap when working in QField.
 
-Remove
+!!! note
+    The settings of this sections are not applicable when using QFieldCloud.
+    Offline layers need to be prepared before the fieldwork.
 
-:   The layer will be removed from the working copy. This is useful if a
-    layer is used in the basemap and will not be available in the
-    packaged project.
+**Area of interest**
 
-Properties
+When packaging your project for QField you can define an area of interest.
+When setting an area or a layer, only copy features intersecting this area of interest" will be 'packaged' when exporting the project to QField.
 
-:   There are some additional options to fine tune your QField project in the properties
+**Basemap:**
+A base map is a raster layer which is added as the bottom most layer to
+the packaged project file.
 
-1. Lock geometries: do not allow changing geometries and only allow changing attributes on this layer.
 
-2. Set up the attachment default naming, please refer to the [Configurable picture path](../../how-to/pictures.md#configurable-attachment-path)
+There are two possible options to set a basemap:
 
-3. Set up the maximum number of items shown in the relation editor widget.
+- ***Single Layer:*** A raster layer is useful for taking an offline copy of an online layer like a WMS or to take a working copy of an unsupported format like an ECW or MrSID layer.
+
+- ***Map Theme:*** A map theme is useful for creating a base map based on a combination of several layers with styling.
+These layers can then be removed from the working package and do not need to be rendered on the device.
+This can save some disk space and battery on the device.
+
+**Tile size**
+
+The tile size defines the spatial resolution meaning the number of map units per pixel.
+Eg. if the map canvas CRS has meters as units and you set the tile size is set to 1, each raster pixel will have a spatial extent of 1x1 m.
+
+**Zoom level**:
+
+By setting the minimum and maximum zoom levels you define the level of detail that you will see when zooming in and out.
+
+- **Tiles min zoom level**: Defines the **minimum** zoom level for the raster tiles.
+A lower value increases the spatial coverage but the spatial resolution is limited. *(Default: 14)*
+- **Tiles max zoom level**: Defines the **maximum** zoom level for the raster tiles.
+A higher value increases detail but may require more storage space, as well as increase the duration of the offline export. *(Default: 14)*
+
+!![Base Map Configuration QFieldSync](../../assets/images/base_map_configuration.png)
+
+### Additional Properties
+
+There are some more advanced properties options which may be relevant to you depending on your domain:
+
+- ***Permissions:*** Disable options for feature addition, feature deletion, attribute editing, or geometry editing.
+
+- ***Attachment default names***: If you wish to save attachments within your data, you can modify the set default names.
+Please refer to [How to configure your attachment path](../../how-to/pictures.md#configurable-attachment-path).
+
+- ***Maximum number of items available from a relation***: When working with relations you can set the maximum number of items shown in the relation editor widget.
 
 !![QFieldSync Layer Properties](../../assets/images/qfield-sync-properties.png)
 
-#### Configuring maximum items visibility for QField
+**Configuring maximum items visibility for QField**
 
 To adjust the maximum number of visible items in a relationship within QField, follow these steps:
 
-1. **Access Layer Properties Dialog**:
-   - Open the layer properties dialog in QGIS where the relation editor is displayed.
+1. Direct to Vector Layer *Properties...* > *QField*.
 
-2. **Navigate to QField Tab**:
-   - Locate the QField tab, typically located at the bottom of the layer properties dialog.
+2. Under "Relationship Settings" set the "Maximum number of items visible".
 
-3. **Modify Relationship Configuration**:
-   - In the "Relationship configuration" section, locate the section corresponding to the relationship you want to modify.
-
-4. **Adjust Visibility Limit**:
-   - Within the row for the desired relationship, find the "Maximum number of items visible" column.
-   - Delete the existing numerical value to set the visibility to "unlimited", the field will transform from a number (default 4) to "unlimited".
-   - Click "Apply" to save the changes to the layer properties.
+!!! Note
+    - The default number is set to 4.
+    - If empty, the number is unlimited.
 
 !![Maximum items visible for relation](../../assets/images/setting-maximum-items-visible-in-relation.png)
 
 !![QField Visible items](../../assets/images/maximum-items-visible-in-relation.png,300px)
 
-### Base map configuration
-
-A base map is a raster layer which is added as the bottommost layer to
-the packaged project file.
-
-If the base map option is enabled, a base map will be rendered, whenever
-the project is packaged. The area of interest - the extent which will be
-rendered -will be chosen at packaging time.
-
-There are two possible sources for a base map:
-
-Layer
-
-:   A raster layer. This is useful to take an offline copy of an online
-    layer like a WMS or to take a working copy of an unsupported format
-    like an ECW or MrSID layer.
-
-Map Theme
-
-:   A map theme. This is useful to create a base map based on a
-    combination of several layers with styling. These layers can then be
-    removed from the working package and do not need to be rendered on
-    the device. This can save some disk space and battery on the device.
-
-The tile size defines the spatial resolution. It determines the number
-of map units per pixel. If the map canvas CRS has meters as units and
-tile size is set to 1, each raster pixel will have a spatial extent of
-1x1 m, if it is set to 1000, each raster pixel will have a spatial
-extent of 1 square kilometer.
-
-You can package a raster layer into an **MBTiles** file with multiple zoom levels for offline use.
-
-- **Tiles min zoom level**: Defines the **minimum** zoom level for the raster tiles. A lower value increases the spatial coverage but the spatial resolution is limited. *(Default: 14)*
-- **Tiles max zoom level**: Defines the **maximum** zoom level for the raster tiles. A higher value increases detail but may require more storage space, as well as increase the duration of the offline export. *(Default: 14)*
-
-!![Base Map Configuration QFieldSync](../../assets/images/base_map_configuration.png)
-
-!!! note
-    Base map generation is disabled on QFieldCloud. You can still manually add your basemaps by running "Generate XYZ tiles (MBTiles)" or "Convert map to raster" algorithms in the processing framework.
-
-### Offline editing configuration
-
-If *"Only synchronize features in area of interest"* is selected, only features that are within the established extent area or the current map canvas (if not set) at packaging time will be copied to the offline editing working copy.
-
-!!! note
-    This is available only for the "Cable Export" option.
-
 ## Package for QField
 
-To package your project, click on Plugins > QFieldSync > Package for QField. Once the project is configured, proceed to package it into a folder. This folder will contain both the QGIS project file (`.qgs`) and the associated data.
+Once you are done with configuring your project, layers and styles you are ready to package your project.
 
-!![Package the project for QField](../../assets/images/qfield-sync_package1.png)
+1. Direct to *Plugins* > *QFieldSync* > *Package for QField* or click on the according symbol in the QFieldSync Toolbar.
 
-Even though QFieldSync doesn't display packaging options by default in the Toolbar panel, you can still access them through Plugins > QFieldSync > Preferences.
+    !![Package the project for QField](../../assets/images/qfield-sync_package1.png)
 
-!![QFieldSync Preferences button](../../assets/images/qfieldsync-preferences-button.png,250px)
 
-Simply activate the checkbox labeled "Show the packaging options in the toolbar."
+2. Select the folders which also should be copied to QField.
 
-!![QFieldSync Preferences](../../assets/images/checkbox-show-package.png,850px)
+    !![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png,400px)
 
-!![](../../assets/images/unchecked-show-package.png,90px)
 
-!![](../../assets/images/checked-show-package.png,150px)
+    By default, QFieldSync chooses the filepath for exporting a project.
+    It is however possible to change those defaults by directing to *Plugins* > *QFieldSync* > *Preferences*.
 
-Copy the folder on your device. Open QField, open the project and start
-collecting data.
+    !![QFieldSync Preferences button](../../assets/images/qfieldsync-preferences-button.png,250px)
 
-Also make sure to save the QGIS project using the regular Save As of
-QGIS as you'll have to re-open it later when you want to synchronize
-the changes.
+    In this window you can also manage whether the packaging options are shown in the QFieldSync toolbar.
 
-During packaging your project you can select which subdirectories to be copied by checking the directories in `Advanced` -> `Directories to be copied`.
+    !![QFieldSync Preferences](../../assets/images/checkbox-show-package.png,850px)
 
-!![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png)
+    !![](../../assets/images/unchecked-show-package.png,90px)
 
-## How to sync from/to iOS device without QFieldCloud
+    !![](../../assets/images/checked-show-package.png,150px)
 
-Use iTunes' File Sharing function to import into the QField root folder.
+3. To start working in QField, copy the whole folder on your device.
+Check the [Storage section](../../get-started/storage.en.md#2-copying-project-over-to-the-qfield-target-device) <!-- markdown-link-check-disable-line --> for the directory specification, depending on your system (Android, IOS, Windows).
 
-1. Open the iTunes app and click on the iPhone button near the top-left of the iTunes window.
-2. Click on the *File Sharing* option in the left sidebar.
-3. Select the app QField and click on *Add File*. This will open the file browser.
-4. Select the file.
+!!! Tip
+    Make sure to save the QGIS project using the regular Save As of QGIS as you'll have to re-open it later when you want to synchronize the changes.
+
 
 ## Synchronize from QField
 
-When you want to synchronize what you have collected, re-open the
-project in QGIS (the one you saved with a regular Save As).
+Once done with your collection, it is time to synchronize the data with your Desktop project.
 
-Copy the project folder from your device to your computer, and use the
-**Synchronize from QField** menu to synchronize your changes from the
-protable project to the main project.
+1. Re-open the project in QGIS (the one you saved with a regular Save As) previously.
+2. Copy the project folder from your device to your computer.
+3. Direct to *Plugins* > *QFieldSync* > *Synchronize from QField* menu to synchronize your changes from the QField project to the Desktop project.
 
-!![Synchronize from QField](../../assets/images/qfield-sync_sync.png)
+!![Synchronize from QField](../../assets/images/qfield-sync_sync.png,400px)
 
-Make sure that you synchronize your data back only once. That means, if
-you go out again to collect more data, you should create a new QField
-package before to avoid sync problems later on (like e.g. duplicates).
+!!! Attention
+    Make sure that you synchronize your data back only once.
+    That means, if you go out again to collect more data, you should create a new QField package before to avoid sync problems later on (like e.g. duplicates).
