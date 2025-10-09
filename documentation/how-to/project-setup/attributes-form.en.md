@@ -1,26 +1,32 @@
 ---
-title: Attribute form
+title: Simple attribute form configuration
 tx_slug: documentation_how-to_attributes-form
 ---
 
 # Attribute form
 
 Before you go into the field, you will have to configure your forms - the fields that the user will see in the fields.
-You can create forms with for QField that are similar to the ones in QGIS, but with a few differences.
-The general QGIS field widgets are supported on a best-effort basis and optimized for mobile use.
-Below is an overview what is supported.
+You can create the forms in your QGIS project.
+It works the same way as it does for a regular QGIS project, but with a few differences.
+
+## Attribute Form Configuration
+
+To configure a form you have to open the vector layer's *Properties* > *Attribute form* in QGIS.
+
+Depending on what behaviour you want for your different attributes, you can choose different "widget types".
+Below is an overview what widget types are available and supported.
 
 | Widget type        | Support          | Notes                                                                                                                                                                                                  |
 |--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text Edit          | :material-check: | - HTML is not supported <br> - Numeric input is enforced based on the field type.                                                                                                                          |
 | Check Box          | :material-check: |                                                                                                                                                                                                        |
-| Value Map          | :material-check: |                                                                                                                                                                                                        |
+| Value Map       | :material-check: | dropdown or radio button (unique to QField only)                                                                                                                                                                                                        |
 | Hidden             | :material-check: |                                                                                                                                                                                                        |
 | Attachment         | :material-check: | This field is combined with camera integration. <br> It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#attachment-widget) |
 | Date Time          | :material-check: |                                                                                                                                                                                                        |
 | Range              | :material-check: |                                                                                                                                                                                                        |
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
-| Relation Widget    | :material-check: |                                                                                                                                                                                                        |
+| Relation Editor    | :material-check: |                                                                                                                                                                                                        |
 | Value Relation     | :material-check: |                                                                                                                                                                                                        |
 | UUID Generator     | :material-check: |                                                                                                                                                                                                        |
 | QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
@@ -38,14 +44,13 @@ Below are some other general useful settings, which you can find in the Vector L
 For more information refer to: [Drag and Drop Designer QGIS Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu)
 
 - **Hide attribute form upon**: You can hide the attribute form by changing from the "Show form on Add Feature" to the setting "Suppress attribute form".
-When adding a new feature in QField, no attribute form needs to be populated.
-**Note**: In such a case, you have to configure the attribute form in such a way that all constraints/rules are met even if you do not add any attributes.
-
+    When adding a new feature in QField, no attribute form needs to be populated.
+    **Note**: In such a case, you have to configure the attribute form in such a way that all constraints/rules are met even if you do not add any attributes.
 - **Editable**: You can decide whether a field is editable or not by activating it in the widget display of the corresponding field.
 - **Remember last values**: If you don't want to add the same value again and again you can enable this option under the widget display in QGIS.
-QField, however, offers a more fine-grained control over the last used values.
-If you enable this option in QGIS, the rule will always apply.
-With QField you can change and disable this option at any point during data collection.
+    QField, however, offers a more fine-grained control over the last used values.
+    If you enable this option in QGIS, the rule will always apply.
+    With QField you can change and disable this option at any point during data collection.
 
 
 !![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
@@ -120,7 +125,7 @@ the automatic switch from a "buttons'" interface to a list
 
 !!! Workflow
 
-    1. Direct to the Vector Layer *Properties...* > *QField*
+    1. Direct to the Vector Layer *Properties* > *QField*
 
     2. Under the "Feature Form Settings" enable and define quantity of items that will trigger the transition to a toggle button interface.
 
@@ -149,9 +154,8 @@ It can be used to:
 !![Form attachment video](../../assets/images/attachement-setting-video.png)
 
 !!! note
-    The path need to be set "relative".
+    The path needs to be set to "relative".
     The pictures, audios, videos, pdf's and documents are stored then in a sub-directory of the project, where the link stored in the text field is pointing to.
-
 
 You can add a new item when clicking the camera, video, microphone or document option.
 Depending on what you have selected as default, one of them will be shown inside the form.
@@ -160,21 +164,20 @@ Depending on what you have selected as default, one of them will be shown inside
 
 On Synchronisation the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
 
-By default when adding attachments QField  automatically displays the file.
+By default when adding attachments QField automatically displays the file.
 The option *hyperlink* on the attachment widget will disable that functionality and show just the path to the file hyperlink.
 
 !![](../../assets/images/hyperlink_option.png)
 
 !!! Workflow
-    **Set attachment path**
+    **Set a specific attachment path**
 
     :material-monitor: Desktop preparation
 
     In QFieldSync you can configure the path of attachments.
     By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
 
-    1. Go to Vector Layer *Properties...* > *QField* and "Attachments Settings".
-
+    1. Direct to the *Properties* > *QField* > *Attachments Settings*
     2. Use specific expressions to set the required names of the attachments.
 
     !![Paths](../../assets/images/paths-saving-media.png)
@@ -262,7 +265,7 @@ This is useful when certain attributes are only required under certain condition
 
     In QField it will look like in the video below.
 
-    !![](../../assets/images/conditional_visibility.webp,300px)
+    !![](../assets/images/conditional_visibility.webp,300px)
 
 
 ## Define Constraints
@@ -301,6 +304,7 @@ They are visible and can be modified as long as the field is editable.
 
     The option "Apply default value on update" should be used with care and not for fields that act as primary keys.
 
+
 ## Working with expressions
 
 When creating expressions for projects intended to be used with QField, it is recommended to use layer names rather than layer IDs.
@@ -309,7 +313,7 @@ By using layer names, you ensure that expressions are evaluated consistently and
 
 !![Using layer names in expressions](../../assets/images/using_layer_name_in_expressions.png)
 
-### Additional variables
+## Additional variables
 
 For more information regarding storing information related to your position in object attributes, refer to the dedicated [GNSS documentation](../navigation-and-positioning/gnss.md).
 
@@ -353,14 +357,12 @@ For QFieldCloud users, two variables can be used in expressions including attrib
     To transform the coordinates received from \@position_coordinate to the coordinate system of your project:
 
     ``` sql
-    x(transform(@position_coordinate, 'EPSG:4326', @project_crs ))
-    y(transform(@position_coordinate, 'EPSG:4326', @project_crs ))
+    x(transform(@position_coordinate, 'EPSG:4326', @project_crs))
+    y(transform(@position_coordinate, 'EPSG:4326', @project_crs))
     ```
 
-    ::: {#snapping_results}
-    If you want to use the snapping results after drawing a line, you can use the [\@snapping_results]{.title-ref} variable.
-    The following code extracts the value of the attribute [id]{.title-ref} of the snapping match of the first point of a line.
-    :::
+    If you want to use the snapping results after drawing a line, you can use the `@snapping_results` variable.
+    The following code extracts the value of the attribute `id` of the snapping match of the first point of a line.
 
     ``` sql
     with_variable(

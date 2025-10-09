@@ -10,64 +10,86 @@ tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 Currently, QFieldCloud supports GeoPackage and PostGIS layers for collaborative editing.
 Other formats supported by QGIS should also work but are not officially supported.
 
+## Working Modes
+
+When configuring a project for QField you can choose between the different "Packaging" options.
+
+- **Offline editing:** Regardless of whether your files are stored in a GeoPackage, database or other format, QFieldCloud will create a temporary GeoPackage of all the project data.
+Changes made to this GeoPackage will not be available to others.
+Once the changes are synchronized or pushed back to QFieldCloud, the made changes only will be applied to the existing file on QFieldCloud.
+
+- **Direct Data Access:** When using `direct database access`, QFieldCloud will directly edit data in the PostGIS database.
+This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).
+We recommend to use this option to avoid unnecessary data losses in case of lost data connection.
+
+Changes will only be visible to users once the Synchronization via QFieldCloud has been applied on the different devices.
+When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
+
+You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
+
 ## Working with GeoPackages
 
 Using GeoPackages is usually the best choice for a simple setup to centralize data collected by your QField users to one single file.
 
 If you would like to set up a relation, add a UUID field and use that as the primary or foreign key.
+**Note:** Do not use the default `fid` field for relations (as primary or foreign key).
 
-!!! Note
-    Do not use the default `fid` field for relations (as primary or foreign key).
-    It will lead to errors over time.
+*Why?* The `fid` field can be synchronized when working with QFieldCloud and will lead to errors over time.
+A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549), on the other hand, is unique and will not be synchronized.<!-- markdown-link-check-disable-line -->
 
-### Example workflow (GeoPackage)
+!!! Workflow
 
-:material-monitor: Desktop preparation
+    :material-monitor: Desktop preparation
 
-1. Create a new project.
-2. Create GeoPackage layers, save it in the same folder than the QGIS project.
-3. Set the GeoPackage to "Offline editing" in the QFieldSync plugin.
-4. Upload the project to QFieldCloud.
+    1. Create a new project in QGIS.
+    2. Create GeoPackage layers, save it in the same folder as your QGIS project.
+    3. Set the GeoPackage to "Offline editing" in the settings of the QFieldSync plugin. !![](../../assets/images/qfield-sync-qfc_config.png)
+    4. Upload the project to QFieldCloud.
 
-:material-tablet: Fieldwork
+    :material-tablet: Fieldwork
 
-1. Sign in to QFieldCloud and download the project to your device.
-2. Collect and edit some data and upload the changes.
+    1. Sign in to QFieldCloud and download the project to your device.
+    2. Collect and edit some data and upload the changes.
 
-:material-monitor: Desktop
+    :material-monitor: Desktop
 
-1. Using QFieldSync, download the updated files (the GeoPackage file should have changed).
+    1. Using QFieldSync, download the updated files (the GeoPackage file should have changed).
 
 !!! warning
-    This workflow does not support changing the GeoPackage on the desktop, as being file-based, the whole GeoPackage will be replaced.
-    This means that data can only be digitized using QFieldCloud.
+    We do not recommend to edit or add new data from QGIS directly because everytime QGIS synchronizes the project to QFieldCloud the whole GeoPackage replaces the existing on QFieldCloud, whereas when using QField, only the actual changes within the file will be updated.
 
 ## PostGIS
 
-Using PostGIS layers is a good choice if your data should directly be editable for multiple users through QFieldCloud when they sync their work without any further steps.
+Using PostGIS is a good choice if your data should be visible and editable for multiple users.
 
 It requires your database to be publicly accessible, and credentials must be saved unencrypted in the QGIS project.
 Please be aware of the security implications of such requirements, and remember to have backups.
+There are two possible ways, in which the access to the database can be saved and made available for QFieldCloud.
 
-### Example workflow (PostGIS)
+1. **Direct Connection:** When connecting to a PostGIS database, you can store all information including the credentials inside the QGIS Project directly.
+2. **Using a PG Service File:** Using a service file that can be saved as a "secret" in QFieldCloud.
+We highly recommend to make use of this option due to data safety.
+Read more on PG Service and Secrets [here](../how-to/pg-service.en.md)<!-- markdown-link-check-disable-line -->
 
-:material-monitor: Desktop preparation
+!!! Workflow
 
-1. Create a new project.
-2. Create add a PostGIS layer, making sure to store the credentials in the project.
-3. Make sure the PostGIS database connection is publicly accessible (public IP or domain name, it will not work with `127.0.0.1` or `localhost`).
-4. In the QFieldSync project settings, set the GeoPackage to "Offline editing" if your QField users will not have a reliable internet connection in the field or "Direct database access".
-5. Upload the project to QFieldCloud.
+    :material-monitor: Desktop preparation
 
-:material-tablet: Fieldwork
+    1. Create a new project.
+    2. Add a PostGIS layer, making sure to store the credentials in the project or having created the PG Service file.
+    3. Make sure the PostGIS database connection is publicly accessible (public IP or domain name, it will not work with `127.0.0.1` or `localhost`).
+    4. In the QFieldSync project settings, choose your preferred packaging mode.
+    5. Upload the project to QFieldCloud.
 
-1. Sign in to QFieldCloud and download the project.
-2. Collect some data
-3. Push or synchronize the changes once back at the office if you were using `offline editing`.
+    :material-tablet: Fieldwork
 
-:material-monitor: Desktop
+    1. Sign in to QFieldCloud and download the project.
+    2. Collect some data
+    3. Push or synchronize the changes once back at the office if you were using `offline editing`.
 
-1. All changes should be directly visible inside the PostGIS database.
+    :material-monitor: Desktop
+
+    1. All changes should be directly visible inside the PostGIS database.
 
 !!! note
     When using `direct database access`, QFieldCloud will directly edit data in the PostGIS database.
