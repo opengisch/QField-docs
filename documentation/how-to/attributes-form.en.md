@@ -44,14 +44,13 @@ Below are some other general useful settings, which you can find in the Vector L
 For more information refer to: [Drag and Drop Designer QGIS Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu)
 
 - **Hide attribute form upon**: You can hide the attribute form by changing from the "Show form on Add Feature" to the setting "Suppress attribute form".
-When adding a new feature in QField, no attribute form needs to be populated.
-**Note**: In such a case, you have to configure the attribute form in such a way that all constraints/rules are met even if you do not add any attributes.
-
+    When adding a new feature in QField, no attribute form needs to be populated.
+    **Note**: In such a case, you have to configure the attribute form in such a way that all constraints/rules are met even if you do not add any attributes.
 - **Editable**: You can decide whether a field is editable or not by activating it in the widget display of the corresponding field.
 - **Remember last values**: If you don't want to add the same value again and again you can enable this option under the widget display in QGIS.
-QField, however, offers a more fine-grained control over the last used values.
-If you enable this option in QGIS, the rule will always apply.
-With QField you can change and disable this option at any point during data collection.
+    QField, however, offers a more fine-grained control over the last used values.
+    If you enable this option in QGIS, the rule will always apply.
+    With QField you can change and disable this option at any point during data collection.
 
 
 !![General Attribute Form](../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
@@ -67,9 +66,9 @@ When using value maps as a widget type you can control the automatic switch from
 
     2. Under the "Feature Form Settings" enable and define quantity of items that will trigger the transition to a toggle button interface.
 
-    !![QField Value Map Editor as List](../assets/images/qfield-value-map-editor-list.png,300px)
+        !![QField Value Map Editor as List](../assets/images/qfield-value-map-editor-list.png,300px)
 
-    !![QField Value Map Editor as Buttons](../assets/images/qfield-value-map-editor-buttons.png,300px)
+        !![QField Value Map Editor as Buttons](../assets/images/qfield-value-map-editor-buttons.png,300px)
 
 
 ## Attachment Widget
@@ -294,14 +293,12 @@ For QFieldCloud users, two variables can be used in expressions including attrib
     To transform the coordinates received from \@position_coordinate to the coordinate system of your project:
 
     ``` sql
-    x(transform(@position_coordinate, 'EPSG:4326', @project_crs ))
-    y(transform(@position_coordinate, 'EPSG:4326', @project_crs ))
+    x(transform(@position_coordinate, 'EPSG:4326', @project_crs))
+    y(transform(@position_coordinate, 'EPSG:4326', @project_crs))
     ```
 
-    ::: {#snapping_results}
-    If you want to use the snapping results after drawing a line, you can use the [\@snapping_results]{.title-ref} variable.
-    The following code extracts the value of the attribute [id]{.title-ref} of the snapping match of the first point of a line.
-    :::
+    If you want to use the snapping results after drawing a line, you can use the `@snapping_results` variable.
+    The following code extracts the value of the attribute `id` of the snapping match of the first point of a line.
 
     ``` sql
     with_variable(
