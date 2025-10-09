@@ -140,8 +140,6 @@ There are many options to organize this, [read more in the PostgreSQL documenta
 
    Replace placeholders (`your_host_or_ip`, `your_port`, `your_database_name`, `your_username`, `your_password`) with actual connection details and save the file.
 
-!![Parameters](../../assets/images/service_config_file_001.png)
-
 ### Additional Configuration Steps for Windows
 
 1. **Set Environment Variable**:
@@ -152,7 +150,7 @@ There are many options to organize this, [read more in the PostgreSQL documenta
           - Variable name: `PGSERVICEFILE`
           - Variable value: `C:\Users\<YourUsername>\AppData\Roaming\postgresql\pg_service.conf` (or your `pg_service.conf` file path).
 
-    !![Windows Settings](../assets/images/pg-service_environment_variable_windows.png)
+    !![Windows Settings](../../assets/images/pg-service_environment_variable_windows.png)
 
     **Set Environment Variable in QGIS**
 
