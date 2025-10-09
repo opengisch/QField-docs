@@ -69,13 +69,15 @@ nav:
       - how-to/map-interaction.md
       - how-to/measuring-tool.md
       - how-to/digitize.md
-      - how-to/attributes-form.md
+      - Attribute Form:
+          - how-to/attributes-form.md
+          - how-to/pictures.md
+          - how-to/relation-reference-widget.en.md
       - how-to/search.md
       - how-to/hiding-legend-nodes.md
       - how-to/map-styling.md
       - how-to/map-themes.md
       - how-to/decorations.md
-      - how-to/pictures.md
       - how-to/standalone-datasets.md
       - how-to/gnss.md
       - how-to/geofencing.md
