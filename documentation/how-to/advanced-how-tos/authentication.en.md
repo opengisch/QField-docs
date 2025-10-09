@@ -47,7 +47,6 @@ Prior to exporting authentication configurations, it is always good to verify th
         You will be warned that you might be leaking sensitive information, which is a good reminder to treat the resulting XML with caution.
 
 
-
 ## Import authentication configurations into QField
 :material-monitor: Desktop preparation
 
@@ -56,8 +55,9 @@ In order for a service that requires authentication to run in QField, after conf
 !!! Workflow
 
     1. Export the authentication configuration file from QGIS (see above)
-    2. On your device direct to *[the QField App Directory](../../how-to/project-setup/storage.en.md#5-qfield-app-directory)* > *Auth*
+    2. On your device direct to the QField *[App Directory](../../how-to/project-setup/storage.en.md#5-qfield-app-directory)* > *Auth*
     3. Once copied, the service should be rendered correctly and provide access.
+
     !!! Tip
 
         For authentication methods requiring user input such as OAuth2, QField will provide a browser or dialog to prompting for the required details such as user, password, or 2-step authentication code.

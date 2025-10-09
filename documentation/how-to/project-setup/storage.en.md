@@ -151,7 +151,7 @@ Apart from using QFieldCloud, QField can open projects and datasets in five ways
 
 * [importing from a URL](#importing-from-a-url-android-and-ios) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14"><!-- markdown-link-check-disable-line -->
 
-* [importing from a WebDAV folder]()
+* **importing from a WebDAV folder**
 
 * [importing individual datasets](#importing-individual-datasets-android-only) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"><!-- markdown-link-check-disable-line -->
 
@@ -218,8 +218,8 @@ Once you are done with your fieldwork, are four ways to sent and export the chan
 
 * [by exporting a project folder or an individual dataset;](#exporting-a-project-folder-or-an-individual-dataset)
 * [by sending a compressed project folder to a {cloud, email, messenger, etc.} app;](#sending-a-compressed-project-folder)
-* [by sending an individual dataset to a {cloud, email, messenger, etc.} app;](#sending-an-individual-dataset) and
-* [by accessing imported content directly through USB cable.](#accessing-imported-content-directly-through-usb-cable)
+* [by sending an individual dataset to a {cloud, email, messenger, etc.} app;](#sending-an-individual-dataset-android-only) and
+* [by accessing imported content directly through USB cable.](#transfer-via-usb-cable)
 
 !![QField export actions](../../assets/images/storage-export-actions.png)
 

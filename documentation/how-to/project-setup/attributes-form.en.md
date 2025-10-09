@@ -16,7 +16,7 @@ Below is an overview what is supported.
 | Check Box          | :material-check: |                                                                                                                                                                                                        |
 | Value Map          | :material-check: |                                                                                                                                                                                                        |
 | Hidden             | :material-check: |                                                                                                                                                                                                        |
-| Attachment         | :material-check: | This field is combined with camera integration. <br> It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#configurable-attachment-path) |
+| Attachment         | :material-check: | This field is combined with camera integration. <br> It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#attachment-widget) |
 | Date Time          | :material-check: |                                                                                                                                                                                                        |
 | Range              | :material-check: |                                                                                                                                                                                                        |
 | Relation Reference | :material-check: |                                                                                                                                                                                                        |
@@ -55,7 +55,7 @@ With QField you can change and disable this option at any point during data coll
 
 For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) section in the QGIS documentation.
 
-To further control the visibility and number of related items shown in QField, see the instructions for configuring [Maximum items visibility for QField](../../get-started/tutorials/get-started-qfs.md#configuring-maximum-items-visibility-for-qfield).
+To further control the visibility and number of related items shown in QField, see the instructions for configuring [Maximum items visibility for QField.](../../get-started/tutorials/get-started-qfs.md#additional-properties)
 
 !![](../../assets/images/relation_editor_widget_list.png)
 

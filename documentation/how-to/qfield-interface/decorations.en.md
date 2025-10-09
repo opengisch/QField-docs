@@ -76,7 +76,7 @@ There are several decoration types to choose from:
     Scale: 1:[% round(@map_scale) %]
     ```
 
-    The ability to use [positioning variables](../reference/expression_variables.md) (`@gnss_coordinate`) offers a streamlined way to display critical location data without cluttering the main user interface.
+    The ability to use [positioning variables](../../reference/expression_variables.md#positioning-and-gnss-variables) (`@gnss_coordinate`) offers a streamlined way to display critical location data without cluttering the main user interface.
 
 ### Image
 
@@ -94,7 +94,7 @@ There are several decoration types to choose from:
 
     `./assets/company_logo.png`
 
-    ![type:video](../assets/videos/qfield_map_decoration.webm)
+    ![type:video](../../assets/videos/qfield_map_decoration.webm)
 
 ### Scale Bar
 
@@ -108,4 +108,4 @@ There are several decoration types to choose from:
     4. Under the **General** tab.
     5. Enable the **Show scale bar** .
 
-    !![](../assets/images/scale_bar_toggle.png,900px)
+    !![](../../assets/images/scale_bar_toggle.png,900px)

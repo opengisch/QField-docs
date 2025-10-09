@@ -62,4 +62,4 @@ Common variables to use are:
 Since the application-wide variables are not bound to specific projects and are defined locally, they are a great way to optimize the fieldwork experience for multiple users sharing the same projects.
 
 !![Configuration of editable variables in addition to the
-pre-defined system variables.](../assets/images/configure_global_variables.png, 400px)
+pre-defined system variables.](../../assets/images/configure_global_variables.png,400px)

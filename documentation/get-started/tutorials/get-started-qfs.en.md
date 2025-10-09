@@ -79,7 +79,6 @@ When setting an area or a layer, only copy features intersecting this area of in
 A base map is a raster layer which is added as the bottom most layer to
 the packaged project file.
 
-
 There are two possible options to set a basemap:
 
 - ***Single Layer:*** A raster layer is useful for taking an offline copy of an online layer like a WMS or to take a working copy of an unsupported format like an ECW or MrSID layer.
@@ -111,7 +110,7 @@ There are some more advanced properties options which may be relevant to you dep
 - ***Permissions:*** Disable options for feature addition, feature deletion, attribute editing, or geometry editing.
 
 - ***Attachment default names***: If you wish to save attachments within your data, you can modify the set default names.
-Please refer to [How to configure your attachment path](../../how-to/pictures.md#configurable-attachment-path).
+Please refer to [How to configure your attachment path](../../how-to/project-setup/pictures.md#configurable-attachment-path).
 
 - ***Maximum number of items available from a relation***: When working with relations you can set the maximum number of items shown in the relation editor widget.
 
@@ -161,7 +160,7 @@ Once you are done with configuring your project, layers and styles you are ready
     !![](../../assets/images/checked-show-package.png,150px)
 
 3. To start working in QField, copy the whole folder on your device.
-Check the [Storage section](../../get-started/storage.en.md#2-copying-project-over-to-the-qfield-target-device) <!-- markdown-link-check-disable-line --> for the directory specification, depending on your system (Android, IOS, Windows).
+Check the [Storage section](../../how-to/project-setup/storage.en.md#2-copying-project-over-to-the-qfield-target-device) <!-- markdown-link-check-disable-line --> for the directory specification, depending on your system (Android, IOS, Windows).
 
 !!! Tip
     Make sure to save the QGIS project using the regular Save As of QGIS as you'll have to re-open it later when you want to synchronize the changes.

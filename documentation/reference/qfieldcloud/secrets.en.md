@@ -92,7 +92,7 @@ If you use multiple service definitions, you should add multiple secrets for eac
 !!! note
     QFieldCloud secrets are available only during project's job runs, which allows you to configure your PostgreSQL layers as "Offline editing".
     You **cannot** use QFieldCloud secrets to distribute `pg_service.conf` files across devices.
-    For security reasons, you have to do this manually. You can read [how to configuring QField to use a `pg_service.conf`](../../how-to/pg-service.md) file.
+    For security reasons, you have to do this manually. You can read [how to configuring QField to use a `pg_service.conf`](../../how-to/project-setup/pg-service.md) file.
 
 !![Adding a PostgreSQL service - Simple editor.](../../assets/images/secrets-pgservice-simple.png)
 
