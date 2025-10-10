@@ -6,41 +6,45 @@ tx_slug: documentation_how-to_routing
 # External routing
 
 It can come in handy to calculate an itinerary to one of your features in the field.
-By an easy configuration of your attribute form in QGIS, you can quickly access the navigation tools from Google Maps via a hyperlink when working on the field.
+By an easy configuration of your attribute form in QGIS, you can quickly access the navigation tools from Google Maps via a hyperlink when working in the field.
 
-## Configure attribute form widget in QGIS
-:material-monitor: Desktop preparation
+!!! Workflow
 
-Here is an example for navigation to features of a point layer.
+    :material-monitor: Desktop preparation
 
-Create a new field in your data table (datatype text).
-In the attribute form settings, select "attachment" as widget type.
-Tick "Display a hyperlink for document path (read-only)".
-Then enter the following expression as default value:
+    1. In QGIS Create a new field in your feature layer with the datatype text
+    2. Under *Vector Properties* Find the "attribute form" setting
+    3. As widget type select "attachment"
+    4. Tick "Display a hyperlink for document path (read-only)".
+    5. Then enter the following expression as default value:
 
-```sql
-concat(
-  'https://www.google.com/maps/dir/?api=1&destination=',
-  y(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
-  '%2C',
-  x(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
-  '&travelmode=driving'
-)
-```
+    ```sql
+      concat(
+        'https://www.google.com/maps/dir/?api=1&destination=',
+        y(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
+        '%2C',
+        x(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
+        '&travelmode=driving'
+      )
+    ```
 
-And tick "Apply default value on update" in case you make changes to your geometry.
+    6. (Optional) Tick "Apply default value on update" in case you make changes to your geometry.
 
-If you simply want to show your feature location in Google Maps, you can use the following expression:
+    **Show Feature Location only**
 
-```sql
-concat( 'https://maps.google.com?q=',
-  y(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
-  '%2C',
-  x(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
-  '&zoom=19&t=h')
-```
+    1. Follow the same steps (1-4) as above
+    2. This time use the following expression:
 
-## Usage
-:material-tablet: Fieldwork
+      ```sql
+        concat( 'https://maps.google.com?q=',
+        y(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
+        '%2C',
+        x(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
+        '&zoom=19&t=h')
+      ```
 
-Click on the feature on the map where you want navigation to or that you want to open in Google Maps. In the attribute form, click on the link towards Google Maps.
+    :material-tablet: Fieldwork
+
+    1. In QField select the feature layer where you added the field.
+    2. Edit the layer and find the according attribute.
+    3. Click on the link towards Google Maps
