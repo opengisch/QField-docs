@@ -94,6 +94,7 @@ If you have connected to PostGIS using the PG Service file and, it is also neces
 
 If you copy your projects via cable to your device, you will also have to copy the service file to the right directory on your device.
 Generally, the QField directory for Android can be found under `/Android/data/ch.opengis.qfield/files/QField.`
+
 !!! Note
 
     **1.** Due to the restrictions of Android, you will only be able to access the directory when being connected via cable to the computer.
