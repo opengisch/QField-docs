@@ -18,15 +18,15 @@ By an easy configuration of your attribute form in QGIS, you can quickly access 
     4. Tick "Display a hyperlink for document path (read-only)".
     5. Then enter the following expression as default value:
 
-    ```sql
-      concat(
-        'https://www.google.com/maps/dir/?api=1&destination=',
-        y(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
-        '%2C',
-        x(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
-        '&travelmode=driving'
-      )
-    ```
+        ```sql
+          concat(
+            'https://www.google.com/maps/dir/?api=1&destination=',
+            y(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
+            '%2C',
+            x(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
+            '&travelmode=driving'
+          )
+        ```
 
     6. (Optional) Tick "Apply default value on update" in case you make changes to your geometry.
 
@@ -35,13 +35,13 @@ By an easy configuration of your attribute form in QGIS, you can quickly access 
     1. Follow the same steps (1-4) as above
     2. This time use the following expression:
 
-      ```sql
-        concat( 'https://maps.google.com?q=',
-        y(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
-        '%2C',
-        x(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
-        '&zoom=19&t=h')
-      ```
+    ```sql
+      concat( 'https://maps.google.com?q=',
+      y(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
+      '%2C',
+      x(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
+      '&zoom=19&t=h')
+    ```
 
     :material-tablet: Fieldwork
 
