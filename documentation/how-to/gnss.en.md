@@ -81,95 +81,146 @@ The formats currently supported are:
 - Natural Resources Canada's Geoid (.byn)
 
 
-### **Example:  Netherlands - ETRS89 to NAP**
+!!! Workflow
 
-For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertical datum, you'll need the official grid file from NSGI.
+    **Example:  Netherlands - ETRS89 to NAP**
 
-1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
+    For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertical datum, you'll need the official grid file from NSGI.
 
-2. Place the downloaded `.gtx` file into the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/proj**.
-This is independent of whether you are using QFieldCloud or not.
+    1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
+    2. Place the downloaded `.gtx` file into the directory **[App Directory](../get-started/storage.md#5-qfield-app-directory)/QField/proj**.
+    This is independent of whether you are using QFieldCloud or not.
 
-### **Example: Switzerland - CH1903+/LV95**
+    **Example: Switzerland - CH1903+/LV95**
 
-To get precise altitude data for **Cadastral Surveying in Switzerland (LV95)**, you must use the geoid correction grid from Swisstopo.
-The official file comes in an `.agr` format and must be converted to `.gtx` (NTv2 Grid Shift File) before it can be used.
-Other raster formats like (.tiff) can also be used
+    To get precise altitude data for **Cadastral Surveying in Switzerland (LV95)**, you must use the geoid correction grid from Swisstopo.
+    The official file comes in an `.agr` format and must be converted to `.gtx` (NTv2 Grid Shift File) before it can be used.
+    Other raster formats like (.tiff) can also be used.
 
-1. Download the "Geoid OGD" dataset from Swisstopo under the following link **Download Link**: [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip)<!-- markdown-link-check-disable-line -->.
+    1. Download the "Geoid OGD" dataset from Swisstopo under the following link **Download Link**: [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip)<!-- markdown-link-check-disable-line -->.
+    2. Unzip the archive to retrieve the file: `chgeo2004_htrans_LV95.agr`.
+    3. Convert the file using the using the [gdal_translate](https://gdal.org/en/stable/programs/gdal_translate.html) algorithm with one of the following options:
 
-2. Unzip the archive to retrieve the file: `chgeo2004_htrans_LV95.agr`.
+        ***Method 1: QGIS Graphical User Interface (GUI)***
 
-3. Convert the file using the using the [gdal_translate](https://gdal.org/en/stable/programs/gdal_translate.html) algorithm with one of the following options:
+        1. In QGIS, open the Processing Toolbox panel.
+        2. Navigate to *GDAL* > *Raster conversion* > *Translate (Convert format)* tool.
+        3. Configure it with your needed requirements:
+            - **Input layer**: Select your `chgeo2004_htrans_LV95.agr` file.
+            - **Output file**: Click "Save to File..." and name your output file with a `.gtx` extension (or other format needed), for example, `chgeo2004_htrans_LV95.gtx`.
+        4. Click **Run**. The other default settings are typically sufficient for this conversion.
 
-***Method 1: QGIS Graphical User Interface (GUI)***
+        !![](../assets/images/qgis_core_translate_convert_format.png)
 
-1. In QGIS, open the Processing Toolbox panel.
+        **Method 2: Command Line (`qgis_process`)**
 
-2. Navigate to *GDAL* > *Raster conversion* > *Translate (Convert format)* tool.
+        For automation or users who prefer the command line, `qgis_process` is a great option.
 
-3. Configure it with your needed requirements:
+        1. Open your terminal and run the following command, adjusting the paths to your files.
+        ```bash
+        qgis_process run gdal:translate --INPUT="/path/to/your/chgeo2004_htrans_LV95.agr"
+            --OUTPUT="/path/to/your/chgeo2004_htrans_LV95.gtx"
+        ```
 
-    - **Input layer**: Select your `chgeo2004_htrans_LV95.agr` file.
+        ***Method 3: PyQGIS Script***
 
-    - **Output file**: Click "Save to File..." and name your output file with a `.gtx` extension (or other format needed), for example, `chgeo2004_htrans_LV95.gtx`.
+        You can also perform the conversion programmatically within the QGIS Python Console or a standalone script.
 
-4. Click **Run**. The other default settings are typically sufficient for this conversion.
+        ```python
+        import processing
 
-!![](../assets/images/qgis_core_translate_convert_format.png)
+        input_grid = '/path/to/your/chgeo2004_htrans_LV95.agr'
+        output_grid = '/path/to/your/chgeo2004_htrans_LV95.gtx'
 
-**Method 2: Command Line (`qgis_process`)**
+        processing.run("gdal:translate", {
+            'INPUT': input_grid,
+            'OUTPUT': output_grid
+        })
 
-For automation or users who prefer the command line, `qgis_process` is a great option.
+        print(f"Successfully converted grid to: {output_grid}")
+        ```
 
-1. Open your terminal and run the following command, adjusting the paths to your files.
+    :material-tablet: Fieldwork
 
-```bash
-qgis_process run gdal:translate --INPUT="/path/to/your/chgeo2004_htrans_LV95.agr" --OUTPUT="/path/to/your/chgeo2004_htrans_LV95.gtx"
-```
+    1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[App Directory](../get-started/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
 
-***Method 3: PyQGIS Script***
+    2. Open the Site Dashboard
+    3. Tap on the three-dots and direct to *Settings* > *Positioning*
 
-You can also perform the conversion programmatically within the QGIS Python Console or a standalone script.
+        !![](../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
 
-```python
-import processing
+    4. Enable your GNSS device.
+    It will directly center to your current location once the **positioning information** is available.
 
-input_grid = '/path/to/your/chgeo2004_htrans_LV95.agr'
-output_grid = '/path/to/your/chgeo2004_htrans_LV95.gtx'
+    5. Change to ***edit mode*** and press on the target button - the cross in the center means it is using GNSS positioning.
 
-processing.run("gdal:translate", {
-    'INPUT': input_grid,
-    'OUTPUT': output_grid
-})
+        !![](../assets/images/gnss_use.webp,250px)
 
-print(f"Successfully converted grid to: {output_grid}")
-```
+        A long press on the **GNSS button** will show the **positioning menu**.
+        Inside the menu you can turn on the **Show position information** which will show the current coordinates that are reprojected into the CRS of your project along with the precision information.
 
-:material-tablet: Fieldwork
+     !![](../assets/images/positioning-menu.png)
 
-1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/proj** on your mobile device.
+    !!! note
+        If you see WGS 84 lat/lon information instead of information in your project CRS, you probably have no signal yet.
 
-2. Under the QField settings, select the file as the vertical grid shift correction file: Main menu > three dots > *Settings* > *Positioning*
+## Positioning variables
 
-!![](../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
+You can get the positioning information both of your internal and external device by specifically configuring your attribute form.
 
-3. Enanble your GNSS device.
-it will directly center to your current location once the **positioning information** is available.
+These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)<!-- markdown-link-check-disable-line -->
+for fields to keep track of the quality of individual measured points.
 
-4. Change to ***edit mode*** and press on the target button - the cross in the center means it is using GNSS positioning.
+A common use case is recording the horizontal accuracy, which can be done by using the variable `@position_horizontal_accuracy`.
+For a complete listing of all available variables, refer to the [expression variables reference documentation](../reference/expression_variables.md).
 
-!![](../assets/images/gnss_use.webp,250px)
+Information for GNSS Z value with Vertical grid shift in use:
+- *Antenna height compensation=False*
 
-A long press on the **GNSS button** will show the **positioning menu**.
+| Vertical Grid Shift in use | point Z Value z(geometry) | GNSS Device z(@position_coordinate) | QField Display | QField Label                |
+|----------------------------|---------------------------|--------------------------------------|----------------|-----------------------------|
+| None                       | Z ellipsoidal device value| Z ellipsoidal device value           | Z ellipsoidal device value | Altitude: xxx.xxxx m       |
+| Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
+| USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
 
-Inside the menu you can turn on the **Show position information** which will show the current coordinates that are reprojected into the CRS of your project along with the precision information.
+### Capturing longitude, latitude and altitude in attribute form
 
-!![](../assets/images/positioning-menu.png)
+It is useful and not uncommon that the actual positioning values should be automatically stored inside the attrbute form.
+This applies for longitude, latitude and altitude.
 
-!!! note
-    If you see WGS 84 lat/lon information instead of information in your
-    project CRS, you probably have no signal yet.
+!!! Workflow
+
+    **Configuration of attribute form**
+
+    1. In QGIS direct to your *Layer Properties* > *Attribute Form*
+    2. (Optional): You have to add a field of decimal type to the form that can capture the data.
+    Name it accordingly (eg. "longitude")
+    3. Under the settings of the widget display of the corresponding field add the following default value:
+
+        - ***Longitude:*** `x(@position_coordinate)`
+        - ***Latitude:*** `y(@position_coordinate)`
+        - ***Altitude:*** `z(@position_coordinate)`
+
+    This will save the coordinate directly in the field when adding a new feature.
+    !!! Note
+
+        This only works if positioning is turned on.
+
+### Vertex log layer
+
+It is good practice to create a log layer of the collected vertices.
+It enables you to keep track of the meta data for each vertex like [GNSS quality attributes](../reference/expression_variables.md) and more.
+
+!!! Workflow
+
+    1. Add a point layer to the project and attributes configured to store this information.
+
+        !![](../assets/images/vertex_log1.png)
+    2. Assign the role *digitizing logger* to a point layer.
+    3. Go to > *Project* > *Properties...* > *QField*.
+
+        !![](../assets/images/vertex_log2.png)
+    4. Set default values to the attributes using the positioning variables mentioned above.
 
 ## Using an external GNSS Receiver
 :material-tablet: Fieldwork
@@ -177,7 +228,7 @@ Inside the menu you can turn on the **Show position information** which will sho
 QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
 or UDP connections.
 
-In *Settings* > *Positioning*, you are able to manage and swithch between your internal and saved external GNSS devices.
+Under the **Positioning** section, you are able to manage and switch between your internal and saved external GNSS devices.
 
 !![](../assets/images/saved-gnss-devices.png)
 
@@ -200,7 +251,7 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and
 
 ### External receiver log
 
-In *Settings* > *Positioning* if you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
+If you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
 If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
 
 The logs will be placed in **[[App Directory](../get-started/storage.md#5-qfield-app-directory)]/QField/logs**.
@@ -240,43 +291,3 @@ If an averaged position minimum count requirement is active, a progress bar will
 
 !!! note
     When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
-
-## Positioning variables
-
-You can get the positioning information both of your internal and external device by specifically configuring your attribute form.
-
-These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)<!-- markdown-link-check-disable-line -->
-for fields to keep track of the quality of individual measured points.
-
-A common use case is recording the horizontal accuracy, which can be done by using the variable `@position_horizontal_accuracy`.
-Another often used strategy is using the altitude of the current measurement which can be achieved with `z(@position_coordinate)`.
-For a complete listing of all available variables, refer to the [expression variables reference documentation](../reference/expression_variables.md).
-
-Information for GNSS Z value with Vertical grid shift in use:
-- *Antenna height compensation=False*
-
-| Vertical Grid Shift in use | point Z Value z(geometry) | GNSS Device z(@position_coordinate) | QField Display | QField Label                |
-|----------------------------|---------------------------|--------------------------------------|----------------|-----------------------------|
-| None                       | Z ellipsoidal device value| Z ellipsoidal device value           | Z ellipsoidal device value | Altitude: xxx.xxxx m       |
-| Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
-| USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
-
-
-### Vertex log layer
-
-It is good practice to create a log layer of the collected vertices.
-It enables you to keep track of the meta data for each vertex like [GNSS quality attributes](../reference/expression_variables.md) and more.
-
-#### Setup
-
-1. Add a point layer to the project and attributes configured to store this information.
-
-    !![](../assets/images/vertex_log1.png)
-
-2. Assign the role *digitizing logger* to a point layer.
-
-3. Go to > *Project* > *Properties...* > *QField*.
-
-    !![](../assets/images/vertex_log2.png)
-
-4. Set default values to the attributes using the positioning variables mentioned above.
