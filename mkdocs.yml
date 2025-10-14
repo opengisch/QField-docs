@@ -424,7 +424,6 @@ plugins:
             to make fieldwork seamless and efficient. Whether you're a new user or
             an experienced pro, you'll find everything you need to know about using
             QField and its related tools.
-           # TRANSLATE ME
           nav_translations:
             Home: Home
             Get started: Aloita
@@ -457,31 +456,6 @@ plugins:
             Indiferent dacă ești un utilizator nou sau un profesionist experimentat,
             vei găsi tot ce trebuie să știi despre utilizarea QField și a instrumentelor
             sale conexe.
-
-
-          # ar: Arabic
-          # bg: Bulgarian
-          # ca: Catalan
-          # hr: Croatian
-          # cs: Czech
-          # nl: Dutch
-          # et: Estonian
-          # gl: Galician
-          # he: Hebrew
-          # hu: Hungarian
-          # id: Indonesian
-          # rw: Kinyarwanda
-          # lt: Lithuanian
-          # fa: Persian
-          # pl: Polish
-          # pt_BR: Portuguese (Brazil)
-          # rm: Romansh
-          # ru: Russian
-          # ru_UA: Russian (Ukraine)
-          # sl: Slovenian
-          # tr: Turkish
-          # uk: Ukranian
-          # vi: Vietnamese
           nav_translations:
             Home: Home
             Get started: Get started

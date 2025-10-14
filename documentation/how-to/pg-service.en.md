@@ -94,6 +94,7 @@ If you have connected to PostGIS using the PG Service file and, it is also neces
 
 If you copy your projects via cable to your device, you will also have to copy the service file to the right directory on your device.
 Generally, the QField directory for Android can be found under `/Android/data/ch.opengis.qfield/files/QField.`
+
 !!! Note
 
     **1.** Due to the restrictions of Android, you will only be able to access the directory when being connected via cable to the computer.
@@ -158,3 +159,21 @@ Depending on the system that you use, you have to make sure to give the right na
 
 
     Refer to [QGIS System Settings](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details.
+
+### Using Client Certificates
+
+It is possible for you to use client certificates to verify the identity while connecting to a PostgreSQL server by defining additional parameters in your `pg_service.conf`, namely `sslcert`, `sslkey`, and `sslrootcet`.
+
+   ```ini
+   [SERVICE_NAME]
+   host=your_host_or_ip
+   port=your_port
+   dbname=your_database_name
+   user=your_username
+   password=your_password
+   sslcert=client.crt
+   sslkey=client.key
+   sslrootcert=server.crt
+   ```
+
+These parameters must point to valid certificate and key files and placed directly alongside your `pg_service.conf` file within the QField data folder. For more information on this identification method, refer to the [PostgreSQL documentation](https://www.postgresql.org/docs/current/libpq-ssl.html#LIBPQ-SSL-CLIENTCERT).

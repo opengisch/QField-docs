@@ -3,12 +3,14 @@ title: Support the QField Project
 tx_slug: documentation_get-started_contribute
 ---
 
-## Contribute
+# Support the QField Project
 
 QField is an open source project.
 It is free to share, use and modify and it will stay like that.
 We are very happy if this app helps you in whatever creative way you may use it.
 If you found it useful, we will be even happier if you could give something back.
+
+## Contribute
 
 ### QField Community platform
 
