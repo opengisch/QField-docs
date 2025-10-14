@@ -219,7 +219,7 @@ plugins:
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: Anleitungen
-            Attribute Form: Attributformular
+            Attribute Form: Attribute Form
             Technical reference: Technische Hinweise
             Success stories: Erfolgsgeschichten
           palette:
@@ -250,7 +250,7 @@ plugins:
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: Tutoriels
-            Attribute Form: Formulaire d'attribut
+            Attribute Form: Attribute Form
             Technical reference: Documentation technique
             Success stories: Projets témoin
           palette:
@@ -281,7 +281,7 @@ plugins:
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: Guide Passo-Passo
-            Attribute Form: Modulo Attributi
+            Attribute Form: Attribute Form
             Technical reference: Documentazione tecnica di riferimento
             Success stories: Storie di successo
           palette:
@@ -341,7 +341,7 @@ plugins:
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: Guias de instruções
-            Attribute Form: Formulário de atributos
+            Attribute Form: Attribute Form
             Technical reference: Referência técnica
             Success stories: Histórias de sucesso
           palette:
@@ -372,7 +372,7 @@ plugins:
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: Guías de uso
-            Attribute Form: Formulario de atributos
+            Attribute Form: Attribute Form
             Technical reference: Referencia técnica
             Success stories: Historias de éxito
           palette:
@@ -431,7 +431,7 @@ plugins:
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: Kuinka teen oppaat
-            Attribute Form: Attribuuttilomaketta
+            Attribute Form: Attribute Form
             Technical reference: Tekniset viitteet
             Success stories: Success stories
           palette:
@@ -463,7 +463,7 @@ plugins:
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: How-to guides
-            Attribute Form: Rormularului atributului
+            Attribute Form: Attribute Form
             Technical reference: Referință tehnică
             Success stories: Success stories
           palette:
