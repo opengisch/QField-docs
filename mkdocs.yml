@@ -250,7 +250,7 @@ plugins:
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
             How-to guides: Tutoriels
-            Attribute Form: Attribute Form
+            Attribute Form: Formulaire d'attribut
             Technical reference: Documentation technique
             Success stories: Projets témoin
           palette:
