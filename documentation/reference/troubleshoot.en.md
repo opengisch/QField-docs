@@ -11,13 +11,20 @@ This guide will walk you through how to use these tools to troubleshoot effectiv
 ## Official QFieldCloud Status Page
 
 The official [QFieldCloud Status](https://status.qfield.cloud/)<!-- markdown-link-check-disable-line -->
-Page provides real-time information on the service's operational status. You can use it to check for:
+Page provides real-time information on the service's operational status.
+
+You can use the status page to check for:
 
 - Current System Status: See if all services are running normally.
 - Ongoing Incidents: Get details on any active issues the team is working to resolve.
 - Scheduled Maintenance: Find out about planned maintenance that might temporarily affect service availability.
 
 This page can quickly tell you if the problem you're experiencing is part of a wider issue.
+
+In the event of a service disruption or degraded performance, an incident banner will be prominently displayed at the top of the QFieldCloud dashboard.
+This banner provides a brief description of the issue, a timestamp, and a link to the status page for more comprehensive information.
+
+!![](../assets/images/qfc_incident_banner.png,800px)
 
 ## How to troubleshoot in QField
 
