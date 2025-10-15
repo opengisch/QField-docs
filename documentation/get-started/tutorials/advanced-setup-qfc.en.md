@@ -144,72 +144,77 @@ The functionality is activated through a project setting, allowing remote activa
 
 How to create a project in an organization:
 
-### Option 1: Using QField Sync
+!!! workflow
 
-1. Follow the steps [configure your cloud project](#create-and-configure-your-cloud-project), until you get to the "Project details".
+    ### Option 1: Using QField Sync
 
-2. Change the owner of the project to your Organization.
+    1. Follow the steps [configure your cloud project](#create-and-configure-your-cloud-project), until you get to the "Project details".
 
-    ![Project files over view in QFieldCloud](../../assets/images/converting-project-to-organization-01.png)
+    2. Change the owner of the project to your Organization.
 
-3. Click on "Create" to start the conversion and Synchronisation.
-When finished the project will appear in the list of projects of your Organization in QFieldCloud.
+        ![Project files over view in QFieldCloud](../../assets/images/converting-project-to-organization-01.png)
 
-    ![Project files overview in QFieldCloud](../../assets/images/converting-project-to-organization-02.png)
+    3. Click on "Create" to start the conversion and Synchronisation.
+        When finished the project will appear in the list of projects of your Organization in QFieldCloud.
 
+        ![Project files overview in QFieldCloud](../../assets/images/converting-project-to-organization-02.png)
 
-### Option 2: Using QFieldCloud
+    ![type:video](../../assets/videos/project_creation_in_an_organisation_001.webm)
 
-1. In the QFieldCloud landing page direct to your organization.
+    ### Option 2: Using QFieldCloud
 
-    ![Entering into Organization](../../assets/images/project_organization_01_entering_into_organization.png)
+    1. In the QFieldCloud landing page direct to your organization.
 
-2. Click on "Create a project".
+        ![Entering into Organization](../../assets/images/project_organization_01_entering_into_organization.png)
 
-    ![Creating Project](../../assets/images/project_organization_02_creating_project.png)
+    2. Click on "Create a project".
 
-3. Select "Create a new empty project"
+        ![Creating Project](../../assets/images/project_organization_02_creating_project.png)
 
-    ![New empty project](../../assets/images/project_organization_03_new_empty_project.png)
+    3. Select "Create a new empty project"
 
-4. You can see the new project in the overview.
+        ![New empty project](../../assets/images/project_organization_03_new_empty_project.png)
 
-    ![New project created](../../assets/images/project_organization_04_new_project_created.png)
+    4. You can see the new project in the overview.
 
-5. In QGIS open QFieldSync and you will see the new project listed, click on "Edit Selected Cloud Project".
+        ![New project created](../../assets/images/project_organization_04_new_project_created.png)
 
-    ![QFieldSync](../../assets/images/project_organization_05_qfield_sync.png)
+    5. In QGIS open QFieldSync and you will see the new project listed, click on "Edit Selected Cloud Project".
 
-6. Choose the folder where you want to save the project.
+        ![QFieldSync](../../assets/images/project_organization_05_qfield_sync.png)
 
-    ![Selecting folder](../../assets/images/project_organization_06_selecting_folder.png)
+    6. Choose the folder where you want to save the project.
 
-7. In the selected folder, you can either paste an already worked-on project or save a new one.
+        ![Selecting folder](../../assets/images/project_organization_06_selecting_folder.png)
 
-    ![Copy to project folder](../../assets/images/project_organization_07_copy_project_to_folder.png)
+    7. In the selected folder, you can either paste an already worked-on project or save a new one.
 
-8. Once the folder contains the project, you can synchronize it.
+        ![Copy to project folder](../../assets/images/project_organization_07_copy_project_to_folder.png)
 
-    ![QFieldSync Overview](../../assets/images/project_organization_08_qfield_sync_overview.png)
+    8. Once the folder contains the project, you can synchronize it.
 
-9. Finally, push the changes to the cloud.
+        ![QFieldSync Overview](../../assets/images/project_organization_08_qfield_sync_overview.png)
 
-    ![Pushing changes to QFieldCloud](../../assets/images/project_organization_09_pushing_changes_to_cloud.png)
+    9. Finally, push the changes to the cloud.
 
-10. You can verify that the files are present in the Organization project.
+        ![Pushing changes to QFieldCloud](../../assets/images/project_organization_09_pushing_changes_to_cloud.png)
 
-    ![Project files over view in QFieldCloud](../../assets/images/project_organization_10_files_overview_in_cloud.png)
+    10. You can verify that the files are present in the Organization project.
 
-### Option 3: Changing the Ownership of a project
+        ![Project files over view in QFieldCloud](../../assets/images/project_organization_10_files_overview_in_cloud.png)
 
-1. On the QFieldCloud landing page, click on your project of concern.
-2. Direct to the *Settings* and select "Transfer ownership of this project" and choose the desired Organization for the transfer.
+    ### Option 3: Changing the Ownership of a project
 
-    ![Transferring to Organization](../../assets/images/project_organization_11_transfering_to_organization.png)
+    1. On the QFieldCloud landing page, click on your project of concern.
+    2. Direct to the *Settings* and select "Transfer ownership of this project" and choose the desired Organization for the transfer.
 
-3. A pop-up window will appear to confirm the transfer. To proceed, you will need to type the requested text and click "Transfer project".
+        ![Transferring to Organization](../../assets/images/project_organization_11_transfering_to_organization.png)
 
-    ![Confirm transfer](../../assets/images/project_organization_12_confirming_transfer.png)
+    3. A pop-up window will appear to confirm the transfer. To proceed, you will need to type the requested text and click "Transfer project".
+
+        ![Confirm transfer](../../assets/images/project_organization_12_confirming_transfer.png)
+
+    ![type:video](../../assets/videos/project_creation_in_an_organisation_003.webm)
 
 ## Activate email notifications for QFieldCloud changes
 
