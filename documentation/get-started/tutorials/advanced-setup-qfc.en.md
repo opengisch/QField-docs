@@ -161,7 +161,7 @@ How to create a project in an organization:
 
     ![type:video](../../assets/videos/project_creation_in_an_organisation_001.webm)
 
-    ### Option 2: Using QFieldCloud
+    ### **Option 2: Using QFieldCloud**
 
     1. In the QFieldCloud landing page direct to your organization.
 
