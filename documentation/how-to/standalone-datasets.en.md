@@ -29,6 +29,7 @@ The supported raster formats are:
 - JPEG (.jpg, .jpeg);
 - PNG (.png); and
 - WebP (.webp)
+- VRT (Virtual Raster) (.vrt)
 
 Supported point cloud formats:
 
