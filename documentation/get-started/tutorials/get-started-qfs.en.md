@@ -57,7 +57,7 @@ Depending on the layer type, different types of actions are available:
 - ***Copy*** (only available for file-based layers (eg. Gpkg, Shp, Tiff)): The layer will be copied to the packaged project folder but **not be tracked**.
 A new copy in the packaged project folder will be made.
 
-- ***Keep existing (copy if missing)**: The layer source will be left untouched.
+- ***Keep existing (copy if missing)***: The layer source will be left untouched.
 In the case of a long-term project, where synchronization is frequently happening, it is advisable to use this option to not re-package the file every time.
 
 - ***Offline editing***: The layer is copied into the packaged project folder.
