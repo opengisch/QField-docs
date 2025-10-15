@@ -202,8 +202,8 @@ This applies for longitude, latitude and altitude.
         - ***Altitude:*** `z(@position_coordinate)`
 
     This will save the coordinate directly in the field when adding a new feature.
-    !!! Note
 
+    !!! Note
         This only works if positioning is turned on.
 
 ### Vertex log layer
@@ -214,11 +214,9 @@ It enables you to keep track of the meta data for each vertex like [GNSS quality
 !!! Workflow
 
     1. Add a point layer to the project and attributes configured to store this information.
-
         !![](../assets/images/vertex_log1.png)
     2. Assign the role *digitizing logger* to a point layer.
     3. Go to > *Project* > *Properties...* > *QField*.
-
         !![](../assets/images/vertex_log2.png)
     4. Set default values to the attributes using the positioning variables mentioned above.
 
