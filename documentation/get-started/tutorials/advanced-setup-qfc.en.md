@@ -142,7 +142,10 @@ The functionality is activated through a project setting, allowing remote activa
 
 ## Project creation in an organisation
 
-How to create a project in an organization:
+There are several ways in which you can create and upload a project to QField.
+- Using QFieldSync
+- Using QFieldCloud 
+- Change of ownership
 
 !!! workflow
 
