@@ -10,7 +10,7 @@ There are two ways in which you can access the general settings.
 
 !!! Workflow
 
-    ** Access settings from Home Screen**
+    **Access settings from Home Screen**
 
     1. When opening QField tap on the settings button on the top left of the screen.
 
