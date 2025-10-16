@@ -144,7 +144,7 @@ The functionality is activated through a project setting, allowing remote activa
 
 There are several ways in which you can create and upload a project to QField.
 - Using QFieldSync
-- Using QFieldCloud 
+- Using QFieldCloud
 - Change of ownership
 
 !!! workflow
