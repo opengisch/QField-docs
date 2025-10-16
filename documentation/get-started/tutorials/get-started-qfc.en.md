@@ -15,9 +15,7 @@ You can further manage teams, work in organisations, assign different editing pe
 
 !!! Workflow
     1. Go to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
-
     2. (Optionable) If you have a received a referral code, please enter it in the according field.
-
         !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
 ## QFieldCloud Overview
@@ -43,21 +41,15 @@ In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS. The 
 !!! Workflow
     1. Open the QGIS plugin manager by going to the *Plugins* > *Manage and install Plugins*.
     2. Under "All" find QFieldSync in the list  and install the latest version by clicking the "Install Plugin" button.
-
         !![Successful installation](../../assets/images/install_qfieldsync.png)
-
         After successful installation, a new toolbar appears:
-
         !![Toolbar](../../assets/images/qfieldsync_toolbar.png,200px)
-
     3. Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar and a new login screen will appear:
-
         ![](../../assets/images/qfieldsync_login_dialog.png,250px)
-
     4. Enter your credentials previously created during account registration.
 
 !!! Warning
-    If you use a password in QGIS for the first time, it will ask you to set a master password that manages all the other passwords used in QGIS. More information about the master password here: [QGIS documentation](https://docs.qgis.org/3.4/en/docs/user_manual/auth_system/auth_overview.html#master-password)
+    If you use a password in QGIS for the first time, it will ask you to set a master password that manages all the other passwords used in QGIS. More information about the master password here: [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/auth_system/auth_overview.html#master-password)
 
 ## Project Overview in QFieldSync
 
@@ -86,7 +78,6 @@ The icons indicate the cloud and local status of the different projects.
 
 - **Cloud status**: There are three different types of status indicated by a color which show the current status of your cloud project.
 The status of each project is shown with a tooltip.
-
     - **Red Status:** The project is invalid and is not ready-for use in the field.
     There are multiple reasons for this and the status message on your QFieldCloud landing page is the first step to address the issue.
     - **Brown Status:** The project is currently being updated or edited.
@@ -99,7 +90,6 @@ The status of each project is shown with a tooltip.
 !!! Workflow
     1. Create a new project by clicking the cloud button on the bottom-left.
     2. Choose how to create the new project:
-
         - **Convert currently open project to cloud project**: A new project is created from the currently opened QGIS project.
             The project files will be copied to an export directory.
             Vector datasets will be converted to one single GeoPackage to facilitate data synchronization from multiple devices.
@@ -107,23 +97,21 @@ The status of each project is shown with a tooltip.
         - **Create a new empty QFieldCloud project**: Your current project location will be converted to the QFieldCloud project.
             All files available in the project need to be stored in the same directory.
             The location of the project file is the project root.
-
     3. Project files will only be uploaded when you click the synchronize button.
         Make sure the selected contains no more than one QGIS project file.
-
         !![Project details](../../assets/images/create_project.png)
-
     4. A form will ask you for project name, description and local directory.
         In the local directory you can get different situations:
 
-        * "The entered path does not contain a QGIS project file yet"
-        * The entered path contains one QGIS project file.
-        * Please select local directory where the project to be stored.
-        * The entered path is a relative path. Please enter an absolute directory path.
-        * The entered path is not an directory. Please enter a valid directory path.
-        * The entered path is not an existing directory. It will be created after you submit this form.
-        * Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
-        !![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
+        - "The entered path does not contain a QGIS project file yet"
+        - The entered path contains one QGIS project file.
+        - Please select local directory where the project to be stored.
+        - The entered path is a relative path. Please enter an absolute directory path.
+        - The entered path is not an directory. Please enter a valid directory path.
+        - The entered path is not an existing directory. It will be created after you submit this form.
+        - Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
+
+    !![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
 
 ### QField Project Settings
 
@@ -132,9 +120,9 @@ It is also available in the QFieldSync toolbar ![](../../assets/images/project_p
 Under these settings you can configure the following:
 
 - How your project layers should be treated in the cloud. See [Get Started guide for QFieldSync](./get-started-qfs.md) to get more details on the different "Packaging Actions".
-- Enable ["geofencing"](../../how-to/geofencing.en.md)<!-- markdown-link-check-disable-line -->
+- Enable ["geofencing"](../../how-to/navigation-and-positioning/geofencing.md)
 - Assign a digitizing log layer.
-- Specify the layer that will be active for editing after selecting a [Map Theme](../../how-to/map-themes.en.md) <!-- markdown-link-check-disable-line -->
+- Specify the layer that will be active for editing after selecting a [Map Theme](../../how-to/qfield-interface/map-themes.md)
 
 We recommend to work with GeoPackages, especially when working in teams. See the [advanced setup guide](advanced-setup-qfc.md) for more information about vector formats.
 
@@ -148,11 +136,8 @@ Once configured, the project can be uploaded to QFieldCloud.
 !!! Workflow
     1. Press the cloud icon with the arrows via the QFieldSync toolbar.
     Here you have to decide what you prefer:
-
       - **The Local file**: This will replace your cloud file with a new version of the project.
-
           **Note**: When working with GeoPackages, the current version of the file in the cloud will be replaced with the local version.
-
       - **The Cloud file**: This will amend your local datasets and replace your project file with the current one.
 
 !![Synchronize](../../assets/images/getting_started_synchronize.png)
@@ -168,15 +153,10 @@ When you are ready for your fieldwork it is time to setup QField on your mobile 
 
 !!! Workflow
     1. Download and install the latest version of QField from Google's play store, Apple's app store, or by [downloading the latest release for Windows, Linux, or macos](https://github.com/opengisch/QField/releases).
-
     2. Direct to *Cloud Projects* and log in to QFieldCloud on your mobile device
-
         !![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
-
         !![Login](../../assets/images/getting_started_login.png,250px)
-
     3. Select a project to download on your device:
-
         !![Download](../../assets/images/getting_started_download_project.png,250px)
 
 ### Synchronization with QFieldCloud
@@ -187,17 +167,13 @@ This can either be done manually or automatically if necessary.
 !!! Workflow
     1. Open the *Side Dashboard*
     2. Click on the blue cloud (there should be a number indicating how many changes you have made).
-
         !![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
-
     3. Choose an action with the change you made to your data.
         Each of the actions have an explanation what you should expect to happen:
-
         - **Revert Changes:** All your local changes made since the last synchronization will be deleted.
         - **Push:** Only your local changes will be pushed to QFieldCloud.
         - **Synchronize:** All your changes will be pushed to QFieldCloud and merged with the version in the cloud.
             A new version of the cloud project (including the new changes from other collaborators) will be downloaded to your device.
-
         !![Actions](../../assets/images/getting_started_actions.png,250px)
 
 Your changes are now available to everyone who has access to your project on the cloud.

@@ -91,6 +91,19 @@ Read more on PG Service and Secrets [here](../how-to/pg-service.en.md)<!-- markd
 
     1. All changes should be directly visible inside the PostGIS database.
 
+!!! note
+    When using `direct database access`, QFieldCloud will directly edit data in the PostGIS database.
+    This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).
+
+!!! note
+    When using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database once synchronized by the user.
+    We recommend to use this option to avoid unnecessary data losses in case of lost data connection.
+
+    Changes will only be visible to users once the Synchronisation via QFieldCloud has been applied on the different devices.
+    When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
+
+You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/jobs.md).
+
 ## Restriction of Project Files
 
 To prevent any modification to the core QGIS project file, **the project administrators** can restrict the access to these files.
@@ -122,7 +135,6 @@ The functionality is activated through a project setting, allowing remote activa
 :material-monitor: Desktop preparation
 
 1. **Access Project Settings**: Direct to *Project* > *Properties...* > *QField* > *QFieldCloud Packaging*
-
 2. **Enable Auto-Push**: Toggle the "Automatically push pending changes on the following interval" option and establish your preferred interval.
 
 !![Auto push QFieldSync](../../assets/images/auto-push-pending-changes-qfieldsync.png)
@@ -131,12 +143,9 @@ The functionality is activated through a project setting, allowing remote activa
 
 !!! note
     **Benefits:**
-
     - *Real-Time Updates*: Ensures prompt Synchronisation of field data with the QFieldCloud project.
     - *Streamlined Workflow*: Minimizes manual intervention and ensures surveyors do not need to worry about Synchronisation, helping them focus on data quality.
-
     **Considerations:**
-
     - *Network Stability*: Ensure stable internet connectivity for auto-push functionality.
     - *Battery Optimization*: Implement strategies to mitigate battery consumption on QField devices during prolonged fieldwork.
 
@@ -226,7 +235,7 @@ If you wish to be notified by QFieldCloud what happens to your team(s) and your 
 
 1. On your QFieldCloud landing page direct to *settings*.
 2. Navigate to the notifications section.
-Here, you can customize the frequency of notifications you wish to receive at the email address registered with your account.
+    Here, you can customize the frequency of notifications you wish to receive at the email address registered with your account.
 
 ![Synchronize](../../assets/images/frequency_notifications_settings.png)
 
@@ -294,7 +303,7 @@ If your project contains photos, documents or other attachments, you have to con
 
 1. In QGIS navigate to *Project* > *Properties...* > *QField*.
 2. Add your folder's path to the "Attachments and Directories" list.
-The path you enter must be relative to the location of your project file.
+    The path you enter must be relative to the location of your project file.
 
 !!! example
     You used pictures for a specific symbology.
@@ -329,7 +338,7 @@ You can modify the default that QField and QFieldSync connect to:
 2. Double-tap on the Nyuki icon (the QFieldCloud logo).
 3. This action will reveal a field where you can enter the preferred QFieldCloud server address.
 4. Enter the details of the desired server in the provided field.
-(Leaving the field empty will automatically connect to the [QFieldCloud server](https://app.qfield.cloud/))
+(Leaving the field empty will automatically connect to the default [QFieldCloud server](https://app.qfield.cloud/))
 
 !![Revealing server in QFieldSync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
 
