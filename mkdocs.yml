@@ -27,6 +27,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - search.share
     - content.action.edit
   logo: assets/images/qfield_logo_white.svg
   favicon: assets/images/favicon.ico
