@@ -94,6 +94,7 @@ If you have connected to PostGIS using the PG Service file and, it is also neces
 
 If you copy your projects via cable to your device, you will also have to copy the service file to the right directory on your device.
 Generally, the QField directory for Android can be found under `/Android/data/ch.opengis.qfield/files/QField.`
+
 !!! Note
 
     **1.** Due to the restrictions of Android, you will only be able to access the directory when being connected via cable to the computer.
@@ -159,18 +160,23 @@ There are many options to organize this, [read more in the PostgreSQL documenta
 
 !![QGIS System Environment Variables](../../assets/images/service_config_file_002.png)
 
-1. **Test the Connection in QGIS**: Open QGIS and set up a new PostgreSQL connection using the service name defined in `pg_service.conf` (e.g., `[MY_QGIS_DB]`) in the connection details.
-QGIS will read configuration from `pg_service.conf` automatically.
 
-   - Open QGIS.
-   - Go to *Layer* > *Add Layer* > *Add PostGIS Layers...*
-   - In *Create a New PostGIS Connection*, select "Service" from the drop-down menu.
-   - Enter the service name from `pg_service.conf` (e.g., `[NINJA_DB]`) in the "Service" field.
-   - Click "OK" to connect to your PostgreSQL database using configurations from `pg_service.conf`.
+    Refer to [QGIS System Settings](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details.
 
-!![Test your connections](../../assets/images/service_config_file_003.png,350px)
+### Using Client Certificates
 
-1. **Add Parameter to QFieldCloud Secrets**: Navigate to the project's secrets page and copy the service directly from `.pg_service.conf` to the secret.
-Follow [Secrets](../../reference/qfieldcloud/secrets.md) for guidance.
+It is possible for you to use client certificates to verify the identity while connecting to a PostgreSQL server by defining additional parameters in your `pg_service.conf`, namely `sslcert`, `sslkey`, and `sslrootcet`.
 
-!![Add the secret](../../assets/images/service_config_file_004.png,350px)
+   ```ini
+   [SERVICE_NAME]
+   host=your_host_or_ip
+   port=your_port
+   dbname=your_database_name
+   user=your_username
+   password=your_password
+   sslcert=client.crt
+   sslkey=client.key
+   sslrootcert=server.crt
+   ```
+
+These parameters must point to valid certificate and key files and placed directly alongside your `pg_service.conf` file within the QField data folder. For more information on this identification method, refer to the [PostgreSQL documentation](https://www.postgresql.org/docs/current/libpq-ssl.html#LIBPQ-SSL-CLIENTCERT).
