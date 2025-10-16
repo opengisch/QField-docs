@@ -488,7 +488,7 @@ plugins:
           # vi: Vietnamese
           nav_translations:
             Home: Home
-            Get started: Get started
+            Get started: Începeți
             Tutorials: Tutorials
             QFieldCloud: QFieldCloud
             QFieldSync: QFieldSync
