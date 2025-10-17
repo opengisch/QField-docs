@@ -6,42 +6,86 @@ tx_slug: documentation_how-to_bookmarks
 # Bookmarks
 
 QField allows you to save and display bookmarks that will be remembered across sessions and projects.
+By default, QField will display bookmarks as marker overlays over the map.
+Added bookmarks within QField are displayed across all projects and datasets.
 
 ## Viewing bookmarks
 :material-tablet: Fieldwork
 
-By default, QField will display bookmarks as marker overlays over the map. User-added bookmarks are displayed across all projects and datasets.
+There are two ways to engage with the bookmark:
 
-A single tap on a marker will display the bookmark name while a double tap will set the map extent to re-center around the bookmark location.
+- **Single tap**: Displays the bookmark name
+- **Double tap**: Re-centers the current map extent around the bookmark location.
 
 !![](../../assets/images/bookmarks.png)
 
-You can also use the top search bar to find bookmarks and click on matching bookmark names to move the map extent to re-center around the bookmark location.
+## Bookmarks Search
 
-!![](../../assets/images/bookmarks-search.png)
+!!! Workflow
 
-QField also offers a setting to toggle off the displaying of bookmarks, which can be found in the settings panel.
+    1. Tap on the search bar
+    2. Search for a bookmark name and click on the matching one.
+    The map extent will re-center to the bookmark location.
+    3. (Optional) if you type "b" in the searchbar in the beginning, the search function will only browse through the bookmarks.
 
-!![](../../assets/images/bookmarks-toggle.png)
+        !![](../../assets/images/bookmarks-search.png)
 
-## Adding bookmarks
-:material-tablet: Fieldwork
+## Enable Bookmarks
 
-To add a new bookmark, simply tap and hold any part of the map and select the *Add Bookmark* action within the popped up menu.
+!!! Workflow
 
-!![](../../assets/images/bookmarks-add-from-touch.png)
+    :material-tablet: Fieldwork
 
-After selecting this action, a panel will appear offering you the possibility to rename the bookmark and select the color used to draw its map marker overlay.
 
-!![](../../assets/images/bookmarks-properties.png)
+    1. Open the Side Dashboard.
+    2. Tap on the three dots and select *Settings*.
+    3. Direct to *general settings* and "Enable Bookmarks".
 
-It is also possible to add a bookmark at the current device's location when positioning is enabled. To do so, simply tap and hold on the positioning button at the lower right corner and select the *Add Bookmark at Location* action.
+        !![](../../assets/images/bookmarks-toggle.png)
 
-!![](../../assets/images/bookmarks-add-from-location.png)
+## Adding a new bookmark
 
-!!! note
+!!! Workflow
+
+     :material-tablet: Fieldwork
+
+
+     1. To add a new bookmark, simply tap and hold any part of the map
+     2. Tap the "Add Bookmark" action within the popped up menu.
+
+        !![](../../assets/images/bookmarks-add-from-touch.png)
+
+     3. Rename the bookmark and select a preferred color which will be used as a marker.
+
+        !![](../../assets/images/bookmarks-properties.png)
+
+    *Add bookmark with enabled location*
+    1. Tap and hold on the positioning button at the lower right corner.
+    2. Tap on the "Add Bookmark at Location" action.
+
+     !![](../../assets/images/bookmarks-add-from-location.png)
+
+!!! Tip
     When adding a bookmark, the current map scale is taken into consideration to save an extent centered around the tapped coordination or current location. This allows you to determine the extent that will be used when double-tapping on a bookmark marker or selecting a bookmark item in the search bar.
 
 ## Project bookmarks
 
-QField can display and search for project-embedded bookmarks. The addition and management of such bookmarks is done [in QGIS itself](https://docs.qgis.org/latest/en/docs/user_manual/introduction/browser.html#spatial-bookmarks).
+When preparing a QGIS project for fieldwork, it may also be useful for you to enter a few bookmarks, which may be helpful for the field officers.
+Luckily, QField can display and search for project-embedded bookmarks.
+The addition and management of such bookmarks is done [in QGIS itself](https://docs.qgis.org/latest/en/docs/user_manual/introduction/browser.html#spatial-bookmarks).
+
+!!! Workflow
+
+    :material-desktop: Desktop
+
+    1. In QGIS choose a location for your bookmark.
+    2. There are three options to add a spatial bookmark:
+        - Through the file browser.
+        - Through the menu panel
+        - Using the shortcut "CTRL + B"
+    3. Choose your preferred option and enter a name
+    4. (Optional) you can set a map extent, if you want to specify the zoom level.
+    5. (Optional) you can also create different groups for your bookmarks, in case that you have a lot of places to revisit.
+    6. (Optional) maybe you want the marker of the bookmark to point in a certain direction, in which case you can rotate the marker symbol.
+
+    !![Spatial Bookmark QGIS](../../assets/images/bookmarks-qgis.png,600px)
