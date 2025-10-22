@@ -35,7 +35,7 @@ It is not safe to store your database credentials in the QGIS Project File.
 
     If you have added the access credentials in the "Authentication" section as described above, QField will be able to directly start editing and adding new features.
 
-    !![Adding PostGIS connection](../assets/images/pg-service_manual_connection.png,400px)
+    !![Adding PostGIS connection](../../assets/images/pg-service_manual_connection.png,400px)
 
 ### Connection via PG service
 
@@ -58,7 +58,7 @@ We recommend using this plugin and will show you below how to use it.
     3. Once installed, in the QGIS toolbar, the same icon should appear.
     4. Upon clicking on the icon a new window will appear.
     5. If you never set-up a service file before, the plugin will automatically create a new file in a proper default directory, which ensures QGIS will be able to read it.
-    !![Create config file](../assets/images/pg-service_create_config_file.png,500px)
+    !![Create config file](../../assets/images/pg-service_create_config_file.png,500px)
 
     6. Click on "Create file at default location" and leave the default name.
 
@@ -72,7 +72,7 @@ We recommend using this plugin and will show you below how to use it.
     4. Once you are done, click on the Update service button so save the configuration.
     5. Keep the window open, as we will use it in the next section.
 
-    !![Service details](../assets/images/pg-service_service_details.png)
+    !![Service details](../../assets/images/pg-service_service_details.png)
 
     **Connection to PostGIS via service**
 
@@ -161,7 +161,7 @@ There are many options to organize this, [read more in the PostgreSQL documenta
 !![QGIS System Environment Variables](../../assets/images/service_config_file_002.png)
 
 
-    Refer to [QGIS System Settings](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details.
+Refer to [QGIS System Settings](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details.
 
 ### Using Client Certificates
 

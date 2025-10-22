@@ -72,11 +72,11 @@ For the apiary_picture layer, you will have to change the widget type to *Attach
     3. Set the default value to `uuid('WithoutBraces')`.
     4. Hide it from the view as it should not be edited by the user.
 
-!![widgets](../../assets/images/add-1-n-pictures-widgets_hive.png "")
+    !![widgets](../../assets/images/add-1-n-pictures-widgets_hive.png "")
 
-Set the relation widget to *many to one relation* and add the relation to the form
+    Set the relation widget to *many to one relation* and add the relation to the form
 
-!![widgets](../../assets/images/add-1-n-pictures-widgets_hive2.png "")
+    !![widgets](../../assets/images/add-1-n-pictures-widgets_hive2.png "")
 
     **Apiary_picture**
 
@@ -84,7 +84,7 @@ Set the relation widget to *many to one relation* and add the relation to the fo
     2. Set the widget type of the field `path` to *Attachment*
     3. Add it to the form layout.
 
-!![widgets](../../assets/images/add-1-n-pictures-widgets_picture.png "")
+    !![widgets](../../assets/images/add-1-n-pictures-widgets_picture.png "")
 
 ## Drawing and sketching
 
