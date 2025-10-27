@@ -69,7 +69,7 @@ There are two possible ways, in which the access to the database can be saved an
 1. **Direct Connection:** When connecting to a PostGIS database, you can store all information including the credentials inside the QGIS Project directly.
 2. **Using a PG Service File:** Using a service file that can be saved as a "secret" in QFieldCloud.
 We highly recommend to make use of this option due to data safety.
-Read more on PG Service and Secrets [here](../how-to/pg-service.en.md)<!-- markdown-link-check-disable-line -->
+Read more on PG Service and Secrets [here](../../how-to/project-setup/pg-service.md)
 
 !!! Workflow
 
