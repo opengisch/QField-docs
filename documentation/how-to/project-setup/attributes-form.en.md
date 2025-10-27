@@ -14,23 +14,33 @@ It works the same way as it does for a regular QGIS project, but with a few diff
 To configure a form you have to open the vector layer's *Properties* > *Attribute form* in QGIS.
 
 Depending on what behaviour you want for your different attributes, you can choose different "widget types".
-Below is an overview what widget types are available and supported.
+Below is an overview what types are available and supported in QField.
 
 | Widget type        | Support          | Notes                                                                                                                                                                                                  |
-|--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text Edit          | :material-check: | - HTML is not supported <br> - Numeric input is enforced based on the field type.                                                                                                                          |
-| Check Box          | :material-check: |                                                                                                                                                                                                        |
-| Value Map       | :material-check: | dropdown or radio button (unique to QField only)                                                                                                                                                                                                        |
-| Hidden             | :material-check: |                                                                                                                                                                                                        |
-| Attachment         | :material-check: | This field is combined with camera integration. <br> It is also able to open other files like pdf and doc (if you have an appropriate viewer) [Attachment (photo settings)](#attachment-widget) |
-| Date Time          | :material-check: |                                                                                                                                                                                                        |
-| Range              | :material-check: |                                                                                                                                                                                                        |
-| Relation Reference | :material-check: |                                                                                                                                                                                                        |
-| Relation Editor    | :material-check: |                                                                                                                                                                                                        |
-| Value Relation     | :material-check: |                                                                                                                                                                                                        |
-| UUID Generator     | :material-check: |                                                                                                                                                                                                        |
-| QML / HTML Widget  | :material-check: |                                                                                                                                                                                                        |
-| Others             | :material-close: | [Funding](../../get-started/contribute.md#feature-sponsoring)                                                                                                                                      |
+|--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Attachment         | :material-check: | This field is combined with camera integration, to know more jump to [Attachment (photo settings)](#attachment-widget)   |
+| Color              | :material-check: |                                                                                                                          |
+| Date / Time        | :material-check: |                                                                                                                          |
+| Checkbox           | :material-check: |                                                                                                                          |
+| Hidden             | :material-check: |                                                                                                                          |
+| Range              | :material-check: | Editable spinbox and slider                                                                                              |
+| Relation Editor    | :material-check: |                                                                                                                          |
+| Relation Reference | :material-check: |                                                                                                                          |
+| Text Edit          | :material-check: |                                                                                                                          |
+| Value Map          | :material-check: | Combobox or radio button (the latter unique to QField)                                                                   |
+| Value Relation     | :material-check: |                                                                                                                          |
+| UUID Generator     | :material-check: |                                                                                                                          |
+
+QField also supports all container-type widgets.
+
+| Widget type        | Support          | Notes                                                                                                                                                                                                  |
+|--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------|
+| QML widget         | :material-check: |                                                                                                                          |
+| HTML widget        | :material-check: |                                                                                                                          |
+| Text widget        | :material-check: |                                                                                                                          |
+| Spacer widget      | :material-check: |                                                                                                                          |
+
+For other attribute widget types not yet supported, consider [sponsoring an implementation](../../get-started/contribute.md#feature-sponsoring).
 
 ## General Attribute Settings
 
