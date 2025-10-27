@@ -47,7 +47,7 @@ If the layer linked to a tracking session supports the M dimension, QField will 
     1. Open the Side Dashboard and long-press on the layer which you want to use for tracking.
     2. Tap **Setup tracking** and a new window will appear showing the configuration settings.
 
-        !![](../assets/images/tracking-layer-properties.png,350px)
+        !![](../../assets/images/tracking-layer-properties.png,350px)
 
     3. Tap the **Start tracking** button to begin the tracking.
     4. Enter the attributes for the feature(s) about to be created.
@@ -55,7 +55,7 @@ If the layer linked to a tracking session supports the M dimension, QField will 
     6. Tap **Stop tracking** to finish the.
 
 
-    !![](../assets/images/tracking-stop.png)
+    !![](../../assets/images/tracking-stop.png)
 
 
 ## Resume to a Previous Session

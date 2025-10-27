@@ -142,24 +142,24 @@ The formats currently supported are:
 
     :material-tablet: Fieldwork
 
-    1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[App Directory](../get-started/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
+    1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
 
     2. Open the Site Dashboard
     3. Tap on the three-dots and direct to *Settings* > *Positioning*
 
-        !![](../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
+        !![](../../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
 
     4. Enable your GNSS device.
     It will directly center to your current location once the **positioning information** is available.
 
     5. Change to ***edit mode*** and press on the target button - the cross in the center means it is using GNSS positioning.
 
-        !![](../assets/images/gnss_use.webp,250px)
+        !![](../../assets/images/gnss_use.webp,250px)
 
         A long press on the **GNSS button** will show the **positioning menu**.
         Inside the menu you can turn on the **Show position information** which will show the current coordinates that are reprojected into the CRS of your project along with the precision information.
 
-     !![](../assets/images/positioning-menu.png)
+     !![](../../assets/images/positioning-menu.png)
 
     !!! note
         If you see WGS 84 lat/lon information instead of information in your project CRS, you probably have no signal yet.
@@ -214,10 +214,10 @@ It enables you to keep track of the meta data for each vertex like [GNSS quality
 !!! Workflow
 
     1. Add a point layer to the project and attributes configured to store this information.
-        !![](../assets/images/vertex_log1.png)
+        !![](../../assets/images/vertex_log1.png)
     2. Assign the role *digitizing logger* to a point layer.
     3. Go to > *Project* > *Properties...* > *QField*.
-        !![](../assets/images/vertex_log2.png)
+        !![](../../assets/images/vertex_log2.png)
     4. Set default values to the attributes using the positioning variables mentioned above.
 
 ## Using an external GNSS Receiver

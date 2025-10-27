@@ -48,7 +48,7 @@ Therefore, they must be unique.
     6. (Optional) If you want to filter your children further, you can use additional "expressions".
     7. Once finished click "ok"
 
-    !![](../assets/images/relation_editor_widget_list.png, 400px)
+    !![](..assets/images/relation_editor_widget_list.png, 400px)
 
     **Attribute Form Configuration - Referencing Layer**
 
@@ -71,9 +71,9 @@ It is possible to limit the number of available children for your related layer 
     1. Direct to Vector Layer *Properties...* > *QField*.
     2. Under "Relationship Settings" set the "Maximum number of items visible".
 
-    !![Maximum items visible for relation](../../assets/images/setting-maximum-items-visible-in-relation.png)
+    !![Maximum items visible for relation](../assets/images/setting-maximum-items-visible-in-relation.png)
 
-    !![QField Visible items](../../assets/images/maximum-items-visible-in-relation.png,300px)
+    !![QField Visible items](../assets/images/maximum-items-visible-in-relation.png,300px)
 
 ## Many-To-Many relations
 
