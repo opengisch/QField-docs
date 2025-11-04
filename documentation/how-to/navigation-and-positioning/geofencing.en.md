@@ -7,28 +7,25 @@ tx_slug: documentation_how-to_geofencing
 
 QField has a built-in geofencing functionality that can alert or inform users when the position provided by their GNSS device enters and/or leaves areas defined through polygon features.
 Digitizing of new features can also be prohibited when a geofencing alarm is turned on.
-
-## Defining geofenced areas
-:material-monitor: Desktop preparation
-
 Defining geofenced areas on QGIS happens with the help of the QFieldSync plugin.
-Simply open the project properties dialog and go to the QField panel, where you will find a checkbox to activate geofencing and a number of widgets to configure its behaviour.
 
-!![](../../assets/images/geofencing-settings.png)
+!!! Workflow
 
-The geofencing areas layer combobox allows you to pick a polygon vector layer from your project file.
-You can rely on any data provider, including online sources such as PostGIS databases.
+     ## Defining geofenced areas
+     :material-monitor: Desktop preparation
 
-Once a layer is chosen, you can choose between three geofencing behaviour:
+     1. *Project* > *Project Properties* > *QField*
+     2. Check the checkbox where it says "Geofencing"
+     3. Select the polygon layer that you wish to use as a "fence"
+     4. Select further the geofencing behaviour.
+     There exist to options by default:
+         - **Alert users when inside an area**: Whenever a user is entering one of the areas that define the geofenced area, the user will get a notification at the buttom of the screen.
+         - **Alert users when outside all areas**: Whenever a user is stepping outside the area that define the geofenced area, the user will get a notification at the bottom
+         - **inform users when entering and leaving areas**: A combination of the two other options.
+    !![](../../assets/images/geofencing-settings.png)
 
-- alert users when inside an area, where the polygons from the vector layer act as no-go areas
-- alert users when outside all areas, where the polygons from the vector layer act as safe areas
-- inform users when entering and leaving areas, where polygons from the vector layer act as areas of informed or warned about
+     5. Check the checkbox if you do not want the users to add new features within (1st option) or outside (2nd option) of the selected area.
 
-Finally, a checkbox allows you to prohibit the digitizing of new features when in geofencing's alert mode is activated by the first two behaviours above.
-When checked, users will not be able to digitize new features into the currently opened project.
-
-## Geofencing feedback
 
 When QField turns its geofencing alert on, a glowing read circle will appear at the bottom right corner of your device's screen.
 The visual queue will remain on the screen until the alert is turned off based on your selected behaviour.
