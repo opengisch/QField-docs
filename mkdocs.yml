@@ -70,6 +70,7 @@ nav:
           - how-to/general/projects.md
       - Project Setup:
           - how-to/project-setup/attributes-form.md
+          - how-to/project-setup/relation-reference-widget.md
           - how-to/project-setup/storage.md
           - how-to/project-setup/hiding-legend-nodes.md
           - how-to/project-setup/pg-service.md
