@@ -9,9 +9,10 @@ QField has a built-in geofencing functionality that can alert or inform users wh
 Digitizing of new features can also be prohibited when a geofencing alarm is turned on.
 Defining geofenced areas on QGIS happens with the help of the QFieldSync plugin.
 
+## Defining geofenced areas
+
 !!! Workflow
 
-     ## Defining geofenced areas
      :material-monitor: Desktop preparation
 
      1. *Project* > *Project Properties* > *QField*
@@ -19,9 +20,9 @@ Defining geofenced areas on QGIS happens with the help of the QFieldSync plugin.
      3. Select the polygon layer that you wish to use as a "fence"
      4. Select further the geofencing behaviour.
      There exist to options by default:
-         - **Alert users when inside an area**: Whenever a user is entering one of the areas that define the geofenced area, the user will get a notification at the buttom of the screen.
+         - **Alert users when inside an area**: Whenever a user is entering one of the areas that define the geofenced area, the user will get a notification at the bottom of the screen.
          - **Alert users when outside all areas**: Whenever a user is stepping outside the area that define the geofenced area, the user will get a notification at the bottom
-         - **inform users when entering and leaving areas**: A combination of the two other options.
+         - **Inform users when entering and leaving areas**: A combination of the two other options.
     !![](../../assets/images/geofencing-settings.png)
 
      5. Check the checkbox if you do not want the users to add new features within (1st option) or outside (2nd option) of the selected area.
