@@ -9,8 +9,8 @@ Sometimes it can be useful to relate different layers with each other when they 
 
 !!! Example
 
-    *In a building there are several appartments with different owners.
-    We can create a relation between the building and the appartments and between the appartments and the owners.*
+    *In a building there are several apartments with different owners.
+    We can create a relation between the building and the apartments and between the apartments and the owners.*
 
 In such a case we make use of the relation reference widget to be able to add new children or to select a child from the existing ones.
 
@@ -48,7 +48,7 @@ Therefore, they must be unique.
     6. (Optional) If you want to filter your children further, you can use additional "expressions".
     7. Once finished click "ok"
 
-    !![](../assets/images/relation_editor_widget_list.png, 400px)
+    !![](../../assets/images/relation_editor_widget_list.png, 400px)
 
     **Attribute Form Configuration - Referencing Layer**
 
@@ -105,15 +105,15 @@ To enable this functionality, however, you require a second plugin [Ordered Rela
 
          - **Image Path (Optional)**: Provide a path to an image or icon to visually enhance the list. This is an expression that resolves dynamically.
 
-    !![Widget configuration in QGIS](../assets/images/ordered_relation_widget_configuration.png)
+    !![Widget configuration in QGIS](../../assets/images/ordered_relation_widget_configuration.png)
 
-    !![QField](../assets/images/ordered_relation_widget.webp,400px)
+    !![QField](../../assets/images/ordered_relation_widget.webp,400px)
 
 ## Search in value relation and relation reference widget
 
 It is possible to search values in a *value relation* or *relation reference* widget using the magnifying glass next to the field.
 
-!![](../assets/images/autocomplete_search_value.webp,300px)
+!![](../../assets/images/autocomplete_search_value.webp,300px)
 
 !!! note
     Define the *display expression* for the concerned layers, this will be used for searching for features.

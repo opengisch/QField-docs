@@ -275,7 +275,7 @@ This is useful when certain attributes are only required under certain condition
 
     In QField it will look like in the video below.
 
-    !![](../assets/images/conditional_visibility.webp,300px)
+    !![](../../assets/images/conditional_visibility.webp,300px)
 
 
 ## Define Constraints
