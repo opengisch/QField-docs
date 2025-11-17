@@ -13,6 +13,10 @@ Projects must contain a single `.qgs`/`.qgz` QGIS file, and may in addition cont
 
 To ensure optimal performance, it is recommended to keep the size of any file sizes below 2GB.
 Larger files than this may take significantly longer to process and lead to [jobs](jobs.md) issues.
+It is therefore recommended to: 
+- Divide large files into smaller pieces
+- Check the [On-demand Attachment files download](../../get-started/tutorials/advanced-setup-qfc.md)
+The absolute maximum file size is 10 GB.
 
 Files cannot be shared between projects, unless [shared layers](../../how-to/advanced-how-tos/shared-datasets.md) are used.
 
