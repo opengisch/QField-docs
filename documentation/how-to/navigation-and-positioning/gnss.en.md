@@ -25,63 +25,49 @@ a builtin magnetic compass.
 A circle around your current position indicates the precision as reported by the
 positioning device.
 
-## Configuration
+## Positioning Settings
 
-The following settings are available in QField settings' positioning tab.
+Settings related to the positioning of your device or the connected GNSS device are available under the project settings.
 
-### Measure (M) value
+!!! Workflow
 
-When digitizing a geometry onto a vector layer that contains an M dimension,
-QField will add a measurement value to individual vertices whenever the
-coordinate cursor is locked to the current position.
+     1. *Direct to Side Dashboard Panel* > *3 dots* > *Settings* > *Positioning*
+     !![Positioning settings](../../assets/images/gnss_positioning.png, 500px   )
 
-By default, the value will represent the captured position's timestamp (milliseconds
-since epoch). You can change this value using the combo box in the settings'
-positioning tab.
+- **Positioning device in use:** By default, QField will use the internal device for positioning.
+If you are making use of an external GNSS device, you can change it under this section.
 
-The available values to chose from are timestamp, ground speed, bearing, horizontal
-accuracy and vertical accuracy as well as PDOP, HDOP and VDOP.
+- **Measuring M-Value:** When digitizing a geometry onto a vector layer that contains an M dimension, QField will add a measurement value to individual vertices whenever the coordinate cursor is locked to the current position.
+By default, the value will represent the captured position's timestamp (milliseconds since epoch).
+You can change this value using the combo box in the settings' positioning tab.
+The available values to chose from are timestamp, ground speed, bearing, horizontal accuracy and vertical accuracy as well as PDOP,
+HDOP and VDOP.
 
-### Accuracy requirement
+- **Accuracy requirement:** A minimum desired accuracy for measurements can be defined.
+The quality will be reported in three classes, bad (red), ok (yellow) and excellent (green).
+These colors will show up as a dot on top of the GNSS button.
 
-A minimum desired accuracy for measurements can be defined. The quality
-will be reported in three classes, bad (red), ok (yellow) and excellent
-(green). These colors will show up as a dot on top of the GNSS button.
+!!! Note
+     If the *Enable accuracy requirement* setting is activated, you will not be able to collect new measurements with the coordinate cursor locked to the current position with an accuracy value which is bad (red).
 
-The thresholds can be defined in the settings' positioning tab.
-
-If the *Enable accuracy requirement* setting is activated, you will not
-be able to collect new measurements with the coordinate cursor locked to
-the current position with an accuracy value which is bad (red).
-
-### Antenna height compensation
-
-The height of the antenna pole in use can be defined in the settings.
+- **Antenna height compensation:** The height of the antenna pole in use can be defined in the settings.
 Any measured altitude will be corrected by this value.
 
-### Altitude correction / vertical grid shift
-
-Altitude values can be corrected with vertical grid shift files to
-calculate orthometric height.
-
-Vertical grid shift files have to be made available to QField by putting
-them into the QField app folder **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/proj**.
-
-Once the grid shift file is placed there, it is available in QField in
-the *Positioning settings* under *Vertical grid shift in use*.
-
-If you are using altitude correction and an external positioning device
-is used, consider turning *Use orthometric altitude from device* off.
-
+- **Altitude correction / vertical grid shift:** Altitude values can be corrected with vertical grid shift files to calculate orthometric height.
+Vertical grid shift files have to be made available to QField by putting them into the QField app folder **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/proj**.
+Once the grid shift file is placed there, it is available in QField in the *Positioning settings* under *Vertical grid shift in use*.
+If you are using altitude correction and an external positioning device is used, consider turning *Use orthometric altitude from device* off.
 The formats currently supported are:
 
-- GeoTIFF (.tif, .tiff)
-- NOAA Vertical Datum (.gtx)
-- NTv2 Datum Grid Shift (.gsb)
-- Natural Resources Canada's Geoid (.byn)
+    - GeoTIFF (.tif, .tiff)
+    - NOAA Vertical Datum (.gtx)
+    - NTv2 Datum Grid Shift (.gsb)
+    - Natural Resources Canada's Geoid (.byn)
 
 
 !!! Workflow
+
+    ### Applying Altitude Correction
 
     **Example:  Netherlands - ETRS89 to NAP**
 
