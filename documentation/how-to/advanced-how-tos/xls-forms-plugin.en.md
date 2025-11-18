@@ -29,7 +29,6 @@ In the plugin manager in QGIS, the plugin ["XLS-form Converter"](https://github.
      Once it is installed it will appear in your processing box
         !![Processing](../../assets/images/xls-form-processing.png)
 
-
 ## Convert XLS Form to QGIS Project
 
 To convert an XLS Form you need to make sure you follow the standards and format of the original XLS Form.
@@ -42,3 +41,16 @@ Here is a [template](https://docs.google.com/spreadsheets/d/1v9Bumt3R0vCOGEKQI6E
     2. (Optional) In case you want to assign a specific name or a specific language to your project, fill in the dedicated fields.
 
         !![XLS Converter Process Interface](../../assets/images/xls-form-processing.png)
+    3. Select your preferred basemap:
+         - OpenStreetMap
+         - Humanitarian OpenStreetMap Team (HOT)
+    4. (Optional) You can directly turn your project into a QFieldCloud project if you check the according checkbox.
+    5. (Optional)Under **Advanced Parameters** you can further customize the settings of your project:
+         - Set your desired project extent
+         - Define a preferred coordinate reference system.
+        **Note**: By default the WGS 84: Pseudo Transmercator (EPSG:3857) will be used.
+         - "Pre-fill project with features' geometries and matching attributes" allows you to take an existing feature with the **exact** table names and add it to the project by default
+
+    6. Choose the location of where your project is stored.
+    7. Click "Run" and wait.
+    In case successful, the new project will be saved in your selected project folder.
