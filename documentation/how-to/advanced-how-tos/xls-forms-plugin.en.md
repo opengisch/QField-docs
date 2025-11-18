@@ -1,0 +1,44 @@
+---
+title: Temporal filtering
+tx_slug: documentation_xls-form_plugin
+---
+
+# XLS-Form Converter Plugin
+
+The [plugin XLS-Form Converter] was developed to directly transform existing XLS forms into QGIS projects that can be directly turned into QFieldCloud projects projects taking over all the configurations that exist in the XLS form.
+In QGIS the plugin needs to be loaded and then if desirable directly be turned into a QFieldCloud project ready to be used in the field.
+
+## XLS Forms
+
+XLS Forms is a standard used by several survey products such as [ODK](https://getodk.org/) or KoboToolbox(https://www.kobotoolbox.org/).
+XLS Forms is built on a spreadsheet format using Excel as the standard.
+In simple terms a survey is made up of several "Questions" that can be presented in different formats (integer, text, lists etc.)
+To learn more about the standard please visit [More about XLS forms](https://xlsform.org/en/)
+
+## Download the plugin
+
+In the plugin manager in QGIS, the plugin ["XLS-form Converter"](https://github.com/opengisch/XLSFormConverter) is available.
+
+!!! Workflow
+
+    1. Direct to *Plugins* > *Manage and Install Plugins* > *All*
+    2. Search for XLS-Form Converter and click "install Plugin".
+
+        !![XLS-Form Converter Plugin](../../assets/images/xls-form-plugin-interface.png)
+
+     Once it is installed it will appear in your processing box
+        !![Processing](../../assets/images/xls-form-processing.png)
+
+
+## Convert XLS Form to QGIS Project
+
+To convert an XLS Form you need to make sure you follow the standards and format of the original XLS Form.
+Here is a [template](https://docs.google.com/spreadsheets/d/1v9Bumt3R0vCOGEKQI6ExUf2-8T72-XXp_CbKKTACuko/edit?gid=1052905058#gid=1052905058), you can adapt in case you are more familiar with XLS Forms than QGIS.
+
+!!! Workflow
+
+    1. In QGIS Open the "Convert XLSForm to QGIS project" process from your Processing Toolbox.
+    2. Find the XLS Form in your file directory.
+    2. (Optional) In case you want to assign a specific name or a specific language to your project, fill in the dedicated fields.
+
+        !![XLS Converter Process Interface](../../assets/images/xls-form-processing.png)
