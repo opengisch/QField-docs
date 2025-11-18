@@ -20,7 +20,7 @@ It is therefore recommended to:
     - Divide large files into smaller pieces
     - Check the [On-demand Attachment files download](../../get-started/tutorials/advanced-setup-qfc.md)
 
-Files cannot be shared between projects, unless [shared layers](../../how-to/advanced-how-tos/shared-datasets.md) are used.
+Files cannot be shared between projects, unless [shared datasets](../../how-to/advanced-how-tos/shared-datasets.md) are used.
 
 QFieldCloud projects have a name and an owner.
 The owner of a project is a QFieldCloud user or an organization.
