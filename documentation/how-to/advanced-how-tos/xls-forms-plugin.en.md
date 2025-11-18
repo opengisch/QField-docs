@@ -10,9 +10,9 @@ In QGIS the plugin needs to be loaded and then if desirable directly be turned i
 
 ## XLS Forms
 
-XLS Forms is a standard used by several survey products such as [ODK](https://getodk.org/) or KoboToolbox(https://www.kobotoolbox.org/).
+XLS Forms is a standard used by several survey products such as [ODK](https://getodk.org/) or [KoboToolbox](https://www.kobotoolbox.org/).
 XLS Forms is built on a spreadsheet format using Excel as the standard.
-In simple terms a survey is made up of several "Questions" that can be presented in different formats (integer, text, lists etc.)
+In simple terms a survey is made up of several "Questions" that can be presented in different formats (integer, text, lists etc.).
 To learn more about the standard please visit [More about XLS forms](https://xlsform.org/en/)
 
 ## Download the plugin
@@ -24,10 +24,10 @@ In the plugin manager in QGIS, the plugin ["XLS-form Converter"](https://github.
     1. Direct to *Plugins* > *Manage and Install Plugins* > *All*
     2. Search for XLS-Form Converter and click "install Plugin".
 
-        !![XLS-Form Converter Plugin](../../assets/images/xls-form-plugin-interface.png)
+        !![XLS-Form Converter Plugin](../../assets/images/xls-form-plugin-interface.png,500px)
 
      Once it is installed it will appear in your processing box
-        !![Processing](../../assets/images/xls-form-processing.png)
+        !![Processing](../../assets/images/xls-form-processing.png, 300px)
 
 ## Convert XLS Form to QGIS Project
 
@@ -40,12 +40,12 @@ Here is a [template](https://docs.google.com/spreadsheets/d/1v9Bumt3R0vCOGEKQI6E
     2. Find the XLS Form in your file directory.
     2. (Optional) In case you want to assign a specific name or a specific language to your project, fill in the dedicated fields.
 
-        !![XLS Converter Process Interface](../../assets/images/xls-form-processing.png)
+        !![XLS Converter Process Interface](../../assets/images/xls-form-processing-windows.png,800px)
     3. Select your preferred basemap:
          - OpenStreetMap
          - Humanitarian OpenStreetMap Team (HOT)
     4. (Optional) You can directly turn your project into a QFieldCloud project if you check the according checkbox.
-    5. (Optional)Under **Advanced Parameters** you can further customize the settings of your project:
+    5. (Optional) Under **Advanced Parameters** you can further customize the settings of your project:
          - Set your desired project extent
          - Define a preferred coordinate reference system.
         **Note**: By default the WGS 84: Pseudo Transmercator (EPSG:3857) will be used.
@@ -54,3 +54,11 @@ Here is a [template](https://docs.google.com/spreadsheets/d/1v9Bumt3R0vCOGEKQI6E
     6. Choose the location of where your project is stored.
     7. Click "Run" and wait.
     In case successful, the new project will be saved in your selected project folder.
+
+## More Information
+
+If you want to know about what is all possible with the XLS-Forms Converter Plugins and what it has been used for, have a look at the resources below:
+
+- [XLS Converter Plugin Source Code](https://github.com/opengisch/XLSFormConverter)
+- [OPENGIS.ch Blog Post](https://www.opengis.ch/2025/06/02/xlsform-converter-unlock-a-world-of-surveys-with-our-brand-new-qgis-plugin/)
+- [Facebook post](https://www.facebook.com/photo/?fbid=122214315734088610&set=a.122120529350088610)
