@@ -3,16 +3,35 @@ title: Plans and Additional Storage
 tx_slug: documentation_get-started_storage_qfieldcloud
 ---
 
-# Plans and Additional Storage
+# QField Cloud Plans and Additional Storage
 
-In case you wish to upgrade to a QFieldCloud **"Pro"** or **"Organization"** plan, your billing information will be required.
+By default when registering to QFieldCloud you create a general user account with a free community plan.
+With the free community plan, you can work by yourself on QGIS projects and apply changes as much as you like as long as you do not exceed the 100 mb storage limit.
+If you require more storage or want to work in a multi-user environment, you will have to upgrade to either:
+
+- A personal **Pro Plan**  (Personal Plan)
+- An **Organization Plan**  (Organizational Plan)
+
 The same applies for additional data storage.
-At any point, the billing information can be modified by directing to *Billing* > *Subscription* > *Finish checkout*.
+
+The billing information is necessary for both Pro and Organization plans and can be accessed through the **Billing section**  under your personal account settings OR the organization account settings.
+Below is an overview of the different plans and what they include.
+At any point you can modify your your plans according to your needs.
+
+!![Plan Information](../assets/images/qfc-storage-plans-overview.png,800px)
+
+It is also possible to have a yearly subscription, where you will receive an annual invoice with a fixed amount of users and storage.
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
+
+!!! Warning
+
+    1. If you have a **Personal Pro Account** and an **Organization Account** you will have **TWO separate pages** with billing information.
+    The corresponding invoices will be generated for each account separately.
+    2. If you cancel your PRO Account your Organization Account will remain active until you actively cancel it.
 
 ## Choosing a plan
 
-To upgrade to a Personal **Pro plan**, follow these steps:
+To upgrade to a Personal **Pro Plan**, follow these steps:
 
 !!! Workflow
     1. Click on the username at the top-right of the page
@@ -62,27 +81,42 @@ To add more storage to QFieldCloud direct to *Settings* > *Billing* > *Subscript
 
 ## Cancellation of a subscription
 
-1. To cancel any of your subscriptions:
+You can cancel your subscriptions at any given time.
+This has to be done separately for both the PRO Plans and the Organization Plans.
 
-    - 1.1. For a **Pro** plan account, click on your username and choose "Settings."
-    - 1.2. For an **Organization** plan account, click on the name of your organization and click "Edit Organization".
+!!! Workflow
 
-    **Note**: you need to be the owner of that Organization.
+    1. For the **Personal Pro Plan**: From your <ins>user account's landing page</ins> click on *Edit Profile*.
+    **For the Organization Plan**: From your <ins>Organization account's landing page</ins> click on *Edit Organization*
+    2. Switch to the corresponding  *Billing Section**
 
-    ![Enter to setting](../assets/images/discontinuing_service_01_enter_to_setting.png)
+        ![Enter to billing section](../assets/images/discontinuing_service_02_change_subcription.png)
 
-2. Proceed to the "Billing" section and click on "Change".
+    3. Select "Cancel Subscription".
 
-    ![Enter to billing section](../assets/images/discontinuing_service_02_change_subcription.png)
+        ![Cancel subscription](../assets/images/discontinuing_service_03_cancel_subscription.png)
 
-3. Select "Cancel Subscription".
+    4. Confirm the cancellation in the subsequent pop-up window.
 
-    ![Cancel subscription](../assets/images/discontinuing_service_03_cancel_subscription.png)
+        ![Confirm Cancel subscription](../assets/images/discontinuing_service_04_popup_cancel_subcription.png)
 
-4. Confirm the cancellation in the subsequent pop-up window.
+    5. A Nyuki message will then appear, indicating that the subscription will conclude at the end of the current billing period.
 
-    ![Confirm Cancel subscription](../assets/images/discontinuing_service_04_popup_cancel_subcription.png)
+        ![Cancellation message](../assets/images/discontinuing_service_05_nyuki_message.png)
 
-5. A Nyuki message will then appear, indicating that the subscription will conclude at the end of the current billing period.
+## Retrieving an invoice
 
-    ![Cancellation message](../assets/images/discontinuing_service_05_nyuki_message.png)
+It is possible to retrieve invoices from previous months at the bottom of the billing section.
+
+!!! Workflow
+
+    1. For the **Personal Pro Plan**: From your <ins>user account's landing page</ins> click on *Edit Profile*.
+    **For the Organization Plan**: From your <ins>Organization account's landing page</ins> click on *Edit Organization*
+    2. Switch to the corresponding  *Billing Section**
+
+        ![Enter to billing section](../assets/images/discontinuing_service_02_change_subcription.png)
+
+    3. Direct to the bottom of the page.
+    There you will find all previous and current invoices that are associated with your Personal Account or your Organization Account.
+
+        !![Example of Invoice](../assets/images/qfc-storage-plans-invoice.png,400px)
