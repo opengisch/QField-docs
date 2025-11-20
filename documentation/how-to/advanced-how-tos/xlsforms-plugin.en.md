@@ -1,19 +1,19 @@
 ---
-title: XLS-Form Converter
-tx_slug: documentation_xls-form_plugin
+title: XLSForm Converter
+tx_slug: documentation_xlsforms_plugin
 ---
 
 # XLSForm Converter Plugin for QGIS
 
-Use the **XLSForm Converter** plugin to convert existing XLS forms into QGIS projects.
+Use the **XLSForm Converter** plugin to convert existing XLSForms into QGIS projects.
 This tool migrates all configurations from your form into a configured project alongside a geopackage containing your survey layers. The plugin allows you to upload the result directly to QFieldCloud provided you have installed QFieldSync. Once converted, the resulting project is ready to be loaded into QField for use in the field.
 
-## XLS Forms
+## XLSForms
 
-XLS Forms is a standard used by several survey products such as [ODK](https://getodk.org/) or [KoboToolbox](https://www.kobotoolbox.org/).
-XLS Forms is built on a spreadsheet format using Excel as the standard.
+XLSForms is a standard used by several survey products such as [ODK](https://getodk.org/) or [KoboToolbox](https://www.kobotoolbox.org/).
+XLSForms is built on a spreadsheet format using Excel as the standard.
 In simple terms a survey is made up of several "Questions" that can be presented in different formats (integer, text, lists etc.).
-To learn more about the standard please visit [More about XLS forms](https://xlsform.org/en/)
+To learn more about the standard please visit [More about XLSForms](https://xlsform.org/en/)
 
 ## How to install the plugin
 
@@ -22,24 +22,24 @@ You can install the XLSForm Converter in QGIS through its plugin manager.
 !!! Workflow
 
     1. Direct to *Plugins* > *Manage and Install Plugins* > *All*
-    2. Search for XLS-Form Converter and click "Install Plugin".
+    2. Search for XLSForm Converter and click "Install Plugin".
 
-        !![XLS-Form Converter Plugin](../../assets/images/xls-form-plugin-interface.png,500px)
+        !![XLSForm Converter Plugin](../../assets/images/xlsform-plugin-interface.png,500px)
 
      Once it is installed it will appear in your processing box
-        !![Processing](../../assets/images/xls-form-processing.png,300px)
+        !![Processing](../../assets/images/xlsform-processing.png,300px)
 
-## Convert XLS Form to QGIS Project
+## Convert XLSForm to QGIS Project
 
-To convert an XLS Form you need to make sure you follow the standards and format of the original XLS Form.
-Here is a [template](https://docs.google.com/spreadsheets/d/1v9Bumt3R0vCOGEKQI6ExUf2-8T72-XXp_CbKKTACuko/edit?gid=1052905058#gid=1052905058), you can adapt in case you are more familiar with XLS Forms than QGIS.
+To convert an XLSForm you need to make sure you follow the standards and format of the original XLSForm.
+Here is a [template](https://docs.google.com/spreadsheets/d/1v9Bumt3R0vCOGEKQI6ExUf2-8T72-XXp_CbKKTACuko/edit?gid=1052905058#gid=1052905058), you can adapt in case you are more familiar with XLSForms than QGIS.
 
 !!! Workflow
 
     1. In QGIS Open the "Convert XLSForm to QGIS project" process from your Processing Toolbox.
-    2. Find the XLS Form in your file directory.
+    2. Find the XLSForm in your file directory.
     2. (Optional) In case you want to assign a specific name or a specific language to your project, fill in the dedicated fields.
-        !![XLS Converter Process Interface](../../assets/images/xls-form-processing-windows.png,800px)
+        !![XLS Converter Process Interface](../../assets/images/xlsform-processing-windows.png,800px)
     3. Select your preferred basemap:
          - OpenStreetMap
          - Humanitarian OpenStreetMap Team (HOT)
@@ -59,4 +59,3 @@ If you want to know about what is all possible with the XLS-Forms Converter Plug
 
 - [XLS Converter Plugin Source Code](https://github.com/opengisch/XLSFormConverter)
 - [OPENGIS.ch Blog Post](https://www.opengis.ch/2025/06/02/xlsform-converter-unlock-a-world-of-surveys-with-our-brand-new-qgis-plugin/)
-- [Facebook post](https://www.facebook.com/photo/?fbid=122214315734088610&set=a.122120529350088610)
