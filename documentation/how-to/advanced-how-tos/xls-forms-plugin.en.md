@@ -3,11 +3,10 @@ title: XLS-Form Converter
 tx_slug: documentation_xls-form_plugin
 ---
 
-# XLS-Form Converter Plugin
+# XLSForm Converter Plugin for QGIS
 
-Use the **XLS-Form Converter** plugin to convert existing XLS forms into QGIS projects.
-This tool migrates all configurations from your XLS form and allows you to upload the result directly to QFieldCloud.
-Once loaded in QGIS, the project is ready to be deployed for use in the field.
+Use the **XLSForm Converter** plugin to convert existing XLS forms into QGIS projects.
+This tool migrates all configurations from your form into a configured project alongside a geopackage containing your survey layers. The plugin allows you to upload the result directly to QFieldCloud provided you have installed QFieldSync. Once converted, the resulting project is ready to be loaded into QField for use in the field.
 
 ## XLS Forms
 
