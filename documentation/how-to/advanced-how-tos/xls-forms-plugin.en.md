@@ -15,9 +15,9 @@ XLS Forms is built on a spreadsheet format using Excel as the standard.
 In simple terms a survey is made up of several "Questions" that can be presented in different formats (integer, text, lists etc.).
 To learn more about the standard please visit [More about XLS forms](https://xlsform.org/en/)
 
-## Download the plugin
+## How to install the plugin
 
-In the plugin manager in QGIS, the plugin ["XLS-form Converter"](https://github.com/opengisch/XLSFormConverter) is available.
+You can install the XLSForm Converter in QGIS through its plugin manager.
 
 !!! Workflow
 
