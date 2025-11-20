@@ -3,10 +3,10 @@ title: Plans and Additional Storage
 tx_slug: documentation_get-started_storage_qfieldcloud
 ---
 
-# QField Cloud Plans and Additional Storage
+# QFieldCloud Plans and Additional Storage
 
-By default when registering to QFieldCloud you create a general user account with a free community plan.
-With the free community plan, you can work by yourself on QGIS projects and apply changes as much as you like as long as you do not exceed the 100 mb storage limit.
+By default, when registering for QFieldCloud, you create a general user account with a free community plan.
+With the free community plan, you can work by yourself on QGIS projects and apply changes as much as you like, as long as you do not exceed the 100 MB storage limit.
 If you require more storage or want to work in a multi-user environment, you will have to upgrade to either:
 
 - A personal **Pro Plan**  (Personal Plan)
