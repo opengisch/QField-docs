@@ -8,8 +8,7 @@ tx_slug: documentation_get-started_tutorials_myfirstproject
 
 This page will go through a step by step example of how to prepare a simple QField project containing a points layer, a line layer and a basemap.
 It will include the configuration of a simple attribute form and the styling of the feature layer.
-As an alternative if you are familiar with ODK forms and want to re-use an existing form, you can also use this one.
-Visit the [XLS Form Converter](../../how-to/advanced-how-tos/xls-forms-plugin.md) on how-to transform your XLS form, directly into a QField-ready Project
+As an alternative if you are familiar with the XLSForm standard  and want to re-use an existing forms, you can also use our [XLSForm Converter](../../how-to/advanced-how-tos/xls-forms-plugin.md) to convert forms into QField-ready projects.
 
 ## Step-by-step Example
 
