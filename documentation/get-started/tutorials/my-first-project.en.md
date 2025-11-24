@@ -8,6 +8,7 @@ tx_slug: documentation_get-started_tutorials_myfirstproject
 
 This page will go through a step by step example of how to prepare a simple QField project containing a points layer, a line layer and a basemap.
 It will include the configuration of a simple attribute form and the styling of the feature layer.
+As an alternative if you are familiar with the XLSForm standard  and want to re-use an existing forms, you can also use our [XLSForm Converter](../../how-to/advanced-how-tos/xlsforms-plugin.md) to convert forms into QField-ready projects.
 
 ## Step-by-step Example
 
@@ -115,7 +116,7 @@ QGIS creates this for every GeoPackage by default.
     3. There exist several types of [widgets](how-to/attributes-form.md). <!-- markdown-link-check-disable-line -->
 *Maya does not want to enter the date new every time.*
 *What a good thing one can set default values in QGIS*
-5. Open the widget display of the ***entrydate*** attribute.
+5. Open the widget display of the ***Entrydate*** attribute.
     1. If not already done, change the widget type to date/time.
     You can customise the appearance of your date by changing the custom display format.
     2. To not have to add a new date every time, add a default value using the following expression ***format_date(now(),'dd MMMM yyyy')***.
