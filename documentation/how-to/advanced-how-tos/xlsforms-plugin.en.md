@@ -57,5 +57,5 @@ Here is a [template](https://docs.google.com/spreadsheets/d/1v9Bumt3R0vCOGEKQI6E
 
 If you want to know about what is all possible with the XLSForm Converter Plugin and what it can be used for, have a look at the resources below:
 
-- [XLS Converter Plugin Source Code](https://github.com/opengisch/XLSFormConverter)
+- [XLSForm Converter Plugin Source Code](https://github.com/opengisch/XLSFormConverter)
 - [OPENGIS.ch Blog post](https://www.opengis.ch/2025/06/02/xlsform-converter-unlock-a-world-of-surveys-with-our-brand-new-qgis-plugin/)
