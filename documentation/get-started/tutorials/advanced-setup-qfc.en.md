@@ -10,6 +10,39 @@ tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 Currently, QFieldCloud supports GeoPackage and PostGIS layers for collaborative editing.
 Other formats supported by QGIS should also work but are not officially supported.
 
+## Synchronization process
+
+When working with QFieldCloud it is important that you understand the synchronization process so that you avoid data loss or the overwriting of files / deltas.
+You can find the technical details on the different job types in the [technical documentation section](../../reference/qfieldcloud/jobs.md).
+In simple words, there exist three different synchronization activities:
+
+- **From QGIS to QFieldCloud**: This synchronization process uploads a complete new "project package" and replaces the existing one stored in the cloud.
+If you are working with GeoPackages it is important to note, that the existing GeoPackage on the cloud will be replaced with the one you have just uploaded.
+- **From QFieldCloud to QField**: If you want to download the uploaded "project package" to your mobile device, QFieldCloud "packages" the project into a specific format that is saved in the internal application folder structure.
+Important to know here is that in case you are working with PostgreSQL databases and have chosen the [working mode](#working-modes) *offline editing* then a local GeoPackage of the data will be created in the corresponding folder.
+- **From QField to QFieldCLoud**: Once you are done with collecting data, you can choose among two different [synchronization options](../tutorials/get-started-qfc.md#synchronization-with-qfieldcloud).
+The changes made are being applied as so-called *deltas*.
+*Deltas* reflect only the changes made to the different attributes.
+When pushing to or synchronizing with QFieldCloud, it is only the deltas that are being applied.
+Unlike in the synchronization process from QGIS to QFieldCloud, the whole GeoPackage is **<ins>NOT</ins>** replaced.
+
+!![Simple Synchronization Overview](../../assets/images/qfc-advanced-setup-synchronization-process-easy.png,800px)
+
+!!! Tip
+
+    There are a few tips, which we recommend to follow in order to avoid synchronization issues or overwritten data.
+
+    1. <ins>Do not modify the QGIS project while personnel is working simultaneously in QField.</ins>
+    If you synchronize your local version with the cloud, QFieldSync will prioritize your changes.
+    Although there may have been changes applied in QFieldCloud, QFieldSync will not show this by default.
+    If you must work parallel on Desktop, make sure to check the QFieldCloud status and download the most recent data before uploading a new package.
+    2. <ins>Do not change the data structure before synchronizing the latest field edits</ins>.
+    Often, officers work in QGIS and adapt the data structure of the project files, which leads to errors if the changes from QField have not yet been pushed to QFieldCloud.
+    3. <ins>Use uuid's as primary keys, especially when working with relations and in teams.</ins>
+    Synchronization often occur due to the lack of adding primary keys to your datasets.
+    Especially, when working with relationships and in teams, if the data were not configured with an according primary key, it may happen that data loss occurs because of simultaneous editing of the data.
+
+
 ## Working Modes
 
 When configuring a project for QField you can choose between the different "Packaging" options.
