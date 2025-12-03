@@ -124,6 +124,8 @@ nav:
           - reference/qfieldcloud/api.md
           - reference/qfieldcloud/system.md
           - reference/qfieldcloud/sdk.md
+          - Managing Organization on Self-Hosted:
+              - reference/qfieldcloud/self_hosted/django_interface.md
   - Success stories:
       - success-stories/index.md
       - success-stories/ecological-surveying.md
