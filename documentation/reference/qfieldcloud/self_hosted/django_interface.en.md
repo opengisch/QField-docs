@@ -7,18 +7,19 @@ tx_slug: documentation_reference_qfieldcloud_django_administration
 
 ## Managing Users
 
-#### Adding Users
+### Adding Users
 
-* From the homepage, scroll down to find "Core" pages and select "People" page.
-* Click "Add Person".
+!!! Workflow
 
-!![](../../../assets/images/self_hosted/managing_organization_django_01.png,800px)
+    1. From the homepage, scroll down to find "Core" pages and select "People" page.
+    2. Click "Add Person".
 
-* Fill in the required fields, including "Username", "Password", "Email address", and any additional user information.
-You can also set the user's "Timezone" and email notification preferences for project and organization changes.
-* Click "Save" to add the user, and you'll be redirected to the "People" page with a success message.
+     !![](../../../assets/images/self_hosted/managing_organization_django_01.png,800px)
+     3. Fill in the required fields, including "Username", "Password", "Email address", and any additional user information.
+     **Note**: You can also set the user's "Timezone" and email notification preferences for project and organization changes.
+     4. Click "Save" to add the user, and you'll be redirected to the "People" page with a success message.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_02.png,800px)
+     !![](../../../assets/images/self_hosted/managing_organization_django_02.png,800px)
 
 * The "Password" field will show the hashed version of the password. If a system administrator wants to change it,
 just replace the contents with the new password, QFieldCloud will automatically handle it.
