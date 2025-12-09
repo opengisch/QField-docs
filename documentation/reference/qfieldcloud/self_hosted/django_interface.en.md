@@ -7,7 +7,7 @@ tx_slug: documentation_reference_qfieldcloud_django_administration
 
 ## Managing Users
 
-### Adding Users
+### Adding
 
 !!! Workflow
 
@@ -16,196 +16,203 @@ tx_slug: documentation_reference_qfieldcloud_django_administration
 
      !![](../../../assets/images/self_hosted/managing_organization_django_01.png,800px)
      3. Fill in the required fields, including "Username", "Password", "Email address", and any additional user information.
-     **Note**: You can also set the user's "Timezone" and email notification preferences for project and organization changes.
+
+    !!! Tip
+        You can also set the user's "Timezone" and email notification preferences for project and organization changes.
      4. Click "Save" to add the user, and you'll be redirected to the "People" page with a success message.
 
      !![](../../../assets/images/self_hosted/managing_organization_django_02.png,800px)
 
-* The "Password" field will show the hashed version of the password. If a system administrator wants to change it,
-just replace the contents with the new password, QFieldCloud will automatically handle it.
+    !!! Tip
 
-#### Deleting Users
+        The "Password" field will show the hashed version of the password.
+        If a system administrator wants to change it, just replace the contents with the new password, QFieldCloud will automatically handle it.
 
-* In the "Core" pages, click on "People".
-* Select the user by clicking on their "Username".
-* Click the "Delete" button.
+### Deleting
 
-!![](../../../assets/images/self_hosted/managing_organization_django_03.png,800px)
+!!! Workflow
 
-* The screen will show you all the related objects that will be deleted. When you double check this is what you want, proceed with deletion by clicking "Yes, I'm sure".
+    1. In the "Core" pages, click on "People".
+    2. Select the user by clicking on their "Username".
+    3. Click the "Delete" button.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_04.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_03.png,800px)
+    4. The screen will show you all the related objects that will be deleted. When you double check this is what you want, proceed with deletion by clicking "Yes, I'm sure".
 
-* You will be redirected to the "People" page with a success message.
+    !![](../../../assets/images/self_hosted/managing_organization_django_04.png,800px)
+    5. You will be redirected to the "People" page with a success message.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_05.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_05.png,800px)
 
-#### Generating a Reset Password URL for a User
+### Generating a Reset Password URL
 
-* Access the "People" in the "Core" pages.
-* Click on the "Username" of the user for whom you want to generate a reset password URL.
-* On the user's page to find the "Generate reset password URL" option.
+!!! Workflow
 
-!![](../../../assets/images/self_hosted/managing_organization_django_06.png,800px)
+    1. Access the "People" in the "Core" pages.
+    2. Click on the "Username" of the user for whom you want to generate a reset password URL.
+    3. On the user's page to find the "Generate reset password URL" option.
 
-* The manager should send the URL to the user via email for password reset.
+    !![](../../../assets/images/self_hosted/managing_organization_django_06.png,800px)
+    4. The manager should send the URL to the user via email for password reset.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_07.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_07.png,800px)
 
 ## Managing Organizations
 
-#### Adding Organizations
+### Adding
 
-* Click on "Organizations" in the "Core" pages.
-* In the "Organizations" page, click "Add Organization".
+!!! Worflow
 
-!![](../../../assets/images/self_hosted/managing_organization_django_08.png,800px)
+    1. Click on "Organizations" in the "Core" pages.
+    2. In the "Organizations" page, click "Add Organization".
 
-* Fill in the organization details, including "Username" for the organization name, "Email address" for the admin, and select the owner from the dropdown list.
+    !![](../../../assets/images/self_hosted/managing_organization_django_08.png,800px)
+    3. Fill in the organization details, including "Username" for the organization name, "Email address" for the admin, and select the owner from the dropdown list.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_09.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_09.png,800px)
+    4. Click "Save" to create the organization, and you'll receive a success message.
 
-* Click "Save" to create the organization, and you'll receive a success message.
+### Deleting
 
-#### Deleting Organizations
+!!! Workflow
 
-* In the "Organizations" page, click on the organization's name.
+    1. In the "Organizations" page, click on the organization's name.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_10.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_10.png,800px)
+    2. Find the "Delete" button.
 
-* Find the "Delete" button.
+    !![](../../../assets/images/self_hosted/managing_organization_django_11.png,800px)
+    3. The screen will show you all the related objects that will be deleted.
+    When you double check that this is what you want, proceed with deletion by clicking "Yes, I'm sure".
 
-!![](../../../assets/images/self_hosted/managing_organization_django_11.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_12.png,800px)
+    4. You will be redirected to the "Organizations" page with a success message.
 
-* The screen will show you all the related objects that will be deleted.
-When you double check that this is what you want, proceed with deletion by clicking "Yes, I'm sure".
+    !![](../../../assets/images/self_hosted/managing_organization_django_13.png,800px)
 
-!![](../../../assets/images/self_hosted/managing_organization_django_12.png,800px)
+### Adding Members
 
-* You will be redirected to the "Organizations" page with a success message.
+!!! Workflow
 
-!![](../../../assets/images/self_hosted/managing_organization_django_13.png,800px)
+    1. Go to the "Organizations" page and select the organization where you want to add members.
+    2. Open the "Organization members" tab and click "Add another Organization member".
 
-#### Adding Members to an Organization
+    !![](../../../assets/images/self_hosted/managing_organization_django_14.png,800px)
+    3. In the search bar, type the usernames of the users you want to add.
 
-* Go to the "Organizations" page and select the organization where you want to add members.
-* Open the "Organization members" tab and click "Add another Organization member".
+    !![](../../../assets/images/self_hosted/managing_organization_django_15.png,800px)
+    4. After finding the users, click on their names to add them to the "Organization Members" list.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_14.png,800px)
+    5. Once all desired members are added, click to "Save" the updated data for the "Organization".
 
-* In the search bar, type the usernames of the users you want to add.
+    !![](../../../assets/images/self_hosted/managing_organization_django_16.png,800px)
+    6. You will be redirected to the "Organizations" page with a success message.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_15.png,800px)
+### Remove Members
 
-* After finding the users, click on their names to add them to the "Organization Members" list.
-* Once all desired members are added, click to "Save" the updated data for the "Organization".
+!!! Worfklow
 
-!![](../../../assets/images/self_hosted/managing_organization_django_16.png,800px)
+    1. Go to the "Organizations" page and select the organization where you want to remove members.
+    2. Open the "Organization members" tab.
+    3. Activate the "Delete?" checkbox for the user you want to remove.
 
-* You will be redirected to the "Organizations" page with a success message.
+    !![](../../../assets/images/self_hosted/managing_organization_django_17.png,800px)
+    4. Click to "Save" the updated data for the "Organization".
 
-#### Remove Members from an Organization
+    !![](../../../assets/images/self_hosted/managing_organization_django_18.png,800px)
+    5. You will be redirected to the "Organizations" with a success message.
 
-* Go to the "Organizations" page and select the organization where you want to remove members.
-* Open the "Organization members" tab.
-* Activate the "Delete?" checkbox for the user you want to remove.
+### Changing Roles of Members
 
-!![](../../../assets/images/self_hosted/managing_organization_django_17.png,800px)
+!!! Workflow
 
-* Click to "Save" the updated data for the "Organization".
+    1. Enter the organization where the user's role you want to change is located.
+    2. Open the "Organization members" tab.
+    3. In the "Role" field, click the dropdown and choose "Member" or "Admin".
 
-!![](../../../assets/images/self_hosted/managing_organization_django_18.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_19.png,800px)
+    4. Select the role you want to assign to the user and click to "Save" the updated data for the "Organization".
+    5. You will be redirected to the "Organizations" with a success message.
 
-* You will be redirected to the "Organizations" with a success message.
+### Creating Teams
 
-#### Changing Roles of Members in the Organizations
+!!! Workflow
 
-* Enter the organization where the user's role you want to change is located.
-* Open the "Organization members" tab.
-* In the "Role" field, click the dropdown and choose "Member" or "Admin".
+    1. Access the "Teams" pages in the "Core" pages.
+    2. Click "Add Team".
 
-!![](../../../assets/images/self_hosted/managing_organization_django_19.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_20.png,800px)
+    3. Provide a name for the team in the "Username" field and select the organization where the team should belong.
 
-* Select the role you want to assign to the user and click to "Save" the updated data for the "Organization".
-* You will be redirected to the "Organizations" with a success message.
+    !![](../../../assets/images/self_hosted/managing_organization_django_21.png,800px)
+    4. In the "Team members" section, click "Add another Team member".
+    5. Search for and add the usernames of users you want in the team.
+    6. The people added to the Team must be member of the Team's Organization.
 
-#### Creating Teams
+    !![](../../../assets/images/self_hosted/managing_organization_django_22.png,800px)
+    7. Once all members are added, lick to "Save" the updated data for the "Team".
+    8. You will be redirected to the "Teams" page with a success message.
 
-* Access the "Teams" pages in the "Core" pages.
-* Click "Add Team".
+### Deleting Teams
 
-!![](../../../assets/images/self_hosted/managing_organization_django_20.png,800px)
+!!! Worfklow
 
-* Provide a name for the team in the "Username" field and select the organization where the team should belong.
+    1. Enter the team by clicking on its name.
+    2. Click the "Delete" button.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_21.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_23.png,800px)
+    3. The screen will show you all the related objects that will be deleted. When you double check this is what you want, proceed with deletion by clicking "Yes, I'm sure".
 
-* In the "Team members" section, click "Add another Team member".
-* Search for and add the usernames of users you want in the team.
-* The people added to the Team must be member of the Team's Organization
+    !![](../../../assets/images/self_hosted/managing_organization_django_24.png,800px)
+    4. You will be redirected to the Teams page with a success message.
 
-!![](../../../assets/images/self_hosted/managing_organization_django_22.png,800px)
+### Removing Members from the Team
 
-* Once all members are added, lick to "Save" the updated data for the "Team".
-* You will be redirected to the "Teams" page with a success message.
+!!! Workflow
 
-#### Deleting Teams
+    1. Enter the team where you want to delete users.
+    2. In the team, activate the "Delete?" checkbox for the users you want to remove.
 
-* Enter the team by clicking on its name.
-* Click the "Delete" button.
-
-!![](../../../assets/images/self_hosted/managing_organization_django_23.png,800px)
-
-* The screen will show you all the related objects that will be deleted. When you double check this is what you want, proceed with deletion by clicking "Yes, I'm sure".
-
-!![](../../../assets/images/self_hosted/managing_organization_django_24.png,800px)
-
-* You will be redirected to the Teams page with a success message.
-
-#### Removing Members from the Team
-
-* Enter the team where you want to delete users.
-* In the team, activate the "Delete?" checkbox for the users you want to remove.
-
-!![](../../../assets/images/self_hosted/managing_organization_django_25.png,800px)
-
-* Click to "Save" the updated data for the "Team".
-* You will be redirected to the "Teams" page with a success message.
+    !![](../../../assets/images/self_hosted/managing_organization_django_25.png,800px)
+    3. Click to "Save" the updated data for the "Team".
+    4. You will be redirected to the "Teams" page with a success message.
 
 ## Managing Projects
 
 ### Creating Projects
 
-To create projects, follow either Method 1 or Method 2:
+There are two ways in which you can create projects, follow either Method 1 or Method 2.
 
-#### Method 1: Convert a Local Project to a QFieldCloud Project
+!!! Workflow
 
-* In QGIS, access your project and open the QFieldSync plugin.
-* Click the "QFieldCloud Projects Overview" button.
-* Click "Create New Project".
+    **Method 1: Convert a Local Project to a QFieldCloud Project**
 
-!![](../../../assets/images/self_hosted/managing_organization_django_26.png,800px)
+    1. In QGIS, access your project and open the QFieldSync plugin.
+    2. Click the "QFieldCloud Projects Overview" button.
+    3. Click "Create New Project".
 
-* Choose the option to "Convert the currently open project to a cloud project".
+    !![](../../../assets/images/self_hosted/managing_organization_django_26.png,800px)
 
-!![](../../../assets/images/self_hosted/managing_organization_django_27.png,800px)
+     4. Choose the option to "Convert the currently open project to a cloud project".
 
-* Provide project details and select the organization.
-* Click "Create" to initiate the conversion.
+    !![](../../../assets/images/self_hosted/managing_organization_django_27.png,800px)
 
-!![](../../../assets/images/self_hosted/managing_organization_django_28.png,800px)
+    5. Provide project details and select the organization.
+    6. Click "Create" to initiate the conversion.
 
-* Once completed, click "Ok".
-* The project will be listed in the "QFieldCloud Projects Overview".
-* In QFieldCloud, navigate to the "Projects" and inspect the project's information.
+    !![](../../../assets/images/self_hosted/managing_organization_django_28.png,800px)
 
-!![](../../../assets/images/self_hosted/managing_organization_django_29.png,800px)
+    7. Once completed, click "Ok".
+    8. The project will be listed in the "QFieldCloud Projects Overview".
+    9. In QFieldCloud, navigate to the "Projects" and inspect the project's information.
 
-#### Method 2: Creating an Empty Project
+     !![](../../../assets/images/self_hosted/managing_organization_django_29.png,800px)
+
+**Method 2: Creating an Empty Project**
 
 You can create Empty projects by using QFieldSync or directly in QFieldCloud.
 
-##### 2.1. Creating an empty project QFieldCloud method
+#### 2.1. Creating an empty project QFieldCloud method
 
 * Go to the "Projects" page and click "Add Project".
 
