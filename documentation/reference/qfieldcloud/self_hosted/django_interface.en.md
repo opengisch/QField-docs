@@ -210,9 +210,9 @@ There are two ways in which you can create projects, follow either Method 1 or M
 
 You can create Empty projects by using QFieldSync or directly in QFieldCloud.
 
-!!! Workflow
+**2.1. Creating an empty project QFieldCloud method**
 
-    **Creating an empty project QFieldCloud method**
+!!! Workflow
 
     1. Go to the "Projects" Section and click on "Add Project".
     !![](../../../assets/images/self_hosted/managing_organization_django_30.png,800px)
@@ -235,9 +235,9 @@ You can create Empty projects by using QFieldSync or directly in QFieldCloud.
     11. Once finished, inspect the files in the project.
     !![](../../../assets/images/self_hosted/managing_organization_django_36.png,800px)
 
-!!! Workflow
+**2.2. Creating an empty project QFieldSync Method**
 
-    **2.2. Creating an empty project QFieldSync Method**
+!!! Workflow
 
     1. In QGIS and the QFieldSync plugin, go to the "QFieldCloud Projects Overview."
     2. Click the "Create New Project" button.
