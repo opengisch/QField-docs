@@ -24,6 +24,7 @@ In the following sections, the different setting options will be described
 ## Map Canvas
 
 - **Show scale bar:** By enabling the "Show scale bar" it will show the scale bar on the map.
+- **Show zoom controls:** By enabling this option, the zoom buttons (+/-) will appear on the map.
 - **Show bookmarks:** By enabling this option, your personal locally created bookmarks and currently opened project bookmarks will be displayed on the map.
 - **Enable map rotation:** When enabled, the map can be rotated by the user.
 - **Map canvas rendering quality:** If high memory use is an issue, the user can reduce the rendering quality and thereby lower the memory usage and the rendering time.
