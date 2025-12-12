@@ -22,7 +22,7 @@ You can choose between several basemaps and turn it into a cloud project if need
     - Dark Gray
     - Light Gray
     - Blank
-    - Your custom Basemap via an URL
+    - Your custom basemap via an URL
 
     !![](../../assets/images/new-project-2.png)
 
