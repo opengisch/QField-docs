@@ -104,6 +104,7 @@ nav:
           - how-to/advanced-how-tos/shared-datasets.md
           - how-to/advanced-how-tos/movable-project.md
           - how-to/advanced-how-tos/plugins.md
+          - how-to/advanced-how-tos/multilingual-projects.md
   - Technical reference:
       - reference/index.md
       - reference/data-format.md
