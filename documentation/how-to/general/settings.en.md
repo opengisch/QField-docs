@@ -33,7 +33,7 @@ This comes with the cost of rendering precision.
 ## Digitizing & Editing
 
 - **Show digitizing information:** When enabling this option, coordinate information, such as latitude and longitude, are shown underneath your crosshair while digitizing new features or using the measuring tool.
-- **Fast editing mode:** If enabled, QField will immmediately and automatically save any changes made during an edit operation.
+- **Fast editing mode:** If enabled, QField will immediately and automatically save any changes made during an edit operation.
 - **Use volume keys to digitize:** If enabled, pressing the device's volume up key will add a vertex while pressing volume down key will remove the last entered vertex during digitizing sessions.
 - **Allow finger tap on canvas to add vertices:** If enabled, tapping the map canvas with a finger will redirect the coordinate cursor to the required location.
 This option is useful, when mapping features on a larger scale.
