@@ -188,36 +188,6 @@ The freehand digitizing mode is activated through a new toolbar button which app
 
 ![type:video](https://player.vimeo.com/video/537673220)<!-- markdown-link-check-disable-line -->
 
-## Topological editing
-
-If topological editing is activated on the project in QGIS before exporting for QField, shared nodes of neighboring geometries are modified together when moving / deleting vertices and additional vertices are added to segments when a new node is added from neighboring geometries.
-
-!![](../../assets/images/edit_topo.webp,250px)
-
-### Multi-editing of attributes
-
-QField allows you to select multiple features and edit their attributes all at once.
-In some cases, it can result in very efficient workflows.
-To do so, identify two (or more)features on the map, select them in the features list and merge them by selecting the *Edit feature* button in the list's title bar.
-
-!![](../../assets/images/multi_editor.webp,250px)
-
-## Delete features
-
-:material-tablet: Fieldwork
-
-Deleting a feature is done by selecting the *Delete feature* action in the feature form's *(⋮)* menu.
-
-!![](../../assets/images/delete-single-feature.png)
-
-QField also allows you to delete multiple features at a time.
-To do so, first identify the features by short tapping on the relevant parts of the map.
-Then activate the multi-selection mode by long pressing on one of the features you want to delete.
-When checkbox appears next to the feature names, select further features to delete (you can tap on the map to add more features too).
-Once done, select the "Delete Selected Feature(s): action in the features list *(⋮)* menu.
-
-!![](../../assets/images/delete-multiple-features.png)
-
 ## Snapping
 
 :material-monitor: Desktop preparation
@@ -255,3 +225,45 @@ Choose the desired angle from the menu. Then, start digitizing your geometry or 
 QField will remember the angle relative to the last segment situation for consistent snapping behaviour during subsequent edits.
 
 ![type:video](../../assets/videos/snap-to-common-angles.webm)
+
+## Topological editing
+
+If topological editing is activated on the project in QGIS before exporting for QField, shared nodes of neighboring geometries are modified together when moving / deleting vertices and additional vertices are added to segments when a new node is added from neighboring geometries.
+
+!![](../../assets/videos/edit_topo.webm,250px)
+
+### Multi-editing of attributes
+
+QField allows you to select multiple features and edit their attributes all at once.
+In some cases, it can result in very efficient workflows.
+To do so, identify two (or more)features on the map, select them in the features list and merge them by selecting the *Edit feature* button in the list's title bar.
+
+!![](../../assets/images/multi_editor.webp,250px)
+
+## Copy, Cut and Paste
+
+It is possible to copy, cut and paste features from one layer to another.
+This function is achieved by attribute matching.
+If there are any matching attributes in the target layer, the copied feature will copy the values where fields are matching while others non-matching fields will remain blank.
+The same applies when cutting a feature from one layer to another.
+The geometry type does not matter.
+
+Check out the video to see the copy, paste function in action.
+
+!![](../../assets/videos/copy_paste.webm, 250px)
+
+## Delete features
+
+:material-tablet: Fieldwork
+
+Deleting a feature is done by selecting the *Delete feature* action in the feature form's *(⋮)* menu.
+
+!![](../../assets/images/delete-single-feature.png)
+
+QField also allows you to delete multiple features at a time.
+To do so, first identify the features by short tapping on the relevant parts of the map.
+Then activate the multi-selection mode by long pressing on one of the features you want to delete.
+When checkbox appears next to the feature names, select further features to delete (you can tap on the map to add more features too).
+Once done, select the "Delete Selected Feature(s): action in the features list *(⋮)* menu.
+
+!![](../../assets/images/delete-multiple-features.png)
