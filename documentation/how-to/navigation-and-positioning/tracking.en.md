@@ -68,8 +68,6 @@ If the layer linked to a tracking session supports the M dimension, QField will 
     3. Choose the tracking icon (small walking figure).
 
 
-
-
 ## Resume to a Previous Session
 
 If you did not explicitly terminate your tracking session (for example, you closed the app), QField allows you to continue where you left off.
