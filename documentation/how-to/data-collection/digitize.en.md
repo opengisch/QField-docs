@@ -230,7 +230,7 @@ QField will remember the angle relative to the last segment situation for consis
 
 If topological editing is activated on the project in QGIS before exporting for QField, shared nodes of neighboring geometries are modified together when moving / deleting vertices and additional vertices are added to segments when a new node is added from neighboring geometries.
 
-!![](../../assets/videos/edit_topo.webm,250px)
+![type:video](../../assets/videos/edit_topo.webm)
 
 ### Multi-editing of attributes
 
@@ -250,7 +250,7 @@ The geometry type does not matter.
 
 Check out the video to see the copy, paste function in action.
 
-!![](../../assets/videos/copy_paste.webm, 250px)
+![type:video](../../assets/videos/copy_paste.webm)
 
 ## Delete features
 
