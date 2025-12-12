@@ -235,6 +235,7 @@ plugins:
             Navigation and Positioning: Navigation and Positioning
             Advanced How To's: Advanced How To's
             Technical reference: Technische Hinweise
+            Managing Organization on Self-Hosted: Managing Organization on Self-Hosted
             Success stories: Erfolgsgeschichten
           palette:
             - scheme: default
@@ -271,6 +272,7 @@ plugins:
             Navigation and Positioning: Navigation and Positioning
             Advanced How To's: Advanced How To's
             Technical reference: Documentation technique
+            Managing Organization on Self-Hosted: Managing Organization on Self-Hosted
             Success stories: Projets témoin
           palette:
             - scheme: default
@@ -307,6 +309,7 @@ plugins:
             Navigation and Positioning: Navigation and Positioning
             Advanced How To's: Advanced How To's
             Technical reference: Documentazione tecnica di riferimento
+            Managing Organization on Self-Hosted: Managing Organization on Self-Hosted
             Success stories: Storie di successo
           palette:
             - scheme: default
@@ -341,6 +344,7 @@ plugins:
             Navigation and Positioning: Navigation and Positioning
             Advanced How To's: Advanced How To's
             Technical reference: 技術参考情報
+            Managing Organization on Self-Hosted: Managing Organization on Self-Hosted
             Success stories: ケーススタディ
           palette:
             - scheme: default
@@ -377,6 +381,7 @@ plugins:
             Navigation and Positioning: Navigation and Positioning
             Advanced How To's: Advanced How To's
             Technical reference: Referência técnica
+            Managing Organization on Self-Hosted: Managing Organization on Self-Hosted
             Success stories: Histórias de sucesso
           palette:
             - scheme: default
@@ -413,6 +418,7 @@ plugins:
             Navigation and Positioning: Navigation and Positioning
             Advanced How To's: Advanced How To's
             Technical reference: Referencia técnica
+            Managing Organization on Self-Hosted: Managing Organization on Self-Hosted
             Success stories: Historias de éxito
           palette:
             - scheme: default
@@ -446,6 +452,7 @@ plugins:
             Navigation and Positioning: Navigation and Positioning
             Advanced How To's: Advanced How To's
             Technical reference: 技术参考
+            Managing Organization on Self-Hosted: Managing Organization on Self-Hosted
             Success stories: 成功案例
           palette:
             - scheme: default
@@ -483,6 +490,7 @@ plugins:
             Navigation and Positioning: Navigation and Positioning
             Advanced How To's: Advanced How To's
             Technical reference: Tekniset viitteet
+            Managing Organization on Self-Hosted: Managing Organization on Self-Hosted
             Success stories: Success stories
           palette:
             - scheme: default
@@ -545,6 +553,7 @@ plugins:
             Navigation and Positioning: Navigation and Positioning
             Advanced How To's: Advanced How To's
             Technical reference: Referință tehnică
+            Managing Organization on Self-Hosted: Managing Organization on Self-Hosted
             Success stories: Success stories
           palette:
             - scheme: default
