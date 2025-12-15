@@ -5,7 +5,7 @@ tx_slug: documentation_how-to_create-project
 
 # Create a new project in QField
 
-It is possible to create a simple project to collect notes and tracking yourself while during note taking.
+It is possible to create a simple project to collect notes with or without attachments and tracking yourself during the note taking.
 You can choose between several basemaps and turn it into a cloud project if needed.
 
 !!! Workflow
