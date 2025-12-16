@@ -24,6 +24,7 @@ In the following sections, the different setting options will be described
 ## Map Canvas
 
 - **Show scale bar:** By enabling the "Show scale bar" it will show the scale bar on the map.
+- **Show zoom controls:** By enabling this option, the zoom buttons (+/-) will appear on the map.
 - **Show bookmarks:** By enabling this option, your personal locally created bookmarks and currently opened project bookmarks will be displayed on the map.
 - **Enable map rotation:** When enabled, the map can be rotated by the user.
 - **Map canvas rendering quality:** If high memory use is an issue, the user can reduce the rendering quality and thereby lower the memory usage and the rendering time.
@@ -32,7 +33,7 @@ This comes with the cost of rendering precision.
 ## Digitizing & Editing
 
 - **Show digitizing information:** When enabling this option, coordinate information, such as latitude and longitude, are shown underneath your crosshair while digitizing new features or using the measuring tool.
-- **Fast editing mode:** If enabled, QField will immmediately and automatically save any changes made during an edit operation.
+- **Fast editing mode:** If enabled, QField will immediately and automatically save any changes made during an edit operation.
 - **Use volume keys to digitize:** If enabled, pressing the device's volume up key will add a vertex while pressing volume down key will remove the last entered vertex during digitizing sessions.
 - **Allow finger tap on canvas to add vertices:** If enabled, tapping the map canvas with a finger will redirect the coordinate cursor to the required location.
 This option is useful, when mapping features on a larger scale.
