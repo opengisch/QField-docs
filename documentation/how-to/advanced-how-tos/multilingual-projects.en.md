@@ -7,7 +7,7 @@ tx_slug: documentation_how_to_multiligual_project_support
 
 QField supports for **Project Localization**, meaning that a single QGIS project file supports multiple lanaguages if the according configuration has been applied.
 
-This allows the field personnel to see the layer names, field aliases, and value maps in the device's local language without needing separate project files.
+This allows the field staff to see the layer names, field aliases, and value maps in the device's local language without needing separate project files.
 
 ### How it works
 
