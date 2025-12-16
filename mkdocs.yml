@@ -69,6 +69,7 @@ nav:
           - how-to/general/settings.md
           - how-to/general/projects.md
       - Project Setup:
+          - how-to/project-setup/create-project.md
           - how-to/project-setup/attributes-form.md
           - how-to/project-setup/relation-reference-widget.md
           - how-to/project-setup/storage.md
