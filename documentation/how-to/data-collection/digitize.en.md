@@ -47,7 +47,7 @@ The current layer within which features are to be added is highlighted in green.
 
 ### Adding line or polygon features
 
-!!! Worlflow
+!!! Workflow
 
     1. Navigate the crosshair in the center of the screen to the desired start of the line or polygon
     2. Click the *Plus (+) button* at the lower right of the screen to add the first node.
