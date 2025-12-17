@@ -12,20 +12,20 @@ In QField, a field with *Attachment* widget can be used to:
 - Listen and record sound clips
 - Show links to external files like PDFs or documents
 
-!![Attachments](../../assets/images/attachments.png "")
+!![Attachments](../../assets/images/attachments.png, 800px)
 
-To configure the Widget, please refer to the [Attributes Form Documentation](./attributes-form.md#attachment-widget)
+To configure the widget, please refer to the [Attributes Form Documentation](./attributes-form.md#attachment-widget)
 
 ## Add a series of pictures to a feature
 :material-monitor: Desktop preparation
 
-It is also possible to add more pictures to the feature either by having several attachment field attributes or by creating a relation to a separate table where the image paths are shown.
+It is also possible to add more pictures to the feature either by having several attachment field  attributes or by creating a relation to a separate table where the image paths are shown.
 In this section we will show you an example how this is done.
 A relation to a second layer needs to be set in the QGIS properties so that when adding images or other formats, these are stored in the related table.
 
 !!! Workflow
 
-    1. Create two two tables following the style as shown below.
+    1. Create two tables following the style as shown below.
     One table where the features are stored and one with a list of pictures.
 
         ***Apiary:***

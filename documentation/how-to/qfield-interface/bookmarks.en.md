@@ -49,8 +49,9 @@ There are two ways to engage with the bookmark:
 
      :material-tablet: Fieldwork
 
+    **Option 1: Through long-press on location**
 
-     1. To add a new bookmark, simply tap and hold any part of the map
+     1. To add a new bookmark, simply long-press on the location on the map where you want to place the bookmark.
      2. Tap the "Add Bookmark" action within the popped up menu.
 
         !![](../../assets/images/bookmarks-add-from-touch.png)
@@ -59,11 +60,14 @@ There are two ways to engage with the bookmark:
 
         !![](../../assets/images/bookmarks-properties.png)
 
-    *Add bookmark with enabled location*
-    1. Tap and hold on the positioning button at the lower right corner.
-    2. Tap on the "Add Bookmark at Location" action.
+    **Option 2: From the location pie menu**
 
-     !![](../../assets/images/bookmarks-add-from-location.png)
+    1. Tap on your current location.
+    The location pie menu will automatically open.
+    2. Tap on the "Bookmark" Symbol to the low right.
+    The bookmark menu will appear allowing you to write an appropriate name and assigning your desired colour
+
+     !![](../../assets/images/pie-menu-tracking.png)
 
 !!! Tip
     When adding a bookmark, the current map scale is taken into consideration to save an extent centered around the tapped coordination or current location. This allows you to determine the extent that will be used when double-tapping on a bookmark marker or selecting a bookmark item in the search bar.
