@@ -170,7 +170,7 @@ It can be used to:
 You can add a new item when clicking the camera, video, microphone or document option.
 Depending on what you have selected as default, one of them will be shown inside the form.
 
-!![Media](../../assets/images/attachments-qfield-media.png,300px)
+!![Media](../../assets/images/attachments.png, 800px)
 
 On Synchronisation the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
 
