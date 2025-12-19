@@ -46,7 +46,7 @@ If you'd like to configure the order of features in "Show feature list" in QFiel
 Tap on a feature on the map to identify it.
 If several features are located where you tapped (either because there are multiple features really close one to another, or because several layers are overlapping), they will all be listed in the menu that opens on the right of the screen.
 
-!![](../../assets/images/howto_identification.png)
+!![](../../assets/images/howto_identification.png, 800px)
 
 Tap on one of the listed features to access its attributes.
 
@@ -55,7 +55,7 @@ Tap on one of the listed features to access its attributes.
 3. Tap the *edit button* to edit the attributes of the selected feature.
 4. Scroll through the *sub-menus* to access all the attributes.
 
-!![](../../assets/images/howto_featureinfo.png)
+!![](../../assets/images/howto_featureinfo.png, 800px)
 
 ### Select identified features
 

@@ -39,12 +39,13 @@ Once a tracking session is set up, a badge appears in the Side Dashboard next to
 The features created by the tracking session are saved on every vertex recorded.
 During a tracking session, a rubberband line appears on the map to visualize the recorded path.
 
-
 If the layer linked to a tracking session supports the M dimension, QField will store the time passed since the first vertex recorded in each vertex's M value.
 
 !!! Workflow
 
-    1. Open the Side Dashboard and long-press on the layer which you want to use for tracking.
+    **Option 1: Through the Side Dashboard Panel**
+
+    1. Open the Side Dashboard Panel and long-press on the layer which you want to use for tracking.
     2. Tap **Setup tracking** and a new window will appear showing the configuration settings.
 
         !![](../../assets/images/tracking-layer-properties.png,350px)
@@ -56,6 +57,15 @@ If the layer linked to a tracking session supports the M dimension, QField will 
 
 
     !![](../../assets/images/tracking-stop.png)
+
+    **Option 2: Through the Location Pie Menu**
+
+    1. Tap on your position on the map
+    2. A pie menu will open around your position.
+
+        !![](../../assets/images/pie-menu-tracking.png,350px)
+
+    3. Choose the tracking icon (small walking figure).
 
 
 ## Resume to a Previous Session

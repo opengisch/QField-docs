@@ -38,14 +38,16 @@ The current layer within which features are to be added is highlighted in green.
 
     1. Navigate the crosshair in the center of the screen to the desired location
     2. Click the *Green Plus (+) button* at the lower   right of the screen add a new point feature.
-    (Optionable): You can use the *lock to position* button to force the crosshair to center on your location if you have enabled positioning.
+        (Optionable): You can use the *lock to position* button from the pie menu to force the crosshair to center on your location if you have enabled positioning.
+
+        !![](../../assets/images/lock_to_position_icon.png,250px)
+
     3. (Optionable): You can click the *(x) button* to cancel the current feature creation.
 
-    !![](../../assets/images/lock_to_position_icon.png,150px)
 
 ### Adding line or polygon features
 
-!!! Worlflow
+!!! Workflow
 
     1. Navigate the crosshair in the center of the screen to the desired start of the line or polygon
     2. Click the *Plus (+) button* at the lower right of the screen to add the first node.
