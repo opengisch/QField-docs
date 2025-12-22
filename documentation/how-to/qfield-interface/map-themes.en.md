@@ -27,4 +27,4 @@ Creating a Map Theme in QGIS is a very simple task.
 If you defined map themes for your project in QGIS, you can switch between them from the side "Dashboard".
 Use the *Map themes* combobox to chose the active theme.
 
-!![Change Map Theme](../../assets/videos/theme.webm)
+!![Change Map Theme](../../assets/images/theme.webm)
