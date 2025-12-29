@@ -50,10 +50,10 @@ When configuring a project for QField you can choose between the different "Pack
 - **Offline editing:** Regardless of whether your files are stored in a GeoPackage, database or other format, QFieldCloud will create a temporary GeoPackage of all the project data.
 Changes made to this GeoPackage will not be available to others.
 Once the changes are synchronized or pushed back to QFieldCloud, the made changes only will be applied to the existing file on QFieldCloud.
+We recommend to use this option to avoid unnecessary data losses in case of lost data connection.
 
 - **Direct Data Access:** When using `direct database access`, QFieldCloud will directly edit data in the PostGIS database.
 This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).
-We recommend to use this option to avoid unnecessary data losses in case of lost data connection.
 
 Changes will only be visible to users once the Synchronization via QFieldCloud has been applied on the different devices.
 When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
