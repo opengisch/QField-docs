@@ -12,14 +12,17 @@ Other formats supported by QGIS should also work but are not officially supporte
 
 ## Synchronization process
 
-When working with QFieldCloud it is important that you understand the synchronization process so that you avoid data loss or the overwriting of files / deltas.
+When working with QFieldCloud it is important that you understand the synchronization process so that you avoid data loss or the overwriting of files / deltas (changes).
 You can find the technical details on the different job types in the [technical documentation section](../../reference/qfieldcloud/jobs.md).
 In simple words, there exist three different synchronization activities:
 
 - **From QGIS to QFieldCloud**: This synchronization process uploads a complete new "project package" and replaces the existing one stored in the cloud.
 If you are working with GeoPackages it is important to note, that the existing GeoPackage on the cloud will be replaced with the one you have just uploaded.
-- **From QFieldCloud to QField**: If you want to download the uploaded "project package" to your mobile device, QFieldCloud "packages" the project into a specific format that is saved in the internal application folder structure.
-Important to know here is that in case you are working with PostgreSQL databases and have chosen the [working mode](#working-modes) *offline editing* then a local GeoPackage of the data will be created in the corresponding folder.
+- **From QFieldCloud to QField**: If you want to download the uploaded "project package" to your mobile device,
+QFieldCloud "packages" the project into a specific format that is saved in the internal application folder structure.
+Important to know here is that in case you are working with PostgreSQL databases and have chosen the [working mode](#working-modes) *offline editing* then a local
+GeoPackage of the data will be created in the corresponding folder
+(make sure to configure properly your [secret](../../reference/qfieldcloud/secrets.md)), unless a direct connection is needed.
 - **From QField to QFieldCLoud**: Once you are done with collecting data, you can choose among two different [synchronization options](../tutorials/get-started-qfc.md#synchronization-with-qfieldcloud).
 The changes made are being applied as so-called *deltas*.
 *Deltas* reflect only the changes made to the different attributes.
@@ -33,9 +36,9 @@ Unlike in the synchronization process from QGIS to QFieldCloud, the whole GeoPac
     There are a few tips, which we recommend to follow in order to avoid synchronization issues or overwritten data.
 
     1. <ins>Do not modify the QGIS project while personnel is working simultaneously in QField.</ins>
-    If you synchronize your local version with the cloud, QFieldSync will prioritize your changes.
+    If you synchronize your Desktop local version to the cloud, QFieldCloud will prioritize your files pushed from your Desktop and overwrite the files.
     Although there may have been changes applied in QFieldCloud, QFieldSync will not show this by default.
-    If you must work parallel on Desktop, make sure to check the QFieldCloud status and download the most recent data before uploading a new package.
+    If you must work parallel on Desktop, make sure to check the QFieldCloud status and download the most recent data before uploading new files versions from your Desktop.
     2. <ins>Do not change the data structure before synchronizing the latest field edits</ins>.
     Often, officers work in QGIS and adapt the data structure of the project files, which leads to errors if the changes from QField have not yet been pushed to QFieldCloud.
     3. <ins>Use uuid's as primary keys, especially when working with relations and in teams.</ins>
@@ -136,6 +139,87 @@ Read more on PG Service and Secrets [here](../../how-to/project-setup/pg-service
     When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/jobs.md).
+
+## Project Configuration Best Practices
+
+To ensure a smooth synchronization process and maintain projects within QField and QFieldCloud, follow this recommendations.
+
+### 1. Centralized Data Storage
+
+**Add all data into your project file location folder.**
+
+Before uploading your project, ensure all relevant data sources (GeoPackages, rasters, etc.) are located in the same directory as your project file (`.qgs/.qgz`)
+or in a subdirectory (e.g., `./data`, `./assets`).
+If files are spread across different drives or folders on your computer, QFieldSync and QFieldCloud may fail to package them correctly for the mobile device.
+
+### 2. Managing Unique IDs
+
+**Add a unique ID to your layers.**
+
+When multiple users collect data offline simultaneously, standard auto-incrementing IDs (1, 2, 3...) will result in conflict errors when applying the deltas changes data on QFieldCloud.
+
+- **For Relations**: Create a specific text field (e.g., `survey_uuid`) and use `uuid()` or `uuid('WithoutBraces')` as the default value.
+Use this field for all foreign keys and for primary key if the layer is from PostgreSQL/PostGIS.
+- **For the `fid` (Feature ID)**: If you are working with GeoPackages, you can reduce conflicts on the internal `fid` integer column
+by setting the "Default Value" to the expression `epoch(now())`. This generates a unique integer based on the current timestamp.
+
+!!! Tip
+    To set this up, go to **Layer Properties > Attributes Form**, select the `fid` field, and set the **Default Value** to:
+    ```sql
+    epoch(now())
+    ```
+    Ensure the "Apply default value on update" box is **unchecked** so the ID remains constant after creation.
+
+### 3. Relative Paths
+
+**Ensure that all attachment paths are relative.**
+
+Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break when the project is transferred to a mobile device (Android/iOS), as the file system structure is different.
+
+1. Navigate to **Project** > **Properties...** > **General**.
+2. Set **Save paths** to `Relative`.
+
+### 4. Stable Layer References in Expressions
+
+**Use the Layer Name in expressions, not the Layer ID.**
+
+When writing expressions (for example, inside `aggregate()` functions or `relation_aggregate()`),
+QGIS allows you to reference layers by their internal ID (e.g., `places_2348274...`) or their Name (e.g., `Places`).
+Always use the **Layer Name** (e.g., `Places`).
+
+- **Why?** The internal Layer ID changes if you remove and re-add a layer or internally in QFieldCloud when a packaging job is triggered could change,
+which breaks your expressions. The Layer Name remains stable as long as you do not rename it in the layer tree.
+
+### 5. Preferred File Formats
+
+**Convert your layers to GeoPackage.**
+
+QField and QFieldCloud are optimized for the **GeoPackage (.gpkg)** format.
+While QField and QFieldCloud supports others formats like Shapefiles (`.shp`), GeoJSON, and KML, etc.,
+we strongly recommend converting these layers to GeoPackage before starting your project.
+
+**How to Convert to GeoPackage?**
+
+!!! Workflow
+
+    - In QGIS, right-click your layer in the Layers panel.
+    - Select **Export** > **Save Features As...**
+    - Set **Format** to `GeoPackage`.
+    - In **File name**, click `...` and navigate to your project folder. Give the new database a name (e.g., `layer.gpkg`).
+    - In **Layer name**, give your layer a simple name (e.g., `survey_points`).
+    - Click **OK**.
+    - The new layer will load into your project. You can now remove the old layer.
+
+### Common Configuration Errors
+
+If you are experiencing synchronization issues, check for these common configuration errors:
+
+| Issue | Cause | Solution |
+| :--- | :--- | :--- |
+| **Missing Images** | Paths are set to "Absolute" | Go to Project Properties and set paths to "Relative". |
+| **Sync Failures** | Data is outside the project folder | Move all .gpkg and raster files into the same folder as the project file (`.qgz/.qgs`). |
+| **Expression Errors** | Layer ID used in expression | Update expressions to use `'Layer Name'` instead of `'Layer_ID_123'`. |
+| **Duplicate Keys** | Using default 1, 2, 3 IDs | Implement `uuid()` or `epoch(now())` for unique identification. |
 
 ## Restriction of Project Files
 
