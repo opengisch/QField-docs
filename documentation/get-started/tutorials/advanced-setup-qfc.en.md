@@ -36,7 +36,7 @@ Unlike in the synchronization process from QGIS to QFieldCloud, the whole GeoPac
     There are a few tips, which we recommend to follow in order to avoid synchronization issues or overwritten data.
 
     1. <ins>Do not modify the QGIS project while personnel is working simultaneously in QField.</ins>
-    If you synchronize your Desktop local version to the cloud, QFieldCloud will prioritize your files pushed from your Desktop and overwrite the files.
+    If you synchronize your Desktop version to the cloud, QFieldCloud will overwrite the files.
     Although there may have been changes applied in QFieldCloud, QFieldSync will not show this by default.
     If you must work parallel on Desktop, make sure to check the QFieldCloud status and download the most recent data before uploading new files versions from your Desktop.
     2. <ins>Do not change the data structure before synchronizing the latest field edits</ins>.
