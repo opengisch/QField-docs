@@ -22,7 +22,7 @@ If you are working with GeoPackages it is important to note, that the existing G
 QFieldCloud "packages" the project into a specific format that is saved in the internal application folder structure.
 Important to know here is that in case you are working with PostgreSQL databases and have chosen the [working mode](#working-modes) *offline editing* then a local
 GeoPackage of the data will be created in the corresponding folder
-(make sure to configure properly your [secret](../../reference/qfieldcloud/secrets.md)), unless a direct connection is needed.
+(make sure to configure your [secret](../../reference/qfieldcloud/secrets.md) properly), unless a direct connection is needed.
 - **From QField to QFieldCLoud**: Once you are done with collecting data, you can choose among two different [synchronization options](../tutorials/get-started-qfc.md#synchronization-with-qfieldcloud).
 The changes made are being applied as so-called *deltas*.
 *Deltas* reflect only the changes made to the different attributes.
