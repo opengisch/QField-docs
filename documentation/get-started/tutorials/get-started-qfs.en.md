@@ -181,64 +181,55 @@ Please refer to [How to configure your attachment path](../../how-to/project-set
 
 **Configuring maximum items visibility for QField**
 
-To adjust the maximum number of visible items in a relationship within QField, follow these steps:
+!!! Workflow
 
-1. Direct to Vector Layer *Properties...* > *QField*.
+    1. Direct to Vector Layer *Properties...* > *QField*.
 
-2. Under "Relationship Settings" set the "Maximum number of items visible".
+    2. Under "Relationship Settings" set the "Maximum number of items visible".
 
-!!! Note
-    - The default number is set to 4.
-    - If empty, the number is unlimited.
+        !!! Note
+            - The default number is set to 4.
+            - If empty, the number is unlimited.
 
-!![Maximum items visible for relation](../../assets/images/setting-maximum-items-visible-in-relation.png)
+    !![Maximum items visible for relation](../../assets/images/setting-maximum-items-visible-in-relation.png)
 
-!![QField Visible items](../../assets/images/maximum-items-visible-in-relation.png,300px)
+    !![QField Visible items](../../assets/images/maximum-items-visible-in-relation.png,300px)
 
 ## Package for QField
 
 Once you are done with configuring your project, layers and styles you are ready to package your project.
 
-1. Direct to *Plugins* > *QFieldSync* > *Package for QField* or click on the according symbol in the QFieldSync Toolbar.
+!!! Workflow
 
+    1. Direct to *Plugins* > *QFieldSync* > *Package for QField* or click on the according symbol in the QFieldSync Toolbar.
     !![Package the project for QField](../../assets/images/qfield-sync_package1.png)
-
-
-2. Select the folders which also should be copied to QField.
-
+    2. Select the folders which also should be copied to QField.
     !![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png,400px)
-
-
     By default, QFieldSync chooses the filepath for exporting a project.
     It is however possible to change those defaults by directing to *Plugins* > *QFieldSync* > *Preferences*.
-
     !![QFieldSync Preferences button](../../assets/images/qfieldsync-preferences-button.png,250px)
-
     In this window you can also manage whether the packaging options are shown in the QFieldSync toolbar.
-
     !![QFieldSync Preferences](../../assets/images/checkbox-show-package.png,850px)
-
     !![](../../assets/images/unchecked-show-package.png,90px)
-
     !![](../../assets/images/checked-show-package.png,150px)
+    3. To start working in QField, copy the whole folder on your device.
+    Check the [Storage section](../../how-to/project-setup/storage.en.md#2-copying-project-over-to-the-qfield-target-device) <!-- markdown-link-check-disable-line --> for the directory specification, depending on your system (Android, IOS, Windows).
 
-3. To start working in QField, copy the whole folder on your device.
-Check the [Storage section](../../how-to/project-setup/storage.en.md#2-copying-project-over-to-the-qfield-target-device) <!-- markdown-link-check-disable-line --> for the directory specification, depending on your system (Android, IOS, Windows).
+    !!! Tip
 
-!!! Tip
-    Make sure to save the QGIS project using the regular Save As of QGIS as you'll have to re-open it later when you want to synchronize the changes.
-
+        Make sure to save the QGIS project using the regular Save As of QGIS as you'll have to re-open it later when you want to synchronize the changes.
 
 ## Synchronize from QField
 
 Once done with your collection, it is time to synchronize the data with your Desktop project.
 
-1. Re-open the project in QGIS (the one you saved with a regular Save As) previously.
-2. Copy the project folder from your device to your computer.
-3. Direct to *Plugins* > *QFieldSync* > *Synchronize from QField* menu to synchronize your changes from the QField project to the Desktop project.
+!!! Workflow
 
-!![Synchronize from QField](../../assets/images/qfield-sync_sync.png,400px)
+    1. Re-open the project in QGIS (the one you saved with a regular Save As) previously.
+    2. Copy the project folder from your device to your computer.
+    3. Direct to *Plugins* > *QFieldSync* > *Synchronize from QField* menu to synchronize your changes from the QField project to the Desktop project.
+    !![Synchronize from QField](../../assets/images/qfield-sync_sync.png,400px)
 
-!!! Attention
-    Make sure that you synchronize your data back only once.
-    That means, if you go out again to collect more data, you should create a new QField package before to avoid sync problems later on (like e.g. duplicates).
+    !!! Attention
+        Make sure that you synchronize your data back only once.
+        That means, if you go out again to collect more data, you should create a new QField package before to avoid sync problems later on (like e.g. duplicates).
