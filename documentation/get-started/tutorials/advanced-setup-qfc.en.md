@@ -142,26 +142,23 @@ You can find more information on [QFieldCloud technical reference](../../referen
 
 ## Project Configuration Best Practices
 
-To ensure a smooth synchronization process and maintain projects within QField and QFieldCloud, follow this recommendations.
+To ensure a smooth synchronization process between QGIS, QField and QFieldCloud, follow these recommendations.
 
-### 1. Centralized Data Storage
-
-**Add all data into your project file location folder.**
+**1. Centralized Data Storage - Add all data in the same folder as your .qgs profject file**
 
 Before uploading your project, ensure all relevant data sources (GeoPackages, rasters, etc.) are located in the same directory as your project file (`.qgs/.qgz`)
 or in a subdirectory (e.g., `./data`, `./assets`).
 If files are spread across different drives or folders on your computer, QFieldSync and QFieldCloud may fail to package them correctly for the mobile device.
 
-### 2. Managing Unique IDs
-
-**Add a unique ID to your layers.**
+**2. Managing Unique IDs - Add a unique ID to your layers**
 
 When multiple users collect data offline simultaneously, standard auto-incrementing IDs (1, 2, 3...) will result in conflict errors when applying the deltas changes data on QFieldCloud.
 
 - **For Relations**: Create a specific text field (e.g., `survey_uuid`) and use `uuid()` or `uuid('WithoutBraces')` as the default value.
 Use this field for all foreign keys and for primary key if the layer is from PostgreSQL/PostGIS.
 - **For the `fid` (Feature ID)**: If you are working with GeoPackages, you can reduce conflicts on the internal `fid` integer column
-by setting the "Default Value" to the expression `epoch(now())`. This generates a unique integer based on the current timestamp.
+by setting the "Default Value" to the expression `epoch(now())`.
+This generates a unique integer based on the current timestamp.
 
 !!! Tip
     To set this up, go to **Layer Properties > Attributes Form**, select the `fid` field, and set the **Default Value** to:
@@ -170,45 +167,42 @@ by setting the "Default Value" to the expression `epoch(now())`. This generates 
     ```
     Ensure the "Apply default value on update" box is **unchecked** so the ID remains constant after creation.
 
-### 3. Relative Paths
-
-**Ensure that all attachment paths are relative.**
+**3. Relative Paths - Ensure that all attachment paths are relative**
 
 Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break when the project is transferred to a mobile device (Android/iOS), as the file system structure is different.
 
-1. Navigate to **Project** > **Properties...** > **General**.
-2. Set **Save paths** to `Relative`.
+!!! Workflow
 
-### 4. Stable Layer References in Expressions
+    1. Navigate to **Project** > **Properties...** > **General**.
+    2. Set **Save paths** to `Relative`.
 
-**Use the Layer Name in expressions, not the Layer ID.**
+**4. Stable Layer References in Expressions - Use the Layer Name in expressions, not the Layer ID**
 
-When writing expressions (for example, inside `aggregate()` functions or `relation_aggregate()`),
-QGIS allows you to reference layers by their internal ID (e.g., `places_2348274...`) or their Name (e.g., `Places`).
+When writing expressions (for example, inside `aggregate()` or `relation_aggregate()`)functions, QGIS allows you to reference layers by their internal ID (e.g., `places_2348274...`) or their Name (e.g., `Places`).
 Always use the **Layer Name** (e.g., `Places`).
 
-- **Why?** The internal Layer ID changes if you remove and re-add a layer or internally in QFieldCloud when a packaging job is triggered could change,
-which breaks your expressions. The Layer Name remains stable as long as you do not rename it in the layer tree.
+**Why?**
+The internal Layer ID changes if you remove and re-add a layer or internally in QFieldCloud when a packaging job is triggered could change,
+which breaks your expressions.
+The Layer Name remains stable as long as you do not rename it in the layer tree.
 
-### 5. Preferred File Formats
-
-**Convert your layers to GeoPackage.**
+**5. Preferred File Formats - Convert your layers to GeoPackage**
 
 QField and QFieldCloud are optimized for the **GeoPackage (.gpkg)** format.
-While QField and QFieldCloud supports others formats like Shapefiles (`.shp`), GeoJSON, and KML, etc.,
-we strongly recommend converting these layers to GeoPackage before starting your project.
+While QField and QFieldCloud support others formats like Shapefiles (`.shp`), GeoJSON, and KML, etc., we strongly recommend converting these layers to GeoPackage before starting your project.
 
 **How to Convert to GeoPackage?**
 
 !!! Workflow
 
-    - In QGIS, right-click your layer in the Layers panel.
-    - Select **Export** > **Save Features As...**
-    - Set **Format** to `GeoPackage`.
-    - In **File name**, click `...` and navigate to your project folder. Give the new database a name (e.g., `layer.gpkg`).
-    - In **Layer name**, give your layer a simple name (e.g., `survey_points`).
-    - Click **OK**.
-    - The new layer will load into your project. You can now remove the old layer.
+    1. In QGIS, right-click your layer in the layer tree.
+    2. Select **Export** > **Save Features As...**
+    3. Set **Format** to `GeoPackage`
+    4. In **File name**, click `...` and navigate to your project folder. Give the new database a name (e.g., `layer.gpkg`)
+    5. In **Layer name**, give your layer a simple name (e.g., `survey_points`)
+    6. Click **OK**
+    7. The new layer will load into your project.
+    You can now remove the old layer
 
 ### Common Configuration Errors
 
