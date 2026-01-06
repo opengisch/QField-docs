@@ -122,28 +122,33 @@ If you want to see the site in all the translations, in `.env` file set `BUILD_O
 
 
 #### Contribute
+
 Before committing, install [pre-commit](https://pre-commit.com/) to auto-format your contributions. You can install pre-commit for the current user with
 
-    pip install --user pre-commit
-    pre-commit install
-
+```sh
+pip install --user pre-commit
+pre-commit install
+```
 
 #### Testing your changes (on your local machine via Docker)
 
 Ensure [Docker](https://docs.docker.com/get-docker/) or [Podman](https://podman.io/getting-started/installation) is installed and set up as appropriate. If using Podman substitute `podman` for `docker` in the following steps.
 
 1. Clone this repository: git clone https://github.com/opengisch/QField-docs
-2. Build the container: `docker build . -t qfield-docs`
-3. Run it: `docker run -it -v ${PWD}/documentation:/opt/app/documentation -p 8000:8000 qfield-docs`
-4. Point your browser to the serving endpoint at http://localhost:8000.  <!-- markdown-link-check-disable-line -->
+2. Create or get a Transifex API token on `app.transifex.com`, and save it to a local `.transifexrc` file.
+3. Build the container: `docker build . -t qfield-docs --secret id=tx_token,src=.transifexrc`
+4. Run it: `docker run -it -v ${PWD}/documentation:/opt/app/documentation -p 8000:8000 qfield-docs`
+5. Point your browser to the serving endpoint at <http://localhost:8000>.  <!-- markdown-link-check-disable-line -->
 
 The server will automatically live-reload with any change made to the local `./documentation` directory.
 
 For inspecting the built documentation before serving you can instead run the container with:
 
-    docker run -it -p 8000:8000 --rm localhost/qfield-docs bash
-    source .venv/bin/activate
-    mkdocs build
+```sh
+docker run -it -p 8000:8000 --rm localhost/qfield-docs bash
+source .venv/bin/activate
+mkdocs build
+```
 
 The build output is available at `./site` inside of the container.
 
@@ -157,8 +162,7 @@ request](https://help.github.com/articles/using-pull-requests/).
 
 *Note: You will need to have a [Transifex account](https://transifex.com/) for this.*
 
-Navigate to our [Transifex
-project](https://explore.transifex.com/opengisch/)
+Navigate to our [Transifex project](https://explore.transifex.com/opengisch/)
 and click on the language you would like to translate. You will see a link
 `Join Team`. Click it and wait for approval (you will receive an email).
 
