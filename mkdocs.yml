@@ -21,10 +21,13 @@ theme:
   custom_dir: theme_overrides/
   features:
     - navigation.tabs
+    - navigation.tracking
     # - navigation.instant # Not compatible with i18n plugin
     - navigation.expand
     - navigation.indexes
     - navigation.top
+    - navigation.footer
+    - toc.follow
     - search.suggest
     - search.highlight
     - search.share
