@@ -169,7 +169,8 @@ This generates a unique integer based on the current timestamp.
 
 ### 3. Relative Paths - Ensure that all attachment paths are relative
 
-Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break when the project is transferred to a mobile device (Android/iOS), as the file system structure is different.
+Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break when the project is transferred to a mobile device (Android/iOS),
+as the file system structure is different.
 
 !!! Workflow
 
@@ -178,7 +179,8 @@ Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break 
 
 ### 4. Stable Layer References in Expressions - Use the Layer Name in expressions, not the Layer ID
 
-When writing expressions (for example, inside `aggregate()` or `relation_aggregate()`) functions, QGIS allows you to reference layers by their internal ID (e.g., `places_2348274...`) or their Name (e.g., `Places`).
+When writing expressions (for example, inside `aggregate()` or `relation_aggregate()`) functions,
+QGIS allows you to reference layers by their internal ID (e.g., `places_2348274...`) or their Name (e.g., `Places`).
 Always use the **Layer Name** (e.g., `Places`).
 
 **Why?**
@@ -189,7 +191,8 @@ The Layer Name remains stable as long as you do not rename it in the layer tree.
 ### 5. Preferred File Formats - Convert your layers to GeoPackage
 
 QField and QFieldCloud are optimized for the **GeoPackage (.gpkg)** format.
-While QField and QFieldCloud support others formats like Shapefiles (`.shp`), GeoJSON, and KML, etc., is strongly recommend converting these layers to GeoPackage before starting your project.
+While QField and QFieldCloud support others formats like Shapefiles (`.shp`), GeoJSON, and KML, etc.,
+is strongly recommend converting these layers to GeoPackage before starting your project.
 
 **How to Convert to GeoPackage?**
 
