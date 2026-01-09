@@ -144,13 +144,13 @@ You can find more information on [QFieldCloud technical reference](../../referen
 
 To ensure a smooth synchronization process between QGIS, QField and QFieldCloud, follow these recommendations.
 
-### 1. Centralized Data Storage - Add all data in the same folder as your .qgs project file
+**1. Centralized Data Storage - Add all data in the same folder as your .qgs project file**
 
 Before uploading your project, ensure all relevant data sources (GeoPackages, rasters, etc.) are located in the same directory as your project file (`.qgs/.qgz`)
 or in a subdirectory (e.g., `./data`, `./assets`).
 If files are spread across different drives or folders on your computer, QFieldSync and QFieldCloud may fail to package them correctly for the mobile device.
 
-### 2. Managing Unique IDs - Add a unique ID to your layers
+**2. Managing Unique IDs - Add a unique ID to your layers**
 
 When multiple users collect data offline simultaneously, standard auto-incrementing IDs (1, 2, 3...) will result in conflict errors when applying the deltas changes data on QFieldCloud.
 
@@ -177,7 +177,7 @@ as the file system structure is different.
     1. Navigate to **Project** > **Properties...** > **General**.
     2. Set **Save paths** to `Relative`.
 
-### 4. Stable Layer References in Expressions - Use the Layer Name in expressions, not the Layer ID
+**4. Stable Layer References in Expressions - Use the Layer Name in expressions, not the Layer ID**
 
 When writing expressions (for example, inside `aggregate()` or `relation_aggregate()`) functions,
 QGIS allows you to reference layers by their internal ID (e.g., `places_2348274...`) or their Name (e.g., `Places`).
@@ -188,11 +188,10 @@ The internal Layer ID changes if you remove and re-add a layer or internally in 
 which breaks your expressions.
 The Layer Name remains stable as long as you do not rename it in the layer tree.
 
-### 5. Preferred File Formats - Convert your layers to GeoPackage
+**5. Preferred File Formats - Convert your layers to GeoPackage**
 
 QField and QFieldCloud are optimized for the **GeoPackage (.gpkg)** format.
-While QField and QFieldCloud support others formats like Shapefiles (`.shp`), GeoJSON, and KML, etc.,
-is strongly recommend converting these layers to GeoPackage before starting your project.
+While QField and QFieldCloud support others formats like Shapefiles (`.shp`), GeoJSON, and KML, etc., is strongly recommend converting these layers to GeoPackage before starting your project.
 
 **How to Convert to GeoPackage?**
 
@@ -201,13 +200,13 @@ is strongly recommend converting these layers to GeoPackage before starting your
     1. In QGIS, right-click your layer in the layer tree.
     2. Select **Export** > **Save Features As...**
     3. Set **Format** to `GeoPackage`
-    4. In **File name**, click `...` and navigate to your project folder. Give the new database a name (e.g., `notes_points.gpkg`)
+    4. In **File name**, click `...` and navigate to your project folder. Give the new database a name (e.g., notes_points.gpkg`)
     5. In **Layer name**, give your layer a simple name (e.g., `notes_points`)
     6. Click **OK**
     7. The new layer will load into your project.
     You can now remove the old layer
 
-### 6. Modular File Structure - Store one layer per GeoPackage
+**6. Modular File Structure - Store one layer per GeoPackage**
 
 QFieldCloud manages versions and backups at the **file level**. Every time changes are synchronized, a backup of the modified file is created.
 
