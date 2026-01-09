@@ -167,7 +167,7 @@ This generates a unique integer based on the current timestamp.
     ```
     Ensure the "Apply default value on update" box is **unchecked** so the ID remains constant after creation.
 
-### 3. Relative Paths - Ensure that all attachment paths are relative
+**3. Relative Paths - Ensure that all attachment paths are relative**
 
 Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break when the project is transferred to a mobile device (Android/iOS),
 as the file system structure is different.
@@ -210,8 +210,7 @@ While QField and QFieldCloud support others formats like Shapefiles (`.shp`), Ge
 
 QFieldCloud manages versions and backups at the **file level**. Every time changes are synchronized, a backup of the modified file is created.
 
-- **The Risk:** If you store multiple layers in a single GeoPackage (e.g., `survey_data.gpkg` containing *Trees*, *Roads*, and *Buildings*),
-    restoring a backup to fix an error in the *Trees* layer will also roll back valid work done on *Roads* and *Buildings* during that same period.
+- **The Risk:** If you store multiple layers in a single GeoPackage (e.g., `survey_data.gpkg` containing *Trees*, *Roads*, and *Buildings*), restoring a backup to fix an error in the *Trees* layer will also roll back valid work done on *Roads* and *Buildings* during that same period.
 - **The Solution:** Save each layer in its own separate GeoPackage (e.g., `trees.gpkg`, `roads.gpkg`).
     This allows you to restore a previous version of one specific layer without losing data in others.
 
