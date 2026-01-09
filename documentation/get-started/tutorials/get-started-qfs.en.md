@@ -6,7 +6,8 @@ tx_slug: documentation_get-started_tutorials_get-started-qfs
 
 # QFieldSync
 
-[QFieldSync (QFS))](https://plugins.qgis.org/plugins/qfieldsync/) is the QGIS plugin, which you should use to "package" your projects for QField, which means to make your project available for QField.
+[QFieldSync (QFS))](https://plugins.qgis.org/plugins/qfieldsync/) <!-- markdown-link-check-disable-line -->
+is the QGIS plugin, which you should use to "package" your projects for QField, which means to make your project available for QField.
 It is also this plugin you need to use when connecting to [QFieldCloud](advanced-setup-qfc.md).
 
 QFieldSync will do the following:
