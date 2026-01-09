@@ -144,7 +144,7 @@ You can find more information on [QFieldCloud technical reference](../../referen
 
 To ensure a smooth synchronization process between QGIS, QField and QFieldCloud, follow these recommendations.
 
-**1. Centralized Data Storage - Add all data in the same folder as your .qgs profject file**
+**1. Centralized Data Storage - Add all data in the same folder as your .qgs project file**
 
 Before uploading your project, ensure all relevant data sources (GeoPackages, rasters, etc.) are located in the same directory as your project file (`.qgs/.qgz`)
 or in a subdirectory (e.g., `./data`, `./assets`).
@@ -169,7 +169,8 @@ This generates a unique integer based on the current timestamp.
 
 **3. Relative Paths - Ensure that all attachment paths are relative**
 
-Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break when the project is transferred to a mobile device (Android/iOS), as the file system structure is different.
+Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break when the project is transferred to a mobile device (Android/iOS),
+as the file system structure is different.
 
 !!! Workflow
 
@@ -178,7 +179,8 @@ Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break 
 
 **4. Stable Layer References in Expressions - Use the Layer Name in expressions, not the Layer ID**
 
-When writing expressions (for example, inside `aggregate()` or `relation_aggregate()`) functions, QGIS allows you to reference layers by their internal ID (e.g., `places_2348274...`) or their Name (e.g., `Places`).
+When writing expressions (for example, inside `aggregate()` or `relation_aggregate()`) functions,
+QGIS allows you to reference layers by their internal ID (e.g., `places_2348274...`) or their Name (e.g., `Places`).
 Always use the **Layer Name** (e.g., `Places`).
 
 **Why?**
@@ -198,11 +200,19 @@ While QField and QFieldCloud support others formats like Shapefiles (`.shp`), Ge
     1. In QGIS, right-click your layer in the layer tree.
     2. Select **Export** > **Save Features As...**
     3. Set **Format** to `GeoPackage`
-    4. In **File name**, click `...` and navigate to your project folder. Give the new database a name (e.g., `layer.gpkg`)
-    5. In **Layer name**, give your layer a simple name (e.g., `survey_points`)
+    4. In **File name**, click `...` and navigate to your project folder. Give the new database a name (e.g., notes_points.gpkg`)
+    5. In **Layer name**, give your layer a simple name (e.g., `notes_points`)
     6. Click **OK**
     7. The new layer will load into your project.
     You can now remove the old layer
+
+**6. Modular File Structure - Store one layer per GeoPackage**
+
+QFieldCloud manages versions and backups at the **file level**. Every time changes are synchronized, a backup of the modified file is created.
+
+- **The Risk:** If you store multiple layers in a single GeoPackage (e.g., `survey_data.gpkg` containing *Trees*, *Roads*, and *Buildings*), restoring a backup to fix an error in the *Trees* layer will also roll back valid work done on *Roads* and *Buildings* during that same period.
+- **The Solution:** Save each layer in its own separate GeoPackage (e.g., `trees.gpkg`, `roads.gpkg`).
+    This allows you to restore a previous version of one specific layer without losing data in others.
 
 ### Common Configuration Errors
 
