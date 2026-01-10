@@ -101,6 +101,47 @@ This is convenient in cases you want to copy and paste your settings directly fr
 
 !![Adding a PostgreSQL service - Advanced editor.](../../assets/images/secrets-pgservice-advanced.png)
 
+### Overriding PostgreSQL Session Role
+
+In order to override the connecting PostgreSQL user during packaging and delta applying Jobs, you need to **create a specific Environment Variable Secret** called `QFC_PG_EFFECTIVE_USER`.
+
+This Secret will make QFieldCloud behave the same way as when you set a `Session ROLE` value, in a PostgreSQL/PostGIS connection setting in QGIS.
+
+In QGIS, the **Session ROLE** setting allows you to separate **authentication** (logging in) from **authorization** (permissions and identity).
+This utilizes the PostgreSQL `SET ROLE` command.
+
+!![Setting session ROLE in QGIS](../../assets/images/set_session_role_in_qgis.png)
+
+**Use Case: Simplified User Management & Auditing**
+
+Imagine in the organization with field workers. Managing many unique passwords and updating them in QFieldCloud Secrets is inefficient. Instead, you can use a **Proxy Authentication** approach:
+
+1. **Generic Connection User:** You create one database role (e.g., `qfield_service`) that handles the actual password/SSL connection.
+2. **Specific User Roles:** You create roles for your actual users (e.g., `user_mielena`, `ninja_user_001`) without passwords.
+3. **Grant Permissions:** You allow the service to "become" the users:
+
+```sql
+GRANT user_mielena TO qfield_service;
+```
+
+**QGIS Configuration:** In the QGIS Connection setup, you connect as `qfield_service`, but in the "Session role" field, you enter `user_mielena`.
+
+**The Result:**
+
+- **Auditing:** When data is synced, database triggers utilizing `current_user` will record `user_mielena` as the author, rather than the generic service account.
+- **Security:** If you use PostgreSQL **Row-Level Security (RLS)** to restrict users to specific regions, the database will apply rules based on `user_mielena`, ensuring that only downloads or edits her assigned area for this user.
+
+To configure this:
+
+1. Create a new secret with the type **Environment variable**.
+2. Name the secret `QFC_PG_EFFECTIVE_USER` (the name must be exact).
+3. Set the value to the desired role name.
+
+!![Overriding Session ROLE in QFieldCloud](../../assets/images/overriding_session_role_on_qfc.png)
+
+!!! important
+     This secret must be explicitly assigned to a **User**, within a Project or an Organization.
+
 ### Example
 
 The following example will go through the addition and verification process of the above explained hierarchy.
