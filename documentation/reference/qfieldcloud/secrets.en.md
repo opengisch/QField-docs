@@ -103,9 +103,9 @@ This is convenient in cases you want to copy and paste your settings directly fr
 
 ### Overriding PostgreSQL Session Role
 
-In order to override the connecting PostgreSQL user during packaging and delta applying Jobs,
-you need to **utilize a specific Environment Variable Secret** called `QFC_PG_EFFECTIVE_USER`.
-This behaves the same way as the `Session ROLE` PostgreSQL connection setting connection in QGIS.
+In order to override the connecting PostgreSQL user during packaging and delta applying Jobs, you need to **create a specific Environment Variable Secret** called `QFC_PG_EFFECTIVE_USER`.
+
+This Secret will make QFieldCloud behave the same way as when you set a `Session ROLE` value, in a PostGIS connection setting in QGIS.
 
 To configure this:
 
