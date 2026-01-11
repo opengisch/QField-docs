@@ -103,33 +103,74 @@ This is convenient in cases you want to copy and paste your settings directly fr
 
 ### Overriding PostgreSQL Session Role
 
-In order to override the connecting PostgreSQL user during packaging and delta applying Jobs, you need to **create a specific Environment Variable Secret** called `QFC_PG_EFFECTIVE_USER`.
+In order to override the connecting PostgreSQL user during packaging and delta applying Jobs,
+you need to **create a specific Environment Variable Secret** called `QFC_PG_EFFECTIVE_USER`.
 
-This Secret will make QFieldCloud behave the same way as when you set a `Session ROLE` value, in a PostgreSQL/PostGIS connection setting in QGIS.
+This Secret instructs QFieldCloud to use a [`SET ROLE`](https://www.postgresql.org/docs/current/sql-set-role.html) command immediately after connecting to the database.
+This effectively separates **authentication** (logging in via password/SSL) from **authorization** (identity and permissions).
 
-In QGIS, the **Session ROLE** setting allows you to separate **authentication** (logging in) from **authorization** (permissions and identity).
-This utilizes the PostgreSQL `SET ROLE` command.
+**Use Case: Simplified User Management & Auditing (Proxy Authentication)**
+
+In an organization with many field workers, managing unique database passwords for every user and updating them in QFieldCloud Secrets is inefficient. Instead, you can use a **Proxy Authentication** approach where a single powerful role handles connections, but specific roles are used for actual data operations.
+
+**1. The Setup**
+
+- **Generic Connection User (`qfield_admin`):** You create one database role that handles the actual password/SSL connection.
+  This role should have the necessary `USAGE` or `CONNECT` privileges and crucially must be a member of the specific user roles in PostgreSQL/PostGIS.
+- **Specific User Roles (`user_mielena`, `ninja_user_001`):** You create roles for your actual users without passwords.
+- **Grant Permissions:** You allow the generic service to "become" the specific users.
+
+```sql
+-- 1. Create the Roles
+-- 'qfield_admin': The generic service account (has the password)
+-- 'user_mielena': The specific field worker (no password needed)
+CREATE ROLE qfield_admin WITH LOGIN PASSWORD 'strong_password';
+CREATE ROLE user_mielena WITH NOLOGIN;
+
+-- 2. Proxy Configuration
+-- Allow qfield_admin to switch identity to user_mielena
+GRANT user_mielena TO qfield_admin;
+
+-- 3. Create the Data Table
+CREATE TABLE field_observations (
+    id SERIAL PRIMARY KEY,
+    geom GEOMETRY(Point, 4326),
+    note TEXT,
+    surveyor_name TEXT DEFAULT current_user -- Auto-fill with the effective user
+);
+
+-- 4. Grant Table Permissions
+-- The specific user needs permission to read/write the table
+GRANT ALL ON field_observations TO user_mielena;
+GRANT USAGE, SELECT ON SEQUENCE field_observations_id_seq TO user_mielena;
+
+-- 5. Enable Row-Level Security
+ALTER TABLE field_observations ENABLE ROW LEVEL SECURITY;
+
+-- 6. Create the Security Policy
+-- This policy ensures users can only see and edit rows where
+-- the 'surveyor_name' matches their current effective role.
+CREATE POLICY surveyor_isolation_policy ON field_observations
+    FOR ALL
+    -- The USING clause determines which rows are visible
+    USING (surveyor_name = current_user)
+    -- The WITH CHECK clause ensures they can't create data for others
+    WITH CHECK (surveyor_name = current_user);
+```
+
+**2. QGIS Configuration (The Generic Connection)**
+
+In your QGIS Project, configure your PostgreSQL/PostGIS connection to authenticate as the generic **`qfield_admin`**.
+
+!!! note
+    You do _not_ need to hardcode the "Session role" in the QGIS connection settings for this workflow. Leave it blank, as QFieldCloud is responsible for injecting the role dynamically through the secret.
+    Although QGIS allows setting a "Session role" manually, for QFieldCloud workflows, it is often better to manage this via Secrets to keep the QGIS project file generic, unless the field worker needs to perform reviews directly in QGIS.
 
 !![Setting session ROLE in QGIS](../../assets/images/set_session_role_in_qgis.png)
 
-**Use Case: Simplified User Management & Auditing**
+**3. QFieldCloud Configuration (The Override)**
 
-Imagine in the organization with field workers. Managing many unique passwords and updating them in QFieldCloud Secrets is inefficient. Instead, you can use a **Proxy Authentication** approach:
-
-1. **Generic Connection User:** You create one database role (e.g., `qfield_service`) that handles the actual password/SSL connection.
-2. **Specific User Roles:** You create roles for your actual users (e.g., `user_mielena`, `ninja_user_001`) without passwords.
-3. **Grant Permissions:** You allow the service to "become" the users:
-
-```sql
-GRANT user_mielena TO qfield_service;
-```
-
-**QGIS Configuration:** In the QGIS Connection setup, you connect as `qfield_service`, but in the "Session role" field, you enter `user_mielena`.
-
-**The Result:**
-
-- **Auditing:** When data is synced, database triggers utilizing `current_user` will record `user_mielena` as the author, rather than the generic service account.
-- **Security:** If you use PostgreSQL **Row-Level Security (RLS)** to restrict users to specific regions, the database will apply rules based on `user_mielena`, ensuring that only downloads or edits her assigned area for this user.
+When QFieldCloud runs a job (packaging or syncing), it will read the `QFC_PG_EFFECTIVE_USER` secret. Even though the project connects as `qfield_admin`, QFieldCloud will switch the active session to the user defined in the secret.
 
 To configure this:
 
@@ -137,10 +178,16 @@ To configure this:
 2. Name the secret `QFC_PG_EFFECTIVE_USER` (the name must be exact).
 3. Set the value to the desired role name.
 
+!!! important
+    This secret must be explicitly assigned to a **User**, within a Project or an Organization.
+
 !![Overriding Session ROLE in QFieldCloud](../../assets/images/overriding_session_role_on_qfc.png)
 
-!!! important
-     This secret must be explicitly assigned to a **User**, within a Project or an Organization.
+**The Result:**
+
+- **Auditing:** When data is synced, database triggers utilizing `current_user` will record `user_mielena` as the author, rather than the generic service account.
+- **Security:** If you use PostgreSQL **Row-Level Security (RLS)** to restrict users to specific regions, the database will apply rules based on `user_mielena`,
+   ensuring that the user only downloads or edits their assigned area.
 
 ### Example
 
