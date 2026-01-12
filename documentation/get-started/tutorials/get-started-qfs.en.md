@@ -16,14 +16,6 @@ QFieldSync will do the following:
 - By default QFS will set your project to "offline editing".
 - It is used to synchronize your changes made in the field to the Desktop project.
 
-To get a quick overview of the process, here is a list of typical steps:
-
-1. Create a QField package. This is a working copy in a separate folder.
-2. Copy the QField package to the target device.
-3. Go out and collect data.
-4. Copy the modified data back to your desktop computer.
-5. Synchronize the modified data with your database or files.
-
 ## Installation
 
 Before you get started with QField you will have to download the plugin through the plugin repository.
