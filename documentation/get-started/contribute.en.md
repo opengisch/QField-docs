@@ -48,7 +48,7 @@ You can be part of an exciting opportunity for something truly impactful! We bel
 To turn this vision into reality, we need your support through crowdfunding.
 Your contribution plays a crucial role in reaching the funding goal and making QField even better.
 
-Please visit our [crowdfunding page](https://www.opengis.ch/category/crowdfunding/).
+Please visit our [crowdfunding page](https://www.opengis.ch/category/crowdfunding/). <!-- markdown-link-check-disable-line -->
 
 ### Feature sponsoring
 
