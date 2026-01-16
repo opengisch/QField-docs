@@ -100,25 +100,43 @@ If any of the following condition are valid:
 A `delta_apply` job might result in `FAILED` status.
 Check the non-exhaustive list of causes below:
 
-- At least one of the online databases (PostGIS/WFS) used in the QGIS project reset the connection.
-- The project is too big and the job has failed to run.
-- There are hidden files and directories within the project that are preventing the normal work of QFieldCloud.
-- Hidden files and directories are those starting with a leading dot (`.`).
+- **Database connection issues:** The online database (PostgreSQL/PostGIS) used in the QGIS project reset the connection, timed out, or is currently unavailable.
+- **Feature missing:** The feature being updated has been deleted from the source data (e.g., by another user or process) before the delta change could be applied.
+- **Layer missing:** The layer corresponding to the changes was removed from the QGIS project.
+- **Source changed:** The structure of the layer source was changed (e.g., columns were renamed or removed), making the delta incompatible.
+- **Project size:** The project is too big and the job has failed to run within the resource limits.
+- **Hidden files:** There are hidden files and directories within the project that are preventing the normal work of QFieldCloud.
+    Hidden files and directories are those starting with a leading dot (`.`).
 
 ##### Understanding conflicts `delta_apply` jobs
 
-Conflicts can occur under the following conditions:
+Conflicts occur when multiple changes affect the same data in a way that QFieldCloud cannot automatically resolve without a defined policy.
 
-1. Two or more users modify the geometry or a specific attribute of the same feature, starting from the same initial value but saving different values.
-2. A primary key is used more than once.
+**What is marked as a "CONFLICT"?**
+
+In the **Changes** section, a delta status is set to `CONFLICT` when:
+
+1. **Concurrent Editing:** Two or more users modify the same feature (identified by the same primary key) on the same layer.
+2. **Primary Key Collision:** A new feature is created with a primary key that already exists in the database.
+
+**What overwrites what?**
+
+QFieldCloud resolves these conflicts based on the project's conflict resolution setting.
+
+- **Last Wins (Default):** QFieldCloud compares the timestamps of the conflicting changes.
+    The change with the most recent timestamp overwrites any previous changes to the same attributes.
+    The older change is effectively discarded in favor of the newer one, though it remains in the history.
+- **Manual:** No changes are overwritten automatically. The conflict is flagged, and the project administrator must manually select which version to apply.
+
+**Preventing Conflicts**
 
 To minimize the risk of conflicts, follow these best practices:
 
-- **Plan updates collaboratively** - When updating features based on specific field conditions, assign each user a distinct set of features to edit.
-- Clear planning reduces overlap and potential conflicts.
-- **Avoid modifying primary keys** - Primary keys should be treated as immutable and configured to be read-only.
-- This ensures consistent identification of features and prevents accidental modifications.
-- **Ensure unique primary keys** - Use a truly unique primary key, such as a UUID (`uuid()`), to prevent conflicts and ensure data integrity.
+- **Plan updates collaboratively**: When updating features based on specific field conditions, assign each user a distinct set of features to edit.
+    Clear planning reduces overlap and potential conflicts.
+- **Avoid modifying primary keys**: Primary keys should be treated as immutable and configured to be read-only.
+    This ensures consistent identification of features and prevents accidental modifications.
+- **Ensure unique primary keys**: Use a truly unique [primary key](../../get-started/tutorials/advanced-setup-qfc.md#project-configuration-best-practices) to prevent conflicts and ensure data integrity.
 
 By implementing these practices, you can significantly reduce the likelihood of conflicts and maintain consistent data.
 
