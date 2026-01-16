@@ -69,7 +69,7 @@ To monitor the number of active users direct to *Organization Settings* > *Billi
 ## Adding QFieldCloud storage
 
 In QFieldCloud you can configure as much storage as desired for your projects.
-Additional storage can be obtained in the sets of 3 GB, each costing 5€.
+Additional storage can be obtained in the sets of 3 GB.
 
 To add more storage to QFieldCloud direct to *Settings* > *Billing* > *Subscription* > *Change* > *Update storage*
 
