@@ -185,7 +185,7 @@ Information for GNSS Z value with Vertical grid shift in use:
 
 ### Capturing longitude, latitude and altitude in attribute form
 
-It is useful and not uncommon that the actual positioning values should be automatically stored inside the attrbute form.
+It is useful and not uncommon that the actual positioning values should be automatically stored inside the attribute form.
 This applies for longitude, latitude and altitude.
 
 !!! Workflow

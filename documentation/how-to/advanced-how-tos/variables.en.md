@@ -32,7 +32,7 @@ New variables can be added or modified and will be available in QField across se
 ## Variable Management in QField
 
 Variables are managed directly on your device and are accessible in all available QField projects.
-When you access the variables list in QField ( *Side Dasboard* > *Settings* > *Variables* ), you will find a consolidated and organized view of all available variables.
+When you access the variables list in QField ( *Side Dashboard* > *Settings* > *Variables* ), you will find a consolidated and organized view of all available variables.
 
 ### Variable configuration
 :material-tablet: Fieldwork
