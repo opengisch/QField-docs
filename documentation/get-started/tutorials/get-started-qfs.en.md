@@ -6,7 +6,8 @@ tx_slug: documentation_get-started_tutorials_get-started-qfs
 
 # QFieldSync
 
-[QFieldSync (QFS))](https://plugins.qgis.org/plugins/qfieldsync/) <!-- markdown-link-check-disable-line --> is the QGIS plugin, which you should use to "package" your projects for QField, which means to make your project available for QField.
+[QFieldSync (QFS))](https://plugins.qgis.org/plugins/qfieldsync/) <!-- markdown-link-check-disable-line -->
+is the QGIS plugin, which you should use to "package" your projects for QField, which means to make your project available for QField.
 It is also this plugin you need to use when connecting to [QFieldCloud](advanced-setup-qfc.md).
 
 QFieldSync will do the following:
@@ -115,57 +116,6 @@ A higher value increases detail but may require more storage space, as well as i
 
 !![Base Map Configuration QFieldSync](../../assets/images/base_map_configuration.png)
 
-## Package for QField
-
-Once you are done with configuring your project, layers and styles you are ready to package your project.
-
-!!! Workflow
-
-     1. Direct to *Plugins* > *QFieldSync* > *Package for QField* or click on the according symbol in the QFieldSync Toolbar.
-
-        !![Package the project for QField](../../assets/images/qfield-sync_package1.png)
-
-     2. Select the folders which also should be copied to QField.
-
-        !![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png,400px)
-
-        By default, QFieldSync chooses the filepath for exporting a project.
-        It is however possible to change those defaults by directing to *Plugins* > *QFieldSync* > *Preferences*.
-
-        !![QFieldSync Preferences button](../../assets/images/qfieldsync-preferences-button.png,250px)
-
-        In this window you can also manage whether the packaging options are shown in the QFieldSync toolbar.
-
-        !![QFieldSync Preferences](../../assets/images/checkbox-show-package.png,850px)
-
-        !![](../../assets/images/unchecked-show-package.png,90px)
-
-        !![](../../assets/images/checked-show-package.png,150px)
-
-     3. To start working in QField, copy the whole folder on your device.
-     Check the [Storage section](../../get-started/storage.en.md#2-copying-project-over-to-the-qfield-target-device) for the directory specification, depending on your system (Android, IOS, Windows).
-     Typically the filepath will look something like this:
-     `Android/data/ch.opengis.qfield/files/QField/...`
-
-    !!! Tip
-        Make sure to save the QGIS project using the regular Save As of QGIS as you'll have to re-open it later when you want to synchronize the changes.
-
-## Synchronize from QField
-
-Once done with your collection, it is time to synchronize the data with your Desktop project.
-
-!!! Workflow
-
-    1. Re-open the project in QGIS (the one you saved with a regular Save As) previously.
-    2. Copy the project folder from your device to your computer.
-    3. Direct to *Plugins* > *QFieldSync* > *Synchronize from QField* menu to synchronize your changes from the QField project to the Desktop project.
-
-        !![Synchronize from QField](../../assets/images/qfield-sync_sync.png,400px)
-
-        !!! Attention
-            Make sure that you synchronize your data back only once.
-            That means, if you go out again to collect more data, you should create a new QField package before to avoid sync problems later on (like e.g. duplicates).
-
 ## Additional Properties
 
 There are some more advanced properties options which may be relevant to you depending on your domain:
@@ -201,22 +151,33 @@ Once you are done with configuring your project, layers and styles you are ready
 
 !!! Workflow
 
-    1. Direct to *Plugins* > *QFieldSync* > *Package for QField* or click on the according symbol in the QFieldSync Toolbar.
-    !![Package the project for QField](../../assets/images/qfield-sync_package1.png)
-    2. Select the folders which also should be copied to QField.
-    !![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png,400px)
-    By default, QFieldSync chooses the filepath for exporting a project.
-    It is however possible to change those defaults by directing to *Plugins* > *QFieldSync* > *Preferences*.
-    !![QFieldSync Preferences button](../../assets/images/qfieldsync-preferences-button.png,250px)
-    In this window you can also manage whether the packaging options are shown in the QFieldSync toolbar.
-    !![QFieldSync Preferences](../../assets/images/checkbox-show-package.png,850px)
-    !![](../../assets/images/unchecked-show-package.png,90px)
-    !![](../../assets/images/checked-show-package.png,150px)
-    3. To start working in QField, copy the whole folder on your device.
-    Check the [Storage section](../../how-to/project-setup/storage.en.md#2-copying-project-over-to-the-qfield-target-device) <!-- markdown-link-check-disable-line --> for the directory specification, depending on your system (Android, IOS, Windows).
+     1. Direct to *Plugins* > *QFieldSync* > *Package for QField* or click on the according symbol in the QFieldSync Toolbar.
+
+        !![Package the project for QField](../../assets/images/qfield-sync_package1.png)
+
+     2. Select the folders which also should be copied to QField.
+
+        !![Select subdirectories](../../assets/images/qfield-syinc-subdirs-exporting-project.png,400px)
+
+        By default, QFieldSync chooses the filepath for exporting a project.
+        It is however possible to change those defaults by directing to *Plugins* > *QFieldSync* > *Preferences*.
+
+        !![QFieldSync Preferences button](../../assets/images/qfieldsync-preferences-button.png,250px)
+
+        In this window you can also manage whether the packaging options are shown in the QFieldSync toolbar.
+
+        !![QFieldSync Preferences](../../assets/images/checkbox-show-package.png,850px)
+
+        !![](../../assets/images/unchecked-show-package.png,90px)
+
+        !![](../../assets/images/checked-show-package.png,150px)
+
+     3. To start working in QField, copy the whole folder on your device.
+     Check the [Storage section](../../how-to/project-setup/storage.en.md#2-copying-project-over-to-the-qfield-target-device) for the directory specification, depending on your system (Android, IOS, Windows).
+     Typically the filepath will look something like this:
+     `Android/data/ch.opengis.qfield/files/QField/...`
 
     !!! Tip
-
         Make sure to save the QGIS project using the regular Save As of QGIS as you'll have to re-open it later when you want to synchronize the changes.
 
 ## Synchronize from QField
@@ -228,8 +189,9 @@ Once done with your collection, it is time to synchronize the data with your Des
     1. Re-open the project in QGIS (the one you saved with a regular Save As) previously.
     2. Copy the project folder from your device to your computer.
     3. Direct to *Plugins* > *QFieldSync* > *Synchronize from QField* menu to synchronize your changes from the QField project to the Desktop project.
-    !![Synchronize from QField](../../assets/images/qfield-sync_sync.png,400px)
 
-    !!! Attention
-        Make sure that you synchronize your data back only once.
-        That means, if you go out again to collect more data, you should create a new QField package before to avoid sync problems later on (like e.g. duplicates).
+        !![Synchronize from QField](../../assets/images/qfield-sync_sync.png,400px)
+
+        !!! Attention
+            Make sure that you synchronize your data back only once.
+            That means, if you go out again to collect more data, you should create a new QField package before to avoid sync problems later on (like e.g. duplicates).
