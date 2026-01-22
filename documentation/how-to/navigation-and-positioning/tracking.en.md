@@ -32,7 +32,7 @@ For point layers, a new feature will be created for each recorded position, and 
 Once a tracking session is set up, a badge appears in the Side Dashboard next to the tracked layers.
 
 !!! tip
-    You can simultanously record multiple trackings sessions across several layers.
+    You can simultaneously record multiple trackings sessions across several layers.
 
 !![](../../assets/images/tracking-badge.png)
 

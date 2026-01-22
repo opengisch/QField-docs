@@ -81,7 +81,7 @@ The visual identification of the list entries is done via the **Display Expressi
 
 ### Key handling
 
-Since the parent primary key is used as foreign key in the referencing child features, the primary key must be safe to use (it must be unique) also after syncronizing back to the desktop.
+Since the parent primary key is used as foreign key in the referencing child features, the primary key must be safe to use (it must be unique) also after synchronizing back to the desktop.
 Therefore we always recommend to use UUIDs as primary keys.
 See [Working with GeoPackages](../../get-started/tutorials/advanced-setup-qfc.md#working-with-geopackages) for further information.
 
