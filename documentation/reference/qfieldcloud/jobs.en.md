@@ -37,19 +37,20 @@ QFieldCloud validates the uploaded QGIS project file (`.qgs`/`.qgz`), as well as
 It also validates remote connections to PostGIS, WFS, WMS and other online data sources.
 QFieldCloud will open the project file in a QGIS instance on the server to extract all the necessary information.
 
-#### Triggers
+#### Triggers and Possible Errors
 
-This job is triggered every time a file is uploaded to QFieldCloud, unless at least one of the following condition are valid:
+This job is triggered every time a file is uploaded to QFieldCloud.
+
+The following conditions may result in an error while uploading to QFieldCloud:
 
 - No QGIS project file (`.qgs`/`.qgz`) has been uploaded yet.
 - The uploaded file is within the `DCIM` directory.
 Those files are assumed to be irrelevant to project validity.
 - There is already a `process_projectfile` job in `PENDING` status.
 
-#### Troubleshoot
-
-A `process_projectfile` job might result in `FAILED` status.
-Check the non-exhaustive list of causes below:
+Troubleshoot and fix
+A `process_projectfile` job might result in a `FAILED` status, due to several reasons.
+Below is a list (non-exhaustive) with the most common causes:
 
 - The uploaded QGIS project file (`.qgs`/`.qgz`) is unreadable, incomplete, broken or wrong.
 Try to reupload the QGIS project file.
@@ -65,7 +66,7 @@ Try to reupload the QGIS project file.
 The `package` job converts a QGIS project to a QField project, the same way it is done on QGIS via QFieldSync.
 The `package` job will prepare all layers marked as "Offline editing" to a single GeoPackage.
 
-#### Triggers
+#### Triggers and Possible Errors
 
 This job is triggered every time the **Download** or **Synchronize** buttons are pressed on QField.
 Unless at least one of the following condition are valid:
@@ -76,8 +77,8 @@ Unless at least one of the following condition are valid:
 
 #### Troubleshoot
 
-A `package` job might result in `FAILED` status.
-Check the non-exhaustive list of causes below:
+A `package` job might result in `FAILED` status , due to several reasons.
+Below is a list (non-exhaustive) with the most common causes:
 
 - The project has never run a `process_projectfile` job that resulted in `SUCCESS` status.
 - Some of the project layers are inaccessible from QFieldCloud.
@@ -87,18 +88,19 @@ Check the non-exhaustive list of causes below:
 
 Delta apply jobs is responsible to make all pushed QField changes permanent.
 
-#### Triggers
+#### Triggers and Possible Errors
 
-This job is triggered every time a **Synchronize** or **Push changes** button is pressed on QField, or **Apply pending changes** button is pressed on the **Changes** project page.
-If any of the following condition are valid:
+This job is triggered every time a **Synchronize** or **Push changes** button is pressed on QField, or **Apply pending changes** button is pressed on the **Changes** project page in QFieldCloud.
 
-- The project never run a `process_projectfile` job that resulted in `SUCCESS` status.
+Issues may arise if any of the following condition are valid:
+
+- The project never ran a `process_projectfile` job that resulted in `SUCCESS` status.
 - There is already a `delta_apply` job in `PENDING` status.
 
 #### Troubleshoot
 
-A `delta_apply` job might result in `FAILED` status.
-Check the non-exhaustive list of causes below:
+A `delta_apply` job may result in a `FAILED` status, due to several reasons.
+Below is a list (non-exhaustive) with the most common causes:
 
 - **Database connection issues:** The online database (PostgreSQL/PostGIS) used in the QGIS project reset the connection, timed out, or is currently unavailable.
 - **Feature missing:** The feature being updated has been deleted from the source data (e.g., by another user or process) before the delta change could be applied.
@@ -112,7 +114,7 @@ Check the non-exhaustive list of causes below:
 
 Conflicts occur when multiple changes affect the same data in a way that QFieldCloud cannot automatically resolve without a defined policy.
 
-**What is marked as a "CONFLICT"?**
+**What a "CONFLICT"?**
 
 In the **Changes** section, a delta status is set to `CONFLICT` when:
 
