@@ -37,19 +37,21 @@ QFieldCloud validates the uploaded QGIS project file (`.qgs`/`.qgz`), as well as
 It also validates remote connections to PostGIS, WFS, WMS and other online data sources.
 QFieldCloud will open the project file in a QGIS instance on the server to extract all the necessary information.
 
-#### Triggers
+#### Triggers and Possible Errors
 
-This job is triggered every time a file is uploaded to QFieldCloud, unless at least one of the following condition are valid:
+This job is triggered every time a file is uploaded to QFieldCloud.
+
+The following conditions may result in an error while uploading to QFieldCloud:
 
 - No QGIS project file (`.qgs`/`.qgz`) has been uploaded yet.
 - The uploaded file is within the `DCIM` directory.
 Those files are assumed to be irrelevant to project validity.
 - There is already a `process_projectfile` job in `PENDING` status.
 
-#### Troubleshoot
+**Troubleshoot and fix**
 
-A `process_projectfile` job might result in `FAILED` status.
-Check the non-exhaustive list of causes below:
+A `process_projectfile` job might result in a `FAILED` status, due to several reasons.
+Below is a list (non-exhaustive) with the most common causes:
 
 - The uploaded QGIS project file (`.qgs`/`.qgz`) is unreadable, incomplete, broken or wrong.
 Try to reupload the QGIS project file.
@@ -65,7 +67,7 @@ Try to reupload the QGIS project file.
 The `package` job converts a QGIS project to a QField project, the same way it is done on QGIS via QFieldSync.
 The `package` job will prepare all layers marked as "Offline editing" to a single GeoPackage.
 
-#### Triggers
+#### Triggers and Possible Errors
 
 This job is triggered every time the **Download** or **Synchronize** buttons are pressed on QField.
 Unless at least one of the following condition are valid:
@@ -76,8 +78,8 @@ Unless at least one of the following condition are valid:
 
 #### Troubleshoot
 
-A `package` job might result in `FAILED` status.
-Check the non-exhaustive list of causes below:
+A `package` job might result in `FAILED` status , due to several reasons.
+Below is a list (non-exhaustive) with the most common causes:
 
 - The project has never run a `process_projectfile` job that resulted in `SUCCESS` status.
 - Some of the project layers are inaccessible from QFieldCloud.
@@ -87,38 +89,57 @@ Check the non-exhaustive list of causes below:
 
 Delta apply jobs is responsible to make all pushed QField changes permanent.
 
-#### Triggers
+#### Triggers and Possible Errors
 
-This job is triggered every time a **Synchronize** or **Push changes** button is pressed on QField, or **Apply pending changes** button is pressed on the **Changes** project page.
-If any of the following condition are valid:
+This job is triggered every time a **Synchronize** or **Push changes** button is pressed on QField, or **Apply pending changes** button is pressed on the **Changes** project page in QFieldCloud.
 
-- The project never run a `process_projectfile` job that resulted in `SUCCESS` status.
+Issues may arise if any of the following condition are valid:
+
+- The project never ran a `process_projectfile` job that resulted in `SUCCESS` status.
 - There is already a `delta_apply` job in `PENDING` status.
 
 #### Troubleshoot
 
-A `delta_apply` job might result in `FAILED` status.
-Check the non-exhaustive list of causes below:
+A `delta_apply` job may result in a `FAILED` status, due to several reasons.
+Below is a list (non-exhaustive) with the most common causes:
 
-- At least one of the online databases (PostGIS/WFS) used in the QGIS project reset the connection.
-- The project is too big and the job has failed to run.
-- There are hidden files and directories within the project that are preventing the normal work of QFieldCloud.
-- Hidden files and directories are those starting with a leading dot (`.`).
+- **Database connection issues:** The online database (PostgreSQL/PostGIS) used in the QGIS project reset the connection, timed out, or is currently unavailable.
+- **Feature missing:** The feature being updated has been deleted from the source data (e.g., by another user or process) before the delta change could be applied.
+- **Layer missing:** The layer corresponding to the changes was removed from the QGIS project.
+- **Source changed:** The structure of the layer source was changed (e.g., columns were renamed or removed), making the delta incompatible.
+- **Project size:** The project is too big and the job has failed to run within the resource limits.
+- **Hidden files:** There are hidden files and directories within the project that are preventing the normal work of QFieldCloud.
+    Hidden files and directories are those starting with a leading dot (`.`).
 
 ##### Understanding conflicts `delta_apply` jobs
 
-Conflicts can occur under the following conditions:
+Conflicts occur when multiple changes affect the same data in a way that QFieldCloud cannot automatically resolve without a defined policy.
 
-1. Two or more users modify the geometry or a specific attribute of the same feature, starting from the same initial value but saving different values.
-2. A primary key is used more than once.
+**What is a "CONFLICT"?**
+
+In the **Changes** section, a delta status is set to `CONFLICT` when:
+
+1. **Concurrent Editing:** Two or more users modify the same feature (identified by the same primary key) on the same layer.
+2. **Primary Key Collision:** A new feature is created with a primary key that already exists in the database.
+
+**What overwrites what?**
+
+QFieldCloud resolves these conflicts based on the project's conflict resolution setting.
+
+- **Last Wins (Default):** QFieldCloud compares the timestamps of the conflicting changes.
+    The change with the most recent timestamp overwrites any previous changes to the same attributes.
+    The older change is effectively discarded in favor of the newer one, though it remains in the history.
+- **Manual:** No changes are overwritten automatically. The conflict is flagged, and the project administrator must manually select which version to apply.
+
+**Preventing Conflicts**
 
 To minimize the risk of conflicts, follow these best practices:
 
-- **Plan updates collaboratively** - When updating features based on specific field conditions, assign each user a distinct set of features to edit.
-- Clear planning reduces overlap and potential conflicts.
-- **Avoid modifying primary keys** - Primary keys should be treated as immutable and configured to be read-only.
-- This ensures consistent identification of features and prevents accidental modifications.
-- **Ensure unique primary keys** - Use a truly unique primary key, such as a UUID (`uuid()`), to prevent conflicts and ensure data integrity.
+- **Plan updates collaboratively**: When updating features based on specific field conditions, assign each user a distinct set of features to edit.
+    Clear planning reduces overlap and potential conflicts.
+- **Avoid modifying primary keys**: Primary keys should be treated as immutable and configured to be read-only.
+    This ensures consistent identification of features and prevents accidental modifications.
+- **Ensure unique primary keys**: Use a truly unique [primary key](../../get-started/tutorials/advanced-setup-qfc.md#project-configuration-best-practices) to prevent conflicts and ensure data integrity.
 
 By implementing these practices, you can significantly reduce the likelihood of conflicts and maintain consistent data.
 

@@ -247,6 +247,14 @@ When enabled, the following files can only be modified or uploaded by a user wit
 - **QGIS auxiliary data files** that store information like label positions (e.g., `my_project.qgd`).
 - **QField style files** (`.qml`) that share the same name as the project file.
 
+## Handling Conflicts
+
+When working in a collaborative environment with many users accessing the same project, it may happen that two users modify the same object during a mapping session.
+In your settings page, you can choose whether QFieldCloud should apply the _last wins_ policy or whether conflicts should be marked and handled by a project manager.
+
+!![](../../assets/images/qfc-advanced-settings-overwrite-conflicts.png)
+
+See more on how QFieldCloud handles conflicts [here](../../reference/qfieldcloud/jobs.md#understanding-conflicts-delta_apply-jobs)
 
 ## Automatic push to QFieldCloud
 
