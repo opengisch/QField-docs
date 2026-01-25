@@ -13,7 +13,7 @@ tx_slug: documentation_get-started_faq
     By default when subscribing to an organization plan, at least two users need will be paid on a monthly basis.
     Even if the user is not active, at least two users will always be billed.
     The **metered user**, on the other hand, are billed upon activity.
-    This means that as soon as a "job" is executed, the user will be counted as an active user.
+    This means that as soon as a ["job"](../reference/qfieldcloud/jobs.md#job-types) is executed, the user will be counted as an active user (after the two initial users).
     The metered users are always billed retrospectively (eg. in February, you will be billed for the metered user from January).
 
 ??? help "Why am I still being invoiced? I cancelled my subscription already."
@@ -43,7 +43,7 @@ tx_slug: documentation_get-started_faq
 
 ??? help "How do I handle attachments and images?"
 
-    Use the DCIM folder for images.
+    Use a folder inside the project folder or the default "DCIM" folder for images.
     To save space or more quick synchronizations, set a maximum picture size (e.g., 800px).
     Attachments should be referenced by relative paths.
 
@@ -57,7 +57,7 @@ tx_slug: documentation_get-started_faq
 ??? help "How many versions of a file are stored on QFieldCloud?"
 
     How many versions of a file are stored on QFieldCloud?
-    The number of stored file versions depends on the account type. 3 versions are stored for COMMUNITY account, and 10 for other account types.
+    The number of stored file versions depends on the account type. 3 versions are stored for COMMUNITY account, and 10 (by default, but can be changed at any quantity) for other account types.
 
 ??? help "How can I delete old file versions?"
 
