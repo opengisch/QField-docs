@@ -48,7 +48,8 @@ The following conditions may result in an error while uploading to QFieldCloud:
 Those files are assumed to be irrelevant to project validity.
 - There is already a `process_projectfile` job in `PENDING` status.
 
-Troubleshoot and fix
+**Troubleshoot and fix**
+
 A `process_projectfile` job might result in a `FAILED` status, due to several reasons.
 Below is a list (non-exhaustive) with the most common causes:
 
@@ -114,7 +115,7 @@ Below is a list (non-exhaustive) with the most common causes:
 
 Conflicts occur when multiple changes affect the same data in a way that QFieldCloud cannot automatically resolve without a defined policy.
 
-**What a "CONFLICT"?**
+**What is a "CONFLICT"?**
 
 In the **Changes** section, a delta status is set to `CONFLICT` when:
 
