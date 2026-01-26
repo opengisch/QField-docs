@@ -145,7 +145,7 @@ The formats currently supported are:
     1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
 
     2. Open the Site Dashboard
-    3. Tap on the three-dots and direct to *Settings* > *Positioning*
+    3. Tap on the 3-dotted menu and direct to *Settings* > *Positioning*
 
         !![](../../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
 

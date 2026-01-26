@@ -87,7 +87,7 @@ Moreover, you have the option to digitize the form using the scanning QR and Bar
 
 !![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png)
 
-Upon clicking the icon button with the three dots, a menu will be presented offering three distinct actions: "Copy", "Paste", and "Scan Code".
+Upon clicking the 3-dotted menu, a new window will be presented offering three distinct actions: "Copy", "Paste", and "Scan Code".
 
 !![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
 

@@ -51,7 +51,7 @@ We recommend using the GeoPackage file format for projects in QField, since savi
     If your project contains raster layers these can also be stored in the GeoPackage.
 
     1. Click on the raster layer you want to export, then *Export* > *Save Features As...*, and select GeoPackage as the format.
-    2. Add a filename and select the three dots to browse for the GeoPackage.
+    2. Add a filename and select the 3-dotted menu to browse for the GeoPackage.
     3. Select the GeoPackage and change the file format at the bottom of the dialogue window from “GeoTIFF” to “All files (*.*)”.
     Now both vector and raster layers are saved in the same GeoPackage.
     4. Browse for the GeoPackage in the browser panel and expand it to ensure that all files are there.
@@ -278,7 +278,7 @@ To do this, within your project:
 Offline layers will be stored in a file named "data.gpkg".
 You can also export your attached files (Photos, Audio, Video, etc).
 
-3. click on the three dots *(⋮)* located on the right side of the file or folder.
+3. click on the 3-dotted menu *(⋮)* located on the right side of the file or folder.
 
     !![](../../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png,350px)
 
