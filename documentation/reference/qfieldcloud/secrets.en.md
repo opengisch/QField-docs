@@ -265,7 +265,7 @@ In order to override the connecting PostgreSQL user during packaging and delta a
 you need to **create a specific Environment Variable Secret** called `QFC_PG_EFFECTIVE_USER`.
 
 This Secret instructs QFieldCloud to use a [`SET ROLE`](https://www.postgresql.org/docs/current/sql-set-role.html) command immediately after connecting to the database.
-This effectively separates **authentication** (logging in via password/SSL) from **authorization** (identity and permissions).
+This effectively allows the PostgreSQL role used to perform data operations to be changed from a generic service account to a role that is unique for every QFieldCloud user and reflects that user's username and specific permissions.
 
 !!! Example
 
