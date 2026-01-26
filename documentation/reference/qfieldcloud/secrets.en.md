@@ -277,7 +277,7 @@ This effectively separates **authentication** (logging in via password/SSL) from
 
 - **Generic Connection User (`qfield_admin`):** You create one database role that handles the actual password/SSL connection.
   This role should have the necessary `USAGE` or `CONNECT` privileges and crucially must be a member of the specific user roles in PostgreSQL/PostGIS.
-- **Specific User Roles (`user_mielena`, `ninja_user_001`):** You create roles for your actual users without passwords.
+- **Specific User Roles (`user_mielena`, `ninja_user_001`):** You can create roles for your actual users without passwords. Those rules will correspond to QFieldCloud users.
 - **Grant Permissions:** You allow the generic service to "become" the specific users.
 
 ```sql
