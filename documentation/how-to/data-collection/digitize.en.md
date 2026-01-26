@@ -87,7 +87,7 @@ Moreover, you have the option to digitize the form using the scanning QR and Bar
 
 !![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png)
 
-Upon clicking the icon button with the three dots, a menu will be presented offering three distinct actions: "Copy", "Paste", and "Scan Code".
+Upon clicking the 3-dotted menu *(⋮)*, a new window will be presented offering three distinct actions: "Copy", "Paste", and "Scan Code".
 
 !![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
 
@@ -165,7 +165,7 @@ A video demonstration of some editing possibilities:
 ## Merging features
 
 QField allows you to merge features and their geometries into a single feature.
-To do so, identify two (or more) features on the map, select them in the features list and merge them by selecting the *Merge Selected Features* in the *Menu (⁝) Button*.
+To do so, identify two (or more) features on the map, select them in the features list and merge them by selecting the *"Merge Selected Features"* in the 3-dotted menu *(⋮)* button.
 
 To execute merging within QField, ensure the following conditions:
 
@@ -258,7 +258,7 @@ Check out the video to see the copy, paste function in action.
 
 :material-tablet: Fieldwork
 
-Deleting a feature is done by selecting the *Delete feature* action in the feature form's *(⋮)* menu.
+Deleting a feature is done by selecting the *Delete feature* action in the feature form's from the 3-dotted menu *(⋮)*.
 
 !![](../../assets/images/delete-single-feature.png)
 
@@ -266,6 +266,6 @@ QField also allows you to delete multiple features at a time.
 To do so, first identify the features by short tapping on the relevant parts of the map.
 Then activate the multi-selection mode by long pressing on one of the features you want to delete.
 When checkbox appears next to the feature names, select further features to delete (you can tap on the map to add more features too).
-Once done, select the "Delete Selected Feature(s): action in the features list *(⋮)* menu.
+Once done, select the "Delete Selected Feature(s): action in the features list from the 3-dotted menu *(⋮)*.
 
 !![](../../assets/images/delete-multiple-features.png)

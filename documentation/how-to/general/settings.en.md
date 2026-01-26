@@ -16,8 +16,8 @@ There are two ways in which you can access the general settings.
 
     **Access settings in active project**
 
-    1. Open the Side Dashboard and click on the 3-dotted button
-    2. Tap on *Settings*
+    1. Open the Side Dashboard and click on the 3-dotted menu *(⋮)*.
+    2. Tap on *Settings*.
 
 In the following sections, the different setting options will be described
 
@@ -43,7 +43,7 @@ If disabled the cross-hair is fixed to the center and the mouse can is used to r
 
 ## User Interface
 
-- **Customize search bar:** When pressing the three dots under the general settings section, a new window will open from which you can personalize your search options.
+- **Customize search bar:** When pressing the 3-dotted menu *(⋮)* under the general settings section, a new window will open from which you can personalize your search options.
      - ***Features from active layer:*** By enabling this option, you will automatically query the layer that is currently active (it is highlighted in the legend).
      You can refine your search even further by adding an **"@"** sign when starting your search to only query one attribute.
      When disabled, you can still access this locator filter typing the prefix **f** in the search bar.
@@ -63,7 +63,7 @@ If disabled the cross-hair is fixed to the center and the mouse can is used to r
     - ***QField Documentation:*** If enabled it will return the corresponding documentation pages matching terms.
     When disabled the documentation can still be queried by putting a "?" in the beginning of the query.
 
-- **Manage plugins:** By pressing the three dots a new window will open from which you can add, enable and disable customised plugins.
+- **Manage plugins:** By pressing the 3-dotted menu *(⋮)* a new window will open from which you can add, enable and disable customised plugins.
 To add a new plugin see the [Plugins Page](../../how-to/advanced-how-tos/plugins.md#project-plugins)
 - **Maximized attribute form:** when enabling this option you can maximize the attribute form to cover the whole screen.
 - **Fixed scale navigation:**

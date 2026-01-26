@@ -102,7 +102,7 @@ Whenever that project is loaded, QField will register all images within that fol
 - Alternatively, you can add images into the `drawing_templates` folder found inside your QField app folder.
 If you are not familiar with that app folder, its location is shown at the bottom of the About QField overlay.
 
-Templates shipped alongside projects as well as the QField app folder will be shown when users choose "Draw a sketch" by pressing the *(⋮)* menu icon of the attachment widget.
+Templates shipped alongside projects as well as the QField app folder will be shown when users choose "Draw a sketch" by pressing the 3-dotted menu *(⋮)* of the attachment widget.
 
 !![picture path](../../assets/images/drawing_templates.png "")
 

@@ -11,7 +11,7 @@ QField offers access to a number of processing algorithms to modify digitized fe
 
 Running algorithms against your features is done through the features list drawer.
 First, identify one or more features by tapping on the map canvas and toggle multi-selection mode by long pressing on one of the identified features.
-Once you've checked all features to be processed, click on the *(⋮)* menu and select the _Process Selected Feature(s)_ item.
+Once you've checked all features to be processed, click on the 3-dotted menu *(⋮)* and select the _Process Selected Feature(s)_ item.
 
 !![process selected features](../../assets/images/process_selected_features.png "")
 

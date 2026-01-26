@@ -96,7 +96,7 @@ To delete file versions in QFieldCloud, follow these steps:
 
 1. Go to the "Files" section of your project.![Project files](../../assets/images/files_versions_for_deleting.png)
 2. Locate the layer for which you want to delete versions.![Layer selected](../../assets/images/files_versions_for_deleting_2.png)
-3. Click on the three dots next to the layer name.![Clickable option](../../assets/images/files_versions_for_deleting_three_dots.png)
+3. Click on the 3-dotted menu *(⋮)* next to the layer name.![Clickable option](../../assets/images/files_versions_for_deleting_three_dots.png)
 4. You will see a list of versions for that specific layer.![List of files versions](../../assets/images/files_versions_for_deleting_files_versions.png)
 5. Identify the version you want to delete and click on the red trash bin icon next to it.![Thrash icon](../../assets/images/files_versions_for_deleting_deleting_a_version.png)
 6. Confirm the deletion when prompted, if you want to delete all versions before a specific version, you can do it activating the option "Also delete `n` version(s) older than the selected version.".![Deleting files versions](../../assets/images/files_versions_for_deleting_also_delete.png)
