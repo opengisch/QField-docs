@@ -31,7 +31,7 @@ You can also search for a specific feature and tap on the flag navigation icon w
 
 !![](../../assets/images/navigation-search-bar.png)
 
-You can also set a destination point by opening the feature form menu and selecting the *Set Feature as Destination* action.
+You can also set a destination point by opening the feature form and selecting the *Set Feature as Destination* action from the 3-dotted menu *(⋮)*.
 
 !![](../../assets/images/navigation-destination-feature-form.png)
 

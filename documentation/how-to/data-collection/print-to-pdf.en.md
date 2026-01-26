@@ -28,9 +28,9 @@ created PDF document.
 
 You can also print an atlas-driven layout by selecting features from vector layers acting as coverage layers.
 To do so, identify features on the map by tapping on the canvas and hold-press on a feature in the list to toggle the (multi-)feature selection mode.
-Once the desired features are selected, click on the *Menu ( ⁝ )* button and select *Print Atlas Feature(s) to PDF*.
+Once the desired features are selected, click on the 3-dotted menu *(⋮)* button and select *Print Atlas Feature(s) to PDF*.
 
 !![](../../assets/images/print_atlas_menu.png)
 
 It is possible to print a single atlas feature through the feature form by clicking on the
-*Menu ( ⁝ )* button and selecting the *Print Atlas Feature to PDF*.
+3-dotted menu *(⋮)* button and selecting the *Print Atlas Feature to PDF*.

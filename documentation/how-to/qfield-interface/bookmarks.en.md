@@ -38,7 +38,7 @@ There are two ways to engage with the bookmark:
 
 
     1. Open the Side Dashboard.
-    2. Tap on the 3-dotted menu and select *Settings*.
+    2. Tap on the 3-dotted menu *(⋮)* and select *Settings*.
     3. Direct to *general settings* and "Enable Bookmarks".
 
         !![](../../assets/images/bookmarks-toggle.png, 800 px))

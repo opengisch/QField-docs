@@ -32,8 +32,8 @@ To access the troubleshooting and logging tools within QField:
 
 1. Open your project in QField.
 2. Tap the menu (☰) on the top-left corner to reveal the side "Dashboard".
-3. Tap the three-dotted menu button *(⋮)*.
-4. Select **Message Log** from the menu.
+3. Tap the 3-dotted menu *(⋮)* button.
+4. Select **Message Log**.
 
 !![](../assets/images/accessing_message_log.png,300px)
 

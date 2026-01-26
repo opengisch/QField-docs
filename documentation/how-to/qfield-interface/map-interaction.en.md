@@ -63,7 +63,7 @@ With long-press, you can toggle the feature selection.
 
 !![](../../assets/images/howto_selection.png)
 
-When features are selected, you can perform the actions in the three-dot menu on the top right.
+When features are selected, you can perform the actions in the 3-dotted menu *(⋮)* on the top right.
 
 !![](../../assets/images/howto_identification_options.png)
 
