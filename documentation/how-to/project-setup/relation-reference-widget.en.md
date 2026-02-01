@@ -29,7 +29,7 @@ Therefore, they must be unique.
     1. Direct to *Project* > *Properties* > *Relations*
     2. Press the green plus to add a new relation
     3. Set your *Reference* and your *Referenced* Layer in addition to the corresponding fields that will be used for the linking.
-    For more details please refer to the [official QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#many-to-many-n-m-relations)
+    For more details please refer to the [official QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#many-to-many-n-m-relations) <!-- markdown-link-check-disable-line -->
 
     **Attribute Form Configuration - Reference Layer**
 

@@ -76,7 +76,7 @@ There are two ways to engage with the bookmark:
 
 When preparing a QGIS project for fieldwork, it may also be useful for you to enter a few bookmarks, which may be helpful for the field officers.
 Luckily, QField can display and search for project-embedded bookmarks.
-The addition and management of such bookmarks is done [in QGIS itself](https://docs.qgis.org/latest/en/docs/user_manual/introduction/browser.html#spatial-bookmarks).
+The addition and management of such bookmarks is done [in QGIS itself](https://docs.qgis.org/latest/en/docs/user_manual/introduction/browser.html#spatial-bookmarks). <!-- markdown-link-check-disable-line -->
 
 !!! Workflow
 

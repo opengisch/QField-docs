@@ -44,7 +44,7 @@ A service is stored inside the `pg_service.conf` file where all the required inf
 Instead of storing the hostname, port, database name and more into the QGIS Project file, these can be stored separately.
 Using services is very useful, when you work with multiple database connections during your everyday work to quickly change and connect to the different instances.
 
-Read more about PostgreSQL services in the [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file).
+Read more about PostgreSQL services in the [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file). <!-- markdown-link-check-disable-line -->
 
 There exists a useful plugin, which supports in the easy creation and configuration of the service file - [the PG Service Parser Plugin](https://github.com/opengisch/qgis-pg-service-parser-plugin).
 We recommend using this plugin and will show you below how to use it.
@@ -161,7 +161,7 @@ There are many options to organize this, [read more in the PostgreSQL documenta
 !![QGIS System Environment Variables](../../assets/images/service_config_file_002.png)
 
 
-Refer to [QGIS System Settings](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details.
+Refer to [QGIS System Settings](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#system-settings) for details. <!-- markdown-link-check-disable-line -->
 
 ### Using Client Certificates
 

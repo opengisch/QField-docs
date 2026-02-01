@@ -51,7 +51,7 @@ Additionally, to the ones available there are [QFieldCloud specific variables](.
 Below are some other general useful settings, which you can find in the Vector Layer *Properties...* > *Attribute form* (see image below).
 
 - **Drag and drop designer**: You can structure your forms using various containers, such as tabs and groups, and enhance interactivity by incorporating conditional visibility of fields and assigning default values.
-For more information refer to: [Drag and Drop Designer QGIS Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu)
+For more information refer to: [Drag and Drop Designer QGIS Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu) <!-- markdown-link-check-disable-line -->
 
 - **Hide attribute form upon**: You can hide the attribute form by changing from the "Show form on Add Feature" to the setting "Suppress attribute form".
     When adding a new feature in QField, no attribute form needs to be populated.
@@ -68,7 +68,7 @@ For more information refer to: [Drag and Drop Designer QGIS Documentation](https
 ## Working with Relations
 :material-monitor: Desktop preparation
 
-For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) section in the QGIS documentation.
+For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) section in the QGIS documentation. <!-- markdown-link-check-disable-line -->
 
 To further control the visibility and number of related items shown in QField, see the instructions for configuring [Maximum items visibility for QField.](../../get-started/tutorials/get-started-qfs.md#additional-properties)
 

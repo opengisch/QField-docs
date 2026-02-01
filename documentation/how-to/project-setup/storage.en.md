@@ -36,36 +36,7 @@ This folder can contain individual files such as a
 ### Saving the project within a GeoPackage
 
 The simplest and most efficient way to save a QGIS project and its corresponding geospatial data in one file is to use a [GeoPackage](https://www.geopackage.org/).
-We recommend using the GeoPackage file format for projects in QField, since saving the files in one file within QGIS is easy and straightforward.
-
-!!! Workflow
-
-    **Step 1: Save vector layers as GeoPackage:**
-
-    1. Click on the toolbox and search for the tool “package layers”.
-
-    This tool lets you package selected vector layers in the project file (and elsewhere) into a single GeoPackage containing the geospatial data.
-
-    **Step 2: add raster layers to GeoPackage** (Optional)
-
-    If your project contains raster layers these can also be stored in the GeoPackage.
-
-    1. Click on the raster layer you want to export, then *Export* > *Save Features As...*, and select GeoPackage as the format.
-    2. Add a filename and select the 3-dotted menu *(⋮)* to browse for the GeoPackage.
-    3. Select the GeoPackage and change the file format at the bottom of the dialogue window from “GeoTIFF” to “All files (*.*)”.
-    Now both vector and raster layers are saved in the same GeoPackage.
-    4. Browse for the GeoPackage in the browser panel and expand it to ensure that all files are there.
-
-    **Step 3: Add project file (.qgs) to GeoPackage:**
-
-    1. Direct to *Project* > *Save to* > *GeoPackage*, and select the GeoPackage file containing all the layers.
-    This saves the project file, with the `.qgs` extension into the GeoPackage as well.
-
-    ![type:video](https://player.vimeo.com/video/969846267)<!-- markdown-link-check-disable-line -->
-
-    *Save QGIS Project into GeoPackage*
-
-    For more information, consult the QGIS documentation  [packaging layers](https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/database.html#package-layers).
+We recommend using the GeoPackage file format for projects in QField.
 
 ## 2. Copying project over to the QField target device
 

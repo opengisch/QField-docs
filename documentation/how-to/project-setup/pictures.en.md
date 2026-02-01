@@ -166,7 +166,7 @@ To store the EXIF information, follow these steps:
 
 1. Add an attribute per EXIF tag in the table that contains the pictures.
 2. In the pictures form, configure the default value of each attribute to the corresponding
-*EXIF* expression [See QGIS EXIF function](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#exif),
+*EXIF* expression [See QGIS EXIF function](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#exif), <!-- markdown-link-check-disable-line -->
 and make sure *Apply on update* is activated.
 3. The EXIF tags that QField can capture are listed in the QGIS documentation (link above).
 However, this list might slightly vary depending on the mobile characteristics.
