@@ -97,10 +97,9 @@ The status of each project is shown with a tooltip.
         - **Create a new empty QFieldCloud project**: Your current project location will be converted to the QFieldCloud project.
             All files available in the project need to be stored in the same directory.
             The location of the project file is the project root.
-    3. Project files will only be uploaded when you click the synchronize button.
-        Make sure the selected contains no more than one QGIS project file.
-        !![Project details](../../assets/images/create_project.png)
-    4. A form will ask you for project name, description and local directory.
+            Make sure the selected contains no more than one QGIS project file.
+            !![Project details](../../assets/images/create_project.png)
+    3. A form will ask you for project name, description and local directory.
         In the local directory you can get different situations:
 
         - "The entered path does not contain a QGIS project file yet"
