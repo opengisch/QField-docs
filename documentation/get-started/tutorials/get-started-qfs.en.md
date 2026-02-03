@@ -1,10 +1,10 @@
 ---
-title: Get Started
-long_title: Get Started with QFieldSync
+title: QFieldSync - Cable packaging
+long_title: Get Started with QFieldSync Offline
 tx_slug: documentation_get-started_tutorials_get-started-qfs
 ---
 
-# QFieldSync
+# QFieldSync for Cable Packaging
 
 [QFieldSync (QFS))](https://plugins.qgis.org/plugins/qfieldsync/) <!-- markdown-link-check-disable-line -->
 is the QGIS plugin, which you should use to "package" your projects for QField, which means to make your project available for QField.
@@ -39,12 +39,12 @@ Before you get started with QField you will have to download the plugin through 
 
 ## QFieldSync Settings
 
-You will prepare your QGIS project depending on your requirements and save it as a `.qgs`.
+You will prepare your QGIS project depending on your requirements and save it as a `.qgs` or `.qgz`.
 You can save it in a dedicated folder and use it repeatedly.
 
 !![Configure project](../../assets/images/qfield-sync_configmenu.png)
 
-### Layer Packaging
+### Layer Packaging for manual cable transfer
 
 To synchronize your QField projects with the Desktop via QFS, each layer needs to be converted into a format that QFieldSync can understand.
 These conversions are achieved via "Layer Actions".
@@ -57,6 +57,9 @@ Depending on the layer type, different types of actions are available:
 
 - ***Copy*** (only available for file-based layers (eg. Gpkg, Shp, Tiff)): The layer will be copied to the packaged project folder but **not be tracked**.
 A new copy in the packaged project folder will be made.
+**Note**: In case that you have multiple layers within one GeoPackage, all layers will be uploaded despite only one of them being present in the QGIS project.
+It is recommended to have one layer per Gpkg unless strictly necessary.
+Refer to [common best practices for additional tips](../../get-started/tutorials/advanced-setup-qfc.md#project-configuration-best-practices)
 
 - ***Keep existing (copy if missing)***: The layer source will be left untouched.
 In the case of a long-term project, where synchronization is frequently happening, it is advisable to use this option to not re-package the file every time.
