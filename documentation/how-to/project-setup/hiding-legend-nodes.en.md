@@ -9,7 +9,7 @@ tx_slug: documentation_how-to_hiding-legend-nodes
 Frequently, you do not need to access the attributes of all the feature layers or view the value relation tables of your projects.
 You can achieve that by setting the right "layer capabilities".
 
-1. In the menu toolbar click on *Project* > *Properties...* > [*Data Sources*](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#data-sources-properties)
+1. In the menu toolbar click on *Project* > *Properties...* > [*Data Sources*](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#data-sources-properties) <!-- markdown-link-check-disable-line -->
 
 !![Configuring Layers Data Sources](../../assets/images/hiding-legend-nodes.png)
 

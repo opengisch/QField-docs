@@ -5,7 +5,7 @@ tx_slug: documentation_how-to_plugins
 
 # QField Plugins
 
-QField has a QML/Javascript plugin framework through which additional functionalities and features can be scripted.
+QField has a [QML/Javascript plugin framework](https://api.qfield.org) through which additional functionalities and features can be scripted.
 
 ## Types of plugins
 
@@ -36,3 +36,7 @@ Click on the "Install plugin from URL" button and paste in a URL pointing to a z
 !![](../../assets/images/application-plugins.png,400px)
 
 Once installed, the plugin will appear in the plugins list found in the popup, with a switch to toggle the activation of the plugin.
+
+## Developing a plugin
+
+Find more information about QField plugin development on the dedicated [QField API documentation](https://api.qfield.org).

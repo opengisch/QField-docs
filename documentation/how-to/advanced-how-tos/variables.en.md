@@ -7,7 +7,7 @@ tx_slug: documentation_how-to_variables
 
 QField allows users to add and edit expression variables.
 These can be used for a wide range of applications, including data-defined symbology, setting default field values, controlling print layout and application behavior, and much more.
-See [the relevant QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/introduction/general_tools.html#storing-values-in-variables) for more information.
+See [the relevant QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/introduction/general_tools.html#storing-values-in-variables) for more information. <!-- markdown-link-check-disable-line -->
 
 QField supports two main types of custom variables:
 

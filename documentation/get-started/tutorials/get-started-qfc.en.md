@@ -49,7 +49,7 @@ In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS. The 
     4. Enter your credentials previously created during account registration.
 
 !!! Warning
-    If you use a password in QGIS for the first time, it will ask you to set a master password that manages all the other passwords used in QGIS. More information about the master password here: [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/auth_system/auth_overview.html#master-password)
+    If you use a password in QGIS for the first time, it will ask you to set a master password that manages all the other passwords used in QGIS. More information about the master password here: [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/auth_system/auth_overview.html#master-password) <!-- markdown-link-check-disable-line -->
 
 ## Project Overview in QFieldSync
 
