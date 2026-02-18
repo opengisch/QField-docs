@@ -7,7 +7,6 @@ tx_slug: documentation_get-started_concepts
 
 QField is designed with a few key principles in mind.
 
-
 ## Keeping it simple
 
 The requirements in the field are not the same as on a desktop.
@@ -21,7 +20,6 @@ Before heading out to the field though, preliminary steps such as layer styling,
 
 ## Compatibility with QGIS
 
-
 Since QField is a mobile optimized version of the QGIS desktop app, your project will appear and feel identical both in QGIS and QField.
 The rendering engine in QField is the same as the one used in desktop QGIS, ensuring that projects will appear virtually identical in both environments.
 
@@ -30,6 +28,10 @@ As a result, projects configured on the desktop should work seamlessly on the mo
 
 These principles have so far informed our development and design of QField, and will continue to do so in the future.
 In the last few years, QField has proved to be the fieldworker's best friend and continues to evolve with new features handling an even broader range of needs.
+
+## Cloud and Offline Transfer
+
+Via the [QFieldSync](../get-started/tutorials/get-started-qfs.md) Plugin for QGIS, you can transfer your ready QGIS project to QField manually through a cable or through [QFieldCloud](../get-started/tutorials/get-started-qfc.md#get-started-with-qfieldcloud), the cloud service for smooth synchronization, especially when working in teams.
 
 ## Mode based
 

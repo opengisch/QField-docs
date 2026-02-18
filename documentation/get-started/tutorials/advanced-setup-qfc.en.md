@@ -290,7 +290,7 @@ There are several ways in which you can create and upload a project to QField.
 
     ### **Option 1: Using QFieldSync**
 
-    1. Follow the steps [configure your cloud project](#create-and-configure-your-cloud-project), until you get to the "Project details".
+    1. Follow the steps [configure your cloud project](../tutorials/get-started-qfc.en.md#project-creation-and-configuration), until you get to the "Project details".
 
     2. Change the owner of the project to your Organization.
 

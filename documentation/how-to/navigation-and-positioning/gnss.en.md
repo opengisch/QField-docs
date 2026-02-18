@@ -65,7 +65,7 @@ Altitude values can be corrected with vertical grid shift files to
 calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
-them into the QField app folder **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/proj**.
+them into the QField app folder **[[App Directory](../../get-started/tutorials/get-started-qfs.md#package-for-qfield))]/QField/proj**.
 
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
@@ -88,7 +88,7 @@ The formats currently supported are:
     For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertical datum, you'll need the official grid file from NSGI.
 
     1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
-    2. Place the downloaded `.gtx` file into the directory **[App Directory](../get-started/storage.md#5-qfield-app-directory)/QField/proj**.
+    2. Place the downloaded `.gtx` file into the directory **[App Directory](../../get-started/tutorials/get-started-qfs.md#package-for-qfield)/QField/proj**.
     This is independent of whether you are using QFieldCloud or not.
 
     **Example: Switzerland - CH1903+/LV95**
@@ -110,7 +110,7 @@ The formats currently supported are:
             - **Output file**: Click "Save to File..." and name your output file with a `.gtx` extension (or other format needed), for example, `chgeo2004_htrans_LV95.gtx`.
         4. Click **Run**. The other default settings are typically sufficient for this conversion.
 
-        !![](../assets/images/qgis_core_translate_convert_format.png)
+        !![](../../assets/images/qgis_core_translate_convert_format.png)
 
         **Method 2: Command Line (`qgis_process`)**
 
