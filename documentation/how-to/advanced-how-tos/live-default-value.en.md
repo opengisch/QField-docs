@@ -21,17 +21,17 @@ Examples for this could be species names that are both recorded with the origina
     2. Go to the 'photos' field and add the following expression into the default value.
     3. Toggle the *apply default upon update*.
 
-     !![live default value image](../../assets/images/live_default1.png,700px)
+        !![live default value image](../../assets/images/live_default1.png,700px)
 
-     4. Go to the plant_species field where your *value relation* is set as a widget type.
-     5. Add the following expression as shown below into the default value.
+    4. Go to the plant_species field where your *value relation* is set as a widget type.
+    5. Add the following expression as shown below into the default value.
 
-     !![live default value relation](../../assets/images/live_default2.png,700px)
+        !![live default value relation](../../assets/images/live_default2.png,700px)
 
-     6. Press Ok and save.
+    6. Press Ok and save.
 
 !!! Example
 
     In the video below there is an example of "live" default value updates when editing features on QField.
 
-     !![Live_Default_Value](../../assets/videos/live_default_value.webp)
+    !![Live_Default_Value](../../assets/videos/live_default_value.webp)
