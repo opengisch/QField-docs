@@ -65,7 +65,7 @@ Altitude values can be corrected with vertical grid shift files to
 calculate orthometric height.
 
 Vertical grid shift files have to be made available to QField by putting
-them into the QField app folder **[[App Directory](../../get-started/tutorials/get-started-qfs.md#package-for-qfield))]/QField/proj**.
+them into the QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
 
 Once the grid shift file is placed there, it is available in QField in
 the *Positioning settings* under *Vertical grid shift in use*.
@@ -88,7 +88,7 @@ The formats currently supported are:
     For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertical datum, you'll need the official grid file from NSGI.
 
     1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
-    2. Place the downloaded `.gtx` file into the directory **[App Directory](../../get-started/tutorials/get-started-qfs.md#package-for-qfield)/QField/proj**.
+    2. Place the downloaded `.gtx` file into the directory **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
     This is independent of whether you are using QFieldCloud or not.
 
     **Example: Switzerland - CH1903+/LV95**
@@ -142,7 +142,7 @@ The formats currently supported are:
 
     :material-tablet: Fieldwork
 
-    1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
+    1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
 
     2. Open the Site Dashboard
     3. Tap on the 3-dotted menu *(⋮)* and direct to *Settings* > *Positioning*

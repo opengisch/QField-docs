@@ -17,13 +17,13 @@ In QField, registered sensors are listed within the currently opened project fil
     1. Open the "Side Dashboard"
     2. Tap on the 3-dotted-menu and choose "sensor"
 
-     !![](../../assets/images/main_menu_sensors.png)
+        !![](../../assets/images/main_menu_sensors.png)
 
     3. To toggle the passive collection of sensor data, simply click on a sensor name in the sub-menu.
      When active,a sensor icon will appear next to the sensor name, while when inactive, a dot icon will be shown.
-     All active sensors that are collecting data will be listed in a sensors information table located at the bottomof QField's map canvas.
+     All active sensors that are collecting data will be listed in a sensors information table located at the bottom of QField's map canvas.
 
-     !![](../../assets/images/sensors_information_panel.png)
+        !![](../../assets/images/sensors_information_panel.png)
 
 ## Sensor-Driven Tracking
 
