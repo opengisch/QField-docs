@@ -5,32 +5,33 @@ tx_slug: documentation_how-to_live-default-value
 
 # Live default value
 
-QField is supporting the "live" updating of default attribute value
-when editing features.
+QField is supporting the "live" updating of default attribute value when editing features.
+This means, when changing one value in an attribute another automatically adjusts.
+Examples for this could be species names that are both recorded with the original species name and the common name.
 
-## Configuration
-:material-monitor: Desktop preparation
+!!! Workflow
 
-To make it work, the attribute has to be set up with another attribute
-dependency.
+    ## Configuration
 
-An example of attribute dependency settings
+    :material-monitor: Desktop preparation
 
-For an *image*:
+    In this example, the image will automatically update when a different plant_species is chosen.
 
-!![live default value image](../../assets/images/live_default1.png)
+    1. Direct to the layer properties, where you want to set the updating value field.
+    2. Go to the 'photos' field and add the following expression into the default value.
+    3. Toggle the *apply default upon update*.
 
-For a *value relation*:
+     !![live default value image](../../assets/images/live_default1.png,700px)
 
-!![live default value relation](../../assets/images/live_default2.png)
+     4. Go to the plant_species field where your *value relation* is set as a widget type.
+     5. Add the following expression as shown below into the default value.
 
-## Usage
-:material-tablet: Fieldwork
+     !![live default value relation](../../assets/images/live_default2.png,700px)
 
-"Live" default value is updating the default attribute values in real time when
-editing features.
+     6. Press Ok and save.
 
-In the video below there is an example of "live" default value updates
-when editing features on QField.
+!!! Example
 
-![type:video](https://player.vimeo.com/video/607220411)<!-- markdown-link-check-disable-line -->
+    In the video below there is an example of "live" default value updates when editing features on QField.
+
+     !![Live_Default_Value](../../assets/videos/live_default_value.webp)
