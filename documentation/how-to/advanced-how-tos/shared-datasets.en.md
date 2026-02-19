@@ -17,7 +17,7 @@ There are two possibilities to share data across projects:
 ## Managing Localized Data Paths in QGIS
 :material-monitor: Desktop preparation
 
-When preparing a new project for QField, make sure the datasets you want to share across multiple projects are stored within the "shared datasets folder" in QGIS.
+When preparing a new project for QField, make sure the datasets you want to share across multiple projects are stored within the "Localized datasets" folder in QGIS.
 
 !!! Workflow
 
@@ -125,7 +125,7 @@ The "Upload missing localized dataset(s)" checkbox should not appear.
     Each shared dataset will only be downloaded **once**, even if multiple projects use it.
     This saves storage space and synchronization time.
 
-     !![QField interface showing a project with shared localized datasets from QFieldCloud](../../assets/images/qfield_shared_cloud_localized_datasets.png)
+    !![QField interface showing a project with shared localized datasets from QFieldCloud](../../assets/images/qfield_shared_cloud_localized_datasets.png)
 
 ### Direct synchronization to the **`shared_datasets`** project
 
@@ -143,9 +143,9 @@ Users with "manager" or "admin" permissions for the **`shared_datasets`** projec
     2. You can now add, update, or remove files within the pre-configured file directory of the localized datasets.
     3. Use QFieldSync (with the **`shared_datasets`** project selected) to synchronize these changes directly back to the cloud.
 
-     !![Uploading localized dataset files directly to the "shared_datasets" cloud project using QFieldSync](../../assets/images/qfieldsync_directly_uploading_localized_dataset.png)
+    !![Uploading localized dataset files directly to the "shared_datasets" cloud project using QFieldSync](../../assets/images/qfieldsync_directly_uploading_localized_dataset.png)
 
-     !![Localized files listed in the "shared_datasets" cloud project on the web interface](../../assets/images/localized_files_in_localized_dataset_project.png)
+    !![Localized files listed in the "shared_datasets" cloud project on the web interface](../../assets/images/localized_files_in_localized_dataset_project.png)
 
 !!! Note
     The specific user roles must be set for the **`shared_datasets`** project as for any other project.
