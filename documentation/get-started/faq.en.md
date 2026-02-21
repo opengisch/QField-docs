@@ -7,6 +7,13 @@ tx_slug: documentation_get-started_faq
 
 ## Billing and Plans
 
+??? help "What is the difference between the PRO plan and an "Organization" plan?"
+
+    ## What is the difference between the PRO plan and an "Organization" plan?
+    A PRO plan is an upgrade of your **Personal** user account, providing you with the ability to work with PostGIS databases, giving you additional storage (1GB).
+    This plan does not allow you to share your project with other users UNLESS the other usre also has a PRO plan.
+    An "Organization" plan is specifically meant for collaborative work. By default 2 members of the organization will be charged despite of being active or inactive.
+
 ??? help "What is the difference between "metered" and "licensed" users on my invoice?"
 
     ## What is the difference between the metered and licensed users on my invoice?
