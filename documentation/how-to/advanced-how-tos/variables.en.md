@@ -37,16 +37,18 @@ When you access the variables list in QField ( *Side Dashboard* > *Settings* > *
 ### Variable configuration
 :material-tablet: Fieldwork
 
-To configure a application-specific variable, follow these steps:
+!!! Workflow
 
-1. Open **Settings** in QField.
-2. Navigate to the **Variables** tab.
+    To configure a application-specific variable, follow these steps:
 
-Here you will see a list of all variables currently applicable to your project.
-To add a new variable:
+    1. Open **Settings** in QField.
+    2. Navigate to the **Variables** tab.
 
-1. Click on *Add a new variable* at the bottom of the variable list.
-2. Enter the name and value for your new variable and save.
+    Here you will see a list of all variables currently applicable to your project.
+    To add a new variable:
+
+    1. Click on *"Add a new variable"* at the bottom of the variable list.
+    2. Enter the name and value for your new variable and save.
 
 ### Useful Examples
 
