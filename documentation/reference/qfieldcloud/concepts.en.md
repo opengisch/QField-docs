@@ -24,7 +24,8 @@ Read more about [QFieldCloud Projects](./projects.md).
 
 A project collaborator is another QFieldCloud user invited to contribute to a project.
 One project may have multiple collaborators.
-Collaborators can either have the role **owner** or **admin**. Depending on their role collaborators can add more users.
+Collaborators can have the roles **Admin**, **Manager**, **Editor**, **Reporter**, and **Reader**.
+Only users with the roles of **Admin** and **Manager** can add more users as collaborators to the project.
 If the project is owned by an organization, whole **teams** can also be added as collaborators.
 Read more about [collaborator roles](permissions.md).
 
