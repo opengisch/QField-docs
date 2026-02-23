@@ -113,7 +113,7 @@ QGIS creates this for every GeoPackage by default.
     Today, we will keep it simple.
     1. Here you can decide whether you want to display the name of your field inside the attribute form.
     2. If you have a technical fieldname with underscores or other special characters you can add an ***Alias*** to make it nicer for the data user.
-    3. There exist several types of [widgets](how-to/attributes-form.md). <!-- markdown-link-check-disable-line -->
+    3. There exist several types of [widgets](../../how-to/project-setup/attributes-form.md#attribute-form-configuration)
 *Maya does not want to enter the date new every time.*
 *What a good thing one can set default values in QGIS*
 5. Open the widget display of the ***Entrydate*** attribute.

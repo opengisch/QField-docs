@@ -129,7 +129,7 @@ With this functionality you can add detailed and formatted information when taki
 
 Navigate to the *Project* > *Properties* > *QField* > *Attachments and Directories* sub-panel and click on "Settings" for "Customize image stamping details".
 
-!![](../../assets/images/accessing_image_stamping_setting.png, 600px)
+!![](../../assets/images/accessing_image_stamping_setting.png,600px)
 
 You can add the following settings:
 

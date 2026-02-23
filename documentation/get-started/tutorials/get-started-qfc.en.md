@@ -45,7 +45,7 @@ In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS. The 
         After successful installation, a new toolbar appears:
         !![Toolbar](../../assets/images/qfieldsync_toolbar.png,200px)
     3. Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar and a new login screen will appear:
-        ![](../../assets/images/qfieldsync_login_dialog.png,250px)
+        !![](../../assets/images/qfieldsync_directly_uploading_localized_dataset.png, 250 px)
     4. Enter your credentials previously created during account registration.
 
 !!! Warning

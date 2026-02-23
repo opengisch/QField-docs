@@ -10,33 +10,34 @@ display the collected data, and save it into newly-digitized feature attributes.
 
 ## Activating sensors
 
-In QField, registered sensors are listed within the currently opened project file in a sub-menu that can be accessed via the side "Dashboard's" main menu.
+In QField, registered sensors are listed within the currently opened project file in a sub-menu that can be accessed via the "Side Dashboard" .
 
-!![](../../assets/images/main_menu_sensors.png)
+!!! Workflow
 
-To toggle the passive collection of sensor data, simply click on a sensor name in the sub-menu. When active,
-a sensor icon will appear next to the sensor name, while when inactive, a dot icon will be shown.
+    1. Open the "Side Dashboard"
+    2. Tap on the 3-dotted-menu and choose "sensor"
 
-!![](../../assets/images/sensors_menu.png)
+        !![](../../assets/images/main_menu_sensors.png)
 
-All active sensors that are collecting data will be listed in a sensors information table located at the bottom
-of QField's map canvas.
+    3. To toggle the passive collection of sensor data, simply click on a sensor name in the sub-menu.
+     When active,a sensor icon will appear next to the sensor name, while when inactive, a dot icon will be shown.
+     All active sensors that are collecting data will be listed in a sensors information table located at the bottom of QField's map canvas.
 
-!![](../../assets/images/sensors_information_panel.png)
+        !![](../../assets/images/sensors_information_panel.png)
 
 ## Sensor-Driven Tracking
 
 QField enables you to initiate tracking sessions against a point layer, saving collected sensor data linked to
-your current position. To do this, you'll need to prepare the attribute default value for the point layer in QGIS by
-using the default value sensor_data('abc'), where 'abc' is replaced with the name of the sensor registered in the
-project file. Visit the attributes form documentation page to learn more about default values.
+your current position.
 
-Once this configuration is done, you can start tracking your position against the point layer. When starting the
-tracking session, a sensor constraint can be activated to ensure that added points occur every time a sensor has
-captured new data.
+!!! Workflow
 
-!![](../../assets/images/sensors_tracker_constraint.png)
+    1. Open the layer properties of the point layer, where the sensor data will be stored.
+    2. Direct to the attribute form layout.
+    3. Set the [default value](../project-setup/attributes-form.en.md#define-default-values) to *"sensor_data('abc') where 'abc' corresponds to the name of the sensor.
+    4. Once this configuration is done, you can start tracking your position against the point layer.
+    When starting the tracking session, a sensor constraint can be activated to ensure that added points occur every time a sensor has captured new data.
 
-See how tracking works in real-world scenarios:
+     !![](../../assets/images/sensors_tracker_constraint.png)
 
-!![](../../assets/images/sensors.webp,250px)
+!![](../../assets/images/sensors.webp,700px)
