@@ -111,6 +111,7 @@ nav:
           - how-to/advanced-how-tos/multilingual-projects.md
   - Technical reference:
       - reference/index.md
+      - reference/how-to-contribute-using-codespace.md
       - reference/data-format.md
       - reference/exif.md
       - reference/expression_variables.md
