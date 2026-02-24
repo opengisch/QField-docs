@@ -23,11 +23,11 @@ To get a quick overview of the process, here is a list of typical steps:
 2. Copy the QField package to the target device.
 3. Go out and collect data.
 4. Copy the modified data back to your desktop computer.
-5. Synchronize the modified data with your database or files.
+5. Synchronize the modified data with your local QField package or database.
 
 ## Installation
 
-Before you get started with QField you will have to download the plugin through the plugin repository.
+Before you get started with QField you will have to install the plugin through the plugin repository.
 
 !!! Workflow
 
@@ -136,7 +136,7 @@ Please refer to [How to configure your attachment path](../../how-to/project-set
 
 !!! Workflow
 
-    1. Direct to Vector Layer *Properties...* > *QField*.
+    1. Direct to *Vector Layer Properties...* > *QField*.
 
     2. Under "Relationship Settings" set the "Maximum number of items visible".
 
