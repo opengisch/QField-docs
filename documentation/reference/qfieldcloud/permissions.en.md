@@ -53,6 +53,10 @@ QFieldCloud provides a fine grained access control over projects with the concep
 | Delete project's files (qfieldsync)                                           | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |   |
 | List project's files (qfield)                                                 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | Download project's files (qfield)                                             | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
+| Read synced features from layers in the project on QField                     | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |   |
+| Create synced features from layers in the project on QField                   | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |   |
+| Delete synced features from layers in the project on QField                   | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ |   |
+| Update synced features from layers in the project on QField                   | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ |   |
 | List users and organizations                                                  | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
 | Get user's public information                                                | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
 | Get user's detailed information                                              | ❌ | ❌ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ✅ | ✅ | ❌ |   |
