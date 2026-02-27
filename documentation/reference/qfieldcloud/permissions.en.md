@@ -54,12 +54,13 @@ QFieldCloud provides a fine grained access control over projects with the concep
 | List project's files (qfield)                                                 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | Download project's files (qfield)                                             | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | List users and organizations                                                  | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
-| Get user's public information                                                | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
-| Get user's detailed information                                              | ❌ | ❌ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ✅ | ✅ | ❌ |   |
-| Update user's information                                                    | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
+| Get user's public information                                                 | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
+| Get user's detailed information                                               | ❌ | ❌ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ✅ | ✅ | ❌ |   |
+| Update user's information                                                     | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
 | Delete user                                                                   | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
 | Get API status                                                                | ✅ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
 | Add and remove secrets                                                        | ‒  | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ‒  | ‒  | ‒  |   |
+| Modify/update .qgs project file                                               | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ |   |
 
 ## Roles
 
