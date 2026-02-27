@@ -50,6 +50,7 @@ QFieldCloud provides a fine grained access control over projects with the concep
 | List project's files (qfieldsync)                                             | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | Download project's files (qfieldsync)                                         | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | Upload project's files (qfieldsync)                                           | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |   |
+| Upload or delete restricted project files (.qgs/.qgz/plugins) when "Restrict project files" is enabled | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ |   |
 | Delete project's files (qfieldsync)                                           | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |   |
 | List project's files (qfield)                                                 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | Download project's files (qfield)                                             | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
@@ -60,7 +61,6 @@ QFieldCloud provides a fine grained access control over projects with the concep
 | Delete user                                                                   | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
 | Get API status                                                                | ✅ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
 | Add and remove secrets                                                        | ‒  | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ‒  | ‒  | ‒  |   |
-| Modify/update .qgs project file                                               | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ |   |
 
 ## Roles
 
