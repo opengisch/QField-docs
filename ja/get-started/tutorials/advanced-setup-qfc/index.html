@@ -1,0 +1,4862 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="QFieldエコシステムのドキュメントへようこそ。QFieldエコシステムは、フィールドワークをシームレスかつ効率的にするために設計された製品群です。このページでは、QField のすべての製品について、包括的でわかりやすいドキュメントを提供しています。初めてお使いになる方でも、経験豊富なプロの方でも、QFieldとその関連ツールの使用に関して知っておくべきことが全て網羅されています。">
+      
+      
+        <meta name="author" content="OPENGIS.ch">
+      
+      
+        <link rel="canonical" href="https://docs.qfield.org/ja/get-started/tutorials/advanced-setup-qfc/">
+      
+      
+        <link rel="prev" href="../get-started-qfc/">
+      
+      
+        <link rel="next" href="../my-first-project/">
+      
+      
+        
+          <link rel="alternate" href="../../../../get-started/tutorials/advanced-setup-qfc/" hreflang="en">
+        
+          <link rel="alternate" href="../../../../de/get-started/tutorials/advanced-setup-qfc/" hreflang="de">
+        
+          <link rel="alternate" href="../../../../fr/get-started/tutorials/advanced-setup-qfc/" hreflang="fr">
+        
+          <link rel="alternate" href="../../../../it/get-started/tutorials/advanced-setup-qfc/" hreflang="it">
+        
+          <link rel="alternate" href="./" hreflang="ja">
+        
+          <link rel="alternate" href="../../../../pt/get-started/tutorials/advanced-setup-qfc/" hreflang="pt">
+        
+          <link rel="alternate" href="../../../../es/get-started/tutorials/advanced-setup-qfc/" hreflang="es">
+        
+          <link rel="alternate" href="../../../../zh/get-started/tutorials/advanced-setup-qfc/" hreflang="zh">
+        
+          <link rel="alternate" href="../../../../fi/get-started/tutorials/advanced-setup-qfc/" hreflang="fi">
+        
+          <link rel="alternate" href="../../../../ro/get-started/tutorials/advanced-setup-qfc/" hreflang="ro">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17+insiders-4.53.5">
+    
+    
+      
+        <title>高度なセットアップ - QFieldエコシステムドキュメント</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ab3d5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/jquery.fancybox.min.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/swagger-ui.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-68XXC2QVWH"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-68XXC2QVWH",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-68XXC2QVWH",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="高度なセットアップ - QFieldエコシステムドキュメント" />
+<meta property="og:description" content="QFieldエコシステムのドキュメントへようこそ。QFieldエコシステムは、フィールドワークをシームレスかつ効率的にするために設計された製品群です。このページでは、QField のすべての製品について、包括的でわかりやすいドキュメントを提供しています。初めてお使いになる方でも、経験豊富なプロの方でも、QFieldとその関連ツールの使用に関して知っておくべきことが全て網羅されています。" />
+<meta property="og:image" content="https://docs.qfield.org/assets/images/social/ja/get-started/tutorials/advanced-setup-qfc.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://docs.qfield.org/ja/get-started/tutorials/advanced-setup-qfc/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="高度なセットアップ - QFieldエコシステムドキュメント" />
+<meta property="twitter:description" content="QFieldエコシステムのドキュメントへようこそ。QFieldエコシステムは、フィールドワークをシームレスかつ効率的にするために設計された製品群です。このページでは、QField のすべての製品について、包括的でわかりやすいドキュメントを提供しています。初めてお使いになる方でも、経験豊富なプロの方でも、QFieldとその関連ツールの使用に関して知っておくべきことが全て網羅されています。" />
+<meta property="twitter:image" content="https://docs.qfield.org/assets/images/social/ja/get-started/tutorials/advanced-setup-qfc.png" />
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="https://qfield.org" title="QFieldエコシステムドキュメント" class="md-header__button md-logo" aria-label="QFieldエコシステムドキュメント" data-md-component="logo">
+      
+  <img src="../../../../assets/images/qfield_logo_white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFieldエコシステムドキュメント
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              高度なセットアップ
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.768 3.96v.001l-.002-.005a9.08 9.08 0 0 0-.218-.779c-.13-.394.21-.8.602-.67.29.096.575.205.855.328l.01.005A10.002 10.002 0 0 1 12 22a10.002 10.002 0 0 1-9.162-5.985l-.004-.01a9.722 9.722 0 0 1-.329-.855c-.13-.392.277-.732.67-.602.257.084.517.157.78.218l.004.002A9 9 0 0 0 14.999 6a9.09 9.09 0 0 0-.231-2.04ZM16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1 0 16.425 4.74c.05.413.075.833.075 1.259Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 1 0 0 11Zm-5.657.157a.75.75 0 0 1 0 1.06l-1.768 1.768a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.767-1.768a.75.75 0 0 1 1.061 0ZM3.515 3.515a.75.75 0 0 1 1.06 0l1.768 1.768a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L3.515 4.575a.75.75 0 0 1 0-1.06ZM12 0a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 12 0ZM4 12a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 4 12Zm8 8a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 12 20Zm12-8a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 24 12Zm-6.343 5.657a.75.75 0 0 1 1.06 0l1.768 1.768a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-1.768-1.767a.75.75 0 0 1 0-1.061Zm2.828-14.142a.75.75 0 0 1 0 1.06l-1.768 1.768a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l1.767-1.768a.75.75 0 0 1 1.061 0Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="言語切り替え">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../get-started/tutorials/advanced-setup-qfc/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../de/get-started/tutorials/advanced-setup-qfc/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fr/get-started/tutorials/advanced-setup-qfc/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../it/get-started/tutorials/advanced-setup-qfc/" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../pt/get-started/tutorials/advanced-setup-qfc/" hreflang="pt" class="md-select__link">
+              Portuguese
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../es/get-started/tutorials/advanced-setup-qfc/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../zh/get-started/tutorials/advanced-setup-qfc/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fi/get-started/tutorials/advanced-setup-qfc/" hreflang="fi" class="md-select__link">
+              Finnish
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ro/get-started/tutorials/advanced-setup-qfc/" hreflang="ro" class="md-select__link">
+              Romanian
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/opengisch/qfield-docs" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    opengisch/qfield-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+    
+  
+  ホーム
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  スタート・ガイド
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../how-to/" class="md-tabs__link">
+          
+  
+    
+  
+  ハウツー・ガイド
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/" class="md-tabs__link">
+          
+  
+    
+  
+  技術参考情報
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../success-stories/" class="md-tabs__link">
+          
+  
+    
+  
+  ケーススタディ
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://qfield.org" title="QFieldエコシステムドキュメント" class="md-nav__button md-logo" aria-label="QFieldエコシステムドキュメント" data-md-component="logo">
+      
+  <img src="../../../../assets/images/qfield_logo_white.svg" alt="logo">
+
+    </a>
+    QFieldエコシステムドキュメント
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/opengisch/qfield-docs" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    opengisch/qfield-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ホーム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    スタート・ガイド
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    スタート・ガイド
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Principles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    チュートリアル
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    チュートリアル
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldCloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QFieldCloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../get-started-qfc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    スタート・ガイド
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    高度なセットアップ
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    高度なセットアップ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        サポートされるベクターフォーマット
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronization-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synchronization process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working Modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geopackages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GeoPackagesを使う
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostGIS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-configuration-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Configuration Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Configuration Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-configuration-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Configuration Errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restriction-of-project-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restriction of Project Files
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Restriction of Project Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restricted-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restricted Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-conflicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handling Conflicts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-push-to-qfieldcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic push to QFieldCloud
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-creation-in-an-organisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project creation in an organisation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project creation in an organisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-using-qfieldsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 1: Using QFieldSync
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-using-qfieldcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 2: Using QFieldCloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3-changing-the-ownership-of-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 3: Changing the Ownership of a project
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate-email-notifications-for-qfieldcloud-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activate email notifications for QFieldCloud changes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimized-packager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Optimized Packager"でプロジェクトを強化する
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-of-attachment-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration of Attachment Folders
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-demand-attachment-downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        On-Demand Attachment Downloads
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-to-a-custom-qfieldcloud-server-in-qfield-and-qfieldsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connect to a custom QFieldCloud server in QField and QFieldSync
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../my-first-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    My first project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../storage-qfc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Plans and Additional Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldSync
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QFieldSync
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../get-started-qfs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldSync - Cable packaging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    サンプルプロジェクト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../help/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Need Help?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Support the QField Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-contribute-translation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Translation contribution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ライセンス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    F＆Q
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../how-to/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    ハウツー・ガイド
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ハウツー・ガイド
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    General
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    General
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/general/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldの一般設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/general/projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    プロジェクトの選択
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/project-setup/create-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Create new Project from in QField
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/project-setup/attributes-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Simple attribute form configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/project-setup/relation-reference-widget/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Relation Reference Widget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/project-setup/storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ストレージ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/project-setup/hiding-legend-nodes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Source Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/project-setup/pg-service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL Databases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/project-setup/pictures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Attachment widget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QField Interface
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QField Interface
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/qfield-interface/map-interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    地図の操作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/qfield-interface/measuring-tool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    計測ツール
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/qfield-interface/search/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    検索バー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/qfield-interface/map-styling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    マップのスタイリング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/qfield-interface/map-themes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    マップテーマ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/qfield-interface/decorations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Map Decorations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/qfield-interface/bookmarks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ブックマーク
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Collection
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Collection
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/data-collection/digitize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Digitize and Edit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/data-collection/print-to-pdf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    PDFに印刷する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/data-collection/processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Processing Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Navigation and Positioning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Navigation and Positioning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/navigation-and-positioning/gnss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    衛星測位 (GNSS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/navigation-and-positioning/geofencing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Geofencing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/navigation-and-positioning/navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ナビゲーション
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/navigation-and-positioning/tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    トラッキング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/navigation-and-positioning/external-routing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    外部ルーティング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced How To's
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced How To's
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/xlsforms-plugin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    XLSForm Converter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/standalone-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    スタンドアロン・データセット
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/sensors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    センサー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    認証
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/temporal-filtering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    テンポラル・フィルタリング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/live-default-value/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ライブ・デフォルト値
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/shared-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/movable-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ポータブルなプロジェクト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    プラグイン
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/advanced-how-tos/multilingual-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Multilingual Project Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    技術参考情報
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    技術参考情報
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/data-format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    サポート対象のデータフォーマット
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/exif/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    EXIF Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/expression_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Expression Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    プラグイン
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/troubleshoot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    トラブルシューティング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldCloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QFieldCloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ワークフロー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    基本コンセプト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    プロジェクト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    認証
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/permissions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    アクセス許可
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/jobs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ジョブ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/secrets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    シークレット
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/specs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    技術仕様
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    システム・ドキュメント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/sdk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    公式なQFieldCloud SDKとCLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7_13" id="__nav_4_7_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Managing Organization on Self-Hosted
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_7_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Managing Organization on Self-Hosted
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/self_hosted/django_interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldCloud Django Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../success-stories/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    ケーススタディ
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ケーススタディ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/ecological-surveying/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    生態学的測量の効率性の改善
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/geologic-mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    地質のマッピング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/lulc-mapping-fiji/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    グラウンドトゥルースデータの収集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/mapping-breeding-birds-in-the-Wadden-Sea/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    鳥類の繁殖状況をマッピング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/mosquito-malario-ground-truth-data-collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    マラリアを感染させる蚊のデータ収集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/river-state-survey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    河川の状態の調査
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/rwanda-rural-water/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    地方給水システムのデータ収集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/vanilla-survey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    バニラの調査
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/heritage-impact-assessment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    遺跡影響評価
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        サポートされるベクターフォーマット
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronization-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synchronization process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working Modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geopackages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GeoPackagesを使う
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostGIS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-configuration-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Configuration Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Configuration Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-configuration-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Configuration Errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restriction-of-project-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restriction of Project Files
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Restriction of Project Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restricted-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restricted Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-conflicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handling Conflicts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-push-to-qfieldcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic push to QFieldCloud
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-creation-in-an-organisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project creation in an organisation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project creation in an organisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-using-qfieldsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 1: Using QFieldSync
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-using-qfieldcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 2: Using QFieldCloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3-changing-the-ownership-of-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 3: Changing the Ownership of a project
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate-email-notifications-for-qfieldcloud-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activate email notifications for QFieldCloud changes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimized-packager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Optimized Packager"でプロジェクトを強化する
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-of-attachment-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration of Attachment Folders
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-demand-attachment-downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        On-Demand Attachment Downloads
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-to-a-custom-qfieldcloud-server-in-qfield-and-qfieldsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connect to a custom QFieldCloud server in QField and QFieldSync
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/opengisch/qfield-docs/blob/master/documentation/get-started/tutorials/advanced-setup-qfc.ja.md" title="編集" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<div><h1 id="_1">高度なセットアップガイド<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<h2 id="_2">サポートされるベクターフォーマット<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>Currently, QFieldCloud supports GeoPackage and PostGIS layers for collaborative editing.
+Other formats supported by QGIS should also work but are not officially supported.</p>
+<h2 id="synchronization-process">Synchronization process<a class="headerlink" href="#synchronization-process" title="Permanent link">¶</a></h2>
+<p>When working with QFieldCloud it is important that you understand the synchronization process so that you avoid data loss or the overwriting of files / deltas (changes).
+You can find the technical details on the different job types in the <a href="../../../reference/qfieldcloud/jobs/">technical documentation section</a>.
+In simple words, there exist three different synchronization activities:</p>
+<ul>
+<li><strong>From QGIS to QFieldCloud</strong>: This synchronization process uploads a complete new "project package" and replaces the existing one stored in the cloud.
+If you are working with GeoPackages it is important to note, that the existing GeoPackage on the cloud will be replaced with the one you have just uploaded.</li>
+<li><strong>From QFieldCloud to QField</strong>: If you want to download the uploaded "project package" to your mobile device,
+QFieldCloud "packages" the project into a specific format that is saved in the internal application folder structure.
+Important to know here is that in case you are working with PostgreSQL databases and have chosen the <a href="#working-modes">working mode</a> <em>offline editing</em> then a local
+GeoPackage of the data will be created in the corresponding folder
+(make sure to configure your <a href="../../../reference/qfieldcloud/secrets/">secret</a> properly), unless a direct connection is needed.</li>
+<li><strong>From QField to QFieldCLoud</strong>: Once you are done with collecting data, you can choose among two different <a href="../get-started-qfc/#synchronization-with-qfieldcloud">synchronization options</a>.
+The changes made are being applied as so-called <em>deltas</em>.
+<em>Deltas</em> reflect only the changes made to the different attributes.
+When pushing to or synchronizing with QFieldCloud, it is only the deltas that are being applied.
+Unlike in the synchronization process from QGIS to QFieldCloud, the whole GeoPackage is <strong><ins>NOT</ins></strong> replaced.</li>
+</ul>
+<p>
+<figure><a data-caption="Simple Synchronization Overview" data-fancybox="gallery" href="../../../../assets/images/qfc-advanced-setup-synchronization-process-easy.png"><img alt="Simple Synchronization Overview" src="../../../../assets/images/qfc-advanced-setup-synchronization-process-easy.png" title="Simple Synchronization Overview" width="800px"></a><figcaption>Simple Synchronization Overview</figcaption>
+</figure>
+</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>There are a few tips, which we recommend to follow in order to avoid synchronization issues or overwritten data.</p>
+<ol>
+<li><ins>Do not modify the QGIS project while personnel is working simultaneously in QField.</ins>
+If you synchronize your Desktop version to the cloud, QFieldCloud will overwrite the files.
+Although there may have been changes applied in QFieldCloud, QFieldSync will not show this by default.
+If you must work parallel on Desktop, make sure to check the QFieldCloud status and download the most recent data before uploading new files versions from your Desktop.</li>
+<li><ins>Do not change the data structure before synchronizing the latest field edits</ins>.
+Often, officers work in QGIS and adapt the data structure of the project files, which leads to errors if the changes from QField have not yet been pushed to QFieldCloud.</li>
+<li><ins>Use uuid's as primary keys, especially when working with relations and in teams.</ins>
+Synchronization often occur due to the lack of adding primary keys to your datasets.
+Especially, when working with relationships and in teams, if the data were not configured with an according primary key, it may happen that data loss occurs because of simultaneous editing of the data.</li>
+</ol>
+</div>
+<h2 id="working-modes">Working Modes<a class="headerlink" href="#working-modes" title="Permanent link">¶</a></h2>
+<p>When configuring a project for QField you can choose between the different "Packaging" options.</p>
+<ul>
+<li>
+<p><strong>Offline editing:</strong> Regardless of whether your files are stored in a GeoPackage, database or other format, QFieldCloud will create a temporary GeoPackage of all the project data.
+Changes made to this GeoPackage will not be available to others.
+Once the changes are synchronized or pushed back to QFieldCloud, the made changes only will be applied to the existing file on QFieldCloud.
+We recommend to use this option to avoid unnecessary data losses in case of lost data connection.</p>
+</li>
+<li>
+<p><strong>Direct Data Access:</strong> When using <code>direct database access</code>, QFieldCloud will directly edit data in the PostGIS database.
+This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).</p>
+</li>
+</ul>
+<p>Changes will only be visible to users once the Synchronization via QFieldCloud has been applied on the different devices.
+When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.</p>
+<p><a href="../../../reference/qfieldcloud/concepts/">QFieldCloud技術参考情報</a>でさらに情報を見つけられるでしょう。</p>
+<h2 id="geopackages">GeoPackagesを使う<a class="headerlink" href="#geopackages" title="Permanent link">¶</a></h2>
+<p>QFieldユーザーによって収集されたデータを1つのファイルに集中させるシンプルなセットアップには、通常GeoPackagesを使用するのが最適です。</p>
+<p>If you would like to set up a relation, add a UUID field and use that as the primary or foreign key.
+<strong>Note:</strong> Do not use the default <code>fid</code> field for relations (as primary or foreign key).</p>
+<p><em>Why?</em> The <code>fid</code> field can be synchronized when working with QFieldCloud and will lead to errors over time.
+A <a href="https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549">UUID</a>, on the other hand, is unique and will not be synchronized.<!-- markdown-link-check-disable-line --></p>
+<div class="admonition workflow">
+<p class="admonition-title">Workflow</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"></path></svg></span> Desktop preparation</p>
+<ol>
+<li>Create a new project in QGIS.</li>
+<li>Create GeoPackage layers, save it in the same folder as your QGIS project.</li>
+<li>Set the GeoPackage to "Offline editing" in the settings of the QFieldSync plugin. <figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/qfield-sync-qfc_config.png"><img alt="" src="../../../../assets/images/qfield-sync-qfc_config.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</li>
+<li>Upload the project to QFieldCloud.</li>
+</ol>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path></svg></span> Fieldwork</p>
+<ol>
+<li>Sign in to QFieldCloud and download the project to your device.</li>
+<li>Collect and edit some data and upload the changes.</li>
+</ol>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"></path></svg></span> Desktop</p>
+<ol>
+<li>Using QFieldSync, download the updated files (the GeoPackage file should have changed).</li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We do not recommend to edit or add new data from QGIS directly because everytime QGIS synchronizes the project to QFieldCloud the whole GeoPackage replaces the existing on QFieldCloud, whereas when using QField, only the actual changes within the file will be updated.</p>
+</div>
+<h2 id="postgis">PostGIS<a class="headerlink" href="#postgis" title="Permanent link">¶</a></h2>
+<p>Using PostGIS is a good choice if your data should be visible and editable for multiple users.</p>
+<p>It requires your database to be publicly accessible, and credentials must be saved unencrypted in the QGIS project.
+Please be aware of the security implications of such requirements, and remember to have backups.
+There are two possible ways, in which the access to the database can be saved and made available for QFieldCloud.</p>
+<ol>
+<li><strong>Direct Connection:</strong> When connecting to a PostGIS database, you can store all information including the credentials inside the QGIS Project directly.</li>
+<li><strong>Using a PG Service File:</strong> Using a service file that can be saved as a "secret" in QFieldCloud.
+We highly recommend to make use of this option due to data safety.
+Read more on PG Service and Secrets <a href="../../../how-to/project-setup/pg-service/">here</a></li>
+</ol>
+<div class="admonition workflow">
+<p class="admonition-title">Workflow</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"></path></svg></span> Desktop preparation</p>
+<ol>
+<li>Create a new project.</li>
+<li>Add a PostGIS layer, making sure to store the credentials in the project or having created the PG Service file.</li>
+<li>Make sure the PostGIS database connection is publicly accessible (public IP or domain name, it will not work with <code>127.0.0.1</code> or <code>localhost</code>).</li>
+<li>In the QFieldSync project settings, choose your preferred packaging mode.</li>
+<li>Upload the project to QFieldCloud.</li>
+</ol>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path></svg></span> Fieldwork</p>
+<ol>
+<li>Sign in to QFieldCloud and download the project.</li>
+<li>Collect some data</li>
+<li>Push or synchronize the changes once back at the office if you were using <code>offline editing</code>.</li>
+</ol>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"></path></svg></span> Desktop</p>
+<ol>
+<li>All changes should be directly visible inside the PostGIS database.</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using <code>direct database access</code>, QFieldCloud will directly edit data in the PostGIS database.
+This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using <code>offline editing</code>, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database once synchronized by the user.
+We recommend to use this option to avoid unnecessary data losses in case of lost data connection.</p>
+<p>Changes will only be visible to users once the Synchronisation via QFieldCloud has been applied on the different devices.
+When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.</p>
+</div>
+<p>You can find more information on <a href="../../../reference/qfieldcloud/jobs/">QFieldCloud technical reference</a>.</p>
+<h2 id="project-configuration-best-practices">Project Configuration Best Practices<a class="headerlink" href="#project-configuration-best-practices" title="Permanent link">¶</a></h2>
+<p>To ensure a smooth synchronization process between QGIS, QField and QFieldCloud, follow these recommendations.</p>
+<p><strong>1. Centralized Data Storage - Add all data in the same folder as your .qgs project file</strong></p>
+<p>Before uploading your project, ensure all relevant data sources (GeoPackages, rasters, etc.) are located in the same directory as your project file (<code>.qgs/.qgz</code>)
+or in a subdirectory (e.g., <code>./data</code>, <code>./assets</code>).
+If files are spread across different drives or folders on your computer, QFieldSync and QFieldCloud may fail to package them correctly for the mobile device.</p>
+<p><strong>2. Managing Unique IDs - Add a unique ID to your layers</strong></p>
+<p>When multiple users collect data offline simultaneously, standard auto-incrementing IDs (1, 2, 3...) will result in conflict errors when applying the deltas changes data on QFieldCloud.</p>
+<ul>
+<li><strong>For Relations</strong>: Create a specific text field (e.g., <code>survey_uuid</code>) and use <code>uuid()</code> or <code>uuid('WithoutBraces')</code> as the default value.
+Use this field for all foreign keys and for primary key if the layer is from PostgreSQL/PostGIS.</li>
+<li><strong>For the <code>fid</code> (Feature ID)</strong>: If you are working with GeoPackages, you can reduce conflicts on the internal <code>fid</code> integer column
+by setting the "Default Value" to the expression <code>epoch(now())</code>.
+This generates a unique integer based on the current timestamp.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To set this up, go to <strong>Layer Properties &gt; Attributes Form</strong>, select the <code>fid</code> field, and set the <strong>Default Value</strong> to:
+</p><div class="highlight"><pre><span></span><code><span class="n">epoch</span><span class="p">(</span><span class="n">now</span><span class="p">())</span>
+</code></pre></div>
+Ensure the "Apply default value on update" box is <strong>unchecked</strong> so the ID remains constant after creation.
+</div>
+<p><strong>3. Relative Paths - Ensure that all attachment paths are relative</strong></p>
+<p>Absolute paths (e.g., <code>C:\Users\{username}\Downloads\photo_001.jpg</code>) will break when the project is transferred to a mobile device (Android/iOS),
+as the file system structure is different.</p>
+<div class="admonition workflow">
+<p class="admonition-title">Workflow</p>
+<ol>
+<li>Navigate to <strong>Project</strong> &gt; <strong>Properties...</strong> &gt; <strong>General</strong>.</li>
+<li>Set <strong>Save paths</strong> to <code>Relative</code>.</li>
+</ol>
+</div>
+<p><strong>4. Stable Layer References in Expressions - Use the Layer Name in expressions, not the Layer ID</strong></p>
+<p>When writing expressions (for example, inside <code>aggregate()</code> or <code>relation_aggregate()</code>) functions,
+QGIS allows you to reference layers by their internal ID (e.g., <code>places_2348274...</code>) or their Name (e.g., <code>Places</code>).
+Always use the <strong>Layer Name</strong> (e.g., <code>Places</code>).</p>
+<p><strong>Why?</strong>
+The internal Layer ID changes if you remove and re-add a layer or internally in QFieldCloud when a packaging job is triggered could change,
+which breaks your expressions.
+The Layer Name remains stable as long as you do not rename it in the layer tree.</p>
+<p><strong>5. Preferred File Formats - Convert your layers to GeoPackage</strong></p>
+<p>QField and QFieldCloud are optimized for the <strong>GeoPackage (.gpkg)</strong> format.
+While QField and QFieldCloud support others formats like Shapefiles (<code>.shp</code>), GeoJSON, and KML, etc., is strongly recommend converting these layers to GeoPackage before starting your project.</p>
+<p><strong>How to Convert to GeoPackage?</strong></p>
+<div class="admonition workflow">
+<p class="admonition-title">Workflow</p>
+<ol>
+<li>In QGIS, right-click your layer in the layer tree.</li>
+<li>Select <strong>Export</strong> &gt; <strong>Save Features As...</strong></li>
+<li>Set <strong>Format</strong> to <code>GeoPackage</code></li>
+<li>In <strong>File name</strong>, click <code>...</code> and navigate to your project folder. Give the new database a name (e.g., notes_points.gpkg`)</li>
+<li>In <strong>Layer name</strong>, give your layer a simple name (e.g., <code>notes_points</code>)</li>
+<li>Click <strong>OK</strong></li>
+<li>The new layer will load into your project.
+You can now remove the old layer</li>
+</ol>
+</div>
+<p><strong>6. Modular File Structure - Store one layer per GeoPackage</strong></p>
+<p>QFieldCloud manages versions and backups at the <strong>file level</strong>. Every time changes are synchronized, a backup of the modified file is created.</p>
+<ul>
+<li><strong>The Risk:</strong> If you store multiple layers in a single GeoPackage (e.g., <code>survey_data.gpkg</code> containing <em>Trees</em>, <em>Roads</em>, and <em>Buildings</em>), restoring a backup to fix an error in the <em>Trees</em> layer will also roll back valid work done on <em>Roads</em> and <em>Buildings</em> during that same period.</li>
+<li><strong>The Solution:</strong> Save each layer in its own separate GeoPackage (e.g., <code>trees.gpkg</code>, <code>roads.gpkg</code>).
+    This allows you to restore a previous version of one specific layer without losing data in others.</li>
+</ul>
+<h3 id="common-configuration-errors">Common Configuration Errors<a class="headerlink" href="#common-configuration-errors" title="Permanent link">¶</a></h3>
+<p>If you are experiencing synchronization issues, check for these common configuration errors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Issue</th>
+<th style="text-align: left;">Cause</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Missing Images</strong></td>
+<td style="text-align: left;">Paths are set to "Absolute"</td>
+<td style="text-align: left;">Go to Project Properties and set paths to "Relative".</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sync Failures</strong></td>
+<td style="text-align: left;">Data is outside the project folder</td>
+<td style="text-align: left;">Move all .gpkg and raster files into the same folder as the project file (<code>.qgz/.qgs</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Expression Errors</strong></td>
+<td style="text-align: left;">Layer ID used in expression</td>
+<td style="text-align: left;">Update expressions to use <code>'Layer Name'</code> instead of <code>'Layer_ID_123'</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Duplicate Keys</strong></td>
+<td style="text-align: left;">Using default 1, 2, 3 IDs</td>
+<td style="text-align: left;">Implement <code>uuid()</code> or <code>epoch(now())</code> for unique identification.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="restriction-of-project-files">Restriction of Project Files<a class="headerlink" href="#restriction-of-project-files" title="Permanent link">¶</a></h2>
+<p>To prevent any modification to the core QGIS project file, <strong>the project administrators</strong> can restrict the access to these files.
+This can be achieved under the settings section in QFieldCloud.</p>
+<ol>
+<li>From the QFieldCloud homepage direct to <em>Settings</em></li>
+<li>Enable the <strong><code>Restrict project files</code></strong> button</li>
+</ol>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/restric_qfc_project_files.png"><img alt="" src="../../../../assets/images/restric_qfc_project_files.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</p>
+<p>Once set, only administrators and managers will be able to push changes to the files listed above.
+Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.</p>
+<h3 id="restricted-files">Restricted Files<a class="headerlink" href="#restricted-files" title="Permanent link">¶</a></h3>
+<p>When enabled, the following files can only be modified or uploaded by a user with an "admin" or "manager" role for the project:</p>
+<ul>
+<li>The primary <strong>QGIS project file</strong> (e.g., <code>my_project.qgz</code>).</li>
+<li>The <strong>attachments zip archive</strong> associated with the project (e.g., <code>my_project_attachments.zip</code>).</li>
+<li><strong>QGIS auxiliary data files</strong> that store information like label positions (e.g., <code>my_project.qgd</code>).</li>
+<li><strong>QField style files</strong> (<code>.qml</code>) that share the same name as the project file.</li>
+</ul>
+<h2 id="handling-conflicts">Handling Conflicts<a class="headerlink" href="#handling-conflicts" title="Permanent link">¶</a></h2>
+<p>When working in a collaborative environment with many users accessing the same project, it may happen that two users modify the same object during a mapping session.
+In your settings page, you can choose whether QFieldCloud should apply the <em>last wins</em> policy or whether conflicts should be marked and handled by a project manager.</p>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/qfc-advanced-settings-overwrite-conflicts.png"><img alt="" src="../../../../assets/images/qfc-advanced-settings-overwrite-conflicts.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</p>
+<p>See more on how QFieldCloud handles conflicts <a href="../../../reference/qfieldcloud/jobs/#understanding-conflicts-delta_apply-jobs">here</a></p>
+<h2 id="automatic-push-to-qfieldcloud">Automatic push to QFieldCloud<a class="headerlink" href="#automatic-push-to-qfieldcloud" title="Permanent link">¶</a></h2>
+<p>With this functionality, you can enforce automatic pushing of pending changes to QField devices in the field, as well as specify the interval in between automated pushes.
+The functionality is activated through a project setting, allowing remote activation.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"></path></svg></span> デスクトップの準備</p>
+<ol>
+<li><strong>Access Project Settings</strong>: Direct to <em>Project</em> &gt; <em>Properties...</em> &gt; <em>QField</em> &gt; <em>QFieldCloud Packaging</em></li>
+<li><strong>自動プッシュを有効にする</strong>： 保留中の変更を「次の間隔で自動的にプッシュする」オプションを切り替え、希望の間隔を設定します。</li>
+</ol>
+<p>
+<figure><a data-caption="QFieldSyncでの自動プッシュ" data-fancybox="gallery" href="../../../../assets/images/auto-push-pending-changes-qfieldsync.png"><img alt="QFieldSyncでの自動プッシュ" src="../../../../assets/images/auto-push-pending-changes-qfieldsync.png" title="QFieldSyncでの自動プッシュ" width="600px"></a><figcaption>QFieldSyncでの自動プッシュ</figcaption>
+</figure>
+</p>
+<p>
+<figure><a data-caption="QFieldでの自動プッシュ" data-fancybox="gallery" href="../../../../assets/images/auto-push-pending-changes-qfield.png"><img alt="QFieldでの自動プッシュ" src="../../../../assets/images/auto-push-pending-changes-qfield.png" title="QFieldでの自動プッシュ" width="400px"></a><figcaption>QFieldでの自動プッシュ</figcaption>
+</figure>
+</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Benefits:</strong>
+- <em>Real-Time Updates</em>: Ensures prompt Synchronisation of field data with the QFieldCloud project.
+- <em>Streamlined Workflow</em>: Minimizes manual intervention and ensures surveyors do not need to worry about Synchronisation, helping them focus on data quality.
+<strong>Considerations:</strong>
+- <em>Network Stability</em>: Ensure stable internet connectivity for auto-push functionality.
+- <em>Battery Optimization</em>: Implement strategies to mitigate battery consumption on QField devices during prolonged fieldwork.</p>
+</div>
+<h2 id="project-creation-in-an-organisation">Project creation in an organisation<a class="headerlink" href="#project-creation-in-an-organisation" title="Permanent link">¶</a></h2>
+<p>There are several ways in which you can create and upload a project to QField.</p>
+<ul>
+<li>Using QFieldSync</li>
+<li>Using QFieldCloud</li>
+<li>Change of ownership</li>
+</ul>
+<div class="admonition workflow">
+<p class="admonition-title">Workflow</p>
+<h3 id="option-1-using-qfieldsync"><strong>Option 1: Using QFieldSync</strong><a class="headerlink" href="#option-1-using-qfieldsync" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p>Follow the steps <a href="../tutorials/get-started-qfc.en.md#project-creation-and-configuration">configure your cloud project</a>, until you get to the "Project details".</p>
+</li>
+<li>
+<p>Change the owner of the project to your Organization.</p>
+<p><img alt="Project files over view in QFieldCloud" src="../../../../assets/images/converting-project-to-organization-01.png"></p>
+</li>
+<li>
+<p>Click on "Create" to start the conversion and Synchronisation.
+    When finished the project will appear in the list of projects of your Organization in QFieldCloud.</p>
+<p><img alt="Project files overview in QFieldCloud" src="../../../../assets/images/converting-project-to-organization-02.png"></p>
+</li>
+</ol>
+<p><div class="video-container"><iframe src="../../../../assets/videos/project_creation_in_an_organisation_001.webm" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<h3 id="option-2-using-qfieldcloud"><strong>Option 2: Using QFieldCloud</strong><a class="headerlink" href="#option-2-using-qfieldcloud" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p>In the QFieldCloud landing page direct to your organization.</p>
+<p><img alt="Entering into Organization" src="../../../../assets/images/project_organization_01_entering_into_organization.png"></p>
+</li>
+<li>
+<p>Click on "Create a project".</p>
+<p><img alt="Creating Project" src="../../../../assets/images/project_organization_02_creating_project.png"></p>
+</li>
+<li>
+<p>Select "Create a new empty project"</p>
+<p><img alt="New empty project" src="../../../../assets/images/project_organization_03_new_empty_project.png"></p>
+</li>
+<li>
+<p>You can see the new project in the overview.</p>
+<p><img alt="New project created" src="../../../../assets/images/project_organization_04_new_project_created.png"></p>
+</li>
+<li>
+<p>In QGIS open QFieldSync and you will see the new project listed, click on "Edit Selected Cloud Project".</p>
+<p><img alt="QFieldSync" src="../../../../assets/images/project_organization_05_qfield_sync.png"></p>
+</li>
+<li>
+<p>Choose the folder where you want to save the project.</p>
+<p><img alt="Selecting folder" src="../../../../assets/images/project_organization_06_selecting_folder.png"></p>
+</li>
+<li>
+<p>In the selected folder, you can either paste an already worked-on project or save a new one.</p>
+<p><img alt="Copy to project folder" src="../../../../assets/images/project_organization_07_copy_project_to_folder.png"></p>
+</li>
+<li>
+<p>Once the folder contains the project, you can synchronize it.</p>
+<p><img alt="QFieldSync Overview" src="../../../../assets/images/project_organization_08_qfield_sync_overview.png"></p>
+</li>
+<li>
+<p>Finally, push the changes to the cloud.</p>
+<p><img alt="Pushing changes to QFieldCloud" src="../../../../assets/images/project_organization_09_pushing_changes_to_cloud.png"></p>
+</li>
+<li>
+<p>You can verify that the files are present in the Organization project.</p>
+<p><img alt="Project files over view in QFieldCloud" src="../../../../assets/images/project_organization_10_files_overview_in_cloud.png"></p>
+</li>
+</ol>
+<h3 id="option-3-changing-the-ownership-of-a-project">Option 3: Changing the Ownership of a project<a class="headerlink" href="#option-3-changing-the-ownership-of-a-project" title="Permanent link">¶</a></h3>
+<ol>
+<li>On the QFieldCloud landing page, click on your project of concern.</li>
+<li>
+<p>Direct to the <em>Settings</em> and select "Transfer ownership of this project" and choose the desired Organization for the transfer.</p>
+<p><img alt="Transferring to Organization" src="../../../../assets/images/project_organization_11_transfering_to_organization.png"></p>
+</li>
+<li>
+<p>A pop-up window will appear to confirm the transfer. To proceed, you will need to type the requested text and click "Transfer project".</p>
+<p><img alt="Confirm transfer" src="../../../../assets/images/project_organization_12_confirming_transfer.png"></p>
+</li>
+</ol>
+<p><div class="video-container"><iframe src="../../../../assets/videos/project_creation_in_an_organisation_003.webm" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+</div>
+<h2 id="activate-email-notifications-for-qfieldcloud-changes">Activate email notifications for QFieldCloud changes<a class="headerlink" href="#activate-email-notifications-for-qfieldcloud-changes" title="Permanent link">¶</a></h2>
+<p>If you wish to be notified by QFieldCloud what happens to your team(s) and your projects, you can activate the email notification option.</p>
+<ol>
+<li>On your QFieldCloud landing page direct to <em>settings</em>.</li>
+<li>Navigate to the notifications section.
+    Here, you can customize the frequency of notifications you wish to receive at the email address registered with your account.</li>
+</ol>
+<p><img alt="Synchronize" src="../../../../assets/images/frequency_notifications_settings.png"></p>
+<p>The events you get notified about are:</p>
+<ul>
+<li>ユーザーが作成された</li>
+<li>組織が作成された</li>
+<li>組織が削除された</li>
+<li>組織のメンバーが追加された</li>
+<li>組織のメンバーが削除された</li>
+<li>チームが作成された</li>
+<li>チームが削除された</li>
+<li>チームにメンバーが追加された</li>
+<li>チームのメンバーが削除された</li>
+<li>プロジェクトが作成された</li>
+<li>プロジェクトが削除された</li>
+<li>プロジェクトのメンバーが追加された</li>
+<li>プロジェクトのメンバーが削除された</li>
+</ul>
+<p>You will receive notifications for events in which you are not the actor.
+These notifications are specifically for events that are initiated by other members of your organization or collaborators on your projects.</p>
+<h2 id="optimized-packager">"Optimized Packager"でプロジェクトを強化する<a class="headerlink" href="#optimized-packager" title="Permanent link">¶</a></h2>
+<p>We recommend using the new "Optimized Packager" over the deprecated "QGIS Core Offline Editing" for all your projects.
+The "Optimized Packager" supports consolidating filtered layers of same datasource into a single offline layer, respecting distinct symbology but also using less storage.</p>
+<ol>
+<li>On the QFieldCloud landing page and select the project of concern</li>
+<li>Direct to <em>Settings</em> and set the packager under "Packaging Offliner" in the "Settings" tab of your project.</li>
+</ol>
+<p>Here is an example to illustrate this feature:</p>
+<p><strong>Example Configuration:</strong></p>
+<ul>
+<li><strong>レイヤー 1.1:</strong></li>
+<li>データソース: <code>layers.gpkg</code></li>
+<li>テーブル: <code>layer1</code></li>
+<li>
+<p>フィルタ: <code>id % 2 = 1</code></p>
+</li>
+<li>
+<p><strong>レイヤー 1.2:</strong></p>
+</li>
+<li>データソース: <code>layers.gpkg</code></li>
+<li>テーブル: <code>layer1</code></li>
+<li>フィルタ: <code>id % 2 = 0</code></li>
+</ul>
+<p><strong>Result:</strong></p>
+<p>新しいオフライナーの場合</p>
+<ul>
+<li>A single layer is generated in the offline GeoPackage, combining data from <code>layer1</code> with the specified filters.</li>
+</ul>
+<p>古い（QGIS）オフライナーの場合：</p>
+<ul>
+<li>2つの別々のレイヤーが作成され、それぞれがフィルタリングされたデータセットを表します：</li>
+<li>レイヤ 1: <code>id % 2 = 1</code>でフィルタされます</li>
+<li>レイヤ2: <code>id % 2 = 0</code>でフィルタされます</li>
+</ul>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/qfc_offline_packager.png"><img alt="" src="../../../../assets/images/qfc_offline_packager.png" title="" width="700px"></a><figcaption></figcaption>
+</figure>
+</p>
+<div class="admonition 備考">
+<p class="admonition-title">備考</p>
+<p>この設定は、<a href="https://app.qfield.cloud/">QFieldCloud</a>の各プロジェクトの設定ページで行う必要があります。</p>
+</div>
+<h2 id="configuration-of-attachment-folders">Configuration of Attachment Folders<a class="headerlink" href="#configuration-of-attachment-folders" title="Permanent link">¶</a></h2>
+<p>If your project contains photos, documents or other attachments, you have to configure your QGIS project accordingly to ensure that the data are downloaded to your QField device.</p>
+<ol>
+<li>In QGIS navigate to <em>Project</em> &gt; <em>Properties...</em> &gt; <em>QField</em>.</li>
+<li>Add your folder's path to the "Attachments and Directories" list.
+    The path you enter must be relative to the location of your project file.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>You used pictures for a specific symbology.
+These are stored in a folder named "assets" located inside your project home folder.
+Add them under the folder name to the list.</p>
+</div>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/attachments_and_directories_list.png"><img alt="" src="../../../../assets/images/attachments_and_directories_list.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</p>
+<h2 id="on-demand-attachment-downloads">On-Demand Attachment Downloads<a class="headerlink" href="#on-demand-attachment-downloads" title="Permanent link">¶</a></h2>
+<p>For projects with many attachment files, you can enable on-demand downloading in QField.
+This is useful for saving storage space on field devices and reducing data transfer over limited network connections.</p>
+<p>To enable this feature:</p>
+<ol>
+<li>From the QFieldCloud landing page, select your project.</li>
+<li>Direct to <em>Settings</em>.</li>
+<li>Enable the "On demand attachment files download" option.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature can be activated during project creation or enabled at any time for existing projects.</p>
+</div>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/activating_on_demand_attachments_download.png"><img alt="" src="../../../../assets/images/activating_on_demand_attachments_download.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</p>
+<h2 id="connect-to-a-custom-qfieldcloud-server-in-qfield-and-qfieldsync">Connect to a custom QFieldCloud server in QField and QFieldSync<a class="headerlink" href="#connect-to-a-custom-qfieldcloud-server-in-qfield-and-qfieldsync" title="Permanent link">¶</a></h2>
+<p>QField and QFieldSync connect to the QFieldCloud service <a href="https://app.qfield.cloud/">app.qfield.cloud</a> by default.</p>
+<p>You can modify the default that QField and QFieldSync connect to:</p>
+<ol>
+<li>QField または QFieldSync でログイン画面を開きます。</li>
+<li>Double-tap on the Nyuki icon (the QFieldCloud logo).</li>
+<li>この操作により、希望するQFieldCloudサーバーアドレスを入力するフィールドが表示されます。</li>
+<li>指定されたフィールドに、希望するサーバーの詳細を入力します。
+(Leaving the field empty will automatically connect to the default <a href="https://app.qfield.cloud/">QFieldCloud server</a>)</li>
+</ol>
+<p>
+<figure><a data-caption="Revealing server in QFieldSync" data-fancybox="gallery" href="../../../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png"><img alt="Revealing server in QFieldSync" src="../../../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png" title="Revealing server in QFieldSync" width="250px"></a><figcaption>Revealing server in QFieldSync</figcaption>
+</figure>
+</p>
+<p>
+<figure><a data-caption="Revealing server in QField" data-fancybox="gallery" href="../../../../assets/images/changing_default_qfieldcloud_server_qfield.png"><img alt="Revealing server in QField" src="../../../../assets/images/changing_default_qfieldcloud_server_qfield.png" title="Revealing server in QField" width="250px"></a><figcaption>Revealing server in QField</figcaption>
+</figure>
+</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>QField will remember the last entered URL for future sessions.
+It's important to note that QFieldSync does not support the same cloud project in multiple QGIS profiles.
+As a recommendation use a single QGIS profile for your QFieldCloud projects to avoid Synchronisation issues.</p>
+</div></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="フッター" >
+        
+          
+          <a href="../get-started-qfc/" class="md-footer__link md-footer__link--prev" aria-label="前: スタート・ガイド">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                前
+              </span>
+              <div class="md-ellipsis">
+                スタート・ガイド
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../my-first-project/" class="md-footer__link md-footer__link--next" aria-label="次: My first project">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                次
+              </span>
+              <div class="md-ellipsis">
+                My first project
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 <a href="https://OPENGIS.ch">OPENGIS.ch</a> -  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a>
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/opengisch" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/opengisch" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/opengisch/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:info@opengis.ch" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.action.edit"], "search": "../../../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.1135ae9f.min.js"></script>
+      
+        <script src="../../../../javascript/jquery.min.js"></script>
+      
+        <script src="../../../../javascript/jquery.fancybox.min.js"></script>
+      
+        <script src="../../../../javascript/swagger-ui-bundle.js"></script>
+      
+        <script src="../../../../javascript/swagger-ui-standalone-preset.js"></script>
+      
+    
+  </body>
+</html>

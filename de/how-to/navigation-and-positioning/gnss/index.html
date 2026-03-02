@@ -1,0 +1,4529 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Willkommen in der Dokumentation des QField-Ökosystems, einer Suite von Produkten, die Feldarbeit nahtlos und effizient gestalten. Egal, ob du ein neuer Benutzer oder ein Profi bist, hier findest du alles, was du über die Verwendung von QField und den damit verbundenen Tools wissen musst.">
+      
+      
+        <meta name="author" content="OPENGIS.ch">
+      
+      
+        <link rel="canonical" href="https://docs.qfield.org/de/how-to/navigation-and-positioning/gnss/">
+      
+      
+        <link rel="prev" href="../../data-collection/processing/">
+      
+      
+        <link rel="next" href="../geofencing/">
+      
+      
+        
+          <link rel="alternate" href="../../../../how-to/navigation-and-positioning/gnss/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="de">
+        
+          <link rel="alternate" href="../../../../fr/how-to/navigation-and-positioning/gnss/" hreflang="fr">
+        
+          <link rel="alternate" href="../../../../it/how-to/navigation-and-positioning/gnss/" hreflang="it">
+        
+          <link rel="alternate" href="../../../../ja/how-to/navigation-and-positioning/gnss/" hreflang="ja">
+        
+          <link rel="alternate" href="../../../../pt/how-to/navigation-and-positioning/gnss/" hreflang="pt">
+        
+          <link rel="alternate" href="../../../../es/how-to/navigation-and-positioning/gnss/" hreflang="es">
+        
+          <link rel="alternate" href="../../../../zh/how-to/navigation-and-positioning/gnss/" hreflang="zh">
+        
+          <link rel="alternate" href="../../../../fi/how-to/navigation-and-positioning/gnss/" hreflang="fi">
+        
+          <link rel="alternate" href="../../../../ro/how-to/navigation-and-positioning/gnss/" hreflang="ro">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17+insiders-4.53.5">
+    
+    
+      
+        <title>Ortung (GNSS) - QField Ökosystem Dokumentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ab3d5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/jquery.fancybox.min.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/swagger-ui.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-68XXC2QVWH"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-68XXC2QVWH",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-68XXC2QVWH",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ortung (GNSS) - QField Ökosystem Dokumentation" />
+<meta property="og:description" content="Willkommen in der Dokumentation des QField-Ökosystems, einer Suite von Produkten, die Feldarbeit nahtlos und effizient gestalten. Egal, ob du ein neuer Benutzer oder ein Profi bist, hier findest du alles, was du über die Verwendung von QField und den damit verbundenen Tools wissen musst." />
+<meta property="og:image" content="https://docs.qfield.org/assets/images/social/de/how-to/navigation-and-positioning/gnss.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://docs.qfield.org/de/how-to/navigation-and-positioning/gnss/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Ortung (GNSS) - QField Ökosystem Dokumentation" />
+<meta property="twitter:description" content="Willkommen in der Dokumentation des QField-Ökosystems, einer Suite von Produkten, die Feldarbeit nahtlos und effizient gestalten. Egal, ob du ein neuer Benutzer oder ein Profi bist, hier findest du alles, was du über die Verwendung von QField und den damit verbundenen Tools wissen musst." />
+<meta property="twitter:image" content="https://docs.qfield.org/assets/images/social/de/how-to/navigation-and-positioning/gnss.png" />
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ortung-gnss" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="https://qfield.org" title="QField Ökosystem Dokumentation" class="md-header__button md-logo" aria-label="QField Ökosystem Dokumentation" data-md-component="logo">
+      
+  <img src="../../../../assets/images/qfield_logo_white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QField Ökosystem Dokumentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ortung (GNSS)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.768 3.96v.001l-.002-.005a9.08 9.08 0 0 0-.218-.779c-.13-.394.21-.8.602-.67.29.096.575.205.855.328l.01.005A10.002 10.002 0 0 1 12 22a10.002 10.002 0 0 1-9.162-5.985l-.004-.01a9.722 9.722 0 0 1-.329-.855c-.13-.392.277-.732.67-.602.257.084.517.157.78.218l.004.002A9 9 0 0 0 14.999 6a9.09 9.09 0 0 0-.231-2.04ZM16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1 0 16.425 4.74c.05.413.075.833.075 1.259Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 1 0 0 11Zm-5.657.157a.75.75 0 0 1 0 1.06l-1.768 1.768a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.767-1.768a.75.75 0 0 1 1.061 0ZM3.515 3.515a.75.75 0 0 1 1.06 0l1.768 1.768a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L3.515 4.575a.75.75 0 0 1 0-1.06ZM12 0a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 12 0ZM4 12a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 4 12Zm8 8a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 12 20Zm12-8a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 24 12Zm-6.343 5.657a.75.75 0 0 1 1.06 0l1.768 1.768a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-1.768-1.767a.75.75 0 0 1 0-1.061Zm2.828-14.142a.75.75 0 0 1 0 1.06l-1.768 1.768a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l1.767-1.768a.75.75 0 0 1 1.061 0Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../how-to/navigation-and-positioning/gnss/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fr/how-to/navigation-and-positioning/gnss/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../it/how-to/navigation-and-positioning/gnss/" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ja/how-to/navigation-and-positioning/gnss/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../pt/how-to/navigation-and-positioning/gnss/" hreflang="pt" class="md-select__link">
+              Portuguese
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../es/how-to/navigation-and-positioning/gnss/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../zh/how-to/navigation-and-positioning/gnss/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fi/how-to/navigation-and-positioning/gnss/" hreflang="fi" class="md-select__link">
+              Finnish
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ro/how-to/navigation-and-positioning/gnss/" hreflang="ro" class="md-select__link">
+              Romanian
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Teilen" aria-label="Teilen" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/opengisch/qfield-docs" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    opengisch/qfield-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+    
+  
+  Startseite
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../get-started/" class="md-tabs__link">
+          
+  
+    
+  
+  Erste Schritte
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Anleitungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/" class="md-tabs__link">
+          
+  
+    
+  
+  Technische Hinweise
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../success-stories/" class="md-tabs__link">
+          
+  
+    
+  
+  Erfolgsgeschichten
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://qfield.org" title="QField Ökosystem Dokumentation" class="md-nav__button md-logo" aria-label="QField Ökosystem Dokumentation" data-md-component="logo">
+      
+  <img src="../../../../assets/images/qfield_logo_white.svg" alt="logo">
+
+    </a>
+    QField Ökosystem Dokumentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/opengisch/qfield-docs" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    opengisch/qfield-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Startseite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../get-started/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Erste Schritte
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Erste Schritte
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Prinzipien
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldCloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QFieldCloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/tutorials/get-started-qfc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Erste Schritte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/tutorials/advanced-setup-qfc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Erweiterte Einstellungen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/tutorials/my-first-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    My first project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/storage-qfc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Tarife und zusätzlicher Speicherplatz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldSync
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QFieldSync
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/tutorials/get-started-qfs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldSync - Cable packaging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/sample-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Beispielprojekte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/help/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Need Help?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Support the QField Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/how-to-contribute-translation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Translation contribution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Lizenz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-started/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Anleitungen
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anleitungen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    General
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    General
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Allgemeine Einstellungen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Projektauswahl
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-setup/create-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Create new Project from in QField
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-setup/attributes-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Simple attribute form configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-setup/relation-reference-widget/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Relation Reference Widget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-setup/storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Speicher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-setup/hiding-legend-nodes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Source Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-setup/pg-service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL Databases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-setup/pictures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Attachment widget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QField Interface
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QField Interface
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qfield-interface/map-interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Interagiere mit der Karte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qfield-interface/measuring-tool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Messwerkzeug
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qfield-interface/search/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Suchleiste
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qfield-interface/map-styling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Kartendesign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qfield-interface/map-themes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Kartenthema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qfield-interface/decorations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Map Decorations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qfield-interface/bookmarks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesezeichen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Collection
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Collection
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-collection/digitize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Digitize and Edit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-collection/print-to-pdf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Als PDF-Datei drucken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-collection/processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Processing Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Navigation and Positioning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Navigation and Positioning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    Ortung (GNSS)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Ortung (GNSS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visualisierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualisierung
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konfiguration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Konfiguration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#messung-wert-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messung Wert (M)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genauigkeitsanforderung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genauigkeitsanforderung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hohenausgleich-der-antenne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Höhenausgleich der Antenne
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hohenkorrektur-vertikale-gitterverschiebung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Höhenkorrektur / vertikale Gitterverschiebung
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positionierungsvariablen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positionierungsvariablen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Positionierungsvariablen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#capturing-longitude-latitude-and-altitude-in-attribute-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capturing longitude, latitude and altitude in attribute form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertex-log-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vertex log layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verwendung-eines-externen-gnss-empfangers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verwendung eines externen GNSS Empfängers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verwendung eines externen GNSS Empfängers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#externes-empfangerprotokoll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Externes Empfängerprotokoll
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mockschein-standort" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock/Schein-Standort
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mittlere-positionierungs-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mittlere Positionierungs-Option
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geofencing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Geofencing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Tracking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-routing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Externes Routing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced How To's
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced How To's
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/xlsforms-plugin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    XLSForm Converter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/standalone-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Unabhängige Datensätze
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/sensors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensoren
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentifizierung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/temporal-filtering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Zeitfilter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/live-default-value/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Live-Standardwert
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/shared-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/movable-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Portables Projekt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-how-tos/multilingual-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Multilingual Project Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Technische Hinweise
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Technische Hinweise
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/data-format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Unterstützte Datenformate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/exif/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    EXIF-Daten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/expression_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Ausdruckvariable
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/troubleshoot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemlösung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldCloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    QFieldCloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Arbeitsablauf
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Grundkonzepte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentifizierung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/permissions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Rechtevergabe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/jobs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Aufträge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/secrets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Geheimnisse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Überblick über die Architektur
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/specs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Technische Spezifikationen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    System-Dokumentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/sdk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Das offizielle QFieldCloud SDK und CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7_13" id="__nav_4_7_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Managing Organization on Self-Hosted
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_7_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Managing Organization on Self-Hosted
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/qfieldcloud/self_hosted/django_interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    QFieldCloud Django Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../success-stories/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Erfolgsgeschichten
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Erfolgsgeschichten
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/ecological-surveying/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Effizienzsteigerung bei ökologischen Aufnahmen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/geologic-mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Geologische Kartierung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/lulc-mapping-fiji/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Ground Truth Data Collection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/mapping-breeding-birds-in-the-Wadden-Sea/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Brutvogelkartierung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/mosquito-malario-ground-truth-data-collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Data collection of malaria transmitting mosquitoes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/river-state-survey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    River State Survey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/rwanda-rural-water/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Data collection of rural water supply systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/vanilla-survey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Vanilla Surveys
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../success-stories/heritage-impact-assessment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Folgenabschätzung für das Kulturerbe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visualisierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualisierung
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konfiguration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Konfiguration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#messung-wert-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messung Wert (M)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genauigkeitsanforderung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genauigkeitsanforderung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hohenausgleich-der-antenne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Höhenausgleich der Antenne
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hohenkorrektur-vertikale-gitterverschiebung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Höhenkorrektur / vertikale Gitterverschiebung
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positionierungsvariablen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positionierungsvariablen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Positionierungsvariablen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#capturing-longitude-latitude-and-altitude-in-attribute-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capturing longitude, latitude and altitude in attribute form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertex-log-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vertex log layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verwendung-eines-externen-gnss-empfangers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verwendung eines externen GNSS Empfängers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verwendung eines externen GNSS Empfängers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#externes-empfangerprotokoll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Externes Empfängerprotokoll
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mockschein-standort" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock/Schein-Standort
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mittlere-positionierungs-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mittlere Positionierungs-Option
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/opengisch/qfield-docs/blob/master/documentation/how-to/navigation-and-positioning/gnss.de.md" title="Seite editieren" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<div><h1 id="ortung-gnss">Ortung (GNSS)<a class="headerlink" href="#ortung-gnss" title="Permanent link">¶</a></h1>
+<p>QField kann das interne GNSS (Global Navigation Satellite System, wie GPS, GLONASS, Galileo oder Beidou) nutzen. QField kann auch eine Verbindung mit externen Antennen durch NMEA-Streams über Bluetooth, TCP oder UDP Verbindung herstellen.</p>
+<p>GNSS-Geräte sind in der Lage, neben der aktuellen 2D Position auf der Erdoberfläche auch die Höhe zu messen.</p>
+<h2 id="visualisierung">Visualisierung<a class="headerlink" href="#visualisierung" title="Permanent link">¶</a></h2>
+<p>Wenn die Ortung aktiviert ist, wird Ihre Position in blauer Farbe auf der Karte angezeigt.
+Ihre Position ist entweder als blauer Punkt sichtbar, wenn Sie stillstehen, oder als Pfeil, der Ihre Bewegungsrichtung anzeigt wenn Sie sich bewegen.</p>
+<p>Der blaue Strahl zeigt die aktuelle Ausrichtung Ihres Geräts an, wenn das Gerät über einen einen integrierten Magnetkompass verfügt.</p>
+<p>Ein Kreis um die aktuelle Position zeigt die Genauigkeit an, die vom Ortungsgerät gemeldet wird.</p>
+<h2 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">¶</a></h2>
+<p>Die folgenden Einstellungen sind auf der Registerkarte "Positionierung" der QField-Einstellungen verfügbar.</p>
+<h3 id="messung-wert-m">Messung Wert (M)<a class="headerlink" href="#messung-wert-m" title="Permanent link">¶</a></h3>
+<p>Wenn eine Geometrie auf eine Vektorebene digitalisiert wird, die ein M-Wert enthält, fügt QField automatisch Messwerte zu einzelnen Knotenpunkten hinzu, wenn der Koordinatencursor an der aktuellen Position eingerastet ist.</p>
+<p>Standardmäßig gibt der Wert den Zeitstempel der erfassten Position an (Millisekunden seit der letzten Messung). Sie können diesen Wert über das Kombinationsfeld auf der Registerkarte "Positionierung" der Einstellungen ändern.</p>
+<p>Zur Auswahl stehen folgende Werte: Zeitstempel, Geschwindigkeit über Grund, Peilung, horizontale und vertikale Genauigkeit sowie PDOP, HDOP und VDOP.</p>
+<h3 id="genauigkeitsanforderung">Genauigkeitsanforderung<a class="headerlink" href="#genauigkeitsanforderung" title="Permanent link">¶</a></h3>
+<p>Es kann eine gewünschte Mindestgenauigkeit für Messungen festgelegt werden. Die Qualität wird in drei Klassen angegeben: schlecht (rot), ok (gelb) und ausgezeichnet (grün). Diese Farben werden als Punkt oben auf der GNSS-Schaltfläche angezeigt.</p>
+<p>Die Schwellenwerte können auf der Registerkarte "Positionierung" der Einstellungen festgelegt werden.</p>
+<p>Wenn die Einstellung <em>Genauigkeitsanforderung aktivieren</em> aktiviert ist, können Sie keine neuen Messungen durchführen, wenn der Koordinatencursor auf die aktuelle Position mit einem schlechten (roten) Genauigkeitswert fixiert ist.</p>
+<h3 id="hohenausgleich-der-antenne">Höhenausgleich der Antenne<a class="headerlink" href="#hohenausgleich-der-antenne" title="Permanent link">¶</a></h3>
+<p>Die Höhe des verwendeten Antennenstange kann in den Einstellungen festgelegt werden. Jede gemessene Höhe wird um diesen Wert korrigiert.</p>
+<h3 id="hohenkorrektur-vertikale-gitterverschiebung">Höhenkorrektur / vertikale Gitterverschiebung<a class="headerlink" href="#hohenkorrektur-vertikale-gitterverschiebung" title="Permanent link">¶</a></h3>
+<p>Die Höhenwerte können mit vertikalen Raster Grid Dateien korrigiert werden, um orthometrische Höhe zu berechnen.</p>
+<p>Vertical grid shift files have to be made available to QField by putting
+them into the QField app folder <strong><a href="../../project-setup/storage/#5-qfield-app-directory">[App Directory]</a>/QField/proj</strong>.</p>
+<p>Sobald die Geoid-Datei dort platziert ist, ist sie in QField in den <em>Positionierungseinstellungen</em> unter <em>Geoid in Gebrauch</em> verfügbar.</p>
+<p>Wenn Sie die Höhenkorrektur via Geoid verwenden und ein externes Positionierungsgerät eingesetzt wird, sollten Sie die Option <em>Orthometrische Höhe vom Gerät verwenden</em> deaktivieren.</p>
+<p>Die aktuell unterstützten Dateiformate sind:</p>
+<ul>
+<li>GeoTIFF (.tif, .tiff)</li>
+<li>NOAA Vertical Datum (.gtx)</li>
+<li>NTv2 Datum Grid Shift (.gsb)</li>
+<li>Natural Resources Canada's Geoid (.byn)</li>
+</ul>
+<div class="admonition workflow">
+<p class="admonition-title">Workflow</p>
+<p><strong>Example:  Netherlands - ETRS89 to NAP</strong></p>
+<p>For transformations involving the Dutch <strong>NAP (Normaal Amsterdams Peil)</strong> vertical datum, you'll need the official grid file from NSGI.</p>
+<ol>
+<li><strong>Download the file</strong>: Get <code>nlgeo2018.gtx</code> directly from the <a href="https://www.nsgi.nl/rdnaptrans">NSGI website</a>.<!-- markdown-link-check-disable-line --></li>
+<li>Place the downloaded <code>.gtx</code> file into the directory <strong><a href="../../project-setup/storage/#5-qfield-app-directory">[App Directory]</a>/QField/proj</strong>.
+This is independent of whether you are using QFieldCloud or not.</li>
+</ol>
+<p><strong>Example: Switzerland - CH1903+/LV95</strong></p>
+<p>To get precise altitude data for <strong>Cadastral Surveying in Switzerland (LV95)</strong>, you must use the geoid correction grid from Swisstopo.
+The official file comes in an <code>.agr</code> format and must be converted to <code>.gtx</code> (NTv2 Grid Shift File) before it can be used.
+Other raster formats like (.tiff) can also be used.</p>
+<ol>
+<li>Download the "Geoid OGD" dataset from Swisstopo under the following link <strong>Download Link</strong>: <a href="https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip">Geoid OGD from Swisstopo</a><!-- markdown-link-check-disable-line -->.</li>
+<li>Unzip the archive to retrieve the file: <code>chgeo2004_htrans_LV95.agr</code>.</li>
+<li>
+<p>Convert the file using the using the <a href="https://gdal.org/en/stable/programs/gdal_translate.html">gdal_translate</a> algorithm with one of the following options:</p>
+<p><strong><em>Method 1: QGIS Graphical User Interface (GUI)</em></strong></p>
+<ol>
+<li>In QGIS, open the Processing Toolbox panel.</li>
+<li>Navigate to <em>GDAL</em> &gt; <em>Raster conversion</em> &gt; <em>Translate (Convert format)</em> tool.</li>
+<li>Configure it with your needed requirements:<ul>
+<li><strong>Input layer</strong>: Select your <code>chgeo2004_htrans_LV95.agr</code> file.</li>
+<li><strong>Output file</strong>: Click "Save to File..." and name your output file with a <code>.gtx</code> extension (or other format needed), for example, <code>chgeo2004_htrans_LV95.gtx</code>.</li>
+</ul>
+</li>
+<li>Click <strong>Run</strong>. The other default settings are typically sufficient for this conversion.</li>
+</ol>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/qgis_core_translate_convert_format.png"><img alt="" src="../../../../assets/images/qgis_core_translate_convert_format.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</p>
+<p><strong>Method 2: Command Line (<code>qgis_process</code>)</strong></p>
+<p>For automation or users who prefer the command line, <code>qgis_process</code> is a great option.</p>
+<ol>
+<li>Open your terminal and run the following command, adjusting the paths to your files.
+<div class="highlight"><pre><span></span><code>qgis_process<span class="w"> </span>run<span class="w"> </span>gdal:translate<span class="w"> </span>--INPUT<span class="o">=</span><span class="s2">"/path/to/your/chgeo2004_htrans_LV95.agr"</span>
+<span class="w">    </span>--OUTPUT<span class="o">=</span><span class="s2">"/path/to/your/chgeo2004_htrans_LV95.gtx"</span>
+</code></pre></div></li>
+</ol>
+<p><strong><em>Method 3: PyQGIS Script</em></strong></p>
+<p>You can also perform the conversion programmatically within the QGIS Python Console or a standalone script.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">processing</span>
+
+<span class="n">input_grid</span> <span class="o">=</span> <span class="s1">'/path/to/your/chgeo2004_htrans_LV95.agr'</span>
+<span class="n">output_grid</span> <span class="o">=</span> <span class="s1">'/path/to/your/chgeo2004_htrans_LV95.gtx'</span>
+
+<span class="n">processing</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">"gdal:translate"</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s1">'INPUT'</span><span class="p">:</span> <span class="n">input_grid</span><span class="p">,</span>
+    <span class="s1">'OUTPUT'</span><span class="p">:</span> <span class="n">output_grid</span>
+<span class="p">})</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Successfully converted grid to: </span><span class="si">{</span><span class="n">output_grid</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div>
+</li>
+</ol>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path></svg></span> Fieldwork</p>
+<ol>
+<li>
+<p>Copy the <code>chgeo2004_htrans_LV95.gtx</code> file to the directory <strong><a href="../../project-setup/storage/#5-qfield-app-directory">[App Directory]</a>/QField/proj</strong> on your mobile device.</p>
+</li>
+<li>
+<p>Open the Site Dashboard</p>
+</li>
+<li>
+<p>Tap on the 3-dotted menu <em>(⋮)</em> and direct to <em>Settings</em> &gt; <em>Positioning</em></p>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/vertical_grid_selection_in_qfield_settings.png"><img alt="" src="../../../../assets/images/vertical_grid_selection_in_qfield_settings.png" title="" width="450px"></a><figcaption></figcaption>
+</figure>
+</p>
+</li>
+<li>
+<p>Enable your GNSS device.
+It will directly center to your current location once the <strong>positioning information</strong> is available.</p>
+</li>
+<li>
+<p>Change to <strong><em>edit mode</em></strong> and press on the target button - the cross in the center means it is using GNSS positioning.</p>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/gnss_use.webp"><img alt="" src="../../../../assets/images/gnss_use.webp" title="" width="250px"></a><figcaption></figcaption>
+</figure>
+</p>
+<p>A long press on the <strong>GNSS button</strong> will show the <strong>positioning menu</strong>.
+Inside the menu you can turn on the <strong>Show position information</strong> which will show the current coordinates that are reprojected into the CRS of your project along with the precision information.</p>
+</li>
+</ol>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/positioning-menu.png"><img alt="" src="../../../../assets/images/positioning-menu.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you see WGS 84 lat/lon information instead of information in your project CRS, you probably have no signal yet.</p>
+</div>
+</div>
+<h2 id="positionierungsvariablen">Positionierungsvariablen<a class="headerlink" href="#positionierungsvariablen" title="Permanent link">¶</a></h2>
+<p>You can get the positioning information both of your internal and external device by specifically configuring your attribute form.</p>
+<p>Diese Variablen werden üblicherweise als Teil von <a href="https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values">Standardwerte-Ausdrücken</a><!-- markdown-link-check-disable-line --> für Felder verwendet, um die Qualität der einzelnen Messpunkte zu dokumentieren.</p>
+<p>A common use case is recording the horizontal accuracy, which can be done by using the variable <code>@position_horizontal_accuracy</code>.
+For a complete listing of all available variables, refer to the <a href="../../../reference/expression_variables/">expression variables reference documentation</a>.</p>
+<p>Informationen zum GNSS-Z-Wert bei Verwendung eines Geoids:
+- <em>Antennenhöhenausgleich=False</em></p>
+<table>
+<thead>
+<tr>
+<th>Geoid wird genutzt</th>
+<th>Punkt Z Wert z(geometry)</th>
+<th>GNSS-Gerät z(@position_coordinate)</th>
+<th>QField Anzeige</th>
+<th>QField Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td>Z ellipsoider Wert vom Gerät</td>
+<td>Z ellipsoider Wert vom Gerät</td>
+<td>Z ellipsoider Wert vom Gerät</td>
+<td>Höhe: xxx.xxxx m</td>
+</tr>
+<tr>
+<td>Orthometrische Höhe des Geräts</td>
+<td>Z Orthometrische Höhe des Geräts</td>
+<td>Z Orthometrische Höhe des Geräts</td>
+<td>Z Orthometrische Höhe des Geräts</td>
+<td>Höhe: xxx.xxxx m (ortho.)</td>
+</tr>
+<tr>
+<td>USER_Shift_Grid.GTX (Geoid) <br> <a href="#altitude-correction-vertical-grid-shift">vertical grid shift</a></td>
+<td>Z Geoid-Wert</td>
+<td>Z ellipsoider Wert vom Gerät</td>
+<td>Z Geoid-Wert</td>
+<td>Höhe: xxx.xxxx m (grid)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="capturing-longitude-latitude-and-altitude-in-attribute-form">Capturing longitude, latitude and altitude in attribute form<a class="headerlink" href="#capturing-longitude-latitude-and-altitude-in-attribute-form" title="Permanent link">¶</a></h3>
+<p>It is useful and not uncommon that the actual positioning values should be automatically stored inside the attribute form.
+This applies for longitude, latitude and altitude.</p>
+<div class="admonition workflow">
+<p class="admonition-title">Workflow</p>
+<p><strong>Configuration of attribute form</strong></p>
+<ol>
+<li>In QGIS direct to your <em>Layer Properties</em> &gt; <em>Attribute Form</em></li>
+<li>(Optional): You have to add a field of decimal type to the form that can capture the data.
+Name it accordingly (eg. "longitude")</li>
+<li>
+<p>Under the settings of the widget display of the corresponding field add the following default value:</p>
+<ul>
+<li><strong><em>Longitude:</em></strong> <code>x(@position_coordinate)</code></li>
+<li><strong><em>Latitude:</em></strong> <code>y(@position_coordinate)</code></li>
+<li><strong><em>Altitude:</em></strong> <code>z(@position_coordinate)</code></li>
+</ul>
+</li>
+</ol>
+<p>This will save the coordinate directly in the field when adding a new feature.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This only works if positioning is turned on.</p>
+</div>
+</div>
+<h3 id="vertex-log-layer">Vertex log layer<a class="headerlink" href="#vertex-log-layer" title="Permanent link">¶</a></h3>
+<p>It is good practice to create a log layer of the collected vertices.
+It enables you to keep track of the meta data for each vertex like <a href="../../../reference/expression_variables/">GNSS quality attributes</a> and more.</p>
+<div class="admonition workflow">
+<p class="admonition-title">Workflow</p>
+<ol>
+<li>Add a point layer to the project and attributes configured to store this information.
+    <figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/vertex_log1.png"><img alt="" src="../../../../assets/images/vertex_log1.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</li>
+<li>Assign the role <em>digitizing logger</em> to a point layer.</li>
+<li>Go to &gt; <em>Project</em> &gt; <em>Properties...</em> &gt; <em>QField</em>.
+    <figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/vertex_log2.png"><img alt="" src="../../../../assets/images/vertex_log2.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</li>
+<li>Set default values to the attributes using the positioning variables mentioned above.</li>
+</ol>
+</div>
+<h2 id="verwendung-eines-externen-gnss-empfangers">Verwendung eines externen GNSS Empfängers<a class="headerlink" href="#verwendung-eines-externen-gnss-empfangers" title="Permanent link">¶</a></h2>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path></svg></span> Feldarbeit</p>
+<p>QField unterstützt die Verbindung zu externen GNSS-Positionierungsgeräten über NMEA-Streams durch Bluetooth-, TCP, oder UDP-Verbindungen.</p>
+<p>Under the <strong>Positioning</strong> section, you are able to manage and switch between your internal and saved external GNSS devices.</p>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/saved-gnss-devices.png"><img alt="" src="../../../../assets/images/saved-gnss-devices.png" title="" width="600px"></a><figcaption></figcaption>
+</figure>
+</p>
+<p>Zusammenfassung der Verbindungsmöglichkeiten nach Betriebssystem:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.61 15.15c-.46 0-.84-.37-.84-.83s.38-.82.84-.82c.46 0 .84.36.84.82 0 .46-.38.83-.84.83m-9.2 0c-.46 0-.84-.37-.84-.83 0-.46.38-.82.84-.82.46 0 .83.36.83.82 0 .46-.37.83-.83.83m9.5-5.01 1.67-2.88c.09-.17.03-.38-.13-.47-.17-.1-.38-.04-.45.13l-1.71 2.91A10.15 10.15 0 0 0 12 8.91c-1.53 0-3 .33-4.27.91L6.04 6.91a.334.334 0 0 0-.47-.13c-.17.09-.22.3-.13.47l1.66 2.88C4.25 11.69 2.29 14.58 2 18h20c-.28-3.41-2.23-6.3-5.09-7.86Z"></path></svg></span> Android</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11Z"></path></svg></span> iOS</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48L3 12m17-9v8.75l-10 .15V5.21L20 3M3 13l6 .09v6.81l-6-1.15V13m17 .25V22l-10-1.91V13.1l10 .15Z"></path></svg></span> Windows</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M14.62 8.35c-.42.28-1.75 1.04-1.95 1.19-.39.31-.75.29-1.14-.01-.2-.16-1.53-.92-1.95-1.19-.48-.31-.45-.7.08-.92 1.64-.69 3.28-.64 4.91.03.49.21.51.6.05.9m7.22 7.28c-.93-2.09-2.2-3.99-3.84-5.66a4.31 4.31 0 0 1-1.06-1.88c-.1-.33-.17-.67-.24-1.01-.2-.88-.29-1.78-.7-2.61-.73-1.58-2-2.4-3.84-2.47-1.81.05-3.16.81-3.95 2.4-.21.43-.36.88-.46 1.34-.17.76-.32 1.55-.5 2.32-.15.65-.45 1.21-.96 1.71-1.61 1.57-2.9 3.37-3.88 5.35-.14.29-.28.58-.37.88-.19.66.29 1.12.99.96.44-.09.88-.18 1.3-.31.41-.15.57-.05.67.35.65 2.15 2.07 3.66 4.24 4.5 4.12 1.56 8.93-.66 9.97-4.58.07-.27.17-.37.47-.27.46.14.93.24 1.4.35.49.09.85-.16.92-.64.03-.26-.06-.49-.16-.73"></path></svg></span> Linux</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11Z"></path></svg></span> MacOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bluetooth</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td></td>
+<td>*</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+</tr>
+<tr>
+<td>TCP</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+</tr>
+<tr>
+<td>UDP</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+</tr>
+<tr>
+<td>Serieller Anschluss</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"></path></svg></span></td>
+</tr>
+</tbody>
+</table>
+<p><em>(*) Die Bluetooth-Unterstützung unter Windows erfolgt über die virtuelle serielle Schnittstelle, die das Betriebssystem automatisch erstellt, wenn es eine Verbindung zum GNSS-Gerät herstellt.</em></p>
+<p>Die derzeit unterstützten NMEA-Sätze sind GGA, RMC, GSA, GSV, GST, VTG, HDG und HDT.</p>
+<div class="admonition anmerkung">
+<p class="admonition-title">Anmerkung</p>
+<p>Vergewissern Sie sich, dass keine andere Anwendung wie z. B. ein Mocking Location Provider die gleiche Verbindung verwendet.</p>
+</div>
+<h3 id="externes-empfangerprotokoll">Externes Empfängerprotokoll<a class="headerlink" href="#externes-empfangerprotokoll" title="Permanent link">¶</a></h3>
+<p>If you have selected an external receiver as the positioning device, you will find a switch <code>Log NMEA sentences from device to file</code>.
+If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.</p>
+<p>The logs will be placed in <strong>[<a href="../../project-setup/storage/#5-qfield-app-directory">App Directory</a>]/QField/logs</strong>.</p>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/external_receiver_log.png"><img alt="" src="../../../../assets/images/external_receiver_log.png" title="" width="250px"></a><figcaption></figcaption>
+</figure>
+</p>
+<div class="admonition anmerkung">
+<p class="admonition-title">Anmerkung</p>
+<p>Beachten Sie, dass das Protokoll, wenn es immer eingeschaltet ist, den Speicherplatz immer weiter füllt.</p>
+</div>
+<h2 id="mockschein-standort">Mock/Schein-Standort<a class="headerlink" href="#mockschein-standort" title="Permanent link">¶</a></h2>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path></svg></span> Feldarbeit</p>
+<p>Es ist möglich, QField einen Scheinstandort über eine separate Android-App zur Verfügung zu stellen. Hierfür gibt es mehrere Optionen, eine davon ist der [Android NTRIP Client].(https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).</p>
+<p>Um dies zu nutzen, müssen Sie [Mock Locations auf Ihrem Android-Gerät aktivieren].(https://www.youtube.com/watch?v=v1eRHmMiRJQ).</p>
+<h2 id="mittlere-positionierungs-option">Mittlere Positionierungs-Option<a class="headerlink" href="#mittlere-positionierungs-option" title="Permanent link">¶</a></h2>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path></svg></span> Feldarbeit</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The coordinate cursor must be locked to the current location via the <a href="../../data-collection/digitize/#adding-point-features">Lock to position button</a></p>
+</div>
+<p>Es gibt eine Funktion, mit der Sie mit gemittelten Positionen digitalisieren können.</p>
+<p>Die Aufnahme beginnt mit dem Drücken und Halten der Taste "Scheitelpunkt hinzufügen", wodurch die Erfassung der Positionen beginnt.</p>
+<p>During the collection, an indicator will appear on top of the coordinate cursor showing the number number of the collected positions.
+If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.</p>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/positioning-averaged.webp"><img alt="" src="../../../../assets/images/positioning-averaged.webp" title="" width="280px"></a><figcaption></figcaption>
+</figure>
+</p>
+<ol>
+<li>To activate direct to  side <em>"Dashboard"</em> &gt; <em>Settings</em> &gt; <em>Positioning</em></li>
+<li>Shortly tap where you want to collect points and QField will automatically add the averaged position once the minimum count is met.
+<figure><a data-caption="" data-fancybox="gallery" href="../../../../assets/images/positioning_averaged_set.png"><img alt="" src="../../../../assets/images/positioning_averaged_set.png" title="" width="280px"></a><figcaption></figcaption>
+</figure>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using <a href="./#positioning-variables"><code>@gnss_*</code> or <code>@position_</code> variables</a> on averaged positions, the variable will also represent the average over all collected samples.</p>
+</div></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
+        
+          
+          <a href="../../data-collection/processing/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Processing Algorithms">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              <div class="md-ellipsis">
+                Processing Algorithms
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../geofencing/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Geofencing">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              <div class="md-ellipsis">
+                Geofencing
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 <a href="https://OPENGIS.ch">OPENGIS.ch</a> -  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a>
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/opengisch" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/opengisch" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/opengisch/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:info@opengis.ch" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.action.edit"], "search": "../../../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.1135ae9f.min.js"></script>
+      
+        <script src="../../../../javascript/jquery.min.js"></script>
+      
+        <script src="../../../../javascript/jquery.fancybox.min.js"></script>
+      
+        <script src="../../../../javascript/swagger-ui-bundle.js"></script>
+      
+        <script src="../../../../javascript/swagger-ui-standalone-preset.js"></script>
+      
+    
+  </body>
+</html>
