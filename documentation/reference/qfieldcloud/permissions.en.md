@@ -50,6 +50,7 @@ QFieldCloud provides a fine grained access control over projects with the concep
 | List project's files (qfieldsync)                                             | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | Download project's files (qfieldsync)                                         | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | Upload project's files (qfieldsync)                                           | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |   |
+| Upload or delete restricted project files (.qgs/.qgz/plugins) when "Restrict project files" is enabled | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ |   |
 | Delete project's files (qfieldsync)                                           | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |   |
 | List project's files (qfield)                                                 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
 | Download project's files (qfield)                                             | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |   |
@@ -58,9 +59,9 @@ QFieldCloud provides a fine grained access control over projects with the concep
 | Delete synced features from layers in the project on QField                   | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ |   |
 | Update synced features from layers in the project on QField                   | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ |   |
 | List users and organizations                                                  | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
-| Get user's public information                                                | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
-| Get user's detailed information                                              | ❌ | ❌ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ✅ | ✅ | ❌ |   |
-| Update user's information                                                    | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
+| Get user's public information                                                 | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
+| Get user's detailed information                                               | ❌ | ❌ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ✅ | ✅ | ❌ |   |
+| Update user's information                                                     | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
 | Delete user                                                                   | ❌ | ❌ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ❌ | ❌ | ❌ |   |
 | Get API status                                                                | ✅ | ✅ | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  | ‒  |   |
 | Add and remove secrets                                                        | ‒  | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ‒  | ‒  | ‒  |   |
