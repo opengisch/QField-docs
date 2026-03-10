@@ -153,3 +153,15 @@ Project settings are available only to project owners and collaborators with "ad
 
 !!! warning
     Actions issued from a project's settings page can lead to data loss!
+
+### Restrict Project Files Modifications
+
+When this setting is enabled, the ability to modify, overwrite, or upload changes to the core QGIS/QField project files (`.qgs/.qgz/.qgd` or `QField project plugins`)
+are strictly restricted to collaborators with **Admin** or **Manager** roles.
+
+Collaborators with **Editor** or **Reporter** roles will still be able to seamlessly edit data, push delta changes,
+and upload non-project files to the cloud like attachments (pictures, audios, videos or PDFs documents),
+but they will be prevented from altering the main project files.
+This is highly useful for ensuring field workers can synchronize data without accidentally breaking the project's layers, styling, or overall configuration.
+
+!![](../../assets/images/restrict_project_files.png)
