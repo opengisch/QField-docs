@@ -75,3 +75,27 @@ are only present as basemap, and their attributes are not of interest.
 
 You can manage this layer list in QGIS desktop in
 *Project* > *Properties...* > *Data sources* > *Identify Layers* and uncheck the base layers.
+
+## 3D terrain view interactions
+:material-tablet: Fieldwork
+
+QField allows for interactive extent manipulation when viewing data in the 3D terrain view.
+You can actively pan and zoom the terrain directly within the 3D mode rather than relying on a static, locked extent.
+
+Depending on your device setup, you can interact with the 3D extent in the following ways:
+
+**Touch Interactions:**
+
+- **Extent Mode Toggle:** Tap the *Move* toggle button (located in the QField's main menu bar in the side "Dashboard") to activate the extent manipulation mode.
+When active, you can pan the terrain extent by dragging with your fingers, or zoom in and out by pinching. Toggle this off to return to standard camera orbiting.
+
+**Mouse Interactions:**
+
+- **Pan Extent:** Hold the `Shift` key and drag the mouse to move the 3D terrain extent geographically.
+The terrain mesh translates in real-time for visual feedback.
+- **Zoom Extent:** Hold the `Shift` key and use the mouse scroll wheel to scale the terrain extent in or out around its center point.
+
+### 2D and 3D Extent Synchronization
+
+When you close the 3D view to return to the 2D map canvas, QField automatically updates the 2D map's bounding box to match your newly navigated 3D extent.
+This ensures your view remains perfectly synchronized between modes.
