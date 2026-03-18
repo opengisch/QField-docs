@@ -99,3 +99,5 @@ The terrain mesh translates in real-time for visual feedback.
 
 When you close the 3D view to return to the 2D map canvas, QField automatically updates the 2D map's bounding box to match your newly navigated 3D extent.
 This ensures your view remains perfectly synchronized between modes.
+
+![type:video](../../assets/videos/project_creation_in_an_organisation_001.webm)
