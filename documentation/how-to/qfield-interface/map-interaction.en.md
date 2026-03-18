@@ -75,3 +75,12 @@ are only present as basemap, and their attributes are not of interest.
 
 You can manage this layer list in QGIS desktop in
 *Project* > *Properties...* > *Data sources* > *Identify Layers* and uncheck the base layers.
+
+## 3D terrain view interactions
+:material-tablet: Fieldwork
+
+QField supports viewing and interacting with your project data in a 3D terrain view.
+If your QGIS project is configured with a valid elevation terrain provider,
+you can navigate your map in 3D, synchronize extents with the 2D canvas, and even visually track your edits and digitizing rubberbands directly on the 3D mesh.
+
+[**3D Terrain View.**](../advanced-how-tos/3d-terrain-view.md)
