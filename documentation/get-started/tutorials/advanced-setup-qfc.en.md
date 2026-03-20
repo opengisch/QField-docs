@@ -286,7 +286,7 @@ There are several ways in which you can create and upload a project to QField.
 - Using QFieldCloud
 - Change of ownership
 
-!!! workflow
+!!! Workflow
 
     ### **Option 1: Using QFieldSync**
 
