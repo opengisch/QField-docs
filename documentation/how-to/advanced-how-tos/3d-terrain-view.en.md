@@ -5,12 +5,15 @@ tx_slug: documentation_how-to_3d-terrain-view
 
 # 3D Terrain View
 
-QField allows you to view and interact with your spatial data over a 3D terrain mesh.
+QField allows you to view and interact with your spatial data in 3D.
 By utilizing elevation data, 2D map layers are draped as textures over the 3D surface, providing enhanced spatial context for navigation and field editing.
 
 ## Configuring the Terrain
 
-There are two ways QField handles 3D elevation data: using a custom Digital Elevation Model (DEM) from your QGIS project, or falling back to a default online DEM.
+There are two ways QField handles 3D elevation data:
+
+- Using a custom Digital Elevation Model (DEM) from your QGIS project
+- A default online DEM.
 
 ### Option 1: Custom DEM (Recommended)
 :material-monitor: Desktop preparation
@@ -20,7 +23,7 @@ you should configure your own elevation data directly within the [QGIS project](
 
 !!! Workflow
     1. Open your project in QGIS.
-    2. From the main menu, select Project > Properties....
+    2. From the main menu, select Project > Properties
     3. In the Project Properties dialog box, select the Terrain tab.
     4. Here, you can select your Terrain type:
 
@@ -43,8 +46,8 @@ If no custom elevation data is configured in your QGIS project, QField will auto
 ## Navigating the 3D View
 :material-tablet: Fieldwork
 
-QField allows for interactive extent manipulation when viewing data in the 3D terrain view.
-You can actively pan and zoom the terrain directly within the 3D mode rather than relying on a static, locked extent.
+QField allows for interactive extent manipulation when viewing data in the 3D view.
+You can actively pan and zoom directly within the 3D mode rather than relying on a static, locked extent.
 
 Depending on your device setup, you can interact with the 3D extent in the following ways:
 
