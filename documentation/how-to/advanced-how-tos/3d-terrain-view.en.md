@@ -49,12 +49,13 @@ If no custom elevation data is configured in your QGIS project, QField will auto
 QField allows for interactive extent manipulation when viewing data in the 3D view.
 You can actively pan and zoom directly within the 3D mode rather than relying on a static, locked extent.
 
-Depending on your device setup, you can interact with the 3D extent in the following ways:
+Depending on your device, you can interact with the 3D extent in the following ways:
 
 **Touch Interactions:**
 
-- **Extent Mode Toggle:** Tap the *Move* toggle button (located bellow the QField's main menu bar in the side "Dashboard" (**☰**)) to activate the extent manipulation mode.
-When active, you can pan the terrain extent by dragging with your fingers, or zoom in and out by pinching. Toggle this off to return to standard camera orbiting.
+- **Extent Mode Toggle:** Once you have enabled the 3D mode, it will only give you the extent in 3D that your original map extent was on.
+This can be changed when you tap the *4-arrowed* toggle button to change the map extent.
+Once it is activated, you can pan the terrain extent by dragging your fingers, or zooming in and out by pinching your fingers.
 
 **Mouse Interactions:**
 
