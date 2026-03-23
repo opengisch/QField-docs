@@ -5,8 +5,8 @@ tx_slug: documentation_how-to_3d-terrain-view
 
 # 3D Terrain View
 
-QField allows you to view and interact with your spatial data in 3D.
-By utilizing elevation data, 2D map layers are draped as textures over the 3D surface, providing enhanced spatial context for navigation and field editing.
+QField allows you to view your spatial data in 3D.
+By utilizing elevation data, map layers are draped as textures over the 3D terrain surface, providing enhanced spatial context for navigation.
 
 ## Configuring the Terrain
 
