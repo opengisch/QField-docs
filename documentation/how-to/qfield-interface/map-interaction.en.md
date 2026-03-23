@@ -79,25 +79,8 @@ You can manage this layer list in QGIS desktop in
 ## 3D terrain view interactions
 :material-tablet: Fieldwork
 
-QField allows for interactive extent manipulation when viewing data in the 3D terrain view.
-You can actively pan and zoom the terrain directly within the 3D mode rather than relying on a static, locked extent.
+QField supports viewing and interacting with your project data in a 3D terrain view.
+If your QGIS project is configured with a valid elevation terrain provider,
+you can navigate your map in 3D, synchronize extents with the 2D canvas, and even visually track your edits and digitizing rubberbands directly on the 3D mesh.
 
-Depending on your device setup, you can interact with the 3D extent in the following ways:
-
-**Touch Interactions:**
-
-- **Extent Mode Toggle:** Tap the *Move* toggle button (located in the QField's main menu bar in the side "Dashboard") to activate the extent manipulation mode.
-When active, you can pan the terrain extent by dragging with your fingers, or zoom in and out by pinching. Toggle this off to return to standard camera orbiting.
-
-**Mouse Interactions:**
-
-- **Pan Extent:** Hold the `Shift` key and drag the mouse to move the 3D terrain extent geographically.
-The terrain mesh translates in real-time for visual feedback.
-- **Zoom Extent:** Hold the `Shift` key and use the mouse scroll wheel to scale the terrain extent in or out around its center point.
-
-### 2D and 3D Extent Synchronization
-
-When you close the 3D view to return to the 2D map canvas, QField automatically updates the 2D map's bounding box to match your newly navigated 3D extent.
-This ensures your view remains perfectly synchronized between modes.
-
-![type:video](../../assets/videos/project_creation_in_an_organisation_001.webm)
+[**3D Terrain View.**](../advanced-how-tos/3d-terrain-view.md)
