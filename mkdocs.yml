@@ -99,6 +99,7 @@ nav:
           - how-to/navigation-and-positioning/external-routing.md
       - Advanced How To's:
           - how-to/advanced-how-tos/cogo-framework.md
+          - how-to/advanced-how-tos/3d-map-view.md
           - how-to/advanced-how-tos/xlsforms-plugin.md
           - how-to/advanced-how-tos/standalone-datasets.md
           - how-to/advanced-how-tos/sensors.md
