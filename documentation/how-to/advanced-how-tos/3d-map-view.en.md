@@ -30,7 +30,8 @@ If no custom elevation data is configured in your QGIS project, QField will auto
 ### Option 2: Custom DEM
 :material-monitor: Desktop preparation
 
-For offline fieldwork and the highest accuracy, you should configure your own elevation data directly within the [QGIS project](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#elevation-properties).
+For offline fieldwork and the highest accuracy,
+you should configure your own elevation data directly within the [QGIS project](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#elevation-properties).<!-- markdown-link-check-disable-line -->
 
 !!! Workflow
     1. Open your project in QGIS.
