@@ -6,7 +6,7 @@ tx_slug: documentation_how-to_3d-map-view
 # 3D Map View
 
 QField allows you to view your spatial data in 3D.
-By utilizing elevation data, map layers are draped as textures over the 3D surface, providing enhanced spatial context for navigation.
+By utilizing elevation data, map layers are draped as textures over the 3D surface, providing enhanced spatial context for navigation. The 3D view also utilizes Eye Dome Lighting (depth shading) to enhance the visual perception of ridges, valleys, and terrain features.
 
 ## Configuring Elevation Data
 
@@ -54,16 +54,27 @@ Depending on your device, you can interact with the 3D extent in the following w
 - **Extent Mode Toggle:** Once you have enabled the 3D mode, it will originally give you the 3D extent that your 2D map extent was on.
 This can be changed when you tap the *4-arrowed* toggle button to change the map extent.
 Once it is activated, you can pan the map extent by dragging your fingers, or zooming in and out by pinching your fingers.
+- **Center on Location:** If you have GNSS (GPS) positioning active, you can tap on your blue location marker directly in the 3D scene to instantly snap and center the camera on your current physical location.
 
 **Mouse Interactions:**
 
-- **Pan Extent:** Hold the `Shift` key and drag the mouse to move the 3D map extent geographically.
-    The 3D mesh translates in real-time for visual feedback.
+- **Pan Extent:** Hold the `Shift` key and drag the mouse to move the 3D map extent geographically. The 3D mesh translates in real-time for visual feedback.
 - **Zoom Extent:** Hold the `Shift` key and use the mouse scroll wheel to scale the map extent in or out around its center point.
+
+## Visualizing GNSS, Tracking
+:material-tablet: Fieldwork
+
+The 3D Map View is fully integrated with your active fieldwork tools:
+
+- **GNSS Location:** When positioning is active, your location is represented as a pulsating 3D marker draped on the terrain.
+If you are moving, this marker transforms into a directional indicator pointing in your current heading.
+- **Tracking:** If you are actively recording a tracking path, the tracking line is dynamically rendered as a 3D tube following the contours of the terrain.
+
+These elements automatically conform to the 3D terrain's elevation and include visual height offsets, ensuring your location, tracks, remain visible and accurately placed within the 3D environment.
 
 ## 2D and 3D Extent Synchronization
 
-When you close the 3D view to return to the 2D map canvas, QField automatically updates the 2D map's bounding box to match your newly navigated 3D extent.
+When you enter or close the 3D view, QField plays a smooth camera animation to transition between the flat 2D canvas and the pitched 3D perspective. QField automatically updates the 2D map's bounding box to match your newly navigated 3D extent.
 This ensures your view remains perfectly synchronized between modes.
 
 ![type:video](../../assets/videos/3D_Map_View.mp4)
