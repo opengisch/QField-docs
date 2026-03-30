@@ -17,7 +17,7 @@ Depending on what behaviour you want for your different attributes, you can choo
 Below is an overview what types are available and supported in QField.
 
 | Widget type        | Support          | Notes                                                                                                                                                                                                  |
-|--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------|
+|--------------------|------------------|------------------------------------------------------------4.1.1--------------------------------------------------------------|
 | Attachment         | :material-check: | This field is combined with camera integration, to know more jump to [Attachment (photo settings)](#attachment-widget)   |
 | Color              | :material-check: |                                                                                                                          |
 | Date / Time        | :material-check: |                                                                                                                          |
@@ -28,7 +28,7 @@ Below is an overview what types are available and supported in QField.
 | Relation Reference | :material-check: |                                                                                                                          |
 | Text Edit          | :material-check: |                                                                                                                          |
 | Value Map          | :material-check: | Combobox or radio button (the latter unique to QField)                                                                   |
-| Value Relation     | :material-check: |                                                                                                                          |
+| Value Relation     | :material-check: | Combobox or radio button (the latter unique to QField)                                                                   |
 | UUID Generator     | :material-check: |                                                                                                                          |
 
 QField also supports all container-type widgets.
@@ -197,16 +197,19 @@ The option *hyperlink* on the attachment widget will disable that functionality 
 :material-monitor: Desktop preparation
 
 The widget *Value Relation* offers values from a related table in a combobox.
+
+Since QField 4.1.1, the Value Relation widget supports the toggle button feature, similar to the Value Map widget (see [Value Map Widget Configuration](#value-map-widget-configuration)).
+
 Here you have several options to choose from:
 
 - **Layer**: Set the table or layer that stores the values to be selected from.
 - **Key column**: Set the column which contains the values that are to be saved.
-- **value column**: Set the actual column which contains the values that are to be shown during collection.
-
+- **Value column**: Set the actual column which contains the values that are to be shown during collection.
 - **Order by Value**: Set the order of how the displayed values should be shown.
 This can either be by the "key", "value" or a specific column.
 - **Group column**: You can group your values based on another column.
 (eg. you want to collect information on tree species, you could group the values by the genus).
+When a group is defined, the widget is always displayed as a list, even if the toggle button feature is enabled.
 - **Allow NULL value**: The field can stay blank.
 - **Use Completer**: You can use this option to auto-complete your fields.
 When selecting the magnifying glass you can search under the available values and select accordingly.
