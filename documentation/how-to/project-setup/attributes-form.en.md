@@ -44,10 +44,6 @@ For other attribute widget types not yet supported, consider [sponsoring an impl
 
 ## General Attribute Settings
 
-In order to customize the attribute form, it is necessary to use the drag and drop designer in QGIS or to a use pre-written UI file.
-You can also make use of powerful expressions to populate the different fields.
-Additionally, to the ones available there are [QFieldCloud specific variables](../../reference/expression_variables.md#qfieldcloud), which can be utilized inside the attribute form:
-
 Below are some other general useful settings, which you can find in the Vector Layer *Properties...* > *Attribute form* (see image below).
 
 - **Drag and drop designer**: You can structure your forms using various containers, such as tabs and groups, and enhance interactivity by incorporating conditional visibility of fields and assigning default values.
@@ -56,12 +52,15 @@ For more information refer to: [Drag and Drop Designer QGIS Documentation](https
 - **Hide attribute form upon**: You can hide the attribute form by changing from the "Show form on Add Feature" to the setting "Suppress attribute form".
     When adding a new feature in QField, no attribute form needs to be populated.
     **Note**: In such a case, you have to configure the attribute form in such a way that all constraints/rules are met even if you do not add any attributes.
+
 - **Editable**: You can decide whether a field is editable or not by activating it in the widget display of the corresponding field.
+
 - **Remember last values**: If you don't want to add the same value again and again you can enable this option under the widget display in QGIS.
     QField, however, offers a more fine-grained control over the last used values.
     If you enable this option in QGIS, the rule will always apply.
     With QField you can change and disable this option at any point during data collection.
 
+- **Default values**: You can make use of powerful QGIS expressions to pre-fill individual attributes. QField-specific [GNSS positioning](../../reference/expression_variables.md#positioning-and-gnss-variables) and [QFieldCloud]((../../reference/expression_variables.md#qfieldcloud)) specific variables are available to you.
 
 !![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 
