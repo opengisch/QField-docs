@@ -6,7 +6,8 @@ tx_slug: documentation_how-to_3d-map-view
 # 3D Map View
 
 QField allows you to view your spatial data in 3D.
-By utilizing elevation data, map layers are draped as textures over the 3D surface, providing enhanced spatial context for navigation. The 3D view also utilizes Eye Dome Lighting (depth shading) to enhance the visual perception of ridges, valleys, and terrain features.
+By utilizing elevation data, map layers are draped as textures over the 3D surface, providing enhanced spatial context for navigation.
+The 3D view also utilizes Eye Dome Lighting (depth shading) to enhance the visual perception of ridges, valleys, and terrain features.
 
 ## Configuring Elevation Data
 
