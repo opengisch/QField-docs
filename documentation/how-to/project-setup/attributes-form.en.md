@@ -17,7 +17,7 @@ Depending on what behaviour you want for your different attributes, you can choo
 Below is an overview what types are available and supported in QField.
 
 | Widget type        | Support          | Notes                                                                                                                                                                                                  |
-|--------------------|------------------|------------------------------------------------------------4.1.1--------------------------------------------------------------|
+|--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Attachment         | :material-check: | This field is combined with camera integration, to know more jump to [Attachment (photo settings)](#attachment-widget)   |
 | Color              | :material-check: |                                                                                                                          |
 | Date / Time        | :material-check: |                                                                                                                          |
