@@ -106,6 +106,22 @@ Once uploaded, these shared datasets will appear in two key places on the QField
 
      !![List of Shared datasets files referenced in a regular QFieldCloud project](../../assets/images/list_of_localized_datasets_on_cloud.png)
 
+### Permissions for Shared Datasets
+
+Access to a regular project does not automatically grant access to the underlying files stored in the **`shared_datasets`** project.
+
+To ensure that collaborators can successfully download and view the shared files (such as base layers or attachments) in the projects that utilize them, you must explicitly grant them access to the **`shared_datasets`** project itself.
+
+!!! Workflow
+
+    1. Open the **`shared_datasets`** project in the QFieldCloud web interface.
+    2. Navigate to the project's **Collaborators** tab.
+    3. Add the required users and assign them at least the **Reader** role.
+    This role safely allows users to list, download, and read the shared files on QField and QFieldSync without giving them permission to modify the central shared data.
+
+!!! note
+    While the **Reader** role is sufficient for viewing and downloading, any collaborator who needs to add, update, or remove files within the **`shared_datasets`** project must be assigned the **Manager** or **Admin** role.
+
 ### Troubleshooting Shared Datasets
 
 For any cloud project containing shared datasets, QFieldCloud’s web interface will indicate the missing on the cloud (i.e., referenced by any project but have not yet been uploaded into the **`shared_datasets`** project) using a red color.
