@@ -66,6 +66,18 @@ To monitor the number of active users direct to *Organization Settings* > *Billi
 
 !![](../assets/images/listing_qfieldcloud_active_users.png)
 
+!!! note
+
+    An account can only be open in session for one device at a time.
+    For example, if the QFieldCloud username `ninja_001` login into the QField mobile application on a new device,
+    their previous device will automatically be logged out.
+    **Crucially, attempting to share a single account across multiple devices can cause synchronization errors,
+    leading to data loss or data corruption, or unable to push their data collected on the field to the cloud.**
+
+    To have multiple people working safely and concurrently on a project (e.g., `survey_001`), you will need an **Organization Plan**.
+    This allows you to invite different user accounts (e.g., `ninja_001`, `ninja_002`, `ninja_00n`) to collaborate.
+    Administrators can seamlessly add, remove, or change the permissions of these users within the Organization and specific projects.
+
 ## Adding QFieldCloud storage
 
 In QFieldCloud you can configure as much storage as desired for your projects.
