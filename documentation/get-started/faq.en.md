@@ -35,6 +35,17 @@ tx_slug: documentation_get-started_faq
 
     No, unfortunately, we only offer invoice for an annual subscription with a one-off administration fee.
 
+??? help "Can I log in to the same account on multiple devices?"
+
+    ## Can I log in to the same account on multiple devices?
+    No, an account session can only be active on one device at a time.
+    This means a single user account (for example, `ninja_001`) can only be logged into the QField mobile application on one device.
+    If `ninja_001` tries to log in on a second device, the first device will automatically be logged out, and only the newest login will remain active.
+
+    If you need multiple people working concurrently on a single project (e.g., `survey_001`), you must use an **Organization Plan**.
+    This allows you to have distinct accounts for each team member (e.g., `ninja_001`, `ninja_002`, `ninja_00n`).
+    A user with administrative rights can add, remove, or change the permissions of these users within the Organization and its projects.
+
 ## Configuration questions in QField
 
 ??? help "How do I fix issues with missing or broken layers after syncing?"
