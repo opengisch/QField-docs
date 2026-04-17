@@ -120,6 +120,7 @@ In Wizard Mode, the standard top-right "Save" button is hidden.
 - Tapping this final **Save** button evaluates the entire form one last time. If all hard constraints are satisfied,
     the feature is committed and a "Changes saved" confirmation is displayed.
 
+![type:video](../../assets/videos/qfield_form_wizard.mp4)
 
 ## Working with Relations
 :material-monitor: Desktop preparation
