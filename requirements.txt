@@ -1,5 +1,5 @@
 CairoSVG==2.9.0
-cryptography==46.0.5
+cryptography==46.0.7
 fancyboxmd==1.1.0
 mkdocs-material===9.5.17
 mkdocs-static-i18n==1.2.0
