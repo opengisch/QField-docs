@@ -66,6 +66,68 @@ For more information refer to: [Drag and Drop Designer QGIS Documentation](https
 
 !![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 
+---
+
+## Feature Form Wizard Mode
+
+QField supports a "Wizard Mode" for feature forms.
+When enabled, forms that are designed with multiple root tabs are transformed into a step-by-step, linear pagination experience.
+
+This provides a simplified, guided journey for field workers filling out complex forms, ensuring they complete sections in a specific order while satisfying data constraints along the way.
+
+!!! Note
+
+    The "Wizard Mode" will only work if you have grouped your fields into tabs.
+
+### Configuring Wizard Mode
+
+:material-monitor: Desktop preparation
+
+To use Wizard Mode, your feature form must first be set up using the **"Drag and drop designer"** in QGIS, with your fields organized into multiple tabs.
+Once your form is organized into tabs, you can enable Wizard Mode via QFieldSync.
+
+!![](../../assets/images/attribute_form_adding_tabs.png)
+
+!!! Workflow
+
+    1. Open your project in QGIS.
+    2. Direct to *Project* > *Project Properties...* > *QField*.
+    Alternatively you can click on the settings icon from the QFieldSync plugin panel.
+    3. Check  **"Enable QField feature forms' wizard mode"**.
+    4. Save your project and synchronize it to QFieldCloud.
+
+!![](../../assets/images/qfieldsync_enable_form_wizard.png)
+
+### Using the Wizard in the Field
+:material-tablet: Fieldwork
+
+When opening a feature form with the Wizard Mode enabled, the UI adapts to focus on one tab (page) at a time.
+
+**Navigating Pages:**
+Instead of the standard tabs at the top of the form, the user is presented with a navigation bar at the bottom of the form similar to other standard forms:
+
+- **Previous page / Next page:** The form is filled out tab by tab using the **next page / previous page** buttons.
+- **Progress Ring:** A circular progress indicator sits between the navigation buttons, showing visually how far along you are in the form completion process.
+
+**Constraint Validation:**
+
+The wizard actively enforces your QGIS form constraints on a page-by-page basis to ensure data quality:
+
+- **Visual Feedback:** The progress ring and navigation buttons will dynamically change color to indicate validation status.
+    They will turn red if a *hard constraint* is broken, or yellow/orange if a *soft constraint* triggers a warning.
+- **Blocking Progression:** If a field on the current page fails a hard constraint, the wizard will display an error toast ("Hard constraints not satisfied")
+    and prevent you from moving to the next page until the data is corrected.
+
+**Saving the Feature:**
+
+In Wizard Mode, the standard top-right "Save" button is hidden.
+
+- On the final page of the wizard, the "Next page" button automatically transforms into a **Save** button.
+- Tapping this final **Save** button evaluates the entire form one last time. If all hard constraints are satisfied,
+    the feature is committed and a "Changes saved" confirmation is displayed.
+
+![type:video](../../assets/videos/qfield_form_wizard.mp4)
+
 ## Working with Relations
 :material-monitor: Desktop preparation
 
