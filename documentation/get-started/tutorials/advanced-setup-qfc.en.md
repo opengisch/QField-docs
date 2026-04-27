@@ -313,11 +313,17 @@ There are several ways in which you can create and upload a project to QField.
 
         ![Creating Project](../../assets/images/project_organization_02_creating_project.png)
 
-    3. Select "Create a new empty project"
+        - Add your project name, give a description and select the required settings regarding conflict management and project file restriction.
+        - Choose your preferred project creation method:
+            - **Create an empty project:** This will create a complete empty project without any basemap.
+            - **Use a basic template:** This will allow you to select a dedicated basemap provider either OpenStreetMap (by default) or your preffered basemap provider for which you need to provide the URL and define your project extent.
+            You can do this by clicking on the little map icon on the right of the Project extent line.
 
-        ![New empty project](../../assets/images/project_organization_03_new_empty_project.png)
+        ![Template Project](../../assets/images/project_organization_03_template.png)
 
-    4. You can see the new project in the overview.
+        Once you have entered all your details click *Create* at the bottom right of the screen
+
+    4. You can now see the new project in the overview.
 
         ![New project created](../../assets/images/project_organization_04_new_project_created.png)
 
