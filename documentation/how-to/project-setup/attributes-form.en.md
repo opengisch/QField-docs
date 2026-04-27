@@ -190,6 +190,51 @@ To enable this functionality, however, you require a second plugin [Ordered Rela
 
     !![QField](../../assets/images/ordered_relation_widget.webp,400px)
 
+### Gallery Relation Editor
+
+QField automatically upgrades the standard relation editor widget to a **Gallery Relation Editor**
+for any parent-child relationship where the child layer contains an *Attachment* (External Resource) widget.
+
+This provides a highly visual, media-centric experience for browsing and managing related photos, videos, and audios directly from the parent feature's form.
+
+**Key Features:**
+
+- **Grid and List Views:** Toggle between a large-thumbnail grid view (perfect for browsing photos) and a compact list view using the switch at the bottom of the widget.
+
+- **Dynamic Media Previews:**
+    - *Images:* Displayed as thumbnails.
+    - *Videos:* Automatically play a muted, short preview. Tapping the thumbnail allows you to play/pause the video.
+    - *Audio:* Generates a real-time, dynamic audio waveform bar preview based on the actual audio file's peaks.
+
+- **On-Demand Downloads:** If an attachment is not stored locally on your device,
+    QField will display a loading indicator and automatically attempt to fetch the file from QFieldCloud or your configured External Storage (e.g., WebDAV).
+    Ensure your device has an active internet connection if your project relies on remote external storage.
+
+- **Interacting with Media:** Tap on any media card's background to open the standard feature form for that specific child record,
+    or tap the three-dot menu *(⋮)* to access specific actions like copying attributes.
+
+**Multi-Attachment Project creation Notes:**
+
+If you create a project utilizing QField's default digitizing notes (with "Take image and video attachments"),
+the system automatically configures an attachments field for child layer linked by UUID.
+When you open a note in QField, you can seamlessly add and browse multiple photos, videos, or audio recordings attached to a single note.
+
+!!! Workflow
+
+    **Configuring the Gallery Editor in QGIS**
+
+    :material-monitor: Desktop preparation
+
+    The Gallery Relation Editor does not require a specific "Gallery" widget type in QGIS. Instead, it is triggered automatically based on your form setup.
+
+    1. Open your project in QGIS and set up a standard 1:N relationship between a parent layer and a child layer.
+    2. Open the child layer's **Properties** > **Attributes Form**.
+    3. Ensure at least one field in the child layer is configured as an **Attachment** (External Resource) widget type.
+    4. Open the parent layer's **Properties** > **Attributes Form** and add the relation to the form layout.
+
+    When opening the parent form in QField, the relation will automatically render as the interactive media gallery.
+
+
 ## Value Map Widget Configuration
 
 When using value maps as a widget type you can control
