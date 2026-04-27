@@ -390,10 +390,12 @@ These notifications are specifically for events that are initiated by other memb
 ## Enhance your project with the "Optimized Packager"
 
 We recommend using the new "Optimized Packager" over the deprecated "QGIS Core Offline Editing" for all your projects.
-The "Optimized Packager" supports consolidating filtered layers of same datasource into a single offline layer, respecting distinct symbology but also using less storage.
 
-1. On the QFieldCloud landing page and select the project of concern
-2. Direct to *Settings* and set the packager under "Packaging Offliner" in the "Settings" tab of your project.
+!!! Explanation
+
+    Unlike the "QGIS Core Offline Editing" packager the "Optimized Packager" consolidates filtered layers of same datasource into a single offline layer, respecting the distinct symbology but also using less storage.
+    What does this actually mean: If you have multiple filters set in your project layers, QField used to download the whole layer and only then apply the two filteres once downloaded.
+    With the "optimized packager" the filters will be assigned during the packaging job and only then, the filters will be applied.
 
 Here is an example to illustrate this feature:
 
