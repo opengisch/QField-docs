@@ -29,7 +29,15 @@ The user can create new vertices or point features using the following three opt
 - Point at intersection of two circles
 - Point by distance/angle [to another point]
 
-In the following sections, each option will be described and a detailed step-by-step introduction will be outlined.
+!!! Prepare Workflow
+
+    1. Open the QField project.
+    2. Select digitize mode from the active QField project settings and layers view to enable editing tools within the selected layer of the QField project.
+    3. Dismiss the active QField project settings and layers view to access the QField project map view.
+    4. Expand the editing tools menu overlay from the active QField project map view by tapping on the pencil-and-gear icon.
+    5. Enable visibility of the Coordinate Geometry (COGO) tool overlay by selecting the 'drafting compass icon' button from the editing tools menu overlay.
+
+In the following sections, each option will be described as continuing the above Prepare Workflow steps and a detailed step-by-step introduction will be outlined.
 
 ### Point by XY[Z]
 
@@ -38,17 +46,14 @@ for instance when receiving precise coordinates from an external source or to di
 
 !!! Workflow
 
-    1. Open the QField project.
-    2. Change to edit mode.
-    3. In the top left, open the editing tools by tapping on the pen.
-    4. Click on the compass and select 'XY'.
-    5. In the window at the bottom, you can choose between three options:
-        - Make a point at the current location. For this, the positioning has to be turned on.
+    6. Select the XYZ Parameters COGO tools variant by the 'XY icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
+    7. In the COGO tool variant overlay choose between three Point entry options:
+        - Make a point from the Point Feature Picker 'dotted hamburger list of items icon' button following the Point text entry area.
         - Make a point wherever the crosshair is located on the map.
-        - Make a point on the point, which can be selected under the button with the three lines.
+        - Make a point at the current location. For this, the positioning has to be turned on.
        *(Note: If your target layer supports Z-dimensions (3D geometries), an additional input for **Elevation** will be available).*
-    6. Click ok - a green point will appear depending on the option you selected.
-    7. Click on the green plus sign to add the feature.
+    8. Confirm the Point data entry - a virtual green point will appear where a new feature may be added.
+    9. Click on the green plus sign to confirm and add the new feature.
 
     ![XY option](../../assets/images/cogo-xy-option.png)
 
@@ -61,16 +66,10 @@ Instead of walking in the centre of each of them, it is possible to draw two cir
 
 !!! Workflow
 
-    1. Open the QField project.
-    2. Change to edit mode.
-    3. In the top left, open the editing tools by tapping on the pen.
-    4. Click on the compass and select 'the two circles'.
-    5. A new window opens where you have to set the two center points of the two circles and decide on a **radius** for each.
-    6. The two center points can be drawn the same way as outlined in the [XY section](#adding-point-using-xyz).
-    7. Once you set the center points and the radio, virtual circles will be drawn on the map,
-        and the two points where the circles intersect will be labelled as **"A"** and **"B"**.
-    8. In the parameter list, toggle between Candidate A or B to choose the respective point that you wish to add.
-    9. Click on the green plus sign to add the feature.
+    6. Click on Circles Intersection COGO tools variant by the 'two circles icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
+    7. In the COGO tool variant overlay enter the center points and radii of two circles the same way as outlined in the [XYZ Paramaters COGO tools variant](#adding-point-using-xyz)
+    8. Select a preference for either of two points labelled **"A"** and **"B"** coincident with the intersection of circles as described above.
+    9. Click on the green plus sign to confirm the new feature at the preferred point.
 
     !![](../../assets/images/cogo-two-circle-option.png,250 px)
 
@@ -82,15 +81,11 @@ wanting to measure precisely the property boundary or the length of your pipes, 
 
 !!! Workflow
 
-    1. Open the QField project.
-    2. Change to edit mode.
-    3. In the top left, open the editing tools by tapping on the pen.
-    4. Click on the compass and select 'the angle symbol'.
-    5. Add the location from which you want to take the initial distance and angle measurement.
-       You can use exactly the same options as outlined in the [XY section](#adding-point-using-xyz).
-    6. Set the distance and the relative bearing to north to where the feature should be added.
+    6. Click on Distance/Angle from Point COGO tools variant by the 'angle symbol icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
+    7. In the COGO tool variant overlay use the same data entry method as outlined in the [XYZ Paramaters COGO tools variant](#adding-point-using-xyz) to enter the origin location from which you want to offset by a distance and relative-north angle measurement.
+    8. Set the distance and the bearing relative to north to where the feature should be added.
         *(Note: If your target layer supports Z-dimensions, an **Elevation** offset parameter will also be available).*
-    7. A dynamic visual line will connect the origin to the new calculated point on the map, and a green point will indicate the exact location of where the feature will be added.
-    8. Click on the green plus sign to add the feature.
+    9. The origin location will be drawn as connected by virtual dashed line to where a green point indicates the exact location of where the new feature may be added.
+    10. Click on the green plus sign to confirm the new feature.
 
     !![Add a feature by a distance and a bearing](../../assets/images/cogo-distance-beaering-option.png,250px)
