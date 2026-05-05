@@ -46,14 +46,14 @@ for instance when receiving precise coordinates from an external source or to di
 
 !!! Workflow
 
-    6. Select the XYZ Parameters COGO tools variant by the 'XY icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
-    7. In the COGO tool variant overlay choose between three Point entry options:
+    1. Select the XYZ Parameters COGO tools variant by the 'XY icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
+    2. In the COGO tool variant overlay choose between three Point entry options:
         - Make a point from the Point Feature Picker 'dotted hamburger list of items icon' button following the Point text entry area.
         - Make a point wherever the crosshair is located on the map.
         - Make a point at the current location. For this, the positioning has to be turned on.
        *(Note: If your target layer supports Z-dimensions (3D geometries), an additional input for **Elevation** will be available).*
-    8. Confirm the Point data entry - a virtual green point will appear where a new feature may be added.
-    9. Click on the green plus sign to confirm and add the new feature.
+    3. Confirm the Point data entry - a virtual green point will appear where a new feature may be added.
+    4. Click on the green plus sign to confirm and add the new feature.
 
     ![XY option](../../assets/images/cogo-xy-option.png)
 
@@ -66,10 +66,10 @@ Instead of walking in the centre of each of them, it is possible to draw two cir
 
 !!! Workflow
 
-    6. Click on Circles Intersection COGO tools variant by the 'two circles icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
-    7. In the COGO tool variant overlay enter the center points and radii of two circles the same way as outlined in the [XYZ Paramaters COGO tools variant](#adding-point-using-xyz)
-    8. Select a preference for either of two points labelled **"A"** and **"B"** coincident with the intersection of circles as described above.
-    9. Click on the green plus sign to confirm the new feature at the preferred point.
+    1. Click on Circles Intersection COGO tools variant by the 'two circles icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
+    2. In the COGO tool variant overlay enter the center points and radii of two circles the same way as outlined in the [XYZ Paramaters COGO tools variant](#adding-point-using-xyz)
+    3. Select a preference for either of two points labelled **"A"** and **"B"** coincident with the intersection of circles as described above.
+    4. Click on the green plus sign to confirm the new feature at the preferred point.
 
     !![](../../assets/images/cogo-two-circle-option.png,250 px)
 
@@ -81,11 +81,11 @@ wanting to measure precisely the property boundary or the length of your pipes, 
 
 !!! Workflow
 
-    6. Click on Distance/Angle from Point COGO tools variant by the 'angle symbol icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
-    7. In the COGO tool variant overlay use the same data entry method as outlined in the [XYZ Paramaters COGO tools variant](#adding-point-using-xyz) to enter the origin location from which you want to offset by a distance and relative-north angle measurement.
-    8. Set the distance and the bearing relative to north to where the feature should be added.
+    1. Click on Distance/Angle from Point COGO tools variant by the 'angle symbol icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
+    2. In the COGO tool variant overlay use the same data entry method as outlined in the [XYZ Paramaters COGO tools variant](#adding-point-using-xyz) to enter the origin location from which you want to offset by a distance and relative-north angle measurement.
+    3. Set the distance and the bearing relative to north to where the feature should be added.
         *(Note: If your target layer supports Z-dimensions, an **Elevation** offset parameter will also be available).*
-    9. The origin location will be drawn as connected by virtual dashed line to where a green point indicates the exact location of where the new feature may be added.
-    10. Click on the green plus sign to confirm the new feature.
+    4. The origin location will be drawn as connected by virtual dashed line to where a green point indicates the exact location of where the new feature may be added.
+    5. Click on the green plus sign to confirm the new feature.
 
     !![Add a feature by a distance and a bearing](../../assets/images/cogo-distance-beaering-option.png,250px)
