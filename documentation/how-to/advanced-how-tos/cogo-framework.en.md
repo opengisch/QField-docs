@@ -37,7 +37,7 @@ The user can create new vertices or point features using the following three opt
     4. Expand the editing tools menu overlay from the active QField project map view by tapping on the pencil-and-gear icon.
     5. Enable visibility of the Coordinate Geometry (COGO) tool overlay by selecting the 'drafting compass icon' button from the editing tools menu overlay.
 
-In the following sections, each option will be described as continuing the above Prepare Workflow steps and a detailed step-by-step introduction will be outlined.
+In the following sections, each option will be described as continuing the above steps and a detailed step-by-step introduction will be outlined.
 
 ### Point by XY[Z]
 
@@ -85,7 +85,7 @@ wanting to measure precisely the property boundary or the length of your pipes, 
     2. In the COGO tool variant overlay use the same data entry method as outlined in the [XYZ Paramaters COGO tools variant](#adding-point-using-xyz) to enter the origin location from which you want to offset by a distance and relative-north angle measurement.
     3. Set the distance and the bearing relative to north to where the feature should be added.
         *(Note: If your target layer supports Z-dimensions, an **Elevation** offset parameter will also be available).*
-    4. The origin location will be drawn as connected by virtual dashed line to where a green point indicates the exact location of where the new feature may be added.
+    4. The original location will be drawn as connected by virtual dashed line to where a green point indicates the exact location of where the new feature may be added.
     5. Click on the green plus sign to confirm the new feature.
 
     !![Add a feature by a distance and a bearing](../../assets/images/cogo-distance-beaering-option.png,250px)
