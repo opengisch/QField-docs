@@ -10,7 +10,7 @@ This tool migrates all configurations from your form into a configured project a
 
 ## XLSForms
 
-XLSForms is a standard used by several survey products such as [ODK](https://getodk.org/) or [KoboToolbox](https://www.kobotoolbox.org/).
+XLSForms is a standard used by several survey products such as [ODK](https://getodk.org/) or [KoboToolbox](https://kobotoolbox.org/).
 XLSForms is built on a spreadsheet format using Excel as the standard.
 In simple terms a survey is made up of several "Questions" that can be presented in different formats (integer, text, lists etc.).
 To learn more about the standard please visit the [XLSForm reference website](https://xlsform.org/).
