@@ -19,10 +19,6 @@ jobs:
       - name: Install Python requirements
         run: pip install -r requirements.txt
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-
       - name: Generate Zoho authentication credentials and update Zoho
         env:
           IS_PR: ${{ github.event_name == 'pull_request' }}
