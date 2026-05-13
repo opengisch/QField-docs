@@ -15,7 +15,7 @@
   ],
   "ignorePatterns": [
     {
-      "pattern": "^https://kobotoolbox\\.org/?$"
+      "pattern": "^https://(www\\.)?kobotoolbox\\.org/?$"
     }
   ]
 }
