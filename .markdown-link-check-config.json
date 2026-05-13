@@ -12,5 +12,10 @@
       "pattern": ",[0-9]+px$",
       "replacement": ""
     }
+  ],
+  "ignorePatterns": [
+    {
+      "pattern": "^https://kobotoolbox\\.org/?$"
+    }
   ]
 }
