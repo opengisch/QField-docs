@@ -3,7 +3,7 @@ title: COGO Framework - Coordinate Geometry
 tx_slug: documentation_how-to-cogo-framework
 ---
 
-# COGO - Framework Coordinate Geometry
+# COGO Framework - Coordinate Geometry
 
 ## What is COGO?
 COGO is a framework that allows you to define a precise location of any spatial feature, making use of mathematical functions and measurements.
