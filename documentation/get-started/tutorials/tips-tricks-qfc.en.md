@@ -1,5 +1,5 @@
 ---
-title: Tips and Tricks: QFieldCloud projects
+title: Tips and Tricks QFieldCloud projects
 long_title: Tips and tricks for QGIS projects, saving cloud storage
 tx_slug: documentation_get-started_tutorials_tips_tricks
 ---
