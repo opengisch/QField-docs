@@ -64,7 +64,9 @@ Other things you can do:
 
 - Rate the app [★★★★★](https://play.google.com/store/apps/details?id=ch.opengis.qfield&hl=en#details-reviews); <!-- markdown-link-check-disable-line -->
 - [Write about it on X](https://twitter.com/share?text=Looking%20for%20a%20good%20tool%20for%20field%20work%20in%20GIS?%20Check%20out%20%23QField!); <!-- markdown-link-check-disable-line -->
-- [Follow us on X](https://twitter.com/QFieldForQGIS); <!-- markdown-link-check-disable-line -->
+- [Follow us on LinkedIn](https://www.linkedin.com/company/qfield/); <!-- markdown-link-check-disable-line -->
+- [Follow us on Mastodon](https://fosstodon.org/@qfield); <!-- markdown-link-check-disable-line -->
+- [Follow us on Bluesky](https://bsky.app/profile/qfield.org); <!-- markdown-link-check-disable-line -->
 - Share your [success story](https://qfield.org/success-stories.html) ([Contact us!](mailto:sales@opengis.ch)); <!-- markdown-link-check-disable-line -->
 - [Help with the documentation](https://github.com/opengisch/QField-docs#documentation-process); <!-- markdown-link-check-disable-line -->
 - [Translate the documentation](https://github.com/opengisch/QField-docs#translation-process) or [the app](https://explore.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->

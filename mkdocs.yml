@@ -11,7 +11,7 @@ repo_url: https://github.com/opengisch/qfield-docs
 edit_uri_template: 'blob/master/documentation/{path}'
 
 # Copyright
-copyright: Copyright &copy; 2023 <a href="https://OPENGIS.ch">OPENGIS.ch</a> -  <a
+copyright: Copyright &copy; 2026 <a href="https://OPENGIS.ch">OPENGIS.ch</a> -  <a
   href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA
   4.0</a>
 
@@ -191,10 +191,12 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/opengisch
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/opengisch
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/opengisch/
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@opengisch
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/opengis.ch
     - icon: fontawesome/solid/paper-plane
       link: mailto:info@opengis.ch
 plugins:
