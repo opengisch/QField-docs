@@ -139,7 +139,7 @@ To minimize the risk of conflicts, follow these best practices:
     Clear planning reduces overlap and potential conflicts.
 - **Avoid modifying primary keys**: Primary keys should be treated as immutable and configured to be read-only.
     This ensures consistent identification of features and prevents accidental modifications.
-- **Ensure unique primary keys**: Use a truly unique [primary key](../../get-started/tutorials/advanced-setup-qfc.md#project-configuration-best-practices) to prevent conflicts and ensure data integrity.
+- **Ensure unique primary keys**: Use a truly unique [primary key](../../get-started/tutorials/tips-tricks-qfc.md#project-configuration-best-practices) to prevent conflicts and ensure data integrity.
 
 By implementing these practices, you can significantly reduce the likelihood of conflicts and maintain consistent data.
 

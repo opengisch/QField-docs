@@ -59,7 +59,7 @@ Depending on the layer type, different types of actions are available:
 A new copy in the packaged project folder will be made.
 **Note**: In case that you have multiple layers within one GeoPackage, all layers will be uploaded despite only one of them being present in the QGIS project.
 It is recommended to have one layer per Gpkg unless strictly necessary.
-Refer to [common best practices for additional tips](../../get-started/tutorials/advanced-setup-qfc.md#project-configuration-best-practices)
+Refer to [common best practices for additional tips](../../get-started/tutorials/tips-tricks-qfc.md#project-configuration-best-practices)
 
 - ***Keep existing (copy if missing)***: The layer source will be left untouched.
 In the case of a long-term project, where synchronization is frequently happening, it is advisable to use this option to not re-package the file every time.

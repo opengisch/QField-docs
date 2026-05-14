@@ -140,90 +140,6 @@ Read more on PG Service and Secrets [here](../../how-to/project-setup/pg-service
 
 You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/jobs.md).
 
-## Project Configuration Best Practices
-
-To ensure a smooth synchronization process between QGIS, QField and QFieldCloud, follow these recommendations.
-
-**1. Centralized Data Storage - Add all data in the same folder as your .qgs project file**
-
-Before uploading your project, ensure all relevant data sources (GeoPackages, rasters, etc.) are located in the same directory as your project file (`.qgs/.qgz`)
-or in a subdirectory (e.g., `./data`, `./assets`).
-If files are spread across different drives or folders on your computer, QFieldSync and QFieldCloud may fail to package them correctly for the mobile device.
-
-**2. Managing Unique IDs - Add a unique ID to your layers**
-
-When multiple users collect data offline simultaneously, standard auto-incrementing IDs (1, 2, 3...) will result in conflict errors when applying the deltas changes data on QFieldCloud.
-
-- **For Relations**: Create a specific text field (e.g., `survey_uuid`) and use `uuid()` or `uuid('WithoutBraces')` as the default value.
-Use this field for all foreign keys and for primary key if the layer is from PostgreSQL/PostGIS.
-- **For the `fid` (Feature ID)**: If you are working with GeoPackages, you can reduce conflicts on the internal `fid` integer column
-by setting the "Default Value" to the expression `epoch(now())`.
-This generates a unique integer based on the current timestamp.
-
-!!! Tip
-    To set this up, go to **Layer Properties > Attributes Form**, select the `fid` field, and set the **Default Value** to:
-    ```sql
-    epoch(now())
-    ```
-    Ensure the "Apply default value on update" box is **unchecked** so the ID remains constant after creation.
-
-**3. Relative Paths - Ensure that all attachment paths are relative**
-
-Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) will break when the project is transferred to a mobile device (Android/iOS),
-as the file system structure is different.
-
-!!! Workflow
-
-    1. Navigate to **Project** > **Properties...** > **General**.
-    2. Set **Save paths** to `Relative`.
-
-**4. Stable Layer References in Expressions - Use the Layer Name in expressions, not the Layer ID**
-
-When writing expressions (for example, inside `aggregate()` or `relation_aggregate()`) functions,
-QGIS allows you to reference layers by their internal ID (e.g., `places_2348274...`) or their Name (e.g., `Places`).
-Always use the **Layer Name** (e.g., `Places`).
-
-**Why?**
-The internal Layer ID changes if you remove and re-add a layer or internally in QFieldCloud when a packaging job is triggered could change,
-which breaks your expressions.
-The Layer Name remains stable as long as you do not rename it in the layer tree.
-
-**5. Preferred File Formats - Convert your layers to GeoPackage**
-
-QField and QFieldCloud are optimized for the **GeoPackage (.gpkg)** format.
-While QField and QFieldCloud support others formats like Shapefiles (`.shp`), GeoJSON, and KML, etc., is strongly recommend converting these layers to GeoPackage before starting your project.
-
-**How to Convert to GeoPackage?**
-
-!!! Workflow
-
-    1. In QGIS, right-click your layer in the layer tree.
-    2. Select **Export** > **Save Features As...**
-    3. Set **Format** to `GeoPackage`
-    4. In **File name**, click `...` and navigate to your project folder. Give the new database a name (e.g., notes_points.gpkg`)
-    5. In **Layer name**, give your layer a simple name (e.g., `notes_points`)
-    6. Click **OK**
-    7. The new layer will load into your project.
-    You can now remove the old layer
-
-**6. Modular File Structure - Store one layer per GeoPackage**
-
-QFieldCloud manages versions and backups at the **file level**. Every time changes are synchronized, a backup of the modified file is created.
-
-- **The Risk:** If you store multiple layers in a single GeoPackage (e.g., `survey_data.gpkg` containing *Trees*, *Roads*, and *Buildings*), restoring a backup to fix an error in the *Trees* layer will also roll back valid work done on *Roads* and *Buildings* during that same period.
-- **The Solution:** Save each layer in its own separate GeoPackage (e.g., `trees.gpkg`, `roads.gpkg`).
-    This allows you to restore a previous version of one specific layer without losing data in others.
-
-### Common Configuration Errors
-
-If you are experiencing synchronization issues, check for these common configuration errors:
-
-| Issue | Cause | Solution |
-| :--- | :--- | :--- |
-| **Missing Images** | Paths are set to "Absolute" | Go to Project Properties and set paths to "Relative". |
-| **Sync Failures** | Data is outside the project folder | Move all .gpkg and raster files into the same folder as the project file (`.qgz/.qgs`). |
-| **Expression Errors** | Layer ID used in expression | Update expressions to use `'Layer Name'` instead of `'Layer_ID_123'`. |
-| **Duplicate Keys** | Using default 1, 2, 3 IDs | Implement `uuid()` or `epoch(now())` for unique identification. |
 
 ## Restriction of Project Files
 
@@ -446,22 +362,6 @@ If your project contains photos, documents or other attachments, you have to con
     Add them under the folder name to the list.
 
 !![](../../assets/images/attachments_and_directories_list.png)
-
-## On-Demand Attachment Downloads
-
-For projects with many attachment files, you can enable on-demand downloading in QField.
-This is useful for saving storage space on field devices and reducing data transfer over limited network connections.
-
-To enable this feature:
-
-1. From the QFieldCloud landing page, select your project.
-2. Direct to *Settings*.
-3. Enable the "On demand attachment files download" option.
-
-!!! note
-    This feature can be activated during project creation or enabled at any time for existing projects.
-
-!![](../../assets/images/activating_on_demand_attachments_download.png)
 
 ## Connect to a custom QFieldCloud server in QField and QFieldSync
 
