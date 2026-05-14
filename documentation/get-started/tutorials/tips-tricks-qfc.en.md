@@ -93,15 +93,10 @@ If you are experiencing synchronization issues, check for these common configura
 | **Expression Errors** | Layer ID used in expression | Update expressions to use `'Layer Name'` instead of `'Layer_ID_123'`. |
 | **Duplicate Keys** | Using default 1, 2, 3 IDs | Implement `uuid()` or `epoch(now())` for unique identification.
 
-## Download attachments on demand
+## Download attachments only on demand
 
 In the QFieldCloud settings you can set your attachments to be only downloaded on demand.
 This is particularly useful when you work with an abundance of photos and do not need all your attachments at once.
-
-!!!  Note
-
-    You need to be online to download the attachments on demand.
-    If you work offline, it will only show a blank screen.
 
 !!! Workflow
 
@@ -110,21 +105,24 @@ This is particularly useful when you work with an abundance of photos and do not
      1. From the QFieldCloud landing page, select your project.
      2. Direct to *Settings*.
      3. Enable the "On demand attachment files download" option.
+    !![](../../assets/images/activating_on_demand_attachments_download.png)
 
 !!! note
     This feature can be activated during project creation or enabled at any time for existing projects.
-
-!![](../../assets/images/activating_on_demand_attachments_download.png)
+    You need to be online to download the attachments on demand.
+    If you work offline, it will only show a blank screen.
 
 ## Restriction of Project Files
 
-To prevent any modification to the core QGIS project file, **the project administrators** can restrict the access to these files.
+If you work in field operations which involves a lot of users, it may be useful to restrict the QGIS project file to prevent all users with editor rights to download the project and make changes to the configuration.
+To prevent any modification to the core QGIS project file, **the project administrator** can restrict the access to these files.
 This can be achieved under the settings section in QFieldCloud.
 
-1. From the QFieldCloud homepage direct to *Settings*
-2. Enable the **`Restrict project files`** button
+!!! Workflow
 
-!![](../../assets/images/restric_qfc_project_files.png)
+    1. From the QFieldCloud homepage direct to *Settings*
+    2. Enable the **`Restrict project files`** button
+    !![](../../assets/images/restric_qfc_project_files.png)
 
 Once set, only administrators and managers will be able to push changes to the files listed above.
 Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.
@@ -137,3 +135,26 @@ When enabled, the following files can only be modified or uploaded by a user wit
 - The **attachments zip archive** associated with the project (e.g., `my_project_attachments.zip`).
 - **QGIS auxiliary data files** that store information like label positions (e.g., `my_project.qgd`).
 - **QField style files** (`.qml`) that share the same name as the project file.
+
+## Saving storage
+
+### Deleting old file versions
+
+You can reduce the number of versions you want to keep of any given file to reduce the amount of storage needed by accounts.
+One can manually delete file versions from the project's **File** section.
+Each file and version can be linked to a specific QFieldCloud user who uploaded it.
+
+!!! Workflow
+    1. Go to the "Files" section of your project.![Project files](../../assets/images/files_versions_for_deleting.png)
+    2. Locate the layer for which you want to delete versions.![Layer selected](../../assets/images/files_versions_for_deleting_2.png)
+    3. Click on the 3-dotted menu *(⋮)* next to the layer name.![Clickable option](../../assets/images/files_versions_for_deleting_three_dots.png)
+    4. You will see a list of versions for that specific layer.![List of files versions](../../assets/images/files_versions_for_deleting_files_versions.png)
+    5. Identify the version you want to delete and click on the red trash bin icon next to it.![Thrash icon](../../assets/images/files_versions_for_deleting_deleting_a_version.png)
+    6. Confirm the deletion when prompted, if you want to delete all versions before a specific version, you can do it activating the option "Also delete `n` version(s) older than the selected version.".![Deleting files versions](../../assets/images/files_versions_for_deleting_also_delete.png)
+    7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.![List of versions after deleting 2 versions before](../../assets/images/files_versions_for_deleting_version_remain.png)
+
+### Set maximum pixel size of attachment
+
+If you want to further save space and you are working with attachments, you can reduce the pixel size.
+This will lead to lower image quality but take less storage on QFieldCloud.
+You can direct to the How-To of  the [Attachment Widget](../../how-to/project-setup/pictures.md#maximum-picture-size) to see the step-by-step instructions.
