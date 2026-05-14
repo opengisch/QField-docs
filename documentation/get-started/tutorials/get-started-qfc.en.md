@@ -33,6 +33,12 @@ Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qf
 
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png)
 
+## Project Creation
+
+There are several ways to create and initialize a new project in QFieldCloud depending on your workflow. You can convert an existing QGIS project, start from a blank template on the web, or even clone an existing project.
+
+[Read the comprehensive Project Creation guide to get started.](project-creation-qfc.md)
+
 ## From QFieldCloud to QGIS Desktop
 :material-monitor: Desktop preparation
 
@@ -84,33 +90,6 @@ The status of each project is shown with a tooltip.
     - **Green Status**: The project is ready to be used in the field.
     You can download the project down to QField.
 
-
-## Project Creation and Configuration
-
-!!! Workflow
-    1. Create a new project by clicking the cloud button on the bottom-left.
-    2. Choose how to create the new project:
-        - **Convert currently open project to cloud project**: A new project is created from the currently opened QGIS project.
-            The project files will be copied to an export directory.
-            Vector datasets will be converted to one single GeoPackage to facilitate data synchronization from multiple devices.
-            Other data types will also be copied to the new project location.
-        - **Create a new empty QFieldCloud project**: Your current project location will be converted to the QFieldCloud project.
-            All files available in the project need to be stored in the same directory.
-            The location of the project file is the project root.
-            Make sure the selected contains no more than one QGIS project file.
-            !![Project details](../../assets/images/create_project.png)
-    3. A form will ask you for project name, description and local directory.
-        In the local directory you can get different situations:
-
-        - "The entered path does not contain a QGIS project file yet"
-        - The entered path contains one QGIS project file.
-        - Please select local directory where the project to be stored.
-        - The entered path is a relative path. Please enter an absolute directory path.
-        - The entered path is not an directory. Please enter a valid directory path.
-        - The entered path is not an existing directory. It will be created after you submit this form.
-        - Multiple project files have been found in the directory. Please leave exactly one QGIS project in the root directory.
-
-    !![Project properties in QFieldCloud](../../assets/images/project_properties_settings.png)
 
 ### QField Project Settings
 
