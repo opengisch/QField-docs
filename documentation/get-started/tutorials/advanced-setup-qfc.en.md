@@ -364,6 +364,66 @@ There are several ways in which you can create and upload a project to QField.
 
     ![type:video](../../assets/videos/project_creation_in_an_organisation_003.webm)
 
+## Cloning Projects
+
+QFieldCloud allows you to duplicate existing projects through its cloning functionality.
+This feature is highly useful when you need to establish project templates, duplicate a survey project for a different team,
+or start a new data collection campaign using an identical QGIS configuration to a previous successful project.
+
+### How Cloning Works
+
+When you clone a project, QFieldCloud creates a brand new project and duplicates the following elements from the source project:
+
+- The QGIS project file (e.g., `.qgs` or `.qgz`).
+- All associated project files and datasets (GeoPackages, images, etc.).
+- Project settings, including description, public status, offline editing configurations,conflict resolution, and attachment download policies.
+
+The newly cloned project is completely independent. Any subsequent changes, file uploads, or data collection done within the cloned project will not affect the original source project.
+
+### Overriding Project Parameters
+
+While cloning effectively duplicates the source project, you can override specific parameters during the creation process:
+
+- **Project Name:** You must provide a unique name for the new cloned project (e.g., `survey_zone_b`, `survey_zone_n`).
+- **Owner:** You can assign the cloned project to a different owner (e.g., a specific organization or user account), with the appropriate permissions.
+- **Extent:** By providing new extent for the cloned project (for easy moving the zoom to the new extend zone).
+
+### Constraints and Limitations
+
+To ensure system stability and security, project cloning is subject to the following technical rules:
+
+- **Permissions:** You must have admin, manager role to the source project to be able to clone it.
+- **Storage Quotas:** The target owner account must have enough free storage quota available to accommodate the entire file size of the source project.
+    If the storage limit is exceeded, the clone operation will fail.
+- **XLSForms:** Project cloning is mutually exclusive with XLSForm project creation. You cannot provide an XLSForm file and clone an existing project simultaneously.
+- **Seed Configuration:** When cloning, you cannot configure new basemaps via the project seed. The seed data is strictly limited to updating the project's `extent`.
+- **Shared Datasets:** The system-level `shared_datasets` project cannot be used as a source for cloning. Attempting to clone it will raise a `NotCloneableProjectError`.
+
+### API Usage
+
+Users and developers can easily clone projects using the QFieldCloud API. To clone a project, send a `POST` request to the `/api/v1/projects/` endpoint.
+Include the `clone_from_project` parameter with the UUID of the source project.
+
+**Example Request:**
+```bash
+curl --location 'https://app.qfield.cloud/api/v1/projects/' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Token {MY_TOKEN}' \
+--data '{
+    "name" : "clone-me-public",
+    "is_public": true,
+    "description": "Hello from the cloned public project",
+    "owner": "{USERNAME}",
+    "seed": {
+        "extent": "-180, -90, 180, 90"
+    },
+    "clone_from_project": "{PROJECT_UUID}"
+}'
+```
+
+!!! note
+    The seed object is optional and only accepts the extent field when utilizing the clone functionality.
+
 ## Activate email notifications for QFieldCloud changes
 
 If you wish to be notified by QFieldCloud what happens to your team(s) and your projects, you can activate the email notification option.
