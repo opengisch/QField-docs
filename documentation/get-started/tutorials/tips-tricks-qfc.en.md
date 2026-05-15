@@ -158,3 +158,36 @@ Each file and version can be linked to a specific QFieldCloud user who uploaded 
 If you want to further save space and you are working with attachments, you can reduce the pixel size.
 This will lead to lower image quality but take less storage on QFieldCloud.
 You can direct to the How-To of  the [Attachment Widget](../../how-to/project-setup/pictures.md#maximum-picture-size) to see the step-by-step instructions.
+
+### Automating file deletion with QFieldCloud SDK
+
+If you accumulate many attachments (such as high-resolution photos) during fieldwork
+and want to free up space automatically without manually deleting them from the web interface, you can utilize the **QFieldCloud SDK**.
+
+By setting up a script or a cron job using the QFieldCloud SDK, you can periodically purge specific file types (e.g., `.jpg` or `.mp4`) to keep your storage usage low.
+
+For full details and code snippets, see the [QFieldCloud SDK Documentation](https://opengisch.github.io/qfieldcloud-sdk-python/).
+
+To routinely free up storage quota on QFieldCloud, you can delete unnecessary files, such as heavy `.jpg` attachments using glob patterns.
+
+=== ":material-language-python: Python"
+
+    ```python
+    client.delete_files(
+        project_id="123e4567-e89b-12d3-a456-426614174000",
+        glob_patterns=["*.csv", "*.jpg"],
+        throw_on_error=True
+    )
+    ```
+
+=== ":material-bash: Bash"
+
+    ```bash
+    qfieldcloud-cli delete-files '123e4567-e89b-12d3-a456-426614174000' '*.jpg'
+    ```
+
+=== ":material-powershell: PowerShell"
+
+    ```powershell
+    qfieldcloud-cli delete-files "123e4567-e89b-12d3-a456-426614174000" "*.jpg"
+    ```
