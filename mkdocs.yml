@@ -55,10 +55,11 @@ nav:
       - Tutorials:
           - QFieldCloud:
               - get-started/tutorials/get-started-qfc.md
-              - get-started/tutorials/advanced-setup-qfc.md
-              - get-started/tutorials/tips-tricks-qfc.md
+              - get-started/tutorials/concepts.md
               - get-started/tutorials/my-first-project.md
+              - get-started/tutorials/advanced-setup-qfc.md
               - get-started/storage-qfc.md
+              - get-started/tutorials/tips-tricks-qfc.md
           - QFieldSync:
               - get-started/tutorials/get-started-qfs.md
       - get-started/sample-projects.md
@@ -120,7 +121,6 @@ nav:
       - reference/troubleshoot.md
       - QFieldCloud:
           - reference/qfieldcloud/workflow.md
-          - reference/qfieldcloud/concepts.md
           - reference/qfieldcloud/projects.md
           - reference/qfieldcloud/auth.md
           - reference/qfieldcloud/permissions.md
