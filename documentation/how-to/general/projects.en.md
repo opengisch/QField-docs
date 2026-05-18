@@ -22,7 +22,7 @@ With that behavior importing from external SD cards or providers that work with 
 ## Import and open local project
 :material-tablet: Fieldwork
 
-When going to *Open local files* (on the side *Dashboard* > *Open*) you will see a set of new folders named "QField files directory", "Imported datasets", and "Imported projects" as well as a drop-down menu accessible via a bottom-right plus button.
+From the Welcome screen on QField chose "Local projects and datasets" you will see the folders named "Created projects", "Imported datasets", and "Imported projects" as well as a drop-down menu accessible via a bottom-right plus button.
 
 !![QField File Selector](../../assets/images/howto_filebrowser.png)
 
