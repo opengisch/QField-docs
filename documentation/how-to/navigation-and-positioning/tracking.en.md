@@ -96,7 +96,7 @@ If the tracked vector layer has the "Hide Form on Add Feature" mode selected, th
     1. In QGIS for your tracking layer direct to  *Layer Properties* > *QField*
     2. Activate "Tracking Session" and specify the tracking requirements.
 
-        !![Activating automatic "Tracking Sessions" in QFieldSync](.i./../assets/images/automatic-trackng-session.png)
+        !![Activating automatic "Tracking Sessions" in QFieldSync](../../assets/images/automatic-tracking-session.png)
 
         !![Tracking activated automatically in QField](../../assets/images/qfield-tracking-session.png,350px)
 
