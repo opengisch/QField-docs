@@ -48,7 +48,7 @@ If the layer linked to a tracking session supports the M dimension, QField will 
     1. Open the Side Dashboard Panel and long-press on the layer which you want to use for tracking.
     2. Tap **Setup tracking** and a new window will appear showing the configuration settings.
 
-        !![](../../assets/images/tracking-layer-properties.png,350px)
+        !![](../../assets/images/tracking-layer-properties.png)
 
     3. Tap the **Start tracking** button to begin the tracking.
     4. Enter the attributes for the feature(s) about to be created.
@@ -63,7 +63,7 @@ If the layer linked to a tracking session supports the M dimension, QField will 
     1. Tap on your position on the map
     2. A pie menu will open around your position.
 
-        !![](../../assets/images/pie-menu-tracking.png,350px)
+        !![](../../assets/images/pie-menu-tracking.png,250px)
 
     3. Choose the tracking icon (small walking figure).
 
@@ -96,7 +96,7 @@ If the tracked vector layer has the "Hide Form on Add Feature" mode selected, th
     1. In QGIS for your tracking layer direct to  *Layer Properties* > *QField*
     2. Activate "Tracking Session" and specify the tracking requirements.
 
-        !![Activating automatic "Tracking Sessions" in QFieldSync](../../assets/images/automatic-tracking-session.png)
+        !![Activating automatic "Tracking Sessions" in QFieldSync](.i./../assets/images/automatic-trackng-session.png)
 
         !![Tracking activated automatically in QField](../../assets/images/qfield-tracking-session.png,350px)
 
