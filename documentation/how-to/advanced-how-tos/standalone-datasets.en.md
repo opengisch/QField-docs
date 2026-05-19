@@ -49,6 +49,8 @@ Please read the [storage access documentation](../../how-to/project-setup/storag
 
 By default, the datasets will be overlaying an OpenStreetMap XYZ layer. It is however possible to customize that by selecting a project stored onto the device QField is running that will act as a base map.
 
-To use an existing project as base map, do a long press on a project in the recent projects list and check *Base Map Project*.
+!!! Workflow
 
-![type:video](https://player.vimeo.com/video/604849182)<!-- markdown-link-check-disable-line -->
+     1. Direct to your project landing page.
+     2. Press long on the project you want to have as a basemap
+     !![](../../assets/images/choose_basemap.webp,300px)
