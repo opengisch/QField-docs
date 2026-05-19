@@ -61,7 +61,7 @@ This will only work with a reliable internet connection in the field, but has th
 Changes will only be visible to users once the Synchronization via QFieldCloud has been applied on the different devices.
 When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
 
-You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
+You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/projects.md).
 
 ## Working with GeoPackages
 

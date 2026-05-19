@@ -177,4 +177,4 @@ This can either be done manually or automatically if necessary.
 
 Your changes are now available to everyone who has access to your project on the cloud.
 
-You can find more information on [Advanced QFieldCloud setup](./advanced-setup-qfc.md) and [QFieldCloud technical reference](../../reference/qfieldcloud/concepts.md).
+You can find more information on [Advanced QFieldCloud setup](./advanced-setup-qfc.md) and [QFieldCloud technical reference](../../reference/qfieldcloud/workflow.md).

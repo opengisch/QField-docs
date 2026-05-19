@@ -16,7 +16,7 @@ Each user can create one or more QFieldCloud projects.
 Each project contains a single `.qgs`/`.qgz` QGIS project file, the geospatial files - GeoPackages, TIFs, and additional data such as photos, PDFs etc.
 All project data files must be within a single QFieldCloud project.
 
-Read more about [QFieldCloud Projects](./projects.md).
+Read more about [QFieldCloud Projects](../../reference/qfieldcloud/projects.md).
 
 !![](../../assets/images/qfc_roles.svg,800px)
 
@@ -27,7 +27,7 @@ One project may have multiple collaborators.
 Collaborators can have the roles **Admin**, **Manager**, **Editor**, **Reporter**, and **Reader**.
 Only users with the roles of **Admin** and **Manager** can add more users as collaborators to the project.
 If the project is owned by an organization, whole **teams** can also be added as collaborators.
-Read more about [collaborator roles](permissions.md).
+Read more about [collaborator roles](../../reference/qfieldcloud/permissions.md).
 
 ## Organizations
 
