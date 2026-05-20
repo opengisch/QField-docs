@@ -10,7 +10,7 @@ tx_slug: documentation_get-started_tutorials_get-started-qfc
 QFieldCloud is the cloud service that allows smoothless synchronisation of your data between your mobile device for fieldwork and your desktop working station.
 You can further manage teams, work in organisations, assign different editing permissions and much more.
 
-## Register with QFieldCloud [QFieldCloud account](https://app.qfield.cloud/accounts/signup/)
+## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
 :material-monitor: Desktop preparation
 
 !!! Workflow
@@ -31,7 +31,7 @@ Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qf
     In the project overview page, the two names indicate the "Owner" of the project and the "Name" of the project.
     In case that you are the owner or a member of an organisation, you may find that the name will be different in case that you are not the project. owner.
 
-!![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png)
+!![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png,800px)
 
 ## From QFieldCloud to QGIS Desktop
 :material-monitor: Desktop preparation
