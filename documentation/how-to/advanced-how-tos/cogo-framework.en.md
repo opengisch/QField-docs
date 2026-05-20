@@ -66,7 +66,7 @@ Instead of walking in the centre of each of them, it is possible to draw two cir
     3. In the top left, open the editing tools by tapping on the pen.
     4. Click on the compass and select 'the two circles'.
     5. A new window opens where you have to set the two center points of the two circles and decide on a **radius** for each.
-    6. The two center points can be drawn the same way as outlined in the [XY section](#adding-point-using-xyz).
+    6. The two center points can be drawn the same way as outlined in the [XY section](#point-by-xyz).
     7. Once you set the center points and the radio, virtual circles will be drawn on the map,
         and the two points where the circles intersect will be labelled as **"A"** and **"B"**.
     8. In the parameter list, toggle between Candidate A or B to choose the respective point that you wish to add.
@@ -87,7 +87,7 @@ wanting to measure precisely the property boundary or the length of your pipes, 
     3. In the top left, open the editing tools by tapping on the pen.
     4. Click on the compass and select 'the angle symbol'.
     5. Add the location from which you want to take the initial distance and angle measurement.
-       You can use exactly the same options as outlined in the [XY section](#adding-point-using-xyz).
+       You can use exactly the same options as outlined in the [XY section](#point-by-xyz).
     6. Set the distance and the relative bearing to north to where the feature should be added.
         *(Note: If your target layer supports Z-dimensions, an **Elevation** offset parameter will also be available).*
     7. A dynamic visual line will connect the origin to the new calculated point on the map, and a green point will indicate the exact location of where the feature will be added.

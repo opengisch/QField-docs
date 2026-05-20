@@ -126,8 +126,8 @@ To ensure that collaborators can successfully download and view the shared files
 
 For any cloud project containing shared datasets, QFieldCloud’s web interface will indicate the missing on the cloud (i.e., referenced by any project but have not yet been uploaded into the **`shared_datasets`** project) using a red color.
 
-This can be fixed by synchronizing the project again from QGIS with QFieldSync, ensuring the "Upload missing localized dataset(s)" option is checked [Synchronization with QFieldSync](#synchronization-with-qfieldsync).
-Alternatively, if you have the necessary permissions, you can manage the **`shared_datasets`** project directly (see section [Synchronizing directly the shared_datasets project](#direct-synchronization-in-the-shared_datasets-project)).
+This can be fixed by synchronizing the project again from QGIS with QFieldSync, ensuring the "Upload missing localized dataset(s)" option is checked [Synchronization with QFieldSync](#upload-of-shared-datasets-to-qfieldcloud).
+Alternatively, if you have the necessary permissions, you can manage the **`shared_datasets`** project directly (see section [Synchronizing directly the shared_datasets project](#direct-synchronization-to-the-shared_datasets-project)).
 
 If you prepare a new QGIS project to use shared files that are *already present* in your QFieldCloud **`shared_datasets`** project, QFieldSync will recognize this.
 The "Upload missing localized dataset(s)" checkbox should not appear.
