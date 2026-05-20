@@ -11,7 +11,7 @@ tx_slug: documentation_get-started_faq
 
     ## What is the difference between the PRO plan and an "Organization" plan?
     A PRO plan is an upgrade of your **Personal** user account, providing you with the ability to work with PostGIS databases, giving you additional storage (1GB).
-    This plan does not allow you to share your project with other users UNLESS the other usre also has a PRO plan.
+    This plan does not allow you to share your project with other users UNLESS the other user also has a PRO plan.
     An "Organization" plan is specifically meant for collaborative work. By default 2 members of the organization will be charged despite of being active or inactive.
 
 ??? help "What is the difference between "metered" and "licensed" users on my invoice?"
@@ -21,14 +21,14 @@ tx_slug: documentation_get-started_faq
     Even if the user is not active, at least two users will always be billed.
     The **metered user**, on the other hand, are billed upon activity.
     This means that as soon as a ["job"](../reference/qfieldcloud/jobs.md#job-types) is executed, the user will be counted as an active user (after the two initial users).
-    The metered users are always billed retrospectively (eg. in February, you will be billed for the metered user from January).
+    The metered users are always billed retrospectively (e.g. in February, you will be billed for the metered user from January).
 
 ??? help "Why am I still being invoiced? I cancelled my subscription already."
 
     ## Why am I still being invoiced? I cancelled my subscription already.
     In QFieldCloud there are two billing pages.
     One for your personal account and one for your organization(s).
-    Make sure that you cancel all subscriptions, if you do not wish to use it anymore.
+    Make sure that you cancel all subscriptions, if you do not wish to use them anymore.
     Otherwise, you will be invoiced monthly.
 
 ??? help "Is it possible to pay by invoice on a monthly basis?"
