@@ -38,6 +38,8 @@ Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qf
 There are several ways to create and initialize a new project in QFieldCloud depending on your workflow. You can convert an existing QGIS project, start from a blank template on the web, or even clone an existing project.
 
 [Click here to read more about project creation](create-project-qfc.md)
+
+
 ## From QFieldCloud to QGIS Desktop
 :material-monitor: Desktop preparation
 

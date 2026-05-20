@@ -5,7 +5,7 @@ tx_slug: documentation_get-started_tutorials_create-project-qfc
 
 ## Project creation
 
-In general, there are mulitple options how to create a QFieldCloud project:
+In general, there are multiple options how to create a QFieldCloud project:
 
 - [Using QGIS](my-first-project.md)
 - [Using QFieldCloud](#creating-a-project-in-qfieldcloud)
