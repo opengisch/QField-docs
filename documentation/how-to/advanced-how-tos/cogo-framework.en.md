@@ -67,7 +67,7 @@ Instead of walking in the centre of each of them, it is possible to draw two cir
 !!! Workflow
 
     1. Click on Circles Intersection COGO tools variant by the 'two circles icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
-    2. In the COGO tool variant overlay enter the center points and radii of two circles the same way as outlined in the [XYZ Paramaters COGO tools variant](#adding-point-using-xyz)
+    2. In the COGO tool variant overlay enter the center points and radii of two circles the same way as outlined in the [XYZ Paramaters COGO tools variant](#point-by-xyz)
     3. Select a preference for either of two points labelled **"A"** and **"B"** coincident with the intersection of circles as described above.
     4. Click on the green plus sign to confirm the new feature at the preferred point.
 
@@ -82,7 +82,7 @@ wanting to measure precisely the property boundary or the length of your pipes, 
 !!! Workflow
 
     1. Click on Distance/Angle from Point COGO tools variant by the 'angle symbol icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
-    2. In the COGO tool variant overlay use the same data entry method as outlined in the [XYZ Paramaters COGO tools variant](#adding-point-using-xyz) to enter the origin location from which you want to offset by a distance and relative-north angle measurement.
+    2. In the COGO tool variant overlay use the same data entry method as outlined in the [XYZ Paramaters COGO tools variant](#point-by-xyz) to enter the origin location from which you want to offset by a distance and relative-north angle measurement.
     3. Set the distance and the bearing relative to north to where the feature should be added.
         *(Note: If your target layer supports Z-dimensions, an **Elevation** offset parameter will also be available).*
     4. The original location will be drawn as connected by virtual dashed line to where a green point indicates the exact location of where the new feature may be added.
