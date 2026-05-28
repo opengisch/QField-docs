@@ -57,6 +57,8 @@ In general, there are multiple options how to create a QFieldCloud project:
 
         ![Project files over view in QFieldCloud](../../assets/images/project_organization_10_files_overview_in_cloud.png)
 
+    ![type:video](../../assets/videos/creating_empty_project_from_qfc.webm)
+
 
 ## Cloning Projects
 
@@ -117,3 +119,5 @@ curl --location 'https://app.qfield.cloud/api/v1/projects/' \
 
 !!! note
     The seed object is optional and only accepts the extent field when utilizing the clone functionality.
+
+![type:video](../../assets/videos/clonning_projects_in_qfc.webm)
