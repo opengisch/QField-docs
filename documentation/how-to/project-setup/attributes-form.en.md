@@ -190,6 +190,7 @@ To enable this functionality, however, you require a second plugin [Ordered Rela
 
     !![QField](../../assets/images/ordered_relation_widget.webp,400px)
 
+
 ### Gallery Relation Editor
 
 QField automatically upgrades the standard relation editor widget to a **Gallery Relation Editor** for any parent-child relationship where the child layer is set to the *Attachment*  widget.
