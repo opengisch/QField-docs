@@ -389,6 +389,40 @@ This is useful when certain attributes are only required under certain condition
 
     !![](../../assets/images/conditional_visibility.webp,300px)
 
+## Conditional Row Styling
+:material-monitor: Desktop preparation
+
+QField supports QGIS's conditional row styling, providing immediate visual feedback when browsing features via list views (such as identify results or relation lists). You can use expressions to dynamically change the background color, text color, and font properties (italic, underline, strikeout) of individual items in the feature list based on their data.
+
+!!! note
+    QField currently supports **full row** styling only.
+
+!!! Workflow
+
+    **Configuring Conditional Row Styling in [QGIS](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/attribute_table.html#formatting-of-table-cells-using-conditions):**
+
+    1. Open your project in QGIS.
+    2. Right-click on your vector layer in the layers panel and click on **Open Attribute table** then click the **Conditional Formatting** button.
+    3. At the top of the Conditional Formatting panel, switch to the **Full row** tab.
+    4. Click the **New Rule** button.
+    5. Enter an expression that evaluates to true or false (e.g., `"status" IS 'Good'`).
+    6. Configure your desired visual cues:
+        - **Background color**
+        - **Text color**
+        - **Font styles** (Italic, Underline, Strikeout)
+    7. Click **Done** to save the rule. You can add multiple rules to a single layer.
+    8. Save your QGIS project and synchronize it to QField.
+
+    !![](../../assets/images/row_conditional_formatting_qgis.png)
+
+:material-tablet: Fieldwork
+
+When you open your project in QField and navigate to a feature list
+(e.g., by tapping on the map to identify features or the full list by using "Show features list" from the [Map legend](../qfield-interface/map-interaction.md#map-legend)),
+the items will automatically adopt the background, colors, and font styles defined by your conditional formatting rules.
+
+!![](../../assets/images/row_conditional_formatting_qfield.png)
+
 
 ## Define Constraints
 :material-monitor: Desktop preparation
