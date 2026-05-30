@@ -14,7 +14,5 @@ These sample projects demonstrate various field data collection workflows and QF
 
 Click the buttons below to download the sample project archives:
 
-[Bee Farming Sample Project :material-bee:](../assets/projects/bee_farming_project.zip){ .md-button }
-[Wastewater Management Sample Project :material-bee-flower:](../assets/projects/wastewater_management_project.zip){ .md-button }
-
-You can also explore the sample projects directly in the [QField GitHub repository](https://github.com/opengisch/QField/tree/master/resources/sample_projects).
+[Bee Farming Sample Project :material-bee:](http://qfield.org/sample-projects/bees.zip){ .md-button }
+[Wastewater Management Sample Project :material-bee-flower:](http://qfield.org/sample-projects/wastewater.zip){ .md-button }
