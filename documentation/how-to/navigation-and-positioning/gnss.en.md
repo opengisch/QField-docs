@@ -1,58 +1,103 @@
 ---
-title: Positioning (GNSS)
+title: All about GPS, GNSS and NTRIP
 tx_slug: documentation_how-to_gnss
 ---
 
 # Positioning (GNSS)
 
-QField can make use of the internal GNSS (Global Navigation Satellite
-System, like GPS, GLONASS, Galileo or Beidou). QField can also connect
-to external antennas through NMEA streams over Bluetooth, TCP, or UDP
-connection.
+QField is capable to show your live position using several sources:
 
-GNSS devices are also capable of measuring the altitude next to the current 2D
-position on the earth surface.
+- Either by using the internal GNSS (Global Navigation Satellite System, like GPS, GLONASS, Galileo or Beidou) of your mobile device (typically 5 m accuracy) or
+- Through an external antenna through NMEA streams over Bluetooth, TCP, or UDP connection. (typically 1.5 m accuracy) or
+- Through an external antenna connected to an additional NTRIP service (down to cm accuracy)
+
+!!! Tip
+
+    Depending on your technical domain, it is advisable to make use of an external antenna, given that the known limitation of a mobile device is around 5 meters.
+    Furthermore, an external antenna is also able to measure the altitude next to the current 2D position on the earth surface.
 
 ## Visualization
 
-When positioning is activated, your position will be shown in blue on the map.
-Your location is visible either as a blue dot if you are still or as an arrow indicating your movement direction
-if you are moving.
+When positioning is enabled, your position will be shown in blue on the map.
+Your location is represented by a blue dot when you are not moving and by an arrow indicating your movement direction if you are moving.
 
-The blue beam indicates the current orientation of your device if the device has
-a builtin magnetic compass.
+The blue beam indicates the current orientation of your device if the device has a builtin magnetic compass.
 
-A circle around your current position indicates the precision as reported by the
-positioning device.
+A shaded circle around your current position indicates the precision as reported by the GPS in use.
 
 ## Configuration
 
 The following settings are available in QField settings' positioning tab.
 
+!!! Workflow
+
+    1. Open the side dashboard and click on the 3-dotted menu
+    2. Tap on settings and switch to the *Positioning* tab
+
+### Enable NTRIP Corrections
+
+If you have access to an  RTK Service, QField can act as a RTK Client if you add the essential information under the settings.
+
+!!! Workflow
+
+    **Connect to external GPS Device**
+
+    1. Enable bluetooth and connect to your external GPS Device
+    2. In QField connect to that antenna by adding it to your selection of positioning devices
+    3. Once connected, toggle the switch
+    !![](../../assets/images/GNSS_NTRIP_configuration.png, 300px)
+    4. Click on the settings button next to the switch and add your NTRIP Service information
+    !![NTRIP Settings](../../assets/images/GNSS_NTRIP_configuration_settings.png, 300px)
+    5. Once added click on the arrow and ensure that the NTRIP correction is working as expected (indicated by incoming and outgoing arrows)
+    !![RTK connected](../../assets/images/GNSS_NTRIP_configuration_inuse.png, 300px)
+
+    **NOTE**: If you enable your position information in the settings you can see the established connection.
+
+
+### Show position information
+
+You can lock the crosshair to your position (meaning you will record a point or vertex exactly at your location).
+Depending on your preference you may choose between three different behaviours as indicated below:
+
+!![Behaviour when locked to the position](../../assets/images/position_behaviour.png, 800px)
+
+- **Follow position only:** The map canvas will stay as it is
+- **Follow position and compass orientation:** The map canvas will rotate in such a way that your compass always points towards the top of your screen
+- **Follow position and your movement direction:** The map will always rotate in the way of your movement direction
+
+!!! Workflow
+
+     1. Turn on your positioning
+     2. Tap on the crosshair to follow your position
+
 ### Measure (M) value
 
-When digitizing a geometry onto a vector layer that contains an M dimension,
-QField will add a measurement value to individual vertices whenever the
-coordinate cursor is locked to the current position.
+When digitizing a geometry onto a vector layer that contains an M dimension, QField will add a measurement value to individual vertices whenever the coordinate cursor is locked to the current position.
 
-By default, the value will represent the captured position's timestamp (milliseconds
-since epoch). You can change this value using the combo box in the settings'
-positioning tab.
+By default, the value will represent the captured position's timestamp (milliseconds since epoch).
+You can change this value using the combo box in the settings' positioning tab.
 
-The available values to chose from are timestamp, ground speed, bearing, horizontal
-accuracy and vertical accuracy as well as PDOP, HDOP and VDOP.
+The available values to chose from are.
+
+- timestamp
+- ground speed
+- bearing
+- horizontal and vertical accuracy
+- PDOP, HDOP and VDOP
 
 ### Accuracy requirement
 
-A minimum desired accuracy for measurements can be defined. The quality
-will be reported in three classes, bad (red), ok (yellow) and excellent
-(green). These colors will show up as a dot on top of the GNSS button.
+A minimum desired accuracy for measurements can be defined.
+The quality will be reported in three classes, bad (red), ok (yellow) and excellent (green).
+These colors will show up as a dot on top of the GNSS button.
+
+!![](../../assets/images/gnss_accuracy_threshold_status.png, 200px)
 
 The thresholds can be defined in the settings' positioning tab.
 
-If the *Enable accuracy requirement* setting is activated, you will not
-be able to collect new measurements with the coordinate cursor locked to
-the current position with an accuracy value which is bad (red).
+!!! Note
+
+    If the ***Enable accuracy requirement*** setting is activated, you will not be able to collect new measurements with the coordinate cursor locked to the current position with an accuracy value which is bad (red).
 
 ### Antenna height compensation
 
@@ -61,17 +106,13 @@ Any measured altitude will be corrected by this value.
 
 ### Altitude correction / vertical grid shift
 
-Altitude values can be corrected with vertical grid shift files to
-calculate orthometric height.
+Altitude values can be corrected with vertical grid shift files to calculate orthometric height.
 
-Vertical grid shift files have to be made available to QField by putting
-them into the QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
+Vertical grid shift files have to be made available to QField by putting them into the QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
 
-Once the grid shift file is placed there, it is available in QField in
-the *Positioning settings* under *Vertical grid shift in use*.
+Once the grid shift file is placed there, it is available in QField in the *Positioning settings* under *Vertical grid shift in use*.
 
-If you are using altitude correction and an external positioning device
-is used, consider turning *Use orthometric altitude from device* off.
+If you are using altitude correction and an external positioning device is used, consider turning *Use orthometric altitude from device* off.
 
 The formats currently supported are:
 
@@ -79,7 +120,6 @@ The formats currently supported are:
 - NOAA Vertical Datum (.gtx)
 - NTv2 Datum Grid Shift (.gsb)
 - Natural Resources Canada's Geoid (.byn)
-
 
 !!! Workflow
 
@@ -204,7 +244,7 @@ This applies for longitude, latitude and altitude.
     This will save the coordinate directly in the field when adding a new feature.
 
     !!! Note
-        This only works if positioning is turned on.
+        This only works if positioning is turned on and when you have locked your position to your crosshair.
 
 ### Vertex log layer
 
@@ -234,7 +274,7 @@ The breakdown of connections support by platform is as follow:
 
 |             | :material-android: Android | :material-apple: iOS | :material-microsoft-windows: Windows | :material-linux: Linux | :material-apple: MacOS |
 |-------------|----------------------------|----------------------|--------------------------------------|------------------------|------------------------|
-| Bluetooth   | :material-check:           |                      | *                                    | :material-check:       | :material-check:       |
+| Bluetooth   | :material-check:           | :material-check:     |                                      | :material-check:       | :material-check:       |
 | TCP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
 | UDP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
 | Serial port | :material-check:           |                      | :material-check:                     | :material-check:       | :material-check:       |
