@@ -57,6 +57,8 @@ In general, there are multiple options how to create a QFieldCloud project:
 
         ![Project files over view in QFieldCloud](../../assets/images/project_organization_10_files_overview_in_cloud.png)
 
+    ![type:video](../../assets/videos/creating_empty_project_from_qfc.webm)
+
 
 ## Cloning Projects
 
@@ -73,6 +75,18 @@ When you clone a project, QFieldCloud creates a brand new project and duplicates
 
 The newly cloned project is completely independent.
 Any subsequent changes, file uploads, or data collection done within the cloned project will not affect the original source project.
+
+!!! Workflow
+
+    1. On your QFieldCloud landing page click on the three dots next to the project that you wish to clone.
+    2. Choose an alternative name to your original project.
+    3. Add the parameters and configuration settings you would like.
+    4. At the bottom zou have to select the project extent for which you would like to clone the project.
+    5. Once done, click "Create"
+
+    ![type:video](../../assets/videos/clonning_projects_in_qfc.webm)
+
+
 
 ### Overriding Project Parameters
 
