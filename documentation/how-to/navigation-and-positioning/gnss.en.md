@@ -274,7 +274,7 @@ The breakdown of connections support by platform is as follow:
 
 |             | :material-android: Android | :material-apple: iOS | :material-microsoft-windows: Windows | :material-linux: Linux | :material-apple: MacOS |
 |-------------|----------------------------|----------------------|--------------------------------------|------------------------|------------------------|
-| Bluetooth   | :material-check:           |                      | *                                    | :material-check:       | :material-check:       |
+| Bluetooth   | :material-check:           | :material-check:     |                                      | :material-check:       | :material-check:       |
 | TCP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
 | UDP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
 | Serial port | :material-check:           |                      | :material-check:                     | :material-check:       | :material-check:       |
