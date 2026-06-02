@@ -79,7 +79,7 @@ nav:
           - how-to/project-setup/attributes-form.md
           - how-to/project-setup/relation-reference-widget.md
           - how-to/project-setup/storage.md
-          - how-to/project-setup/hiding-legend-nodes.md
+          - how-to/project-setup/data_sources_and_project_paths.md
           - how-to/project-setup/pg-service.md
           - how-to/project-setup/pictures.md
       - QField Interface:
