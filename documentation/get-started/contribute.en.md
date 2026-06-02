@@ -1,5 +1,5 @@
 ---
-title: Support the QField Project
+title: Support the QField project
 tx_slug: documentation_get-started_contribute
 ---
 

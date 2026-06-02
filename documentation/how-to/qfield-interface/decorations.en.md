@@ -1,5 +1,5 @@
 ---
-title: Map Decorations
+title: Map decorations
 tx_slug: documentation_how-to_decorations
 ---
 

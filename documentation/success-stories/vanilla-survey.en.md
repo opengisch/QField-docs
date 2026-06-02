@@ -1,5 +1,5 @@
 ---
-title: Vanilla Surveys
+title: Vanilla surveys
 tx_slug: documentation_success-stories_vanilla-survey
 ---
 

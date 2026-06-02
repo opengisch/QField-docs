@@ -1,5 +1,5 @@
 ---
-title: Success Stories
+title: Success stories
 tx_slug: documentation_success-stories_index
 ---
 

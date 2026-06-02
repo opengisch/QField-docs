@@ -1,5 +1,5 @@
 ---
-title: System Documentation
+title: System documentation
 tx_slug: documentation_reference_qfieldcloud_system
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Get Started
-long_title: Get Started with QFieldCloud
+title: Get started
+long_title: Get started with QFieldCloud
 tx_slug: documentation_get-started_tutorials_get-started-qfc
 ---
 # Get started with QFieldCloud
@@ -52,7 +52,7 @@ In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS. The 
         After successful installation, a new toolbar appears:
         !![Toolbar](../../assets/images/qfieldsync_toolbar.png,200px)
     3. Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar and a new login screen will appear:
-        !![](../../assets/images/qfieldsync_directly_uploading_localized_dataset.png, 250 px)
+        !![](../../assets/images/qfieldsync_login_dialog.png, 250 px)
     4. Enter your credentials previously created during account registration.
 
 !!! Warning
@@ -64,7 +64,7 @@ The projects overview shows the different projects that your account has access 
 The screen is arranged the following way:
 
 - Current user underlined in blue
-- A logout button at the bottom left
+- A logout button by clicking the avatar image.
 - A cloud button to create a new project
 - A refresh button on the right to refresh your project overview to the current stage.
 

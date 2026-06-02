@@ -1,5 +1,5 @@
 ---
-title: Plans and Additional Storage
+title: Plans and additional storage
 tx_slug: documentation_get-started_storage_qfieldcloud
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL Databases
+title: PostgreSQL databases
 tx_slug: documentation_how-to_pg-service
 ---
 # Working with PostgreSQL

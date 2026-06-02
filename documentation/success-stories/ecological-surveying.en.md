@@ -1,5 +1,5 @@
 ---
-title: Improving Efficiencies in Ecological Surveying
+title: Improving efficiencies in ecological surveying
 tx_slug: documentation_success-stories_ecological-surveying
 ---
 
