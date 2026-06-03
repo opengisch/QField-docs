@@ -16,6 +16,12 @@ QField is capable to show your live position using several sources:
     Depending on your technical domain, it is advisable to make use of an external antenna, given that the known limitation of a mobile device is around 5 meters.
     Furthermore, an external antenna is also able to measure the altitude next to the current 2D position on the earth surface.
 
+!!! Note
+
+    QField always stores coordinates in the coordinate system EPSG:4326 regardless of the layer having a different CRS set in QField.
+    This also applies when your external GNSS Devices is set to a different CRS.
+    This may lead to displacements of your data, if you are not careful.
+
 ## Visualization
 
 When positioning is enabled, your position will be shown in blue on the map.
