@@ -234,6 +234,7 @@ When you then open a note in QField, you can add and browse multiple photos, vid
     4. Open the parent layer's **Properties** > **Attributes Form** and add the relation to the form layout.
 
     When opening the parent form in QField, the relation will automatically render as the interactive media gallery.
+    !![Photo Gallery](../../assets/images/widget_gallery.webp,300px)
 
 
 ## Value Map Widget Configuration
@@ -477,6 +478,8 @@ For QFieldCloud users, two variables can be used in expressions including attrib
 
 - `@cloud_username` which returns the  name of the currently logged in QFieldCloud user.
 - `@cloud_useremail` which returns the email address of the currently logged in QFieldCloud user.
+
+You can also use these two variables for driving your map canvas symbology and your the attribute forms for example for conditional visbility.
 
 !!! Examples
 
