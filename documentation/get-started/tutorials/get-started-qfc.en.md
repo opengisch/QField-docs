@@ -64,7 +64,7 @@ The projects overview shows the different projects that your account has access 
 The screen is arranged the following way:
 
 - Current user underlined in blue
-- The Nyuki avartar on the top right leading to the sign out page.
+- The avatar on the top right leading to the sign out page.
 - A cloud button to create a new project
 - A refresh button on the right to refresh your project overview to the current stage.
 
