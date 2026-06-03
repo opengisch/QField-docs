@@ -1,5 +1,5 @@
 ---
-title: Supported Data Formats
+title: Supported data formats
 tx_slug: documentation_reference_data-format
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Heritage Impact Assessment
+title: Heritage impact assessment
 tx_slug: documentation_success-stories_heritage-impact-assessment
 ---
 

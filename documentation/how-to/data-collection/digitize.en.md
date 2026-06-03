@@ -1,5 +1,5 @@
 ---
-title: Digitize and Edit
+title: Digitize and edit
 tx_slug: documentation_how-to_digitize
 ---
 

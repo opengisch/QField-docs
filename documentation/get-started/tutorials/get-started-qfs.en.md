@@ -1,6 +1,6 @@
 ---
 title: QFieldSync - Cable packaging
-long_title: Get Started with QFieldSync Offline
+long_title: Get started with QFieldSync offline
 tx_slug: documentation_get-started_tutorials_get-started-qfs
 ---
 
