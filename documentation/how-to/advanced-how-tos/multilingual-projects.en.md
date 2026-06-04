@@ -1,5 +1,5 @@
 ---
-title: Multilingual Project Support
+title: Multilingual project support
 tx_slug: documentation_how_to_multiligual_project_support
 ---
 

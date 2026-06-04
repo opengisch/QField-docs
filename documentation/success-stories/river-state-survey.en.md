@@ -1,5 +1,5 @@
 ---
-title: River State Survey
+title: River state survey
 tx_slug: documentation_success-stories_river-state-survey
 ---
 

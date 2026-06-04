@@ -1,5 +1,5 @@
 ---
-title: Relation Reference Widget
+title: Relation Reference widget
 tx_slug: documentation_how-to_relation-reference-widget
 ---
 

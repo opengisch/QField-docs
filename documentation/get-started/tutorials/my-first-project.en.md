@@ -12,7 +12,7 @@ As an alternative if you are familiar with the XLSForm standard  and want to re-
 
 ## Step-by-step Example
 
-**Used case**
+**Use case**
 
 !![Maya Mielena](../../assets/images/maya_waving.gif, 100px)
 

@@ -1,5 +1,5 @@
 ---
-title: Ground Truth Data Collection
+title: Ground truth data collection
 tx_slug: documentation_success-stories_lulc-mapping-fiji
 ---
 

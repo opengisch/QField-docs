@@ -1,5 +1,5 @@
 ---
-title: Processing Algorithms
+title: Processing algorithms
 tx_slug: documentation_how-to_processing
 ---
 
