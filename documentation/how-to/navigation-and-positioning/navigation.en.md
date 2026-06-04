@@ -110,3 +110,5 @@ Within this menu, you can configure:
     - *Compass:* The dial rotates dynamically using your device's internal magnetic compass.
     - *Movement:* The dial uses GNSS-derived heading calculations. This orientation method is gated at a minimum speed threshold of **0.8 km/h** to filter out stationary noise and jitter. When you stand still, the dial freezes cleanly at your last valid heading. Devices lacking native speed tracking data automatically fall back to standard heading validity flags.
 - **Precision Picker:** You can choose your position threshold.
+
+![type:video](../../assets/videos/navigation_overview.mp4)
