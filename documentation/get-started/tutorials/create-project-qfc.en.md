@@ -36,7 +36,7 @@ downloading them to your desktop environment for further styling later.
         ![Template Project](../../assets/images/project_organization_03_template.png)
 
     5. Click **Create** at the bottom right.
-    The completed skeleton will populate on your profile's project dashboard.
+    The completed skeleton will populate on your profile's project overview files.
 
 ### Option 2: Create from an XLSForm Spreadsheet (Web UI Upload)
 :material-web: Web Interface
@@ -61,7 +61,7 @@ For deployment workflows relying on spreadsheets for [form configuration](https:
 !!! important
 
     If the submitted spreadsheet contains structural syntax errors or broken expression references, the background creation job will automatically safe-abort to prevent corruption.
-    The project generation status will display an `UNABLE_TO_CONTINUE` error code on the backend log dashboard, exposing a humanized chain-of-cause error output text file explaining which row or element caused the compilation failure.
+    The project generation status will display an `UNABLE_TO_CONTINUE` error code on the Job log, exposing the cause of error on the output logs explaining which row or element caused the compilation failure.
 
 ### Option 3: Clone an Existing Project
 :material-web: Web Interface
@@ -135,7 +135,7 @@ If you have already built a personal project on the cloud and need to transfer t
 
 !!! Workflow
 
-    1. Open the project dashboard via the web page and select the **Settings** menu.
+    1. Open the project overview via the web page and select the **Settings** menu.
     2. Scroll to the actions zone and select **"Transfer ownership of this project"**.
     3. Select your target organization destination from the lookup selection drop-down.
     4. Type the requested text confirmation exactly as written into the confirmation popup dialog box and click **Transfer project**.
