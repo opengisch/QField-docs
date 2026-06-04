@@ -18,7 +18,7 @@ QField is capable to show your live position using several sources:
 
 !!! Note
 
-    QField requires external GNSS devices to output their position in EPSG:4326. 
+    QField requires external GNSS devices to output their position in EPSG:4326.
     Support for customized CRSes is not possible.
     This may lead to displacements of your data, if you are not careful.
 
