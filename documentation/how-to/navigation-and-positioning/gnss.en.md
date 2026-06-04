@@ -18,8 +18,8 @@ QField is capable to show your live position using several sources:
 
 !!! Note
 
-    QField always stores coordinates in the coordinate system EPSG:4326 regardless of the layer having a different CRS set in QField.
-    This also applies when your external GNSS Devices is set to a different CRS.
+    QField requires external GNSS devices to output their position in EPSG:4326. 
+    Support for customized CRSes is not possible.
     This may lead to displacements of your data, if you are not careful.
 
 ## Visualization
