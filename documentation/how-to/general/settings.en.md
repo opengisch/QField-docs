@@ -1,5 +1,5 @@
 ---
-title: QField General Settings
+title: QField general settings
 tx_slug: documentation_get-started_settings
 ---
 

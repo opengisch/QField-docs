@@ -1,5 +1,5 @@
 ---
-title: Need Help?
+title: Need help?
 tx_slug: documentation_get-started_support
 ---
 

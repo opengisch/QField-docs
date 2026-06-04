@@ -1,5 +1,5 @@
 ---
-title: QFieldCloud Django Administration
+title: QFieldCloud Django administration
 tx_slug: documentation_reference_qfieldcloud_django_administration
 ---
 

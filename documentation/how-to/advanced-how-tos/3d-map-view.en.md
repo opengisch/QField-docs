@@ -1,5 +1,5 @@
 ---
-title: 3D Map View
+title: 3D Map view
 tx_slug: documentation_how-to_3d-map-view
 ---
 

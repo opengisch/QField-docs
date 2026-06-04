@@ -1,5 +1,5 @@
 ---
-title: Create new Project in QField
+title: Create new project in QField
 tx_slug: documentation_how-to_create-project
 ---
 

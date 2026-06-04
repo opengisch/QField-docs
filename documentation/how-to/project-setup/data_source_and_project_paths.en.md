@@ -1,5 +1,5 @@
 ---
-title: Data Source & project paths
+title: Data Source and project paths
 tx_slug: documentation_how-to_hiding-legend-nodes
 ---
 

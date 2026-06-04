@@ -1,5 +1,5 @@
 ---
-title: Expression Variables
+title: Expression variables
 tx_slug: documentation_reference_expression_variables
 ---
 

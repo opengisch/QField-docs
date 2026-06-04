@@ -1,5 +1,5 @@
 ---
-title: COGO Framework - Coordinate Geometry
+title: COGO Framework - Coordinate geometry
 tx_slug: documentation_how-to-cogo-framework
 ---
 

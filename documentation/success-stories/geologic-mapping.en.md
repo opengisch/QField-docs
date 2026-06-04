@@ -1,5 +1,5 @@
 ---
-title: Geologic Mapping
+title: Geologic mapping
 tx_slug: documentation_success-stories_geologic-mapping
 ---
 

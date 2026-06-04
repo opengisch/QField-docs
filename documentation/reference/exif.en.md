@@ -1,5 +1,5 @@
 ---
-title: EXIF Data
+title: EXIF data
 tx_slug: documentation_reference_exif
 ---
 
