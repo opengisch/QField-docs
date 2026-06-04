@@ -8,11 +8,11 @@ tx_slug: documentation_get-started_tutorials_create-project-qfc
 There are multiple options available to initialize and build a project in QFieldCloud:
 
 - [Using QGIS](my-first-project.md)
-- Using QFieldCloud (any method from bellow)
+- [Using QFieldCloud](#creating-projects)
 - [Directly from QField](../../how-to/project-setup/create-project.md)
+## Creating Projects
 
-
-## Option 1: Initialize via Web UI (Blank or Basemap Template)
+### Option 1: Initialize via Web UI (Blank or Basemap Template)
 :material-web: Web Interface
 
 You can provision empty map spaces or simple localized maps directly from the QFieldCloud,
@@ -20,7 +20,7 @@ downloading them to your desktop environment for further styling later.
 
 !!! Workflow
 
-    1. Log into your QFieldCloud landing page.
+    1. Direct to your QFieldCloud landing page.
     2. Click the **Create project** button.
 
         !![](../../assets/images/project_organization_01_landing_page.png)
@@ -29,19 +29,19 @@ downloading them to your desktop environment for further styling later.
         conflict resolution parameters, and project file safety restrictions.
     4. Pick your initialization template configuration:
 
-        - **Create an empty project:** Sets up a clean project folder environment without base imagery layers.
+        - **Create an empty project:** Sets up a clean project folder environment without a basemap.
         - **Use a basic template:** Allows you to bundle a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL)
             and customize your target workspace boundaries by selecting a coordinates bounding box via the **Project extent map window**.
 
         ![Template Project](../../assets/images/project_organization_03_template.png)
 
-    5. Click **Create** at the bottom right. The completed skeleton will populate on your profile's project dashboard.
+    5. Click **Create** at the bottom right.
+    The completed skeleton will populate on your profile's project dashboard.
 
-## Option 2: Create from an XLSForm Spreadsheet (Web UI Upload)
+### Option 2: Create from an XLSForm Spreadsheet (Web UI Upload)
 :material-web: Web Interface
 
-For deployment workflows relying on spreadsheets for [form configuration](https://xlsform.org/),
-QFieldCloud can compile tabular data collection forms directly into structurally complete QGIS projects containing relational data schemas.
+For deployment workflows relying on spreadsheets for [form configuration](https://xlsform.org/), QFieldCloud can compile tabular data collection forms directly into complete QGIS projects containing relational data schemas.
 
 !!! note
 
@@ -50,30 +50,25 @@ QFieldCloud can compile tabular data collection forms directly into structurally
 
 !!! Workflow
 
-    1. Navigate to the **Create project** section within the QFieldCloud Web interface.
+    1. Click on **Create project** from your QFieldCloud landing page.
     2. Complete the project metadata fields (Name, Extent) and click **Create**.
-    3. Chose "Use a basic template" options, and locate the **XLSForm file upload input**.
-    4. Choose your spreadsheet template file and press the "Create" button.
+    3. Chose "Use a basic template" option, and locate the **XLSForm file upload input**.
+    4. Choose your spreadsheet template file and press the **Create** button.
 
+    QFieldCloud will process the form so that you end up with a fully functioning **Survey** layer with the corresponding survey configurations (drop-down lists, radio buttons, manual text edit).
     !![](../../assets/images/qfc_xlsform_project_creation.png)
-
-QFieldCloud will launch a background worker Job to parse the spreadsheet schema rows, map the variables,
-and generate a fully functional **Survey** layer alongside any required selection drop-down lookups.
 
 !!! important
 
-    If the submitted spreadsheet contains structural syntax errors or broken expression references,
-    the background creation job will automatically safe-abort to prevent corruption.
-    The project generation status will display an `UNABLE_TO_CONTINUE` error code on the backend log dashboard,
-    exposing a humanized chain-of-cause error output text file explaining which row or element caused the compilation failure.
+    If the submitted spreadsheet contains structural syntax errors or broken expression references, the background creation job will automatically safe-abort to prevent corruption.
+    The project generation status will display an `UNABLE_TO_CONTINUE` error code on the backend log dashboard, exposing a humanized chain-of-cause error output text file explaining which row or element caused the compilation failure.
 
-## Option 3: Clone an Existing Project
+### Option 3: Clone an Existing Project
 :material-web: Web Interface
 
-Project cloning allows you to duplicate existing active setups to act as templates for alternative workspace regions,
-distinct fieldwork teams, or new seasonal collection campaigns.
+Project cloning allows you to duplicate existing active setups to act as templates for alternative workspace regions, distinct fieldwork teams, or new seasonal collection campaigns.
 
-### How Cloning Works
+#### How Cloning Works
 
 Cloning creates an isolated, completely independent project space, cleanly replicating:
 - The base QGIS mapping project file (`.qgs` or `.qgz`).
@@ -133,10 +128,10 @@ curl --location 'https://app.qfield.cloud/api/v1/projects/' \
 !!! note
     The seed object is optional and only accepts the extent field when utilizing the clone functionality.
 
-## Option 5: Change the Ownership of a Project
+## Option 4: Change the Ownership of a Project
 :material-web: Web Interface
 
-If you have already built a personal project on the cloud and need to distribute it to a corporate workspace, you can transfer the repository ownership directly.
+If you have already built a personal project on the cloud and need to transfer the ownership to a different user or organization, you can change the project ownership directly under the project's settings page.
 
 !!! Workflow
 
