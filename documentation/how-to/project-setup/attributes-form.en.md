@@ -133,110 +133,6 @@ In Wizard Mode, the standard top-right "Save" button is hidden.
 
 For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) section in the QGIS documentation. <!-- markdown-link-check-disable-line -->
 
-To further control the visibility and number of related items shown in QField, see the instructions for configuring [Maximum items visibility for QField.](../../get-started/tutorials/get-started-qfs.md#additional-properties)
-
-!![](../../assets/images/relation_editor_widget_list.png)
-
-The relation widget shows all the referencing child features in a list.
-If enabled, it is possible to add, delete and open them.
-
-The visual identification of the list entries is done via the **Display Expression** of the child layer.
-
-### Key handling
-
-Since the parent primary key is used as foreign key in the referencing child features, the primary key must be safe to use (it must be unique) also after synchronizing back to the desktop.
-Therefore we always recommend to use UUIDs as primary keys.
-See [Working with GeoPackages](../../get-started/tutorials/advanced-setup-qfc.md#working-with-geopackages) for further information.
-
-You can already add children from a parent that is about to be added.
-This option will be blocked if there is no valid primary key on the parent or the constraints are violated.
-In case the adding of the parent feature is canceled after some children have been added already, the children are deleted as well.
-
-### Many-To-Many relations
-
-On many-to-many relationships, according to the cardinality setting in the QGIS Vector Layer *Properties...*, on adding, deleting or opening an
-entry in the list effects directly the child layer (on direct cardinality) or the linking table (on many-to-one cardinality).
-
-The second case is usually used when there are additional relation information (e.g. percentage) in the linking table.
-
-!![](../../assets/images/relation_widget_cardinality.png)
-
-In case of the many-to-one cardinality on many-to-many relations the *Display Expression* needs to be set on the linking table.
-
-### Ordered Relation
-
-If required you can reorder linked child features based on a field by selecting the **Ordered Relation Editor** from the widget type options.
-To enable this functionality, however, you require a second plugin [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) <!-- markdown-link-check-disable-line -->
-
-!!! Workflow
-
-    1. Install the Plugin [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) plugin from the official repository or through the "Plugin Manager" in QGIS.
-
-    2. Open the Vector Layer *Properties...* > *Attributes Form* and set the layout editor to **Drag and Drop Designer**.
-
-    3. Click on the relationship of your available widgets.
-
-    4. On the right under "Widget Display" scroll down to the "Widget Type option and  select **Ordered Relation Editor**.
-
-    5. Configure the widget using the following settings:
-
-    - **Ordering Field**: Specify the field in the child layer that will be used to determine the order of the features.
-
-    - **Description**: Define an expression to be displayed for each child feature in the list.
-
-    - **Image Path (Optional)**: Provide a path to an image or icon to visually enhance the list. This is an expression that resolves dynamically.
-
-    !![Widget configuration in QGIS](../../assets/images/ordered_relation_widget_configuration.png)
-
-    !![QField](../../assets/images/ordered_relation_widget.webp,400px)
-
-
-### Gallery Relation Editor
-
-QField automatically upgrades the standard relation editor widget to a **Gallery Relation Editor** for any parent-child relationship where the child layer is set to the *Attachment*  widget.
-
-This provides a highly visual, media-centric experience for browsing and managing related photos, videos, and audios directly from the parent feature's form.
-
-**Key Features:**
-
-- **Grid and List Views:** Toggle between a large-thumbnail grid view (perfect for browsing photos) and a compact list view using the switch at the bottom of the widget.
-
-- **Dynamic Media Previews:**
-    - *Images:* Displayed as thumbnails.
-    - *Videos:* Automatically play a muted, short preview.
-    Tapping the thumbnail allows you to play/pause the video.
-    - *Audio:* Generates a real-time, dynamic audio waveform bar preview based on the actual audio file's peaks.
-
-- **On-Demand Downloads:** If an attachment is not stored locally on your device,
-    QField will display a loading indicator and automatically attempt to fetch the file from QFieldCloud or your configured External Storage (e.g., WebDAV).
-    Ensure your device has an active internet connection if your project relies on remote external storage.
-
-- **Interacting with Media:** Tap on any media card's background to open the standard feature form for that specific child record, or tap the three-dot menu *(⋮)* to access specific actions like copying attributes.
-
-**Multi-Attachment Project creation Notes:**
-
-If you create a project from QField directly to digitize your notes (with "Take image and video attachments"), QField automatically creates an attachments field that links to a child layer.
-These are related through a unique UUID.
-When you then open a note in QField, you can add and browse multiple photos, videos, or audio recordings attached to a single note.
-
-!!! Workflow
-
-    **Configuring the Gallery Editor in QGIS**
-
-    :material-monitor: Desktop preparation
-
-    The Gallery Relation Editor does not require a specific "Gallery" widget type in QGIS.
-    Instead, it is automatically triggered based on your form setup.
-
-    1. Open your project in QGIS and set up a standard 1:N relationship between a parent layer and a child layer.
-    2. Open the child layer's **Properties** > **Attributes Form**.
-    3. Ensure at least one field in the child layer is configured as an **Attachment** widget type.
-    4. Open the parent layer's **Properties** > **Attributes Form** and add the relation to the form layout.
-
-    When opening the parent form in QField, the relation will automatically render as the interactive media gallery.
-    !![Photo Gallery](../../assets/images/widget_gallery.webp,300px)
-
-
 ## Value Map Widget Configuration
 
 When using value maps as a widget type you can control
@@ -424,7 +320,6 @@ the items will automatically adopt the background, colors, and font styles defin
 
 !![](../../assets/images/row_conditional_formatting_qfield.png)
 
-
 ## Define Constraints
 :material-monitor: Desktop preparation
 
@@ -460,7 +355,6 @@ They are visible and can be modified as long as the field is editable.
 !!! Attention
 
     The option "Apply default value on update" should be used with care and not for fields that act as primary keys.
-
 
 ## Working with expressions
 
