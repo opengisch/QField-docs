@@ -87,6 +87,8 @@ The 3D highlights alter dynamically based on your current focus and operation st
 * **Red Highlight:** Highlights the specific feature that currently holds active UI focus.
 * **Theme Main Color:** Applied to geometries when they are explicitly marked as selected features.
 
+!![](../../assets/images/3d_feature_identification.png, 350px)
+
 ## Visualizing GNSS, Tracking
 :material-tablet: Fieldwork
 
