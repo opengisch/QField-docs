@@ -83,6 +83,7 @@ When features are queried or selected, QField highlight to your project layers' 
 
 ### Color Feedback Coding
 The 3D highlights alter dynamically based on your current focus and operation state inside the feature menu list:
+
 * **Yellow Highlight:** Standard status highlighting an identified or previewed geometry list entry.
 * **Red Highlight:** Highlights the specific feature that currently holds active UI focus.
 * **Theme Main Color:** Applied to geometries when they are explicitly marked as selected features.
