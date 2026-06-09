@@ -151,7 +151,7 @@ It is possible to retrieve invoices from previous months at the bottom of the bi
 
         ![Enter to billing section](../assets/images/discontinuing_service_02_change_subcription.png)
 
-    3. Direct to the bottom of the page.
+    3. Direct to the bottom of the page.git
     There you will find all previous and current invoices that are associated with your Personal Account or your Organization Account.
 
         !![Example of Invoice](../assets/images/qfc-storage-plans-invoice.png,400px)
