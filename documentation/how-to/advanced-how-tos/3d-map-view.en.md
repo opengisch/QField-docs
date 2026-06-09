@@ -62,20 +62,50 @@ Once it is activated, you can pan the map extent by dragging your fingers, or zo
 - **Pan Extent:** Hold the `Shift` key and drag the mouse to move the 3D map extent geographically. The 3D mesh translates in real-time for visual feedback.
 - **Zoom Extent:** Hold the `Shift` key and use the mouse scroll wheel to scale the map extent in or out around its center point.
 
+## Identifying and Highlighting Features
+:material-tablet: Fieldwork
+
+QField natively supports direct feature identification and selection highlighting inside the 3D map workspace, removing the need to switch back to the flat 2D canvas to inspect attributes or select records.
+
+### Feature Identification
+
+You can **single-tap anywhere directly on the 3D terrain** to query data.
+QField will automatically cast a ray onto the 3D surface, resolve the matching geographic coordinates, and open the standard identification tool menu. From there, you can view feature properties, execute modifications, or edit attributes on nearby points of interest seamlessly.
+
+### Selection and Highlight Geometry
+
+When features are queried or selected, QField highlight to your project layers' geometries using specific 3D shapes:
+
+* **Points:** Rendered as a distinct 3D UV sphere resting over the coordinate position.
+* **Lines:** Extruded into smooth 3D tubes connected by dimensional sphere joints.
+* **Polygons:** Outlined using 3D extruded tubes along the boundary rings, capped with sphere joints,
+    and layered with a semi-transparent horizontal fill mesh for instant boundary recognition.
+
+### Color Feedback Coding
+The 3D highlights alter dynamically based on your current focus and operation state inside the feature menu list:
+
+* **Yellow Highlight:** Standard status highlighting an identified or previewed geometry list entry.
+* **Red Highlight:** Highlights the specific feature that currently holds active UI focus.
+* **Theme Main Color:** Applied to geometries when they are explicitly marked as selected features.
+
+!![](../../assets/images/3d_feature_identification.png, 350px)
+
 ## Visualizing GNSS, Tracking
 :material-tablet: Fieldwork
 
 The 3D Map View is fully integrated with your active fieldwork tools:
 
 - **GNSS Location:** When positioning is active, your location is represented as a pulsating 3D marker draped on the terrain.
-If you are moving, this marker transforms into a directional indicator pointing in your current heading.
+    If you are moving, this marker transforms into a directional indicator pointing in your current heading.
 - **Tracking:** If you are actively recording a tracking path, the tracking line is dynamically rendered as a 3D tube following the contours of the terrain.
 
-These elements automatically conform to the 3D terrain's elevation and include visual height offsets, ensuring your location, tracks, remain visible and accurately placed within the 3D environment.
+These elements automatically conform to the 3D terrain's elevation and include visual height offsets,
+ensuring your location, tracks, remain visible and accurately placed within the 3D environment.
 
 ## 2D and 3D Extent Synchronization
 
-When you enter or close the 3D view, QField plays a smooth camera animation to transition between the flat 2D canvas and the pitched 3D perspective. QField automatically updates the 2D map's bounding box to match your newly navigated 3D extent.
+When you enter or close the 3D view, QField plays a smooth camera animation to transition between the flat 2D canvas and the pitched 3D perspective.
+QField automatically updates the 2D map's bounding box to match your newly navigated 3D extent.
 This ensures your view remains perfectly synchronized between modes.
 
 ![type:video](../../assets/videos/3D_Map_View.mp4)

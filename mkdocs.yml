@@ -113,6 +113,7 @@ nav:
           - how-to/advanced-how-tos/shared-datasets.md
           - how-to/advanced-how-tos/plugins.md
           - how-to/advanced-how-tos/multilingual-projects.md
+          - how-to/advanced-how-tos/qr-codes.md
   - Technical reference:
       - reference/index.md
       - reference/data-format.md
