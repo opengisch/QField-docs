@@ -5,7 +5,8 @@ tx_slug: documentation_qr_codes
 
 # QR Codes in QField
 
-QField can leverage QR codes in multiple ways. This page lists a couple of ways authors can leverage this to easily share their projects and plugins.
+QField can leverage QR codes in multiple ways.
+This page lists a couple of ways in which you can leverage this to easily share your projects and plugins.
 
 ## Projects
 
@@ -15,28 +16,66 @@ QR codes can be generated for users to scan them on their devices and automatica
 
 The easiest way to share a project with your co-workers or the public is through QFieldCloud.
 
-QR codes for QFieldCloud projects allow authors to automatically launch QField and immediately open a given cloud project details page where users can access information such as the title and the description as well as author information. From there, the user can immediately download and open the project.
+QR codes for QFieldCloud projects allow you to automatically launch QField and immediately open the details page of cloud project where you can access information such as the title and the description as well as the author information.
+You also can immediately download and open the project.
 
-The URI to generate a QR code to bring QField directly to a cloud project is as follow:
+!!! Workflow
 
-`qfield://cloud?project=username/project_name`
+    **Create QR Code for cloud project**
 
-Simply replace username with a QFieldCloud user account and project_name with an actual project name tied to the user account.
+    1. To generate a QR code go to the web and search for QR generator.
+    2. Choose one and switch from "website" to "text"
+    3. Enter the following:
 
-If a project is not public, the logged in QFieldCloud user account of the device scanning the QR code will determine whether a given project details and ability to download it will be offered. In addition to access and permission management functionalities offered by QFieldCloud, authors can also benefit from its synchronization abilities to keep their project up-to-date.
+                    `qfield://cloud?project=username/project_name`
+
+         Simply replace "username" with a QFieldCloud user account and "project_name" with an actual project name tied to that user account.
+
+     !![](../../assets/images/qrcode_cloud.webp)
+
+     **Note**: If the project is ***public***, it can be downloaded by any user account.
+     If the project is set to ***private*** when scanning scanning the QR code, QFieldCloud will determine whether a given project is available for download for the logged-in user.
+     In addition, to access and permission management functionalities offered by QFieldCloud, authors can also benefit from its synchronization abilities to keep their project up-to-date.
 
 ### Compressed projects uploaded on the web
 
-The importing of compressed projects uploaded on the web into QField can be simplified through QR codes. When scanning such a code, QField will launch and open a project import permission dialog.
+The importing of compressed projects uploaded on the web into QField can be simplified through QR codes.
+When scanning such a code, QField will launch and open a project import permission dialog.
 
-The URI to generate such a QR code is as follow:
+!!! Workflow
 
-`qfield://local?import=https://www.public.com/project.zip`
+    **Create QR Code for compressed projects**
 
-Simply replace the https:// part of the URI with a publicly available web hyperlink. Once imported, the project will be located in the local projects and datasets' "Imported Projects" folder.
+    1. To generate a QR code go to the web and find your preferred QR generator.
+    2. Choose one and switch from "website" to "text"
+    3. Enter the following:
+
+     `qfield://local?import=https://www.public.com/project.zip`
+
+     Simply replace the https:// part of the URI with a publicly available web hyperlink.
+     Once imported, the project will be located in the local projects and datasets' "Imported Projects" folder.
+
+     !![](../../assets/images/qrcode_local.webp)
+
+     **Note**: The hyperlink used must be directing directly to the ZIP file.
+     It will fail if it is a link to a download landing page.
 
 ## Application plugin QR codes
 
-QField's plugin manager popup allows users to install application plugins from a URL. The installation dialog has a nifty QR code button that allow for users to quickly scan a URL pointing to a compressed application plugin and install it without the need to type in anything.
+QField's comes with a plugin framework, which add additional functionalities to the app.
+You can find further information about it on the dedicated [plugin page](../advanced-how-tos/plugins.md).
+There are several ways in which plugins can be installed.
+One way is through the QR code button inside the plugin installation dialog.
 
-The QR code itself is a simple web URL pointing to a compressed application plugin file as the QR code.
+!!! Workflow
+
+    1. In QField, direct to the QField Settings by opening the Side Dashboard panel *> three-dotted menu > settings*
+    2. In the general section scroll down and open the plugin manager
+    3. Tap on *Install plugin from URL*
+    4. In the dialog, tap on the QR code button.
+    QField will install the plugin without the need to further type in anything.
+    [](../../assets/images/qrcode_plugin.png)
+
+
+    **Note**: The hyperlink used must be directing directly to the ZIP file.
+     It will fail if it is a link to a download landing page.
