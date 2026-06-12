@@ -14,7 +14,7 @@ The *browse mode* and the *digitize mode*.
 As the name suggests, while being in browse mode, you can view and select features within all identifiable layers in the project.
 It is also possible to edit attributes of existing features, by clicking on a feature of interest and opening its attribute table.
 
-!![Browse mode identify and edit](../../assets/images/browse_mode_identifyedit.png,500px)
+!![Browse mode identify and edit](../../assets/images/browse_mode_identify_and_edit.png,500px)
 
 ## Digitize Mode
 

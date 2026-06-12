@@ -41,7 +41,7 @@ There are two ways to engage with the bookmark:
     2. Tap on the 3-dotted menu *(⋮)* and select *Settings*.
     3. Direct to *general settings* and "Enable Bookmarks".
 
-        !![](../../assets/images/bookmarks-toggle.png, 800 px))
+        !![](../../assets/images/bookmarks-toggle.png, 800 px)
 
 ## Adding a new bookmark
 
@@ -54,20 +54,20 @@ There are two ways to engage with the bookmark:
      1. To add a new bookmark, simply long-press on the location on the map where you want to place the bookmark.
      2. Tap the "Add Bookmark" action within the popped up menu.
 
-        !![](../../assets/images/bookmarks-add-from-touch.png, 800px)
+        !![](../../assets/images/bookmarks-add-from-touch.png, 300px)
 
      3. Rename the bookmark and select a preferred color which will be used as a marker.
 
-        !![](../../assets/images/bookmarks-properties.png, 800 px)
+        !![](../../assets/images/bookmarks-properties.png, 800px)
 
     **Option 2: From the location pie menu**
 
     1. Tap on your current location.
     The location pie menu will automatically open.
     2. Tap on the "Bookmark" Symbol to the low right.
-    The bookmark menu will appear allowing you to write an appropriate name and assigning your desired colour
+    The bookmark menu will appear allowing you to write an appropriate name and assigning your desired color
 
-     !![](../../assets/images/pie-menu-tracking.png, 800 px)
+     !![](../../assets/images/pie-menu-bookmark.png, 300px)
 
 !!! Tip
     When adding a bookmark, the current map scale is taken into consideration to save an extent centered around the tapped coordination or current location. This allows you to determine the extent that will be used when double-tapping on a bookmark marker or selecting a bookmark item in the search bar.
