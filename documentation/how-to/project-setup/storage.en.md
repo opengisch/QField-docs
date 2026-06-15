@@ -68,10 +68,6 @@ On most devices plugged into a computer via USB cable connection, the path will 
 There, users will find both the *Imported Datasets* and *Imported Projects* folders within which the QGIS projects and datasets should be placed.
 Changes done to the project content and datasets are saved in the files found in these locations.
 
-#### Sending via Bluetooth
-
-Wireless transfer of files is also possible by [sharing files via a Bluetooth connection.](https://www.wikihow.com/Connect-Your-Android-Phone-to-a-Windows-PC-Using-Bluetooth)
-
 #### Google Drive (and other cloud storage services)
 
 The advantage of using Google Drive is that both the source device and target device have shared access to a central working directory containing the current project files.
@@ -87,6 +83,10 @@ The advantage of using Google Drive is that both the source device and target de
 !!! note
     When working with Google Drive, it may be helpful to create a dedicated folder that contains all the projects.
     An equivalent of this folder can then also be created on the target device, to which the QGIS projects can be downloaded and saved in.
+
+#### Share via Bluetooth
+
+Wireless transfer of files is also possible by [sharing files via a Bluetooth connection.](https://www.wikihow.com/Connect-Your-Android-Phone-to-a-Windows-PC-Using-Bluetooth)
 
 ### IOS
 
@@ -128,30 +128,20 @@ The only requirement is that both source and target device have to be OS and iOS
 
 Apart from using QFieldCloud, QField can open projects and datasets in five ways:
 
-* [importing a project folder](#importing-a-project-folder) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14"><!-- markdown-link-check-disable-line -->
-
-* [importing a compressed project](#importing-a-compressed-project) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"><!-- markdown-link-check-disable-line -->
-
-* [importing from a URL](#importing-from-a-url) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14"><!-- markdown-link-check-disable-line -->
-
-* **importing from a WebDAV folder**
-
-* [importing individual datasets](#importing-individual-datasets-android-only) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"><!-- markdown-link-check-disable-line -->
+* [importing a project folder](#importing-a-project-folder) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14">;<!-- markdown-link-check-disable-line -->
+* [importing a compressed project](#importing-a-compressed-project) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14">;<!-- markdown-link-check-disable-line -->
+* [importing individual datasets](#importing-individual-datasets-android-only) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14">;<!-- markdown-link-check-disable-line -->
+* [importing from a URL](#importing-from-a-url); and
+* importing from a WebDAV folder.
 
 !![QField import actions](../../assets/images/storage-import-actions.png)
 
-On **Android** all of these actions are available by clicking on the "Import (+) button" located on the bottom-right corner of the project/dataset picker screen, which can be accessed by clicking on the "Open local files" button located in QField's welcome screen.
+On **Android and iOS** all of these actions are available by clicking on the "Import (+) button" located on the bottom-right corner of the project/dataset picker screen, which can be accessed by clicking on the "Open local files" button located in QField's welcome screen.
+For Windows, macOS, and Linux, since access to storage is not as limited, only the import from URL and import from WebDAV actions are made available.
 
 !![](../../assets/images/get-started-storage-local-file-2.png)
 
-!!! note
-    On **iOS**, the only action available through the "import (+) button" is to import from a URL.
-
-
-
-### Android
-
-#### Importing a project folder
+### Importing a project folder
 
 When importing a project through the "Import project from folder" action you have to grant permission for QField to read the content of your folder on the device's storage.
 
@@ -162,40 +152,22 @@ Re-importing a given folder through the drop-down menu action will overwrite pre
     datasets, not in the original folder selected during the import process.
     See sections below on how to send/export edited projects and datasets.
 
-#### Importing a compressed project
+### Importing a compressed project
 
-On Android, it is possible to also import compressed (zipped) projects into QField.
+It is also possible to also import compressed (zipped) projects into QField.
 QField will then decompress the file into its "Imported projects" location, from which users can open and interact with the project.
 This can greatly ease remote deployment of projects by being able to send a single file to users.
 
-#### Importing from a URL
+### Importing individual datasets
 
-When importing a project or individual dataset through the "Import URL" action, you will be asked to provide a URL string to a file.
-QField will subsequently fetch the content and save it into the "Imported projects" or "Imported datasets", respectively.
-
-!![QField import URL dialog](../../assets/images/storage-import-url.png)
-
-QField will consider a ZIP archive as a compressed project when one or more `.qgs`/`.qgz` project files are detected.
-
-#### Importing individual datasets (Android only)
-
-The "Import dataset(s)" action allows you  to select one or more datasets via an Android system file picker.
+The "Import dataset(s)" action allows you  to select one or more datasets via your system file picker.
 After you selected the datasets, QField will copy those into the "Imported datasets" folder, from where you can then open and modify the content.
 
 !!! note
     Users will have to ensure that all sidecar files are selected when importing datasets (e.g. a Shapefile would require users to select the .shp, .shx, .dbf, .prj,
     and .cpg files).
 
-### iOS
-
-On iOS, installing QField creates a folder titled QField in the Files app.
-
-!!! Workflow
-
-    1. Save your packaged project in the `QField` > `Imported Projects` folder on your source device.
-    2. To open a file on your target device, press on "Open local file" on the QField home screen and navigate to `QField files directory` > `Imported Projects` and choose the project you want to open.
-
-#### Importing from a URL
+### Importing from a URL
 
 When importing a project or individual dataset through the "Import URL" action, you will be asked to provide a URL string to a file.
 QField will subsequently fetch the content and save it into the "Imported projects" or "Imported datasets", respectively.
@@ -204,14 +176,14 @@ QField will subsequently fetch the content and save it into the "Imported projec
 
 QField will consider a ZIP archive as a compressed project when one or more `.qgs`/`.qgz` project files are detected.
 
-## 4. Exporting modified projects and datasets (Android only)
+## 4. Exporting modified projects and datasets (Android and IOS)
 
 Once you are done with your fieldwork, there are four ways to sent and export the changed files back to the source device:
 
-* [by exporting a project folder or an individual dataset;](#exporting-a-project-folder-or-an-individual-dataset)
-* [by sending a compressed project folder to a {cloud, email, messenger, etc.} app;](#sending-a-compressed-project-folder)
-* [by sending an individual dataset to a {cloud, email, messenger, etc.} app;](#sending-an-individual-dataset-android-only) and
-* [by accessing imported content directly through USB cable.](#transfer-via-usb-cable)
+* [exporting a project folder or an individual dataset](#exporting-a-project-folder-or-an-individual-dataset);
+* [sending a compressed project folder to a {cloud, email, messenger, etc.} app](#sending-a-compressed-project-folder);
+* [sending an individual dataset to a {cloud, email, messenger, etc.} app](#sending-an-individual-dataset-android-only); and
+* [accessing imported content directly through USB cable](#transfer-via-usb-cable).
 
 !![QField export actions](../../assets/images/storage-export-actions.png)
 
