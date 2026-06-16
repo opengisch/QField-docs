@@ -6,7 +6,7 @@ tx_slug: documentation_qr_codes
 # QR Codes in QField
 
 QField can leverage QR codes in multiple ways.
-This page lists a couple of ways in which you can leverage this to easily share your projects and plugins.
+This page lists a couple of ways in which you can easily share your projects and plugins through these.
 
 ## Projects
 
