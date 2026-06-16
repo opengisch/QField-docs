@@ -68,7 +68,7 @@ One way is through the QR code button inside the plugin installation dialog.
 
 !!! Workflow
 
-    1. In QField, direct to the QField Settings by opening the Side Dashboard panel *> three-dotted menu > settings*
+    1. In QField,  open the plugin manager by revealing the the Side Dashboard panel *> tapping on the three-dotted menu > selecting plugin manager*
     2. In the general section scroll down and open the plugin manager
     3. Tap on *Install plugin from URL*
     4. In the dialog, tap on the QR code button.
