@@ -39,7 +39,7 @@ You also can immediately download and open the project.
 ### Compressed projects uploaded on the web
 
 The importing of compressed projects uploaded on the web into QField can be simplified through QR codes.
-When scanning such a code, QField will launch and open a project import permission dialog.
+When scanning such a code, QField will automatically launch and immediately open a project import permission dialog.
 
 !!! Workflow
 
