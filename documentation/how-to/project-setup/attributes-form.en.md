@@ -254,7 +254,7 @@ When selecting the magnifying glass you can search under the available values an
 
     !![Enable auto-complete within QGIS](../../assets/images/autocomplet_form.png)
 
-    Here how it works on QField
+    Here is how it works on QField
 
     !![](../../assets/images/autocomplete_typing.png,300px)
 
