@@ -35,7 +35,6 @@ You also can immediately download and open the project.
 
      **Note**: If the project is ***public***, it can be downloaded by any user account.
      If the project is set to ***private*** when scanning scanning the QR code, QFieldCloud will determine whether a given project is available for download for the logged-in user.
-     In addition, to access and permission management functionalities offered by QFieldCloud, authors can also benefit from its synchronization abilities to keep their project up-to-date.
 
 ### Compressed projects uploaded on the web
 
