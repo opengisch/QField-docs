@@ -48,7 +48,7 @@ Therefore, they must be unique.
     6. (Optional) If you want to filter your children further, you can use additional "expressions".
     7. Once finished click "ok"
 
-    !![](../../assets/images/relation_editor_widget_list.png, 400px)
+    !![](../../assets/images/relation_editor_widget_list.png)
 
     **Attribute Form Configuration - Referencing Layer**
 
@@ -162,4 +162,4 @@ When you then open a note in QField, you can add and browse multiple photos, vid
     4. Open the parent layer's **Properties** > **Attributes Form** and add the relation to the form layout.
 
     When opening the parent form in QField, the relation will automatically render as the interactive media gallery.
-    !![Photo Gallery](../../assets/images/widget_gallery.png,300px)
+    !![Photo Gallery](../../assets/images/widget_gallery.png,600px)

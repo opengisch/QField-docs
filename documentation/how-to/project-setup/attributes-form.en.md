@@ -204,7 +204,7 @@ The option *hyperlink* on the attachment widget will disable that functionality 
 
 The widget *Value Relation* offers values from a related table in a combobox.
 
-Since QField 4.1.1, the Value Relation widget supports the toggle button feature, similar to the Value Map widget (see [Value Map Widget Configuration](#value-map-widget-configuration)).
+The Value Relation widget supports the toggle button feature, similar to the Value Map widget (see [Value Map Widget Configuration](#value-map-widget-configuration)).
 
 Here you have several options to choose from:
 
@@ -254,9 +254,9 @@ When selecting the magnifying glass you can search under the available values an
 
     !![Enable auto-complete within QGIS](../../assets/images/autocomplet_form.png)
 
-    Here is a video showing how it works on QField
+    Here is how it works on QField
 
-    !![](../../assets/images/autocomplete_typing.webp,300px)
+    !![](../../assets/images/autocomplete_typing.png,300px)
 
 
 ## Conditional Visibility
