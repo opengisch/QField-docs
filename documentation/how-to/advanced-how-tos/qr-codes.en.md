@@ -61,7 +61,7 @@ When scanning such a code, QField will automatically launch and immediately open
 
 ## Application plugin QR codes
 
-QField's comes with a plugin framework, which add additional functionalities to the app.
+QField's comes with a plugin framework through which additional functionalities can be added to the app.
 You can find further information about it on the dedicated [plugin page](../advanced-how-tos/plugins.md).
 There are several ways in which plugins can be installed.
 One way is through the QR code button inside the plugin installation dialog.
