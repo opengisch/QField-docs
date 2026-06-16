@@ -23,7 +23,7 @@ You also can immediately download and open the project.
 
     **Create QR Code for cloud project**
 
-    1. To generate a QR code go to the web and search for QR generator.
+    1. To generate a QR code, use your favorite generator app or simply go to the web and search for QR generator.
     2. Choose one and switch from "website" to "text"
     3. Enter the following:
 
