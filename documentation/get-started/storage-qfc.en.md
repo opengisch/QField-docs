@@ -52,7 +52,7 @@ To upgrade to an **Organization plan**, follow these steps:
              - **Flat**: You select your number of seats (users in the organization) and pay each month for every seat.
              - **Flex**: You select your number of seats and only pay for the active members.
              A minimum of 2 seats is always needed.
-        - **Yearly Payment**: You select your number of seats and pay once for every seat at the beginning of the subscription. (First 20 seats: 17 Euros per seat per month).
+        - **Yearly Payment**: You select your number of seats and pay once for every seat at the beginning of the subscription.
 
     4. Click on "Create"
     5. Choose a name for your organization with only less than 150 characters, letters, digits, and `@/./+/-/_`
