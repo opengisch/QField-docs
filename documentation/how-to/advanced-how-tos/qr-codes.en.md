@@ -16,7 +16,7 @@ QR codes can be generated for users to scan them on their devices and automatica
 
 The easiest way to share a project with your co-workers or the public is through QFieldCloud.
 
-QR codes for QFieldCloud projects allow you to automatically launch QField and immediately open the details page of cloud project where you can access information such as the title and the description as well as the author information.
+QR codes for cloud projects hosted on QFieldCloud allow you to automatically launch QField and immediately open the project details page where you can access information such as the title and the description as well as the author name.
 You also can immediately download and open the project.
 
 !!! Workflow
