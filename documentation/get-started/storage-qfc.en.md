@@ -111,7 +111,8 @@ Additional storage can be obtained in the sets of 3 GB.
     !!! Note
 
         The included storage corresponds to the storage that is associated with your number of seats.
-        The additional storage corresponds to the storage that is added in packagages of 3GB.Once a subscription has been modified the additional storage and seats will be immediately available to use.
+        The additional storage corresponds to the storage that is added in packagages of 3GB.
+        Once a subscription has been modified the additional storage and seats will be immediately available to use.
         Any decreased storage or number of seats will only be updated with the next billing cycle.
 
 ## Cancellation of a subscription
