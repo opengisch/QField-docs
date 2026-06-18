@@ -153,7 +153,7 @@ This can be achieved under the settings section in QFieldCloud.
     !![](../../assets/images/restric_qfc_project_files.png)
 
     :material-tablet: Fieldwork
-    1. Open the Side Dashoard and tap the cloud icon
+    1. Open the Side Dashboard and tap the cloud icon
     2. Enable the automatic push setting (this is set to a default value of 30 minutes)
 
 ### Restricted Files
