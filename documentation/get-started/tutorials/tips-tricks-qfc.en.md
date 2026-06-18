@@ -112,6 +112,33 @@ This is particularly useful when you work with an abundance of photos and do not
     You need to be online to download the attachments on demand.
     If you work offline, it will only show a blank screen.
 
+## Automatic push to QFieldCloud
+
+When being in the field and doing lots of changes that include a lot of attachments, it is recommended to synchronize to the cloud as often as possible to avoid data loss.
+With this functionality, you can enforce automatic pushing of pending changes to QField devices in the field, as well as specify the interval in between automated pushes.
+The functionality is activated through a project setting, allowing remote activation.
+
+:material-monitor: Desktop preparation
+
+1. **Access Project Settings**: Direct to *Project* > *Properties...* > *QField* > *QFieldCloud Packaging*
+2. **Enable Auto-Push**: Toggle the "Automatically push pending changes on the following interval" option and establish your preferred interval.
+
+!![Auto push QFieldSync](../../assets/images/auto-push-pending-changes-qfieldsync.png)
+
+!![Auto push QField](../../assets/images/auto-push-pending-changes-qfield.png,400px)
+
+!!! note
+
+    **Benefits:**
+
+    - *Real-Time Updates*: Ensures prompt Synchronisation of field data with the QFieldCloud project.
+    - *Streamlined Workflow*: Minimizes manual intervention and ensures surveyors do not need to worry about Synchronisation, helping them focus on data quality.
+
+    **Considerations:**
+
+    - *Network Stability*: Ensure stable internet connectivity for auto-push functionality.
+    - *Battery Optimization*: Implement strategies to mitigate battery consumption on QField devices during prolonged fieldwork.
+
 ## Restriction of Project Files
 
 If you work in field operations which involves a lot of users, it may be useful to restrict the QGIS project file to prevent all users with editor rights to download the project and make changes to the configuration.
@@ -120,12 +147,14 @@ This can be achieved under the settings section in QFieldCloud.
 
 !!! Workflow
 
+    :material-monitor: Desktop
     1. From the QFieldCloud homepage direct to *Settings*
     2. Enable the **`Restrict project files`** button
     !![](../../assets/images/restric_qfc_project_files.png)
 
-Once set, only administrators and managers will be able to push changes to the files listed above.
-Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.
+    :material-tablet: Fieldwork
+    1. Open the Side Dashboard and tap the cloud icon
+    2. Enable the automatic push setting (this is set to a default value of 30 minutes)
 
 ### Restricted Files
 

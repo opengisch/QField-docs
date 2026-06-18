@@ -172,28 +172,6 @@ In your settings page, you can choose whether QFieldCloud should apply the _last
 
 See more on how QFieldCloud handles conflicts [here](../../reference/qfieldcloud/jobs.md#understanding-conflicts-delta_apply-jobs)
 
-## Automatic push to QFieldCloud
-
-With this functionality, you can enforce automatic pushing of pending changes to QField devices in the field, as well as specify the interval in between automated pushes.
-The functionality is activated through a project setting, allowing remote activation.
-
-:material-monitor: Desktop preparation
-
-1. **Access Project Settings**: Direct to *Project* > *Properties...* > *QField* > *QFieldCloud Packaging*
-2. **Enable Auto-Push**: Toggle the "Automatically push pending changes on the following interval" option and establish your preferred interval.
-
-!![Auto push QFieldSync](../../assets/images/auto-push-pending-changes-qfieldsync.png)
-
-!![Auto push QField](../../assets/images/auto-push-pending-changes-qfield.png,400px)
-
-!!! note
-    **Benefits:**
-    - *Real-Time Updates*: Ensures prompt Synchronisation of field data with the QFieldCloud project.
-    - *Streamlined Workflow*: Minimizes manual intervention and ensures surveyors do not need to worry about Synchronisation, helping them focus on data quality.
-    **Considerations:**
-    - *Network Stability*: Ensure stable internet connectivity for auto-push functionality.
-    - *Battery Optimization*: Implement strategies to mitigate battery consumption on QField devices during prolonged fieldwork.
-
 ## Activate email notifications for QFieldCloud changes
 
 If you wish to be notified by QFieldCloud what happens to your team(s) and your projects, you can activate the email notification option.
