@@ -25,4 +25,3 @@ Follow the README and the documentation in that repository to set up and configu
 The documentation in this section covers administration through the built-in Django admin panel. Once your instance is running, see:
 
 - [Django administration interface](django_interface.md) — manage users, organisations, teams, projects, and secrets.
-
