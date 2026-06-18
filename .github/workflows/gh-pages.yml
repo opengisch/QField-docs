@@ -68,7 +68,7 @@ jobs:
           ./utils/mkdocs_tx.py -s en update_config
           ./utils/mkdocs_tx_commit.sh
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.QFIELD_FAIRY_TOKEN }}
 
       - name: Build documentation
         run: mkdocs build
