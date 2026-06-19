@@ -125,6 +125,11 @@ The functionality is activated through a project setting, allowing remote activa
 
 !![Auto push QFieldSync](../../assets/images/auto-push-pending-changes-qfieldsync.png)
 
+:material-tablet: Fieldwork
+
+1. Open the Side Dashboard and tap the cloud icon
+2. Enable the automatic push setting (this is set to a default value of 30 minutes if project is not configured)
+
 !![Auto push QField](../../assets/images/auto-push-pending-changes-qfield.png,400px)
 
 !!! note
@@ -148,13 +153,12 @@ This can be achieved under the settings section in QFieldCloud.
 !!! Workflow
 
     :material-monitor: Desktop
+
     1. From the QFieldCloud homepage direct to *Settings*
     2. Enable the **`Restrict project files`** button
+
     !![](../../assets/images/restric_qfc_project_files.png)
 
-    :material-tablet: Fieldwork
-    1. Open the Side Dashboard and tap the cloud icon
-    2. Enable the automatic push setting (this is set to a default value of 30 minutes)
 
 ### Restricted Files
 
@@ -174,13 +178,23 @@ One can manually delete file versions from the project's **File** section.
 Each file and version can be linked to a specific QFieldCloud user who uploaded it.
 
 !!! Workflow
-    1. Go to the "Files" section of your project.![Project files](../../assets/images/files_versions_for_deleting.png)
-    2. Locate the layer for which you want to delete versions.![Layer selected](../../assets/images/files_versions_for_deleting_2.png)
-    3. Click on the 3-dotted menu *(⋮)* next to the layer name.![Clickable option](../../assets/images/files_versions_for_deleting_three_dots.png)
-    4. You will see a list of versions for that specific layer.![List of files versions](../../assets/images/files_versions_for_deleting_files_versions.png)
-    5. Identify the version you want to delete and click on the red trash bin icon next to it.![Thrash icon](../../assets/images/files_versions_for_deleting_deleting_a_version.png)
-    6. Confirm the deletion when prompted, if you want to delete all versions before a specific version, you can do it activating the option "Also delete `n` version(s) older than the selected version.".![Deleting files versions](../../assets/images/files_versions_for_deleting_also_delete.png)
-    7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.![List of versions after deleting 2 versions before](../../assets/images/files_versions_for_deleting_version_remain.png)
+    1. Go to the "Files" section of your project.
+    2. Locate the file for which you want to delete versions.
+    3. Click on the 3-dotted menu *(⋮)* on the right side of the file name.
+    4. You will see a list of versions for that specific file.
+    5. Identify the version you want to delete and click on the red trash bin icon next to it.
+
+        ![Deleting project files](../../assets/images/files_versions_for_deleting.png)
+
+    6. Confirm the deletion when prompted, if you want to delete all versions before a specific version,
+        you can do it activating the option "Also delete `n` version(s) older than the selected version.".
+
+        ![](../../assets/images/files_versions_deletion_confirmation.png)
+
+    7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.
+
+        ![](../../assets/images/files_versions_deletion_popup_listing_files.png)
+
 
 ### Set maximum pixel size of attachment
 

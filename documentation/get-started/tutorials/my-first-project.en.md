@@ -186,7 +186,7 @@ In fact, it is a plugin that can be used to package and transform a QGIS project
 1. Direct to *Plugins* > *Manage and Install Plugins* > *Not Installed*
 2. Search for QFieldSync and install it
 
-     ![QFieldSyncPlugin](../../assets/images/qfield-sync_install.png)
+     ![QFieldSyncPlugin](../../assets/images/install_qfieldsync.png)
 
 3. In QGIS a new toolbar should appear ![Toolbar](../../assets/images/qfieldsync_toolbar.png)
 4. When clicking on the blue cloud a new window will open where you can login to QFieldCloud with your username and password.
