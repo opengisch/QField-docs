@@ -35,7 +35,7 @@ Before you get started with QField you will have to install the plugin through t
     2. Search for "QFieldSync".
     3. Select the plugin in the list and click on "Install".
 
-       !![QFieldSync in QGIS plugin repository](../../assets/images/qfield-sync_install.png)
+       !![QFieldSync in QGIS plugin repository](../../assets/images/install_qfieldsync.png)
 
 ## QFieldSync Settings
 
