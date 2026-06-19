@@ -180,8 +180,8 @@ Depending on what you have selected as default, one of them will be shown inside
 
 On Synchronisation the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
 
-By default when adding attachments QField automatically displays the file.
-The option *hyperlink* on the attachment widget will disable that functionality and show just the path to the file hyperlink.
+By default when adding documents as  attachments QField automatically displays the file name.
+The option *hyperlink* on the attachment widget will disable that functionality and show just the path to the file hyperlink to open the externally.
 
 !![](../../assets/images/hyperlink_option.png)
 
