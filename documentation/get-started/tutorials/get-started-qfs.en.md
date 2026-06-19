@@ -165,7 +165,7 @@ Once you are done with configuring your project, layers and styles you are ready
         By default, QFieldSync chooses the filepath for exporting a project.
         It is however possible to change those defaults by directing to *Plugins* > *QFieldSync* > *Preferences*.
 
-        !![QFieldSync Preferences button](../../assets/images/qfieldsync-preferences-button.png,250px)
+        !![QFieldSync Preferences button](../../assets/images/qfieldsync-preferences-button.png)
 
         In this window you can also manage whether the packaging options are shown in the QFieldSync toolbar.
 

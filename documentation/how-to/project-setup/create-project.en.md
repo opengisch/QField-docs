@@ -12,7 +12,7 @@ You can choose between several basemaps and turn it into a cloud project if need
 
     1. Launch the QField Application on your mobile device
     2. Select the big plus sign on the right hand side of the landing page.
-    !![Welcome Screen](../../assets/images/new-project-1.png,400px)
+    !![Welcome Screen](../../assets/images/new-project-1.png)
 
     3. A new window will open where you can configure your project to your needs.
 
