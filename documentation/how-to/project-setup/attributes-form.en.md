@@ -252,7 +252,7 @@ When selecting the magnifying glass you can search under the available values an
     3. Enable the "Use completer" option.
 
 
-    !![Enable auto-complete within QGIS](../../assets/images/autocomplet_form.png)
+    !![Enable auto-complete within QGIS](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
 
     Here is how it works on QField
 
