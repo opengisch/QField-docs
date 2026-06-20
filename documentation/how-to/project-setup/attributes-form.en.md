@@ -452,8 +452,8 @@ Custom QML widgets can be useful to integrate advanced actions into forms.
     This is useful to open e.g. turn-by-turn navigation on the device-native app for the user.*
 
     ```qml
-    import QtQuick 2.0
-    import QtQuick.Controls 2.0
+    import QtQuick
+    import QtQuick.Controls
 
     Button {
         width: 200
