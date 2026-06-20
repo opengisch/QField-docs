@@ -25,7 +25,7 @@ A relation to a second layer needs to be set in the QGIS properties so that when
 
 !!! Workflow
 
-    1. Create two tables following the style as shown below.
+    1. As example create two tables following the style as shown below.
     One table where the features are stored and one with a list of pictures.
 
         ***Apiary:***
@@ -55,7 +55,7 @@ Create a relation with:
 - `apiary_id` Referencing field
 - `strength` Composition
 
-!![Relations](../../assets/images/add-1-n-pictures-relations.png "")
+!![Relations](../../assets/images/add-1-n-pictures-relations.png)
 
 ### Attribute Form configuration
 
@@ -65,26 +65,26 @@ For the apiary_picture layer, you will have to change the widget type to *Attach
 
 !!! Workflow
 
-    **Apiary**
+    **Parent layer**
 
     1. Direct to *Properties* > *Attribute Form*
     2. For the uuid field choose between the *Text Edit* or *UUID Generator* widget.
     3. Set the default value to `uuid('WithoutBraces')`.
-    4. Hide it from the view as it should not be edited by the user.
+    4. (optional) Hide it from the view as it should not be edited by the user.
 
-    !![widgets](../../assets/images/add-1-n-pictures-widgets_hive.png "")
+    !![widgets](../../assets/images/add-1-n-pictures-widgets_hive.png)
 
     Set the relation widget to *many to one relation* and add the relation to the form
 
-    !![widgets](../../assets/images/add-1-n-pictures-widgets_hive2.png "")
+    !![widgets](../../assets/images/add-1-n-pictures-widgets_hive2.png)
 
-    **Apiary_picture**
+    **Child layer**
 
     1. Direct to *Properties* > *Attribute Form*
-    2. Set the widget type of the field `path` to *Attachment*
+    2. Set the widget type to *Attachment* on the field that will save the picture paths.
     3. Add it to the form layout.
 
-    !![widgets](../../assets/images/add-1-n-pictures-widgets_picture.png "")
+    !![widgets](../../assets/images/add-1-n-pictures-widgets_picture.png)
 
 ## Drawing and sketching
 
@@ -104,7 +104,7 @@ If you are not familiar with that app folder, its location is shown at the botto
 
 Templates shipped alongside projects as well as the QField app folder will be shown when users choose "Draw a sketch" by pressing the 3-dotted menu *(⋮)* of the attachment widget.
 
-!![picture path](../../assets/images/drawing_templates.png "")
+!![picture path](../../assets/images/drawing_templates.png)
 
 ## Geotagging
 :material-tablet: Fieldwork
