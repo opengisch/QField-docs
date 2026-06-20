@@ -467,4 +467,4 @@ Custom QML widgets can be useful to integrate advanced actions into forms.
 
     The `geo` URI above is adapted to work with Android. For Apple Maps the URI can be changed to `'geo:' || $y || ',' || $x`.
 
-    ![](../../assets/images/qml_widget_button.png)
+    !![](../../assets/images/qml_widget_button.png,300px)
