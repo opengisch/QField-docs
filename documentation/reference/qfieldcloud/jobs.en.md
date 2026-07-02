@@ -23,6 +23,7 @@ Jobs have access to [project secrets](projects.md#secrets).
 !!! warning
     - Any of the triggering conditions described on this page might change without notice.
     - All jobs must finish within 10 minutes or they will result in a timeout error and will be terminated.
+    - Jobs logs are stored for a period of 90 days, after that time the logs are automatically deleted.
 
 !!! info
     If you are looking for technical details how Jobs work, check the [Job Queue documentation](./architecture.md#job-queue).
