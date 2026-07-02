@@ -61,10 +61,9 @@ It is possible to embed SVG symbols directly within a QGIS project.
 3. In the *Symbol Layer Panel* choose *Simple marker*.
 !![](../../assets/images/symbol_layer_panel.png)
 4. Change the symbol layer type in *Symbol layer type* > *SVG marker*.
-!![](../../assets/images/symbol_layer_type.png)
 5. Scroll down to the bottom panel.
 6. Click on the right side of the file selection button to open the drop down menu.
 !![](../../assets/images/drop_down_svg_menu.png)
 7. Select *Embed File* and choose the SVG file in the file selection dialog.
 8. Apply the changes and click *OK*.
-!![](../../assets/images/custom_svg_symbols.gif)
+!![Embedded custom SVG on QField](../../assets/images/custom_svg_symbols_qfield.png,350px)

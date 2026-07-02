@@ -180,8 +180,8 @@ Depending on what you have selected as default, one of them will be shown inside
 
 On Synchronisation the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
 
-By default when adding attachments QField automatically displays the file.
-The option *hyperlink* on the attachment widget will disable that functionality and show just the path to the file hyperlink.
+By default when adding documents as  attachments QField automatically displays the file name.
+The option *hyperlink* on the attachment widget will disable that functionality and show just the path to the file hyperlink to open the externally.
 
 !![](../../assets/images/hyperlink_option.png)
 
@@ -252,7 +252,7 @@ When selecting the magnifying glass you can search under the available values an
     3. Enable the "Use completer" option.
 
 
-    !![Enable auto-complete within QGIS](../../assets/images/autocomplet_form.png)
+    !![Enable auto-complete within QGIS](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
 
     Here is how it works on QField
 
@@ -452,8 +452,8 @@ Custom QML widgets can be useful to integrate advanced actions into forms.
     This is useful to open e.g. turn-by-turn navigation on the device-native app for the user.*
 
     ```qml
-    import QtQuick 2.0
-    import QtQuick.Controls 2.0
+    import QtQuick
+    import QtQuick.Controls
 
     Button {
         width: 200
@@ -467,4 +467,4 @@ Custom QML widgets can be useful to integrate advanced actions into forms.
 
     The `geo` URI above is adapted to work with Android. For Apple Maps the URI can be changed to `'geo:' || $y || ',' || $x`.
 
-    ![](../../assets/images/qml_widget_button.png)
+    !![](../../assets/images/qml_widget_button.png,300px)

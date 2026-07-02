@@ -215,7 +215,7 @@ To do this, within your project:
 
 1. Direct to the folder icon with the wheel via the side "Dashboard" to open the project folder.
 
-    !![](../../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png)
+    !![](../../assets/images/export-qfieldcloud-files-from-qfield-1-gear-icon.png,350px)
 
 2. Inside this project folder, you will find your project files.
 Offline layers will be stored in a file named "data.gpkg".

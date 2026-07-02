@@ -94,13 +94,23 @@ Each file and version can be linked to a specific QFieldCloud user who uploaded 
 
 To delete file versions in QFieldCloud, follow these steps:
 
-1. Go to the "Files" section of your project.![Project files](../../assets/images/files_versions_for_deleting.png)
-2. Locate the layer for which you want to delete versions.![Layer selected](../../assets/images/files_versions_for_deleting_2.png)
-3. Click on the 3-dotted menu *(⋮)* next to the layer name.![Clickable option](../../assets/images/files_versions_for_deleting_three_dots.png)
-4. You will see a list of versions for that specific layer.![List of files versions](../../assets/images/files_versions_for_deleting_files_versions.png)
-5. Identify the version you want to delete and click on the red trash bin icon next to it.![Thrash icon](../../assets/images/files_versions_for_deleting_deleting_a_version.png)
-6. Confirm the deletion when prompted, if you want to delete all versions before a specific version, you can do it activating the option "Also delete `n` version(s) older than the selected version.".![Deleting files versions](../../assets/images/files_versions_for_deleting_also_delete.png)
-7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.![List of versions after deleting 2 versions before](../../assets/images/files_versions_for_deleting_version_remain.png)
+1. Go to the "Files" section of your project.
+2. Locate the file for which you want to delete versions.
+3. Click on the 3-dotted menu *(⋮)* on the right side of the file name.
+4. You will see a list of versions for that specific file.
+5. Identify the version you want to delete and click on the red trash bin icon next to it.
+
+    ![Deleting project files](../../assets/images/files_versions_for_deleting.png)
+
+6. Confirm the deletion when prompted, if you want to delete all versions before a specific version,
+    you can do it activating the option "Also delete `n` version(s) older than the selected version.".
+
+    ![](../../assets/images/files_versions_deletion_confirmation.png)
+
+7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.
+
+    ![](../../assets/images/files_versions_deletion_popup_listing_files.png)
+
 
 ## Collaborators
 
