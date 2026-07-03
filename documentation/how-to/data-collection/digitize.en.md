@@ -60,7 +60,7 @@ The current layer within which features are to be added is highlighted in green.
     6. (Optionable): You can click the *(x) button* to cancel the current feature creation.
 
 
-    !![](../../assets/images/collect_features.webp,250px)
+    ![type:video](../../assets/videos/collect_features.mp4)
 
 ### Additional Editing Settings
 
@@ -113,7 +113,7 @@ In addition, the Code Reader offers the capability to read NFC text tags.
 For quick collection of rather homogeneous datasets, it is crucial to not having to enter the same attribute values multiple times.
 The pins on the right of every attribute enable the last entered value option for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled. It needs to be noted that this last entered value only applies when collecting new features not when editing existing ones, unless otherwise specified.
 
-!![](../../assets/images/remember_checkboxes.webp,250px)
+![type:video](../../assets/videos/remember_checkboxes.mp4)
 
 ## Geometry editing
 
@@ -149,7 +149,7 @@ The tool mimics eraser tools from 2D drawing programs and works best with a styl
 Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion.
 You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
 
-![type:video](../../assets/videos/new-erase-reshape-tool.webm)
+![type:video](../../assets/videos/erase-reshape-tool.mp4)
 
 ### Ring tool
 
@@ -160,7 +160,7 @@ Once a ring is created, QField will offer the possibility of filling the ring wi
 
 A video demonstration of some editing possibilities:
 
-!![](../../assets/images/edit_geom.webp,250px)
+![type:video](../../assets/videos/edit_geom.mp4)
 
 ## Merging features
 

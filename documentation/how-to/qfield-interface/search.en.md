@@ -34,7 +34,7 @@ You'll also see the feature's name in the search results below.
 To narrow down your search to a specific field, type: `f @ATTRIBUTE_NAME search-term`.
 This targets your search to that field.
 
-![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.webm)
+![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
 
 ### Search with code scanner
 
