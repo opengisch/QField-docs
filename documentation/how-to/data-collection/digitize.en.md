@@ -226,7 +226,7 @@ To activate Snap to Common Angle, open the geometry editor and tap on the Snap t
 Choose the desired angle from the menu. Then, start digitizing your geometry or adding vertices, and the functionality will automatically align your input to the selected angle.
 QField will remember the angle relative to the last segment situation for consistent snapping behaviour during subsequent edits.
 
-![type:video](../../assets/videos/snap-to-common-angles.webm)
+![type:video](../../assets/videos/snap-to-common-angles.mp4)
 
 ## Topological editing
 
@@ -240,7 +240,7 @@ QField allows you to select multiple features and edit their attributes all at o
 In some cases, it can result in very efficient workflows.
 To do so, identify two (or more)features on the map, select them in the features list and merge them by selecting the *Edit feature* button in the list's title bar.
 
-!![](../../assets/images/multi_editor.webp,250px)
+![type:video](../../assets/videos/multi_editor.webm)
 
 ## Copy, Cut and Paste
 

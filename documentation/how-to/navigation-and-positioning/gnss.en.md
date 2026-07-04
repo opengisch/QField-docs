@@ -200,7 +200,7 @@ The formats currently supported are:
 
     5. Change to ***edit mode*** and press on the target button - the cross in the center means it is using GNSS positioning.
 
-        !![](../../assets/images/gnss_use.webp,250px)
+        ![type:video](../../assets/videos/gnss_use.mp4)
 
         A long press on the **GNSS button** will show the **positioning menu**.
         Inside the menu you can turn on the **Show position information** which will show the current coordinates that are reprojected into the CRS of your project along with the precision information.
@@ -327,7 +327,7 @@ The survey will start by pressing and holding the add vertex button, which will 
 During the collection, an indicator will appear on top of the coordinate cursor showing the number number of the collected positions.
 If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.
 
-!![](../../assets/images/positioning-averaged.webp,280px)
+!![](../../assets/videos/positioning-averaged.mp4)
 
 1. To activate direct to  side *"Dashboard"* > *Settings* > *Positioning*
 2. Shortly tap where you want to collect points and QField will automatically add the averaged position once the minimum count is met.
