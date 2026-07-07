@@ -113,7 +113,7 @@ To enable this functionality, however, you require a second plugin [Ordered Rela
 
 Define the *Display Name* expression for the concerned layers,
 this will be used to display the name in the relations.
-This is configured under Vector Layer *Properties...* > *Display*
+You can configure your preferred display name under Vector Layer *Properties...* > *Display*
 
 !![Configuration in QGIS](../../assets/images/display_name_configuration.png)
 !![QField](../../assets/images/display_name_qfield.png)
