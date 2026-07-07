@@ -205,7 +205,7 @@ The formats currently supported are:
         A long press on the **GNSS button** will show the **positioning menu**.
         Inside the menu you can turn on the **Show position information** which will show the current coordinates that are reprojected into the CRS of your project along with the precision information.
 
-     !![](../../assets/images/positioning-menu.png)
+     !![](../../assets/images/positioning-menu.png,700px)
 
     !!! note
         If you see WGS 84 lat/lon information instead of information in your project CRS, you probably have no signal yet.

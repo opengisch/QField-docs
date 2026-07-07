@@ -34,4 +34,4 @@ Examples for this could be species names that are both recorded with the origina
 
     In the video below there is an example of "live" default value updates when editing features on QField.
 
-    !![Live_Default_Value](../../assets/videos/live_default_value.webp)
+    ![type:video](../../assets/videos/live_default_value.webm)

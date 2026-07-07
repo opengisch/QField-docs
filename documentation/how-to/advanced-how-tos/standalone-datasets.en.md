@@ -53,4 +53,4 @@ By default, the datasets will be overlaying an OpenStreetMap XYZ layer. It is ho
 
      1. Direct to your project landing page.
      2. Press long on the project you want to have as a basemap
-     !![](../../assets/images/choose_basemap.webp,300px)
+     !![](../../assets/images/choose_basemap.png,300px)
