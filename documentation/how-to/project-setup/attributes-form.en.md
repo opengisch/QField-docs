@@ -221,7 +221,7 @@ When a group is defined, the widget is always displayed as a list, even if the t
 When selecting the magnifying glass you can search under the available values and select accordingly.
 - **Allow multiple selections**: If enabled, you can select multiple values in one feature.
 
-!![](../../assets/images/value_relation_widget.webp,300px)
+![type:video](../../assets/videos/value_relation_widget.webm)
 
 !!! Workflow
 
@@ -284,7 +284,7 @@ This is useful when certain attributes are only required under certain condition
 
     In QField it will look like in the video below.
 
-    !![](../../assets/images/conditional_visibility.webp,300px)
+    ![type:video](../../assets/videos/conditional_visibility.webm)
 
 ## Conditional Row Styling
 :material-monitor: Desktop preparation
@@ -430,16 +430,6 @@ You can also use these two variables for driving your map canvas symbology and y
       )
     )
     ```
-
-## Search in value relation and relation reference widget
-
-It is possible to search values in a *value relation* or *relation reference* widget using the magnifying glass next to the field.
-
-!![](../../assets/images/autocomplete_search_value.webp,300px)
-
-!!! note
-    Define the *display expression* for the concerned layers, this will be used for searching for features.
-    This is configured under Vector Layer *Properties...* > *Display*
 
 
 ## Define QML Widgets

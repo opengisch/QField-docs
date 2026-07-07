@@ -109,15 +109,15 @@ To enable this functionality, however, you require a second plugin [Ordered Rela
 
     !![QField](../../assets/images/ordered_relation_widget.webp,400px)
 
-## Search in value relation and relation reference widget
+## Custom name in Relation reference widget
 
-It is possible to search values in a *value relation* or *relation reference* widget using the magnifying glass next to the field.
+Define the *Display Name* expression for the concerned layers,
+this will be used to display the name in the relations.
+You can configure your preferred display name under Vector Layer *Properties...* > *Display*
 
-!![](../../assets/images/autocomplete_search_value.webp,300px)
+!![Configuration in QGIS](../../assets/images/display_name_configuration.png)
+!![QField](../../assets/images/display_name_qfield.png)
 
-!!! note
-    Define the *display expression* for the concerned layers, this will be used for searching for features.
-    This is configured under Vector Layer *Properties...* > *Display*
 
 ## Gallery Relation Editor
 

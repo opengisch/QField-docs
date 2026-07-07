@@ -60,7 +60,7 @@ The current layer within which features are to be added is highlighted in green.
     6. (Optionable): You can click the *(x) button* to cancel the current feature creation.
 
 
-    !![](../../assets/images/collect_features.webp,250px)
+    ![type:video](../../assets/videos/collect_features.mp4)
 
 ### Additional Editing Settings
 
@@ -113,7 +113,7 @@ In addition, the Code Reader offers the capability to read NFC text tags.
 For quick collection of rather homogeneous datasets, it is crucial to not having to enter the same attribute values multiple times.
 The pins on the right of every attribute enable the last entered value option for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled. It needs to be noted that this last entered value only applies when collecting new features not when editing existing ones, unless otherwise specified.
 
-!![](../../assets/images/remember_checkboxes.webp,250px)
+![type:video](../../assets/videos/remember_checkboxes.mp4)
 
 ## Geometry editing
 
@@ -149,7 +149,7 @@ The tool mimics eraser tools from 2D drawing programs and works best with a styl
 Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion.
 You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
 
-![type:video](../../assets/videos/new-erase-reshape-tool.webm)
+![type:video](../../assets/videos/erase-reshape-tool.mp4)
 
 ### Ring tool
 
@@ -160,7 +160,7 @@ Once a ring is created, QField will offer the possibility of filling the ring wi
 
 A video demonstration of some editing possibilities:
 
-!![](../../assets/images/edit_geom.webp,250px)
+![type:video](../../assets/videos/edit_geom.mp4)
 
 ## Merging features
 
@@ -226,7 +226,7 @@ To activate Snap to Common Angle, open the geometry editor and tap on the Snap t
 Choose the desired angle from the menu. Then, start digitizing your geometry or adding vertices, and the functionality will automatically align your input to the selected angle.
 QField will remember the angle relative to the last segment situation for consistent snapping behaviour during subsequent edits.
 
-![type:video](../../assets/videos/snap-to-common-angles.webm)
+![type:video](../../assets/videos/snap-to-common-angles.mp4)
 
 ## Topological editing
 
@@ -240,7 +240,7 @@ QField allows you to select multiple features and edit their attributes all at o
 In some cases, it can result in very efficient workflows.
 To do so, identify two (or more)features on the map, select them in the features list and merge them by selecting the *Edit feature* button in the list's title bar.
 
-!![](../../assets/images/multi_editor.webp,250px)
+![type:video](../../assets/videos/multi_editor.webm)
 
 ## Copy, Cut and Paste
 

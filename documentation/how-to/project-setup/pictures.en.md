@@ -90,7 +90,7 @@ For the apiary_picture layer, you will have to change the widget type to *Attach
 
 QField has an in-app drawing and sketching functionality enabling you to directly sketch over and annotate images captured while in the field as well as drawing on top of a blank canvas or over a template.
 
-![type:video](../../assets/videos/drawing-sketch-feature2.webm)
+![type:video](../../assets/videos/drawing-sketch-feature2.mp4)
 
 ### Drawing templates
 
