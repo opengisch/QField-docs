@@ -44,14 +44,14 @@ To upgrade to a Personal **Pro Plan**, follow these steps:
 To upgrade to an **Organization plan**, follow these steps:
 
 !!! Workflow
-    1. Click on the username of your at the top-right of the page
+    1. Click on the username at the top-right of the page
     2. Click on "Create organization"
     3. Choose your preferred payment option
     !![organization plan options](../assets/images/organization_plan_options.png,800px)
         - **Monthly Payment:** You can choose between a **Flat** subscription or a **Flex** Subscription.
              - **Flat**: You select your number of seats (users in the organization) and pay each month for every seat.
-             - **Flex**: You select your number of seats and only pay for the active members.
-             A minimum of 2 seats is always needed.
+             - **Flex**: You can add members directly to the organiyation and only pay for the active ones.
+             A minimum of 2 members is always needed.
         - **Yearly Payment**: You select your number of seats and pay once for every seat at the beginning of the subscription.
 
     4. Click on "Create"
@@ -61,8 +61,8 @@ To upgrade to an **Organization plan**, follow these steps:
     An overview page will show the overview of the plan and the billing details.
     8. If you would like to add additional storage, you can add as many as storage packages as you need.
     !![](../assets/images/example_organization_plan_billing.png)
-    9. (Optionable) If you have received a promotion code, please enter it at the bottom of the billing window.
-    10. Under the summary page you see your current monthly subscription and upcoming payment.
+    9. (Optional) If you have received a promotion code, please enter it at the bottom of the billing window.
+    10. Under the summary page you see your current subscription and upcoming payment.
     Add your billing details and click on **Pay** to activate your plan.
 
 ### **Active Users under Organization Plans**
@@ -89,7 +89,7 @@ To monitor the number of active users direct to *Organization Settings* > *Billi
 ## Modification of current subscription
 
 In QFieldCloud you can add as much storage as desired for your projects and change the number of your preferred selected seats whenever you want.
-Depending on your subscription plan, the modified storage and number of seats will become available immediately or only added to the next billing cycle.
+When modifying additional storage or seats, any increases will become effective immediately. Decreases in storage or seats will become effective (and payable) with the start of the next billing cycle.
 Additional storage can be obtained in the sets of 3 GB.
 
 !!! Workflow
@@ -152,7 +152,7 @@ It is possible to retrieve invoices from previous months at the bottom of the bi
 
         ![Enter to billing section](../assets/images/discontinuing_service_02_change_subcription.png)
 
-    3. Direct to the bottom of the page.git
+    3. Direct to the bottom of the page.
     There you will find all previous and current invoices that are associated with your Personal Account or your Organization Account.
 
         !![Example of Invoice](../assets/images/qfc-storage-plans-invoice.png,400px)
