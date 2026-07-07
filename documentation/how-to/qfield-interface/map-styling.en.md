@@ -51,13 +51,12 @@ Those will be made accessible to all projects and individual datasets.
 
 1. Create a subfolder called **fonts** inside the same folder where your given project file (`.qgs` or `.qgz`) is stored. Those fonts will **only** be accessible when viewing that project.
 
-!!! note
-    **"For QFieldCloud Projects"**
+When building a QFieldCloud project that includes additional fonts in a `fonts` subfolder, you must add this directory to the synchronized folders list in your project settings. This ensures the custom font files are successfully pushed to QFieldCloud and transferred onto mobile devices.
 
-    When building a QFieldCloud project that includes additional fonts in a `fonts` subfolder, you must add this directory to the synchronized folders list in your project settings. This ensures the custom font files are successfully pushed to QFieldCloud and transferred onto mobile devices.
+!!! Workflow
 
-    1. Navigate to **Project** > **Properties...** > **QField**.
-    2. Under the **Attachments and Directories** configuration tab, add the path to your relative `fonts` subfolder to the directories list as "Data" type.
+    1. Navigate to *Project* > *Properties...* > *QField*.
+    2. Under the *Attachments and Directories* configuration tab, add the path to your relative `fonts` subfolder to the directories list as "Data" type.
 
     !![Configuring custom fonts folder for QFieldCloud synchronization.](../../assets/images/qfc_fonts_directory_setting.png)
 
