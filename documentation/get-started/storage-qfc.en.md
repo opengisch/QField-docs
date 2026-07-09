@@ -51,7 +51,7 @@ To upgrade to an **Organization plan**, follow these steps:
         - **Monthly Payment:** You can choose between a **Flat** subscription or a **Flex** Subscription.
              - **Flat**: You select your number of seats (users in the organization) and pay each month for every seat.
              - **Flex**: You can add members directly to the organiyation and only pay for the active ones.
-             A minimum of 2 members is always needed.
+             A minimum of 1 member is always needed.
         - **Yearly Payment**: You select your number of seats and pay once for every seat at the beginning of the subscription.
 
     4. Click on "Create"
