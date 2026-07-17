@@ -16,10 +16,26 @@ In QField, a field with *Attachment* widget can be used to:
 
 To configure the widget, please refer to the [Attributes Form Documentation](./attributes-form.md#attachment-widget)
 
+## In-App Camera Interface
+:material-tablet: Fieldwork
+
+When you are taking pictures within an attachment widget inside QField,
+the built-in camera interface have several toggles and configuration tools:
+
+!![QField Camera Controls](../../assets/images/qfield_camera_options.png)
+
+1. **Camera Switch:** Switch between the front-facing and rear-facing camera lenses on your device.
+2. **Resolution & Aspect Ratio:** Adjust the photo resolution and frame dimensions to manage your file sizes and image layouts.
+3. **Live Image Stamping:** Toggle a real-time text overlay directly onto the photo canvas.
+    By default, the stamp applies context details like the date, time, latitude, longitude, altitude, ground speed, and heading orientation in degrees
+    (you can configure the [stamp with expressions](#image-stamping)).
+4. **Location Metadata (EXIF):** Toggle whether geographic metadata is baked directly into the background of the image file structure itself.
+5. **Composition Grid:** Displays a rule-of-thirds grid line layout on the screen to help frame, align, and capture better photos in the field.
+
 ## Add a series of pictures to a feature
 :material-monitor: Desktop preparation
 
-It is also possible to add more pictures to the feature either by having several attachment field  attributes or by creating a relation to a separate table where the image paths are shown.
+It is also possible to add more pictures to the feature either by having several attachment field attributes or by creating a relation to a separate table where the image paths are shown.
 In this section we will show you an example how this is done.
 A relation to a second layer needs to be set in the QGIS properties so that when adding images or other formats, these are stored in the related table.
 
@@ -109,13 +125,13 @@ Templates shipped alongside projects as well as the QField app folder will be sh
 ## Geotagging
 :material-tablet: Fieldwork
 
-QField's internal; camera will automatically geotag your pictures.
+QField's internal camera will automatically geotag your pictures.
 
 Information about location and direction of the pictures will therefore be baked into the image file.
 
 !!! note
-    While with older Android versions it was possible to use other apps like the amazing OpenCamera app for taking pictures and preserving EXIF information from there, this is no longer with recent Android versions.
-    Is recommended to disable  *Use native Camera* in the *settings* to preserve [EXIF](../../reference/exif.md) information.
+    While with older Android versions it was possible to use other apps like the amazing OpenCamera app for taking pictures and preserving EXIF information from there, this is no longer possible with recent Android versions.
+    It is recommended to disable *Use native Camera* in the *settings* to preserve [EXIF](../../reference/exif.md) information.
 
 ## Image Stamping
 
