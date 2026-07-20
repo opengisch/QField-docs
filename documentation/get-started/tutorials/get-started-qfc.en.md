@@ -153,7 +153,7 @@ At the top of the filter panel is a quick preset buttons (such as _My Own Projec
 
 You can fine-tune your project queries by filling out distinct fields in the filter pane:
 
-- **Search term:** Every project title or description that contains the provided term(s) will be selected. 
+- **Search term:** Every project title or description that contains the provided term(s) will be selected.
 - **Owner:** An editable dropdown combobox that automatically displays a list of unique project owners available to your account.
 - **Include public projects:** A toggle switch that lets you pull in or hide community public projects.
 
