@@ -157,6 +157,13 @@ You can fine-tune your project queries by filling out distinct fields in the fil
 - **Owner:** An editable dropdown combobox that automatically displays a list of unique project owners available to your account.
 - **Include public projects:** A toggle switch that lets you pull in or hide community public projects.
 
+!!! Note
+
+    **Community projects** are projects that are marked as public by any project owner.
+    Public projects are available to view to every user of QFieldCloud.
+    Edits, however, can only be made in case that you as a project owner adds them as collaborators to your project.
+    For this, you do not need to have an organization account.
+
 ##### 3. Power-User Search Syntax
 
 The filter panel acts as visual "training wheels," but the main search bar is built for power users. Advanced filter parameters can be typed directly into the search bar using a dedicated key-value syntax.
