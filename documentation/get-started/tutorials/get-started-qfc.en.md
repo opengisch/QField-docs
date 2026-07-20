@@ -137,6 +137,48 @@ When you are ready for your fieldwork it is time to setup QField on your mobile 
     3. Select a project to download on your device:
         !![Download](../../assets/images/getting_started_download_project.png,250px)
 
+#### Advanced Project Searching and Filtering
+
+:material-tablet: Fieldwork
+
+To easily manage an abundance of projects, QField features a rich search-and-filter panel directly on the QFieldCloud projects screen.
+
+The **Filter button** sits to the right of the project search bar.
+
+##### 1. Predefined Filter Presets
+
+At the top of the filter panel is a quick preset buttons (such as _My Own Projects_, _{org_name}'s projects_). Tapping any preset instantly populates the criteria form and automatically filters the underlying list.
+
+##### 2. Form-Based Filtering Criteria
+
+You can fine-tune your project queries by filling out distinct fields in the filter pane:
+
+- **Search term:** Every project title or description that contains the provided term(s) will be selected.
+- **Owner:** An editable dropdown combobox that automatically displays a list of unique project owners available to your account.
+- **Include public projects:** A toggle switch that lets you pull in or hide community public projects.
+
+!!! Note
+
+    **Community projects** are projects that are marked as public by any project owner.
+    Public projects are available to view to every user of QFieldCloud.
+    Edits, however, can only be made in case that you as a project owner adds them as collaborators to your project.
+    For this, you do not need to have an organization account.
+
+##### 3. Power-User Search Syntax
+
+The filter panel acts as visual "training wheels," but the main search bar is built for power users. Advanced filter parameters can be typed directly into the search bar using a dedicated key-value syntax.
+
+Key parameters are dynamically recognized and highlighted in a distinct accent color directly inside the text input box.
+
+Supported syntax tokens include:
+
+- `owner:name` — Filters the list to only show projects belonging to a specific user or organization account name.
+- `include:public` — Forces public projects to be included in the query evaluation.
+
+> **Example Query:** Typing `owner:My_Organization include:public Forestry` directly into the search field instantly isolates public projects matching the keyword "Forestry" owned by "My_Organization".
+
+!![](../../assets/images/qfc_project_filters.png)
+
 ### Synchronization with QFieldCloud
 
 After you are done you will have to synchronize your changes back to QFieldCloud.
