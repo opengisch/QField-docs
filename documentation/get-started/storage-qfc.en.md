@@ -55,15 +55,17 @@ To upgrade to an **Organization plan**, follow these steps:
     4. Click on "Create".
     5. Choose a name for your organization using fewer than 150 characters, letters, digits, and `@/./+/-/_`.
     6. Click on "Create".
-    7. In the "Billing Address" section, fill in the required fields and click "Next". An overview page will show the plan layout and the billing details.
+    7. In the "Billing Address" section, fill in the required fields and click "Next".
+    An overview page will show the plan layout and the billing details.
     8. If you would like to add additional storage, you can add as many storage packages as you need.
         !![](../assets/images/example_organization_plan_billing.png)
     9. (Optional) If you have received a promotion code, please enter it at the bottom of the billing window.
-    10. Under the summary page, verify your current subscription and upcoming payment. Add your billing details and click on **Pay** to activate your plan.
+    10. Under the summary page, verify your current subscription and upcoming payment.
+    Add your billing details and click on **Pay** to activate your plan.
 
 ### **Active Users under Organization Plans**
 
-Under the **Flex Plan**, at least two users must be in an organization.
+Under the **Flex Plan**, at least one user must be in an organization and will be seen as active by default.
 Depending on your plan, the total cost per billing cycle is defined by the number of **active** users (**Flex only**).
 An "active user" corresponds to a member who has performed at least one "job" within a project belonging to the organization during an invoice cycle.
 
@@ -73,10 +75,13 @@ To monitor the number of active users, direct to *Organization Settings* > *Bill
 
 !!! note
 
-    An account can only be logged in to one device at a time. For example, if the QFieldCloud username `ninja_001` logs into the QField mobile application on a new device, their previous device will automatically be logged out.
-    **Attempting to share a single account across multiple devices can cause synchronization errors, data loss, or data corruption. It may also prevent users from pushing data collected in the field to the cloud.**
+    An account can only be logged in to one device at a time.
+    For example, if the QFieldCloud username `ninja_001` logs into the QField mobile application on a new device, their previous device will automatically be logged out.
+    **Attempting to share a single account across multiple devices can cause synchronization errors, data loss, or data corruption.
+    It may also prevent users from pushing data collected in the field to the cloud.**
 
-    To have multiple people working safely and concurrently on a project (e.g., `survey_001`), you will need an **Organization Plan**. This allows you to invite different user accounts (e.g., `ninja_001`, `ninja_002`, `ninja_00n`) to collaborate. Administrators can add, remove, or change the permissions of these users within the organization and specific projects.
+    To have multiple people working safely and concurrently on a project (e.g., `survey_001`), you will need an **Organization Plan**.
+    This allows you to invite different user accounts (e.g., `ninja_001`, `ninja_002`, `ninja_00n`) to collaborate. Administrators can add, remove, or change the permissions of these users within the organization and specific projects.
 
 ## Modification of current subscription
 
@@ -86,11 +91,11 @@ Additional storage can be obtained in sets of 3 GB.
 
 !!! Workflow
 
-    1. To add more storage to your organization, navigate to the *Settings* section of your organization.
+    1. To add more storage to your organization, direct to the *Settings* section of your organization.
     2. Click on the **billing section** and click on *Change*.
         !![](../assets/images/storage-qfc1.png)
 
-    3. From there, you can either cancel your subscription or modify the subscription. Click on **Modify subscription**.
+    3. From there, you can either cancel your subscription or modify the subscription.  Click on **Modify subscription**.
         !![](../assets/images/storage-qfc2.png)
 
     4. Adjust the number of seats and the modified storage packages depending on your needs. The reflected changes to the upcoming subscription will be indicated below the current subscription with either a green (increasing seats/storage) or red (decreasing seats/storage) color.
@@ -111,14 +116,17 @@ You can transfer the primary ownership of an Organization account to another mem
 
     "Important Billing Considerations"
 
-    Transferring organization ownership **maintains the current active subscription** along with the payment method (credit card details) on the Organization billing section.
+    Transferring organization ownership will not affect the active status of the subscription.
+    This also applies to **the payment method (credit card details)** on the Organization billing section.
 
-    If the original owner used a personal credit card or billing account to fund the organization, the new owner or a billing manager must manually update the organization's payment information to replace it. Removing yourself or transferring the account does not clear the saved card automatically.
+    If you used a credit card to pay for the organization, the new owner must manually update the organization's payment information to replace it if necessary.
+    Removing yourself or transferring the account does not clear the saved card automatically.
 
 !!! Workflow
 
-    1. Ensure the user you intend to appoint as the new primary owner is already a member of the organization. Add them to the organization first.
-    2. Navigate to your Organization click on **Edit organization**.
+    1. Ensure the user you intend to appoint as the new primary owner is already a member of the organization.
+    If not add them to the organization first.
+    2. Navigate to your organization's overview page and click on **Edit organization**.
     3. Change **Owner** on the **Transfer ownership of this organization** section, and select the user intended to transfer from the dropdown list.
         !![](../assets/images/qfc_transferring_org.png)
 
