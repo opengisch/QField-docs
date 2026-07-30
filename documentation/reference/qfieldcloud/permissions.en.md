@@ -18,8 +18,7 @@ Project roles determine what a user can do within a specific project.
 | :--- | :--- |
 | **Owner / Admin** | Full control over the project, including renaming, deleting, managing secrets, and modifying restricted project files (`.qgz`/`.qgs`). |
 | **Manager** | Can manage project collaborators and dataset files. *(Organization projects only)* |
-| **Editor** | Can create, update, and delete features and their attributes in the field.
-*(Organization projects only)* |
+| **Editor** | Can create, update, and delete features and their attributes in the field. *(Organization projects only)* |
 | **Reporter** | Can download the project and collect **new** features in the field, but cannot edit or delete existing features. |
 | **Reader** | Read-only access to view and download the project. Cannot upload edits or changes. |
 
