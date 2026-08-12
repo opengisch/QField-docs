@@ -181,20 +181,19 @@ Supported syntax tokens include:
 
 ### Synchronization with QFieldCloud
 
-After you are done you will have to synchronize your changes back to QFieldCloud.
-This can either be done manually or automatically if necessary.
+After you are done collecting data, you will need to synchronize your changes back to QFieldCloud.
 
 !!! Workflow
-    1. Open the *Side Dashboard*
-    2. Click on the blue cloud (there should be a number indicating how many changes you have made).
-        !![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
-    3. Choose an action with the change you made to your data.
-        Each of the actions have an explanation what you should expect to happen:
-        - **Revert Changes:** All your local changes made since the last synchronization will be deleted.
-        - **Push:** Only your local changes will be pushed to QFieldCloud.
-        - **Synchronize:** All your changes will be pushed to QFieldCloud and merged with the version in the cloud.
-            A new version of the cloud project (including the new changes from other collaborators) will be downloaded to your device.
-        !![Actions](../../assets/images/getting_started_actions.png,250px)
+    1. Open the *Side Dashboard* in QField.
+    2. Click on the cloud icon (a badge will indicate how many local changes you have made).
+        !![Cloud button](../../assets/images/getting_started_blue_button.png,400px)
+    3. Choose the appropriate action card for your data:
+        - **Upload local changes:** Sends your edits and attachments to the cloud without downloading project updates from other collaborators. This is fast and saves internet bandwidth.
+        - **Synchronize project:** Uploads your edits, then downloads the latest project from QFieldCloud so everything is completely up to date.
+        - **Upload history:** Tap this button below the main actions to view a detailed log of your past uploads, including timestamps and their current statuses (e.g., Applied, Pending, Conflict, Error).
+        - **Danger zone:** Tap this button to access destructive actions. From here, you can **Discard local changes** (which removes all your local edits that have not yet been uploaded) or **Reset project** (which re-downloads the cloud version if your local copy becomes corrupted).
+
+        !![](../../assets/images/getting_started_actions.png,800px)
 
 Your changes are now available to everyone who has access to your project on the cloud.
 
