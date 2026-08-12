@@ -42,6 +42,8 @@ Once a photo is captured, a preview screen allows you to inspect and manually ad
 
 Any rotation or reflection applied during preview is permanently baked directly into the final saved JPEG image alongside any active image stamps or EXIF metadata.
 
+![type:video](../../assets/videos/rotate_camera.mp4)
+
 ## Add a series of pictures to a feature
 :material-monitor: Desktop preparation
 
