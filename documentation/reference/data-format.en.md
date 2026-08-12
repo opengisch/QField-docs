@@ -8,21 +8,22 @@ tx_slug: documentation_reference_data-format
 QField supports a wide variety of formats via QGIS data providers and GDAL.
 This page offers a non-exhaustive list of supported data formats.
 
-| Data Format | Support          | Notes                    |
-|-------------|------------------|--------------------------|
-| SpatiaLite  | :material-check: |                          |
-| GeoPackage  | :material-check: |                          |
-| WMS         | :material-check: |                          |
-| WFS         | :material-check: |                          |
-| WFS-T       | :material-check: |                          |
-| PostGIS     | :material-check: |                          |
-| MBTiles     | :material-check: |                          |
-| Shapefile   | :material-check: |                          |
-| Tiff        | :material-check: |                          |
-| JPEG2000    | :material-check: |                          |
-| WEBP        | :material-check: |                          |
-| ECW         | :material-close: | License restricts usage. |
-| MrSID       | :material-close: | License restricts usage. |
+| Data Format                 | Support          | Notes                    |
+|-----------------------------|------------------|--------------------------|
+| SpatiaLite                  | :material-check: |                          |
+| GeoPackage                  | :material-check: |                          |
+| Vector Tile Package (.vtpk) | :material-check: |                          |
+| WMS                         | :material-check: |                          |
+| WFS                         | :material-check: |                          |
+| WFS-T                       | :material-check: |                          |
+| PostGIS                     | :material-check: |                          |
+| MBTiles                     | :material-check: |                          |
+| Shapefile                   | :material-check: |                          |
+| Tiff                        | :material-check: |                          |
+| JPEG2000                    | :material-check: |                          |
+| WEBP                        | :material-check: |                          |
+| ECW                         | :material-close: | License restricts usage. |
+| MrSID                       | :material-close: | License restricts usage. |
 
 If you don't find your favorite data format on this table, please check
 if it works and [adapt the list above](https://github.com/opengisch/QField-docs/edit/master/documentation/reference/data-format.en.md) <!-- markdown-link-check-disable-line -->
