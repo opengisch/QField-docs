@@ -19,10 +19,11 @@ To configure the widget, please refer to the [Attributes Form Documentation](./a
 ## In-App Camera Interface
 :material-tablet: Fieldwork
 
-When you are taking pictures within an attachment widget inside QField,
-the built-in camera interface have several toggles and configuration tools:
+When taking pictures within an attachment widget inside QField, the built-in camera interface provides several live toggles and post-capture editing tools:
 
 !![QField Camera Controls](../../assets/images/qfield_camera_options.png)
+
+### Live Capture Controls
 
 1. **Camera Switch:** Switch between the front-facing and rear-facing camera lenses on your device.
 2. **Resolution & Aspect Ratio:** Adjust the photo resolution and frame dimensions to manage your file sizes and image layouts.
@@ -31,6 +32,17 @@ the built-in camera interface have several toggles and configuration tools:
     (you can configure the [stamp with expressions](#image-stamping)).
 4. **Location Metadata (EXIF):** Toggle whether geographic metadata is baked directly into the background of the image file structure itself.
 5. **Composition Grid:** Displays a rule-of-thirds grid line layout on the screen to help frame, align, and capture better photos in the field.
+
+### Photo Preview & Quick Editing
+Once a photo is captured, a preview screen allows you to inspect and manually adjust the image before saving it to your project. A floating toolbar above the capture button offers the following quick edits:
+
+- **Rotate Counter-Clockwise:** Rotates the photo 90° to the left.
+- **Mirror / Reflect:** Flips the photo horizontally.
+- **Rotate Clockwise:** Rotates the photo 90° to the right.
+
+Any rotation or reflection applied during preview is permanently baked directly into the final saved JPEG image alongside any active image stamps or EXIF metadata.
+
+![type:video](../../assets/videos/rotate_camera.mp4)
 
 ## Add a series of pictures to a feature
 :material-monitor: Desktop preparation
