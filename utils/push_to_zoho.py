@@ -17,6 +17,10 @@ category_map = {
 }
 
 
+class SkipArticleError(Exception):
+    pass
+
+
 def extract_path(paths: list[str] | str) -> list[str] | str:
     # extract paths from a list of dict
     flat_paths = []
@@ -59,7 +63,15 @@ def convert_md(path: str) -> tuple[str, str, str]:
     if len(parts) != 3:
         raise ValueError("Markdown file {} seems to miss an header".format(path))
     _, header, body = parts
-    if not body.strip().startswith("# "):
+    stripped_body = body.strip()
+    if not stripped_body.startswith("# "):
+        # Redirect-only pages intentionally do not contain a markdown title.
+        if re.search(
+            r'<meta\s+http-equiv=["\']refresh["\']', stripped_body, flags=re.IGNORECASE
+        ):
+            raise SkipArticleError(
+                "Skipping redirect-only markdown file {}".format(path)
+            )
         raise ValueError("Markdown file {} seems to miss a # title".format(path))
     body = "{}{}".format(docs_url_warning, body)
 
@@ -231,7 +243,10 @@ def main():
                 path = "documentation/{}.en.md".format(path[:-3])
                 if os.path.exists(path):
                     print("Processing: ", path)
-                    push_article(category_title, path, headers, article_map)
+                    try:
+                        push_article(category_title, path, headers, article_map)
+                    except SkipArticleError as err:
+                        print(err)
                 else:
                     raise FileNotFoundError("File missing: ", path)
 
