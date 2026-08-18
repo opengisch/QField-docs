@@ -60,12 +60,12 @@ The following table details what each project role can do:
 
 Organization member roles govern administrative access to the organization itself, its member directory, billing details, and all projects owned by that organization.
 
-| Role        | Summary                                                                                                                                                                                   |
-|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Owner**   | Primary administrative authority. Full access over organization billing, subscription plans, ownership transfers, member management, and all organization projects.                       |
-| **Admin**   | Administrative manager. Can manage organization members, structure teams, and manage all organization projects.                                                                           |
-| **Creator** | Project creation specialist. Can create new projects under the organization and manage projects they have created, without administrative access to organization billing or member lists. |
-| **Member**  | Standard organization user. Assigned to specific organization projects as a collaborator. Membership distinction primarily serves organizational visibility and billing seat allocations. |
+| Role        | Summary                                                                                                                                                                                                                                                               |
+|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Owner**   | Primary administrative authority. Full access over organization billing, subscription plans, ownership transfers, member management, and all organization projects.                                                                                                   |
+| **Admin**   | Administrative manager. Can manage organization members, structure teams, and manage all organization projects.                                                                                                                                                       |
+| **Creator** | Project creation specialist. Can create new projects under the organization and manage projects they have created, without administrative access to organization billing or member lists. They are automatically set as administrators of the newly created projects. |
+| **Member**  | Standard organization user. Assigned to specific organization projects as a collaborator. Membership distinction primarily serves organizational visibility and billing seat allocations.                                                                             |
 
 ### Organization Capabilities Matrix
 
@@ -95,10 +95,9 @@ Only **Admins** and **Owners** can modify restricted files.
 
 Each project can be configured as **Private** or **Public**:
 
-!!! Workflow "Configuring Project Visibility"
-    1. Log into QFieldCloud and select your project.
-    2. Navigate to **Settings** in the project.
-    3. Toggle the **Public project** option.
+1. Log into QFieldCloud and select your project.
+2. Navigate to **Settings** in the project.
+3. Toggle the **Public project** option.
 
 In the QFieldCloud web interface, project visibility is indicated by the status icon next to the project name: a lock icon (🔒) represents a Private project, while if the project doesn't have any icon it represents a Public project.
 
