@@ -91,12 +91,12 @@ This allows for the sending of edited datasets directly to third-party apps (Gma
 
 !![Send to...](../../assets/images/howto_sendto.png)
 
-#### Send Compressed File(s)
+### Send Compressed File(s)
 
 When managing local datasets inside the file picker screen, you can select one or multiple dataset files to share them simultaneously as a single compressed archive.
 
 !!! Workflow
-    1. In the local data picker screen, enter selection mode by long-pressing an item or tapping the multi-select menu.
+    1. In the local data picker screen, enter selection mode by long-pressing on an item or tapping the multi-select menu.
     2. Select the dataset file(s) you wish to export.
     3. Tap the top menu button *(⋮)* and select **Send compressed file(s) to...**
     4. QField automatically bundles the selected items into a `.zip` archive and triggers the device's native sharing dialog to pick your destination app.
