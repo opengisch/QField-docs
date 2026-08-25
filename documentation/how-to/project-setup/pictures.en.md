@@ -40,7 +40,7 @@ Once a photo is captured, a preview screen allows you to inspect and manually ad
 - **Mirror / Reflect:** Flips the photo horizontally.
 - **Rotate Clockwise:** Rotates the photo 90° to the right.
 
-Any rotation or reflection applied during preview is permanently baked directly into the final saved JPEG image alongside any active image stamps or EXIF metadata.
+Any rotation or reflection applied during preview is permanently baked into the final saved JPEG image alongside any active image stamps or EXIF metadata.
 
 ![type:video](../../assets/videos/rotate_camera.mp4)
 
