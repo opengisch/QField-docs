@@ -81,11 +81,14 @@ To upload your shared datasets to QFieldCloud, ensure the **`shared_datasets`** 
     4. Click on the **Perform Actions** button to proceed.
     During the upload phase, a list of the shared and regular project datasets will appear as they are being transferred.
     This instructs QFieldSync to find the actual data files referenced by your Localized Data Paths and upload them to the **`shared_datasets`** cloud project.
-!!! Note:
 
-    If you want to share shared datasets with your organization account, it is necessary to *FIRST* create an empty project on QFieldCloud named shared_datasets. Only then will the shared data be uploaded, following the same steps as outlined above.
+    !![QFieldSync Synchronization Dialog with Localized Datasets upload option enabled](../../assets/images/upload_missing_localized_datasets.png)
 
-        !![QFieldSync Synchronization Dialog with Localized Datasets upload option enabled](../../assets/images/upload_missing_localized_datasets.png)
+!!! note
+
+    If you want to share datasets across projects within your organization's projects, it is necessary to *FIRST* create an empty project on QFieldCloud named `shared_datasets`. Only then will the shared data be uploaded, following the same steps as outlined above.
+
+
 
 ### Review of the Upload Log
 
