@@ -9,6 +9,14 @@ tx_slug: documentation_reference_qfieldcloud_concepts
 
 To interact with QFieldCloud you need to be a registered user. Each user can create, modify and delete **projects** and **organizations**.
 
+!!! tip
+
+    "Batch Users Addition"
+
+    You can add up to 20 users at once in the web interface for Organization Members, Organization Teams and Project Collaborators. Type or paste multiple usernames, email addresses, or team handles separated by spaces, commas, or semicolons, and press **Enter** or **Space** to convert them into tags before clicking **Add**.
+
+    !![](../../assets/images/qfc_batch_add_collaborators.png,800px)
+
 ## Projects
 
 Projects are the main data container within QFieldCloud.
@@ -26,7 +34,7 @@ A project collaborator is another QFieldCloud user invited to contribute to a pr
 One project may have multiple collaborators.
 Collaborators can have the roles **Admin**, **Manager**, **Editor**, **Reporter**, and **Reader**.
 Only users with the roles of **Admin** and **Manager** can add more users as collaborators to the project.
-If the project is owned by an organization, whole **teams** can also be added as collaborators.
+If the project is owned by an organization, whole **teams** (e.g. `@organization/team`) can also be added as collaborators.
 Read more about [collaborator roles](../../reference/qfieldcloud/permissions.md).
 
 ## Organizations
@@ -43,7 +51,7 @@ Members with **owner** or **admin** role can add other members.
 
 ### Organization teams
 
-Teams allow organization members with a **owner** or **admin** role to easily assign permissions to multiple users at once.
+Teams allow organization members with an **owner** or **admin** role to easily assign permissions to multiple users at once.
 A team consists of one or more organization members within the organization.
 When a team is assigned a role in a project, all the team members automatically have that role too.
 Teams can be added as collaborators only to projects owned by the same organization.
