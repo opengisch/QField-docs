@@ -84,12 +84,12 @@ The icons indicate the cloud and local status of the different projects.
     - ![Status](../../assets/images/cloud_project.svg){Width="20px"} indicates that the cloud project is also locally stored.
 
 - **Cloud status**: There are three different types of status indicated by a color which show the current status of your cloud project.
-The status of each project is shown with a tooltip.
+    The status of each project is shown with a tooltip.
     - **Red Status:** The project is invalid and is not ready-for use in the field.
-    There are multiple reasons for this and the status message on your QFieldCloud landing page is the first step to address the issue.
+        There are multiple reasons for this and the status message on your QFieldCloud landing page is the first step to address the issue.
     - **Brown Status:** The project is currently being updated or edited.
     - **Green Status**: The project is ready to be used in the field.
-    You can download the project down to QField.
+        You can download the project down to QField.
 
 ### QField Project Settings
 
@@ -189,11 +189,14 @@ After you are done collecting data, you will need to synchronize your changes ba
         !![Cloud button](../../assets/images/getting_started_blue_button.png,400px)
     3. Choose the appropriate action for your data:
         - **Upload local changes:** Your local changes only will be send to the cloud.
-        This is fast and saves internet bandwidth.
+            This is fast and saves internet bandwidth.
         - **Synchronize project:** First your local changes will be uploaded.
-        Following, the latest project from QFieldCloud will be downloaded, including all changes made since you last synchronized.
-        - **Upload history:** Tap this button below the main actions to view a detailed log of your past uploads, including timestamps and their current statuses (e.g., Applied, Pending, Conflict, Error).
-        - **Danger zone:** Tap this button to access destructive actions. From here, you can **Discard local changes** (which removes all your local edits that have not yet been uploaded) or **Reset project** (which re-downloads the cloud version if your local copy becomes corrupted).
+            Following, the latest project from QFieldCloud will be downloaded, including all changes made since you last synchronized.
+        - **Upload history:** Tap this button below the main actions to view a detailed log of your past uploads,
+            including timestamps and their current statuses (e.g., Applied, Pending, Conflict, Error).
+        - **Danger zone:** Tap this button to access destructive actions. From here, you can **Discard local changes**
+            (which removes all your local edits that have not yet been uploaded) or **Reset project**
+            (which re-downloads the cloud version if your local copy becomes corrupted).
 
         !![](../../assets/images/getting_started_actions.png,800px)
 
