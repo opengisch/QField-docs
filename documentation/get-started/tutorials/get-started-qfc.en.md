@@ -187,9 +187,11 @@ After you are done collecting data, you will need to synchronize your changes ba
     1. Open the *Side Dashboard* in QField.
     2. Click on the cloud icon (a badge will indicate how many local changes you have made).
         !![Cloud button](../../assets/images/getting_started_blue_button.png,400px)
-    3. Choose the appropriate action card for your data:
-        - **Upload local changes:** Sends your edits and attachments to the cloud without downloading project updates from other collaborators. This is fast and saves internet bandwidth.
-        - **Synchronize project:** Uploads your edits, then downloads the latest project from QFieldCloud so everything is completely up to date.
+    3. Choose the appropriate action for your data:
+        - **Upload local changes:** Your local changes only will be send to the cloud.
+        This is fast and saves internet bandwidth.
+        - **Synchronize project:** First your local changes will be uploaded.
+        Following, the latest project from QFieldCloud will be downloaded, including all changes made since you last synchronized.
         - **Upload history:** Tap this button below the main actions to view a detailed log of your past uploads, including timestamps and their current statuses (e.g., Applied, Pending, Conflict, Error).
         - **Danger zone:** Tap this button to access destructive actions. From here, you can **Discard local changes** (which removes all your local edits that have not yet been uploaded) or **Reset project** (which re-downloads the cloud version if your local copy becomes corrupted).
 
