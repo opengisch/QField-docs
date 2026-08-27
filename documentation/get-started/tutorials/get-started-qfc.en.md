@@ -18,20 +18,40 @@ You can further manage teams, work in organisations, assign different editing pe
     2. (Optionable) If you have a received a referral code, please enter it in the according field.
         !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
+
 ## QFieldCloud Overview
 
-Once registered your personal QFieldCloud landing page, will show you all the projects that you have access to in the center of the window.
-In case that you have many projects, you can search in the search bar at the top of the page.
-It is also possible to create a new empty project from this menu.
-All further configuration of that project, however needs to be done inside QGIS.
-Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
-Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
+Once registered, your personal QFieldCloud landing page will display all the projects you have access to in the center of the window.
+
+Under your profile name, you can edit and manage account details, view organizations you belong to, check project collaborations, and manage personal [subscription plans](https://qfield.cloud/pricing).
 
 !!! Tip
     In the project overview page, the two names indicate the "Owner" of the project and the "Name" of the project.
     In case that you are the owner or a member of an organisation, you may find that the name will be different in case that you are not the project. owner.
 
-!![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png,800px)
+!![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png, 800px)
+
+### Filtering Projects in the Web Interface
+:material-web: Web Interface
+
+When managing a large number of cloud projects, you can refine your project list using the **Filters** dropdown button located next to the search bar.
+
+!![](../../assets/images/qfc_web_project_filters.png, 800px)
+
+The dropdown menu allows you to filter projects by two primary criteria:
+
+- **Ownership:** *(Personal accounts only)*:
+
+    - **My own projects:** Displays only projects where your account is the primary owner.
+    - **Shared with me:** Displays projects owned by collaborators or organizations where you have been granted access.
+
+- **Project type:**
+
+    - **Regular projects:** Standard QGIS mapping projects created for field data collection.
+    - **Shared datasets:** Centralized datasets stored in the dedicated `shared_datasets` project repository.
+
+When any filter option is active, clicking **Clear** button immediately resets all active filter parameters and restores the full project view.
+
 
 ## Project Creation
 
