@@ -6,7 +6,26 @@ tx_slug: documentation_how-to_bookmarks
 # Bookmarks
 
 QField allows you to save, organize, and navigate to spatial bookmarks across sessions and projects.
-By default, bookmarks are displayed as marker overlays on the map, searchable via the locator, and accessible from a dedicated list panel.
+By default, bookmarks are displayed as marker overlays on the map, searchable via the search menu, and accessible from a dedicated list panel.
+
+## Project Bookmarks vs. User Bookmarks
+
+QField handles two distinct types of spatial bookmarks:
+
+* **User Bookmarks:** Created directly inside QField on the mobile device. These persist across all local projects and can be fully edited, grouped by color, or exported.
+* **Project Bookmarks:** Embedded directly inside the QGIS project file (`.qgs`/`.qgz`) on desktop. These appear under the **Project bookmarks** section header in the list view and are read-only in QField.
+
+### Creating Project Bookmarks in QGIS
+:material-desktop: Desktop preparation
+
+!!! Workflow
+
+    1. Open your project in QGIS and navigate to your target area.
+    2. Add a spatial bookmark using **Ctrl + B**, or via **View > New Spatial Bookmark**.
+    3. Define the name, group, and optional map extent/rotation in [QGIS Spatial Bookmarks Manager](https://docs.qgis.org/latest/en/docs/user_manual/introduction/browser.html#spatial-bookmarks). <!-- markdown-link-check-disable-line -->
+    4. Save and synchronize the project to QField.
+
+    !![Spatial Bookmark QGIS](../../assets/images/bookmarks-qgis.png,600px)
 
 ## Viewing and Accessing Bookmarks
 :material-tablet: Fieldwork
@@ -28,9 +47,10 @@ QField features a dedicated slide-over drawer to manage and browse all available
 
 !!! Workflow
 
-    1. Open the **Dashboard** from the main map view.
-    2. Tap **Bookmarks** in the menu.
-    3. The Bookmark List panel will open, categorized into color groups (*Green*, *Orange*, *Red*, *Blue*) and a dedicated **Project bookmarks** section.
+    1. Open the **Side Dashboard** from the main map view.
+    2. Tap the 3-dotted menu and select **Bookmarks** in the menu.
+    3. The Bookmark List will open, categorized into color groups (*Green*, *Orange*, *Red*, *Blue*).
+    Additionally, if you have project based bookmarks, which were created in QGIS before are show
     4. Tap any bookmark in the list to instantly jump to its location on the map.
 
     !![](../../assets/images/list_panel_bookmarks.png)
@@ -65,11 +85,11 @@ Bookmark locations capture both the target point coordinates and the active map 
 ## Managing and Exporting Bookmarks
 :material-tablet: Fieldwork
 
-User-created bookmarks can be edited, copied, deleted in batches, or exported to standalone vector datasets.
+User-created bookmarks can be edited, copied, deleted individually or in bulk and also exported to standalone vector datasets, such as Gpkg's.
 
 ### Individual Bookmark Actions
 
-Tap the three-dotted menu *(⋮)* next to any user bookmark in the Bookmark List panel to access quick actions:
+Under the Bookmark List Panel, tap the 3-dotted menu *(⋮)* next to the user bookmark in the Bookmark List panel to access quick actions:
 
 - **Edit Bookmark:** Modify the name or change the color group.
 - **Copy Bookmark Details:** Copies the bookmark name and its geographic coordinates (formatted in map CRS) directly to your clipboard.
@@ -82,23 +102,27 @@ Tap the three-dotted menu *(⋮)* next to any user bookmark in the Bookmark List
 
 !!! Workflow
 
-    1. Open the **Bookmarks** list panel.
-    2. Long-press on any user bookmark, or tap the top three-dotted menu *(⋮)* and select **Toggle Bookmark Selection**.
-    3. Check the boxes next to the bookmarks you wish to manage.
-    4. Tap the top menu *(⋮)* and select **Delete Selected Bookmark(s)** to perform a batch removal.
+    1. Open the Bookmarks list panel.
+    2. Long-press on any user bookmark, or tap the top 3-dotted menu *(⋮)* and select **Toggle Bookmark Selection**.
+    3. Check the boxes next to the bookmarks you wish to select.
+    4. Tap the *(⋮)* and select **Delete Selected Bookmark(s)** to delete the selected .
 
     !![](../../assets/images/delte_multiple_bookmarks.png, 300px)
 
 ### Exporting Bookmarks to GeoPackage
 
-You can export your saved user bookmarks into a standalone GeoPackage file (`.gpkg`) to share with colleagues or archive externally.
+You can export your user bookmarks into a standalone GeoPackage (`.gpkg`) to share with colleagues or archive externally.
 
 !!! Workflow
 
-    1. Open the **Bookmarks** list panel.
-    2. To export **all** user bookmarks: Tap the top menu *(⋮)* and select **Export All User Bookmarks**.
-    3. To export **selected** bookmarks: Enable selection mode, select the target items, tap the top menu *(⋮)*, and select **Export Selected Bookmark(s)**.
-    4. QField will compile the point geometries, names, and color attributes into a `.gpkg` file and launch the platform-native sharing dialog (**Send to...**) to transfer the file via email, cloud drive, or messaging apps.
+    1. Open the Bookmarks list panel.
+
+    **To export **all** user bookmarks**
+    2. Tap the 3-dotted menu *(⋮)* and select **Export All User Bookmarks**.
+
+    **To export selected bookmarks**
+    2a) Select the bookmarks you with to export, tap the  menu *(⋮)*, and select **Export Selected Bookmark(s)**.
+    3. QField will compile the point geometries, names, and color attributes into a `.gpkg` file and launch the platform-native sharing dialog (**Send to...**) to transfer the file via email, cloud drive, or messaging apps.
 
     !![](../../assets/images/export_multiples_bookmarks_to_gpkg.png, 300px)
 
@@ -111,8 +135,8 @@ You can set any bookmark directly as a active navigation destination.
 
 !!! Workflow
 
-    1. Open the **Bookmarks** list panel from the Dashboard.
-    2. Tap the three-dotted menu *(⋮)* next to the bookmark name.
+    1. Open the **Bookmarks list panel** from the Side Dashboard.
+    2. Tap the 3-dotted menu *(⋮)* next to the bookmark name.
     3. Select **Navigate to bookmark** (purple navigation flag icon).
     4. QField will transform the bookmark's center coordinates into an active navigation target.
 
@@ -124,29 +148,9 @@ You can set any bookmark directly as a active navigation destination.
 
     1. Tap the search bar on the map canvas.
     2. Type the bookmark name (or type `b ` to filter explicitly for bookmarks).
-    3. In the search results list, tap the **purple navigation flag icon** next to the bookmark name to start navigating immediately, or tap the text to center the map canvas.
+    3. In the search results list, tap the **purple navigation flag icon** next to the bookmark name to immediately start navigating, or tap the text to center the map canvas.
 
     !![](../../assets/images/bookmarks-search.png, 300px)
-
-
-## Project Bookmarks vs. User Bookmarks
-
-QField handles two distinct types of spatial bookmarks:
-
-* **User Bookmarks:** Created directly inside QField on the mobile device. These persist across all local projects and can be fully edited, grouped by color, or exported.
-* **Project Bookmarks:** Embedded directly inside the QGIS project file (`.qgs`/`.qgz`) on desktop. These appear under the **Project bookmarks** section header in the list view and are read-only in QField.
-
-### Creating Project Bookmarks in QGIS
-:material-desktop: Desktop preparation
-
-!!! Workflow
-
-    1. Open your project in QGIS and navigate to your target area.
-    2. Add a spatial bookmark using **Ctrl + B**, or via **View > New Spatial Bookmark**.
-    3. Define the name, group, and optional map extent/rotation in [QGIS Spatial Bookmarks Manager](https://docs.qgis.org/latest/en/docs/user_manual/introduction/browser.html#spatial-bookmarks). <!-- markdown-link-check-disable-line -->
-    4. Save and synchronize the project to QField.
-
-    !![Spatial Bookmark QGIS](../../assets/images/bookmarks-qgis.png,600px)
 
 ## Enabling or Disabling Bookmarks
 :material-tablet: Fieldwork
