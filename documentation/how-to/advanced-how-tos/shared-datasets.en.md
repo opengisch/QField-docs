@@ -37,7 +37,7 @@ To transfer the shared datasets manually in QField, the datasets have to be adde
 !!! Workflow
 
     1. Direct to local QField directory.
-    If you are unsure you can find it by navigating to the "Side Dashboard" > 3-dotted menu > "About QField"
+    If you are unsure you can find it by navigating to the *Side Dashboard* > *3-dotted menu* > *About QField*
     2. Copy the shared datasets into the directory **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/basemaps** on your device.
         QField will automatically scan this folder for shared datasets.
 
