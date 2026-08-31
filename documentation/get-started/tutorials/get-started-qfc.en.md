@@ -23,7 +23,7 @@ You can further manage teams, work in organisations, assign different editing pe
 
 Once registered, your personal QFieldCloud landing page will display all the projects you have access to in the center of the window.
 
-Under your profile name, you can edit and manage account details, view organizations you belong to, check project collaborations, and manage personal [subscription plans](https://qfield.cloud/pricing).
+Under your profile name, you can edit and manage account details, view organizations you belong to or own, check project collaborations, and manage your organization members [subscription plans](https://qfield.cloud/pricing).
 
 !!! Tip
     In the project overview page, the two names indicate the "Owner" of the project and the "Name" of the project.
@@ -31,14 +31,14 @@ Under your profile name, you can edit and manage account details, view organizat
 
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png, 800px)
 
-### Filtering Projects in the Web Interface
-:material-web: Web Interface
+### Filtering Projects
+:material-monitor: Desktop
 
 When managing a large number of cloud projects, you can refine your project list using the **Filters** dropdown button located next to the search bar.
 
 !![](../../assets/images/qfc_web_project_filters.png, 800px)
 
-The dropdown menu allows you to filter projects by two primary criteria:
+The dropdown menu allows you to filter projects by three primary criteria:
 
 - **Ownership:** *(Personal accounts only)*:
 
@@ -49,9 +49,11 @@ The dropdown menu allows you to filter projects by two primary criteria:
 
     - **Regular projects:** Standard QGIS mapping projects created for field data collection.
     - **Shared datasets:** Centralized datasets stored in the dedicated `shared_datasets` project repository.
+    - **Template Projects:** Projects that are locked for fieldworkers and only used as project templates.
 
 When any filter option is active, clicking **Clear** button immediately resets all active filter parameters and restores the full project view.
 
+![type:video](../../assets/videos/type_filters_1.webm)
 
 ## Project Creation
 
