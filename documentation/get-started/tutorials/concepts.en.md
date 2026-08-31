@@ -20,6 +20,47 @@ Read more about [QFieldCloud Projects](../../reference/qfieldcloud/projects.md).
 
 !![](../../assets/images/qfc_roles.svg,800px)
 
+### Project Types
+
+QFieldCloud projects can be assigned one of three project types:
+
+| Project Type                            | Primary Purpose                                                                              | Field Sync / changes | Packaging Jobs | Can be Cloned? |
+|:----------------------------------------|:---------------------------------------------------------------------------------------------|:---------------------|:---------------|:---------------|
+| **Regular** (`regular`)                 | Active fieldwork projects used for data collection.                                          | ✅ Allowed            | ✅ Allowed      | ✅ Yes          |
+| **Template** (`template`)               | Master blueprints used to configure setups once and clone them for new survey campaigns.     | ❌ Blocked            | ❌ Disabled     | ✅ Yes          |
+| [**Shared Datasets**](../../how-to/advanced-how-tos/shared-datasets.md) (`shared_datasets`) | Dedicated central project hosting shared base layers and localized datasets across projects. | ❌ Blocked            | ❌ Disabled     | ❌ No           |
+
+#### Regular Project
+
+A regular project is any project which used for the day to day fieldwork.
+This is by default the project type you should use if you wish to work in a collaborative environment.
+Users can manipulate the data, upload and synchronize as well as copy the project to their desktop devices.
+
+#### Template Project
+
+Projects of type **template** act as read-only projects for field workers while remaining fully editable for administrators:
+
+- **Master Project:** Project administrators can upload files, edit QGIS configurations, and update layers on a template project.
+- **Data Protection:** Field workers cannot package projects that are marked as a template.
+    Attempting to do so will return an error (`operation_not_allowed_for_template_project`).
+- **Cloning Source:** Both **Regular** and **Template** project types can be used as sources for cloning new projects.
+
+!!! Workflow
+
+    When creating a project in **QFieldSync**, change the project type to **Template** if you want it to be used as a template.
+
+     !![](../../assets/images/qfs_project_type_selection.png)
+
+     To designate a project as a template (when already exist in QFieldCloud), navigate to the project's **Settings** section and change the **Project Type** dropdown to **Template**.
+
+     !![](../../assets/images/qfc_project_type_selection.png, 800px)
+
+#### Shared Datasets Project
+
+If you repeatedly use the same layers in multiple projects across your organization, you may want to consider using [shared datasets](../../how-to/advanced-how-tos/shared-datasets.md).
+These are projects that act as a separate project to which the shared datasets are uploaded.
+Despite being visible in your QGIS project, they are not part of the synchronization.
+
 ### Project collaborators
 
 A project collaborator is another QFieldCloud user invited to contribute to a project.

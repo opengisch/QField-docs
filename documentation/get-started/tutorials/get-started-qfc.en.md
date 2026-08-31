@@ -21,44 +21,18 @@ You can further manage teams, work in organizations, assign different editing pe
 ## QFieldCloud Overview
 
 Once registered, your personal QFieldCloud landing page will show you all the projects that you have access to in the center of the window.
-In case you have many projects, you can search in the search bar at the top of the page.
+In case you have multiple projects, you can search in the search bar at the top of the page.
 It is also possible to create a new empty project from this menu.
 All further configuration of that project, however, needs to be done inside QGIS.
 Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
 Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
 
+Before you get started, we recommend to familiarize yourself with the [basic concepts](../tutorials/concepts.md) of QFieldCloud.
+
 !!! Tip
     In the project overview page, the two names indicate the "Owner" of the project and the "Name" of the project.
-    In case you are the owner or a member of an organization, you may find that the name will be different if you are not the project owner.
 
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png,800px)
-
-
-### QFieldCloud Project Types
-
-QFieldCloud projects can be assigned one of three project types:
-
-| Project Type                            | Primary Purpose                                                                              | Field Sync / changes | Packaging Jobs | Can be Cloned? |
-|:----------------------------------------|:---------------------------------------------------------------------------------------------|:---------------------|:---------------|:---------------|
-| **Regular** (`regular`)                 | Active fieldwork projects used for data collection.                                          | ✅ Allowed            | ✅ Allowed      | ✅ Yes          |
-| **Template** (`template`)               | Master blueprints used to configure setups once and clone them for new survey campaigns.     | ❌ Blocked            | ❌ Disabled     | ✅ Yes          |
-| **Shared Datasets** (`shared_datasets`) | Dedicated central project hosting shared base layers and localized datasets across projects. | ❌ Blocked            | ❌ Disabled     | ❌ No           |
-
-### Template Projects Details
-
-Template projects act as read-only blueprints for field workers while remaining fully editable for administrators:
-
-- **Master Blueprints:** Project administrators can upload files, edit QGIS configurations, and update layers on a template project.
-- **Data Protection:** Field workers cannot push edit deltas or synchronize changes directly to a template project. Attempting to do so will return an error (`operation_not_allowed_for_template_project`).
-- **Cloning Source:** Both **Regular** and **Template** project types can be used as sources for cloning new projects.
-
-When creating a project in **QFieldSync**, change the project type to **Template** if you want it to be used as a template.
-
-!![](../../assets/images/qfs_project_type_selection.png)
-
-To designate a project as a template (when already exist in QFieldCloud), navigate to the project's **Settings** section and change the **Project Type** dropdown to **Template**.
-
-!![](../../assets/images/qfc_project_type_selection.png, 800px)
 
 
 ## Project Creation

@@ -14,10 +14,9 @@ There are multiple options available to initialize and build a project in QField
 ## Creating Projects
 
 ### Option 1: Initialize via Web UI (Blank or Basemap Template)
-:material-web: Web Interface
+:material-monitor: Desktop Preparation
 
-You can provision empty map spaces or simple localized maps directly from QFieldCloud,
-downloading them to your desktop environment for further styling later.
+You can create empty map spaces or simple localized maps directly from QFieldCloud, downloading them to your desktop for further styling.
 
 !!! Workflow
 
@@ -31,8 +30,7 @@ downloading them to your desktop environment for further styling later.
     4. Pick your initialization template configuration:
 
         - **Create an empty project:** Sets up a clean project folder environment without a basemap.
-        - **Use a basic template:** Allows you to bundle a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL)
-            and customize your target workspace boundaries by selecting a coordinates bounding box via the **Project extent map window**.
+        - **Use a template:** Allows you add a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL) and select your project extend via a bounding box tapping on the **Project extent map window**.
 
         ![Template Project](../../assets/images/project_organization_03_template.png)
 
@@ -40,7 +38,7 @@ downloading them to your desktop environment for further styling later.
     The completed skeleton will populate on your profile's project overview files.
 
 ### Option 2: Create from an XLSForm Spreadsheet (Web UI Upload)
-:material-web: Web Interface
+:material-monitor: Desktop Preparation
 
 For deployment workflows relying on spreadsheets for [form configuration](https://xlsform.org/), QFieldCloud can compile tabular data collection forms directly into complete QGIS projects containing relational data schemas.
 

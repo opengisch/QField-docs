@@ -59,3 +59,6 @@ It is a cloud-based service and with its unique technology it will allow your te
 Thanks to the tight integration with QField, your team will be able to start surveying and digitizing data in no time.
 
 [Register Now :material-cloud-outline:](https://app.qfield.cloud/accounts/signup/){ .md-button }
+
+
+## How to read the documentation
