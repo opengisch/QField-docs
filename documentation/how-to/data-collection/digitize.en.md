@@ -192,7 +192,7 @@ The freehand digitizing mode is activated through a new toolbar button which app
 
 ## Snapping
 
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 While digitizing new features, new points can be snapped to existing geometries.
 

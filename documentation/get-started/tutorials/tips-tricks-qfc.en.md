@@ -118,7 +118,7 @@ When being in the field and doing lots of changes that include a lot of attachme
 With this functionality, you can enforce automatic pushing of pending changes to QField devices in the field, as well as specify the interval in between automated pushes.
 The functionality is activated through a project setting, allowing remote activation.
 
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 1. **Access Project Settings**: Direct to *Project* > *Properties...* > *QField* > *QFieldCloud Packaging*
 2. **Enable Auto-Push**: Toggle the "Automatically push pending changes on the following interval" option and establish your preferred interval.

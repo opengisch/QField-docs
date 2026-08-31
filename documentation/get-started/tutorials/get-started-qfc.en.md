@@ -11,7 +11,7 @@ QFieldCloud is the cloud service that allows smoothless synchronisation of your 
 You can further manage teams, work in organisations, assign different editing permissions and much more.
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 !!! Workflow
     1. Go to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
@@ -41,7 +41,7 @@ There are several ways to create and initialize a new project in QFieldCloud dep
 
 
 ## From QFieldCloud to QGIS Desktop
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS. The next steps show you how you can install and synchronize your data to and from QFieldCloud.
 

@@ -45,7 +45,7 @@ Any rotation or reflection applied during preview is permanently baked into the 
 ![type:video](../../assets/videos/rotate_camera.mp4)
 
 ## Add a series of pictures to a feature
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 It is also possible to add more pictures to the feature either by having several attachment field attributes or by creating a relation to a separate table where the image paths are shown.
 In this section we will show you an example how this is done.
@@ -153,7 +153,7 @@ With this functionality you can add detailed and formatted information when taki
 
 ### Styling Settings
 
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Navigate to the *Project* > *Properties* > *QField* > *Attachments and Directories* sub-panel and click on "Settings" for "Customize image stamping details".
 
@@ -185,7 +185,7 @@ Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) ||
 !![](../../assets/images/image_with_stamp_details.png)
 
 ## Fetching Geotags (EXIF) from the image file into the attribute table
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Sometimes you might be interested in automatically storing Geotags such as the latitude, longitude, orientation, etc.
 This information is also known as EXIF tags.
@@ -205,14 +205,14 @@ For more tags visit the [QField EXIF reference documentation](../../reference/ex
 5. Completed! QField now captures and stores the EXIF tags in the pictures table while taking pictures.
 
 ## Maximum picture size
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 The advanced settings allow rescaling the photos to a maximum width/height in *Project* > *Properties* > *Attachments and Directories*
 
 !![](../../assets/images/maximum_picture_size_attachments.png, 800px)
 
 ## Configurable attachment path
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 QFieldSync provides the possibility to configure the path and the file names of picture attachments.
 

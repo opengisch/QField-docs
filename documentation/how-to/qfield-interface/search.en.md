@@ -97,7 +97,7 @@ vector layers. For example, calculating the total area covered by a polygon laye
 can be done by typing *= aggregate('my_layer','sum', $area)*.
 
 ## Configure vector layers search in QGIS
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 By default, all vector layers are searchable.
 When configuring your project in QGIS, it is possible to exclude vector layers from search results.

@@ -81,7 +81,7 @@ This provides a simplified, guided journey for field workers filling out complex
 
 ### Configuring Wizard Mode
 
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 To use Wizard Mode, your feature form must first be set up using the **"Drag and drop designer"** in QGIS, with your fields organized into multiple tabs.
 Once your form is organized into tabs, you can enable Wizard Mode via QFieldSync.
@@ -129,7 +129,7 @@ In Wizard Mode, the standard top-right "Save" button is hidden.
 ![type:video](../../assets/videos/qfield_form_wizard.mp4)
 
 ## Working with Relations
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 For detailed information on setting up layer relations in QGIS, please refer to the [setting relations between multiple layers](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers) section in the QGIS documentation. <!-- markdown-link-check-disable-line -->
 
@@ -151,7 +151,7 @@ the automatic switch from a "buttons'" interface to a list
 
 
 ## Attachment Widget
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 The widget type *Attachment* is used with fields that store the path to files.
 
@@ -188,7 +188,7 @@ The option *hyperlink* on the attachment widget will disable that functionality 
 !!! Workflow
     **Set a specific attachment path**
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     In QFieldSync you can configure the path of attachments.
     By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
@@ -200,7 +200,7 @@ The option *hyperlink* on the attachment widget will disable that functionality 
 
 ## Value Relation Widget
 
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 The widget *Value Relation* offers values from a related table in a combobox.
 
@@ -260,7 +260,7 @@ When selecting the magnifying glass you can search under the available values an
 
 
 ## Conditional Visibility
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 You can hide whole groups based on expressions.
 This is useful when certain attributes are only required under certain conditions.
@@ -287,7 +287,7 @@ This is useful when certain attributes are only required under certain condition
     ![type:video](../../assets/videos/conditional_visibility.webm)
 
 ## Conditional Row Styling
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 QField supports QGIS's conditional row styling, providing immediate visual feedback when browsing features via list views (such as identify results or relation lists). You can use expressions to dynamically change the background color, text color, and font properties (italic, underline, strikeout) of individual items in the feature list based on their data.
 
@@ -321,7 +321,7 @@ the items will automatically adopt the background, colors, and font styles defin
 !![](../../assets/images/row_conditional_formatting_qfield.png)
 
 ## Define Constraints
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Attribute fields can have constraints attached.
 Constraints are rules in the form of expressions.
@@ -344,7 +344,7 @@ A description can be added that is shown if a constraint is not satisfied.
     ```
 
 ## Define Default Values
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Fields can have default values configured.
 Default values are inserted into the attribute form when digitizing a new feature.
