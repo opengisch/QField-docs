@@ -9,7 +9,7 @@ QField directly supports all style settings configured in QGIS.
 This includes renderer types such as graduated, categorized, rule-based, 2.5D, and data-defined symbology.
 
 ## Display Expression
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 In QField, features are identified by a display name customized using QGIS expressions.
 Display expressions are also used when searching for features within layers.
@@ -19,10 +19,12 @@ Display expressions are also used when searching for features within layers.
     2. Navigate to _Vector Layer Properties > Display_.
     3. Define your display expression under the **Display Expression** field.
 
-!![Configuration of display expression in QGIS.](../../assets/images/define_display_expression.png)
+    The display expression is also used to search in layers.
+    !![Configuration of display expression in QGIS.](../../assets/images/define_display_expression.png)
+
 
 ## Read-Only, Non-Identifiable, and Searchable Layers
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Some layers in a project serve purely visual purposes and should not trigger identification popups when a user taps the map canvas.
 Other layers contain background reference data and must be protected from user editing, feature addition, or deletion.

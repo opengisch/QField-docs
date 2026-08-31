@@ -9,13 +9,14 @@ Calculate itineraries or open external navigation applications (such as Google M
 Configure attribute fields with dynamic hyperlink expressions in QGIS to open routing and mapping services in external mobile applications.
 
 ## Configuring External Routing in QGIS
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 ### Direct Navigation Directions
 
 Configure an attribute field to open driving directions to feature coordinates in Google Maps.
 
 !!! Workflow
+
     1. Open your project in QGIS and add a text attribute field (such as `routing_url`) to your vector layer.
     2. Navigate to _Vector Layer Properties... > Attribute Form_.
     3. Select your routing attribute field and set **Widget Type** to **Attachment**.

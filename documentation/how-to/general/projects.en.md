@@ -65,11 +65,12 @@ The main file selector screen displays a **Favorite directories** section.
 - **Remove a favorite directory:** Long-press an entry in the favorites list.
 
 ## Set Default Project
+:material-tablet: Fieldwork
 
 Set a specific project as your default basemap when opening individual datasets.
 This feature is useful when using a QFieldCloud project as a basemap.
 
-### How to Set a Default Project
+!!! Workflow
 
 !!! Workflow
     1. Locate the **Recent Projects** list on the Welcome Screen.
@@ -86,8 +87,8 @@ When opening an individual dataset, QField selects a basemap using the following
 - **Basemap File:** Uses a `basemap.qgs` or `basemap.qgz` file found inside the device `QField` directory if no default project is set.
 - **OpenStreetMap:** Loads a default OpenStreetMap XYZ layer if neither a default project nor a basemap file exists.
 
-## Retrieve Modified Projects and Datasets
-:material-monitor: Desktop preparation
+## Retrieve modified projects and datasets
+:material-monitor: Project Manager
 
 Access imported projects and datasets directly by connecting your device to a computer using a USB cable.
 The top navigation bar displays the storage path when opening a local file.
@@ -100,7 +101,11 @@ On most USB-connected devices, locate edited content under `<drive>:/Android/dat
 Share and export datasets directly from QField using native device sharing APIs.
 This feature allows sending edited datasets to third-party applications (such as Gmail, Google Drive, Dropbox, Nextcloud, or messaging apps).
 
-!![Send to...](../../assets/images/howto_sendto.png)
+!!! Workflow
+
+    1. Direct to your local project folder by directing to _Side-Dashboard > Project Folder_
+    2. Tap on the 3-dots to send the files to your preferred cloud folder.
+    !![Send to...](../../assets/images/howto_sendto.png)
 
 ### Send Compressed File(s)
 

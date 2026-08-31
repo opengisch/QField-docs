@@ -6,12 +6,15 @@ tx_slug: documentation_how-to_pg-service
 # Working with PostgreSQL
 
 ## PostgreSQL in QField
+:material-monitor: Project Manager
+
 
 Working with databases simplifies data management in multi-user environments and complex project structures.
 QField allows connecting directly to PostgreSQL databases after completing initial configuration steps.
 This page provides step-by-step instructions to configure PostgreSQL database connections for QField and QFieldCloud.
 
 ## Connection to PostgreSQL in QGIS
+:material-monitor: Project Manager
 
 QGIS supports two methods to connect to a PostgreSQL database:
 
@@ -40,6 +43,7 @@ If you stored access credentials in the **Authentication** section, QField can e
 !![Adding PostGIS connection](../../assets/images/pg-service_manual_connection.png,400px)
 
 ### Connection via PG Service
+:material-monitor: Project Manager
 
 Connect to PostgreSQL using a service configuration file.
 A `pg_service.conf` file stores parameter definitions to access databases under named service entries.
@@ -51,7 +55,7 @@ Read more about PostgreSQL service connection files in the [QGIS Documentation](
 The [PG Service Parser Plugin](https://github.com/opengisch/qgis-pg-service-parser-plugin) simplifies creating and managing service configuration files in QGIS.
 
 !!! Workflow
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. Navigate to _Plugins > Manage and Install Plugins..._.
     2. Search for **PG service parser** and click **Install Plugin**.
@@ -61,7 +65,7 @@ The [PG Service Parser Plugin](https://github.com/opengisch/qgis-pg-service-pars
 !![Create config file](../../assets/images/pg-service_create_config_file.png,500px)
 
 !!! Workflow
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. Click the green plus (**+**) icon inside the PG Service Parser plugin dialog.
     2. Select required connection parameters and click **OK**.
@@ -71,7 +75,7 @@ The [PG Service Parser Plugin](https://github.com/opengisch/qgis-pg-service-pars
 !![Service details](../../assets/images/pg-service_service_details.png)
 
 !!! Workflow
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. Open the **QGIS Connections** tab inside the PG Service Parser dialog.
     2. Select the target service entry.
@@ -87,6 +91,7 @@ The new connection appears under the **PostgreSQL** entry in the QGIS Browser pa
 When using a PG service file to connect to PostGIS, you must provide the service configuration file on your mobile device or save it in QFieldCloud as a project secret.
 
 ### Configuration on Mobile Devices
+:material-tablet: Fieldwork
 
 When transferring projects via USB cable, copy your service configuration file directly to the QField application directory on your mobile device.
 The QField application directory on Android is located at `Android/data/ch.opengis.qfield/files/QField`.

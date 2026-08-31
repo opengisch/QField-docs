@@ -27,7 +27,7 @@ If no custom elevation data is configured in your QGIS project, QField attempts 
     - **Connectivity:** Mobile devices require an active internet connection to download online terrain tiles.
 
 ### Option 2: Custom DEM
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Configure custom elevation data directly in QGIS for offline fieldwork and high-accuracy terrain rendering.
 Read more in the [QGIS Elevation Properties Documentation](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#elevation-properties). <!-- markdown-link-check-disable-line -->

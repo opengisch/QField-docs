@@ -10,6 +10,7 @@ For example, a building feature contains multiple apartment records, which in tu
 Use the relation reference widget to select existing child features or create new child records directly inside feature forms.
 
 ## Relation Configuration
+:material-monitor: Project Manager
 
 Before adding, editing, or viewing related features, set up a layer relation in QGIS.
 Add a primary key field to the parent layer (**Reference Layer**) and a corresponding foreign key field to the child layer (**Referencing Layer**).
@@ -60,11 +61,13 @@ Limit the number of visible child features displayed in relation widgets to simp
     !![QField Visible items](../../assets/images/maximum-items-visible-in-relation.png,300px)
 
 ## Many-To-Many Relations
+:material-monitor: Project Manager
 
 Many-to-many ($N:M$) relations require a linking pivot table.
 Refer to the [QGIS Many-To-Many Relations Documentation](http://docs.qgis.org/3.40/en/docs/user_manual/working_with_vector/joins_relations.html#many-to-many-n-m-relations) to set up pivot table relations.
 
 ## Ordered Relation
+:material-monitor: Project Manager
 
 Reorder linked child features based on a specific attribute field using the **Ordered Relation Editor** widget.
 This functionality requires installing the [Ordered Relation Editor QGIS Plugin](https://github.com/opengisch/qgis-ordered-relation-editor). <!-- markdown-link-check-disable-line -->
@@ -84,6 +87,7 @@ This functionality requires installing the [Ordered Relation Editor QGIS Plugin]
     !![QField](../../assets/images/ordered_relation_widget.webp,400px)
 
 ## Custom Name in Relation Reference Widget
+:material-monitor: Project Manager
 
 Define **Display Expression** rules for parent and child layers to customize feature names in relation lists.
 Configure display expressions by navigating to _Vector Layer Properties... > Display_.
@@ -93,6 +97,7 @@ Configure display expressions by navigating to _Vector Layer Properties... > Dis
 !![QField](../../assets/images/display_name_qfield.png)
 
 ## Gallery Relation Editor
+:material-monitor: Project-Manager
 
 QField automatically upgrades standard relation editor widgets to a **Gallery Relation Editor** when the child layer contains an **Attachment** widget.
 This provides a visual media gallery for browsing and managing related photos, videos, and audio recordings directly within the parent feature form.
@@ -114,7 +119,7 @@ Opening a note allows adding and browsing multiple attached photos, videos, or a
 !!! Workflow
     **Configuring the Gallery Relation Editor in QGIS:**
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     The Gallery Relation Editor activates automatically based on your form layout without requiring a specific widget selection.
 

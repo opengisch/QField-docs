@@ -26,7 +26,7 @@ Double-tap or long-press a layer in the legend to display the layer options menu
 - **Setup tracking":** Configures feature tracking mode for the layer.
 
 ## Sort Layer Features
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Configure the feature display order for the **Show feature list** view in QGIS using two methods:
 

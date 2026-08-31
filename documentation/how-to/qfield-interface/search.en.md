@@ -38,7 +38,23 @@ Active layer searches focus queries exclusively on the currently active layer an
 
 Matching attribute names and values are highlighted in the search results list.
 
-![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
+             ![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
+
+Active layer searches focus queries exclusively on the currently active layer and its attributes.
+
+- **Search all active layer attributes:** Type `f ` followed by your search term (such as `f oak`).
+- **Target a specific attribute field:** Type `f @ATTRIBUTE_NAME search-term` (such as `f @tree_type oak`).
+
+Matching attribute names and values are highlighted in the search results list.
+
+!!! Workflow
+    1. Tap **Scan code** inside the search bar to open the Code Reader interface.
+    2. Scan or decode a code using one of two methods:
+        - **Live Camera / NFC:** Point the camera at a physical QR code or barcode, or hold an NFC text tag near the mobile device.
+            !![](../../assets/images/search-bar-code-reader-1-scanning.png, 300px)
+        - **Image File from Gallery:** Tap the **Gallery** icon on the bottom control bar and select a photo containing a QR code or barcode.
+            !![](../../assets/images/code_reader_from_gallery.png, 300px)
+    3. Tap the checkmark (**✔**) button after decoding a code to execute the search query.
 
 ## Search with Code Scanner
 
@@ -100,7 +116,7 @@ The search bar functions as a QGIS expression calculator.
     For example, calculate the total area of a polygon layer by typing `= aggregate('my_layer', 'sum', $area)`.
 
 ## Configure Vector Layers Search in QGIS
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 All vector layers are searchable by default.
 Exclude specific layers from search queries in QGIS project properties.

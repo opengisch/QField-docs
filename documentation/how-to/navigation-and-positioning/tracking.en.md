@@ -40,6 +40,7 @@ QField renders a red rubberband line on the map canvas during active tracking se
 If tracked layers support $M$ coordinate dimensions, QField records elapsed time (in seconds since tracking start) in each vertex $M$ value.
 
 ### Setting Up a Tracking Session
+:material-tablet: Fieldwork
 
 !!! Workflow
     **Option 1: Via the Side Dashboard**

@@ -9,7 +9,7 @@ QField supports connecting to web services requiring user or token authenticatio
 This page details configuring OAuth2 services in QGIS and exporting authentication configurations to QField mobile devices.
 
 ## OAuth2-Protected Web Services in QGIS
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Before loading the OAuth2-protected web layers (such as WFS or WMS) into QField you need to configure  them accordingly in in QGIS.
 
@@ -25,7 +25,7 @@ Before loading the OAuth2-protected web layers (such as WFS or WMS) into QField 
 !![Authentication](../../assets/images/oauth2_setup_auth.png)
 
 ## Export Authentication Configurations from QGIS to QField
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 In order to view the layers in QField you need to export the authentication configurations from QGIS.
 
@@ -42,13 +42,9 @@ In order to view the layers in QField you need to export the authentication conf
     Keep exported XML files secure and delete them after completing device deployment.
 
 ## Import Authentication Configurations into QField
-
 :material-tablet: Fieldwork
 
-
-
-
-Now youi have to transfer the exported authentication configuration XML file directly into the QField application directory on your mobile device.
+Now you have to transfer the exported authentication configuration XML file directly into the QField application directory on your mobile device.
 
 !!! Workflow
     1. Copy the authentication configuration XML file from wherever you saved it during export.

@@ -28,7 +28,8 @@ The built-in QField camera interface provides live toggles and post-capture edit
 - **Camera switch:** Toggles between front-facing and rear-facing camera lenses.
 - **Resolution and aspect ratio:** Adjusts photo resolution and frame dimensions to manage file sizes and image layouts.
 - **Live image stamping:** Toggles a real-time text overlay directly onto the photo canvas.
-By default, the stamp applies context details such as date, time, latitude, longitude, altitude, ground speed, and heading orientation in degrees (configure the stamp using [expressions](#image-stamping)).
+    By default, the stamp applies context details such as date, time, latitude, longitude, altitude, ground speed,
+    and heading orientation in degrees (configure the stamp using [expressions](#image-stamping)).
 - **Location metadata (EXIF):** Toggles whether geographic metadata is saved directly inside the image file structure.
 - **Composition grid:** Displays a rule-of-thirds grid overlay on the screen to assist with framing and aligning photos in the field.
 
@@ -46,7 +47,7 @@ Applied rotations or reflections bake permanently into the saved JPEG image alon
 ![type:video](../../assets/videos/rotate_camera.mp4)
 
 ## Add a Series of Pictures to a Feature
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Add multiple photos to a single feature using multiple attachment attributes or by creating a layer relation to a child photo table.
 This section illustrates configuring a 1:N photo relation.
@@ -85,6 +86,7 @@ Configure a relation in QGIS with the following properties:
 !![Relations](../../assets/images/add-1-n-pictures-relations.png)
 
 ### Attribute Form Configuration
+:material-monitor: Project Manager
 
 Configure attribute forms in feature layers after creating the layer relation.
 Specify a default value in the `apiary` parent layer to generate unique primary keys.
@@ -113,6 +115,7 @@ Set the widget type to **Attachment** in the `apiary_picture` child layer.
 !![widgets](../../assets/images/add-1-n-pictures-widgets_picture.png)
 
 ## Drawing and Sketching
+:material-tablet: Fieldwork
 
 QField includes built-in drawing and sketching tools to annotate captured images, draw on blank canvases, or sketch over templates.
 
@@ -149,7 +152,7 @@ Configure image stamping options in QFieldSync inside QGIS.
 Image stamping embeds formatted text overlays and logos directly onto field photos.
 
 ### Styling Settings
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 !!! Workflow
     1. Navigate to _Project > Properties... > QField > Attachments and Directories_.
@@ -167,11 +170,13 @@ The default template pre-populates date, time, and GNSS positioning variables.
 
 Default template expression:
 
-```sql
-[% format_date(now(), 'yyyy-MM-dd @ HH:mm') %]
-Latitude [% coalesce(format_number(y(@gnss_coordinate), 7), 'N/A') %] | Longitude [% coalesce(format_number(x(@gnss_coordinate), 7), 'N/A') %] | Altitude [% coalesce(format_number(z(@gnss_coordinate), 3) || ' m', 'N/A') %]
-Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) || ' m/s', 'N/A') %] | Orientation [% if(@gnss_orientation != 'nan', format_number(@gnss_orientation, 1) || ' °', 'N/A') %]
-```
+    ```sql
+    [% format_date(now(), 'yyyy-MM-dd @ HH:mm') %]
+    Latitude [% coalesce(format_number(y(@gnss_coordinate), 7), 'N/A') %] | Longitude [% coalesce(format_number(x(@gnss_coordinate), 7), 'N/A') %] | Altitude [% coalesce(format_number(z(@gnss_coordinate), 3) || ' m', 'N/A') %]
+    Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) || ' m/s', 'N/A') %] | Orientation [% if(@gnss_orientation != 'nan', format_number(@gnss_orientation, 1) || ' °', 'N/A') %]
+    ```
+    !![QGIS Default expression](../../assets/images/image_stamping_setting.png, 800px)
+    !![Result in QField](../../assets/images/image_with_stamp_details.png)
 
 !![](../../assets/images/image_stamping_setting.png, 800px)
 
@@ -179,8 +184,9 @@ Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) ||
 
 !![](../../assets/images/image_with_stamp_details.png)
 
+
 ## Fetching Geotags (EXIF) from the Image File into the Attribute Table
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Store EXIF geotag parameters (such as latitude, longitude, and camera orientation) directly inside vector attribute fields.
 
@@ -201,7 +207,7 @@ To store the EXIF information, follow these steps:
     QField extracts and populates EXIF geotag values into attribute tables when taking photos in the field.
 
 ## Maximum picture size
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Rescale captured photos to maximum width and height thresholds to save storage space.
 Configure maximum dimensions by navigating to _Project > Properties... > QField > Attachments and Directories_.
@@ -209,7 +215,7 @@ Configure maximum dimensions by navigating to _Project > Properties... > QField 
 !![](../../assets/images/maximum_picture_size_attachments.png, 800px)
 
 ## Configurable attachment path
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 QFieldSync provides the possibility to configure the path and the file names of picture attachments.
 

@@ -12,6 +12,7 @@ You can manage teams, work in organizations, assign different editing permission
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
 :material-monitor: Project Manager
+:material-monitor: Project Manager
 
 !!! Workflow
     1. Navigate to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details, and create a new QFieldCloud account.
@@ -45,7 +46,6 @@ When managing a large number of cloud projects, you can refine your project list
 The dropdown menu allows you to filter projects by three primary criteria:
 
 - **Ownership:** *(User accounts only)*:
-
     - **My own projects:** Displays only projects where your account is the primary owner.
     - **Shared with me:** Displays projects owned by collaborators or organizations where you have been granted access.
 - **Project type:**
@@ -65,7 +65,6 @@ You can convert an existing QGIS project, start from a blank template on the web
 [Click here to read more about project creation](create-project-qfc.md)
 
 ## From QFieldCloud to QGIS Desktop
-
 :material-monitor: Project Manager
 
 In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS.
@@ -101,6 +100,7 @@ The screen contains the following elements:
 Newly registered users will see an empty table.
 Double-click a project in the list to view and edit project properties.
 Click on a project name in the list to view and edit project properties.
+
 ### Project Status
 
 The icons indicate the cloud and local status of each project.
@@ -213,7 +213,7 @@ QField will indicate whether your project has changes locally that are not yet u
 !!! Note
 
     1. To get notified about the project update on the cloud, you need to be online and logged in.
-    2. If a new version is available, you should syncronize your project as soon as possible.
+    2. If a new version is available, you should synchronize your project as soon as possible.
 
 There are two ways in which you can see whether your project is up-to-date with the version on QFieldCloud.
 

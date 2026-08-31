@@ -5,7 +5,7 @@ tx_slug: documentation_how-to_decorations
 
 # Map Decorations
 
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Customize your project with decorations in QField by configuring them first in QGIS.
 Read more in the [QGIS Map View Documentation](https://docs.qgis.org/latest/en/docs/user_manual/map_views/map_view.html#decorating-the-map). <!-- markdown-link-check-disable-line -->
@@ -19,6 +19,7 @@ Choose from several decoration types:
 - **Scale Bar":** Displays a scale bar on the map canvas, which can be enabled directly inside QField settings.
 
 ### Grid
+:material-monitor: Project Manager
 
 !!! Workflow
     1. In QGIS, navigate to _View > Decorations > Grid..._.
@@ -33,6 +34,7 @@ Choose from several decoration types:
 Once configured in QGIS, the grid displays automatically in QField after synchronizing or transferring the project.
 
 ### Title Label
+:material-monitor: Project Manager
 
 !!! Workflow
     1. In QGIS, navigate to _View > Decorations > Title Label..._.
@@ -57,6 +59,7 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
     ```
 
 ### Copyright Label
+:material-monitor: Project Manager
 
 !!! Workflow
     1. In QGIS, select _View > Decorations > Copyright Label…_.
@@ -65,15 +68,16 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
 
     Use expressions to display real-time positioning information and map scale directly on the map canvas:
 
-    ```sql
-    -- Displays the GNSS coordinates and current map scale
-    Lat: [% format_number(y(@gnss_coordinate), 8) %] | Lon: [% format_number(x(@gnss_coordinate), 8) %]
-    Scale: 1:[% round(@map_scale) %]
-    ```
+        ```sql
+        -- Displays the GNSS coordinates and current map scale
+        Lat: [% format_number(y(@gnss_coordinate), 8) %] | Lon: [% format_number(x(@gnss_coordinate), 8) %]
+        Scale: 1:[% round(@map_scale) %]
+        ```
 
     The ability to use [positioning variables](../../reference/expression_variables.md#positioning-and-gnss-variables) (`@gnss_coordinate`) offers a streamlined way to display critical location data without cluttering the main user interface.
 
 ### Image
+:material-monitor: Project Manager
 
 !!! Workflow
     1. In QGIS, open _View > Decorations > Image…_.
@@ -102,6 +106,6 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
     2. Open the **Side Dashboard** (**☰**).
     3. Tap the **Settings** icon.
     4. Navigate to the **General** section.
-    5. Enable **Show scale bar** .
+    5. Enable **Show scale bar**.
 
     !![](../../assets/images/scale_bar_toggle.png,900px)

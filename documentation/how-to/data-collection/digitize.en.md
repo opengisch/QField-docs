@@ -31,6 +31,7 @@ Enable digitize mode to collect new spatial features.
     QField prevents duplicate vertices during digitizing and respects geometry precision settings configured on the layer.
 
 ### Adding Point Features
+:material-tablet: Fieldwork
 
 !!! Workflow
     1. Center the map crosshair over the target location.
@@ -40,6 +41,8 @@ Enable digitize mode to collect new spatial features.
     3. (Optional) Tap the cancel button (**✕**) to discard feature creation.
 
 ### Adding Line or Polygon Features
+
+:material-tablet: Fieldwork
 
 !!! Workflow
     1. Center the map crosshair over the starting location.
@@ -165,7 +168,7 @@ Freehand mode activates when hovering a stylus or mouse over the map canvas whil
 ![type:video](https://player.vimeo.com/video/537673220) <!-- markdown-link-check-disable-line -->
 
 ## Snapping
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Snap newly digitized vertices to existing vector geometries.
 Configure snapping settings in QGIS before exporting projects to QField.
@@ -204,7 +207,11 @@ Edit attribute values for multiple selected features simultaneously.
     3. Select target features to edit.
     4. Tap the edit button in the title bar to update shared attribute values across all selected features.
 
-![type:video](../../assets/videos/multi_editor.webm)
+!!! Workflow
+
+    1. Select two (or more) features on the map
+    2.  Tap on the the **3-dotted menu *(⋮)** on the top right and tap on the **Edit** Icon.
+    ![type:video](../../assets/videos/multi_editor.webm)
 
 ## Copy, Cut, and Paste
 

@@ -10,7 +10,7 @@ Modifying one attribute value automatically updates dependent attribute fields c
 For example, selecting a scientific species name can automatically populate a common species name or retrieve a corresponding image.
 
 ## Configuring Live Default Values
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Configure live default values in QGIS layer properties by combining default value expressions with the **Apply default value on update** setting.
 

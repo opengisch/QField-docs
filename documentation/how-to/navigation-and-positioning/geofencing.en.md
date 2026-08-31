@@ -10,7 +10,7 @@ You can also prohibit feature digitizing when a geofencing alert is active.
 Configure geofenced boundaries in QGIS using QFieldSync.
 
 ## Defining Geofenced Areas
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 !!! Workflow
     1. In QGIS, navigate to _Project > Properties... > QField_.
