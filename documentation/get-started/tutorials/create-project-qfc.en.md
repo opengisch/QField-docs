@@ -10,13 +10,13 @@ There are multiple options available to initialize and build a project in QField
 - [Using QGIS](my-first-project.md)
 - [Using QFieldCloud](#creating-projects)
 - [Directly from QField](../../how-to/project-setup/create-project.md)
+
 ## Creating Projects
 
 ### Option 1: Initialize via Web UI (Blank or Basemap Template)
-:material-web: Web Interface
+:material-monitor: Desktop Preparation
 
-You can provision empty map spaces or simple localized maps directly from the QFieldCloud,
-downloading them to your desktop environment for further styling later.
+You can create empty map spaces or simple localized maps directly from QFieldCloud, downloading them to your desktop for further styling.
 
 !!! Workflow
 
@@ -30,8 +30,7 @@ downloading them to your desktop environment for further styling later.
     4. Pick your initialization template configuration:
 
         - **Create an empty project:** Sets up a clean project folder environment without a basemap.
-        - **Use a basic template:** Allows you to bundle a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL)
-            and customize your target workspace boundaries by selecting a coordinates bounding box via the **Project extent map window**.
+        - **Use a template:** Allows you add a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL) and select your project extend via a bounding box tapping on the **Project extent map window**.
 
         ![Template Project](../../assets/images/project_organization_03_template.png)
 
@@ -39,7 +38,7 @@ downloading them to your desktop environment for further styling later.
     The completed skeleton will populate on your profile's project overview files.
 
 ### Option 2: Create from an XLSForm Spreadsheet (Web UI Upload)
-:material-web: Web Interface
+:material-monitor: Desktop Preparation
 
 For deployment workflows relying on spreadsheets for [form configuration](https://xlsform.org/), QFieldCloud can compile tabular data collection forms directly into complete QGIS projects containing relational data schemas.
 
@@ -52,7 +51,7 @@ For deployment workflows relying on spreadsheets for [form configuration](https:
 
     1. Click on **Create project** from your QFieldCloud landing page.
     2. Complete the project metadata fields (Name, Extent) and click **Create**.
-    3. Chose "Use a basic template" option, and locate the **XLSForm file upload input**.
+    3. Choose "Use a basic template" option, and locate the **XLSForm file upload input**.
     4. Choose your spreadsheet template file and press the **Create** button.
 
     QFieldCloud will process the form so that you end up with a fully functioning **Survey** layer with the corresponding survey configurations (drop-down lists, radio buttons, manual text edit).
@@ -72,7 +71,7 @@ Project cloning allows you to duplicate existing active setups to act as templat
 
 Cloning creates an isolated, completely independent project space, cleanly replicating:
 - The base QGIS mapping project file (`.qgs` or `.qgz`).
-- All bundled offline layers and databases (GeoPackages, styles, .etc).
+- All bundled offline layers and databases (GeoPackages, styles, etc.).
 - System execution policies (offline editing conflict rule settings, attachment on-demand configurations).
 
 !!! Workflow
@@ -85,20 +84,19 @@ Cloning creates an isolated, completely independent project space, cleanly repli
 
     ![type:video](../../assets/videos/clonning_projects_in_qfc.webm)
 
-
 ### Overriding Project Parameters
 
 While cloning effectively duplicates the source project, you can override specific parameters during the creation process:
 
 - **Project Name:** You must provide a unique name for the new cloned project (e.g., `survey_zone_b`, `survey_zone_n`).
 - **Owner:** You can assign the cloned project to a different owner (e.g., a specific organization or user account), with the appropriate permissions.
-- **Extent:** By providing new extent for the cloned project (for easy moving the zoom to the new extend zone).
+- **Extent:** By providing a new extent for the cloned project (for easy moving the zoom to the new extent zone).
 
 ### Constraints and Limitations
 
 To ensure system stability and security, project cloning is subject to the following technical rules:
 
-- **Permissions:** You must have admin, manager role to the source project to be able to clone it.
+- **Permissions:** You must have admin or manager role on the source project to be able to clone it.
 - **Storage availability:** The target owner account must have enough free storage available to accommodate the entire file size of the source project.
     If the storage limit is exceeded, the clone operation will fail.
 - **Seed Configuration:** When cloning, you cannot configure new basemaps via the project seed. The seed data is strictly limited to updating the project's `extent`.
@@ -127,6 +125,20 @@ curl --location 'https://app.qfield.cloud/api/v1/projects/' \
 
 !!! note
     The seed object is optional and only accepts the extent field when utilizing the clone functionality.
+
+To explicitly create a Template Project via the API, include "project_type": "template" in the request body:
+
+```bash
+curl --location 'https://app.qfield.cloud/api/v1/projects/' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Token {MY_TOKEN}' \
+--data '{
+    "name" : "master_survey_template",
+    "owner": "{USERNAME}",
+    "project_type": "template",
+    "description": "Master template for field operations"
+}'
+```
 
 ## Option 4: Change the Ownership of a Project
 :material-web: Web Interface
