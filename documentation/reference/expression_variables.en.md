@@ -7,10 +7,11 @@ tx_slug: documentation_reference_expression_variables
 
 QField supports various expression variables that can be used as field defaults, constraints or also to control the visibility of your attribute forms.
 These include not only all the expression variables available in QGIS but also additional variables provided by QField to access positioning information and give explicit information about the QFieldCloud data.
+The expression variables are set in your QGIS project, either inside the project- or layer properties, depending on your used case.
 
-## QFieldCloud
+## QFieldCloud Variables
 
-For QFieldCloud users, two expression variables can be used in forms or default values:
+For QFieldCloud users, two expression variables can be used in attribute forms or as default values:
 
 - `@cloud_username` - Returns the name of the currently logged-in QFieldCloud user.
 - `@cloud_useremail` - Returns the email address of the currently logged-in QFieldCloud user.
@@ -18,17 +19,35 @@ For QFieldCloud users, two expression variables can be used in forms or default 
 ## Positioning and GNSS Variables
 
 Accurate positioning information can be relevant in a lot of contexts.
-When your location is activated, the specific variables will populate the pre-configured fields.
-These variables are commonly used in default values expressions to track the quality and details of individual measured points.
+When your location is activated, it is possible to store the exact locations inside zour attribute frm.  the specific variables will populate the pre-configured fields.
+
+!!! Workflow
+
+    :material-monitor: Project Manager
+
+    1. In your QGIS Project, open the layer properties of the layer, in which you wish to record your location (right-click on layer in the data browser.)
+    2. Switch to the attribute form section.
+    3. In the default value, set the desired position variable.
+
+     !![setting project variables as expressions](../../assets/images/drag-and-drop-designer-attribute-forms.png,500px)
+
+    **Alternative**
+
+    You may wish to fall back to your internal positioning to insure that a location is actually recorded.
+    You can configure your attribute field in such a way that it will exactly do that.
+    Simply use the expression `coalesce()`
+
+    1. In the default value of your desired attribute write:
+
+    <p style="text-align:center;">`coalesce(@gnss_horizontal_accuracy, @position_horizontal_accuracy)`</p>
 
 In case you are connecting to an external positioning device, it is possible to interchange the `@position_*` variable with the `@gnss_*` variable to directly connect its position instead.
 
 !!! Watch out
     Make sure that your positioning is enabled, otherwise the fields will not be populated.
+    In order for the positioning variable to be available is when the crosshair is snapped to the sensor.
 
 ### List of Positioning and GNSS Variables
-
-**Note**: In order for the positioning variable to be available is when the crosshair is snapped to the sensor.
 
 - `@position_source_name` - The name of the device providing the location information, as reported by the sensor.
 If the position is manually set and not snapped to the cursor, the source name is "manual".
@@ -68,24 +87,19 @@ A positive value indicates a clockwise direction from true north; a negative val
 - `@position_imu_heading` - The heading value of an active IMU device providing positioning corrections.
 - `@position_imu_steering` - The steering value of an active IMU device providing positioning corrections.
 
-### Example
-
-While being in the field it may happen that the GNSS receiver fails and you wish to fall back to your internal positioning. You can configure your attribute field in such a way that it will exactly do that. Simply use the expression `coalesce()`
-
-!!! example
-    `coalesce(@gnss_horizontal_accuracy, @position_horizontal_accuracy)`
-
 !!! info
     - I: Internal position source, E: External (NMEA) position source.
     - Variables containing `satellites` are not available on iOS.
 
 !!! note
+
     The `gnss_*` variables always report the GNSS sensor values, even when the crosshair is not snapped.
-    - When the crosshair is snapped to the sensor:
-      - `@gnss_horizontal_accuracy` > Reports the sensor's horizontal accuracy (in meters).
-      - `@position_horizontal_accuracy` > Reports the same value as the corresponding `gnss` value.
-      - `@position_source_name` > Reports the sensor name.
-    - When the crosshair is manually moved:
-      - `@gnss_horizontal_accuracy` > Reports the sensor's horizontal accuracy (in meters).
-      - `@position_horizontal_accuracy` > The value is `NULL`.
-      - `@position_source_name` > The value is `manual`.
+
+     - When the crosshair is snapped to the sensor:
+        - `@gnss_horizontal_accuracy` > Reports the sensor's horizontal accuracy (in meters).
+         - `@position_horizontal_accuracy` > Reports the same value as the corresponding `gnss` value.
+         - `@position_source_name` > Reports the sensor name.
+     - When the crosshair is manually moved:
+         - `@gnss_horizontal_accuracy` > Reports the sensor's horizontal accuracy (in meters).
+         - `@position_horizontal_accuracy` > The value is `NULL`.
+         - `@position_source_name` > The value is `manual`.
