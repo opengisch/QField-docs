@@ -9,12 +9,15 @@ tx_slug: documentation_get-started_tutorials_get-started-qfc
 
 QFieldCloud is the cloud service that allows seamless synchronization of your data between your mobile device for fieldwork and your desktop working station.
 You can further manage teams, work in organizations, assign different editing permissions and much more.
+QFieldCloud is the cloud service that allows seamless synchronization of your data between your mobile device for fieldwork and your desktop working station.
+You can further manage teams, work in organizations, assign different editing permissions and much more.
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
 :material-monitor: Desktop preparation
 
 !!! Workflow
     1. Go to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
+    2. (Optional) If you have received a referral code, please enter it in the according field.
     2. (Optional) If you have received a referral code, please enter it in the according field.
         !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
@@ -24,14 +27,18 @@ Once registered, your personal QFieldCloud landing page will show you all the pr
 In case you have many projects, you can search in the search bar at the top of the page.
 It is also possible to create a new empty project from this menu.
 All further configuration of that project, however, needs to be done inside QGIS.
+All further configuration of that project, however, needs to be done inside QGIS.
 Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
 Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
+
+Before you get started, we recommend to familiarize yourself with the [basic concepts](../tutorials/concepts.md) of QFieldCloud.
 
 !!! Tip
     In the project overview page, the two names indicate the "Owner" of the project and the "Name" of the project.
     In case you are the owner or a member of an organization, you may find that the name will be different if you are not the project owner.
 
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png,800px)
+
 
 ## Project Creation
 
@@ -46,6 +53,8 @@ There are several ways to create and initialize a new project in QFieldCloud dep
 In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS. The next steps show you how you can install and synchronize your data to and from QFieldCloud.
 
 !!! Workflow
+    1. Open the QGIS plugin manager by going to *Plugins* > *Manage and Install Plugins...*
+    2. Under "All", find QFieldSync in the list and install the latest version by clicking the "Install Plugin" button.
     1. Open the QGIS plugin manager by going to *Plugins* > *Manage and Install Plugins...*
     2. Under "All", find QFieldSync in the list and install the latest version by clicking the "Install Plugin" button.
         !![Successful installation](../../assets/images/install_qfieldsync.png)
@@ -130,6 +139,7 @@ Now you should see your project and files on your project overview page on [QFie
 When you are ready for your fieldwork it is time to setup QField on your mobile device.
 
 !!! Workflow
+    1. Download and install the latest version of QField from Google's Play Store, Apple's App Store, or by [downloading the latest release for Windows, Linux, or macOS](https://github.com/opengisch/QField/releases).
     1. Download and install the latest version of QField from Google's Play Store, Apple's App Store, or by [downloading the latest release for Windows, Linux, or macOS](https://github.com/opengisch/QField/releases).
     2. Direct to *Cloud Projects* and log in to QFieldCloud on your mobile device
         !![Welcome](../../assets/images/getting_started_splashscreen.png,250px)

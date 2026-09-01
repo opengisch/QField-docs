@@ -43,12 +43,13 @@ jobs:
         run: ./utils/mkdocs_tx.py create_source
 
       - name: Configure Transifex
+        if: env.TX_TOKEN != ''
         run: ./utils/transifex_utils.py
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
       - name: Push source files to Transifex
-        if: contains(fromJSON('["push", "workflow_dispatch", "schedule"]'), github.event_name)
+        if: env.TX_TOKEN != '' && contains(fromJSON('["push", "workflow_dispatch", "schedule"]'), github.event_name)
         run: ./tx push
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
@@ -60,6 +61,7 @@ jobs:
           cmd: yq '.plugins[] | .i18n.languages | select( . != null ) | map(.locale) | join(",")' mkdocs.yml
 
       - name: Pull translations from Transifex
+        if: env.TX_TOKEN != ''
         run: |
           ./tx pull -t -l ${{ steps.get_langs.outputs.result }}
           ./tx status
@@ -67,6 +69,7 @@ jobs:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
       - name: Translate Mkdocs config
+        if: env.GITHUB_TOKEN != ''
         run: |
           ./utils/mkdocs_tx.py -s en update_config
           ./utils/mkdocs_tx_commit.sh
