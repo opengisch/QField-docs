@@ -29,7 +29,7 @@ When your location is activated, it is possible to store the exact locations ins
     2. Switch to the attribute form section.
     3. In the default value, set the desired position variable.
 
-     !![setting project variables as expressions](../../assets/images/drag-and-drop-designer-attribute-forms.png,500px)
+     !![setting project variables as expressions](../assets/images/drag-and-drop-designer-attribute-forms.png,500px)
 
     **Alternative**
 

@@ -272,7 +272,7 @@ You can create Empty projects by using QFieldSync or directly in QFieldCloud.
 
     1. Enter the project and access the "Project collaborators" section, click "Add another Project collaborator".
     2. Search for the user or team you wish to add.
-    3. Assign the corresponding [permissions](../permissions.md#roles) roles to the different users.
+    3. Assign the corresponding [permissions](../permissions.md#permissions-and-roles) roles to the different users.
     !![](../../../assets/images/self_hosted/managing_organization_django_43.png,800px)
 
     4. Click "Save".

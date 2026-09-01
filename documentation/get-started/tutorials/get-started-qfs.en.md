@@ -176,7 +176,7 @@ Once you are done with configuring your project, layers and styles you are ready
         !![](../../assets/images/checked-show-package.png,150px)
 
      3. To start working in QField, copy the whole folder on your device.
-     Check the [Storage section](../../how-to/project-setup/storage.en.md#2-copying-project-over-to-the-qfield-target-device) for the directory specification, depending on your system (Android, IOS, Windows).
+     Check the [Storage section](../../how-to/project-setup/storage.md#2-copying-project-to-the-qfield-target-device) for the directory specification, depending on your system (Android, IOS, Windows).
      Typically the filepath will look something like this:
      `Android/data/ch.opengis.qfield/files/QField/...`
 

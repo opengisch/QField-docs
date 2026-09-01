@@ -62,7 +62,7 @@ For more information refer to: [Drag and Drop Designer QGIS Documentation](https
 
 - **Default values**: You can make use of powerful QGIS expressions to pre-fill individual attributes.
     QField-specific [GNSS positioning](../../reference/expression_variables.md#positioning-and-gnss-variables) and
-    [QFieldCloud](../../reference/expression_variables.md#qfieldcloud) specific variables are available to you.
+    [QFieldCloud](../../reference/expression_variables.md#qfieldcloud-variables) specific variables are available to you.
 
 !![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 
