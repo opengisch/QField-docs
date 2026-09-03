@@ -3,34 +3,41 @@ title: Temporal filtering
 tx_slug: documentation_how-to_temporal-filtering
 ---
 
-# Temporal filtering
+# Temporal Filtering
 
-QField can replicate "active temporal settings" that you set in QGIS to your layer.
-In QField this is indicated by a clock that becomes visible in the "Side Dashboard".
-When disabled, the clock will appear grey.
-Once the filter has been set, the clock turns green and only the elements that are within the temporal range will be rendered on the map canvas.
+QField replicates active temporal controller settings configured in QGIS to dynamically filter vector layer features on the map canvas.
+Temporal filtering status displays via a clock icon in the **Side Dashboard**:
+
+- **Grey clock icon:** Temporal filter is inactive.
+- **Green clock icon:** Temporal filter is active, displaying only features falling within the defined time range.
 
 !![](../../assets/images/temporal-properties.png)
 
+## Configuring Temporal Filtering in QGIS
+:material-monitor: Desktop preparation
+
+Configure temporal settings on vector layers in QGIS before exporting projects to QField.
+
 !!! Workflow
+    1. In QGIS, navigate to _Vector Layer Properties... > Temporal_.
+    2. Enable **"Dynamic Temporal Control"**.
+        !![QGIS Dynamic Temporal Control settings](../../assets/images/temporal_filter_qgis.png)
+    3. Select your preferred temporal configuration mode (such as single field datetime, separate start/end date fields, or event duration).
+    Read more in the [QGIS Vector Layer Temporal Properties Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#temporal-properties). <!-- markdown-link-check-disable-line -->
+    4. Save your project and synchronize it to QField.
 
-    :material-monitor: Desktop preparation
+## Applying Temporal Filters in QField
+:material-tablet: Fieldwork
 
-    1. In QGIS open the vector properties of your layer with the temporal field(s)
-    2. Direct to the "temporal" section and enable the "Dynamic Temporal Control"
-     !!![QGIS - Dynamic Temporal Control settings](../../assets/images/temporal_filter_qgis.png)
-    3. Choose between your preferred rendering mode.
-    You can read more about the different rendering options in [the official QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#temporal-properties).
-    4. Save and synchronize your project.
+Filter layer features by time range directly on your mobile device.
 
-    :material-tablet: QField
+!!! Workflow
+    1. Open the **Side Dashboard**.
+    2. Tap the clock icon in the header bar.
+    3. Select or define the desired time range.
+    4. Close the panel to inspect temporal features rendered on the map canvas.
 
-    Once you have packaged the most recent version of your project you will see the clock icon appearing in the "Side Dashboard".
+!![](../../assets/images/temporal-filtering-indicator.png)
 
-    1. Open the "Side Dashboard"
-    2. Click on the clock icon and select the desired rendering timeframe.
-    3. Close and look for the remaining features
-
-     !![](../../assets/images/temporal-filtering-indicator.png)
-
-     QField's temporal filtering behaves exactly like the fixed range temporal navigation mode in QGIS.
+!!! Note
+    QField temporal filtering operates identically to the fixed range temporal navigation mode in QGIS.
