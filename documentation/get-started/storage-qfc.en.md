@@ -9,37 +9,19 @@ By default, when registering for QFieldCloud, you create a general user account 
 With the free community plan, you can work by yourself on QGIS projects and apply changes as much as you like, as long as you do not exceed the 100 MB storage limit.
 If you require more storage or want to work in a multi-user environment, you will have to upgrade to either:
 
-- A personal **Pro Plan** (Personal Plan)
-- An **Organization Plan** (Organizational Plan)
+- A **Flat Plan** providing a fixed price per user; or
+- A **Flex Plan** allowing organizations to pay per active users.
 
-The same applies for additional data storage.
-
-The billing information necessary for both Pro and Organization plans and can be accessed through the **Billing section** under your personal account settings OR the organization account settings.
+The billing information necessary for both Flat and Flex plans and can be accessed through the **Billing section** under your account settings OR the organization account settings.
 At any point, you can modify your plans according to your needs.
 
 It is also possible to have a yearly subscription, where you will receive an annual invoice with a fixed amount of users and storage.
 
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
 
-!!! Warning
-
-    1. If you have a **Personal Pro Account** and an **Organization Account**, you will have **TWO separate pages** with billing information.
-        The corresponding invoices will be generated for each account separately.
-    2. If you cancel your PRO Account, your Organization Account will remain active until you actively cancel it.
-
 ## Choosing a plan
 
-To upgrade to a Personal **Pro Plan**, follow these steps:
-
-!!! Workflow
-    1. Click on the username at the top-right of the page.
-    2. Click on "Upgrade to pro".
-    3. In the "Subscription" section, click on "Upgrade".
-    4. In the Pro section, click on "Activate".
-    5. Read and accept the "Terms of Service", then click "Proceed".
-    6. In the "Billing Address" section, fill in the required fields and click "Proceed to payment".
-
-To upgrade to an **Organization plan**, follow these steps:
+To upgrade to an **organization plan**, follow these steps:
 
 !!! Workflow
     1. Click on the username at the top-right of the page.
@@ -80,7 +62,7 @@ To monitor the number of active users, direct to *Organization Settings* > *Bill
     **Attempting to share a single account across multiple devices can cause synchronization errors, data loss, or data corruption.
     It may also prevent users from pushing data collected in the field to the cloud.**
 
-    To have multiple people working safely and concurrently on a project (e.g., `survey_001`), you will need an **Organization Plan**.
+    To have multiple people working safely and concurrently on a project (e.g., `survey_001`), you will need an organization plan.
     This allows you to invite different user accounts (e.g., `ninja_001`, `ninja_002`, `ninja_00n`) to collaborate. Administrators can add, remove, or change the permissions of these users within the organization and specific projects.
 
 ## Modification of current subscription
@@ -133,12 +115,10 @@ You can transfer the primary ownership of an Organization account to another mem
 ## Cancellation of a subscription
 
 You can cancel your subscriptions at any given time.
-This has to be done separately for both the PRO Plans and the Organization Plans.
 
 !!! Workflow
 
-    1. For the **Personal Pro Plan**: From your <ins>user account's landing page</ins>, click on *Edit Profile*.
-        **For the Organization Plan**: From your <ins>Organization account's landing page</ins>, click on *Edit Organization*.
+    1. From your <ins>Organization account's landing page</ins>, click on *Edit Organization*.
     2. Switch to the corresponding **Billing Section**.
     3. Click on **change** and then click on **Cancel subscription**.
 
@@ -148,7 +128,7 @@ This has to be done separately for both the PRO Plans and the Organization Plans
 
         ![Cancel subscription](../assets/images/discontinuing_service_03_cancel_subscription.png)
 
-    5. A Nyuki message will then appear, indicating that the subscription will conclude at the end of the current billing period.
+    5. A message will then appear, indicating that the subscription will conclude at the end of the current billing period.
 
         ![Cancellation message](../assets/images/discontinuing_service_05_nyuki_message.png)
 
@@ -158,8 +138,7 @@ It is possible to retrieve invoices from previous months at the bottom of the bi
 
 !!! Workflow
 
-    1. For the **Personal Pro Plan**: From your <ins>user account's landing page</ins>, click on *Edit Profile*.
-        **For the Organization Plan**: From your <ins>Organization account's landing page</ins>, click on *Edit Organization*.
+    1. From your <ins>Organization account's landing page</ins>, click on *Edit Organization*.
     2. Switch to the corresponding **Billing Section**.
     3. Navigate to the bottom of the page.
         There you will find all previous and current invoices associated with your Personal Account or your Organization Account.
