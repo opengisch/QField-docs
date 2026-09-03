@@ -5,38 +5,47 @@ tx_slug: documentation_how-to_plugins
 
 # QField Plugins
 
-QField has a [QML/Javascript plugin framework](https://api.qfield.org) through which additional functionalities and features can be scripted.
+QField includes a [QML/Javascript plugin framework](https://api.qfield.org) to extend application capabilities and script custom field workflows.
 
-## Types of plugins
+## Plugin Types
 
-Plugins can be served in two ways:
+QField supports two plugin deployment types:
 
-- as a project-specific plugin that will be active for the duration of a given project session;
-- as an application plugin that will be activated when QField launches.
+- **Project-Specific Plugins:** Bound to individual QGIS project files and active only while the project is open.
+- **Application Plugins:** Installed globally across QField and active across all projects upon application launch.
 
-!!! note
-    A permission dialog is shown prior to activating a plugin, providing you with the possibility of granting or denying individual plugins.
+!!! Note
+    QField displays a permission dialog before activating a plugin, allowing you to grant or deny execution permissions for individual plugins.
 
-### Project plugins
+### Project-Specific Plugins
 
-Project plugins are deployed as a sidecar file to a given project file and must share the same file name with a .qml extension.
-For example, if your project file is “tree_inventory_qfield.qgs”, the plugin’s main QML file must be “tree_inventory_qfield.qml”.
+Project-specific plugins deploy as sidecar `.qml` files stored in the same directory as the QGIS project file.
+The QML plugin file name must match the QGIS project file name exactly.
+For example, if your project file is named `tree_inventory.qgz`, the main QML plugin file must be named `tree_inventory.qml`.
 
-For cloud projects, you simply add the relevant QML file into your local cloud project folder and upload the newly added file on QGIS using qfieldsync.
-This method insures a smooth plugin deployment and update to devices on the field.
+!!! Workflow
+    **Deploying via QFieldCloud:**
 
-For non-cloud projects, refer to the QField [storage handling documentation page](../../how-to/project-setup/storage.md)
-to learn how to import projects onto devices.
+    1. Add the `.qml` plugin file to your local cloud project folder on your desktop computer.
+    2. Synchronize the project using QFieldSync in QGIS to deploy the plugin file to mobile devices.
 
-### Application plugins
+For non-cloud projects, refer to the [Storage Access Documentation](../../how-to/project-setup/storage.md) to transfer project files and `.qml` sidecar files onto mobile devices.
 
-Application plugins are installed through a plugins popup accessed from QField’s Settings panel.
-Click on the "Install plugin from URL" button and paste in a URL pointing to a zipped plugin file, or download one of the "Available Plugins" already developed by the [community](../../reference/plugins.md).
+### Application Plugins
+:material-tablet: Fieldwork
+
+Application plugins install globally inside QField from zip archive URLs or community repositories.
+
+!!! Workflow
+    1. Open the **Side Dashboard** and tap the gear icon to open **Settings**.
+    2. Tap **"Plugins"**.
+    3. Install an application plugin using one of two options:
+        - **Install from URL:** Tap **"Install plugin from URL"** and enter a direct web link pointing to a zipped plugin file.
+        - **Community Repository:** Select a plugin from the list of **"Available Plugins"** developed by the community.
+    4. Toggle the activation switch next to installed plugins in the plugins list to enable or disable them.
 
 !![](../../assets/images/application-plugins.png,400px)
 
-Once installed, the plugin will appear in the plugins list found in the popup, with a switch to toggle the activation of the plugin.
+## Developing Plugins
 
-## Developing a plugin
-
-Find more information about QField plugin development on the dedicated [QField API documentation](https://api.qfield.org).
+To build custom QML and JavaScript plugins for QField, refer to the official [QField API Documentation](https://api.qfield.org) and the community [Plugins Reference](../../reference/plugins.md).
