@@ -3,76 +3,71 @@ title: Map styling
 tx_slug: documentation_how-to_map-styling
 ---
 
-# Map styling
+# Map Styling
 
-All style settings from QGIS are directly supported by QField.
-This includes all renderer types like graduated, categorized, rule based,
-2.5D as well as data defined symbology.
+QField directly supports all style settings configured in QGIS.
+This includes renderer types such as graduated, categorized, rule-based, 2.5D, and data-defined symbology.
 
 ## Display Expression
 :material-monitor: Desktop preparation
 
-In QField, objects are identified with a name, which can be customized using expressions.
+In QField, features are identified by a display name customized using QGIS expressions.
+Display expressions are also used when searching for features within layers.
 
-1. Open the attribute table in QGIS and switch to the form view.
-2. Direct to *Vector Layer Properties* > *Display* > *Attribute*.
-
-The display expression is also used to search in layers.
+!!! Workflow
+    1. Open the attribute table in QGIS and switch to form view.
+    2. Navigate to _Vector Layer Properties > Display_.
+    3. Define your display expression under the **"Display Expression"** field.
 
 !![Configuration of display expression in QGIS.](../../assets/images/define_display_expression.png)
 
-## Read only, non-identifiable and searchable layers
+## Read-Only, Non-Identifiable, and Searchable Layers
 :material-monitor: Desktop preparation
 
-Some layers in a project are just there for pure visual purpose.
-Such layers should not show up when a user taps somewhere to identify objects.
-
-Some other layers serve as source of information and shouldn't be modified by the user.
-It is possible to protect layers from editing attributes or adding and deleting features.
-
-It is also possible to configure which layers are searchable.
-
-1. Direct to *Project* > *Properties...* > *Data Sources* and activate the checkboxes to match your desired behaviour.
-
-!![Configuration of layers that will not be identifiable, nor modifiable,  nor searchable.](../../assets/images/project_configuration_readonly.png)
-
-## Using additional fonts
-:material-monitor: Desktop preparation
-
-QField enables you to use all the custom fonts you might want and need.
-There are two different possibilities to register additional fonts:
-
-**Addition of fonts through the local directory**
-
-1. Copy your font file (.ttf or .otf) in the directory **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/fonts**.
-Those will be made accessible to all projects and individual datasets.
-
-**Addition of fonts in subfolder of QGIS file**
-
-1. Create a subfolder called **fonts** inside the same folder where your given project file (`.qgs` or `.qgz`) is stored. Those fonts will **only** be accessible when viewing that project.
-
-When building a QFieldCloud project that includes additional fonts in a `fonts` subfolder, you must add this directory to the synchronized folders list in your project settings. This ensures the custom font files are successfully pushed to QFieldCloud and transferred onto mobile devices.
+Some layers in a project serve purely visual purposes and should not trigger identification popups when a user taps the map canvas.
+Other layers contain background reference data and must be protected from user editing, feature addition, or deletion.
+You can also configure which layers are searchable in QField.
 
 !!! Workflow
+    1. In QGIS, navigate to _Project > Properties... > Data Sources_.
+    2. Configure layer capabilities by toggling checkboxes for **"Identifiable"**, **"Read-Only"**, **"Searchable"**, **"Required"**, or **"Private"**.
 
-    1. Navigate to *Project* > *Properties...* > *QField*.
-    2. Under the *Attachments and Directories* configuration tab, add the path to your relative `fonts` subfolder to the directories list as "Data" type.
+!![Configuration of layers that will not be identifiable, nor modifiable, nor searchable.](../../assets/images/project_configuration_readonly.png)
 
-    !![Configuring custom fonts folder for QFieldCloud synchronization.](../../assets/images/qfc_fonts_directory_setting.png)
-
-## Custom SVG symbols
+## Using Additional Fonts
 :material-monitor: Desktop preparation
 
-It is possible to embed SVG symbols directly within a QGIS project.
+QField allows you to use custom fonts in your projects.
+You can register additional fonts using two methods:
 
-1. Choose the layer which will support SVG symbology and open its properties dialog.
-2. Open the section Symbology in *Properties* > *Symbology*
-3. In the *Symbol Layer Panel* choose *Simple marker*.
-!![](../../assets/images/symbol_layer_panel.png)
-4. Change the symbol layer type in *Symbol layer type* > *SVG marker*.
-5. Scroll down to the bottom panel.
-6. Click on the right side of the file selection button to open the drop down menu.
-!![](../../assets/images/drop_down_svg_menu.png)
-7. Select *Embed File* and choose the SVG file in the file selection dialog.
-8. Apply the changes and click *OK*.
+- **System-Wide Fonts (App Directory):** Copy your font files (`.ttf` or `.otf`) into the **[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/fonts**.
+These fonts become accessible across all projects and individual datasets on the device.
+- **Project-Specific Fonts:** Create a subfolder named `fonts` inside the same directory as your QGIS project file (`.qgs` or `.qgz`).
+These fonts are accessible only when viewing that specific project.
+
+When creating a QFieldCloud project that includes custom fonts in a `fonts` subfolder, add this directory to the synchronized directories list in your project settings.
+This ensures custom font files are pushed to QFieldCloud and downloaded to mobile devices.
+
+!!! Workflow
+    1. In QGIS, navigate to _Project > Properties... > QField_.
+    2. Under the **"Attachments and Directories"** tab, add the relative path of your `fonts` subfolder to the directories list as a **"Data"** directory type.
+
+!![Configuring custom fonts folder for QFieldCloud synchronization.](../../assets/images/qfc_fonts_directory_setting.png)
+
+## Custom SVG Symbols
+:material-monitor: Desktop preparation
+
+You can embed SVG symbols directly within a QGIS project file.
+
+!!! Workflow
+    1. Select the layer requiring custom SVG symbology and open its properties dialog.
+    2. Navigate to _Vector Layer Properties > Symbology_.
+    3. In the Symbol Layer Panel, select **"Simple marker"**.
+        !![](../../assets/images/symbol_layer_panel.png)
+    4. Change the symbol layer type to **"SVG marker"**.
+    5. Scroll to the bottom panel and click the dropdown menu icon next to the file selection button.
+        !![](../../assets/images/drop_down_svg_menu.png)
+    6. Select **"Embed File..."** and choose your SVG file in the file picker.
+    7. Apply the changes and click **"OK"**.
+
 !![Embedded custom SVG on QField](../../assets/images/custom_svg_symbols_qfield.png,350px)
