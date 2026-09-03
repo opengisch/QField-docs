@@ -7,29 +7,29 @@ tx_slug: documentation_get-started_tutorials_get-started-qfc
 
 ## What is QFieldCloud
 
-QFieldCloud is the cloud service that allows smoothless synchronisation of your data between your mobile device for fieldwork and your desktop working station.
-You can further manage teams, work in organisations, assign different editing permissions and much more.
+QFieldCloud is the cloud service that allows smoothless synchronization of your data between your mobile device for fieldwork and your desktop working station.
+You can further manage teams, work in organizations, assign different editing permissions and much more.
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
 :material-monitor: Desktop preparation
 
 !!! Workflow
     1. Go to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
-    2. (Optionable) If you have a received a referral code, please enter it in the according field.
+    2. (Optionable) If you have received a referral code, please enter it in the according field.
         !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
 ## QFieldCloud Overview
 
-Once registered your personal QFieldCloud landing page, will show you all the projects that you have access to in the center of the window.
+Once registered, your personal QFieldCloud landing page will show all the projects that you have access to in the center of the window.
 In case that you have many projects, you can search in the search bar at the top of the page.
 It is also possible to create a new empty project from this menu.
-All further configuration of that project, however needs to be done inside QGIS.
+All further configuration of that project, however, needs to be done inside QGIS.
 Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
 Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
 
 !!! Tip
     In the project overview page, the two names indicate the "Owner" of the project and the "Name" of the project.
-    In case that you are the owner or a member of an organisation, you may find that the name will be different in case that you are not the project. owner.
+    For instance, if you own an organization or have access to another to a project owned by another organization, the front name (indicating the ownership) will be different.
 
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png,800px)
 
@@ -46,8 +46,8 @@ There are several ways to create and initialize a new project in QFieldCloud dep
 In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS. The next steps show you how you can install and synchronize your data to and from QFieldCloud.
 
 !!! Workflow
-    1. Open the QGIS plugin manager by going to the *Plugins* > *Manage and install Plugins*.
-    2. Under "All" find QFieldSync in the list  and install the latest version by clicking the "Install Plugin" button.
+    1. Open the QGIS plugin manager by going to *Plugins* > *Manage and Install Plugins...*
+    2. Under "All", find QFieldSync in the list and install the latest version by clicking the "Install Plugin" button.
         !![Successful installation](../../assets/images/install_qfieldsync.png)
         After successful installation, a new toolbar appears:
         !![Toolbar](../../assets/images/qfieldsync_toolbar.png,200px)
@@ -181,17 +181,19 @@ Supported syntax tokens include:
 
 ### Synchronization with QFieldCloud
 
-After you are done collecting data, you will need to synchronize your changes back to QFieldCloud.
+After you are done with data collection, you will need to synchronize your changes back to QFieldCloud.
 
 !!! Workflow
     1. Open the *Side Dashboard* in QField.
     2. Click on the cloud icon (a badge will indicate how many local changes you have made).
         !![Cloud button](../../assets/images/getting_started_blue_button.png,400px)
     3. Choose the appropriate action card for your data:
-        - **Upload local changes:** Sends your edits and attachments to the cloud without downloading project updates from other collaborators. This is fast and saves internet bandwidth.
+        - **Upload local changes:** Sends your edits and attachments to the cloud without downloading project updates from other collaborators.
+        This is fast and saves internet bandwidth.
         - **Synchronize project:** Uploads your edits, then downloads the latest project from QFieldCloud so everything is completely up to date.
         - **Upload history:** Tap this button below the main actions to view a detailed log of your past uploads, including timestamps and their current statuses (e.g., Applied, Pending, Conflict, Error).
-        - **Danger zone:** Tap this button to access destructive actions. From here, you can **Discard local changes** (which removes all your local edits that have not yet been uploaded) or **Reset project** (which re-downloads the cloud version if your local copy becomes corrupted).
+        - **Danger zone:** Tap this button to if you wish to revert previous actions or restore the current version of the cloud project.
+        You can **Discard local changes** (which removes all your local edits that have not yet been uploaded) or **Reset project** (which re-downloads the cloud version if your local copy becomes corrupted).
 
         !![](../../assets/images/getting_started_actions.png,800px)
 
