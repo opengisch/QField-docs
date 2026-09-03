@@ -124,10 +124,15 @@ Personal **Pro** plans and **Organization** plans must be canceled separately.
 
     2. Navigate to the **"Billing"** section.
     3. Click **"Change"**, then click **"Cancel subscription"**.
+
         ![](../assets/images/discontinuing_service_02_change_subcription.png)
+
     4. Confirm the cancellation in the popup window.
+
         ![Cancel subscription](../assets/images/discontinuing_service_03_cancel_subscription.png)
+
     5. A confirmation message displays indicating that the subscription ends at the conclusion of the active billing period.
+
         ![Cancellation message](../assets/images/discontinuing_service_05_nyuki_message.png)
 
 ## Retrieving Invoices
@@ -140,4 +145,5 @@ You can access past invoices at the bottom of the billing section.
         - For **Organization Plans:** Click **"Edit Organization"** on your organization landing page.
     2. Navigate to the **"Billing"** section.
     3. Scroll to the bottom of the page to view and download past or current account invoices.
+
         !![Example of Invoice](../assets/images/qfc-storage-plans-invoice.png,400px)

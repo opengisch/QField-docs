@@ -27,9 +27,12 @@ You can create empty map spaces or simple localized maps directly from QFieldClo
 
     3. Set the project name, optional descriptive details, visibility scope (public or private), conflict resolution parameters, and project file safety restrictions.
     4. Select your **"Project type"**:
+
         - **"Regular":** Standard project used for field data collection and synchronization.
         - **"Template":** Master blueprint project designed to be cloned by field teams (field synchronization and repackaging are disabled on templates to prevent accidental edits).
+
     5. Select your initialization template configuration:
+
         - **"Create an empty project":** Sets up a clean project folder environment without a basemap.
         - **"Use a template":** Allows you to add a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL) and select your project extent via a bounding box by tapping on the **"Project extent"** map window.
 
