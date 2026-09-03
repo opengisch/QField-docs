@@ -3,48 +3,61 @@ title: External routing
 tx_slug: documentation_how-to_routing
 ---
 
-# External routing
+# External Routing
 
-It can come in handy to calculate an itinerary to one of your features in the field.
-By an easy configuration of your attribute form in QGIS, you can quickly access the navigation tools from Google Maps via a hyperlink when working in the field.
+Calculate itineraries or open external navigation applications (such as Google Maps or Apple Maps) directly from feature attribute forms in QField.
+Configure attribute fields with dynamic hyperlink expressions in QGIS to open routing and mapping services in external mobile applications.
+
+## Configuring External Routing in QGIS
+:material-monitor: Desktop preparation
+
+### Direct Navigation Directions
+
+Configure an attribute field to open driving directions to feature coordinates in Google Maps.
 
 !!! Workflow
-
-    :material-monitor: Desktop preparation
-
-    1. In QGIS Create a new field in your feature layer with the datatype text
-    2. Under *Vector Properties* Find the "attribute form" setting
-    3. As widget type select "attachment"
-    4. Tick "Display a hyperlink for document path (read-only)".
-    5. Then enter the following expression as default value:
+    1. Open your project in QGIS and add a text attribute field (such as `routing_url`) to your vector layer.
+    2. Navigate to _Vector Layer Properties... > Attribute Form_.
+    3. Select your routing attribute field and set **"Widget Type"** to **"Attachment"**.
+    4. Enable **"Display a hyperlink for document path (read-only)"**.
+    5. Set **"Default Value"** to the following navigation directions expression:
 
         ```sql
-          concat(
-            'https://www.google.com/maps/dir/?api=1&destination=',
-            y(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
-            '%2C',
-            x(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
-            '&travelmode=driving'
-          )
+        concat(
+          'https://www.google.com/maps/dir/?api=1&destination=',
+          y(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
+          '%2C',
+          x(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
+          '&travelmode=driving'
+        )
         ```
 
-    6. (Optional) Tick "Apply default value on update" in case you make changes to your geometry.
+    6. (Optional) Enable **"Apply default value on update"** to recalculate routing links automatically when feature geometries change.
 
-    **Show Feature Location only**
+### Feature Location Preview
 
-    1. Follow the same steps (1-4) as above
-    2. This time use the following expression:
+Configure an attribute field to open and highlight feature coordinates on external maps without initiating active turn-by-turn navigation.
 
-    ```sql
-      concat( 'https://maps.google.com?q=',
-      y(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
-      '%2C',
-      x(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326')),
-      '&zoom=19&t=h')
-    ```
+!!! Workflow
+    1. Follow steps 1–4 from the navigation directions workflow above.
+    2. Set **"Default Value"** to the following location preview expression:
 
-    :material-tablet: Fieldwork
+        ```sql
+        concat(
+          '[https://maps.google.com?q=](https://maps.google.com?q=)',
+          y(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
+          '%2C',
+          x(transform($geometry, layer_property(@layer, 'crs'), 'EPSG:4326')),
+          '&zoom=19&t=h'
+        )
+        ```
 
-    1. In QField select the feature layer where you added the field.
-    2. Edit the layer and find the according attribute.
-    3. Click on the link towards Google Maps
+    3. (Optional) Enable **"Apply default value on update"**.
+
+## Accessing External Navigation in QField
+:material-tablet: Fieldwork
+
+!!! Workflow
+    1. Open your project in QField and tap a feature on the map canvas to open its attribute form.
+    2. Locate the routing attribute field inside the feature form.
+    3. Tap the hyperlink text to launch your device's native browser or external navigation app.
