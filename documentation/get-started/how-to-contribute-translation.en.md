@@ -5,66 +5,60 @@ tx_slug: documentation_get-started_how-to-contribute-translation
 
 # Contributing to the Translation
 
-Translations for the QField app are managed through the **Transifex** platform.
+Translations for QField are managed through the **Transifex** platform.
 
-## 1. Access the Translation Platform
+## Accessing the Translation Platform
 
-1. Go to the [OPENGIS Dashboard on Transifex](https://explore.transifex.com/opengisch/).
-2. Log in or create an account on Transifex.
+!!! Workflow
+    1. Navigate to the [OPENGIS Dashboard on Transifex](https://explore.transifex.com/opengisch/).
+    2. Log in or create an account on Transifex.
 
-## 2. Choose a Language to Contribute
+## Choosing a Language to Contribute
 
-1. Select a project you want to contribute to.
-2. Select the language you want to contribute to.
-3. Look for languages that need translation. These will have a "Translate" button next to them. Click on it.
+!!! Workflow
+    1. Select the project you want to contribute to.
+    2. Select your target language.
+    3. Locate languages that require translation (indicated by a **"Translate"** button).
+    4. Click **"Translate"**.
+        !![](../assets/images/transifex_translation_01.png,850px)
+    5. Click **"Join Team"** and wait for email approval.
 
-!![](../assets/images/transifex_translation_01.png,850px)
+## Navigating to the Translation Interface
 
-You'll see a "Join Team" link. Click it and wait for approval (you'll receive an email).
+Filter strings to streamline your translation work.
 
-## 3. Navigate to the Translation Interface
+!!! Workflow
+    1. Click the **"Status"** dropdown menu.
+    2. Select **"Translated"**.
+        !![](../assets/images/transifex_translation_02.png,850px)
+    3. Select **"No"** to display untranslated strings.
+        !![](../assets/images/transifex_translation_03.png,850px)
 
-1. Use the filters to streamline your work:
+## Translating Strings
 
-    - Click on the "Status" dropdown menu.
-    - Choose **Translated**.
+!!! Workflow
+    1. Enter the translation into the **"Type your translation here"** field.
+        !![](../assets/images/transifex_translation_04.png,850px)
+    2. Ensure the translation is accurate and contextually appropriate.
+    3. Click **"Save changes"**.
+        !![](../assets/images/transifex_translation_06.png,850px)
 
-!![](../assets/images/transifex_translation_02.png,850px)
+Follow these guidelines while translating:
 
-   - Then choose **No** to show only untranslated strings.
+- **Preserve Letter Cases:** Retain uppercase and lowercase letters as required.
+- **Preserve Reserved Words and Formatting:** Do not alter placeholders such as `()`, `%1`, `<strong>`, or `<br>`.
+    !![](../assets/images/transifex_translation_05.png,850px)
 
-!![](../assets/images/transifex_translation_03.png,850px)
+## Reviewing Your Translation
 
-## 4. Translate Strings
+Confirm that translations align with guidelines provided in the [Translation Process](https://github.com/opengisch/QField-docs?tab=readme-ov-file#translation-process).
 
-1. For each untranslated string:
+## Synchronization and Testing
 
-    - Enter the equivalent translation in the "Type your translation here" field.
-    - Ensure the translation is accurate and contextually appropriate.
+Translations synchronize daily with the master QField codebase.
 
-!![](../assets/images/transifex_translation_04.png,850px)
+To view your translation in QField:
 
-2. Follow these important guidelines while translating:
+- Download the [QField Beta Application](https://play.google.com/apps/testing/ch.opengis.qfield_dev) for early access to new release builds containing updated translations. <!-- markdown-link-check-disable-line -->
 
-    - **Preserve Cases**: Retain uppercase and lowercase letters as required.
-    - **Preserve Reserved Words and Formatting**: Do not alter placeholders like `()`, `%1`, `<strong>`, or `<br>`.
-
-!![](../assets/images/transifex_translation_05.png,850px)
-
-3. Once the translation is complete, click the **Save changes** button.
-
-!![](../assets/images/transifex_translation_06.png,850px)
-
-## 5. Review Your Translation
-
-- Confirm that the translation aligns with the guidelines provided in the [Translation process](https://github.com/opengisch/QField-docs?tab=readme-ov-file#translation-process).
-
-## 6. Synchronisation and Testing
-
-- Translations are typically synchronized with the QField app's master codebase each day.
-- To see your translation reflected in the app:
-    - Download the [QField Beta Application](https://play.google.com/apps/testing/ch.opengis.qfield_dev)<!-- markdown-link-check-disable-line -->
-    for early access to new releases with these translations.
-
-If your language is not yet available, we will happily add it for you.
-Just open an issue on the [GitHub repository](https://github.com/opengisch/QField-docs/issues) and specify which language you would like to translate to.
+If your language is not listed, open an issue on the [GitHub Repository](https://github.com/opengisch/QField-docs/issues) specifying the target language you want to translate.
