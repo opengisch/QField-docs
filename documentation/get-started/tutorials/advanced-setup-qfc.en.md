@@ -3,186 +3,178 @@ title: Advanced setup
 tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 ---
 
-# Advanced setup guide
+# Advanced Setup Guide
 
-## Supported vector providers
+## Supported Vector Providers
 
 Currently, QFieldCloud supports GeoPackage and PostGIS layers for collaborative editing.
 Other formats supported by QGIS should also work but are not officially supported.
 
-## Synchronization process
+## Synchronization Process
 
-When working with QFieldCloud it is important that you understand the synchronization process so that you avoid data loss or the overwriting of files / deltas (changes).
-You can find the technical details on the different job types in the [technical documentation section](../../reference/qfieldcloud/jobs.md).
-In simple words, there exist three different synchronization activities:
+When working with QFieldCloud, it is important to understand the synchronization process to avoid data loss or overwriting files and deltas.
+You can find technical details on the different job types in the [technical documentation section](../../reference/qfieldcloud/jobs.md).
+In simple words, three different synchronization activities exist:
 
-- **From QGIS to QFieldCloud**: This synchronization process uploads a complete new "project package" and replaces the existing one stored in the cloud.
-If you are working with GeoPackages it is important to note, that the existing GeoPackage on the cloud will be replaced with the one you have just uploaded.
-- **From QFieldCloud to QField**: If you want to download the uploaded "project package" to your mobile device,
-QFieldCloud "packages" the project into a specific format that is saved in the internal application folder structure.
-Important to know here is that in case you are working with PostgreSQL databases and have chosen the [working mode](#working-modes) *offline editing* then a local
-GeoPackage of the data will be created in the corresponding folder
-(make sure to configure your [secret](../../reference/qfieldcloud/secrets.md) properly), unless a direct connection is needed.
-- **From QField to QFieldCLoud**: Once you are done with collecting data, you can choose among two different [synchronization options](../tutorials/get-started-qfc.md#synchronization-with-qfieldcloud).
-The changes made are being applied as so-called *deltas*.
-*Deltas* reflect only the changes made to the different attributes.
-When pushing to or synchronizing with QFieldCloud, it is only the deltas that are being applied.
-Unlike in the synchronization process from QGIS to QFieldCloud, the whole GeoPackage is **<ins>NOT</ins>** replaced.
+- **From QGIS to QFieldCloud:** Uploads a complete new project package and replaces the existing package stored in the cloud.
+When working with GeoPackages, the existing GeoPackage in the cloud is replaced with the newly uploaded file.
+- **From QFieldCloud to QField:** Downloads the uploaded project package to your mobile device.
+QFieldCloud packages the project into a specific format saved in the internal application folder structure.
+When working with PostgreSQL databases in offline editing mode, a local GeoPackage is created in the corresponding folder (ensure your [secret](../../reference/qfieldcloud/secrets.md) is configured properly).
+- **From QField to QFieldCloud:** Applies changes as deltas after completing data collection.
+Deltas reflect only the attribute and geometry changes made in the field.
+When uploading or synchronizing with QFieldCloud, only the deltas are applied, so the entire GeoPackage is not replaced.
 
 !![Simple Synchronization Overview](../../assets/images/qfc-advanced-setup-synchronization-process-easy.png,800px)
 
 !!! Tip
+    We recommend following these guidelines to avoid synchronization issues or overwritten data:
 
-    There are a few tips, which we recommend to follow in order to avoid synchronization issues or overwritten data.
-
-    1. <ins>Do not modify the QGIS project while personnel is working simultaneously in QField.</ins>
-    If you synchronize your Desktop version to the cloud, QFieldCloud will overwrite the files.
-    Although there may have been changes applied in QFieldCloud, QFieldSync will not show this by default.
-    If you must work parallel on Desktop, make sure to check the QFieldCloud status and download the most recent data before uploading new files versions from your Desktop.
-    2. <ins>Do not change the data structure before synchronizing the latest field edits</ins>.
-    Often, officers work in QGIS and adapt the data structure of the project files, which leads to errors if the changes from QField have not yet been pushed to QFieldCloud.
-    3. <ins>Use uuid's as primary keys, especially when working with relations and in teams.</ins>
-    Synchronization often occur due to the lack of adding primary keys to your datasets.
-    Especially, when working with relationships and in teams, if the data were not configured with an according primary key, it may happen that data loss occurs because of simultaneous editing of the data.
-
+    1. Do not modify the QGIS project while personnel work simultaneously in QField.
+    If you synchronize your desktop version to the cloud, QFieldCloud will overwrite the files.
+    If you must work in parallel on desktop, check the QFieldCloud status and download the most recent data before uploading new file versions from desktop.
+    2. Do not change the data structure before synchronizing the latest field edits.
+    Adapting the data structure in QGIS before pushing field edits leads to errors if changes from QField have not yet been uploaded.
+    3. Use UUIDs as primary keys, especially when working with relations and in teams.
+    Synchronization issues often occur due to missing primary keys in datasets.
+    Without explicit primary keys, simultaneous editing can cause data loss.
 
 ## Working Modes
 
-When configuring a project for QField you can choose between the different "Packaging" options.
+When configuring a project for QField, choose between different packaging options:
 
-- **Offline editing:** Regardless of whether your files are stored in a GeoPackage, database or other format, QFieldCloud will create a temporary GeoPackage of all the project data.
-Changes made to this GeoPackage will not be available to others.
-Once the changes are synchronized or pushed back to QFieldCloud, the made changes only will be applied to the existing file on QFieldCloud.
-We recommend to use this option to avoid unnecessary data losses in case of lost data connection.
+- **Offline editing:** Regardless of whether files are stored in a GeoPackage, database, or other formats, QFieldCloud creates a temporary GeoPackage of all project data.
+Changes made to this GeoPackage remain local until synchronized.
+Once changes are uploaded or synchronized back to QFieldCloud, only the modifications are applied to the existing cloud file.
+We recommend this option to prevent data loss during connection drops.
+- **Direct Data Access:** Edits data directly in the PostGIS database.
+This option requires a reliable internet connection in the field.
+It allows all users to immediately view data changes and use PostGIS-specific configurations (such as triggers and generated fields).
 
-- **Direct Data Access:** When using `direct database access`, QFieldCloud will directly edit data in the PostGIS database.
-This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).
+Changes become visible to other users once synchronization via QFieldCloud occurs across devices.
+When a local copy is created, advanced PostGIS operations (such as triggers) are not available in QField.
 
-Changes will only be visible to users once the Synchronization via QFieldCloud has been applied on the different devices.
-When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
-
-You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/projects.md).
+Find more information in the [QFieldCloud technical reference](../../reference/qfieldcloud/projects.md).
 
 ## Working with GeoPackages
 
-Using GeoPackages is usually the best choice for a simple setup to centralize data collected by your QField users to one single file.
+Using GeoPackages is usually the best choice for a simple setup to centralize data collected by your QField users into a single file.
 
-If you would like to set up a relation, add a UUID field and use that as the primary or foreign key.
-**Note:** Do not use the default `fid` field for relations (as primary or foreign key).
-
-*Why?* The `fid` field can be synchronized when working with QFieldCloud and will lead to errors over time.
-A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549), on the other hand, is unique and will not be synchronized.<!-- markdown-link-check-disable-line -->
+If you set up a relation, add a UUID field and use it as the primary or foreign key.
+Do not use the default `fid` field for relations as a primary or foreign key.
+The `fid` field can be modified during synchronization with QFieldCloud and lead to errors over time.
+A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549) is unique and will not cause conflicts during synchronization. <!-- markdown-link-check-disable-line -->
 
 !!! Workflow
-
     :material-monitor: Desktop preparation
 
     1. Create a new project in QGIS.
-    2. Create GeoPackage layers, save it in the same folder as your QGIS project.
-    3. Set the GeoPackage to "Offline editing" in the settings of the QFieldSync plugin. !![](../../assets/images/qfield-sync-qfc_config.png)
+    2. Create GeoPackage layers and save them in the same folder as your QGIS project.
+    3. Set the GeoPackage to **"Offline editing"** in the QFieldSync plugin settings.
+        !![](../../assets/images/qfield-sync-qfc_config.png)
     4. Upload the project to QFieldCloud.
 
     :material-tablet: Fieldwork
 
     1. Sign in to QFieldCloud and download the project to your device.
-    2. Collect and edit some data and upload the changes.
-
-    :material-monitor: Desktop
-
-    1. Using QFieldSync, download the updated files (the GeoPackage file should have changed).
-
-!!! warning
-    We do not recommend to edit or add new data from QGIS directly because everytime QGIS synchronizes the project to QFieldCloud the whole GeoPackage replaces the existing on QFieldCloud, whereas when using QField, only the actual changes within the file will be updated.
-
-## PostGIS
-
-Using PostGIS is a good choice if your data should be visible and editable for multiple users.
-
-It requires your database to be publicly accessible, and credentials must be saved unencrypted in the QGIS project.
-Please be aware of the security implications of such requirements, and remember to have backups.
-There are two possible ways, in which the access to the database can be saved and made available for QFieldCloud.
-
-1. **Direct Connection:** When connecting to a PostGIS database, you can store all information including the credentials inside the QGIS Project directly.
-2. **Using a PG Service File:** Using a service file that can be saved as a "secret" in QFieldCloud.
-We highly recommend to make use of this option due to data safety.
-Read more on PG Service and Secrets [here](../../how-to/project-setup/pg-service.md)
-
-!!! Workflow
+    2. Collect and edit data, then upload your changes.
 
     :material-monitor: Desktop preparation
 
-    1. Create a new project.
-    2. Add a PostGIS layer, making sure to store the credentials in the project or having created the PG Service file.
-    3. Make sure the PostGIS database connection is publicly accessible (public IP or domain name, it will not work with `127.0.0.1` or `localhost`).
-    4. In the QFieldSync project settings, choose your preferred packaging mode.
+    1. Download the updated files using QFieldSync (the GeoPackage file will update with the new edits).
+
+!!! Warning
+    We do not recommend editing or adding new data directly from QGIS while field edits are pending.
+    Every time QGIS synchronizes the project to QFieldCloud, the entire GeoPackage replaces the cloud version, whereas QField updates only the actual changes.
+
+## PostGIS
+
+Using PostGIS is a good choice if your data must be visible and editable for multiple users.
+
+It requires your database to be publicly accessible, and credentials must be saved unencrypted in the QGIS project file.
+Please consider the security implications of these requirements and maintain regular backups.
+
+Access to the database can be saved and made available for QFieldCloud in two ways:
+
+- **Direct Connection:** Store all information, including credentials, directly inside the QGIS project file.
+- **Using a PG Service File:** Use a service file saved as a secret in QFieldCloud.
+We highly recommend using a PG Service file for data security.
+Read more on PG Service and secrets in the [PG Service documentation](../../how-to/project-setup/pg-service.md).
+
+!!! Workflow
+    :material-monitor: Desktop preparation
+
+    1. Create a new QGIS project.
+    2. Add a PostGIS layer, making sure to store credentials in the project or create a PG Service file.
+    3. Ensure the PostGIS database connection is publicly accessible via a public IP or domain name (it will not work with `127.0.0.1` or `localhost`).
+    4. In the QFieldSync project settings, select your preferred packaging mode.
     5. Upload the project to QFieldCloud.
 
     :material-tablet: Fieldwork
 
     1. Sign in to QFieldCloud and download the project.
-    2. Collect some data
-    3. Push or synchronize the changes once back at the office if you were using `offline editing`.
+    2. Collect data in the field.
+    3. Upload or synchronize changes once back online when using **"Offline editing"**.
 
-    :material-monitor: Desktop
+    :material-monitor: Desktop preparation
 
-    1. All changes should be directly visible inside the PostGIS database.
+    1. View all changes directly inside the PostGIS database.
 
-!!! note
-    When using `direct database access`, QFieldCloud will directly edit data in the PostGIS database.
-    This will only work with a reliable internet connection in the field, but has the advantage that all data is directly visible to all users and allows to use any PostGIS specific setup (triggers, generated fields, etc).
+!!! Note
+    When using direct database access, QField edits data directly in the PostGIS database.
+    This option requires a reliable internet connection in the field, but allows all users to view edits immediately and utilize PostGIS setup features (such as triggers and generated fields).
 
-!!! note
-    When using `offline editing`, QField will work on a local copy of the database in a GeoPackage, which will be synced by QFieldCloud to the original database once synchronized by the user.
-    We recommend to use this option to avoid unnecessary data losses in case of lost data connection.
+!!! Note
+    When using offline editing, QField works on a local copy of the database in a GeoPackage, which QFieldCloud syncs to the original database upon synchronization.
+    We recommend using offline editing to avoid data loss during connection drops.
+    Changes become visible to other users only after synchronization occurs across devices.
+    Advanced PostGIS operations (such as triggers) are unavailable on local GeoPackage copies in QField.
 
-    Changes will only be visible to users once the Synchronisation via QFieldCloud has been applied on the different devices.
-    When a local copy is created, advanced PostGIS operations (like triggers) will not be available on QField.
-
-You can find more information on [QFieldCloud technical reference](../../reference/qfieldcloud/jobs.md).
-
+Find more information in the [QFieldCloud technical reference](../../reference/qfieldcloud/jobs.md).
 
 ## Restriction of Project Files
 
-To prevent any modification to the core QGIS project file, **the project administrators** can restrict the access to these files.
-This can be achieved under the settings section in QFieldCloud.
+To prevent modifications to the core QGIS project file, project administrators can restrict access to these files in QFieldCloud.
 
-1. From the QFieldCloud homepage direct to *Settings*
-2. Enable the **`Restrict project files`** button
+!!! Workflow
+    1. Navigate to _Settings_ on your QFieldCloud project page.
+    2. Enable the **"Restrict project files"** setting option.
 
 !![](../../assets/images/restric_qfc_project_files.png)
 
-Once set, only administrators and managers will be able to push changes to the files listed above.
-Other project collaborators can still upload and modify other project files, such as data in GeoPackages, but they cannot alter the main project file or its core components.
+Once enabled, only administrators and managers can push changes to restricted files.
+Other project collaborators can still upload and modify project datasets (such as GeoPackages), but cannot alter the main project file or its core components.
 
 ### Restricted Files
 
-When enabled, the following files can only be modified or uploaded by a user with an "admin" or "manager" role for the project:
+When enabled, the following files can only be modified or uploaded by a user with an **Admin** or **Manager** role:
 
-- The primary **QGIS project file** (e.g., `my_project.qgz`).
-- The **attachments zip archive** associated with the project (e.g., `my_project_attachments.zip`).
-- **QGIS auxiliary data files** that store information like label positions (e.g., `my_project.qgd`).
-- **QField style files** (`.qml`) that share the same name as the project file.
+- The primary **QGIS project file** (e.g., `my_project.qgz`)
+- The **attachments zip archive** associated with the project (e.g., `my_project_attachments.zip`)
+- **QGIS auxiliary data files** that store information like label positions (e.g., `my_project.qgd`)
+- **QField style files** (`.qml`) that share the same name as the project file
 
 ## Handling Conflicts
 
-When working in a collaborative environment with many users accessing the same project, it may happen that two users modify the same object during a mapping session.
-In your settings page, you can choose whether QFieldCloud should apply the _last wins_ policy or whether conflicts should be marked and handled by a project manager.
+When working in a collaborative environment with multiple users accessing the same project, two users might modify the same feature during fieldwork.
+In your project settings page, choose whether QFieldCloud applies the **"last wins"** policy or flags conflicts for project managers to resolve manually.
 
 !![](../../assets/images/qfc-advanced-settings-overwrite-conflicts.png)
 
-See more on how QFieldCloud handles conflicts [here](../../reference/qfieldcloud/jobs.md#understanding-conflicts-delta_apply-jobs)
+Read more on how QFieldCloud handles conflicts in the [technical documentation](../../reference/qfieldcloud/jobs.md#understanding-conflicts-delta_apply-jobs).
 
-## Activate email notifications for QFieldCloud changes
+## Activate Email Notifications for QFieldCloud Changes
 
-If you wish to be notified by QFieldCloud what happens to your team(s) and your projects, you can activate the email notification option.
+To receive notifications about activity in your teams and projects, activate the email notification option in QFieldCloud.
 
-1. On your QFieldCloud landing page direct to *settings*.
-2. Navigate to the notifications section.
-    Here, you can customize the frequency of notifications you wish to receive at the email address registered with your account.
+!!! Workflow
+    1. Navigate to _Settings_ on your QFieldCloud landing page.
+    2. Navigate to the **"Notifications"** section.
+    3. Customize the notification frequency for your registered email address.
 
 ![Synchronize](../../assets/images/frequency_notifications_settings.png)
 
-The events you get notified about are:
+You can receive notifications for the following events:
 
 - User created
 - Organization created
@@ -198,28 +190,24 @@ The events you get notified about are:
 - Project membership created
 - Project membership deleted
 
-You will receive notifications for events in which you are not the actor.
-These notifications are specifically for events that are initiated by other members of your organization or collaborators on your projects.
+You only receive notifications for actions initiated by other organization members or project collaborators.
 
-## Enhance your project with the "Optimized Packager"
+## Enhance Your Project with the "Optimized Packager"
 
-We recommend using the new "Optimized Packager" over the deprecated "QGIS Core Offline Editing" for all your projects.
+We recommend using the **"Optimized Packager"** over the deprecated **"QGIS Core Offline Editing"** packager for all projects.
 
 !!! Explanation
+    Unlike the **"QGIS Core Offline Editing"** packager, the **"Optimized Packager"** consolidates filtered layers originating from the same data source into a single offline layer.
+    This preserves distinct symbologies while using less storage.
+    For example, if you set multiple filters on your project layers, older packagers downloaded the entire layer multiple times before applying filters locally.
+    With the **"Optimized Packager"**, filters are applied during the server packaging job, reducing download sizes.
 
-    Unlike the "QGIS Core Offline Editing" packager the "Optimized Packager" consolidates filtered layers of same datasource into a single offline layer, respecting the distinct symbology but also using less storage.
-    What does this actually mean: If you have multiple filters set in your project layers, QField used to download the whole layer and only then apply the two filteres once downloaded.
-    With the "optimized packager" the filters will be assigned during the packaging job and only then, the filters will be applied.
-
-Here is an example to illustrate this feature:
-
-**Example Configuration:**
+Consider this example configuration:
 
 - **Layer 1.1:**
   - Data Source: `layers.gpkg`
   - Table: `layer1`
   - Filter: `id % 2 = 1`
-
 - **Layer 1.2:**
   - Data Source: `layers.gpkg`
   - Table: `layer1`
@@ -227,53 +215,47 @@ Here is an example to illustrate this feature:
 
 **Result:**
 
-For the new offliner:
-
-- A single layer is generated in the offline GeoPackage, combining data from `layer1` with the specified filters.
-
-For the old (QGIS) offliner:
-
-- Two separate layers are created, each representing the filtered datasets:
+- **Optimized Packager:** Generates a single layer in the offline GeoPackage, combining data from `layer1` with specified filters applied.
+- **QGIS Core Offline Editing Packager:** Creates two separate layers representing the filtered datasets:
   - Layer 1: Filtered with `id % 2 = 1`
   - Layer 2: Filtered with `id % 2 = 0`
 
 !![](../../assets/images/qfc_offline_packager.png,700px)
 
-!!! note
-    This configuration must be set in the Settings page of each project in [QFieldCloud](https://app.qfield.cloud/).
+!!! Note
+    Configure this setting on the **"Settings"** page of each project in [QFieldCloud](https://app.qfield.cloud/).
 
 ## Configuration of Attachment Folders
 
-If your project contains photos, documents or other attachments, you have to configure your QGIS project accordingly to ensure that the data are downloaded to your QField device.
+If your project contains photos, documents, or other attachments, configure your QGIS project to ensure files download to your QField device.
 
-1. In QGIS navigate to *Project* > *Properties...* > *QField*.
-2. Add your folder's path to the "Attachments and Directories" list.
-    The path you enter must be relative to the location of your project file.
+!!! Workflow
+    1. In QGIS, navigate to _Project > Properties... > QField_.
+    2. Add your folder path under the **"Attachments and Directories"** section.
+    Ensure entered paths are relative to your project file location.
 
-!!! example
-    You used pictures for a specific symbology.
-    These are stored in a folder named "assets" located inside your project home folder.
-    Add them under the folder name to the list.
+!!! Example
+    If you use pictures for symbology stored in a folder named `assets` inside your project home directory, add `assets` to the attachment directories list.
 
 !![](../../assets/images/attachments_and_directories_list.png)
 
-## Connect to a custom QFieldCloud server in QField and QFieldSync
+## Connect to a Custom QFieldCloud Server in QField and QFieldSync
 
-QField and QFieldSync connect to the QFieldCloud service [app.qfield.cloud](https://app.qfield.cloud/) by default.
+QField and QFieldSync connect to the default QFieldCloud service at [app.qfield.cloud](https://app.qfield.cloud/).
 
-You can modify the default that QField and QFieldSync connect to:
+Modify the default server address in QField and QFieldSync if using a custom deployment:
 
-1. Open the login screen in QField or QFieldSync.
-2. Double-tap on the Nyuki icon (the QFieldCloud logo).
-3. This action will reveal a field where you can enter the preferred QFieldCloud server address.
-4. Enter the details of the desired server in the provided field.
-(Leaving the field empty will automatically connect to the default [QFieldCloud server](https://app.qfield.cloud/))
+!!! Workflow
+    1. Open the login screen in QField or QFieldSync.
+    2. Double-tap the Nyuki logo (the QFieldCloud logo).
+    3. Enter your custom server URL in the revealed address field.
+    Leaving the field empty automatically reconnects to the default [QFieldCloud server](https://app.qfield.cloud/).
 
 !![Revealing server in QFieldSync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
 
 !![Revealing server in QField](../../assets/images/changing_default_qfieldcloud_server_qfield.png,250px)
 
-!!! note
-    QField will remember the last entered URL for future sessions.
-    It's important to note that QFieldSync does not support the same cloud project in multiple QGIS profiles.
-    As a recommendation use a single QGIS profile for your QFieldCloud projects to avoid Synchronisation issues.
+!!! Note
+    QField remembers the last entered server URL for future sessions.
+    QFieldSync does not support opening the same cloud project across multiple QGIS profiles.
+    Use a single QGIS profile for your QFieldCloud projects to prevent synchronization issues.
