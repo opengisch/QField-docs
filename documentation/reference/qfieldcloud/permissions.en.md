@@ -37,8 +37,7 @@ Project roles determine what an individual user can do within a specific project
 
     "Personal vs. Organization Projects"
 
-    Collaborators on **Personal (Pro)** projects can only add one other collaborator with a **Personal (Pro)**.
-    To assign more than one collaborator, the project must belong to an **Organization Plan**.
+    To assign more than one collaborator on private projects, the project must belong to an organization plan and collaborators must all be members of that organization.
 
 ### Project Capabilities
 
