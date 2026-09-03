@@ -3,35 +3,31 @@ title: Live default value
 tx_slug: documentation_how-to_live-default-value
 ---
 
-# Live default value
+# Live Default Values
 
-QField is supporting the "live" updating of default attribute value when editing features.
-This means, when changing one value in an attribute another automatically adjusts.
-Examples for this could be species names that are both recorded with the original species name and the common name.
+QField supports live updating of default attribute values when editing features.
+Modifying one attribute value automatically updates dependent attribute fields configured with dynamic default expressions.
+For example, selecting a scientific species name can automatically populate a common species name or retrieve a corresponding image.
+
+## Configuring Live Default Values
+:material-monitor: Desktop preparation
+
+Configure live default values in QGIS layer properties by combining default value expressions with the **"Apply default value on update"** setting.
 
 !!! Workflow
+    1. In QGIS, navigate to _Vector Layer Properties... > Attribute Form_.
+    2. Select the target field that should update automatically (such as `photos`).
+    3. Enter your dynamic expression in the **"Default value"** field.
+    4. Enable **"Apply default value on update"**.
+        !![Live default value image configuration](../../assets/images/live_default1.png,700px)
+    5. Select the triggering attribute field (such as `plant_species`) configured with a **Value Relation** or **Value Map** widget.
+    6. Configure the widget properties and default expressions as needed.
+        !![Live default value relation configuration](../../assets/images/live_default2.png,700px)
+    7. Click **"OK"** and save your project.
 
-    ## Configuration
+## Usage Example
+:material-tablet: Fieldwork
 
-    :material-monitor: Desktop preparation
+When editing feature attributes in QField, changing a value in a parent field immediately re-evaluates expressions and updates dependent default fields in real time.
 
-    In this example, the image will automatically update when a different plant_species is chosen.
-
-    1. Direct to the layer properties, where you want to set the updating value field.
-    2. Go to the 'photos' field and add the following expression into the default value.
-    3. Toggle the *apply default upon update*.
-
-        !![live default value image](../../assets/images/live_default1.png,700px)
-
-    4. Go to the plant_species field where your *value relation* is set as a widget type.
-    5. Add the following expression as shown below into the default value.
-
-        !![live default value relation](../../assets/images/live_default2.png,700px)
-
-    6. Press Ok and save.
-
-!!! Example
-
-    In the video below there is an example of "live" default value updates when editing features on QField.
-
-    ![type:video](../../assets/videos/live_default_value.webm)
+![type:video](../../assets/videos/live_default_value.webm)
