@@ -3,85 +3,81 @@ title: Interact with the map
 tx_slug: documentation_how-to_map-interaction
 ---
 
-# Interact with the map
+# Interact with the Map
 
-Here are some of the possible interactions with the map in QField.
+QField supports several interactive map controls during fieldwork.
 
-## Map legend
+## Map Legend
 :material-tablet: Fieldwork
 
-Open the side "*Dashboard*" and expand the layers list to display the legend
-of the map.
+Open the **Side Dashboard** and expand the layer list to display the map legend.
 
-On double-tap or long-press on a layer, you get offered the following possibilities.
+Double-tap or long-press a layer in the legend to display the layer options menu:
 
 !![](../../assets/images/howto_legendoptions.png)
 
-- *Expand legend item* to show/hide the layer's sub-items.
-- *Show on map* to control visibility.
-- *Show labels* to control the visibility of the labels.
-- *Opacity Slider* to control the transparency of the layer.
-- *Zoom to layer* to have all the layer items on the map.
-- *Reload icon* to get the current data of a layer with remote sources.
-- *Show feature list* to show all the layer's features in the identification list.
-- *Setup tracking* to set up tracking mode of layer.
+- **"Expand legend item":** Toggles the visibility of layer sub-items.
+- **"Show on map":** Controls layer visibility on the map canvas.
+- **"Show labels":** Controls layer label visibility.
+- **"Opacity Slider":** Adjusts layer transparency.
+- **"Zoom to layer":** Zooms the map canvas to the full extent of the layer.
+- **"Reload icon":** Fetches the latest data for remote layer data sources.
+- **"Show feature list":** Displays all layer features in the feature list.
+- **"Setup tracking":** Configures feature tracking mode for the layer.
 
-
-## Sort layer features
+## Sort Layer Features
 :material-monitor: Desktop preparation
 
-If you'd like to configure the order of features in "Show feature list" in QField, you have the following options to pre-configure this on QGIS:
+Configure the feature display order for the **"Show feature list"** view in QGIS using two methods:
 
-- Simply right-click on any part of a column header and select the "Sort" option from the menu. This allows you to enter complex sorting expressions for your features as required.
+- Right-click any column header in the attribute table and select **"Sort..."** to enter custom sorting expressions.
 
 !![](../../assets/images/accesing-sort-feature-list-op1.png)
 
-- When being in the form view, you can access the sorting functionality by clicking on the expression button located at the top of the features list and select the "Sort" option.
+- In attribute form view, click the expression button at the top of the feature list and select **"Sort..."**.
 
 !![](../../assets/images/accesing-sort-feature-list-op2.png)
 
-## Identify features
+## Identify Features
 :material-tablet: Fieldwork
 
-Tap on a feature on the map to identify it.
-If several features are located where you tapped (either because there are multiple features really close one to another, or because several layers are overlapping), they will all be listed in the menu that opens on the right of the screen.
+Tap a feature on the map canvas to identify it.
+If multiple overlapping or adjacent features exist where you tap, QField lists all identified features in the identification panel.
 
 !![](../../assets/images/howto_identification.png)
 
-Tap on one of the listed features to access its attributes.
+Tap a feature in the list to open its attribute form.
 
-1. Tap the *arrows* to scroll through all the identified features.
-2. Tap the *centre button* to centre the map on the selected feature.
-3. Tap the *edit button* to edit the attributes of the selected feature.
-4. Scroll through the *sub-menus* to access all the attributes.
+1. Tap arrow buttons to scroll through identified features.
+2. Tap the center button to center the map canvas on the selected feature.
+3. Tap the edit button to modify attributes of the selected feature.
+4. Scroll through attribute sections to view feature details.
 
 !![](../../assets/images/howto_featureinfo.png)
 
-### Select identified features
+### Select Identified Features
 
-With long-press, you can toggle the feature selection.
+Long-press a feature in the list to toggle feature selection.
 
 !![](../../assets/images/howto_selection.png)
 
-When features are selected, you can perform the actions in the 3-dotted menu *(⋮)* on the top right.
+When features are selected, tap the three-dotted menu *(⋮)* in the top-right corner to perform batch actions.
 
 !![](../../assets/images/howto_identification_options.png)
 
+### Exceptions to Identified Layers
 
-### Exceptions to identified layers
+Exclude background layers or basemaps from identification queries to simplify map interactions.
 
-Often it is not required to be able to query every layer. Some layers
-are only present as basemap, and their attributes are not of interest.
+!!! Workflow
+    1. In QGIS, navigate to _Project > Properties... > Data Sources_.
+    2. Uncheck background layers under the **"Identifiable"** column to disable map queries for those layers.
 
-You can manage this layer list in QGIS desktop in
-*Project* > *Properties...* > *Data sources* > *Identify Layers* and uncheck the base layers.
-
-## 3D map view interactions
+## 3D Map View Interactions
 :material-tablet: Fieldwork
 
-QField supports viewing and interacting with your project data in a 3D map view.
-By utilizing elevation data (either an automatic online DEM or a custom DEM configured in your QGIS project),
-your map layers are draped as textures over the 3D surface.
-You can interactively navigate your map in 3D and seamlessly synchronize extents with the 2D canvas.
+QField supports viewing and interacting with project data in a 3D map view.
+Using elevation data (either an online DEM or a custom DEM configured in QGIS), QField drapes map layers as textures over 3D terrain surfaces.
+Interactively navigate map scenes in 3D and synchronize extents seamlessly with the 2D map canvas.
 
-[**Learn more about configuring and using the 3D Map View.**](../advanced-how-tos/3d-map-view.md)
+Read more in the [3D Map View Documentation](../advanced-how-tos/3d-map-view.md).
