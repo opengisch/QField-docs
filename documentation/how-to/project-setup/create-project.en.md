@@ -48,4 +48,5 @@ You can convert it into a QFieldCloud project at any time.
     3. If you are not signed in yet, log in with your QFieldCloud account credentials.
     4. Tap the **Cloudify project** button.
     5. QField will automatically package your local layers, create the project on QFieldCloud under your account or organization, and upload all initial project files and datasets.
+
     !![](../../assets/images/cloudify_project.png,400px)
