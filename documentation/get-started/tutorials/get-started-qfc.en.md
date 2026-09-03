@@ -26,7 +26,7 @@ In case that you have many projects, you can search in the search bar at the top
 It is also possible to create a new empty project from this menu.
 All further configuration of that project, however, needs to be done inside QGIS.
 Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
-Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
+Finally, if you have subscribed to a plan through [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
 
 Before you get started, we recommend to familiarize yourself with the [basic concepts](../tutorials/concepts.md) of QFieldCloud.
 
@@ -44,7 +44,7 @@ When managing a large number of cloud projects, you can refine your project list
 
 The dropdown menu allows you to filter projects by three primary criteria:
 
-- **Ownership:** *(Personal accounts only)*:
+- **Ownership:** *(Individual accounts only)*:
 
     - **My own projects:** Displays only projects where your account is the primary owner.
     - **Shared with me:** Displays projects owned by collaborators or organizations where you have been granted access.

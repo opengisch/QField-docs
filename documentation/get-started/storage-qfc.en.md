@@ -141,6 +141,6 @@ It is possible to retrieve invoices from previous months at the bottom of the bi
     1. From your <ins>Organization account's landing page</ins>, click on *Edit Organization*.
     2. Switch to the corresponding **Billing Section**.
     3. Navigate to the bottom of the page.
-        There you will find all previous and current invoices associated with your Personal Account or your Organization Account.
+        There you will find all previous and current invoices associated with your Organization Account.
 
         !![Example of Invoice](../assets/images/qfc-storage-plans-invoice.png,400px)

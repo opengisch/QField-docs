@@ -35,8 +35,6 @@ Project roles determine what an individual user can do within a specific project
 
 !!! note
 
-    "Personal vs. Organization Projects"
-
     To assign more than one collaborator on private projects, the project must belong to an organization plan and collaborators must all be members of that organization.
 
 ### Project Capabilities
