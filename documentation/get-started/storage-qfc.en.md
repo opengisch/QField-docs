@@ -5,163 +5,139 @@ tx_slug: documentation_get-started_storage_qfieldcloud
 
 # QFieldCloud Plans and Additional Storage
 
-By default, when registering for QFieldCloud, you create a general user account with a free community plan.
-With the free community plan, you can work by yourself on QGIS projects and apply changes as much as you like, as long as you do not exceed the 100 MB storage limit.
-If you require more storage or want to work in a multi-user environment, you will have to upgrade to either:
+When registering for QFieldCloud, you create a general user account with a free **Community Plan** by default.
+With the **Community Plan**, you can work independently on QGIS projects and sync changes up to the 100 MB storage limit.
+If you require additional storage or multi-user collaboration, upgrade your plan to either:
 
-- A personal **Pro Plan** (Personal Plan)
-- An **Organization Plan** (Organizational Plan)
+- A personal **Pro Plan**
+- An **Organization Plan**
 
-The same applies for additional data storage.
-
-The billing information necessary for both Pro and Organization plans and can be accessed through the **Billing section** under your personal account settings OR the organization account settings.
-At any point, you can modify your plans according to your needs.
-
-It is also possible to have a yearly subscription, where you will receive an annual invoice with a fixed amount of users and storage.
-
+Access billing information for both **Pro** and **Organization** plans in the billing section under personal or organization account settings.
+You can modify plans according to your needs at any time.
+Yearly subscriptions are also available with fixed annual invoices for user seats and storage limits.
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
 
 !!! Warning
+    - Personal **Pro** and **Organization** accounts maintain separate billing information pages.
+    QFieldCloud generates separate invoices for each account.
+    - Canceling a personal **Pro** plan does not automatically cancel an **Organization** plan.
 
-    1. If you have a **Personal Pro Account** and an **Organization Account**, you will have **TWO separate pages** with billing information.
-        The corresponding invoices will be generated for each account separately.
-    2. If you cancel your PRO Account, your Organization Account will remain active until you actively cancel it.
+## Choosing a Plan
 
-## Choosing a plan
-
-To upgrade to a Personal **Pro Plan**, follow these steps:
-
-!!! Workflow
-    1. Click on the username at the top-right of the page.
-    2. Click on "Upgrade to pro".
-    3. In the "Subscription" section, click on "Upgrade".
-    4. In the Pro section, click on "Activate".
-    5. Read and accept the "Terms of Service", then click "Proceed".
-    6. In the "Billing Address" section, fill in the required fields and click "Proceed to payment".
-
-To upgrade to an **Organization plan**, follow these steps:
+To upgrade to a personal **Pro Plan**:
 
 !!! Workflow
-    1. Click on the username at the top-right of the page.
-    2. Click on "Create organization".
-    3. Choose your preferred payment option:
-    !![organization plan options](../assets/images/organization_plan_options.png,800px)
-        - **Monthly Payment:** You can choose between a **Flat** subscription or a **Flex** Subscription.
-             - **Flat**: You select your number of seats (users in the organization) and pay each month for every seat.
-             - **Flex**: You can add members directly to the organization and only pay for the active ones.
-                A minimum of 1 member is always needed.
-        - **Yearly Payment**: You select your number of seats and pay once for every seat at the beginning of the subscription.
+    1. Click your username in the top-right corner of the web interface.
+    2. Select **"Upgrade to pro"**.
+    3. Under the **"Subscription"** section, click **"Upgrade"**.
+    4. Under the **"Pro"** section, click **"Activate"**.
+    5. Read and accept the **"Terms of Service"**, then click **"Proceed"**.
+    6. Fill in the required fields under the **"Billing Address"** section and click **"Proceed to payment"**.
 
-    4. Click on "Create".
-    5. Choose a name for your organization using fewer than 150 characters, letters, digits, and `@/./+/-/_`.
-    6. Click on "Create".
-    7. In the "Billing Address" section, fill in the required fields and click "Next".
-    An overview page will show the plan layout and the billing details.
-    8. If you would like to add additional storage, you can add as many storage packages as you need.
+To create and configure an **Organization Plan**:
+
+!!! Workflow
+    1. Click your username in the top-right corner of the page.
+    2. Select **"Create organization"**.
+    3. Select your preferred payment model:
+        !![Organization plan options](../assets/images/organization_plan_options.png,800px)
+        - **Monthly Payment:** Choose between a **Flat** or **Flex** subscription.
+            - **Flat:** Select a fixed number of user seats and pay monthly for every seat.
+            - **Flex:** Add members to the organization and pay only for active users during each billing cycle (requires a minimum of 1 member).
+        - **Yearly Payment:** Select a fixed number of user seats and pay annually at the beginning of the subscription cycle.
+    4. Click **"Create"**.
+    5. Enter an organization name using fewer than 150 characters (accepting letters, digits, and `@/./+/-/_`).
+    6. Click **"Create"**.
+    7. Complete the required fields under the **"Billing Address"** section and click **"Next"** to view the subscription summary.
+    8. (Optional) Add additional 3 GB storage packages as needed.
         !![](../assets/images/example_organization_plan_billing.png)
-    9. (Optional) If you have received a promotion code, please enter it at the bottom of the billing window.
-    10. Under the summary page, verify your current subscription and upcoming payment.
-    Add your billing details and click on **Pay** to activate your plan.
+    9. (Optional) Enter a promotion code at the bottom of the billing window if available.
+    10. Review your subscription details, enter your payment information, and click **"Pay"** to activate your plan.
 
-### **Active Users under Organization Plans**
+### Active Users Under Organization Plans
 
-Under the **Flex Plan**, at least one user must be in an organization and will be seen as active by default.
-Depending on your plan, the total cost per billing cycle is defined by the number of **active** users (**Flex only**).
-An "active user" corresponds to a member who has performed at least one "job" within a project belonging to the organization during an invoice cycle.
+Under the **Flex Plan**, at least one member must belong to the organization and is marked active by default.
+Total subscription costs per billing cycle depend on the number of active users during that cycle.
+An active user corresponds to any member who performs at least one server job inside an organization project during an invoice cycle.
 
-To monitor the number of active users, direct to *Organization Settings* > *Billing* > *Active users*.
+To monitor active organization users, navigate to _Organization Settings > Billing > Active users_.
 
 !![](../assets/images/listing_qfieldcloud_active_users.png)
 
-!!! note
+!!! Note
+    A single user account can only log into one device at a time.
+    If the account `ninja_001` logs into QField on a new device, QField automatically logs out their previous session on other devices.
+    Sharing a single account across multiple devices causes synchronization errors, data loss, or data corruption.
+    Concurrent multi-device use on a single account also blocks field teams from uploading collected data to QFieldCloud.
 
-    An account can only be logged in to one device at a time.
-    For example, if the QFieldCloud username `ninja_001` logs into the QField mobile application on a new device, their previous device will automatically be logged out.
-    **Attempting to share a single account across multiple devices can cause synchronization errors, data loss, or data corruption.
-    It may also prevent users from pushing data collected in the field to the cloud.**
+    To enable multiple field workers to collaborate safely on a project, use an **Organization Plan**.
+    An **Organization Plan** allows administrators to invite unique user accounts (such as `ninja_001`, `ninja_002`, `ninja_003`) as project collaborators.
+    Administrators can manage user roles and permissions across organizations and specific projects.
 
-    To have multiple people working safely and concurrently on a project (e.g., `survey_001`), you will need an **Organization Plan**.
-    This allows you to invite different user accounts (e.g., `ninja_001`, `ninja_002`, `ninja_00n`) to collaborate. Administrators can add, remove, or change the permissions of these users within the organization and specific projects.
+## Modifying Current Subscriptions
 
-## Modification of current subscription
-
-In QFieldCloud, you can add as much storage as desired for your projects and change the number of your preferred selected seats whenever you want.
-When modifying additional storage or seats, any increases will become effective immediately. Decreases in storage or seats will become effective (and payable) with the start of the next billing cycle.
-Additional storage can be obtained in sets of 3 GB.
+You can add additional storage packages or adjust user seats at any time in QFieldCloud.
+Subscription increases take effect immediately, while plan decreases take effect at the start of the next billing cycle.
+Additional storage is available in packages of 3 GB.
 
 !!! Workflow
-
-    1. To add more storage to your organization, direct to the *Settings* section of your organization.
-    2. Click on the **billing section** and click on *Change*.
+    1. Navigate to your organization settings by selecting _Organization > Settings_.
+    2. Navigate to the **"Billing"** section and click **"Change"**.
         !![](../assets/images/storage-qfc1.png)
-
-    3. From there, you can either cancel your subscription or modify the subscription.  Click on **Modify subscription**.
+    3. Click **"Modify subscription"**.
         !![](../assets/images/storage-qfc2.png)
-
-    4. Adjust the number of seats and the modified storage packages depending on your needs. The reflected changes to the upcoming subscription will be indicated below the current subscription with either a green (increasing seats/storage) or red (decreasing seats/storage) color.
+    4. Adjust your required number of user seats and 3 GB storage packages.
+        Green text indicates increased items, while red text indicates decreased allocations for the upcoming billing cycle.
         !![](../assets/images/storage-qfc3.png)
 
-    !!! Note
+!!! Note
+    - Included storage corresponds to storage allocated per user seat.
+    - Additional storage is added in 3 GB packages.
+    - Increased storage and seats become available immediately.
+    - Decreased storage or seat allocations take effect during the next billing cycle.
 
-        The included storage corresponds to the storage that is associated with your number of seats.
-        The additional storage corresponds to the storage that is added in packages of 3 GB.
-        Once a subscription has been modified, the additional storage and seats will be immediately available to use.
-        Any decreased storage or number of seats will only be updated with the next billing cycle.
+## Transferring Organization Ownership
 
-## Transferring organization ownership
+Primary ownership of an organization account can be transferred to any existing member.
 
-You can transfer the primary ownership of an Organization account to another member.
-
-!!! warning
-
-    "Important Billing Considerations"
-
-    Transferring organization ownership will not affect the active status of the subscription.
-    This also applies to **the payment method (credit card details)** on the Organization billing section.
-
-    If you used a credit card to pay for the organization, the new owner must manually update the organization's payment information to replace it if necessary.
-    Removing yourself or transferring the account does not clear the saved card automatically.
+!!! Warning
+    Transferring organization ownership does not alter subscription statuses or billing payment methods.
+    Stored credit card details remain active on the organization billing page after ownership transfers.
+    The new owner must manually update the organization payment details if card details need to be replaced.
 
 !!! Workflow
-
-    1. Ensure the user you intend to appoint as the new primary owner is already a member of the organization.
-    If not add them to the organization first.
-    2. Navigate to your organization's overview page and click on **Edit organization**.
-    3. Change **Owner** on the **Transfer ownership of this organization** section, and select the user intended to transfer from the dropdown list.
+    1. Ensure the new primary owner is already a member of the organization.
+    2. Navigate to your organization overview page and click **"Edit organization"**.
+    3. Locate the **"Transfer ownership of this organization"** section, select the new user from the **"Owner"** dropdown menu, and confirm the transfer.
         !![](../assets/images/qfc_transferring_org.png)
 
-## Cancellation of a subscription
+## Canceling Subscriptions
 
-You can cancel your subscriptions at any given time.
-This has to be done separately for both the PRO Plans and the Organization Plans.
+You can cancel subscriptions at any time.
+Personal **Pro** plans and **Organization** plans must be canceled separately.
 
 !!! Workflow
+    1. Navigate to your account settings:
 
-    1. For the **Personal Pro Plan**: From your <ins>user account's landing page</ins>, click on *Edit Profile*.
-        **For the Organization Plan**: From your <ins>Organization account's landing page</ins>, click on *Edit Organization*.
-    2. Switch to the corresponding **Billing Section**.
-    3. Click on **change** and then click on **Cancel subscription**.
+        - For **Pro Plans:** Click **"Edit Profile"** on your personal account landing page.
+        - For **Organization Plans:** Click **"Edit Organization"** on your organization landing page.
 
+    2. Navigate to the **"Billing"** section.
+    3. Click **"Change"**, then click **"Cancel subscription"**.
         ![](../assets/images/discontinuing_service_02_change_subcription.png)
-
-    4. Confirm the cancellation in the subsequent pop-up window.
-
+    4. Confirm the cancellation in the popup window.
         ![Cancel subscription](../assets/images/discontinuing_service_03_cancel_subscription.png)
-
-    5. A Nyuki message will then appear, indicating that the subscription will conclude at the end of the current billing period.
-
+    5. A confirmation message displays indicating that the subscription ends at the conclusion of the active billing period.
         ![Cancellation message](../assets/images/discontinuing_service_05_nyuki_message.png)
 
-## Retrieving an invoice
+## Retrieving Invoices
 
-It is possible to retrieve invoices from previous months at the bottom of the billing section.
+You can access past invoices at the bottom of the billing section.
 
 !!! Workflow
-
-    1. For the **Personal Pro Plan**: From your <ins>user account's landing page</ins>, click on *Edit Profile*.
-        **For the Organization Plan**: From your <ins>Organization account's landing page</ins>, click on *Edit Organization*.
-    2. Switch to the corresponding **Billing Section**.
-    3. Navigate to the bottom of the page.
-        There you will find all previous and current invoices associated with your Personal Account or your Organization Account.
-
+    1. Navigate to your account settings:
+        - For **Pro Plans:** Click **"Edit Profile"** on your personal account landing page.
+        - For **Organization Plans:** Click **"Edit Organization"** on your organization landing page.
+    2. Navigate to the **"Billing"** section.
+    3. Scroll to the bottom of the page to view and download past or current account invoices.
         !![Example of Invoice](../assets/images/qfc-storage-plans-invoice.png,400px)
