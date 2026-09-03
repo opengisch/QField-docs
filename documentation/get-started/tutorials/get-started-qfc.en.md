@@ -27,11 +27,14 @@ All further configuration of that project, however, needs to be done inside QGIS
 Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
 Finally, if you have subscribed to a personal plan with [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
 
+Before you get started, we recommend to familiarize yourself with the [basic concepts](../tutorials/concepts.md) of QFieldCloud.
+
 !!! Tip
     In the project overview page, the two names indicate the "Owner" of the project and the "Name" of the project.
     For instance, if you own an organization or have access to another to a project owned by another organization, the front name (indicating the ownership) will be different.
 
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png,800px)
+
 
 ## Project Creation
 
@@ -84,12 +87,12 @@ The icons indicate the cloud and local status of the different projects.
     - ![Status](../../assets/images/cloud_project.svg){Width="20px"} indicates that the cloud project is also locally stored.
 
 - **Cloud status**: There are three different types of status indicated by a color which show the current status of your cloud project.
-The status of each project is shown with a tooltip.
-    - **Red Status:** The project is invalid and is not ready-for use in the field.
-    There are multiple reasons for this and the status message on your QFieldCloud landing page is the first step to address the issue.
+    The status of each project is shown with a tooltip.
+    - **Red Status:** The project is invalid and is not ready for use in the field.
+        There are multiple reasons for this and the status message on your QFieldCloud landing page is the first step to address the issue.
     - **Brown Status:** The project is currently being updated or edited.
     - **Green Status**: The project is ready to be used in the field.
-    You can download the project down to QField.
+        You can download the project down to QField.
 
 ### QField Project Settings
 
@@ -130,7 +133,8 @@ Now you should see your project and files on your project overview page on [QFie
 When you are ready for your fieldwork it is time to setup QField on your mobile device.
 
 !!! Workflow
-    1. Download and install the latest version of QField from Google's play store, Apple's app store, or by [downloading the latest release for Windows, Linux, or macos](https://github.com/opengisch/QField/releases).
+    1. Download and install the latest version of QField from Google's Play Store, Apple's App Store, or by [downloading the latest release for Windows, Linux, or macOS](https://github.com/opengisch/QField/releases).
+    1. Download and install the latest version of QField from Google's Play Store, Apple's App Store, or by [downloading the latest release for Windows, Linux, or macOS](https://github.com/opengisch/QField/releases).
     2. Direct to *Cloud Projects* and log in to QFieldCloud on your mobile device
         !![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
         !![Login](../../assets/images/getting_started_login.png,250px)

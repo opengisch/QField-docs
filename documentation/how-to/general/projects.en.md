@@ -83,10 +83,22 @@ The location on storage is displayed in the top navigation bar when opening a lo
 
 On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/` where you will find both the "Imported Datasets" and "Imported Projects" folders within which your edited content will be located.
 
-### Send to
+### Send to & Sharing Options
 :material-tablet: Fieldwork
 
-You can share and send the datasets straight from QField using Android APIs.
-This allows for the sending of edited datasets directly to third party apps (Gmail, Drive, Dropbox, Nextcloud, your favorite messenger app, etc.).
+You can share and export datasets directly from QField using platform-native APIs.
+This allows for the sending of edited datasets directly to third-party apps (Gmail, Drive, Dropbox, Nextcloud, messaging apps, etc.).
 
 !![Send to...](../../assets/images/howto_sendto.png)
+
+### Send Compressed File(s)
+
+When managing local datasets inside the file picker screen, you can select one or multiple dataset files to share them simultaneously as a single compressed archive.
+
+!!! Workflow
+    1. In the local project files, enter selection mode by long-pressing on an item or tapping the multi-select menu.
+    2. Select the dataset file(s) you wish to export.
+    3. Tap the top menu button *(⋮)* and select **Send compressed file(s) to...**
+    4. QField automatically bundles the selected items into a `.zip` archive and triggers the device's native sharing dialog to pick your destination app.
+
+    !![](../../assets/images/send_compressed_files.png, 400px)
