@@ -7,7 +7,7 @@ tx_slug: documentation_get-started_tutorials_get-started-qfc
 
 ## What is QFieldCloud
 
-QFieldCloud is the cloud service that allows seamless synchronization of your data between your mobile device for fieldwork and your desktop working station.
+QFieldCloud is the cloud service that allows smoothless synchronization of your data between your mobile device for fieldwork and your desktop working station.
 You can further manage teams, work in organizations, assign different editing permissions and much more.
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
@@ -15,14 +15,14 @@ You can further manage teams, work in organizations, assign different editing pe
 
 !!! Workflow
     1. Go to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
-    2. (Optional) If you have received a referral code, please enter it in the according field.
+    2. (Optionable) If you have received a referral code, please enter it in the according field.
         !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
 
 ## QFieldCloud Overview
 
-Once registered, your personal QFieldCloud landing page will show you all the projects that you have access to in the center of the window.
-In case you have multiple projects, you can search in the search bar at the top of the page.
+Once registered, your personal QFieldCloud landing page will show all the projects that you have access to in the center of the window.
+In case that you have many projects, you can search in the search bar at the top of the page.
 It is also possible to create a new empty project from this menu.
 All further configuration of that project, however, needs to be done inside QGIS.
 Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
@@ -111,12 +111,13 @@ The icons indicate the cloud and local status of the different projects.
     - ![Status](../../assets/images/cloud_project.svg){Width="20px"} indicates that the cloud project is also locally stored.
 
 - **Cloud status**: There are three different types of status indicated by a color which show the current status of your cloud project.
-The status of each project is shown with a tooltip.
+    The status of each project is shown with a tooltip.
+
     - **Red Status:** The project is invalid and is not ready for use in the field.
-    There are multiple reasons for this and the status message on your QFieldCloud landing page is the first step to address the issue.
+        There are multiple reasons for this and the status message on your QFieldCloud landing page is the first step to address the issue.
     - **Brown Status:** The project is currently being updated or edited.
     - **Green Status**: The project is ready to be used in the field.
-    You can download the project down to QField.
+        You can download the project down to QField.
 
 ### QField Project Settings
 
@@ -157,6 +158,7 @@ Now you should see your project and files on your project overview page on [QFie
 When you are ready for your fieldwork it is time to setup QField on your mobile device.
 
 !!! Workflow
+
     1. Download and install the latest version of QField from Google's Play Store, Apple's App Store, or by [downloading the latest release for Windows, Linux, or macOS](https://github.com/opengisch/QField/releases).
     2. Direct to *Cloud Projects* and log in to QFieldCloud on your mobile device
         !![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
@@ -208,20 +210,21 @@ Supported syntax tokens include:
 
 ### Synchronization with QFieldCloud
 
-After you are done you will have to synchronize your changes back to QFieldCloud.
-This can either be done manually or automatically if necessary.
+After you are done with data collection, you will need to synchronize your changes back to QFieldCloud.
 
 !!! Workflow
-    1. Open the *Side Dashboard*
-    2. Click on the blue cloud (there should be a number indicating how many changes you have made).
-        !![Cloud button](../../assets/images/getting_started_blue_button.png,250px)
-    3. Choose an action with the change you made to your data.
-        Each of the actions have an explanation what you should expect to happen:
-        - **Revert Changes:** All your local changes made since the last synchronization will be deleted.
-        - **Push:** Only your local changes will be pushed to QFieldCloud.
-        - **Synchronize:** All your changes will be pushed to QFieldCloud and merged with the version in the cloud.
-            A new version of the cloud project (including the new changes from other collaborators) will be downloaded to your device.
-        !![Actions](../../assets/images/getting_started_actions.png,250px)
+    1. Open the *Side Dashboard* in QField.
+    2. Click on the cloud icon (a badge will indicate how many local changes you have made).
+        !![Cloud button](../../assets/images/getting_started_blue_button.png,400px)
+    3. Choose the appropriate action card for your data:
+        - **Upload local changes:** Sends your edits and attachments to the cloud without downloading project updates from other collaborators.
+        This is fast and saves internet bandwidth.
+        - **Synchronize project:** Uploads your edits, then downloads the latest project from QFieldCloud so everything is completely up to date.
+        - **Upload history:** Tap this button below the main actions to view a detailed log of your past uploads, including timestamps and their current statuses (e.g., Applied, Pending, Conflict, Error).
+        - **Danger zone:** Tap this button to if you wish to revert previous actions or restore the current version of the cloud project.
+        You can **Discard local changes** (which removes all your local edits that have not yet been uploaded) or **Reset project** (which re-downloads the cloud version if your local copy becomes corrupted).
+
+        !![](../../assets/images/getting_started_actions.png,800px)
 
 Your changes are now available to everyone who has access to your project on the cloud.
 

@@ -208,7 +208,7 @@ If you have no username you can directly register following the link.
 For this case, use the first option.
 3. Give your project a name and a description.
 4. By default you will be set as the owner of the project.
-*In case that you were member of an organisation, you could assign a different entity with this dropdown list.*
+*In case that you were member of an organization, you could assign a different entity with this dropdown list.*
 5. Finally, you can choose the project directory where the project path will be placed.
 By default QFieldSync chooses the default project directory.
 6. Click "Create" and QFieldSync will package your project for the cloud.
