@@ -3,28 +3,31 @@ title: Map themes
 tx_slug: documentation_how-to_map-themes
 ---
 
-# Map themes
+# Map Themes
 
-The beautiful thing about GIS is that maps are dynamic.
-Layers can individually be shown and hidden and information can be presented more or less prominently based on the task at hand.
-
-This is what *Map themes* are for.
+Maps in GIS are dynamic, allowing layers to be shown or hidden based on your task.
+Map themes save and store distinct layer visibility configurations and symbology styles for quick switching.
 
 ## Creating a Map Theme
 :material-monitor: Desktop preparation
 
-Creating a Map Theme in QGIS is a very simple task.
+Create map themes in QGIS to configure customized map views for fieldwork.
+
+!!! Workflow
+    1. Style your map canvas and layer visibilities in QGIS according to your project requirements.
+    2. Save the view configuration as a named map theme in the QGIS Layers panel.
+    3. Transfer or synchronize the project to your mobile device.
 
 ![type:video](../../assets/videos/map_themes_configuration.webm)
 
-1. Style the map and layers to your requirements.
-2. Save it as a named Map Theme.
-3. Load the project on your device and change the active Map Theme.
-
-## Change the active Map Theme
+## Change the Active Map Theme
 :material-tablet: Fieldwork
 
-If you defined map themes for your project in QGIS, you can switch between them from the side "Dashboard".
-Use the *Map themes* combobox to chose the active theme.
+If you defined map themes in QGIS, switch between them directly in QField using the **Side Dashboard**.
+
+!!! Workflow
+    1. Open the **Side Dashboard**.
+    2. Tap the **"Map themes"** dropdown menu.
+    3. Select your desired active theme to update the map canvas.
 
 ![type:video](../../assets/videos/theme.webm)
