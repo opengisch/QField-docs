@@ -121,7 +121,8 @@ It should **never** be used.
 ### Standalone services
 
 The following containers are defined in `docker-compose.override.standalone.yml` and are provided so that a fresh checkout runs out of the box.
-They are **not** part of the application itself and **should not** be used in production, as these services are not monitored, backed-up and generally designed for critical usage within the stack.
+!!! warning
+    Those containers are **not** part of the application itself and **should not** be used in production, as these services are not monitored, backed-up and generally designed for critical usage within the stack.
 
 Each of them is meant to be replaced by infrastructure you already operate, see [Replacing the standalone services](#replacing-the-standalone-services).
 Note that replacing a *container* is not the same thing as replacing a *storage backend*: the S3 and WebDAV backends used by these containers are both production-grade backends of the **[`app`] QFieldCloud App**.
