@@ -16,6 +16,7 @@ The billing information necessary for both Flat and Flex plans and can be access
 At any point, you can modify your plans according to your needs.
 
 It is also possible to have a yearly subscription, where you will receive an annual invoice with a fixed amount of users and storage.
+For this option, please get in touch with [sales](mailto:sales@qfield.cloud)
 
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
 

@@ -36,6 +36,7 @@ Project roles determine what an individual user can do within a specific project
 !!! note
 
     To assign more than one collaborator on private projects, the project must belong to an organization plan and collaborators must all be members of that organization.
+    Alternatively, you can make a project "public" allowing all QFieldCloud users to access your project.
 
 ### Project Capabilities
 
