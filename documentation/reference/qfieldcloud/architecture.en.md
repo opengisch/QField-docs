@@ -241,6 +241,8 @@ A configuration example is available in the `.env.example` file of the QFieldClo
 Both backends can be combined, for example by keeping project files on S3 and storing only the attachments on WebDAV.
 The WebDAV backend is the only one that supports `STORAGE_PROJECT_DEFAULT_ATTACHMENTS_VERSIONED=0`, which is a valid reason to pick it for attachments that do not need to be versioned.
 
+!!! warning
+    Be aware that manually editing files stored on a WebDAV backend by QFieldCloud can lead to errors: the QFieldCloud `app` service stores files' metadata in the db (e.g. byte size, checksum, etc.), and if some files are renamed / moved / deleted from the WebDAV backend, QFieldCloud is thus not able to fetch those files and serve them to the clients requesting them.
 ### Using an existing S3 service
 
 Any S3-compatible service can be used, as long as the **[`nginx`] Reverse proxy** can reach its endpoint, see the warning in the [`[nginx]` Reverse proxy](#nginx-reverse-proxy) section.
