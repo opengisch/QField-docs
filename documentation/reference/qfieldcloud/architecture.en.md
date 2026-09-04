@@ -201,7 +201,8 @@ Stores data for **[`smtpdev`] Mailing Server**.
 
 #### [`geodb`] GeoDB PostgreSQL
 
-Removed in QFieldCloud `v25.27`.
+Removed in QFieldCloud [`v25.27`](https://github.com/opengisch/QFieldCloud/releases/tag/v25.27).
+
 It used to store dynamically created user PostGIS databases, together with its **[`geodb_data`]** volume.
 
 When upgrading an instance created before `v25.27`:
