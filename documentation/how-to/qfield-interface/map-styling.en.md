@@ -10,7 +10,7 @@ This includes all renderer types like graduated, categorized, rule based,
 2.5D as well as data defined symbology.
 
 ## Display Expression
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 In QField, objects are identified with a name, which can be customized using expressions.
 
@@ -22,7 +22,7 @@ The display expression is also used to search in layers.
 !![Configuration of display expression in QGIS.](../../assets/images/define_display_expression.png)
 
 ## Read only, non-identifiable and searchable layers
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Some layers in a project are just there for pure visual purpose.
 Such layers should not show up when a user taps somewhere to identify objects.
@@ -37,7 +37,7 @@ It is also possible to configure which layers are searchable.
 !![Configuration of layers that will not be identifiable, nor modifiable,  nor searchable.](../../assets/images/project_configuration_readonly.png)
 
 ## Using additional fonts
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 QField enables you to use all the custom fonts you might want and need.
 There are two different possibilities to register additional fonts:
@@ -61,7 +61,7 @@ When building a QFieldCloud project that includes additional fonts in a `fonts` 
     !![Configuring custom fonts folder for QFieldCloud synchronization.](../../assets/images/qfc_fonts_directory_setting.png)
 
 ## Custom SVG symbols
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 It is possible to embed SVG symbols directly within a QGIS project.
 

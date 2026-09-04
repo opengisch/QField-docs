@@ -10,7 +10,7 @@ By an easy configuration of your attribute form in QGIS, you can quickly access 
 
 !!! Workflow
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. In QGIS Create a new field in your feature layer with the datatype text
     2. Under *Vector Properties* Find the "attribute form" setting

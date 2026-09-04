@@ -13,7 +13,7 @@ Examples for this could be species names that are both recorded with the origina
 
     ## Configuration
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     In this example, the image will automatically update when a different plant_species is chosen.
 

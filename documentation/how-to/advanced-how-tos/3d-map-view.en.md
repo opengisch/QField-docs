@@ -29,7 +29,7 @@ If no custom elevation data is configured in your QGIS project, QField will auto
       - **Connectivity:** Your mobile device must have an active internet connection while in the field to load the terrain tiles.
 
 ### Option 2: Custom DEM
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 For offline fieldwork and the highest accuracy,
 you should configure your own elevation data directly within the [QGIS project](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#elevation-properties).<!-- markdown-link-check-disable-line -->

@@ -151,7 +151,7 @@ When you then open a note in QField, you can add and browse multiple photos, vid
 
     **Configuring the Gallery Editor in QGIS**
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     The Gallery Relation Editor does not require a specific "Gallery" widget type in QGIS.
     Instead, it is automatically triggered based on your form setup.

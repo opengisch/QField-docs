@@ -15,7 +15,7 @@ There are two possibilities to share data across projects:
 - **Synchronization through QFieldCloud:** The to be shared datasets are uploaded and stored in a dedicated project in QFieldCloud accessible to the pre-configured projects.
 
 ## Managing Localized Data Paths in QGIS
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 When preparing a new project for QField, make sure the datasets you want to share across multiple projects are stored within the "Localized datasets" folder in QGIS.
 
@@ -62,7 +62,7 @@ it will appear as `Administrative-boundaries.gpkg` within the **`shared_datasets
 
 !!! Workflow
 
-    1. **Follow the same [Desktop Preparation (QGIS)](#managing-localized-data-paths-in-qgis)** steps outlined above.
+    1. **Follow the same [Project Manager (QGIS)](#managing-localized-data-paths-in-qgis)** steps outlined above.
     2. Make sure the Localized Data Paths in QGIS are correctly configured to point to the location of the shared datasets on your computer.
     This tells QFieldSync which files to treat as "localized" for cloud handling.
     3. Ensure your shared layers are part of your QGIS project and their paths are relative to one of the configured localized data paths.
@@ -163,7 +163,7 @@ Users with "manager" or "admin" permissions for the **`shared_datasets`** projec
 
 !!! Workflow
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. In QFieldSync, download the **`shared_datasets`** project from QFieldCloud to a local directory on your computer.
     2. You can now add, update, or remove files within the pre-configured file directory of the localized datasets.
