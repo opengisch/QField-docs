@@ -236,7 +236,7 @@ The `STORAGES` environment variable selects the backend used to store project fi
 Two backends are supported in production:
 
 - an S3-compatible Object Storage, see [Using an existing S3 service](#using-an-existing-s3-service);
-- a WebDAV server, e.g. NextCloud.
+- a WebDAV server, e.g. NextCloud, nginx with [the `ngx_http_dav_module`](https://nginx.org/en/docs/http/ngx_http_dav_module.html) enabled, apache with [the `mod_dav` module](https://httpd.apache.org/docs/current/fr/mod/mod_dav.html) enabled.
 A configuration example is available in the `.env.example` file of the QFieldCloud repository.
 
 Both backends can be combined, for example by keeping project files on S3 and storing only the attachments on WebDAV.
