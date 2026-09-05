@@ -44,7 +44,7 @@ When managing a large number of cloud projects, you can refine your project list
 
 The dropdown menu allows you to filter projects by three primary criteria:
 
-- **Ownership:** *(Individual accounts only)*:
+- **Ownership:** *(User accounts only)*:
 
     - **My own projects:** Displays only projects where your account is the primary owner.
     - **Shared with me:** Displays projects owned by collaborators or organizations where you have been granted access.
