@@ -23,8 +23,6 @@ When taking pictures within an attachment widget inside QField, the built-in cam
 
 !![QField Camera Controls](../../assets/images/qfield_camera_options.png)
 
-### Live Capture Controls
-
 1. **Camera Switch:** Switch between the front-facing and rear-facing camera lenses on your device.
 2. **Resolution & Aspect Ratio:** Adjust the photo resolution and frame dimensions to manage your file sizes and image layouts.
 3. **Live Image Stamping:** Toggle a real-time text overlay directly onto the photo canvas.
