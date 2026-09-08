@@ -21,12 +21,12 @@ You can manage teams, work in organizations, assign different editing permission
 
 ## QFieldCloud Overview
 
-Once registered, your personal QFieldCloud landing page shows all projects that you can access in the center of the window.
-If you have many projects, search for them in the search bar at the top of the page.
-You can also create a new empty project from this menu.
-All further project configurations must be completed inside QGIS.
-Under your profile name, you can edit account details and view your organization memberships and project collaborations.
-If you subscribed to a personal plan with [QFieldCloud](https://qfield.cloud/pricing), manage your plan from this menu.
+Once registered, your personal QFieldCloud landing page will show all the projects that you have access to in the center of the window.
+In case that you have many projects, you can search in the search bar at the top of the page.
+It is also possible to create a new empty project from this menu.
+All further configuration of that project, however, needs to be done inside QGIS.
+Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
+Finally, if you have subscribed to a plan through [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
 
 Before getting started, familiarize yourself with the [basic concepts](../tutorials/concepts.md) of QFieldCloud.
 
@@ -38,21 +38,22 @@ Before getting started, familiarize yourself with the [basic concepts](../tutori
 ### Filtering Projects
 :material-monitor: Desktop
 
-When managing a large number of cloud projects, refine your project list using the **"Filters"** dropdown button located next to the search bar.
+When managing a large number of cloud projects, you can refine your project list using the **"Filters"** dropdown button located next to the search bar.
 
 !![](../../assets/images/qfc_web_project_filters.png, 800px)
 
 The dropdown menu allows you to filter projects by three primary criteria:
 
-- **Ownership:** *(Personal accounts only)*
-    - **"My own projects":** Displays only projects where your account is the primary owner.
-    - **"Shared with me":** Displays projects owned by collaborators or organizations where you have been granted access.
-- **Project type:**
-    - **"Regular projects":** Standard QGIS mapping projects created for field data collection.
-    - **"Shared datasets":** Centralized datasets stored in the dedicated `shared_datasets` project repository.
-    - **"Template Projects":** Projects locked for fieldworkers and used exclusively as project templates.
+- **Ownership:** *(User accounts only)*:
 
-When any filter option is active, clicking the **"Clear"** button immediately resets all active filter parameters and restores the full project view.
+    - **My own projects:** Displays only projects where your account is the primary owner.
+    - **Shared with me:** Displays projects owned by collaborators or organizations where you have been granted access.
+- **Project type:**
+    - **Regular projects:** Standard QGIS mapping projects created for field data collection.
+    - **Shared datasets:** Centralized datasets stored in the dedicated `shared_datasets` project repository.
+    - **Template Projects:** Projects locked for fieldworkers and used exclusively as project templates.
+
+When any filter option is active, clicking the **Clear** button immediately resets all active filter parameters and restores the full project view.
 
 ![type:video](../../assets/videos/type_filters_1.webm)
 
@@ -64,7 +65,6 @@ You can convert an existing QGIS project, start from a blank template on the web
 
 [Click here to read more about project creation](create-project-qfc.md)
 
-
 ## From QFieldCloud to QGIS Desktop
 :material-monitor: Desktop preparation
 
@@ -72,15 +72,17 @@ In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS.
 The following steps show how to install the plugin and synchronize your data to and from QFieldCloud.
 
 !!! Workflow
+!!! Workflow
+
+    :material-monitor: Project Manager
     1. Open the QGIS plugin manager by navigating to _Plugins > Manage and Install Plugins..._.
-    2. Under **"All"**, find **"QFieldSync"** in the list and install the latest version by clicking the **"Install Plugin"** button.
+    2. Under **All**, find **QFieldSync** in the list and install the latest version by clicking the **Install Plugin** button.
         !![Successful installation](../../assets/images/install_qfieldsync.png)
         After a successful installation, a new toolbar appears:
         !![Toolbar](../../assets/images/qfieldsync_toolbar.png,200px)
     3. Click the cloud icon ![](../../assets/images/cloud.svg){Width="20px"} in the QFieldSync toolbar to display the login screen:
         !![](../../assets/images/qfieldsync_login_dialog.png, 250 px)
     4. Enter your account credentials created during registration.
-
 !!! Warning
     If you use a password in QGIS for the first time, QGIS prompts you to set a master password to manage all stored passwords.
     Read more about the master password in the [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/auth_system/auth_overview.html#master-password). <!-- markdown-link-check-disable-line -->
@@ -91,15 +93,15 @@ The project overview shows the projects that your account can access.
 The screen contains the following elements:
 
 - Current user underlined in blue
-- The avatar on the top right leading to the sign-out page
-- A cloud button to create a new project
-- A refresh button on the right to update your project overview
-
+- Current user underlined in blue.
+- The avatar on the top right leading to the sign-out page.
+- A cloud button to create a new project.
+- A refresh button on the right to update your project overview.
 !![Projects overview example in QFieldSync](../../assets/images/project_overview_all_colors_tooltip.png)
 
 Newly registered users will see an empty table.
 Double-click a project in the list to view and edit project properties.
-
+Click on a project name in the list to view and edit project properties.
 ### Project Status
 
 The icons indicate the cloud and local status of each project.
@@ -118,18 +120,18 @@ The icons indicate the cloud and local status of each project.
 ### QField Project Settings
 
 After installing the QFieldSync plugin, a new section appears under _Project > Properties..._.
-Access these settings from the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} using the **"Settings"** icon.
-
+Access these settings from the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} using the **Settings** icon.
+You can access the settings from the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} using the **Settings** icon.
 Configure the following parameters in these settings:
+You can adjust the following parameters in these settings:
 
-- Define how project layers are treated in the cloud (see the [QFieldSync Get Started Guide](./get-started-qfs.md) for details on **"Packaging Actions"**).
-- Enable ["geofencing"](../../how-to/navigation-and-positioning/geofencing.md).
+- Define how project layers are treated in the cloud (see the [QFieldSync Get Started Guide](./get-started-qfs.md) for details on **Packaging Actions**).
+- Enable [**geofencing**](../../how-to/navigation-and-positioning/geofencing.md).
 - Assign a digitizing log layer.
 - Specify the active layer for editing after selecting a [Map Theme](../../how-to/qfield-interface/map-themes.md).
 
 We recommend using GeoPackages, especially when collaborating in teams.
 See the [Advanced Setup Guide](advanced-setup-qfc.md) for more information about vector formats.
-
 !!! Important
     If you use experimental data sources without a primary key field (such as Shapefiles or GeoJSON), you must include a lowercase `fid` field as a primary key to uniquely identify each feature.
 
@@ -140,11 +142,11 @@ Once configured, upload the project to QFieldCloud.
 !!! Workflow
     1. Click the cloud icon with arrows in the QFieldSync toolbar.
     Select your preferred upload method:
-      - **"The Local file":** Replaces your cloud file with the new local version of the project.
+    Select your preferred upload method:
+      - **The Local file:** Replaces your cloud file with the new local version of the project.
           When working with GeoPackages, the cloud file version is replaced by your local file version.
-      - **"The Cloud file":** Amends your local datasets and replaces your local project file with the current cloud version.
+      - **The Cloud file:** Amends your local datasets and replaces your local project file with the current cloud version.
 
-!![Synchronize](../../assets/images/getting_started_synchronize.png)
 
 You can now view your project and files on your [QFieldCloud project overview page](https://app.qfield.cloud/).
 
@@ -172,7 +174,7 @@ The **"Filter"** button is located to the right of the project search bar.
 
 ##### 1. Predefined Filter Presets
 
-Quick preset buttons appear at the top of the filter panel (such as **"My Own Projects"** or **"{org_name}'s projects"**).
+Quick preset buttons appear at the top of the filter panel (such as **My Own Projects** or **{org_name}'s projects**).
 Tapping a preset populates the criteria form and automatically filters the underlying list.
 
 ##### 2. Form-Based Filtering Criteria
@@ -191,7 +193,7 @@ Fine-tune your project queries by filling out fields in the filter pane:
 
 ##### 3. Power-User Search Syntax
 
-The main search bar allows power users to type advanced filter parameters directly using key-value syntax.
+The main search bar allows users to type advanced filter parameters directly using key-value syntax.
 Key parameters are dynamically recognized and highlighted inside the text input box.
 
 Supported syntax tokens include:
@@ -212,12 +214,12 @@ After completing field data collection, synchronize your changes back to QFieldC
     2. Tap the cloud icon (a badge indicates your number of pending local changes).
         !![Cloud button](../../assets/images/getting_started_blue_button.png,400px)
     3. Tap the appropriate action card for your data:
-        - **"Upload local changes":** Sends your edits and attachments to the cloud without downloading updates from other collaborators.
+        - **Upload local changes:** Sends your edits and attachments to the cloud without downloading updates from other collaborators.
         This option is fast and saves internet bandwidth.
-        - **"Synchronize project":** Uploads your local edits, then downloads the latest project version from QFieldCloud to keep everything up to date.
-        - **"Upload history":** Tap this button below the main action cards to view a log of past uploads, including timestamps and statuses (such as **"Applied"**, **"Pending"**, **"Conflict"**, or **"Error"**).
-        - **"Danger zone":** Tap this button to access options for discarding un-uploaded local changes or restoring the cloud version of the project.
-        Tap **"Discard local changes"** to remove un-uploaded local edits, or tap **"Reset project"** to re-download the cloud project if your local copy becomes corrupted.
+        - **Synchronize project:** Uploads your local edits, then downloads the latest project version from QFieldCloud to keep everything up to date.
+        - **Upload history:** Tap this button below the main action cards to view a log of past uploads, including timestamps and statuses (such as **Applied**, **Pending**, **Conflict**, or **Error**).
+        - **Danger zone:** Tap this button to access options for discarding un-uploaded local changes or restoring the cloud version of the project.
+        Tap **Discard local changes** to remove un-uploaded local edits, or tap **Reset project** to re-download the cloud project if your local copy becomes corrupted.
 
         !![](../../assets/images/getting_started_actions.png,800px)
 

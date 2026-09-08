@@ -79,10 +79,10 @@ Cloning creates an isolated, completely independent project space, cleanly repli
 !!! Workflow
 
     1. On the QFieldCloud landing page, click the actions context menu icon *(⋮)* next to the project profile you want to duplicate.
-    2. Select the **"Clone Project"** option.
-    3. Choose a unique name and select the target owner profile space (Personal or Organization).
-    4. Define a custom bounding box coordinate set inside the **"Project extent"** setting parameters to update the initial zoom focus area.
-    5. Click **"Create"** to start cloning.
+    2. Select the **Clone Project** option.
+    3. Choose a unique name and pick the target owner profile space (User or Organization).
+    4. Define a custom bounding box coordinate set inside the **Project extent** setting parameters to update the map's initial zoom area focus.
+    5. Click **Create** to start the cloning.
 
     ![type:video](../../assets/videos/clonning_projects_in_qfc.webm)
 

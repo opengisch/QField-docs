@@ -9,14 +9,26 @@ When registering for QFieldCloud, you create a general user account with a free 
 With the **Community Plan**, you can work independently on QGIS projects and sync changes up to the 100 MB storage limit.
 If you require additional storage or multi-user collaboration, upgrade your plan to either:
 
+<<<<<<< HEAD
 - A personal **Pro Plan**
 - An **Organization Plan**
+=======
+- A **Flat Plan** providing a fixed price per user; or
+- A **Flex Plan** allowing organizations to pay per active users.
+
+The billing information necessary for both Flat and Flex plans and can be accessed through the **Billing section** under your account settings OR the organization account settings.
+At any point, you can modify your plans according to your needs.
+
+It is also possible to have a yearly subscription, where you will receive an annual invoice with a fixed amount of users and storage.
+For this option, please get in touch with [sales](mailto:sales@qfield.cloud)
+>>>>>>> 9e42cfee5b75fc1b5f544d747f9e0385c1eaf6ef
 
 Access billing information for both **Pro** and **Organization** plans in the billing section under personal or organization account settings.
 You can modify plans according to your needs at any time.
 Yearly subscriptions are also available with fixed annual invoices for user seats and storage limits.
 All pricing information is available <a href="https://qfield.cloud/pricing" target="_blank">on the Pricing page</a>.
 
+<<<<<<< HEAD
 !!! Warning
     - Personal **Pro** and **Organization** accounts maintain separate billing information pages.
     QFieldCloud generates separate invoices for each account.
@@ -35,6 +47,11 @@ To upgrade to a personal **Pro Plan**:
     6. Fill in the required fields under the **"Billing Address"** section and click **"Proceed to payment"**.
 
 To create and configure an **Organization Plan**:
+=======
+## Choosing a plan
+
+To upgrade to an **organization plan**, follow these steps:
+>>>>>>> 9e42cfee5b75fc1b5f544d747f9e0385c1eaf6ef
 
 !!! Workflow
     1. Click your username in the top-right corner of the page.
@@ -74,7 +91,12 @@ To monitor active organization users, navigate to _Organization Settings > Billi
     An **Organization Plan** allows administrators to invite unique user accounts (such as `ninja_001`, `ninja_002`, `ninja_003`) as project collaborators.
     Administrators can manage user roles and permissions across organizations and specific projects.
 
+<<<<<<< HEAD
 ## Modifying Current Subscriptions
+=======
+    To have multiple people working safely and concurrently on a project (e.g., `survey_001`), you will need an organization plan.
+    This allows you to invite different user accounts (e.g., `ninja_001`, `ninja_002`, `ninja_00n`) to collaborate. Administrators can add, remove, or change the permissions of these users within the organization and specific projects.
+>>>>>>> 9e42cfee5b75fc1b5f544d747f9e0385c1eaf6ef
 
 You can add additional storage packages or adjust user seats at any time in QFieldCloud.
 Subscription increases take effect immediately, while plan decreases take effect at the start of the next billing cycle.
@@ -141,8 +163,10 @@ You can access past invoices at the bottom of the billing section.
 
 !!! Workflow
     1. Navigate to your account settings:
+
         - For **Pro Plans:** Click **"Edit Profile"** on your personal account landing page.
         - For **Organization Plans:** Click **"Edit Organization"** on your organization landing page.
+
     2. Navigate to the **"Billing"** section.
     3. Scroll to the bottom of the page to view and download past or current account invoices.
 
