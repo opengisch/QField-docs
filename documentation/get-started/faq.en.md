@@ -5,47 +5,6 @@ tx_slug: documentation_get-started_faq
 
 # Frequently Asked Questions
 
-## Billing and Plans
-
-??? help "What is the difference between the PRO plan and an "Organization" plan?"
-
-    ## What is the difference between the PRO plan and an "Organization" plan?
-    A PRO plan is an upgrade of your **Personal** user account, providing you with the ability to work with PostGIS databases, giving you additional storage (1GB).
-    This plan does not allow you to share your project with other users UNLESS the other user also has a PRO plan.
-    An "Organization" plan is specifically meant for collaborative work. By default 2 members of the organization will be charged despite of being active or inactive.
-
-??? help "What is the difference between "metered" and "licensed" users on my invoice?"
-
-    ## What is the difference between the metered and licensed users on my invoice?
-    By default when subscribing to an organization plan, at least two users need will be paid on a monthly basis.
-    Even if the user is not active, at least two users will always be billed.
-    The **metered user**, on the other hand, are billed upon activity.
-    This means that as soon as a ["job"](../reference/qfieldcloud/jobs.md#job-types) is executed, the user will be counted as an active user (after the two initial users).
-    The metered users are always billed retrospectively (e.g. in February, you will be billed for the metered user from January).
-
-??? help "Why am I still being invoiced? I cancelled my subscription already."
-
-    ## Why am I still being invoiced? I cancelled my subscription already.
-    In QFieldCloud there are two billing pages.
-    One for your personal account and one for your organization(s).
-    Make sure that you cancel all subscriptions, if you do not wish to use them anymore.
-    Otherwise, you will be invoiced monthly.
-
-??? help "Is it possible to pay by invoice on a monthly basis?"
-
-    No, unfortunately, we only offer invoice for an annual subscription with a one-off administration fee.
-
-??? help "Can I log in to the same account on multiple devices?"
-
-    ## Can I log in to the same account on multiple devices?
-    No, an account session can only be active on one device at a time.
-    This means a single user account (for example, `ninja_001`) can only be logged into the QField mobile application on one device.
-    If `ninja_001` tries to log in on a second device, the first device will automatically be logged out, and only the newest login will remain active.
-
-    If you need multiple people working concurrently on a single project (e.g., `survey_001`), you must use an **Organization Plan**.
-    This allows you to have distinct accounts for each team member (e.g., `ninja_001`, `ninja_002`, `ninja_00n`).
-    A user with administrative rights can add, remove, or change the permissions of these users within the Organization and its projects.
-
 ## Configuration questions in QField
 
 ??? help "How do I fix issues with missing or broken layers after syncing?"
@@ -96,5 +55,39 @@ tx_slug: documentation_get-started_faq
 
     I have a question about QField or QFieldCloud. Who can I ask?
     We have a [discussion platform](https://github.com/opengisch/QField/discussions) to connect with other members of our community. If you need professional support please [contact us](mailto:info@opengis.ch).
+
+## Billing
+
+??? help "What is the difference between "metered" and "licensed" users on my invoice?"
+
+    ## What is the difference between the metered and licensed users on my invoice?
+    A **metered user** is billed upon activity.
+    When subscribing to a flex plan, the monthly invoice will depend on the number of metered users.
+    By default one user will be charged, despite of activity or not.
+    As soon as ["job"](../reference/qfieldcloud/jobs.md#job-types) is executed by another user it will be counted as an active user and added to the metered number.
+    The metered users are always billed retrospectively (e.g. in February, you will be billed for the metered user from January).
+
+??? help "Why am I still being invoiced? I cancelled my subscription already."
+
+    ## Why am I still being invoiced? I cancelled my subscription already.
+    In QFieldCloud there are two billing pages.
+    One for your personal account and one for your organization(s).
+    Make sure that you cancel all subscriptions, if you do not wish to use them anymore.
+    Otherwise, you will continue to be invoiced monthly.
+
+??? help "Is it possible to pay by invoice on a monthly basis?"
+
+    No, unfortunately, we only offer invoice for an annual subscription with a one-off administration fee.
+    Please reach out to sales@qfield.cloud if you wish to pay by invoice.
+
+??? help "Can I log in to the same account on multiple devices?"
+
+    No, an account session can only be active on one device at a time.
+    This means a single user account (for example, `ninja_001`) can only be logged into the QField mobile application on one device.
+    If `ninja_001` tries to log in on a second device, the first device will automatically be logged out, and only the newest login will remain active.
+
+    If you need multiple people working concurrently on a single project (e.g., `survey_001`), you must subscribe to an **Organization Plan**.
+    This allows you to have distinct accounts for each team member (e.g., `ninja_001`, `ninja_002`, `ninja_00n`).
+    A user with administrative rights can add, remove, or change the permissions of these users within the Organization and its projects.
 
 You can find more plans and service related questions in the [QFieldCloud FAQ](https://qfield.cloud/faq) page.
