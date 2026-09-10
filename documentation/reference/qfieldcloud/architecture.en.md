@@ -161,14 +161,6 @@ Local mailing server to handle emails being sent, such as registration activatio
 Should be replaced by a proper email SaaS provider that supports SMTP protocol.
 
 
-#### [`geodb`] GeoDB PostgreSQL
-
-!!! warning
-    Deprecated, might be removed at any time.
-
-Stores dynamically created user PostGIS databases.
-
-
 #### [`rustfs_data`]
 
 Stores data for the **[`rustfs`] File Storage**.
@@ -187,14 +179,6 @@ Stores data for **[`db`] App PostgreSQL**.
 #### [`smtp4dev_data`]
 
 Stores data for **[`smtpdev`] Mailing Server**.
-
-
-#### [`geodb_data`]
-
-!!! warning
-    Deprecated, might be removed at any time.
-
-Stores data for **[`geodb`] GeoDB PostgreSQL**.
 
 
 ## Job Queue
