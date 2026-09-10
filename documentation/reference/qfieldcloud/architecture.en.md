@@ -131,18 +131,19 @@ If `rustfs` is running, please make sure the host's firewall allows port `8009`,
 Single shot container to create the required buckets on **[`rustfs`] File Storage**.
 
 
-#### [`webdav`] Alternative File Storage
+#### [`webdav`] WebDAV File Storage
 
 Local WebDAV storage used for development, using WebDAV protocol and specifications.
 
 The data is stored on the **[`webdav_data`]** volume.
 
-Can alternatively be used in place of the **`rustfs` File Storage** for storing the files. Can optionally be used for storing only attachments on it.
+Can alternatively be used in place of the **`rustfs` File Storage** for storing the files.
+Can optionally be used for storing only attachments on it.
 
 !!! info
-    The webdav storage is optional, it is not a requirement for the system to work properly.
+    Configuring a WebDAV storage is optional, it is not a requirement for the system to work properly.
 
-If used, the webdav storage service should be replaced by a proper WebDAV server, e.g. NextCloud.
+If used, the WebDAV storage service should be replaced by a proper WebDAV SaaS provider in production environments, e.g. NextCloud.
 
 
 #### [`db`] App PostgreSQL
@@ -168,7 +169,7 @@ Stores data for the **[`rustfs`] File Storage**.
 
 #### [`webdav_data`]
 
-Stores data for the **[`webdav`] Alternative File Storage** if present.
+Stores data for the **[`webdav`] WebDAV File Storage** if present.
 
 
 #### [`postgres_data`]
