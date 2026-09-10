@@ -69,9 +69,6 @@ You can convert an existing QGIS project, start from a blank template on the web
 :material-monitor: Desktop preparation
 
 In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS.
-The following steps show how to install the plugin and synchronize your data to and from QFieldCloud.
-
-!!! Workflow
 !!! Workflow
 
     :material-monitor: Project Manager
