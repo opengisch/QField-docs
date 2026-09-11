@@ -3,102 +3,113 @@ title: Project selection
 tx_slug: documentation_how-to_projects
 ---
 
-# Project selection
+# Project Selection
 
-QField has a file selector that allows to open a project from the device locally.
-To open files from the cloud see [QFieldCloud](../../get-started/tutorials/get-started-qfc.md).
+QField includes a file selector to open local projects stored on your device.
+To open cloud projects, see [QFieldCloud](../../get-started/tutorials/get-started-qfc.md).
 
-!!! note
-    Starting with Android 11 apps are denied full access to main and external storage content.
-    For QField, this means direct access to projects and datasets transferred and/or downloaded into storage folders is not possible anymore.
-    You can know more about [QField storage access](../../how-to/project-setup/storage.md).
+!!! Note
+    Starting with Android 11, applications are restricted from full access to primary and external storage directories.
+    Direct access to projects and datasets stored outside app-dedicated folders is no longer available.
+    Read more in the [QField Storage Access](../../how-to/project-setup/storage.md) guide.
 
-You have to import project folders or individual datasets into the app-dedicated storage location `<drive>:/Android/data/ch.opengis.qfield/files/QField` where it has unrestricted read/write access.
-With that behavior importing from external SD cards or providers that work with remote files (e.g. Google Drive) are supported as well.
+Import project folders or datasets into the dedicated storage directory `<drive>:/Android/data/ch.opengis.qfield/files/QField` where QField maintains full read/write access.
+This location supports importing files from external SD cards or cloud storage providers like Google Drive.
 
-!!! warning
-    Be aware that on uninstalling QField the app folder gets deleted as well. On update it stays.
+!!! Warning
+    Uninstalling QField deletes the app-dedicated folder and all stored local projects.
+    Updating QField preserves your app folder data.
 
-## Import and open local project
+## Import and Open Local Project
 :material-tablet: Fieldwork
 
-From the Welcome screen on QField chose "Local projects and datasets" you will see the folders named "Created projects", "Imported datasets", and "Imported projects" as well as a drop-down menu accessible via a bottom-right plus button.
+On the Welcome Screen, tap **"Local projects and datasets"** to view **"Created projects"**, **"Imported datasets"**, and **"Imported projects"** directories.
+Tap the plus button (**"+"**) at the bottom right to open the import dropdown menu.
 
 !![QField File Selector](../../assets/images/howto_filebrowser.png)
 
-The drop-down menu lists the means to import projects and datasets: *import project from folder*, *import project from ZIP (archive)*, and *import (individual) dataset(s)*.
+The dropdown menu provides options to import local data:
 
-### Import project from folder or ZIP archive
+- **"Import project from folder"**
+- **"Import project from ZIP"**
+- **"Import dataset(s)"**
 
-When importing a project from a folder or a ZIP archive, you will be asked to grant permission for QField to read the content of a given folder on the device's storage via a system folder picker.
-When the folder or the archive is selected, QField copies the content (including its sub-folders) into the app's "Imported projects" location.
-You can then open the project from there.
+### Import Project from Folder or ZIP Archive
 
-Re-importing a given folder through the drop-down menu action will overwrite preexisting projects given an identical folder name.
-That allows you to be able to update projects.
+!!! Workflow
+    1. Tap the plus button (**"+"**) and select **"Import project from folder"** or **"Import project from ZIP"**.
+    2. Grant folder access permissions in the system file picker.
+    3. Select your target project folder or compressed `.zip` archive.
+    4. QField copies the content into the **"Imported projects"** directory.
+    5. Tap the project in **"Imported projects"** to open it.
 
-!!! warning
-    Note that feature editing, addition and deletion will be saved into the imported project's datasets, not in the original folder selected during the import process.
+Re-importing a folder with an identical name overwrites existing local project files to update the project.
 
-### Import datasets
+!!! Warning
+    Edits, additions, and deletions are saved to datasets inside the imported project directory, not in the original source folder selected during import.
 
-You can also import individual datasets.
-You will be asked to select one or more files via a system file picker, which will be copied into the "Imported datasets" folder.
-You have to ensure that all sidecar files are selected when importing (e.g. a Shapefile dataset would require you to select the .shp, .shx, .dbf, .prj, and .cpg files).
+### Import Datasets
 
-## Favorite directories
+!!! Workflow
+    1. Tap the plus button (**"+"**) and select **"Import dataset(s)"**.
+    2. Select one or more files in the system file picker.
+    3. QField copies selected files into the **"Imported datasets"** folder.
 
-In the first screen of the file selector, there is a section showing the favorite directories.
-To add a directory to the favorites, long click in the file selector on the directory name.
-To remove an entry from the favorites, long click on the entry in the favorites list.
+Ensure you select all required sidecar files when importing single datasets (for example, Shapefile datasets require `.shp`, `.shx`, `.dbf`, `.prj`, and `.cpg` files).
+
+## Favorite Directories
+
+The main file selector screen displays a **"Favorite directories"** section.
+
+- **Add a favorite directory:** Long-press a directory name in the file selector.
+- **Remove a favorite directory:** Long-press an entry in the favorites list.
 
 ## Set Default Project
 
-This functionality allows you to set a specific project to be used as the default basemap whenever you open individual datasets.
-This is useful when a QFieldCloud project should be used as a basemap.
+Set a specific project as your default basemap when opening individual datasets.
+This feature is useful when using a QFieldCloud project as a basemap.
 
 ### How to Set a Default Project
 
-1. In the welcome screen **Recent Projects** list.
-2. **Press long** on the project you wish to set as your default basemap.
-3. From the context menu that appears, select **Set as Default Project**.
+!!! Workflow
+    1. Locate the **"Recent Projects"** list on the Welcome Screen.
+    2. Long-press the project you want to set as your default basemap.
+    3. Select **"Set as Default Project"** from the context menu.
 
 !![](../../assets/images/default_project_selection.png,300px)
 
 ### Basemap Loading Logic
 
-When you open an individual dataset, the application will now determine which basemap to load based on the following hierarchy:
+When opening an individual dataset, QField selects a basemap using the following hierarchy:
 
-1. **Default Project**: The application will first check if a default project has been set.
-If so, it will be used as the basemap.
-2. **Basemap File**: If no default project is set, the application will look for a `basemap.{qgs/.qgz)` file within the `QField` directory on your device.
-If found, this project will be used.
-3. **OpenStreetMap**: If neither a default project nor a basemap file is found, a default OpenStreetMap XYZ layer will be loaded as the basemap.
+- **Default Project:** Uses the designated default project as a basemap if set.
+- **Basemap File:** Uses a `basemap.qgs` or `basemap.qgz` file found inside the device `QField` directory if no default project is set.
+- **OpenStreetMap:** Loads a default OpenStreetMap XYZ layer if neither a default project nor a basemap file exists.
 
-## Retrieve modified projects and datasets
+## Retrieve Modified Projects and Datasets
 :material-monitor: Desktop preparation
 
-Imported projects and datasets can be accessed directly using a USB cable.
-The location on storage is displayed in the top navigation bar when opening a local file.
+Access imported projects and datasets directly by connecting your device to a computer using a USB cable.
+The top navigation bar displays the storage path when opening a local file.
 
-On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/` where you will find both the "Imported Datasets" and "Imported Projects" folders within which your edited content will be located.
+On most USB-connected devices, locate edited content under `<drive>:/Android/data/ch.opengis.qfield/files/` within the **"Imported Datasets"** or **"Imported Projects"** folders.
 
-### Send to & Sharing Options
+### Send To & Sharing Options
 :material-tablet: Fieldwork
 
-You can share and export datasets directly from QField using platform-native APIs.
-This allows for the sending of edited datasets directly to third-party apps (Gmail, Drive, Dropbox, Nextcloud, messaging apps, etc.).
+Share and export datasets directly from QField using native device sharing APIs.
+This feature allows sending edited datasets to third-party applications (such as Gmail, Google Drive, Dropbox, Nextcloud, or messaging apps).
 
 !![Send to...](../../assets/images/howto_sendto.png)
 
 ### Send Compressed File(s)
 
-When managing local datasets inside the file picker screen, you can select one or multiple dataset files to share them simultaneously as a single compressed archive.
+Select one or multiple dataset files inside the file picker screen to export them simultaneously as a single compressed archive.
 
 !!! Workflow
-    1. In the local project files, enter selection mode by long-pressing on an item or tapping the multi-select menu.
+    1. Long-press an item or tap the multi-select menu in the local file picker to enter selection mode.
     2. Select the dataset file(s) you wish to export.
-    3. Tap the top menu button *(⋮)* and select **Send compressed file(s) to...**
-    4. QField automatically bundles the selected items into a `.zip` archive and triggers the device's native sharing dialog to pick your destination app.
+    3. Tap the top menu button *(⋮)* and select **"Send compressed file(s) to..."**.
+    4. Choose your destination application in the native sharing dialog.
 
-    !![](../../assets/images/send_compressed_files.png, 400px)
+    !![](../../assets/images/send_compressed_files.png,400px)

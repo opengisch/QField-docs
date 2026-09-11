@@ -5,26 +5,36 @@ tx_slug: documentation_how-to_processing
 
 # Processing Algorithms
 
-QField offers access to a number of processing algorithms to modify digitized features and their geometries.
+QField provides processing algorithms to modify digitized vector features and geometries directly on your mobile device.
 
-## Showing available algorithms
+## Accessing Available Algorithms
+:material-tablet: Fieldwork
 
-Running algorithms against your features is done through the features list drawer.
-First, identify one or more features by tapping on the map canvas and toggle multi-selection mode by long pressing on one of the identified features.
-Once you've checked all features to be processed, click on the 3-dotted menu *(⋮)* and select the _Process Selected Feature(s)_ item.
+Run processing algorithms against one or more vector features using the identification menu.
 
-!![process selected features](../../assets/images/process_selected_features.png "")
+!!! Workflow
+    1. Tap features on the map canvas to open the identification list.
+    2. Long-press a feature in the identification list to enter multi-selection mode.
+    3. Select target features to process.
+    4. Tap the three-dotted menu *(⋮)* and select **"Process Selected Feature(s)"**.
 
-By default, only the algorithms which are flagged as favorites will be shown. Clicking on the _All algorithms_ tab will show the full list where you can add or remove favorites.
+!![process selected features](../../assets/images/process_selected_features.png)
 
-!![processing algorithms](../../assets/images/processing_algorithms.png "")
+By default, QField displays algorithms marked as favorites.
+Switch to the **"All algorithms"** tab to view the full library of available tools and toggle favorite status for individual algorithms.
 
-## Running an algorithm
+!![processing algorithms](../../assets/images/processing_algorithms.png)
 
-When an algorithm has been selected, a list of parameters will be displayed, regrouped into general and advanced ones within two distinct tabs.
-A third tab is available to access the algorithm's help content.
-For most algorithms, a live preview of the manipulated geometry will be overlaid on top of the map canvas offering an immediate feedback while parameters.
+## Running an Algorithm
+:material-tablet: Fieldwork
 
-!![processing parameters](../../assets/images/processing_parameters.png "")
+Select an algorithm to configure parameters and execute spatial operations.
 
-Once parameters are set to your liking, click on the check button within the drawer's title bar to run the algorithm.
+!!! Workflow
+    1. Select an algorithm from the processing drawer.
+    2. Configure parameters under the **"General"** and **"Advanced"** tabs.
+    (Switch to the **"Help"** tab to view detailed functional documentation for the selected algorithm).
+    3. Inspect the live map preview overlaid on the map canvas as parameters are adjusted.
+    4. Tap the checkmark button (**"✔"**) in the drawer title bar to run the algorithm and apply geometry modifications.
+
+!![processing parameters](../../assets/images/processing_parameters.png)
