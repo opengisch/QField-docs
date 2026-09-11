@@ -15,7 +15,7 @@ QField supports two plugin deployment types:
 - **Application Plugins:** Installed globally across QField and active across all projects upon application launch.
 
 !!! Note
-    QField displays a permission dialog before activating a plugin, allowing you to grant or deny execution permissions for individual plugins.
+    QField will display a permission dialog before activating a plugin, allowing you to grant or deny execution permissions for individual plugins.
 
 ### Project-Specific Plugins
 
@@ -38,10 +38,10 @@ Application plugins install globally inside QField from zip archive URLs or comm
 
 !!! Workflow
     1. Open the **Side Dashboard** and tap the gear icon to open **Settings**.
-    2. Tap **"Plugins"**.
+    2. Tap **Plugins**.
     3. Install an application plugin using one of two options:
-        - **Install from URL:** Tap **"Install plugin from URL"** and enter a direct web link pointing to a zipped plugin file.
-        - **Community Repository:** Select a plugin from the list of **"Available Plugins"** developed by the community.
+        - **Install from URL:** Tap **Install plugin from URL** and enter a direct web link pointing to a zipped plugin file.
+        - **Community Repository:** Select a plugin from the list of **Available Plugins** developed by the community.
     4. Toggle the activation switch next to installed plugins in the plugins list to enable or disable them.
 
 !![](../../assets/images/application-plugins.png,400px)

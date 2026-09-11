@@ -11,7 +11,7 @@ QFieldCloud is the cloud service that allows seamless synchronization of your da
 You can manage teams, work in organizations, assign different editing permissions, and much more.
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 !!! Workflow
     1. Navigate to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details, and create a new QFieldCloud account.
@@ -36,7 +36,7 @@ Before getting started, familiarize yourself with the [basic concepts](../tutori
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png, 800px)
 
 ### Filtering Projects
-:material-monitor: Desktop
+:material-monitor: Project Manager
 
 When managing a large number of cloud projects, you can refine your project list using the **"Filters"** dropdown button located next to the search bar.
 
@@ -57,7 +57,6 @@ When any filter option is active, clicking the **Clear** button immediately rese
 
 ![type:video](../../assets/videos/type_filters_1.webm)
 
-
 ## Project Creation
 
 There are several ways to create and initialize a new project in QFieldCloud depending on your workflow.
@@ -66,15 +65,15 @@ You can convert an existing QGIS project, start from a blank template on the web
 [Click here to read more about project creation](create-project-qfc.md)
 
 ## From QFieldCloud to QGIS Desktop
-:material-monitor: Desktop preparation
+
+:material-monitor: Project Manager
 
 In order to connect to QFieldCloud, you need the QFieldSync plugin in QGIS.
 The following steps show how to install the plugin and synchronize your data to and from QFieldCloud.
 
 !!! Workflow
-!!! Workflow
 
-    :material-monitor: Project Manager
+
     1. Open the QGIS plugin manager by navigating to _Plugins > Manage and Install Plugins..._.
     2. Under **All**, find **QFieldSync** in the list and install the latest version by clicking the **Install Plugin** button.
         !![Successful installation](../../assets/images/install_qfieldsync.png)
@@ -141,7 +140,7 @@ Once configured, upload the project to QFieldCloud.
 
 !!! Workflow
     1. Click the cloud icon with arrows in the QFieldSync toolbar.
-    Select your preferred upload method:
+
     Select your preferred upload method:
       - **The Local file:** Replaces your cloud file with the new local version of the project.
           When working with GeoPackages, the cloud file version is replaced by your local file version.
@@ -150,34 +149,34 @@ Once configured, upload the project to QFieldCloud.
 
 You can now view your project and files on your [QFieldCloud project overview page](https://app.qfield.cloud/).
 
-## Mobile Device
-
-### Get Started with QField
-:material-tablet: Fieldwork
+## From QFieldCloud to QField
 
 When you are ready for fieldwork, set up QField on your mobile device.
 
 !!! Workflow
+
+    :material-tablet: Fieldwork
+
     1. Download and install the latest version of QField from the Google Play Store, Apple App Store, or [download the latest release](https://github.com/opengisch/QField/releases) for Windows, Linux, or macOS.
-    2. Navigate to **"Cloud Projects"** and log in to your QFieldCloud account on your mobile device.
+    2. Navigate to **Cloud Projects** and log in to your QFieldCloud account on your mobile device.
         !![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
         !![Login](../../assets/images/getting_started_login.png,250px)
     3. Tap a project to download it to your device.
         !![Download](../../assets/images/getting_started_download_project.png,250px)
 
-#### Advanced Project Searching and Filtering
+### Advanced Project Searching and Filtering
 
 :material-tablet: Fieldwork
 
 To manage a large number of projects, QField features a search-and-filter panel directly on the QFieldCloud projects screen.
-The **"Filter"** button is located to the right of the project search bar.
+The **Filter** button is located to the right of the project search bar.
 
-##### 1. Predefined Filter Presets
+#### 1. Predefined Filter Presets
 
 Quick preset buttons appear at the top of the filter panel (such as **My Own Projects** or **{org_name}'s projects**).
 Tapping a preset populates the criteria form and automatically filters the underlying list.
 
-##### 2. Form-Based Filtering Criteria
+#### 2. Form-Based Filtering Criteria
 
 Fine-tune your project queries by filling out fields in the filter pane:
 
@@ -186,12 +185,12 @@ Fine-tune your project queries by filling out fields in the filter pane:
 - **Include public projects:** Toggles community public projects on or off.
 
 !!! Note
-    **Community projects** are projects marked as public by any project owner.
+    **Public projects** are projects marked as public by any project owner.
     Public projects are viewable by all QFieldCloud users.
-    However, users can only edit public projects if the project owner adds them as project collaborators.
+    if the project owner adds them as project collaborators.
     You do not need an organization account to collaborate on public projects.
 
-##### 3. Power-User Search Syntax
+#### 3. Power-User Search Syntax
 
 The main search bar allows users to type advanced filter parameters directly using key-value syntax.
 Key parameters are dynamically recognized and highlighted inside the text input box.

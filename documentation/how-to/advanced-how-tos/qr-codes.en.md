@@ -26,7 +26,9 @@ QR codes for QFieldCloud projects open project details pages in QField, displayi
 
         Replace `username` with your QFieldCloud account name and `project_name` with the target cloud project name.
 
-!![](../../assets/images/qrcode_cloud.webp)
+        !![](../../assets/images/qrcode_cloud.webp)
+
+
 
 !!! Note
     If the project is **Public**, any QField user can download it.
@@ -48,11 +50,13 @@ Scanning the code launches QField and opens a project import confirmation dialog
 
         Replace the URL with a direct web link pointing to your hosted `.zip` project archive.
 
-!![](../../assets/images/qrcode_local.webp)
+        !![](../../assets/images/qrcode_local.webp)
+
+
 
 !!! Note
     The URL specified in the URI must point directly to a `.zip` archive file rather than a web download landing page.
-    Imported projects save automatically into the **"Imported Projects"** directory on your device.
+    Imported projects save automatically into the **Imported Projects** directory on your device.
 
 ## Application Plugin QR Codes
 :material-tablet: Fieldwork
@@ -62,8 +66,8 @@ Read more on the [Plugins Documentation](../advanced-how-tos/plugins.md).
 
 !!! Workflow
     1. Open the **Side Dashboard** and tap the three-dotted menu *(⋮)*.
-    2. Select **"Plugin Manager"**.
-    3. Tap **"Install plugin from URL"**.
+    2. Select **Plugin Manager**.
+    3. Tap **Install plugin from URL**.
     4. Tap the QR code icon inside the dialog to open the camera scanner.
     5. Scan the plugin QR code to download and install the plugin automatically.
 

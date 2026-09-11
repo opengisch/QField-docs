@@ -24,8 +24,8 @@ COGO operations are available in digitize mode.
 !!! Workflow
     1. Open your project in QField and enable digitize mode by tapping the pencil icon in the **Side Dashboard**.
     2. Select the target layer to edit.
-    3. Tap the pencil-and-gear editing tools overlay icon on the map canvas.
-    4. Tap the drafting compass icon to enable the COGO tools overlay.
+    3. Tap the **pencil-and-gear editing tools overlay icon on the map canvas.
+    4. Tap the **drafting compass** icon to enable the COGO tools overlay.
 
 Once active, choose from three COGO operations:
 
@@ -41,14 +41,14 @@ Construct points using exact coordinate values.
 This is useful when entering precise coordinates received from external surveys or spatial data sources.
 
 !!! Workflow
-    1. Tap the **"XY"** icon on the COGO tools overlay.
+    1. Tap the **XY** icon on the COGO tools overlay.
     2. Select a coordinate source method:
         - Select a feature location using the feature picker button.
         - Use the map crosshair location.
         - Use your current GNSS location (positioning must be active).
         *(Note: If the target layer supports 3D geometries, enter an **Elevation** value).*
     3. Confirm coordinate values. A green preview vertex displays on the map canvas.
-    4. Tap the green plus button (**"+"**) to save the new feature.
+    4. Tap the green plus button (**+**) to save the new feature.
 
 ![XY option](../../assets/images/cogo-xy-option.png)
 
@@ -60,8 +60,8 @@ This is useful when digitizing unreachable features (such as measuring offsets f
 !!! Workflow
     1. Tap the two circles icon on the COGO tools overlay.
     2. Set origin center points and radii for two circles using feature picker, crosshair, or GNSS location options.
-    3. Select preferred intersection point **"A"** or **"B"** displayed on the map canvas.
-    4. Tap the green plus button (**"+"**) to save the feature at the selected intersection point.
+    3. Select preferred intersection point **A** or **B** displayed on the map canvas.
+    4. Tap the green plus button (**+**) to save the feature at the selected intersection point.
 
 !![](../../assets/images/cogo-two-circle-option.png,250px)
 
@@ -76,6 +76,6 @@ This is useful for utility and cadastral surveys measuring precise property boun
     3. Enter distance and bearing relative to North.
         *(Note: If the target layer supports 3D geometries, enter an **Elevation** offset value).*
     4. Inspect the virtual dashed line and green preview point connecting the origin to the target location.
-    5. Tap the green plus button (**"+"**) to save the feature.
+    5. Tap the green plus button (**+**) to save the feature.
 
 !![Add a feature by a distance and a bearing](../../assets/images/cogo-distance-beaering-option.png,250px)

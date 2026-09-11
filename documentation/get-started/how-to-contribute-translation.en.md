@@ -51,14 +51,12 @@ Follow these guidelines while translating:
 
 ## Reviewing Your Translation
 
-Confirm that translations align with guidelines provided in the [Translation Process](https://github.com/opengisch/QField-docs?tab=readme-ov-file#translation-process).
+Confirm that translations align with the guidelines provided in the [Translation Process](https://github.com/opengisch/QField-docs?tab=readme-ov-file#translation-process).
 
 ## Synchronization and Testing
 
 Translations synchronize daily with the master QField codebase.
 
-To view your translation in QField:
-
-- Download the [QField Beta Application](https://play.google.com/apps/testing/ch.opengis.qfield_dev) for early access to new release builds containing updated translations. <!-- markdown-link-check-disable-line -->
+You can view the most recent translations by downloading the [QField Beta Application](https://play.google.com/apps/testing/ch.opengis.qfield_dev) which allows you to access new release builds early. <!-- markdown-link-check-disable-line -->
 
 If your language is not listed, open an issue on the [GitHub Repository](https://github.com/opengisch/QField-docs/issues) specifying the target language you want to translate.

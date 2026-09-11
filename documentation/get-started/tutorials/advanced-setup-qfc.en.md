@@ -32,7 +32,7 @@ When uploading or synchronizing with QFieldCloud, only the deltas are applied, s
 
     1. Do not modify the QGIS project while personnel work simultaneously in QField.
     If you synchronize your desktop version to the cloud, QFieldCloud will overwrite the files.
-    If you must work in parallel on desktop, check the QFieldCloud status and download the most recent data before uploading new file versions from desktop.
+    If you must work in parallel on your desktop, check the QFieldCloud status and download the most recent data before uploading new file versions from desktop.
     2. Do not change the data structure before synchronizing the latest field edits.
     Adapting the data structure in QGIS before pushing field edits leads to errors if changes from QField have not yet been uploaded.
     3. Use UUIDs as primary keys, especially when working with relations and in teams.
@@ -51,8 +51,8 @@ We recommend this option to prevent data loss during connection drops.
 This option requires a reliable internet connection in the field.
 It allows all users to immediately view data changes and use PostGIS-specific configurations (such as triggers and generated fields).
 
-Changes become visible to other users once synchronization via QFieldCloud occurs across devices.
-When a local copy is created, advanced PostGIS operations (such as triggers) are not available in QField.
+In general, changes become visible to other users once synchronization via QFieldCloud occurs across devices.
+If you are working in **Offline Editing** mode a local copy is created, advanced PostGIS operations (such as triggers) will not be available in QField.
 
 Find more information in the [QFieldCloud technical reference](../../reference/qfieldcloud/projects.md).
 
@@ -61,7 +61,7 @@ Find more information in the [QFieldCloud technical reference](../../reference/q
 Using GeoPackages is usually the best choice for a simple setup to centralize data collected by your QField users into a single file.
 
 If you set up a relation, add a UUID field and use it as the primary or foreign key.
-Do not use the default `fid` field for relations as a primary or foreign key.
+**Do not** use the default `fid` field for relations as a primary or foreign key.
 The `fid` field can be modified during synchronization with QFieldCloud and lead to errors over time.
 A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549) is unique and will not cause conflicts during synchronization. <!-- markdown-link-check-disable-line -->
 
@@ -70,7 +70,7 @@ A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_
 
     1. Create a new project in QGIS.
     2. Create GeoPackage layers and save them in the same folder as your QGIS project.
-    3. Set the GeoPackage to **"Offline editing"** in the QFieldSync plugin settings.
+    3. Set the GeoPackage to **Offline editing** in the QFieldSync plugin settings by navigating to  _Project > Properties > QField_
         !![](../../assets/images/qfield-sync-qfc_config.png)
     4. Upload the project to QFieldCloud.
 
@@ -84,7 +84,7 @@ A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_
     1. Download the updated files using QFieldSync (the GeoPackage file will update with the new edits).
 
 !!! Warning
-    We do not recommend editing or adding new data directly from QGIS while field edits are pending.
+    We do not recommend editing or adding new data directly from QGIS while field work is ongoing.
     Every time QGIS synchronizes the project to QFieldCloud, the entire GeoPackage replaces the cloud version, whereas QField updates only the actual changes.
 
 ## PostGIS
@@ -114,7 +114,7 @@ Read more on PG Service and secrets in the [PG Service documentation](../../how-
 
     1. Sign in to QFieldCloud and download the project.
     2. Collect data in the field.
-    3. Upload or synchronize changes once back online when using **"Offline editing"**.
+    3. Upload or synchronize changes once back online when using **Offline editing**.
 
     :material-monitor: Desktop preparation
 
@@ -125,7 +125,7 @@ Read more on PG Service and secrets in the [PG Service documentation](../../how-
     This option requires a reliable internet connection in the field, but allows all users to view edits immediately and utilize PostGIS setup features (such as triggers and generated fields).
 
 !!! Note
-    When using offline editing, QField works on a local copy of the database in a GeoPackage, which QFieldCloud syncs to the original database upon synchronization.
+    When using **Offline Editing**, QField works on a local copy of the database in a GeoPackage, which QFieldCloud syncronizes to the original database upon synchronization.
     We recommend using offline editing to avoid data loss during connection drops.
     Changes become visible to other users only after synchronization occurs across devices.
     Advanced PostGIS operations (such as triggers) are unavailable on local GeoPackage copies in QField.
@@ -138,7 +138,7 @@ To prevent modifications to the core QGIS project file, project administrators c
 
 !!! Workflow
     1. Navigate to _Settings_ on your QFieldCloud project page.
-    2. Enable the **"Restrict project files"** setting option.
+    2. Enable **Restrict project files**.
 
 !![](../../assets/images/restric_qfc_project_files.png)
 
@@ -169,7 +169,7 @@ To receive notifications about activity in your teams and projects, activate the
 
 !!! Workflow
     1. Navigate to _Settings_ on your QFieldCloud landing page.
-    2. Navigate to the **"Notifications"** section.
+    2. Navigate to the **Notifications** section.
     3. Customize the notification frequency for your registered email address.
 
 ![Synchronize](../../assets/images/frequency_notifications_settings.png)
@@ -194,13 +194,13 @@ You only receive notifications for actions initiated by other organization membe
 
 ## Enhance Your Project with the "Optimized Packager"
 
-We recommend using the **"Optimized Packager"** over the deprecated **"QGIS Core Offline Editing"** packager for all projects.
+We recommend using the **Optimized Packager** over the deprecated **QGIS Core Offline Editing** packager for all projects.
 
 !!! Explanation
-    Unlike the **"QGIS Core Offline Editing"** packager, the **"Optimized Packager"** consolidates filtered layers originating from the same data source into a single offline layer.
+    Unlike the **"GIS Core Offline Editing** packager, the **"ptimized Packager"* consolidates filtered layers originating from the same data source into a single offline layer.
     This preserves distinct symbologies while using less storage.
     For example, if you set multiple filters on your project layers, older packagers downloaded the entire layer multiple times before applying filters locally.
-    With the **"Optimized Packager"**, filters are applied during the server packaging job, reducing download sizes.
+    With the **Optimized Packager**, filters are applied during the server packaging job, reducing download sizes.
 
 Consider this example configuration:
 
@@ -223,7 +223,7 @@ Consider this example configuration:
 !![](../../assets/images/qfc_offline_packager.png,700px)
 
 !!! Note
-    Configure this setting on the **"Settings"** page of each project in [QFieldCloud](https://app.qfield.cloud/).
+    Configure this setting on the **Settings** page of each project in [QFieldCloud](https://app.qfield.cloud/).
 
 ## Configuration of Attachment Folders
 
@@ -231,7 +231,7 @@ If your project contains photos, documents, or other attachments, configure your
 
 !!! Workflow
     1. In QGIS, navigate to _Project > Properties... > QField_.
-    2. Add your folder path under the **"Attachments and Directories"** section.
+    2. Add your folder path under the **Attachments and Directories** section.
     Ensure entered paths are relative to your project file location.
 
 !!! Example
@@ -247,7 +247,7 @@ Modify the default server address in QField and QFieldSync if using a custom dep
 
 !!! Workflow
     1. Open the login screen in QField or QFieldSync.
-    2. Double-tap the Nyuki logo (the QFieldCloud logo).
+    2. Tap three times on the Nyuki logo (the QFieldCloud logo).
     3. Enter your custom server URL in the revealed address field.
     Leaving the field empty automatically reconnects to the default [QFieldCloud server](https://app.qfield.cloud/).
 

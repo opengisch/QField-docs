@@ -21,24 +21,25 @@ You can create empty map spaces or simple localized maps directly from QFieldClo
 !!! Workflow
 
     1. Navigate to your QFieldCloud landing page.
-    2. Click the **"Create project"** button.
+    2. Click the **Create project** button.
 
         !![](../../assets/images/project_organization_01_landing_page.png)
 
     3. Set the project name, optional descriptive details, visibility scope (public or private), conflict resolution parameters, and project file safety restrictions.
-    4. Select your **"Project type"**:
+    4. Select your **Project type**:
 
-        - **"Regular":** Standard project used for field data collection and synchronization.
-        - **"Template":** Master blueprint project designed to be cloned by field teams (field synchronization and repackaging are disabled on templates to prevent accidental edits).
+        - **Regular:** Standard project used for field data collection and synchronization.
+        - **Template:** Master project designed to be cloned by field teams
+        **Note: **field Synchronization and repackaging are disabled on templates to prevent accidental edits.
 
     5. Select your initialization template configuration:
 
-        - **"Create an empty project":** Sets up a clean project folder environment without a basemap.
-        - **"Use a template":** Allows you to add a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL) and select your project extent via a bounding box by tapping on the **"Project extent"** map window.
+        - **Create an empty project:** Sets up a clean project folder environment without a basemap.
+        - **Use a template:** Allows you to add a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL) and select your project extent via a bounding box by tapping on the **Project extent** map window.
 
         ![Template Project](../../assets/images/project_organization_03_template.png)
 
-    6. Click **"Create"** at the bottom right.
+    6. Click **Create** at the bottom right.
     The completed project structure populates in your profile project list.
 
 ### Option 2: Create from an XLSForm Spreadsheet (Web UI Upload)
@@ -51,10 +52,10 @@ For deployment workflows relying on spreadsheets for [form configuration](https:
 
 !!! Workflow
 
-    1. Click **"Create project"** on your QFieldCloud landing page.
-    2. Complete the project metadata fields (Name, Extent) and click **"Create"**.
-    3. Select the **"Use a basic template"** option and locate the XLSForm file upload input.
-    4. Choose your spreadsheet template file and click the **"Create"** button.
+    1. Click **Create project** on your QFieldCloud landing page.
+    2. Complete the project metadata fields (Name, Extent) and click **Create**.
+    3. Select the **Use a basic template** option and locate the XLSForm file upload input.
+    4. Choose your spreadsheet template file and click the **Create** button.
 
     QFieldCloud processes the form to generate a fully functioning **Survey** layer with corresponding survey configurations (dropdown lists, radio buttons, and text fields).
     !![](../../assets/images/qfc_xlsform_project_creation.png)
@@ -106,7 +107,7 @@ QFieldCloud projects can be assigned one of three project types:
 
 Template projects act as read-only blueprints for field workers while remaining fully editable for administrators:
 
-- **Master Blueprints:** Project administrators can upload files, edit QGIS configurations, and update layers on a template project.
+- **Master Projects:** Project administrators can upload files, edit QGIS configurations, and update layers on a template project.
 - **Data Protection:** Field workers cannot push edit deltas or synchronize changes directly to a template project.
     Attempting to do so returns an error (`operation_not_allowed_for_template_project`).
 - **Cloning Source:** Both **Regular** and **Template** project types can be used as sources for cloning new projects.
@@ -173,6 +174,6 @@ you can change the project ownership directly on the project settings page.
     1. Open the project overview on the web page and select the **"Settings"** menu.
     2. Scroll to the actions zone and select **"Transfer ownership of this project"**.
     3. Select your target organization destination from the lookup dropdown menu.
-    4. Type the requested text confirmation into the confirmation popup dialog box and click **"Transfer project"**.
+    4. Type the requested text confirmation into the confirmation popup dialog box and click **Transfer project**.
 
     ![type:video](../../assets/videos/project_creation_in_an_organisation_003.webm)
