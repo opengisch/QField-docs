@@ -5,14 +5,10 @@ tx_slug: documentation_success-stories_index
 
 # Success Stories
 
-QField is being used around the world in a wide variety of domains.
-Every day.
+QField is used around the world every day, across a wide variety of domains.
 
-In this section there is a collection of the most inspiring success
-stories using QField.
+Visit our [success stories page](https://qfield.org/success-stories/) to see some great examples.
 
 ### Tell us about your project
 
-Did QField make your life easier too?
-Let [us know](https://opengis.ch/#contact), we will be delighted to
-publish it.
+Did QField make your work easier too? [Let us know](https://opengis.ch/#contact) — we'd be delighted to feature it.
