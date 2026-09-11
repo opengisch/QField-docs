@@ -65,6 +65,8 @@ You can find more information on [QFieldCloud technical reference](../../referen
 
 ## Working with GeoPackages
 
+:material-monitor: Project Manager
+
 Using GeoPackages is usually the best choice for a simple setup to centralize data collected by your QField users to one single file.
 
 If you would like to set up a relation, add a UUID field and use that as the primary or foreign key.
@@ -74,8 +76,6 @@ If you would like to set up a relation, add a UUID field and use that as the pri
 A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549), on the other hand, is unique and will not be synchronized.<!-- markdown-link-check-disable-line -->
 
 !!! Workflow
-
-    :material-monitor: Project Manager
 
     1. Create a new project in QGIS.
     2. Create GeoPackage layers, save it in the same folder as your QGIS project.
@@ -96,6 +96,8 @@ A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_
 
 ## PostGIS
 
+    :material-monitor: Project Manager
+
 Using PostGIS is a good choice if your data should be visible and editable for multiple users.
 
 It requires your database to be publicly accessible, and credentials must be saved unencrypted in the QGIS project.
@@ -108,8 +110,6 @@ We highly recommend to make use of this option due to data safety.
 Read more on PG Service and Secrets [here](../../how-to/project-setup/pg-service.md)
 
 !!! Workflow
-
-    :material-monitor: Project Manager
 
     1. Create a new project.
     2. Add a PostGIS layer, making sure to store the credentials in the project or having created the PG Service file.

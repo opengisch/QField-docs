@@ -5,6 +5,8 @@ tx_slug: documentation_get-started_settings
 
 # QField General settings
 
+:material-tablet: Fieldwork
+
 The general settings screen allows you to control the basic appearance and behaviour of QField.
 There are two ways in which you can access the general settings.
 
@@ -53,7 +55,7 @@ If disabled the cross-hair is fixed to the center and the mouse can is used to r
      If disabled, you can still access this option by typing go at the start of your query.
 
     !!! Tip
-        When pressing long on a point of interest anywhere in your map, you can copy the point location to your clip board and directly place it in the search bar.
+        When long-pressing on a point of interest anywhere in your map, you can copy the point location to your clip board and directly place it in the search bar.
         Remember to type **go** in advance if the *go to coordinate* setting has not been enabled and remove the information about the coordinate reference system.
 
     - ***Spatial bookmarks:*** By enabling this option you automatically when using the search bar, the list of pre-configured bookmarks (if any) will be queried.

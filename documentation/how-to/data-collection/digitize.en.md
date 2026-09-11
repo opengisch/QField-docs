@@ -7,9 +7,11 @@ tx_slug: documentation_how-to_digitize
 
 With QField you can digitize, edit and delete points, lines and polygons and their according attributes while being in the field.
 Similar to QGIS, QField has two modes.
-The *browse mode* and the *digitize mode*.
+The **browse mode** and the **digitize mode**.
 
 ## Browse Mode
+
+:material-tablet: Fieldwork
 
 As the name suggests, while being in browse mode, you can view and select features within all identifiable layers in the project.
 It is also possible to edit attributes of existing features, by clicking on a feature of interest and opening its attribute table.
@@ -27,12 +29,12 @@ The current layer within which features are to be added is highlighted in green.
 
 !![](../../assets/images/activate-edit-mode.png)
 
-
 !!! Tip
     QField insures that digitized geometries will not have duplicate vertices and respects the geometry precision settings from the currently selected layer.
 
-
 ### Adding point features
+
+:material-tablet: Fieldwork
 
 !!! Workflow
 
@@ -47,6 +49,8 @@ The current layer within which features are to be added is highlighted in green.
 
 ### Adding line or polygon features
 
+:material-tablet: Fieldwork
+
 !!! Workflow
 
     1. Navigate the crosshair in the center of the screen to the desired start of the line or polygon
@@ -58,11 +62,11 @@ The current layer within which features are to be added is highlighted in green.
     You need to add at least 2 nodes for line features and 3 for polygons.
 
     6. (Optionable): You can click the *(x) button* to cancel the current feature creation.
-
-
     ![type:video](../../assets/videos/collect_features.mp4)
 
 ### Additional Editing Settings
+
+:material-tablet: Fieldwork
 
 There are other more advanced settings, which you can enable to make your data collection more efficient:
 
@@ -78,31 +82,30 @@ There are other more advanced settings, which you can enable to make your data c
 
 ### Attribute form
 
+:material-tablet: Fieldwork
+
 After digitizing a geometry, the attribute form will appear allowing you to edit attribute values for the newly added feature.
 
 !!! note
     You can hide the attribute form upon feature addition via a configuration option for a given layer via its properties dialog in QGIS.
 
-Moreover, you have the option to digitize the form using the scanning QR and Barcode reader functionality available within the feature form's text edit widget.
+!!! Workflow
 
-!![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png)
+    !![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png)
 
-Upon tapping the 3-dotted menu *(⋮)*, a new window will be presented offering three distinct actions: "Copy", "Paste", and "Scan Code".
+    1. Tap on the 3-dotted menu *(⋮)* and in the new window you can choose between:
+         - **Copy**: The values inside the current field will be copied to your clipboard
+         - **Paste**: The values stored on your clipboard will be pasted
+         - **Scan Code**: You can populate the form using a QR and Barcode reader.
 
-!![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
-
-Opting for the "Scan Code" action will trigger QField's code reader, initiating the scanning process to decode the code.
-
-!![](../../assets/images/digitizing-with-qr-code-3-code-reader.png)
-
-Once the codes have been successfully scanned, users can validate their choice by clicking the checkmark (✔️) OK button.
-This action will populate the attribute with the decoded value, streamlining the digitization process.
-
-!![](../../assets/images/digitizing-with-qr-code-4-it-worked.png)
-
-In addition, the Code Reader offers the capability to read NFC text tags.
-
-!![](../../assets/images/code-reader-nfc-text-tag.png)
+    2. (Optional for QR Code): Tap **Scan Code** action will trigger QField's code reader, initiating the scanning process to decode the code.
+    !![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
+    !![](../../assets/images/digitizing-with-qr-code-3-code-reader.png)
+    3. Validate the scanned entries and tap the (✔️) OK button.
+    This action will populate the attribute with the decoded value, streamlining the digitization process.
+    !![](../../assets/images/digitizing-with-qr-code-4-it-worked.png)
+    In addition, the Code Reader offers the capability to read NFC text tags.
+    !![](../../assets/images/code-reader-nfc-text-tag.png)
 
 !!! note
     Both the QR code camera and the NFC text tag detector are enabled by default when you open the Code Reader.
@@ -110,18 +113,24 @@ In addition, the Code Reader offers the capability to read NFC text tags.
 
 #### Remember attribute values
 
-For quick collection of rather homogeneous datasets, it is crucial to not having to enter the same attribute values multiple times.
-The pins on the right of every attribute enable the last entered value option for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled. It needs to be noted that this last entered value only applies when collecting new features not when editing existing ones, unless otherwise specified.
+The pins on the right of every attribute enable the last entered value option for each attribute individually so that the next time you will add a feature on the same layer, these attributes will be automatically pre-filled.
 
 ![type:video](../../assets/videos/remember_checkboxes.mp4)
+
+!!! Note
+
+    Last entered value only applies when collecting new features not when editing existing ones, unless otherwise specified.
 
 ## Geometry editing
 
 :material-tablet: Fieldwork
 
-To edit the geometry of pre-existing features, enable the *Digitize mode* by tapping on the *pencil icon* underneath the legend.
+To edit the geometry of pre-existing features, enable the **Digitize mode** by tapping on the **pencil icon** at the bottom of the **Side Dashboard**.
+!![](../../assets/images/qfield_digitize_mode.png,100px)
 
-Once in digitize mode, a new *Edit geometry* button will appear in the title bar of an identified feature form.
+Once in digitize mode, you can:
+- **Add new feature:** By tapping the green plus sign on the bottom right of the map, you can add a new feature to the currently active layer (highlighted in the legend)
+- **Modify existing features:** A new *Edit geometry* button will appear in the title bar of any feature attribute form.
 Clicking on the button will activate the geometry editing environment which offers four tools:
 
 - A vertex editor tool;
@@ -131,27 +140,39 @@ Clicking on the button will activate the geometry editing environment which offe
 
 ### Vertex tool
 
+:material-tablet: Fieldwork
+
 The vertex editor allows you to move or delete pre-existing vertices as well as adding new vertices to geometries.
 
 ### Split tool
+
+:material-tablet: Fieldwork
 
 The split tool allows you to split line and polygon geometries into two halves, one of which will become a new feature of its own.
 
 ### Reshape tool
 
+:material-tablet: Fieldwork
+
 The reshape tool allows you to change line and polygon geometries by drawing shapes which will result in a reshaped line following the edge of the drawn shape or a polygon with the drawn shaped used to clip or expand the geometry.
 
 ### Reshape eraser tool
 
+:material-tablet: Fieldwork
+
 The reshape eraser tool is designed to ease the removal of parts of a line or polygon geometry.
 The tool mimics eraser tools from 2D drawing programs and works best with a stylus.
 
-Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion.
-You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
+!!! Example
 
-![type:video](../../assets/videos/erase-reshape-tool.mp4)
+    Suppose you have a polygon representing a building footprint, but there's an unwanted protrusion.
+    You can use the erase tool to precisely remove that portion of the polygon, ensuring accuracy in your geometry representation.
+
+    ![type:video](../../assets/videos/erase-reshape-tool.mp4)
 
 ### Ring tool
+
+:material-tablet: Fieldwork
 
 The ring tool allows you to digitize rings (i.e. holes) into polygon geometries.
 Once a ring is created, QField will offer the possibility of filling the ring with a new feature.
@@ -164,23 +185,28 @@ A video demonstration of some editing possibilities:
 
 ## Merging features
 
+:material-tablet: Fieldwork
+
 QField allows you to merge features and their geometries into a single feature.
-To do so, identify two (or more) features on the map, select them in the features list and merge them by selecting the *"Merge Selected Features"* in the 3-dotted menu *(⋮)* button.
+!!! Workflow
 
-To execute merging within QField, ensure the following conditions:
+    1. Multi-select two (or more) features on the map by long-pressing on the features
+    2. Tap on the the **3-dotted menu *(⋮)** on the top right and tap **Merge Selected Features** in button.
+    !![](../../assets/images/qfield_merge.png,200px)
 
-1. **Editable Vector Layer:**
-   - The target layer must be an editable layer.
+!!! Note
 
-2. **Multi-Type Geometry:**
-   - Ensure that the geometry type of the layer is multi-type.
+    To execute merging within QField, ensure the following conditions:
 
-3. **Data Provider's Abilities:**
-   - Verify that the data provider associated with the layer (preferably GeoPackage) possesses the capability to:
-      - Modify geometries: The ability to make changes to existing geometrical structures.
-      - Delete features: The capability to remove individual features from the dataset.
+    - **Editable Vector Layer:** The target layer must be an editable layer.
+    - **Multi-Type Geometry:**Ensure that the geometry type of the layer is multi-type.
+    - **Data Provider's Abilities:** Verify that the data provider associated with the layer (preferably GeoPackage) possesses the capability to:
+         - Modify geometries: The ability to make changes to existing geometrical structures.
+         - Delete features: The capability to remove individual features from the dataset.
 
 ## Freehand digitizing
+
+:material-tablet: Fieldwork
 
 The freehand digitizing mode allows you to "draw" lines and polygons using their stylus pen or mouse.
 The mode is available for line and polygon feature additions as well as the above-mentioned geometry editor's rings,
@@ -199,6 +225,7 @@ While digitizing new features, new points can be snapped to existing geometries.
 All configuration can be done in *Project* > *Snapping Settings*
 
 ### Snapping Types
+:material-tablet: Fieldwork
 
 It is possible to snap new points:
 
@@ -207,10 +234,12 @@ It is possible to snap new points:
 - to nodes and segments of existing geometries
 
 ### Snapping to layers
+:material-tablet: Fieldwork
 
 It is also possible to only snap to one or a few layers.
 
 ### Snapping tolerance
+:material-tablet: Fieldwork
 
 The snapping tolerance can be specified in map units or pixels.
 
@@ -218,6 +247,7 @@ In almost any case, the units should be set to pixels.
 We made good experiences with a tolerance value of 20.
 
 ## Snap to Common Angle
+:material-tablet: Fieldwork
 
 The Snap to Common Angle feature enhances the precision and efficiency of digitizing geometries by allowing to snap to predefined common angles: 10°, 15°, 30°, 45°, and 90°.
 This functionality is similar to the advanced digitizing tool in QGIS.
@@ -229,20 +259,26 @@ QField will remember the angle relative to the last segment situation for consis
 ![type:video](../../assets/videos/snap-to-common-angles.mp4)
 
 ## Topological editing
+:material-Tablet: Fieldwork
 
 If topological editing is activated on the project in QGIS before exporting for QField, shared nodes of neighboring geometries are modified together when moving / deleting vertices and additional vertices are added to segments when a new node is added from neighboring geometries.
 
 ![type:video](../../assets/videos/edit_topo.webm)
 
-### Multi-editing of attributes
+## Multi-editing of attributes
+:material-tablet: Fieldwork
 
 QField allows you to select multiple features and edit their attributes all at once.
 In some cases, it can result in very efficient workflows.
-To do so, identify two (or more)features on the map, select them in the features list and merge them by selecting the *Edit feature* button in the list's title bar.
 
-![type:video](../../assets/videos/multi_editor.webm)
+!!! Workflow
+
+    1. Select two (or more) features on the map
+    2.  Tap on the the **3-dotted menu *(⋮)** on the top right and tap on the **Edit** Icon.
+    ![type:video](../../assets/videos/multi_editor.webm)
 
 ## Copy, Cut and Paste
+:material-tablet: Fieldwork
 
 It is possible to copy, cut and paste features from one layer to another.
 This function is achieved by attribute matching.

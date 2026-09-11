@@ -5,12 +5,11 @@ tx_slug: documentation_how-to_routing
 
 # External routing
 
-It can come in handy to calculate an itinerary to one of your features in the field.
-By an easy configuration of your attribute form in QGIS, you can quickly access the navigation tools from Google Maps via a hyperlink when working in the field.
+:material-monitor: Project Manager
+
+You can quickly access the navigation tools from Google Maps via a hyperlink when working in the field.
 
 !!! Workflow
-
-    :material-monitor: Project Manager
 
     1. In QGIS Create a new field in your feature layer with the datatype text
     2. Under *Vector Properties* Find the "attribute form" setting
@@ -43,8 +42,11 @@ By an easy configuration of your attribute form in QGIS, you can quickly access 
       '&zoom=19&t=h')
     ```
 
-    :material-tablet: Fieldwork
+:material-tablet: Fieldwork
 
-    1. In QField select the feature layer where you added the field.
+Once you updated your project on your smart device you can make use of the map inside QField.
+
+!!! Workflow
+    1. Select the feature layer where you added the field.
     2. Edit the layer and find the according attribute.
     3. Click on the link towards Google Maps

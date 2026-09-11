@@ -4,6 +4,7 @@ tx_slug: documentation_how-to_temporal-filtering
 ---
 
 # Temporal filtering
+:material-monitor: Project Manager
 
 QField can replicate "active temporal settings" that you set in QGIS to your layer.
 In QField this is indicated by a clock that becomes visible in the "Side Dashboard".
@@ -13,8 +14,6 @@ Once the filter has been set, the clock turns green and only the elements that a
 !![](../../assets/images/temporal-properties.png)
 
 !!! Workflow
-
-    :material-monitor: Project Manager
 
     1. In QGIS open the vector properties of your layer with the temporal field(s)
     2. Direct to the "temporal" section and enable the "Dynamic Temporal Control"

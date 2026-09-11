@@ -62,7 +62,7 @@ it will appear as `Administrative-boundaries.gpkg` within the **`shared_datasets
 
 !!! Workflow
 
-    1. **Follow the same [Project Manager (QGIS)](#managing-localized-data-paths-in-qgis)** steps outlined above.
+    1. **Follow the same [Project (QGIS)](#managing-localized-data-paths-in-qgis)** steps outlined above.
     2. Make sure the Localized Data Paths in QGIS are correctly configured to point to the location of the shared datasets on your computer.
     This tells QFieldSync which files to treat as "localized" for cloud handling.
     3. Ensure your shared layers are part of your QGIS project and their paths are relative to one of the configured localized data paths.
@@ -159,11 +159,11 @@ Instead of relying on individual project synchronization to populate the **`shar
 
 #### With QFieldSync
 
+:material-monitor: Project Manager
+
 Users with "manager" or "admin" permissions for the **`shared_datasets`** project can manage its content directly using QFieldSync:
 
 !!! Workflow
-
-    :material-monitor: Project Manager
 
     1. In QFieldSync, download the **`shared_datasets`** project from QFieldCloud to a local directory on your computer.
     2. You can now add, update, or remove files within the pre-configured file directory of the localized datasets.

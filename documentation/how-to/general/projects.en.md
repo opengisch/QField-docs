@@ -5,6 +5,8 @@ tx_slug: documentation_how-to_projects
 
 # Project selection
 
+:material-tablet: Fieldwork
+
 QField has a file selector that allows to open a project from the device locally.
 To open files from the cloud see [QFieldCloud](../../get-started/tutorials/get-started-qfc.md).
 
@@ -29,6 +31,7 @@ From the Welcome screen on QField chose "Local projects and datasets" you will s
 The drop-down menu lists the means to import projects and datasets: *import project from folder*, *import project from ZIP (archive)*, and *import (individual) dataset(s)*.
 
 ### Import project from folder or ZIP archive
+:material-tablet: Fieldwork
 
 When importing a project from a folder or a ZIP archive, you will be asked to grant permission for QField to read the content of a given folder on the device's storage via a system folder picker.
 When the folder or the archive is selected, QField copies the content (including its sub-folders) into the app's "Imported projects" location.
@@ -37,35 +40,39 @@ You can then open the project from there.
 Re-importing a given folder through the drop-down menu action will overwrite preexisting projects given an identical folder name.
 That allows you to be able to update projects.
 
-!!! warning
+!!! Warning
     Note that feature editing, addition and deletion will be saved into the imported project's datasets, not in the original folder selected during the import process.
 
 ### Import datasets
+:material-tablet: Fieldwork
 
 You can also import individual datasets.
 You will be asked to select one or more files via a system file picker, which will be copied into the "Imported datasets" folder.
 You have to ensure that all sidecar files are selected when importing (e.g. a Shapefile dataset would require you to select the .shp, .shx, .dbf, .prj, and .cpg files).
 
 ## Favorite directories
+:material-tablet: Fieldwork
 
 In the first screen of the file selector, there is a section showing the favorite directories.
 To add a directory to the favorites, long click in the file selector on the directory name.
 To remove an entry from the favorites, long click on the entry in the favorites list.
 
 ## Set Default Project
+:material-tablet: Fieldwork
 
 This functionality allows you to set a specific project to be used as the default basemap whenever you open individual datasets.
 This is useful when a QFieldCloud project should be used as a basemap.
 
-### How to Set a Default Project
+!!! Workflow
 
-1. In the welcome screen **Recent Projects** list.
-2. **Press long** on the project you wish to set as your default basemap.
-3. From the context menu that appears, select **Set as Default Project**.
-
-!![](../../assets/images/default_project_selection.png,300px)
+    1. In the welcome screen direct to the **Recent Projects** list.
+    2. **Long-press** on the project you wish to set as your default basemap.
+    3. Tap on **Set as Default Project**.
+    !![](../../assets/images/default_project_selection.png,300px)
 
 ### Basemap Loading Logic
+
+:material-tablet: Fieldwork
 
 When you open an individual dataset, the application will now determine which basemap to load based on the following hierarchy:
 
@@ -75,20 +82,15 @@ If so, it will be used as the basemap.
 If found, this project will be used.
 3. **OpenStreetMap**: If neither a default project nor a basemap file is found, a default OpenStreetMap XYZ layer will be loaded as the basemap.
 
-## Retrieve modified projects and datasets
-:material-monitor: Project Manager
-
-Imported projects and datasets can be accessed directly using a USB cable.
-The location on storage is displayed in the top navigation bar when opening a local file.
-
-On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/` where you will find both the "Imported Datasets" and "Imported Projects" folders within which your edited content will be located.
-
 ### Send to & Sharing Options
 :material-tablet: Fieldwork
 
-You can share and export datasets directly from QField using platform-native APIs.
-This allows for the sending of edited datasets directly to third-party apps (Gmail, Drive, Dropbox, Nextcloud, messaging apps, etc.).
+You can share and export datasets directly from QField by sending them directly to third-party apps (Gmail, Drive, Dropbox, Nextcloud, messaging apps, etc.).
 
+!!! Workflow
+
+    1. Direct to your local project folder by directing to _Side-Dashboard > Project Folder_
+    2. Tap on the 3-dots to send the files to your preferred cloud folder.
 !![Send to...](../../assets/images/howto_sendto.png)
 
 ### Send Compressed File(s)
