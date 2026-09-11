@@ -200,7 +200,8 @@ plugins:
       cards_layout_options:
         background_color: "#72ad2e"
         color: "#FFFFFF"
-  - open-in-new-tab
+  - open-in-new-tab:
+      add_icon: true
   - i18n:
       build_only_locale: !ENV [BUILD_ONLY_LOCALE]
       # FIX ME: Add autodetection to translation rates so that only languages
