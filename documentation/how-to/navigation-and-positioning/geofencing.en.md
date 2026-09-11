@@ -13,7 +13,7 @@ Defining geofenced areas on QGIS happens with the help of the QFieldSync plugin.
 
 !!! Workflow
 
-     :material-monitor: Desktop preparation
+     :material-monitor: Project Manager
 
      1. *Project* > *Project Properties* > *QField*
      2. Check the checkbox where it says "Geofencing"

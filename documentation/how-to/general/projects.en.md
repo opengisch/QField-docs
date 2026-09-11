@@ -76,7 +76,7 @@ If found, this project will be used.
 3. **OpenStreetMap**: If neither a default project nor a basemap file is found, a default OpenStreetMap XYZ layer will be loaded as the basemap.
 
 ## Retrieve modified projects and datasets
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Imported projects and datasets can be accessed directly using a USB cable.
 The location on storage is displayed in the top navigation bar when opening a local file.

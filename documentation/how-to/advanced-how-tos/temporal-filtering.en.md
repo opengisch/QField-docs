@@ -14,7 +14,7 @@ Once the filter has been set, the clock turns green and only the elements that a
 
 !!! Workflow
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. In QGIS open the vector properties of your layer with the temporal field(s)
     2. Direct to the "temporal" section and enable the "Dynamic Temporal Control"

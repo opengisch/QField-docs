@@ -28,7 +28,7 @@ On double-tap or long-press on a layer, you get offered the following possibilit
 
 
 ## Sort layer features
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 If you'd like to configure the order of features in "Show feature list" in QField, you have the following options to pre-configure this on QGIS:
 

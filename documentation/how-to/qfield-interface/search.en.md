@@ -101,7 +101,7 @@ Pro-tip: use the aggregate() expression function to calculate statistics against
 can be done by typing `*= aggregate('my_layer','sum', $area)*`.
 
 ## Configure vector layers search in QGIS
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 By default, all vector layers are searchable. To exclude specific layers from search queries:
 

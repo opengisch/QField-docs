@@ -16,7 +16,7 @@ You can achieve that by setting the right "layer capabilities".
 
 !!! Workflow
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. In the menu toolbar click on *Project* > *Properties...* > [*Data Sources*](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#data-sources-properties) <!-- markdown-link-check-disable-line -->
     !![Configuring Layers Data Sources](../../assets/images/hiding-legend-nodes.png)
@@ -33,7 +33,7 @@ To manually transfer and synchronize your QGIS project to QField or another clie
 
 !!! Workflow
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. Direct to *Project* > *Properties* > *General*
     2. Insure that the  *Save paths* is set to *Relative*

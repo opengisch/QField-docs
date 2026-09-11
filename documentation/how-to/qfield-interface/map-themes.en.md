@@ -11,7 +11,7 @@ Layers can individually be shown and hidden and information can be presented mor
 This is what *Map themes* are for.
 
 ## Creating a Map Theme
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Creating a Map Theme in QGIS is a very simple task.
 

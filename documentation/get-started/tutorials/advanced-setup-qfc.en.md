@@ -75,7 +75,7 @@ A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_
 
 !!! Workflow
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. Create a new project in QGIS.
     2. Create GeoPackage layers, save it in the same folder as your QGIS project.
@@ -109,7 +109,7 @@ Read more on PG Service and Secrets [here](../../how-to/project-setup/pg-service
 
 !!! Workflow
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. Create a new project.
     2. Add a PostGIS layer, making sure to store the credentials in the project or having created the PG Service file.

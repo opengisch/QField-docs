@@ -51,7 +51,7 @@ We recommend using this plugin and will show you below how to use it.
 
 !!! Workflow
 
-    :material-monitor: Desktop Preparation
+    :material-monitor: Project Manager
 
     1. Direct to *Plugins* > *Manage and Install Plugins*
     2. Search for "PG service parser" (icon of the PostgresSQL Elephant) and install it.

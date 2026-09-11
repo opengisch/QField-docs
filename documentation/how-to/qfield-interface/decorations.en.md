@@ -5,7 +5,7 @@ tx_slug: documentation_how-to_decorations
 
 # Map Decorations
 
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 If you want to customise your project with "Decorations" in QField this can be done but you need to configure it first in QGIS.
 More details you can find in the corresponding [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/map_views/map_view.html#decorating-the-map) <!-- markdown-link-check-disable-line -->
