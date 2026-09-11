@@ -136,8 +136,7 @@ nav:
       - reference/exif.md
       - reference/expression_variables.md
       - reference/troubleshoot.md
-  - Success stories:
-      - success-stories/index.md
+  - Success stories: https://qfield.org/success-stories/
 # Extensions
 markdown_extensions:
   - admonition
