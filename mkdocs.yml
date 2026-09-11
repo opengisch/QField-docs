@@ -138,15 +138,6 @@ nav:
       - reference/troubleshoot.md
   - Success stories:
       - success-stories/index.md
-      - success-stories/ecological-surveying.md
-      - success-stories/geologic-mapping.md
-      - success-stories/lulc-mapping-fiji.md
-      - success-stories/mapping-breeding-birds-in-the-Wadden-Sea.md
-      - success-stories/mosquito-malario-ground-truth-data-collection.md
-      - success-stories/river-state-survey.md
-      - success-stories/rwanda-rural-water.md
-      - success-stories/vanilla-survey.md
-      - success-stories/heritage-impact-assessment.md
 # Extensions
 markdown_extensions:
   - admonition
