@@ -5,32 +5,39 @@ tx_slug: documentation_reference_qfieldcloud_architecture
 
 # Architecture overview
 
-QFieldCloud has a containerized architecture with multiple containers and volumes.
+QFieldCloud is based on the Django framework and the system architecture is divided into multiple docker containers and volumes.
 
+## System Overview
 
-!![QFieldCloud architecture: Rounded rectangles represent containers, ellipses represent volumes. The text in the square brackets is the service name found in the `docker-compose.yml` file, the rest of the text is the function of the container. Arrows between containers shows who initiates the communication. Arrows between a container and a volume represents whether the container reads (arrow pointing to container) or writes (arrow pointing to volume) data. Arrows and containers in gray represent deprecated services. Arrows and containers in dashed line represent optional services.](../../assets/images/qfc_server_architecture_light.svg)
+!![QFieldCloud architecture](../../assets/images/qfc_server_architecture_light.svg, 800px)
+The rounded rectangles represent **containers**, ellipses represent **volumes**.
+The text in the square brackets is **the service name** found in the `docker-compose.yml` file, the rest of the text is **the function of the container**.
+Arrows between containers show who initiates **the communication**.   Arrows between a container and a volume represent whether the container **reads** (arrow pointing to container) or **writes** (arrow pointing to volume) data.
+Arrows and containers in gray represent **deprecated services**.
+Arrows and containers in dashed line represent **optional services**.
 
 See an interactive version of [the drawing above](https://excalidraw.com/#json=7rUYYLuU9kkRrvR3acb8R,6l4zHy4gvz8WYcb9z5O1jQ).
+!!! Note
 
-!!! note
-  For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
+    For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
 
-
-## Docker objects
 
 ### Containers
 
 #### `[nginx]` Reverse proxy
 
-The reverse proxy that sits in front of QFieldCloud.
-Hard requirement on [`nginx`](https://nginx.org/en/) for this purpose as the [`X-Accel-Redirect` HTTP header](https://nginx.org/en/docs/http/ngx_http_core_module.html#internal) is heavily used in production to serve files directly from the **[minio] File Storage**.
+This is the reverse proxy that sits in front of QFieldCloud.
+It has a hard requirement on [`nginx`](https://nginx.org/en/) for this purpose as the [`X-Accel-Redirect` HTTP header](https://nginx.org/en/docs/http/ngx_http_core_module.html#internal) is heavily used in production to serve files directly from the **[`rustfs`] File Storage**, or from whatever Object Storage is configured in the `STORAGES` environment variable.
 
-Requires a SSL certificate to be present - self-signed, Let's Encrypt or other.
+It requires a SSL certificate to be present - self-signed, Let's Encrypt or other.
 
+!!! Warning
+    Because files are served with `X-Accel-Redirect` and a presigned URL, the Object Storage endpoint must be resolvable and TLS-valid **from within the `[nginx]` Reverse proxy container**, not only from the **[`app`] QFieldCloud App**.
+    If your Object Storage uses a certificate signed by an internal certificate authority, mount that authority in the `custom_ca_certificates` volume.
 
 #### `[app]` QFieldCloud App
 
-The main software that runs QFieldCloud, including authentication, permissions management, data models, static files, administrative interface and more.
+This is the main software that runs QFieldCloud, including authentication, permissions management, data models, static files, administrative interface and more.
 
 It consists of multiple Django apps, namely:
 
@@ -53,24 +60,24 @@ Uses [`ofelia`](https://github.com/mcuadros/ofelia) for CRON runner.
 
 #### `[mkcert]` Self-signed certificate creator
 
-Automatically create self-signed SSL certificate for local development and test deployments.
+Automatically creates self-signed SSL certificates for local development and test deployments.
 
 
 #### `[certbot]` Letsencrypt manager
 
 Uses [`certbot`](https://certbot.eff.org/) for managing Let’s Encrypt certificates.
-It automatically recreate expiring SSL certificate and they are automatically reloaded by **[`nginx`] Reverse Proxy**.
+It automatically recreates expiring SSL certificates and they are automatically reloaded by the **[`nginx`] Reverse Proxy**.
 
 
 #### `[worker_wrapper]` Queue Consumer
 
-One or more containers to consume and manage Jobs from the queue.
+Corresponds to one or more containers to consume and manage Jobs from the queue.
 The **[worker_wrapper] Queue Consumer** regularly polls the **[db] App Database** for new pending Jobs.
 Once a Job in `PENDING` status is encountered, the **[worker_wrapper] Queue Consumer** sets it to `QUEUED` status and starts processing it.
 Then the container will set a bunch of metadata on the Job object in the **[db] App Database** and start a completely new temporary **[qgis] Worker** container.
 It waits for the **[qgis] Worker** container to finish, gets the logs and stores them in the **[db] App Database**.
 
-Finally, it updates a bunch of other Job's metadata in the **[db] App Database** based on the exit code and the logs from the **[qgis] Worker**, and sets the Job's status to `FINISHED` or `FAILED`.
+Finally, it updates other Job's metadata in the **[db] App Database** based on the exit code and the logs from the **[qgis] Worker**, and sets the Job's status to `FINISHED` or `FAILED`.
 
 The container runs the very same Django code used in **[`app`] QFieldCloud App**.
 
@@ -83,8 +90,7 @@ The Worker container is the actual place where the Jobs created by the **[`app`]
 Each Worker container is created dynamically by the **[`worker_wrapper`] Queue Consumer** to execute a single job for a single project and deleted right after.
 The typical execution of a Worker consists of starting a headless QGIS application, downloading project files, process the project files and reuploading the resulting processed files.
 
-The **`[qgis]` Worker** container gets environment variables, including a temporary QFieldCloud authentication token, from the **`[worker_wrapper]` Queue Consumer**, and send back data to the it by writing logs to the `STDERR` and writing files in the temporary shared volume, primarily `feedback.json`.
-
+The **`[qgis]` Worker** container gets environment variables, including a temporary QFieldCloud authentication token, from the **`[worker_wrapper]` Queue Consumer**, and sends back data to the it by writing logs to the `STDERR` and writing files in the temporary shared volume, primarily `feedback.json`.
 
 ### Volumes
 
@@ -95,7 +101,7 @@ Stores the SSL certificates created by **`[mkcert]` Self-signed certificate crea
 
 #### `[transformation_grids]`
 
-Contains all transformation grids available, downloaded from https://cdn.proj.org/ and made available for all Jobs.
+Contains all transformation grids available that are downloaded from https://cdn.proj.org/ and made available for all Jobs.
 
 
 #### `[static_volume]`
@@ -108,27 +114,40 @@ Contains all static assets such as fonts, CSS, JS or image files.
 !!! warning
     Deprecated, might be removed at any time.
 
-The default location for User uploaded files. It should **never** be used.
+The default location for User uploaded files.
+It should **never** be used.
 
 
-### Development services
+### Standalone services
 
-The following containers are available only for local development purposes and **should not** be used in production, as these services are not monitored, backed-up and generally designed for critical usage within the stack.
+The following containers are defined in `docker-compose.override.standalone.yml` and are provided so that a fresh checkout runs out of the box.
+!!! warning
+    Those containers are **not** part of the application itself and **should not** be used in production, as these services are not monitored, backed-up and generally designed for critical usage within the stack.
+
+Each of them is meant to be replaced by infrastructure you already operate, see [Replacing the standalone services](#replacing-the-standalone-services).
+Note that replacing a *container* is not the same thing as replacing a *storage backend*: the S3 and WebDAV backends used by these containers are both production-grade backends of the **[`app`] QFieldCloud App**.
 
 
-#### [`minio`] File Storage
+#### [`rustfs`] File Storage
 
 Local Object Storage (S3-like) used for development.
-The data is stored on 4 **[`minio_data`]** volumes, as replication is enforced by `minio`.
+The data is stored on the single **[`rustfs_data`]** volume.
 
-Should be replaced by a proper S3-like Object Storage SaaS provider.
+Should be replaced by a proper S3-like Object Storage SaaS provider, or by any S3-compatible service you already run, see [Using an existing S3 service](#using-an-existing-s3-service).
 
-If `minio` is running, please make sure the host's firewall allows port `8009`, required by the `minio` service (or the port configured with the `MINIO_API_PORT` environment variable).
+If `rustfs` is running, please make sure the host's firewall allows the ports configured with the `OBJECT_STORAGE_API_PORT` (`8009` by default) and `OBJECT_STORAGE_BROWSER_PORT` (`8010` by default) environment variables.
+The credentials are set with `OBJECT_STORAGE_ROOT_USER` and `OBJECT_STORAGE_ROOT_PASSWORD`.
+
+!!! Info
+    Up to QFieldCloud `v26.3` this service was provided by [`minio`](https://min.io/), stored its data on four `minio_data` volumes and was configured with the `MINIO_*` environment variables.
+    Deployments upgrading from an older version should rename the `MINIO_*` variables to their `OBJECT_STORAGE_*` counterparts in their `.env` file.
 
 
-#### [`createbuckets`] Create Minio Buckets
+#### [`createbuckets`] Create Object Storage buckets
 
-Single shot container to create the required buckets on the Object Storage under **[`minio`] File Storage**.
+Single shot container to create the required buckets on the Object Storage under **[`rustfs`] File Storage**.
+
+It declares a `depends_on` condition on the **[`rustfs`] File Storage**, therefore the two services can only be disabled together.
 
 
 #### [`webdav`] Alternative File Storage
@@ -137,12 +156,11 @@ Local WebDAV storage used for development, using WebDAV protocol and specificati
 
 The data is stored on the **[`webdav_data`]** volume.
 
-Can alternatively be used in place of the `minio` File Storage for storing the files. Can optionally be used for storing only attachments on it.
-
 !!! info
     The webdav storage is optional, it is not a requirement for the system to work properly.
 
-If used, the webdav storage service should be replaced by a proper WebDAV server, e.g. NextCloud.
+This container is a development convenience and should be replaced by a proper WebDAV server, e.g. NextCloud.
+The WebDAV *backend* it exercises is however a production storage backend, see [Choosing a file storage backend](#choosing-a-file-storage-backend).
 
 #### [`db`] App PostgreSQL
 
@@ -160,17 +178,9 @@ Local mailing server to handle emails being sent, such as registration activatio
 Should be replaced by a proper email SaaS provider that supports SMTP protocol.
 
 
-#### [`geodb`] GeoDB PostgreSQL
+#### [`rustfs_data`]
 
-!!! warning
-    Deprecated, might be removed at any time.
-
-Stores dynamically created user PostGIS databases.
-
-
-#### [`minio_data`]
-
-Stores data for the **[`minio`] S3 service**.
+Stores data for the **[`rustfs`] S3 service**.
 
 
 #### [`webdav_data`]
@@ -188,12 +198,68 @@ Stores data for **[`db`] App PostgreSQL**.
 Stores data for **[`smtpdev`] Mailing Server**.
 
 
-#### [`geodb_data`]
+### Removed services
+
+#### [`geodb`] GeoDB PostgreSQL
+
+Removed in QFieldCloud [`v25.27`](https://github.com/opengisch/QFieldCloud/releases/tag/v25.27).
+
+It used to store dynamically created user PostGIS databases, together with its **[`geodb_data`]** volume.
+
+When upgrading an instance created before `v25.27`:
+
+- restart the stack with `--remove-orphans` so that the orphaned `geodb` container is dropped;
+- remove all the `GEODB_*` variables from your `.env` file;
+- be aware that the migration permanently deletes the `core_geodb` table and its contents.
+Back it up beforehand if you still need the data.
+
+User PostGIS databases are now provided by your own PostGIS instance, made available to projects through a `pg_service` [secret](secrets.md).
+The secret is injected in the ephemeral **[`qgis`] Worker** as the `PGSERVICE_FILE_CONTENTS` environment variable and written to a `pg_service.conf` file by the Worker's entrypoint.
+
+## Replacing the standalone services
+
+The **[`app`] QFieldCloud App** does not know whether its dependencies run as containers of the stack or as external infrastructure, and the base `docker-compose.yml` file defines only the application itself: `app`, `nginx`, `worker_wrapper`, `qgis3`, `qgis4`, `memcached`, `ofelia`, `certbot`, `mkcert` and `mirror_transformation_grids`.
+
+Every dependency - `db`, `rustfs`, `createbuckets`, `webdav` and `smtp4dev` - comes from `docker-compose.override.standalone.yml`.
+
+None of the application services declare a `depends_on` on them: they are wired exclusively through the `POSTGRES_*`, `STORAGES` and `EMAIL_*` environment variables.
+Therefore, replacing a standalone service is only a matter of pointing those variables somewhere else, and then either:
+
+- removing `docker-compose.override.standalone.yml` from the `COMPOSE_FILE` environment variable, to replace all of them at once; or
+- adding `profiles: [donotstart]` to the individual services you want to disable.
+
+The only exception is the **[`createbuckets`] Create Object Storage buckets** container, which declares a `depends_on` on the **[`rustfs`] File Storage**.
+Those two must be disabled together, otherwise Docker Compose refuses to start the project with `service "createbuckets" depends on undefined service "rustfs"`.
+
+### Choosing a file storage backend
+
+The `STORAGES` environment variable selects the backend used to store project files.
+Two backends are supported in production:
+
+- an S3-compatible Object Storage, see [Using an existing S3 service](#using-an-existing-s3-service);
+- a WebDAV server, e.g. NextCloud, nginx with [the `ngx_http_dav_module`](https://nginx.org/en/docs/http/ngx_http_dav_module.html) enabled, apache with [the `mod_dav` module](https://httpd.apache.org/docs/current/fr/mod/mod_dav.html) enabled.
+A configuration example is available in the `.env.example` file of the QFieldCloud repository.
+
+Both backends can be combined, for example by keeping project files on S3 and storing only the attachments on WebDAV.
+The WebDAV backend is the only one that supports `STORAGE_PROJECT_DEFAULT_ATTACHMENTS_VERSIONED=0`, which is a valid reason to pick it for attachments that do not need to be versioned.
 
 !!! warning
-    Deprecated, might be removed at any time.
+    Be aware that manually editing files stored on a WebDAV backend by QFieldCloud can lead to errors: the QFieldCloud `app` service stores files' metadata in the db (e.g. byte size, checksum, etc.), and if some files are renamed / moved / deleted from the WebDAV backend, QFieldCloud is thus not able to fetch those files and serve them to the clients requesting them.
+### Using an existing S3 service
 
-Stores data for **[`geodb`] GeoDB PostgreSQL**.
+Any S3-compatible service can be used, as long as the **[`nginx`] Reverse proxy** can reach its endpoint, see the warning in the [`[nginx]` Reverse proxy](#nginx-reverse-proxy) section.
+
+The **[`createbuckets`] Create Object Storage buckets** container additionally requires the target service to implement:
+
+- bucket creation;
+- bucket policies, to make the `users` prefix publicly readable;
+- bucket versioning.
+
+Not every S3 implementation provides all three, therefore creating the bucket by hand and disabling the **[`createbuckets`] Create Object Storage buckets** container is a supported path.
+
+!!! Warning
+    File versions of the current `filestorage` Django app are handled at application level and do not require S3 bucket versioning, whereas the legacy storage code path does rely on it.
+    An Object Storage without bucket versioning is therefore only usable by instances whose projects have all been migrated to the current `filestorage` app, and it comes at the cost of the soft delete that bucket versioning provides.
 
 
 ## Job Queue
