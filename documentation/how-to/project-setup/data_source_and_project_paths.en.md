@@ -4,19 +4,21 @@ tx_slug: documentation_how-to_hiding-legend-nodes
 ---
 
 # Data Source  & project paths
+:material-monitor: Project Manager
 
 You can save and store your projects and layers in multiple ways and formats.
 It is common best practice to save all your project related data in the same folder as the QGIS project unless you are making use of [shared datasets](../../how-to/advanced-how-tos/shared-datasets.md).
 Furthermore, while working in a project with many domain tables etc. it may be preferable to hide some of the layers from the collector's eyes to make the user experience more manageable.
 
 ## Data source configuration
+:material-monitor: Project Manager
 
 Often, you do not need to access the attributes of all the feature layers or view the value relation tables of your projects.
 You can achieve that by setting the right "layer capabilities".
 
 !!! Workflow
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. In the menu toolbar click on *Project* > *Properties...* > [*Data Sources*](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#data-sources-properties) <!-- markdown-link-check-disable-line -->
     !![Configuring Layers Data Sources](../../assets/images/hiding-legend-nodes.png)
@@ -27,13 +29,12 @@ You can achieve that by setting the right "layer capabilities".
          - **Private**: If checked the layer is hidden from the project's legend or layer tree.
 
 ## Relative Project path
+:material-monitor: Project Manager
 
 It is a good practice to set all your file paths of your datasets and attachments to "relative" making your project easily transferrable.
 To manually transfer and synchronize your QGIS project to QField or another client, you will need such a portable version of your QGIS project file (`.qgs`, `.qgz`).
 
 !!! Workflow
-
-    :material-monitor: Desktop preparation
 
     1. Direct to *Project* > *Properties* > *General*
     2. Insure that the  *Save paths* is set to *Relative*
