@@ -108,6 +108,7 @@ To delete file versions in QFieldCloud, follow these steps:
     you can do it activating the option **Also delete `n` version(s) older than the selected version**.
     ![](../../assets/images/files_versions_deletion_confirmation.png)
     7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.
+
     ![](../../assets/images/files_versions_deletion_popup_listing_files.png)
 
 ## Collaborators

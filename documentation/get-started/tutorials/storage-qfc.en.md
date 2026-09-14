@@ -28,7 +28,7 @@ To upgrade to an **organization plan**, follow these steps:
     1. Click on the username at the top-right of the page.
     2. Click on "Create organization".
     3. Choose your preferred payment option:
-    !![organization plan options](../assets/images/organization_plan_options.png,800px)
+    !![organization plan options](../../assets/images/organization_plan_options.png,800px)
         - **Monthly Payment:** You can choose between a **Flat** subscription or a **Flex** Subscription.
              - **Flat**: You select your number of seats (users in the organization) and pay each month for every seat.
              - **Flex**: You can add members directly to the organization and only pay for the active ones.
@@ -41,7 +41,7 @@ To upgrade to an **organization plan**, follow these steps:
     7. In the "Billing Address" section, fill in the required fields and click "Next".
     An overview page will show the plan layout and the billing details.
     8. If you would like to add additional storage, you can add as many storage packages as you need.
-        !![](../assets/images/example_organization_plan_billing.png)
+        !![](../../assets/images/example_organization_plan_billing.png)
     9. (Optional) If you have received a promotion code, please enter it at the bottom of the billing window.
     10. Under the summary page, verify your current subscription and upcoming payment.
     Add your billing details and click on **Pay** to activate your plan.
@@ -54,7 +54,7 @@ An "active user" corresponds to a member who has performed at least one "job" wi
 
 To monitor the number of active users, direct to *Organization Settings* > *Billing* > *Active users*.
 
-!![](../assets/images/listing_qfieldcloud_active_users.png)
+!![](../../assets/images/listing_qfieldcloud_active_users.png)
 
 !!! note
 
@@ -76,13 +76,13 @@ Additional storage can be obtained in sets of 3 GB.
 
     1. To add more storage to your organization, direct to the *Settings* section of your organization.
     2. Click on the **billing section** and click on *Change*.
-        !![](../assets/images/storage-qfc1.png)
+        !![](../../assets/images/storage-qfc1.png)
 
     3. From there, you can either cancel your subscription or modify the subscription.  Click on **Modify subscription**.
-        !![](../assets/images/storage-qfc2.png)
+        !![](../../assets/images/storage-qfc2.png)
 
     4. Adjust the number of seats and the modified storage packages depending on your needs. The reflected changes to the upcoming subscription will be indicated below the current subscription with either a green (increasing seats/storage) or red (decreasing seats/storage) color.
-        !![](../assets/images/storage-qfc3.png)
+        !![](../../assets/images/storage-qfc3.png)
 
     !!! Note
 
@@ -111,7 +111,7 @@ You can transfer the primary ownership of an Organization account to another mem
     If not add them to the organization first.
     2. Navigate to your organization's overview page and click on **Edit organization**.
     3. Change **Owner** on the **Transfer ownership of this organization** section, and select the user intended to transfer from the dropdown list.
-        !![](../assets/images/qfc_transferring_org.png)
+        !![](../../assets/images/qfc_transferring_org.png)
 
 ## Cancellation of a subscription
 
@@ -123,15 +123,15 @@ You can cancel your subscriptions at any given time.
     2. Switch to the corresponding **Billing Section**.
     3. Click on **change** and then click on **Cancel subscription**.
 
-        ![](../assets/images/discontinuing_service_02_change_subcription.png)
+        ![](../../assets/images/discontinuing_service_02_change_subcription.png)
 
     4. Confirm the cancellation in the subsequent pop-up window.
 
-        ![Cancel subscription](../assets/images/discontinuing_service_03_cancel_subscription.png)
+        ![Cancel subscription](../../assets/images/discontinuing_service_03_cancel_subscription.png)
 
     5. A message will then appear, indicating that the subscription will conclude at the end of the current billing period.
 
-        ![Cancellation message](../assets/images/discontinuing_service_05_nyuki_message.png)
+        ![Cancellation message](../../assets/images/discontinuing_service_05_nyuki_message.png)
 
 ## Retrieving an invoice
 
@@ -144,4 +144,4 @@ It is possible to retrieve invoices from previous months at the bottom of the bi
     3. Navigate to the bottom of the page.
         There you will find all previous and current invoices associated with your Organization Account.
 
-        !![Example of Invoice](../assets/images/qfc-storage-plans-invoice.png,400px)
+        !![Example of Invoice](../../assets/images/qfc-storage-plans-invoice.png,400px)
