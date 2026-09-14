@@ -53,7 +53,7 @@ An active user corresponds to any member who performs at least one server job in
 
 To monitor active organization users, navigate to _Organization Settings > Billing > Active users_.
 
-!![](../assets/images/listing_qfieldcloud_active_users.png)
+!![](../../assets/images/listing_qfieldcloud_active_users.png)
 
 !!! Note
     A single user account can only log into one device at a time.
@@ -114,7 +114,7 @@ Personal **Pro** plans and **Organization** plans must be canceled separately.
     2. Navigate to the **Billing** section.
     3. Click **Change**, then click **Cancel subscription**.
 
-        ![](../assets/images/discontinuing_service_02_change_subcription.png)
+        ![](../../assets/images/discontinuing_service_02_change_subcription.png)
 
     4. Confirm the cancellation in the popup window.
 
@@ -135,4 +135,4 @@ You can access past invoices at the bottom of the billing section.
     2. Navigate to the **Billing** section.
     3. Scroll down to the bottom of the page to view and download past or current account invoices.
 
-        !![Example of Invoice](../assets/images/qfc-storage-plans-invoice.png,400px)
+        !![Example of Invoice](../../assets/images/qfc-storage-plans-invoice.png,400px)

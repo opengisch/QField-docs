@@ -20,7 +20,6 @@ Access permissions follow a strict hierarchy: **a higher role automatically inhe
     - **[Members](../../get-started/tutorials/concepts.md#organization-members):** User accounts added to an organization with defined organization-level administrative roles.
     - **[Collaborators](../../get-started/tutorials/concepts.md#project-collaborators):** Individual user accounts granted specific access permissions to a single project.
 
-
 ## Project Collaborator Roles
 
 Project roles determine what an individual user can do within a specific project.

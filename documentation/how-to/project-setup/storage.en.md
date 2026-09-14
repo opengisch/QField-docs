@@ -176,7 +176,7 @@ QField provides five methods to open local projects and datasets:
 
 * [importing a project folder](#importing-a-project-folder) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14">;<!-- markdown-link-check-disable-line -->
 * [importing a compressed project](#importing-a-compressed-project) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14">;<!-- markdown-link-check-disable-line -->
-* [importing individual datasets](#importing-individual-datasets-android-only) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14">;<!-- markdown-link-check-disable-line -->
+* [importing individual datasets](#importing-individual-datasets) <img src="/assets/images/android_robot.svg.png" alt="android" width="16" height="16"> <img src="/assets/images/apple_logo.svg.png" alt="apple" width="14" height="14">;<!-- markdown-link-check-disable-line -->
 * [importing from a URL](#importing-from-a-url); and
 * importing from a WebDAV folder.
 
