@@ -7,42 +7,40 @@ tx_slug: documentation_how-to_decorations
 
 :material-monitor: Desktop preparation
 
-If you want to customise your project with "Decorations" in QField this can be done but you need to configure it first in QGIS.
-More details you can find in the corresponding [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/map_views/map_view.html#decorating-the-map) <!-- markdown-link-check-disable-line -->
+Customize your project with decorations in QField by configuring them first in QGIS.
+Read more in the [QGIS Map View Documentation](https://docs.qgis.org/latest/en/docs/user_manual/map_views/map_view.html#decorating-the-map). <!-- markdown-link-check-disable-line -->
 
-There are several decoration types to choose from:
+Choose from several decoration types:
 
-- **Grid**: "A map grid" overlays the map with lines or markers at defined intervals providing spatial reference and guidance particularly useful in remote areas.
-- **Title Label**: The "Title Label" adds a title to your map, which, for instance, allows you to display the project name.
-- **Copy Right Label**: The "Copyright Label" is commonly used for branding purposes, indicating the origin of data sources or showing other information.
-- **Image**: The image element allows you to directly place a logo, watermark or other means of graphic on your map.
-- **Scale Bar**: Unlike the other elements enabling the Scale Bar can directly be done within the QField application settings, allowing for on-the-fly adjustments in the field.
+- **"Grid":** Overlays the map canvas with lines or markers at defined intervals to provide spatial reference, which is useful in remote areas.
+- **"Title Label":** Displays a title on your map, such as the project name.
+- **"Copyright Label":** Displays data source origins or branding information on your map canvas.
+- **"Image":** Places a logo, watermark, or graphic directly on your map.
+- **"Scale Bar":** Displays a scale bar on the map canvas, which can be enabled directly inside QField settings.
 
 ### Grid
 
 !!! Workflow
-    1. In QGIS, navigate to *View* > *Decorations* > *Grid…*.
-    2. Check the **Enable Grid** box to activate it.
-    3. Customize the grid's appearance:
-    - **Grid type:** Choose between **Solid lines**, **Crosses**, or **Markers**.
-    - **Interval:** Set the spacing for the grid lines on both the **X** and **Y** axes.
-    The units are based on the project's Coordinate Reference System (CRS).
-    - **Line/Marker Symbol:** Customize the color, thickness and style of the grid lines or markers to match your map style.
-    - **Draw annotations:** If enabled, this will display the grid coordinates on the map.
-    You can control the font, direction, and distance of the annotations from the map frame.
+    1. In QGIS, navigate to _View > Decorations > Grid..._.
+    2. Enable the **"Enable Grid"** checkbox.
+    3. Customize the grid appearance options:
 
-    Once configured in QGIS, the grid will automatically be visible in QField once the saved project has been synchronized or was transferred manually.
+        - **"Grid type":** Select **"Solid lines"**, **"Crosses"**, or **"Markers"**.
+        - **"Interval":** Set grid line spacing along the **X** and **Y** axes based on the project Coordinate Reference System (CRS).
+        - **"Line/Marker Symbol":** Customize color, thickness, and style for grid lines or markers.
+        - **"Draw annotations":** Displays grid coordinates on the map canvas, controlling font, orientation, and margin distance from the map frame.
+
+Once configured in QGIS, the grid displays automatically in QField after synchronizing or transferring the project.
 
 ### Title Label
 
 !!! Workflow
-    1. In QGIS, go to *View* > *Decorations* > *Title Label...*.
-    2. Check the **Enable Title Label** box.
-    3. You can input static text or, for more powerful results, use a QGIS expression.
+    1. In QGIS, navigate to _View > Decorations > Title Label..._.
+    2. Enable the **"Enable Title Label"** checkbox.
+    3. Enter static text or construct a dynamic title using QGIS expressions.
+    4. Click the **"Insert or Edit an Expression..."** button to open the expression builder.
 
-    With expressions your title can dynamically change.
-    4. Click the **Insert or Edit an Expression...** button to open the expression builder.
-    *Eg. A common use case is to display the project's title, which is set in the *Project* > *Properties...* > *General* tab.
+    A common use case displays the project title configured under _Project > Properties... > General_:
 
     ```sql
     -- Displays the title saved in the project properties
@@ -51,9 +49,7 @@ There are several decoration types to choose from:
 
     **Example of a more complex title:**
 
-    You can combine static text with variables and functions to create a more detailed title.
-
-    Code snippet
+    Combine static text with expression variables and functions to generate dynamic titles:
 
     ```sql
     -- Creates a title like: "Survey for Project *' %project_name% - 20xx"
@@ -63,12 +59,11 @@ There are several decoration types to choose from:
 ### Copyright Label
 
 !!! Workflow
-    1. In QGIS, select *View* > *Decorations* > *Copyright Label…*.
-    2. Check the **Enable Copyright Label** box.
-    3. Like the Title Label, this decoration fully supports QGIS expressions.
+    1. In QGIS, select _View > Decorations > Copyright Label…_.
+    2. Enable the "Enable Copyright Label" checkbox.
+    3. Enter copyright text or use QGIS expressions to display dynamic content.
 
-    *Eg. Continuous display of your real-time GPS information on your map.*
-    With the right configuration, you can show the current coordinates and map scale directly on the screen.
+    Use expressions to display real-time positioning information and map scale directly on the map canvas:
 
     ```sql
     -- Displays the GNSS coordinates and current map scale
@@ -81,18 +76,19 @@ There are several decoration types to choose from:
 ### Image
 
 !!! Workflow
-    1. In QGIS, open *View* > *Decorations* > *Image…*.
-    2. Check the **Enable Image** box.
-    3. Click the **...** button in the **Image path** field to select your image.
+    1. In QGIS, open _View > Decorations > Image…_.
+    2. Enable the **"Enable Image"** checkbox.
+    3. Click the **"..."** button next to **"Image path"** to select your image file.
 
-    **Important:** For seamless use in QField, it is highly recommended to store the image within the project folder and use a relative path.
+    !!! Important
+        Store image files inside your project directory and use relative file paths for compatibility with QField.
 
-    - Create a dedicated folder inside your project directory (e.g., `assets`).
-    - Reference the image using a path that starts with `./`.
+        - Create a dedicated folder inside your project directory (e.g., `assets`).
+        - Reference the image using a path that starts with `./`.
 
-    Example of a relative path:
+        Example of a relative path:
 
-    `./assets/company_logo.png`
+        `./assets/company_logo.png`
 
     ![type:video](../../assets/videos/qfield_map_decoration.webm)
 
@@ -103,9 +99,9 @@ There are several decoration types to choose from:
 !!! Workflow
 
     1. Open your project in QField.
-    2. Open the side "Dashboard" (**☰**).
-    3. Tap the **Settings** icon (gear symbol) in the main menu.
-    4. Under the **General** tab.
-    5. Enable the **Show scale bar** .
+    2. Open the **"Side Dashboard"** (**☰**).
+    3. Tap the **Settings** icon.
+    4. Navigate to the **"General"** section.
+    5. Enable **Show scale bar** .
 
     !![](../../assets/images/scale_bar_toggle.png,900px)

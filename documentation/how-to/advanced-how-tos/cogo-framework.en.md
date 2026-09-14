@@ -5,87 +5,77 @@ tx_slug: documentation_how-to-cogo-framework
 
 # COGO Framework - Coordinate Geometry
 
-## What is COGO?
-COGO is a framework that allows you to define a precise location of any spatial feature, making use of mathematical functions and measurements.
-By precisely providing QField with the coordinates, the bearing, or the distance to where the next point or vertex should be,
-it is possible to add highly accurate positioning information without actually having to physically go there.
+The Coordinate Geometry (COGO) framework defines spatial feature locations using mathematical functions and precise measurements.
+By entering coordinates, bearings, or distances, QField calculates accurate vertex and feature positions without requiring physical presence at the target location.
 
-!!! note
-    Across all COGO tools, QField provides **dynamic visual guides**.
-    As you enter parameters, lines, circles, and points are drawn directly on the map in real-time to help you verify your inputs before committing the feature.
+!!! Note
+    QField renders dynamic visual guides (lines, circles, and point previews) on the map canvas in real time as you enter parameters, allowing you to verify inputs before creating features.
 
-!!! Example
+### Example Use Case
 
-    Presume you want to map your property.
-    However, parts of the property are covered in boysenberry bushes and you are unable to walk on one side of the property boundary.
-    Instead, you can use QField and activate the COGO framework to draw the exact boundary.
+Mapping a property boundary where physical access is obstructed (for instance, by dense vegetation or fence lines).
+COGO tools allow digitizing boundary corners by measuring offsets from accessible locations.
 
-## COGO in QField
+## Enabling COGO in QField
+:material-tablet: Fieldwork
 
-In QField there exist three COGO operations which can be activated only while being in editing mode.
-The user can create new vertices or point features using the following three options:
+COGO operations are available in digitize mode.
 
-- Point by XY[Z]
-- Point at intersection of two circles
-- Point by distance/angle [to another point]
+!!! Workflow
+    1. Open your project in QField and enable digitize mode by tapping the pencil icon in the **Side Dashboard**.
+    2. Select the target layer to edit.
+    3. Tap the **pencil-and-gear editing tools overlay icon on the map canvas.
+    4. Tap the **drafting compass** icon to enable the COGO tools overlay.
 
-!!! Prepare Workflow
+Once active, choose from three COGO operations:
 
-    1. Open the QField project.
-    2. Select digitize mode from the active QField project settings and layers view to enable editing tools within the selected layer of the QField project.
-    3. Dismiss the active QField project settings and layers view to access the QField project map view.
-    4. Expand the editing tools menu overlay from the active QField project map view by tapping on the pencil-and-gear icon.
-    5. Enable visibility of the Coordinate Geometry (COGO) tool overlay by selecting the 'drafting compass icon' button from the editing tools menu overlay.
+- **Point by XY[Z]**
+- **Point at intersection of two circles**
+- **Point by distance/angle [to another point]**
 
-In the following sections, each option will be described as continuing the above steps and a detailed step-by-step introduction will be outlined.
+## COGO Operations
 
 ### Point by XY[Z]
 
-It may be useful to add points in the field using an exact coordinate reference,
-for instance when receiving precise coordinates from an external source or to direct to a point of interest while being on holiday.
+Construct points using exact coordinate values.
+This is useful when entering precise coordinates received from external surveys or spatial data sources.
 
 !!! Workflow
+    1. Tap the **XY** icon on the COGO tools overlay.
+    2. Select a coordinate source method:
+        - Select a feature location using the feature picker button.
+        - Use the map crosshair location.
+        - Use your current GNSS location (positioning must be active).
+        *(Note: If the target layer supports 3D geometries, enter an **Elevation** value).*
+    3. Confirm coordinate values. A green preview vertex displays on the map canvas.
+    4. Tap the green plus button (**+**) to save the new feature.
 
-    1. Select the XYZ Parameters COGO tools variant by the 'XY icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
-    2. In the COGO tool variant overlay choose between three Point entry options:
-        - Make a point from the Point Feature Picker 'dotted hamburger list of items icon' button following the Point text entry area.
-        - Make a point wherever the crosshair is located on the map.
-        - Make a point at the current location. For this, the positioning has to be turned on.
-       *(Note: If your target layer supports Z-dimensions (3D geometries), an additional input for **Elevation** will be available).*
-    3. Confirm the Point data entry - a virtual green point will appear where a new feature may be added.
-    4. Click on the green plus sign to confirm and add the new feature.
+![XY option](../../assets/images/cogo-xy-option.png)
 
-    ![XY option](../../assets/images/cogo-xy-option.png)
+### Point at Intersection of Two Circles
 
-### Point at intersection of two circles
-
-You can also draw two circles with a set radius and decide on which point they intersect to create a point.
-This is particularly useful if you want to add a feature that you cannot reach physically.
-A surveyor needs to digitize the centre of fields.
-Instead of walking in the centre of each of them, it is possible to draw two circles and then use the point where they intersect to add the feature.
+Construct points at the intersection of two circle radii drawn from reference origin points.
+This is useful when digitizing unreachable features (such as measuring offsets from two known survey points).
 
 !!! Workflow
+    1. Tap the two circles icon on the COGO tools overlay.
+    2. Set origin center points and radii for two circles using feature picker, crosshair, or GNSS location options.
+    3. Select preferred intersection point **A** or **B** displayed on the map canvas.
+    4. Tap the green plus button (**+**) to save the feature at the selected intersection point.
 
-    1. Click on Circles Intersection COGO tools variant by the 'two circles icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
-    2. In the COGO tool variant overlay enter the center points and radii of two circles the same way as outlined in the [XYZ Paramaters COGO tools variant](#point-by-xyz)
-    3. Select a preference for either of two points labelled **"A"** and **"B"** coincident with the intersection of circles as described above.
-    4. Click on the green plus sign to confirm the new feature at the preferred point.
+!![](../../assets/images/cogo-two-circle-option.png,250px)
 
-    !![](../../assets/images/cogo-two-circle-option.png,250 px)
+### Point by Distance/Angle [to Another Point]
 
-### Point by distance/angle [to another point]
-
-It is also possible to add a new feature set from a bearing and a specific distance.
-This can be particularly useful when working in the infrastructure domain,
-wanting to measure precisely the property boundary or the length of your pipes, cables, or other crucial assets.
+Construct points using distance offsets and bearing angles from an origin point.
+This is useful for utility and cadastral surveys measuring precise property boundaries or pipeline offsets.
 
 !!! Workflow
+    1. Tap the angle icon on the COGO tools overlay.
+    2. Set an origin point using feature picker, crosshair, or GNSS location options.
+    3. Enter distance and bearing relative to North.
+        *(Note: If the target layer supports 3D geometries, enter an **Elevation** offset value).*
+    4. Inspect the virtual dashed line and green preview point connecting the origin to the target location.
+    5. Tap the green plus button (**+**) to save the feature.
 
-    1. Click on Distance/Angle from Point COGO tools variant by the 'angle symbol icon' button from the COGO tools overlay located lower-right of the digitize mode map view.
-    2. In the COGO tool variant overlay use the same data entry method as outlined in the [XYZ Paramaters COGO tools variant](#point-by-xyz) to enter the origin location from which you want to offset by a distance and relative-north angle measurement.
-    3. Set the distance and the bearing relative to north to where the feature should be added.
-        *(Note: If your target layer supports Z-dimensions, an **Elevation** offset parameter will also be available).*
-    4. The original location will be drawn as connected by virtual dashed line to where a green point indicates the exact location of where the new feature may be added.
-    5. Click on the green plus sign to confirm the new feature.
-
-    !![Add a feature by a distance and a bearing](../../assets/images/cogo-distance-beaering-option.png,250px)
+!![Add a feature by a distance and a bearing](../../assets/images/cogo-distance-beaering-option.png,250px)

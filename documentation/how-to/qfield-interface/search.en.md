@@ -3,111 +3,111 @@ title: Search bar
 tx_slug: documentation_how-to_search
 ---
 
-# Search bar
+# Search Bar
 
-QField is equipped with a search bar that allows you to:
+The QField search bar allows you to:
 
-- search for features within a project's vector layers
-- [navigate to specified coordinates](../navigation-and-positioning/navigation.md#setting-a-destination-point)
-- locate spatial bookmarks
-- and calculate expressions
+- Search for features within project vector layers.
+- [Navigate to specified coordinates](../navigation-and-positioning/navigation.md#setting-a-destination-point).
+- Locate spatial bookmarks.
+- Evaluate QGIS expressions.
 
-## Layer search
-
+## Layer Search
 :material-tablet: Fieldwork
 
-You can search for an object scanning the attributes across all your layers or of an active layer.
-Alternatively, you can filter down to attribute level.
+Search for features across all project layers or restrict searches to the active layer.
+Filter queries down to specific attribute fields.
 
 !!! Workflow
+    1. Tap the **"Search"** button in the top-right corner of the map canvas to expand the search bar.
+    2. Enter your search query into the search bar.
 
-    1. Tap on the **Search button** in the top-right corner of the screen to expand the search bar.
+### Vector Layers Search
 
-    ### Vector layers search
+QField uses entered text values to find features with matching attribute values.
+A minimum of three characters is required to initiate a search query.
 
-     The value entered in the search bar is used to find features with matching attribute values.
-     A minimum of three characters is required to initiate the search.
+!![](../../assets/images/search-bar.png)
 
-     !![](../../assets/images/search-bar.png)
+### Active Layer Search Feature Matching
 
-    ### Active Layer Search Feature Matching
+Active layer searches focus queries exclusively on the currently active layer and its attributes.
 
-     The active layer search functionality focuses search queries exclusively on the currently active layer and specific fields within it.
+- **Search all active layer attributes:** Type `f ` followed by your search term (such as `f oak`).
+- **Target a specific attribute field:** Type `f @ATTRIBUTE_NAME search-term` (such as `f @tree_type oak`).
 
-     - To search through all texts and numbers on all the fields fields in the active layer, type `f ` followed by your search term (e.g., `f oak`).
-     - To target a specific field in the active layer, type `f @ATTRIBUTE_NAME search-term` (e.g., `f @tree_type oak`).
+Matching attribute names and values are highlighted in the search results list.
 
-     Matching attribute names and values are highlighted in the search results list.
+![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
 
-     ![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
+## Search with Code Scanner
 
-## Search with code scanner
-
-You can use QField's Code Reader to search for features by scanning physical codes or selecting image files.
+Use the QField Code Reader to search for features by scanning physical codes or selecting stored images.
 
 !!! Workflow
+    1. Tap **"Scan code"** inside the search bar to open the Code Reader interface.
+    2. Scan or decode a code using one of two methods:
+        - **Live Camera / NFC:** Point the camera at a physical QR code or barcode, or hold an NFC text tag near the mobile device.
+            !![](../../assets/images/search-bar-code-reader-1-scanning.png, 300px)
+        - **Image File from Gallery:** Tap the **"Gallery"** icon on the bottom control bar and select a photo containing a QR code or barcode.
+            !![](../../assets/images/code_reader_from_gallery.png, 300px)
+    3. Tap the checkmark (**"✔"**) button after decoding a code to execute the search query.
 
-    1. Tap **Scan code** inside the search bar to trigger the Code Reader overlay.
-    2. Decode the code using one of two methods:
+Matching features display in the results list:
 
-         - **Live Camera / NFC:**
-         Point the camera at a physical QR code or barcode, or hold an NFC text tag near the device.
-        !![](../../assets/images/search-bar-code-reader-1-scanning.png, 300px)
-         - **Image File from Gallery:**
-         Tap the **Gallery icon** (image button) on the bottom control bar and select a pre-existing photo containing a QR code or barcode.
-        !![](../../assets/images/code_reader_from_gallery.png, 300px)
-    3. Once the code is decoded, tap the checkmark (✔️) button to execute the search query for the decoded string.
+- Tap a feature name to pan and highlight the feature on the map canvas.
+- Tap the attributes icon to open the feature attribute form directly.
 
-        Matching features appear in the results list:
-
-        - Tap the **Feature Name** to pan and highlight the feature on the map.
-        - Tap the **Attributes Button** to open the feature's form directly.
-            !![](../../assets/images/search-bar-code-reader-2-results.png, 600px)
+!![](../../assets/images/search-bar-code-reader-2-results.png, 600px)
 
 ## Search with NFC
 
-The Code Reader natively detects and decodes NFC text tags.
+The Code Reader automatically detects and decodes NFC text tags.
 
 !!! Note
-    Both the camera reader and NFC detector are active by default when opening the Code Reader. You can toggle either sensor off in the scanner interface to conserve battery life.
+    The camera reader and NFC detector are active by default when opening the Code Reader.
+    Toggle either sensor off inside the scanner interface to conserve battery power.
 
-## Go to coordinate
+## Go to Coordinate
 
-!!! Workflow
-
-    1. Enter the coordinates directly into the search bar using `Latitude, Longitude` format (WGS84) or coordinates matching the project's Coordinate Reference System (CRS).
-    2. Tap on the coordinate in the results list.
-    QField will automatically center the map canvas on that location.
-
-## Go to spatial bookmark
+Navigate directly to coordinates using the search bar.
 
 !!! Workflow
+    1. Enter coordinates into the search bar in `Latitude, Longitude` format (WGS84) or coordinates matching the project CRS.
+    2. Tap the coordinate result in the search list.
+    QField automatically centers the map canvas on the specified location.
 
-    1. Type 'b' to filter for the bookmark section.
-    2. Enter the name for your required bookmark in the search bar.
-    3. Tap on the desired matching bookmark result.
-    QField will automatically re-center and zoom to the map canvas and to the saved extent.
+## Go to Spatial Bookmark
 
-## Expression calculator
-
-The search bar doubles as an expression calculator.
+Locate and navigate to spatial bookmarks.
 
 !!! Workflow
+    1. Type `b ` into the search bar to filter for spatial bookmarks.
+    2. Enter the name of your bookmark.
+    3. Tap the target bookmark result.
+    QField automatically pans and zooms the map canvas to the saved bookmark extent.
 
-    1. Start your query with an `= ` sign to evaluate expressions (e.g., `= 20 + 5` or `= $area` for QGIS expressions).
-    The calculated result will appear in the list and can be tapped to copy the value to the clipboard.
+## Expression Calculator
 
-Pro-tip: use the aggregate() expression function to calculate statistics against vector layers. For example, calculating the total area covered by a polygon layers
-can be done by typing `*= aggregate('my_layer','sum', $area)*`.
+The search bar functions as a QGIS expression calculator.
 
-## Configure vector layers search in QGIS
+!!! Workflow
+    1. Prefix your query with `= ` to evaluate expressions (such as `= 20 + 5` or `= $area`).
+    2. Tap the calculated result in the list to copy the value to the clipboard.
+
+!!! Tip
+    Use the `aggregate()` expression function to calculate statistics across vector layers.
+    For example, calculate the total area of a polygon layer by typing `= aggregate('my_layer', 'sum', $area)`.
+
+## Configure Vector Layers Search in QGIS
 :material-monitor: Desktop preparation
 
-By default, all vector layers are searchable. To exclude specific layers from search queries:
+All vector layers are searchable by default.
+Exclude specific layers from search queries in QGIS project properties.
 
 !!! Workflow
-
     1. Open your project in QGIS.
-    2. Navigate to **Project** > **Properties...** > **Data Sources**.
-    3. Locate the layer capabilities table and uncheck the **Searchable** checkbox for any layers you wish to exclude.
-    [Source configuration](../project-setup/data_source_and_project_paths.md#data-source-configuration)
+    2. Navigate to _Project > Properties... > Data Sources_.
+    3. Uncheck **"Searchable"** in the layer capabilities table for layers you want to exclude.
+
+Read more in the [Data Source Configuration](../project-setup/data_source_and_project_paths.md#data-source-configuration) guide.

@@ -3,74 +3,73 @@ title: Multilingual project support
 tx_slug: documentation_how_to_multiligual_project_support
 ---
 
-# Multilingual Project Support in QField
+# Multilingual Project Support
 
-QField supports for **Project Localization**, meaning that a single QGIS project file supports multiple languages if the according configuration has been applied.
+QField supports project localization, allowing a single QGIS project file to display in multiple languages based on device settings.
 
-This allows the field staff to see the layer names, field aliases, and value maps in the device's local language without needing separate project files.
+Layer names, field aliases, value maps, and metadata display in the device's local language without duplicating QGIS project files.
 
-### How it works
+## How It Works
 
-The system relies on Qt Translation files (`.qm`) stored alongside the QGIS project.
-When QField opens a project, it checks the device's language settings.
-If a matching translation file is found, QField automatically translates the project interface.
+Project localization relies on compiled Qt Translation files (`.qm`) stored alongside QGIS project files (`.qgs` or `.qgz`).
+When QField loads a project, it detects the device or application language setting.
+If a matching translation file exists, QField translates the project interface automatically.
 
-**Example:**
+!!! Example
 
-You have a project named `Beekeeping.qgs` (in English).
+    A project file named `Beekeeping.qgs` configured with English as the source language:
 
-- **User A** has a phone with an **English** operating system.
-As a title, when opening the project the user will see "Bee Species" as a title.
-- **User B** has a phone with a **German** operating system.
-When opening the same project file (`Beekeeping.qgs`).
-QField will detect the local language, accesses the German translation file, and correspondingly displays "Bienenarten" as title instead.
+     - **English Device:** Displays layer titles as "Bee Species".
+     - **German Device:** QField detects the German system locale, loads `Beekeeping_de.qm`, and displays layer titles as "Bienenarten".
 
-### Key Features
 
-- **Automatic Language Detection:** QField respects the language defined in QField's system settings or the device's Operating System locale.
-Languages do not need to manually switched.
-- **Cleaner File Browser:** QField hides the "translated" sidecar project files (e.g., `Beekeeping_de.qgs`) from the file selector.
- Users simply select the main project file, and QField handles the translation in the background.
-- **Cloud Support:** This feature is fully compatible with QFieldCloud projects.
-- **Metadata Support:** This is supported for translating project and layer metadata (titles, abstracts, etc.), useful for identifying datasets in the field.
 
-### Setting up Multilingual Projects
+## Setting Up Multilingual Projects
 
-To enable this in QField, you must prepare your project in QGIS.
-The workflow is identical to the standard QGIS localization process.
-(for a more detailed step-by-step instructions check the following blog [QGIS speaks a lot of languages](https://www.opengis.ch/2018/09/11/qgis-speaks-a-lot-of-languages/)).
+You can prepare multilingual projects in QGIS using standard Qt translation workflows.
+For additional background, read the [OPENGIS.ch QGIS Multilingual Announcement](https://www.opengis.ch/2018/09/11/qgis-speaks-a-lot-of-languages/).
 
 !!! Workflow
+    **Step 1: Generate Translation Source Files (TS) in QGIS**
 
-    :material-monitor: QGIS Setup
+    1. Open your project in QGIS on desktop.
+    2. Navigate to _Project > Properties... > General_.
+    3. Under **Generate Translation Source File (TS)**, select your project's primary source language (e.g., English).
+    4. Click **Generate TS File**. QGIS creates a `.ts` XML file in your project directory containing all translatable strings (layer names, group names, field aliases, value relations, and metadata).
 
-    1.  Open your project in QGIS.
-    2.  Go to **Project Properties > General**.
-    3.  Under **Generate Transaction Source File (TS)**, select your project's source language (e.g., English).
-    4.  Click **Generate TS File**. This creates a `.ts` (XML) file in your project folder containing all translatable strings (Layer names, Field Aliases, Value Relations, etc.).
 
-    :material-monitor: 2. Translation
+    **Step 2: Translate Strings using Qt Linguist**
 
-    1.  Open the `.ts` file using **Qt Linguist** (standard Qt utility) or a web platform like Transifex.
-    2.  Translate the strings (e.g., source: "Beekeeper", translation: "Imker").
+    1. Open the generated `.ts` file using **Qt Linguist** or translation platforms like Transifex.
+    2. Translate source text strings into target languages (e.g., source string "Beekeeper" translated to "Imker").
 
-    :material-monitor: 3. Compilation
 
-    1.  Once translated, "Release" the file in Qt Linguist to generate a `.qm` file (binary translation file).
-    2.  **Crucial Naming Convention:** The `.qm` file must be named exactly matching your project filename with the language code appended.
-        * Project: `citybees.qgs`
-        * German Translation: `citybees_de.qm`
-        * French Translation: `citybees_fr.qm`
+    **Step 3: Compile Translation Files (QM)**
 
-    :material-monitor: 4. Transfer to QField
+    1. In Qt Linguist, select **File > Release** to compile `.ts` XML files into binary `.qm` translation files.
+    2. Name the `.qm` file to match your project filename appended with the ISO language code:
+        - Project file: `citybees.qgz`
+        - German translation file: `citybees_de.qm`
+        - French translation file: `citybees_fr.qm`
 
-    1.  Copy the `.qgs` (or `.qgz`) file and the associated `.qm` files to the device (or upload them to QFieldCloud).
 
-!!! notes
+    **Step 4: Deploy to QField or QFieldCloud**
 
-    * **Sidecar Files:** In QGIS Desktop, opening a translated project often generates a temporary file (e.g., `citybees_de.qgs`). QField is programmed to ignore these files in the browser to prevent users from opening the wrong file. Always open the source project.
-    * **Translatable Elements:**
-        * Layer Names & Group Names
-        * Field Aliases (Note: Field *Names* remain unchanged to preserve data integrity; only Aliases are translated)
-        * Value Relation Widgets (Content)
-        * Project Metadata
+    1. Store `.qm` translation files in the same directory as the main project file (`.qgs` or `.qgz`).
+    2. Transfer the project directory to your mobile device or synchronize via QFieldCloud.
+
+!!! Note
+    - **Sidecar Project Files:** Opening translated projects in QGIS Desktop may generate temporary project files (such as `citybees_de.qgs`). QField hides these sidecar project files in the project selector to prevent opening incomplete projects. Always open the primary project file.
+    - **Translatable Elements:**
+        - Layer and group names
+        - Field aliases (Field *Names* remain unchanged to maintain database integrity)
+        - Value Relation and Value Map widget displays
+        - Project and layer metadata
+
+## Key Features
+
+- **Automatic Language Detection:** Respects QField application language settings or device OS system locales without manual switching.
+- **Clean File Selection:** Hides generated sidecar translation project files (such as `Beekeeping_de.qgs`) from the file selector screen.
+Users select the main project file (`Beekeeping.qgs`), and QField handles translations automatically.
+- **QFieldCloud Support:** Full compatibility with QFieldCloud projects and cloud synchronization workflows.
+- **Metadata Localization:** Translates project and layer metadata (titles, abstracts, and descriptions) for field data identification.

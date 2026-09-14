@@ -5,161 +5,124 @@ tx_slug: documentation_how-to_relation-reference-widget
 
 # Relation Reference Widget
 
-Sometimes it can be useful to relate different layers with each other when they are depending on each other or when you want to add more than one record to a feature.
+Relating layers is useful when features depend on each other or when a single feature contains multiple child records.
+For example, a building feature contains multiple apartment records, which in turn link to individual owner records.
+Use the relation reference widget to select existing child features or create new child records directly inside feature forms.
 
-!!! Example
+## Relation Configuration
 
-    *In a building there are several apartments with different owners.
-    We can create a relation between the building and the apartments and between the apartments and the owners.*
-
-In such a case we make use of the relation reference widget to be able to add new children or to select a child from the existing ones.
-
-## Relation configuration
-
-Before adding, editing or viewing the related features you have to set up a relation between the two layers.
-Here it is important that you add an id (`primary key`) field to the parent layer (`Reference Layer`) that can be  used as a `foreign key` in the child layer (`Referencing layer`).
-These fields are used for creating the link between the two layers.
-Therefore, they must be unique.
-**Note:** It is good practice to use `uuid's` as "unique ids" given they are 36 characters long and also contain non-numerical characters making them much safer to use over ordinary numerical ids.
+Before adding, editing, or viewing related features, set up a layer relation in QGIS.
+Add a primary key field to the parent layer (**"Reference Layer"**) and a corresponding foreign key field to the child layer (**"Referencing Layer"**).
+These linking fields must contain unique values.
+We recommend using UUIDs for primary key values because 36-character non-numerical strings prevent data conflicts during collaborative editing.
 
 !!! Workflow
+    **Creating a layer relation:**
 
-    **Creating the relation**
+    1. Navigate to _Project > Properties... > Relations_.
+    2. Click the green plus (**"+"**) icon to add a new relation.
+    3. Select your reference layer, referenced layer, and linking attribute fields.
+    Refer to the [QGIS Relations Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#many-to-many-n-m-relations) for additional details. <!-- markdown-link-check-disable-line -->
 
-    1. Direct to *Project* > *Properties* > *Relations*
-    2. Press the green plus to add a new relation
-    3. Set your *Reference* and your *Referenced* Layer in addition to the corresponding fields that will be used for the linking.
-    For more details please refer to the [official QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#many-to-many-n-m-relations) <!-- markdown-link-check-disable-line -->
+!!! Workflow
+    **Configuring the parent layer attribute form:**
 
-    **Attribute Form Configuration - Reference Layer**
-
-    1. Direct to the *Layer Properties* > *Attribute Form*
-    2. Find your `reference field`, set the widget type to UIID generator and set a default value to *uuid('WithoutBraces')
-    3. Find your relation under the "Relations Section" and add it to the form layout
-    4. Set the *Cardinality* to *"Many to one relation"*
-    5. Under the widget you can define whether children can be:
-        - linked
-        - unlinked
-        - edited
-        - added
-        - duplicated
-        - deleted
-        - zoomed into
-    6. (Optional) If you want to filter your children further, you can use additional "expressions".
-    7. Once finished click "ok"
+    1. Navigate to _Vector Layer Properties... > Attribute Form_.
+    2. Select your primary key field, set **"Widget Type"** to **"UUID Generator"**, and set the default value to `uuid('WithoutBraces')`.
+    3. Drag your relation from the **"Relations"** section into the form layout.
+    4. Set **"Cardinality"** to **"Many to one relation"**.
+    5. Configure child feature capabilities (such as linking, unlinking, editing, adding, duplicating, deleting, or zooming).
+    6. (Optional) Configure filter expressions to restrict displayed child features.
+    7. Click **"OK"**.
 
     !![](../../assets/images/relation_editor_widget_list.png)
 
-    **Attribute Form Configuration - Referencing Layer**
+!!! Workflow
+    **Configuring the child layer attribute form:**
 
-    1. Direct to the *Layer Properties* > *Attribute Form*
-    2. Configure your attribute form with the wanted fields.
-    3. (Optional): Under *Display* you can set the appearance of how the children will be displayed
+    1. Navigate to _Vector Layer Properties... > Attribute Form_.
+    2. Configure required attribute fields and widget types.
+    3. (Optional) Customize display expressions under _Vector Layer Properties... > Display_.
 
+## Maximum Number of Visible Children
 
+Limit the number of visible child features displayed in relation widgets to simplify forms.
 
-
-## Maximum number of visible children
-
-It is possible to limit the number of available children for your related layer if you are not interested in all items.
-
-- **Default Number of visible children:** 4 children
-- **Unlimited:** Empty
+- **Default visible children:** `4` items
+- **Unlimited visible children:** Leave the setting empty.
 
 !!! Workflow
-
-    1. Direct to Vector Layer *Properties...* > *QField*.
-    2. Under "Relationship Settings" set the "Maximum number of items visible".
+    1. Navigate to _Vector Layer Properties... > QField_.
+    2. Set **"Maximum number of items visible"** under **"Relationship Settings"**.
 
     !![Maximum items visible for relation](../../assets/images/setting-maximum-items-visible-in-relation.png)
 
     !![QField Visible items](../../assets/images/maximum-items-visible-in-relation.png,300px)
 
-## Many-To-Many relations
+## Many-To-Many Relations
 
-In the case of many-to-many relations you will need a linking table, which commonly is also termed as a "pivot table".
-In the official [QGIS documentation](http://docs.qgis.org/3.40/en/docs/user_manual/working_with_vector/joins_relations.html#many-to-many-n-m-relations) you will find a detailed description on how to establish these more complex relations.
+Many-to-many ($N:M$) relations require a linking pivot table.
+Refer to the [QGIS Many-To-Many Relations Documentation](http://docs.qgis.org/3.40/en/docs/user_manual/working_with_vector/joins_relations.html#many-to-many-n-m-relations) to set up pivot table relations.
 
 ## Ordered Relation
 
-If required you can reorder linked child features based on a field by selecting the **Ordered Relation Editor** from the widget type options.
-To enable this functionality, however, you require a second plugin [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) <!-- markdown-link-check-disable-line -->
+Reorder linked child features based on a specific attribute field using the **Ordered Relation Editor** widget.
+This functionality requires installing the [Ordered Relation Editor QGIS Plugin](https://github.com/opengisch/qgis-ordered-relation-editor). <!-- markdown-link-check-disable-line -->
 
 !!! Workflow
-
-    1. Install the Plugin [Ordered Relation Editor](https://github.com/opengisch/qgis-ordered-relation-editor) plugin from the official repository or through the "Plugin Manager" in QGIS.
-
-    2. Open the Vector Layer *Properties...* > *Attributes Form* and set the layout editor to **Drag and Drop Designer**.
-
-    3. Click on the relationship of your available widgets.
-
-    4. Direct to *Properties* > *Attribute Form* and find your relation under the relationship section.
-
-    5. On the right under "Widget Display" scroll down to the "Widget Type option and  select **Ordered Relation Editor**.
-
-    6. Configure the widget using the following settings:
-
-         - **Ordering Field**: Specify the field in the child layer that will be used to determine the order of the features.
-
-         - **Description**: Define an expression to be displayed for each child feature in the list.
-
-         - **Image Path (Optional)**: Provide a path to an image or icon to visually enhance the list. This is an expression that resolves dynamically.
+    1. Install the **"Ordered Relation Editor"** plugin from the QGIS plugin repository.
+    2. Navigate to _Vector Layer Properties... > Attribute Form_ and select **"Drag and Drop Designer"**.
+    3. Select your relation element in the form layout.
+    4. Under **"Widget Display"**, set **"Widget Type"** to **"Ordered Relation Editor"**.
+    5. Configure widget properties:
+        - **"Ordering Field":** Select the attribute column in the child layer determining feature order.
+        - **"Description":** Define an expression to display formatted labels for child features.
+        - **"Image Path":** (Optional) Define an expression resolving to an image or icon path.
 
     !![Widget configuration in QGIS](../../assets/images/ordered_relation_widget_configuration.png)
 
     !![QField](../../assets/images/ordered_relation_widget.webp,400px)
 
-## Custom name in Relation reference widget
+## Custom Name in Relation Reference Widget
 
-Define the *Display Name* expression for the concerned layers,
-this will be used to display the name in the relations.
-You can configure your preferred display name under Vector Layer *Properties...* > *Display*
+Define **"Display Expression"** rules for parent and child layers to customize feature names in relation lists.
+Configure display expressions by navigating to _Vector Layer Properties... > Display_.
 
 !![Configuration in QGIS](../../assets/images/display_name_configuration.png)
-!![QField](../../assets/images/display_name_qfield.png)
 
+!![QField](../../assets/images/display_name_qfield.png)
 
 ## Gallery Relation Editor
 
-QField automatically upgrades the standard relation editor widget to a **Gallery Relation Editor** for any parent-child relationship where the child layer is set to the *Attachment*  widget.
+QField automatically upgrades standard relation editor widgets to a **Gallery Relation Editor** when the child layer contains an **Attachment** widget.
+This provides a visual media gallery for browsing and managing related photos, videos, and audio recordings directly within the parent feature form.
 
-This provides a highly visual, media-centric experience for browsing and managing related photos, videos, and audios directly from the parent feature's form.
+Key features include:
 
-**Key Features:**
-
-- **Grid and List Views:** Toggle between a large-thumbnail grid view (perfect for browsing photos) and a compact list view using the switch at the bottom of the widget.
-
+- **Grid and List Views:** Toggle between thumbnail grid layouts and compact list views using the switch at the bottom of the widget.
 - **Dynamic Media Previews:**
-    - *Images:* Displayed as thumbnails.
-    - *Videos:* Automatically play a muted, short preview.
-    Tapping the thumbnail allows you to play/pause the video.
-    - *Audio:* Generates a real-time, dynamic audio waveform bar preview based on the actual audio file's peaks.
 
-- **On-Demand Downloads:** If an attachment is not stored locally on your device,
-    QField will display a loading indicator and automatically attempt to fetch the file from QFieldCloud or your configured External Storage (e.g., WebDAV).
-    Ensure your device has an active internet connection if your project relies on remote external storage.
+    - **Images:** Displayed as image thumbnails.
+    - **Videos:** Automatically play muted video previews (tap thumbnails to play or pause).
+    - **Audio:** Displays dynamic audio waveform previews based on recorded audio file peaks.
+    - **On-Demand Downloads:** Fetches un-downloaded media automatically from QFieldCloud or WebDAV storage when an active internet connection exists.
+    - **Interacting with Media:** Tap media card backgrounds to open child feature forms, or tap the three-dotted menu *(⋮)* to access attribute actions.
 
-- **Interacting with Media:** Tap on any media card's background to open the standard feature form for that specific child record, or tap the three-dot menu *(⋮)* to access specific actions like copying attributes.
-
-**Multi-Attachment Project creation Notes:**
-
-If you create a project from QField directly to digitize your notes (with "Take image and video attachments"), QField automatically creates an attachments field that links to a child layer.
-These are related through a unique UUID.
-When you then open a note in QField, you can add and browse multiple photos, videos, or audio recordings attached to a single note.
+Creating a project directly in QField with attachment support automatically links notes to a child layer using UUID primary keys.
+Opening a note allows adding and browsing multiple attached photos, videos, or audio recordings.
 
 !!! Workflow
-
-    **Configuring the Gallery Editor in QGIS**
+    **Configuring the Gallery Relation Editor in QGIS:**
 
     :material-monitor: Desktop preparation
 
-    The Gallery Relation Editor does not require a specific "Gallery" widget type in QGIS.
-    Instead, it is automatically triggered based on your form setup.
+    The Gallery Relation Editor activates automatically based on your form layout without requiring a specific widget selection.
 
-    1. Open your project in QGIS and set up a standard 1:N relationship between a parent layer and a child layer.
-    2. Open the child layer's **Properties** > **Attributes Form**.
-    3. Ensure at least one field in the child layer is configured as an **Attachment** widget type.
-    4. Open the parent layer's **Properties** > **Attributes Form** and add the relation to the form layout.
+    1. Open your project in QGIS and set up a standard 1:N relationship between parent and child layers.
+    2. Navigate to _Vector Layer Properties... > Attribute Form_ for the child layer.
+    3. Set at least one field in the child layer to **"Attachment"**.
+    4. Navigate to _Vector Layer Properties... > Attribute Form_ for the parent layer and drag the relation into the form layout.
 
-    When opening the parent form in QField, the relation will automatically render as the interactive media gallery.
+    Opening parent feature forms in QField automatically renders the relation as an interactive media gallery.
+
     !![Photo Gallery](../../assets/images/widget_gallery.png,600px)
