@@ -14,12 +14,12 @@ Configure geofenced boundaries in QGIS using QFieldSync.
 
 !!! Workflow
     1. In QGIS, navigate to _Project > Properties... > QField_.
-    2. Enable the **"Geofencing"** option.
+    2. Enable the **Geofencing** option.
     3. Select the polygon vector layer to use as a geofence boundary.
     4. Select a geofencing behavior:
-        - **"Alert users when inside an area":** Displays an alert notification whenever a user enters a defined geofence polygon.
-        - **"Alert users when outside all areas":** Displays an alert notification whenever a user exits defined geofence polygons.
-        - **"Inform users when entering and leaving areas":** Displays notifications whenever a user enters or exits defined geofence polygons.
+        - **Alert users when inside an area":** Displays an alert notification whenever a user enters a defined geofence polygon.
+        - **Alert users when outside all areas":** Displays an alert notification whenever a user exits defined geofence polygons.
+        - **Inform users when entering and leaving areas":** Displays notifications whenever a user enters or exits defined geofence polygons.
     5. (Optional) Enable options to prohibit adding new features inside or outside the selected geofence area.
 
 !![](../../assets/images/geofencing-settings.png)

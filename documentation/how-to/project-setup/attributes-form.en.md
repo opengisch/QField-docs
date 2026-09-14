@@ -45,16 +45,16 @@ For other attribute widget types not yet supported, consider [sponsoring an impl
 
 Configure general form options in QGIS under _Vector Layer Properties... > Attribute Form_:
 
-- **"Drag and drop designer":** Organize form layouts using containers such as tabs and groups.
+- **Drag and drop designer":** Organize form layouts using containers such as tabs and groups.
 Incorporate conditional visibility rules and default values to enhance form interactivity.
 Read more in the [QGIS Drag and Drop Designer Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu). <!-- markdown-link-check-disable-line -->
-- **"Hide attribute form upon":** Suppress feature forms by changing settings from **"Show form on Add Feature"** to **"Suppress attribute form"**.
+- **Hide attribute form upon":** Suppress feature forms by changing settings from **Show form on Add Feature** to **Suppress attribute form**.
 When adding new features in QField, attribute forms will not display.
 Ensure all layer constraints are met automatically when suppressing attribute forms.
-- **"Editable":** Toggle whether an attribute field is editable in the widget display settings.
-- **"Remember last values":** Preserves previously entered attribute values for newly created features.
+- **Editable":** Toggle whether an attribute field is editable in the widget display settings.
+- **Remember last values":** Preserves previously entered attribute values for newly created features.
 While QGIS applies this rule globally when enabled, QField provides interactive controls to toggle this option on or off during data collection.
-- **"Default values":** Pre-fills attribute fields using QGIS expressions.
+- **Default values":** Pre-fills attribute fields using QGIS expressions.
 QField supports positioning variables (such as [GNSS variables](../../reference/expression_variables.md#positioning-and-gnss-variables)) and [QFieldCloud variables](../../reference/expression_variables.md#qfieldcloud).
 
 !![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
@@ -62,7 +62,7 @@ QField supports positioning variables (such as [GNSS variables](../../reference/
 
 ## Feature Form Wizard Mode
 
-QField supports **"Wizard Mode"** for feature forms containing multiple root tabs.
+QField supports **Wizard Mode** for feature forms containing multiple root tabs.
 When enabled, forms transform into a step-by-step, linear sequence.
 
 Wizard Mode provides a guided workflow for field workers filling out complex forms, enforcing data constraints sequentially across form pages.
@@ -73,14 +73,14 @@ Wizard Mode provides a guided workflow for field workers filling out complex for
 ### Configuring Wizard Mode
 :material-monitor: Desktop preparation
 
-Organize your feature form into tabs using the **"Drag and drop designer"** in QGIS before enabling Wizard Mode.
+Organize your feature form into tabs using the **Drag and drop designer** in QGIS before enabling Wizard Mode.
 
 !![](../../assets/images/attribute_form_adding_tabs.png)
 
 !!! Workflow
     1. Open your project in QGIS.
     2. Navigate to _Project > Properties... > QField_ or click the settings icon in the QFieldSync panel.
-    3. Enable **"Enable QField feature forms' wizard mode"**.
+    3. Enable **Enable QField feature forms' wizard mode**.
     4. Save your project and synchronize it to QFieldCloud.
 
 !![](../../assets/images/qfieldsync_enable_form_wizard.png)
@@ -106,10 +106,10 @@ Indicators turn red when hard constraints fail and yellow or orange when soft co
 
 **Saving the Feature:**
 
-Wizard Mode hides the top-right **"Save"** button.
+Wizard Mode hides the top-right **Save** button.
 
-- On the final form page, the **"Next page"** button transforms into a **"Save"** button.
-- Tapping **"Save"** evaluates form constraints one last time, commits the feature, and displays a confirmation message ("Changes saved").
+- On the final form page, the **Next page** button transforms into a **Save** button.
+- Tapping **Save** evaluates form constraints one last time, commits the feature, and displays a confirmation message ("Changes saved").
 
 ![type:video](../../assets/videos/qfield_form_wizard.mp4)
 
@@ -126,7 +126,7 @@ Control automatic transitions from button interface displays to scrollable lists
 
 !!! Workflow
     1. Navigate to _Vector Layer Properties... > QField_.
-    2. Under **"Feature Form Settings"**, enable the option and set the maximum item threshold to trigger toggle button interfaces.
+    2. Under **Feature Form Settings**, enable the option and set the maximum item threshold to trigger toggle button interfaces.
 
 !![QField Value Map Editor as List](../../assets/images/qfield-value-map-editor-list.png,300px)
 
@@ -135,7 +135,7 @@ Control automatic transitions from button interface displays to scrollable lists
 ## Attachment Widget
 :material-monitor: Desktop preparation
 
-The **"Attachment"** widget stores file paths for feature media and documents.
+The **Attachment** widget stores file paths for feature media and documents.
 
 Use the Attachment widget to:
 
@@ -163,7 +163,7 @@ QField displays the default media button configured in QGIS inside the attribute
 Copy media subdirectories when synchronizing projects manually.
 
 QField displays file names for document attachments by default.
-Enabling the **"Hyperlink"** option on Attachment widgets displays file paths as external hyperlinks.
+Enabling the **Hyperlink** option on Attachment widgets displays file paths as external hyperlinks.
 
 !![](../../assets/images/hyperlink_option.png)
 
@@ -175,14 +175,14 @@ By default, QField saves photos to `DCIM`, audio recordings to `audio`, and vide
 
 !!! Workflow
     1. Navigate to _Vector Layer Properties... > QField_.
-    2. Configure attachment file naming expressions under **"Attachments Settings"**.
+    2. Configure attachment file naming expressions under **Attachments Settings**.
 
 !![Paths](../../assets/images/paths-saving-media.png)
 
 ## Value Relation Widget
 :material-monitor: Desktop preparation
 
-The **"Value Relation"** widget displays values from a related layer in a combobox or toggle button layout.
+The **Value Relation** widget displays values from a related layer in a combobox or toggle button layout.
 
 The Value Relation widget supports toggle button interfaces similar to Value Map widgets.
 
@@ -204,7 +204,7 @@ When grouped, QField displays the widget as a list regardless of toggle button s
 
 !!! Workflow
     1. Select the attribute column used to organize items into groups.
-    2. (Optional) Enable **"Display group name"** to display group titles as distinct section headers.
+    2. (Optional) Enable **Display group name** to display group titles as distinct section headers.
 
 !![First configuration](../../assets/images/grouping_value_relations_widget_qgis_setting_001.png)
 
@@ -218,8 +218,8 @@ When grouped, QField displays the widget as a list regardless of toggle button s
 
 !!! Workflow
     1. Navigate to _Vector Layer Properties... > Attribute Form_.
-    2. Set the widget type to **"Value Relation"**.
-    3. Enable **"Use completer"**.
+    2. Set the widget type to **Value Relation**.
+    3. Enable **Use completer**.
 
 !![Enable auto-complete within QGIS](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
 
@@ -253,15 +253,15 @@ Use expressions to change background colors, text colors, and font styles based 
 
 !!! Workflow
     1. Open your project in QGIS.
-    2. Right-click your vector layer in the Layers panel, select **"Open Attribute Table"**, and click **"Conditional Formatting"**.
-    3. Switch to the **"Full row"** tab at the top of the Conditional Formatting panel.
-    4. Click **"New Rule"**.
+    2. Right-click your vector layer in the Layers panel, select **Open Attribute Table**, and click **Conditional Formatting**.
+    3. Switch to the **Full row** tab at the top of the Conditional Formatting panel.
+    4. Click **New Rule**.
     5. Enter an evaluation expression (such as `"status" IS 'Good'`).
     6. Configure visual formatting options:
         - **Background color**
         - **Text color**
         - **Font styles** (Italic, Underline, Strikeout)
-    7. Click **"Done"** to save the rule.
+    7. Click **Done** to save the rule.
     8. Save your QGIS project and synchronize it to QField.
 
 !![](../../assets/images/row_conditional_formatting_qgis.png)
@@ -301,7 +301,7 @@ Default values remain editable in the form unless fields are locked.
 !![Configuration of a formatted date as default value](../../assets/images/default_value_configuration.png)
 
 !!! Attention
-    Avoid enabling **"Apply default value on update"** for primary key fields.
+    Avoid enabling **Apply default value on update** for primary key fields.
 
 ## Working with Expressions
 

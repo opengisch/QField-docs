@@ -12,7 +12,7 @@ Use the relation reference widget to select existing child features or create ne
 ## Relation Configuration
 
 Before adding, editing, or viewing related features, set up a layer relation in QGIS.
-Add a primary key field to the parent layer (**"Reference Layer"**) and a corresponding foreign key field to the child layer (**"Referencing Layer"**).
+Add a primary key field to the parent layer (**Reference Layer**) and a corresponding foreign key field to the child layer (**Referencing Layer**).
 These linking fields must contain unique values.
 We recommend using UUIDs for primary key values because 36-character non-numerical strings prevent data conflicts during collaborative editing.
 
@@ -20,7 +20,7 @@ We recommend using UUIDs for primary key values because 36-character non-numeric
     **Creating a layer relation:**
 
     1. Navigate to _Project > Properties... > Relations_.
-    2. Click the green plus (**"+"**) icon to add a new relation.
+    2. Click the green plus (**+**) icon to add a new relation.
     3. Select your reference layer, referenced layer, and linking attribute fields.
     Refer to the [QGIS Relations Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#many-to-many-n-m-relations) for additional details. <!-- markdown-link-check-disable-line -->
 
@@ -28,12 +28,12 @@ We recommend using UUIDs for primary key values because 36-character non-numeric
     **Configuring the parent layer attribute form:**
 
     1. Navigate to _Vector Layer Properties... > Attribute Form_.
-    2. Select your primary key field, set **"Widget Type"** to **"UUID Generator"**, and set the default value to `uuid('WithoutBraces')`.
-    3. Drag your relation from the **"Relations"** section into the form layout.
-    4. Set **"Cardinality"** to **"Many to one relation"**.
+    2. Select your primary key field, set **Widget Type** to **UUID Generator**, and set the default value to `uuid('WithoutBraces')`.
+    3. Drag your relation from the **Relations** section into the form layout.
+    4. Set **Cardinality** to **Many to one relation**.
     5. Configure child feature capabilities (such as linking, unlinking, editing, adding, duplicating, deleting, or zooming).
     6. (Optional) Configure filter expressions to restrict displayed child features.
-    7. Click **"OK"**.
+    7. Click **OK**.
 
     !![](../../assets/images/relation_editor_widget_list.png)
 
@@ -53,7 +53,7 @@ Limit the number of visible child features displayed in relation widgets to simp
 
 !!! Workflow
     1. Navigate to _Vector Layer Properties... > QField_.
-    2. Set **"Maximum number of items visible"** under **"Relationship Settings"**.
+    2. Set **Maximum number of items visible** under **Relationship Settings**.
 
     !![Maximum items visible for relation](../../assets/images/setting-maximum-items-visible-in-relation.png)
 
@@ -70,14 +70,14 @@ Reorder linked child features based on a specific attribute field using the **Or
 This functionality requires installing the [Ordered Relation Editor QGIS Plugin](https://github.com/opengisch/qgis-ordered-relation-editor). <!-- markdown-link-check-disable-line -->
 
 !!! Workflow
-    1. Install the **"Ordered Relation Editor"** plugin from the QGIS plugin repository.
-    2. Navigate to _Vector Layer Properties... > Attribute Form_ and select **"Drag and Drop Designer"**.
+    1. Install the **Ordered Relation Editor** plugin from the QGIS plugin repository.
+    2. Navigate to _Vector Layer Properties... > Attribute Form_ and select **Drag and Drop Designer**.
     3. Select your relation element in the form layout.
-    4. Under **"Widget Display"**, set **"Widget Type"** to **"Ordered Relation Editor"**.
+    4. Under **Widget Display**, set **Widget Type** to **Ordered Relation Editor**.
     5. Configure widget properties:
-        - **"Ordering Field":** Select the attribute column in the child layer determining feature order.
-        - **"Description":** Define an expression to display formatted labels for child features.
-        - **"Image Path":** (Optional) Define an expression resolving to an image or icon path.
+        - **Ordering Field":** Select the attribute column in the child layer determining feature order.
+        - **Description":** Define an expression to display formatted labels for child features.
+        - **Image Path":** (Optional) Define an expression resolving to an image or icon path.
 
     !![Widget configuration in QGIS](../../assets/images/ordered_relation_widget_configuration.png)
 
@@ -85,7 +85,7 @@ This functionality requires installing the [Ordered Relation Editor QGIS Plugin]
 
 ## Custom Name in Relation Reference Widget
 
-Define **"Display Expression"** rules for parent and child layers to customize feature names in relation lists.
+Define **Display Expression** rules for parent and child layers to customize feature names in relation lists.
 Configure display expressions by navigating to _Vector Layer Properties... > Display_.
 
 !![Configuration in QGIS](../../assets/images/display_name_configuration.png)
@@ -120,7 +120,7 @@ Opening a note allows adding and browsing multiple attached photos, videos, or a
 
     1. Open your project in QGIS and set up a standard 1:N relationship between parent and child layers.
     2. Navigate to _Vector Layer Properties... > Attribute Form_ for the child layer.
-    3. Set at least one field in the child layer to **"Attachment"**.
+    3. Set at least one field in the child layer to **Attachment**.
     4. Navigate to _Vector Layer Properties... > Attribute Form_ for the parent layer and drag the relation into the form layout.
 
     Opening parent feature forms in QField automatically renders the relation as an interactive media gallery.

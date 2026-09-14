@@ -22,11 +22,11 @@ Hide layer attributes or lookup tables during field data collection by configuri
 
     Configure layer capabilities using the following options:
 
-    - **"Identifiable":** Unchecking this option prevents features in the layer from being identified in QGIS and QField.
-    - **"Read-Only":** Checking this option prevents adding, editing, or deleting features in the layer.
-    - **"Searchable":** Checking this option includes layer attributes in search bar queries and expression evaluations.
-    - **"Required":** Checking this option keeps the layer visible and prevents users from toggling its visibility on the map canvas.
-    - **"Private":** Checking this option hides the layer from the project legend and layer tree.
+    - **Identifiable":** Unchecking this option prevents features in the layer from being identified in QGIS and QField.
+    - **Read-Only":** Checking this option prevents adding, editing, or deleting features in the layer.
+    - **Searchable":** Checking this option includes layer attributes in search bar queries and expression evaluations.
+    - **Required":** Checking this option keeps the layer visible and prevents users from toggling its visibility on the map canvas.
+    - **Private":** Checking this option hides the layer from the project legend and layer tree.
 
 ## Relative Project Path
 
@@ -37,7 +37,7 @@ To manually transfer and synchronize your QGIS project to QField or another clie
     :material-monitor: Desktop preparation
 
     1. Navigate to _Project > Properties... > General_.
-    2. Ensure **"Save paths"** is set to **"Relative"**.
+    2. Ensure **Save paths** is set to **Relative**.
     3. Ensure all required dataset files are located in the same directory as the QGIS project file or within subdirectories.
 
 !![Project Properties - Relative Project Path](../../assets/images/relative_project_path.png)

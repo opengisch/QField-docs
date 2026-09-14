@@ -19,7 +19,7 @@ Search for features across all project layers or restrict searches to the active
 Filter queries down to specific attribute fields.
 
 !!! Workflow
-    1. Tap the **"Search"** button in the top-right corner of the map canvas to expand the search bar.
+    1. Tap the **Search** button in the top-right corner of the map canvas to expand the search bar.
     2. Enter your search query into the search bar.
 
 ### Vector Layers Search
@@ -45,13 +45,13 @@ Matching attribute names and values are highlighted in the search results list.
 Use the QField Code Reader to search for features by scanning physical codes or selecting stored images.
 
 !!! Workflow
-    1. Tap **"Scan code"** inside the search bar to open the Code Reader interface.
+    1. Tap **Scan code** inside the search bar to open the Code Reader interface.
     2. Scan or decode a code using one of two methods:
         - **Live Camera / NFC:** Point the camera at a physical QR code or barcode, or hold an NFC text tag near the mobile device.
             !![](../../assets/images/search-bar-code-reader-1-scanning.png, 300px)
-        - **Image File from Gallery:** Tap the **"Gallery"** icon on the bottom control bar and select a photo containing a QR code or barcode.
+        - **Image File from Gallery:** Tap the **Gallery** icon on the bottom control bar and select a photo containing a QR code or barcode.
             !![](../../assets/images/code_reader_from_gallery.png, 300px)
-    3. Tap the checkmark (**"✔"**) button after decoding a code to execute the search query.
+    3. Tap the checkmark (**✔**) button after decoding a code to execute the search query.
 
 Matching features display in the results list:
 
@@ -108,6 +108,6 @@ Exclude specific layers from search queries in QGIS project properties.
 !!! Workflow
     1. Open your project in QGIS.
     2. Navigate to _Project > Properties... > Data Sources_.
-    3. Uncheck **"Searchable"** in the layer capabilities table for layers you want to exclude.
+    3. Uncheck **Searchable** in the layer capabilities table for layers you want to exclude.
 
 Read more in the [Data Source Configuration](../project-setup/data_source_and_project_paths.md#data-source-configuration) guide.

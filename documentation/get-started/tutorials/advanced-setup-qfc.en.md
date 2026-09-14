@@ -157,7 +157,7 @@ When enabled, the following files can only be modified or uploaded by a user wit
 ## Handling Conflicts
 
 When working in a collaborative environment with multiple users accessing the same project, two users might modify the same feature during fieldwork.
-In your project settings page, choose whether QFieldCloud applies the **"last wins"** policy or flags conflicts for project managers to resolve manually.
+In your project settings page, choose whether QFieldCloud applies the **last wins** policy or flags conflicts for project managers to resolve manually.
 
 !![](../../assets/images/qfc-advanced-settings-overwrite-conflicts.png)
 
@@ -197,7 +197,7 @@ You only receive notifications for actions initiated by other organization membe
 We recommend using the **Optimized Packager** over the deprecated **QGIS Core Offline Editing** packager for all projects.
 
 !!! Explanation
-    Unlike the **"GIS Core Offline Editing** packager, the **"ptimized Packager"* consolidates filtered layers originating from the same data source into a single offline layer.
+    Unlike the **GIS Core Offline Editing** packager, the **Optimized Packager** consolidates filtered layers originating from the same data source into a single offline layer.
     This preserves distinct symbologies while using less storage.
     For example, if you set multiple filters on your project layers, older packagers downloaded the entire layer multiple times before applying filters locally.
     With the **Optimized Packager**, filters are applied during the server packaging job, reducing download sizes.
