@@ -4,61 +4,35 @@ long_title: Get started with QField and QFieldCloud
 tx_slug: documentation_get-started_index
 ---
 
-# Get started with QField and QFieldCloud
+# Get started
 
-## QField
+Follow these steps to go from a QGIS project to collecting data in the field with QField.
 
-### What is it?
+## 1. Install QField
 
-QField is an open-source application that allows painless fieldwork and synchronisation with your local QGIS projects.
-You can use it both in online and offline settings, link to external databases or work with simple geospatial formats.
-Once your QGIS project is ready for fieldwork it needs to be "packaged" with the [QFieldSync Plugin](../get-started/tutorials/get-started-qfs.md).
-There are several ways in which you can get access to the project in QField on your mobile device.
-### Installation
+Download QField for your device from the [homepage](/) — available for Android, iOS, Windows, macOS and Linux.
 
-=== ":material-android: Android"
+## 2. Prepare your project in QGIS
 
-    [![Get QField on Google Play](../assets/images/Get_it_on_Google_play.png)](
-    https://play.google.com/store/apps/details?id=ch.opengis.qfield)
+Install the [QFieldSync plugin](tutorials/get-started-qfs.md) in QGIS and use it to "package" your project so it can be opened in QField.
 
-=== ":material-apple: iOS"
+## 3. Get your project onto your device
 
-    QField can be found on the App Store.
+Choose how you want to transfer the packaged project:
 
-    [![Get QField on App Store](../assets/images/app-store.png)](
-    https://apps.apple.com/app/qfield-for-qgis/id1531726814)
+- **Cable / local transfer**: copy the package directly to your device, as described in the [QFieldSync tutorial](tutorials/get-started-qfs.md).
+- **QFieldCloud**: [register for QFieldCloud](https://app.qfield.cloud/accounts/signup/) and follow the [QFieldCloud tutorial](tutorials/get-started-qfc.md) to sync your project automatically between your team and your devices.
 
-=== ":material-microsoft-windows: Windows"
+## 4. Collect data in the field
 
-    QField can be found on Microsoft Store.
+Open the project in QField to start browsing and digitizing data. See [Principles](concepts.md) to understand how QField's modes and workflow are designed.
 
-    [![Get QField on Microsoft Store](../assets/images/microsoft-store.png)](
-    https://apps.microsoft.com/detail/xp99h3bcx4bw7f)
+## 5. Sync your data back
 
-=== ":material-linux: Linux"
+Bring your changes back to your desktop project — over cable, or automatically if you used QFieldCloud.
 
-    Download the latest <a href="https://qfield.org/get_latest/?platform=linux" target="_blank">Linux
-    version</a> (x64 64-bit).
+## Next steps
 
-=== ":material-apple: MacOS"
-
-    Download the latest <a href="https://qfield.org/get_latest/?platform=macos" target="_blank">MacOS
-    version</a> (Universal).
-
-
-QField is available for Android and iOS devices and can also be accessed on the Desktop (Windows, macOS and Linux).
-Use QField for optimised data collection outside in any place on earth.
-Its optimized user interface exposes the full power of [QGIS](https://qgis.org) through an easy-to-use front-end.
-
-## QFieldCloud
-
-[QFieldCloud](https://qfield.cloud) allows you to seamlessly integrate your team's fieldwork.
-It is a cloud-based service and with its unique technology it will allow your team to focus on what's important, making sure you efficiently get the best field data possible.
-
-
-Thanks to the tight integration with QField, your team will be able to start surveying and digitizing data in no time.
-
-[Register Now :material-cloud-outline:](https://app.qfield.cloud/accounts/signup/){ .md-button }
-
-
-## How to read the documentation
+- [Sample projects](sample-projects.md) to try QField hands-on
+- [Frequently asked questions](faq.md)
+- [Get support](help.md)
