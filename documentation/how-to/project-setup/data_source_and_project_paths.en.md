@@ -3,24 +3,26 @@ title: Data Source and project paths
 tx_slug: documentation_how-to_hiding-legend-nodes
 ---
 
-# Data Source & Project Paths
+# Data Source  & project paths
+:material-monitor: Project Manager
 
 Save and store projects and layers using multiple methods and formats.
 Save all project-related data in the same directory as your QGIS project file unless using [Shared Datasets](../../how-to/advanced-how-tos/shared-datasets.md).
 When working with projects containing many lookup tables, hide specific layers from field collectors to streamline the user experience.
 
 ## Data Source Configuration
+:material-monitor: Project Manager
 
 Hide layer attributes or lookup tables during field data collection by configuring layer capabilities.
 
 !!! Workflow
-    :material-monitor: Desktop preparation
 
     1. In QGIS, navigate to _Project > Properties... > Data Sources_.
 
     !![Configuring Layers Data Sources](../../assets/images/hiding-legend-nodes.png)
 
-    Configure layer capabilities using the following options:
+## Relative Project path
+:material-monitor: Project Manager
 
     - **"Identifiable":** Unchecking this option prevents features in the layer from being identified in QGIS and QField.
     - **"Read-Only":** Checking this option prevents adding, editing, or deleting features in the layer.
@@ -34,11 +36,11 @@ Set all file paths for datasets and attachments to relative to make your project
 To manually transfer and synchronize your QGIS project to QField or another client, use relative file paths for your QGIS project file (`.qgs` or `.qgz`).
 
 !!! Workflow
-    :material-monitor: Desktop preparation
 
-    1. Navigate to _Project > Properties... > General_.
-    2. Ensure **"Save paths"** is set to **"Relative"**.
-    3. Ensure all required dataset files are located in the same directory as the QGIS project file or within subdirectories.
+    1. Direct to *Project* > *Properties* > *General*
+    2. Insure that the  *Save paths* is set to *Relative*
+    !![Project Properties - Relative Project Path](../../assets/images/relative_project_path.png)
+    3. Insure also that all required data files are in the same folder as the QGIS project or in a subfolder.
 
 !![Project Properties - Relative Project Path](../../assets/images/relative_project_path.png)
 
