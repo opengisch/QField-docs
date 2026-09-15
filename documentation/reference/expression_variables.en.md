@@ -10,10 +10,11 @@ These include not only all the expression variables available in QGIS but also a
 
 ## QFieldCloud
 
-For QFieldCloud users, two expression variables can be used in forms or default values:
+For QFieldCloud users, three expression variables can be used in forms or default values:
 
 - `@cloud_username` - Returns the name of the currently logged-in QFieldCloud user.
 - `@cloud_useremail` - Returns the email address of the currently logged-in QFieldCloud user.
+- `@cloud_team` - Returns the name of the Team to which the user belongs within the organization.
 
 ## Positioning and GNSS Variables
 
