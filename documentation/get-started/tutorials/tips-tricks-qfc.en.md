@@ -23,12 +23,12 @@ When multiple users collect data offline simultaneously, standard auto-increment
 
 - **For Relations:** Create a specific text field (e.g., `survey_uuid`) and use `uuid()` or `uuid('WithoutBraces')` as the default value.
 Use this field for all foreign keys and for the primary key if the layer originates from PostgreSQL/PostGIS.
-- **For the `fid` (Feature ID):** When working with GeoPackages, reduce conflicts on the internal `fid` integer column by setting the **"Default Value"** to the expression `epoch(now())`.
+- **For the `fid` (Feature ID):** When working with GeoPackages, reduce conflicts on the internal `fid` integer column by setting the **Default Value** to the expression `epoch(now())`.
 This generates a unique integer based on the current timestamp.
 
 !!! Tip
-    To set this up, navigate to _Layer Properties > Attributes Form_, select the `fid` field, and set **"Default Value"** to `epoch(now())`.
-    Ensure **"Apply default value on update"** is unchecked so the ID remains constant after creation.
+    To set this up, navigate to _Layer Properties > Attributes Form_, select the `fid` field, and set **Default Value** to `epoch(now())`.
+    Ensure **Apply default value on update** is unchecked so the ID remains constant after creation.
 
 ### 3. Relative Paths
 
@@ -36,7 +36,7 @@ Absolute paths (e.g., `C:\Users\{username}\Downloads\photo_001.jpg`) break when 
 
 !!! Workflow
     1. Navigate to _Project > Properties... > General_.
-    2. Set **"Save paths"** to **"Relative"**.
+    2. Set **Save paths** to **Relative**.
 
 ### 4. Stable Layer References in Expressions
 
@@ -54,11 +54,11 @@ While QField and QFieldCloud support other formats like Shapefiles (`.shp`), Geo
 !!! Workflow
     1. In QGIS, right-click your layer in the layer tree.
     2. Select _Export > Save Features As..._.
-    3. Set **"Format"** to **"GeoPackage"**.
-    4. Click **"..."** next to **"File name"** and navigate to your project folder.
+    3. Set **Format** to **GeoPackage**.
+    4. Click **...** next to **File name** and navigate to your project folder.
     5. Enter a database name (e.g., `notes_points.gpkg`).
-    6. In **"Layer name"**, enter a simple layer name (e.g., `notes_points`).
-    7. Click **"OK"**.
+    6. In **Layer name**, enter a simple layer name (e.g., `notes_points`).
+    7. Click **OK**.
     8. Remove the old layer from your project once the new layer loads.
 
 ### 6. Modular File Structure
@@ -76,7 +76,7 @@ If you experience synchronization issues, check for these common configuration e
 
 | Issue | Cause | Solution |
 | :--- | :--- | :--- |
-| **Missing Images** | Paths are set to "Absolute" | Navigate to _Project > Properties... > General_ and set paths to **"Relative"**. |
+| **Missing Images** | Paths are set to "Absolute" | Navigate to _Project > Properties... > General_ and set paths to **Relative**. |
 | **Sync Failures** | Data is outside the project folder | Move all `.gpkg` and raster files into the same folder as the project file (`.qgz/.qgs`). |
 | **Expression Errors** | Layer ID used in expression | Update expressions to use `'Layer Name'` instead of `'Layer_ID_123'`. |
 | **Duplicate Keys** | Using default 1, 2, 3 IDs | Implement `uuid()` or `epoch(now())` for unique identification. |
@@ -89,7 +89,7 @@ This feature is useful when working with many photos without needing all attachm
 !!! Workflow
     1. Select your project on the QFieldCloud landing page.
     2. Navigate to _Settings_.
-    3. Enable the **"On demand attachment files download"** option.
+    3. Enable the **On demand attachment files download** option.
 
 !![](../../assets/images/activating_on_demand_attachments_download.png)
 
@@ -108,7 +108,7 @@ Configure this remote functionality in the project settings.
 
 !!! Workflow
     1. Navigate to _Project > Properties... > QField > QFieldCloud Packaging_.
-    2. Enable the **"Automatically push pending changes on the following interval"** option and establish your preferred interval.
+    2. Enable the **Automatically push pending changes on the following interval** option and establish your preferred interval.
 
 !![Auto push QFieldSync](../../assets/images/auto-push-pending-changes-qfieldsync.png)
 
@@ -137,7 +137,7 @@ Project administrators can restrict access to these files in QFieldCloud.
     :material-monitor: Desktop preparation
 
     1. Navigate to _Settings_ on the QFieldCloud homepage.
-    2. Enable the **"Restrict project files"** option.
+    2. Enable the **Restrict project files** option.
 
 !![](../../assets/images/restric_qfc_project_files.png)
 
@@ -155,18 +155,18 @@ When enabled, only users with **Admin** or **Manager** roles can modify or uploa
 ### Deleting Old File Versions
 
 Reduce the number of stored file versions to free up account storage space.
-Manually delete file versions from the project **"Files"** section.
+Manually delete file versions from the project **Files** section.
 Each file version links to the user who uploaded it.
 
 !!! Workflow
-    1. Navigate to the **"Files"** section of your project.
+    1. Navigate to the **Files** section of your project.
     2. Locate the file containing versions you want to delete.
     3. Click the three-dotted menu *(⋮)* on the right side of the file name.
     4. Review the list of versions for that file.
     5. Click the red trash bin icon next to the version you want to delete.
         ![Deleting project files](../../assets/images/files_versions_for_deleting.png)
     6. Confirm the deletion when prompted.
-        Optionally, enable **"Also delete `n` version(s) older than the selected version"** to remove all older versions.
+        Optionally, enable **Also delete `n` version(s) older than the selected version** to remove all older versions.
         ![](../../assets/images/files_versions_deletion_confirmation.png)
     7. A confirmation message displays, and the list updates to show remaining file versions.
         ![](../../assets/images/files_versions_deletion_popup_listing_files.png)

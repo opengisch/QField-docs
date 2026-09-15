@@ -20,7 +20,7 @@ Configure temporal settings on vector layers in QGIS before exporting projects t
 
 !!! Workflow
     1. In QGIS, navigate to _Vector Layer Properties... > Temporal_.
-    2. Enable **"Dynamic Temporal Control"**.
+    2. Enable **Dynamic Temporal Control**.
         !![QGIS Dynamic Temporal Control settings](../../assets/images/temporal_filter_qgis.png)
     3. Select your preferred temporal configuration mode (such as single field datetime, separate start/end date fields, or event duration).
     Read more in the [QGIS Vector Layer Temporal Properties Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#temporal-properties). <!-- markdown-link-check-disable-line -->

@@ -38,7 +38,7 @@ Before getting started, familiarize yourself with the [basic concepts](../tutori
 ### Filtering Projects
 :material-monitor: Project Manager
 
-When managing a large number of cloud projects, you can refine your project list using the **"Filters"** dropdown button located next to the search bar.
+When managing a large number of cloud projects, you can refine your project list using the **Filters** dropdown button located next to the search bar.
 
 !![](../../assets/images/qfc_web_project_filters.png, 800px)
 

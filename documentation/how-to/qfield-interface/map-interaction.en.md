@@ -16,25 +16,25 @@ Double-tap or long-press a layer in the legend to display the layer options menu
 
 !![](../../assets/images/howto_legendoptions.png)
 
-- **"Expand legend item":** Toggles the visibility of layer sub-items.
-- **"Show on map":** Controls layer visibility on the map canvas.
-- **"Show labels":** Controls layer label visibility.
-- **"Opacity Slider":** Adjusts layer transparency.
-- **"Zoom to layer":** Zooms the map canvas to the full extent of the layer.
-- **"Reload icon":** Fetches the latest data for remote layer data sources.
-- **"Show feature list":** Displays all layer features in the feature list.
-- **"Setup tracking":** Configures feature tracking mode for the layer.
+- **Expand legend item":** Toggles the visibility of layer sub-items.
+- **Show on map":** Controls layer visibility on the map canvas.
+- **Show labels":** Controls layer label visibility.
+- **Opacity Slider":** Adjusts layer transparency.
+- **Zoom to layer":** Zooms the map canvas to the full extent of the layer.
+- **Reload icon":** Fetches the latest data for remote layer data sources.
+- **Show feature list":** Displays all layer features in the feature list.
+- **Setup tracking":** Configures feature tracking mode for the layer.
 
 ## Sort Layer Features
 :material-monitor: Desktop preparation
 
-Configure the feature display order for the **"Show feature list"** view in QGIS using two methods:
+Configure the feature display order for the **Show feature list** view in QGIS using two methods:
 
-- Right-click any column header in the attribute table and select **"Sort..."** to enter custom sorting expressions.
+- Right-click any column header in the attribute table and select **Sort...** to enter custom sorting expressions.
 
 !![](../../assets/images/accesing-sort-feature-list-op1.png)
 
-- In attribute form view, click the expression button at the top of the feature list and select **"Sort..."**.
+- In attribute form view, click the expression button at the top of the feature list and select **Sort...**.
 
 !![](../../assets/images/accesing-sort-feature-list-op2.png)
 
@@ -71,7 +71,7 @@ Exclude background layers or basemaps from identification queries to simplify ma
 
 !!! Workflow
     1. In QGIS, navigate to _Project > Properties... > Data Sources_.
-    2. Uncheck background layers under the **"Identifiable"** column to disable map queries for those layers.
+    2. Uncheck background layers under the **Identifiable** column to disable map queries for those layers.
 
 ## 3D Map View Interactions
 :material-tablet: Fieldwork

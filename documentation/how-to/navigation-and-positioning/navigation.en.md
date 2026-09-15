@@ -23,11 +23,11 @@ To cancel navigation, long-press the positioning button on the side toolbar or t
 
 Set navigation destinations using four methods:
 
-- **Map Context Menu:** Long-press a location on the map canvas and tap **"Set as Destination"**.
+- **Map Context Menu:** Long-press a location on the map canvas and tap **Set as Destination**.
     !![](../../assets/images/navigation-add-from-touch.png)
 - **Search Bar:** Enter coordinates into the search bar or search for a feature, then tap the navigation flag icon next to the result.
     !![](../../assets/images/navigation-search-bar.png)
-- **Feature Form Menu:** Open a feature attribute form, tap the three-dotted menu *(⋮)* in the title bar, and tap **"Set Feature as Destination"**.
+- **Feature Form Menu:** Open a feature attribute form, tap the three-dotted menu *(⋮)* in the title bar, and tap **Set Feature as Destination**.
     !![](../../assets/images/navigation-destination-feature-form.png)
 - **Feature Geometry Routing:** When setting a multi-vertex feature (line or polygon) as a destination, a target routing bar displays. Use left and right arrow buttons to cycle through individual vertices. Long-press arrow buttons to cycle through vertices rapidly.
     ![type:video](../../assets/videos/navigation-polygon.mp4)
@@ -36,8 +36,8 @@ Set navigation destinations using four methods:
 
 Tap or long-press the destination flag marker on the map canvas to open a pie menu:
 
-- **"Clear Destination":** Removes the active destination and cancels navigation.
-- **"Always Show Precise View":** Toggles whether the precise stakeout target dial remains visible continuously.
+- **Clear Destination":** Removes the active destination and cancels navigation.
+- **Always Show Precise View":** Toggles whether the precise stakeout target dial remains visible continuously.
 
 ![type:video](../../assets/videos/navigation-precise-view.webm)
 
@@ -90,9 +90,9 @@ Configure precision thresholds and audio feedback options in the navigation pane
 
 Configure the following options:
 
-- **"Audio proximity feedback":** Toggles acoustic proximity pings on or off.
-- **"Rotate view":** Controls dynamic rotation of the precision dial canvas. When disabled, the dial locks to a static North-Up orientation.
-- **"Rotation source":** Selects sensor input for dial rotation:
+- **Audio proximity feedback":** Toggles acoustic proximity pings on or off.
+- **Rotate view":** Controls dynamic rotation of the precision dial canvas. When disabled, the dial locks to a static North-Up orientation.
+- **Rotation source":** Selects sensor input for dial rotation:
     - **Compass:** Rotates the dial dynamically using internal magnetic compass hardware.
     - **Movement:** Rotates the dial using GNSS movement heading calculations. Movement calculations activate at speeds above 0.8 km/h to filter out stationary position jitter.
 - **Precision picker:** Selects the target distance precision threshold.

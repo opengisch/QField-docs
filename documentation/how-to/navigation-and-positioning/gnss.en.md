@@ -30,11 +30,11 @@ When positioning is active, QField displays your current location in blue on the
 
 ## Configuration
 
-Configure positioning parameters in QField settings under the **"Positioning"** tab.
+Configure positioning parameters in QField settings under the **Positioning** tab.
 
 !!! Workflow
     1. Open the **Side Dashboard** and tap the gear icon to open **Settings**.
-    2. Switch to the **"Positioning"** tab.
+    2. Switch to the **Positioning** tab.
 
 ### Enable NTRIP Corrections
 
@@ -88,7 +88,7 @@ Positioning quality displays using color-coded indicators (red for bad, yellow f
 Set accuracy thresholds in positioning settings.
 
 !!! Note
-    When **"Enable accuracy requirement"** is active, QField blocks digitizing vertices locked to GNSS positioning while accuracy indicators are red.
+    When **Enable accuracy requirement** is active, QField blocks digitizing vertices locked to GNSS positioning while accuracy indicators are red.
 
 ### Antenna Height Compensation
 
@@ -101,8 +101,8 @@ Correct ellipsoidal heights to orthometric elevations using vertical grid shift 
 
 Place vertical grid shift files in the  QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
 
-Once installed, select the file under **"Vertical grid shift in use"** in positioning settings.
-When using vertical grid shifts with external receivers, disable **"Use orthometric altitude from device"**.
+Once installed, select the file under **Vertical grid shift in use** in positioning settings.
+When using vertical grid shifts with external receivers, disable **Use orthometric altitude from device**.
 
 Supported grid shift file formats include:
 
@@ -144,11 +144,11 @@ Supported grid shift file formats include:
     1. Copy `chgeo2004_htrans_LV95.gtx` into `[App Directory]/QField/proj` on your mobile device.
     2. Open the **Side Dashboard** and navigate to _Settings > Positioning_.
         !![](../../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
-    3. Select your grid file under **"Vertical grid shift in use"**.
+    3. Select your grid file under **Vertical grid shift in use**.
     4. Enable positioning.
     5. Switch to digitize mode and tap the GNSS crosshair button to lock location.
         ![type:video](../../assets/videos/gnss_use.mp4)
-    6. Long-press the **GNSS button** and toggle **"Show position information"** to inspect reprojected coordinates, altitude, and precision values.
+    6. Long-press the **GNSS button** and toggle **Show position information** to inspect reprojected coordinates, altitude, and precision values.
         !![](../../assets/images/positioning-menu.png,700px)
 
 !!! Note
@@ -191,7 +191,7 @@ Create a dedicated vertex log layer to record metadata for every digitized point
 !!! Workflow
     1. Add a point vector layer to your QGIS project with attribute fields configured for positioning variables.
         !![](../../assets/images/vertex_log1.png)
-    2. Assign the **"digitizing logger"** role to the layer under _Project > Properties... > QField_.
+    2. Assign the **digitizing logger** role to the layer under _Project > Properties... > QField_.
         !![](../../assets/images/vertex_log2.png)
     3. Assign default expressions to log fields using `@position_*` variables.
 
@@ -200,7 +200,7 @@ Create a dedicated vertex log layer to record metadata for every digitized point
 
 QField supports external GNSS receivers over Bluetooth, TCP, UDP, and serial connections.
 
-Manage and switch between positioning devices in the **"Positioning"** settings menu.
+Manage and switch between positioning devices in the **Positioning** settings menu.
 
 !![](../../assets/images/saved-gnss-devices.png)
 
@@ -219,7 +219,7 @@ Supported NMEA sentences include GGA, RMC, GSA, GSV, GST, VTG, HDG, and HDT.
 
 ### External Receiver Logging
 
-When connected to an external receiver, enable **"Log NMEA sentences from device to file"** to log raw NMEA sentences.
+When connected to an external receiver, enable **Log NMEA sentences from device to file** to log raw NMEA sentences.
 Logs save to **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/logs**..
 
 !![](../../assets/images/external_receiver_log.png,250px)
@@ -240,7 +240,7 @@ QField supports averaged positioning to calculate vertex locations across multip
 
 !!! Workflow
     1. Open the **Side Dashboard** and navigate to _Settings > Positioning_.
-    2. Configure **"Averaged positioning minimum count"**.
+    2. Configure **Averaged positioning minimum count**.
         !![](../../assets/images/positioning_averaged_set.png,280px)
     3. Lock the coordinate cursor to your current position.
     4. Press and hold the **Add Vertex** button to begin averaging samples.

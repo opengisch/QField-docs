@@ -18,9 +18,9 @@ Configure an attribute field to open driving directions to feature coordinates i
 !!! Workflow
     1. Open your project in QGIS and add a text attribute field (such as `routing_url`) to your vector layer.
     2. Navigate to _Vector Layer Properties... > Attribute Form_.
-    3. Select your routing attribute field and set **"Widget Type"** to **"Attachment"**.
-    4. Enable **"Display a hyperlink for document path (read-only)"**.
-    5. Set **"Default Value"** to the following navigation directions expression:
+    3. Select your routing attribute field and set **Widget Type** to **Attachment**.
+    4. Enable **Display a hyperlink for document path (read-only)**.
+    5. Set **Default Value** to the following navigation directions expression:
 
         ```sql
         concat(
@@ -32,7 +32,7 @@ Configure an attribute field to open driving directions to feature coordinates i
         )
         ```
 
-    6. (Optional) Enable **"Apply default value on update"** to recalculate routing links automatically when feature geometries change.
+    6. (Optional) Enable **Apply default value on update** to recalculate routing links automatically when feature geometries change.
 
 ### Feature Location Preview
 
@@ -40,7 +40,7 @@ Configure an attribute field to open and highlight feature coordinates on extern
 
 !!! Workflow
     1. Follow steps 1–4 from the navigation directions workflow above.
-    2. Set **"Default Value"** to the following location preview expression:
+    2. Set **Default Value** to the following location preview expression:
 
         ```sql
         concat(
@@ -52,7 +52,7 @@ Configure an attribute field to open and highlight feature coordinates on extern
         )
         ```
 
-    3. (Optional) Enable **"Apply default value on update"**.
+    3. (Optional) Enable **Apply default value on update**.
 
 ## Accessing External Navigation in QField
 :material-tablet: Fieldwork
