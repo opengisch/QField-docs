@@ -5,107 +5,99 @@ tx_slug: documentation_how-to_3d-map-view
 
 # 3D Map View
 
-QField allows you to view your spatial data in 3D.
-By utilizing elevation data, map layers are draped as textures over the 3D surface, providing enhanced spatial context for navigation.
-The 3D view also utilizes Eye Dome Lighting (depth shading) to enhance the visual perception of ridges, valleys, and terrain features.
+QField displays spatial data in 3D by draping map layers as textures over terrain surfaces.
+The 3D view uses Eye Dome Lighting (depth shading) to enhance visual perception of terrain features, ridges, and valleys.
 
 ## Configuring Elevation Data
 
-There are two ways QField handles 3D elevation data, ranging from an automatic online layer to a fully offline custom model:
+QField processes 3D elevation data using two methods:
 
-- A default online DEM (injected automatically by QField)
-- A custom Digital Elevation Model (DEM) bundled with your QGIS project
+- **Online DEM:** Default elevation service fetched automatically over mobile networks.
+- **Custom DEM:** Offline Digital Elevation Model raster dataset configured within your QGIS project.
 
 ### Option 1: Online DEM
 :material-tablet: Fieldwork
 
-If no custom elevation data is configured in your QGIS project, QField will automatically attempt to use a global online DEM to generate the 3D view on the fly.
+If no custom elevation data is configured in your QGIS project, QField attempts to fetch a global online DEM to generate 3D terrain on the fly.
 
-!!! note
+!!! Note
+    Constraints for using the automatic online DEM:
 
-    **Important Constraints for the Online DEM:**
-
-      - **CRS Requirement:** For this automatic online DEM to function correctly, your QGIS project's Coordinate Reference System (CRS) **must** be set to a non-degree projection (for example, Pseudo-Mercator EPSG:3857, or UTM projections).
-      - **Connectivity:** Your mobile device must have an active internet connection while in the field to load the terrain tiles.
+    - **CRS Requirement:** Project Coordinate Reference Systems (CRS) must use projected unit measurements (such as Pseudo-Mercator EPSG:3857 or UTM projections) rather than geographic degree units.
+    - **Connectivity:** Mobile devices require an active internet connection to download online terrain tiles.
 
 ### Option 2: Custom DEM
 :material-monitor: Desktop preparation
 
-For offline fieldwork and the highest accuracy,
-you should configure your own elevation data directly within the [QGIS project](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#elevation-properties).<!-- markdown-link-check-disable-line -->
+Configure custom elevation data directly in QGIS for offline fieldwork and high-accuracy terrain rendering.
+Read more in the [QGIS Elevation Properties Documentation](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#elevation-properties). <!-- markdown-link-check-disable-line -->
 
 !!! Workflow
     1. Open your project in QGIS.
-    2. From the main menu, select Project > Properties
-    3. In the Project Properties dialog box, select the Terrain tab.
-    4. Here, you can select your Terrain type:
-        1. Flat terrain (default): Assumes an elevation of 0m for all layers.
-        2. DEM (Raster Layer): Allows you to select an existing raster layer (like a GeoTIFF) in your project to serve as the elevation source for the entire project.
+    2. Navigate to _Project > Properties... > Terrain_.
+    3. Select your terrain source:
+        - **Flat terrain:** Assumes a flat 0 m elevation baseline across all map layers.
+        - **DEM (Raster Layer):** Selects a raster layer (such as a GeoTIFF) inside your project as the terrain elevation model.
 
 ## Navigating the 3D View
 :material-tablet: Fieldwork
 
-QField allows for interactive extent manipulation when viewing data in the 3D view.
-You can actively pan and zoom directly within the 3D mode rather than relying on a static, locked extent.
+QField supports interactive panning and zooming within the 3D map canvas.
 
-Depending on your device, you can interact with the 3D extent in the following ways:
+Navigate 3D map extents using touch or mouse controls:
 
 **Touch Interactions:**
 
-- **Extent Mode Toggle:** Once you have enabled the 3D mode, it will originally give you the 3D extent that your 2D map extent was on.
-This can be changed when you tap the *4-arrowed* toggle button to change the map extent.
-Once it is activated, you can pan the map extent by dragging your fingers, or zooming in and out by pinching your fingers.
-- **Center on Location:** If you have GNSS (GPS) positioning active, you can tap on your blue location marker directly in the 3D scene to instantly snap and center the camera on your current physical location.
+- **Extent Mode Toggle:** Tap the four-arrow toggle icon to switch map extent control modes.
+When active, drag with one finger to pan the 3D map canvas, or pinch two fingers to zoom in and out.
+- **Center on Location:** Tap your blue positioning marker in 3D space to snap and center the camera over your current GNSS location.
 
 **Mouse Interactions:**
 
-- **Pan Extent:** Hold the `Shift` key and drag the mouse to move the 3D map extent geographically. The 3D mesh translates in real-time for visual feedback.
-- **Zoom Extent:** Hold the `Shift` key and use the mouse scroll wheel to scale the map extent in or out around its center point.
+- **Pan Extent:** Hold the `Shift` key and drag the mouse to pan the 3D map extent.
+- **Zoom Extent:** Hold the `Shift` key and scroll the mouse wheel to zoom in or out around the center point.
 
 ## Identifying and Highlighting Features
 :material-tablet: Fieldwork
 
-QField natively supports direct feature identification and selection highlighting inside the 3D map workspace, removing the need to switch back to the flat 2D canvas to inspect attributes or select records.
+QField supports direct feature identification and selection highlighting inside the 3D map workspace without returning to 2D view.
 
 ### Feature Identification
 
-You can **single-tap anywhere directly on the 3D terrain** to query data.
-QField will automatically cast a ray onto the 3D surface, resolve the matching geographic coordinates, and open the standard identification tool menu. From there, you can view feature properties, execute modifications, or edit attributes on nearby points of interest seamlessly.
+Tap anywhere on the 3D terrain canvas to query vector data.
+QField projects a ray onto the 3D surface, resolves intersecting feature coordinates, and opens the identification menu to view or edit feature attributes.
 
 ### Selection and Highlight Geometry
 
-When features are queried or selected, QField highlight to your project layers' geometries using specific 3D shapes:
+When features are identified or selected, QField renders 3D highlight geometries over project features:
 
-* **Points:** Rendered as a distinct 3D UV sphere resting over the coordinate position.
-* **Lines:** Extruded into smooth 3D tubes connected by dimensional sphere joints.
-* **Polygons:** Outlined using 3D extruded tubes along the boundary rings, capped with sphere joints,
-    and layered with a semi-transparent horizontal fill mesh for instant boundary recognition.
+- **Points:** Rendered as 3D UV spheres resting over coordinate positions.
+- **Lines:** Extruded into 3D tubes connected by spherical joints.
+- **Polygons:** Outlined with 3D extruded tubes along boundary rings and filled with semi-transparent horizontal mesh planes.
 
 ### Color Feedback Coding
-The 3D highlights alter dynamically based on your current focus and operation state inside the feature menu list:
 
-* **Yellow Highlight:** Standard status highlighting an identified or previewed geometry list entry.
-* **Red Highlight:** Highlights the specific feature that currently holds active UI focus.
-* **Theme Main Color:** Applied to geometries when they are explicitly marked as selected features.
+3D feature highlights adjust color based on interaction states:
+
+- **Yellow Highlight:** Identifies previewed feature list entries.
+- **Red Highlight:** Displays features holding active UI focus in the identification list.
+- **Theme Primary Color:** Highlights features explicitly added to multi-selection lists.
 
 !![](../../assets/images/3d_feature_identification.png, 350px)
 
-## Visualizing GNSS, Tracking
+## Visualizing GNSS and Tracking
 :material-tablet: Fieldwork
 
-The 3D Map View is fully integrated with your active fieldwork tools:
+The 3D map view integrates with active positioning tools:
 
-- **GNSS Location:** When positioning is active, your location is represented as a pulsating 3D marker draped on the terrain.
-    If you are moving, this marker transforms into a directional indicator pointing in your current heading.
-- **Tracking:** If you are actively recording a tracking path, the tracking line is dynamically rendered as a 3D tube following the contours of the terrain.
+- **GNSS Location:** Displays your live position as a pulsating 3D marker draped on terrain surfaces. When moving, the marker transforms into a directional heading arrow.
+- **Tracking:** Active tracking paths render dynamically as 3D tubes conforming to terrain contours.
 
-These elements automatically conform to the 3D terrain's elevation and include visual height offsets,
-ensuring your location, tracks, remain visible and accurately placed within the 3D environment.
+Position markers and track lines adjust automatically to 3D terrain elevations with visual height offsets to prevent terrain clipping.
 
 ## 2D and 3D Extent Synchronization
 
-When you enter or close the 3D view, QField plays a smooth camera animation to transition between the flat 2D canvas and the pitched 3D perspective.
-QField automatically updates the 2D map's bounding box to match your newly navigated 3D extent.
-This ensures your view remains perfectly synchronized between modes.
+Transitioning into or out of 3D view triggers camera animations between flat 2D perspective and pitched 3D views.
+QField updates the 2D map bounding box automatically to match navigated 3D extents, maintaining view synchronization across display modes.
 
 ![type:video](../../assets/videos/3D_Map_View.mp4)

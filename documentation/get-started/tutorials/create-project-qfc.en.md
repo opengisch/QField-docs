@@ -20,47 +20,49 @@ You can create empty map spaces or simple localized maps directly from QFieldClo
 
 !!! Workflow
 
-    1. Direct to your QFieldCloud landing page.
+    1. Navigate to your QFieldCloud landing page.
     2. Click the **Create project** button.
 
         !![](../../assets/images/project_organization_01_landing_page.png)
 
-    3. Set the project name, descriptive details (optional), visibility scope (public or private),
-        conflict resolution parameters, and project file safety restrictions.
-    4. Pick your initialization template configuration:
+    3. Set the project name, optional descriptive details, visibility scope (public or private), conflict resolution parameters, and project file safety restrictions.
+    4. Select your **Project type**:
+
+        - **Regular:** Standard project used for field data collection and synchronization.
+        - **Template:** Master project designed to be cloned by field teams
+        **Note: **field Synchronization and repackaging are disabled on templates to prevent accidental edits.
+
+    5. Select your initialization template configuration:
 
         - **Create an empty project:** Sets up a clean project folder environment without a basemap.
-        - **Use a template:** Allows you add a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL) and select your project extend via a bounding box tapping on the **Project extent map window**.
+        - **Use a template:** Allows you to add a built-in background layer (OpenStreetMap Standard by default, or a custom tile server URL) and select your project extent via a bounding box by tapping on the **Project extent** map window.
 
         ![Template Project](../../assets/images/project_organization_03_template.png)
 
-    5. Click **Create** at the bottom right.
-    The completed skeleton will populate on your profile's project overview files.
+    6. Click **Create** at the bottom right.
+    The completed project structure populates in your profile project list.
 
 ### Option 2: Create from an XLSForm Spreadsheet (Web UI Upload)
 :material-monitor: Desktop Preparation
 
-For deployment workflows relying on spreadsheets for [form configuration](https://xlsform.org/), QFieldCloud can compile tabular data collection forms directly into complete QGIS projects containing relational data schemas.
+For deployment workflows relying on spreadsheets for [form configuration](https://xlsform.org/), QFieldCloud compiles tabular data collection forms directly into complete QGIS projects containing relational data schemas.
 
-!!! note
-
-    **Supported File Types:** QFieldCloud supports forms designed using standard tabular spreadsheet files, accepting
-    **.xls, .xlsx, .xlsb, .xlsm, and .ods** file extension validation.
+!!! Note
+    QFieldCloud supports forms designed using standard tabular spreadsheet files, accepting `.xls`, `.xlsx`, `.xlsb`, `.xlsm`, and `.ods` file extensions.
 
 !!! Workflow
 
-    1. Click on **Create project** from your QFieldCloud landing page.
+    1. Click **Create project** on your QFieldCloud landing page.
     2. Complete the project metadata fields (Name, Extent) and click **Create**.
-    3. Choose "Use a basic template" option, and locate the **XLSForm file upload input**.
-    4. Choose your spreadsheet template file and press the **Create** button.
+    3. Select the **Use a basic template** option and locate the XLSForm file upload input.
+    4. Choose your spreadsheet template file and click the **Create** button.
 
-    QFieldCloud will process the form so that you end up with a fully functioning **Survey** layer with the corresponding survey configurations (drop-down lists, radio buttons, manual text edit).
+    QFieldCloud processes the form to generate a fully functioning **Survey** layer with corresponding survey configurations (dropdown lists, radio buttons, and text fields).
     !![](../../assets/images/qfc_xlsform_project_creation.png)
 
-!!! important
-
-    If the submitted spreadsheet contains structural syntax errors or broken expression references, the background creation job will automatically safe-abort to prevent corruption.
-    The project generation status will display an `UNABLE_TO_CONTINUE` error code on the Job log, exposing the cause of error on the output logs explaining which row or element caused the compilation failure.
+!!! Important
+    If the submitted spreadsheet contains structural syntax errors or broken expression references, the background creation job automatically aborts to prevent corruption.
+    The project generation status displays an `UNABLE_TO_CONTINUE` error code on the Job log, detailing the cause of error and identifying the row or element that failed compilation.
 
 ### Option 3: Clone an Existing Project
 :material-web: Web Interface
@@ -70,6 +72,7 @@ Project cloning allows you to duplicate existing active setups to act as templat
 #### How Cloning Works
 
 Cloning creates an isolated, completely independent project space, cleanly replicating:
+
 - The base QGIS mapping project file (`.qgs` or `.qgz`).
 - All bundled offline layers and databases (GeoPackages, styles, etc.).
 - System execution policies (offline editing conflict rule settings, attachment on-demand configurations).
@@ -88,27 +91,47 @@ Cloning creates an isolated, completely independent project space, cleanly repli
 
 While cloning effectively duplicates the source project, you can override specific parameters during the creation process:
 
-- **Project Name:** You must provide a unique name for the new cloned project (e.g., `survey_zone_b`, `survey_zone_n`).
-- **Owner:** You can assign the cloned project to a different owner (e.g., a specific organization or user account), with the appropriate permissions.
-- **Extent:** By providing a new extent for the cloned project (for easy moving the zoom to the new extent zone).
+- **Project Name:** You must provide a unique name for the new cloned project (e.g., `survey_zone_b` or `survey_zone_n`).
+- **Owner:** You can assign the cloned project to a different owner (e.g., a specific organization or user account) if you have appropriate permissions.
+- **Extent:** You can specify a new extent for the cloned project to center the map zoom on the new project zone.
+
+### QFieldCloud Project Types
+
+QFieldCloud projects can be assigned one of three project types:
+
+- **Regular (`regular`):** Standard projects used for active fieldwork, data collection, and team synchronization.
+- **Template (`template`):** Master blueprint projects used to configure setups once and clone them for new survey campaigns.
+- **Shared Datasets (`shared_datasets`):** Dedicated central project hosting shared base layers and localized datasets across multiple projects.
+
+#### Template Projects Details
+
+Template projects act as read-only blueprints for field workers while remaining fully editable for administrators:
+
+- **Master Projects:** Project administrators can upload files, edit QGIS configurations, and update layers on a template project.
+- **Data Protection:** Field workers cannot push edit deltas or synchronize changes directly to a template project.
+    Attempting to do so returns an error (`operation_not_allowed_for_template_project`).
+- **Cloning Source:** Both **Regular** and **Template** project types can be used as sources for cloning new projects.
 
 ### Constraints and Limitations
 
 To ensure system stability and security, project cloning is subject to the following technical rules:
 
-- **Permissions:** You must have admin or manager role on the source project to be able to clone it.
-- **Storage availability:** The target owner account must have enough free storage available to accommodate the entire file size of the source project.
-    If the storage limit is exceeded, the clone operation will fail.
-- **Seed Configuration:** When cloning, you cannot configure new basemaps via the project seed. The seed data is strictly limited to updating the project's `extent`.
-- **Shared Datasets:** The system-level `shared_datasets` project cannot be used as a source for cloning. Attempting to clone it will raise a `NotCloneableProjectError`.
+- **Permissions:** You must have an admin or manager role on the source project to clone it.
+- **Storage Availability:** The target owner account must have enough free storage available to accommodate the entire file size of the source project.
+    If the storage limit is exceeded, the clone operation fails.
+- **Seed Configuration:** When cloning, you cannot configure new basemaps via the project seed.
+    The seed data is strictly limited to updating the project `extent`.
+- **Shared Datasets:** The system-level `shared_datasets` project cannot be used as a source for cloning.
+    Attempting to clone it raises a `NotCloneableProjectError`.
 
 ### API Usage
 
-You can easily clone projects using the QFieldCloud API. To clone a project, send a `POST` request to the `/api/v1/projects/` endpoint.
+You can easily clone projects using the QFieldCloud API.
+To clone a project, send a `POST` request to the `/api/v1/projects/` endpoint.
 Include the `clone_from_project` parameter with the UUID of the source project.
 
 ```bash
-curl --location 'https://app.qfield.cloud/api/v1/projects/' \
+curl --location '[https://app.qfield.cloud/api/v1/projects/](https://app.qfield.cloud/api/v1/projects/)' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Token {MY_TOKEN}' \
 --data '{
@@ -143,13 +166,14 @@ curl --location 'https://app.qfield.cloud/api/v1/projects/' \
 ## Option 4: Change the Ownership of a Project
 :material-web: Web Interface
 
-If you have already built a personal project on the cloud and need to transfer the ownership to a different user or organization, you can change the project ownership directly under the project's settings page.
+If you have already built a personal project on the cloud and need to transfer ownership to a different user or organization,
+you can change the project ownership directly on the project settings page.
 
 !!! Workflow
 
-    1. Open the project overview via the web page and select the **Settings** menu.
+    1. Open the project overview on the web page and select the **"Settings"** menu.
     2. Scroll to the actions zone and select **"Transfer ownership of this project"**.
-    3. Select your target organization destination from the lookup selection drop-down.
-    4. Type the requested text confirmation exactly as written into the confirmation popup dialog box and click **Transfer project**.
+    3. Select your target organization destination from the lookup dropdown menu.
+    4. Type the requested text confirmation into the confirmation popup dialog box and click **Transfer project**.
 
     ![type:video](../../assets/videos/project_creation_in_an_organisation_003.webm)

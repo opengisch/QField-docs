@@ -5,11 +5,14 @@ tx_slug: documentation_get-started_storage_qfieldcloud
 
 # QFieldCloud Plans and Additional Storage
 
-By default, when registering for QFieldCloud, you create a general user account with a free community plan.
-With the free community plan, you can work by yourself on QGIS projects and apply changes as much as you like, as long as you do not exceed the 100 MB storage limit.
-If you require more storage or want to work in a multi-user environment, you will have to upgrade to either:
+When registering for QFieldCloud, you have to create a general user account.
+By default you will get a free **Community Plan**.
+The **Community Plan** allows you to work independently on QGIS projects and sync changes up to a 100 Mb storage limit.
+If you require additional storage or multi-user collaboration, you can upgrade your plan.
 
-- A **Flat Plan** providing a fixed price per user; or
+You can choose in between
+
+- A **Flat Plan** providing a fixed price per user per month; or
 - A **Flex Plan** allowing organizations to pay per active users.
 
 The billing information necessary for both Flat and Flex plans and can be accessed through the **Billing section** under your account settings OR the organization account settings.
@@ -46,31 +49,29 @@ To upgrade to an **organization plan**, follow these steps:
     10. Under the summary page, verify your current subscription and upcoming payment.
     Add your billing details and click on **Pay** to activate your plan.
 
-### **Active Users under Organization Plans**
+### Active Users Under Flex Plans
 
-Under the **Flex Plan**, at least one user must be in an organization and will be seen as active by default.
-Depending on your plan, the total cost per billing cycle is defined by the number of **active** users (**Flex only**).
-An "active user" corresponds to a member who has performed at least one "job" within a project belonging to the organization during an invoice cycle.
+Under the **Flex Plan**, at least one member must belong to the organization and is marked active by default.
+Total subscription costs per billing cycle depend on the number of active users during that cycle.
+An active user corresponds to any member who performs at least one server job inside an organization project during an invoice cycle.
 
-To monitor the number of active users, direct to *Organization Settings* > *Billing* > *Active users*.
+To monitor active organization users, navigate to _Organization Settings > Billing > Active users_.
 
 !![](../../assets/images/listing_qfieldcloud_active_users.png)
 
-!!! note
+!!! Note
+    A single user account can only log into one device at a time.
+    If the account `ninja_001` logs into QField on a new device, QField automatically logs out their previous session on other devices.
+    Sharing a single account across multiple devices causes synchronization errors, data loss, or data corruption.
+    Concurrent multi-device use on a single account also blocks field teams from uploading collected data to QFieldCloud.
 
-    An account can only be logged in to one device at a time.
-    For example, if the QFieldCloud username `ninja_001` logs into the QField mobile application on a new device, their previous device will automatically be logged out.
-    **Attempting to share a single account across multiple devices can cause synchronization errors, data loss, or data corruption.
-    It may also prevent users from pushing data collected in the field to the cloud.**
+    To enable multiple field workers to collaborate safely on a project, use an **Organization Plan**.
+    An **Organization Plan** allows administrators to invite unique user accounts (such as `ninja_001`, `ninja_002`, `ninja_003`) as project collaborators.
+    Administrators can manage user roles and permissions across organizations and specific projects.
 
-    To have multiple people working safely and concurrently on a project (e.g., `survey_001`), you will need an organization plan.
-    This allows you to invite different user accounts (e.g., `ninja_001`, `ninja_002`, `ninja_00n`) to collaborate. Administrators can add, remove, or change the permissions of these users within the organization and specific projects.
-
-## Modification of current subscription
-
-In QFieldCloud, you can add as much storage as desired for your projects and change the number of your preferred selected seats whenever you want.
-When modifying additional storage or seats, any increases will become effective immediately. Decreases in storage or seats will become effective (and payable) with the start of the next billing cycle.
-Additional storage can be obtained in sets of 3 GB.
+You can add additional storage packages or adjust user seats at any time in QFieldCloud.
+Subscription increases take effect immediately, while plan decreases take effect at the start of the next billing cycle.
+Additional storage is available in packages of 3 GB.
 
 !!! Workflow
 
@@ -84,26 +85,20 @@ Additional storage can be obtained in sets of 3 GB.
     4. Adjust the number of seats and the modified storage packages depending on your needs. The reflected changes to the upcoming subscription will be indicated below the current subscription with either a green (increasing seats/storage) or red (decreasing seats/storage) color.
         !![](../../assets/images/storage-qfc3.png)
 
-    !!! Note
+!!! Note
+    - Included storage corresponds to storage allocated per user seat.
+    - Additional storage is added in 3 GB packages.
+    - Increased storage and seats become available immediately.
+    - Decreased storage or seat allocations take effect during the next billing cycle.
 
-        The included storage corresponds to the storage that is associated with your number of seats.
-        The additional storage corresponds to the storage that is added in packages of 3 GB.
-        Once a subscription has been modified, the additional storage and seats will be immediately available to use.
-        Any decreased storage or number of seats will only be updated with the next billing cycle.
+## Transferring Organization Ownership
 
-## Transferring organization ownership
+Primary ownership of an organization account can be transferred to any existing member.
 
-You can transfer the primary ownership of an Organization account to another member.
-
-!!! warning
-
-    "Important Billing Considerations"
-
-    Transferring organization ownership will not affect the active status of the subscription.
-    This also applies to **the payment method (credit card details)** on the Organization billing section.
-
-    If you used a credit card to pay for the organization, the new owner must manually update the organization's payment information to replace it if necessary.
-    Removing yourself or transferring the account does not clear the saved card automatically.
+!!! Warning
+    Transferring organization ownership does not alter subscription statuses or billing payment methods.
+    Stored credit card details remain active on the organization billing page after ownership transfers.
+    The new owner must manually update the organization payment details if card details need to be replaced.
 
 !!! Workflow
 
@@ -113,35 +108,38 @@ You can transfer the primary ownership of an Organization account to another mem
     3. Change **Owner** on the **Transfer ownership of this organization** section, and select the user intended to transfer from the dropdown list.
         !![](../../assets/images/qfc_transferring_org.png)
 
-## Cancellation of a subscription
+## Canceling Subscriptions
 
-You can cancel your subscriptions at any given time.
+You can cancel subscriptions at any time.
+Personal **Pro** plans and **Organization** plans must be canceled separately.
 
 !!! Workflow
+    1. Navigate to your account settings:
 
-    1. From your <ins>Organization account's landing page</ins>, click on *Edit Organization*.
-    2. Switch to the corresponding **Billing Section**.
-    3. Click on **change** and then click on **Cancel subscription**.
+        - For **Pro Plans:** Click **Edit Profile** on your personal account landing page.
+        - For **Organization Plans:** Click **Edit Organization** on your organization landing page.
+
+    2. Navigate to the **Billing** section.
+    3. Click **Change**, then click **Cancel subscription**.
 
         ![](../../assets/images/discontinuing_service_02_change_subcription.png)
 
-    4. Confirm the cancellation in the subsequent pop-up window.
+    4. Confirm the cancellation in the popup window.
 
         ![Cancel subscription](../../assets/images/discontinuing_service_03_cancel_subscription.png)
 
-    5. A message will then appear, indicating that the subscription will conclude at the end of the current billing period.
+        <p align="center"> <img src="/assets/images/discontinuing_service_05_nyuki_message.png"> </p>
 
         ![Cancellation message](../../assets/images/discontinuing_service_05_nyuki_message.png)
 
-## Retrieving an invoice
-
-It is possible to retrieve invoices from previous months at the bottom of the billing section.
+You can access past invoices at the bottom of the billing section.
 
 !!! Workflow
+    1. Navigate to your account settings:
 
-    1. From your <ins>Organization account's landing page</ins>, click on *Edit Organization*.
-    2. Switch to the corresponding **Billing Section**.
-    3. Navigate to the bottom of the page.
-        There you will find all previous and current invoices associated with your Organization Account.
+        Click on **Edit Profile**/**Edit Organization** on your (organization) landing page.
+
+    2. Navigate to the **Billing** section.
+    3. Scroll down to the bottom of the page to view and download past or current account invoices.
 
         !![Example of Invoice](../../assets/images/qfc-storage-plans-invoice.png,400px)

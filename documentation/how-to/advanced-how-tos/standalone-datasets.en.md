@@ -3,54 +3,56 @@ title: Standalone datasets
 tx_slug: documentation_how-to_standalone-datasets
 ---
 
-# Standalone datasets
+# Standalone Datasets
 
-QField is able to directly open vector data and raster datasets without the need for a QGIS project.
+QField can open vector, raster, and point cloud datasets directly without requiring a QGIS project file.
 
-## Supported standalone dataset formats
+## Supported Standalone Dataset Formats
 
-The supported vector formats are:
+Supported vector dataset formats:
 
-- GeoPackage datasets (.gpkg);
-- GeoJSON (.geojson, .json);
-- KML (.kml, .kmz);
-- Shapefile (.shp);
-- GPS Exchange (.gpx);
-- Geography Markup Language (.gml);
-- MapInfo (.mif);
-- SpatiaLite (.db, .sqlite); and
-- FlatGeoBuf (.fgb)
+- **GeoPackage** (`.gpkg`)
+- **GeoJSON** (`.geojson`, `.json`)
+- **KML / KMZ** (`.kml`, `.kmz`)
+- **ESRI Shapefile** (`.shp`)
+- **GPS Exchange Format** (`.gpx`)
+- **Geography Markup Language** (`.gml`)
+- **MapInfo Interchange Format** (`.mif`)
+- **SpatiaLite Database** (`.db`, `.sqlite`)
+- **FlatGeobuf** (`.fgb`)
 
-The supported raster formats are:
+Supported raster dataset formats:
 
-- GeoTIFF (.tif, .tiff);
-- Geospatial PDF (.pdf);
-- JPEG2000 (.jp2);
-- JPEG (.jpg, .jpeg);
-- PNG (.png); and
-- WebP (.webp)
-- VRT (Virtual Raster) (.vrt)
+- **GeoTIFF** (`.tif`, `.tiff`)
+- **Geospatial PDF** (`.pdf`)
+- **JPEG 2000** (`.jp2`)
+- **JPEG** (`.jpg`, `.jpeg`)
+- **PNG** (`.png`)
+- **WebP** (`.webp`)
+- **Virtual Raster Header** (`.vrt`)
 
-Supported point cloud formats:
+Supported point cloud dataset formats:
 
-- LAS/LAZ (.las, .laz)
-- COPC (Cloud Optimized Point Cloud)
+- **LAS / LAZ** (`.las`, `.laz`)
+- **Cloud Optimized Point Cloud** (`.copc.laz`, `.copc.las`)
 
-!!! note
-    QField can handle several standalone datasets compressed into one ZIP archive; in this scenario, each dataset will be added as individual layers in QField.
+!!! Note
+    QField opens compressed ZIP archives containing multiple standalone datasets, adding each file as an individual map layer.
 
-## Opening an vector or raster dataset
+## Opening Vector or Raster Datasets
 :material-tablet: Fieldwork
 
-Please read the [storage access documentation](../../how-to/project-setup/storage.md) to learn more on how standalone datasets are opened on your specific device.
+Refer to the [Storage Access Documentation](../../how-to/project-setup/storage.md) for instructions on transferring and opening standalone files on mobile devices.
 
-## Using a project as "base map" for standalone datasets
+## Using a Project as a Base Map for Standalone Datasets
 :material-tablet: Fieldwork
 
-By default, the datasets will be overlaying an OpenStreetMap XYZ layer. It is however possible to customize that by selecting a project stored onto the device QField is running that will act as a base map.
+Standalone datasets display over a default OpenStreetMap XYZ tile layer.
+Set any QGIS project stored on your mobile device as a custom background base map.
 
 !!! Workflow
+    1. Open QField and navigate to the project selection screen.
+    2. Long-press the QGIS project file you want to use as a base map.
+    3. Select **"Use as Base Map"** in the context menu.
 
-     1. Direct to your project landing page.
-     2. Press long on the project you want to have as a basemap
-     !![](../../assets/images/choose_basemap.png,300px)
+!![](../../assets/images/choose_basemap.png,300px)

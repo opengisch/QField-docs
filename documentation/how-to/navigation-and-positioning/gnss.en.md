@@ -5,223 +5,164 @@ tx_slug: documentation_how-to_gnss
 
 # Positioning (GNSS)
 
-QField is capable to show your live position using several sources:
+QField displays live positioning data using several sources:
 
-- Either by using the internal GNSS (Global Navigation Satellite System, like GPS, GLONASS, Galileo or Beidou) of your mobile device (typically 5 m accuracy) or
-- Through an external antenna through NMEA streams over Bluetooth, TCP, or UDP connection. (typically 1.5 m accuracy) or
-- Through an external antenna connected to an additional NTRIP service (down to cm accuracy)
+- Internal mobile device GNSS (GPS, GLONASS, Galileo, or BeiDou), typically offering 5 m accuracy.
+- External GNSS receivers via NMEA streams over Bluetooth, TCP, UDP, or serial connections, typically offering 1.5 m accuracy.
+- External GNSS receivers with real-time NTRIP RTK corrections, providing centimeter-level accuracy.
 
 !!! Tip
-
-    Depending on your technical domain, it is advisable to make use of an external antenna, given that the known limitation of a mobile device is around 5 meters.
-    Furthermore, an external antenna is also able to measure the altitude next to the current 2D position on the earth surface.
+    Use an external GNSS antenna for high-accuracy surveying, as internal mobile GNSS hardware is limited to roughly 5 meters of accuracy.
+    External receivers also provide accurate elevation measurements alongside 2D coordinates.
 
 !!! Note
-
-    QField requires external GNSS devices to output their position in EPSG:4326.
-    Support for customized CRSes is not possible.
-    This may lead to displacements of your data, if you are not careful.
+    QField requires external GNSS devices to output positioning data in the `EPSG:4326` (WGS 84) coordinate reference system.
+    Customized device output CRSes are not supported and will cause coordinate shifts.
 
 ## Visualization
 
-When positioning is enabled, your position will be shown in blue on the map.
-Your location is represented by a blue dot when you are not moving and by an arrow indicating your movement direction if you are moving.
+When positioning is active, QField displays your current location in blue on the map canvas:
 
-The blue beam indicates the current orientation of your device if the device has a builtin magnetic compass.
-
-A shaded circle around your current position indicates the precision as reported by the GPS in use.
+- A blue dot represents your location when stationary.
+- An arrow indicates your movement direction while traveling.
+- A directional light beam indicates device compass orientation (when supported by internal magnetic compass hardware).
+- A shaded circular buffer represents reported positioning precision.
 
 ## Configuration
 
-The following settings are available in QField settings' positioning tab.
+Configure positioning parameters in QField settings under the **"Positioning"** tab.
 
 !!! Workflow
-
-    1. Open the side dashboard and click on the 3-dotted menu
-    2. Tap on settings and switch to the *Positioning* tab
+    1. Open the **Side Dashboard** and tap the gear icon to open **Settings**.
+    2. Switch to the **"Positioning"** tab.
 
 ### Enable NTRIP Corrections
 
-If you have access to an  RTK Service, QField can act as a RTK Client if you add the essential information under the settings.
+QField functions as an RTK client to process differential corrections when connected to an RTK provider over NTRIP.
 
 !!! Workflow
+    1. Enable Bluetooth on your mobile device and pair your external GNSS receiver.
+    2. In QField positioning settings, select and connect to your external receiver.
+    3. Toggle the NTRIP connection switch.
+        !![](../../assets/images/GNSS_NTRIP_configuration.png,300px)
+    4. Tap the gear icon next to the NTRIP switch and enter your RTK service credentials.
+        !![NTRIP Settings](../../assets/images/GNSS_NTRIP_configuration_settings.png,300px)
+    5. Save parameters and verify data transmission indicators (arrows display active data streaming).
+        !![RTK connected](../../assets/images/GNSS_NTRIP_configuration_inuse.png,300px)
 
-    **Connect to external GPS Device**
+### Show Position Information
 
-    1. Enable bluetooth and connect to your external GPS Device
-    2. In QField connect to that antenna by adding it to your selection of positioning devices
-    3. Once connected, toggle the switch
-    !![](../../assets/images/GNSS_NTRIP_configuration.png, 300px)
-    4. Click on the settings button next to the switch and add your NTRIP Service information
-    !![NTRIP Settings](../../assets/images/GNSS_NTRIP_configuration_settings.png, 300px)
-    5. Once added click on the arrow and ensure that the NTRIP correction is working as expected (indicated by incoming and outgoing arrows)
-    !![RTK connected](../../assets/images/GNSS_NTRIP_configuration_inuse.png, 300px)
-
-    **NOTE**: If you enable your position information in the settings you can see the established connection.
-
-
-### Show position information
-
-You can lock the crosshair to your position (meaning you will record a point or vertex exactly at your location).
-Depending on your preference you may choose between three different behaviours as indicated below:
+Lock the crosshair to your GNSS location to place vertices precisely at your position.
+Select one of three position-following modes:
 
 !![Behaviour when locked to the position](../../assets/images/position_behaviour.png, 800px)
 
-- **Follow position only:** The map canvas will stay as it is
-- **Follow position and compass orientation:** The map canvas will rotate in such a way that your compass always points towards the top of your screen
-- **Follow position and your movement direction:** The map will always rotate in the way of your movement direction
+- **Follow position only:** Centers the map canvas on your location while keeping map orientation fixed.
+- **Follow position and compass orientation:** Centers the map canvas and rotates the map so compass heading points up.
+- **Follow position and your movement direction:** Centers the map canvas and rotates the map along your travel direction.
 
 !!! Workflow
+    1. Enable positioning.
+    2. Tap the crosshair button on the map canvas to lock to your current position.
 
-     1. Turn on your positioning
-     2. Tap on the crosshair to follow your position
+### Measure (M) Value
 
-### Measure (M) value
+When digitizing features on vector layers with `M` coordinate dimensions, QField records measurement values for vertices digitized while locked to GNSS positioning.
 
-When digitizing a geometry onto a vector layer that contains an M dimension, QField will add a measurement value to individual vertices whenever the coordinate cursor is locked to the current position.
+By default, the `M` value records timestamps in milliseconds since epoch.
+Change the `M` value source in positioning settings:
 
-By default, the value will represent the captured position's timestamp (milliseconds since epoch).
-You can change this value using the combo box in the settings' positioning tab.
+- Timestamp
+- Ground speed
+- Bearing
+- Horizontal and vertical accuracy
+- PDOP, HDOP, and VDOP
 
-The available values to chose from are.
+### Accuracy Requirement
 
-- timestamp
-- ground speed
-- bearing
-- horizontal and vertical accuracy
-- PDOP, HDOP and VDOP
-
-### Accuracy requirement
-
-A minimum desired accuracy for measurements can be defined.
-The quality will be reported in three classes, bad (red), ok (yellow) and excellent (green).
-These colors will show up as a dot on top of the GNSS button.
+Set minimum accuracy thresholds for feature digitizing.
+Positioning quality displays using color-coded indicators (red for bad, yellow for ok, green for excellent) on the GNSS button.
 
 !![](../../assets/images/gnss_accuracy_threshold_status.png, 200px)
 
-The thresholds can be defined in the settings' positioning tab.
+Set accuracy thresholds in positioning settings.
 
 !!! Note
+    When **"Enable accuracy requirement"** is active, QField blocks digitizing vertices locked to GNSS positioning while accuracy indicators are red.
 
-    If the ***Enable accuracy requirement*** setting is activated, you will not be able to collect new measurements with the coordinate cursor locked to the current position with an accuracy value which is bad (red).
+### Antenna Height Compensation
 
-### Antenna height compensation
+Enter antenna pole heights in positioning settings.
+QField subtracts the antenna pole height from measured GNSS elevation values automatically.
 
-The height of the antenna pole in use can be defined in the settings.
-Any measured altitude will be corrected by this value.
+### Altitude Correction and Vertical Grid Shift
 
-### Altitude correction / vertical grid shift
+Correct ellipsoidal heights to orthometric elevations using vertical grid shift files.
 
-Altitude values can be corrected with vertical grid shift files to calculate orthometric height.
+Place vertical grid shift files in the  QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
 
-Vertical grid shift files have to be made available to QField by putting them into the QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
+Once installed, select the file under **"Vertical grid shift in use"** in positioning settings.
+When using vertical grid shifts with external receivers, disable **"Use orthometric altitude from device"**.
 
-Once the grid shift file is placed there, it is available in QField in the *Positioning settings* under *Vertical grid shift in use*.
+Supported grid shift file formats include:
 
-If you are using altitude correction and an external positioning device is used, consider turning *Use orthometric altitude from device* off.
+- GeoTIFF (`.tif`, `.tiff`)
+- NOAA Vertical Datum (`.gtx`)
+- NTv2 Datum Grid Shift (`.gsb`)
+- Natural Resources Canada Geoid (`.byn`)
 
-The formats currently supported are:
-
-- GeoTIFF (.tif, .tiff)
-- NOAA Vertical Datum (.gtx)
-- NTv2 Datum Grid Shift (.gsb)
-- Natural Resources Canada's Geoid (.byn)
+#### Example: Netherlands (ETRS89 to NAP)
 
 !!! Workflow
+    1. Download the official `nlgeo2018.gtx` grid file from the [NSGI Website](https://www.nsgi.nl/rdnaptrans). <!-- markdown-link-check-disable-line -->
+    2. Copy the `.gtx` file into `[App Directory]/QField/proj`.
 
-    **Example:  Netherlands - ETRS89 to NAP**
+#### Example: Switzerland (CH1903+ / LV95)
 
-    For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertical datum, you'll need the official grid file from NSGI.
+!!! Workflow
+    1. Download the Geoid OGD dataset from the [Swisstopo Geoid Download Page](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip). <!-- markdown-link-check-disable-line -->
+    2. Extract `chgeo2004_htrans_LV95.agr` from the downloaded archive.
+    3. Convert `.agr` to `.gtx` using QGIS:
+        - **In QGIS GUI:** Open _Processing Toolbox > GDAL > Raster conversion > Translate (Convert format)_. Select `chgeo2004_htrans_LV95.agr` as input and save as `chgeo2004_htrans_LV95.gtx`.
+            !![](../../assets/images/qgis_core_translate_convert_format.png)
+        - **Using terminal command:**
+            ```bash
+            qgis_process run gdal:translate --INPUT="/path/to/chgeo2004_htrans_LV95.agr" --OUTPUT="/path/to/chgeo2004_htrans_LV95.gtx"
+            ```
+        - **Using Python script:**
+            ```python
+            import processing
+            processing.run("gdal:translate", {
+                'INPUT': '/path/to/chgeo2004_htrans_LV95.agr',
+                'OUTPUT': '/path/to/chgeo2004_htrans_LV95.gtx'
+            })
+            ```
 
-    1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
-    2. Place the downloaded `.gtx` file into the directory **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
-    This is independent of whether you are using QFieldCloud or not.
+:material-tablet: Fieldwork
 
-    **Example: Switzerland - CH1903+/LV95**
-
-    To get precise altitude data for **Cadastral Surveying in Switzerland (LV95)**, you must use the geoid correction grid from Swisstopo.
-    The official file comes in an `.agr` format and must be converted to `.gtx` (NTv2 Grid Shift File) before it can be used.
-    Other raster formats like (.tiff) can also be used.
-
-    1. Download the "Geoid OGD" dataset from Swisstopo under the following link **Download Link**: [Geoid OGD from Swisstopo](https://cms.geo.admin.ch/ogd/geodesy/Geoid_OGD.zip)<!-- markdown-link-check-disable-line -->.
-    2. Unzip the archive to retrieve the file: `chgeo2004_htrans_LV95.agr`.
-    3. Convert the file using the using the [gdal_translate](https://gdal.org/en/stable/programs/gdal_translate.html) algorithm with one of the following options:
-
-        ***Method 1: QGIS Graphical User Interface (GUI)***
-
-        1. In QGIS, open the Processing Toolbox panel.
-        2. Navigate to *GDAL* > *Raster conversion* > *Translate (Convert format)* tool.
-        3. Configure it with your needed requirements:
-            - **Input layer**: Select your `chgeo2004_htrans_LV95.agr` file.
-            - **Output file**: Click "Save to File..." and name your output file with a `.gtx` extension (or other format needed), for example, `chgeo2004_htrans_LV95.gtx`.
-        4. Click **Run**. The other default settings are typically sufficient for this conversion.
-
-        !![](../../assets/images/qgis_core_translate_convert_format.png)
-
-        **Method 2: Command Line (`qgis_process`)**
-
-        For automation or users who prefer the command line, `qgis_process` is a great option.
-
-        1. Open your terminal and run the following command, adjusting the paths to your files.
-        ```bash
-        qgis_process run gdal:translate --INPUT="/path/to/your/chgeo2004_htrans_LV95.agr"
-            --OUTPUT="/path/to/your/chgeo2004_htrans_LV95.gtx"
-        ```
-
-        ***Method 3: PyQGIS Script***
-
-        You can also perform the conversion programmatically within the QGIS Python Console or a standalone script.
-
-        ```python
-        import processing
-
-        input_grid = '/path/to/your/chgeo2004_htrans_LV95.agr'
-        output_grid = '/path/to/your/chgeo2004_htrans_LV95.gtx'
-
-        processing.run("gdal:translate", {
-            'INPUT': input_grid,
-            'OUTPUT': output_grid
-        })
-
-        print(f"Successfully converted grid to: {output_grid}")
-        ```
-
-    :material-tablet: Fieldwork
-
-    1. Copy the `chgeo2004_htrans_LV95.gtx` file to the directory **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
-
-    2. Open the Site Dashboard
-    3. Tap on the 3-dotted menu *(⋮)* and direct to *Settings* > *Positioning*
-
+!!! Workflow
+    1. Copy `chgeo2004_htrans_LV95.gtx` into `[App Directory]/QField/proj` on your mobile device.
+    2. Open the **Side Dashboard** and navigate to _Settings > Positioning_.
         !![](../../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
-
-    4. Enable your GNSS device.
-    It will directly center to your current location once the **positioning information** is available.
-
-    5. Change to ***edit mode*** and press on the target button - the cross in the center means it is using GNSS positioning.
-
+    3. Select your grid file under **"Vertical grid shift in use"**.
+    4. Enable positioning.
+    5. Switch to digitize mode and tap the GNSS crosshair button to lock location.
         ![type:video](../../assets/videos/gnss_use.mp4)
+    6. Long-press the **GNSS button** and toggle **"Show position information"** to inspect reprojected coordinates, altitude, and precision values.
+        !![](../../assets/images/positioning-menu.png,700px)
 
-        A long press on the **GNSS button** will show the **positioning menu**.
-        Inside the menu you can turn on the **Show position information** which will show the current coordinates that are reprojected into the CRS of your project along with the precision information.
+!!! Note
+    Displaying raw WGS 84 coordinates instead of project CRS coordinates indicates that a valid GNSS fix has not yet been established.
 
-     !![](../../assets/images/positioning-menu.png,700px)
+## Positioning Variables
 
-    !!! note
-        If you see WGS 84 lat/lon information instead of information in your project CRS, you probably have no signal yet.
+Store internal and external GNSS positioning details in attribute fields using QGIS expression variables.
+Variables are commonly assigned as default values to record positioning quality metadata.
 
-## Positioning variables
+For example, record horizontal accuracy using `@position_horizontal_accuracy`.
+Refer to the [Expression Variables Reference](../../reference/expression_variables.md) for a complete list.
 
-You can get the positioning information both of your internal and external device by specifically configuring your attribute form.
-
-These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)<!-- markdown-link-check-disable-line -->
-for fields to keep track of the quality of individual measured points.
-
-A common use case is recording the horizontal accuracy, which can be done by using the variable `@position_horizontal_accuracy`.
-For a complete listing of all available variables, refer to the [expression variables reference documentation](../../reference/expression_variables.md).
-
-Information for GNSS Z value with Vertical grid shift in use:
-- *Antenna height compensation=False*
+Elevation handling based on vertical grid shift settings (with antenna compensation disabled):
 
 | Vertical Grid Shift in use | point Z Value z(geometry) | GNSS Device z(@position_coordinate) | QField Display | QField Label                |
 |----------------------------|---------------------------|--------------------------------------|----------------|-----------------------------|
@@ -229,54 +170,41 @@ Information for GNSS Z value with Vertical grid shift in use:
 | Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
 | USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
 
-### Capturing longitude, latitude and altitude in attribute form
+### Capturing Coordinates in Attribute Forms
 
-It is useful and not uncommon that the actual positioning values should be automatically stored inside the attribute form.
-This applies for longitude, latitude and altitude.
-
-!!! Workflow
-
-    **Configuration of attribute form**
-
-    1. In QGIS direct to your *Layer Properties* > *Attribute Form*
-    2. (Optional): You have to add a field of decimal type to the form that can capture the data.
-    Name it accordingly (eg. "longitude")
-    3. Under the settings of the widget display of the corresponding field add the following default value:
-
-        - ***Longitude:*** `x(@position_coordinate)`
-        - ***Latitude:*** `y(@position_coordinate)`
-        - ***Altitude:*** `z(@position_coordinate)`
-
-    This will save the coordinate directly in the field when adding a new feature.
-
-    !!! Note
-        This only works if positioning is turned on and when you have locked your position to your crosshair.
-
-### Vertex log layer
-
-It is good practice to create a log layer of the collected vertices.
-It enables you to keep track of the meta data for each vertex like [GNSS quality attributes](../../reference/expression_variables.md) and more.
+Store longitude, latitude, and altitude automatically in feature forms using default expressions:
 
 !!! Workflow
+    1. In QGIS, navigate to _Vector Layer Properties... > Attribute Form_.
+    2. Add decimal fields for coordinate storage (such as `longitude`, `latitude`, `altitude`).
+    3. Assign default value expressions:
+        - **Longitude:** `x(@position_coordinate)`
+        - **Latitude:** `y(@position_coordinate)`
+        - **Altitude:** `z(@position_coordinate)`
 
-    1. Add a point layer to the project and attributes configured to store this information.
+Coordinates populate automatically when digitizing new features while locked to GNSS positioning.
+
+### Vertex Log Layer
+
+Create a dedicated vertex log layer to record metadata for every digitized point:
+
+!!! Workflow
+    1. Add a point vector layer to your QGIS project with attribute fields configured for positioning variables.
         !![](../../assets/images/vertex_log1.png)
-    2. Assign the role *digitizing logger* to a point layer.
-    3. Go to > *Project* > *Properties...* > *QField*.
+    2. Assign the **"digitizing logger"** role to the layer under _Project > Properties... > QField_.
         !![](../../assets/images/vertex_log2.png)
-    4. Set default values to the attributes using the positioning variables mentioned above.
+    3. Assign default expressions to log fields using `@position_*` variables.
 
-## Using an external GNSS Receiver
+## Using an External GNSS Receiver
 :material-tablet: Fieldwork
 
-QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
-or UDP connections.
+QField supports external GNSS receivers over Bluetooth, TCP, UDP, and serial connections.
 
-Under the **Positioning** section, you are able to manage and switch between your internal and saved external GNSS devices.
+Manage and switch between positioning devices in the **"Positioning"** settings menu.
 
 !![](../../assets/images/saved-gnss-devices.png)
 
-The breakdown of connections support by platform is as follow:
+Supported receiver connection interfaces by operating system:
 
 |             | :material-android: Android | :material-apple: iOS | :material-microsoft-windows: Windows | :material-linux: Linux | :material-apple: MacOS |
 |-------------|----------------------------|----------------------|--------------------------------------|------------------------|------------------------|
@@ -285,53 +213,40 @@ The breakdown of connections support by platform is as follow:
 | UDP         | :material-check:           | :material-check:     | :material-check:                     | :material-check:       | :material-check:       |
 | Serial port | :material-check:           |                      | :material-check:                     | :material-check:       | :material-check:       |
 
-*(\*) Bluetooth support on Windows occurs through the virtual serial port automatically
-created by the operating system when it connects to the GNSS device.*
+*(\*) Windows supports Bluetooth receivers via virtual COM serial ports created by the operating system.*
 
-The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and HDT.
+Supported NMEA sentences include GGA, RMC, GSA, GSV, GST, VTG, HDG, and HDT.
 
-!!! note
-    Make sure no other app like mock location providers are using the same connection.
+### External Receiver Logging
 
-### External receiver log
-
-If you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
-If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
-
-The logs will be placed in **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/logs**.
+When connected to an external receiver, enable **"Log NMEA sentences from device to file"** to log raw NMEA sentences.
+Logs save to **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/logs**..
 
 !![](../../assets/images/external_receiver_log.png,250px)
 
-!!! note
-    Be aware that if the log is always turned on, it will fill up all the storage.
+!!! Note
+    Disable NMEA logging when troubleshooting is complete to prevent filling device storage.
 
-
-## Mock location
+## Mock Location
 :material-tablet: Fieldwork
 
-It is possible to provide a mock location via a separate android app to
-QField. There are several options for this, one of them is [Android NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).
+Provide positioning data to QField using third-party Android mock location apps (such as [Lefebure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient)).
+[Enable mock location](https://www.youtube.com/watch?v=v1eRHmMiRJQ) options in Android developer settings to use external mock location providers.
 
-To use this you have to [enable mock locations on your Android device](https://www.youtube.com/watch?v=v1eRHmMiRJQ).
-
-## Averaged positioning functionality
+## Averaged Positioning Functionality
 :material-tablet: Fieldwork
 
-!!! note
-    The coordinate cursor must be locked to the current location via the [Lock to position button](../../how-to/data-collection/digitize.md#adding-point-features)
+QField supports averaged positioning to calculate vertex locations across multiple sample fixes.
 
-There is a function that allows you to digitize using averaged positions.
-
-The survey will start by pressing and holding the add vertex button, which will start collecting positions.
-
-During the collection, an indicator will appear on top of the coordinate cursor showing the number number of the collected positions.
-If an averaged position minimum count requirement is active, a progress bar will also be present indicating the progress towards meeting that requirement.
+!!! Workflow
+    1. Open the **Side Dashboard** and navigate to _Settings > Positioning_.
+    2. Configure **"Averaged positioning minimum count"**.
+        !![](../../assets/images/positioning_averaged_set.png,280px)
+    3. Lock the coordinate cursor to your current position.
+    4. Press and hold the **Add Vertex** button to begin averaging samples.
+    5. A progress indicator displays the collected sample count until the minimum count requirement is satisfied and the vertex commits.
 
 !![](../../assets/videos/positioning-averaged.mp4)
 
-1. To activate direct to  side *"Dashboard"* > *Settings* > *Positioning*
-2. Shortly tap where you want to collect points and QField will automatically add the averaged position once the minimum count is met.
-!![](../../assets/images/positioning_averaged_set.png,280px)
-
-!!! note
-    When using [`@gnss_*` or `@position_` variables](./gnss.md#positioning-variables) on averaged positions, the variable will also represent the average over all collected samples.
+!!! Note
+    Using `@gnss_*` or `@position_*` variables with averaged positioning records average values across all collected samples.

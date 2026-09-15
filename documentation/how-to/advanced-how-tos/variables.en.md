@@ -5,63 +5,52 @@ tx_slug: documentation_how-to_variables
 
 # Variables
 
-QField allows users to add and edit expression variables.
-These can be used for a wide range of applications, including data-defined symbology, setting default field values, controlling print layout and application behavior, and much more.
-See [the relevant QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/introduction/general_tools.html#storing-values-in-variables) for more information. <!-- markdown-link-check-disable-line -->
+QField supports creating and editing QGIS expression variables.
+Variables can be used for data-defined symbology, default attribute values, print layout controls, dynamic feature labels, and application behavior settings.
+Read more in the [QGIS Variables Documentation](https://docs.qgis.org/latest/en/docs/user_manual/introduction/general_tools.html#storing-values-in-variables). <!-- markdown-link-check-disable-line -->
 
-QField supports two main types of custom variables:
+QField supports two types of custom variables:
 
-- **Project Variables:** Project-bound variables defined within the project file.
-- **Global Variables:** Application-wide global variables with a set of read-only variables.
+- **Project Variables:** Bound to specific QGIS project files (`.qgs` or `.qgz`).
+- **Global Variables:** Application-wide variables defined locally on mobile devices.
 
 ## Project Variables
 
-Project variables are defined and managed directly within the QGIS project on your desktop.
-They allow you to add custom variables that are only relevant in the context of a specific project.
-QField users can edit those variables, with modified values remembered across sessions.
+Project variables are defined and managed inside QGIS project properties on your desktop computer.
+Project variables store custom values relevant to specific projects.
+QField users can edit project variables on mobile devices, and modified values persist across app sessions.
 
 ## Global Variables
 
-QField comes pre-configured with some read-only global variables which are visible in under side *Dashboard* > *Settings* > *Variables*.
-New variables can be added or modified and will be available in QField across sessions.
+QField includes pre-configured, read-only system variables accessible under _Side Dashboard > Settings > Variables_.
+Custom global variables can be added or modified in QField and remain available across all local projects on the device.
 
-!!! Information
-    The read-only variables differ from device to device.
-    These reflect the global variables from the specific QGIS version that was being used to develop the installed version of QField.
+!!! Note
+    Read-only system variables vary depending on device platforms and hardware specs.
+    These reflect the global variables available in the QGIS release used to build the installed QField version.
 
 ## Variable Management in QField
 
-Variables are managed directly on your device and are accessible in all available QField projects.
-When you access the variables list in QField ( *Side Dashboard* > *Settings* > *Variables* ), you will find a consolidated and organized view of all available variables.
+Manage variables on your mobile device to share custom values across all QField projects.
+Access the variables list under _Side Dashboard > Settings > Variables_ for a consolidated view of all available variables.
 
-### Variable configuration
+### Variable Configuration
 :material-tablet: Fieldwork
 
 !!! Workflow
-
-    To configure a application-specific variable, follow these steps:
-
-    1. Open **Settings** in QField.
-    2. Navigate to the **Variables** tab.
-
-    Here you will see a list of all variables currently applicable to your project.
-    To add a new variable:
-
-    1. Click on *"Add a new variable"* at the bottom of the variable list.
-    2. Enter the name and value for your new variable and save.
+    1. Open the **Side Dashboard** and tap the gear icon to open **Settings**.
+    2. Switch to the **"Variables"** tab to view all applicable variables.
+    3. Tap **"Add a new variable"** at the bottom of the list.
+    4. Enter a variable name and value, then save your changes.
 
 ### Useful Examples
 
-Common variables to use are:
+Common expression variables used in field workflows include:
 
-- **@cloud_username** to incorporate the details of the individual users in a project.
+- `@cloud_username`: Captures the username of the active QFieldCloud account.
+- `@qgis_locale`: Retrieves the current system language code set in QField or QGIS.
 
-!!! note
-    If you are not using QFieldCloud you can add a unique identifier instead.
+!!! Tip
+    If you do not use QFieldCloud, create a custom global variable (such as `@user_id` or `@field_worker`) on each device to record user identifiers in feature attribute forms.
 
-- **@qgis_locale** to use the currently set language of QGIS/QField.
-
-Since the application-wide variables are not bound to specific projects and are defined locally, they are a great way to optimize the fieldwork experience for multiple users sharing the same projects.
-
-!![Configuration of editable variables in addition to the
-pre-defined system variables.](../../assets/images/configure_global_variables.png,400px)
+!![Configuration of editable variables in addition to the pre-defined system variables.](../../assets/images/configure_global_variables.png,400px)
