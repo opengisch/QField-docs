@@ -315,10 +315,11 @@ Referencing Layer Names ensures consistent expression evaluation across project 
 
 Read the [GNSS Positioning Documentation](../navigation-and-positioning/gnss.md) to store location details in attributes.
 
-QFieldCloud provides two expression variables for attribute default values and conditional visibility:
+QFieldCloud provides three expression variables for attribute default values and conditional visibility:
 
 - `@cloud_username`: Returns the username of the logged-in QFieldCloud account.
 - `@cloud_useremail`: Returns the email address of the logged-in QFieldCloud account.
+- `@cloud_team` - Returns the name of the Team to which the user belongs within the organization.
 
 Examples of expression variables:
 
