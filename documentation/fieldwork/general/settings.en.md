@@ -16,19 +16,21 @@ There are two ways in which you can access the general settings.
 
     **Access settings in active project**
 
-    1. Open the Side Dashboard and click on the 3-dotted menu *(⋮)*.
-    2. Tap on *Settings*.
+    1. Open the **Side Dashboard** and click on the 3-dotted menu *(⋮)*.
+    2. Tap on **Settings**.
 
 In the following sections, the different setting options will be described
 
 ## Map Canvas
 
-- **Show scale bar:** By enabling the "Show scale bar" it will show the scale bar on the map.
+- **Show scale bar:** By enabling the **Show scale bar** it will show the scale bar on the map.
 - **Show zoom controls:** By enabling this option, the zoom buttons (+/-) will appear on the map.
 - **Show bookmarks:** By enabling this option, your personal locally created bookmarks and currently opened project bookmarks will be displayed on the map.
-- **Enable map rotation:** When enabled, the map can be rotated by the user.
-- **Map canvas rendering quality:** If high memory use is an issue, the user can reduce the rendering quality and thereby lower the memory usage and the rendering time.
+- **Enable map rotation:** When enabled, you can rotate the map.
+- **Map canvas rendering quality:** If high memory use is an issue, you can reduce the rendering quality which lowers the memory usage and the rendering time.
 This comes with the cost of rendering precision.
+
+!![Map Canvas Settings](../../assets/images/general-settings-qfield.png,250px)
 
 ## Digitizing & Editing
 
@@ -41,20 +43,22 @@ This option is useful, when mapping features on a larger scale.
 - **Consider mouse as a touchscreen device:** If enabled, the mouse allows you to add new vertices anywhere on the map.
 If disabled the cross-hair is fixed to the center and the mouse can is used to relocate the cross-hair.
 
+!![Digitizing and Editing](../../assets/images/general-settings-qfield.png,250px)
+
 ## User Interface
 
 - **Customize search bar:** When pressing the 3-dotted menu *(⋮)* under the general settings section, a new window will open from which you can personalize your search options.
-     - ***Features from active layer:*** By enabling this option, you will automatically query the layer that is currently active (it is highlighted in the legend).
+     - **Features from active layer:** By enabling this option, you will automatically query the layer that is currently active (it is highlighted in the legend).
      You can refine your search even further by adding an **"@"** sign when starting your search to only query one attribute.
      When disabled, you can still access this locator filter typing the prefix **f** in the search bar.
-     - ***Features in all layers:*** When enabling this option, you can search all features across all layers.
+     - **Features in all layers:** When enabling this option, you can search all features across all layers.
      If the "Features from active layer" option is enabled you can still search through all layers by adding the prefix **af** in the beginning of your search.
-     - ***Go to coordinate:*** By enabling this option, you can simply copy and paste longitude and latitude values to direct to specific locations that are not part of your feature layers.
+     - **Go to coordinate:** By enabling this option, you can simply copy and paste longitude and latitude values to direct to specific locations that are not part of your feature layers.
      If disabled, you can still access this option by typing go at the start of your query.
 
     !!! Tip
-        When pressing long on a point of interest anywhere in your map, you can copy the point location to your clip board and directly place it in the search bar.
-        Remember to type **go** in advance if the *go to coordinate* setting has not been enabled and remove the information about the coordinate reference system.
+        When long-pressing on a point of interest anywhere in your map, you can copy the point location to your clip board and directly place it in the search bar.
+        Remember to type **Go** in advance if the **Go to coordinate** setting has not been enabled and remove the information about the coordinate reference system.
 
     - ***Spatial bookmarks:*** By enabling this option you automatically when using the search bar, the list of pre-configured bookmarks (if any) will be queried.
     If disabled, you can still access this option by typing **b** at the front of your query.
@@ -63,8 +67,13 @@ If disabled the cross-hair is fixed to the center and the mouse can is used to r
     - ***QField Documentation:*** If enabled it will return the corresponding documentation pages matching terms.
     When disabled the documentation can still be queried by putting a "?" in the beginning of the query.
 
-- **Manage plugins:** By pressing the 3-dotted menu *(⋮)* a new window will open from which you can add, enable and disable customised plugins.
+     !![Search Bar Settings](../../assets/images/settings-search-bar.png,250px)
+
+- **Manage plugins:** By pressing the 3-dotted menu *(⋮)* a new window will open from which you can enable and disable customised plugins.
 To add a new plugin see the [Plugins Page](../../how-to/advanced-how-tos/plugins.md#project-plugins)
+
+    !![Plugin dialog](../../assets/images/settings-plugins.png,250px)
+
 - **Maximized attribute form:** when enabling this option you can maximize the attribute form to cover the whole screen.
 - **Fixed scale navigation:**
     - ***Active fixed scale navigation:*** Focusing on a search result will highlight and pan to the feature.
@@ -82,9 +91,21 @@ When setting it to *0* the dimming will be disabled completely.
 - **User interface language:** QField will by default utilize the language present on your device, if a translation is available.
 You are cordially invited to enhance the translation in your native language.
 
-[Translate the app](https://explore.transifex.com/opengisch/qfield-for-qgis/); <!-- markdown-link-check-disable-line -->
+[Translate the app](https://explore.transifex.com/opengisch/qfield-for-qgis/) <!-- markdown-link-check-disable-line -->
+
+!![Map Canvas Settings](../../assets/images/general-settings-qfield-2.png,250px)
 
 ## Advanced
+
+### Net Proxy
+
+If some of your data are located in a closed environment you can access them through a proxy network.
+This should be [configured](https://docs.qgis.org/testing/en/docs/user_manual/introduction/qgis_configuration.html#network-settings)in QGIS beforehand. <!-- markdown-link-check-disable-line -->
+
+QField also can access the data once the network information is provided:
+
+- **Type**: Choose the type of proxy you wish to add (eg. **HTTP** or **SOCKS5**)
+- **URLS excluded from proxy:** You can add selected URLs that can route QField's traffic through a proxy.
 
 ### Use native camera
 
