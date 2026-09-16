@@ -71,11 +71,17 @@ nav:
   - In the field:
       - fieldwork/create-project.md
       - Interact with the map:
-          - fieldwork/measuring-tool.md
+          - fieldwork/qfield-interface/map-interaction.md
+          - fieldwork/qfield-interface/measuring-tool.md
+          - fieldwork/qfield-interface/search.md
+      - Data Collection:
+          - fieldwork/data-collection/digitize.md
+          - fieldwork/data-collection/print-to-pdf.md
+          - fieldwork/data-collection/processing.md
       - General:
           - fieldwork/general/settings.md
           - fieldwork/general/projects.md
-  - Project Manager (Desktop):
+  - Project Setup (Desktop):
       - how-to/index.md
       - Project Setup:
           - how-to/project-setup/attributes-form.md

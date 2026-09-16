@@ -5,13 +5,14 @@ tx_slug: documentation_how-to_map-interaction
 
 # Interact with the map
 
-Here are some of the possible interactions with the map in QField.
+There is a lot you can do inside QField.
+There exists a number of buttons, icons and settings, which may or may not be relevant for your used case.
 
 ## Map legend
 :material-tablet: Fieldwork
 
-Open the side "*Dashboard*" and expand the layers list to display the legend
-of the map.
+!!! Workflow
+Open the **Side Dashboard** and expand the layers list to display the legend of the map.
 
 On double-tap or long-press on a layer, you get offered the following possibilities.
 

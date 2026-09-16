@@ -64,7 +64,7 @@ When any filter option is active, clicking **Clear** button immediately resets a
 
 There are several ways to create and initialize a new project in QFieldCloud depending on your workflow. You can convert an existing QGIS project, start from a blank template on the web, or even clone an existing project.
 
-[Click here to read more about project creation](create-project-qfc.md)
+[Click here to read more about project creation](../../fieldwork/create-project.md)
 
 
 ## From QFieldCloud to QGIS Desktop
