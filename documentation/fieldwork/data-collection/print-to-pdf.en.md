@@ -5,32 +5,28 @@ tx_slug: documentation_how-to_print-to-pdf
 
 # Print to PDF
 
-It's possible to export laid out maps as PDF document through project print layouts
-configured within QGIS.
+You can print your maps as PDF documents either by using the default in-built template or using print layouts.
+The latter, however, need to be pre-configured in your QGIS project.
 
-## Usage
-:material-tablet: Fieldwork
+## Print all objects
 
-Printing to PDF is available through QField's main menu bar in the side "Dashboard".
+You can print all your objects from the **Side Dashboard** or use the ones that are custom to your project.
 
-!![](../../assets/images/print_menu.png)
+!!! Workflow
 
-If the opened project has a single print layout defined, selecting the "Print to PDF"
-menu will immediately launch an export of the layout to PDF. If more than one print
-layout is present, a submenu will appear listing all the available layouts to choose from.
+    1. Open the **Side Dashboard**
+    2. Tap on the :material-printer:
+    !![](../../assets/images/print_menu.png)
+    3. Select the desired Layout.
+    4. Once the export is finished, the created PDF document will open by default.
+    !![](../../assets/images/print_document.png)
 
-Once the print layout has been exported, QField will allow users to open and view the
-created PDF document.
+## Print Selected Objects
 
-!![](../../assets/images/print_document.png)
+!!! Workflow
 
-## Feature-Driven Atlas Print
-
-You can also print an atlas-driven layout by selecting features from vector layers acting as coverage layers.
-To do so, identify features on the map by tapping on the canvas and hold-press on a feature in the list to toggle the (multi-)feature selection mode.
-Once the desired features are selected, click on the 3-dotted menu *(⋮)* button and select *Print Atlas Feature(s) to PDF*.
-
-!![](../../assets/images/print_atlas_menu.png)
-
-It is possible to print a single atlas feature through the feature form by clicking on the
-3-dotted menu *(⋮)* button and selecting the *Print Atlas Feature to PDF*.
+    1. Tap on an object and long-press on it to select it.
+    2. Add all objects to your selection.
+    3. Open the **3-dotted menu (⋮)**
+    4. Tap on **Print Atlas Feature(s) to PDF**.
+    !![](../../assets/images/print_atlas_menu.png)
