@@ -170,7 +170,6 @@ When adding new objects it is possible to enable the snapping tool, which allows
     The level of snapping depends on the rules that were set in the QGIS project.
     You can read more about this [here](../../how-to/data-collection/digitize.md#snapping)
 
-
 ## Snap to Common Angle
 
 You can snap to an angle of your choice.
