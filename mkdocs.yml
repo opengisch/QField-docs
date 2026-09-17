@@ -79,9 +79,13 @@ nav:
           - fieldwork/data-collection/digitize.md
           - fieldwork/data-collection/print-to-pdf.md
           - fieldwork/data-collection/processing.md
+      - Navigation and Positioning:
+          - fieldwork/navigation-and-positioning/navigation.md
+          - fieldwork/navigation-and-positioning/tracking.md
       - General:
-          - fieldwork/general/settings.md
           - fieldwork/general/projects.md
+          - fieldwork/general/plugins.md
+          - fieldwork/general/settings.md
   - Project Setup (Desktop):
       - how-to/index.md
       - Project Setup:
@@ -112,7 +116,6 @@ nav:
           - how-to/advanced-how-tos/authentication.md
           - how-to/advanced-how-tos/temporal-filtering.md
           - how-to/advanced-how-tos/variables.md
-          - how-to/advanced-how-tos/live-default-value.md
           - how-to/advanced-how-tos/shared-datasets.md
           - how-to/advanced-how-tos/plugins.md
           - how-to/advanced-how-tos/multilingual-projects.md
