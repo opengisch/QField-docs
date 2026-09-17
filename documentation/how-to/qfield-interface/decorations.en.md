@@ -5,9 +5,7 @@ tx_slug: documentation_how-to_decorations
 
 # Map Decorations
 
-:material-monitor: Desktop preparation
-
-If you want to customise your project with "Decorations" in QField this can be done but you need to configure it first in QGIS.
+You can add **Map Decorations** to your map permanently, depending on your requirements.
 More details you can find in the corresponding [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/map_views/map_view.html#decorating-the-map) <!-- markdown-link-check-disable-line -->
 
 There are several decoration types to choose from:
@@ -22,6 +20,7 @@ There are several decoration types to choose from:
 
 !!! Workflow
     1. In QGIS, navigate to *View* > *Decorations* > *Grid…*.
+    !![](../../assets/images/qgis-access-decorations.png,250px)
     2. Check the **Enable Grid** box to activate it.
     3. Customize the grid's appearance:
     - **Grid type:** Choose between **Solid lines**, **Crosses**, or **Markers**.
@@ -29,6 +28,7 @@ There are several decoration types to choose from:
     The units are based on the project's Coordinate Reference System (CRS).
     - **Line/Marker Symbol:** Customize the color, thickness and style of the grid lines or markers to match your map style.
     - **Draw annotations:** If enabled, this will display the grid coordinates on the map.
+    !![Grid Settings](../../assets/images/qgis-title.png,250px)
     You can control the font, direction, and distance of the annotations from the map frame.
 
     Once configured in QGIS, the grid will automatically be visible in QField once the saved project has been synchronized or was transferred manually.
@@ -37,12 +37,16 @@ There are several decoration types to choose from:
 
 !!! Workflow
     1. In QGIS, go to *View* > *Decorations* > *Title Label...*.
+    !![](../../assets/images/qgis-access-decorations.png,250px)
     2. Check the **Enable Title Label** box.
     3. You can input static text or, for more powerful results, use a QGIS expression.
-
     With expressions your title can dynamically change.
-    4. Click the **Insert or Edit an Expression...** button to open the expression builder.
-    *Eg. A common use case is to display the project's title, which is set in the *Project* > *Properties...* > *General* tab.
+    4. Click **Insert or Edit an Expression...** to open the expression builder.
+    !![](../../assets/images/qgis-title.png,250px)
+
+!!! Example
+
+    A common use case is to display the project's title, which is set in the *Project* > *Properties...* > *General* tab.
 
     ```sql
     -- Displays the title saved in the project properties
@@ -53,9 +57,7 @@ There are several decoration types to choose from:
 
     You can combine static text with variables and functions to create a more detailed title.
 
-    Code snippet
-
-    ```sql
+        ```sql
     -- Creates a title like: "Survey for Project *' %project_name% - 20xx"
     'Survey for Project ' || [% @project_title %] || ' - ' || [% year(now()) %]
     ```
@@ -64,11 +66,15 @@ There are several decoration types to choose from:
 
 !!! Workflow
     1. In QGIS, select *View* > *Decorations* > *Copyright Label…*.
+    !![](../../assets/images/qgis-access-decorations.png,250px)
     2. Check the **Enable Copyright Label** box.
     3. Like the Title Label, this decoration fully supports QGIS expressions.
 
-    *Eg. Continuous display of your real-time GPS information on your map.*
-    With the right configuration, you can show the current coordinates and map scale directly on the screen.
+    The ability to use [positioning variables](../../reference/expression_variables.md#positioning-and-gnss-variables) (`@gnss_coordinate`) offers a streamlined way to display critical location data without cluttering the main user interface.
+
+!!! Example
+
+    **Continuous display of your real-time GPS information**
 
     ```sql
     -- Displays the GNSS coordinates and current map scale
@@ -76,36 +82,19 @@ There are several decoration types to choose from:
     Scale: 1:[% round(@map_scale) %]
     ```
 
-    The ability to use [positioning variables](../../reference/expression_variables.md#positioning-and-gnss-variables) (`@gnss_coordinate`) offers a streamlined way to display critical location data without cluttering the main user interface.
-
 ### Image
 
 !!! Workflow
     1. In QGIS, open *View* > *Decorations* > *Image…*.
+    (../../assets/images/qgis-image.png)
     2. Check the **Enable Image** box.
-    3. Click the **...** button in the **Image path** field to select your image.
+    3. Select your image.
 
-    **Important:** For seamless use in QField, it is highly recommended to store the image within the project folder and use a relative path.
+    **Note:** For the image to be shown in QField, you need to add the image to your project folder and set your path as relative path.
 
     - Create a dedicated folder inside your project directory (e.g., `assets`).
     - Reference the image using a path that starts with `./`.
 
-    Example of a relative path:
+This is how the map decorations look in QField
 
-    `./assets/company_logo.png`
-
-    ![type:video](../../assets/videos/qfield_map_decoration.webm)
-
-### Scale Bar
-
-:material-tablet: Fieldwork
-
-!!! Workflow
-
-    1. Open your project in QField.
-    2. Open the side "Dashboard" (**☰**).
-    3. Tap the **Settings** icon (gear symbol) in the main menu.
-    4. Under the **General** tab.
-    5. Enable the **Show scale bar** .
-
-    !![](../../assets/images/scale_bar_toggle.png,900px)
+![type:video](../../assets/videos/qfield_map_decoration.webm)

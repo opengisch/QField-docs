@@ -15,7 +15,6 @@ It is important to understand that there are two **modes** in which you can work
 - The **Browse mode** and
 - The **Digitize Mode**
 
-
 ### Browse Mode
 
 As the name suggests, while being in browse mode, you can view and select features within all identifiable layers in the project.
@@ -43,7 +42,6 @@ If you want to actually digitize new objects or modify the geometry of existing 
     - QField insures that when you digitize that your added points, lines or polygons will not have duplicate vertices.
 
 ## Map legend
-:material-tablet: Fieldwork
 
 !!! Workflow
 
@@ -58,6 +56,12 @@ If you want to actually digitize new objects or modify the geometry of existing 
         - **Zoom to layer** to have all the layer items on the map.
         - **Show feature list** to show all the layer's features in the identification list.
         - **Setup tracking** to set up tracking mode of layer.
+
+## Map Themes
+
+    1. Open the **Side Dashboard**.
+    2. If *Map themes* have been set in your QGIS project, a **Dropdown** will automatically appear where you can choose the active theme.
+    ![type:video](../../assets/videos/theme.webm)
 
 ## Select features
 :material-tablet: Fieldwork
@@ -103,6 +107,18 @@ Sometimes you may want to multi-select several features at once to merge them or
         - **Delete** your selected features
         - Further **Process** your selected features: You can read more about the different processing operations [here]()
         !![Multi-selected actions](../../assets/images/multi-select-actions.png)
+
+### Scale Bar
+
+:material-tablet: Fieldwork
+
+!!! Workflow
+
+    1. Open your project in QField.
+    2. Open the **Side Dashboard**.
+    3. Tap on the **3-dotted menu** and open **Settings**.
+    4. Under the **General** tab enable **Show scale bar**.
+    !![](../../assets/images/scale_bar_toggle.png,900px)
 
 ## 3D map view interactions
 :material-tablet: Fieldwork

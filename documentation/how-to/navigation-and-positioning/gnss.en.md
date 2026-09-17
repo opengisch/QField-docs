@@ -318,7 +318,7 @@ To use this you have to [enable mock locations on your Android device](https://w
 :material-tablet: Fieldwork
 
 !!! note
-    The coordinate cursor must be locked to the current location via the [Lock to position button](../../how-to/data-collection/digitize.md#adding-point-features)
+    The coordinate cursor must be locked to the current location via the [Lock to position button](../../fieldwork/data-collection/digitize.md#adding-point-objects
 
 There is a function that allows you to digitize using averaged positions.
 

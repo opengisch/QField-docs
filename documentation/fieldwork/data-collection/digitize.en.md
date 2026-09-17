@@ -226,3 +226,17 @@ The geometry type does not matter.
     3. Select **Delete feature(s)**
     !![](../../assets/images/delete-single-feature.png)
     !![](../../assets/images/delete-multiple-features.png)
+
+## Geofencing
+
+QField has a built-in geofencing functionality that can alert or inform users when the position provided by their GNSS device enters and/or leaves areas defined through polygon features.
+Digitizing of new features can also be prohibited when a geofencing alarm is turned on.
+Defining geofenced areas on QGIS happens with the help of the QFieldSync plugin.
+
+When QField turns its geofencing alert on, a glowing read circle will appear at the bottom right corner of your screen.
+The message will stay until you have left the prohibited area.
+If your device supports vibration, it will also vibrate as long as you are in the area.
+
+![type:video](../../assets/videos/geofencing-alert.webm)
+
+If the project was prepared in such a way that prevents you from digitizing in the prohibited area, you will notice that QField's digitizing toolbar will disappear while in alert mode to clearly inform users of the ongoing prohibition and avoid accidental data entry.

@@ -11,7 +11,6 @@ QFieldCloud is the cloud service that allows smoothless synchronization of your 
 You can further manage teams, work in organizations, assign different editing permissions and much more.
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
-:material-monitor: Desktop preparation
 
 !!! Workflow
     1. Go to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details and create a new QFieldCloud account.
@@ -128,7 +127,7 @@ Under these settings you can configure the following:
 - How your project layers should be treated in the cloud. See [Get Started guide for QFieldSync](./get-started-qfs.md) to get more details on the different "Packaging Actions".
 - Enable ["geofencing"](../../how-to/navigation-and-positioning/geofencing.md)
 - Assign a digitizing log layer.
-- Specify the layer that will be active for editing after selecting a [Map Theme](../../how-to/qfield-interface/map-themes.md)
+- Specify the layer that will be active for editing after selecting a [Map Theme](../../how-to/qfield-interface/map-interaction.md#map-themes)
 
 We recommend to work with GeoPackages, especially when working in teams. See the [advanced setup guide](advanced-setup-qfc.md) for more information about vector formats.
 

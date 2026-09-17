@@ -3,28 +3,28 @@ title: Processing algorithms
 tx_slug: documentation_how-to_processing
 ---
 
-# Processing Algorithms
+# Processing object
 
-QField offers access to a number of processing algorithms to modify digitized features and their geometries.
+In QField you cannot only move or duplicate your features, you can also change, drop or add further geometries using further processes.
 
-## Showing available algorithms
+## Accessing processing algorithms
 
-Running algorithms against your features is done through the features list drawer.
-First, identify one or more features by tapping on the map canvas and toggle multi-selection mode by long pressing on one of the identified features.
-Once you've checked all features to be processed, click on the 3-dotted menu *(⋮)* and select the _Process Selected Feature(s)_ item.
+!!! Workflow
 
-!![process selected features](../../assets/images/process_selected_features.png "")
+    1. Tap on the map canvas to select the feature(s), you wish to modify.
+    2. Once selected, open the **3-dotted menu (:)**
+    3. Open the **processing** option and tap on  **Process Selected Feature(s)**.
+    !![process selected features](../../assets/images/process_selected_features.png)
+    4. You can select among **All Algorithms** and add them as **Favorites** if you like
+    !![processing algorithms](../../assets/images/processing_algorithms.png "")
 
-By default, only the algorithms which are flagged as favorites will be shown. Clicking on the _All algorithms_ tab will show the full list where you can add or remove favorites.
+!!! Example
 
-!![processing algorithms](../../assets/images/processing_algorithms.png "")
+    <u>**Smooth**</u>
 
-## Running an algorithm
-
-When an algorithm has been selected, a list of parameters will be displayed, regrouped into general and advanced ones within two distinct tabs.
-A third tab is available to access the algorithm's help content.
-For most algorithms, a live preview of the manipulated geometry will be overlaid on top of the map canvas offering an immediate feedback while parameters.
-
-!![processing parameters](../../assets/images/processing_parameters.png "")
-
-Once parameters are set to your liking, click on the check button within the drawer's title bar to run the algorithm.
+    1. Select **Smooth** from the **Vector geometry** section.
+    2. A new tab will open where you add your desired values.
+    **Note:** If you are unsure what a process does, you can tap on the **Help** tab to read about the processing algorithm(s).
+    3. Generally, a live preview of the manipulated geometry will be overlaid on the map canvas, so you know what you are doing.
+    !![processing parameters](../../assets/images/processing_parameters.png "")
+    4. Tap on the <span style="color:green"> :material-check: </span> to apply the algorithm.

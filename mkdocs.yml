@@ -74,6 +74,7 @@ nav:
           - fieldwork/qfield-interface/map-interaction.md
           - fieldwork/qfield-interface/measuring-tool.md
           - fieldwork/qfield-interface/search.md
+          - fieldwork/qfield-interface/bookmarks.md
       - Data Collection:
           - fieldwork/data-collection/digitize.md
           - fieldwork/data-collection/print-to-pdf.md
@@ -90,18 +91,12 @@ nav:
           - how-to/project-setup/data_source_and_project_paths.md
           - how-to/project-setup/pg-service.md
           - how-to/project-setup/pictures.md
-      - QField Interface:
+      - QField Map Interface:
           - how-to/qfield-interface/map-interaction.md
-          - how-to/qfield-interface/measuring-tool.md
-          - how-to/qfield-interface/search.md
-          - how-to/qfield-interface/map-styling.md
-          - how-to/qfield-interface/map-themes.md
           - how-to/qfield-interface/decorations.md
-          - how-to/qfield-interface/bookmarks.md
       - Data Collection:
           - how-to/data-collection/digitize.md
           - how-to/data-collection/print-to-pdf.md
-          - how-to/data-collection/processing.md
       - Navigation and Positioning:
           - how-to/navigation-and-positioning/gnss.md
           - how-to/navigation-and-positioning/geofencing.md

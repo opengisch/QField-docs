@@ -315,8 +315,7 @@ QField supports QGIS's conditional row styling, providing immediate visual feedb
 :material-tablet: Fieldwork
 
 When you open your project in QField and navigate to the feature list
-(e.g., by tapping on the map to identify features or the full list by using "Show features list" from the [Map legend](../qfield-interface/map-interaction.md#map-legend)),
-the items will automatically adopt the background, colors, and font styles defined by your conditional formatting rules.
+(e.g., by tapping on the map to identify features or the full list by using "Show features list" from the [Map legend](../../fieldwork/qfield-interface/map-interaction.md#map-legend), the items will automatically adopt the background, colors, and font styles defined by your conditional formatting rules.
 
 !![](../../assets/images/row_conditional_formatting_qfield.png)
 
