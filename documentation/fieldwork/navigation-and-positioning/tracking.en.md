@@ -25,9 +25,9 @@ This keeps your track clean by ignoring movement when you are stationary.
 
 !!! Workflow
 
-    **Option 1: Through the Side Dashboard Panel**
+    **Option 1: Through the Side Dashboard**
 
-    1. Open the Side Dashboard Panel and long-press on the layer which you want to use for tracking.
+    1. Open the **Side Dashboard** and long-press on the layer which you want to use for tracking.
     2. Tap **Setup tracking** and a new window will appear showing the configuration settings.
 
         !![](../../assets/images/tracking-layer-properties.png)

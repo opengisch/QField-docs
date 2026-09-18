@@ -9,91 +9,110 @@ QField offers navigation functionalities to help orient yourself in the field an
 
 ## Activating navigation
 
-Navigation is enabled when [a destination point has been set](#setting-a-destination-point) and positioning is active.
-When turned on, a set of navigation overlays - a destination marker, a navigation panel, and a navigation control button - appear on the screen.
+There are multiple ways in which you can set a destination point and start navigating to it.
+Of course, if you want to navigate to a target, your localization must be turned on.
 
+!!! Workflow
+
+    **Option 1 - Through the map canvas:**
+
+    1. Long-press on your target destination and select **Set as Destination** in the pop-up window.
+    !![](../../assets/images/navigation-add-from-touch.png)
+
+    **Option 2 - Search Bar / Feature Search:**
+
+    1. When opening the search bar, you can search for:
+        - Objects within your layers.
+        - Specific Coordinates.
+    2. Click on the purple flag, next to the resulting option(s).
+    !![](../../assets/images/navigation-search-bar.png)
+
+    **Option 3 - Feature Form Menu:**
+
+    1. Click on the object, you want to navigate to.
+    2. Open the **3-dotted menu** and select **Set Feature as Destination**
+    !![](../../assets/images/navigation-destination-feature-form.png)
+
+    **Option 4 - Complex Shape Navigation:**
+
+    You may want to navigate to an object, with a complex geometry.
+    QField lets you select to the specific corner you want to navigate to.
+
+    1. Click on the object, you want to navigate to.
+    2. Open the **3-dotted menu** and select **Set Feature as Destination**
+    ![type:video](../../assets/videos/navigation-polygon.mp4)
+
+    The **Navigation panel** will open and the :material-arrow-left: and :material-arrow-right: allow you to switch between the different corners.
+
+## Terminating Navigation
+
+!!! Workflow
+
+    **Option 1 - Through the Navigation Menu**
+
+    1. Long-press on the <span style="color:purple">:material-flag:</span> located on the right of the **Map Canvas**
+    2. Press on **Clear destination**.
+
+    **Option 2 - Through the Destination Marker:**
+
+    1. Tap or Long-Press on the **Destination Marker**
+    2. Tap on the **Rubbish Bin** to clear the destination.
+
+## Recenter to destination
+
+QField can automatically re-center the map canvas from your current position to the target.
+
+!!! Workflow
+
+    1. Tap on the <span style="color:purple"> :material-flag: </span> to re-center to your target.
+    2. Tap on the crosshair to re-center to your current position
+    !![](../../assets/images/navigation-auto-tracking.png)
+
+## Navigation Panel and Settings
+
+Once a target has been set, a new window will appear on the map canvas, which will show you
+
+- The Coordinates
+- The Distance to the target
+- The Bearing to the target.
 !![](../../assets/images/navigation.png)
 
-The navigation panel displays useful information such as the destination point coordinates as well as the current distance and bearing to it.
+### Precise View
 
-To disable *navigation*, you can clear the destination point by pressing long on the position/navigation button located on the side toolbar, or by directly interacting with the destination marker on the map canvas.
+If you need a more precise way of directing to your target, you can enable the **Precise View Panel** in two ways.
 
-## Setting a destination point
-:material-tablet: Fieldwork
+!!! Workflow
 
-There are several options to set a navigation destination point:
-- **Map Context Menu:** Press long on the part of the map to which you wish to navigate to and select the *Set as Destination* action within the pop-up menu.
+    *Option 1 - Through the Navigation Menu**
 
-!![](../../assets/images/navigation-add-from-touch.png)
+    1. Long-press on the <span style="color:purple">:material-flag:</span> located on the right of the **Map Canvas**
+    2. Toggle **Always show precise view**.
+    The **Precise View Panel** will appear below the **Navigation Panel**
+    !![](../../assets/images/activating_navigation_precise_view.png)
 
-- **Search Bar / Feature Search:** Type specific coordinates in the search bar and tap the resulting flag icon.
-Alternatively, search for a specific feature attribute and tap the flag navigation icon next to it in the drop-down list.
+    **Option 2 - Through the Destination Marker:**
 
-!![](../../assets/images/navigation-search-bar.png)
+    1. Tap or Long-Press on the **Destination Marker**
+    2. Tap on the **Spiral** to enable the **Precise View Panel**.
+    ![type:video](../../assets/videos/navigation-precise-view.webm)
 
-- **Feature Form Menu:** Open any feature form and select the *Set Feature as Destination* action from the 3-dotted menu *(⋮)*.
+The **Precise View Panel** will <u>only</u> appear once your distance to the target is below the chosen **Precision Threshold**, and your localization has an accuracy level of less than half of that threshold.
 
-!![](../../assets/images/navigation-destination-feature-form.png)
+Your **Target** will turn **Green** when your location reaches the target
 
-- **Feature Geometry Routing:** When selecting multi-vertex features (lines, polygons) as a destination, a target navigation bar appears. You can use the left and right buttons to cycle through the vertices of the feature.
-Long-pressing on these buttons will cycle through vertices rapidly, which is useful for complex shapes.
+When your distance to the destination falls within the precision threshold, QField emits an acoustic **Ping**.
+When you get closer to the destination, the number of **Pings** will increase, providing real-time audio proximity feedback.
 
-![type:video](../../assets/videos/navigation-polygon.mp4)
+!!! Example
 
-### Destination Marker Actions (Pie Menu)
-
-You can also directly access shortcut actions by tapping or long-pressing on the destination flag marker directly on the map.
-This opens a **pie menu** overlay with the following options:
-
-- **Clear Destination:** Deletes the active destination point and cancels navigation.
-- **Always Show Precise View:** Toggles whether the precision target target dial remains constantly visible.
-
-![type:video](../../assets/videos/navigation-precise-view.webm)
-
-The pie menu dynamically tracks the screen location of your destination flag, remaining locked to the target through map pans, zooms, and rotations.
+    If your precision threshold is set to 1 meter and your GNSS accuracy is 0.05 meter, the view turns green when you are within 15cm of the destination.
 
 !!! Tip
 
     It is advisable to clear any distanation when finishing a mapping session.
     Otherwise QField may memorize that a destination was set and lead to random errors when opening QField in the next session or with a different project.
 
-## Recenter to destination
-:material-tablet: Fieldwork
-
-QField allows for its map to automatically keep track of the current device location and destination and re-center the map extent around those two points.
-
-To activate this auto tracking feature, you can simply tap on the positioning button and the navigation control button.
-Both buttons should show their auto tracking mode active by having their background color turn to blue and purple.
-
-!![](../../assets/images/navigation-auto-tracking.png)
-
-This can be described as a simple *staking mode* functionality.
-
-## "Stakeout" precise view
-:material-tablet: Fieldwork
-
-QField has an integrated precise view dial to help you guide precisely to your target location.
-The precise view diagram appear below the main navigation panel to preserve screen space when full GNSS details are shown.
-It automatically expands and collapses depending on your need.
-
-The precise view appears when the distance between your current location and the destination falls below your chosen precision threshold, and the positioning device has an accuracy level less than half of that threshold.
-
-!![](../../assets/images/activating_navigation_precise_view.png)
-
-Your target will turn green when your location reaches the target.
-QField considers the target as reached when the distance between your current position and the destination *minus* your current positioning accuracy is less than 1/10th of your chosen precision threshold.
-
-!!! Example
-
-    If your precision threshold is set to 1 meter and your GNSS accuracy is 0.05 meter, the view turns green when you are within 15cm of the destination.
-
-### Precise View Audio Feedback
-
-When your distance to the destination falls within the precision threshold, QField emits an acoustic ping.
-The spacing between pings decreases as you get closer to the destination, providing real-time audio proximity feedback.
-
-### Configuration Settings
-
+### Precise View Settings
 
 !!! Workflow
 
