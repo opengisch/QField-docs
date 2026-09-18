@@ -18,29 +18,29 @@ Translations for QField are managed through the **Transifex** platform.
 !!! Workflow
     1. Select the project you want to contribute to.
     2. Select your target language.
-    3. Locate languages that require translation (indicated by a **"Translate"** button).
-    4. Click **"Translate"**.
+    3. Locate languages that require translation (indicated by a **Translate** button).
+    4. Click **Translate**.
         !![](../assets/images/transifex_translation_01.png,850px)
-    5. Click **"Join Team"** and wait for email approval.
+    5. Click **Join Team** and wait for email approval.
 
 ## Navigating to the Translation Interface
 
 Filter strings to streamline your translation work.
 
 !!! Workflow
-    1. Click the **"Status"** dropdown menu.
-    2. Select **"Translated"**.
+    1. Click the **Status** dropdown menu.
+    2. Select **Translated**.
         !![](../assets/images/transifex_translation_02.png,850px)
-    3. Select **"No"** to display untranslated strings.
+    3. Select **No** to display untranslated strings.
         !![](../assets/images/transifex_translation_03.png,850px)
 
 ## Translating Strings
 
 !!! Workflow
-    1. Enter the translation into the **"Type your translation here"** field.
+    1. Enter the translation into the **Type your translation here** field.
         !![](../assets/images/transifex_translation_04.png,850px)
     2. Ensure the translation is accurate and contextually appropriate.
-    3. Click **"Save changes"**.
+    3. Click **Save changes**.
         !![](../assets/images/transifex_translation_06.png,850px)
 
 Follow these guidelines while translating:

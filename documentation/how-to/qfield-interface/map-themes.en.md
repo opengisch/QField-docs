@@ -27,7 +27,7 @@ If you defined map themes in QGIS, switch between them directly in QField using 
 
 !!! Workflow
     1. Open the **Side Dashboard**.
-    2. Tap the **"Map themes"** dropdown menu.
+    2. Tap the **Map themes** dropdown menu.
     3. Select your desired active theme to update the map canvas.
 
 ![type:video](../../assets/videos/theme.webm)

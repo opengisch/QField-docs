@@ -171,8 +171,8 @@ you can change the project ownership directly on the project settings page.
 
 !!! Workflow
 
-    1. Open the project overview on the web page and select the **"Settings"** menu.
-    2. Scroll to the actions zone and select **"Transfer ownership of this project"**.
+    1. Open the project overview on the web page and select the **Settings** menu.
+    2. Scroll to the actions zone and select **Transfer ownership of this project**.
     3. Select your target organization destination from the lookup dropdown menu.
     4. Type the requested text confirmation into the confirmation popup dialog box and click **Transfer project**.
 

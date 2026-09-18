@@ -29,7 +29,7 @@ To upgrade to an **organization plan**, follow these steps:
 
 !!! Workflow
     1. Click your username in the top-right corner of the page.
-    2. Select **"Create organization"**.
+    2. Select **Create organization**.
     3. Select your preferred payment model:
         !![Organization plan options](../assets/images/organization_plan_options.png,800px)
         - **Monthly Payment:** Choose between a **Flat** or **Flex** subscription.
@@ -97,7 +97,7 @@ Primary ownership of an organization account can be transferred to any existing 
 !!! Workflow
     1. Ensure the new owner is already a member of the organization.
     2. Navigate to your organization overview page and click **Edit organization**.
-    3. Locate the **Transfer ownership of this organization** section, select the new user from the **"Owner"** dropdown menu, and confirm the transfer.
+    3. Locate the **Transfer ownership of this organization** section, select the new user from the **Owner** dropdown menu, and confirm the transfer.
         !![](../assets/images/qfc_transferring_org.png)
 
 ## Canceling Subscriptions

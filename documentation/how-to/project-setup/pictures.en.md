@@ -5,7 +5,7 @@ tx_slug: documentation_how-to_pictures
 
 # Use Attachment
 
-In QField, fields configured with the **"Attachment"** widget can:
+In QField, fields configured with the **Attachment** widget can:
 
 - Display and capture photos.
 - Display and record video clips.
@@ -37,9 +37,9 @@ By default, the stamp applies context details such as date, time, latitude, long
 A preview screen displays after photo capture to inspect and manually adjust images before saving them to your project.
 A floating toolbar above the capture button offers the following editing options:
 
-- **"Rotate Counter-Clockwise":** Rotates the photo 90° to the left.
-- **"Mirror / Reflect":** Flips the photo horizontally.
-- **"Rotate Clockwise":** Rotates the photo 90° to the right.
+- **Rotate Counter-Clockwise":** Rotates the photo 90° to the left.
+- **Mirror / Reflect":** Flips the photo horizontally.
+- **Rotate Clockwise":** Rotates the photo 90° to the right.
 
 Applied rotations or reflections bake permanently into the saved JPEG image alongside active image stamps or EXIF metadata.
 
@@ -55,7 +55,7 @@ Set up a layer relation in QGIS project properties to store newly captured media
 !!! Workflow
     1. Create two database tables in your data source using the schema structure below:
 
-    **"Apiary"** (parent feature layer):
+    **Apiary** (parent feature layer):
 
     | Field      | Type       |
     |------------|------------|
@@ -88,16 +88,16 @@ Configure a relation in QGIS with the following properties:
 
 Configure attribute forms in feature layers after creating the layer relation.
 Specify a default value in the `apiary` parent layer to generate unique primary keys.
-Set the widget type to **"Attachment"** in the `apiary_picture` child layer.
+Set the widget type to **Attachment** in the `apiary_picture` child layer.
 
 !!! Workflow
     **Parent layer configuration:**
 
     1. Navigate to _Vector Layer Properties... > Attribute Form_.
-    2. Select the `id` UUID field and set **"Widget Type"** to **"Text Edit"** or **"UUID Generator"**.
-    3. Set **"Default Value"** to `uuid('WithoutBraces')`.
-    4. (Optional) Uncheck **"Editable"** or hide the field to prevent user modifications.
-    5. Drag the relation into the form layout and set cardinality to **"Many to one relation"**.
+    2. Select the `id` UUID field and set **Widget Type** to **Text Edit** or **UUID Generator**.
+    3. Set **Default Value** to `uuid('WithoutBraces')`.
+    4. (Optional) Uncheck **Editable** or hide the field to prevent user modifications.
+    5. Drag the relation into the form layout and set cardinality to **Many to one relation**.
 
 !![widgets](../../assets/images/add-1-n-pictures-widgets_hive.png)
 
@@ -107,7 +107,7 @@ Set the widget type to **"Attachment"** in the `apiary_picture` child layer.
     **Child layer configuration:**
 
     1. Navigate to _Vector Layer Properties... > Attribute Form_ for the child layer.
-    2. Select the `path` field and set **"Widget Type"** to **"Attachment"**.
+    2. Select the `path` field and set **Widget Type** to **Attachment**.
     3. Add the field to the attribute form layout.
 
 !![widgets](../../assets/images/add-1-n-pictures-widgets_picture.png)
@@ -127,9 +127,9 @@ Add custom templates using two methods:
 - Create a `drawing_templates` directory alongside your QGIS project file and populate it with image files.
 QField registers all images inside `drawing_templates` as sketching templates when loading the project.
 - Add image files to the `drawing_templates` directory inside the QField application directory on your mobile device.
-Find app directory locations at the bottom of the **"About QField"** screen.
+Find app directory locations at the bottom of the **About QField** screen.
 
-Templates stored alongside projects or inside the QField app directory display when tapping the three-dotted menu *(⋮)* on an Attachment widget and selecting **"Draw a sketch"**.
+Templates stored alongside projects or inside the QField app directory display when tapping the three-dotted menu *(⋮)* on an Attachment widget and selecting **Draw a sketch**.
 
 !![picture path](../../assets/images/drawing_templates.png)
 
@@ -140,7 +140,7 @@ The integrated QField camera automatically geotags captured photos.
 Location and heading orientation metadata bake directly into the image file structure.
 
 !!! Note
-    Disable **"Use native camera"** in QField general settings to preserve EXIF metadata on modern mobile devices.
+    Disable **Use native camera** in QField general settings to preserve EXIF metadata on modern mobile devices.
 
 ## Image Stamping
 
@@ -153,7 +153,7 @@ Image stamping embeds formatted text overlays and logos directly onto field phot
 
 !!! Workflow
     1. Navigate to _Project > Properties... > QField > Attachments and Directories_.
-    2. Click **"Settings"** under **"Customize image stamping details"**.
+    2. Click **Settings** under **Customize image stamping details**.
 
 !![](../../assets/images/accessing_image_stamping_setting.png,600px)
 

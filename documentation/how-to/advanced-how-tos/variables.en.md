@@ -39,8 +39,8 @@ Access the variables list under _Side Dashboard > Settings > Variables_ for a co
 
 !!! Workflow
     1. Open the **Side Dashboard** and tap the gear icon to open **Settings**.
-    2. Switch to the **"Variables"** tab to view all applicable variables.
-    3. Tap **"Add a new variable"** at the bottom of the list.
+    2. Switch to the **Variables** tab to view all applicable variables.
+    3. Tap **Add a new variable** at the bottom of the list.
     4. Enter a variable name and value, then save your changes.
 
 ### Useful Examples

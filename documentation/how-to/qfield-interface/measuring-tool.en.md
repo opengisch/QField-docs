@@ -12,7 +12,7 @@ Customize measurement units in QGIS when preparing projects.
     :material-monitor: Desktop preparation
 
     1. In QGIS, navigate to _Project > Properties... > General_.
-    2. Configure distance and area units under the **"Measurements"** section.
+    2. Configure distance and area units under the **Measurements** section.
 
 !![](../../assets/images/custom-units-measure.png)
 
@@ -36,7 +36,7 @@ For polygon geometries, QField displays total perimeter and area.
 
 ## Elevation Profiling
 
-When the measuring tool is enabled, an **"Elevation Profile"** button appears in the top-left corner of the screen.
+When the measuring tool is enabled, an **Elevation Profile** button appears in the top-left corner of the screen.
 Toggling this button opens the elevation profile panel, displaying terrain elevation and intersecting vector features along the measured geometry.
 
 !![](../../assets/images/elevation_profiling.png)

@@ -56,8 +56,8 @@ You can locate your app directory in case you are under your settings
 !!! Workflow
     1. Open a local project in QField.
     2. Open the **Side Dashboard** (**☰**).
-    3. Tap the three-dotted menu *(⋮)* and select **"About QField"**.
-    4. Locate the application directory paths listed under **"App directories"**.
+    3. Tap the three-dotted menu *(⋮)* and select **About QField**.
+    4. Locate the application directory paths listed under **App directories**.
 
 !![QField app directories](../../assets/images/qfield_app_directories.png)
 
@@ -121,7 +121,7 @@ If you want QField to track (follow your specific edits inside) your changes, yo
 1. Connect your Android device to a computer using a USB cable.
 2. Follow system prompts for [transferring files between computers and Android devices](https://support.google.com/android/answer/9064445?hl=en-GB#zippy=%2Cwindows-computer).<!-- markdown-link-check-disable-line -->
 3. Navigate to `<drive>:/Android/data/ch.opengis.qfield/files/` on your device.
-4. Copy project folders into **"Imported Projects"** or individual layers into **"Imported Datasets"**.
+4. Copy project folders into **Imported Projects** or individual layers into **Imported Datasets**.
 
 #### Google Drive and Cloud Storage Services
 
@@ -131,7 +131,7 @@ Using cloud storage services provides shared directory access between desktop co
     1. Package your QGIS project on your desktop computer.
     2. Upload the packaged project folder to Google Drive.
     3. Download the project folder to your target mobile device using the Google Drive app.
-    4. Save downloaded folders into the **"Imported Projects"** directory.
+    4. Save downloaded folders into the **Imported Projects** directory.
     5. Collect data in the field using QField.
     6. Upload modified project folders back to Google Drive to sync edits with your desktop computer.
 
@@ -182,15 +182,15 @@ QField provides five methods to open local projects and datasets:
 
 !![QField import actions](../../assets/images/storage-import-actions.png)
 
-On Android and iOS, access import actions by tapping **"Open local files"** on the Welcome Screen and tapping the plus button (**"+"**) at the bottom right.
+On Android and iOS, access import actions by tapping **Open local files** on the Welcome Screen and tapping the plus button (**+**) at the bottom right.
 Desktop operating systems (Windows, macOS, and Linux) support direct storage access and expose URL and WebDAV import options.
 
 !![](../../assets/images/get-started-storage-local-file-2.png)
 
 ### Importing a Project Folder
 
-Tap **"Import project from folder"** and select a project directory using the system file picker.
-Re-importing a folder with an identical name overwrites existing project files in **"Imported Projects"**.
+Tap **Import project from folder** and select a project directory using the system file picker.
+Re-importing a folder with an identical name overwrites existing project files in **Imported Projects**.
 
 !!! Note
     Edits, additions, and deletions save to datasets inside the imported project directory rather than the original source directory.
@@ -198,20 +198,20 @@ Re-importing a folder with an identical name overwrites existing project files i
 ### Importing a Compressed Project
 
 Import compressed `.zip` project archives into QField.
-QField extracts archive contents into the **"Imported Projects"** directory automatically.
+QField extracts archive contents into the **Imported Projects** directory automatically.
 
 ### Importing Individual Datasets
 
-Tap **"Import dataset(s)"** and select one or more spatial files in the system file picker.
-QField copies selected files into the **"Imported Datasets"** directory.
+Tap **Import dataset(s)** and select one or more spatial files in the system file picker.
+QField copies selected files into the **Imported Datasets** directory.
 
 !!! Note
     Ensure you select all sidecar files when importing single datasets (for example, Shapefile imports require `.shp`, `.shx`, `.dbf`, `.prj`, and `.cpg` files).
 
 ### Importing from a URL
 
-Tap **"Import URL"** and enter a direct file URL.
-QField downloads and saves the content into **"Imported Projects"** or **"Imported Datasets"**.
+Tap **Import URL** and enter a direct file URL.
+QField downloads and saves the content into **Imported Projects** or **Imported Datasets**.
 
 !![QField import URL dialog](../../assets/images/storage-import-url.png)
 
@@ -232,7 +232,7 @@ Access export options using the action menu inside the local file picker screen.
 
 ### Exporting to a Directory
 
-Tap **"Export to folder"** and select a target destination directory.
+Tap **Export to folder** and select a target destination directory.
 Use this action to copy modified project files to folders managed by synchronization tools like [Syncthing](https://docs.syncthing.net/intro/getting-started.html) or cloud storage providers like Nextcloud.
 
 !!! Note
@@ -240,12 +240,12 @@ Use this action to copy modified project files to folders managed by synchroniza
 
 ### Sending a Compressed Project Folder
 
-Tap **"Send compressed folder to..."** to compress a project directory into a `.zip` archive.
+Tap **Send compressed folder to...** to compress a project directory into a `.zip` archive.
 Select your preferred application in the native sharing dialog to send the archive.
 
 ### Sending an Individual Dataset (Android Only)
 
-Tap **"Send to..."** on individual datasets to share files via email, messaging, or cloud storage applications.
+Tap **Send to...** on individual datasets to share files via email, messaging, or cloud storage applications.
 
 Export datasets directly from synchronized QFieldCloud projects:
 
@@ -255,5 +255,5 @@ Export datasets directly from synchronized QFieldCloud projects:
     2. Locate your project datasets (offline datasets store inside `data.gpkg`).
     3. Tap the three-dotted menu *(⋮)* next to a file or folder.
         !![](../../assets/images/export-qfieldcloud-files-from-qfield-3-three-dots.png,350px)
-    4. Select **"Send to..."** or **"Export to folder..."** and follow system prompts.
+    4. Select **Send to...** or **Export to folder...** and follow system prompts.
         !![](../../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png,350px)

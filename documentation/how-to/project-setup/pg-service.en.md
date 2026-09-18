@@ -28,14 +28,14 @@ You can create a PostgreSQL connection directly inside QGIS.
     We do not recommend storing database credentials directly in QGIS project files due to data security risks.
 
 !!! Workflow
-    1. In the QGIS Browser panel, right-click **"PostgreSQL"** and select **"New Connection..."**.
+    1. In the QGIS Browser panel, right-click **PostgreSQL** and select **New Connection...**.
     2. Enter a connection name and specify connection parameters (such as host, database name, port, and SSL mode).
-    3. Under the **"Authentication"** section, click **"Add"** to store user credentials if not previously saved.
-    4. Click **"Test Connection"** and click **"OK"** when the connection succeeds.
+    3. Under the **Authentication** section, click **Add** to store user credentials if not previously saved.
+    4. Click **Test Connection** and click **OK** when the connection succeeds.
     5. Create a new project on QFieldCloud, selecting the direct connection option to maintain database access.
     6. Configure project layers and synchronize the project to QFieldCloud.
 
-If you stored access credentials in the **"Authentication"** section, QField can edit and digitize features directly.
+If you stored access credentials in the **Authentication** section, QField can edit and digitize features directly.
 
 !![Adding PostGIS connection](../../assets/images/pg-service_manual_connection.png,400px)
 
@@ -54,33 +54,33 @@ The [PG Service Parser Plugin](https://github.com/opengisch/qgis-pg-service-pars
     :material-monitor: Desktop preparation
 
     1. Navigate to _Plugins > Manage and Install Plugins..._.
-    2. Search for **"PG service parser"** and click **"Install Plugin"**.
-    3. Click the **"PG service parser"** icon in the QGIS toolbar to open the plugin window.
-    4. Click **"Create file at default location"** to generate a new `pg_service.conf` file in the default directory.
+    2. Search for **PG service parser** and click **Install Plugin**.
+    3. Click the **PG service parser** icon in the QGIS toolbar to open the plugin window.
+    4. Click **Create file at default location** to generate a new `pg_service.conf` file in the default directory.
 
 !![Create config file](../../assets/images/pg-service_create_config_file.png,500px)
 
 !!! Workflow
     :material-monitor: Desktop preparation
 
-    1. Click the green plus (**"+"**) icon inside the PG Service Parser plugin dialog.
-    2. Select required connection parameters and click **"OK"**.
+    1. Click the green plus (**+**) icon inside the PG Service Parser plugin dialog.
+    2. Select required connection parameters and click **OK**.
     3. Double-click parameter sections to enter your database details (such as host, port, database name, user, and password).
-    4. Click **"Update service"** to save your service configuration.
+    4. Click **Update service** to save your service configuration.
 
 !![Service details](../../assets/images/pg-service_service_details.png)
 
 !!! Workflow
     :material-monitor: Desktop preparation
 
-    1. Open the **"QGIS Connections"** tab inside the PG Service Parser dialog.
+    1. Open the **QGIS Connections** tab inside the PG Service Parser dialog.
     2. Select the target service entry.
-    3. Click the green plus (**"+"**) icon to add a new connection.
+    3. Click the green plus (**+**) icon to add a new connection.
     4. Accept the default connection name or enter a custom name.
-    5. Double-click the new connection entry and click **"Test Connection"**.
-    6. Click **"OK"** when the connection succeeds, then close the plugin dialog.
+    5. Double-click the new connection entry and click **Test Connection**.
+    6. Click **OK** when the connection succeeds, then close the plugin dialog.
 
-The new connection appears under the **"PostgreSQL"** entry in the QGIS Browser panel.
+The new connection appears under the **PostgreSQL** entry in the QGIS Browser panel.
 
 ## Connection to PostGIS in QField
 
@@ -98,7 +98,7 @@ The QField application directory on Android is located at `Android/data/ch.openg
 ### Configuration on QFieldCloud
 
 QFieldCloud supports `pg_service.conf` configurations using project secrets.
-Set PostgreSQL layers to the **"Offline editing"** cloud packaging action and save your service settings on the QFieldCloud project secrets page.
+Set PostgreSQL layers to the **Offline editing** cloud packaging action and save your service settings on the QFieldCloud project secrets page.
 
 Read more about [configuring PostgreSQL service secrets](../../reference/qfieldcloud/secrets.md) in the QFieldCloud documentation.
 
@@ -145,7 +145,7 @@ Create an environment variable on Windows to ensure QGIS and system tools locate
 
 !!! Workflow
     1. Navigate to _Settings > Options... > System_.
-    2. Under the **"Environment"** section, enable **"Use custom variables"**.
+    2. Under the **Environment** section, enable **Use custom variables**.
     3. Add the `PGSERVICEFILE` variable name and file path.
 
 !![QGIS System Environment Variables](../../assets/images/service_config_file_002.png)

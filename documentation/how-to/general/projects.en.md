@@ -23,25 +23,25 @@ This location supports importing files from external SD cards or cloud storage p
 ## Import and Open Local Project
 :material-tablet: Fieldwork
 
-On the Welcome Screen, tap **"Local projects and datasets"** to view **"Created projects"**, **"Imported datasets"**, and **"Imported projects"** directories.
-Tap the plus button (**"+"**) at the bottom right to open the import dropdown menu.
+On the Welcome Screen, tap **Local projects and datasets** to view **Created projects**, **Imported datasets**, and **Imported projects** directories.
+Tap the plus button (**+**) at the bottom right to open the import dropdown menu.
 
 !![QField File Selector](../../assets/images/howto_filebrowser.png)
 
 The dropdown menu provides options to import local data:
 
-- **"Import project from folder"**
-- **"Import project from ZIP"**
-- **"Import dataset(s)"**
+- **Import project from folder**
+- **Import project from ZIP**
+- **Import dataset(s)**
 
 ### Import Project from Folder or ZIP Archive
 
 !!! Workflow
-    1. Tap the plus button (**"+"**) and select **"Import project from folder"** or **"Import project from ZIP"**.
+    1. Tap the plus button (**+**) and select **Import project from folder** or **Import project from ZIP**.
     2. Grant folder access permissions in the system file picker.
     3. Select your target project folder or compressed `.zip` archive.
-    4. QField copies the content into the **"Imported projects"** directory.
-    5. Tap the project in **"Imported projects"** to open it.
+    4. QField copies the content into the **Imported projects** directory.
+    5. Tap the project in **Imported projects** to open it.
 
 Re-importing a folder with an identical name overwrites existing local project files to update the project.
 
@@ -51,15 +51,15 @@ Re-importing a folder with an identical name overwrites existing local project f
 ### Import Datasets
 
 !!! Workflow
-    1. Tap the plus button (**"+"**) and select **"Import dataset(s)"**.
+    1. Tap the plus button (**+**) and select **Import dataset(s)**.
     2. Select one or more files in the system file picker.
-    3. QField copies selected files into the **"Imported datasets"** folder.
+    3. QField copies selected files into the **Imported datasets** folder.
 
 Ensure you select all required sidecar files when importing single datasets (for example, Shapefile datasets require `.shp`, `.shx`, `.dbf`, `.prj`, and `.cpg` files).
 
 ## Favorite Directories
 
-The main file selector screen displays a **"Favorite directories"** section.
+The main file selector screen displays a **Favorite directories** section.
 
 - **Add a favorite directory:** Long-press a directory name in the file selector.
 - **Remove a favorite directory:** Long-press an entry in the favorites list.
@@ -72,9 +72,9 @@ This feature is useful when using a QFieldCloud project as a basemap.
 ### How to Set a Default Project
 
 !!! Workflow
-    1. Locate the **"Recent Projects"** list on the Welcome Screen.
+    1. Locate the **Recent Projects** list on the Welcome Screen.
     2. Long-press the project you want to set as your default basemap.
-    3. Select **"Set as Default Project"** from the context menu.
+    3. Select **Set as Default Project** from the context menu.
 
 !![](../../assets/images/default_project_selection.png,300px)
 
@@ -92,7 +92,7 @@ When opening an individual dataset, QField selects a basemap using the following
 Access imported projects and datasets directly by connecting your device to a computer using a USB cable.
 The top navigation bar displays the storage path when opening a local file.
 
-On most USB-connected devices, locate edited content under `<drive>:/Android/data/ch.opengis.qfield/files/` within the **"Imported Datasets"** or **"Imported Projects"** folders.
+On most USB-connected devices, locate edited content under `<drive>:/Android/data/ch.opengis.qfield/files/` within the **Imported Datasets** or **Imported Projects** folders.
 
 ### Send To & Sharing Options
 :material-tablet: Fieldwork
@@ -109,7 +109,7 @@ Select one or multiple dataset files inside the file picker screen to export the
 !!! Workflow
     1. Long-press an item or tap the multi-select menu in the local file picker to enter selection mode.
     2. Select the dataset file(s) you wish to export.
-    3. Tap the top menu button *(⋮)* and select **"Send compressed file(s) to..."**.
+    3. Tap the top menu button *(⋮)* and select **Send compressed file(s) to...**.
     4. Choose your destination application in the native sharing dialog.
 
     !![](../../assets/images/send_compressed_files.png,400px)

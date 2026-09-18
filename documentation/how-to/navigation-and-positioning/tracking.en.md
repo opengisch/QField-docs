@@ -45,11 +45,11 @@ If tracked layers support $M$ coordinate dimensions, QField records elapsed time
     **Option 1: Via the Side Dashboard**
 
     1. Open the **Side Dashboard** and long-press the target vector layer.
-    2. Tap **"Setup tracking"** to open configuration settings.
+    2. Tap **Setup tracking** to open configuration settings.
         !![](../../assets/images/tracking-layer-properties.png)
-    3. Tap **"Start tracking"**.
+    3. Tap **Start tracking**.
     4. Enter feature attribute values in the attribute form.
-    5. To stop tracking, open the **Side Dashboard**, long-press the layer tracking badge, and tap **"Stop tracking"**.
+    5. To stop tracking, open the **Side Dashboard**, long-press the layer tracking badge, and tap **Stop tracking**.
         !![](../../assets/images/tracking-stop.png)
 
 !!! Workflow
@@ -70,14 +70,14 @@ If QField closes or restarts during an active tracking session, QField prompts t
 
 Configure vector layers to initiate position tracking sessions automatically when loading projects in QField.
 If feature forms are enabled, attribute forms open automatically upon project load.
-If layer properties are set to **"Suppress attribute form"**, tracking initiates immediately without displaying form prompts.
+If layer properties are set to **Suppress attribute form**, tracking initiates immediately without displaying form prompts.
 
 !!! Workflow
     :material-monitor: Desktop preparation
 
     1. In QGIS, navigate to _Vector Layer Properties... > QField_.
-    2. Enable **"Tracking Session"** and define time or distance requirements.
+    2. Enable **Tracking Session** and define time or distance requirements.
         !![Activating automatic "Tracking Sessions" in QFieldSync](../../assets/images/automatic-tracking-session.png)
         !![Tracking activated automatically in QField](../../assets/images/qfield-tracking-session.png,350px)
-    3. (Optional) To bypass feature form prompts when auto-tracking begins, navigate to _Vector Layer Properties... > Attribute Form_ and select **"Suppress attribute form"**.
+    3. (Optional) To bypass feature form prompts when auto-tracking begins, navigate to _Vector Layer Properties... > Attribute Form_ and select **Suppress attribute form**.
         !![Hide Form on Added Feature](../../assets/images/hide-form-on-add-feature.png)

@@ -12,23 +12,23 @@ Read more in the [QGIS Map View Documentation](https://docs.qgis.org/latest/en/d
 
 Choose from several decoration types:
 
-- **"Grid":** Overlays the map canvas with lines or markers at defined intervals to provide spatial reference, which is useful in remote areas.
-- **"Title Label":** Displays a title on your map, such as the project name.
-- **"Copyright Label":** Displays data source origins or branding information on your map canvas.
-- **"Image":** Places a logo, watermark, or graphic directly on your map.
-- **"Scale Bar":** Displays a scale bar on the map canvas, which can be enabled directly inside QField settings.
+- **Grid":** Overlays the map canvas with lines or markers at defined intervals to provide spatial reference, which is useful in remote areas.
+- **Title Label":** Displays a title on your map, such as the project name.
+- **Copyright Label":** Displays data source origins or branding information on your map canvas.
+- **Image":** Places a logo, watermark, or graphic directly on your map.
+- **Scale Bar":** Displays a scale bar on the map canvas, which can be enabled directly inside QField settings.
 
 ### Grid
 
 !!! Workflow
     1. In QGIS, navigate to _View > Decorations > Grid..._.
-    2. Enable the **"Enable Grid"** checkbox.
+    2. Enable the **Enable Grid** checkbox.
     3. Customize the grid appearance options:
 
-        - **"Grid type":** Select **"Solid lines"**, **"Crosses"**, or **"Markers"**.
-        - **"Interval":** Set grid line spacing along the **X** and **Y** axes based on the project Coordinate Reference System (CRS).
-        - **"Line/Marker Symbol":** Customize color, thickness, and style for grid lines or markers.
-        - **"Draw annotations":** Displays grid coordinates on the map canvas, controlling font, orientation, and margin distance from the map frame.
+        - **Grid type":** Select **Solid lines**, **Crosses**, or **Markers**.
+        - **Interval":** Set grid line spacing along the **X** and **Y** axes based on the project Coordinate Reference System (CRS).
+        - **Line/Marker Symbol":** Customize color, thickness, and style for grid lines or markers.
+        - **Draw annotations":** Displays grid coordinates on the map canvas, controlling font, orientation, and margin distance from the map frame.
 
 Once configured in QGIS, the grid displays automatically in QField after synchronizing or transferring the project.
 
@@ -36,9 +36,9 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
 
 !!! Workflow
     1. In QGIS, navigate to _View > Decorations > Title Label..._.
-    2. Enable the **"Enable Title Label"** checkbox.
+    2. Enable the **Enable Title Label** checkbox.
     3. Enter static text or construct a dynamic title using QGIS expressions.
-    4. Click the **"Insert or Edit an Expression..."** button to open the expression builder.
+    4. Click the **Insert or Edit an Expression...** button to open the expression builder.
 
     A common use case displays the project title configured under _Project > Properties... > General_:
 
@@ -77,8 +77,8 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
 
 !!! Workflow
     1. In QGIS, open _View > Decorations > Image…_.
-    2. Enable the **"Enable Image"** checkbox.
-    3. Click the **"..."** button next to **"Image path"** to select your image file.
+    2. Enable the **Enable Image** checkbox.
+    3. Click the **...** button next to **Image path** to select your image file.
 
     !!! Important
         Store image files inside your project directory and use relative file paths for compatibility with QField.
@@ -99,9 +99,9 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
 !!! Workflow
 
     1. Open your project in QField.
-    2. Open the **"Side Dashboard"** (**☰**).
+    2. Open the **Side Dashboard** (**☰**).
     3. Tap the **Settings** icon.
-    4. Navigate to the **"General"** section.
+    4. Navigate to the **General** section.
     5. Enable **Show scale bar** .
 
     !![](../../assets/images/scale_bar_toggle.png,900px)

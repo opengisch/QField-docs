@@ -53,6 +53,6 @@ Set any QGIS project stored on your mobile device as a custom background base ma
 !!! Workflow
     1. Open QField and navigate to the project selection screen.
     2. Long-press the QGIS project file you want to use as a base map.
-    3. Select **"Use as Base Map"** in the context menu.
+    3. Select **Use as Base Map** in the context menu.
 
 !![](../../assets/images/choose_basemap.png,300px)

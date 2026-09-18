@@ -17,7 +17,7 @@ Display expressions are also used when searching for features within layers.
 !!! Workflow
     1. Open the attribute table in QGIS and switch to form view.
     2. Navigate to _Vector Layer Properties > Display_.
-    3. Define your display expression under the **"Display Expression"** field.
+    3. Define your display expression under the **Display Expression** field.
 
 !![Configuration of display expression in QGIS.](../../assets/images/define_display_expression.png)
 
@@ -30,7 +30,7 @@ You can also configure which layers are searchable in QField.
 
 !!! Workflow
     1. In QGIS, navigate to _Project > Properties... > Data Sources_.
-    2. Configure layer capabilities by toggling checkboxes for **"Identifiable"**, **"Read-Only"**, **"Searchable"**, **"Required"**, or **"Private"**.
+    2. Configure layer capabilities by toggling checkboxes for **Identifiable**, **Read-Only**, **Searchable**, **Required**, or **Private**.
 
 !![Configuration of layers that will not be identifiable, nor modifiable, nor searchable.](../../assets/images/project_configuration_readonly.png)
 
@@ -50,7 +50,7 @@ This ensures custom font files are pushed to QFieldCloud and downloaded to mobil
 
 !!! Workflow
     1. In QGIS, navigate to _Project > Properties... > QField_.
-    2. Under the **"Attachments and Directories"** tab, add the relative path of your `fonts` subfolder to the directories list as a **"Data"** directory type.
+    2. Under the **Attachments and Directories** tab, add the relative path of your `fonts` subfolder to the directories list as a **Data** directory type.
 
 !![Configuring custom fonts folder for QFieldCloud synchronization.](../../assets/images/qfc_fonts_directory_setting.png)
 
@@ -62,12 +62,12 @@ You can embed SVG symbols directly within a QGIS project file.
 !!! Workflow
     1. Select the layer requiring custom SVG symbology and open its properties dialog.
     2. Navigate to _Vector Layer Properties > Symbology_.
-    3. In the Symbol Layer Panel, select **"Simple marker"**.
+    3. In the Symbol Layer Panel, select **Simple marker**.
         !![](../../assets/images/symbol_layer_panel.png)
-    4. Change the symbol layer type to **"SVG marker"**.
+    4. Change the symbol layer type to **SVG marker**.
     5. Scroll to the bottom panel and click the dropdown menu icon next to the file selection button.
         !![](../../assets/images/drop_down_svg_menu.png)
-    6. Select **"Embed File..."** and choose your SVG file in the file picker.
-    7. Apply the changes and click **"OK"**.
+    6. Select **Embed File...** and choose your SVG file in the file picker.
+    7. Apply the changes and click **OK**.
 
 !![Embedded custom SVG on QField](../../assets/images/custom_svg_symbols_qfield.png,350px)

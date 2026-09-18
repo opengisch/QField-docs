@@ -50,7 +50,7 @@ For example, if your QGIS Localized Data Path is `./GIS_Common/BaseData/` contai
 
 !!! Note
     1. Only collaborators assigned **Manager** or **Admin** roles (or organization owners) can add or update files inside the **`shared_datasets`** project.
-    2. **Important for Organization Managers:** If you are using `shared_datasets` within an organization you have to create an empty cloud project named **"shared_datasets"**  on QFieldCloud.
+    2. **Important for Organization Managers:** If you are using `shared_datasets` within an organization you have to create an empty cloud project named **shared_datasets**  on QFieldCloud.
 
 ### Preparation of QGIS Projects with Shared Datasets
 :material-monitor: Desktop preparation
