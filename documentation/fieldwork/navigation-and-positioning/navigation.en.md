@@ -77,7 +77,7 @@ Once a target has been set, a new window will appear on the map canvas, which wi
 - The Bearing to the target.
 !![](../../assets/images/navigation.png)
 
-### Precise View
+## Precise View
 
 If you need a more precise way of directing to your target, you can enable the **Precise View Panel** in two ways.
 

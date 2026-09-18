@@ -82,6 +82,7 @@ nav:
       - Navigation and Positioning:
           - fieldwork/navigation-and-positioning/navigation.md
           - fieldwork/navigation-and-positioning/tracking.md
+          - fieldwork/navigation-and-positioning/gnss.md
       - General:
           - fieldwork/general/projects.md
           - fieldwork/general/plugins.md
@@ -104,7 +105,6 @@ nav:
       - Navigation and Positioning:
           - how-to/navigation-and-positioning/gnss.md
           - how-to/navigation-and-positioning/geofencing.md
-          - how-to/navigation-and-positioning/navigation.md
           - how-to/navigation-and-positioning/tracking.md
           - how-to/navigation-and-positioning/external-routing.md
       - Advanced How To's:
