@@ -241,4 +241,4 @@ When your local project version in QField and the remote cloud project version a
 
 - **Synchronize Project Card Badge:** A green badge appears on the right side of the **Synchronize project** section within the cloud synchronization panel.
 
-!![](../../assets/images/qfield_cloud_sync_status_2.png)
+!![](../../assets/images/qfield_cloud_sync_status_2.png,350px)
