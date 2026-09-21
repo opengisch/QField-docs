@@ -206,6 +206,24 @@ Supported syntax tokens include:
 
 ### Synchronization with QFieldCloud
 
+:material-tablet: Fieldwork
+
+QField will indicate whether your project has changes locally that are not yet uploaded to QFieldCloud or a new version of your project is available on QFieldCloud.
+
+!!! Note
+
+    1. To get notified about the project update on the cloud, you need to be online and logged in.
+    2. If a new version is available, you should syncronize your project as soon as possible.
+
+There are two ways in which you can see whether your project is up-to-date with the version on QFieldCloud.
+
+- **Cloud Icon Badge:** A green bubble with an exclamation mark appears on the cloud button in the **Side Dashboard**.
+!![](../../assets/images/qfield_cloud_sync_status_1.png)
+- **Synchronize Project Card Badge:** A green badge appears on the right side of the **Synchronize project** section within the cloud synchronization.
+
+!![](../../assets/images/qfield_cloud_sync_status_2.png,350px)
+
+
 After completing field data collection, synchronize your changes back to QFieldCloud.
 
 !!! Workflow
@@ -225,20 +243,3 @@ After completing field data collection, synchronize your changes back to QFieldC
 Your changes are now available to all users with project access on the cloud.
 
 Find more information in the [Advanced QFieldCloud Setup Guide](./advanced-setup-qfc.md) and [QFieldCloud Technical Reference](../../reference/qfieldcloud/workflow.md).
-
-#### Project Synchronization Status
-
-QField provides visual status indicators on the state between local project and remote QFieldCloud project.
-
-##### Synchronization Status Badges
-:material-tablet: Fieldwork
-
-When your local project version in QField and the remote cloud project version are not updated, QField displays green status indicators:
-
-- **Cloud Icon Badge:** A green bubble with an exclamation mark appears on the cloud button in the **Side Dashboard** toolbar.
-
-!![](../../assets/images/qfield_cloud_sync_status_1.png)
-
-- **Synchronize Project Card Badge:** A green badge appears on the right side of the **Synchronize project** section within the cloud synchronization panel.
-
-!![](../../assets/images/qfield_cloud_sync_status_2.png,350px)
