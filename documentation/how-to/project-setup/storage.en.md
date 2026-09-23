@@ -84,9 +84,7 @@ To properly structure the different parts of your project, QField is separated i
 | `plugins/` | Contains custom QML plugins that extend QField capabilities. |
 | `proj/` | Stores custom projection grid files (`.tiff`) for coordinate reference system transformations. |
 
-
 ## Copying Projects to a Target Device
-
 :material-monitor: Project Manager
 
 Installing QField on your smart device creates an application storage location containing three directories:
@@ -243,7 +241,7 @@ Use this action to copy modified project files to folders managed by synchroniza
 Tap **Send compressed folder to...** to compress a project directory into a `.zip` archive.
 Select your preferred application in the native sharing dialog to send the archive.
 
-### Sending an Individual Dataset (Android Only)
+### Sending an Individual Dataset
 
 Tap **Send to...** on individual datasets to share files via email, messaging, or cloud storage applications.
 

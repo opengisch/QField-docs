@@ -16,8 +16,6 @@ Hide layer attributes or lookup tables during field data collection by configuri
 
 !!! Workflow
 
-    :material-monitor: Project Manager
-
     1. In QGIS, navigate to _Project > Properties... > Data Sources_.
 
     !![Configuring Layers Data Sources](../../assets/images/hiding-legend-nodes.png)
@@ -31,13 +29,14 @@ Hide layer attributes or lookup tables during field data collection by configuri
     - **Private":** Checking this option hides the layer from the project legend and layer tree.
 
 ## Relative Project Path
+:material-monitor: Project Manager
 
 Set all file paths for datasets and attachments to relative to make your project portable across devices.
 To manually transfer and synchronize your QGIS project to QField or another client, use relative file paths for your QGIS project file (`.qgs` or `.qgz`).
 
 !!! Workflow
 
-    1. Direct to *Project* > *Properties* > *General*
+    1. Navigate to *Project* > *Properties* > *General*
     2. Insure that the  *Save paths* is set to *Relative*
     !![Project Properties - Relative Project Path](../../assets/images/relative_project_path.png)
     3. Insure also that all required data files are in the same folder as the QGIS project or in a subfolder.

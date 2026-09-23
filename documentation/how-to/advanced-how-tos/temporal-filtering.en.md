@@ -14,7 +14,7 @@ Temporal filtering status displays via a clock icon in the **Side Dashboard**:
 !![](../../assets/images/temporal-properties.png)
 
 ## Configuring Temporal Filtering in QGIS
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Configure temporal settings on vector layers in QGIS before exporting projects to QField.
 

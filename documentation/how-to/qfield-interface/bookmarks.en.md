@@ -43,6 +43,7 @@ Bookmarks display directly on the map canvas as colored marker pins:
 !![](../../assets/images/bookmarks.png)
 
 ### Bookmark List Panel
+:material-tablet: Fieldwork
 
 QField includes a dedicated side drawer to manage and browse bookmarks.
 

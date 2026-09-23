@@ -66,7 +66,6 @@ The `fid` field can be modified during synchronization with QFieldCloud and lead
 A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549) is unique and will not cause conflicts during synchronization. <!-- markdown-link-check-disable-line -->
 
 !!! Workflow
-    :material-monitor: Desktop preparation
 
     1. Create a new project in QGIS.
     2. Create GeoPackage layers and save them in the same folder as your QGIS project.
@@ -88,6 +87,7 @@ A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_
     Every time QGIS synchronizes the project to QFieldCloud, the entire GeoPackage replaces the cloud version, whereas QField updates only the actual changes.
 
 ## PostGIS
+:material-monitor: Project Manager
 
 Using PostGIS is a good choice if your data must be visible and editable for multiple users.
 
@@ -102,7 +102,8 @@ We highly recommend using a PG Service file for data security.
 Read more on PG Service and secrets in the [PG Service documentation](../../how-to/project-setup/pg-service.md).
 
 !!! Workflow
-    :material-monitor: Desktop preparation
+
+    :material-monitor: Project Manager
 
     1. Create a new QGIS project.
     2. Add a PostGIS layer, making sure to store credentials in the project or create a PG Service file.
@@ -116,7 +117,7 @@ Read more on PG Service and secrets in the [PG Service documentation](../../how-
     2. Collect data in the field.
     3. Upload or synchronize changes once back online when using **Offline editing**.
 
-    :material-monitor: Desktop preparation
+    :material-monitor: Project Manager
 
     1. View all changes directly inside the PostGIS database.
 

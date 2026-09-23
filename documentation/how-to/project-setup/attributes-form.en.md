@@ -15,6 +15,8 @@ To configure an attribute form, open vector layer properties by navigating to _V
 Select appropriate widget types based on the expected behavior of each attribute.
 The table below summarizes attribute widget types supported in QField.
 
+Below is an overview what  **widget types** are available and supported in QField.
+
 | Widget type        | Support          | Notes                                                                                                                                                                                                  |
 |--------------------|------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Attachment         | :material-check: | This field is combined with camera integration, to know more jump to [Attachment (photo settings)](#attachment-widget)   |
@@ -42,23 +44,30 @@ QField also supports container widgets:
 For other attribute widget types not yet supported, consider [sponsoring an implementation](../../get-started/contribute.md#feature-sponsoring).
 
 ## General Attribute Settings
+:material-monitor: Project Manager
 
 Configure general form options in QGIS under _Vector Layer Properties... > Attribute Form_:
 
 - **Drag and drop designer":** Organize form layouts using containers such as tabs and groups.
-Incorporate conditional visibility rules and default values to enhance form interactivity.
-Read more in the [QGIS Drag and Drop Designer Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu). <!-- markdown-link-check-disable-line -->
-- **Hide attribute form upon":** Suppress feature forms by changing settings from **Show form on Add Feature** to **Suppress attribute form**.
-When adding new features in QField, attribute forms will not display.
-Ensure all layer constraints are met automatically when suppressing attribute forms.
-- **Editable":** Toggle whether an attribute field is editable in the widget display settings.
-- **Remember last values":** Preserves previously entered attribute values for newly created features.
-While QGIS applies this rule globally when enabled, QField provides interactive controls to toggle this option on or off during data collection.
+    Incorporate conditional visibility rules and default values to enhance form interactivity.
+    Read more in the [QGIS Drag and Drop Designer Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu). <!-- markdown-link-check-disable-line -->
+
+- **Hide attribute form upon**: You can hide the attribute form by changing from the "Show form on Add Feature" to the setting "Suppress attribute form".
+    When adding a new feature in QField, no attribute form needs to be populated.
+    **Note**: In such a case, you have to configure the attribute form in such a way that all constraints/rules are met even if you do not add any attributes.
+
+- **Editable**: You can decide whether a field is editable or not by activating it in the widget display of the corresponding field.
+
+- **Remember last values**: If you don't want to add the same value again and again you can enable this option under the widget display in QGIS.
+    QField, however, offers a more fine-grained control over the last used values.
+    If you enable this option in QGIS, the rule will always apply.
+    With QField you can change and disable this option at any point during data collection.
+
 - **Default values":** Pre-fills attribute fields using QGIS expressions.
-QField supports positioning variables (such as [GNSS variables](../../reference/expression_variables.md#positioning-and-gnss-variables)) and [QFieldCloud variables](../../reference/expression_variables.md#qfieldcloud).
+    QField supports positioning variables (such as [GNSS variables](../../reference/expression_variables.md#positioning-and-gnss-variables))
+    and [QFieldCloud variables](../../reference/expression_variables.md#qfieldcloud).
 
 !![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
-
 
 ## Feature Form Wizard Mode
 
@@ -71,7 +80,7 @@ Wizard Mode provides a guided workflow for field workers filling out complex for
     Wizard Mode requires organizing form fields into multiple tabs.
 
 ### Configuring Wizard Mode
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Organize your feature form into tabs using the **Drag and drop designer** in QGIS before enabling Wizard Mode.
 
@@ -82,10 +91,10 @@ Organize your feature form into tabs using the **Drag and drop designer** in QGI
     2. Navigate to _Project > Properties... > QField_ or click the settings icon in the QFieldSync panel.
     3. Enable **Enable QField feature forms' wizard mode**.
     4. Save your project and synchronize it to QFieldCloud.
-
-!![](../../assets/images/qfieldsync_enable_form_wizard.png)
+    !![](../../assets/images/qfieldsync_enable_form_wizard.png)
 
 ### Using the Wizard in the Field
+
 :material-tablet: Fieldwork
 
 When opening a feature form with Wizard Mode enabled, the interface displays one tab page at a time.
@@ -114,7 +123,8 @@ Wizard Mode hides the top-right **Save** button.
 ![type:video](../../assets/videos/qfield_form_wizard.mp4)
 
 ## Working with Relations
-:material-monitor: Desktop preparation
+
+:material-monitor: Project Manager
 
 For detailed information on setting up layer relations in QGIS, refer to the [QGIS Relations Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers). <!-- markdown-link-check-disable-line -->
 
@@ -133,7 +143,7 @@ Control automatic transitions from button interface displays to scrollable lists
 !![QField Value Map Editor as Buttons](../../assets/images/qfield-value-map-editor-buttons.png,300px)
 
 ## Attachment Widget
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 The **Attachment** widget stores file paths for feature media and documents.
 
@@ -167,8 +177,9 @@ Enabling the **Hyperlink** option on Attachment widgets displays file paths as e
 
 !![](../../assets/images/hyperlink_option.png)
 
+
 ### Setting a Specific Attachment Path
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Configure media attachment file paths in QFieldSync.
 By default, QField saves photos to `DCIM`, audio recordings to `audio`, and videos to `video` using timestamped file names.
@@ -180,7 +191,7 @@ By default, QField saves photos to `DCIM`, audio recordings to `audio`, and vide
 !![Paths](../../assets/images/paths-saving-media.png)
 
 ## Value Relation Widget
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 The **Value Relation** widget displays values from a related layer in a combobox or toggle button layout.
 
@@ -201,6 +212,7 @@ When grouped, QField displays the widget as a list regardless of toggle button s
 ![type:video](../../assets/videos/value_relation_widget.webm)
 
 ### Group Value Configuration
+:material-monitor: Project Manager
 
 !!! Workflow
     1. Select the attribute column used to organize items into groups.
@@ -215,6 +227,7 @@ When grouped, QField displays the widget as a list regardless of toggle button s
 !![Different configurations on QField](../../assets/images/grouping_value_relations_widget_qfield_show_gruped.png)
 
 ### Use Auto Complete
+:material-monitor: Project Manager
 
 !!! Workflow
     1. Navigate to _Vector Layer Properties... > Attribute Form_.
@@ -223,10 +236,12 @@ When grouped, QField displays the widget as a list regardless of toggle button s
 
 !![Enable auto-complete within QGIS](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
 
+:material-tablet: Fieldwork
+
 !![Auto-complete in QField](../../assets/images/autocomplete_typing.png,300px)
 
 ## Conditional Visibility
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Hide form containers or fields based on QGIS expressions.
 Use conditional visibility when specific attributes are required only under certain conditions.
@@ -240,10 +255,12 @@ Use conditional visibility when specific attributes are required only under cert
 
 !![Configuration of a group box that will only be shown if the checkbox "disease" is checked.](../../assets/images/conditional_visibility_configuration.png)
 
+:material-tablet: Fieldwork
+
 ![type:video](../../assets/videos/conditional_visibility.webm)
 
 ## Conditional Row Styling
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 QField supports QGIS conditional row styling to provide visual feedback in list views (such as identify results or relation lists).
 Use expressions to change background colors, text colors, and font styles based on feature data.
@@ -273,7 +290,7 @@ When viewing feature lists in QField (such as identify results or relation lists
 !![](../../assets/images/row_conditional_formatting_qfield.png)
 
 ## Define Constraints
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Attach expression rules as attribute constraints.
 Features require satisfying all constraints before saving edits.
@@ -293,7 +310,7 @@ Examples of constraint expressions:
     ```
 
 ## Define Default Values
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Configure default values to pre-fill attribute forms when digitizing new features.
 Default values remain editable in the form unless fields are locked.
@@ -364,6 +381,7 @@ Examples of expression variables:
     ```
 
 ## Define QML Widgets
+:material-monitor: Project Manager
 
 Integrate custom QML widgets to execute advanced form actions.
 

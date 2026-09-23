@@ -18,7 +18,7 @@ Create map themes in QGIS to configure customized map views for fieldwork.
     2. Save the view configuration as a named map theme in the QGIS Layers panel.
     3. Transfer or synchronize the project to your mobile device.
 
-![type:video](../../assets/videos/map_themes_configuration.webm)
+!!! Workflow
 
 ## Change the Active Map Theme
 :material-tablet: Fieldwork

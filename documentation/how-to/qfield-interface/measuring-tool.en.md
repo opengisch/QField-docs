@@ -8,6 +8,9 @@ tx_slug: documentation_how-to_measuring-tool
 QField offers built-in measurement tools with customizable distance and area units.
 Customize measurement units in QGIS when preparing projects.
 
+QField offers built-in measurement tools with customizable distance and area units.
+Customize measurement units in QGIS when preparing projects.
+
 !!! Workflow
     :material-monitor: Desktop preparation
 

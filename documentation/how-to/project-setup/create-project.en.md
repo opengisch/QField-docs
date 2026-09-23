@@ -4,6 +4,7 @@ tx_slug: documentation_how-to_create-project
 ---
 
 # Create a New Project in QField
+:material-tablet: Fieldwork
 
 Create a simple project directly in QField on your mobile device to collect notes with or without attachments and track your location.
 Choose between several basemaps and convert your local map into a cloud project if needed.

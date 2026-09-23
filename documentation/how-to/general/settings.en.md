@@ -4,6 +4,7 @@ tx_slug: documentation_get-started_settings
 ---
 
 # QField General Settings
+:material-tablet: Fieldwork
 
 The general settings screen allows you to control the basic appearance and behavior of QField.
 You can access the general settings in two ways.

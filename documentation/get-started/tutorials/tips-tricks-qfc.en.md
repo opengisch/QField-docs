@@ -104,7 +104,7 @@ When making frequent field changes with attachments, synchronize to the cloud as
 Enforce automatic pushing of pending changes from QField devices in the field and specify the automated push interval.
 Configure this remote functionality in the project settings.
 
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 !!! Workflow
     1. Navigate to _Project > Properties... > QField > QFieldCloud Packaging_.

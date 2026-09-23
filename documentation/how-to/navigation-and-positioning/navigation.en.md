@@ -4,6 +4,7 @@ tx_slug: documentation_how-to_navigation
 ---
 
 # Navigation
+:material-tablet: Fieldwork
 
 QField provides built-in navigation tools to help locate features and reach precise target destinations in the field.
 
@@ -75,6 +76,7 @@ QField evaluates the target as reached when distance minus GNSS positioning accu
     When your precision threshold is set to 1.0 meter and your GNSS accuracy is 0.05 meters, the target dial turns green within 0.15 meters of the destination.
 
 ### Precise View Audio Feedback
+:material-tablet: Fieldwork
 
 When your distance to the target falls within the precision threshold, QField emits acoustic proximity pings.
 Ping frequency increases as distance to target decreases.

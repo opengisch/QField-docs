@@ -4,6 +4,7 @@ tx_slug: documentation_how-to_gnss
 ---
 
 # Positioning (GNSS)
+:material-tablet: Fieldwork
 
 QField displays live positioning data using several sources:
 
@@ -29,6 +30,7 @@ When positioning is active, QField displays your current location in blue on the
 - A shaded circular buffer represents reported positioning precision.
 
 ## Configuration
+:material-tablet: Fieldwork
 
 Configure positioning parameters in QField settings under the **Positioning** tab.
 
@@ -37,6 +39,7 @@ Configure positioning parameters in QField settings under the **Positioning** ta
     2. Switch to the **Positioning** tab.
 
 ### Enable NTRIP Corrections
+:material-tablet: Fieldwork
 
 QField functions as an RTK client to process differential corrections when connected to an RTK provider over NTRIP.
 
@@ -50,7 +53,8 @@ QField functions as an RTK client to process differential corrections when conne
     5. Save parameters and verify data transmission indicators (arrows display active data streaming).
         !![RTK connected](../../assets/images/GNSS_NTRIP_configuration_inuse.png,300px)
 
-### Show Position Information
+### Show position information
+:material-tablet: Fieldwork
 
 Lock the crosshair to your GNSS location to place vertices precisely at your position.
 Select one of three position-following modes:
@@ -66,6 +70,7 @@ Select one of three position-following modes:
     2. Tap the crosshair button on the map canvas to lock to your current position.
 
 ### Measure (M) Value
+:material-tablet: Fieldwork
 
 When digitizing features on vector layers with `M` coordinate dimensions, QField records measurement values for vertices digitized while locked to GNSS positioning.
 
@@ -79,6 +84,7 @@ Change the `M` value source in positioning settings:
 - PDOP, HDOP, and VDOP
 
 ### Accuracy Requirement
+:material-tablet: Fieldwork
 
 Set minimum accuracy thresholds for feature digitizing.
 Positioning quality displays using color-coded indicators (red for bad, yellow for ok, green for excellent) on the GNSS button.
@@ -91,6 +97,7 @@ Set accuracy thresholds in positioning settings.
     When **Enable accuracy requirement** is active, QField blocks digitizing vertices locked to GNSS positioning while accuracy indicators are red.
 
 ### Antenna Height Compensation
+:material-tablet: Fieldwork
 
 Enter antenna pole heights in positioning settings.
 QField subtracts the antenna pole height from measured GNSS elevation values automatically.
@@ -155,6 +162,7 @@ Supported grid shift file formats include:
     Displaying raw WGS 84 coordinates instead of project CRS coordinates indicates that a valid GNSS fix has not yet been established.
 
 ## Positioning Variables
+:material-monitor: Project Manager
 
 Store internal and external GNSS positioning details in attribute fields using QGIS expression variables.
 Variables are commonly assigned as default values to record positioning quality metadata.
@@ -171,6 +179,7 @@ Elevation handling based on vertical grid shift settings (with antenna compensat
 | USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
 
 ### Capturing Coordinates in Attribute Forms
+:material-monitor: Project Manager
 
 Store longitude, latitude, and altitude automatically in feature forms using default expressions:
 
@@ -185,6 +194,7 @@ Store longitude, latitude, and altitude automatically in feature forms using def
 Coordinates populate automatically when digitizing new features while locked to GNSS positioning.
 
 ### Vertex Log Layer
+:material-monitor: Project Manager
 
 Create a dedicated vertex log layer to record metadata for every digitized point:
 
