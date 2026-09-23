@@ -65,6 +65,8 @@ To monitor active organization users, navigate to _Organization Settings > Billi
     An **Organization Plan** allows administrators to invite unique user accounts (such as `ninja_001`, `ninja_002`, `ninja_003`) as project collaborators.
     Administrators can manage user roles and permissions across organizations and specific projects.
 
+## Adding QFieldCloud Storage
+
 You can add additional storage packages or adjust user seats at any time in QFieldCloud.
 Subscription increases take effect immediately, while plan decreases take effect at the start of the next billing cycle.
 Additional storage is available in packages of 3 GB.
