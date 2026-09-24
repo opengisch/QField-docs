@@ -9,14 +9,13 @@ QFieldCloud provides fine-grained access control over projects and organizations
 
 Access permissions follow a strict hierarchy: **a higher role automatically inherits all capabilities of lower roles.**
 
-!!! tip
-
-    "Core Concepts Overview"
+!!! Tip
+    **Core Concepts Overview**
 
     If you are new to QFieldCloud management, ensure you are familiar with these core concepts:
 
     - **[Projects](../../get-started/tutorials/concepts.md#projects):** The central repositories storing QGIS project files, layer datasets, styles, and field edits.
-    - **[Organizations](../../get-started/tutorials/concepts.md#organizations):** Shared accounts that own storage quotas, manage member subscriptions, and centralize project managements.
+    - **[Organizations](../../get-started/tutorials/concepts.md#organizations):** Shared accounts that own storage quotas, manage member subscriptions, and centralize project management.
     - **[Members](../../get-started/tutorials/concepts.md#organization-members):** User accounts added to an organization with defined organization-level administrative roles.
     - **[Collaborators](../../get-started/tutorials/concepts.md#project-collaborators):** Individual user accounts granted specific access permissions to a single project.
 
@@ -32,11 +31,6 @@ Project roles determine what an individual user can do within a specific project
 | **Reporter**      | Can download the project and collect **new** features in the field, but cannot edit or delete existing features.                       |
 | **Reader**        | Read-only access to view and download the project. Cannot upload edits or changes.                                                     |
 
-!!! note
-
-    To assign more than one collaborator on private projects, the project must belong to an organization plan and collaborators must all be members of that organization.
-    Alternatively, you can make a project "public" allowing all QFieldCloud users to access your project.
-
 ### Project Capabilities
 
 The following table details what each project role can do:
@@ -51,7 +45,6 @@ The following table details what each project role can do:
 | **Manage project secrets & service credentials**                                                                        |   ❌    |    ❌     |   ❌    |    ❌    |       ✅       |
 | **Upload [restricted project files](../../get-started/tutorials/tips-tricks-qfc.md#restricted-files) (`.qgz`, styles)** |   ❌    |    ❌     |   ❌    |    ❌    |       ✅       |
 | **Rename or delete the project**                                                                                        |   ❌    |    ❌     |   ❌    |    ❌    |       ✅       |
-
 
 ## Organization Member Roles
 
@@ -73,14 +66,13 @@ The following table details what each organization role can do:
 | **View organization member directory & teams**        |   ✅    |    ✅    |   ✅   |   ✅   |
 | **Access assigned organization projects**             |   ✅    |    ✅    |   ✅   |   ✅   |
 | **Create new projects under the organization**        |   ❌    |    ✅    |   ✅   |   ✅   |
-| **Add, remove, or modify organization members**       |   ❌    |    ❌    |   ✅   |   ✅   |
+| **Add, remove, or modify organization members**       |   ❌    |    ✅    |   ✅   |   ✅   |
 | **Manage organization teams & team roles**            |   ❌    |    ❌    |   ✅   |   ✅   |
 | **View billing, active users, and invoices**          |   ❌    |    ❌    |   ❌   |   ✅   |
 | **Modify plan subscriptions & payment details**       |   ❌    |    ❌    |   ❌   |   ✅   |
 | **Delete organization or transfer primary ownership** |   ❌    |    ❌    |   ❌   |   ✅   |
 
-
-## Key Security Features
+## Key Security & Visibility Features
 
 ### Restricted Project Files
 
@@ -100,5 +92,22 @@ In the QFieldCloud web interface, project visibility is indicated by the status 
 
 !![](../../assets/images/qfc_public_projects_button.png)
 
-* **Private Projects:** The project owner, organization owner, and organization admins automatically receive the **Admin** project role. All other users attempting to access the project will receive a `404 Not Found` error unless they have been explicitly added as project collaborators.
-* **Public Projects:** The project owner, organization owner, and organization admins automatically receive the **Admin** project role. All other registered QFieldCloud users implicitly receive the **Reader** project role (allowing them to view and download the project contents), unless they have been explicitly added as project collaborators with a higher role.
+- **Private Projects:** The project owner, organization owner, and organization admins automatically receive the **Admin** project role. All other users attempting to access the project receive a `404 Not Found` error unless explicitly added as project collaborators.
+
+  !!! Note
+      To assign collaborators on **Private** projects owned by an organization, all users collaborators must be active members of that organization or the organization owner. In addition, the total number of collaborators cannot exceed the owner's active subscription plan limit for private projects.
+
+- **Public Projects:** The project owner, organization owner, and organization admins automatically receive the **Admin** project role. All other registered QFieldCloud users implicitly receive the **Reader** project role (allowing them to view and download the project contents).
+
+  !!! Note
+      On **Public** organization projects, users who are **not members** of the organization can be explicitly added as project collaborators (for instance, as an **Editor** or **Reporter**). External collaborators on public projects do not consume organization subscription seats.
+
+### Converting Public Projects to Private
+
+When converting a **Public** project to **Private**, QFieldCloud enforces specific requirements before saving the setting change:
+
+1. **Non-Organization Collaborators Check:** If an organization-owned project has collaborators who are not members of the organization, you must either remove them or add them as organization members before setting the project to private.
+2. **Subscription Plan Limits Check:** The total number of collaborators cannot exceed what the owner's subscription plan allows for private projects. Remove excess collaborators before changing visibility to private.
+
+!!! Note
+    If a subscription downgrade occurs on an existing private project that already exceeds the plan limit, the project remains private but shifts to a locked status until collaborator counts are brought within plan limits or the plan is upgraded.
