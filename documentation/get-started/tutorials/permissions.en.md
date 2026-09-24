@@ -72,6 +72,14 @@ The following table details what each organization role can do:
 | **Modify plan subscriptions & payment details**       |   ❌    |    ❌    |   ❌   |   ✅   |
 | **Delete organization or transfer primary ownership** |   ❌    |    ❌    |   ❌   |   ✅   |
 
+### Default Project Role for Organization Members
+
+Organizations Admins can configure a **Default Project Role for Members** setting in their account profile settings.
+
+When organization members are added to newly created organization projects, QFieldCloud assigns this default role automatically (for instance, **Editor** or **Reader**), streamlining project permissions across team members without requiring manual assignment for each new project.
+
+!![](../../assets/images/default_role_on_org_projects.png)
+
 ## Key Security & Visibility Features
 
 ### Restricted Project Files
@@ -85,17 +93,17 @@ Only **Admins** and **Owners** can modify restricted files.
 Each project can be configured as **Private** or **Public** when creating a project or inside project settings:
 
 1. Log into QFieldCloud and select your project.
-2. Navigate to **Settings** in the project.
-3. Toggle the **Public project** option.
+2. Navigate to **Settings** in the project menu.
+3. Check or uncheck **Public project**.
 
-In the QFieldCloud web interface, project visibility is indicated by the status icon next to the project name: a lock icon (🔒) represents a Private project, while if the project doesn't have any icon it represents a Public project.
+In the QFieldCloud web interface, project visibility is indicated by the status icon next to the project name: a lock icon (🔒) represents a Private project, while an unadorned project title represents a Public project.
 
 !![](../../assets/images/qfc_public_projects_button.png)
 
 - **Private Projects:** The project owner, organization owner, and organization admins automatically receive the **Admin** project role. All other users attempting to access the project receive a `404 Not Found` error unless explicitly added as project collaborators.
 
   !!! Note
-      To assign collaborators on **Private** projects owned by an organization, all users collaborators must be active members of that organization or the organization owner. In addition, the total number of collaborators cannot exceed the owner's active subscription plan limit for private projects.
+      To assign collaborators on **Private** projects owned by an organization, all candidate collaborators must be active members of that organization or the organization owner. In addition, the total number of collaborators cannot exceed the owner's active subscription plan limit for private projects (`max_premium_collaborators_per_private_project`).
 
 - **Public Projects:** The project owner, organization owner, and organization admins automatically receive the **Admin** project role. All other authenticated QFieldCloud users receive a default base permission defined by the **Public Collaborator Role**.
 
@@ -103,13 +111,11 @@ In the QFieldCloud web interface, project visibility is indicated by the status 
 
 When enabling **Public project** during project creation or in project settings, a **Public collaborator role** field dynamically displays below the checkbox.
 
-!![](../../assets/images/default_role_public_project.png)
+This setting defines the default implicit role granted to any authenticated QFieldCloud user accessing the public project:
 
-This setting defines the default implicit role granted to any QFieldCloud user accessing the public project:
-
-- **Configurable Base Role:** Choose between permissions such as **Reader** (read-only access) or higher roles (such as **Reporter** or **Editor**) depending on your crowd sourcing requirements.
-- **Default Value Handling:** For personal accounts, this defaults to **Reader**. For organization-owned projects, QFieldCloud inherits the organization's default member project role setting (if valid for public projects) or defaults to **Reader**.
-- **External Non-Member Collaborators:** On public organization projects, users who are **not members** of the organization can be explicitly added as collaborators with custom roles without consuming organization subscription seats.
+- **Configurable Base Role:** Choose between permissions such as **Reader** (read-only access) or higher roles (such as **Reporter** or **Editor**) depending on your crowdsourcing requirements.
+- **Default Value Handling:** For personal accounts, this defaults to **Reader**. For organization-owned projects, QFieldCloud inherits the organization's **Default Project Role for Members** setting (if valid for public projects) or defaults to **Reader**.
+- **External Non-Member Collaborators:** On public organization projects, users who are **not members** of the organization can be explicitly added as collaborators with custom roles without consuming organization membership seats.
 
 ### Converting Public Projects to Private
 
