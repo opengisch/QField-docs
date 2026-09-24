@@ -129,13 +129,12 @@ Configure this remote functionality in the project settings.
         - **Battery Optimization:** Plan strategies to manage battery consumption on mobile devices during prolonged fieldwork.
 
 ## Restriction of Project Files
+:material-monitor: Project Manager
 
 Restrict QGIS project files in field operations to prevent users with editor rights from modifying project configurations.
 Project administrators can restrict access to these files in QFieldCloud.
 
 !!! Workflow
-    :material-monitor: Desktop preparation
-
     1. Navigate to _Settings_ on the QFieldCloud homepage.
     2. Enable the **Restrict project files** option.
 

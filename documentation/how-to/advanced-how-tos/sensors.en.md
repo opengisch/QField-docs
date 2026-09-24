@@ -28,7 +28,7 @@ Active sensors collecting data display live readings inside a sensor information
 You can also store live sensor readings linked to GNSS positions by initiating tracking sessions on point vector layers.
 
 ### Configuration in QGIS
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 !!! Workflow
     1. In QGIS, open _Vector Layer Properties... > Attribute Form_ for your target point layer.
