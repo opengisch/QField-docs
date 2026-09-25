@@ -26,7 +26,7 @@ You can transfer your projects to QField in two ways:
 
      <u>IOS Transfer<u>
 
-     -[Manual data transfer (copy/paste)](#transfer-via-usb-cable-1)
+     -[Manual data transfer (copy/paste)](#transfer-via-usb-cable)
      -[via iCloud](#icloud-and-cloud-services)
      -[AirDrop](#share-via-airdrop)
 
@@ -219,9 +219,9 @@ QField treats downloaded `.zip` archives containing `.qgs` or `.qgz` files as co
 
 Export modified files back to your computer using four methods:
 
-- [Exporting a project folder or dataset to a local directory](#exporting-a-project-folder-or-an-individual-dataset)
+- [Exporting a project folder or dataset to a local directory](storage.md#exporting-to-a-directory)
 - [Sending a compressed project folder via external applications](#sending-a-compressed-project-folder)
-- [Sending individual datasets via external applications](#sending-an-individual-dataset-android-only)
+- [Sending individual datasets via external applications](#sending-an-individual-dataset)
 - [Transferring files directly using a USB cable connection](#transfer-via-usb-cable)
 
 !![QField export actions](../../assets/images/storage-export-actions.png)

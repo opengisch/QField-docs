@@ -106,7 +106,7 @@ QField subtracts the antenna pole height from measured GNSS elevation values aut
 
 Correct ellipsoidal heights to orthometric elevations using vertical grid shift files.
 
-Place vertical grid shift files in the  QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
+Place vertical grid shift files in the  QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#app-directory-structure)/QField/proj**.
 
 Once installed, select the file under **Vertical grid shift in use** in positioning settings.
 When using vertical grid shifts with external receivers, disable **Use orthometric altitude from device**.
@@ -176,7 +176,7 @@ Elevation handling based on vertical grid shift settings (with antenna compensat
 |----------------------------|---------------------------|--------------------------------------|----------------|-----------------------------|
 | None                       | Z ellipsoidal device value| Z ellipsoidal device value           | Z ellipsoidal device value | Altitude: xxx.xxxx m       |
 | Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
-| USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
+| USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-and-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
 
 ### Capturing Coordinates in Attribute Forms
 :material-monitor: Project Manager
@@ -230,7 +230,7 @@ Supported NMEA sentences include GGA, RMC, GSA, GSV, GST, VTG, HDG, and HDT.
 ### External Receiver Logging
 
 When connected to an external receiver, enable **Log NMEA sentences from device to file** to log raw NMEA sentences.
-Logs save to **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/logs**..
+Logs save to **[[App Directory](../../how-to/project-setup/storage.md#app-directory-structure)]/QField/logs**..
 
 !![](../../assets/images/external_receiver_log.png,250px)
 
