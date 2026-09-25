@@ -217,7 +217,7 @@ By default QFieldSync chooses the default project directory.
 
 If everything is alright, a new window will appear with the message *The locally stored cloud project is already synchronized with QFieldCloud, no action is required.
 
-*Congratulations!!! you have successfully created your first project and are now ready to map with QField*
+*Congratulations!!! You have successfully created your first project and are now ready to map with QField*
 
 #### Opening on QField
 
