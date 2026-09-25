@@ -66,7 +66,7 @@ This option allows you to track modifications and collaborate with multiple user
 - **Directly access data source** (available only for non-file-based layers): Accesses online data directly without copying files.
 This option applies to online services such as WMS, WFS, or PostGIS layers.
 When using online PostGIS layers, copy your database credentials to QField.
-Read more in the [PostgreSQL documentation](../../how-to/project-setup/pg-service.md#configuration-on-mobile-devices).
+Read more in the [PostgreSQL documentation](../../how-to/project-setup/pg-service.md#configuration-on-mobile-device).
 - **Remove":** Excludes the layer from the packaged project.
 
 ### Area of Interest and Basemap
@@ -149,7 +149,7 @@ Once you finish configuring your project, layers, and styles, package your proje
         !![](../../assets/images/unchecked-show-package.png,90px)
         !![](../../assets/images/checked-show-package.png,150px)
     3. Copy the exported project folder to your target mobile device directory.
-    Refer to the [Storage Guide](../../how-to/project-setup/storage.md#copying-projects-to-a-target-device) for OS-specific directory details (Android, iOS, or Windows).
+    Refer to the [Storage Guide](../../how-to/project-setup/storage.md#2-copying-project-over-to-the-qfield-target-device) for OS-specific directory details (Android, iOS, or Windows).
     Typical file paths use the following structure:
     `<drive>:/Android/data/ch.opengis.qfield/files/QField/...`
 

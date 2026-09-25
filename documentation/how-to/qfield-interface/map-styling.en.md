@@ -42,7 +42,7 @@ You can also configure which layers are searchable in QField.
 QField allows you to use custom fonts in your projects.
 You can register additional fonts using two methods:
 
-- **System-Wide Fonts (App Directory):** Copy your font files (`.ttf` or `.otf`) into the **[App Directory](../../how-to/project-setup/storage.md#qfield-app-directory)/QField/fonts**.
+- **System-Wide Fonts (App Directory):** Copy your font files (`.ttf` or `.otf`) into the **[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/fonts**.
 These fonts become accessible across all projects and individual datasets on the device.
 - **Project-Specific Fonts:** Create a subfolder named `fonts` inside the same directory as your QGIS project file (`.qgs` or `.qgz`).
 These fonts are accessible only when viewing that specific project.

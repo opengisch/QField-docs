@@ -31,7 +31,7 @@ To upgrade to an **organization plan**, follow these steps:
     1. Click your username in the top-right corner of the page.
     2. Select **Create organization**.
     3. Select your preferred payment model:
-        !![Organization plan options](../assets/images/organization_plan_options.png,800px)
+        !![Organization plan options](../../assets/images/organization_plan_options.png,800px)
         - **Monthly Payment:** Choose between a **Flat** or **Flex** subscription.
             - **Flat:** Select a fixed number of user seats and pay monthly for every seat.
             - **Flex:** Add members to the organization and pay only for active users during each billing cycle (requires a minimum of 1 member).
@@ -41,7 +41,7 @@ To upgrade to an **organization plan**, follow these steps:
     6. Click **Create**.
     7. Complete the required fields under the **Billing Address** section and click **Next** to view the subscription summary.
     8. (Optional) Add additional 3 GB storage packages as needed.
-        !![](../assets/images/example_organization_plan_billing.png)
+        !![](../../assets/images/example_organization_plan_billing.png)
     9. (Optional) Enter a promotion code at the bottom of the billing window if available.
     10. Review your subscription details, enter your payment information, and click **Pay** to activate your plan.
 
@@ -53,7 +53,7 @@ An active user corresponds to any member who performs at least one server job in
 
 To monitor active organization users, navigate to _Organization Settings > Billing > Active users_.
 
-!![](../assets/images/listing_qfieldcloud_active_users.png)
+!![](../../assets/images/listing_qfieldcloud_active_users.png)
 
 !!! Note
     A single user account can only log into one device at a time.
@@ -74,12 +74,12 @@ Additional storage is available in packages of 3 GB.
 !!! Workflow
     1. Navigate to your organization settings by selecting _Organization > Settings_.
     2. Navigate to the **Billing** section and click **Change**.
-        !![](../assets/images/storage-qfc1.png)
+        !![](../../assets/images/storage-qfc1.png)
     3. Click **Modify subscription**.
-        !![](../assets/images/storage-qfc2.png)
+        !![](../../assets/images/storage-qfc2.png)
     4. Adjust your required number of user seats and 3 GB storage packages.
         Green text indicates increased items, while red text indicates decreased allocations for the upcoming billing cycle.
-        !![](../assets/images/storage-qfc3.png)
+        !![](../../assets/images/storage-qfc3.png)
 
 !!! Note
     - Included storage corresponds to storage allocated per user seat.
@@ -100,7 +100,7 @@ Primary ownership of an organization account can be transferred to any existing 
     1. Ensure the new owner is already a member of the organization.
     2. Navigate to your organization overview page and click **Edit organization**.
     3. Locate the **Transfer ownership of this organization** section, select the new user from the **Owner** dropdown menu, and confirm the transfer.
-        !![](../assets/images/qfc_transferring_org.png)
+        !![](../../assets/images/qfc_transferring_org.png)
 
 ## Canceling Subscriptions
 
@@ -116,7 +116,7 @@ Personal **Pro** plans and **Organization** plans must be canceled separately.
     2. Navigate to the **Billing** section.
     3. Click **Change**, then click **Cancel subscription**.
 
-        ![](../assets/images/discontinuing_service_02_change_subcription.png)
+        ![](../../assets/images/discontinuing_service_02_change_subcription.png)
 
     4. Confirm the cancellation in the popup window.
 
@@ -137,4 +137,4 @@ You can access past invoices at the bottom of the billing section.
     2. Navigate to the **Billing** section.
     3. Scroll down to the bottom of the page to view and download past or current account invoices.
 
-        !![Example of Invoice](../assets/images/qfc-storage-plans-invoice.png,400px)
+        !![Example of Invoice](../../assets/images/qfc-storage-plans-invoice.png,400px)

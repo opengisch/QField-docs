@@ -65,7 +65,7 @@ Configure general form options in QGIS under _Vector Layer Properties... > Attri
 
 - **Default values":** Pre-fills attribute fields using QGIS expressions.
     QField supports positioning variables (such as [GNSS variables](../../reference/expression_variables.md#positioning-and-gnss-variables))
-    and [QFieldCloud variables](../../reference/expression_variables.md#qfieldcloud-variables).
+    and [QFieldCloud variables](../../reference/expression_variables.md#qfieldcloud).
 
 !![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 

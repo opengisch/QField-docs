@@ -63,7 +63,7 @@ When disabled, the crosshair remains fixed to the map center while mouse movemen
     - **QField Documentation":** Searches QField documentation pages matching search terms.
     When disabled, search documentation by typing `? ` before a query.
 - **Manage plugins":** Opens the plugin management screen when tapping the three-dotted menu *(⋮)* to add, enable, or disable custom plugins.
-Refer to the [Plugins Page](../../how-to/advanced-how-tos/plugins.md#project-specific-plugins) to add new plugins.
+Refer to the [Plugins Page](../../how-to/advanced-how-tos/plugins.md#project-plugins) to add new plugins.
 - **Maximized attribute form":** Expands attribute forms to cover the full screen.
 - **Fixed scale navigation":**
     - **Active fixed scale navigation":** Pans and highlights selected search results while maintaining the current map scale.

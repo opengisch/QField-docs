@@ -49,7 +49,7 @@ Now you have to transfer the exported authentication configuration XML file dire
 !!! Workflow
     1. Copy the authentication configuration XML file from wherever you saved it during export.
     2. Connect to your mobile device (eg. via cable / cloud folder).
-    3. Once connected copy the exported XML file into the `QField/Auth` directory on your device [App Directory](../../how-to/project-setup/storage.md#app-directory-structure).
+    3. Once connected copy the exported XML file into the `QField/Auth` directory on your device [App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory).
     4. Launch QField and open your project.
 
 !!! Tip
