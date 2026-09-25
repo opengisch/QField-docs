@@ -16,7 +16,7 @@ XLSForm uses Excel spreadsheets (`.xlsx`, `.xls`, or `.ods`) to define survey qu
 Read more on the official [XLSForm Reference Website](https://xlsform.org/).
 
 ## Installing the Plugin
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Install the XLSForm Converter plugin using the QGIS Plugin Manager.
 
@@ -32,7 +32,7 @@ Once installed, the **Convert XLSForm to QGIS project** algorithm appears in the
 !![Processing](../../assets/images/xlsform-processing.png,300px)
 
 ## Convert XLSForms to QGIS Projects
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Convert an XLSForm spreadsheet into a QGIS project file (`.qgz`) and GeoPackage database.
 Refer to this [Google Sheets Template](https://docs.google.com/spreadsheets/d/1v9Bumt3R0vCOGEKQI6ExUf2-8T72-XXp_CbKKTACuko/edit?gid=1052905058#gid=1052905058) for standard XLSForm structures.

@@ -8,6 +8,7 @@ tx_slug: documentation_reference_qfieldcloud_concepts
 ## Users
 
 To interact with QFieldCloud you need to be a registered user. Each user can create, modify and delete **projects** and **organizations**.
+
 ## Organizations
 
 Organizations are shared accounts where multiple QFieldCloud users can collaborate across many projects at once.
@@ -90,20 +91,14 @@ Only users with the roles of **Admin** and **Manager** can add more users as col
 If the project is owned by an organization, whole **teams** (e.g. `@organization/team`) can also be added as collaborators.
 Read more about [collaborator roles](../../get-started/tutorials/permissions.md).
 
-### Adding collaborators to a project
+### Bulk Add Users
+:material-monitor: Project Manager
 
-:material-monitor: Desktop preparation
+You can add up to 20 users at once in the web interface for Organization Members, Organization Teams and Project Collaborators.
 
-In order to add users to your projects, they need to be part of your organization.
-You can add collaborators to your projects under app.qfield.cloud in the corresponding project page.
+Type or paste multiple usernames, email addresses, or team handles separated by spaces, commas, or semicolons, and press **Enter** or **Space** to convert them into tags before clicking **Add**.
 
-!!! Workflow
+!![](../../assets/images/qfc_batch_add_collaborators.png,800px)
 
-    1. Direct to the *project overview page* > *collaborator*
-    2. Add the desired user or teams.
-
-    ![type:video](../../assets/videos/multi_select.webm)
-
-    **Note:**
-    You can add up to 20 users/teams at once.
-    Collaborators must first be a Member of the Organization.
+!!! note
+    To add `Collaborators` to projects, the users must first be a member of the organization.

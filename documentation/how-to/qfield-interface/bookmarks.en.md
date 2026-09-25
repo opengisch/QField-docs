@@ -18,7 +18,7 @@ User bookmarks persist across local projects and can be edited, grouped by color
 Project bookmarks display under the **Project bookmarks** section header in the list view and remain read-only in QField.
 
 ### Creating Project Bookmarks in QGIS
-:material-desktop: Desktop preparation
+:material-monitor: Project Manager
 
 !!! Workflow
     1. Open your project in QGIS and navigate to your target spatial extent.

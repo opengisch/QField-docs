@@ -4,7 +4,6 @@ tx_slug: documentation_how-to_decorations
 ---
 
 # Map Decorations
-
 :material-monitor: Project Manager
 
 Customize your project with decorations in QField by configuring them first in QGIS.
@@ -68,11 +67,11 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
 
     Use expressions to display real-time positioning information and map scale directly on the map canvas:
 
-        ```sql
-        -- Displays the GNSS coordinates and current map scale
-        Lat: [% format_number(y(@gnss_coordinate), 8) %] | Lon: [% format_number(x(@gnss_coordinate), 8) %]
-        Scale: 1:[% round(@map_scale) %]
-        ```
+    ```sql
+    -- Displays the GNSS coordinates and current map scale
+    Lat: [% format_number(y(@gnss_coordinate), 8) %] | Lon: [% format_number(x(@gnss_coordinate), 8) %]
+    Scale: 1:[% round(@map_scale) %]
+    ```
 
     The ability to use [positioning variables](../../reference/expression_variables.md#positioning-and-gnss-variables) (`@gnss_coordinate`) offers a streamlined way to display critical location data without cluttering the main user interface.
 

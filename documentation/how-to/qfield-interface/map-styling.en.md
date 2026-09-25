@@ -37,7 +37,7 @@ You can also configure which layers are searchable in QField.
 !![Configuration of layers that will not be identifiable, nor modifiable, nor searchable.](../../assets/images/project_configuration_readonly.png)
 
 ## Using Additional Fonts
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 QField allows you to use custom fonts in your projects.
 You can register additional fonts using two methods:
@@ -57,7 +57,7 @@ This ensures custom font files are pushed to QFieldCloud and downloaded to mobil
 !![Configuring custom fonts folder for QFieldCloud synchronization.](../../assets/images/qfc_fonts_directory_setting.png)
 
 ## Custom SVG Symbols
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 You can embed SVG symbols directly within a QGIS project file.
 

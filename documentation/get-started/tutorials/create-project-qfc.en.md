@@ -14,7 +14,7 @@ There are multiple options available to initialize and build a project in QField
 ## Creating Projects
 
 ### Option 1: Initialize via Web UI (Blank or Basemap Template)
-:material-monitor: Desktop Preparation
+:material-monitor: Project Manager
 
 You can create empty map spaces or simple localized maps directly from QFieldCloud, downloading them to your desktop for further styling.
 
@@ -43,7 +43,7 @@ You can create empty map spaces or simple localized maps directly from QFieldClo
     The completed project structure populates in your profile project list.
 
 ### Option 2: Create from an XLSForm Spreadsheet (Web UI Upload)
-:material-monitor: Desktop Preparation
+:material-monitor: Project Manager
 
 For deployment workflows relying on spreadsheets for [form configuration](https://xlsform.org/), QFieldCloud compiles tabular data collection forms directly into complete QGIS projects containing relational data schemas.
 
@@ -65,7 +65,7 @@ For deployment workflows relying on spreadsheets for [form configuration](https:
     The project generation status displays an `UNABLE_TO_CONTINUE` error code on the Job log, detailing the cause of error and identifying the row or element that failed compilation.
 
 ### Option 3: Clone an Existing Project
-:material-web: Web Interface
+:material-monitor: Project Manager
 
 Project cloning allows you to duplicate existing active setups to act as templates for alternative workspace regions, distinct fieldwork teams, or new seasonal collection campaigns.
 
@@ -164,7 +164,7 @@ curl --location 'https://app.qfield.cloud/api/v1/projects/' \
 ```
 
 ## Option 4: Change the Ownership of a Project
-:material-web: Web Interface
+:material-monitor: Project Manager
 
 If you have already built a personal project on the cloud and need to transfer ownership to a different user or organization,
 you can change the project ownership directly on the project settings page.

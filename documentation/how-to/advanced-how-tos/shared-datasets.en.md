@@ -53,14 +53,14 @@ For example, if your QGIS Localized Data Path is `./GIS_Common/BaseData/` contai
     2. **Important for Organization Managers:** If you are using `shared_datasets` within an organization you have to create an empty cloud project named **shared_datasets**  on QFieldCloud.
 
 ### Preparation of QGIS Projects with Shared Datasets
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 !!! Workflow
     1. Configure Localized Data Paths in QGIS as described in [Managing Localized Data Paths in QGIS](#managing-localized-data-paths-in-qgis).
     2. Verify that shared layer file paths in your QGIS project are relative to one of the configured localized data paths.
 
 ### Uploading Shared Datasets to QFieldCloud
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Upload shared datasets to QFieldCloud using the QFieldSync plugin after verifying that the **`shared_datasets`** project exists in QFieldCloud.
 
@@ -94,7 +94,6 @@ Uploaded shared datasets display in two locations within the QFieldCloud web int
 !![List of Shared datasets files referenced in a regular QFieldCloud project](../../assets/images/list_of_localized_datasets_on_cloud.png)
 
 ### Managing Permissions for Shared Datasets
-
 :material-desktop: Project Manager
 
 By default, when you give access rights to collaborators to edit the regular project, it does not automatically grant access to the datasets that are located inside the **`shared_datasets`** project.
