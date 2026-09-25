@@ -60,7 +60,7 @@ nav:
               - get-started/tutorials/my-first-project.md
               - get-started/tutorials/create-project-qfc.md
               - get-started/tutorials/advanced-setup-qfc.md
-              - get-started/tutorials/storage-qfc.md
+              - get-started/storage-qfc.md
               - get-started/tutorials/tips-tricks-qfc.md
           - QFieldSync:
               - get-started/tutorials/get-started-qfs.md
