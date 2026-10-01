@@ -336,7 +336,7 @@ QFieldCloud provides three expression variables for attribute default values and
 
 - `@cloud_username`: Returns the username of the logged-in QFieldCloud account.
 - `@cloud_useremail`: Returns the email address of the logged-in QFieldCloud account.
-- `@cloud_team` - Returns the name of the Team to which the user belongs within the organization.
+- `@cloud_teams`: Returns an array of strings representing the team(s) to which the user belongs within the context of the opened cloud project (e.g., `['surveyors', 'inspectors']`).
 
 Examples of expression variables:
 
