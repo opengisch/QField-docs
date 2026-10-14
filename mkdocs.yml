@@ -69,17 +69,21 @@ nav:
       - get-started/license.md
       - get-started/faq.md
   - In the field:
+      - fieldwork/index.md
       - fieldwork/create-project.md
       - Interact with the map:
           - fieldwork/qfield-interface/map-interaction.md
           - fieldwork/qfield-interface/measuring-tool.md
           - fieldwork/qfield-interface/search.md
           - fieldwork/qfield-interface/bookmarks.md
+          - fieldwork/qfield-interface/3d-map-view.md
       - Data Collection:
           - fieldwork/data-collection/digitize.md
           - fieldwork/data-collection/pictures.md
           - fieldwork/data-collection/print-to-pdf.md
           - fieldwork/data-collection/processing.md
+          - fieldwork/data-collection/cogo-framework.md
+          - fieldwork/data-collection/variables.en.md
       - Navigation and Positioning:
           - fieldwork/navigation-and-positioning/navigation.md
           - fieldwork/navigation-and-positioning/tracking.md
@@ -109,7 +113,6 @@ nav:
           - how-to/navigation-and-positioning/tracking.md
           - how-to/navigation-and-positioning/external-routing.md
       - Advanced How To's:
-          - how-to/advanced-how-tos/cogo-framework.md
           - how-to/advanced-how-tos/3d-map-view.md
           - how-to/advanced-how-tos/xlsforms-plugin.md
           - how-to/advanced-how-tos/standalone-datasets.md

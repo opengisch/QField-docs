@@ -20,6 +20,15 @@ Project variables are defined and managed directly within the QGIS project on yo
 They allow you to add custom variables that are only relevant in the context of a specific project.
 QField users can edit those variables, with modified values remembered across sessions.
 
+!!! Workflow
+
+    **Adding a Project Variable**
+
+    1. In QGIS direct to _project > properties_.
+    2. Change to the **Variables** section.
+    3. Add your project variable (eg. surveyor)
+    !![](../../assets/images/fieldwork_data_collection_projectvariable.png)
+
 ## Global Variables
 
 QField comes pre-configured with some read-only global variables which are visible in under side *Dashboard* > *Settings* > *Variables*.
@@ -29,28 +38,7 @@ New variables can be added or modified and will be available in QField across se
     The read-only variables differ from device to device.
     These reflect the global variables from the specific QGIS version that was being used to develop the installed version of QField.
 
-## Variable Management in QField
-
-Variables are managed directly on your device and are accessible in all available QField projects.
-When you access the variables list in QField ( *Side Dashboard* > *Settings* > *Variables* ), you will find a consolidated and organized view of all available variables.
-
-### Variable configuration
-:material-tablet: Fieldwork
-
-!!! Workflow
-
-    To configure a application-specific variable, follow these steps:
-
-    1. Open **Settings** in QField.
-    2. Navigate to the **Variables** tab.
-
-    Here you will see a list of all variables currently applicable to your project.
-    To add a new variable:
-
-    1. Click on *"Add a new variable"* at the bottom of the variable list.
-    2. Enter the name and value for your new variable and save.
-
-### Useful Examples
+## Useful Examples
 
 Common variables to use are:
 
@@ -65,3 +53,5 @@ Since the application-wide variables are not bound to specific projects and are 
 
 !![Configuration of editable variables in addition to the
 pre-defined system variables.](../../assets/images/configure_global_variables.png,400px)
+
+See [here](../../fieldwork/data-collection/variables.md) how to work with variables in QField directly

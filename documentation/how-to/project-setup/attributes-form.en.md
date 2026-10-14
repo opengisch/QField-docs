@@ -149,7 +149,6 @@ the automatic switch from a "buttons'" interface to a list
 
     !![QField Value Map Editor as Buttons](../../assets/images/qfield-value-map-editor-buttons.png,300px)
 
-
 ## Attachment Widget
 :material-monitor: Desktop preparation
 

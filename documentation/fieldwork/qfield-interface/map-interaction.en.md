@@ -129,4 +129,4 @@ By utilizing elevation data (either an automatic online DEM or a custom DEM conf
 your map layers are draped as textures over the 3D surface.
 You can interactively navigate your map in 3D and seamlessly synchronize extents with the 2D canvas.
 
-[**Learn more about configuring and using the 3D Map View.**]
+[**Learn more about configuring and using the 3D Map View.**](../qfield-interface/3d-map-view.md)
