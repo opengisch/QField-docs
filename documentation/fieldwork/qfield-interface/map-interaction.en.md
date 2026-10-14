@@ -59,6 +59,7 @@ If you want to actually digitize new objects or modify the geometry of existing 
 
 ## Map Themes
 
+!!! Workflow
     1. Open the **Side Dashboard**.
     2. If *Map themes* have been set in your QGIS project, a **Dropdown** will automatically appear where you can choose the active theme.
     ![type:video](../../assets/videos/theme.webm)

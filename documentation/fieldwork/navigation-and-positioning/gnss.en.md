@@ -54,7 +54,7 @@ The accuracy is indicated by a <span style="color:red"> :material-circle:</span>
 This means, that you define how many times you have to add a point before it is saved.
 ![type:video](../../assets/videos/positioning-averaged.mp4)
 - **Antenna Correction:** If you are working with an antenna, you can add the height and QField will automatically subtract that value.
-- [**Vertical Grid Shift:**](#altitude-correction--vertical-grid-shift): You can correct for the altitude if you have been given a vertical grid shift file so that QField can calculate the orthometric height.
+- **Vertical Grid Shift:** You can correct for the altitude if you have been given a vertical grid shift file so that QField can calculate the orthometric height.
 !!! Note
 
     If the ***Enable accuracy requirement*** setting is activated, you will not be able to collect new measurements with the coordinate cursor locked to the current position with an accuracy value which is bad (red).

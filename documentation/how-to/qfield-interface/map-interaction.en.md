@@ -119,7 +119,7 @@ See how this looks in QField: [Here](../../fieldwork/qfield-interface/map-intera
 QField is equipped with a search bar that allows you to:
 
 - search for features within a project's vector layers
-- [navigate to specified coordinates](../navigation-and-positioning/navigation.md#setting-a-destination-point)
+- [navigate to specified coordinates](../../fieldwork/navigation-and-positioning/navigation.md#activating-navigation)
 - locate spatial bookmarks
 - and calculate expressions
 

@@ -57,7 +57,7 @@ Bookmark locations capture both the target point coordinates and the active map 
     1. Long-press on the map canvas at the desired location.
     2. Tap **Add Bookmark** in the pop-up context menu.
         !![](../../assets/images/bookmarks-add-from-touch.png, 300px)
-    3. Enter a custom name and select a color marker group (*Green*, *Orange*, *Red*, *Blue*).
+    3. Enter a custom name and select a color marker group (<span style="color:green">**Green**</span>, <span style="color:orange">**Orange**</span>, <span style="color:red">**Red**</span>, <span style="color:blue">**Green**</span>).
         !![](../../assets/images/bookmarks-properties.png, 800px)
 
 !!! Workflow
@@ -76,7 +76,7 @@ You can also export them as standalone vector datasets, such as Gpkg's.
 
 ### Individual Bookmark Actions
 
-Under the Bookmark List Panel, tap the 3-dotted menu *(⋮)* next to the user bookmark in the Bookmark List panel to access quick actions:
+Under the Bookmark List Panel, tap the **3-dotted menu (⋮)** next to the user bookmark in the Bookmark List panel to access quick actions:
 
 - **Edit Bookmark:** Modify the name or change the color group.
 - **Copy Bookmark Details:** Copies the bookmark name and its geographic coordinates (formatted in map CRS) directly to your clipboard.

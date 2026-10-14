@@ -77,6 +77,7 @@ nav:
           - fieldwork/qfield-interface/bookmarks.md
       - Data Collection:
           - fieldwork/data-collection/digitize.md
+          - fieldwork/data-collection/pictures.md
           - fieldwork/data-collection/print-to-pdf.md
           - fieldwork/data-collection/processing.md
       - Navigation and Positioning:

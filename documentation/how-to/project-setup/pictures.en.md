@@ -12,78 +12,71 @@ In QField, a field with *Attachment* widget can be used to:
 - Listen and record sound clips
 - Show links to external files like PDFs or documents
 
-!![Attachments](../../assets/images/attachments.png, 800px)
+!![Default option: Photo](../../assets/images/attachments.png, 800px)
 
-To configure the widget, please refer to the [Attributes Form Documentation](./attributes-form.md#attachment-widget)
+## Widget configuration
 
-## In-App Camera Interface
-:material-tablet: Fieldwork
+In order for the attachments to be saved appropriately, it is necessary to keep a few things in mind.
 
-When taking pictures within an attachment widget inside QField, the built-in camera interface provides several live toggles and post-capture editing tools:
+!![](../../assets/images/hyperlink_option.png)
 
-!![QField Camera Controls](../../assets/images/qfield_camera_options.png)
+- **Widget Type:** The widget type needs to be set to **Attachment**
+- **Project Path:** The path needs to be set to **relative**.
+The pictures, sound clips, videos, PDF's and documents are stored then in a sub-directory of the project, where the link stored in the text field is pointing to.
+- **Synchronization Settings:** Attachments are generally stored in sub-directories of the project folder.
+In the **QField Settings** of the project, these sub-directories also need to be copied.
+The option **hyperlink** on the attachment widget will disable that functionality and show just the path to the file hyperlink to open the externally.
+- Depending on what you have selected as **default**, one of them will be shown inside the form.
+- By default when adding documents as attachments QField automatically displays the file name.
+!![Media](../../assets/images/attachments.png, 800px)
 
-### Live Capture Controls
+## Default Attachment name
 
-1. **Camera Switch:** Switch between the front-facing and rear-facing camera lenses on your device.
-2. **Resolution & Aspect Ratio:** Adjust the photo resolution and frame dimensions to manage your file sizes and image layouts.
-3. **Live Image Stamping:** Toggle a real-time text overlay directly onto the photo canvas.
-    By default, the stamp applies context details like the date, time, latitude, longitude, altitude, ground speed, and heading orientation in degrees
-    (you can configure the [stamp with expressions](#image-stamping)).
-4. **Location Metadata (EXIF):** Toggle whether geographic metadata is baked directly into the background of the image file structure itself.
-5. **Composition Grid:** Displays a rule-of-thirds grid line layout on the screen to help frame, align, and capture better photos in the field.
-
-### Photo Preview & Quick Editing
-Once a photo is captured, a preview screen allows you to inspect and manually adjust the image before saving it to your project. A floating toolbar above the capture button offers the following quick edits:
-
-- **Rotate Counter-Clockwise:** Rotates the photo 90° to the left.
-- **Mirror / Reflect:** Flips the photo horizontally.
-- **Rotate Clockwise:** Rotates the photo 90° to the right.
-
-Any rotation or reflection applied during preview is permanently baked into the final saved JPEG image alongside any active image stamps or EXIF metadata.
-
-![type:video](../../assets/videos/rotate_camera.mp4)
-
-## Add a series of pictures to a feature
-:material-monitor: Desktop preparation
-
-It is also possible to add more pictures to the feature either by having several attachment field attributes or by creating a relation to a separate table where the image paths are shown.
-In this section we will show you an example how this is done.
-A relation to a second layer needs to be set in the QGIS properties so that when adding images or other formats, these are stored in the related table.
+As stated above, inside the attachment field, the actual attachment path is saved.
+By default it will point to the project-specific **DCIM/Video/Audio** folders depending on the media type.
 
 !!! Workflow
 
-    1. As example create two tables following the style as shown below.
-    One table where the features are stored and one with a list of pictures.
+    1. Direct to the *Properties* > *QField* > *Attachments Settings*
+    2. Use specific expressions to set the required names of the attachments.
 
-        ***Apiary:***
+    !![Paths](../../assets/images/paths-saving-media.png)
 
-        | Field      | Type       |
-        |------------|------------|
-        | `id`       | Text (UUID)|
-        | `geometry` | Geometry   |
-        | `...`      |            |
+## Add a series of pictures to a feature
 
-        ***Apiary_pictures:***
+It is also possible to add more pictures to the feature either by having several attachment field attributes or by creating a relation to a separate table where the image paths are shown.
+In this section we will show you an example how this is done.
 
-        | Field       | Type       |
-        |-------------|------------|
-        | `id`        | Text (UUID)|
-        | `apiary_id` | Text (UUID)|
-        | `path`      | Text       |
-        | `...`       |            |
+### Setting up a relation
 
-### Relations
+A relation to a second layer needs to be set in the QGIS properties so that when adding images or other formats, these are stored in the related table.
 
-Create a relation with:
+!!! Example
 
-- `apiary` Referenced layer
-- `id` Referenced field
-- `apiary_picture` Referencing layer
-- `apiary_id` Referencing field
-- `strength` Composition
+    You need two tables containing similar attributes as below.
 
-!![Relations](../../assets/images/add-1-n-pictures-relations.png)
+        ***Parent:***                                   ***Parent_pictures:***
+
+        | Field      | Type       |                     | Field       | Type       |
+        |------------|------------|                     |-------------|------------|
+        | `id`       | Text (UUID)|                     | `id`        | Text (UUID)|
+        | `geometry` | Geometry   |                     | `parent_id` | Text (UUID)|
+        | `...`      |            |                     | `path`      | Text       |
+                                                        | `...`       |            |
+
+
+
+!!! Workflow
+
+    1. Direct to *Project Properties* > *Relations*
+    2. Click on the <span style="color:green">**:material-plus:**</span>
+    3. Create a relation with:
+        - **Referenced layer:** `Parent`
+        - **Referenced field:** `id`
+        - **Referencing layer:** `Parent_pictures`
+        - **Referencing field:** `Parent_id`
+        - **Composition:** `strength`
+    !![Example relation with "Apiary"](../../assets/images/add-1-n-pictures-relations.png)
 
 ### Attribute Form configuration
 
@@ -95,14 +88,13 @@ For the apiary_picture layer, you will have to change the widget type to *Attach
 
     **Parent layer**
 
-    1. Direct to *Properties* > *Attribute Form*
-    2. For the uuid field choose between the *Text Edit* or *UUID Generator* widget.
+    1. Direct to *Layer Properties* > *Attribute Form*
+    2. For the uuid field either choose the **Text Edit** or the *UUID Generator** widget.
     3. Set the default value to `uuid('WithoutBraces')`.
-    4. (optional) Hide it from the view as it should not be edited by the user.
-
+    4. Hide it from the view as it should not be edited by the user.
     !![widgets](../../assets/images/add-1-n-pictures-widgets_hive.png)
-
-    Set the relation widget to *many to one relation* and add the relation to the form
+    5. Under the **Relations* section of your attribute form, the relation to the layer with the photos should be visible.
+    Set the relation widget to **many to one relation** and add the relation to the form layout
 
     !![widgets](../../assets/images/add-1-n-pictures-widgets_hive2.png)
 
@@ -111,10 +103,12 @@ For the apiary_picture layer, you will have to change the widget type to *Attach
     1. Direct to *Properties* > *Attribute Form*
     2. Set the widget type to *Attachment* on the field that will save the picture paths.
     3. Add it to the form layout.
-
+    4. Click **Apply**
     !![widgets](../../assets/images/add-1-n-pictures-widgets_picture.png)
 
-## Drawing and sketching
+
+
+## Drawing Templates
 
 QField has an in-app drawing and sketching functionality enabling you to directly sketch over and annotate images captured while in the field as well as drawing on top of a blank canvas or over a template.
 
@@ -125,41 +119,25 @@ QField has an in-app drawing and sketching functionality enabling you to directl
 On top of annotating captured images, QField supports drawing from image templates.
 The following two methods are available to add templates:
 
-- The first method is to create a `drawing_templates` folder located alongside a project file and populate it with images.
+- **Drawing Templates Folder on Desktop**: You can create a folder (`drawing_templates`) within your project folder and populate it with images.
 Whenever that project is loaded, QField will register all images within that folder as drawing templates.
-- Alternatively, you can add images into the `drawing_templates` folder found inside your QField app folder.
-If you are not familiar with that app folder, its location is shown at the bottom of the About QField overlay.
-
-Templates shipped alongside projects as well as the QField app folder will be shown when users choose "Draw a sketch" by pressing the 3-dotted menu *(⋮)* of the attachment widget.
-
-!![picture path](../../assets/images/drawing_templates.png)
-
-## Geotagging
-:material-tablet: Fieldwork
-
-QField's internal camera will automatically geotag your pictures.
-
-Information about location and direction of the pictures will therefore be baked into the image file.
-
-!!! note
-    While with older Android versions it was possible to use other apps like the amazing OpenCamera app for taking pictures and preserving EXIF information from there, this is no longer possible with recent Android versions.
-    It is recommended to disable *Use native Camera* in the *settings* to preserve [EXIF](../../reference/exif.md) information.
+- **Drawing Templates folder on mobile:** On your mobile device within your QField directory you will find a folder named `drawing_templates`.
+You can copy images directly into this folder and they will act as templates in all projects.
 
 ## Image Stamping
 
-QField allows you to add image stamping.
-This is configured directly from the QFieldSync plugin in QGIS.
-With this functionality you can add detailed and formatted information when taking photos in the field.
+You can add image stamps to your pictures.
+This includes, for instance, the date, the location, the title or other desired information.
 
-### Styling Settings
+!!! Workflow
 
-:material-monitor: Desktop preparation
-
-Navigate to the *Project* > *Properties* > *QField* > *Attachments and Directories* sub-panel and click on "Settings" for "Customize image stamping details".
+    1. Navigate to the *Project* > *Properties* > *QField*
+    2 Switch to the third tab at the top of the window **Attachments and Directories**
+    2. Click on **Settings** next to **Customize image stamping details**.
 
 !![](../../assets/images/accessing_image_stamping_setting.png,600px)
 
-You can add the following settings:
+You can add the following options:
 
 - **Font and Alignment**: You have full control over the appearance of the stamped text, including the font style (color, size, drop shadow) and horizontal alignment (left, center, or right).
 
@@ -170,62 +148,57 @@ You can add the following settings:
 - **Stamp Details**: Craft a multiline string using QGIS expressions to define the information stamped on the image.
 A default template is provided to get you started, which includes common variables like date, time, and GNSS information.
 
-***Default Template***:
+!!! Example
 
-```sql
-[% format_date(now(), 'yyyy-MM-dd @ HH:mm') %]
-Latitude [% coalesce(format_number(y(@gnss_coordinate), 7), 'N/A') %] | Longitude [% coalesce(format_number(x(@gnss_coordinate), 7), 'N/A') %] | Altitude [% coalesce(format_number(z(@gnss_coordinate), 3) || ' m', 'N/A') %]
-Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) || ' m/s', 'N/A') %] | Orientation [% if(@gnss_orientation != 'nan', format_number(@gnss_orientation, 1) || ' °', 'N/A') %]
-```
+    ***Default Template***:
 
-!![](../../assets/images/image_stamping_setting.png, 800px)
-
-*Example*
-
-!![](../../assets/images/image_with_stamp_details.png)
+    ```sql
+    [% format_date(now(), 'yyyy-MM-dd @ HH:mm') %]
+    Latitude [% coalesce(format_number(y(@gnss_coordinate), 7), 'N/A') %] | Longitude [% coalesce(format_number(x(@gnss_coordinate), 7), 'N/A') %] | Altitude [% coalesce(format_number(z(@gnss_coordinate), 3) || ' m', 'N/A') %]
+    Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) || ' m/s', 'N/A') %] | Orientation [% if(@gnss_orientation != 'nan', format_number(@gnss_orientation, 1) || ' °', 'N/A') %]
+    ```
+    !![](../../assets/images/image_stamping_setting.png, 800px)
+    !![](../../assets/images/image_with_stamp_details.png)
 
 ## Fetching Geotags (EXIF) from the image file into the attribute table
-:material-monitor: Desktop preparation
 
 Sometimes you might be interested in automatically storing Geotags such as the latitude, longitude, orientation, etc.
 This information is also known as EXIF tags.
 
-To store the EXIF information, follow these steps:
+!!! Workflow
 
-1. Add an attribute per EXIF tag in the table that contains the pictures.
-2. In the pictures form, configure the default value of each attribute to the corresponding
-*EXIF* expression [See QGIS EXIF function](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#exif), <!-- markdown-link-check-disable-line -->
-and make sure *Apply on update* is activated.
-3. The EXIF tags that QField can capture are listed in the QGIS documentation (link above).
-However, this list might slightly vary depending on the mobile characteristics.
-4. Capturing EXIF tags requires accessing the full physical path of the picture.
-Be sure to reflect this in the QGIS expression.
-For example, the expression `exif(@project_folder + '/' + "path", 'Exif.Image.Orientation')` retrieves the orientation of the picture stored in *path*.
-For more tags visit the [QField EXIF reference documentation](../../reference/exif.md) and the [exiv library documentation](https://exiv2.org/tags.html).
-5. Completed! QField now captures and stores the EXIF tags in the pictures table while taking pictures.
+    1. Add an attribute per EXIF tag in the table that contains the pictures.
+    2. Direct to *Layer Properties* > *Attribute Form*
+    3. Find the field corresponding to your attachment
+    4. Add the desired [QGIS EXIF function](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#exif), <!-- markdown-link-check-disable-line -->
+    and enable the **Apply on update**.
+    3. The EXIF tags that QField can capture are listed in the QGIS documentation (link above).
+    **Note:** This list might slightly vary depending on the mobile characteristics.
+    4. Capturing EXIF tags requires accessing the full physical path of the picture.
+    Be sure to reflect this in the QGIS expression.
+    For example, the expression `exif(@project_folder + '/' + "path", 'Exif.Image.Orientation')` retrieves the orientation of the picture stored in *path*.
+    For more tags visit the [QField EXIF reference documentation](../../reference/exif.md) and the [exiv library documentation](https://exiv2.org/tags.html).
+    5. Completed! QField now captures and stores the EXIF tags in the pictures table while taking pictures.
 
 ## Maximum picture size
-:material-monitor: Desktop preparation
 
-The advanced settings allow rescaling the photos to a maximum width/height in *Project* > *Properties* > *Attachments and Directories*
+You can set the maximum picture size to save space.
 
-!![](../../assets/images/maximum_picture_size_attachments.png, 800px)
+!!! Workflow
 
-## Configurable attachment path
-:material-monitor: Desktop preparation
+    1. *Project* > *Properties* > *QField*
+    2. Change to the third tab at the top of the window **Attachments and Directories**
+    3. Set the maximum size
+    !![](../../assets/images/maximum_picture_size_attachments.png, 800px)
 
-QFieldSync provides the possibility to configure the path and the file names of picture attachments.
+## Attachment and Data Directories
 
-1. Go to Vector Layer *Properties* > *QField*
-2. Choose the layer, the field and configure the expression
-
-Use expressions to specify the path of the attachments.
-By default, pictures are saved into the "DCIM" folder, audio are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
-
-!![picture path](../../assets/images/picture_path.png, 800 px)
-
-Additional directories can be synchronized with pictures or other attachments.
-Extra paths can be configured in _Attachment and Directories_ tab in the QFieldSync settings under *Project* > *Properties* > *QField*.
+If you have additional folders within your project folder that should be uploaded to QFieldCloud, you have to add them accordingly.
 All paths are relative to the project directory.
 
-!![attachments directories](../../assets/images/attachments_directories.png,1000px)
+!!! Workflow
+
+    1. *Project* > *Properties* > *QField*
+    2. Change to the third tab at the top of the window **Attachments and Directories**
+    3. Choose between **Attachments** or **Data**
+    !![Attachments directories](../../assets/images/attachments_directories.png,1000px)

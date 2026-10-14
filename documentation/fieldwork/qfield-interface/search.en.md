@@ -8,7 +8,7 @@ tx_slug: documentation_how-to_search
 QField is equipped with a search bar that allows you to:
 
 - search for features within a project's vector layers
-- [navigate to specified coordinates](../../how-to/navigation-and-positioning/navigation.md#setting-a-destination-point)
+- [navigate to specified coordinates](../../fieldwork/navigation-and-positioning/navigation.md#activating-navigation)
 - locate spatial bookmarks
 - and calculate expressions
 

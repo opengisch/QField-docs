@@ -10,7 +10,7 @@ Follow these steps to go from a QGIS project to collecting data in the field wit
 
 ## 1. Install QField
 
-Download QField for your device from the [homepage](/) — available for Android, iOS, Windows, macOS and Linux.
+Download QField for your device via your AppStore or download the latest [Release](https://github.com/opengisch/qfield/releases) — available for Android, iOS, Windows, macOS and Linux.
 
 ## 2. Prepare your project in QGIS
 

@@ -126,7 +126,7 @@ There are some more advanced properties options which may be relevant to you dep
 - ***Permissions:*** Disable options for feature addition, feature deletion, attribute editing, or geometry editing.
 
 - ***Attachment default names***: If you wish to save attachments within your data, you can modify the set default names.
-Please refer to [How to configure your attachment path](../../how-to/project-setup/pictures.md#configurable-attachment-path).
+Please refer to [How to configure your attachment path](../../how-to/project-setup/pictures.md#default-attachment-name).
 
 - ***Maximum number of items available from a relation***: When working with relations you can set the maximum number of items shown in the relation editor widget.
 
