@@ -1,6 +1,6 @@
 ---
 title: Interact with the map
-tx_slug: documentation_how-to_map-interaction
+tx_slug: documentation_fieldwork_map-interaction
 ---
 
 # Interact with the map
@@ -24,15 +24,13 @@ It is also possible to edit attributes of existing features, by clicking on a fe
 
 ### Digitize Mode
 
-:material-tablet: Fieldwork
-
 If you want to actually digitize new objects or modify the geometry of existing ones, you have to switch to **digitize mode**.
 
 !!! Workflow
 
     1. Open the **Side Dashboard**
-    2. At the bottom right of the legend, tap on the **Pencil Icon** to start editing.
-    3. On the bottom right of the map canvas, a **Green Plus** will indicate that you can add new features.
+    2. At the bottom right of the legend, tap on the **:material-pen:**  to start editing.
+    3. On the bottom right of the map canvas, a <span style="color:green">**:material-plus:**</span> will indicate that you can add new features.
     You will add new features to the layer that is highlighted in green of your legend.
     !![](../../assets/images/activate-edit-mode.png)
 
@@ -65,7 +63,6 @@ If you want to actually digitize new objects or modify the geometry of existing 
     ![type:video](../../assets/videos/theme.webm)
 
 ## Select features
-:material-tablet: Fieldwork
 
 If you want to select an existing feature you can do this in several ways but the easiest is while being in **browse mode**.
 
@@ -78,7 +75,7 @@ If you want to select an existing feature you can do this in several ways but th
     3. Once selected you can do several things:
         1. Tap on the **Arrows** to switch between all the identified features.
         2. Tap on the **Edit Button** (A with the pen) to edit the attributes of the selected feature.
-        3. Tap on the 3-dotted menu from where you can:
+        3. Tap on the **3-dotted menu** from where you can:
             - **Zoom to the Feature**
             - **Enable Auto-Zoom** to the selected feature
             - **Process** the feature further.
@@ -106,12 +103,10 @@ Sometimes you may want to multi-select several features at once to merge them or
         - **Move** your selected features
         - **Duplicate** your selected features
         - **Delete** your selected features
-        - Further **Process** your selected features: You can read more about the different processing operations [here]()
+        - Further **Process** your selected features: You can read more about the different processing operations [here](../data-collection/processing.md)
         !![Multi-selected actions](../../assets/images/multi-select-actions.png)
 
 ### Scale Bar
-
-:material-tablet: Fieldwork
 
 !!! Workflow
 
@@ -122,7 +117,6 @@ Sometimes you may want to multi-select several features at once to merge them or
     !![](../../assets/images/scale_bar_toggle.png,900px)
 
 ## 3D map view interactions
-:material-tablet: Fieldwork
 
 QField supports viewing and interacting with your project data in a 3D map view.
 By utilizing elevation data (either an automatic online DEM or a custom DEM configured in your QGIS project),

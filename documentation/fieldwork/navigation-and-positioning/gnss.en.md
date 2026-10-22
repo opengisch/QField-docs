@@ -55,6 +55,7 @@ This means, that you define how many times you have to add a point before it is 
 ![type:video](../../assets/videos/positioning-averaged.mp4)
 - **Antenna Correction:** If you are working with an antenna, you can add the height and QField will automatically subtract that value.
 - **Vertical Grid Shift:** You can correct for the altitude if you have been given a vertical grid shift file so that QField can calculate the orthometric height.
+[here](../../how-to/navigation-and-positioning/gnss.md#altitude-correction-vertical-grid-shift)
 !!! Note
 
     If the ***Enable accuracy requirement*** setting is activated, you will not be able to collect new measurements with the coordinate cursor locked to the current position with an accuracy value which is bad (red).
@@ -90,7 +91,7 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and
 If you have selected an external receiver as the positioning device, you will find a switch `Log NMEA sentences from device to file`.
 If this is activated, all NMEA sentences coming from external positioning devices will be logged to a file.
 
-The logs will be placed in **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/logs**.
+The logs will be placed in **[[App Directory](../../fieldwork/general/storage.md#5-qfield-app-directory)]/QField/logs**.
 
 !![](../../assets/images/external_receiver_log.png,250px)
 
@@ -125,7 +126,7 @@ Any measured altitude will be corrected by this value.
 
 Altitude values can be corrected with vertical grid shift files to calculate orthometric height.
 
-You have to copy the **vertical grid shift files** to your QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**. Once it is placed there, it will be available in QField in the **Positioning settings** under the dropdown menu **Vertical grid shift in use**.
+You have to copy the **vertical grid shift files** to your QField app folder **[[App Directory]](../../fieldwork/general/storage.md#5-qfield-app-directory)/QField/proj**. Once it is placed there, it will be available in QField in the **Positioning settings** under the dropdown menu **Vertical grid shift in use**.
 
 The formats currently supported are:
 
@@ -136,7 +137,7 @@ The formats currently supported are:
 
 !!! Workflow
 
-    1. Copy the `vertical shift grid` file to the directory **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
+    1. Copy the `vertical shift grid` file to the directory **[[App Directory]](../../fieldwork/general/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
 
     2. Open the **Site Dashboard**
     3. Tap on the **3-dotted menu *(⋮)** and direct to *Settings* > *Positioning*

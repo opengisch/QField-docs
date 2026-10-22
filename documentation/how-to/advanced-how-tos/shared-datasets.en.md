@@ -30,15 +30,13 @@ When preparing a new project for QField, make sure the datasets you want to shar
 
 ## Manual transfer onto portable device in QField
 
-:material-tablet: QField
-
 To transfer the shared datasets manually in QField, the datasets have to be added into the right directory on your device:
 
 !!! Workflow
 
     1. Direct to local QField directory.
     If you are unsure you can find it by navigating to the *Side Dashboard* > *3-dotted menu* > *About QField*
-    2. Copy the shared datasets into the directory **[[App Directory](../../how-to/project-setup/storage.md#5-qfield-app-directory)]/QField/basemaps** on your device.
+    2. Copy the shared datasets into the directory **[[App Directory](../../fieldwork/general/storage.md#5-qfield-app-directory)]/QField/basemaps** on your device.
         QField will automatically scan this folder for shared datasets.
 
      !![QField app directories](../../assets/images/qfield_app_directories.png)

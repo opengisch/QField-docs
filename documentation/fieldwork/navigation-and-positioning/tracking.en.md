@@ -1,6 +1,6 @@
 ---
 title: Tracking
-tx_slug: documentation_how-to_tracking
+tx_slug: documentation_fieldwork_tracking
 ---
 
 # Tracking

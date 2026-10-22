@@ -1,5 +1,5 @@
 ---
-title: Plugins
+title: Customizing with Plugins
 tx_slug: documentation_how-to_plugins
 ---
 
@@ -24,9 +24,6 @@ For example, if your project file is “tree_inventory_qfield.qgs”, the plugin
 
 For cloud projects, you simply add the relevant QML file into your local cloud project folder and upload the newly added file on QGIS using qfieldsync.
 This method insures a smooth plugin deployment and update to devices on the field.
-
-For non-cloud projects, refer to the QField [storage handling documentation page](../../how-to/project-setup/storage.md)
-to learn how to import projects onto devices.
 
 ### Application plugins
 

@@ -22,19 +22,6 @@ QField is capable to show the live position using several sources:
     Support for customized CRSes is not possible.
     This may lead to displacements of your data, if you are not careful.
 
-
-## Measure (M) value
-
-When digitizing a geometry onto a vector layer that contains an M dimension, QField will add a measurement value to individual vertices whenever the coordinate cursor is locked to the current position.
-
-The available values to chose from are:
-
-- **Timestamp** (milliseconds since epoch - **Default**)
-- **Ground speed**
-- **Bearing**
-- **Horizontal and Vertical Accuracy**
-- **PDOP, HDOP and VDOP**
-
 ## Using an external GNSS Receiver
 
 QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
@@ -59,11 +46,11 @@ The NMEA sentences currently supported are GGA, RMC, GSA, GSV, GST, VTG, HDG and
 The height of the antenna pole in use can be defined in the settings.
 Any measured altitude will be corrected by this value.
 
-## Altitude correction / vertical grid shift
+## Altitude correction (vertical grid shift)
 
 Altitude values can be corrected with vertical grid shift files to calculate orthometric height.
 
-Vertical grid shift files have to be made available to QField by putting them into the QField app folder **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
+Vertical grid shift files have to be made available to QField by putting them into the QField app folder **[[App Directory]](../../fieldwork/general/storage.md#5-qfield-app-directory)/QField/proj**.
 Once the grid shift file is placed there, it is available in QField in the *Positioning settings* under *Vertical grid shift in use*.
 
 
@@ -85,7 +72,7 @@ The formats currently supported are:
     For transformations involving the Dutch **NAP (Normaal Amsterdams Peil)** vertical datum, you'll need the official grid file from NSGI.
 
     1. **Download the file**: Get `nlgeo2018.gtx` directly from the [NSGI website](https://www.nsgi.nl/rdnaptrans).<!-- markdown-link-check-disable-line -->
-    2. Place the downloaded `.gtx` file into the directory **[[App Directory]](../../how-to/project-setup/storage.md#5-qfield-app-directory)/QField/proj**.
+    2. Place the downloaded `.gtx` file into the directory **[[App Directory]](../../fieldwork/general/storage.md#5-qfield-app-directory)/QField/proj**.
 
     **Example: Switzerland - CH1903+/LV95**
 
