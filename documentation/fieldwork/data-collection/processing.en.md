@@ -1,6 +1,6 @@
 ---
-title: Processing algorithms
-tx_slug: documentation_how-to_processing
+title: Processing tools
+tx_slug: documentation_fieldwork_processing
 ---
 
 # Processing object

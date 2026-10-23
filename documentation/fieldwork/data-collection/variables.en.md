@@ -1,6 +1,6 @@
 ---
 title: Variables
-tx_slug: documentation_how-to_variables
+tx_slug: documentation_fieldwork_variables
 ---
 
 # Variables

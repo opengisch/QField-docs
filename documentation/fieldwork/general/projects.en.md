@@ -1,6 +1,6 @@
 ---
 title: Project selection
-tx_slug: documentation_how-to_projects
+tx_slug: documentation_fieldwork_projects
 ---
 
 # Project selection

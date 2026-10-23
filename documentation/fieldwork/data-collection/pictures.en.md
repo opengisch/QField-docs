@@ -1,6 +1,6 @@
 ---
 title: Camera Interface
-tx_slug: documentation_how-to_pictures
+tx_slug: documentation_fieldwork_pictures
 ---
 
 # Use attachment

@@ -1,6 +1,6 @@
 ---
 title: Plugins
-tx_slug: documentation_how-to_plugins
+tx_slug: documentation_fieldwork_plugins
 ---
 
 # QField Plugins

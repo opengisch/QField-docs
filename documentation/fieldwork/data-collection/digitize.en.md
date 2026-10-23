@@ -1,6 +1,6 @@
 ---
 title: Digitize and edit
-tx_slug: documentation_how-to_digitize
+tx_slug: documentation_fieldwork_digitize
 ---
 
 # Digitize and Edit

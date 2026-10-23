@@ -1,6 +1,6 @@
 ---
-title: Print to PDF
-tx_slug: documentation_how-to_print-to-pdf
+title: Print Reports and Atlas
+tx_slug: documentation_fieldwork_print-to-pdf
 ---
 
 # Print to PDF

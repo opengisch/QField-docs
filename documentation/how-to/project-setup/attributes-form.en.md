@@ -1,5 +1,5 @@
 ---
-title: Simple attribute form configuration
+title: Attribute form configuration
 tx_slug: documentation_how-to_attributes-form
 ---
 
@@ -44,7 +44,10 @@ For other attribute widget types not yet supported, consider [sponsoring an impl
 
 ## General Attribute Settings
 
-Below are some other general useful settings, which you can find in the Vector Layer *Properties...* > *Attribute form* (see image below).
+To configure your attribute form there are some other general useful settings, which you can find in
+_Vector Layer > Properties > Attribute form_ (see image below).
+
+!![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 
 - **Drag and drop designer**: You can structure your forms using various containers, such as tabs and groups, and enhance interactivity by incorporating conditional visibility of fields and assigning default values.
 For more information refer to: [Drag and Drop Designer QGIS Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#vector-attributes-menu) <!-- markdown-link-check-disable-line -->
@@ -64,7 +67,6 @@ For more information refer to: [Drag and Drop Designer QGIS Documentation](https
     QField-specific [GNSS positioning](../../reference/expression_variables.md#positioning-and-gnss-variables) and
     [QFieldCloud](../../reference/expression_variables.md#qfieldcloud) specific variables are available to you.
 
-!![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 
 ---
 
@@ -79,54 +81,22 @@ This provides a simplified, guided journey for field workers filling out complex
 
     The "Wizard Mode" will only work if you have grouped your fields into tabs.
 
-### Configuring Wizard Mode
 
-:material-monitor: Desktop preparation
-
-To use Wizard Mode, your feature form must first be set up using the **"Drag and drop designer"** in QGIS, with your fields organized into multiple tabs.
-Once your form is organized into tabs, you can enable Wizard Mode via QFieldSync.
-
-!![](../../assets/images/attribute_form_adding_tabs.png)
+To use Wizard Mode, your feature form must first be set up into tabs.
 
 !!! Workflow
 
-    1. Open your project in QGIS.
-    2. Direct to *Project* > *Project Properties...* > *QField*.
+    1. Direct to _Vector Layer Properties > Attribute form_
+    2. Use the **"Drag and drop designer"** and rearrange your fields with multiple tabs.
+    !![](../../assets/images/attribute_form_adding_tabs.png)
+    3. Open your project in QGIS.
+    4. Direct to *Project* > *Project Properties...* > *QField*.
     Alternatively you can click on the settings icon from the QFieldSync plugin panel.
-    3. Check  **"Enable QField feature forms' wizard mode"**.
-    4. Save your project and synchronize it to QFieldCloud.
-
-!![](../../assets/images/qfieldsync_enable_form_wizard.png)
-
-### Using the Wizard in the Field
-:material-tablet: Fieldwork
-
-When opening a feature form with the Wizard Mode enabled, the UI adapts to focus on one tab (page) at a time.
-
-**Navigating Pages:**
-Instead of the standard tabs at the top of the form, the user is presented with a navigation bar at the bottom of the form similar to other standard forms:
-
-- **Previous page / Next page:** The form is filled out tab by tab using the **next page / previous page** buttons.
-- **Progress Ring:** A circular progress indicator sits between the navigation buttons, showing visually how far along you are in the form completion process.
-
-**Constraint Validation:**
-
-The wizard actively enforces your QGIS form constraints on a page-by-page basis to ensure data quality:
-
-- **Visual Feedback:** The progress ring and navigation buttons will dynamically change color to indicate validation status.
-    They will turn red if a *hard constraint* is broken, or yellow/orange if a *soft constraint* triggers a warning.
-- **Blocking Progression:** If a field on the current page fails a hard constraint, the wizard will display an error toast ("Hard constraints not satisfied")
-    and prevent you from moving to the next page until the data is corrected.
-
-**Saving the Feature:**
-
-In Wizard Mode, the standard top-right "Save" button is hidden.
-
-- On the final page of the wizard, the "Next page" button automatically transforms into a **Save** button.
-- Tapping this final **Save** button evaluates the entire form one last time. If all hard constraints are satisfied,
-    the feature is committed and a "Changes saved" confirmation is displayed.
-
-![type:video](../../assets/videos/qfield_form_wizard.mp4)
+    5. Check  **"Enable QField feature forms' wizard mode"**.
+    6. Save your project and synchronize it to QFieldCloud.
+    !![](../../assets/images/qfieldsync_enable_form_wizard.png)
+    This is how it will look in QField:
+    ![type:video](../../assets/videos/qfield_form_wizard.mp4)
 
 ## Working with Relations
 :material-monitor: Desktop preparation
@@ -135,22 +105,18 @@ For detailed information on setting up layer relations in QGIS, please refer to 
 
 ## Value Map Widget Configuration
 
-When using value maps as a widget type you can control
-the automatic switch from a "buttons'" interface to a list
-!![QFieldSync Layer Properties](../../assets/images/qfieldsync-toggle-value-map-editor-widget.png,800px).
+When using value maps as a widget type you can decide whether you want the value options as a list or buttons.
+You select the maximum number of values with which the threshold between list and buttons will be set.
+ !![QField Value Map Editor as Buttons](../../assets/images/qfield-value-map-options.png,300px)
 
 !!! Workflow
 
-    1. Direct to the Vector Layer *Properties* > *QField*
+    1. Direct _Vector Layer Properties > QField_
 
-    2. Under the "Feature Form Settings" enable and define quantity of items that will trigger the transition to a toggle button interface.
-
-    !![QField Value Map Editor as List](../../assets/images/qfield-value-map-editor-list.png,300px)
-
-    !![QField Value Map Editor as Buttons](../../assets/images/qfield-value-map-editor-buttons.png,300px)
+    2. Under the **Feature Form Settings** enable and define the maximum **quantity of items** above which the when the selection option changes from buttons to the list format
+    !![QFieldSync Layer Properties](../../assets/images/qfieldsync-toggle-value-map-editor-widget.png,800px).
 
 ## Attachment Widget
-:material-monitor: Desktop preparation
 
 The widget type *Attachment* is used with fields that store the path to files.
 
@@ -172,34 +138,9 @@ It can be used to:
     The path needs to be set to "relative".
     The pictures, audios, videos, pdf's and documents are stored then in a sub-directory of the project, where the link stored in the text field is pointing to.
 
-You can add a new item when clicking the camera, video, microphone or document option.
-Depending on what you have selected as default, one of them will be shown inside the form.
-
-!![Media](../../assets/images/attachments.png, 800px)
-
-On Synchronisation the sub-directory with the pictures, videos audios, pdf's and documents has to be copied as well.
-
-By default when adding documents as  attachments QField automatically displays the file name.
-The option *hyperlink* on the attachment widget will disable that functionality and show just the path to the file hyperlink to open the externally.
-
-!![](../../assets/images/hyperlink_option.png)
-
-!!! Workflow
-    **Set a specific attachment path**
-
-    :material-monitor: Desktop preparation
-
-    In QFieldSync you can configure the path of attachments.
-    By default, pictures are saved into the "DCIM" folder, audio recordings are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.
-
-    1. Direct to the *Properties* > *QField* > *Attachments Settings*
-    2. Use specific expressions to set the required names of the attachments.
-
-    !![Paths](../../assets/images/paths-saving-media.png)
+Checkout the page for the [attachment widget](../../how-to/project-setup/pictures.md) to get specific guidance for this widget.
 
 ## Value Relation Widget
-
-:material-monitor: Desktop preparation
 
 The widget *Value Relation* offers values from a related table in a combobox.
 
@@ -222,9 +163,9 @@ When selecting the magnifying glass you can search under the available values an
 
 ![type:video](../../assets/videos/value_relation_widget.webm)
 
-!!! Workflow
+### Group Value Configuration
 
-    **Group Value Configuration**
+!!! Workflow
 
     1. Choose the column that will be used to organize the items.
     The values from this column will act as group title.
@@ -240,16 +181,15 @@ When selecting the magnifying glass you can search under the available values an
 
     !![Different configurations on QField](../../assets/images/grouping_value_relations_widget_qfield_show_gruped.png)
 
+### Configuration of Autocomplete
+
 !!! Workflow
 
-    **Use Auto Complete**
+    1. Direct to _Vector Layer Properties. > Attributes Form_.
 
-    1. Direct to Vector Layer *Properties...* > *Attributes Form*.
+    2. Your widget type needs to be **Value Relation**.
 
-    2. Your widget type needs to be "Value Relation".
-
-    3. Enable the "Use completer" option.
-
+    3. Enable the **Use completer** option.
 
     !![Enable auto-complete within QGIS](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
 
@@ -257,9 +197,7 @@ When selecting the magnifying glass you can search under the available values an
 
     !![](../../assets/images/autocomplete_typing.png,300px)
 
-
 ## Conditional Visibility
-:material-monitor: Desktop preparation
 
 You can hide whole groups based on expressions.
 This is useful when certain attributes are only required under certain conditions.
@@ -268,8 +206,6 @@ This is useful when certain attributes are only required under certain condition
     **Example: Accessing the status of tree species**
 
     *Some of them might have a disease and you have a list of possible diseases.*
-
-    A typical step-by-step workflow could look like this:
 
     1. Create a group.
 
@@ -286,9 +222,9 @@ This is useful when certain attributes are only required under certain condition
     ![type:video](../../assets/videos/conditional_visibility.webm)
 
 ## Conditional Row Styling
-:material-monitor: Desktop preparation
 
-QField supports QGIS's conditional row styling, providing immediate visual feedback when browsing features via list views (such as identify results or relation lists). You can use expressions to dynamically change the background color, text color, and font properties (italic, underline, strikeout) of individual items in the feature list based on their data.
+QField supports QGIS's conditional row styling, providing immediate visual feedback when browsing features via list views (such as identify results or relation lists).
+You can use expressions to dynamically change the background color, text color, and font properties (italic, underline, strikeout) of individual items in the feature list based on their data.
 
 !!! note
     QField currently supports **full row** styling only.
@@ -311,15 +247,7 @@ QField supports QGIS's conditional row styling, providing immediate visual feedb
 
     !![](../../assets/images/row_conditional_formatting_qgis.png)
 
-:material-tablet: Fieldwork
-
-When you open your project in QField and navigate to the feature list
-(e.g., by tapping on the map to identify features or the full list by using "Show features list" from the [Map legend](../../fieldwork/qfield-interface/map-interaction.md#map-legend), the items will automatically adopt the background, colors, and font styles defined by your conditional formatting rules.
-
-!![](../../assets/images/row_conditional_formatting_qfield.png)
-
 ## Define Constraints
-:material-monitor: Desktop preparation
 
 Attribute fields can have constraints attached.
 Constraints are rules in the form of expressions.
@@ -342,7 +270,6 @@ A description can be added that is shown if a constraint is not satisfied.
     ```
 
 ## Define Default Values
-:material-monitor: Desktop preparation
 
 Fields can have default values configured.
 Default values are inserted into the attribute form when digitizing a new feature.
@@ -428,7 +355,6 @@ You can also use these two variables for driving your map canvas symbology and y
       )
     )
     ```
-
 
 ## Define QML Widgets
 
