@@ -11,11 +11,26 @@ The expression variables are set in your QGIS project, either inside the project
 
 ## QFieldCloud Variables
 
-For QFieldCloud users, three expression variables can be used in forms or default values:
+For QFieldCloud users, expression variables provide information about the active authenticated user and session context:
 
-- `@cloud_username` - Returns the name of the currently logged-in QFieldCloud user.
-- `@cloud_useremail` - Returns the email address of the currently logged-in QFieldCloud user.
-- `@cloud_team` - Returns the name of the Team to which the user belongs within the organization.
+- `@cloud_username`: Returns the username of the currently logged-in QFieldCloud user.
+- `@cloud_useremail`: Returns the email address of the currently logged-in QFieldCloud user.
+- `@cloud_teams`: Returns an array of strings representing the team(s) to which the user belongs within the context of the opened cloud project (e.g., `['surveyors', 'inspectors']`).
+
+!!! Tip
+    Because `@cloud_teams` returns an array of string values, you can use QGIS array functions to drive project logic based on team membership:
+
+    - **Rule-based Symbology:** Render map features based on matching team assignments.
+    - **Form Visibility:** Control conditional visibility for form tabs, containers, and widgets.
+    - **Constraints & Value Relations:** Restrict field inputs or filter value relation drop-down options according to team membership.
+
+    **Example Rule-based Expression:**
+    ```sql
+    array_intersect(string_to_array("teams"), @cloud_teams)
+    ```
+    *(Where `"teams"` is an attribute field containing comma-separated team names, evaluated against the user's active `@cloud_teams` array).*
+
+    !![](../assets/images/teams_variable_applied_qfield.png)
 
 ## Positioning and GNSS Variables
 
