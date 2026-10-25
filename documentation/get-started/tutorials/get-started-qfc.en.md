@@ -12,7 +12,6 @@ You can manage teams, work in organizations, assign different editing permission
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
 :material-monitor: Project Manager
-:material-monitor: Project Manager
 
 !!! Workflow
     1. Navigate to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details, and create a new QFieldCloud account.
@@ -118,11 +117,10 @@ The icons indicate the cloud and local status of each project.
 
 ### QField Project Settings
 
-After installing the QFieldSync plugin, a new section appears under _Project > Properties..._.
-Access these settings from the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} using the **Settings** icon.
-You can access the settings from the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} using the **Settings** icon.
-Configure the following parameters in these settings:
-You can adjust the following parameters in these settings:
+After installing the QFieldSync plugin, a new section appears under _Project > Properties... > QField_.
+Also you can access these settings from the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} using the **Settings** icon.
+
+You can adjust the following parameters in these settings section:
 
 - Define how project layers are treated in the cloud (see the [QFieldSync Get Started Guide](./get-started-qfs.md) for details on **Packaging Actions**).
 - Enable [**geofencing**](../../how-to/navigation-and-positioning/geofencing.md).
@@ -131,6 +129,7 @@ You can adjust the following parameters in these settings:
 
 We recommend using GeoPackages, especially when collaborating in teams.
 See the [Advanced Setup Guide](advanced-setup-qfc.md) for more information about vector formats.
+
 !!! Important
     If you use experimental data sources without a primary key field (such as Shapefiles or GeoJSON), you must include a lowercase `fid` field as a primary key to uniquely identify each feature.
 
@@ -145,7 +144,6 @@ Once configured, upload the project to QFieldCloud.
       - **The Local file:** Replaces your cloud file with the new local version of the project.
           When working with GeoPackages, the cloud file version is replaced by your local file version.
       - **The Cloud file:** Amends your local datasets and replaces your local project file with the current cloud version.
-
 
 You can now view your project and files on your [QFieldCloud project overview page](https://app.qfield.cloud/).
 
@@ -165,7 +163,6 @@ When you are ready for fieldwork, set up QField on your mobile device.
         !![Download](../../assets/images/getting_started_download_project.png,250px)
 
 ### Advanced Project Searching and Filtering
-
 :material-tablet: Fieldwork
 
 To manage a large number of projects, QField features a search-and-filter panel directly on the QFieldCloud projects screen.
@@ -205,7 +202,6 @@ Supported syntax tokens include:
 !![](../../assets/images/qfc_project_filters.png)
 
 ### Synchronization with QFieldCloud
-
 :material-tablet: Fieldwork
 
 QField will indicate whether your project has changes locally that are not yet uploaded to QFieldCloud or a new version of your project is available on QFieldCloud.

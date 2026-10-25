@@ -9,7 +9,7 @@ Maps in GIS are dynamic, allowing layers to be shown or hidden based on your tas
 Map themes save and store distinct layer visibility configurations and symbology styles for quick switching.
 
 ## Creating a Map Theme
-:material-monitor: Desktop preparation
+:material-monitor: Project Manager
 
 Create map themes in QGIS to configure customized map views for fieldwork.
 

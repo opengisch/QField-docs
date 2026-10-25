@@ -13,7 +13,7 @@ QFieldCloud has a containerized architecture with multiple containers and volume
 See an interactive version of [the drawing above](https://excalidraw.com/#json=hARq9pMz7xUVNAa4dwcjU,1DAnhhSH_aFvuXUZKC-08Q).
 
 !!! note
-  For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
+    For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
 
 
 ## Docker objects

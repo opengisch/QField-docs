@@ -38,7 +38,7 @@ Active layer searches focus queries exclusively on the currently active layer an
 
 Matching attribute names and values are highlighted in the search results list.
 
-             ![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
+![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
 
 Active layer searches focus queries exclusively on the currently active layer and its attributes.
 

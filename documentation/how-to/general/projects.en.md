@@ -71,8 +71,6 @@ Set a specific project as your default basemap when opening individual datasets.
 This feature is useful when using a QFieldCloud project as a basemap.
 
 !!! Workflow
-
-!!! Workflow
     1. Locate the **Recent Projects** list on the Welcome Screen.
     2. Long-press the project you want to set as your default basemap.
     3. Select **Set as Default Project** from the context menu.

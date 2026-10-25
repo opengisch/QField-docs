@@ -14,7 +14,7 @@ Open the **Side Dashboard** and expand the layer list to display the map legend.
 
 Double-tap or long-press a layer in the legend to display the layer options menu:
 
-!![](../../assets/images/howto_legendoptions.png)
+!![](../../assets/images/howto_legendoptions.png,600px)
 
 - **Expand legend item":** Toggles the visibility of layer sub-items.
 - **Show on map":** Controls layer visibility on the map canvas.
@@ -32,11 +32,11 @@ Configure the feature display order for the **Show feature list** view in QGIS u
 
 - Right-click any column header in the attribute table and select **Sort...** to enter custom sorting expressions.
 
-!![](../../assets/images/accesing-sort-feature-list-op1.png)
+!![](../../assets/images/accesing-sort-feature-list-op1.png,800px)
 
 - In attribute form view, click the expression button at the top of the feature list and select **Sort...**.
 
-!![](../../assets/images/accesing-sort-feature-list-op2.png)
+!![](../../assets/images/accesing-sort-feature-list-op2.png,800px)
 
 ## Identify Features
 :material-tablet: Fieldwork
@@ -44,7 +44,7 @@ Configure the feature display order for the **Show feature list** view in QGIS u
 Tap a feature on the map canvas to identify it.
 If multiple overlapping or adjacent features exist where you tap, QField lists all identified features in the identification panel.
 
-!![](../../assets/images/howto_identification.png)
+!![](../../assets/images/howto_identification.png,800px)
 
 Tap a feature in the list to open its attribute form.
 
@@ -53,17 +53,17 @@ Tap a feature in the list to open its attribute form.
 3. Tap the edit button to modify attributes of the selected feature.
 4. Scroll through attribute sections to view feature details.
 
-!![](../../assets/images/howto_featureinfo.png)
+!![](../../assets/images/howto_featureinfo.png,800px)
 
 ### Select Identified Features
 
 Long-press a feature in the list to toggle feature selection.
 
-!![](../../assets/images/howto_selection.png)
+!![](../../assets/images/howto_selection.png,800px)
 
 When features are selected, tap the three-dotted menu *(⋮)* in the top-right corner to perform batch actions.
 
-!![](../../assets/images/howto_identification_options.png)
+!![](../../assets/images/howto_identification_options.png,600px)
 
 ### Exceptions to Identified Layers
 

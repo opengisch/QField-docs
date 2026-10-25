@@ -25,13 +25,13 @@ The built-in QField camera interface provides live toggles and post-capture edit
 
 ### Live Capture Controls
 
-- **Camera switch:** Toggles between front-facing and rear-facing camera lenses.
-- **Resolution and aspect ratio:** Adjusts photo resolution and frame dimensions to manage file sizes and image layouts.
-- **Live image stamping:** Toggles a real-time text overlay directly onto the photo canvas.
+1. **Camera switch:** Toggles between front-facing and rear-facing camera lenses.
+2. **Resolution and aspect ratio:** Adjusts photo resolution and frame dimensions to manage file sizes and image layouts.
+3. **Live image stamping:** Toggles a real-time text overlay directly onto the photo canvas.
     By default, the stamp applies context details such as date, time, latitude, longitude, altitude, ground speed,
     and heading orientation in degrees (configure the stamp using [expressions](#image-stamping)).
-- **Location metadata (EXIF):** Toggles whether geographic metadata is saved directly inside the image file structure.
-- **Composition grid:** Displays a rule-of-thirds grid overlay on the screen to assist with framing and aligning photos in the field.
+4. **Location metadata (EXIF):** Toggles whether geographic metadata is saved directly inside the image file structure.
+5. **Composition grid:** Displays a rule-of-thirds grid overlay on the screen to assist with framing and aligning photos in the field.
 
 ### Photo Preview and Quick Editing
 
@@ -170,20 +170,15 @@ The default template pre-populates date, time, and GNSS positioning variables.
 
 Default template expression:
 
-    ```sql
-    [% format_date(now(), 'yyyy-MM-dd @ HH:mm') %]
-    Latitude [% coalesce(format_number(y(@gnss_coordinate), 7), 'N/A') %] | Longitude [% coalesce(format_number(x(@gnss_coordinate), 7), 'N/A') %] | Altitude [% coalesce(format_number(z(@gnss_coordinate), 3) || ' m', 'N/A') %]
-    Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) || ' m/s', 'N/A') %] | Orientation [% if(@gnss_orientation != 'nan', format_number(@gnss_orientation, 1) || ' °', 'N/A') %]
-    ```
-    !![QGIS Default expression](../../assets/images/image_stamping_setting.png, 800px)
-    !![Result in QField](../../assets/images/image_with_stamp_details.png)
+```sql
+[% format_date(now(), 'yyyy-MM-dd @ HH:mm') %]
+Latitude [% coalesce(format_number(y(@gnss_coordinate), 7), 'N/A') %] | Longitude [% coalesce(format_number(x(@gnss_coordinate), 7), 'N/A') %] | Altitude [% coalesce(format_number(z(@gnss_coordinate), 3) || ' m', 'N/A') %]
+Speed [% if(@gnss_ground_speed != 'nan', format_number(@gnss_ground_speed, 3) || ' m/s', 'N/A') %] | Orientation [% if(@gnss_orientation != 'nan', format_number(@gnss_orientation, 1) || ' °', 'N/A') %]
+```
 
-!![](../../assets/images/image_stamping_setting.png, 800px)
+!![QGIS Default expression](../../assets/images/image_stamping_setting.png, 800px)
 
-*Example*
-
-!![](../../assets/images/image_with_stamp_details.png)
-
+!![Result in QField](../../assets/images/image_with_stamp_details.png)
 
 ## Fetching Geotags (EXIF) from the Image File into the Attribute Table
 :material-monitor: Project Manager
