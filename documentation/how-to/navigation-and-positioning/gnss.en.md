@@ -144,6 +144,13 @@ Supported grid shift file formats include:
                 'OUTPUT': '/path/to/chgeo2004_htrans_LV95.gtx'
             })
             ```
+            
+#### Example: Germany (ETRS89 to DHHN2016)
+
+!!! Workflow
+    1. Download the package `quasigeoid.geo89.de.zip` from the [BKG Website](https://gdz.bkg.bund.de/index.php/default/quasigeoid-der-bundesrepublik-deutschland-quasigeoid.html). <!-- markdown-link-check-disable-line -->
+    2. Unzip the package and find the TIFF file under the path `quasigeoid/de/linux/geotiff`.
+    3. Copy the `GCG2016v2023.tif` file into `[App Directory]/QField/proj`.
 
 :material-tablet: Fieldwork
 
