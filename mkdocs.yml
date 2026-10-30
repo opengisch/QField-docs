@@ -70,7 +70,12 @@ nav:
       - get-started/faq.md
   - In the field:
       - fieldwork/index.md
-      - fieldwork/create-project.md
+      - General:
+          - fieldwork/general/settings.md
+          - fieldwork/general/storage.md
+          - fieldwork/general/projects.md
+          - fieldwork/create-project.md
+          - fieldwork/general/plugins.md
       - Interact with the map:
           - fieldwork/qfield-interface/map-interaction.md
           - fieldwork/qfield-interface/measuring-tool.md
@@ -89,11 +94,6 @@ nav:
           - fieldwork/navigation-and-positioning/navigation.md
           - fieldwork/navigation-and-positioning/tracking.md
           - fieldwork/navigation-and-positioning/gnss.md
-      - General:
-          - fieldwork/general/projects.md
-          - fieldwork/general/storage.md
-          - fieldwork/general/plugins.md
-          - fieldwork/general/settings.md
   - Project Setup (Desktop):
       - how-to/index.md
       - Project Setup:
