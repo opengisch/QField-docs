@@ -55,23 +55,30 @@ A relation to a second layer needs to be set in the QGIS properties so that when
 
     You need two tables containing similar attributes as below.
 
-        ***Parent:***                                   ***Parent_pictures:***
+    ***Parent:***
 
-        | Field      | Type       |                     | Field       | Type       |
-        |------------|------------|                     |-------------|------------|
-        | `id`       | Text (UUID)|                     | `id`        | Text (UUID)|
-        | `geometry` | Geometry   |                     | `parent_id` | Text (UUID)|
-        | `...`      |            |                     | `path`      | Text       |
-                                                        | `...`       |            |
+    | Field      | Type        |
+    |------------|-------------|
+    | `id`       | Text (UUID) |
+    | `geometry` | Geometry    |
+    | `...`      |             |
 
+    ***Parent_pictures:***
+
+    | Field       | Type       |
+    |-------------|------------|
+    | `id`        | Text (UUID)|
+    | `parent_id` | Text (UUID)|
+    | `path`      | Text       |
+    | `...`       |            |
 
 
 !!! Workflow
     1. Create two database tables in your data source using the schema structure below:
 
-    1. Direct to *Project Properties* > *Relations*
-    2. Click on the <span style="color:green">**:material-plus:**</span>
-    3. Create a relation with:
+    2. Direct to *Project Properties* > *Relations*
+    3. Click on the <span style="color:green">**:material-plus:**</span>
+    4. Create a relation with:
         - **Referenced layer:** `Parent`
         - **Referenced field:** `id`
         - **Referencing layer:** `Parent_pictures`

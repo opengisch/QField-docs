@@ -110,7 +110,8 @@ For detailed information on setting up layer relations in QGIS, refer to the [QG
 
 When using value maps as a widget type you can decide whether you want the value options as a list or buttons.
 You select the maximum number of values with which the threshold between list and buttons will be set.
- !![QField Value Map Editor as Buttons](../../assets/images/qfield-value-map-options.png,300px)
+
+!![QField Value Map Editor as Buttons](../../assets/images/qfield-value-map-options.png,300px)
 
 !!! Workflow
 
@@ -191,11 +192,11 @@ When grouped, QField displays the widget as a list regardless of toggle button s
 
     3. Enable the **Use completer** option.
 
-!![Enable auto-complete within QGIS](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
+    !![Enable auto-complete within QGIS](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
 
 :material-tablet: Fieldwork
 
-    !![](../../assets/images/autocomplete_typing.png,300px)
+!![](../../assets/images/autocomplete_typing.png,300px)
 
 ## Conditional Visibility
 
