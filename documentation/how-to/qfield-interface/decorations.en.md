@@ -59,7 +59,7 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
 
     You can combine static text with variables and functions to create a more detailed title.
 
-        ```sql
+    ```sql
     -- Creates a title like: "Survey for Project *' %project_name% - 20xx"
     'Survey for Project ' || [% @project_title %] || ' - ' || [% year(now()) %]
     ```
@@ -79,11 +79,11 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
 
     **Continuous display of your real-time GPS information**
 
-        ```sql
-        -- Displays the GNSS coordinates and current map scale
-        Lat: [% format_number(y(@gnss_coordinate), 8) %] | Lon: [% format_number(x(@gnss_coordinate), 8) %]
-        Scale: 1:[% round(@map_scale) %]
-        ```
+    ```sql
+    -- Displays the GNSS coordinates and current map scale
+    Lat: [% format_number(y(@gnss_coordinate), 8) %] | Lon: [% format_number(x(@gnss_coordinate), 8) %]
+    Scale: 1:[% round(@map_scale) %]
+    ```
 
 ### Image
 :material-monitor: Project Manager
@@ -96,8 +96,8 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
 
     **Note:** For the image to be shown in QField, you need to add the image to your project folder and set your path as relative path.
 
-        - Create a dedicated folder inside your project directory (e.g., `assets`).
-        - Reference the image using a path that starts with `./`.
+    - Create a dedicated folder inside your project directory (e.g., `assets`).
+    - Reference the image using a path that starts with `./`.
 
 This is how the map decorations look in QField
 
