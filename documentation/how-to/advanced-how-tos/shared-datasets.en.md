@@ -26,17 +26,18 @@ When preparing projects in QGIS, you have to store your shared layers inside dir
 
     !![QGIS Options Dialog showing Data Sources and Localized Data Paths setup](../../assets/images/external_path.png)
 
-## Manual Transfer to Mobile Devices
-:material-tablet: Fieldwork
+## Manual transfer onto portable device in QField
 
-Transfer shared datasets manually to mobile devices by copying files into the local QField application folder.
+To transfer the shared datasets manually in QField, the datasets have to be added into the right directory on your device:
 
 !!! Workflow
-    1. Locate to your device's [App Directory](../../how-to/project-setup/storage.md#app-directory-structure).
-    (To check the app path in QField, open the **Side Dashboard** > three-dotted menu *(⋮)* > **About QField**).
-    2. Copy your shared dataset files into `[App Directory]/QField/basemaps`.
-    QField automatically scans this directory for shared datasets across all local projects.
-    !![QField app directories](../../assets/images/qfield_app_directories.png)
+
+    1. Direct to local QField directory.
+    If you are unsure you can find it by navigating to the *Side Dashboard* > *3-dotted menu* > *About QField*
+    2. Copy the shared datasets into the directory **[[App Directory](../../fieldwork/general/storage.md#5-qfield-app-directory)]/QField/basemaps** on your device.
+        QField will automatically scan this folder for shared datasets.
+
+     !![QField app directories](../../assets/images/qfield_app_directories.png)
 
 ## Configuring Shared Datasets with QFieldCloud
 

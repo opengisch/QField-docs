@@ -111,10 +111,12 @@ A higher value provides greater detail but requires more storage space and incre
 
 Configure advanced layer properties based on your project requirements:
 
-- **Permissions":** Disables options for adding features, deleting features, editing attributes, or modifying geometries.
-- **Attachment default names":** Modifies default file naming expressions for saved media attachments.
-Refer to the [Attachment Path Configuration](../../how-to/project-setup/pictures.md#configurable-attachment-path) guide for details.
-- **Maximum number of items available from a relation":** Sets the maximum number of related records displayed in the relation editor widget.
+- ***Permissions:*** Disable options for feature addition, feature deletion, attribute editing, or geometry editing.
+
+- ***Attachment default names***: If you wish to save attachments within your data, you can modify the set default names.
+Please refer to [How to configure your attachment path](../../how-to/project-setup/pictures.md#default-attachment-name).
+
+- ***Maximum number of items available from a relation***: When working with relations you can set the maximum number of items shown in the relation editor widget.
 
 !![QFieldSync Layer Properties](../../assets/images/qfield-sync-properties.png)
 
@@ -148,10 +150,11 @@ Once you finish configuring your project, layers, and styles, package your proje
         !![QFieldSync Preferences](../../assets/images/checkbox-show-package.png,850px)
         !![](../../assets/images/unchecked-show-package.png,90px)
         !![](../../assets/images/checked-show-package.png,150px)
-    3. Copy the exported project folder to your target mobile device directory.
-    Refer to the [Storage Guide](../../how-to/project-setup/storage.md#copying-projects-to-a-target-device) for OS-specific directory details (Android, iOS, or Windows).
-    Typical file paths use the following structure:
-    `<drive>:/Android/data/ch.opengis.qfield/files/QField/...`
+
+     3. To start working in QField, copy the whole folder on your device.
+     Check the [Storage section](../../fieldwork/general/storage.md#2-copying-project-over-to-the-qfield-target-device) for the directory specification, depending on your system (Android, IOS, Windows).
+     Typically the filepath will look something like this:
+     `Android/data/ch.opengis.qfield/files/QField/...`
 
 !!! Tip
     Save your QGIS project using the standard **Save As...** command in QGIS because you will re-open this desktop project later to synchronize field changes.

@@ -1,5 +1,5 @@
 ---
-title: Sensors
+title: Sensor-driven Tracking
 tx_slug: documentation_how-to_sensors
 ---
 
@@ -7,41 +7,22 @@ tx_slug: documentation_how-to_sensors
 
 QField supports background sensor logging, allowing you to passively collect sensor data, display live measurements on the map canvas, and store readings inside feature attribute fields.
 
-## Activating Sensors
-:material-tablet: Fieldwork
+See [Here](../../fieldwork/data-collection/sensors.md) how this looks in QField.
 
-You can toggle and manage registered sensors from under your project settings.
+## Configuration of Sensors
 
-!!! Workflow
-    1. Open the **Side Dashboard**.
-    2. Tap the three-dotted menu *(⋮)* and select **Sensors**.
-        !![](../../assets/images/main_menu_sensors.png)
-    3. Tap a sensor name in the submenu to toggle data collection.
-    When active, a sensor icon displays next to the sensor name; when inactive, a dot icon displays.
-
-Active sensors collecting data display live readings inside a sensor information panel at the bottom of the map canvas.
-
-!![](../../assets/images/sensors_information_panel.png)
+Follow the official [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#sensors-properties) to configure your project.
 
 ## Sensor-Driven Tracking
 
-You can also store live sensor readings linked to GNSS positions by initiating tracking sessions on point vector layers.
-
-### Configuration in QGIS
-:material-monitor: Desktop preparation
+You can configure the QGIS project in such a way that QField will automatically track the values from the sensor in a point layer, saving collected sensor data linked to the current position.
 
 !!! Workflow
-    1. In QGIS, open _Vector Layer Properties... > Attribute Form_ for your target point layer.
-    2. Select the attribute field intended to store sensor readings.
-    3. Set **Default Value** to `sensor_data('sensor_name')` (replace `'sensor_name'` with your target sensor identifier).
-    Read more on default values [here](../project-setup/attributes-form.md#define-default-values).
 
-### Running Sensor-Driven Tracking
-:material-tablet: Fieldwork
-
-!!! Workflow
-    1. Open your project in QField and initiate a tracking session on the configured point layer.
-    2. (Optional) Enable the sensor constraint toggle when configuring the tracking session to record a new point feature each time the sensor captures new data.
+    1. Open the **layer properties** of the point layer, where the sensor data will be stored.
+    2. Switch to the **Attribute Layout** Tab.
+    3. Set the **default value** to `*"sensor_data('abc')` where 'abc' corresponds to the name of the sensor.
+    4. Click **Apply** and synchronize or copy your modified project to the mobile device.
 
     !![](../../assets/images/sensors_tracker_constraint.png)
 

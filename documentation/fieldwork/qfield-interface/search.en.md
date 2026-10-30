@@ -7,10 +7,10 @@ tx_slug: documentation_how-to_search
 
 The QField search bar allows you to:
 
-- Search for features within project vector layers.
-- [Navigate to specified coordinates](../navigation-and-positioning/navigation.md#setting-a-destination-point).
-- Locate spatial bookmarks.
-- Evaluate QGIS expressions.
+- search for features within a project's vector layers
+- [navigate to specified coordinates](../../fieldwork/navigation-and-positioning/navigation.md#activating-navigation)
+- locate spatial bookmarks
+- and calculate expressions
 
 ## Layer Search
 :material-tablet: Fieldwork
@@ -38,7 +38,7 @@ Active layer searches focus queries exclusively on the currently active layer an
 
 Matching attribute names and values are highlighted in the search results list.
 
-             ![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
+![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
 
 Active layer searches focus queries exclusively on the currently active layer and its attributes.
 
@@ -111,19 +111,5 @@ The search bar functions as a QGIS expression calculator.
     1. Prefix your query with `= ` to evaluate expressions (such as `= 20 + 5` or `= $area`).
     2. Tap the calculated result in the list to copy the value to the clipboard.
 
-!!! Tip
-    Use the `aggregate()` expression function to calculate statistics across vector layers.
-    For example, calculate the total area of a polygon layer by typing `= aggregate('my_layer', 'sum', $area)`.
-
-## Configure Vector Layers Search in QGIS
-:material-monitor: Project Manager
-
-All vector layers are searchable by default.
-Exclude specific layers from search queries in QGIS project properties.
-
-!!! Workflow
-    1. Open your project in QGIS.
-    2. Navigate to _Project > Properties... > Data Sources_.
-    3. Uncheck **Searchable** in the layer capabilities table for layers you want to exclude.
-
-Read more in the [Data Source Configuration](../project-setup/data_source_and_project_paths.md#data-source-configuration) guide.
+Pro-tip: use the aggregate() expression function to calculate statistics against vector layers. For example, calculating the total area covered by a polygon layers
+can be done by typing `*= aggregate('my_layer','sum', $area)*`.

@@ -1,5 +1,5 @@
 ---
-title: Plugins
+title: Customizing with Plugins
 tx_slug: documentation_how-to_plugins
 ---
 
@@ -23,13 +23,8 @@ Project-specific plugins deploy as sidecar `.qml` files stored in the same direc
 The QML plugin file name must match the QGIS project file name exactly.
 For example, if your project file is named `tree_inventory.qgz`, the main QML plugin file must be named `tree_inventory.qml`.
 
-!!! Workflow
-    **Deploying via QFieldCloud:**
-
-    1. Add the `.qml` plugin file to your local cloud project folder on your desktop computer.
-    2. Synchronize the project using QFieldSync in QGIS to deploy the plugin file to mobile devices.
-
-For non-cloud projects, refer to the [Storage Access Documentation](../../how-to/project-setup/storage.md) to transfer project files and `.qml` sidecar files onto mobile devices.
+For cloud projects, you simply add the relevant QML file into your local cloud project folder and upload the newly added file on QGIS using qfieldsync.
+This method insures a smooth plugin deployment and update to devices on the field.
 
 ### Application Plugins
 :material-tablet: Fieldwork
