@@ -7,6 +7,8 @@ title: QField Ecosystem Documentation
 
 QField is the mobile and desktop app for fieldwork. [QFieldCloud](https://qfield.cloud) is the optional cloud service for syncing and managing projects across your team.
 
+!![](assets/images/welcome_screen_qfield.png, 800px)
+
 ## Installation
 
 Package your QGIS project with the [QFieldSync Plugin](get-started/tutorials/get-started-qfs.md), then install QField for your platform:
