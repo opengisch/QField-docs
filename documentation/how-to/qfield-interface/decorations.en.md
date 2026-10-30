@@ -10,11 +10,11 @@ More details you can find in the corresponding [QGIS documentation](https://docs
 
 Choose from several decoration types:
 
-- **Grid":** Overlays the map canvas with lines or markers at defined intervals to provide spatial reference, which is useful in remote areas.
-- **Title Label":** Displays a title on your map, such as the project name.
-- **Copyright Label":** Displays data source origins or branding information on your map canvas.
-- **Image":** Places a logo, watermark, or graphic directly on your map.
-- **Scale Bar":** Displays a scale bar on the map canvas, which can be enabled directly inside QField settings.
+- **Grid:** Overlays the map canvas with lines or markers at defined intervals to provide spatial reference, which is useful in remote areas.
+- **Title Label:** Displays a title on your map, such as the project name.
+- **Copyright Label:** Displays data source origins or branding information on your map canvas.
+- **Image:** Places a logo, watermark, or graphic directly on your map.
+- **Scale Bar:** Displays a scale bar on the map canvas, which can be enabled directly inside QField settings.
 
 ### Grid
 :material-monitor: Project Manager
