@@ -3,18 +3,21 @@ title: QField general settings
 tx_slug: documentation_get-started_settings
 ---
 
-# QField General settings
+# QField General Settings
+:material-tablet: Fieldwork
 
-The general settings screen allows you to control the basic appearance and behaviour of QField.
-There are two ways in which you can access the general settings.
+The general settings screen allows you to control the basic appearance and behavior of QField.
+You can access the general settings in two ways.
 
 !!! Workflow
+    **Access settings from the Welcome Screen:**
 
-    **Access settings from Home Screen**
+    1. Open QField and tap the settings button on the top-left corner of the screen.
 
-    1. When opening QField tap on the settings button on the top left of the screen.
+    **Access settings inside an active project:**
 
-    **Access settings in active project**
+    1. Open the **Side Dashboard**.
+    2. Tap the three-dotted menu *(⋮)* and select **Settings**.
 
     1. Open the **Side Dashboard** and click on the 3-dotted menu *(⋮)*.
     2. Tap on **Settings**.

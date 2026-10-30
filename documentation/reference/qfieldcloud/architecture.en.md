@@ -10,7 +10,7 @@ QFieldCloud has a containerized architecture with multiple containers and volume
 
 !![QFieldCloud architecture: Rounded rectangles represent containers, ellipses represent volumes. The text in the square brackets is the service name found in the `docker-compose.yml` file, the rest of the text is the function of the container. Arrows between containers shows who initiates the communication. Arrows between a container and a volume represents whether the container reads (arrow pointing to container) or writes (arrow pointing to volume) data. Arrows and containers in gray represent deprecated services. Arrows and containers in dashed line represent optional services.](../../assets/images/qfc_server_architecture_light.svg)
 
-See an interactive version of [the drawing above](https://excalidraw.com/#json=7rUYYLuU9kkRrvR3acb8R,6l4zHy4gvz8WYcb9z5O1jQ).
+See an interactive version of [the drawing above](https://excalidraw.com/#json=hARq9pMz7xUVNAa4dwcjU,1DAnhhSH_aFvuXUZKC-08Q).
 
 !!! note
   For simplicity and clarity all graphs show the so called "happy path" without detailing the error handling through the process.
@@ -23,7 +23,7 @@ See an interactive version of [the drawing above](https://excalidraw.com/#json=7
 #### `[nginx]` Reverse proxy
 
 The reverse proxy that sits in front of QFieldCloud.
-Hard requirement on [`nginx`](https://nginx.org/en/) for this purpose as the [`X-Accel-Redirect` HTTP header](https://nginx.org/en/docs/http/ngx_http_core_module.html#internal) is heavily used in production to serve files directly from the **[minio] File Storage**.
+Hard requirement on [`nginx`](https://nginx.org/en/) for this purpose as the [`X-Accel-Redirect` HTTP header](https://nginx.org/en/docs/http/ngx_http_core_module.html#internal) is heavily used in production to serve files directly from the Object Storage.
 
 Requires a SSL certificate to be present - self-signed, Let's Encrypt or other.
 
@@ -116,33 +116,35 @@ The default location for User uploaded files. It should **never** be used.
 The following containers are available only for local development purposes and **should not** be used in production, as these services are not monitored, backed-up and generally designed for critical usage within the stack.
 
 
-#### [`minio`] File Storage
+#### [`rustfs`] File Storage
 
 Local Object Storage (S3-like) used for development.
-The data is stored on 4 **[`minio_data`]** volumes, as replication is enforced by `minio`.
+The data is stored on 4 **[`rustfs_data`]** volumes, as replication is enforced by `rustfs`.
 
-Should be replaced by a proper S3-like Object Storage SaaS provider.
+Should be replaced by a proper S3-like Object Storage SaaS provider in production environments.
 
-If `minio` is running, please make sure the host's firewall allows port `8009`, required by the `minio` service (or the port configured with the `MINIO_API_PORT` environment variable).
-
-
-#### [`createbuckets`] Create Minio Buckets
-
-Single shot container to create the required buckets on the Object Storage under **[`minio`] File Storage**.
+If `rustfs` is running, please make sure the host's firewall allows port `8009`, required by the `rustfs` service (or the port configured with the `OBJECT_STORAGE_API_PORT` environment variable).
 
 
-#### [`webdav`] Alternative File Storage
+#### [`createbuckets`] Create Object Storage Buckets
+
+Single shot container to create the required buckets on **[`rustfs`] File Storage**.
+
+
+#### [`webdav`] WebDAV File Storage
 
 Local WebDAV storage used for development, using WebDAV protocol and specifications.
 
 The data is stored on the **[`webdav_data`]** volume.
 
-Can alternatively be used in place of the `minio` File Storage for storing the files. Can optionally be used for storing only attachments on it.
+Can alternatively be used in place of the **`rustfs` File Storage** for storing the files.
+Can optionally be used for storing only attachments on it.
 
 !!! info
-    The webdav storage is optional, it is not a requirement for the system to work properly.
+    Configuring a WebDAV storage is optional, it is not a requirement for the system to work properly.
 
-If used, the webdav storage service should be replaced by a proper WebDAV server, e.g. NextCloud.
+If used, the WebDAV storage service should be replaced by a proper WebDAV SaaS provider in production environments, e.g. NextCloud.
+
 
 #### [`db`] App PostgreSQL
 
@@ -160,22 +162,14 @@ Local mailing server to handle emails being sent, such as registration activatio
 Should be replaced by a proper email SaaS provider that supports SMTP protocol.
 
 
-#### [`geodb`] GeoDB PostgreSQL
+#### [`rustfs_data`]
 
-!!! warning
-    Deprecated, might be removed at any time.
-
-Stores dynamically created user PostGIS databases.
-
-
-#### [`minio_data`]
-
-Stores data for the **[`minio`] S3 service**.
+Stores data for the **[`rustfs`] File Storage**.
 
 
 #### [`webdav_data`]
 
-Stores data for the **[`webdav`] storage service** if present.
+Stores data for the **[`webdav`] WebDAV File Storage** if present.
 
 
 #### [`postgres_data`]
@@ -186,14 +180,6 @@ Stores data for **[`db`] App PostgreSQL**.
 #### [`smtp4dev_data`]
 
 Stores data for **[`smtpdev`] Mailing Server**.
-
-
-#### [`geodb_data`]
-
-!!! warning
-    Deprecated, might be removed at any time.
-
-Stores data for **[`geodb`] GeoDB PostgreSQL**.
 
 
 ## Job Queue

@@ -3,14 +3,14 @@ title: Attachment widget
 tx_slug: documentation_how-to_pictures
 ---
 
-# Use attachment
+# Use Attachment
 
-In QField, a field with *Attachment* widget can be used to:
+In QField, fields configured with the **Attachment** widget can:
 
-- Show and take photos
-- Show and record videos
-- Listen and record sound clips
-- Show links to external files like PDFs or documents
+- Display and capture photos.
+- Display and record video clips.
+- Listen to and record audio clips.
+- Display links to external files like PDFs or documents.
 
 !![Default option: Photo](../../assets/images/attachments.png, 800px)
 
@@ -67,6 +67,7 @@ A relation to a second layer needs to be set in the QGIS properties so that when
 
 
 !!! Workflow
+    1. Create two database tables in your data source using the schema structure below:
 
     1. Direct to *Project Properties* > *Relations*
     2. Click on the <span style="color:green">**:material-plus:**</span>
@@ -78,15 +79,15 @@ A relation to a second layer needs to be set in the QGIS properties so that when
         - **Composition:** `strength`
     !![Example relation with "Apiary"](../../assets/images/add-1-n-pictures-relations.png)
 
-### Attribute Form configuration
+### Attribute Form Configuration
+:material-monitor: Project Manager
 
-Once you have created the relation the relation can be properly configured in the feature layer's attribute forms.
-In the apiary layer we have to specify a default value to create a unique id.
-For the apiary_picture layer, you will have to change the widget type to *Attachment*
+Configure attribute forms in feature layers after creating the layer relation.
+Specify a default value in the `apiary` parent layer to generate unique primary keys.
+Set the widget type to **Attachment** in the `apiary_picture` child layer.
 
 !!! Workflow
-
-    **Parent layer**
+    **Parent layer configuration:**
 
     1. Direct to *Layer Properties* > *Attribute Form*
     2. For the uuid field either choose the **Text Edit** or the *UUID Generator** widget.
@@ -96,9 +97,10 @@ For the apiary_picture layer, you will have to change the widget type to *Attach
     5. Under the **Relations* section of your attribute form, the relation to the layer with the photos should be visible.
     Set the relation widget to **many to one relation** and add the relation to the form layout
 
-    !![widgets](../../assets/images/add-1-n-pictures-widgets_hive2.png)
+!![widgets](../../assets/images/add-1-n-pictures-widgets_hive2.png)
 
-    **Child layer**
+!!! Workflow
+    **Child layer configuration:**
 
     1. Direct to *Properties* > *Attribute Form*
     2. Set the widget type to *Attachment* on the field that will save the picture paths.
@@ -108,7 +110,7 @@ For the apiary_picture layer, you will have to change the widget type to *Attach
 
 ## Drawing Templates
 
-QField has an in-app drawing and sketching functionality enabling you to directly sketch over and annotate images captured while in the field as well as drawing on top of a blank canvas or over a template.
+QField includes built-in drawing and sketching tools to annotate captured images, draw on blank canvases, or sketch over templates.
 
 ![type:video](../../assets/videos/drawing-sketch-feature2.mp4)
 
@@ -160,8 +162,7 @@ A default template is provided to get you started, which includes common variabl
 
 ## Fetching Geotags (EXIF) from the image file into the attribute table
 
-Sometimes you might be interested in automatically storing Geotags such as the latitude, longitude, orientation, etc.
-This information is also known as EXIF tags.
+Store EXIF geotag parameters (such as latitude, longitude, and camera orientation) directly inside vector attribute fields.
 
 !!! Workflow
 

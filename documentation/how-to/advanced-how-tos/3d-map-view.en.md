@@ -5,21 +5,20 @@ tx_slug: documentation_how-to_3d-map-view
 
 # 3D Map View
 
-QField allows you to view your spatial data in 3D.
-By utilizing elevation data, map layers are draped as textures over the 3D surface, providing enhanced spatial context for navigation.
-The 3D view also utilizes Eye Dome Lighting (depth shading) to enhance the visual perception of ridges, valleys, and terrain features.
+QField displays spatial data in 3D by draping map layers as textures over terrain surfaces.
+The 3D view uses Eye Dome Lighting (depth shading) to enhance visual perception of terrain features, ridges, and valleys.
 
 ## Configuring Elevation Data
 
-There are two ways QField handles 3D elevation data, ranging from an automatic online layer to a fully offline custom model:
+QField processes 3D elevation data using two methods:
 
-- A default online DEM (injected automatically by QField)
-- A custom Digital Elevation Model (DEM) bundled with your QGIS project
+- **Online DEM:** Default elevation service fetched automatically over mobile networks.
+- **Custom DEM:** Offline Digital Elevation Model raster dataset configured within your QGIS project.
 
 ### Option 1: Online DEM
 :material-tablet: Fieldwork
 
-If no custom elevation data is configured in your QGIS project, QField will automatically attempt to use a global online DEM to generate the 3D view on the fly.
+If no custom elevation data is configured in your QGIS project, QField attempts to fetch a global online DEM to generate 3D terrain on the fly.
 
 !!! note
 
@@ -30,8 +29,8 @@ If no custom elevation data is configured in your QGIS project, QField will auto
 
 ### Option 2: Custom DEM
 
-For offline fieldwork and the highest accuracy,
-you should configure your own elevation data directly within the [QGIS project](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#elevation-properties).<!-- markdown-link-check-disable-line -->
+Configure custom elevation data directly in QGIS for offline fieldwork and high-accuracy terrain rendering.
+Read more in the [QGIS Elevation Properties Documentation](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_configuration.html#elevation-properties). <!-- markdown-link-check-disable-line -->
 
 !!! Workflow
     1. Open your project in QGIS.

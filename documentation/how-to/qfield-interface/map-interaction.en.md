@@ -3,7 +3,7 @@ title: Interact with the map
 tx_slug: documentation_how-to_map-interaction
 ---
 
-# Interact with the map
+# Interact with the Map
 
 There is a lot you can do inside QField.
 There exists a number of buttons, icons and settings, which may or may not be relevant for your used case.

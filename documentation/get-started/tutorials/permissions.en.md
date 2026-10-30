@@ -20,7 +20,6 @@ Access permissions follow a strict hierarchy: **a higher role automatically inhe
     - **[Members](../../get-started/tutorials/concepts.md#organization-members):** User accounts added to an organization with defined organization-level administrative roles.
     - **[Collaborators](../../get-started/tutorials/concepts.md#project-collaborators):** Individual user accounts granted specific access permissions to a single project.
 
-
 ## Project Collaborator Roles
 
 Project roles determine what an individual user can do within a specific project.
@@ -85,7 +84,7 @@ The following table details what each organization role can do:
 
 ### Restricted Project Files
 
-When the **"Restrict project files"** setting is enabled on a project, standard **Editors** and **Managers** can continue updating datasets (such as GeoPackages), but they are blocked from modifying or replacing core project files (such as `.qgz` or `.qgs` project files and style templates).
+When the **Restrict project files** setting is enabled on a project, standard **Editors** and **Managers** can continue updating datasets (such as GeoPackages), but they are blocked from modifying or replacing core project files (such as `.qgz` or `.qgs` project files and style templates).
 
 Only **Admins** and **Owners** can modify restricted files.
 

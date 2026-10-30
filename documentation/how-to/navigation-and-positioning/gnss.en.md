@@ -4,6 +4,7 @@ tx_slug: documentation_how-to_gnss
 ---
 
 # Positioning (GNSS)
+:material-tablet: Fieldwork
 
 QField is capable to show the live position using several sources:
 
@@ -12,15 +13,12 @@ QField is capable to show the live position using several sources:
 - Through an external antenna connected to an additional NTRIP service (down to cm accuracy)
 
 !!! Tip
-
-    Depending on your technical domain, it is advisable to make use of an external antenna, given that the known limitation of a mobile device is around 5 meters.
-    Furthermore, an external antenna is also able to measure the altitude next to the current 2D position on the earth surface.
+    Use an external GNSS antenna for high-accuracy surveying, as internal mobile GNSS hardware is limited to roughly 5 meters of accuracy.
+    External receivers also provide accurate elevation measurements alongside 2D coordinates.
 
 !!! Note
-
-    QField requires external GNSS devices to output their position in EPSG:4326.
-    Support for customized CRSes is not possible.
-    This may lead to displacements of your data, if you are not careful.
+    QField requires external GNSS devices to output positioning data in the `EPSG:4326` (WGS 84) coordinate reference system.
+    Customized device output CRSes are not supported and will cause coordinate shifts.
 
 ## Using an external GNSS Receiver
 
@@ -58,12 +56,14 @@ Once the grid shift file is placed there, it is available in QField in the *Posi
 
     This is independent of whether QFieldCloud is used or not.
 
-The formats currently supported are:
+Supported grid shift file formats include:
 
-- GeoTIFF (.tif, .tiff)
-- NOAA Vertical Datum (.gtx)
-- NTv2 Datum Grid Shift (.gsb)
-- Natural Resources Canada's Geoid (.byn)
+- GeoTIFF (`.tif`, `.tiff`)
+- NOAA Vertical Datum (`.gtx`)
+- NTv2 Datum Grid Shift (`.gsb`)
+- Natural Resources Canada Geoid (`.byn`)
+
+#### Example: Netherlands (ETRS89 to NAP)
 
 !!! Workflow
 
@@ -132,51 +132,40 @@ You can write the positioning information both of your internal and external dev
 These variables are commonly used as part of [default values expressions](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values)<!-- markdown-link-check-disable-line -->
 for fields to keep track of the quality of individual measured points.
 
-A common use case is recording the horizontal accuracy, which can be done by using the variable `@position_horizontal_accuracy`.
-For a complete listing of all available variables, refer to the [expression variables reference documentation](../../reference/expression_variables.md).
+For example, record horizontal accuracy using `@position_horizontal_accuracy`.
+Refer to the [Expression Variables Reference](../../reference/expression_variables.md) for a complete list.
 
-Information for GNSS Z value with Vertical grid shift in use:
-- *Antenna height compensation=False*
+Elevation handling based on vertical grid shift settings (with antenna compensation disabled):
 
 | Vertical Grid Shift in use | point Z Value z(geometry) | GNSS Device z(@position_coordinate) | QField Display | QField Label                |
 |----------------------------|---------------------------|--------------------------------------|----------------|-----------------------------|
 | None                       | Z ellipsoidal device value| Z ellipsoidal device value           | Z ellipsoidal device value | Altitude: xxx.xxxx m       |
 | Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
-| USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
+| USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-and-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
 
-### Capturing longitude, latitude and altitude in attribute form
+### Capturing Coordinates in Attribute Forms
+:material-monitor: Project Manager
 
-It is useful and not uncommon that the actual positioning values should be automatically stored inside the attribute form.
-This applies for longitude, latitude and altitude.
-
-!!! Workflow
-
-    **Configuration of attribute form**
-
-    1. In QGIS direct to your *Layer Properties* > *Attribute Form*
-    2. (Optional): You have to add a field of decimal type to the form that can capture the data.
-    Name it accordingly (eg. "longitude")
-    3. Under the settings of the widget display of the corresponding field add the following default value:
-
-        - ***Longitude:*** `x(@position_coordinate)`
-        - ***Latitude:*** `y(@position_coordinate)`
-        - ***Altitude:*** `z(@position_coordinate)`
-
-    This will save the coordinate directly in the field when adding a new feature.
-
-    !!! Note
-        This only works if positioning is turned on and when you have locked your position to your crosshair.
-
-### Vertex log layer
-
-It is good practice to create a log layer of the collected vertices.
-It enables you to keep track of the meta data for each vertex like [GNSS quality attributes](../../reference/expression_variables.md) and more.
+Store longitude, latitude, and altitude automatically in feature forms using default expressions:
 
 !!! Workflow
+    1. In QGIS, navigate to _Vector Layer Properties... > Attribute Form_.
+    2. Add decimal fields for coordinate storage (such as `longitude`, `latitude`, `altitude`).
+    3. Assign default value expressions:
+        - **Longitude:** `x(@position_coordinate)`
+        - **Latitude:** `y(@position_coordinate)`
+        - **Altitude:** `z(@position_coordinate)`
 
-    1. Add a point layer to the project and attributes configured to store this information.
+Coordinates populate automatically when digitizing new features while locked to GNSS positioning.
+
+### Vertex Log Layer
+:material-monitor: Project Manager
+
+Create a dedicated vertex log layer to record metadata for every digitized point:
+
+!!! Workflow
+    1. Add a point vector layer to your QGIS project with attribute fields configured for positioning variables.
         !![](../../assets/images/vertex_log1.png)
-    2. Assign the role *digitizing logger* to a point layer.
-    3. Go to > *Project* > *Properties...* > *QField*.
+    2. Assign the **digitizing logger** role to the layer under _Project > Properties... > QField_.
         !![](../../assets/images/vertex_log2.png)
     4. Set default values to the attributes using the positioning variables mentioned above.

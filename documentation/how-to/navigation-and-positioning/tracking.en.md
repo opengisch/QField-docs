@@ -20,15 +20,11 @@ You can also hide the attribute form so that the tracking session automatically 
 
 !!! Workflow
 
-    1. In QGIS for your tracking layer direct to  *Layer Properties* > *QField*
-    2. Activate "Tracking Session" and specify the tracking requirements.
-
+    1. In QGIS, navigate to _Vector Layer Properties... > QField_.
+    2. Enable **Tracking Session** and define time or distance requirements.
         !![Activating automatic "Tracking Sessions" in QFieldSync](../../assets/images/automatic-tracking-session.png)
-
         !![Tracking activated automatically in QField](../../assets/images/qfield-tracking-session.png,350px)
-
-    3. (Optional) hide your attribute form when automatically starting a session by directing to *Layer Properties* > *Attribute form* and selecting the "Hide Form on Add feature" option.
-
+    3. (Optional) To bypass feature form prompts when auto-tracking begins, navigate to _Vector Layer Properties... > Attribute Form_ and select **Suppress attribute form**.
         !![Hide Form on Added Feature](../../assets/images/hide-form-on-add-feature.png)
 
 - **Efficiency**: Automation saves time and effort in the field.

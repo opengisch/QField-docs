@@ -33,7 +33,7 @@ There is multiple ways in which new points can be snapped:
 
     Read more about snapping [Here](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/editing_geometry_attributes.html#snapping-and-digitizing-options)
 
-## Topological editing
+## Topological Editing
 
 To enable topological editing in QField, you have to activate in the QGIS project, before transferring or synchronizing your project.
 

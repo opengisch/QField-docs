@@ -3,12 +3,13 @@ title: Create new project in QField
 tx_slug: documentation_how-to_create-project
 ---
 
-# Create a new project in QField
+# Create a New Project in QField
+:material-tablet: Fieldwork
 
-It is possible to create a simple project to collect notes with or without attachments and track yourself during note-taking directly within QField on your mobile device.
-You can choose between several basemaps and turn it into a cloud project if needed.
+Create a simple project directly in QField on your mobile device to collect notes with or without attachments and track your location.
+Choose between several basemaps and convert your local map into a cloud project if needed.
 
-## Creating a local project
+## Creating a Local Project
 
 !!! Workflow
 
@@ -35,14 +36,13 @@ You can choose between several basemaps and turn it into a cloud project if need
 
     !![](../assets/images/new-project-3.png)
 
-## Converting an existing local project to QFieldCloud ("Cloudify")
+## Convert an Existing Local Project to QFieldCloud ("Cloudify")
 :material-tablet: Fieldwork
 
-If you have simply copied a project from your desktop or have been given access to a project through a QR code it will open as a local project.
-You can convert it into a QFieldCloud project at any time.
+If you copy a project from your desktop or receive project access through a QR code, QField opens it as a local project.
+You can convert local projects into QFieldCloud projects at any time.
 
 !!! Workflow
-
     1. Open your local project in QField.
     2. Open the **Side Dashboard** and tap the **QFieldCloud button** icon.
     3. If you are not signed in yet, log in with your QFieldCloud account credentials.

@@ -1,11 +1,11 @@
 ---
-title: Storage
+title: QField storage management
 tx_slug: documentation_get-started_storage_qfield
 ---
 
 # QField Storage Management
 
-On the QField homescreen, users are presented with two options to open a project.
+The QField Welcome Screen presents two options to open projects:
 
 - **QFieldCloud projects**: The first option is to [access a project stored on QFieldCloud](../../get-started/tutorials/get-started-qfc.md)
 How to set up and work with QFieldCloud is explained in the next chapter.

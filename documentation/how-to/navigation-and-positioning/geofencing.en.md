@@ -5,11 +5,12 @@ tx_slug: documentation_how-to_geofencing
 
 # Geofencing
 
-QField has a built-in geofencing functionality that can alert or inform users when the position provided by their GNSS device enters and/or leaves areas defined through polygon features.
-Digitizing of new features can also be prohibited when a geofencing alarm is turned on.
-Defining geofenced areas on QGIS happens with the help of the QFieldSync plugin.
+QField includes built-in geofencing functionality to alert or inform users when their GNSS location enters or exits predefined polygon boundary areas.
+You can also prohibit feature digitizing when a geofencing alert is active.
+Configure geofenced boundaries in QGIS using QFieldSync.
 
-## Defining geofenced areas
+## Defining Geofenced Areas
+:material-monitor: Project Manager
 
 !!! Workflow
 

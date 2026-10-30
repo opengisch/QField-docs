@@ -5,8 +5,7 @@ tx_slug: documentation_how-to_sensors
 
 # Sensors
 
-QField offers a range of sensor functionalities that allow you to passively collect sensor data in the background,
-display the collected data, and save it into newly-digitized feature attributes.
+QField supports background sensor logging, allowing you to passively collect sensor data, display live measurements on the map canvas, and store readings inside feature attribute fields.
 
 See [Here](../../fieldwork/data-collection/sensors.md) how this looks in QField.
 
@@ -25,6 +24,6 @@ You can configure the QGIS project in such a way that QField will automatically 
     3. Set the **default value** to `*"sensor_data('abc')` where 'abc' corresponds to the name of the sensor.
     4. Click **Apply** and synchronize or copy your modified project to the mobile device.
 
-     !![](../../assets/images/sensors_tracker_constraint.png)
+    !![](../../assets/images/sensors_tracker_constraint.png)
 
-!![](../../assets/images/sensors.webp,700px)
+    !![](../../assets/images/sensors.webp,700px)

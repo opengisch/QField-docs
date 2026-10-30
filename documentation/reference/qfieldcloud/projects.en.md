@@ -6,39 +6,42 @@ tx_slug: documentation_reference_qfieldcloud_projects
 # Projects
 
 Projects are the main data containers on QField and QFieldCloud.
+There is no limit on the number of projects.
 
-Users can create any number of projects.
-
-Projects must contain a single `.qgs`/`.qgz` QGIS file, and may in addition contain any combination of geospatial files -- GeoPackages, Shapefiles, TIFs -- or data files such as photos, PDFs etc.
+Projects must contain
+- A single `.qgs`/`.qgz` QGIS file
+- (Optional) Spatial and non spatial files -- GeoPackages, Shapefiles, TIFs, tables
+- Photos, videos or PDFs etc.
 
 File Size Recommendations to ensure optimal performance:
-    - **Recommended Limit**: For optimal performance, keep individual file sizes under 2 GB.
-    - **Absolute Maximum**: The system's hard limit is 10 GB. Files larger than this will fail to process.
+
+- **Recommended Limit**: For optimal performance, keep individual file sizes under 2 GB.
+- **Absolute Maximum**: The system's hard limit is 10 GB. Files larger than this will fail to process.
 
 Larger files than this may take significantly longer to process and lead to [jobs](jobs.md) issues.
 It is therefore recommended to:
-    - Divide large files into smaller pieces
-    - Check the [On-demand Attachment files download](../../get-started/tutorials/advanced-setup-qfc.md)
+
+- Divide large files into smaller pieces
+- Check the [On-demand Attachment files download](../../get-started/tutorials/advanced-setup-qfc.md)
 
 Files cannot be shared between projects, unless [shared datasets](../../how-to/advanced-how-tos/shared-datasets.md) are used.
 
 QFieldCloud projects have a name and an owner.
 The owner of a project is a QFieldCloud user or an organization.
-No two projects can use the same pair `owner_name` and `project_name`.
+It is not possible to use the same pair `owner_name` and `project_name`.
 
 Projects can be marked as either public or private.
-Private projects are accessible only to users added to a project as project collaborators.
-Public projects are visible to, and can be downloaded by, any QFieldCloud user.
 
+- **Private projects:** These projects are only accessible to users that have been added as project collaborators.
+- **Public projects:** These projects are accessible to all and can be downloaded by, any QFieldCloud user.
 
 ## Creating a project
 
 A project can be created in multiple ways:
 
-- via QFieldCloud web interface;
+- via [QFieldCloud web interface](../../get-started/tutorials/create-project-qfc.md);
 - via [QFieldSync in QGIS](../../get-started/tutorials/get-started-qfs.md);
 - via [QFieldCloud-SDK](sdk.md);
-
 
 ## Files
 
@@ -78,7 +81,6 @@ The files in a QGIS project can be in one of the following groups by their purpo
 - **Attachments** - all your additional project data, such as `.jpg`, `.pdf` or other files.
 - **QField plugins** - all your QField plugins, usually `.qml` files.
 
-
 ## File versions
 
 QFieldCloud uses file versioning.
@@ -94,30 +96,27 @@ Each file and version can be linked to a specific QFieldCloud user who uploaded 
 
 To delete file versions in QFieldCloud, follow these steps:
 
-1. Go to the "Files" section of your project.
-2. Locate the file for which you want to delete versions.
-3. Click on the 3-dotted menu *(⋮)* on the right side of the file name.
-4. You will see a list of versions for that specific file.
-5. Identify the version you want to delete and click on the red trash bin icon next to it.
+!!! Workflow
 
+    1. Go to the "Files" section of your project.
+    2. Locate the file for which you want to delete versions.
+    3. Click on the 3-dotted menu *(⋮)* on the right side of the file name.
+    4. You will see a list of versions for that specific file.
+    5. Identify the version you want to delete and click on the red trash bin icon next to it.
     ![Deleting project files](../../assets/images/files_versions_for_deleting.png)
-
-6. Confirm the deletion when prompted, if you want to delete all versions before a specific version,
-    you can do it activating the option "Also delete `n` version(s) older than the selected version.".
-
+    6. Confirm the deletion when prompted, if you want to delete all versions before a specific version,
+    you can do it activating the option **Also delete `n` version(s) older than the selected version**.
     ![](../../assets/images/files_versions_deletion_confirmation.png)
-
-7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.
+    7. After deleting a pop up message will appear with the success and the list of versions will show just the versions that was not selected for deletion.
 
     ![](../../assets/images/files_versions_deletion_popup_listing_files.png)
-
 
 ## Collaborators
 
 A project collaborator is a QFieldCloud user invited to contribute to a project.
 A single project may have multiple collaborators.
 Collaborators with roles **owner** or **admin** can add more users as collaborators.
-Projects owned by an organization allow adding **teams** as collaborators. Read more about [collaborator roles](permissions.md).
+Projects owned by an organization allow adding **teams** as collaborators. Read more about [collaborator roles](../../get-started/tutorials/permissions.md).
 
 ## Changes
 
