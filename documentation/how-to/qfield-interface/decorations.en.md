@@ -90,7 +90,7 @@ Once configured in QGIS, the grid displays automatically in QField after synchro
 
 !!! Workflow
     1. In QGIS, open *View* > *Decorations* > *Image…*.
-    (../../assets/images/qgis-image.png)
+    !![](../../assets/images/qgis-image.png)
     2. Check the **Enable Image** box.
     3. Select your image.
 
