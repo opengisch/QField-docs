@@ -95,7 +95,7 @@ You are cordially invited to enhance the translation in your native language.
 
 ## Advanced
 
-!![Network and Advanced Settings](../../assets/images/general-settings-qfield-3.png,250px)
+!![Network and Advanced Settings](../../assets/images/settings-advanced.png,250px)
 
 ### Net Proxy
 
