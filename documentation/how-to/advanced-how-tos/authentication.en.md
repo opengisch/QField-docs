@@ -51,7 +51,7 @@ In order for a service that requires authentication to run in QField, after conf
 !!! Workflow
 
     1. Export the authentication configuration file from QGIS (see above)
-    2. On your device direct to the QField *[App Directory](../../fieldwork/general/storage.en.md#5-qfield-app-directory)* > *Auth*
+    2. On your device direct to the QField *[App Directory](../../fieldwork/general/storage.md#5-qfield-app-directory)* > *Auth*
     3. Once copied, the service should be rendered correctly and provide access.
 
     !!! Tip
