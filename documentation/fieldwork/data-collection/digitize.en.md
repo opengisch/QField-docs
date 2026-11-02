@@ -5,7 +5,7 @@ tx_slug: documentation_fieldwork_digitize
 
 # Digitize and Edit
 
-With QField you can digitize, edit and delete points, lines and polygons and their according attributes while being in the field.
+With QField you can digitize, edit and delete points, lines and polygons and their corresponding attributes while being in the field.
 If you only want to edit your attributes, it is enough to stay in **Browse Mode**.
 If you, however, want to add a new object or edit the geometry of an existing one, you will have to switch to **Digitize Mode**.
 
@@ -16,12 +16,12 @@ If you, however, want to add a new object or edit the geometry of an existing on
 !!! Workflow
 
     1. Navigate the crosshair in the center of the screen to where you want to add the point.
-    2. Click the <span style="color:green"> :material-plus-circle: </span> at the lower right of the screen add a new point.
-        (Optionable): You can use the **lock to position** button from the pie menu to force the crosshair to take the point directly at your position - if you have enabled your position.
+    2. Click the <span style="color:green"> :material-plus-circle: </span> at the lower right of the screen to add a new point.
+        (Optional): You can use the **lock to position** button from the pie menu to force the crosshair to take the point directly at your position - if you have enabled your position.
 
         !![](../../assets/images/lock_to_position_icon.png,200px)
 
-    3. (Optionable): You can click the red <span style="color:red"> **X**</span> to cancel the current addition.
+    3. (Optional): You can click the red <span style="color:red"> **X**</span> to cancel the current addition.
 
 ### Adding line or polygon objects
 
@@ -30,12 +30,12 @@ If you, however, want to add a new object or edit the geometry of an existing on
     1. Navigate the crosshair in the center of the screen to where you want to start the line or the polygon.
     2. Click the <span style="color:green"> **:material-plus-circle:**</span> at the lower right of the screen to add the starting point.
     3. To form your line or polygon tap on the <span style="color:green"> **:material-plus-circle:**</span> each time you want to add a new point.
-    4. (Optionable) Click the <span style="color:red"> **:material-minus:**</span> to remove the last added one.
+    4. (Optional) Click the <span style="color:red"> **:material-minus:**</span> to remove the last added one.
 
-    5. Click on the <span style="color:green"> **:material-check:**</span> to finish your edition.
+    5. Click on the <span style="color:green"> **:material-check:**</span> to finish your edit.
     You need to add at least 2 nodes for line features and 3 for polygons.
 
-    6. (Optionable): You can click the <span style="color:red"> **X**</span> to cancel the current feature creation.
+    6. (Optional): You can click the <span style="color:red"> **X**</span> to cancel the current feature creation.
 
 
     ![type:video](../../assets/videos/collect_features.mp4)
@@ -73,7 +73,7 @@ After digitizing a geometry, the attribute form will appear allowing you to add 
     !![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png,300px)
     4. Click on the **Scan Code** option
     !![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png,300px)
-    5. Scan the QR Code and clickon on the :material-check:
+    5. Scan the QR Code and click on the :material-check:
     !![](../../assets/images/digitizing-with-qr-code-3-code-reader.png,300px)
     !![](../../assets/images/digitizing-with-qr-code-4-it-worked.png,300px)
 
@@ -105,7 +105,7 @@ If you want to reuse values from previous entries, you can use the  <span style=
         - **A Split tool:** The split tool allows you to split objects into two new objects.
         The new object(s) will be filled with the same attributes as the original.
         - **A Reshape tool:** You can reshape the geometry of your corner, by simply drawing a line on top or the object.
-        - **An Eraser tool:** If you need to make a whole or erase some parts of your object, you can use this tool.
+        - **An Eraser tool:** If you need to make a hole or erase some parts of your object, you can use this tool.
         - **Ring Tool:** Within an object, you can create a ring.
         QField will ask whether you wish to add a new polygon as a replacement of the deleted one into the hole.
 
@@ -155,7 +155,7 @@ The freehand digitizing mode is activated through a new toolbar button which app
 
 ## Snapping
 
-When adding new objects it is possible to enable the snapping tool, which allows you to snap new objects to the boundaries or cornerpoints of existing ones.
+When adding new objects it is possible to enable the snapping tool, which allows you to snap new objects to the boundaries or corner points of existing ones.
 
 !!! Workflow
 
@@ -178,7 +178,7 @@ You can snap to an angle of your choice.
 
     1. Change to the **Digitize Mode**.
     2. Once activated on the top left below the **Side Dashboard** a :material-pen: icon becomes visible.
-    2. **Add** a new line or polygon object by presing the :material-plus-circle:.
+    2. **Add** a new line or polygon object by pressing the :material-plus-circle:.
     3. Click on the :material-pen: and long-press on the **Angle Symbol**.
     4. Select amongst one of the pre-defined angles: 10°, 15°, 30°, 45°, and 90° and enable the function by tapping on the angle.
     QField will remember the angle relative to the last segment situation for consistent snapping behaviour during subsequent edits.
@@ -233,7 +233,7 @@ QField has a built-in geofencing functionality that can alert or inform users wh
 Digitizing of new features can also be prohibited when a geofencing alarm is turned on.
 Defining geofenced areas on QGIS happens with the help of the QFieldSync plugin.
 
-When QField turns its geofencing alert on, a glowing read circle will appear at the bottom right corner of your screen.
+When QField turns its geofencing alert on, a glowing red circle will appear at the bottom right corner of your screen.
 The message will stay until you have left the prohibited area.
 If your device supports vibration, it will also vibrate as long as you are in the area.
 

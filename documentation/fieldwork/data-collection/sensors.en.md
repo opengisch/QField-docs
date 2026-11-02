@@ -40,8 +40,8 @@ See [here](../../how-to/advanced-how-tos/sensors.md) how to configure the QGIS p
 
     3. Choose the **Sensor data-requirement** option.
     4. Tap the **Start tracking** button to begin the tracking.
-    5. Enter the attributes for  the feature(s) about to be created and tap the :material-check:.
-    If your QGIS project was pre-configured, the recorded values of the sensor will be saved in the according field.
+    5. Enter the attributes for the feature(s) about to be created and tap the :material-check:.
+    If your QGIS project was pre-configured, the recorded values of the sensor will be saved in the corresponding field.
     Once a tracking session is set up, a badge :material-head: appears in the **Side Dashboard** next to the tracked layers.
     !![](../../assets/images/tracking-badge.png)
     6. Once finished open the **Side Dashboard** and long-press on the layer's tracking badge you want to stop.

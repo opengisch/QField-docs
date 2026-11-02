@@ -5,7 +5,7 @@ tx_slug: documentation_how-to_measuring-tool
 
 # Measuring tool
 
-Sometimes you may want to measure the distance to between a few objects or between yourself and a target object.
+Sometimes you may want to measure the distance between a few objects or between yourself and a target object.
 
 !!! Workflow
 
@@ -21,7 +21,7 @@ Sometimes you may want to measure the distance to between a few objects or betwe
 
 ## Elevation profiling
 
-If you are more interested in the elevation difference between two objects, you can use the  *Elevation Profile* tool
+If you are more interested in the elevation difference between two objects, you can use the *Elevation Profile* tool
 
 !!! Workflow
 

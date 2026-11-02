@@ -40,7 +40,7 @@ To see all your saved bookmarks at once you can access the Bookmark List.
 
     1. Open the **Side Dashboard**.
     2. Tap the **3-dotted menu** and select **Bookmarks** in the menu.
-    3. The Bookmark List will open, categorized into color groups (<span style="color:green">**Green**</span>, <span style="color:orange">**Orange**</span>, <span style="color:red">**Red**</span>, <span style="color:blue">**Green**</span>).
+    3. The Bookmark List will open, categorized into color groups (<span style="color:green">**Green**</span>, <span style="color:orange">**Orange**</span>, <span style="color:red">**Red**</span>, <span style="color:blue">**Blue**</span>).
     If there are project bookmarks, which were created in QGIS before, they will be shown in this list
     4. Tap any bookmark in the list to instantly jump to its location on the map.
     !![](../../assets/images/list_panel_bookmarks.png)
@@ -57,7 +57,7 @@ Bookmark locations capture both the target point coordinates and the active map 
     1. Long-press on the map canvas at the desired location.
     2. Tap **Add Bookmark** in the pop-up context menu.
         !![](../../assets/images/bookmarks-add-from-touch.png, 300px)
-    3. Enter a custom name and select a color marker group (<span style="color:green">**Green**</span>, <span style="color:orange">**Orange**</span>, <span style="color:red">**Red**</span>, <span style="color:blue">**Green**</span>).
+    3. Enter a custom name and select a color marker group (<span style="color:green">**Green**</span>, <span style="color:orange">**Orange**</span>, <span style="color:red">**Red**</span>, <span style="color:blue">**Blue**</span>).
         !![](../../assets/images/bookmarks-properties.png, 800px)
 
 !!! Workflow
@@ -71,8 +71,8 @@ Bookmark locations capture both the target point coordinates and the active map 
 
 ## Managing and Exporting Bookmarks
 
-Your can edit, copy and delete your own bookmarks either one-by-one or multiple at the same time.
-You can also export them as standalone vector datasets, such as Gpkg's.
+You can edit, copy and delete your own bookmarks either one-by-one or multiple at the same time.
+You can also export them as standalone vector datasets, such as GeoPackages.
 
 ### Individual Bookmark Actions
 
@@ -118,7 +118,7 @@ You can export your user bookmarks into a standalone GeoPackage (`.gpkg`) to sha
 
 ## Navigating to a Bookmark
 
-You can set any bookmark directly as a active navigation destination.
+You can set any bookmark directly as an active navigation destination.
 
 ###
 

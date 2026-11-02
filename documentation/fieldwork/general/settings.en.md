@@ -44,7 +44,7 @@ This comes with the cost of rendering precision.
 This option is useful, when mapping features on a larger scale.
 
 - **Consider mouse as a touchscreen device:** If enabled, the mouse allows you to add new vertices anywhere on the map.
-If disabled the cross-hair is fixed to the center and the mouse can is used to relocate the cross-hair.
+If disabled the cross-hair is fixed to the center and the mouse is used to relocate the cross-hair.
 
 !![Digitizing and Editing](../../assets/images/general-settings-qfield.png,250px)
 
@@ -60,7 +60,7 @@ If disabled the cross-hair is fixed to the center and the mouse can is used to r
      If disabled, you can still access this option by typing go at the start of your query.
 
     !!! Tip
-        When long-pressing on a point of interest anywhere in your map, you can copy the point location to your clip board and directly place it in the search bar.
+        When long-pressing on a point of interest anywhere in your map, you can copy the point location to your clipboard and directly place it in the search bar.
         Remember to type **Go** in advance if the **Go to coordinate** setting has not been enabled and remove the information about the coordinate reference system.
 
     - ***Spatial bookmarks:*** By enabling this option you automatically when using the search bar, the list of pre-configured bookmarks (if any) will be queried.
@@ -80,9 +80,9 @@ To add a new plugin see the [Plugins Page](../../how-to/advanced-how-tos/plugins
 - **Maximized attribute form:** when enabling this option you can maximize the attribute form to cover the whole screen.
 - **Fixed scale navigation:**
     - ***Active fixed scale navigation:*** Focusing on a search result will highlight and pan to the feature.
-    - ***Diabled fixed scale navigation:*** it will pan, highlight and zoom to the feature.
+    - ***Disabled fixed scale navigation:*** it will pan, highlight and zoom to the feature.
 - **Automatically open form for single feature identification:** If enabled, when tapping on an individual feature while being in the *browse mode*, the attribute form will directly be opened.
-- **Dim screening when idling:** To preserve battery, you can change the time when you want your phone to dim the screen when being inactive on QField.
+- **Dim screen when idling:** To preserve battery, you can change the time when you want your phone to dim the screen when being inactive on QField.
 When setting it to *0* the dimming will be disabled completely.
 - **Appearance:** Depending on your preference, you can change the QField interface to *Light* or *Dark* Mode.
 - ***User interface font size:*** You can choose from the following options:
@@ -103,7 +103,7 @@ You are cordially invited to enhance the translation in your native language.
 ### Net Proxy
 
 If some of your data are located in a closed environment you can access them through a proxy network.
-This should be [configured](https://docs.qgis.org/testing/en/docs/user_manual/introduction/qgis_configuration.html#network-settings)in QGIS beforehand. <!-- markdown-link-check-disable-line -->
+This should be [configured](https://docs.qgis.org/testing/en/docs/user_manual/introduction/qgis_configuration.html#network-settings) in QGIS beforehand. <!-- markdown-link-check-disable-line -->
 
 QField also can access the data once the network information is provided:
 
@@ -116,7 +116,7 @@ QField has an own internal camera, which provides quite a few options if desirab
 
 - Geotagging and [EXIF variables](../../reference/exif.md)
 - Details stamping
-- Size and ration adjustment
+- Size and ratio adjustment
 - Camera selection - front and back
 
 !!! Background information

@@ -51,7 +51,7 @@ On top of annotating captured images, QField supports drawing from image templat
 
     1. Open your attribute form.
     2. Direct to the photo field.
-    3. Click on the the **3-dotted menu *(⋮)** next to the photo field.
+    3. Click on the **3-dotted menu (⋮)** next to the photo field.
     4. Select **Draw a sketch**
     !![picture path](../../assets/images/drawing_templates.png)
     If you have pre-configured templates added to your projects they will show up here.

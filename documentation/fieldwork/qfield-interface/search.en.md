@@ -111,5 +111,5 @@ The search bar functions as a QGIS expression calculator.
     1. Prefix your query with `= ` to evaluate expressions (such as `= 20 + 5` or `= $area`).
     2. Tap the calculated result in the list to copy the value to the clipboard.
 
-Pro-tip: use the aggregate() expression function to calculate statistics against vector layers. For example, calculating the total area covered by a polygon layers
+Pro-tip: use the aggregate() expression function to calculate statistics against vector layers. For example, calculating the total area covered by a polygon layer
 can be done by typing `*= aggregate('my_layer','sum', $area)*`.

@@ -24,7 +24,7 @@ COGO operations are available in digitize mode.
 !!! Workflow
     1. Open your project in QField and enable digitize mode by tapping the pencil icon in the **Side Dashboard**.
     2. Select the target layer to edit.
-    3. Tap the **pencil-and-gear editing tools overlay icon on the map canvas.
+    3. Tap the **pencil-and-gear** editing tools overlay icon on the map canvas.
     4. Tap the **drafting compass** icon to enable the COGO tools overlay.
 
 Once active, choose from three COGO operations:

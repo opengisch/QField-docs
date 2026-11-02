@@ -5,10 +5,10 @@ tx_slug: documentation_how-to_gnss
 
 # Positioning (GNSS)
 
-QField is capable to show your live position using several sources:
+QField can show your live position using several sources:
 
 - Either by using the internal GNSS (Global Navigation Satellite System, like GPS, GLONASS, Galileo or Beidou) of your mobile device (typically 5 m accuracy) or
-- Through an external antenna through NMEA streams over Bluetooth, TCP, or UDP connection. (typically 1.5 m accuracy) or
+- Through an external antenna using NMEA streams over Bluetooth, TCP, or UDP connection. (typically 1.5 m accuracy) or
 - Through an external antenna connected to an additional NTRIP service (down to cm accuracy)
 
 !!! Tip
@@ -20,7 +20,7 @@ QField is capable to show your live position using several sources:
 
 When positioning is enabled, your position will be shown in blue on the map.
 Your location is represented by a <span style="color:blue"> :material-circle:</span> when you are not moving and by an <span style="color:blue"> :material-arrow-up:</span> indicating your movement direction if you are moving.
-The blue beam indicates the current orientation of your device if the device has a builtin magnetic compass.
+The blue beam indicates the current orientation of your device if the device has a built-in magnetic compass.
 A shaded circle around your current position indicates the precision as reported by the GPS in use.
 !![Position enabled](../../assets/images/position_icon.png,250px)
 
@@ -35,7 +35,7 @@ A shaded circle around your current position indicates the precision as reported
 
 The following settings are available in QField settings' positioning tab.
 
-- **[Enable NTRIP Corrections](#enable-ntrip-corrections):** QField can act as a RTK Client if you have the essential credentials to connect to your service.
+- **[Enable NTRIP Corrections](#enable-ntrip-corrections):** QField can act as an RTK Client if you have the essential credentials to connect to your service.
 - **Show position information:** If you want to see your location coordinates on the map canvas, you can enable this option.
 - **Behavior when locked to position:** This setting allows you to set the preferred way of orienting the map canvas, when positioning is enabled:
     - <u>Follow position only:</u> The map canvas will stay as it is.
@@ -69,7 +69,7 @@ Under the **Positioning Settings**, you are able to manage and switch between yo
 
 !![](../../assets/images/saved-gnss-devices.png)
 
-The breakdown of connections support by platform is as follow:
+The breakdown of connections supported by platform is as follows:
 
 |             | :material-android: Android | :material-apple: iOS | :material-microsoft-windows: Windows | :material-linux: Linux | :material-apple: MacOS |
 |-------------|----------------------------|----------------------|--------------------------------------|------------------------|------------------------|
@@ -100,13 +100,13 @@ The logs will be placed in **[[App Directory](../../fieldwork/general/storage.md
 
 ## Enable NTRIP Corrections
 
-If you have access to an  RTK Service, QField can act as a RTK Client if you add the essential information under the settings.
+If you have access to an RTK Service, QField can act as an RTK Client if you add the essential information under the settings.
 
 !!! Workflow
 
     **Connect to external GPS Device**
 
-    1. Enable bluetooth and connect to your external GPS Device
+    1. Enable Bluetooth and connect to your external GPS Device
     2. In QField connect to that antenna by adding it to your selection of positioning devices.
     3. Once connected, toggle the switch.
     !![](../../assets/images/GNSS_NTRIP_configuration.png, 300px)
@@ -139,8 +139,8 @@ The formats currently supported are:
 
     1. Copy the `vertical shift grid` file to the directory **[[App Directory]](../../fieldwork/general/storage.md#5-qfield-app-directory)/QField/proj** on your mobile device.
 
-    2. Open the **Site Dashboard**
-    3. Tap on the **3-dotted menu *(⋮)** and direct to *Settings* > *Positioning*
+    2. Open the **Side Dashboard**
+    3. Tap on the **3-dotted menu (⋮)** and direct to *Settings* > *Positioning*
         !![](../../assets/images/vertical_grid_selection_in_qfield_settings.png,450px)
     4. Enable your GNSS device.
     It will directly center to your current location once the **positioning information** is available.

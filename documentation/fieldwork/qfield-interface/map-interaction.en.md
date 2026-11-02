@@ -6,7 +6,7 @@ tx_slug: documentation_fieldwork_map-interaction
 # Interact with the map
 
 There is a lot you can do inside QField.
-There exists a number of buttons, icons and settings, which may or may not be relevant for your used case.
+There exists a number of buttons, icons and settings, which may or may not be relevant for your use case.
 
 ## Modes
 
@@ -37,7 +37,7 @@ If you want to actually digitize new objects or modify the geometry of existing 
 !!! Note
 
     - You can only edit a feature's geometry if you are in **Digitize Mode**
-    - QField insures that when you digitize that your added points, lines or polygons will not have duplicate vertices.
+    - QField ensures that when you digitize that your added points, lines or polygons will not have duplicate vertices.
 
 ## Map legend
 

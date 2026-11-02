@@ -5,14 +5,14 @@ tx_slug: documentation_fieldwork_processing
 
 # Processing object
 
-In QField you cannot only move or duplicate your features, you can also change, drop or add further geometries using further processes.
+In QField you can not only move or duplicate your features, you can also change, drop or add further geometries using further processes.
 
 ## Accessing processing algorithms
 
 !!! Workflow
 
     1. Tap on the map canvas to select the feature(s), you wish to modify.
-    2. Once selected, open the **3-dotted menu (:)**
+    2. Once selected, open the **3-dotted menu (⋮)**
     3. Open the **processing** option and tap on  **Process Selected Feature(s)**.
     !![process selected features](../../assets/images/process_selected_features.png)
     4. You can select among **All Algorithms** and add them as **Favorites** if you like

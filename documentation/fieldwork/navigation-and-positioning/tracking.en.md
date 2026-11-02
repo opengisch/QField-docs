@@ -10,7 +10,7 @@ tx_slug: documentation_fieldwork_tracking
 You can track yourself and collect points, lines or polygons while browsing the map, working on other features and layers, or in the background while having the device in your pocket.
 For lines and polygons, one object will be created per tracking session.
 For points, a new object will be created for each recorded position.
-The attributes you enter in the beginning of the trackking sessions will be added to every object recorded.
+The attributes you enter in the beginning of the tracking session will be added to every object recorded.
 
 !!! Note
 
@@ -63,7 +63,7 @@ There are additional settings which you can activate.
 - **Measure(M) value attached to vertices:** If your layer supports the M dimension, QField can store the time passed since the first vertex recorded in each vertex's M value.
 
 !!! tip
-    You can simultaneously record multiple trackings sessions across several layers.
+    You can simultaneously record multiple tracking sessions across several layers.
 
 ## Resume to a Previous Session
 

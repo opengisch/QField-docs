@@ -83,7 +83,7 @@ If you need a more precise way of directing to your target, you can enable the *
 
 !!! Workflow
 
-    *Option 1 - Through the Navigation Menu**
+    **Option 1 - Through the Navigation Menu**
 
     1. Long-press on the <span style="color:purple">:material-flag:</span> located on the right of the **Map Canvas**
     2. Toggle **Always show precise view**.
@@ -109,7 +109,7 @@ When you get closer to the destination, the number of **Pings** will increase, p
 
 !!! Tip
 
-    It is advisable to clear any distanation when finishing a mapping session.
+    It is advisable to clear any destination when finishing a mapping session.
     Otherwise QField may memorize that a destination was set and lead to random errors when opening QField in the next session or with a different project.
 
 ### Precise View Settings

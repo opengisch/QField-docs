@@ -30,10 +30,10 @@ This is the place where you can save them.
 !!! Workflow
 
     1. To import a **New Project/Layer** locally, click on the :material-plus-circle: at the bottom right of the screen.
-    2.There you will have the choice to choose between:
+    2. There you will have the choice to choose between:
 
-    - **Import project from folder**: You will be asked to grant permission for QField to read the content of a given folderthe selected folder.
-    - **Import project from ZIP (archive):** You will be asked to grant permission for QField to read the content of a given folderthe selected folder.
+    - **Import project from folder**: You will be asked to grant permission for QField to read the content of the selected folder.
+    - **Import project from ZIP (archive):** You will be asked to grant permission for QField to read the content of the selected folder.
     - **Import (individual) dataset(s):** You will be asked to select one or more files via a system file picker.
     !![QField File Selector](../../assets/images/howto_filebrowser.png)
 
@@ -72,8 +72,8 @@ This is useful when a QFieldCloud project should be used as a basemap.
 
 When you open an individual dataset in an empty project, the basemap selected will depend on:
 
-1. **Default Project**: If you have chosen a **Default Project**, the basemap within the this project, will be selected.
-2. **Basemap File**: If no default project is set, QField will look for a `basemap.{qgs/.qgz)` file within your local `QField` directory.
+1. **Default Project**: If you have chosen a **Default Project**, the basemap within this project will be selected.
+2. **Basemap File**: If no default project is set, QField will look for a `basemap.qgs` or `basemap.qgz` file within your local `QField` directory.
 3. **OpenStreetMap**: If there is no default project or basemap file, the OpenStreetMap XYZ layer will be loaded as the basemap.
 
 ## Send to & Sharing Options

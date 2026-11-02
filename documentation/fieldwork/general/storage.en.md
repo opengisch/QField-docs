@@ -5,7 +5,7 @@ tx_slug: documentation_fieldwork_storage_qfield
 
 # QField Storage Management
 
-On the QField homescreen, you have two options to open a project.
+On the QField home screen, you have two options to open a project.
 
 - **QFieldCloud projects**: The first option is to [access a project stored on QFieldCloud](../../get-started/tutorials/get-started-qfc.md)
 How to set up and work with QFieldCloud is explained in the next chapter.
@@ -21,7 +21,7 @@ On both the Android and iOS devices, installing QField creates a folder called Q
 !!! Workflow
 
     1. Before copying or downloading your project, your project and files need to be **packaged** into a readable format for QField.
-    - If you are using QFieldCloud just upload your project and files and make they are saved in the same data folder.
+    - If you are using QFieldCloud just upload your project and files and make sure they are saved in the same data folder.
     - If you are manually transferring your project, follow the steps under [QFieldSync](../../get-started/tutorials/get-started-qfs.md)
 
     2. If you do NOT use QFieldCloud copy the project to your device to the folder called `Imported Projects`.
@@ -62,7 +62,7 @@ The advantage of using Google Drive is that both the source device and target de
 
 Wireless transfer of files is also possible by [sharing files via a Bluetooth connection.](https://www.wikihow.com/Connect-Your-Android-Phone-to-a-Windows-PC-Using-Bluetooth)
 
-### IOS
+### iOS
 
 #### Transfer via USB-cable
 
@@ -71,8 +71,8 @@ Transferring files from MacBooks or iMacs to iPhone using a cable is not straigh
 !!! Workflow
 
     1. Copy the entire folder `Imported Projects` from your iOS target device (iPhone, iPad) over to your source device (iMac).
-    2. Copy the packaged QGIS project file into the copied `Imported Projects`folder.
-    3. Copy back and replace the old `Imported Folder` with the new one.
+    2. Copy the packaged QGIS project file into the copied `Imported Projects` folder.
+    3. Copy back and replace the old `Imported Projects` folder with the new one.
 
 #### iCloud (and other cloud storage services)
 
@@ -90,7 +90,7 @@ Instead, the new project files have to be saved in the `Imported Projects` folde
 #### Share via AirDrop
 
 A quick and easy way to exchange files back and forth is using AirDrop.
-The only requirement is that both source and target device have to be OS and iOS respectively.
+The only requirement is that both source and target device have to be macOS and iOS respectively.
 
 !!! Workflow
 
@@ -128,13 +128,13 @@ Re-importing a given folder through the drop-down menu action will overwrite pre
 
 ### Importing a compressed project
 
-It is also possible to also import compressed (zipped) projects into QField.
+It is also possible to import compressed (zipped) projects into QField.
 QField will then decompress the file into its "Imported projects" location, from which users can open and interact with the project.
 This can greatly ease remote deployment of projects by being able to send a single file to users.
 
 ### Importing individual datasets
 
-The "Import dataset(s)" action allows you  to select one or more datasets via your system file picker.
+The "Import dataset(s)" action allows you to select one or more datasets via your system file picker.
 After you selected the datasets, QField will copy those into the "Imported datasets" folder, from where you can then open and modify the content.
 
 !!! note
@@ -150,9 +150,9 @@ QField will subsequently fetch the content and save it into the "Imported projec
 
 QField will consider a ZIP archive as a compressed project when one or more `.qgs`/`.qgz` project files are detected.
 
-## 4. Exporting modified projects and datasets (Android and IOS)
+## 4. Exporting modified projects and datasets (Android and iOS)
 
-Once you are done with your fieldwork, there are four ways to sent and export the changed files back to the source device:
+Once you are done with your fieldwork, there are four ways to send and export the changed files back to the source device:
 
 * [exporting a project folder or an individual dataset](#exporting-a-project-folder-or-an-individual-dataset);
 * [sending a compressed project folder to a {cloud, email, messenger, etc.} app](#sending-a-compressed-project-folder);
@@ -176,7 +176,7 @@ You can also directly copy content into cloud accounts of providers that support
 ### Sending a compressed project folder
 
 The "Send compressed folder to" action compresses the content of a selected folder into a ZIP archive.
-You will be asked through which app the resulting ZIP archive should be send through.
+You will be asked through which app the resulting ZIP archive should be sent through.
 
 You can compress and send whole projects by selecting root folders in QField‘s "Imported projects" directory, as well as send selective folders within project folders (for instance, your photos only).
 
