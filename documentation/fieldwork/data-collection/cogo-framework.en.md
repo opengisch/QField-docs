@@ -1,6 +1,6 @@
 ---
 title: COGO Framework - Coordinate geometry
-tx_slug: documentation_fieldwork-cogo-framework
+tx_slug: documentation_fieldwork_cogo-framework
 ---
 
 # COGO Framework - Coordinate Geometry

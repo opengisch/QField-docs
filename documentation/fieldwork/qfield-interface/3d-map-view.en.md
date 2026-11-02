@@ -1,6 +1,6 @@
 ---
 title: 3D Map view
-tx_slug: documentation_how-to_3d-map-view
+tx_slug: documentation_fieldwork_3d-map-view
 ---
 
 # 3D Map View

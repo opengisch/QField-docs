@@ -1,6 +1,6 @@
 ---
 title: All about GPS, GNSS and NTRIP
-tx_slug: documentation_how-to_gnss
+tx_slug: documentation_fieldwork_gnss
 ---
 
 # Positioning (GNSS)
