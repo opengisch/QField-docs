@@ -88,7 +88,7 @@ nav:
           - fieldwork/data-collection/print-to-pdf.md
           - fieldwork/data-collection/processing.md
           - fieldwork/data-collection/cogo-framework.md
-          - fieldwork/data-collection/variables.en.md
+          - fieldwork/data-collection/variables.md
           - fieldwork/data-collection/sensors.md
       - Navigation and Positioning:
           - fieldwork/navigation-and-positioning/navigation.md
