@@ -40,12 +40,6 @@ Matching attribute names and values are highlighted in the search results list.
 
 ![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
 
-Active layer searches focus queries exclusively on the currently active layer and its attributes.
-
-- **Search all active layer attributes:** Type `f ` followed by your search term (such as `f oak`).
-- **Target a specific attribute field:** Type `f @ATTRIBUTE_NAME search-term` (such as `f @tree_type oak`).
-
-Matching attribute names and values are highlighted in the search results list.
 
 !!! Workflow
     1. Tap **Scan code** inside the search bar to open the Code Reader interface.

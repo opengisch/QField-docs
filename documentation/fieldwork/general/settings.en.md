@@ -19,9 +19,6 @@ You can access the general settings in two ways.
     1. Open the **Side Dashboard**.
     2. Tap the three-dotted menu *(⋮)* and select **Settings**.
 
-    1. Open the **Side Dashboard** and click on the 3-dotted menu *(⋮)*.
-    2. Tap on **Settings**.
-
 In the following sections, the different setting options will be described
 
 ## Map Canvas
@@ -32,8 +29,6 @@ In the following sections, the different setting options will be described
 - **Enable map rotation:** When enabled, you can rotate the map.
 - **Map canvas rendering quality:** If high memory use is an issue, you can reduce the rendering quality which lowers the memory usage and the rendering time.
 This comes with the cost of rendering precision.
-
-!![Map Canvas Settings](../../assets/images/general-settings-qfield.png,250px)
 
 ## Digitizing & Editing
 
@@ -46,31 +41,31 @@ This option is useful, when mapping features on a larger scale.
 - **Consider mouse as a touchscreen device:** If enabled, the mouse allows you to add new vertices anywhere on the map.
 If disabled the cross-hair is fixed to the center and the mouse is used to relocate the cross-hair.
 
-!![Digitizing and Editing](../../assets/images/general-settings-qfield.png,250px)
+!![Map Canvas and Digitizing & Editing Settings](../../assets/images/general-settings-qfield.png,250px)
 
 ## User Interface
 
 - **Customize search bar:** When pressing the 3-dotted menu *(⋮)* under the general settings section, a new window will open from which you can personalize your search options.
-     - **Features from active layer:** By enabling this option, you will automatically query the layer that is currently active (it is highlighted in the legend).
-     You can refine your search even further by adding an **"@"** sign when starting your search to only query one attribute.
-     When disabled, you can still access this locator filter typing the prefix **f** in the search bar.
-     - **Features in all layers:** When enabling this option, you can search all features across all layers.
-     If the "Features from active layer" option is enabled you can still search through all layers by adding the prefix **af** in the beginning of your search.
-     - **Go to coordinate:** By enabling this option, you can simply copy and paste longitude and latitude values to direct to specific locations that are not part of your feature layers.
-     If disabled, you can still access this option by typing go at the start of your query.
+    - **Features from active layer:** By enabling this option, you will automatically query the layer that is currently active (it is highlighted in the legend).
+    You can refine your search even further by adding an **"@"** sign when starting your search to only query one attribute.
+    When disabled, you can still access this locator filter typing the prefix **f** in the search bar.
+    - **Features in all layers:** When enabling this option, you can search all features across all layers.
+    If the "Features from active layer" option is enabled you can still search through all layers by adding the prefix **af** in the beginning of your search.
+    - **Go to coordinate:** By enabling this option, you can simply copy and paste longitude and latitude values to direct to specific locations that are not part of your feature layers.
+    If disabled, you can still access this option by typing go at the start of your query.
 
-    !!! Tip
-        When long-pressing on a point of interest anywhere in your map, you can copy the point location to your clipboard and directly place it in the search bar.
-        Remember to type **Go** in advance if the **Go to coordinate** setting has not been enabled and remove the information about the coordinate reference system.
+        !!! Tip
+            When long-pressing on a point of interest anywhere in your map, you can copy the point location to your clipboard and directly place it in the search bar.
+            Remember to type **Go** in advance if the **Go to coordinate** setting has not been enabled and remove the information about the coordinate reference system.
 
-    - ***Spatial bookmarks:*** By enabling this option you automatically when using the search bar, the list of pre-configured bookmarks (if any) will be queried.
+    - **Spatial bookmarks:** By enabling this option you automatically when using the search bar, the list of pre-configured bookmarks (if any) will be queried.
     If disabled, you can still access this option by typing **b** at the front of your query.
-    - ***Calculator:*** By enabling this option, you can do simple calculations and copy the results directly to the clipboard, if necessary.
+    - **Calculator:** By enabling this option, you can do simple calculations and copy the results directly to the clipboard, if necessary.
     If disabled, the calculator can still be accessed by typing **=** in the front of the query.
-    - ***QField Documentation:*** If enabled it will return the corresponding documentation pages matching terms.
+    - **QField Documentation:** If enabled it will return the corresponding documentation pages matching terms.
     When disabled the documentation can still be queried by putting a "?" in the beginning of the query.
 
-     !![Search Bar Settings](../../assets/images/settings-search-bar.png,250px)
+    !![Search Bar Settings](../../assets/images/settings-search-bar.png,250px)
 
 - **Manage plugins:** By pressing the 3-dotted menu *(⋮)* a new window will open from which you can enable and disable customised plugins.
 To add a new plugin see the [Plugins Page](../../how-to/advanced-how-tos/plugins.md#project-plugins)
@@ -79,13 +74,13 @@ To add a new plugin see the [Plugins Page](../../how-to/advanced-how-tos/plugins
 
 - **Maximized attribute form:** when enabling this option you can maximize the attribute form to cover the whole screen.
 - **Fixed scale navigation:**
-    - ***Active fixed scale navigation:*** Focusing on a search result will highlight and pan to the feature.
-    - ***Disabled fixed scale navigation:*** it will pan, highlight and zoom to the feature.
+    - **Active fixed scale navigation:** Focusing on a search result will highlight and pan to the feature.
+    - **Disabled fixed scale navigation:** it will pan, highlight and zoom to the feature.
 - **Automatically open form for single feature identification:** If enabled, when tapping on an individual feature while being in the *browse mode*, the attribute form will directly be opened.
 - **Dim screen when idling:** To preserve battery, you can change the time when you want your phone to dim the screen when being inactive on QField.
 When setting it to *0* the dimming will be disabled completely.
 - **Appearance:** Depending on your preference, you can change the QField interface to *Light* or *Dark* Mode.
-- ***User interface font size:*** You can choose from the following options:
+- **User interface font size:** You can choose from the following options:
     - Tiny
     - Normal
     - Large
@@ -96,9 +91,11 @@ You are cordially invited to enhance the translation in your native language.
 
 [Translate the app](https://explore.transifex.com/opengisch/qfield-for-qgis/) <!-- markdown-link-check-disable-line -->
 
-!![Map Canvas Settings](../../assets/images/general-settings-qfield-2.png,250px)
+!![User Interface Settings](../../assets/images/general-settings-qfield-2.png,250px)
 
 ## Advanced
+
+!![Network and Advanced Settings](../../assets/images/general-settings-qfield-3.png,250px)
 
 ### Net Proxy
 
