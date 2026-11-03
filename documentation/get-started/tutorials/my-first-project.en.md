@@ -42,6 +42,7 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
     4. Add it to your project as a feature by clicking on the middle button at the bottom of the plugin interface.
     !![New PoI](../../assets/images/new-project-poi.png,800px)
     5. A new feature layer will be available as a temporary layer in your project.
+
 4. Adding a new layer:
     1. Click on *Layer* and  create a new *Vector Layer*
     !![New Vector layer](../../assets/images/new-project-vectorlayer.png)
@@ -76,7 +77,6 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
         | --- | ---|
         | Name | *string* |
         |Date | *date* |
-
 
 6. Saving the temporary layer in GeoPackage
 
