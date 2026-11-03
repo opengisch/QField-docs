@@ -1,9 +1,9 @@
 ---
-title: COGO Framework - Coordinate geometry
+title: COGO framework - coordinate geometry
 tx_slug: documentation_fieldwork_cogo-framework
 ---
 
-# COGO Framework - Coordinate Geometry
+# COGO framework - coordinate geometry
 
 The Coordinate Geometry (COGO) framework defines spatial feature locations using mathematical functions and precise measurements.
 By entering coordinates, bearings, or distances, QField calculates accurate vertex and feature positions without requiring physical presence at the target location.
@@ -11,7 +11,7 @@ By entering coordinates, bearings, or distances, QField calculates accurate vert
 !!! Note
     QField renders dynamic visual guides (lines, circles, and point previews) on the map canvas in real time as you enter parameters, allowing you to verify inputs before creating features.
 
-## Example Use Case
+## Example use case
 
 Mapping a property boundary where physical access is obstructed (for instance, by dense vegetation or fence lines).
 COGO tools allow digitizing boundary corners by measuring offsets from accessible locations.
@@ -33,7 +33,7 @@ Once active, choose from three COGO operations:
 - **Point at intersection of two circles**
 - **Point by distance/angle [to another point]**
 
-## COGO Operations
+## COGO operations
 
 ### Point by XY[Z]
 
@@ -52,7 +52,7 @@ This is useful when entering precise coordinates received from external surveys 
 
 ![XY option](../../assets/images/cogo-xy-option.png)
 
-### Point at Intersection of Two Circles
+### Point at intersection of two circles
 
 Construct points at the intersection of two circle radii drawn from reference origin points.
 This is useful when digitizing unreachable features (such as measuring offsets from two known survey points).
@@ -65,7 +65,7 @@ This is useful when digitizing unreachable features (such as measuring offsets f
 
 !![](../../assets/images/cogo-two-circle-option.png,250px)
 
-### Point by Distance/Angle [to Another Point]
+### Point by distance/angle [to another point]
 
 Construct points using distance offsets and bearing angles from an origin point.
 This is useful for utility and cadastral surveys measuring precise property boundaries or pipeline offsets.

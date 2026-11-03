@@ -3,7 +3,7 @@ title: Search bar
 tx_slug: documentation_how-to_search
 ---
 
-# Search Bar
+# Search bar
 
 The QField search bar allows you to:
 
@@ -12,7 +12,7 @@ The QField search bar allows you to:
 - locate spatial bookmarks
 - and calculate expressions
 
-## Layer Search
+## Layer search
 :material-tablet: Fieldwork
 
 Search for features across all project layers or restrict searches to the active layer.
@@ -22,14 +22,14 @@ Filter queries down to specific attribute fields.
     1. Tap the **Search** button in the top-right corner of the map canvas to expand the search bar.
     2. Enter your search query into the search bar.
 
-### Vector Layers Search
+### Vector layers search
 
 QField uses entered text values to find features with matching attribute values.
 A minimum of three characters is required to initiate a search query.
 
 !![](../../assets/images/search-bar.png)
 
-### Active Layer Search Feature Matching
+### Active layer search feature matching
 
 Active layer searches focus queries exclusively on the currently active layer and its attributes.
 
@@ -41,7 +41,7 @@ Matching attribute names and values are highlighted in the search results list.
 ![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
 
 
-## Search with Code Scanner
+## Search with code scanner
 
 Use the QField Code Reader to search for features by scanning physical codes or selecting stored images.
 
@@ -69,7 +69,7 @@ The Code Reader automatically detects and decodes NFC text tags.
     The camera reader and NFC detector are active by default when opening the Code Reader.
     Toggle either sensor off inside the scanner interface to conserve battery power.
 
-## Go to Coordinate
+## Go to coordinate
 
 Navigate directly to coordinates using the search bar.
 
@@ -78,7 +78,7 @@ Navigate directly to coordinates using the search bar.
     2. Tap the coordinate result in the search list.
     QField automatically centers the map canvas on the specified location.
 
-## Go to Spatial Bookmark
+## Go to spatial bookmark
 
 Locate and navigate to spatial bookmarks.
 
@@ -88,7 +88,7 @@ Locate and navigate to spatial bookmarks.
     3. Tap the target bookmark result.
     QField automatically pans and zooms the map canvas to the saved bookmark extent.
 
-## Expression Calculator
+## Expression calculator
 
 The search bar functions as a QGIS expression calculator.
 

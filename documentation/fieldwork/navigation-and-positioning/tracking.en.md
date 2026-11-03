@@ -5,7 +5,7 @@ tx_slug: documentation_fieldwork_tracking
 
 # Tracking
 
-## Activate Tracking
+## Activate tracking
 
 You can track yourself and collect points, lines or polygons while browsing the map, working on other features and layers, or in the background while having the device in your pocket.
 For lines and polygons, one object will be created per tracking session.
@@ -53,7 +53,7 @@ This keeps your track clean by ignoring movement when you are stationary.
     3. Choose the **Tracking** icon (small walking figure).
     4. Enter the attributes for the feature(s) about to be created and tap the :material-check:.
 
-## General and Additional Settings
+## General and additional settings
 
 There are additional settings which you can activate.
 
@@ -65,7 +65,7 @@ There are additional settings which you can activate.
 !!! tip
     You can simultaneously record multiple tracking sessions across several layers.
 
-## Resume to a Previous Session
+## Resume to a previous session
 
 If you did not explicitly terminate your tracking session (for example, you closed the app), QField allows you to continue where you left off.
 A prompt will appear asking whether to **resume the last session** or **start a new one**.
@@ -75,7 +75,7 @@ This allows you to simply continue across app restarts.
 
 - **Starting a new session:** This option will discard the incomplete feature from the previous session and begin a new one.
 
-## Automatic Tracking Session
+## Automatic tracking session
 
 If your project was configured in such a way, tracking will automatically start when you open the project.
 You should see this in the **Side Dashboard**.

@@ -56,7 +56,7 @@ You may want to revisit a set of projects all the time and set them as your favo
     4. Long-press on the project and add it to favorites.
     To remove an entry from the favorites, long-press on the entry in the favorites list and delete it.
 
-## Set Default Project
+## Set default project
 
 This functionality allows you to set a specific project to be used as the default basemap whenever you open individual datasets.
 This is useful when a QFieldCloud project should be used as a basemap.
@@ -76,7 +76,7 @@ When you open an individual dataset in an empty project, the basemap selected wi
 2. **Basemap File**: If no default project is set, QField will look for a `basemap.qgs` or `basemap.qgz` file within your local `QField` directory.
 3. **OpenStreetMap**: If there is no default project or basemap file, the OpenStreetMap XYZ layer will be loaded as the basemap.
 
-## Send to & Sharing Options
+## Send to & sharing options
 
 Once you are finished with your data collection, you can share and export your data directly from QField in various ways.
 
@@ -91,7 +91,7 @@ Once you are finished with your data collection, you can share and export your d
 You can access your local projects and datasets using a USB cable.
 On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/` where you will find both the **Imported Datasets** and **Imported Projects** folders within which your edited content will be located.
 
-### Send Compressed File(s)
+### Send compressed file(s)
 
 When managing local datasets inside the file picker screen, you can select one or multiple dataset files to share them simultaneously as a single compressed archive.
 

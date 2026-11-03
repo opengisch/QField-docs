@@ -1,5 +1,5 @@
 ---
-title: Camera Interface
+title: Camera interface
 tx_slug: documentation_fieldwork_pictures
 ---
 
@@ -9,7 +9,7 @@ You can take **photos**, **videos** and even record **sound clips** if your laye
 You can also add **PDFs** or other **documents**.
 !![Attachments](../../assets/images/attachments.png, 800px)
 
-## In-App Camera Interface
+## In-app camera interface
 
 When taking pictures within an attachment widget inside QField, the built-in camera interface provides several live toggles and post-capture editing tools:
 
@@ -23,7 +23,7 @@ When taking pictures within an attachment widget inside QField, the built-in cam
 4. **Location Metadata (EXIF):** Toggle whether geographic metadata is baked directly into the background of the image file structure itself.
 5. **Composition Grid:** Displays a rule-of-thirds grid line layout on the screen to help frame, align, and capture better photos in the field.
 
-### Photo Preview & Quick Editing
+### Photo preview & quick editing
 Once a photo is captured, a preview screen allows you to inspect and manually adjust the image before saving it to your project.
 A floating toolbar above the capture button offers the following quick edits:
 

@@ -15,14 +15,14 @@ It is important to understand that there are two **modes** in which you can work
 - The **Browse mode** and
 - The **Digitize Mode**
 
-### Browse Mode
+### Browse mode
 
 As the name suggests, while being in browse mode, you can view and select features within all identifiable layers in the project.
 It is also possible to edit attributes of existing features, by clicking on a feature of interest and opening its attribute table.
 
 !![Browse mode identify and edit](../../assets/images/browse_mode_identify_and_edit.png,500px)
 
-### Digitize Mode
+### Digitize mode
 
 If you want to actually digitize new objects or modify the geometry of existing ones, you have to switch to **digitize mode**.
 
@@ -55,7 +55,7 @@ If you want to actually digitize new objects or modify the geometry of existing 
         - **Show feature list** to show all the layer's features in the identification list.
         - **Setup tracking** to set up tracking mode of layer.
 
-## Map Themes
+## Map themes
 
 !!! Workflow
     1. Open the **Side Dashboard**.
@@ -106,7 +106,7 @@ Sometimes you may want to multi-select several features at once to merge them or
         - Further **Process** your selected features: You can read more about the different processing operations [here](../data-collection/processing.md)
         !![Multi-selected actions](../../assets/images/multi-select-actions.png)
 
-## Scale Bar
+## Scale bar
 
 !!! Workflow
 

@@ -3,7 +3,7 @@ title: QField general settings
 tx_slug: documentation_get-started_settings
 ---
 
-# QField General Settings
+# QField general settings
 :material-tablet: Fieldwork
 
 The general settings screen allows you to control the basic appearance and behavior of QField.
@@ -97,7 +97,7 @@ You are cordially invited to enhance the translation in your native language.
 
 !![Network and Advanced Settings](../../assets/images/settings-advanced.png,250px)
 
-### Net Proxy
+### Net proxy
 
 If some of your data are located in a closed environment you can access them through a proxy network.
 This should be [configured](https://docs.qgis.org/testing/en/docs/user_manual/introduction/qgis_configuration.html#network-settings) in QGIS beforehand. <!-- markdown-link-check-disable-line -->

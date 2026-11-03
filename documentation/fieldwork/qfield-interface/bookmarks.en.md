@@ -8,7 +8,7 @@ tx_slug: documentation_how-to_bookmarks
 QField allows you to save, organize, and navigate to spatial bookmarks across sessions and projects.
 By default, bookmarks are displayed as marker overlays on the map, searchable via the search menu, and accessible from a dedicated list panel.
 
-## Bookmark Types
+## Bookmark types
 
 QField can handle two distinct types of spatial bookmarks:
 
@@ -17,7 +17,7 @@ You can access, edit, export and group them by colors across all your local proj
 * **Project Bookmarks:** These come with your QGIS project file (`.qgs`/`.qgz`) on the desktop.
 These appear under the **Project bookmarks** section header in the list view and are read-only in QField.
 
-## Bookmark Interaction
+## Bookmark interaction
 
 You can either interact with bookmarks directly on the map canvas or through the **Bookmark List**.
 If you want to see bookmarks on the map, you will have to enable them under the general settings.
@@ -32,7 +32,7 @@ If you want to see bookmarks on the map, you will have to enable them under the 
 Once enabled you can either **Display** their name by single-tapping on the bookmark or **re-center and zoom** to the map extent of where the bookmark was saved by double-tapping on it.
 !![](../../assets/images/bookmarks.png)
 
-### Bookmark List
+### Bookmark list
 
 To see all your saved bookmarks at once you can access the Bookmark List.
 
@@ -45,7 +45,7 @@ To see all your saved bookmarks at once you can access the Bookmark List.
     4. Tap any bookmark in the list to instantly jump to its location on the map.
     !![](../../assets/images/list_panel_bookmarks.png)
 
-## Adding a New Bookmark
+## Adding a new bookmark
 :material-tablet: Fieldwork
 
 Bookmark locations capture both the target point coordinates and the active map scale to preserve your preferred zoom level.
@@ -69,12 +69,12 @@ Bookmark locations capture both the target point coordinates and the active map 
     3. Define the name and select a color.
     !![](../../assets/images/pie-menu-bookmark.png, 300px)
 
-## Managing and Exporting Bookmarks
+## Managing and exporting bookmarks
 
 You can edit, copy and delete your own bookmarks either one-by-one or multiple at the same time.
 You can also export them as standalone vector datasets, such as GeoPackages.
 
-### Individual Bookmark Actions
+### Individual bookmark actions
 
 Under the Bookmark List Panel, tap the **3-dotted menu (⋮)** next to the user bookmark in the Bookmark List panel to access quick actions:
 
@@ -84,7 +84,7 @@ Under the Bookmark List Panel, tap the **3-dotted menu (⋮)** next to the user 
 - **Delete Bookmark:** Permanently removes the bookmark.
 !![](../../assets/images/bookmarks_individual_actions.png, 300px)
 
-### Multi-Selection and Deletion
+### Multi-selection and deletion
 
 !!! Workflow
 
@@ -94,7 +94,7 @@ Under the Bookmark List Panel, tap the **3-dotted menu (⋮)** next to the user 
     4. Tap the **3-dotted menu (⋮)** and select **Delete Selected Bookmark(s)**.
     !![](../../assets/images/delte_multiple_bookmarks.png, 300px)
 
-### Exporting Bookmarks
+### Exporting bookmarks
 
 You can export your user bookmarks into a standalone GeoPackage (`.gpkg`) to share with colleagues or archive externally.
 
@@ -116,7 +116,7 @@ You can export your user bookmarks into a standalone GeoPackage (`.gpkg`) to sha
     In both cases QField will compile the point geometries, names, and color into a `.gpkg` file and prompt you with the **Send to...** dialog to transfer the file via email, cloud drive, or messaging apps.
     !![](../../assets/images/export_multiples_bookmarks_to_gpkg.png, 300px)
 
-## Navigating to a Bookmark
+## Navigating to a bookmark
 
 You can set any bookmark directly as an active navigation destination.
 

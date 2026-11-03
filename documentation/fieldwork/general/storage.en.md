@@ -3,7 +3,7 @@ title: Storage
 tx_slug: documentation_fieldwork_storage_qfield
 ---
 
-# QField Storage Management
+# QField storage management
 
 On the QField home screen, you have two options to open a project.
 
@@ -180,7 +180,7 @@ You will be asked through which app the resulting ZIP archive should be sent thr
 
 You can compress and send whole projects by selecting root folders in QField‘s "Imported projects" directory, as well as send selective folders within project folders (for instance, your photos only).
 
-### Sending an individual dataset (Android Only)
+### Sending an individual dataset (Android only)
 
 You can select the "Send to" action for individual datasets, to directly send the changed datasets via third party apps such as Gmail, Drive, Dropbox, Nextcloud or your favorite messenger app.
 
@@ -203,7 +203,7 @@ You can also export your attached files (Photos, Audio, Video, etc).
 
     !![](../../assets/images/export-qfieldcloud-files-from-qfield-4-options-to-send.png,350px)
 
-## 5. QField App directory
+## 5. QField app directory
 
 Beyond project-specific files stored in project folders, QField utilizes a dedicated **App Directory** to manage resources and configurations that are shared across all projects on a device.
 This centralized location allows you to provide custom fonts, basemaps, projection grids, and more on your device without needing to duplicate these files for every project.

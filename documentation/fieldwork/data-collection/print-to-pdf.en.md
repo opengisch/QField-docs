@@ -1,5 +1,5 @@
 ---
-title: Print Reports and Atlas
+title: Print reports and atlas
 tx_slug: documentation_fieldwork_print-to-pdf
 ---
 
@@ -21,7 +21,7 @@ You can print all your objects from the **Side Dashboard** or use the ones that 
     4. Once the export is finished, the created PDF document will open by default.
     !![](../../assets/images/print_document.png)
 
-## Print Selected Objects
+## Print selected objects
 
 !!! Workflow
 

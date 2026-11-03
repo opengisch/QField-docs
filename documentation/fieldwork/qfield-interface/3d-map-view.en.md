@@ -1,15 +1,15 @@
 ---
-title: 3D Map view
+title: 3D map view
 tx_slug: documentation_fieldwork_3d-map-view
 ---
 
-# 3D Map View
+# 3D map view
 
 QField allows you to view your spatial data in 3D.
 By utilizing elevation data, the existing features will be placed on top of the 3D surface.
 **Note:** If you do not have a project specific 3D layer, the default World DEM will be used.
 
-## Enabling 3D Mode
+## Enabling 3D mode
 
 !!! Workflow
 
@@ -18,7 +18,7 @@ By utilizing elevation data, the existing features will be placed on top of the 
     ![type:video](../../assets/videos/3D_Map_View.mp4)
 
 
-## Navigating the 3D View
+## Navigating the 3D view
 
 QField allows for interactive extent manipulation when viewing data in the 3D view.
 You can actively pan and zoom directly within the 3D mode rather than relying on a static, locked extent.

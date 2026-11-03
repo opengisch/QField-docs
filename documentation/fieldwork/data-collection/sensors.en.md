@@ -26,7 +26,7 @@ In QField, registered sensors are listed within the currently opened project fil
 
         !![](../../assets/images/sensors_information_panel.png)
 
-## Sensor-Driven Tracking
+## Sensor-driven tracking
 
 If your project has the right configuration, you can track the sensor recordings in a point layer.
 See [here](../../how-to/advanced-how-tos/sensors.md) how to configure the QGIS project, prior to the fieldwork.

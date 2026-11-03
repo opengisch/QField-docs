@@ -44,7 +44,7 @@ Of course, if you want to navigate to a target, your localization must be turned
 
     The **Navigation panel** will open and the :material-arrow-left: and :material-arrow-right: allow you to switch between the different corners.
 
-## Terminating Navigation
+## Terminating navigation
 
 !!! Workflow
 
@@ -68,7 +68,7 @@ QField can automatically re-center the map canvas from your current position to 
     2. Tap on the crosshair to re-center to your current position
     !![](../../assets/images/navigation-auto-tracking.png)
 
-## Navigation Panel and Settings
+## Navigation panel and settings
 
 Once a target has been set, a new window will appear on the map canvas, which will show you
 
@@ -77,7 +77,7 @@ Once a target has been set, a new window will appear on the map canvas, which wi
 - The Bearing to the target.
 !![](../../assets/images/navigation.png)
 
-## Precise View
+## Precise view
 
 If you need a more precise way of directing to your target, you can enable the **Precise View Panel** in two ways.
 
@@ -112,7 +112,7 @@ When you get closer to the destination, the number of **Pings** will increase, p
     It is advisable to clear any destination when finishing a mapping session.
     Otherwise QField may memorize that a destination was set and lead to random errors when opening QField in the next session or with a different project.
 
-### Precise View Settings
+### Precise view settings
 
 !!! Workflow
 

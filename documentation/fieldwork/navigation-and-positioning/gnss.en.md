@@ -24,7 +24,7 @@ The blue beam indicates the current orientation of your device if the device has
 A shaded circle around your current position indicates the precision as reported by the GPS in use.
 !![Position enabled](../../assets/images/position_icon.png,250px)
 
-## Positioning Settings
+## Positioning settings
 
 !!! Workflow
 
@@ -60,7 +60,7 @@ This means, that you define how many times you have to add a point before it is 
 
     If the ***Enable accuracy requirement*** setting is activated, you will not be able to collect new measurements with the coordinate cursor locked to the current position with an accuracy value which is bad (red).
 
-## Using an external GNSS Receiver
+## Using an external GNSS receiver
 
 QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
 or UDP connections.
@@ -98,7 +98,7 @@ The logs will be placed in **[[App Directory](../../fieldwork/general/storage.md
 !!! note
     Be aware that if the log is always turned on, it will fill up all the storage.
 
-## Enable NTRIP Corrections
+## Enable NTRIP corrections
 
 If you have access to an RTK Service, QField can act as an RTK Client if you add the essential information under the settings.
 

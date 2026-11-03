@@ -3,7 +3,7 @@ title: Digitize and edit
 tx_slug: documentation_fieldwork_digitize
 ---
 
-# Digitize and Edit
+# Digitize and edit
 
 With QField you can digitize, edit and delete points, lines and polygons and their corresponding attributes while being in the field.
 If you only want to edit your attributes, it is enough to stay in **Browse Mode**.
@@ -40,7 +40,7 @@ If you, however, want to add a new object or edit the geometry of an existing on
 
     ![type:video](../../assets/videos/collect_features.mp4)
 
-### Additional Editing Settings
+### Additional editing settings
 
 There are other more advanced settings, which you can enable to make your data collection more efficient:
 
@@ -60,7 +60,7 @@ There are other more advanced settings, which you can enable to make your data c
 
 After digitizing a geometry, the attribute form will appear allowing you to add attribute values for the new object.
 
-#### Add values using the QR and Barcode
+#### Add values using the QR and barcode
 
 !!! Workflow
 
@@ -109,7 +109,7 @@ If you want to reuse values from previous entries, you can use the  <span style=
         - **Ring Tool:** Within an object, you can create a ring.
         QField will ask whether you wish to add a new polygon as a replacement of the deleted one into the hole.
 
-### Editor Tool
+### Editor tool
 
 ![type:video](../../assets/videos/edit-tool.webm)
 
@@ -118,7 +118,7 @@ If you want to reuse values from previous entries, you can use the  <span style=
 ![type:video](../../assets/videos/reshape-tool.webm)
 
 
-### Split Tool
+### Split tool
 
 ![type:video](../../assets/videos/split-tool.webm)
 
@@ -170,7 +170,7 @@ When adding new objects it is possible to enable the snapping tool, which allows
     The level of snapping depends on the rules that were set in the QGIS project.
     You can read more about this [here](../../how-to/data-collection/digitize.md#snapping)
 
-## Snap to Common Angle
+## Snap to common angle
 
 You can snap to an angle of your choice.
 
@@ -204,7 +204,7 @@ You can edit the attributes of multiple objects at once.
     5. Now all the attributes of the selected features will have updated.
     ![type:video](../../assets/videos/multi_editor.webm)
 
-## Copy, Cut and Paste
+## Copy, cut and paste
 
 You have the possibility to copy, cut and paste your attributes from one layer to another.
 This function is achieved by attribute matching.

@@ -3,7 +3,7 @@ title: Plugins
 tx_slug: documentation_fieldwork_plugins
 ---
 
-# QField Plugins
+# QField plugins
 
 If you are familiar with QGIS plugins, you will know that plugins add additional functionalities to your core application.
 
