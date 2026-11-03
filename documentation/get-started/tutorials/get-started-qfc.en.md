@@ -90,7 +90,6 @@ The following steps show how to install the plugin and synchronize your data to 
 The project overview shows the projects that your account can access.
 The screen contains the following elements:
 
-- Current user underlined in blue
 - Current user underlined in blue.
 - The avatar on the top right leading to the sign-out page.
 - A cloud button to create a new project.
@@ -140,12 +139,9 @@ Once configured, upload the project to QFieldCloud.
 
 !!! Workflow
     1. Click the cloud icon with arrows in the QFieldSync toolbar.
-
-    Select your preferred upload method:
-      - **The Local file:** Replaces your cloud file with the new local version of the project.
-          When working with GeoPackages, the cloud file version is replaced by your local file version.
-      - **The Cloud file:** Amends your local datasets and replaces your local project file with the current cloud version.
-
+    2. Select your preferred upload method:
+        - **The Local file:** Replaces your cloud file with the new local version of the project. When working with GeoPackages, the cloud file version is replaced by your local file version.
+        - **The Cloud file:** Amends your local datasets and replaces your local project file with the current cloud version.
 
 You can now view your project and files on your [QFieldCloud project overview page](https://app.qfield.cloud/).
 
