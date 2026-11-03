@@ -71,11 +71,11 @@ nav:
   - In the field:
       - fieldwork/index.md
       - General:
-          - fieldwork/general/settings.md
-          - fieldwork/general/storage.md
           - fieldwork/general/projects.md
           - fieldwork/create-project.md
           - fieldwork/general/plugins.md
+          - fieldwork/general/settings.md
+          - fieldwork/general/storage.md
       - Interact with the map:
           - fieldwork/qfield-interface/map-interaction.md
           - fieldwork/qfield-interface/measuring-tool.md
