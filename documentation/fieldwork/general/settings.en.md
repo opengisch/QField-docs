@@ -21,7 +21,7 @@ You can access the general settings in two ways.
 
 In the following sections, the different setting options will be described
 
-## Map Canvas
+## Map canvas
 
 - **Show scale bar:** By enabling the **Show scale bar** it will show the scale bar on the map.
 - **Show zoom controls:** By enabling this option, the zoom buttons (+/-) will appear on the map.
@@ -30,7 +30,7 @@ In the following sections, the different setting options will be described
 - **Map canvas rendering quality:** If high memory use is an issue, you can reduce the rendering quality which lowers the memory usage and the rendering time.
 This comes with the cost of rendering precision.
 
-## Digitizing & Editing
+## Digitizing & editing
 
 - **Show digitizing information:** When enabling this option, coordinate information, such as latitude and longitude, are shown underneath your crosshair while digitizing new features or using the measuring tool.
 - **Fast editing mode:** If enabled, QField will immediately and automatically save any changes made during an edit operation.
@@ -43,7 +43,7 @@ If disabled the cross-hair is fixed to the center and the mouse is used to reloc
 
 !![Map Canvas and Digitizing & Editing Settings](../../assets/images/general-settings-qfield.png,250px)
 
-## User Interface
+## User interface
 
 - **Customize search bar:** When pressing the 3-dotted menu *(⋮)* under the general settings section, a new window will open from which you can personalize your search options.
     - **Features from active layer:** By enabling this option, you will automatically query the layer that is currently active (it is highlighted in the legend).
