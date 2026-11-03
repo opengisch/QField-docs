@@ -9,7 +9,7 @@ There are multiple options available to initialize and build a project in QField
 
 - [Using QGIS](my-first-project.md)
 - [Using QFieldCloud](#creating-projects)
-- [Directly from QField](../../how-to/project-setup/create-project.md)
+- [Directly from QField](../../fieldwork/create-project.md)
 
 ## Creating Projects
 

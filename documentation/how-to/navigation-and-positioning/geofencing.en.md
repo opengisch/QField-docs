@@ -13,24 +13,17 @@ Configure geofenced boundaries in QGIS using QFieldSync.
 :material-monitor: Project Manager
 
 !!! Workflow
-    1. In QGIS, navigate to _Project > Properties... > QField_.
-    2. Enable the **Geofencing** option.
-    3. Select the polygon vector layer to use as a geofence boundary.
-    4. Select a geofencing behavior:
-        - **Alert users when inside an area":** Displays an alert notification whenever a user enters a defined geofence polygon.
-        - **Alert users when outside all areas":** Displays an alert notification whenever a user exits defined geofence polygons.
-        - **Inform users when entering and leaving areas":** Displays notifications whenever a user enters or exits defined geofence polygons.
-    5. (Optional) Enable options to prohibit adding new features inside or outside the selected geofence area.
 
-!![](../../assets/images/geofencing-settings.png)
+     :material-monitor: Desktop preparation
 
-## Geofencing Alerts in the Field
-:material-tablet: Fieldwork
+     1. *Project* > *Project Properties* > *QField*
+     2. Check the checkbox where it says **Geofencing**
+     3. Select the polygon layer that you wish to use as a **Fence**
+     4. Select further the geofencing behaviour.
+     There exist to options by default:
+         - **Alert users when inside an area**: Whenever a user is entering one of the areas that define the geofenced area, the user will get a notification at the bottom of the screen.
+         - **Alert users when outside all areas**: Whenever a user is stepping outside the area that define the geofenced area, the user will get a notification at the bottom
+         - **Inform users when entering and leaving areas**: A combination of the two other options.
+    !![](../../assets/images/geofencing-settings.png)
 
-When QField triggers a geofencing alert, a glowing red circle displays in the bottom-right corner of the screen.
-This visual cue remains active until the alert condition ends.
-On supported mobile devices, haptic vibration alerts accompany on-screen notification messages indicating which geofenced areas were entered or exited.
-
-![type:video](../../assets/videos/geofencing-alert.webm)
-
-When digitizing restrictions are enabled, QField automatically hides the digitizing toolbar while a geofencing alert is active to prevent accidental data entry outside or inside designated zones.
+     5. Check the checkbox if you do not want the users to add new features within (1st option) or outside (2nd option) of the selected area.

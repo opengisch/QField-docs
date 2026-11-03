@@ -3,42 +3,29 @@ title: Print to PDF
 tx_slug: documentation_how-to_print-to-pdf
 ---
 
-# Print to PDF
+# Print Layouts
 
-Export configured QGIS map print layouts as PDF documents directly within QField.
+It's possible to export laid out maps as PDF documents either with the default in-built one of QField or through project print layouts configured within QGIS.
 
-## Usage
-:material-tablet: Fieldwork
+## Preparation of Print Layout
 
-Access print layout exports from the main menu inside QField.
+The layouts need to be pre-configured in the layout editor.
+You can choose whether it should be a general static layout or an "atlas-driven" layout, which dynamically prints an individual layout of every feature.
 
-!!! Workflow
-    1. Open the **Side Dashboard**.
-    2. Tap **Print to PDF**.
-    3. Select a print layout from the submenu if your project contains multiple layouts.
-    (If your project contains a single print layout, QField immediately initiates the export).
-    4. Open and view the generated PDF document when prompted upon completion.
+You can read more about Print Layouts [Here](https://docs.qgis.org/latest/en/docs/user_manual/print_layout/overview_layout.html)<!-- markdown-link-check-disable-line -->
+And particularly, about **Atlas-driven Layouts** [Here](https://docs.qgis.org/latest/en/docs/user_manual/print_layout/create_output.html#atlas-generation)<!-- markdown-link-check-disable-line -->
 
-!![](../../assets/images/print_menu.png)
-
-!![](../../assets/images/print_document.png)
-
-## Feature-Driven Atlas Print
-
-Export atlas-driven print layouts by selecting coverage layer vector features on the map canvas or inside feature forms.
 
 !!! Workflow
-    **Printing multiple atlas features:**
 
-    1. Tap features on the map canvas to open the identification list.
-    2. Long-press a feature in the identification list to enter multi-selection mode.
-    3. Select additional coverage layer features to include in the export.
-    4. Tap the three-dotted menu *(⋮)* and select **Print Atlas Feature(s) to PDF**.
+    1. Select **New Print Layout** from the **Project** Tab.
+    If you have existing ones already, you can access them through **Layouts**
+    !![Print Layout](../../assets/images/qgis-add-layout.png, 300px)
+    2. A new window will open, where you can customize your layout.
 
-!![](../../assets/images/print_atlas_menu.png)
+!!! Example
 
-!!! Workflow
-    **Printing a single atlas feature:**
+    Here is an example of an **Atlas-driven Layout**
+    !![Atlas-driven-layout](../../assets/images/qgis-atlas-layout.png)
 
-    1. Open the feature attribute form for a coverage layer feature.
-    2. Tap the three-dotted menu *(⋮)* inside the form title bar and select **Print Atlas Feature to PDF**.
+    **Note:** It is important to enable the **Controlled by Atlas** Setting to enable the atlas.

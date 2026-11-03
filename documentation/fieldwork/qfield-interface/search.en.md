@@ -3,16 +3,16 @@ title: Search bar
 tx_slug: documentation_how-to_search
 ---
 
-# Search Bar
+# Search bar
 
 The QField search bar allows you to:
 
-- Search for features within project vector layers.
-- [Navigate to specified coordinates](../navigation-and-positioning/navigation.md#setting-a-destination-point).
-- Locate spatial bookmarks.
-- Evaluate QGIS expressions.
+- search for features within a project's vector layers
+- [navigate to specified coordinates](../../fieldwork/navigation-and-positioning/navigation.md#activating-navigation)
+- locate spatial bookmarks
+- and calculate expressions
 
-## Layer Search
+## Layer search
 :material-tablet: Fieldwork
 
 Search for features across all project layers or restrict searches to the active layer.
@@ -22,14 +22,14 @@ Filter queries down to specific attribute fields.
     1. Tap the **Search** button in the top-right corner of the map canvas to expand the search bar.
     2. Enter your search query into the search bar.
 
-### Vector Layers Search
+### Vector layers search
 
 QField uses entered text values to find features with matching attribute values.
 A minimum of three characters is required to initiate a search query.
 
 !![](../../assets/images/search-bar.png)
 
-### Active Layer Search Feature Matching
+### Active layer search feature matching
 
 Active layer searches focus queries exclusively on the currently active layer and its attributes.
 
@@ -38,25 +38,10 @@ Active layer searches focus queries exclusively on the currently active layer an
 
 Matching attribute names and values are highlighted in the search results list.
 
-             ![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
+![type:video](../../assets/videos/search-bar-active-layer-feature-matching-functionality.mp4)
 
-Active layer searches focus queries exclusively on the currently active layer and its attributes.
 
-- **Search all active layer attributes:** Type `f ` followed by your search term (such as `f oak`).
-- **Target a specific attribute field:** Type `f @ATTRIBUTE_NAME search-term` (such as `f @tree_type oak`).
-
-Matching attribute names and values are highlighted in the search results list.
-
-!!! Workflow
-    1. Tap **Scan code** inside the search bar to open the Code Reader interface.
-    2. Scan or decode a code using one of two methods:
-        - **Live Camera / NFC:** Point the camera at a physical QR code or barcode, or hold an NFC text tag near the mobile device.
-            !![](../../assets/images/search-bar-code-reader-1-scanning.png, 300px)
-        - **Image File from Gallery:** Tap the **Gallery** icon on the bottom control bar and select a photo containing a QR code or barcode.
-            !![](../../assets/images/code_reader_from_gallery.png, 300px)
-    3. Tap the checkmark (**✔**) button after decoding a code to execute the search query.
-
-## Search with Code Scanner
+## Search with code scanner
 
 Use the QField Code Reader to search for features by scanning physical codes or selecting stored images.
 
@@ -84,7 +69,7 @@ The Code Reader automatically detects and decodes NFC text tags.
     The camera reader and NFC detector are active by default when opening the Code Reader.
     Toggle either sensor off inside the scanner interface to conserve battery power.
 
-## Go to Coordinate
+## Go to coordinate
 
 Navigate directly to coordinates using the search bar.
 
@@ -93,7 +78,7 @@ Navigate directly to coordinates using the search bar.
     2. Tap the coordinate result in the search list.
     QField automatically centers the map canvas on the specified location.
 
-## Go to Spatial Bookmark
+## Go to spatial bookmark
 
 Locate and navigate to spatial bookmarks.
 
@@ -103,7 +88,7 @@ Locate and navigate to spatial bookmarks.
     3. Tap the target bookmark result.
     QField automatically pans and zooms the map canvas to the saved bookmark extent.
 
-## Expression Calculator
+## Expression calculator
 
 The search bar functions as a QGIS expression calculator.
 
@@ -112,18 +97,5 @@ The search bar functions as a QGIS expression calculator.
     2. Tap the calculated result in the list to copy the value to the clipboard.
 
 !!! Tip
-    Use the `aggregate()` expression function to calculate statistics across vector layers.
-    For example, calculate the total area of a polygon layer by typing `= aggregate('my_layer', 'sum', $area)`.
-
-## Configure Vector Layers Search in QGIS
-:material-monitor: Project Manager
-
-All vector layers are searchable by default.
-Exclude specific layers from search queries in QGIS project properties.
-
-!!! Workflow
-    1. Open your project in QGIS.
-    2. Navigate to _Project > Properties... > Data Sources_.
-    3. Uncheck **Searchable** in the layer capabilities table for layers you want to exclude.
-
-Read more in the [Data Source Configuration](../project-setup/data_source_and_project_paths.md#data-source-configuration) guide.
+    Use the `aggregate()` expression function to calculate statistics against vector layers.
+    For example, to calculate the total area covered by a polygon layer, type `= aggregate('my_layer','sum', $area)`.
