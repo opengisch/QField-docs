@@ -182,7 +182,7 @@ You can compress and send whole projects by selecting root folders in QField‘s
 
 ### Sending an individual dataset (Android Only)
 
-You can select the "Send to" action for individual datasets, to directly send the changed datasets via third party apps such as Gmail, Drive, Dropbox or Nextcloud <insert your favorite messenger app>.
+You can select the "Send to" action for individual datasets, to directly send the changed datasets via third party apps such as Gmail, Drive, Dropbox, Nextcloud or your favorite messenger app.
 
 You can also export the layers from a synchronized QFieldCloud project, either to your device or a preferred cloud provider.
 To do this, within your project:

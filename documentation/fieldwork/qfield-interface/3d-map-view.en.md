@@ -39,6 +39,7 @@ Depending on your device, you can interact with the 3D extent in the following w
     **Mouse Interactions:**
 
     If you are working on your desktop you can use your mouse also.
+
     - **Pan Extent:** Hold the `Shift` key and drag the mouse to move the 3D map extent geographically.
     The 3D mesh translates in real-time for visual feedback.
     - **Zoom Extent:** Hold the `Shift` key and use the mouse scroll wheel to scale the map extent in or out around its center point.

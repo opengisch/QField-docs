@@ -120,8 +120,6 @@ You can export your user bookmarks into a standalone GeoPackage (`.gpkg`) to sha
 
 You can set any bookmark directly as an active navigation destination.
 
-###
-
 !!! Workflow
 
     **Option 1: Via the Bookmark List**

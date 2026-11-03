@@ -106,7 +106,7 @@ Sometimes you may want to multi-select several features at once to merge them or
         - Further **Process** your selected features: You can read more about the different processing operations [here](../data-collection/processing.md)
         !![Multi-selected actions](../../assets/images/multi-select-actions.png)
 
-### Scale Bar
+## Scale Bar
 
 !!! Workflow
 

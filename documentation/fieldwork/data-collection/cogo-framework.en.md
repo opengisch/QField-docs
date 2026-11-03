@@ -11,7 +11,7 @@ By entering coordinates, bearings, or distances, QField calculates accurate vert
 !!! Note
     QField renders dynamic visual guides (lines, circles, and point previews) on the map canvas in real time as you enter parameters, allowing you to verify inputs before creating features.
 
-### Example Use Case
+## Example Use Case
 
 Mapping a property boundary where physical access is obstructed (for instance, by dense vegetation or fence lines).
 COGO tools allow digitizing boundary corners by measuring offsets from accessible locations.
