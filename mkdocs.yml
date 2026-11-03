@@ -602,3 +602,6 @@ plugins:
                 name: Switch to light mode
 
 # Page tree
+
+hooks:
+  - utils/redirects.py
