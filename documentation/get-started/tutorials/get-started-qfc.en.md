@@ -90,7 +90,6 @@ The following steps show how to install the plugin and synchronize your data to 
 The project overview shows the projects that your account can access.
 The screen contains the following elements:
 
-- Current user underlined in blue
 - Current user underlined in blue.
 - The avatar on the top right leading to the sign-out page.
 - A cloud button to create a new project.
