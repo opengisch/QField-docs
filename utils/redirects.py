@@ -5,7 +5,7 @@ Runs once per language build of mkdocs-static-i18n, so every locale gets its red
 
 from pathlib import Path
 
-# old page: new page (optionally with an #anchor)
+# old page: new page (optionally with an #anchor) or full external URL
 REDIRECTS = {
     "how-to/general/settings": "fieldwork/general/settings",
     "how-to/general/projects": "fieldwork/general/projects",
@@ -20,6 +20,7 @@ REDIRECTS = {
     "how-to/qfield-interface/map-styling": "how-to/qfield-interface/map-interaction#map-styling",
     "how-to/advanced-how-tos/live-default-value": "how-to/project-setup/attributes-form#define-default-values",
     "how-to/advanced-how-tos/movable-project": "how-to/project-setup/data_source_and_project_paths",
+    "success-stories": "https://qfield.org/success-stories/",
 }
 
 TEMPLATE = """<!doctype html>
@@ -47,8 +48,11 @@ def on_post_build(config, **kwargs):
         base_url += i18n.current_language + "/"
 
     for old, new in REDIRECTS.items():
-        new_path, hash_sign, anchor = new.partition("#")
-        url = base_url + new_path + "/" + hash_sign + anchor
+        if new.startswith("https://"):
+            url = new
+        else:
+            new_path, hash_sign, anchor = new.partition("#")
+            url = base_url + new_path + "/" + hash_sign + anchor
         target = site_dir / old / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(TEMPLATE.format(url=url), encoding="utf-8")
