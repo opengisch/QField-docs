@@ -2,7 +2,6 @@
 title: QFieldCloud Django administration
 tx_slug: documentation_reference_qfieldcloud_django_administration
 ---
-
 # How to manage Organizations in QFieldCloud on-premise
 
 ## Managing Users
@@ -106,7 +105,7 @@ tx_slug: documentation_reference_qfieldcloud_django_administration
     5. Once all desired members are added, click on "Save".
     !![](../../../assets/images/self_hosted/managing_organization_django_16.png,800px)
 
-    6. You will be redirected to the "Team" Section and a message should appear at the top of the page indicating the successful addition of members.
+    6. You will be redirected to the "Organization" page and a message indicating the Organization was changed successfully.
 
 ### Remove Members
 
@@ -114,13 +113,13 @@ tx_slug: documentation_reference_qfieldcloud_django_administration
 
     1. Go to the "Organizations" page and select the organization where you want to remove one or multiple members.
     2. Open the "Organization members" tab.
-    3. Check the "Delete?" checkbox for the user you want to remove.
+    3. Click on the Thrash icon for the user you want to remove.
     !![](../../../assets/images/self_hosted/managing_organization_django_17.png,800px)
 
     4. Click "Save".
     !![](../../../assets/images/self_hosted/managing_organization_django_18.png,800px)
 
-    5. You will be redirected to the "Organization Member" Section and a message should appear at the top of the page indicating the successful removal of the selected members.
+    5. You will be redirected to the "Organization" page and a message indicating the Organization was changed successfully.
 
 ### Changing Roles of Members
 
@@ -131,8 +130,8 @@ tx_slug: documentation_reference_qfieldcloud_django_administration
     3. In the "Role" field of the user, click the dropdown and choose "Member" or "Admin".
     !![](../../../assets/images/self_hosted/managing_organization_django_19.png,800px)
 
-    4. Select the role you want to assign to the user and click to "Save" the updated data for the "Organization".
-    5. You will be redirected to the "Team" Section and a message should appear at the top of the page indicating the successful role change of the selected members.
+    4. Select the role you want to assign to the user and click to "Save" to updated data for the "Organization".
+    5. You will be redirected to the "Organization" page and a message indicating the Organization was changed successfully.
 
 ### Creating Teams
 
@@ -146,11 +145,11 @@ tx_slug: documentation_reference_qfieldcloud_django_administration
     !![](../../../assets/images/self_hosted/managing_organization_django_21.png,800px)
 
     4. In the "Team members" section, click on "Add another Team member".
-    !![](../../../assets/images/self_hosted/managing_organization_django_23.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_22.png,800px)
 
     5. Search for the team members you wish to add.
     The people added to the Team must be members of the Team's Organization.
-    !![](../../../assets/images/self_hosted/managing_organization_django_22.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_23.png,800px)
 
     6. Once all members are added, click "Save".
     7. You will be redirected to the "Teams" section and a message should appear at the top of the page indicating the successful addition of the selected members to the team.
@@ -161,12 +160,12 @@ tx_slug: documentation_reference_qfieldcloud_django_administration
 
     1. Access the "Teams" page under the "Core" section
     2. Find the team which you wish to delete.
-    3. Select the "Delete Button".
+    3. Select the "Delete Team".
     !![](../../../assets/images/self_hosted/managing_organization_django_24.png,800px)
 
     3. The screen will show you all the related objects that will be deleted.
     Once you are sure that you wish to complete the deletion click "Yes, I'm sure".
-    !![](../../../assets/images/self_hosted/managing_organization_django_26.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_25.png,800px)
 
     4. You will be redirected to the "Teams" section and a message should appear at the top of the page indicating the successful deletion of the selected members.
 
@@ -175,8 +174,8 @@ tx_slug: documentation_reference_qfieldcloud_django_administration
 !!! Workflow
 
     1. Enter the team where you want to delete users.
-    2. In the team, activate the "Delete?" checkbox for the users you want to remove.
-    !![](../../../assets/images/self_hosted/managing_organization_django_25.png,800px)
+    2. In the team, click on the Thrash icon for the users you want to remove.
+    !![](../../../assets/images/self_hosted/managing_organization_django_26.png,800px)
 
     3. Click to "Save" the updated data for the "Team".
     4. You will be redirected to the "Teams" section and a message should appear at the top of the page indicating the successful removal of the selected members.
