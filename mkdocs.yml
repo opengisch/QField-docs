@@ -240,18 +240,19 @@ plugins:
           nav_translations:
             Home: Startseite
             Get started: Erste Schritte
-            Tutorials: Tutorials
             QFieldCloud: QFieldCloud
-            QFieldSync: QFieldSync
-            How-to guides: Anleitungen
+            Tutorials: Tutorials
+            In the field: In the field
             General: General
-            Project Setup: Project Setup
-            QField Interface: QField Interface
-            Data Collection: Data Collection
-            Navigation and Positioning: Navigation and Positioning
-            Advanced How To's: Advanced How To's
+            Interact with the map: Interagiere mit der Karte
+            Data collection: Datenerhebung
+            Navigation and positioning: Navigation and positioning
+            Project setup in QGIS: Project setup in QGIS
+            Forms and data sources: Forms and data sources
+            QField map interface: QField map interface
+            Advanced how-tos: Advanced how-tos
             Technical reference: Technische Hinweise
-            Self-Hosting QFieldCloud: Self-Hosting QFieldCloud
+            Self-hosting QFieldCloud: Self-hosting QFieldCloud
             Success stories: Erfolgsgeschichten
           palette:
             - scheme: default
@@ -277,18 +278,19 @@ plugins:
           nav_translations:
             Home: Accueil
             Get started: Mise en route
-            Tutorials: Tutoriels
             QFieldCloud: QFieldCloud
-            QFieldSync: QFieldSync
-            How-to guides: Tutoriels
+            Tutorials: Tutoriels
+            In the field: In the field
             General: General
-            Project Setup: Project Setup
-            QField Interface: QField Interface
-            Data Collection: Data Collection
-            Navigation and Positioning: Navigation and Positioning
-            Advanced How To's: Advanced How To's
+            Interact with the map: Interagir avec la carte
+            Data collection: Collecte de données
+            Navigation and positioning: Navigation and positioning
+            Project setup in QGIS: Project setup in QGIS
+            Forms and data sources: Forms and data sources
+            QField map interface: QField map interface
+            Advanced how-tos: Advanced how-tos
             Technical reference: Documentation technique
-            Self-Hosting QFieldCloud: Self-Hosting QFieldCloud
+            Self-hosting QFieldCloud: Self-hosting QFieldCloud
             Success stories: Projets témoin
           palette:
             - scheme: default
@@ -314,18 +316,19 @@ plugins:
           nav_translations:
             Home: Home
             Get started: Inizia
-            Tutorials: Esercitazioni
             QFieldCloud: QFieldCloud
-            QFieldSync: QFieldSync
-            How-to guides: Guide Passo-Passo
+            Tutorials: Esercitazioni
+            In the field: In the field
             General: General
-            Project Setup: Project Setup
-            QField Interface: QField Interface
-            Data Collection: Data Collection
-            Navigation and Positioning: Navigation and Positioning
-            Advanced How To's: Advanced How To's
+            Interact with the map: Interazione con la mappa
+            Data collection: Raccolta dei dati
+            Navigation and positioning: Navigation and positioning
+            Project setup in QGIS: Project setup in QGIS
+            Forms and data sources: Forms and data sources
+            QField map interface: QField map interface
+            Advanced how-tos: Advanced how-tos
             Technical reference: Documentazione tecnica di riferimento
-            Self-Hosting QFieldCloud: Self-Hosting QFieldCloud
+            Self-hosting QFieldCloud: Self-hosting QFieldCloud
             Success stories: Storie di successo
           palette:
             - scheme: default
@@ -349,18 +352,19 @@ plugins:
           nav_translations:
             Home: ホーム
             Get started: スタート・ガイド
-            Tutorials: チュートリアル
             QFieldCloud: QFieldCloud
-            QFieldSync: QFieldSync
-            How-to guides: ハウツー・ガイド
+            Tutorials: チュートリアル
+            In the field: In the field
             General: General
-            Project Setup: Project Setup
-            QField Interface: QField Interface
-            Data Collection: Data Collection
-            Navigation and Positioning: Navigation and Positioning
-            Advanced How To's: Advanced How To's
+            Interact with the map: 地図の操作
+            Data collection: データ収集
+            Navigation and positioning: Navigation and positioning
+            Project setup in QGIS: Project setup in QGIS
+            Forms and data sources: Forms and data sources
+            QField map interface: QField map interface
+            Advanced how-tos: Advanced how-tos
             Technical reference: 技術参考情報
-            Self-Hosting QFieldCloud: Self-Hosting QFieldCloud
+            Self-hosting QFieldCloud: Self-hosting QFieldCloud
             Success stories: ケーススタディ
           palette:
             - scheme: default
@@ -386,18 +390,19 @@ plugins:
           nav_translations:
             Home: Home
             Get started: Primeiros passos
-            Tutorials: Tutorials
             QFieldCloud: QFieldCloud
-            QFieldSync: QFieldSync
-            How-to guides: Guias de instruções
+            Tutorials: Tutorials
+            In the field: In the field
             General: General
-            Project Setup: Project Setup
-            QField Interface: QField Interface
-            Data Collection: Data Collection
-            Navigation and Positioning: Navigation and Positioning
-            Advanced How To's: Advanced How To's
+            Interact with the map: Interagir com os mapas
+            Data collection: Recolha de dados
+            Navigation and positioning: Navigation and positioning
+            Project setup in QGIS: Project setup in QGIS
+            Forms and data sources: Forms and data sources
+            QField map interface: QField map interface
+            Advanced how-tos: Advanced how-tos
             Technical reference: Referência técnica
-            Self-Hosting QFieldCloud: Self-Hosting QFieldCloud
+            Self-hosting QFieldCloud: Self-hosting QFieldCloud
             Success stories: Histórias de sucesso
           palette:
             - scheme: default
@@ -423,18 +428,19 @@ plugins:
           nav_translations:
             Home: Inicio
             Get started: Empezar
-            Tutorials: Tutoriales
             QFieldCloud: QFieldCloud
-            QFieldSync: QFieldSync
-            How-to guides: Guías de uso
+            Tutorials: Tutoriales
+            In the field: In the field
             General: General
-            Project Setup: Project Setup
-            QField Interface: QField Interface
-            Data Collection: Data Collection
-            Navigation and Positioning: Navigation and Positioning
-            Advanced How To's: Advanced How To's
+            Interact with the map: Interaccionar con el mapa
+            Data collection: Recolección de datos
+            Navigation and positioning: Navigation and positioning
+            Project setup in QGIS: Project setup in QGIS
+            Forms and data sources: Forms and data sources
+            QField map interface: QField map interface
+            Advanced how-tos: Advanced how-tos
             Technical reference: Referencia técnica
-            Self-Hosting QFieldCloud: Self-Hosting QFieldCloud
+            Self-hosting QFieldCloud: Self-hosting QFieldCloud
             Success stories: Historias de éxito
           palette:
             - scheme: default
@@ -457,18 +463,19 @@ plugins:
           nav_translations:
             Home: Home
             Get started: 基础入门
-            Tutorials: Tutorials
             QFieldCloud: QFieldCloud
-            QFieldSync: QFieldSync
-            How-to guides: 操作指南
+            Tutorials: Tutorials
+            In the field: In the field
             General: General
-            Project Setup: Project Setup
-            QField Interface: QField Interface
-            Data Collection: Data Collection
-            Navigation and Positioning: Navigation and Positioning
-            Advanced How To's: Advanced How To's
+            Interact with the map: 与地图交互
+            Data collection: 数据收集
+            Navigation and positioning: Navigation and positioning
+            Project setup in QGIS: Project setup in QGIS
+            Forms and data sources: Forms and data sources
+            QField map interface: QField map interface
+            Advanced how-tos: Advanced how-tos
             Technical reference: 技术参考
-            Self-Hosting QFieldCloud: Self-Hosting QFieldCloud
+            Self-hosting QFieldCloud: Self-hosting QFieldCloud
             Success stories: 成功案例
           palette:
             - scheme: default
@@ -495,18 +502,19 @@ plugins:
           nav_translations:
             Home: Home
             Get started: Aloita
-            Tutorials: Tutorials
             QFieldCloud: QFieldCloud
-            QFieldSync: QFieldSync
-            How-to guides: Kuinka teen oppaat
+            Tutorials: Tutorials
+            In the field: In the field
             General: General
-            Project Setup: Project Setup
-            QField Interface: QField Interface
-            Data Collection: Data Collection
-            Navigation and Positioning: Navigation and Positioning
-            Advanced How To's: Advanced How To's
+            Interact with the map: Vuorovaikutus kartan kanssa
+            Data collection: Tietojen kerääminen
+            Navigation and positioning: Navigation and positioning
+            Project setup in QGIS: Project setup in QGIS
+            Forms and data sources: Forms and data sources
+            QField map interface: QField map interface
+            Advanced how-tos: Advanced how-tos
             Technical reference: Tekniset viitteet
-            Self-Hosting QFieldCloud: Self-Hosting QFieldCloud
+            Self-hosting QFieldCloud: Self-hosting QFieldCloud
             Success stories: Success stories
           palette:
             - scheme: default
@@ -558,18 +566,19 @@ plugins:
           nav_translations:
             Home: Home
             Get started: Începeți
-            Tutorials: Tutorials
             QFieldCloud: QFieldCloud
-            QFieldSync: QFieldSync
-            How-to guides: How-to guides
+            Tutorials: Tutorials
+            In the field: In the field
             General: General
-            Project Setup: Project Setup
-            QField Interface: QField Interface
-            Data Collection: Data Collection
-            Navigation and Positioning: Navigation and Positioning
-            Advanced How To's: Advanced How To's
+            Interact with the map: Interact with the map
+            Data collection: Colectare date
+            Navigation and positioning: Navigation and positioning
+            Project setup in QGIS: Project setup in QGIS
+            Forms and data sources: Forms and data sources
+            QField map interface: QField map interface
+            Advanced how-tos: Advanced how-tos
             Technical reference: Referință tehnică
-            Self-Hosting QFieldCloud: Self-Hosting QFieldCloud
+            Self-hosting QFieldCloud: Self-hosting QFieldCloud
             Success stories: Success stories
           palette:
             - scheme: default
