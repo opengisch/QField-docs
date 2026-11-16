@@ -69,12 +69,12 @@ jobs:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
       - name: Translate Mkdocs config
-        if: env.GITHUB_TOKEN != ''
+        if: env.DEPLOY_KEY != ''
         run: |
           ./utils/mkdocs_tx.py -s en update_config
           ./utils/mkdocs_tx_commit.sh
         env:
-          GITHUB_TOKEN: ${{ secrets.QFIELD_FAIRY_TOKEN }}
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 
       - name: Build documentation
         run: mkdocs build
