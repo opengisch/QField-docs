@@ -7,6 +7,8 @@ title: QField Ecosystem Documentation
 
 QField is the mobile and desktop app for fieldwork. [QFieldCloud](https://qfield.cloud) is the optional cloud service for syncing and managing projects across your team.
 
+!![](assets/images/welcome_screen_qfield.png, 800px)
+
 ## Installation
 
 Package your QGIS project with the [QFieldSync Plugin](get-started/tutorials/get-started-qfs.md), then install QField for your platform:
@@ -52,13 +54,21 @@ Package your QGIS project with the [QFieldSync Plugin](get-started/tutorials/get
 
     [:octicons-arrow-right-24: Register for QFieldCloud](https://app.qfield.cloud/accounts/signup/)
 
--   :material-book-open-variant:{ .lg .middle } **How-to guides**
+-   :material-tablet:{ .lg .middle } **In the field**
 
     ---
 
-    Step-by-step instructions for configuring projects and using QField's features.
+    Step-by-step workflows for collecting data, navigating and tracking with QField.
 
-    [:octicons-arrow-right-24: Browse how-to guides](how-to/index.md)
+    [:octicons-arrow-right-24: Start working in the field](fieldwork/index.md)
+
+-   :material-monitor:{ .lg .middle } **Project setup in QGIS**
+
+    ---
+
+    Step-by-step instructions for preparing and configuring your projects in QGIS before going into the field.
+
+    [:octicons-arrow-right-24: Set up your project](how-to/index.md)
 
 -   :material-api:{ .lg .middle } **Technical reference**
 

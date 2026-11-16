@@ -12,15 +12,11 @@ if [[ $(git diff --exit-code mkdocs.yml) ]]; then
   echo "detected changes in mkdocs.yml"
   git stash push -- mkdocs.yml
   if [[ ${GITHUB_EVENT_NAME} == "pull_request" ]]; then
-    # on PR push to the same branch
-    gh pr checkout $(echo "${GITHUB_REF_NAME}" | cut -d/ -f1)
     git stash pop
     git add mkdocs.yml
     git commit -m "Update mkdocs.yml translation" --no-verify
     git push
   else
-    # on push/workflow_dispatch directly push to branch
-    git checkout ${GITHUB_REF_NAME}
     git stash pop
     git add mkdocs.yml
     git commit -m "Update mkdocs.yml translation" --no-verify

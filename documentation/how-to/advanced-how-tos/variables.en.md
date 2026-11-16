@@ -16,9 +16,26 @@ QField supports two types of custom variables:
 
 ## Project Variables
 
-Project variables are defined and managed inside QGIS project properties on your desktop computer.
 Project variables store custom values relevant to specific projects.
 QField users can edit project variables on mobile devices, and modified values persist across app sessions.
+
+!!! Workflow
+
+    **Adding a Project Variable**
+
+    1. In QGIS direct to _project > properties_.
+    2. Change to the **Variables** section.
+    3. Add your project variable (eg. surveyor)
+    !![](../../assets/images/fieldwork_data_collection_projectvariable.png)
+
+!!! Workflow
+
+    **Adding a Project Variable**
+
+    1. In QGIS direct to _project > properties_.
+    2. Change to the **Variables** section.
+    3. Add your project variable (eg. surveyor)
+    !![](../../assets/images/fieldwork_data_collection_projectvariable.png)
 
 ## Global Variables
 
@@ -29,21 +46,7 @@ Custom global variables can be added or modified in QField and remain available 
     Read-only system variables vary depending on device platforms and hardware specs.
     These reflect the global variables available in the QGIS release used to build the installed QField version.
 
-## Variable Management in QField
-
-Manage variables on your mobile device to share custom values across all QField projects.
-Access the variables list under _Side Dashboard > Settings > Variables_ for a consolidated view of all available variables.
-
-### Variable Configuration
-:material-tablet: Fieldwork
-
-!!! Workflow
-    1. Open the **Side Dashboard** and tap the gear icon to open **Settings**.
-    2. Switch to the **Variables** tab to view all applicable variables.
-    3. Tap **Add a new variable** at the bottom of the list.
-    4. Enter a variable name and value, then save your changes.
-
-### Useful Examples
+## Useful Examples
 
 Common expression variables used in field workflows include:
 
@@ -53,4 +56,7 @@ Common expression variables used in field workflows include:
 !!! Tip
     If you do not use QFieldCloud, create a custom global variable (such as `@user_id` or `@field_worker`) on each device to record user identifiers in feature attribute forms.
 
-!![Configuration of editable variables in addition to the pre-defined system variables.](../../assets/images/configure_global_variables.png,400px)
+!![Configuration of editable variables in addition to the
+pre-defined system variables.](../../assets/images/configure_global_variables.png,400px)
+
+See [here](../../fieldwork/data-collection/variables.md) how to work with variables in QField directly

@@ -10,11 +10,13 @@ Follow these steps to go from a QGIS project to collecting data in the field wit
 
 ## 1. Install QField
 
-Download QField for your device from the [homepage](/) — available for Android, iOS, Windows, macOS and Linux.
+Download QField for your device via your AppStore or download the latest [Release](https://github.com/opengisch/qfield/releases) — available for Android, iOS, Windows, macOS and Linux.
 
 ## 2. Prepare your project in QGIS
 
 Install the [QFieldSync plugin](tutorials/get-started-qfs.md) in QGIS and use it to "package" your project so it can be opened in QField.
+
+Alternatively, if you just want to **map-away**, create a project from scratch in [QField directly](../fieldwork/create-project.md).
 
 ## 3. Get your project onto your device
 
@@ -25,7 +27,7 @@ Choose how you want to transfer the packaged project:
 
 ## 4. Collect data in the field
 
-Open the project in QField to start browsing and digitizing data. See [Principles](concepts.md) to understand how QField's modes and workflow are designed.
+Open the project in QField to start browsing and digitizing data. See [here](../fieldwork/index.md) what to explore the vast options of what you can do in QField.
 
 ## 5. Sync your data back
 

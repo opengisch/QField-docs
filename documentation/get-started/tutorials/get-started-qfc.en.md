@@ -11,8 +11,6 @@ QFieldCloud is the cloud service that allows seamless synchronization of your da
 You can manage teams, work in organizations, assign different editing permissions, and much more.
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
-:material-monitor: Project Manager
-:material-monitor: Project Manager
 
 !!! Workflow
     1. Navigate to the [Sign up page](https://app.qfield.cloud/accounts/signup/), enter your details, and create a new QFieldCloud account.
@@ -62,7 +60,8 @@ When any filter option is active, clicking the **Clear** button immediately rese
 There are several ways to create and initialize a new project in QFieldCloud depending on your workflow.
 You can convert an existing QGIS project, start from a blank template on the web, or clone an existing project.
 
-[Click here to read more about project creation](create-project-qfc.md)
+[Click here to read more about project creation](../../fieldwork/create-project.md)
+
 
 ## From QFieldCloud to QGIS Desktop
 :material-monitor: Project Manager
@@ -127,7 +126,7 @@ You can adjust the following parameters in these settings:
 - Define how project layers are treated in the cloud (see the [QFieldSync Get Started Guide](./get-started-qfs.md) for details on **Packaging Actions**).
 - Enable [**geofencing**](../../how-to/navigation-and-positioning/geofencing.md).
 - Assign a digitizing log layer.
-- Specify the active layer for editing after selecting a [Map Theme](../../how-to/qfield-interface/map-themes.md).
+- Specify the layer that will be active for editing after selecting a [Map Theme](../../how-to/qfield-interface/map-interaction.md#map-themes)
 
 We recommend using GeoPackages, especially when collaborating in teams.
 See the [Advanced Setup Guide](advanced-setup-qfc.md) for more information about vector formats.

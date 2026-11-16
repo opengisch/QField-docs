@@ -1,5 +1,5 @@
 ---
-title: Simple attribute form configuration
+title: Attribute form configuration
 tx_slug: documentation_how-to_attributes-form
 ---
 
@@ -46,7 +46,10 @@ For other attribute widget types not yet supported, consider [sponsoring an impl
 ## General Attribute Settings
 :material-monitor: Project Manager
 
-Configure general form options in QGIS under _Vector Layer Properties... > Attribute Form_:
+To configure your attribute form there are some other general useful settings, which you can find in
+_Vector Layer > Properties > Attribute form_ (see image below).
+
+!![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
 
 - **Drag and drop designer":** Organize form layouts using containers such as tabs and groups.
     Incorporate conditional visibility rules and default values to enhance form interactivity.
@@ -67,7 +70,8 @@ Configure general form options in QGIS under _Vector Layer Properties... > Attri
     QField supports positioning variables (such as [GNSS variables](../../reference/expression_variables.md#positioning-and-gnss-variables))
     and [QFieldCloud variables](../../reference/expression_variables.md#qfieldcloud-variables).
 
-!![General Attribute Form](../../assets/images/drag-and-drop-designer-attribute-forms.png,800px)
+
+---
 
 ## Feature Form Wizard Mode
 
@@ -79,48 +83,22 @@ Wizard Mode provides a guided workflow for field workers filling out complex for
 !!! Note
     Wizard Mode requires organizing form fields into multiple tabs.
 
-### Configuring Wizard Mode
-:material-monitor: Project Manager
 
-Organize your feature form into tabs using the **Drag and drop designer** in QGIS before enabling Wizard Mode.
-
-!![](../../assets/images/attribute_form_adding_tabs.png)
+To use Wizard Mode, your feature form must first be set up into tabs.
 
 !!! Workflow
-    1. Open your project in QGIS.
-    2. Navigate to _Project > Properties... > QField_ or click the settings icon in the QFieldSync panel.
-    3. Enable **Enable QField feature forms' wizard mode**.
-    4. Save your project and synchronize it to QFieldCloud.
+
+    1. Direct to _Vector Layer Properties > Attribute form_
+    2. Use the **"Drag and drop designer"** and rearrange your fields with multiple tabs.
+    !![](../../assets/images/attribute_form_adding_tabs.png)
+    3. Open your project in QGIS.
+    4. Direct to *Project* > *Project Properties...* > *QField*.
+    Alternatively you can click on the settings icon from the QFieldSync plugin panel.
+    5. Check  **"Enable QField feature forms' wizard mode"**.
+    6. Save your project and synchronize it to QFieldCloud.
     !![](../../assets/images/qfieldsync_enable_form_wizard.png)
-
-### Using the Wizard in the Field
-
-:material-tablet: Fieldwork
-
-When opening a feature form with Wizard Mode enabled, the interface displays one tab page at a time.
-
-**Navigating Pages:**
-A navigation bar appears at the bottom of the attribute form:
-
-- **Previous page / Next page:** Navigate through form tabs sequentially using the navigation buttons.
-- **Progress Ring:** Displays form completion progress between navigation buttons.
-
-**Constraint Validation:**
-
-Wizard Mode evaluates QGIS form constraints on a page-by-page basis:
-
-- **Visual Feedback:** Progress indicators and navigation buttons change color based on validation status.
-Indicators turn red when hard constraints fail and yellow or orange when soft constraints trigger warnings.
-- **Blocking Progression:** Failing a hard constraint displays an error message ("Hard constraints not satisfied") and blocks navigation to subsequent pages until corrected.
-
-**Saving the Feature:**
-
-Wizard Mode hides the top-right **Save** button.
-
-- On the final form page, the **Next page** button transforms into a **Save** button.
-- Tapping **Save** evaluates form constraints one last time, commits the feature, and displays a confirmation message ("Changes saved").
-
-![type:video](../../assets/videos/qfield_form_wizard.mp4)
+    This is how it will look in QField:
+    ![type:video](../../assets/videos/qfield_form_wizard.mp4)
 
 ## Working with Relations
 
@@ -130,20 +108,19 @@ For detailed information on setting up layer relations in QGIS, refer to the [QG
 
 ## Value Map Widget Configuration
 
-Control automatic transitions from button interface displays to scrollable lists when configuring Value Map widgets.
+When using value maps as a widget type you can decide whether you want the value options as a list or buttons.
+You select the maximum number of values with which the threshold between list and buttons will be set.
 
-!![QFieldSync Layer Properties](../../assets/images/qfieldsync-toggle-value-map-editor-widget.png,800px)
+!![QField Value Map Editor as Buttons](../../assets/images/qfield-value-map-options.png,300px)
 
 !!! Workflow
-    1. Navigate to _Vector Layer Properties... > QField_.
-    2. Under **Feature Form Settings**, enable the option and set the maximum item threshold to trigger toggle button interfaces.
 
-!![QField Value Map Editor as List](../../assets/images/qfield-value-map-editor-list.png,300px)
+    1. Direct _Vector Layer Properties > QField_
 
-!![QField Value Map Editor as Buttons](../../assets/images/qfield-value-map-editor-buttons.png,300px)
+    2. Under the **Feature Form Settings** enable and define the maximum **quantity of items** above which the when the selection option changes from buttons to the list format
+    !![QFieldSync Layer Properties](../../assets/images/qfieldsync-toggle-value-map-editor-widget.png,800px).
 
 ## Attachment Widget
-:material-monitor: Project Manager
 
 The **Attachment** widget stores file paths for feature media and documents.
 
@@ -165,33 +142,9 @@ Use the Attachment widget to:
     Set attachment file paths to relative.
     QField stores media files in project subdirectories referenced by text attribute fields.
 
-Tap the camera, video, microphone, or document icon to add media attachments.
-QField displays the default media button configured in QGIS inside the attribute form.
-
-!![Media](../../assets/images/attachments.png, 800px)
-
-Copy media subdirectories when synchronizing projects manually.
-
-QField displays file names for document attachments by default.
-Enabling the **Hyperlink** option on Attachment widgets displays file paths as external hyperlinks.
-
-!![](../../assets/images/hyperlink_option.png)
-
-
-### Setting a Specific Attachment Path
-:material-monitor: Project Manager
-
-Configure media attachment file paths in QFieldSync.
-By default, QField saves photos to `DCIM`, audio recordings to `audio`, and videos to `video` using timestamped file names.
-
-!!! Workflow
-    1. Navigate to _Vector Layer Properties... > QField_.
-    2. Configure attachment file naming expressions under **Attachments Settings**.
-
-!![Paths](../../assets/images/paths-saving-media.png)
+Checkout the page for the [attachment widget](../../how-to/project-setup/pictures.md) to get specific guidance for this widget.
 
 ## Value Relation Widget
-:material-monitor: Project Manager
 
 The **Value Relation** widget displays values from a related layer in a combobox or toggle button layout.
 
@@ -212,11 +165,14 @@ When grouped, QField displays the widget as a list regardless of toggle button s
 ![type:video](../../assets/videos/value_relation_widget.webm)
 
 ### Group Value Configuration
-:material-monitor: Project Manager
 
 !!! Workflow
-    1. Select the attribute column used to organize items into groups.
-    2. (Optional) Enable **Display group name** to display group titles as distinct section headers.
+
+    1. Choose the column that will be used to organize the items.
+    The values from this column will act as group title.
+
+    2. (Optional) Enable **Display group name** if you want to add the title of your group as a distinct header.
+    This creates a clear separation between the different groups, making the list easier to navigate.
 
 !![First configuration](../../assets/images/grouping_value_relations_widget_qgis_setting_001.png)
 
@@ -226,32 +182,39 @@ When grouped, QField displays the widget as a list regardless of toggle button s
 
 !![Different configurations on QField](../../assets/images/grouping_value_relations_widget_qfield_show_gruped.png)
 
-### Use Auto Complete
-:material-monitor: Project Manager
+### Configuration of Autocomplete
 
 !!! Workflow
-    1. Navigate to _Vector Layer Properties... > Attribute Form_.
-    2. Set the widget type to **Value Relation**.
-    3. Enable **Use completer**.
 
-!![Enable auto-complete within QGIS](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
+    1. Direct to _Vector Layer Properties. > Attributes Form_.
+
+    2. Your widget type needs to be **Value Relation**.
+
+    3. Enable the **Use completer** option.
+
+    !![Enable auto-complete within QGIS](../../assets/images/grouping_value_relations_widget_qgis_setting_002.png)
 
 :material-tablet: Fieldwork
 
-!![Auto-complete in QField](../../assets/images/autocomplete_typing.png,300px)
+!![](../../assets/images/autocomplete_typing.png,300px)
 
 ## Conditional Visibility
-:material-monitor: Project Manager
 
-Hide form containers or fields based on QGIS expressions.
-Use conditional visibility when specific attributes are required only under certain conditions.
-
-### Example: Disease Attribute Visibility
-
+You can hide whole groups based on expressions.
+This is useful when certain attributes are only required under certain conditions.
 !!! Workflow
-    1. Create a container group in the attribute form designer.
-    2. Define a visibility expression for the group (for example, display the group only when a feature is marked as sick).
-    3. Add conditional attribute fields into the container group.
+
+    **Example: Accessing the status of tree species**
+
+    *Some of them might have a disease and you have a list of possible diseases.*
+
+    1. Create a group.
+
+    2. Define a visibility expression for the group.
+    *Eg. Only if the tree is marked as "sick", the field "disease" will appear.*
+
+    3. Add the field that is to be shown only after the expression criteria is set into the group.
+    *Eg. We will add our "type of disease" field into the group.*
 
 !![Configuration of a group box that will only be shown if the checkbox "disease" is checked.](../../assets/images/conditional_visibility_configuration.png)
 
@@ -260,10 +223,9 @@ Use conditional visibility when specific attributes are required only under cert
 ![type:video](../../assets/videos/conditional_visibility.webm)
 
 ## Conditional Row Styling
-:material-monitor: Project Manager
 
-QField supports QGIS conditional row styling to provide visual feedback in list views (such as identify results or relation lists).
-Use expressions to change background colors, text colors, and font styles based on feature data.
+QField supports QGIS's conditional row styling, providing immediate visual feedback when browsing features via list views (such as identify results or relation lists).
+You can use expressions to dynamically change the background color, text color, and font properties (italic, underline, strikeout) of individual items in the feature list based on their data.
 
 !!! Note
     QField supports full row styling in feature lists.
@@ -283,18 +245,12 @@ Use expressions to change background colors, text colors, and font styles based 
 
 !![](../../assets/images/row_conditional_formatting_qgis.png)
 
-:material-tablet: Fieldwork
-
-When viewing feature lists in QField (such as identify results or relation lists), items automatically apply defined conditional formatting rules.
-
-!![](../../assets/images/row_conditional_formatting_qfield.png)
-
 ## Define Constraints
-:material-monitor: Project Manager
 
-Attach expression rules as attribute constraints.
-Features require satisfying all constraints before saving edits.
-Add custom description messages to inform users when constraints fail.
+Attribute fields can have constraints attached.
+Constraints are rules in the form of expressions.
+Before a feature can be saved all constraints need to be met.
+A description can be added that is shown if a constraint is not satisfied.
 
 !![Configuration of a constraint within a range](../../assets/images/constraint_configuration.png)
 
@@ -310,7 +266,6 @@ Examples of constraint expressions:
     ```
 
 ## Define Default Values
-:material-monitor: Project Manager
 
 Configure default values to pre-fill attribute forms when digitizing new features.
 Default values remain editable in the form unless fields are locked.
