@@ -125,12 +125,24 @@ In the **Changes** section, a delta status is set to `CONFLICT` when:
 
 **What overwrites what?**
 
-QFieldCloud resolves these conflicts based on the project's conflict resolution setting.
+QFieldCloud resolves concurrent feature edits based on the project's **Overwrite conflicts** setting:
 
-- **Last Wins (Default):** QFieldCloud compares the timestamps of the conflicting changes.
-    The change with the most recent timestamp overwrites any previous changes to the same attributes.
-    The older change is effectively discarded in favor of the newer one, though it remains in the history.
-- **Manual:** No changes are overwritten automatically. The conflict is flagged, and the project administrator must manually select which version to apply.
+- **Last Wins (Default):** QFieldCloud compares the timestamps of conflicting changes. The change with the most recent timestamp overwrites earlier changes to the same attributes, while older changes remain recorded in the history.
+- **Manual:** No changes are overwritten automatically. The conflict is flagged as `CONFLICT`, and a project administrator or manager must manually select which version to apply.
+
+**Handling Unique Constraint Violations**
+
+When a field is configured with a **Unique** constraint in QGIS, administrators can control how `delta_apply` jobs handle duplicate values using the **Unique constraint delta behavior** option in the project **Settings** page:
+
+- **Create a conflict (Default):** Before applying changes, QFieldCloud checks incoming created and modified features against existing unique-constrained fields. If a duplicate value is detected, the conflicting delta is marked as `CONFLICT` (identifying the conflicting attribute and value), while non-conflicting deltas in the same batch continue to apply.
+- **Let the QGIS default behavior apply:** QFieldCloud delegates unique constraint handling directly to QGIS:
+  - **Created features:** QGIS automatically alters duplicate values to make them unique (for example, appending `_1` to text strings or incrementing numeric values) and applies the delta.
+  - **Updated (patched) features:** QGIS does not automatically rename modified attribute values. If the underlying data provider (such as GeoPackage or PostGIS) enforces a unique constraint, the commit fails and affected deltas remain `NOT_APPLIED`.
+
+!![](../../assets/images/unique_constraint_delta_behavior.png)
+
+!!! Note
+    When **Unique constraint delta behavior** is set to **Create a conflict**, unique constraint violations always raise a `CONFLICT` status—even if **Overwrite conflicts** (*Last Wins*) is enabled on the project—preventing silent data modifications or failed database commits.
 
 **Preventing Conflicts**
 
