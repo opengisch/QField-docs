@@ -3,240 +3,235 @@ title: Digitize and edit
 tx_slug: documentation_fieldwork_digitize
 ---
 
-# Digitize and edit
+# Digitize and Edit
 
-With QField you can digitize, edit and delete points, lines and polygons and their corresponding attributes while being in the field.
-If you only want to edit your attributes, it is enough to stay in **Browse Mode**.
-If you, however, want to add a new object or edit the geometry of an existing one, you will have to switch to **Digitize Mode**.
+QField allows you to digitize, edit, and delete point, line, and polygon features along with their attributes in the field.
+To modify only existing attribute values, stay in **Browse Mode**.
+To add new features or modify existing geometries, switch to **Digitize Mode**.
 
-## Adding new objects
+## Digitizing Mode and Active Layer Bar
+:material-tablet: Fieldwork
 
-### Adding point objects
+When you switch QField to **Digitize Mode**, a **Digitizing layer information bar** appears at the bottom of the map canvas:
+
+- **Active Layer Indicator:** Displays the layer name and symbol where newly digitized features will be saved.
+- **Quick Layer Switcher:** Tap the information bar to quickly select a different editable vector layer without opening the **Side Dashboard** or navigating through the map legend.
+
+!![](../../assets/images/digitizing_layer_information_overlay.png)
 
 !!! Workflow
+    1. Open the **Side Dashboard** and tap the pencil icon (<span style="color:green">:material-pen:</span>) to switch to **Digitize Mode**.
+    2. Check the **digitizing layer information bar** at the bottom of the screen to confirm the active target layer.
+    3. (Optional) Tap the information bar to switch to another editable layer before digitizing.
 
-    1. Navigate the crosshair in the center of the screen to where you want to add the point.
-    2. Click the <span style="color:green"> :material-plus-circle: </span> at the lower right of the screen to add a new point.
-        (Optional): You can use the **lock to position** button from the pie menu to force the crosshair to take the point directly at your position - if you have enabled your position.
+## Adding New Objects
+:material-tablet: Fieldwork
+
+### Adding Point Objects
+
+!!! Workflow
+    1. Move the map crosshair to the target location where you want to add the point.
+    2. Tap <span style="color:green">:material-plus-circle:</span> in the lower-right corner to create the point feature.
+        (Optional) Enable **Lock to position** in the GNSS menu to snap the crosshair directly to your current GNSS location.
 
         !![](../../assets/images/lock_to_position_icon.png,200px)
 
-    3. (Optional): You can click the red <span style="color:red"> **X**</span> to cancel the current addition.
+    3. (Optional) Tap the red <span style="color:red">**X**</span> to cancel creating the feature.
 
-### Adding line or polygon objects
+### Adding Line or Polygon Objects
 
 !!! Workflow
-
-    1. Navigate the crosshair in the center of the screen to where you want to start the line or the polygon.
-    2. Click the <span style="color:green"> **:material-plus-circle:**</span> at the lower right of the screen to add the starting point.
-    3. To form your line or polygon tap on the <span style="color:green"> **:material-plus-circle:**</span> each time you want to add a new point.
-    4. (Optional) Click the <span style="color:red"> **:material-minus:**</span> to remove the last added one.
-
-    5. Click on the <span style="color:green"> **:material-check:**</span> to finish your edit.
-    You need to add at least 2 nodes for line features and 3 for polygons.
-
-    6. (Optional): You can click the <span style="color:red"> **X**</span> to cancel the current feature creation.
-
+    1. Move the map crosshair to the starting position of the line or polygon.
+    2. Tap <span style="color:green">**:material-plus-circle:**</span> in the lower-right corner to place the first vertex.
+    3. Pan the map crosshair to each subsequent vertex position and tap <span style="color:green">**:material-plus-circle:**</span> to add vertices.
+    4. (Optional) Tap <span style="color:red">**:material-minus:**</span> to undo the last added vertex.
+    5. Tap <span style="color:green">**:material-check:**</span> to finish digitizing the geometry (requires at least 2 vertices for lines and 3 vertices for polygons).
+    6. (Optional) Tap the red <span style="color:red">**X**</span> to cancel creating the feature.
 
     ![type:video](../../assets/videos/collect_features.mp4)
 
-### Additional editing settings
+### Additional Editing Settings
 
-There are other more advanced settings, which you can enable to make your data collection more efficient:
+Configure hardware and touch shortcuts to speed up field data collection:
 
-- **Use volume keys to digitize**: If you want to avoid to have to tap on your device for every point you can enable this option to add and remove points using the volume keys.
-**Note:** This feature is only available for Android Devices
-- **Allow finger tap on canvas to add vertices**: If you want to use your finger to add points as well rather than having to press the button the whole time, you can activate this option.
+- **Use volume keys to digitize:** Use physical device volume buttons to add and remove vertices without tapping the screen *(Android only)*.
+- **Allow finger tap on canvas to add vertices:** Tap directly anywhere on the map canvas to place vertices instead of using the crosshair button.
 
 !!! Workflow
-
-    1. To enable both options, open the **Side Dashboard**
-    2. Tap on the 3-dotted menu at the top right.
-    3. Direct to *Settings* > *General*
+    1. Open the **Side Dashboard**.
+    2. Tap the three-dotted menu *(⋮)* at the top right and select **Settings > General**.
+    3. Toggle **Use volume keys to digitize** or **Allow finger tap on canvas to add vertices**.
 
     !![](../../assets/images/activate-digitize-with-volumen-keys.png)
 
-### Attribute form
+### Attribute Form
 
-After digitizing a geometry, the attribute form will appear allowing you to add attribute values for the new object.
+After finishing a geometry, QField opens the feature attribute form so you can populate attribute fields.
 
-#### Add values using the QR and barcode
+#### Add Values Using QR Codes and Barcodes
 
 !!! Workflow
-
-    1. Open the attribute form of your object.
-    2. Tap on the 3-dotted menu *(⋮)* next to the field which you wish to add or edit
-    3. You will see the following options
+    1. Open the feature attribute form.
+    2. Tap the three-dotted menu *(⋮)* next to the target attribute field.
+    3. Choose from the available field actions:
         - **Copy**
         - **Paste**
-        - **Scan Code:** You can also read NFC text tags with the Code Reader
-    !![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png,300px)
-    4. Click on the **Scan Code** option
-    !![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png,300px)
-    5. Scan the QR Code and click on the :material-check:
-    !![](../../assets/images/digitizing-with-qr-code-3-code-reader.png,300px)
-    !![](../../assets/images/digitizing-with-qr-code-4-it-worked.png,300px)
+        - **Scan Code:** Reads QR codes, barcodes, and NFC text tags.
 
-!!! note
-    Both the QR code camera and the NFC text tag detector are enabled by default when you open the Code Reader.
-    You have the flexibility to disable either of these features to ensure that your device's battery is not used unnecessarily by using hardware that you may not need at the moment.
+        !![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png,300px)
 
-#### Remember attribute values
+    4. Tap **Scan Code**.
 
-If you want to reuse values from previous entries, you can use the  <span style="color:green">:material-pin: </span>next to the different fields to make QField **remember** the last value, you added to a specific field.
+        !![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png,300px)
+
+    5. Scan the code or NFC tag and tap :material-check: to insert the value into the field.
+
+        !![](../../assets/images/digitizing-with-qr-code-3-code-reader.png,300px)
+        !![](../../assets/images/digitizing-with-qr-code-4-it-worked.png,300px)
+
+!!! Note
+    Both the camera code scanner and NFC tag detector are enabled by default when opening the Code Reader.
+    You can disable either sensor inside the reader dialog to conserve device battery.
+
+#### Remember Attribute Values
+
+To reuse attribute values across consecutive new features, tap the pin icon (<span style="color:green">:material-pin:</span>) next to any field so QField remembers the last entered value.
 
 ![type:video](../../assets/videos/remember_checkboxes.mp4)
 
 !!! Note
+    Remembered attribute values apply only when **adding** new features.
 
-    This only works when you **add** a new object.
-
-## Editing existing geometries
+## Editing Existing Geometries
+:material-tablet: Fieldwork
 
 !!! Workflow
+    1. Switch to **Digitize Mode** by opening the **Side Dashboard** and tapping <span style="color:green">:material-pen:</span>.
+    2. Tap the existing feature on the map canvas to identify it.
+    3. Open the feature form and tap the **Edit Geometry** button.
+    4. Select a geometry editing tool from the bottom toolbar:
+        - **Vertex Editor Tool:** Move, add, or delete individual vertices on existing geometries.
+        - **Split Tool:** Split a line or polygon feature into two separate features inheriting the original attributes.
+        - **Reshape Tool:** Modify line or polygon boundaries by drawing a reshaping line across or along the feature.
+        - **Eraser Tool:** Erase parts of a polygon or carve holes inside an existing geometry.
+        - **Ring Tool:** Create an interior ring (donut hole) inside a polygon, with an option to fill the hole with a new polygon feature.
 
-    1. Switch to the **Digitize Mode:** Open the **Side Dashboard** and press the <span style="color:green">:material-pen: </span>
-    2. Go back to the map canvas and find the object you wish to edit.
-    3. Tap on the object you wish to edit.
-    4. Tap on the **Edit Button**
-    5. Now you will have the option to choose between
-
-        - **A Editor tool:** The vertex editor allows you to move or delete pre-existing vertices as well as adding new vertices to geometries.
-        - **A Split tool:** The split tool allows you to split objects into two new objects.
-        The new object(s) will be filled with the same attributes as the original.
-        - **A Reshape tool:** You can reshape the geometry of your corner, by simply drawing a line on top or the object.
-        - **An Eraser tool:** If you need to make a hole or erase some parts of your object, you can use this tool.
-        - **Ring Tool:** Within an object, you can create a ring.
-        QField will ask whether you wish to add a new polygon as a replacement of the deleted one into the hole.
-
-### Editor tool
+### Editor Tool
 
 ![type:video](../../assets/videos/edit-tool.webm)
 
-### Reshape tool
+### Reshape Tool
 
 ![type:video](../../assets/videos/reshape-tool.webm)
 
-
-### Split tool
+### Split Tool
 
 ![type:video](../../assets/videos/split-tool.webm)
 
-### Eraser tool
+### Eraser Tool
 
 ![type:video](../../assets/videos/erase-reshape-tool.mp4)
 
-### Ring tool
+### Ring Tool
 
 ![type:video](../../assets/videos/ring-tool.webm)
 
-## Merging features
+## Merging Features
+:material-tablet: Fieldwork
 
-QField allows you to merge objects and their geometries to become one.
+Combine multiple selected features on the same layer into a single merged geometry.
 
 !!! Workflow
+    1. Tap a feature on the map canvas to identify it.
+    2. Long-press the feature in the identification list to enter multi-selection mode.
+    3. Tap additional features to add them to your selection.
+    4. Tap the three-dotted menu *(⋮)* in the top-right corner and select **Merge Selected Features**.
 
-    1. Tap on the first object you want to merge.
-    2. Long-Press on it and select it
-    3. Add as many more as you want to merge.
-    4. Open the 3-dotted menu on the top right.
-    5. Click on **Merge Selected Features**.
     !![Multi-Select](../../assets/images/multi-select-actions.png)
 
-## Freehand digitizing
+## Freehand Digitizing
+:material-tablet: Fieldwork
 
-If you are working with a stylus, you can draw freehand.
-The mode is available for lines and polygons.
-You can also use them to edit the existing geometries of other objects.
+When using a stylus or mouse on line or polygon layers, QField supports freehand drawing to create or reshape geometries smoothly.
 
-The freehand digitizing mode is activated through a new toolbar button which appears when QField is set to editing mode and a stylus pen or a mouse is hovering the map canvas while a line or polygon vector is selected.
+Freehand digitizing is toggled via the freehand toolbar button, which appears automatically in **Digitize Mode** when a stylus pen or mouse hovers over the map canvas while a line or polygon layer is active.
 
 ![type:video](../../assets/videos/freehand-digitizing.mp4)<!-- markdown-link-check-disable-line -->
 
 ## Snapping
+:material-tablet: Fieldwork
 
-When adding new objects it is possible to enable the snapping tool, which allows you to snap new objects to the boundaries or corner points of existing ones.
+Enable snapping in **Digitize Mode** to align new vertices precisely to existing feature vertices or segments.
 
 !!! Workflow
+    1. Switch to **Digitize Mode**.
+    2. Start adding a new feature or editing an existing geometry to reveal the digitizing options button (:material-pen:) in the top-left corner below the **Side Dashboard** button.
+    3. Tap :material-pen: and toggle the snapping icon (:material-horseshoe:).
 
-    1. Change to the **Digitize Mode**.
-    2. Once activated on the top left below the **Side Dashboard** a :material-pen: icon becomes visible.
-    3. Open an existing or add a new object to the map.
-    3. Click on the :material-pen: and enable the :material-horseshoe:
     !![Snapping](../../assets/images/snapping.png)
 
 !!! Note
+    Snapping tolerances and target layers follow the snapping configuration defined in your QGIS project.
+    Read more in the [Project Snapping Documentation](../../how-to/data-collection/digitize.md#snapping).
 
-    The level of snapping depends on the rules that were set in the QGIS project.
-    You can read more about this [here](../../how-to/data-collection/digitize.md#snapping)
+## Snap to Common Angle
+:material-tablet: Fieldwork
 
-## Snap to common angle
-
-You can snap to an angle of your choice.
+Constrain line and polygon segments to predefined angles while digitizing.
 
 !!! Workflow
+    1. Switch to **Digitize Mode** and start adding a line or polygon feature (:material-plus-circle:).
+    2. Tap :material-pen: in the top-left corner and long-press the **Angle Symbol**.
+    3. Select a predefined angle (`10°`, `15°`, `30°`, `45°`, or `90°`) and tap it to activate angle snapping.
+    QField maintains the angle lock relative to the previous segment across subsequent vertices.
 
-    1. Change to the **Digitize Mode**.
-    2. Once activated on the top left below the **Side Dashboard** a :material-pen: icon becomes visible.
-    2. **Add** a new line or polygon object by pressing the :material-plus-circle:.
-    3. Click on the :material-pen: and long-press on the **Angle Symbol**.
-    4. Select amongst one of the pre-defined angles: 10°, 15°, 30°, 45°, and 90° and enable the function by tapping on the angle.
-    QField will remember the angle relative to the last segment situation for consistent snapping behaviour during subsequent edits.
     ![type:video](../../assets/videos/snap-to-common-angles.mp4)
 
-## Topological editing
+## Topological Editing
+:material-tablet: Fieldwork
 
-Topological editing corresponds to that two or more objects with shared boundaries can be modified together to avoid gaps in between them.
-Whether you have this enabled in your project, depends on the settings that were defined in the underlying QGIS project.
-Below is an example what this looks like:
+When topological editing is enabled in your QGIS project, moving shared vertices or boundaries automatically updates adjacent connected features to prevent gaps and overlaps.
+
 ![type:video](../../assets/videos/edit_topo.webm)
 
-## Editing multiple attributes
+## Editing Multiple Attributes
+:material-tablet: Fieldwork
 
-You can edit the attributes of multiple objects at once.
+Update attribute values across multiple features simultaneously.
 
 !!! Workflow
+    1. Identify features on the map canvas and long-press an entry to enter multi-selection mode.
+    2. Select all additional features you want to update.
+    3. Open the multi-edit attribute form, modify the desired fields, and tap :material-check: to apply changes to all selected features.
 
-    1. Long-press on one object and select
-    2. Add as many others as you want to edit.
-    3. Click on one of the features and edit the attribute(s) that you want to edit.
-    4. Tap the :material-check: to save your edits.
-    5. Now all the attributes of the selected features will have updated.
     ![type:video](../../assets/videos/multi_editor.webm)
 
-## Copy, cut and paste
+## Copy, Cut, and Paste
+:material-tablet: Fieldwork
 
-You have the possibility to copy, cut and paste your attributes from one layer to another.
-This function is achieved by attribute matching.
-If there are any matching attributes in the target layer, the copied feature will copy the values where fields are matching while others non-matching fields will remain blank.
-The same applies when cutting a feature from one layer to another.
-The geometry type does not matter.
+Copy or cut features and paste them into the same layer or a different target layer regardless of geometry type.
+QField automatically maps values between fields with matching attribute names while leaving unmatched fields blank.
 
-**Check out the video to see the copy, paste function in action.**
 ![type:video](../../assets/videos/copy_paste.webm)
 
-## Delete features
+## Delete Features
+:material-tablet: Fieldwork
 
 !!! Workflow
+    1. Select one or more features by opening a feature attribute form or using multi-selection in the identification list.
+    2. Tap the three-dotted menu *(⋮)*.
+    3. Select **Delete feature(s)** and confirm deletion.
 
-    1. Tap on an existing feature and select it by either
-        - Opening the attribute form of one object
-        - Long-pressing on the identified object(s).
-    2. Open the **3-dotted menu**
-    3. Select **Delete feature(s)**
     !![](../../assets/images/delete-single-feature.png)
     !![](../../assets/images/delete-multiple-features.png)
 
 ## Geofencing
+:material-tablet: Fieldwork
 
-QField has a built-in geofencing functionality that can alert or inform users when the position provided by their GNSS device enters and/or leaves areas defined through polygon features.
-Digitizing of new features can also be prohibited when a geofencing alarm is turned on.
-Defining geofenced areas on QGIS happens with the help of the QFieldSync plugin.
+QField includes built-in geofencing alerts that notify you when your GNSS position enters or exits designated polygon areas configured via the QFieldSync plugin in QGIS.
 
-When QField turns its geofencing alert on, a glowing red circle will appear at the bottom right corner of your screen.
-The message will stay until you have left the prohibited area.
-If your device supports vibration, it will also vibrate as long as you are in the area.
+When a geofencing alert triggers, a glowing red indicator appears in the bottom-right corner of the screen (accompanied by device vibration if supported) until you leave the restricted zone.
 
 ![type:video](../../assets/videos/geofencing-alert.webm)
 
-If the project was prepared in such a way that prevents you from digitizing in the prohibited area, you will notice that QField's digitizing toolbar will disappear while in alert mode to clearly inform users of the ongoing prohibition and avoid accidental data entry.
+If your project is configured to prohibit digitizing inside geofenced zones, QField automatically hides the digitizing toolbar while inside the restricted area to prevent accidental data entry.
