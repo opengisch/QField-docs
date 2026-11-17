@@ -56,6 +56,7 @@ nav:
       - QFieldCloud:
           - get-started/tutorials/get-started-qfc.md
           - get-started/tutorials/concepts.md
+          - get-started/tutorials/permissions.md
           - get-started/tutorials/create-project-qfc.md
           - get-started/tutorials/advanced-setup-qfc.md
           - get-started/storage-qfc.md
