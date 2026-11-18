@@ -132,17 +132,20 @@ QFieldCloud resolves concurrent feature edits based on the project's **Overwrite
 
 **Handling Unique Constraint Violations**
 
-When a field is configured with a **Unique** constraint in QGIS, administrators can control how `delta_apply` jobs handle duplicate values using the **Unique constraint delta behavior** option in the project **Settings** page:
+When a field is configured with a **Unique** constraint in QGIS, administrators can control how `delta_apply`
+jobs handle conflicting values using the **Unique constraint delta behavior** option in the project **Settings** page:
 
-- **Create a conflict (Default):** Before applying changes, QFieldCloud checks incoming created and modified features against existing unique-constrained fields. If a duplicate value is detected, the conflicting delta is marked as `CONFLICT` (identifying the conflicting attribute and value), while non-conflicting deltas in the same batch continue to apply.
+- **Create a conflict (Default):** Before applying changes, QFieldCloud checks incoming created and modified features against existing unique-constrained fields.
+    If a duplicate value is detected, the conflicting delta is marked as `CONFLICT` (identifying the conflicting attribute and value),
+    while non-conflicting deltas in the same batch continue to apply.
 - **Let the QGIS default behavior apply:** QFieldCloud delegates unique constraint handling directly to QGIS:
-  - **Created features:** QGIS automatically alters duplicate values to make them unique (for example, appending `_1` to text strings or incrementing numeric values) and applies the delta.
-  - **Updated (patched) features:** QGIS does not automatically rename modified attribute values. If the underlying data provider (such as GeoPackage or PostGIS) enforces a unique constraint, the commit fails and affected deltas remain `NOT_APPLIED`.
+    QGIS automatically alters duplicate values to make them unique (for example, appending `_1` to text strings or incrementing numeric values) and applies the delta.
 
-!![](../../assets/images/unique_constraint_delta_behavior.png)
+!![Screen of the Unique constraint delta behavior field selection, in the QFieldCloud page of a project](../../assets/images/unique_constraint_delta_behavior.png)
 
 !!! Note
-    When **Unique constraint delta behavior** is set to **Create a conflict**, unique constraint violations always raise a `CONFLICT` status—even if **Overwrite conflicts** (*Last Wins*) is enabled on the project—preventing silent data modifications or failed database commits.
+    When **Unique constraint delta behavior** is set to **Create a conflict**, unique constraint violations always raise a `CONFLICT` status,
+    even if **Overwrite conflicts** (*Last Wins*) is enabled on the project - preventing silent data modifications or failed database commits.
 
 **Preventing Conflicts**
 
