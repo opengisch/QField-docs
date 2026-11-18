@@ -106,7 +106,7 @@ Newly registered users will see an empty project table.
 !!! Tip
     **Synchronize Directly from the Project List**
 
-    You do nott need to open a project in QGIS before synchronizing it with QFieldCloud.
+    You do not need to open a project in QGIS before synchronizing it with QFieldCloud.
 
     In the QFieldSync Project Overview list, select any locally stored project and click the Synchronize button to push or pull changes directly without loading the project in the QGIS canvas first.
     This is especially useful when you need to synchronize multiple projects at the end of a work session.
