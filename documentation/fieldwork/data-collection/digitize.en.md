@@ -10,22 +10,20 @@ To modify only existing attribute values, stay in **Browse Mode**.
 To add new features or modify existing geometries, switch to **Digitize Mode**.
 
 ## Digitizing Mode and Active Layer Bar
-:material-tablet: Fieldwork
 
-When you switch QField to **Digitize Mode**, a **Digitizing layer information bar** appears at the bottom of the map canvas:
+When you switch QField to **Digitize Mode**, a **Digitizing information bar** appears at the bottom of the map canvas:
 
-- **Active Layer Indicator:** Displays the layer name and symbol where newly digitized features will be saved.
-- **Quick Layer Switcher:** Tap the information bar to quickly select a different editable vector layer without opening the **Side Dashboard** or navigating through the map legend.
+- **Active Layer Indicator:** Displays the active layer where your newly digitized features will be saved.
+- **Quick Layer Switcher:** You can quickly switch to a different editable layer without opening the **Side Dashboard**.
 
 !![](../../assets/images/digitizing_layer_information_overlay.png)
 
 !!! Workflow
     1. Open the **Side Dashboard** and tap the pencil icon (<span style="color:green">:material-pen:</span>) to switch to **Digitize Mode**.
-    2. Check the **digitizing layer information bar** at the bottom of the screen to confirm the active target layer.
+    2. Check that the **Digitizing Information bar** corresponds to your the layer which you want to add to.
     3. (Optional) Tap the information bar to switch to another editable layer before digitizing.
 
 ## Adding New Objects
-:material-tablet: Fieldwork
 
 ### Adding Point Objects
 
@@ -52,27 +50,27 @@ When you switch QField to **Digitize Mode**, a **Digitizing layer information ba
 
 ### Additional Editing Settings
 
-Configure hardware and touch shortcuts to speed up field data collection:
+You can configure hardware and touch shortcuts to speed up your field data collection:
 
 - **Use volume keys to digitize:** Use physical device volume buttons to add and remove vertices without tapping the screen *(Android only)*.
 - **Allow finger tap on canvas to add vertices:** Tap directly anywhere on the map canvas to place vertices instead of using the crosshair button.
 
 !!! Workflow
     1. Open the **Side Dashboard**.
-    2. Tap the three-dotted menu *(⋮)* at the top right and select **Settings > General**.
+    2. Tap the **3-dotted menu (⋮)** at the top right and select **Settings > General**.
     3. Toggle **Use volume keys to digitize** or **Allow finger tap on canvas to add vertices**.
 
     !![](../../assets/images/activate-digitize-with-volumen-keys.png)
 
 ### Attribute Form
 
-After finishing a geometry, QField opens the feature attribute form so you can populate attribute fields.
+After finishing a geometry, feature attribute form will open so you can populate attribute fields.
 
 #### Add Values Using QR Codes and Barcodes
 
 !!! Workflow
     1. Open the feature attribute form.
-    2. Tap the three-dotted menu *(⋮)* next to the target attribute field.
+    2. Tap the **3-dotted menu (⋮)** next to the target attribute field.
     3. Choose from the available field actions:
         - **Copy**
         - **Paste**
@@ -91,7 +89,7 @@ After finishing a geometry, QField opens the feature attribute form so you can p
 
 !!! Note
     Both the camera code scanner and NFC tag detector are enabled by default when opening the Code Reader.
-    You can disable either sensor inside the reader dialog to conserve device battery.
+    You can disable either of these features inside the reader dialog to conserve device battery.
 
 #### Remember Attribute Values
 
@@ -103,7 +101,6 @@ To reuse attribute values across consecutive new features, tap the pin icon (<sp
     Remembered attribute values apply only when **adding** new features.
 
 ## Editing Existing Geometries
-:material-tablet: Fieldwork
 
 !!! Workflow
     1. Switch to **Digitize Mode** by opening the **Side Dashboard** and tapping <span style="color:green">:material-pen:</span>.
@@ -137,7 +134,6 @@ To reuse attribute values across consecutive new features, tap the pin icon (<sp
 ![type:video](../../assets/videos/ring-tool.webm)
 
 ## Merging Features
-:material-tablet: Fieldwork
 
 Combine multiple selected features on the same layer into a single merged geometry.
 
@@ -145,12 +141,11 @@ Combine multiple selected features on the same layer into a single merged geomet
     1. Tap a feature on the map canvas to identify it.
     2. Long-press the feature in the identification list to enter multi-selection mode.
     3. Tap additional features to add them to your selection.
-    4. Tap the three-dotted menu *(⋮)* in the top-right corner and select **Merge Selected Features**.
+    4. Tap the **3-dotted menu (⋮)** in the top-right corner and select **Merge Selected Features**.
 
     !![Multi-Select](../../assets/images/multi-select-actions.png)
 
 ## Freehand Digitizing
-:material-tablet: Fieldwork
 
 When using a stylus or mouse on line or polygon layers, QField supports freehand drawing to create or reshape geometries smoothly.
 
@@ -159,7 +154,6 @@ Freehand digitizing is toggled via the freehand toolbar button, which appears au
 ![type:video](../../assets/videos/freehand-digitizing.mp4)<!-- markdown-link-check-disable-line -->
 
 ## Snapping
-:material-tablet: Fieldwork
 
 Enable snapping in **Digitize Mode** to align new vertices precisely to existing feature vertices or segments.
 
@@ -175,7 +169,6 @@ Enable snapping in **Digitize Mode** to align new vertices precisely to existing
     Read more in the [Project Snapping Documentation](../../how-to/data-collection/digitize.md#snapping).
 
 ## Snap to Common Angle
-:material-tablet: Fieldwork
 
 Constrain line and polygon segments to predefined angles while digitizing.
 
@@ -188,11 +181,12 @@ Constrain line and polygon segments to predefined angles while digitizing.
     ![type:video](../../assets/videos/snap-to-common-angles.mp4)
 
 ## Topological Editing
-:material-tablet: Fieldwork
 
 When topological editing is enabled in your QGIS project, moving shared vertices or boundaries automatically updates adjacent connected features to prevent gaps and overlaps.
 
 ![type:video](../../assets/videos/edit_topo.webm)
+
+The specific topological editing rules must be set in the [QGIS project](../../how-to/data-collection/digitize.md#topological-editing).
 
 ## Editing Multiple Attributes
 :material-tablet: Fieldwork
