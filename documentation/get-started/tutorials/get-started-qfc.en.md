@@ -18,7 +18,7 @@ You can manage teams, collaborate within organizations, assign different editing
     2. (Optional) If you received a referral code, enter it in the corresponding field.
         !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
-## QFieldCloud Overview
+## QFieldCloud overview
 
 Once registered, your personal QFieldCloud landing page will show all the projects that you have access to in the center of the window.
 In case that you have many projects, you can search in the search bar at the top of the page.
@@ -35,7 +35,7 @@ Before getting started, familiarize yourself with the [basic concepts](../tutori
 
 !![QFieldCloud projects overview](../../assets/images/overview_projects_qfcloud.png, 800px)
 
-### Filtering Projects
+### Filtering projects
 
 When managing a large number of cloud projects, you can refine your project list using the **Filters** dropdown button located next to the search bar.
 
@@ -55,7 +55,7 @@ When any filter option is active, clicking the **Clear** button immediately rese
 
 ![type:video](../../assets/videos/type_filters_1.webm)
 
-## Project Creation
+## Project creation
 
 There are several ways to create and initialize a new project in QFieldCloud depending on your workflow.
 You can convert an existing QGIS project, start from a blank template on the web, or clone an existing project.
@@ -81,7 +81,7 @@ The following steps show how to install the plugin and synchronize your data to 
     If you use a password in QGIS for the first time, QGIS prompts you to set a master password to manage all stored passwords.
     Read more about the master password in the [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/auth_system/auth_overview.html#master-password). <!-- markdown-link-check-disable-line -->
 
-## Project Overview in QFieldSync
+## Project overview in QFieldSync
 
 The QFieldSync project overview displays all QFieldCloud projects that you have access to from your account.
 The dialog includes the following interface elements:
@@ -114,7 +114,7 @@ Newly registered users will see an empty project table.
     ![type:video](../../assets/videos/qfieldsync_sync_from_project_list.webm)
 
 
-### Project Status
+### Project status
 
 Icons in the project overview indicate both the local storage state and cloud processing status of each project:
 
@@ -129,7 +129,7 @@ Icons in the project overview indicate both the local storage state and cloud pr
     - **Green Status:** The project is ready for field use.
         You can download the project to QField.
 
-### QField Project Settings
+### QField project settings
 
 After installing the QFieldSync plugin, a new section appears under _Project > Properties..._.
 Access these settings from the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} using the **Settings** icon.
@@ -148,7 +148,7 @@ Read more about supported vector formats in the [Advanced Setup Guide](advanced-
 !!! Important
     If you use experimental data sources without a primary key field (such as Shapefiles or GeoJSON), you must include a lowercase `fid` field as a primary key to uniquely identify each feature.
 
-### Project Upload
+### Project upload
 
 Once your project is configured in QGIS, upload it to QFieldCloud:
 
@@ -178,18 +178,18 @@ When you are ready for fieldwork, set up QField on your mobile device.
     3. Tap a project to download it to your device.
         !![Download](../../assets/images/getting_started_download_project.png,250px)
 
-### Advanced Project Searching and Filtering
+### Advanced project searching and filtering
 :material-tablet: Fieldwork
 
 To manage a large number of projects, QField features a search-and-filter panel directly on the QFieldCloud projects screen.
 The **Filter** button is located to the right of the project search bar.
 
-#### 1. Predefined Filter Presets
+#### 1. Predefined filter presets
 
 Quick preset buttons appear at the top of the filter panel (such as **My Own Projects** or **{org_name}'s projects**).
 Tapping a preset populates the criteria form and automatically filters the underlying list.
 
-#### 2. Form-Based Filtering Criteria
+#### 2. Form-based filtering criteria
 
 Refine your project search using the form fields in the filter pane:
 
@@ -203,7 +203,7 @@ Refine your project search using the form fields in the filter pane:
     if the project owner adds them as project collaborators.
     You do not need an organization account to collaborate on public projects.
 
-#### 3. Power-User Search Syntax
+#### 3. Power-User search syntax
 
 The main search bar allows users to type advanced filter parameters directly using key-value syntax.
 Key parameters are dynamically recognized and highlighted inside the text input box.
