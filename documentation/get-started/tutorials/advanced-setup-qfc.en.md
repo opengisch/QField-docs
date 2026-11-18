@@ -8,7 +8,7 @@ tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 ## Supported Vector Providers
 
 QFieldCloud officially supports **GeoPackage** and **PostGIS** layers for collaborative offline and online field editing.
-Other vector formats supported by QGIS may work for read-only display, but are not officially supported for delta synchronization.
+Other vector formats supported by QGIS may work for read-only display, but are not officially supported for synchronization.
 
 ## Synchronization Process
 
