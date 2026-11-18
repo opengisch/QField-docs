@@ -84,7 +84,7 @@ Exchange project files quickly between macOS and iOS devices using AirDrop:
     2. On your iOS device, save the received files into the `Imported Projects` folder in the **Files** app.
     3. After fieldwork, share the modified project folder back to your Mac via AirDrop.
 
-## 2. Importing Projects and Datasets
+## 2. Importing projects and datasets
 
 Beyond QFieldCloud, QField can import local and remote data through five options in the local file picker:
 
@@ -109,14 +109,14 @@ Re-importing a folder with the same name overwrites the existing copy in QField,
 !!! Note
     Feature additions, geometry edits, and deletions are written to the copied project inside QField's `Imported Projects` folder—not to the original source folder selected during import.
 
-### Importing a Compressed Project
+### Importing a compressed project
 
 Select **Import compressed project** to import a `.zip` archive containing a QGIS project. QField extracts the archive automatically into `Imported Projects`.
 
 For an already opened **local project**, you can also update its files from a `.zip` archive by opening the project folder view (via the folder-with-gear icon in the **Side Dashboard**), tapping the action button in the bottom-right corner, and selecting **Update project from archive**.
 **Note:** This option is disabled for QFieldCloud projects to preserve cloud synchronization integrity.
 
-### Importing Individual Datasets
+### Importing individual datasets
 
 Select **Import dataset(s)** to pick one or more standalone files via your device's file picker. QField copies the selected files into `Imported Datasets`.
 
@@ -129,7 +129,7 @@ Select **Import from URL** and enter a direct web link to a dataset or `.zip` pr
 
 !![QField import URL dialog](../../assets/images/storage-import-url.png)
 
-## 3. Exporting Modified Projects and Datasets
+## 3. Exporting modified projects and datasets
 
 After completing fieldwork, export modified projects and datasets from QField using one of the four methods:
 
@@ -140,7 +140,7 @@ After completing fieldwork, export modified projects and datasets from QField us
 
 !![QField export actions](../../assets/images/storage-export-actions.png)
 
-### Exporting a Project Folder or Individual Dataset
+### Exporting a project Folder or individual dataset
 
 Select **Export to folder...** from the **3-dotted menu (⋮)** next to the project folder or dataset to copy the modified files to a chosen directory on your device.
 This workflow integrates with third-party synchronization tools (such as [Syncthing](https://docs.syncthing.net/intro/getting-started.html)) and cloud storage providers supporting Android's Scoped Storage provider (such as Nextcloud).
@@ -148,7 +148,7 @@ This workflow integrates with third-party synchronization tools (such as [Syncth
 !!! Note
     Exporting to a destination folder overwrites existing files with matching names.
 
-### Sending a Compressed Project Folder
+### Sending a compressed project folder
 
 Select **Compress project and send to...** (or **Send compressed folder to**) to package a project folder or selected subfolder (such as a `DCIM` photo folder) into a `.zip` archive and send it via email, messaging apps, or cloud storage.
 
@@ -157,11 +157,11 @@ You can access this action from two locations:
 - **Local File Browser:** Tap the **3-dotted menu (⋮)** next to the folder in `Imported Projects`.
 - **Active Project Folder View:** Open any active local or QFieldCloud project, open the **Side Dashboard**, tap the project folder icon (folder with a gear), and tap the action button in the bottom-right corner.
 
-### Sending an Individual Dataset (Android Only)
+### Sending an individual dataset (Android Only)
 
 Tap the **3-dotted menu (⋮)** next to the dataset file and select **Send to...** to share the modified dataset directly through apps such as Gmail, Google Drive, Dropbox, or Nextcloud.
 
-### Exporting Files or Backups from a QFieldCloud Project
+### Exporting files or backups from QFieldCloud projects
 
 Even when working with a QFieldCloud project, you can export the entire project folder as a compressed backup (or upload it to WebDAV) as well as export individual offline datasets and attachments directly from QField.
 This is especially useful as an offline safety backup before synchronizing changes.
