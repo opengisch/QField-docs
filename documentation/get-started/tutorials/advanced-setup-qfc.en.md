@@ -65,7 +65,6 @@ When configuring layer relations, create a dedicated UUID field and use it as th
 Using a [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549) ensures globally unique identifiers across all offline devices. <!-- markdown-link-check-disable-line -->
 
 !!! Workflow
-    :material-monitor: Desktop preparation
 
     1. Create a new project in QGIS.
     2. Create GeoPackage layers and save them in the same folder as your QGIS project.
@@ -135,7 +134,7 @@ Find more information in the [QFieldCloud technical reference](../../reference/q
 
 ## Restriction of Project Files
 
-To prevent collaborators from accidentally altering core project configurations, project administrators can enable file restrictions on QFieldCloud.
+To prevent collaborators from altering project configurations, project administrators can enable file restrictions on QFieldCloud.
 
 !!! Workflow
     1. Open your project in QFieldCloud and navigate to **Settings**.
@@ -193,7 +192,7 @@ You can receive notifications for the following events:
 - Project created or deleted
 - Project membership created or deleted
 
-Notifications are sent only for actions initiated by other organization members or project collaborators.
+Notifications are only sent for actions initiated by other organization members or project collaborators.
 
 ## Enhance Your Project with the "Optimized Packager"
 

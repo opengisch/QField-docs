@@ -127,7 +127,7 @@ In the **Changes** section, a delta status is set to `CONFLICT` when:
 
 QFieldCloud resolves concurrent feature edits based on the project's **Overwrite conflicts** setting:
 
-- **Last Wins (Default):** QFieldCloud compares the timestamps of conflicting changes. The change with the most recent timestamp overwrites earlier changes to the same attributes, while older changes remain recorded in the history.
+- **Last Wins (Default):** QFieldCloud compares the timestamps of conflicting changes. The change with the most recent timestamp overwrites earlier changes to the same attributes, while older changes remain recorded in the **Changes** history.
 - **Manual:** No changes are overwritten automatically. The conflict is flagged as `CONFLICT`, and a project administrator or manager must manually select which version to apply.
 
 **Handling Unique Constraint Violations**
