@@ -3,12 +3,13 @@ title: Get started
 long_title: Get started with QFieldCloud
 tx_slug: documentation_get-started_tutorials_get-started-qfc
 ---
+
 # Get started with QFieldCloud
 
 ## What is QFieldCloud
 
-QFieldCloud is the cloud service that allows seamless synchronization of your data between your mobile device for fieldwork and your desktop workstation.
-You can manage teams, work in organizations, assign different editing permissions, and much more.
+QFieldCloud is the cloud service that enables seamless data synchronization between your mobile device for fieldwork and your desktop workstation.
+You can manage teams, collaborate within organizations, assign different editing permissions, and centralize project storage.
 
 ## Register to [QFieldCloud](https://app.qfield.cloud/accounts/signup/)
 
@@ -17,7 +18,6 @@ You can manage teams, work in organizations, assign different editing permission
     2. (Optional) If you received a referral code, enter it in the corresponding field.
         !![Registration form](../../assets/images/qfieldcloud_registration.png,250px)
 
-
 ## QFieldCloud Overview
 
 Once registered, your personal QFieldCloud landing page will show all the projects that you have access to in the center of the window.
@@ -25,7 +25,7 @@ In case that you have many projects, you can search in the search bar at the top
 It is also possible to create a new empty project from this menu.
 All further configuration of that project, however, needs to be done inside QGIS.
 Under your profile name, you are able to edit and manage your account details and get an overview of what organizations you are a member of, as well as what collaborations you have.
-Finally, if you have subscribed to a plan through [QFieldCloud](https://qfield.cloud/pricing), you can manage it from here.
+Finally, if you have subscribed to a plan through [QFieldCloud subscriptions plan pricing](https://qfield.cloud/pricing), you can manage it from here.
 
 Before getting started, familiarize yourself with the [basic concepts](../tutorials/concepts.md) of QFieldCloud.
 
@@ -60,8 +60,7 @@ When any filter option is active, clicking the **Clear** button immediately rese
 There are several ways to create and initialize a new project in QFieldCloud depending on your workflow.
 You can convert an existing QGIS project, start from a blank template on the web, or clone an existing project.
 
-[Click here to read more about project creation](../../fieldwork/create-project.md)
-
+Read more in the [Project Creation Guide](../../fieldwork/create-project.md).
 
 ## From QFieldCloud to QGIS Desktop
 :material-monitor: Project Manager
@@ -86,23 +85,33 @@ The following steps show how to install the plugin and synchronize your data to 
 
 ## Project Overview in QFieldSync
 
-The project overview shows the projects that your account can access.
-The screen contains the following elements:
+The QFieldSync project overview displays all QFieldCloud projects accessible to your account.
+The dialog includes the following interface elements:
 
-- Current user underlined in blue
-- Current user underlined in blue.
-- The avatar on the top right leading to the sign-out page.
-- A cloud button to create a new project.
-- A refresh button on the right to update your project overview.
+- The active username underlined in blue at the top left.
+- Your user avatar in the top right corner to access account details or sign out.
+- A cloud button to create a new QFieldCloud project at the bottom left.
+- A refresh button on the right to reload your project list at the bottom right.
+
 !![Projects overview example in QFieldSync](../../assets/images/project_overview_all_colors_tooltip.png)
 
-Newly registered users will see an empty table.
-Double-click a project in the list to view and edit project properties.
+Newly registered users will see an empty project table.
+Click or double-click a project in the list to view and edit project properties.
 Click on a project name in the list to view and edit project properties.
+
+!!! Tip
+    **Synchronize Directly from the Project List**
+
+    You don't need to open a project in QGIS before synchronizing it with QFieldCloud.
+
+    In the QFieldSync Project Overview list, select any locally stored project and click the Synchronize button to push or pull changes directly without loading the project in the QGIS canvas first. This is especially useful when you need to synchronize multiple projects at the end of a work session.
+
+    ![type:video](../../assets/videos/qfieldsync_sync_from_project_list.webm)
+
 
 ### Project Status
 
-The icons indicate the cloud and local status of each project.
+Icons in the project overview indicate both the local storage state and cloud processing status of each project:
 
 - **Local status:**
     - ![Status](../../assets/images/cloud_project_remote.svg){Width="20px"} Indicates that only a remote cloud project exists.
@@ -129,13 +138,14 @@ You can adjust the following parameters in these settings:
 - Specify the layer that will be active for editing after selecting a [Map Theme](../../how-to/qfield-interface/map-interaction.md#map-themes)
 
 We recommend using GeoPackages, especially when collaborating in teams.
-See the [Advanced Setup Guide](advanced-setup-qfc.md) for more information about vector formats.
+Read more about supported vector formats in the [Advanced Setup Guide](advanced-setup-qfc.md).
+
 !!! Important
     If you use experimental data sources without a primary key field (such as Shapefiles or GeoJSON), you must include a lowercase `fid` field as a primary key to uniquely identify each feature.
 
 ### Project Upload
 
-Once configured, upload the project to QFieldCloud.
+Once your project is configured in QGIS, upload it to QFieldCloud:
 
 !!! Workflow
     1. Click the cloud icon with arrows in the QFieldSync toolbar.
@@ -164,7 +174,6 @@ When you are ready for fieldwork, set up QField on your mobile device.
         !![Download](../../assets/images/getting_started_download_project.png,250px)
 
 ### Advanced Project Searching and Filtering
-
 :material-tablet: Fieldwork
 
 To manage a large number of projects, QField features a search-and-filter panel directly on the QFieldCloud projects screen.
@@ -177,7 +186,7 @@ Tapping a preset populates the criteria form and automatically filters the under
 
 #### 2. Form-Based Filtering Criteria
 
-Fine-tune your project queries by filling out fields in the filter pane:
+Refine your project search using the form fields in the filter pane:
 
 - **Search term:** Selects every project title or description containing the provided term.
 - **Owner:** Displays a list of unique project owners available to your account in an editable dropdown menu.
@@ -204,7 +213,6 @@ Supported syntax tokens include:
 !![](../../assets/images/qfc_project_filters.png)
 
 ### Synchronization with QFieldCloud
-
 :material-tablet: Fieldwork
 
 QField will indicate whether your project has changes locally that are not yet uploaded to QFieldCloud or a new version of your project is available on QFieldCloud.
@@ -239,6 +247,6 @@ After completing field data collection, synchronize your changes back to QFieldC
 
         !![](../../assets/images/getting_started_actions.png,800px)
 
-Your changes are now available to all users with project access on the cloud.
+Your synchronized changes are now available to all collaborators with access to the project on QFieldCloud.
 
-Find more information in the [Advanced QFieldCloud Setup Guide](./advanced-setup-qfc.md) and [QFieldCloud Technical Reference](../../reference/qfieldcloud/workflow.md).
+Read more in the [Advanced QFieldCloud Setup Guide](./advanced-setup-qfc.md) and [QFieldCloud Technical Reference](../../reference/qfieldcloud/workflow.md).
