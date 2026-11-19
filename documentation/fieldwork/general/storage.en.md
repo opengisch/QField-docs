@@ -37,7 +37,7 @@ On both the Android and iOS devices, installing QField creates a folder called Q
 
 #### Transfer via USB-cable
 
-1. Connect both devices using a USB cable and follow the instructions on [how to transfer files between your computer and the android device.](https://support.google.com/android/answer/9064445?hl=en#zippy=%2Cwindows-computer)
+1. Connect both devices using a USB cable and follow the instructions on [how to transfer files between your computer and the android device.](https://support.google.com/android/answer/9064445?hl=en#zippy=%2Cwindows-computer) <!-- markdown-link-check-disable-line -->
 On most devices plugged into a computer via USB cable connection, the path will be `<drive>:/Android/data/ch.opengis.qfield/files/`.
 There, users will find both the *Imported Datasets* and *Imported Projects* folders within which the QGIS projects and datasets should be placed.
 Changes done to the project content and datasets are saved in the files found in these locations.
@@ -60,7 +60,7 @@ The advantage of using Google Drive is that both the source device and target de
 
 #### Share via Bluetooth
 
-Wireless transfer of files is also possible by [sharing files via a Bluetooth connection.](https://www.wikihow.com/Connect-Your-Android-Phone-to-a-Windows-PC-Using-Bluetooth)
+Wireless transfer of files is also possible by [sharing files via a Bluetooth connection.](https://www.wikihow.com/Connect-Your-Android-Phone-to-a-Windows-PC-Using-Bluetooth) <!-- markdown-link-check-disable-line -->
 
 ### iOS
 
@@ -76,7 +76,7 @@ Transferring files from MacBooks or iMacs to iPhone using a cable is not straigh
 
 #### iCloud (and other cloud storage services)
 
-An efficient way to synchronize projects is to use iCloud as a shared workspace to [download and upload project files.](https://support.apple.com/en-in/111764)
+An efficient way to synchronize projects is to use iCloud as a shared workspace to [download and upload project files.](https://support.apple.com/en-in/111764) <!-- markdown-link-check-disable-line -->
 It is not possible to import projects from folders inside the iOS QField application.
 Instead, the new project files have to be saved in the `Imported Projects` folder so that QField can access them.
 
@@ -167,7 +167,7 @@ You can access these actions via the dropdown action menu inside the project/dat
 
 When choosing the "Export to folder" action, you will be asked to pick a location where the content will be copied to.
 
-You can use this action to copy the content of modified projects or datasets into a folder on your device that can be accessed by third-party Synchronisation apps such as [Syncthing](https://docs.syncthing.net/intro/getting-started.html).
+You can use this action to copy the content of modified projects or datasets into a folder on your device that can be accessed by third-party Synchronisation apps such as [Syncthing](https://docs.syncthing.net/intro/getting-started.html). <!-- markdown-link-check-disable-line -->
 You can also directly copy content into cloud accounts of providers that support Android's Scoped Storage directory provider (eg. NextCloud).
 
 !!! note
