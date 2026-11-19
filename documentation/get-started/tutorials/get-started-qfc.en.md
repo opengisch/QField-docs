@@ -77,6 +77,7 @@ The following steps show how to install the plugin and synchronize your data to 
     3. Click the <span style="color:blue"> :material-cloud: </span>  in the QFieldSync toolbar to display the login screen:
         !![](../../assets/images/qfieldsync_login_dialog.png, 250 px)
     4. Enter your account credentials created during registration.
+
 !!! Warning
     If you use a password in QGIS for the first time, QGIS prompts you to set a master password to manage all stored passwords.
     Read more about the master password in the [QGIS documentation](https://docs.qgis.org/latest/en/docs/user_manual/auth_system/auth_overview.html#master-password). <!-- markdown-link-check-disable-line -->
@@ -119,10 +120,13 @@ Newly registered users will see an empty project table.
 Icons in the project overview indicate both the local storage state and cloud processing status of each project:
 
 - **Local status:**
+
     - ![Status](../../assets/images/cloud_project_remote.svg){Width="20px"} Indicates that only a remote cloud project exists.
     - ![Status](../../assets/images/cloud_project.svg){Width="20px"} Indicates that the cloud project is also stored locally.
+
 - **Cloud status:** Three color-coded statuses display the current state of your cloud project.
     A tooltip shows the status of each project.
+
     - **Red Status:** The project is invalid and not ready for field use.
         The status message on your QFieldCloud landing page provides details to address the issue.
     - **Brown Status:** The project is currently being updated or edited.
@@ -156,9 +160,10 @@ Once your project is configured in QGIS, upload it to QFieldCloud:
     1. Click the <span style="color:blue"> :material-cloud: </span> with arrows in the QFieldSync toolbar.
 
     Select your preferred upload method:
-      - **The Local file:** Replaces your cloud file with the new local version of the project.
-          When working with GeoPackages, the cloud file version is replaced by your local file version.
-      - **The Cloud file:** Amends your local datasets and replaces your local project file with the current cloud version.
+
+     - **The Local file:** Replaces your cloud file with the new local version of the project.
+         When working with GeoPackages, the cloud file version is replaced by your local file version.
+     - **The Cloud file:** Amends your local datasets and replaces your local project file with the current cloud version.
 
 
 You can now view your project and files on your [QFieldCloud project overview page](https://app.qfield.cloud/).
@@ -230,11 +235,12 @@ QField will indicate whether your project has changes locally that are not yet u
 There are two ways in which you can see whether your project is up-to-date with the version on QFieldCloud.
 
 - **Cloud Icon Badge:** A green bubble with an exclamation mark appears on the cloud button in the **Side Dashboard**.
+
 !![](../../assets/images/qfield_cloud_sync_status_1.png)
+
 - **Synchronize Project Card Badge:** A green badge appears on the right side of the **Synchronize project** section within the cloud synchronization.
 
 !![](../../assets/images/qfield_cloud_sync_status_2.png,350px)
-
 
 After completing field data collection, synchronize your changes back to QFieldCloud.
 
