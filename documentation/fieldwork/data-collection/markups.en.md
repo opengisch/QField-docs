@@ -7,10 +7,10 @@ tx_slug: documentation_fieldwork_markups
 
 Markups allow you to quickly sketch freehand notes, points of interest, lines, and highlighted areas directly on the map canvas without modifying your project's underlying GIS layers or schemas.
 
-Each markup item stores a geometry (point, line, or polygon), a color, and an optional text description. Markups are organized into **Markup Collections** and automatically saved as standard GeoJSON files inside your project directory.
+Each markup item stores a geometry (point, line, or polygon), a color, and an optional text description.
+Markups are organized into **Markup Collections** and automatically saved as standard GeoJSON files inside your project directory.
 
 ## Managing Markup Collections
-:material-tablet: Fieldwork
 
 When you open a project or dataset in QField, a **Default collection** is automatically available in the **Markups** section of the **Side Dashboard** (visible whenever at least one markup item exists or when **Digitize Mode** is active).
 
@@ -40,7 +40,6 @@ Long-press (or double-tap) a collection name in the **Markups** list to open its
 !![Markup collection properties dialog](../../assets/images/markups-collection-properties.png,350px)
 
 ## Drawing Markups on the Map
-:material-tablet: Fieldwork
 
 Markups are drawn freehand on the map canvas using your finger, a stylus, or a mouse.
 
@@ -72,9 +71,8 @@ QField automatically smooths freehand strokes and classifies each markup into on
 - **Polygon:** Draw a closed loop where the end of your stroke finishes near the starting point to automatically close and fill a polygon.
 
 ## Inspecting, Editing, and Moving Markups
-:material-tablet: Fieldwork
 
-Markup items behave like lightweight map features and can be inspected and updated after creation:
+Markup items behave like map features and can be inspected and updated after creation:
 
 !!! Workflow
     1. Tap any markup item on the map canvas (or select **Show features list** from its collection properties) to open the feature identification panel.
@@ -84,7 +82,7 @@ Markup items behave like lightweight map features and can be inspected and updat
 
         !![](../../assets/images/markups-editing-colors.png,800px)
 
-    3. To reposition a markup item, select it in the identification list, open the three-dotted menu *(⋮)*, and choose **Move Selected Feature(s)** (or **Delete Feature(s)** to remove it).
+    3. To reposition a markup item, select it in the identification list, open the **3-dotted menu (⋮)**, and choose **Move Selected Feature(s)** (or **Delete Feature(s)** to remove it).
 
         !![](../../assets/images/markups-actions.png,350px)
 
