@@ -195,16 +195,15 @@ There are two ways in which you can create projects, follow either Method 1 or M
     2. Click on **QFieldCloud Projects Overview**.
     3. Click **Create New Project**.
     4. Choose the first option **Convert the currently open project to a cloud project**.
-    !![](../../../assets/images/self_hosted/managing_organization_django_27.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_28.png,800px)
 
     5. Provide project details and select the organization.
     6. Click **Create**.
-    !![](../../../assets/images/self_hosted/managing_organization_django_28.png,800px)
+    !![](../../../assets/images/self_hosted/managing_organization_django_29.png,800px)
 
     7. Once completed, click **Ok**.
     8. The project will be listed in the **QFieldCloud Projects Overview**.
     9. In the Admin view, navigate to the **Projects** and inspect the project's information.
-    !![](../../../assets/images/self_hosted/managing_organization_django_29.png,800px)
 
 #### Method 2: Creating an Empty Project
 
