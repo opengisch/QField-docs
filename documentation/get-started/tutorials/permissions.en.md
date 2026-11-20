@@ -112,7 +112,8 @@ Each project can be configured as **Private** or **Public** when creating a proj
 
 In QFieldCloud, the status icon next to the project name indicates project visibility: a lock icon (🔒) represents a Private project, while an unadorned project title represents a Public project.
 
-- **Private Projects:** The project owner, organization owner, and organization admins are automatically assigned the **Admin** project role. Anyone else trying to access the project will be denied unless they are explicitly added as project collaborators.
+- **Private Projects:** The project owner, organization owner, and organization admins are automatically assigned the **Admin** project role.
+  Anyone else trying to access the project will be denied unless they are explicitly added as project collaborators.
 
 !!! Note
     To assign collaborators on a **Private** project owned by an organization, all candidate collaborators must be members of that organization.
@@ -142,7 +143,8 @@ If no **Project Role for Members** is defined, it will default to the  **Reader*
 When switching a **Public** project to **Private**, QFieldCloud enforces validation checks before saving the change:
 
 1. **Check for Non-Organization Members:** If collaborators on an organization project are not members of the organization, you must remove them or add them as organization members before making the project private.
-2. **Check for Subscription Plan Limits:**: The total collaborators must not exceed the collaborator limit on the project owner's subscription. Remove additional collaborators before setting visibility to private.
+2. **Check for Subscription Plan Limits:**: The total collaborators must not exceed the collaborator limit on the project owner's subscription.
+   Remove additional collaborators before setting visibility to private.
 
 !!! Note
     If a subscription downgrade occurs on an existing private project that exceeds the plan limit, the system keeps the project private but locks it until the user reduces collaborator counts to within plan limits or upgrades the plan.
