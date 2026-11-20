@@ -7,8 +7,8 @@ tx_slug: documentation_get-started_tutorials_advanced-setup-qfc
 
 ## Supported Vector Providers
 
-Currently, QFieldCloud supports GeoPackage and PostGIS layers for collaborative editing.
-Other formats supported by QGIS should also work but are not officially supported.
+QFieldCloud officially supports **GeoPackage** and **PostGIS** layers for collaborative offline and online field editing.
+Other vector formats supported by QGIS may work for read-only display, but are not officially supported for synchronization.
 
 ## Synchronization Process
 
@@ -58,12 +58,11 @@ Find more information in the [QFieldCloud technical reference](../../reference/q
 
 ## Working with GeoPackages
 
-Using GeoPackages is usually the best choice for a simple setup to centralize data collected by your QField users into a single file.
+GeoPackages provide a self-contained file format for centralizing field data collected across multiple QField devices.
 
-If you set up a relation, add a UUID field and use it as the primary or foreign key.
-**Do not** use the default `fid` field for relations as a primary or foreign key.
-The `fid` field can be modified during synchronization with QFieldCloud and lead to errors over time.
-A [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549) is unique and will not cause conflicts during synchronization. <!-- markdown-link-check-disable-line -->
+When configuring layer relations, create a dedicated UUID field and use it as the primary or foreign key.
+**Do not** use the default `fid` column for relations, as `fid` values can be reassigned during synchronization and break relational links.
+Using a [UUID](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html#id549) ensures globally unique identifiers across all offline devices. <!-- markdown-link-check-disable-line -->
 
 !!! Workflow
 
@@ -135,16 +134,15 @@ Find more information in the [QFieldCloud technical reference](../../reference/q
 
 ## Restriction of Project Files
 
-To prevent modifications to the core QGIS project file, project administrators can restrict access to these files in QFieldCloud.
+To prevent collaborators from altering project configurations, project administrators can enable file restrictions on QFieldCloud.
 
 !!! Workflow
-    1. Navigate to _Settings_ on your QFieldCloud project page.
+    1. Open your project in QFieldCloud and navigate to **Settings**.
     2. Enable **Restrict project files**.
 
 !![](../../assets/images/restric_qfc_project_files.png)
 
-Once enabled, only administrators and managers can push changes to restricted files.
-Other project collaborators can still upload and modify project datasets (such as GeoPackages), but cannot alter the main project file or its core components.
+Once enabled, only users with **Admin** or **Manager** roles can upload or modify restricted files, while **Editors** can continue pushing dataset changes.
 
 ### Restricted Files
 
@@ -157,12 +155,21 @@ When enabled, the following files can only be modified or uploaded by a user wit
 
 ## Handling Conflicts
 
-When working in a collaborative environment with multiple users accessing the same project, two users might modify the same feature during fieldwork.
-In your project settings page, choose whether QFieldCloud applies the **last wins** policy or flags conflicts for project managers to resolve manually.
+When multiple field users synchronize edits to the same project, conflicts can occur if users modify the same feature or enter duplicate values in unique-constrained fields.
+
+On your project's **Settings** page in QFieldCloud, you can configure two conflict-handling behaviors:
+
+- **Overwrite conflicts:** Choose whether QFieldCloud automatically resolves concurrent feature edits using the **Last Wins** policy or flags conflicts for manual review by project managers.
 
 !![](../../assets/images/qfc-advanced-settings-overwrite-conflicts.png)
 
-Read more on how QFieldCloud handles conflicts in the [technical documentation](../../reference/qfieldcloud/jobs.md#understanding-conflicts-delta_apply-jobs).
+- **Unique constraint delta behavior:** Choose how QFieldCloud handles deltas when a field configured with a **Unique** constraint in QGIS receives a value that already exists in another feature:
+    - **Create a conflict (Default):** Flags the delta as a `CONFLICT` for manual resolution, even if **Overwrite conflicts** (*Last Wins*) is enabled.
+    - **Let the QGIS default behavior apply:** Allows QGIS to automatically adjust duplicate values on newly created features (such as appending `_1` or incrementing numbers) while letting the underlying data provider validate updates.
+
+!![](../../assets/images/unique_constraint_delta_behavior.png)
+
+Read more on conflict detection and resolution in the [Jobs Technical Documentation](../../reference/qfieldcloud/jobs.md#understanding-conflicts-delta_apply-jobs).
 
 ## Activate Email Notifications for QFieldCloud Changes
 
@@ -178,20 +185,14 @@ To receive notifications about activity in your teams and projects, activate the
 You can receive notifications for the following events:
 
 - User created
-- Organization created
-- Organization deleted
-- Organization membership created
-- Organization membership deleted
-- Team created
-- Team deleted
-- Team membership created
-- Team membership deleted
-- Project created
-- Project deleted
-- Project membership created
-- Project membership deleted
+- Organization created or deleted
+- Organization membership created or deleted
+- Team created or deleted
+- Team membership created or deleted
+- Project created or deleted
+- Project membership created or deleted
 
-You only receive notifications for actions initiated by other organization members or project collaborators.
+Notifications are only sent for actions initiated by other organization members or project collaborators.
 
 ## Enhance Your Project with the "Optimized Packager"
 
@@ -205,21 +206,13 @@ We recommend using the **Optimized Packager** over the deprecated **QGIS Core Of
 
 Consider this example configuration:
 
-- **Layer 1.1:**
-  - Data Source: `layers.gpkg`
-  - Table: `layer1`
-  - Filter: `id % 2 = 1`
-- **Layer 1.2:**
-  - Data Source: `layers.gpkg`
-  - Table: `layer1`
-  - Filter: `id % 2 = 0`
+- **Layer 1.1:** Data Source `layers.gpkg` | Table `layer1` | Filter `id % 2 = 1`
+- **Layer 1.2:** Data Source `layers.gpkg` | Table `layer1` | Filter `id % 2 = 0`
 
-**Result:**
+**Packaging Result:**
 
-- **Optimized Packager:** Generates a single layer in the offline GeoPackage, combining data from `layer1` with specified filters applied.
-- **QGIS Core Offline Editing Packager:** Creates two separate layers representing the filtered datasets:
-  - Layer 1: Filtered with `id % 2 = 1`
-  - Layer 2: Filtered with `id % 2 = 0`
+- **Optimized Packager:** Generates a single filtered layer in the offline GeoPackage combining both filter subsets (`layer1`).
+- **QGIS Core Offline Editing Packager:** Creates two separate duplicate layers in the offline GeoPackage (`Layer 1` and `Layer 2`).
 
 !![](../../assets/images/qfc_offline_packager.png,700px)
 
@@ -247,10 +240,9 @@ QField and QFieldSync connect to the default QFieldCloud service at [app.qfield.
 Modify the default server address in QField and QFieldSync if using a custom deployment:
 
 !!! Workflow
-    1. Open the login screen in QField or QFieldSync.
-    2. Tap three times on the Nyuki logo (the QFieldCloud logo).
-    3. Enter your custom server URL in the revealed address field.
-    Leaving the field empty automatically reconnects to the default [QFieldCloud server](https://app.qfield.cloud/).
+    1. Open the QFieldCloud login screen in QField or QFieldSync.
+    2. Tap or click two times on the **Nyuki** logo (the QFieldCloud logo).
+    3. Enter your custom server URL in the revealed server address field (leave empty to revert to `https://app.qfield.cloud/`).
 
 !![Revealing server in QFieldSync](../../assets/images/changing_default_qfieldcloud_server_qfield_sync.png,250px)
 
