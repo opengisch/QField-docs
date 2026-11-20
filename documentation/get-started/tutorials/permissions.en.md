@@ -115,9 +115,7 @@ In QFieldCloud, the status icon next to the project name indicates project visib
 - **Private Projects:** The project owner, organization owner, and organization admins are automatically assigned the **Admin** project role. Anyone else trying to access the project will be denied unless they are explicitly added as project collaborators.
 
 !!! Note
-    To assign collaborators on **Private** projects owned by an organization,
-    all candidate collaborators must be a members of that organization or the organization owner.
-    In addition, the total number of collaborators cannot exceed the owner's subscription plan limits.
+    To assign collaborators on a **Private** project owned by an organization, all candidate collaborators must be members of that organization. In addition, the total number of collaborators cannot exceed the owner's subscription plan limits.
 
 - **Public Projects:** The project owner, organization owner,
     and organization admins automatically receive the **Admin** project role.
