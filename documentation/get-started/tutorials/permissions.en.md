@@ -112,9 +112,7 @@ Each project can be configured as **Private** or **Public** when creating a proj
 
 In the QFieldCloud, project visibility is indicated by the status icon next to the project name: a lock icon (🔒) represents a Private project, while an unadorned project title represents a Public project.
 
-- **Private Projects:** The project owner, organization owner,
-    and organization admins automatically receive the **Admin** project role.
-    All other users attempting to access the project receive a `404 Not Found` error unless explicitly added as project collaborators.
+- **Private Projects:** The project owner, organization owner, and organization admins are automatically assigned the **Admin** project role. Anyone else trying to access the project will be denied unless they are explicitly added as project collaborators.
 
 !!! Note
     To assign collaborators on **Private** projects owned by an organization,
