@@ -47,7 +47,7 @@ Markups are drawn freehand on the map canvas using your finger, a stylus, or a m
     1. Open the **Side Dashboard** and tap the pencil icon (<span style="color:green">:material-pen:</span>) to enter **Digitize Mode**.
     2. Select a markup collection as your active target using either method:
         - Tap a collection under the **Markups** section in the **Side Dashboard**.
-        - Tap the **digitizing layer information bar** at the bottom of the screen and select a collection under the **Markups** group.
+        - Tap the active layer combobox in the **Digitizing information bar** at the bottom of the screen and select a collection under the **Markups** group.
     3. In the **Markup Toolbar** at the bottom right of the canvas, tap one of the five color swatches (red, blue, green, purple, or orange) to activate drawing.
     4. Tap or draw directly on the map canvas to create a markup item.
 
