@@ -139,10 +139,10 @@ If no **Project Role for Members** is defined, it will default to the  **Reader*
 
 ### Converting Public Projects to Private
 
-When converting a **Public** project to **Private**, QFieldCloud enforces validation checks before saving the setting change:
+When switching a **Public** project to **Private**, QFieldCloud enforces validation checks before saving the change:
 
-1. **Non-Organization Collaborators Check:** If an organization-owned project has collaborators who are not members of the organization, you must either remove them or add them as organization members before setting the project to private.
-2. **Subscription Plan Limits Check:** The total number of collaborators cannot exceed what the owner's subscription plan allows for private projects. Remove excess collaborators before changing visibility to private.
+1. **Check for Non-Organization Members:** If collaborators on an organization project are not members of the organization, you must remove them or add them as organization members before making the project private.
+2. **Check for Subscription Plan Limits:**: The total collaborators must not exceed the collaborator limit on the project owner's subscription. Remove additional collaborators before setting visibility to private.
 
 !!! Note
-    If a subscription downgrade occurs on an existing private project that exceeds the plan limit, the project remains private but shifts to a locked status until collaborator counts are brought within plan limits or the plan is upgraded.
+    If a subscription downgrade occurs on an existing private project that exceeds the plan limit, the system keeps the project private but locks it until the user reduces collaborator counts to within plan limits or upgrades the plan.
