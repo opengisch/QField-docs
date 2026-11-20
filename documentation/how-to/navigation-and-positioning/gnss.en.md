@@ -141,7 +141,7 @@ Elevation handling based on vertical grid shift settings (with antenna compensat
 |----------------------------|---------------------------|--------------------------------------|----------------|-----------------------------|
 | None                       | Z ellipsoidal device value| Z ellipsoidal device value           | Z ellipsoidal device value | Altitude: xxx.xxxx m       |
 | Orthometric from device    | Z orthometric device value| Z orthometric device value           | Z orthometric device value | Altitude: xxx.xxxx m (ortho.) |
-| USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-and-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
+| USER_Shift_Grid.GTX <br> [vertical grid shift](#altitude-correction-vertical-grid-shift)        | Z shiftgrid value         | Z ellipsoidal device value           | Z shiftgrid value          | Altitude: xxx.xxxx m (grid) |
 
 ### Capturing Coordinates in Attribute Forms
 :material-monitor: Project Manager

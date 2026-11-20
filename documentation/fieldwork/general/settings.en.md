@@ -67,8 +67,8 @@ If disabled the cross-hair is fixed to the center and the mouse is used to reloc
 
     !![Search Bar Settings](../../assets/images/settings-search-bar.png,250px)
 
-- **Manage plugins:** By pressing the 3-dotted menu *(⋮)* a new window will open from which you can enable and disable customised plugins.
-To add a new plugin see the [Plugins Page](../../how-to/advanced-how-tos/plugins.md#project-plugins)
+- **Manage plugins:** By pressing the **3-dotted menu (⋮)** a new window will open from which you can enable and disable customised plugins.
+To add a new plugin see the [Plugins Page](../../fieldwork/general/plugins.md#qfield-plugins)
 
     !![Plugin dialog](../../assets/images/settings-plugins.png,250px)
 
