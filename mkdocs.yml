@@ -84,6 +84,7 @@ nav:
           - fieldwork/qfield-interface/3d-map-view.md
       - Data collection:
           - fieldwork/data-collection/digitize.md
+          - fieldwork/data-collection/markups.md
           - fieldwork/data-collection/pictures.md
           - fieldwork/data-collection/print-to-pdf.md
           - fieldwork/data-collection/processing.md
