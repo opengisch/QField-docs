@@ -13,15 +13,14 @@ To add new features or modify existing geometries, switch to **Digitize Mode**.
 
 When you switch QField to **Digitize Mode**, a **Digitizing information bar** appears at the bottom of the map canvas:
 
-- **Active Layer Indicator:** Displays the active layer where your newly digitized features will be saved.
-- **Quick Layer Switcher:** You can quickly switch to a different editable layer without opening the **Side Dashboard**.
+- **Active Layer Combobox:** Displays the active layer where your newly digitized features will be saved. Tap on the combobox to quickly switch to a different editable layer without opening the **Side Dashboard**.
 
 !![](../../assets/images/digitizing_layer_information_overlay.png)
 
 !!! Workflow
     1. Open the **Side Dashboard** and tap the pencil icon (<span style="color:green">:material-pen:</span>) to switch to **Digitize Mode**.
-    2. Check that the **Digitizing Information bar** corresponds to your the layer which you want to add to.
-    3. (Optional) Tap the information bar to switch to another editable layer before digitizing.
+    2. Check that the **Digitizing information bar** displays the layer you want to add features to.
+    3. (Optional) Tap the combobox in the information bar to switch to another editable layer before digitizing.
 
 ## Adding New Objects
 
@@ -64,7 +63,7 @@ You can configure hardware and touch shortcuts to speed up your field data colle
 
 ### Attribute Form
 
-After finishing a geometry, feature attribute form will open so you can populate attribute fields.
+After finishing a geometry, the feature attribute form opens so you can populate attribute fields.
 
 #### Add Values Using QR Codes and Barcodes
 
@@ -76,16 +75,16 @@ After finishing a geometry, feature attribute form will open so you can populate
         - **Paste**
         - **Scan Code:** Reads QR codes, barcodes, and NFC text tags.
 
-        !![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png,300px)
+        !![](../../assets/images/digitizing-with-qr-code-1-attribute-form.png)
 
     4. Tap **Scan Code**.
 
-        !![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png,300px)
+        !![](../../assets/images/digitizing-with-qr-code-2-selecting-scan-code.png)
 
     5. Scan the code or NFC tag and tap :material-check: to insert the value into the field.
 
-        !![](../../assets/images/digitizing-with-qr-code-3-code-reader.png,300px)
-        !![](../../assets/images/digitizing-with-qr-code-4-it-worked.png,300px)
+        !![](../../assets/images/digitizing-with-qr-code-3-code-reader.png)
+        !![](../../assets/images/digitizing-with-qr-code-4-it-worked.png)
 
 !!! Note
     Both the camera code scanner and NFC tag detector are enabled by default when opening the Code Reader.
@@ -158,9 +157,8 @@ Freehand digitizing is toggled via the freehand toolbar button, which appears au
 Enable snapping in **Digitize Mode** to align new vertices precisely to existing feature vertices or segments.
 
 !!! Workflow
-    1. Switch to **Digitize Mode**.
-    2. Start adding a new feature or editing an existing geometry to reveal the digitizing options button (:material-pen:) in the top-left corner below the **Side Dashboard** button.
-    3. Tap :material-pen: and toggle the snapping icon (:material-horseshoe:).
+    1. Switch to **Digitize Mode** to reveal the expandable digitizing options button (:material-pen:) in the top-left corner below the **Side Dashboard** button.
+    2. Tap :material-pen: and toggle the snapping icon (:material-horseshoe:) before placing your first vertex or editing a geometry.
 
     !![Snapping](../../assets/images/snapping.png)
 
@@ -174,7 +172,7 @@ Constrain line and polygon segments to predefined angles while digitizing.
 
 !!! Workflow
     1. Switch to **Digitize Mode** and start adding a line or polygon feature (:material-plus-circle:).
-    2. Tap :material-pen: in the top-left corner and long-press the **Angle Symbol**.
+    2. Tap the expandable digitizing options button (:material-pen:) in the top-left corner and long-press the **Angle Symbol**.
     3. Select a predefined angle (`10°`, `15°`, `30°`, `45°`, or `90°`) and tap it to activate angle snapping.
     QField maintains the angle lock relative to the previous segment across subsequent vertices.
 
