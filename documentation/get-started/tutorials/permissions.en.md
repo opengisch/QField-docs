@@ -82,10 +82,9 @@ The following table details what each organization role can do:
 
 ### Default Project Role for Organization Members
 
-As an organization over you can configure a **Default Project Role for Members** setting in the **Organization settings**.
+As an organization, you have the option to configure a **Default Project Role for Members** in the **Organization settings**.
 
-When you add organization members to an organization project,
-QFieldCloud automatically assigns this default role, without youh aving to manually change the collaborator role for each newly added collaborater.
+When you add organization members to an organization project, QFieldCloud automatically assigns this default role without requiring manual changes to the collaborator role for each newly added collaborator.
 
 !![](../../assets/images/default_role_on_org_projects.png)
 
