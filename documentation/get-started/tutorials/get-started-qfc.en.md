@@ -137,8 +137,6 @@ Icons in the project overview indicate both the local storage state and cloud pr
 
 After installing the QFieldSync plugin, a new section appears under _Project > Properties..._.
 Access these settings from the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} using the **Settings** icon.
-You can access the settings from the QFieldSync toolbar ![](../../assets/images/project_properties.svg){Width="20px"} using the **Settings** icon.
-Configure the following parameters in these settings:
 You can adjust the following parameters in these settings:
 
 - Define how project layers are treated in the cloud (see the [QFieldSync Get Started Guide](./get-started-qfs.md) for details on **Packaging Actions**).
@@ -158,13 +156,10 @@ Once your project is configured in QGIS, upload it to QFieldCloud:
 
 !!! Workflow
     1. Click the <span style="color:blue"> :material-cloud: </span> with arrows in the QFieldSync toolbar.
-
-    Select your preferred upload method:
-
-     - **The Local file:** Replaces your cloud file with the new local version of the project.
-         When working with GeoPackages, the cloud file version is replaced by your local file version.
-     - **The Cloud file:** Amends your local datasets and replaces your local project file with the current cloud version.
-
+    2. Select your preferred upload method:
+        - **The Local file:** Replaces your cloud file with the new local version of the project.
+          When working with GeoPackages, the cloud file version is replaced by your local file version.
+        - **The Cloud file:** Amends your local datasets and replaces your local project file with the current cloud version.
 
 You can now view your project and files on your [QFieldCloud project overview page](https://app.qfield.cloud/).
 
@@ -205,8 +200,7 @@ Refine your project search using the form fields in the filter pane:
 !!! Note
     **Public projects** are projects marked as public by any project owner.
     Public projects are viewable by all QFieldCloud users.
-    if the project owner adds them as project collaborators.
-    You do not need an organization account to collaborate on public projects.
+    If the project owner adds them as project collaborators, you do not need an organization account to collaborate on public projects.
 
 #### 3. Power-User search syntax
 
@@ -236,13 +230,13 @@ There are two ways in which you can see whether your project is up-to-date with 
 
 - **Cloud Icon Badge:** A green bubble with an exclamation mark appears on the cloud button in the **Side Dashboard**.
 
-!![](../../assets/images/qfield_cloud_sync_status_1.png)
+    !![](../../assets/images/qfield_cloud_sync_status_1.png)
 
-- **Synchronize Project Card Badge:** A green badge appears on the right side of the **Synchronize project** section within the cloud synchronization.
+- **Synchronize Project Card Badge:** A green badge appears on the right side of the **Synchronize project** section within the cloud synchronization panel.
 
-!![](../../assets/images/qfield_cloud_sync_status_2.png,350px)
+    !![](../../assets/images/qfield_cloud_sync_status_2.png,350px)
 
-After completing field data collection, synchronize your changes back to QFieldCloud.
+After completing field data collection, synchronize your changes back to QFieldCloud:
 
 !!! Workflow
     1. Open the **Side Dashboard** in QField.
@@ -252,12 +246,30 @@ After completing field data collection, synchronize your changes back to QFieldC
         - **Upload local changes:** Sends your edits and attachments to the cloud without downloading updates from other collaborators.
         This option is fast and saves internet bandwidth.
         - **Synchronize project:** Uploads your local edits, then downloads the latest project version from QFieldCloud to keep everything up to date.
+        - **Pending changes:** Displays a detailed list of all un-uploaded local feature additions, edits, and deletions, allowing you to inspect attribute changes or discard individual edits before syncing.
         - **Upload history:** Tap this button below the main action cards to view a log of past uploads, including timestamps and statuses (such as **Applied**, **Pending**, **Conflict**, or **Error**).
-        - **Danger zone:** Tap this button to access options for discarding un-uploaded local changes or restoring the cloud version of the project.
-        Tap **Discard local changes** to remove un-uploaded local edits, or tap **Reset project** to re-download the cloud project if your local copy becomes corrupted.
+        - **Danger zone:** Tap this button to access options for discarding all un-uploaded local changes or restoring the cloud version of the project.
+            Tap **Discard local changes** to remove all un-uploaded local edits at once, or tap **Reset project** to re-download the cloud project if your local copy becomes corrupted.
 
         !![](../../assets/images/getting_started_actions.png,800px)
 
 Your synchronized changes are now available to all collaborators with access to the project on QFieldCloud.
+
+#### Inspecting and discarding individual pending changes
+:material-tablet: Fieldwork
+
+Before pushing your local edits to QFieldCloud, you can review individual pending changes and selectively discard mistakes without losing the rest of your fieldwork.
+
+!!! Workflow
+    1. Open the **Side Dashboard** and tap the <span style="color:blue"> :material-cloud: </span> icon.
+    2. Tap any **Pending changes** to view the list of queued local changes (`added`, `edited`, or `deleted`).
+    3. Tap a feature entry in the list to expand its details
+    4. To revert a specific edit, tap **Discard change** at the bottom of the expanded entry and confirm in the **Discard local change** dialog.
+
+!![Inspecting and discarding individual pending changes](../../assets/images/qfield_cloud_pending_changes.png,600px)
+
+!!! Note
+    - **Dependent sequential edits:** If you performed multiple sequential edits on the same feature (for example, modifying a feature's attributes and later deleting it), discarding an earlier change automatically reverts all subsequent pending changes made to that same feature to preserve data consistency.
+    - **Active GNSS tracking & sync lock:** Individual changes cannot be discarded while a cloud synchronization or upload is in progress, or for a feature currently being recorded by an active GNSS track (indicated by a walking icon next to the feature name).
 
 Read more in the [Advanced QFieldCloud Setup Guide](./advanced-setup-qfc.md) and [QFieldCloud Technical Reference](../../reference/qfieldcloud/workflow.md).
