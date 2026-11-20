@@ -37,20 +37,26 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
 
     1. Under *Plugins* in the Menu toolbar direct to *Manage and Install Plugins*
     2. In the search bar type *OSM Place Search* and install the plugin
-    !![OSM Place Search Plugin](../../assets/images/new-project-osmplugin.png)
-    3. A new window should appear in the side panel where you can enter your place of interest
-    4. Add it to your project as a feature by clicking on the middle button at the bottom of the plugin interface.
-    !![New PoI](../../assets/images/new-project-poi.png,800px)
-    5. A new feature layer will be available as a temporary layer in your project.
-4. Adding a new layer:
+
+        !![OSM Place Search Plugin](../../assets/images/new-project-osmplugin.png)
+
+    4. A new window should appear in the side panel where you can enter your place of interest
+    5. Add it to your project as a feature by clicking on the middle button at the bottom of the plugin interface.
+
+        !![New PoI](../../assets/images/new-project-poi.png,800px)
+
+    6. A new feature layer will be available as a temporary layer in your project.
+
+1. Adding a new layer:
+
     1. Click on *Layer* and  create a new *Vector Layer*
-    !![New Vector layer](../../assets/images/new-project-vectorlayer.png)
+        !![New Vector layer](../../assets/images/new-project-vectorlayer.png)
     2. Give your GeoPackage a general name.
-    Additionally give a name to the table (which we are about to create).
-    **To Note**: A GeoPackage can consist of several layers, including points, lines, polygons and raster layers.
+        Additionally give a name to the table (which we are about to create).
+        **To Note**: A GeoPackage can consist of several layers, including points, lines, polygons and raster layers.
     3. Select ***Point*** as your geometry type and select the *EPSG:3857 WGS84/Pseudo-Mercator* as your coordinate system.
-    We will add a few fields to our layer including a name, a date, a field for a photo, a field for categorizing the point and a boolean field, which we will use to indicate whether it is worth to revisit the point or not.
-    Finally, we will add another field where you can add general notes.
+        We will add a few fields to our layer including a name, a date, a field for a photo, a field for categorizing the point and a boolean field, which we will use to indicate whether it is worth to revisit the point or not.
+        Finally, we will add another field where you can add general notes.
     4. Add the following:
 
         | Attribute | Data type|
@@ -62,32 +68,32 @@ There exists a very useful QGIS plugin called *OSM Place Search*, which allows y
         | Attachment | *string* |
         | Notes | *string* |
 
-5. Adding a Line layer
+2. Adding a Line layer
 
     We will create another layer within the GeoPackage corresponding to a line layer.
     You can use it to track yourself when going into the field.
 
-     1. Add a new layer as previously
-     2. Select the same GeoPackage as *file name* but give the *table* a different name.
-    !![Line Layer](../../assets/images/new-project-anotherlayer.png,800px)
-     3. Add the following fields:
+    1. Add a new layer as previously
+    2. Select the same GeoPackage as *file name* but give the *table* a different name.
+        !![Line Layer](../../assets/images/new-project-anotherlayer.png,800px)
+    3. Add the following fields:
 
         | Attribute | Data type|
         | --- | ---|
         | Name | *string* |
         |Date | *date* |
 
-
-6. Saving the temporary layer in GeoPackage
+3. Saving the temporary layer in GeoPackage
 
     Remember that we have added our area of interest as a ***temporary layer*** meaning that after closing the project we will not be able to access the layer anymore.
     Therefore, we will save the layer within the just newly created GeoPackage.
+
     !![Make permanent](../../assets/images/new-project-make-permanent.png,800px)
 
     1. Right-click on the layer and select ***Make Permanent***
     2. Find the GeoPackage file that you just created and add an appropriate name to the PoI layer.
-    Watch out: QGIS will ask you whether you wish to ***add new*** or to ***overwrite*** the layer.
-    Of course, you choose to ***add new*** the layer.
+        Watch out: QGIS will ask you whether you wish to ***add new*** or to ***overwrite*** the layer.
+        Of course, you choose to ***add new*** the layer.
 
 
 ### QGIS Project - Attribute configuration
@@ -98,30 +104,39 @@ Now we have all the essential data in the QGIS project that we need for the data
 However, in order to have a well structured form we need to configure the attribute form, via the file properties.
 
 1. Direct to PoIs layer *Properties* > *Attribute Form*
-!![Vector properties](../../assets/images/new-project-properties.png)
+    !![Vector properties](../../assets/images/new-project-properties.png)
 2. Select *Drag and Drop Designer* from the dropdown.
     From here you can control the appearance of your form.
+
 !![Default Attribute Form](../../assets/images/new-project-properties-attribute.png)
+
 We do not need to edit the *fid* field.
 QGIS creates this for every GeoPackage by default.
 
 3. Remove the *fid* field from the visible fields by pressing the *red minus* on the window
 4. *Name*: Click on *Name* and look at the Widget Display options on the right-hand side.
-!![Widget Display](../../assets/images/new-project-properties-attri-overview.png,800px)
+
+    !![Widget Display](../../assets/images/new-project-properties-attri-overview.png,800px)
+
     The widget display let`s you customise the appearance of your form.
     You can keep it simple or set complex rules and constraints depending on your use case.
     Today, we will keep it simple.
+
     1. Here you can decide whether you want to display the name of your field inside the attribute form.
     2. If you have a technical fieldname with underscores or other special characters you can add an ***Alias*** to make it nicer for the data user.
     3. There exist several types of [widgets](../../how-to/project-setup/attributes-form.md#attribute-form-configuration)
+
 *Maya does not want to enter the date new every time.*
 *What a good thing one can set default values in QGIS*
+
 5. Open the widget display of the ***Entrydate*** attribute.
     1. If not already done, change the widget type to date/time.
-    You can customise the appearance of your date by changing the custom display format.
+        You can customise the appearance of your date by changing the custom display format.
     2. To not have to add a new date every time, add a default value using the following expression ***format_date(now(),'dd MMMM yyyy')***.
-    This will populate the field with the time when the data point is created.
-    !![Date widget](../../assets/images/new-project-properties-attri-date.png, 800px)
+        This will populate the field with the time when the data point is created.
+
+        !![Date widget](../../assets/images/new-project-properties-attri-date.png, 800px)
+
 6. For the field ***Visit*** you can just change the Alias name to something more readable like *"Worth the visit?"*
 
     *The **Category** field is a bit more interesting.*
@@ -143,10 +158,10 @@ QGIS creates this for every GeoPackage by default.
     !![Value map](../../assets/images/new-project-properties-attri-valuemap.png)
 
 9. Change the widget type of the ***Attachment*** field to ***Attachment***.
-This will save the path of the where the image is stored.
-You can also set the preferred document type under the integrated file viewer.
-This will not only display the attachment directly in the form, but it will also set the default attachment type to the one you have selected.
-**NOTE:** Change the path to *relative path* so that it is relative to the project folder that you are working in and not the *absolute path*.
+    This will save the path of the where the image is stored.
+    You can also set the preferred document type under the integrated file viewer.
+    This will not only display the attachment directly in the form, but it will also set the default attachment type to the one you have selected.
+    **NOTE:** Change the path to *relative path* so that it is relative to the project folder that you are working in and not the *absolute path*.
 
 10. For the ***Notes*** field you can just use the widget type to ***Text Edit***.
 
@@ -157,17 +172,19 @@ Maya wants to track herself immediately when starting to walk rather than having
 
 1. Direct to the **Tracks** *Properties* > *QField*
 2. Enable the Tracking session and set the required parameter.
-You can decide whether you want to add vertices based on a temporal value or based on distance.
-We will use the latter option for this purpose.
-You will configure the attribute form in such a way that it automatically populates the attribute fields when starting a new session.
-Furthermore, you will ***hide*** the attribute form so that the tracking just runs in the background.
+    You can decide whether you want to add vertices based on a temporal value or based on distance.
+    We will use the latter option for this purpose.
+    You will configure the attribute form in such a way that it automatically populates the attribute fields when starting a new session.
+    Furthermore, you will ***hide*** the attribute form so that the tracking just runs in the background.
 
 3. Direct to the *Attribute Form*
 4. Choose the ***Drag and Drop Designer*** again from the dropdown
 5. Configure the attribute form accordingly
+
      - `fid`: Remove this field
      - `Name`: Set a default value to '@cloud_username'
      - `Entrydate` : Set a default value to 'now()'
+
 6. Finally, once done from the top right of the window, change the dropdown option from ***Show form on add feature*** to ***Hide Form on Add Feature***.
 7. Click 'Ok'
 
@@ -190,9 +207,9 @@ In fact, it is a plugin that can be used to package and transform a QGIS project
 
 3. In QGIS a new toolbar should appear ![Toolbar](../../assets/images/qfieldsync_toolbar.png)
 4. When clicking on the blue cloud a new window will open where you can login to QFieldCloud with your username and password.
-If you have no username you can directly register following the link.
+    If you have no username you can directly register following the link.
 5. Once you have successfully logged into QFieldCloud a new window will appear showing all available projects that are stored and available to your profile.
-**Note:** If you just registered, the list will, of course, be empty.
+    **Note:** If you just registered, the list will, of course, be empty.
 
 #### Creating QFieldCloud Project
 
@@ -201,17 +218,22 @@ If you have no username you can directly register following the link.
 1. Open the QFieldCloud Window.
 2. Click on the Blue Cloud with the star on the bottom left of the window.
 3. Decide on how the new project should be created.
-     - **First Option:** *QFieldCloud will either take the current content of the opened project and create another copy under the default `QField/cloud` directory.*
-     - **Second Option:** *When using the second option, QFieldSync will take the project path as the right path and you have to make sure hat all the data you want to be uploaded are stored in this folder.*
+
+    - **First Option:** *QFieldCloud will either take the current content of the opened project and create another copy under the default `QField/cloud` directory.*
+    - **Second Option:** *When using the second option, QFieldSync will take the project path as the right path and you have to make sure hat all the data you want to be uploaded are stored in this folder.*
+
 **Note:** *If you are working with a Postgres database you have to choose the second option to not loose the connection to the database.*
+
 !![Create Project](../../assets/images/create_project.png)
+
 For this case, use the first option.
-3. Give your project a name and a description.
-4. By default you will be set as the owner of the project.
-*In case that you were member of an organization, you could assign a different entity with this dropdown list.*
-5. Finally, you can choose the project directory where the project path will be placed.
-By default QFieldSync chooses the default project directory.
-6. Click "Create" and QFieldSync will package your project for the cloud.
+
+4. Give your project a name and a description.
+5. By default you will be set as the owner of the project.
+    *In case that you were member of an organization, you could assign a different entity with this dropdown list.*
+6. Finally, you can choose the project directory where the project path will be placed.
+    By default QFieldSync chooses the default project directory.
+7. Click "Create" and QFieldSync will package your project for the cloud.
 
 !![Project Settings](../../assets/images/project_properties_settings.png)
 
@@ -223,7 +245,8 @@ If everything is alright, a new window will appear with the message *The locally
 
 1. On your mobile device open the QField Application
 2. Click on **QFieldCloud Projects** and sign in with the same credentials as before.
- !![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
+
+    !![Welcome](../../assets/images/getting_started_splashscreen.png,250px)
 
 3. Your project should already be available.
 4. Click on it and download the project.
