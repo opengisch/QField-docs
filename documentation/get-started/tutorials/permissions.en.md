@@ -127,16 +127,14 @@ In QFieldCloud, the status icon next to the project name indicates project visib
 
 ### Public Collaborator Role
 
-When enabling **Public project** during project creation or in the project settings, a **Public collaborator role** field will automatically appear below the checkbox.
+When you enable **Public project** while creating a project, or while configuring project settings, a **Public collaborator role** field will automatically show up below the checkbox.
 
-This setting defines the default role granted to any QFieldCloud user accessing who wishes to download that public project:
+This setting defines the default role granted to any QFieldCloud user who wishes to use that public project:
 
 - **Public Collaborator Role:** You can choose between the roles **Reader** (read-only access), **Reporter**  or **Editor**.
 Read [here](#project-capabilities) about which role is appropriate for your needs.
-- **Default Role:** If you mark a personally owned project as **public** and do not define the **Public Collaborator role**, it will default to the  **Reader** role.
-For organization-owned projects, if you do not define the **Public Collaborator role**, QFieldCloud will use the organization's **Project Role for Members** setting.
-If no **Project Role for Members** is defined, it will default to the  **Reader** role.
-- **External Non-Member Collaborators:** On public organization projects, users who are **not members** of the organization can be explicitly added as collaborators with custom roles without being counted to the number of actual members .
+- **Default Role:** If you mark a project as **public** and do not define the **Public Collaborator role**, it will default to the  **Reader** role.
+- **External Non-Member Collaborators:** Users who aren't part of the organization can be added as collaborators on public projects without becoming organization members. Be aware that changing a public project to private interrupts the process if collaborators aren't part of the organization, and you will need to either remove them from the project or add them to the organization.
 
 ### Converting Public Projects to Private
 
