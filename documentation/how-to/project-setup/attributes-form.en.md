@@ -101,8 +101,6 @@ To use Wizard Mode, your feature form must first be set up into tabs.
     ![type:video](../../assets/videos/qfield_form_wizard.mp4)
 
 ## Working with Relations
-:material-monitor: Project Manager
-
 For detailed information on setting up layer relations in QGIS, refer to the [QGIS Relations Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers). <!-- markdown-link-check-disable-line -->
 
 ## Value Map Widget Configuration
@@ -145,17 +143,13 @@ Check out the [Attachment Widget Setup Guide](../../how-to/project-setup/picture
 
 ### Restricting Accepted Attachment Types
 
-By default, QGIS's **Attachment** (*External Resource*) widget uses its **Document Viewer** setting (`Image`, `Video`, `Audio`, or `File`) only as a visual hint for QField's quick-action button—field users can still attach any file or media type from the three-dotted menu *(⋮)*.
+If you set the **Document Viewer** to a specific media type(`Image`, `Video`, `Audio`, or `File`) under the QGIS **Attachment** (*External Resource*) widget's setting, in QField, by default the default option will be set to that type.
+However, QField users can still attach files or media of other types through the **3-dotted menu (⋮)**.
 
-Project managers can restrict which attachment types are permitted per field in **QFieldSync**. Restricting attachment types tailors the QField interface to display only valid capture and file-picking options while preventing large or unintended files (such as accidental videos when only still photos are needed) from consuming device and cloud storage.
-
-#### Configuring Accepted Types in QFieldSync
-:material-monitor: Project Manager
-
-Configure accepted attachment types for individual fields in your QGIS project before packaging or uploading to QFieldCloud:
+You can restrict which attachment types are permitted for the individual attributes via the **QFieldSync** settings.
 
 !!! Workflow
-    1. In QGIS, open _Project > Properties..._ and switch to the **QField** tab.
+    1. Direct to _Project > Properties..._ and switch to the **QField** tab.
     2. Locate the attachment configuration table listing each layer and attachment field.
     3. In the **Accepted Types** column for the target field, open the dropdown menu and check one or more allowed attachment categories:
         - **Image:** Still photos, gallery images, and freehand sketches.
@@ -168,11 +162,6 @@ Configure accepted attachment types for individual fields in your QGIS project b
 
 !!! Note
     When **no** options are checked in the **Accepted Types** dropdown, the field displays **Anything** and accepts all attachment and media types, falling back to the field's QGIS **Document Viewer** setting to determine the primary quick-action button.
-
-!!! Tip
-    If you want field users to attach existing photos from their device gallery **or** take new photos—without allowing videos, audio clips, or documents—check only **Image** in QFieldSync.
-    QField will display the camera quick-action button, lock the camera to still-photo mode, and limit the menu to **Take a photo**, **Attach a gallery item** (images only), **Attach a file** (images only), and **Draw a sketch**.
-
 
 ## Value Relation Widget
 
