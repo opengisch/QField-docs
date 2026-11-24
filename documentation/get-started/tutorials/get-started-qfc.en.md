@@ -161,7 +161,7 @@ Once your project is configured in QGIS, upload it to QFieldCloud:
           When working with GeoPackages, the cloud file version is replaced by your local file version.
         - **The Cloud file:** Amends your local datasets and replaces your local project file with the current cloud version.
 
-You can now view your project and files on your [QFieldCloud project overview page](https://app.qfield.cloud/).
+You can now view your project and files on QFieldCloud!![QFieldCloud landing page](../../assets/images/overview_projects_qfcloud.png).
 
 ## From QFieldCloud to QField
 
@@ -242,15 +242,15 @@ After completing field data collection, synchronize your changes back to QFieldC
     1. Open the **Side Dashboard** in QField.
     2. Tap the <span style="color:blue"> :material-cloud: </span> (a badge indicates your number of pending local changes).
         !![Cloud button](../../assets/images/getting_started_blue_button.png,400px)
-    3. Tap the appropriate action card for your data:
+    3. Tap the appropriate option for your data:
         - **Upload local changes:** Sends your edits and attachments to the cloud without downloading updates from other collaborators.
           This option is fast and saves internet bandwidth.
         - **Synchronize project:** Uploads your local edits, then downloads the latest project version from QFieldCloud to keep everything up to date.
-        - **Pending changes:** Displays a detailed list of all un-uploaded local feature additions, edits, and deletions, allowing you to inspect attribute changes or discard individual edits before syncing.
+        - **Pending changes:** Displays a detailed list of all local feature changes allowing you to inspect and discard individual edits before syncing.
         - **Changes history:** Tap this button below the main action cards to view a log of past uploads, including timestamps and statuses (such as **Applied**, **Pending**, **Conflict**, or **Error**).
-        - **Attachments history:** Tap this button below the main action cards to inspect local un-pushed attachments, attachments queued for upload, and the upload outcomes of past media and file attachments.
-        - **Danger zone:** Tap this button to access options for discarding all un-uploaded local changes or restoring the cloud version of the project.
-            Tap **Discard local changes** to remove all un-uploaded local edits at once, or tap **Reset project** to re-download the cloud project if your local copy becomes corrupted.
+        - **Attachments history:** Tap this button below the main action cards to inspect local attachments, attachments queued for upload, and the upload outcomes of past media and file attachments.
+        - **Danger zone:** Tap this button to access options for discarding all local changes or restoring the cloud version of the project.
+            Tap **Discard local changes** to remove all local edits at once, or tap **Reset project** to re-download the cloud project if your local copy becomes corrupted.
 
         !![](../../assets/images/getting_started_actions.png,800px)
 
@@ -259,19 +259,18 @@ Your synchronized changes are now available to all collaborators with access to 
 #### Inspecting and discarding individual pending changes
 :material-tablet: Fieldwork
 
-Before pushing your local edits to QFieldCloud, you can review individual pending changes and selectively discard mistakes without losing the rest of your fieldwork.
-
 !!! Workflow
     1. Open the **Side Dashboard** and tap the <span style="color:blue"> :material-cloud: </span> icon.
-    2. Tap  on **Local changes** then tap on any**Pending changes** to view the list of queued local changes (`added`, `edited`, or `deleted`).
-    3. Tap a feature entry in the list to expand its details.
+    2. Tap  on **Local changes** then tap on any **Pending changes** to view the list of queued local changes (`added`, `edited`, or `deleted`).
+    3. Tap on a feature entry in the list to expand its details.
     4. To revert a specific edit, tap **Discard change** at the bottom of the expanded entry and confirm in the **Discard local change** dialog.
 
 !![Inspecting and discarding individual pending changes](../../assets/images/qfield_cloud_pending_changes.png,600px)
 
 !!! Note
     - **Dependent sequential edits:** If you performed multiple sequential edits on the same feature (for example, modifying a feature's attributes and later deleting it), discarding an earlier change automatically reverts all subsequent pending changes made to that same feature to preserve data consistency.
-    - **Active GNSS tracking & sync lock:** Individual changes cannot be discarded while a cloud synchronization or upload is in progress, or for a feature currently being recorded by an active GNSS track (indicated by a walking icon next to the feature name).
+    - **Active GNSS tracking & sync lock:** It is not possible to discard individual changes during an active synchronization process.
+    Also, if you are tracking yourself while synchronizing, this addition wil not be uploaded since you are still actively editing it.
 
 #### Tracking attachment uploads (Attachments history)
 :material-tablet: Fieldwork
@@ -282,7 +281,8 @@ Use **Attachments history** to monitor whether photos, videos, audio recordings,
     1. Open the **Side Dashboard** and tap the <span style="color:blue"> :material-cloud: </span> icon.
     2. Tap **Attachments history** at the bottom of the cloud synchronization panel.
     3. Review the status of each project attachment:
-        - **Not uploaded yet:** The attachment belongs to local feature changes that have not been pushed yet. Tap **Upload local changes** or **Synchronize project** to queue the file for upload.
+        - **Not uploaded yet:** The attachment belongs to local feature changes that have not been pushed yet.
+        Tap **Upload local changes** or **Synchronize project** to queue the file for upload.
         - **Waiting to be uploaded:** Feature changes were pushed and the attachment is currently queued for background upload.
         - **Uploaded:** The file was successfully uploaded to QFieldCloud, along with the completion timestamp.
         - **Upload failed:** The server rejected the attachment upload. Tap the failed entry to expand its diagnostic details and HTTP error code.
