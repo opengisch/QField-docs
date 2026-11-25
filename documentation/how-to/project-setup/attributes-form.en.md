@@ -101,9 +101,6 @@ To use Wizard Mode, your feature form must first be set up into tabs.
     ![type:video](../../assets/videos/qfield_form_wizard.mp4)
 
 ## Working with Relations
-
-:material-monitor: Project Manager
-
 For detailed information on setting up layer relations in QGIS, refer to the [QGIS Relations Documentation](https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/joins_relations.html#setting-relations-between-multiple-layers). <!-- markdown-link-check-disable-line -->
 
 ## Value Map Widget Configuration
@@ -142,7 +139,29 @@ Use the Attachment widget to:
     Set attachment file paths to relative.
     QField stores media files in project subdirectories referenced by text attribute fields.
 
-Checkout the page for the [attachment widget](../../how-to/project-setup/pictures.md) to get specific guidance for this widget.
+Check out the [Attachment Widget Setup Guide](../../how-to/project-setup/pictures.md) for detailed configuration instructions.
+
+### Restricting Accepted Attachment Types
+
+If you set the **Document Viewer** to a specific media type(`Image`, `Video`, `Audio`, or `File`) under the QGIS **Attachment** (*External Resource*) widget's setting, in QField, by default the default option will be set to that type.
+However, QField users can still attach files or media of other types through the **3-dotted menu (⋮)**.
+
+You can restrict which attachment types are permitted for the individual attributes via the **QFieldSync** settings.
+
+!!! Workflow
+    1. Direct to _Project > Properties..._ and switch to the **QField** tab.
+    2. Locate the attachment configuration table listing each layer and attachment field.
+    3. In the **Accepted Types** column for the target field, open the dropdown menu and check one or more allowed attachment categories:
+        - **Image:** Still photos, gallery images, and freehand sketches.
+        - **Video:** Recorded videos and gallery video clips.
+        - **Audio:** Recorded audio clips and audio files.
+        - **Other:** General documents and text files (such as PDFs, CSVs, or text documents).
+    4. Click **OK** to save your project settings.
+
+!![Configuring accepted attachment types in QFieldSync](../../assets/images/qfieldsync-attachment-accepted-types.png,600px)
+
+!!! Note
+    When **no** options are checked in the **Accepted Types** dropdown, the field displays **Anything** and accepts all attachment and media types, falling back to the field's QGIS **Document Viewer** setting to determine the primary quick-action button.
 
 ## Value Relation Widget
 
