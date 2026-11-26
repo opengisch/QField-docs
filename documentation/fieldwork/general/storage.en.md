@@ -61,7 +61,8 @@ Because iOS restricts direct access to individual nested files inside app direct
 
 #### iCloud and cloud storage services
 
-Use iCloud Drive to [download and upload project files](https://support.apple.com/en-in/111764) between macOS/Windows and iOS. Because iOS apps cannot open projects directly from external cloud folders, move downloaded projects into QField's local `Imported Projects` folder before opening them.
+Use iCloud to [download and upload project files](https://support.apple.com/en-in/111764) between macOS/Windows and iOS.
+Because iOS apps cannot open projects directly from external cloud folders, move downloaded projects into QField's local `Imported Projects` folder before opening them.
 
 !!! Workflow
     1. Upload the packaged project from your computer to a folder on iCloud (for example, `QField Projects`).
